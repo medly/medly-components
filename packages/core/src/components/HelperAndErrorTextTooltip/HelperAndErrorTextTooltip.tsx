@@ -7,7 +7,7 @@ import * as Styled from './HelperAndErrorTextTooltip.styled';
 
 interface HelperTextTooltipProps {
     /** Id prefix */
-    idPrefix: string;
+    id: string;
     /** Error icon color */
     errorIconColor?: string;
     /** Helper Text */
@@ -16,7 +16,7 @@ interface HelperTextTooltipProps {
     errorText?: string;
 }
 export const HelperAndErrorTextTooltip: FC<HelperTextTooltipProps> & WithStyle = React.memo((props: HelperTextTooltipProps) => {
-    const { idPrefix, errorIconColor, errorText, helperText } = props;
+    const { id, errorIconColor, errorText, helperText } = props;
 
     if (errorText || helperText) {
         return (
@@ -29,7 +29,7 @@ export const HelperAndErrorTextTooltip: FC<HelperTextTooltipProps> & WithStyle =
                     )}
                 </Styled.PopoverIconContainer>
                 <Styled.HelperAndErrorTextPopover placement="top" withArrow bgColor={'#211F46'}>
-                    <Styled.HelperAndErrorTextContainer id={`${idPrefix}-helper-text`}>
+                    <Styled.HelperAndErrorTextContainer id={`${id}-helper-text`}>
                         {(errorText || helperText).trim()}
                     </Styled.HelperAndErrorTextContainer>
                 </Styled.HelperAndErrorTextPopover>

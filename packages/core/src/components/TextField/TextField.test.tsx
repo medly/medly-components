@@ -256,7 +256,9 @@ describe('TextField', () => {
             const { container } = render(
                 <TextField variant={variant} label="Name" showTooltipForHelperAndErrorText helperText="Some text" />
             );
-            expect(container).toMatchSnapshot();
+            const popoverWrapper = container.querySelector('#medly-popover-wrapper');
+            fireEvent.mouseOver(popoverWrapper);
+            expect(container.querySelector('#medly-popover-popup').textContent).toEqual('Some text');
         });
 
         it('should render properly with error-text tooltip', () => {
@@ -266,7 +268,9 @@ describe('TextField', () => {
             const input = container.querySelector('input');
             fireEvent.focusIn(input);
             fireEvent.blur(input);
-            expect(container).toMatchSnapshot();
+            const popoverWrapper = container.querySelector('#medly-popover-wrapper');
+            fireEvent.mouseOver(popoverWrapper);
+            expect(container.querySelector('#medly-popover-popup').textContent).toEqual('Some text');
         });
 
         it('should render properly with custom disabled cursor (themed)', () => {
