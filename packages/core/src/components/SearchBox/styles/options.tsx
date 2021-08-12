@@ -2,11 +2,11 @@ import { css } from '@medly-components/utils';
 import { OptionStyled } from '../../SingleSelect/Options/Option/Option.styled';
 import { SearchBoxProps } from '../types';
 
-const activeOptionStyle = ({ theme }: SearchBoxProps) => {
+const activeOptionStyle = ({ theme, size }: SearchBoxProps) => {
     return css`
         border-radius: 0.8rem;
         box-shadow: ${theme.searchBox.options.boxShadow};
-        padding-bottom: 1.2rem;
+        padding: ${size === 'M' ? '0.8rem 0' : '0.4rem 0'};
     `;
 };
 

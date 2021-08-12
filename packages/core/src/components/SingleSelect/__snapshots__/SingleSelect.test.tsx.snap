@@ -354,6 +354,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
             class="c5"
             id="medly-singleSelect-input"
             placeholder="Please Select . . ."
+            readonly=""
             type="text"
             value=""
           />
@@ -1412,6 +1413,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
             class="c5"
             id="medly-singleSelect-input"
             placeholder="Please Select . . ."
+            readonly=""
             type="text"
             value=""
           />
@@ -1836,6 +1838,7 @@ exports[`SingleSelect component with filled variant should render disabled state
             disabled=""
             id="medly-singleSelect-input"
             placeholder="Please Select . . ."
+            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -2383,6 +2386,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
             class="c5"
             id="medly-singleSelect-input"
             placeholder="Please Select . . ."
+            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -2969,6 +2973,7 @@ exports[`SingleSelect component with filled variant should render properly when 
             class="c5"
             id="label-input"
             placeholder="Please Select . . ."
+            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -3459,6 +3464,7 @@ exports[`SingleSelect component with filled variant should render with label pro
             class="c5"
             id="label-input"
             placeholder="Please Select . . ."
+            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -5226,6 +5232,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
             disabled=""
             id="medly-singleSelect-input"
             placeholder="Please Select . . ."
+            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -5787,6 +5794,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
             class="c5"
             id="medly-singleSelect-input"
             placeholder="Please Select . . ."
+            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -6387,6 +6395,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
             class="c5"
             id="label-input"
             placeholder="Please Select . . ."
+            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -6891,6 +6900,7 @@ exports[`SingleSelect component with outlined variant should render with label p
             class="c5"
             id="label-input"
             placeholder="Please Select . . ."
+            readonly=""
             type="text"
             value="Dummy1"
           />

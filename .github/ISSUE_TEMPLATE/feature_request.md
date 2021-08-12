@@ -8,13 +8,13 @@ assignees: ''
 ---
 
 ### Description
-A clear and concise description of the feature request
+Provide a clear and concise description of the feature request.
 
 ### Solution you'd like
-A clear and concise description of what you want to happen.
+Provide a clear and concise description of the feature behaviour.
 
 ### Alternatives you've considered
-A clear and concise description of any alternative solutions or features you've considered.
+Provide a clear and concise description of any alternative solutions or features you've considered.
 
 ### Additional context
-Add any other context or screenshots about the feature request here.
+Provide any other context or screenshots of the feature request.
