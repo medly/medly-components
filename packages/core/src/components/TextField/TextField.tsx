@@ -1,5 +1,5 @@
-import { ThemeContext, useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, FocusEvent, FormEvent, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import { useCombinedRefs, WithStyle } from '@medly-components/utils';
+import React, { FC, FocusEvent, FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import { HelperAndErrorTextTooltip } from '../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import getMaskedValue from './getMaskedValue';
 import * as Styled from './Styled';
@@ -45,8 +45,6 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
             [characterCountValue, setCharacterCountValue] = useState(
                 value ? value.toString().length : restProps.defaultValue ? restProps.defaultValue.toString().length : 0
             );
-
-        const theme = useContext(ThemeContext);
 
         const validate = useCallback(
             (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {

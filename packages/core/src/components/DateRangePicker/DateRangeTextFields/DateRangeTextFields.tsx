@@ -1,6 +1,5 @@
 import { DateRangeIcon } from '@medly-components/icons';
-import { ThemeContext } from '@medly-components/utils';
-import React, { useContext } from 'react';
+import React from 'react';
 import { DateIconWrapper } from '../../DatePicker/DatePicker.styled';
 import datePickerPattern from '../../DatePicker/datePickerPattern';
 import { HelperAndErrorTextTooltip } from '../../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
@@ -65,8 +64,6 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
             size,
             isActive
         };
-
-    const theme = useContext(ThemeContext);
 
     const Prefix = () => (
         <DateIconWrapper {...iconProps}>
