@@ -66,15 +66,19 @@ export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchAc
     ${getIconWrapperStyle}
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.expandIcon.padding[size]};
-        * {
-            fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
-        }
         path {
             transition: transform 0.2s ease-out;
             transform-origin: center;
         }
-        &:hover {
-            ${expandIconHoveredStyle}
+        ${({ isCustomSearchActive }) =>
+            !isCustomSearchActive &&
+            `
+            &:hover {
+                ${expandIconHoveredStyle};
+            }
+        `}
+        * {
+            fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
         }
     }
     ${({ isCustomSearchActive }) => isCustomSearchActive && customSearchActiveStyle}
