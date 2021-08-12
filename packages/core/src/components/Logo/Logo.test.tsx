@@ -3,8 +3,8 @@ import React from 'react';
 import Logo from './Logo';
 
 describe('Logo', () => {
-    const DummyLogo = () => <span>My Logo</span>;
-    const DummyName = () => <span>My Name</span>;
+    const DummyLogo = <span>My Logo</span>;
+    const DummyName = <span>My Name</span>;
 
     const subject = (props = {}) => render(<Logo {...props} />);
 

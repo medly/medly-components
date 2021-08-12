@@ -4,17 +4,17 @@ import MedlyLogo from './assets/MLogo.svg';
 import { Container } from './Logo.styled';
 import { LogoProps } from './types';
 
-const Logo: React.FC<LogoProps> = ({ showName, logo: LogoEl, name: LogoName }) => (
+const Logo: React.FC<LogoProps> = ({ showName, logo, name }) => (
     <Container>
-        <LogoEl />
-        {showName && <LogoName />}
+        {logo}
+        {showName && name}
     </Container>
 );
 
 Logo.defaultProps = {
     showName: true,
-    logo: MedlyLogo,
-    name: MedlyLogoName
+    logo: <MedlyLogo />,
+    name: <MedlyLogoName />
 };
 
 export default Logo;
