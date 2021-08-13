@@ -1,6 +1,6 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 import * as stories from './Header.stories';
-import { useMediaQuery } from '@medly-components/utils';
+import { useMediaQuery, breakpoints } from '@medly-components/utils';
 import Header from './Header';
 import Logo from '@medly-components/core/src/components/Logo';
 import { PillIcon } from '@medly-components/icons';
@@ -11,7 +11,7 @@ import { defaultTheme } from '@medly-components/theme';
 <Preview mdxSource="">
     <Story name="Header">
         {() => {
-            const isNotMobile = useMediaQuery(`@media (min-width: ${defaultTheme.header.breakpoints.mobile})`);
+            const isNotMobile = useMediaQuery(breakpoints(defaultTheme.breakpoints).up('M'));
             return (
                 <div style={{ overflow: 'hidden', height: '400px' }}>
                     <Header>

@@ -1,5 +1,5 @@
 import { CloseIcon } from '@medly-components/icons';
-import styled from 'styled-components';
+import { breakpoints, media, styled } from '@medly-components/utils';
 
 export const BGOverlay = styled.div<{ isOpen: boolean }>`
     position: absolute;
@@ -12,11 +12,9 @@ export const BGOverlay = styled.div<{ isOpen: boolean }>`
     z-index: ${({ isOpen }) => (isOpen ? 1000 : -100)};
     transition: 0.5s;
 
-    /* stylelint-disable */
-    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
-        /* stylelint-enable */
+    ${({ theme }) => media(breakpoints(theme.breakpoints).up('L'))`
         display: none;
-    }
+    `}
 `;
 
 export const Container = styled.div<{ isOpen: boolean }>`
@@ -31,36 +29,30 @@ export const Container = styled.div<{ isOpen: boolean }>`
     z-index: 1001;
     box-sizing: border-box;
 
-    /* stylelint-disable */
-    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
-        /* stylelint-enable */
+    ${({ theme }) => media(breakpoints(theme.breakpoints).up('L'))`
         padding: 0;
         width: auto;
         position: static;
         height: auto;
         z-index: auto;
-    }
+    `}
 `;
 
 export const Content = styled.div`
     display: flex;
     flex-direction: column;
 
-    /* stylelint-disable */
-    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
-        /* stylelint-enable */
+    ${({ theme }) => media(breakpoints(theme.breakpoints).up('L'))`
         display: grid;
         grid-auto-flow: column;
-        grid-column-gap: ${({ theme }) => theme.header.nav.gutterSpace};
-    }
+        grid-column-gap: ${theme.header.nav.gutterSpace};
+    `}
 `;
 
 export const NavCloseIcon = styled(CloseIcon)`
     margin: 0.6rem 0 4rem 0.6rem;
 
-    /* stylelint-disable */
-    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
-        /* stylelint-enable */
+    ${({ theme }) => media(breakpoints(theme.breakpoints).up('L'))`
         display: none;
-    }
+    `}
 `;

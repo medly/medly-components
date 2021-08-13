@@ -1,5 +1,5 @@
 import { MenuIcon } from '@medly-components/icons';
-import styled from 'styled-components';
+import { breakpoints, media, styled } from '@medly-components/utils';
 
 export const Container = styled.div`
     display: flex;
@@ -19,17 +19,13 @@ export const Content = styled.div`
     color: ${({ theme }) => theme.header.fontColor};
     padding: 0 1.6rem;
 
-    /* stylelint-disable */
-    @media (min-width: ${({ theme }) => theme.header.breakpoints.tablet}) {
-        /* stylelint-enable */
-        padding: 0 3.2rem;
-    }
+    ${({ theme }) => media(breakpoints(theme.breakpoints).up('M'))`
+            padding: 0 3.2rem;
+        `}
 `;
 
 export const HamburgerIcon = styled(MenuIcon)`
-    /* stylelint-disable */
-    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
-        /* stylelint-enable */
-        display: none;
-    }
+    ${({ theme }) => media(breakpoints(theme.breakpoints).up('L'))`
+            display: none;
+        `}
 `;

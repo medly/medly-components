@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { breakpoints, media, styled } from '@medly-components/utils';
 
 export type NavItemProps = { isActive?: boolean };
 export const NavItem = styled.button<NavItemProps>`
@@ -19,32 +19,30 @@ export const NavItem = styled.button<NavItemProps>`
     text-align: left;
     grid-auto-columns: max-content;
 
-    /* stylelint-disable */
-    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
-        /* stylelint-enable */
-        background: ${({ theme }) => theme.header.backgroundColor};
+    ${({ theme, isActive }) => media(breakpoints(theme.breakpoints).up('L'))`
+        background: ${theme.header.backgroundColor};
         grid-column-gap: 0.8rem;
-        height: ${({ theme }) => theme.header.navItem.height.desktop};
+        height: ${theme.header.navItem.height.desktop};
         letter-spacing: -0.04rem;
-        font-weight: ${({ theme, isActive }) => (isActive ? theme.font.weights.Medium : theme.font.weights.Normal)};
+        font-weight: ${isActive ? theme.font.weights.Medium : theme.font.weights.Regular};
         padding: 0 1.6rem;
 
         &::before {
-            display: ${props => (props.isActive ? 'block' : 'none')};
+            display: ${isActive ? 'block' : 'none'};
             content: '';
             position: absolute;
             width: calc(100% - 1.6rem * 2);
-            top: calc((${({ theme }) => theme.header.navItem.height.desktop} - ${({ theme }) => theme.header.height}) / 2);
+            top: calc((${theme.header.navItem.height.desktop} - ${theme.header.height}) / 2);
             left: 1.6rem;
-            background: ${({ theme }) => theme.header.navItem.activeIndicatorColor};
+            background: ${theme.header.navItem.activeIndicatorColor};
             height: 4px;
             border-radius: 0 0 2px 2px;
         }
 
         &:hover {
-            background-color: ${({ theme }) => theme.header.navItem.hoverColor};
+            background-color: ${theme.header.navItem.hoverColor};
         }
-    }
+    `}
 
     &:active {
         background-color: ${({ theme }) => theme.header.navItem.activeColor};

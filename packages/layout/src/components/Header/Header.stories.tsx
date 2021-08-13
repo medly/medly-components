@@ -1,5 +1,4 @@
-import { defaultTheme } from '@medly-components/theme';
-import { HeaderTheme } from 'packages/theme/src/layout/header/types';
+import { defaultTheme, HeaderTheme } from '@medly-components/theme';
 import { FC } from 'react';
 import { Context } from './Header.context';
 import { HeaderStaticProps } from './types';

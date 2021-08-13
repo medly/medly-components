@@ -16,7 +16,7 @@ describe('Logo', () => {
     });
 
     it('should hide the name when instructed', () => {
-        subject({ logo: DummyLogo, name: DummyName, showName: false });
+        subject({ logo: <DummyLogo />, name: <DummyName />, showName: false });
 
         expect(screen.getByText('My Logo')).toBeInTheDocument();
         expect(screen.queryByText('My Name')).not.toBeInTheDocument();

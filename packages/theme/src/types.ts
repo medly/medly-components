@@ -37,6 +37,7 @@ export interface CoreTheme {
 }
 
 export interface LayoutTheme {
+    header?: LayoutThemes.HeaderTheme;
     sideNav?: LayoutThemes.SideNavTheme;
     sidePanel?: LayoutThemes.SidePanelTheme;
 }

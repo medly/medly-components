@@ -6,11 +6,6 @@ const header: HeaderTheme = {
     maxContentWidth: '1240px',
     height: '72px',
     fontColor: colors.white,
-    breakpoints: {
-        mobile: '375px',
-        tablet: '720px',
-        desktop: '960px'
-    },
     nav: {
         gutterSpace: '0.8rem'
     },
