@@ -24027,7 +24027,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c21,
-.c21 .sc-fzpjYC {
+.c21 .sc-fzqARJ {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -24050,7 +24050,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   fill: #b0bcc8;
 }
 
-.c21:disabled .sc-fzpjYC {
+.c21:disabled .sc-fzqARJ {
   color: #b0bcc8;
 }
 
@@ -24063,7 +24063,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   fill: #126AFA;
 }
 
-.c21:not(:disabled):not(:hover) .sc-fzpjYC {
+.c21:not(:disabled):not(:hover) .sc-fzqARJ {
   color: #303C48;
 }
 
@@ -24076,7 +24076,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   fill: #0D4AAF;
 }
 
-.c21:not(:disabled):active .sc-fzpjYC {
+.c21:not(:disabled):active .sc-fzqARJ {
   color: #13181D;
 }
 
@@ -24090,7 +24090,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   fill: #0F5AD5;
 }
 
-.c21:not(:disabled):not(:active):hover .sc-fzpjYC {
+.c21:not(:disabled):not(:active):hover .sc-fzqARJ {
   color: #303C48;
 }
 

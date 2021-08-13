@@ -26,6 +26,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                 required,
                 isSearchable,
                 validator,
+                showTooltipForHelperAndErrorText,
                 ...restProps
             } = props,
             selectId = useMemo(() => id || label?.toLocaleLowerCase().replace(' ', '') || 'medly-multiSelect', [id, label]);
@@ -168,6 +169,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                     helperText={helperText}
                     errorText={errorText || builtInErrorMessage}
                     validator={inputValidator}
+                    showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
                 />
                 {!disabled && areOptionsVisible && (
                     <Options
