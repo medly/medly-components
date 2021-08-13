@@ -2,6 +2,19 @@ import { HTMLProps, Omit } from '@medly-components/utils';
 import { DisplayFormat } from '../DatePicker/types';
 import { Placement } from '../Popover/types';
 
+export enum DateRangeSelectionEnum {
+    WEEK = 'WEEK',
+    MONTH = 'MONTH',
+    YEAR = 'YEAR',
+    CUSTOM = 'CUSTOM',
+    QUARTER = 'QUARTER'
+}
+
+export enum PopoverTypes {
+    CALENDAR = 'CALENDAR',
+    CUSTOM_RANGE_OPTIONS = 'CUSTOM_RANGE_OPTIONS'
+}
+
 export type DateRangeType = { startDate: Date | null; endDate: Date | null };
 
 export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height' | 'value' | 'onChange'> & {
@@ -43,4 +56,6 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     withSingleMonth?: boolean;
     /** Show Helper text and error text in a tooltip (popover) */
     showTooltipForHelperAndErrorText?: boolean;
+    /** Provide date range selection custom options */
+    customDateRangeOptions?: Array<{ label: string; value: DateRangeSelectionEnum }>;
 };

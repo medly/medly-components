@@ -7,7 +7,8 @@ import {
     displayFormats,
     ThemeInterface,
     FormWithDateRangePicker,
-    DateRangePickerWithStateForDoc
+    DateRangePickerWithStateForDoc,
+    DateRangePickerWithCustomDateRangeOptionsForDoc
 } from './DateRangePicker.stories';
 import { useState } from 'react';
 import { DateRangeType } from './types';
@@ -94,6 +95,33 @@ const FormWithDatePicker: React.FC = () => {
 
 <Preview withToolbar>
     <DateRangePickerWithStateForDoc />
+</Preview>
+
+### Custom date range options
+
+User can provide custom date range selection options using `customDateRangeOptions`, here is the example-
+
+```tsx
+const DateRangePickerWithCustomDateRangeOptions: React.FC = () => {
+    const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null });
+    return (
+        <DateRangePicker
+            value={dates}
+            onChange={setDates}
+            customDateRangeOptions={[
+                { label: 'Current Week', value: DateRangeSelectionEnum.WEEK },
+                { label: 'Current Month', value: DateRangeSelectionEnum.MONTH },
+                { label: 'Current Quarter', value: DateRangeSelectionEnum.QUARTER },
+                { label: 'Current Year', value: DateRangeSelectionEnum.YEAR },
+                { label: 'Custom', value: DateRangeSelectionEnum.CUSTOM }
+            ]}
+        />
+    );
+};
+```
+
+<Preview withToolbar>
+    <DateRangePickerWithCustomDateRangeOptionsForDoc />
 </Preview>
 
 ### DateRangePicker Props

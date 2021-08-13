@@ -1,4 +1,4 @@
-import { DateRangeProps, DateRangeType } from '../types';
+import { DateRangeProps, DateRangeType, PopoverTypes } from '../types';
 
 export type Props = {
     id: string;
@@ -13,13 +13,16 @@ export type Props = {
     startDateLabel: string;
     endDateLabel: string;
     selectedDates: DateRangeProps['value'];
+    showOptions?: boolean;
+    activePopover: PopoverTypes;
     onDateChange: DateRangeProps['onChange'];
     displayFormat: DateRangeProps['displayFormat'];
-    setActive: React.Dispatch<React.SetStateAction<boolean>>;
+    onCalendarIconClick: React.Dispatch<React.SetStateAction<boolean>>;
     setFocusedElement: React.Dispatch<React.SetStateAction<'START_DATE' | 'END_DATE'>>;
     startDateRef: React.MutableRefObject<HTMLInputElement>;
     endDateRef: React.MutableRefObject<HTMLInputElement>;
     validator?: (val: DateRangeType, eventType?: string) => string;
     onBlur: (event: React.FocusEvent<HTMLInputElement>) => void;
     showTooltipForHelperAndErrorText?: boolean;
+    onCustomRangeIconClick: () => void;
 };

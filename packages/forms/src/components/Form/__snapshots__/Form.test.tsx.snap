@@ -1200,8 +1200,17 @@ exports[`Form should render properly with initial state 1`] = `
   color: rgba(0,90,238,.2);
 }
 
-.c47 .c30 {
+.c47 .c30:first-of-type {
   margin-right: 0.8rem;
+}
+
+.c47 .c30:nth-of-type(2) {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c47:hover .c48 {
@@ -1236,7 +1245,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c12 .sc-fzobTh {
+.c12 .sc-fzooss {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3526,8 +3535,17 @@ exports[`Form should render properly without initial state 1`] = `
   color: rgba(0,90,238,.2);
 }
 
-.c47 .c32 {
+.c47 .c32:first-of-type {
   margin-right: 0.8rem;
+}
+
+.c47 .c32:nth-of-type(2) {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c47:hover .c48 {
@@ -3562,7 +3580,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c15 .sc-fzobTh {
+.c15 .sc-fzooss {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

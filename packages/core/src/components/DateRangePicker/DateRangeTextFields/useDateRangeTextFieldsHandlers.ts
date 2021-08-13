@@ -10,7 +10,6 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         disabled,
         displayFormat,
         isActive,
-        setActive,
         startDateRef,
         endDateRef,
         errorText,
@@ -18,6 +17,7 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         validator,
         onBlur,
         selectedDates,
+        onCalendarIconClick,
         onDateChange,
         setFocusedElement
     } = props;
@@ -35,14 +35,14 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
             event => {
                 event.stopPropagation();
                 if (!disabled) {
-                    setActive(true);
+                    onCalendarIconClick(true);
                     startDateRef.current.focus();
                 }
             },
             [disabled]
         ),
         onTextFieldFocus = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
-            setActive(true);
+            onCalendarIconClick(true);
             setFocusedElement(event.target.name as `START_DATE` | `END_DATE`);
             event.target.setSelectionRange(event.target.value.length, event.target.value.length);
         }, []),
@@ -105,7 +105,8 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                 setTimeout(() => {
                     if (!currentTarget.contains(document.activeElement)) {
                         const validatorMessage = (validator && validator(selectedDates, 'blur')) || '',
-                            customMessage = required && !selectedDates.startDate && !selectedDates.endDate && 'Please fill in this field.',
+                            customMessage =
+                                (required && !selectedDates.startDate && !selectedDates.endDate && 'Please fill in this field.') || '',
                             message = validator ? validatorMessage : customMessage;
                         setErrorMessage(message);
                         if (validator) {
