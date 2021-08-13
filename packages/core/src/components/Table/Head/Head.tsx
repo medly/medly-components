@@ -75,6 +75,7 @@ const Head: React.FC<TableHeadProps> = React.memo(props => {
                             hidden={config.hidden}
                             gridTemplateColumns={getGridTemplateColumns(config.children)}
                             isTitleCell
+                            tableSize={tableSize}
                         >
                             <GroupCellTitle textVariant="h5" textWeight="Strong" uppercase>
                                 {config.title}

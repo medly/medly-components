@@ -72,6 +72,7 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     &:not(:last-child) {
         &::after {
             ${({ isRowActionCell, children }) => (isRowActionCell ? children && getBorder('right') : getBorder('right'))}
+            height: ${({ tableSize }) => tableSize === 'XS' && 'calc(100% - 2rem)'}
         }
     }
 

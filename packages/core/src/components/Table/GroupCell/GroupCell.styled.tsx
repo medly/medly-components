@@ -15,6 +15,7 @@ export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: GroupCell
     height: ${({ hidden }) => (hidden ? '0' : '100%')};
     &::after {
         ${({ isTitleCell }) => isTitleCell && getBorder('right')}
+        height: ${({ tableSize }) => tableSize === 'XS' && 'calc(100% - 2rem)'}
     }
     padding: 0;
 `;
