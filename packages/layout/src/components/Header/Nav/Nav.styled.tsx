@@ -43,7 +43,7 @@ export const Content = styled.div`
     flex-direction: column;
 
     ${({ theme }) => media(breakpoints(theme.breakpoints).up('L'))`
-        display: grid;
+        display: inline-grid;
         grid-auto-flow: column;
         grid-column-gap: ${theme.header.nav.gutterSpace};
     `}
