@@ -1,6 +1,6 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 import * as stories from './Header.stories';
-
+import { useMediaQuery } from '@medly-components/utils';
 import Header from './Header';
 import Logo from '@medly-components/core/src/components/Logo';
 import { PillIcon } from '@medly-components/icons';
@@ -10,12 +10,34 @@ import { defaultTheme } from '@medly-components/theme';
 
 <Preview mdxSource="">
     <Story name="Header">
-        <div style={{ overflow: 'hidden', height: '400px' }}>
-            {stories.FullSetup()}
-            <br />
-            <p>The navigation items are hidden for viewports smaller than 960px and are available in a hamburger menu.</p>
-            <p>Resize the screen to mobile resolution to see the hamburger style side nav in action.</p>
-        </div>
+        {() => {
+            const isNotMobile = useMediaQuery(`@media (min-width: ${defaultTheme.header.breakpoints.mobile})`);
+            return (
+                <div style={{ overflow: 'hidden', height: '400px' }}>
+                    <Header>
+                        <Logo showName={isNotMobile} />
+                        <Header.Nav>
+                            <Header.NavItem isActive>
+                                <HomeIcon size="S" iconColor={defaultTheme.colors.white} />
+                                My Dashboard
+                            </Header.NavItem>
+                            <Header.NavItem>
+                                <PillIcon size="S" iconColor={defaultTheme.colors.white} />
+                                Prescriptions
+                            </Header.NavItem>
+                            <Header.NavItem>
+                                <LockIcon size="S" iconColor={defaultTheme.colors.white} />
+                                Security
+                            </Header.NavItem>
+                        </Header.Nav>
+                        <div>Logout</div>
+                    </Header>
+                    <br />
+                    <p>The navigation items are hidden for viewports smaller than 960px and are available in a hamburger menu.</p>
+                    <p>Resize the screen to mobile resolution to see the hamburger style side nav in action.</p>
+                </div>
+            );
+        }}
     </Story>
 </Preview>
 
