@@ -15,7 +15,7 @@ export const PopoverIconContainer = styled('div')`
 export const HelperAndErrorTextContainer = styled('span')`
     width: max-content;
     display: flex;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     color: white;
     font-size: 1rem;
 `;
