@@ -1065,7 +1065,7 @@ exports[`Form should render properly with initial state 1`] = `
   padding-right: 0.8rem;
 }
 
-.c40 .sc-fzoaKM {
+.c40 .sc-fzomuh {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -1236,7 +1236,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c12 .sc-fznNTe {
+.c12 .sc-fzobTh {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3391,7 +3391,7 @@ exports[`Form should render properly without initial state 1`] = `
   padding-right: 0.8rem;
 }
 
-.c40 .sc-fzoaKM {
+.c40 .sc-fzomuh {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -3562,7 +3562,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c15 .sc-fznNTe {
+.c15 .sc-fzobTh {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
