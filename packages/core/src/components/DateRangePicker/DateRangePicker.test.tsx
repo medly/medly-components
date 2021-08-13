@@ -434,10 +434,10 @@ describe('DateRangePicker', () => {
         });
 
         test.each([
-            ['Current Week', { startDate: new Date('2021-08-07T18:30:00.000Z'), endDate: new Date('2021-08-13T18:30:00.000Z') }],
-            ['Current Month', { startDate: new Date('2021-07-31T18:30:00.000Z'), endDate: new Date('2021-08-30T18:30:00.000Z') }],
-            ['Current Quarter', { startDate: new Date('2021-06-30T18:30:00.000Z'), endDate: new Date('2021-08-30T18:30:00.000Z') }],
-            ['Current Year', { startDate: new Date('2020-12-31T18:30:00.000Z'), endDate: new Date('2021-12-30T18:30:00.000Z') }]
+            ['Current Week', { startDate: new Date('2021-08-08T18:30:00.000Z'), endDate: new Date('2021-08-14T18:30:00.000Z') }],
+            ['Current Month', { startDate: new Date('2021-08-01T18:30:00.000Z'), endDate: new Date('2021-08-31T18:30:00.000Z') }],
+            ['Current Quarter', { startDate: new Date('2021-07-01T18:30:00.000Z'), endDate: new Date('2021-09-30T18:30:00.000Z') }],
+            ['Current Year', { startDate: new Date('2021-01-01T18:30:00.000Z'), endDate: new Date('2021-12-31T18:30:00.000Z') }]
         ])('should render expected start and end date when %o date range option is selected', async (option, dateRange) => {
             const onChangeMock = jest.fn(),
                 { container, customDateRangeOptionsIcon, getByText } = renderComponent({

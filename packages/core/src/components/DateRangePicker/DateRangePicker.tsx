@@ -1,5 +1,5 @@
 import { useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
-import React, { FC, useCallback, useRef, useState } from 'react';
+import React, { FC, useCallback, useMemo, useRef, useState } from 'react';
 import * as TextFieldStyled from '../TextField/Styled';
 import { CustomDateRangeOptions } from './CustomDateRangeOptions/CustomDateRangeOptions';
 import DateRangeCalendar from './DateRangeCalendar';
@@ -39,18 +39,23 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         wrapperRef = useRef<HTMLDivElement>(null),
         [isActive, setActive] = useState(false),
         [activePopover, setActivePopover] = useState<PopoverTypes>(PopoverTypes.CALENDAR),
-        wrapperMinWidth = minWidth ? minWidth : customDateRangeOptions.length ? '38rem' : '33.8rem',
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
         focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current.focus(), []),
+        wrapperMinWidth = useMemo(() => {
+            if (!minWidth) {
+                return customDateRangeOptions.length ? '38rem' : '33.8rem';
+            }
+            return minWidth;
+        }, [customDateRangeOptions, minWidth]),
         onCustomRangeIconClick = useCallback(() => {
             if (!disabled) {
-                activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS ? setActive(value => !value) : setActive(true);
+                activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS ? setActive(prevValue => !prevValue) : setActive(true);
                 setActivePopover(PopoverTypes.CUSTOM_RANGE_OPTIONS);
             }
         }, [disabled, activePopover]),
-        onCalendarIconClick = useCallback((value: boolean) => {
+        onCalendarIconClick = useCallback((valueToSet: boolean) => {
             setActivePopover(PopoverTypes.CALENDAR);
-            setActive(value);
+            setActive(valueToSet);
         }, []),
         onOptionClick = useCallback(
             (option: any) => {
