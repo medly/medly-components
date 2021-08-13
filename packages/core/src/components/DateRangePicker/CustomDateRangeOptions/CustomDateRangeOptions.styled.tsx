@@ -1,8 +1,9 @@
 import { styled } from '@medly-components/utils';
 import { getPosition } from '../../Popover/Popup/styled/Popup.styled';
+import { Placement } from '../../Popover/types';
 import Options from '../../SingleSelect/Options';
 
-export const SelectOptions = styled(Options)`
+export const CustomDateRangeOptions = styled(Options)<{ placement: Placement }>`
     height: max-content;
     ${getPosition};
     top: ${({ size, placement }) =>

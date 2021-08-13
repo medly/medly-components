@@ -1,13 +1,13 @@
 import { useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
 import React, { FC, useCallback, useMemo, useRef, useState } from 'react';
 import * as TextFieldStyled from '../TextField/Styled';
-import { CustomDateRangeOptions } from './CustomDateRangeOptions/CustomDateRangeOptions';
+import CustomDateRangeOptions from './CustomDateRangeOptions';
 import DateRangeCalendar from './DateRangeCalendar';
 import DateRangeTextFields from './DateRangeTextFields';
 import { dateRangeHelpers } from './helpers/dateRangeHelpers';
-import { DateRangeProps, DateRangeSelectionEnum, PopoverTypes } from './types';
+import { DateRangeProps, DateRangeSelectionEnum, DateRangeStaticProps, PopoverTypes } from './types';
 
-export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
+export const DateRangePicker: FC<DateRangeProps> & DateRangeStaticProps = React.memo(props => {
     const {
         id,
         value,
@@ -49,8 +49,12 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         }, [customDateRangeOptions, minWidth]),
         onCustomRangeIconClick = useCallback(() => {
             if (!disabled) {
-                activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS ? setActive(prevValue => !prevValue) : setActive(true);
-                setActivePopover(PopoverTypes.CUSTOM_RANGE_OPTIONS);
+                if (activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS) {
+                    setActive(prevValue => !prevValue);
+                } else {
+                    setActivePopover(PopoverTypes.CUSTOM_RANGE_OPTIONS);
+                    setActive(true);
+                }
             }
         }, [disabled, activePopover]),
         onCalendarIconClick = useCallback((valueToSet: boolean) => {
@@ -144,6 +148,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
 });
 
 DateRangePicker.displayName = 'DateRangePicker';
+DateRangePicker.SelectionEnum = DateRangeSelectionEnum;
 DateRangePicker.defaultProps = {
     id: 'medly-date-range-picker',
     size: 'M',

@@ -59,3 +59,7 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     /** Provide date range selection custom options */
     customDateRangeOptions?: Array<{ label: string; value: DateRangeSelectionEnum }>;
 };
+
+export type DateRangeStaticProps = {
+    SelectionEnum?: typeof DateRangeSelectionEnum;
+};

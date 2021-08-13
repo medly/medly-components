@@ -1,6 +1,6 @@
 import { ChevronDownIcon, DateRangeIcon } from '@medly-components/icons';
 import React from 'react';
-import { DateIconWrapper } from '../../DatePicker/DatePicker.styled';
+import { DateIconWrapper as IconWrapper } from '../../DatePicker/DatePicker.styled';
 import datePickerPattern from '../../DatePicker/datePickerPattern';
 import { HelperAndErrorTextTooltip } from '../../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import * as TextFieldStyled from '../../TextField/Styled';
@@ -70,15 +70,15 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
         };
 
     const Prefix = () => (
-        <DateIconWrapper {...iconProps}>
+        <IconWrapper {...iconProps}>
             <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
-        </DateIconWrapper>
+        </IconWrapper>
     );
 
     const Suffix = () => (
-        <DateIconWrapper {...iconProps}>
+        <IconWrapper {...iconProps}>
             <ChevronDownIcon id={`${id}-custom-date-range-options-icon`} onClick={onCustomRangeIconClick} size={size} />
-        </DateIconWrapper>
+        </IconWrapper>
     );
 
     return (

@@ -1,33 +1,25 @@
+import { endOfMonth, endOfQuarter, endOfWeek, endOfYear, startOfMonth, startOfQuarter, startOfWeek } from 'date-fns';
+import startOfYear from 'date-fns/startOfYear';
 import { DateRangeSelectionEnum, DateRangeType } from '../types';
 
 const getCurrentMonthDateRange = (): DateRangeType => {
-    const currentDate = new Date(Date.now()),
-        startDate = new Date(currentDate.setUTCDate(1)),
-        endDate = new Date(currentDate.setUTCMonth(currentDate.getUTCMonth() + 1, 0));
-    return { startDate, endDate };
+    const currentDate = new Date(Date.now());
+    return { startDate: startOfMonth(currentDate), endDate: endOfMonth(currentDate) };
 };
 
 const getCurrentWeekDateRange = (): DateRangeType => {
-    const currentDate = new Date(Date.now()),
-        firstDayOfTheWeek = currentDate.getUTCDate() - currentDate.getUTCDay(),
-        startDate = new Date(currentDate.setUTCDate(currentDate.getUTCDate() - currentDate.getUTCDay())),
-        endDate = new Date(currentDate.setUTCDate(firstDayOfTheWeek + 6));
-    return { startDate, endDate };
+    const currentDate = new Date(Date.now());
+    return { startDate: startOfWeek(currentDate), endDate: endOfWeek(currentDate) };
 };
 
 const getCurrentYearDateRange = (): DateRangeType => {
-    const currentDate = new Date(Date.now()),
-        startDate = new Date(currentDate.setUTCMonth(0, 1)),
-        endDate = new Date(currentDate.setUTCFullYear(currentDate.getUTCFullYear() + 1, 0, 0));
-    return { startDate, endDate };
+    const currentDate = new Date(Date.now());
+    return { startDate: startOfYear(currentDate), endDate: endOfYear(currentDate) };
 };
 
 const getCurrentQuarterDateRange = (): DateRangeType => {
-    const currentDate = new Date(Date.now()),
-        firstMonthOfQuarter = Math.floor(new Date().getUTCMonth() / 3) * 3,
-        startDate = new Date(currentDate.setUTCMonth(firstMonthOfQuarter, 1)),
-        endDate = new Date(currentDate.setUTCMonth(firstMonthOfQuarter + 3, 0));
-    return { startDate, endDate };
+    const currentDate = new Date(Date.now());
+    return { startDate: startOfQuarter(currentDate), endDate: endOfQuarter(currentDate) };
 };
 
 export const dateRangeHelpers = {
