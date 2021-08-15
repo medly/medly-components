@@ -1,5 +1,6 @@
-import { css, styled } from '@medly-components/utils';
+import { css, getFontStyle, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
+import Text from '../../../Text';
 import { GridTemplateProps } from '../../types';
 import { defaultTableCellPaddings } from '../Cell/Styled';
 import { StyledProps } from './types';
@@ -124,6 +125,9 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     min-width: fit-content;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
     ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? cardStyle : normalStyle)}
+    ${Text.Style} {
+        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.table.row.fontVariant })}
+    }
 `;
 
 export const NoResultCell = styled('td')<{ width: number; tableSize: keyof typeof defaultTableCellPaddings }>`

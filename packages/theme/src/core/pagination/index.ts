@@ -4,6 +4,7 @@ import { PaginationTheme } from './types';
 const { grey, black, white, blue } = colors;
 
 const pagination: PaginationTheme = {
+    fontVariant: 'body3',
     pageNumber: {
         color: {
             default: grey[800],
