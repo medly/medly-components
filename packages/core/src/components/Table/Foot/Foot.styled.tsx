@@ -1,5 +1,5 @@
+import { Theme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
-import { Theme } from 'packages/theme/src/types';
 import Text from '../../Text';
 import { TableProps } from '../types';
 
@@ -15,7 +15,7 @@ export const TFoot = styled('tfoot')<{ showWithCardStyle: boolean; tableSize: Ta
     border-top: ${({ theme, showWithCardStyle }) => !showWithCardStyle && `0.1rem solid ${theme.table.borderColor}`};
 `;
 
-const getStyling = ({ theme }: {theme: Theme;}) => {
+const getStyling = ({ theme }: { theme: Theme }) => {
     const {variants} = theme.font;
     const {fontSize, letterSpacing, lineHeight} = variants[theme.pagination.fontVariant];
 

@@ -112,17 +112,6 @@ exports[`Table component pagination should call onPageChange prop on click on an
   min-width: fit-content;
 }
 
-.c14 .c6 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
 .c0 {
   position: absolute;
   left: -1000px;
@@ -327,6 +316,17 @@ exports[`Table component pagination should call onPageChange prop on click on an
   border-bottom: 0.1rem solid #C7D0D8;
 }
 
+.c15 .c6 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
 .c22 {
   padding: 0;
   margin: 0;
@@ -357,13 +357,13 @@ exports[`Table component pagination should call onPageChange prop on click on an
 }
 
 .c23 .c6 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 1.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -561,8 +561,12 @@ exports[`Table component pagination should call onPageChange prop on click on an
 }
 
 .c21 td > .c6 {
-  line-height: 2rem;
   font-size: 1.2rem;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
 }
 
 .c2 {
@@ -1672,17 +1676,6 @@ exports[`Table component should render properly 1`] = `
   min-width: fit-content;
 }
 
-.c14 .c6 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
 .c0 {
   position: absolute;
   left: -1000px;
@@ -1885,6 +1878,17 @@ exports[`Table component should render properly 1`] = `
 
 .c15:not(:last-child) {
   border-bottom: 0.1rem solid #C7D0D8;
+}
+
+.c15 .c6 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c2 {

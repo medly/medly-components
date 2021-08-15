@@ -46,13 +46,13 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 }
 
 .c1 .sc-AxhCb {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 1.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -253,13 +253,13 @@ exports[`Pagination component should render correctly with all the default props
 }
 
 .c1 .c6 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 1.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -594,13 +594,13 @@ exports[`Pagination component should render correctly with all the props given 1
 }
 
 .c1 .c3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 1.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
