@@ -20,7 +20,7 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     suffix?: React.FC<any>;
     /** Disable Input */
     disabled?: boolean;
-    /** Show prefix, suffix, helper text, and character count elements. If set to false, only the input and label will be rendered. */
+    /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered. */
     showDecorators?: boolean;
     /** Set it true when it is required in any form */
     required?: boolean;
@@ -40,6 +40,8 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     minRows?: number;
     /** Set to true to display the character count of the current input value */
     withCharacterCount?: boolean;
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
 }
 
 export interface StyledProps extends TextFieldProps, TextFieldTheme {

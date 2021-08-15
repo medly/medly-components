@@ -13,6 +13,7 @@ export * from './dateRangePicker/types';
 export * from './dialog-box/types';
 export * from './drawer/types';
 export * from './font/types';
+export * from './helperAndErrorTextTooltip/types';
 export * from './input/types';
 export * from './label/types';
 export * from './link/types';
