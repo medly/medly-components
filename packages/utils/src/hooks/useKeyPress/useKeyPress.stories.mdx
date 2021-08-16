@@ -19,8 +19,8 @@ export default = () => {
       arrowUpPressed = useKeyPress('ArrowUp'),
       arrowDownPressed = useKeyPress(['ArrowDown']);
 
-    useEffect(() => arrowUpPressed && setCounter(s => s + 1), [arrowUpPressed]);
-    useEffect(() => arrowDownPressed && setCounter(s => s - 1), [arrowDownPressed]);
+    useEffect(() => { arrowUpPressed && setCounter(s => s + 1) }, [arrowUpPressed]);
+    useEffect(() => { arrowDownPressed && setCounter(s => s - 1) }, [arrowDownPressed]);
 
     return (
         <>
@@ -32,7 +32,7 @@ export default = () => {
                 <Text>2. Press ArrowDown ⬇️ key to decrease the number</Text>
             </div>
             <div>
-                counter: <Text textWeight="Strong">{counter}</Text>
+                <Text textWeight="Strong">{`counter: ${counter}`}</Text>
             </div>
         </>
     );
@@ -47,8 +47,9 @@ You can also pass multiple keys. To pass multiple keys, you have to send them as
 
 ```tsx
 export default = () => {
-    const isShiftCPressed = useKeyPress(['Shift', 'C']);
-    const isDhjPressed = useKeyPress(['d', 'h', 'j'], true);
+    const isShiftCPressed = useKeyPress(['Shift', 'C']),
+        isDhjPressed = useKeyPress(['d', 'h', 'j'], true);
+
     return (
         <>
             <Text>Try pressing the following keys:</Text>
@@ -74,5 +75,4 @@ useKeyPress(
   targetKeys: Array<string>,
   defaultPrevented?: boolean
 )
-
 ```

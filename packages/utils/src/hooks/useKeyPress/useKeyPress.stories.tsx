@@ -8,8 +8,12 @@ export const Basic = () => {
         arrowUpPressed = useKeyPress('ArrowUp'),
         arrowDownPressed = useKeyPress(['ArrowDown']);
 
-    useEffect(() => arrowUpPressed && setCounter(s => s + 1), [arrowUpPressed]);
-    useEffect(() => arrowDownPressed && setCounter(s => s - 1), [arrowDownPressed]);
+    useEffect(() => {
+        arrowUpPressed && setCounter(s => s + 1);
+    }, [arrowUpPressed]);
+    useEffect(() => {
+        arrowDownPressed && setCounter(s => s - 1);
+    }, [arrowDownPressed]);
 
     return (
         <>
@@ -36,6 +40,7 @@ export const Basic = () => {
 export const Compound = () => {
     const isShiftCPressed = useKeyPress(['Shift', 'C']),
         isDhjPressed = useKeyPress(['d', 'h', 'j'], true);
+
     return (
         <>
             <Text>Try pressing the following keys:</Text>
