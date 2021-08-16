@@ -65,6 +65,23 @@ const getHoverStateStyle = (style: 'shadow' | 'outlined') =>
                   !disabled && onClick && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
           `;
 
+const getBorderStyle = (rowHoveredStyle: 'shadow' | 'outlined') =>
+    rowHoveredStyle === 'outlined'
+        ? css<StyledProps>`
+              &:nth-child(odd) {
+                  border: 2px solid
+                      ${({ theme, isSelected, disabled }) =>
+                          theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'odd']};
+              }
+
+              &:nth-child(even) {
+                  border: 2px solid
+                      ${({ theme, isSelected, disabled }) =>
+                          theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
+              }
+          `
+        : ``;
+
 const normalStyle = css<StyledProps>`
     &&:hover {
         z-index: 2;
@@ -89,6 +106,10 @@ const normalStyle = css<StyledProps>`
             color: ${({ theme, isSelected, disabled }) =>
                 theme.table.row.textColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
         }
+    }
+
+    &:not(:hover) {
+        ${({ theme }) => getBorderStyle(theme.table.row.hoveredStyle.style)};
     }
 
     &:not(:last-child) {
