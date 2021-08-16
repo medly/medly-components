@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.14.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.13.1...@medly-components/core@2.14.0) (2021-08-13)
+
+
+### Bug Fixes
+
+* **core:** fix imports ([017f49e](https://github.com/medly/medly-components/commit/017f49e15708c4903134eb418725015656b18c48))
+
+
+### Features
+
+* small updates for compatibility with character count ([3da12ac](https://github.com/medly/medly-components/commit/3da12ac806cfb60296d8160b970085ed258b1c72))
+* **core:** add a new variant for helper/error text ([7cf0451](https://github.com/medly/medly-components/commit/7cf045139cfab42510fa6a270bb19eaf329f2bae))
+* **core:** create helperAndErrorTextTooltip component and use it in all fields ([c58f598](https://github.com/medly/medly-components/commit/c58f598bd0c76ba3f35ccf94593f5b51d97ee7a3))
+
+
+
+
+
+## [2.13.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.13.0...@medly-components/core@2.13.1) (2021-08-12)
+
+
+### Bug Fixes
+
+* soft keyboard opening on mobile browser in singleselect component ([#380](https://github.com/medly/medly-components/issues/380)) ([682e4c4](https://github.com/medly/medly-components/commit/682e4c4928997dec24c9be073de34842eb13d641))
+
+
+
+
+
+# [2.13.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.12.0...@medly-components/core@2.13.0) (2021-08-11)
+
+
+### Features
+
+* updating theme to include searchBox expandIcon active state ([#379](https://github.com/medly/medly-components/issues/379)) ([f868b93](https://github.com/medly/medly-components/commit/f868b93847ef0ac92f4996897fe3638d5a0b06df))
+
+
+
+
+
+# [2.12.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.11.0...@medly-components/core@2.12.0) (2021-08-11)
+
+
+### Features
+
+* search box component updates ([#371](https://github.com/medly/medly-components/issues/371)) ([f89ed95](https://github.com/medly/medly-components/commit/f89ed95f9619707aaa47410c99ee83305261473e))
+
+
+
+
+
 # [2.11.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.10.1...@medly-components/core@2.11.0) (2021-08-08)
 
 

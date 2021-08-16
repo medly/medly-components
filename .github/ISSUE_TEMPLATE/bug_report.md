@@ -8,10 +8,10 @@ assignees: ''
 ---
 
 ### Describe the bug
-A clear and concise description of what the bug is.
+Provide a clear and concise description of the bug.
 
 ### To Reproduce
-Steps to reproduce the behavior:
+Provide step-by-step instructions to reproduce the bug:
 
 1. Go to '...'
 2. Click on '....'
@@ -19,10 +19,10 @@ Steps to reproduce the behavior:
 4. See error
 
 ### Expected behavior
-A clear and concise description of what you expected to happen.
+Provide a clear and concise description of the behaviour expected in the above-mentioned scenario. 
 
 ### Screenshots
-If applicable, add screenshots to help explain your problem.
+If applicable, provide screenshots to explain the bug.
 
 ### Package versions
  - @medly-components/core : 
@@ -35,4 +35,4 @@ If applicable, add screenshots to help explain your problem.
 
 
 ### Additional context
-Add any other context about the problem here.
+Provide any additional information about the bug or the bug scenario.

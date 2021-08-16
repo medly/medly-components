@@ -283,7 +283,7 @@ exports[`SearchBox options should render options when user search option specifi
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(96,120,144,0.35);
-  padding-bottom: 1.2rem;
+  padding: 0.4rem 0;
   max-height: 21rem;
   border-radius: 0.8rem;
   top: 3.9rem;

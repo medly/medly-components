@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.27.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.26.3...@medly-components/forms@1.27.0) (2021-08-13)
+
+
+### Features
+
+* **core:** add a new variant for helper/error text ([7cf0451](https://github.com/medly/medly-components/commit/7cf045139cfab42510fa6a270bb19eaf329f2bae))
+
+
+
+
+
+## [1.26.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.26.2...@medly-components/forms@1.26.3) (2021-08-12)
+
+
+### Bug Fixes
+
+* soft keyboard opening on mobile browser in singleselect component ([#380](https://github.com/medly/medly-components/issues/380)) ([682e4c4](https://github.com/medly/medly-components/commit/682e4c4928997dec24c9be073de34842eb13d641))
+
+
+
+
+
+## [1.26.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.26.1...@medly-components/forms@1.26.2) (2021-08-11)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.26.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.26.0...@medly-components/forms@1.26.1) (2021-08-11)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 # [1.26.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.12...@medly-components/forms@1.26.0) (2021-08-09)
 
 

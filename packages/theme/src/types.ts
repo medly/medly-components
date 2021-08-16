@@ -34,6 +34,7 @@ export interface CoreTheme {
     textField?: CoreThemes.TextFieldTheme;
     toast?: CoreThemes.ToastTheme;
     pagination?: CoreThemes.PaginationTheme;
+    helperAndErrorTextTooltip?: CoreThemes.HelperAndErrorTextTooltipTheme;
 }
 
 export interface LayoutTheme {

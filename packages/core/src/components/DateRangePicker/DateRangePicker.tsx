@@ -28,6 +28,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         required,
         validator,
         withSingleMonth,
+        showTooltipForHelperAndErrorText,
         ...restProps
     } = props;
     const startDateRef = useRef<HTMLInputElement>(null),
@@ -63,6 +64,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 startDateRef={startDateRef}
                 endDateRef={endDateRef}
                 onBlur={onBlur}
+                showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
             />
             {isActive && (
                 <DateRangeCalendar
