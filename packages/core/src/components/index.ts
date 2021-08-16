@@ -20,6 +20,7 @@ export { default as Input } from './Input';
 export { default as Label } from './Label';
 export { default as Link } from './Link';
 export { default as List } from './List';
+export { default as Logo } from './Logo';
 export { default as Modal } from './Modal';
 export { default as MultiSelect } from './MultiSelect';
 export { default as Pagination } from './Pagination';

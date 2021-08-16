@@ -1,0 +1,30 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+import Logo from './Logo';
+import { ThermostatIcon } from '@medly-components/icons';
+import { DummyCompanyName } from './Logo.stories.tsx';
+
+<Meta title="core" component={Logo} parameters={{ jest: [] }} />
+
+Barebones component to show a logo and company name
+
+<Preview>
+    <Story name="Logo">
+        <Logo />
+    </Story>
+</Preview>
+
+#### Without name
+
+<Preview>
+    <Logo showName={false} />
+</Preview>
+
+#### Custom logo and name
+
+<Preview>
+    <Logo logo={<ThermostatIcon />} name={<DummyCompanyName />} />
+</Preview>
+
+#### Props
+
+<Props of={Logo} />
