@@ -29,9 +29,7 @@ export const Basic = () => {
                 </Text>
             </Div>
             <Div>
-                <Text data-testid="counter" textWeight="Strong">
-                    {`Counter: ${counter}`}
-                </Text>
+                <Text textWeight="Strong">{`Counter: ${counter}`}</Text>
             </Div>
         </>
     );
