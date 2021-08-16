@@ -38,7 +38,7 @@ const getHeadCellPadding = ({ hidden, isRowActionCell, tableSize }: HeadCellStyl
             default: '1.6rem 1.2rem'
         },
         cellTableSizePaddingMap = {
-            XS: '0.4rem',
+            XS: '0.4rem 0.4rem 0.3rem 0.4rem',
             default: '0.8rem'
         };
 
