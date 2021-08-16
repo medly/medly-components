@@ -1,5 +1,4 @@
-import { endOfMonth, endOfQuarter, endOfWeek, endOfYear, startOfMonth, startOfQuarter, startOfWeek } from 'date-fns';
-import startOfYear from 'date-fns/startOfYear';
+import { endOfMonth, endOfQuarter, endOfWeek, endOfYear, startOfMonth, startOfQuarter, startOfWeek, startOfYear } from 'date-fns';
 import { DateRangeSelectionEnum, DateRangeType } from '../types';
 
 const getCurrentMonthDateRange = (): DateRangeType => {

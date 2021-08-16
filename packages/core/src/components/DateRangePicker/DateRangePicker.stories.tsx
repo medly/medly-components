@@ -65,8 +65,3 @@ export const DateRangePickerWithStateForDoc: React.FC = () => {
     const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null });
     return <DateRangePicker value={dates} onChange={setDates} required />;
 };
-
-export const DateRangePickerWithCustomDateRangeOptionsForDoc: React.FC = () => {
-    const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null });
-    return <DateRangePicker value={dates} onChange={setDates} customDateRangeOptions={CustomDateRangeOptions} />;
-};

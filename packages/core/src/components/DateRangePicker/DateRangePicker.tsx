@@ -5,9 +5,9 @@ import CustomDateRangeOptions from './CustomDateRangeOptions';
 import DateRangeCalendar from './DateRangeCalendar';
 import DateRangeTextFields from './DateRangeTextFields';
 import { dateRangeHelpers } from './helpers/dateRangeHelpers';
-import { DateRangeProps, DateRangeSelectionEnum, DateRangeStaticProps, PopoverTypes } from './types';
+import { DateRangeProps, DateRangeSelectionEnum, PopoverTypes } from './types';
 
-export const DateRangePicker: FC<DateRangeProps> & DateRangeStaticProps = React.memo(props => {
+export const DateRangePicker: FC<DateRangeProps>  = React.memo(props => {
     const {
         id,
         value,
@@ -148,7 +148,6 @@ export const DateRangePicker: FC<DateRangeProps> & DateRangeStaticProps = React.
 });
 
 DateRangePicker.displayName = 'DateRangePicker';
-DateRangePicker.SelectionEnum = DateRangeSelectionEnum;
 DateRangePicker.defaultProps = {
     id: 'medly-date-range-picker',
     size: 'M',
