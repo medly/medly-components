@@ -388,7 +388,7 @@ describe('DateRangePicker', () => {
 
     describe('Custom date range options', () => {
         beforeEach(() => {
-            jest.spyOn(window.Date, 'now').mockImplementation(() => new Date('2021-08-11T18:30:00.000Z').valueOf());
+            jest.spyOn(window.Date, 'now').mockImplementation(() => new Date(2021, 7, 11).valueOf());
         });
 
         afterEach(() => {
@@ -434,10 +434,10 @@ describe('DateRangePicker', () => {
         });
 
         test.each([
-            ['Current Week', { startDate: new Date('2021-08-07T18:30:00.000Z'), endDate: new Date('2021-08-14T18:29:59.999Z') }],
-            ['Current Month', { startDate: new Date('2021-07-31T18:30:00.000Z'), endDate: new Date('2021-08-31T18:29:59.999Z') }],
-            ['Current Quarter', { startDate: new Date('2021-06-30T18:30:00.000Z'), endDate: new Date('2021-09-30T18:29:59.999Z') }],
-            ['Current Year', { startDate: new Date('2020-12-31T18:30:00.000Z'), endDate: new Date('2021-12-31T18:29:59.999Z') }]
+            ['Current Week', { startDate: new Date(2021, 7, 8), endDate: new Date(2021, 7, 14, 23, 59, 59, 999) }],
+            ['Current Month', { startDate: new Date(2021, 7, 1), endDate: new Date(2021, 7, 31, 23, 59, 59, 999) }],
+            ['Current Quarter', { startDate: new Date(2021, 6, 1), endDate: new Date(2021, 8, 30, 23, 59, 59, 999) }],
+            ['Current Year', { startDate: new Date(2021, 0, 1), endDate: new Date(2021, 11, 31, 23, 59, 59, 999) }]
         ])('should render expected start and end date when %o date range option is selected', async (option, dateRange) => {
             const onChangeMock = jest.fn(),
                 { container, customDateRangeOptionsIcon, getByText } = renderComponent({
