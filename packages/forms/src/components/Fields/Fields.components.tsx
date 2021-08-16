@@ -16,10 +16,10 @@ import {
     CheckboxProps,
     DatePickerProps,
     DateRangePickerProps,
+    FieldsProps,
     FileInputProps,
     MultiSelectProps,
     NestedProps,
-    FieldsProps,
     RadioGroupProps,
     SingleSelectProps,
     TextFieldProps

@@ -29,7 +29,7 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     isSearchable?: boolean;
     /** Set it true to disable the select action */
     disabled?: boolean;
-    /** Show prefix, suffix, helper text, and character count elements. If set to false, only the input and label will be rendered. */
+    /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered. */
     showDecorators?: boolean;
     /** Set it true when it is required in any form */
     required?: boolean;
@@ -43,6 +43,8 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     errorText?: string;
     /** Function will called with the input value on Blur event */
     validator?: (val: any[]) => string;
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
 }
 
 export interface SelectWrapperProps extends Omit<MultiSelectProps, 'ref' | 'options'> {

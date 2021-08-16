@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.27.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.27.0...@medly-components/forms@1.27.1) (2021-08-16)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.27.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.26.3...@medly-components/forms@1.27.0) (2021-08-13)
+
+
+### Features
+
+* **core:** add a new variant for helper/error text ([7cf0451](https://github.com/medly/medly-components/commit/7cf045139cfab42510fa6a270bb19eaf329f2bae))
+
+
+
+
+
 ## [1.26.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.26.2...@medly-components/forms@1.26.3) (2021-08-12)
 
 

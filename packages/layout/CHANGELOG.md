@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.25.8...@medly-components/layout@1.26.0) (2021-08-16)
+
+
+### Features
+
+* **layout:** new header layout component ([#377](https://github.com/medly/medly-components/issues/377)) ([d38bd12](https://github.com/medly/medly-components/commit/d38bd12b5f903e9ee29d61b812afc8c17dc617d3))
+
+
+
+
+
+## [1.25.8](https://github.com/medly/medly-components/compare/@medly-components/layout@1.25.7...@medly-components/layout@1.25.8) (2021-08-13)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [1.25.7](https://github.com/medly/medly-components/compare/@medly-components/layout@1.25.6...@medly-components/layout@1.25.7) (2021-08-12)
 
 **Note:** Version bump only for package @medly-components/layout

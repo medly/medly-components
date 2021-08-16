@@ -31,10 +31,12 @@ const getTextColor = ({
     }
 };
 
-const getTransform = (translateXValue: string) => ({ variant }: { variant: 'fusion' | 'outlined' | 'filled' }): string => {
-    // If variant is fusion, we preserve the -167% translateY value which is applied on focus
-    return variant === 'fusion' ? `transform: translate(${translateXValue}, -167%)` : `transform: translateX(${translateXValue})`;
-};
+const getTransform =
+    (translateXValue: string) =>
+    ({ variant }: { variant: 'fusion' | 'outlined' | 'filled' }): string => {
+        // If variant is fusion, we preserve the -167% translateY value which is applied on focus
+        return variant === 'fusion' ? `transform: translate(${translateXValue}, -167%)` : `transform: translateX(${translateXValue})`;
+    };
 
 export const CharacterCount = styled.div<{
     maxLength: number;
@@ -42,6 +44,7 @@ export const CharacterCount = styled.div<{
     multiline?: boolean;
     size: 'S' | 'M';
     variant: 'fusion' | 'outlined' | 'filled';
+    showTooltipForHelperAndErrorText: boolean;
 }>`
     @keyframes wiggle {
         0% {
@@ -71,5 +74,6 @@ export const CharacterCount = styled.div<{
     transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: ${getMarginTop};
     margin-left: ${({ size }) => size === 'S' && '1.2rem'};
+    margin-right: ${({ showTooltipForHelperAndErrorText }) => showTooltipForHelperAndErrorText && '.8rem'};
     animation: ${({ characterCount, maxLength }) => characterCount === maxLength && `0.2s wiggle ease-in-out`};
 `;
