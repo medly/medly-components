@@ -1,11 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 
-export const useKeyPress = (
-    targetKey: string | Array<string>,
-    defaultPrevented = false
-): boolean => {
-    const [keysPressed, setKeyPressed] = useState<Array<string>>([]),
-        [targetKeys, setTargetKeys] = useState<Array<string>>([]),
+export const useKeyPress = (targetKeys: string | string[], defaultPrevented = false): boolean => {
+    const [keysPressed, setKeyPressed] = useState<string[]>([]),
         [allKeysPressed, setAllKeysPressed] = useState<boolean>(false);
 
     const downHandler = useCallback(
@@ -24,20 +20,10 @@ export const useKeyPress = (
         [defaultPrevented]
     );
 
-    useEffect(
-        () =>
-            typeof targetKey === 'string'
-                ? setTargetKeys(targetKey.split(' '))
-                : setTargetKeys(targetKey),
-        []
-    );
-
     useEffect(() => {
-        targetKeys.length
-            ? setAllKeysPressed(
-                targetKeys.every((key, index) => keysPressed[index] === key)
-            )
-            : setAllKeysPressed(false);
+        Array.isArray(targetKeys)
+            ? setAllKeysPressed(targetKeys.every((key, index) => keysPressed[index] === key))
+            : setAllKeysPressed(keysPressed.includes(targetKeys));
     }, [targetKeys, keysPressed]);
 
     useEffect(() => {

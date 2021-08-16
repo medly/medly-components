@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from 'react';
 import { Text } from '@medly-components/core';
-import { useKeyPress } from '@medly-components/utils';
-import { Div, DisplayDiv } from './useKeyPress.styled';
+import React, { useEffect, useState } from 'react';
+import { useKeyPress } from './useKeyPress';
+import { DisplayDiv, Div } from './useKeyPress.styled';
 
 export const Basic = () => {
-    const [counter, setCounter] = useState<number>(0);
-    const arrowUpPressed = useKeyPress('ArrowUp');
-    const arrowDownPressed = useKeyPress(['ArrowDown']);
+    const [counter, setCounter] = useState<number>(0),
+        arrowUpPressed = useKeyPress('ArrowUp'),
+        arrowDownPressed = useKeyPress(['ArrowDown']);
 
     useEffect(() => arrowUpPressed && setCounter(s => s + 1), [arrowUpPressed]);
-
     useEffect(() => arrowDownPressed && setCounter(s => s - 1), [arrowDownPressed]);
 
     return (
@@ -26,15 +25,17 @@ export const Basic = () => {
                 </Text>
             </Div>
             <Div>
-                counter: <Text data-testid="counter" textWeight="Strong">{counter}</Text>
+                <Text data-testid="counter" textWeight="Strong">
+                    {`Counter: ${counter}`}
+                </Text>
             </Div>
         </>
     );
 };
 
 export const Compound = () => {
-    const isShiftCPressed = useKeyPress(['Shift', 'C']);
-    const isDhjPressed = useKeyPress(['d', 'h', 'j'], true);
+    const isShiftCPressed = useKeyPress(['Shift', 'C']),
+        isDhjPressed = useKeyPress(['d', 'h', 'j'], true);
     return (
         <>
             <Text>Try pressing the following keys:</Text>
