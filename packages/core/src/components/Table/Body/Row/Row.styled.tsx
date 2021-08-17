@@ -4,6 +4,11 @@ import { GridTemplateProps } from '../../types';
 import { defaultTableCellPaddings } from '../Cell/Styled';
 import { StyledProps } from './types';
 
+const getRowBackgroundColor = ({ theme, isSelected, disabled, even }: StyledProps & { even: boolean }) => {
+    const parity = even ? 'even' : 'odd';
+    return theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : parity];
+};
+
 const cardStyle = css<StyledProps>`
     border: none;
     border-radius: 0.8rem;
@@ -12,8 +17,7 @@ const cardStyle = css<StyledProps>`
     box-shadow: ${({ theme }) => `0 0.2rem 0.8rem ${rgba(theme.table.shadowColor, 0.2)} `};
     &,
     & > * {
-        background-color: ${({ theme, isSelected, disabled }) =>
-            theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
+        background-color: ${({ theme, isSelected, disabled }) => getRowBackgroundColor({ theme, isSelected, disabled, even: true })};
         color: ${({ theme, isSelected, disabled }) => theme.table.row.textColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
     }
 
@@ -72,13 +76,11 @@ const getBorderStyle = (rowHoveredStyle: 'shadow' | 'outlined') =>
               border-style: solid;
 
               &:nth-child(odd) {
-                  border-color: ${({ theme, isSelected, disabled }) =>
-                      theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'odd']};
+                  border-color: ${({ theme, isSelected, disabled }) => getRowBackgroundColor({ theme, isSelected, disabled, even: false })};
               }
 
               &:nth-child(even) {
-                  border-color: ${({ theme, isSelected, disabled }) =>
-                      theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
+                  border-color: ${({ theme, isSelected, disabled }) => getRowBackgroundColor({ theme, isSelected, disabled, even: true })};
               }
           `
         : ``;
@@ -99,8 +101,7 @@ const normalStyle = css<StyledProps>`
     &:nth-child(odd) {
         &,
         & > * {
-            background-color: ${({ theme, isSelected, disabled }) =>
-                theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'odd']};
+            background-color: ${({ theme, isSelected, disabled }) => getRowBackgroundColor({ theme, isSelected, disabled, even: false })};
             color: ${({ theme, isSelected, disabled }) =>
                 theme.table.row.textColor[disabled ? 'disabled' : isSelected ? 'selected' : 'odd']};
         }
@@ -109,8 +110,7 @@ const normalStyle = css<StyledProps>`
     &:nth-child(even) {
         &,
         & > * {
-            background-color: ${({ theme, isSelected, disabled }) =>
-                theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
+            background-color: ${({ theme, isSelected, disabled }) => getRowBackgroundColor({ theme, isSelected, disabled, even: true })};
             color: ${({ theme, isSelected, disabled }) =>
                 theme.table.row.textColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
         }
