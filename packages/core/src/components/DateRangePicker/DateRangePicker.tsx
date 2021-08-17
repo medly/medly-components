@@ -41,7 +41,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         [activePopover, setActivePopover] = useState<PopoverTypes>(PopoverTypes.CALENDAR),
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
         focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current.focus(), []),
-        wrapperMinWidth = useMemo(() => (minWidth ?? customDateRangeOptions.length ? '38rem' : '33.8rem'), [
+        wrapperMinWidth = useMemo(() => (minWidth ?? customDateRangeOptions.length ? '37.2rem' : '33.8rem'), [
             customDateRangeOptions,
             minWidth
         ]),

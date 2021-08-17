@@ -1893,7 +1893,7 @@ exports[`DateRangePicker Custom date range options should render properly with c
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 38rem;
+  min-width: 37.2rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -2155,9 +2155,6 @@ exports[`DateRangePicker Custom date range options should render properly with c
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c20:hover .c11 {
@@ -2185,7 +2182,7 @@ exports[`DateRangePicker Custom date range options should render properly with c
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
-  padding-left: 0.8rem;
+  padding: 0 0.8rem 0;
 }
 
 .c1 .c9 {
@@ -3004,9 +3001,6 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -3017,9 +3011,6 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -4806,9 +4797,6 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -4819,9 +4807,6 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -6608,9 +6593,6 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -6621,9 +6603,6 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -8412,9 +8391,6 @@ exports[`DateRangePicker popover placement should render properly with "left" po
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -8425,9 +8401,6 @@ exports[`DateRangePicker popover placement should render properly with "left" po
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -10213,9 +10186,6 @@ exports[`DateRangePicker popover placement should render properly with "left-end
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -10226,9 +10196,6 @@ exports[`DateRangePicker popover placement should render properly with "left-end
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -12014,9 +11981,6 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -12027,9 +11991,6 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -13818,9 +13779,6 @@ exports[`DateRangePicker popover placement should render properly with "right" p
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -13831,9 +13789,6 @@ exports[`DateRangePicker popover placement should render properly with "right" p
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -15619,9 +15574,6 @@ exports[`DateRangePicker popover placement should render properly with "right-en
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -15632,9 +15584,6 @@ exports[`DateRangePicker popover placement should render properly with "right-en
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -17420,9 +17369,6 @@ exports[`DateRangePicker popover placement should render properly with "right-st
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -17433,9 +17379,6 @@ exports[`DateRangePicker popover placement should render properly with "right-st
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -19224,9 +19167,6 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -19237,9 +19177,6 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -21025,9 +20962,6 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -21038,9 +20972,6 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -22826,9 +22757,6 @@ exports[`DateRangePicker popover placement should render properly with "top-star
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c26 .c4:first-of-type {
@@ -22839,9 +22767,6 @@ exports[`DateRangePicker popover placement should render properly with "top-star
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div
@@ -24883,9 +24808,6 @@ exports[`DateRangePicker should render properly 1`] = `
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c39:hover .c11 {
@@ -24913,7 +24835,7 @@ exports[`DateRangePicker should render properly 1`] = `
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
-  padding-left: 0.8rem;
+  padding: 0 1.6rem 0 0.8rem;
 }
 
 .c1 .c9 {
@@ -25018,9 +24940,6 @@ exports[`DateRangePicker should render properly 1`] = `
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div>
@@ -27316,9 +27235,6 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c44:hover .c12 {
@@ -27346,7 +27262,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
-  padding-left: 0.8rem;
+  padding: 0 1.6rem 0 0.8rem;
 }
 
 .c2 .c10 {
@@ -27451,9 +27367,6 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div>

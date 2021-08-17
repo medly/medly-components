@@ -91,6 +91,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                 isErrorPresent={isErrorPresent}
                 isLabelPresent
                 isActive={isActive}
+                showChevronIcon={showChevronIcon}
                 areCustomOptionsVisible={isActive && activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS}
                 onBlur={validateOnWrapperBlur}
             >
