@@ -1,10 +1,11 @@
 import React, { useCallback, useContext, useMemo } from 'react';
-import Pagination from '../../Pagination';
 import Text from '../../Text';
 import { TableComponentsCommonPropsContext, TableStateContext } from '../context';
-import { FootRow, TFoot } from './Foot.styled';
+import { FootPagination, FootRow, TFoot } from './Foot.styled';
+import { TableFootProps } from './types';
 
-export const Foot: React.FC = React.memo(() => {
+export const Foot: React.FC<TableFootProps> = React.memo(props => {
+    const { tableSize } = props;
     const [{ activePage }, setTableState] = useContext(TableStateContext),
         { onPageChange, totalItems, itemsPerPage, showRowWithCardStyle, size } = useContext(TableComponentsCommonPropsContext),
         dataRange = useMemo(() => {
@@ -34,7 +35,13 @@ export const Foot: React.FC = React.memo(() => {
         <TFoot showWithCardStyle={showRowWithCardStyle} tableSize={size}>
             <FootRow>
                 <td>
-                    <Pagination activePage={activePage} totalItems={totalItems} itemsPerPage={itemsPerPage} onPageClick={handlePageClick} />
+                    <FootPagination
+                        tableSize={tableSize}
+                        activePage={activePage}
+                        totalItems={totalItems}
+                        itemsPerPage={itemsPerPage}
+                        onPageClick={handlePageClick}
+                    />
                 </td>
                 <td>
                     <Text>Viewing</Text>
