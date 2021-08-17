@@ -68,16 +68,17 @@ const getHoverStateStyle = (style: 'shadow' | 'outlined') =>
 const getBorderStyle = (rowHoveredStyle: 'shadow' | 'outlined') =>
     rowHoveredStyle === 'outlined'
         ? css<StyledProps>`
+              border-width: 0.2rem;
+              border-style: solid;
+
               &:nth-child(odd) {
-                  border: 2px solid
-                      ${({ theme, isSelected, disabled }) =>
-                          theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'odd']};
+                  border-color: ${({ theme, isSelected, disabled }) =>
+                      theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'odd']};
               }
 
               &:nth-child(even) {
-                  border: 2px solid
-                      ${({ theme, isSelected, disabled }) =>
-                          theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
+                  border-color: ${({ theme, isSelected, disabled }) =>
+                      theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
               }
           `
         : ``;
@@ -118,7 +119,7 @@ const normalStyle = css<StyledProps>`
     ${({ theme }) => getBorderStyle(theme.table.row.hoveredStyle.style)};
 
     &:not(:last-child) {
-        border-bottom: 0.1rem solid red;
+        border-bottom: 0.1rem solid ${({ theme }) => theme.table.row.separatorColor};
         ${({ theme }) => getPadding(theme.table.row.hoveredStyle.style)}
     }
 `;

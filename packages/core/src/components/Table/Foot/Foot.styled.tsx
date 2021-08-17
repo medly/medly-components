@@ -1,10 +1,11 @@
 import { styled } from '@medly-components/utils';
 import Pagination from '../../Pagination';
+import { PageNavButton, PageNumberButton } from '../../Pagination/Pagination.styled';
 import Text from '../../Text';
 import { TableProps } from '../types';
 
 export const FootPagination = styled(Pagination)<{ tableSize: TableProps['size'] }>`
-    & button {
+    & > * ${PageNavButton}, ${PageNumberButton} {
         height: ${({ tableSize }) => tableSize === 'XS' && '3.1rem'};
         width: ${({ tableSize }) => tableSize === 'XS' && '3.1rem'};
     }
