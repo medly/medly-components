@@ -1,9 +1,11 @@
 import { useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
-import React, { FC, useCallback, useRef, useState } from 'react';
+import React, { FC, useCallback, useMemo, useRef, useState } from 'react';
 import * as TextFieldStyled from '../TextField/Styled';
+import CustomDateRangeOptions from './CustomDateRangeOptions';
 import DateRangeCalendar from './DateRangeCalendar';
 import DateRangeTextFields from './DateRangeTextFields';
-import { DateRangeProps } from './types';
+import { dateRangeHelpers } from './helpers/dateRangeHelpers';
+import { DateRangeProps, DateRangeSelectionEnum, PopoverTypes } from './types';
 
 export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
     const {
@@ -29,20 +31,61 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         validator,
         withSingleMonth,
         showTooltipForHelperAndErrorText,
+        customDateRangeOptions,
         ...restProps
     } = props;
     const startDateRef = useRef<HTMLInputElement>(null),
         endDateRef = useRef<HTMLInputElement>(null),
         wrapperRef = useRef<HTMLDivElement>(null),
         [isActive, setActive] = useState(false),
+        [activePopover, setActivePopover] = useState<PopoverTypes>(PopoverTypes.CALENDAR),
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
-        focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current.focus(), []);
+        focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current.focus(), []),
+        wrapperMinWidth = useMemo(() => (minWidth ?? customDateRangeOptions.length ? '37.2rem' : '33.8rem'), [
+            customDateRangeOptions,
+            minWidth
+        ]),
+        onCustomRangeIconClick = useCallback(() => {
+            if (!disabled) {
+                if (activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS) {
+                    setActive(prevValue => !prevValue);
+                } else {
+                    setActivePopover(PopoverTypes.CUSTOM_RANGE_OPTIONS);
+                    setActive(true);
+                }
+            }
+        }, [disabled, activePopover]),
+        onCalendarIconClick = useCallback((valueToSet: boolean) => {
+            setActivePopover(PopoverTypes.CALENDAR);
+            setActive(valueToSet);
+        }, []),
+        onOptionClick = useCallback(
+            (option: any) => {
+                if (option.value === DateRangeSelectionEnum.CUSTOM) {
+                    focusElement('START_DATE');
+                    setActive(true);
+                } else {
+                    const selectedRange = dateRangeHelpers[
+                        option.value as Exclude<DateRangeSelectionEnum, DateRangeSelectionEnum.CUSTOM>
+                    ]();
+                    if (minSelectableDate && selectedRange.startDate < minSelectableDate) {
+                        selectedRange.startDate = minSelectableDate;
+                    }
+                    if (maxSelectableDate && selectedRange.endDate > maxSelectableDate) {
+                        selectedRange.endDate = maxSelectableDate;
+                    }
+                    onChange && onChange(selectedRange);
+                    setActive(false);
+                }
+            },
+            [onChange, focusElement]
+        );
 
     useOuterClickNotifier(() => setActive(false), wrapperRef);
     useUpdateEffect(() => focusElement(focusedElement), [focusedElement]);
 
     return (
-        <TextFieldStyled.OuterWrapper id={`${id}-wrapper`} ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth} {...restProps}>
+        <TextFieldStyled.OuterWrapper id={`${id}-wrapper`} ref={wrapperRef} fullWidth={fullWidth} minWidth={wrapperMinWidth} {...restProps}>
             <DateRangeTextFields
                 id={id}
                 size={size}
@@ -53,35 +96,48 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 disabled={disabled}
                 showDecorators={showDecorators}
                 isActive={isActive}
+                activePopover={activePopover}
                 validator={validator}
                 startDateLabel={startDateLabel}
                 endDateLabel={endDateLabel}
                 selectedDates={value}
                 onDateChange={onChange}
                 displayFormat={displayFormat}
-                setActive={setActive}
+                onCalendarIconClick={onCalendarIconClick}
                 setFocusedElement={setFocusedElement}
                 startDateRef={startDateRef}
                 endDateRef={endDateRef}
                 onBlur={onBlur}
                 showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
+                onCustomRangeIconClick={onCustomRangeIconClick}
+                showChevronIcon={!!customDateRangeOptions.length}
             />
-            {isActive && (
-                <DateRangeCalendar
-                    id={`${id}-calendar`}
-                    size={size}
-                    placement={popoverPlacement}
-                    selectedDates={value}
-                    setActive={setActive}
-                    withSingleMonth={withSingleMonth}
-                    focusElement={focusElement}
-                    onDateSelection={onChange}
-                    focusedElement={focusedElement}
-                    setFocusedElement={setFocusedElement}
-                    minSelectableDate={minSelectableDate}
-                    maxSelectableDate={maxSelectableDate}
-                />
-            )}
+            {isActive &&
+                (activePopover === PopoverTypes.CALENDAR ? (
+                    <DateRangeCalendar
+                        id={`${id}-calendar`}
+                        size={size}
+                        placement={popoverPlacement}
+                        selectedDates={value}
+                        setActive={onCalendarIconClick}
+                        withSingleMonth={withSingleMonth}
+                        focusElement={focusElement}
+                        onDateSelection={onChange}
+                        focusedElement={focusedElement}
+                        setFocusedElement={setFocusedElement}
+                        minSelectableDate={minSelectableDate}
+                        maxSelectableDate={maxSelectableDate}
+                    />
+                ) : (
+                    <CustomDateRangeOptions
+                        id={`${id}-custom-date-range-options`}
+                        size={size}
+                        variant={variant}
+                        onOptionClick={onOptionClick}
+                        options={customDateRangeOptions}
+                        placement={popoverPlacement}
+                    />
+                ))}
         </TextFieldStyled.OuterWrapper>
     );
 });
@@ -91,7 +147,6 @@ DateRangePicker.defaultProps = {
     id: 'medly-date-range-picker',
     size: 'M',
     variant: 'filled',
-    minWidth: '33.8rem',
     startDateLabel: 'From',
     endDateLabel: 'To',
     displayFormat: 'MM-dd-yyyy',
@@ -99,5 +154,6 @@ DateRangePicker.defaultProps = {
     withSingleMonth: false,
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1),
-    showDecorators: true
+    showDecorators: true,
+    customDateRangeOptions: []
 };
