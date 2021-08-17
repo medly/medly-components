@@ -47,12 +47,12 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 
 .c1 .sc-AxhCb {
   font-size: 1.2rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 1.6rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -200,17 +200,30 @@ exports[`Pagination component should render correctly with all the default props
 .c7 {
   margin: 0;
   color: inherit;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   text-align: center;
 }
 
 .c9 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: center;
+}
+
+.c11 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -254,12 +267,12 @@ exports[`Pagination component should render correctly with all the default props
 
 .c1 .c6 {
   font-size: 1.2rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 1.6rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -444,11 +457,11 @@ exports[`Pagination component should render correctly with all the default props
         class="sc-AxheI c5"
         type="button"
       >
-        <h5
+        <strong
           class="c6 c7"
         >
           1
-        </h5>
+        </strong>
       </button>
     </li>
     <li>
@@ -456,11 +469,11 @@ exports[`Pagination component should render correctly with all the default props
         class="sc-AxheI c8"
         type="button"
       >
-        <h5
+        <span
           class="c6 c9"
         >
           2
-        </h5>
+        </span>
       </button>
     </li>
     <li>
@@ -468,11 +481,11 @@ exports[`Pagination component should render correctly with all the default props
         class="sc-AxheI c8"
         type="button"
       >
-        <h5
+        <span
           class="c6 c9"
         >
           3
-        </h5>
+        </span>
       </button>
     </li>
     <li>
@@ -485,7 +498,7 @@ exports[`Pagination component should render correctly with all the default props
           type="button"
         >
           <h5
-            class="c6 c9"
+            class="c6 c11"
           >
             ...
           </h5>
@@ -497,11 +510,11 @@ exports[`Pagination component should render correctly with all the default props
         class="sc-AxheI c8"
         type="button"
       >
-        <h5
+        <span
           class="c6 c9"
         >
           8
-        </h5>
+        </span>
       </button>
     </li>
     <li>
@@ -541,17 +554,30 @@ exports[`Pagination component should render correctly with all the props given 1
 .c4 {
   margin: 0;
   color: inherit;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   text-align: center;
 }
 
 .c6 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: center;
+}
+
+.c8 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -595,12 +621,12 @@ exports[`Pagination component should render correctly with all the props given 1
 
 .c1 .c3 {
   font-size: 1.2rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 1.6rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -698,11 +724,11 @@ exports[`Pagination component should render correctly with all the props given 1
         class="sc-AxheI c2"
         type="button"
       >
-        <h5
+        <strong
           class="c3 c4"
         >
           1
-        </h5>
+        </strong>
       </button>
     </li>
     <li>
@@ -710,11 +736,11 @@ exports[`Pagination component should render correctly with all the props given 1
         class="sc-AxheI c5"
         type="button"
       >
-        <h5
+        <span
           class="c3 c6"
         >
           2
-        </h5>
+        </span>
       </button>
     </li>
     <li>
@@ -722,11 +748,11 @@ exports[`Pagination component should render correctly with all the props given 1
         class="sc-AxheI c5"
         type="button"
       >
-        <h5
+        <span
           class="c3 c6"
         >
           3
-        </h5>
+        </span>
       </button>
     </li>
     <li>
@@ -739,7 +765,7 @@ exports[`Pagination component should render correctly with all the props given 1
           type="button"
         >
           <h5
-            class="c3 c6"
+            class="c3 c8"
           >
             ...
           </h5>
@@ -751,11 +777,11 @@ exports[`Pagination component should render correctly with all the props given 1
         class="sc-AxheI c5"
         type="button"
       >
-        <h5
+        <span
           class="c3 c6"
         >
           15
-        </h5>
+        </span>
       </button>
     </li>
   </ul>

@@ -31,6 +31,32 @@ exports[`Table component pagination should call onPageChange prop on click on an
 .c27 {
   margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: center;
+}
+
+.c29 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: center;
+}
+
+.c31 {
+  margin: 0;
+  color: inherit;
   font-size: 1.2rem;
   font-weight: 600;
   -webkit-letter-spacing: 0.12rem;
@@ -41,20 +67,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   text-align: center;
 }
 
-.c29 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  text-align: center;
-}
-
-.c31 {
+.c32 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -358,12 +371,12 @@ exports[`Table component pagination should call onPageChange prop on click on an
 
 .c23 .c6 {
   font-size: 1.2rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 1.6rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -562,11 +575,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
 
 .c21 td > .c6 {
   font-size: 1.2rem;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 1.6rem;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
 }
 
 .c2 {
@@ -1510,11 +1523,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
                 class="sc-fzomME c26"
                 type="button"
               >
-                <h5
+                <span
                   class="c6 c27"
                 >
                   1
-                </h5>
+                </span>
               </button>
             </li>
             <li>
@@ -1522,11 +1535,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
                 class="sc-fzomME c28"
                 type="button"
               >
-                <h5
+                <strong
                   class="c6 c29"
                 >
                   2
-                </h5>
+                </strong>
               </button>
             </li>
             <li>
@@ -1534,11 +1547,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
                 class="sc-fzomME c26"
                 type="button"
               >
-                <h5
+                <span
                   class="c6 c27"
                 >
                   3
-                </h5>
+                </span>
               </button>
             </li>
             <li>
@@ -1551,7 +1564,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
                   type="button"
                 >
                   <h5
-                    class="c6 c27"
+                    class="c6 c31"
                   >
                     ...
                   </h5>
@@ -1563,11 +1576,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
                 class="sc-fzomME c26"
                 type="button"
               >
-                <h5
+                <span
                   class="c6 c27"
                 >
                   30
-                </h5>
+                </span>
               </button>
             </li>
             <li>
@@ -1600,7 +1613,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             Viewing
           </span>
           <strong
-            class="c6 c31"
+            class="c6 c32"
           >
              11 - 20 
           </strong>
@@ -1610,7 +1623,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             of
           </span>
           <strong
-            class="c6 c31"
+            class="c6 c32"
           >
              300 
           </strong>
