@@ -1,25 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Medly sidenav header should render properly when it is hovered 1`] = `
+.c1 {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-column-gap: 0.8rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c0 {
   width: 100%;
   overflow: hidden;
   position: relative;
   min-height: 7.2rem;
+  padding: 0 1.9rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  justify-items: center;
-  display: grid;
-  grid-template-columns: 7.2rem calc(25.6rem - 7.2rem);
 }
 
 .c0 svg:last-child {
-  justify-self: left;
-  -webkit-transform: translateX(-1rem);
-  -ms-transform: translateX(-1rem);
-  transform: translateX(-1rem);
   -webkit-transition: opacity 200ms;
   transition: opacity 200ms;
   opacity: 1;
@@ -41,120 +50,133 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
   <div
     class="c0"
   >
-    <svg
-      fill="none"
-      height="29"
-      viewBox="0 0 34 29"
-      width="34"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+    <div
+      class="c1"
     >
-      <mask
+      <svg
+        fill="none"
         height="29"
-        id="mask0"
-        maskUnits="userSpaceOnUse"
+        viewBox="0 0 34 29"
         width="34"
-        x="0"
-        y="0"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <mask
+          height="29"
+          id="mask0"
+          maskUnits="userSpaceOnUse"
+          width="34"
+          x="0"
+          y="0"
+        >
+          <path
+            d="M0 0h34v29H0z"
+            fill="#C4C4C4"
+          />
+        </mask>
+        <g
+          mask="url(#mask0)"
+        >
+          <path
+            d="M31.79 20.587a4.344 4.344 0 0 1-2.815 5.487c-2.3.743-4.775-.51-5.522-2.798L18.822 9.062c-.747-2.288.512-4.744 2.815-5.487 2.304-.74 4.774.512 5.524 2.802l4.629 14.21z"
+            fill="#2ED9C3"
+          />
+          <path
+            d="M0 0h11.832v23.372H0z"
+            fill="url(#pattern0)"
+            transform="matrix(1.1905 0 0 -1.0119 6.694 26.65)"
+          />
+          <path
+            d="M20.205 20.624c.742 2.263-.502 4.694-2.78 5.432-2.278.738-4.726-.5-5.468-2.763L7.28 9.004c-.742-2.26.503-4.694 2.78-5.43 2.276-.737 4.723.5 5.468 2.764l4.678 14.286z"
+            fill="#2ED9C3"
+          />
+          <path
+            d="M0 0h17.255v28.784H0z"
+            fill="url(#pattern1)"
+            transform="matrix(.806 0 0 -.806 6.46 26.293)"
+          />
+          <path
+            d="M12.835 3.573c-2.258-.787-4.736.396-5.527 2.64l-2.47 7.023-2.593 7.315a4.3 4.3 0 0 0 2.657 5.49c2.26.788 4.736-.395 5.527-2.639l2.58-7.277 2.483-7.064c.794-2.243-.397-4.7-2.657-5.488z"
+            fill="#98E9DA"
+          />
+        </g>
+        <defs>
+          <pattern
+            height="1"
+            id="pattern0"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+          >
+            <use
+              xlink:href="#image0"
+            />
+          </pattern>
+          <pattern
+            height="1"
+            id="pattern1"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+          >
+            <use
+              xlink:href="#image1"
+            />
+          </pattern>
+          <image
+            id="image0"
+            xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAPAA8AAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
+          />
+          <image
+            id="image1"
+            xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAWQBZAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
+          />
+        </defs>
+      </svg>
+      <svg
+        fill="none"
+        height="24"
+        viewBox="0 0 130 24"
+        width="130"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M0 0h34v29H0z"
-          fill="#C4C4C4"
-        />
-      </mask>
-      <g
-        mask="url(#mask0)"
-      >
-        <path
-          d="M31.79 20.587a4.344 4.344 0 0 1-2.815 5.487c-2.3.743-4.775-.51-5.522-2.798L18.822 9.062c-.747-2.288.512-4.744 2.815-5.487 2.304-.74 4.774.512 5.524 2.802l4.629 14.21z"
+          d="M.692 2.344c0-1.1.87-2.008 1.995-2.008h.419c.87 0 1.449.456 1.834 1.07l6.823 10.74 6.852-10.774c.42-.679.999-1.036 1.802-1.036h.42a1.99 1.99 0 0 1 1.993 2.008V21.3c0 1.1-.87 1.973-1.994 1.973-1.062 0-1.962-.908-1.962-1.973V7.712l-5.504 8.313c-.42.65-.934 1.036-1.674 1.036-.71 0-1.223-.386-1.64-1.036L4.586 7.776V21.33c0 1.1-.866 1.941-1.963 1.941-1.094 0-1.93-.841-1.93-1.94V2.343zM32.503 21.106V2.47c0-1.132.87-2.005 1.994-2.005h13.097c.963 0 1.77.81 1.77 1.779a1.77 1.77 0 0 1-1.77 1.778H36.459v5.885h9.685c.966 0 1.773.81 1.773 1.813 0 .972-.804 1.747-1.773 1.747H36.46v6.082h11.295c.966 0 1.772.809 1.772 1.778a1.77 1.77 0 0 1-1.772 1.779H34.497c-1.126.005-1.994-.866-1.994-2zM67.232 19.487c4.73 0 7.822-3.203 7.822-7.634v-.064c0-4.43-3.091-7.698-7.822-7.698h-4.44V19.49h4.44v-.002zM58.834 2.472c0-1.131.87-2.005 1.994-2.005h6.404c7.08 0 11.973 4.884 11.973 11.256v.064c0 6.374-4.893 11.321-11.973 11.321h-6.404c-1.124 0-1.994-.873-1.994-2.005V2.473zM88.564 2.278c0-1.1.87-1.973 1.995-1.973 1.094 0 1.962.874 1.962 1.973v17.21h10.2c.998 0 1.802.811 1.802 1.813 0 1-.804 1.81-1.802 1.81H90.559c-1.124 0-1.995-.873-1.995-2.005V2.278zM116.909 14.313l-7.758-10.706c-.256-.387-.451-.842-.451-1.39 0-1.07.87-1.91 1.997-1.91.87 0 1.449.483 1.93 1.196l6.273 9.088 6.372-9.122c.483-.711 1.063-1.196 1.898-1.196 1.159 0 1.93.873 1.93 1.941 0 .546-.256 1.033-.544 1.422l-7.691 10.576V21.3c0 1.098-.865 1.97-1.994 1.97a1.953 1.953 0 0 1-1.962-1.97v-6.987z"
           fill="#2ED9C3"
         />
-        <path
-          d="M0 0h11.832v23.372H0z"
-          fill="url(#pattern0)"
-          transform="matrix(1.1905 0 0 -1.0119 6.694 26.65)"
-        />
-        <path
-          d="M20.205 20.624c.742 2.263-.502 4.694-2.78 5.432-2.278.738-4.726-.5-5.468-2.763L7.28 9.004c-.742-2.26.503-4.694 2.78-5.43 2.276-.737 4.723.5 5.468 2.764l4.678 14.286z"
-          fill="#2ED9C3"
-        />
-        <path
-          d="M0 0h17.255v28.784H0z"
-          fill="url(#pattern1)"
-          transform="matrix(.806 0 0 -.806 6.46 26.293)"
-        />
-        <path
-          d="M12.835 3.573c-2.258-.787-4.736.396-5.527 2.64l-2.47 7.023-2.593 7.315a4.3 4.3 0 0 0 2.657 5.49c2.26.788 4.736-.395 5.527-2.639l2.58-7.277 2.483-7.064c.794-2.243-.397-4.7-2.657-5.488z"
-          fill="#98E9DA"
-        />
-      </g>
-      <defs>
-        <pattern
-          height="1"
-          id="pattern0"
-          patternContentUnits="objectBoundingBox"
-          width="1"
-        >
-          <use
-            xlink:href="#image0"
-          />
-        </pattern>
-        <pattern
-          height="1"
-          id="pattern1"
-          patternContentUnits="objectBoundingBox"
-          width="1"
-        >
-          <use
-            xlink:href="#image1"
-          />
-        </pattern>
-        <image
-          id="image0"
-          xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAPAA8AAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
-        />
-        <image
-          id="image1"
-          xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAWQBZAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
-        />
-      </defs>
-    </svg>
-    <svg
-      fill="none"
-      height="24"
-      viewBox="0 0 130 24"
-      width="130"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M.692 2.344c0-1.1.87-2.008 1.995-2.008h.419c.87 0 1.449.456 1.834 1.07l6.823 10.74 6.852-10.774c.42-.679.999-1.036 1.802-1.036h.42a1.99 1.99 0 0 1 1.993 2.008V21.3c0 1.1-.87 1.973-1.994 1.973-1.062 0-1.962-.908-1.962-1.973V7.712l-5.504 8.313c-.42.65-.934 1.036-1.674 1.036-.71 0-1.223-.386-1.64-1.036L4.586 7.776V21.33c0 1.1-.866 1.941-1.963 1.941-1.094 0-1.93-.841-1.93-1.94V2.343zM32.503 21.106V2.47c0-1.132.87-2.005 1.994-2.005h13.097c.963 0 1.77.81 1.77 1.779a1.77 1.77 0 0 1-1.77 1.778H36.459v5.885h9.685c.966 0 1.773.81 1.773 1.813 0 .972-.804 1.747-1.773 1.747H36.46v6.082h11.295c.966 0 1.772.809 1.772 1.778a1.77 1.77 0 0 1-1.772 1.779H34.497c-1.126.005-1.994-.866-1.994-2zM67.232 19.487c4.73 0 7.822-3.203 7.822-7.634v-.064c0-4.43-3.091-7.698-7.822-7.698h-4.44V19.49h4.44v-.002zM58.834 2.472c0-1.131.87-2.005 1.994-2.005h6.404c7.08 0 11.973 4.884 11.973 11.256v.064c0 6.374-4.893 11.321-11.973 11.321h-6.404c-1.124 0-1.994-.873-1.994-2.005V2.473zM88.564 2.278c0-1.1.87-1.973 1.995-1.973 1.094 0 1.962.874 1.962 1.973v17.21h10.2c.998 0 1.802.811 1.802 1.813 0 1-.804 1.81-1.802 1.81H90.559c-1.124 0-1.995-.873-1.995-2.005V2.278zM116.909 14.313l-7.758-10.706c-.256-.387-.451-.842-.451-1.39 0-1.07.87-1.91 1.997-1.91.87 0 1.449.483 1.93 1.196l6.273 9.088 6.372-9.122c.483-.711 1.063-1.196 1.898-1.196 1.159 0 1.93.873 1.93 1.941 0 .546-.256 1.033-.544 1.422l-7.691 10.576V21.3c0 1.098-.865 1.97-1.994 1.97a1.953 1.953 0 0 1-1.962-1.97v-6.987z"
-        fill="#2ED9C3"
-      />
-    </svg>
+      </svg>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Medly sidenav header should render properly when it is not hovered 1`] = `
+.c1 {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-column-gap: 0.8rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c0 {
   width: 100%;
   overflow: hidden;
   position: relative;
   min-height: 7.2rem;
+  padding: 0 1.9rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  justify-items: center;
-  display: grid;
-  grid-template-columns: 7.2rem calc(25.6rem - 7.2rem);
 }
 
 .c0 svg:last-child {
-  justify-self: left;
-  -webkit-transform: translateX(-1rem);
-  -ms-transform: translateX(-1rem);
-  transform: translateX(-1rem);
   -webkit-transition: opacity 200ms;
   transition: opacity 200ms;
   opacity: 0;
@@ -176,96 +198,100 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
   <div
     class="c0"
   >
-    <svg
-      fill="none"
-      height="29"
-      viewBox="0 0 34 29"
-      width="34"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+    <div
+      class="c1"
     >
-      <mask
+      <svg
+        fill="none"
         height="29"
-        id="mask0"
-        maskUnits="userSpaceOnUse"
+        viewBox="0 0 34 29"
         width="34"
-        x="0"
-        y="0"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <mask
+          height="29"
+          id="mask0"
+          maskUnits="userSpaceOnUse"
+          width="34"
+          x="0"
+          y="0"
+        >
+          <path
+            d="M0 0h34v29H0z"
+            fill="#C4C4C4"
+          />
+        </mask>
+        <g
+          mask="url(#mask0)"
+        >
+          <path
+            d="M31.79 20.587a4.344 4.344 0 0 1-2.815 5.487c-2.3.743-4.775-.51-5.522-2.798L18.822 9.062c-.747-2.288.512-4.744 2.815-5.487 2.304-.74 4.774.512 5.524 2.802l4.629 14.21z"
+            fill="#2ED9C3"
+          />
+          <path
+            d="M0 0h11.832v23.372H0z"
+            fill="url(#pattern0)"
+            transform="matrix(1.1905 0 0 -1.0119 6.694 26.65)"
+          />
+          <path
+            d="M20.205 20.624c.742 2.263-.502 4.694-2.78 5.432-2.278.738-4.726-.5-5.468-2.763L7.28 9.004c-.742-2.26.503-4.694 2.78-5.43 2.276-.737 4.723.5 5.468 2.764l4.678 14.286z"
+            fill="#2ED9C3"
+          />
+          <path
+            d="M0 0h17.255v28.784H0z"
+            fill="url(#pattern1)"
+            transform="matrix(.806 0 0 -.806 6.46 26.293)"
+          />
+          <path
+            d="M12.835 3.573c-2.258-.787-4.736.396-5.527 2.64l-2.47 7.023-2.593 7.315a4.3 4.3 0 0 0 2.657 5.49c2.26.788 4.736-.395 5.527-2.639l2.58-7.277 2.483-7.064c.794-2.243-.397-4.7-2.657-5.488z"
+            fill="#98E9DA"
+          />
+        </g>
+        <defs>
+          <pattern
+            height="1"
+            id="pattern0"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+          >
+            <use
+              xlink:href="#image0"
+            />
+          </pattern>
+          <pattern
+            height="1"
+            id="pattern1"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+          >
+            <use
+              xlink:href="#image1"
+            />
+          </pattern>
+          <image
+            id="image0"
+            xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAPAA8AAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
+          />
+          <image
+            id="image1"
+            xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAWQBZAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
+          />
+        </defs>
+      </svg>
+      <svg
+        fill="none"
+        height="24"
+        viewBox="0 0 130 24"
+        width="130"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M0 0h34v29H0z"
-          fill="#C4C4C4"
-        />
-      </mask>
-      <g
-        mask="url(#mask0)"
-      >
-        <path
-          d="M31.79 20.587a4.344 4.344 0 0 1-2.815 5.487c-2.3.743-4.775-.51-5.522-2.798L18.822 9.062c-.747-2.288.512-4.744 2.815-5.487 2.304-.74 4.774.512 5.524 2.802l4.629 14.21z"
+          d="M.692 2.344c0-1.1.87-2.008 1.995-2.008h.419c.87 0 1.449.456 1.834 1.07l6.823 10.74 6.852-10.774c.42-.679.999-1.036 1.802-1.036h.42a1.99 1.99 0 0 1 1.993 2.008V21.3c0 1.1-.87 1.973-1.994 1.973-1.062 0-1.962-.908-1.962-1.973V7.712l-5.504 8.313c-.42.65-.934 1.036-1.674 1.036-.71 0-1.223-.386-1.64-1.036L4.586 7.776V21.33c0 1.1-.866 1.941-1.963 1.941-1.094 0-1.93-.841-1.93-1.94V2.343zM32.503 21.106V2.47c0-1.132.87-2.005 1.994-2.005h13.097c.963 0 1.77.81 1.77 1.779a1.77 1.77 0 0 1-1.77 1.778H36.459v5.885h9.685c.966 0 1.773.81 1.773 1.813 0 .972-.804 1.747-1.773 1.747H36.46v6.082h11.295c.966 0 1.772.809 1.772 1.778a1.77 1.77 0 0 1-1.772 1.779H34.497c-1.126.005-1.994-.866-1.994-2zM67.232 19.487c4.73 0 7.822-3.203 7.822-7.634v-.064c0-4.43-3.091-7.698-7.822-7.698h-4.44V19.49h4.44v-.002zM58.834 2.472c0-1.131.87-2.005 1.994-2.005h6.404c7.08 0 11.973 4.884 11.973 11.256v.064c0 6.374-4.893 11.321-11.973 11.321h-6.404c-1.124 0-1.994-.873-1.994-2.005V2.473zM88.564 2.278c0-1.1.87-1.973 1.995-1.973 1.094 0 1.962.874 1.962 1.973v17.21h10.2c.998 0 1.802.811 1.802 1.813 0 1-.804 1.81-1.802 1.81H90.559c-1.124 0-1.995-.873-1.995-2.005V2.278zM116.909 14.313l-7.758-10.706c-.256-.387-.451-.842-.451-1.39 0-1.07.87-1.91 1.997-1.91.87 0 1.449.483 1.93 1.196l6.273 9.088 6.372-9.122c.483-.711 1.063-1.196 1.898-1.196 1.159 0 1.93.873 1.93 1.941 0 .546-.256 1.033-.544 1.422l-7.691 10.576V21.3c0 1.098-.865 1.97-1.994 1.97a1.953 1.953 0 0 1-1.962-1.97v-6.987z"
           fill="#2ED9C3"
         />
-        <path
-          d="M0 0h11.832v23.372H0z"
-          fill="url(#pattern0)"
-          transform="matrix(1.1905 0 0 -1.0119 6.694 26.65)"
-        />
-        <path
-          d="M20.205 20.624c.742 2.263-.502 4.694-2.78 5.432-2.278.738-4.726-.5-5.468-2.763L7.28 9.004c-.742-2.26.503-4.694 2.78-5.43 2.276-.737 4.723.5 5.468 2.764l4.678 14.286z"
-          fill="#2ED9C3"
-        />
-        <path
-          d="M0 0h17.255v28.784H0z"
-          fill="url(#pattern1)"
-          transform="matrix(.806 0 0 -.806 6.46 26.293)"
-        />
-        <path
-          d="M12.835 3.573c-2.258-.787-4.736.396-5.527 2.64l-2.47 7.023-2.593 7.315a4.3 4.3 0 0 0 2.657 5.49c2.26.788 4.736-.395 5.527-2.639l2.58-7.277 2.483-7.064c.794-2.243-.397-4.7-2.657-5.488z"
-          fill="#98E9DA"
-        />
-      </g>
-      <defs>
-        <pattern
-          height="1"
-          id="pattern0"
-          patternContentUnits="objectBoundingBox"
-          width="1"
-        >
-          <use
-            xlink:href="#image0"
-          />
-        </pattern>
-        <pattern
-          height="1"
-          id="pattern1"
-          patternContentUnits="objectBoundingBox"
-          width="1"
-        >
-          <use
-            xlink:href="#image1"
-          />
-        </pattern>
-        <image
-          id="image0"
-          xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAPAA8AAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
-        />
-        <image
-          id="image1"
-          xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAWQBZAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
-        />
-      </defs>
-    </svg>
-    <svg
-      fill="none"
-      height="24"
-      viewBox="0 0 130 24"
-      width="130"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M.692 2.344c0-1.1.87-2.008 1.995-2.008h.419c.87 0 1.449.456 1.834 1.07l6.823 10.74 6.852-10.774c.42-.679.999-1.036 1.802-1.036h.42a1.99 1.99 0 0 1 1.993 2.008V21.3c0 1.1-.87 1.973-1.994 1.973-1.062 0-1.962-.908-1.962-1.973V7.712l-5.504 8.313c-.42.65-.934 1.036-1.674 1.036-.71 0-1.223-.386-1.64-1.036L4.586 7.776V21.33c0 1.1-.866 1.941-1.963 1.941-1.094 0-1.93-.841-1.93-1.94V2.343zM32.503 21.106V2.47c0-1.132.87-2.005 1.994-2.005h13.097c.963 0 1.77.81 1.77 1.779a1.77 1.77 0 0 1-1.77 1.778H36.459v5.885h9.685c.966 0 1.773.81 1.773 1.813 0 .972-.804 1.747-1.773 1.747H36.46v6.082h11.295c.966 0 1.772.809 1.772 1.778a1.77 1.77 0 0 1-1.772 1.779H34.497c-1.126.005-1.994-.866-1.994-2zM67.232 19.487c4.73 0 7.822-3.203 7.822-7.634v-.064c0-4.43-3.091-7.698-7.822-7.698h-4.44V19.49h4.44v-.002zM58.834 2.472c0-1.131.87-2.005 1.994-2.005h6.404c7.08 0 11.973 4.884 11.973 11.256v.064c0 6.374-4.893 11.321-11.973 11.321h-6.404c-1.124 0-1.994-.873-1.994-2.005V2.473zM88.564 2.278c0-1.1.87-1.973 1.995-1.973 1.094 0 1.962.874 1.962 1.973v17.21h10.2c.998 0 1.802.811 1.802 1.813 0 1-.804 1.81-1.802 1.81H90.559c-1.124 0-1.995-.873-1.995-2.005V2.278zM116.909 14.313l-7.758-10.706c-.256-.387-.451-.842-.451-1.39 0-1.07.87-1.91 1.997-1.91.87 0 1.449.483 1.93 1.196l6.273 9.088 6.372-9.122c.483-.711 1.063-1.196 1.898-1.196 1.159 0 1.93.873 1.93 1.941 0 .546-.256 1.033-.544 1.422l-7.691 10.576V21.3c0 1.098-.865 1.97-1.994 1.97a1.953 1.953 0 0 1-1.962-1.97v-6.987z"
-        fill="#2ED9C3"
-      />
-    </svg>
+      </svg>
+    </div>
   </div>
 </div>
 `;

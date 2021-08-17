@@ -1,8 +1,10 @@
-import { DateRangeIcon } from '@medly-components/icons';
+import { ChevronDownIcon, DateRangeIcon } from '@medly-components/icons';
 import React from 'react';
-import { DateIconWrapper } from '../../DatePicker/DatePicker.styled';
+import { DateIconWrapper as IconWrapper } from '../../DatePicker/DatePicker.styled';
 import datePickerPattern from '../../DatePicker/datePickerPattern';
+import { HelperAndErrorTextTooltip } from '../../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import * as TextFieldStyled from '../../TextField/Styled';
+import { PopoverTypes } from '../types';
 import DateRangeTextField from './DateRangeTextField';
 import { Wrapper } from './DateRangeTextFields.styled';
 import InputSeparator from './InputSeparator';
@@ -24,7 +26,11 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
             helperText,
             displayFormat,
             startDateLabel,
-            endDateLabel
+            endDateLabel,
+            showTooltipForHelperAndErrorText,
+            showChevronIcon,
+            activePopover,
+            onCustomRangeIconClick
         } = props,
         {
             mask,
@@ -64,9 +70,15 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
         };
 
     const Prefix = () => (
-        <DateIconWrapper {...iconProps}>
+        <IconWrapper {...iconProps}>
             <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
-        </DateIconWrapper>
+        </IconWrapper>
+    );
+
+    const Suffix = () => (
+        <IconWrapper {...iconProps}>
+            <ChevronDownIcon id={`${id}-custom-date-range-options-icon`} onClick={onCustomRangeIconClick} size={size} />
+        </IconWrapper>
     );
 
     return (
@@ -79,6 +91,8 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                 isErrorPresent={isErrorPresent}
                 isLabelPresent
                 isActive={isActive}
+                showChevronIcon={showChevronIcon}
+                areCustomOptionsVisible={isActive && activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS}
                 onBlur={validateOnWrapperBlur}
             >
                 {showDecorators && (
@@ -106,8 +120,16 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                     label={endDateLabel}
                     {...commonTextProps}
                 />
+                {showTooltipForHelperAndErrorText && (
+                    <HelperAndErrorTextTooltip id={id} errorText={errorText || builtInErrorMessage} helperText={helperText} />
+                )}
+                {showChevronIcon && (
+                    <TextFieldStyled.Suffix size={size}>
+                        <Suffix />
+                    </TextFieldStyled.Suffix>
+                )}
             </Wrapper>
-            {showDecorators && (
+            {showDecorators && !showTooltipForHelperAndErrorText && (
                 <TextFieldStyled.HelperText id={`${id}-helper-text`} variant={variant} onClick={stopPropagation} size={size}>
                     {errorText || builtInErrorMessage || helperText}
                 </TextFieldStyled.HelperText>

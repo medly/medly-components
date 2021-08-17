@@ -13,6 +13,7 @@ import dateRangePicker from './dateRangePicker';
 import dialogBox from './dialog-box';
 import drawer from './drawer';
 import font from './font';
+import helperAndErrorTextTooltip from './helperAndErrorTextTooltip';
 import input from './input';
 import label from './label';
 import link from './link';
@@ -63,5 +64,6 @@ export const coreDefaultTheme = {
     toast,
     toggle,
     pagination,
-    dialogBox
+    dialogBox,
+    helperAndErrorTextTooltip
 };

@@ -34,9 +34,11 @@ export interface CoreTheme {
     textField?: CoreThemes.TextFieldTheme;
     toast?: CoreThemes.ToastTheme;
     pagination?: CoreThemes.PaginationTheme;
+    helperAndErrorTextTooltip?: CoreThemes.HelperAndErrorTextTooltipTheme;
 }
 
 export interface LayoutTheme {
+    header?: LayoutThemes.HeaderTheme;
     sideNav?: LayoutThemes.SideNavTheme;
     sidePanel?: LayoutThemes.SidePanelTheme;
 }

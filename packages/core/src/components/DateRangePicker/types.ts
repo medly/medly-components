@@ -2,6 +2,19 @@ import { HTMLProps, Omit } from '@medly-components/utils';
 import { DisplayFormat } from '../DatePicker/types';
 import { Placement } from '../Popover/types';
 
+export enum DateRangeSelectionEnum {
+    WEEK = 'WEEK',
+    MONTH = 'MONTH',
+    YEAR = 'YEAR',
+    CUSTOM = 'CUSTOM',
+    QUARTER = 'QUARTER'
+}
+
+export enum PopoverTypes {
+    CALENDAR = 'CALENDAR',
+    CUSTOM_RANGE_OPTIONS = 'CUSTOM_RANGE_OPTIONS'
+}
+
 export type DateRangeType = { startDate: Date | null; endDate: Date | null };
 
 export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height' | 'value' | 'onChange'> & {
@@ -23,7 +36,7 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     fullWidth?: boolean;
     /** Disable date selection */
     disabled?: boolean;
-    /** Show prefix, suffix, helper text, and character count elements. If set to false, only the input and label will be rendered. */
+    /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered. */
     showDecorators?: boolean;
     /** Popover placement */
     popoverPlacement?: Placement;
@@ -41,4 +54,8 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     endDateLabel?: string;
     /** Set it true to show single month in calendar popup */
     withSingleMonth?: boolean;
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
+    /** Provide date range selection custom options */
+    customDateRangeOptions?: Array<{ label: string; value: DateRangeSelectionEnum }>;
 };
