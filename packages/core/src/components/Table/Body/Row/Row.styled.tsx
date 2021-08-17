@@ -82,6 +82,13 @@ const getBorderStyle = (rowHoveredStyle: 'shadow' | 'outlined') =>
           `
         : ``;
 
+const getPadding = (rowHoveredStyle: 'shadow' | 'outlined') =>
+    rowHoveredStyle === 'outlined'
+        ? css`
+              padding-bottom: 0.1rem;
+          `
+        : '';
+
 const normalStyle = css<StyledProps>`
     &&:hover {
         z-index: 2;
@@ -108,12 +115,11 @@ const normalStyle = css<StyledProps>`
         }
     }
 
-    &:not(:hover) {
-        ${({ theme }) => getBorderStyle(theme.table.row.hoveredStyle.style)};
-    }
+    ${({ theme }) => getBorderStyle(theme.table.row.hoveredStyle.style)};
 
     &:not(:last-child) {
-        border-bottom: 0.1rem solid ${({ theme }) => theme.table.row.separatorColor};
+        border-bottom: 0.1rem solid red;
+        ${({ theme }) => getPadding(theme.table.row.hoveredStyle.style)}
     }
 `;
 
