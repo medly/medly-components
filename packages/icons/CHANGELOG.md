@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.6.24...@medly-components/icons@1.7.0) (2021-08-17)
+
+
+### Features
+
+* **icons:** include fillOpacity prop for SvgIcon ([#384](https://github.com/medly/medly-components/issues/384)) ([824e3ed](https://github.com/medly/medly-components/commit/824e3ed5bfea5956ece56b1fda8d67b621df2dab))
+
+
+
+
+
 ## [1.6.24](https://github.com/medly/medly-components/compare/@medly-components/icons@1.6.23...@medly-components/icons@1.6.24) (2021-08-17)
 
 **Note:** Version bump only for package @medly-components/icons
