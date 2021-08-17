@@ -40,5 +40,5 @@ SvgIconStyled.displayName = 'SvgIcon';
 
 SvgIconStyled.defaultProps = {
     size: 'M',
-    fillOpacity: '1'
+    fillOpacity: 1
 };
