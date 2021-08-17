@@ -13,7 +13,7 @@ export type Props = {
     startDateLabel: string;
     endDateLabel: string;
     selectedDates: DateRangeProps['value'];
-    showOptions?: boolean;
+    showChevronIcon?: boolean;
     activePopover: PopoverTypes;
     onDateChange: DateRangeProps['onChange'];
     displayFormat: DateRangeProps['displayFormat'];

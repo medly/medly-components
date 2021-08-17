@@ -7,7 +7,7 @@ import DateRangeTextFields from './DateRangeTextFields';
 import { dateRangeHelpers } from './helpers/dateRangeHelpers';
 import { DateRangeProps, DateRangeSelectionEnum, PopoverTypes } from './types';
 
-export const DateRangePicker: FC<DateRangeProps>  = React.memo(props => {
+export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
     const {
         id,
         value,
@@ -41,12 +41,10 @@ export const DateRangePicker: FC<DateRangeProps>  = React.memo(props => {
         [activePopover, setActivePopover] = useState<PopoverTypes>(PopoverTypes.CALENDAR),
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
         focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current.focus(), []),
-        wrapperMinWidth = useMemo(() => {
-            if (!minWidth) {
-                return customDateRangeOptions.length ? '38rem' : '33.8rem';
-            }
-            return minWidth;
-        }, [customDateRangeOptions, minWidth]),
+        wrapperMinWidth = useMemo(() => (minWidth ?? customDateRangeOptions.length ? '38rem' : '33.8rem'), [
+            customDateRangeOptions,
+            minWidth
+        ]),
         onCustomRangeIconClick = useCallback(() => {
             if (!disabled) {
                 if (activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS) {
@@ -83,10 +81,7 @@ export const DateRangePicker: FC<DateRangeProps>  = React.memo(props => {
             [onChange, focusElement]
         );
 
-    useOuterClickNotifier(() => {
-        setActive(false);
-    }, wrapperRef);
-
+    useOuterClickNotifier(() => setActive(false), wrapperRef);
     useUpdateEffect(() => focusElement(focusedElement), [focusedElement]);
 
     return (
@@ -115,7 +110,7 @@ export const DateRangePicker: FC<DateRangeProps>  = React.memo(props => {
                 onBlur={onBlur}
                 showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
                 onCustomRangeIconClick={onCustomRangeIconClick}
-                showOptions={!!customDateRangeOptions.length}
+                showChevronIcon={!!customDateRangeOptions.length}
             />
             {isActive &&
                 (activePopover === PopoverTypes.CALENDAR ? (

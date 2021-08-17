@@ -28,7 +28,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
             startDateLabel,
             endDateLabel,
             showTooltipForHelperAndErrorText,
-            showOptions,
+            showChevronIcon,
             activePopover,
             onCustomRangeIconClick
         } = props,
@@ -122,7 +122,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                 {showTooltipForHelperAndErrorText && (
                     <HelperAndErrorTextTooltip id={id} errorText={errorText || builtInErrorMessage} helperText={helperText} />
                 )}
-                {showOptions && (
+                {showChevronIcon && (
                     <TextFieldStyled.Suffix size={size}>
                         <Suffix />
                     </TextFieldStyled.Suffix>

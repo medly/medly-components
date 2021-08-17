@@ -13,7 +13,7 @@ import { useState } from 'react';
 import { DateRangeType, DateRangeSelectionEnum } from './types';
 
 <Meta
-    title="Core"
+    title="Core/DateRangePicker"
     component={DateRangePicker}
     parameters={{
         jest: ['DateRangePicker.test.tsx'],
@@ -33,32 +33,34 @@ const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: nu
 return <DateRangePicker value={dates} onChange={setDates} />;
 ```
 
-<Story name="DateRangePicker">
-    {() => {
-        const [dates, setDates] = useState({ startDate: null, endDate: null });
-        return (
-            <DateRangePicker
-                id="contract"
-                displayFormat={select('Display Format', displayFormats, 'MM/dd/yyyy')}
-                required={boolean('Required', false)}
-                startDateLabel="From"
-                endDateLabel="To"
-                value={dates}
-                onChange={setDates}
-                size={select('Size', ['S', 'M'], 'M')}
-                popoverPlacement={select('Placement', placement, 'bottom-start')}
-                variant={select('Variant', ['filled', 'outlined'], 'filled')}
-                fullWidth={boolean('Full Width', false)}
-                disabled={boolean('Disabled', false)}
-                withSingleMonth={boolean('With Single Month', false)}
-                errorText={text('Error Text', '')}
-                helperText={text('Helper Text', '')}
-                minSelectableDate={new Date(1901, 0, 1)}
-                maxSelectableDate={new Date(2100, 11, 1)}
-            />
-        );
-    }}
-</Story>
+<Preview withToolbar>
+    <Story name="Default">
+        {() => {
+            const [dates, setDates] = useState({ startDate: null, endDate: null });
+            return (
+                <DateRangePicker
+                    id="contract"
+                    displayFormat={select('Display Format', displayFormats, 'MM/dd/yyyy')}
+                    required={boolean('Required', false)}
+                    startDateLabel="From"
+                    endDateLabel="To"
+                    value={dates}
+                    onChange={setDates}
+                    size={select('Size', ['S', 'M'], 'M')}
+                    popoverPlacement={select('Placement', placement, 'bottom-start')}
+                    variant={select('Variant', ['filled', 'outlined'], 'filled')}
+                    fullWidth={boolean('Full Width', false)}
+                    disabled={boolean('Disabled', false)}
+                    withSingleMonth={boolean('With Single Month', false)}
+                    errorText={text('Error Text', '')}
+                    helperText={text('Helper Text', '')}
+                    minSelectableDate={new Date(1901, 0, 1)}
+                    maxSelectableDate={new Date(2100, 11, 1)}
+                />
+            );
+        }}
+    </Story>
+</Preview>
 
 ### Validations
 
@@ -101,6 +103,7 @@ const FormWithDatePicker: React.FC = () => {
 User can provide custom date range selection options using `customDateRangeOptions`, here is the example-
 
 ```tsx
+import { DateRangePicker, DateRangeSelectionEnum } from '@medly-components/core';
 const DateRangePickerWithCustomDateRangeOptions: React.FC = () => {
     const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null });
     return <DateRangePicker value={dates} onChange={setDates} customDateRangeOptions={customDateRangeOptions} />;
@@ -115,6 +118,18 @@ const DateRangePickerWithCustomDateRangeOptions: React.FC = () => {
                 <DateRangePicker
                     value={dates}
                     onChange={setDates}
+                    displayFormat={select('Display Format', displayFormats, 'MM/dd/yyyy')}
+                    required={boolean('Required', false)}
+                    size={select('Size', ['S', 'M'], 'M')}
+                    popoverPlacement={select('Placement', placement, 'bottom-start')}
+                    variant={select('Variant', ['filled', 'outlined'], 'filled')}
+                    fullWidth={boolean('Full Width', false)}
+                    disabled={boolean('Disabled', false)}
+                    withSingleMonth={boolean('With Single Month', false)}
+                    errorText={text('Error Text', '')}
+                    helperText={text('Helper Text', '')}
+                    minSelectableDate={new Date(1901, 0, 1)}
+                    maxSelectableDate={new Date(2100, 11, 1)}
                     customDateRangeOptions={[
                         { label: 'Current Week', value: DateRangeSelectionEnum.WEEK },
                         { label: 'Current Month', value: DateRangeSelectionEnum.MONTH },
