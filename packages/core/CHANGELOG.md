@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.16.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.15.1...@medly-components/core@2.16.0) (2021-08-17)
+
+
+### Features
+
+* **core:** add custom range selection options in date range picker ([#382](https://github.com/medly/medly-components/issues/382)) ([aece055](https://github.com/medly/medly-components/commit/aece0558151c1c194152e34cd0103887bf4c33e6))
+
+
+
+
+
+## [2.15.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.15.0...@medly-components/core@2.15.1) (2021-08-17)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
 # [2.15.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.14.0...@medly-components/core@2.15.0) (2021-08-16)
 
 

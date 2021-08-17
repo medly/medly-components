@@ -1,0 +1,78 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import * as stories from './useKeyPress.stories';
+
+<Meta title="Utils/Hooks/useKeyPress" />
+
+# useKeyPress
+
+A hook that elegantly manages `KeyboardEvent` of `keyup` and `keydown`.
+
+### Basic usage
+
+To listen to a single key press event, you can either pass a single string value to use `useKeyPress` hook, or you can pass an array with a single element.
+
+<Preview withToolbar>{stories.Basic()}</Preview>
+
+```tsx
+export default = () => {
+    const [counter, setCounter] = useState<number>(0),
+      arrowUpPressed = useKeyPress('ArrowUp'),
+      arrowDownPressed = useKeyPress(['ArrowDown']);
+
+    useEffect(() => { arrowUpPressed && setCounter(s => s + 1) }, [arrowUpPressed]);
+    useEffect(() => { arrowDownPressed && setCounter(s => s - 1) }, [arrowDownPressed]);
+
+    return (
+        <>
+            <Text>Try pressing the following: </Text>
+            <div>
+                <Text>1. Press ArrowUp ⬆️ key to increase the number</Text>
+            </div>
+            <div>
+                <Text>2. Press ArrowDown ⬇️ key to decrease the number</Text>
+            </div>
+            <div>
+                <Text textWeight="Strong">{`counter: ${counter}`}</Text>
+            </div>
+        </>
+    );
+};
+```
+
+### Compound mode
+
+You can also pass multiple keys. To pass multiple keys, you have to send them as an array of strings.
+
+<Preview withToolbar>{stories.Compound()}</Preview>
+
+```tsx
+export default = () => {
+    const isShiftCPressed = useKeyPress(['Shift', 'C']),
+        isDhjPressed = useKeyPress(['d', 'h', 'j'], true);
+
+    return (
+        <>
+            <Text>Try pressing the following keys:</Text>
+            <Div>
+                1. <Text textWeight={isShiftCPressed ? 'Strong' : 'Regular'}>Shift + C</Text>
+            </Div>
+            <Div>
+                2. <Text textWeight={isDhjPressed ? 'Strong' : 'Regular'}>D + H + J</Text>
+            </Div>
+            <DisplayDiv>
+                {isShiftCPressed && '😊'}
+                {isDhjPressed && '👌🏻'}
+            </DisplayDiv>
+        </>
+    );
+};
+```
+
+### API
+
+```tsx
+useKeyPress(
+  targetKeys: Array<string>,
+  defaultPrevented?: boolean
+)
+```

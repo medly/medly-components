@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Button from '../Button';
 import { Placement } from '../Popover/types';
 import { DateRangePicker } from './DateRangePicker';
-import { DateRangeProps, DateRangeType } from './types';
+import { DateRangeProps, DateRangeSelectionEnum, DateRangeType } from './types';
 
 export const placement: Placement[] = [
     'top-start',
@@ -33,6 +33,14 @@ export const displayFormats: DateRangeProps['displayFormat'][] = [
     'MM-yyyy-dd',
     'yyyy-dd-MM',
     'yyyy-MM-dd'
+];
+
+export const CustomDateRangeOptions = [
+    { label: 'Current Week', value: DateRangeSelectionEnum.WEEK },
+    { label: 'Current Month', value: DateRangeSelectionEnum.MONTH },
+    { label: 'Current Quarter', value: DateRangeSelectionEnum.QUARTER },
+    { label: 'Current Year', value: DateRangeSelectionEnum.YEAR },
+    { label: 'Custom', value: DateRangeSelectionEnum.CUSTOM }
 ];
 
 export const ThemeInterface: React.FC<DateRangePickerTheme> = () => null;
