@@ -1,4 +1,4 @@
-import { render, screen } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import React from 'react';
 import Logo from './Logo';
 
@@ -20,5 +20,13 @@ describe('Logo', () => {
 
         expect(screen.getByText('My Logo')).toBeInTheDocument();
         expect(screen.queryByText('My Name')).not.toBeInTheDocument();
+    });
+
+    it('should call onClick function on clicking on the logo', () => {
+        const mockOnClick = jest.fn();
+        subject({ logo: <DummyLogo />, name: <DummyName />, onClick: mockOnClick });
+
+        fireEvent.click(screen.getByText('My Name'));
+        expect(mockOnClick).toHaveBeenCalled();
     });
 });

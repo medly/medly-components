@@ -8,7 +8,7 @@ const getCurrentMonthDateRange = (): DateRangeType => {
 
 const getCurrentWeekDateRange = (): DateRangeType => {
     const currentDate = new Date(Date.now());
-    return { startDate: startOfWeek(currentDate), endDate: endOfWeek(currentDate) };
+    return { startDate: startOfWeek(currentDate, { weekStartsOn: 1 }), endDate: endOfWeek(currentDate, { weekStartsOn: 1 }) };
 };
 
 const getCurrentYearDateRange = (): DateRangeType => {
