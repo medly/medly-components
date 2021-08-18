@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.28.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.27.4...@medly-components/layout@1.28.0) (2021-08-18)
+
+
+### Features
+
+* add onClick prop in Logo component ([#389](https://github.com/medly/medly-components/issues/389)) ([6bbc50d](https://github.com/medly/medly-components/commit/6bbc50dd5a0960bccc1b462a922fe7b6ac4a2119))
+
+
+
+
+
 ## [1.27.4](https://github.com/medly/medly-components/compare/@medly-components/layout@1.27.3...@medly-components/layout@1.27.4) (2021-08-18)
 
 **Note:** Version bump only for package @medly-components/layout
