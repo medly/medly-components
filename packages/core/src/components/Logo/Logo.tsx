@@ -4,8 +4,8 @@ import MedlyLogo from './assets/MLogo.svg';
 import { Container } from './Logo.styled';
 import { LogoProps } from './types';
 
-const Logo: React.FC<LogoProps> = ({ showName, logo, name }) => (
-    <Container>
+const Logo: React.FC<LogoProps> = ({ showName, logo, name, onClick }) => (
+    <Container onClick={onClick}>
         {logo}
         {showName && name}
     </Container>
