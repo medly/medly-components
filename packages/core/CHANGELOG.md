@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.16.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.16.1...@medly-components/core@2.16.2) (2021-08-18)
+
+
+### Bug Fixes
+
+* **core:** fix date range picker min width issue ([7ee0fc3](https://github.com/medly/medly-components/commit/7ee0fc3cdf1ffd6f652bba8aadcb00c7c64154aa))
+
+
+
+
+
 ## [2.16.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.16.0...@medly-components/core@2.16.1) (2021-08-17)
 
 **Note:** Version bump only for package @medly-components/core
