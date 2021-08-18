@@ -434,7 +434,7 @@ describe('DateRangePicker', () => {
         });
 
         test.each([
-            ['Current Week', { startDate: new Date(2021, 7, 8), endDate: new Date(2021, 7, 14, 23, 59, 59, 999) }],
+            ['Current Week', { startDate: new Date(2021, 7, 9), endDate: new Date(2021, 7, 15, 23, 59, 59, 999) }],
             ['Current Month', { startDate: new Date(2021, 7, 1), endDate: new Date(2021, 7, 31, 23, 59, 59, 999) }],
             ['Current Quarter', { startDate: new Date(2021, 6, 1), endDate: new Date(2021, 8, 30, 23, 59, 59, 999) }],
             ['Current Year', { startDate: new Date(2021, 0, 1), endDate: new Date(2021, 11, 31, 23, 59, 59, 999) }]
