@@ -5,4 +5,6 @@ export const Container = styled.div`
     grid-auto-flow: column;
     grid-column-gap: 0.8rem;
     align-items: center;
-`
+    user-select: none;
+    cursor: ${({ onClick }) => onClick && 'pointer'};
+`;
