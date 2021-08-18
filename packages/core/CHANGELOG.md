@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.16.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.16.2...@medly-components/core@2.16.3) (2021-08-18)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
 ## [2.16.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.16.1...@medly-components/core@2.16.2) (2021-08-18)
 
 
