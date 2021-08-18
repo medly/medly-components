@@ -1,7 +1,7 @@
 import { MenuIcon } from '@medly-components/icons';
 import { breakpoints, media, styled } from '@medly-components/utils';
 
-export const Container = styled.div`
+export const Container = styled.header`
     display: flex;
     align-items: center;
     background: ${({ theme }) => theme.header.backgroundColor};
