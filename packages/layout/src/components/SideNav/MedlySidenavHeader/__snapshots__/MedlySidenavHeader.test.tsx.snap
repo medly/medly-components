@@ -13,6 +13,9 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  padding: 0;
+  border: unset;
+  background: transparent;
 }
 
 .c0 {
@@ -54,7 +57,7 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
   <div
     class="c0"
   >
-    <div
+    <button
       class="c1"
     >
       <svg
@@ -147,7 +150,7 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
           fill="#2ED9C3"
         />
       </svg>
-    </div>
+    </button>
   </div>
 </div>
 `;
@@ -165,6 +168,9 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  padding: 0;
+  border: unset;
+  background: transparent;
 }
 
 .c0 {
@@ -206,7 +212,7 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
   <div
     class="c0"
   >
-    <div
+    <button
       class="c1"
     >
       <svg
@@ -299,7 +305,7 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
           fill="#2ED9C3"
         />
       </svg>
-    </div>
+    </button>
   </div>
 </div>
 `;
