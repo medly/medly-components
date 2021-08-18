@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.17.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.17.0...@medly-components/core@2.17.1) (2021-08-18)
+
+
+### Bug Fixes
+
+* **core:** update the start day of the date range's current week selection ([c0f46fe](https://github.com/medly/medly-components/commit/c0f46feede765db491dc224c8b85181e0268f7f5))
+
+
+
+
+
 # [2.17.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.16.3...@medly-components/core@2.17.0) (2021-08-18)
 
 
