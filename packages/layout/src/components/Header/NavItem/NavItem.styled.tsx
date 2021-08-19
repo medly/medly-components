@@ -32,7 +32,7 @@ export const NavItem = styled.button<NavItemProps>`
             content: '';
             position: absolute;
             width: calc(100% - 1.6rem * 2);
-            top: calc((${theme.header.navItem.height.desktop} - ${theme.header.height}) / 2);
+            top: calc((${theme.header.navItem.height.desktop} - ${theme.header.height.desktop}) / 2);
             left: 1.6rem;
             background: ${theme.header.navItem.activeIndicatorColor};
             height: 4px;
