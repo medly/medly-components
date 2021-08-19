@@ -35,7 +35,7 @@ describe('Table component', () => {
                 onPageChange: mockOnPageChange
             };
 
-        xit('should call onPageChange prop on click on any page', () => {
+        it.skip('should call onPageChange prop on click on any page', () => {
             const { container } = renderTable({ ...commonProps, defaultActivePage: 2 });
             expect(container).toMatchSnapshot();
             // @ts-ignore
