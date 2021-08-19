@@ -34,7 +34,7 @@ export const Pagination: FC<PaginationProps> & WithStyle = React.memo(
             else
                 links.push(
                     <PageNumberButton key={i} onClick={onClickHandler(linkItems[i])} isActive={linkItems[i] === currentPage}>
-                        <Text textVariant="h5" textAlign="center" textWeight={linkItems[i] === currentPage ? 'Strong' : 'Medium'}>
+                        <Text textAlign="center" textWeight={linkItems[i] === currentPage ? 'Strong' : 'Medium'}>
                             {linkItems[i]}
                         </Text>
                     </PageNumberButton>

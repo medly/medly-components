@@ -1,4 +1,5 @@
-import { styled } from '@medly-components/utils';
+import { Theme } from '@medly-components/theme';
+import { css, styled } from '@medly-components/utils';
 import Text from '../../Text';
 import { TableProps } from '../types';
 
@@ -14,6 +15,17 @@ export const TFoot = styled('tfoot')<{ showWithCardStyle: boolean; tableSize: Ta
     border-top: ${({ theme, showWithCardStyle }) => !showWithCardStyle && `0.1rem solid ${theme.table.borderColor}`};
 `;
 
+const getStyling = ({ theme }: { theme: Theme }) => {
+    const {variants} = theme.font;
+    const {fontSize, letterSpacing, lineHeight} = variants[theme.pagination.fontVariant];
+
+    return css`
+        font-size: ${fontSize};
+        letter-spacing: ${letterSpacing};
+        line-height: ${lineHeight};
+    `;
+};
+
 export const FootRow = styled('tr')`
     width: 100%;
     display: flex;
@@ -27,7 +39,6 @@ export const FootRow = styled('tr')`
     }
 
     td > ${Text.Style} {
-        line-height: 2rem;
-        font-size: 1.2rem;
+        ${getStyling}
     }
 `;

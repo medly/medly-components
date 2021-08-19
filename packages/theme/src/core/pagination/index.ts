@@ -4,6 +4,7 @@ import { PaginationTheme } from './types';
 const { grey, black, white, blue } = colors;
 
 const pagination: PaginationTheme = {
+    fontVariant: 'h5',
     pageNumber: {
         color: {
             default: grey[800],
@@ -17,7 +18,7 @@ const pagination: PaginationTheme = {
             pressed: grey[100],
             active: blue[100]
         },
-        borderRadius: '50%',
+        borderRadius: '50%'
     },
     pageNav: {
         color: {
