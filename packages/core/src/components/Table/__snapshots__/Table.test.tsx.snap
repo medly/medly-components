@@ -1639,6 +1639,855 @@ exports[`Table component pagination should call onPageChange prop on click on an
 </div>
 `;
 
+exports[`Table component pagination should call onPageChange prop on click on any page 2`] = `
+<div>
+  <div
+    class="sc-fznyAO iXmNqk"
+  >
+    4
+  </div>
+  <table
+    class="sc-fznKkj dvcpIE"
+  >
+    <thead
+      class="sc-fznAgC jIiFJl"
+    >
+      <tr
+        class="sc-fzqAui ifFgUT"
+        style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
+      >
+        <th
+          class="sc-fznLPX cdQXya"
+        >
+          <button
+            class="sc-fzomuh jcDIXA"
+          >
+            <span
+              class="sc-AxjAm ktSLrw"
+            >
+              Name
+            </span>
+            <svg
+              class="sc-AxirZ ixFoSd"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                fill="#435465"
+              />
+            </svg>
+          </button>
+          <span
+            class="sc-fzoaKM clbPnL"
+          />
+        </th>
+        <th
+          class="sc-fznZeY lksxcJ"
+          style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+        >
+          <span
+            class="sc-AxjAm sc-fzokOt bJhpXt"
+          >
+            Marks
+          </span>
+          <div
+            class="sc-fznLPX cdQXya"
+          >
+            <button
+              class="sc-fzomuh dQbNwz"
+            >
+              <span
+                class="sc-AxjAm ktSLrw"
+              >
+                Maths
+              </span>
+              <svg
+                class="sc-AxirZ ixFoSd"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                  fill="#435465"
+                />
+              </svg>
+            </button>
+            <span
+              class="sc-fzoaKM clbPnL"
+            />
+          </div>
+          <div
+            class="sc-fznLPX cdQXya"
+          >
+            <button
+              class="sc-fzomuh dQbNwz"
+            >
+              <span
+                class="sc-AxjAm ktSLrw"
+              >
+                Science
+              </span>
+              <svg
+                class="sc-AxirZ ixFoSd"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                  fill="#435465"
+                />
+              </svg>
+            </button>
+            <span
+              class="sc-fzoaKM clbPnL"
+            />
+          </div>
+        </th>
+        <th
+          class="sc-fznLPX cdQXya"
+        >
+          <button
+            class="sc-fzomuh dQbNwz"
+          >
+            <span
+              class="sc-AxjAm ktSLrw"
+            >
+              Age
+            </span>
+            <svg
+              class="sc-AxirZ ixFoSd"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                fill="#435465"
+              />
+            </svg>
+          </button>
+          <span
+            class="sc-fzoaKM clbPnL"
+          />
+        </th>
+        <th
+          class="sc-fznLPX cdQXya"
+        >
+          <button
+            class="sc-fzomuh jcDIXA"
+          >
+            <span
+              class="sc-AxjAm ktSLrw"
+            >
+              Passed
+            </span>
+            <svg
+              class="sc-AxirZ ixFoSd"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                fill="#435465"
+              />
+            </svg>
+          </button>
+          <span
+            class="sc-fzoaKM clbPnL"
+          />
+        </th>
+        <th
+          class="sc-fznLPX cdQXya"
+        >
+          <button
+            class="sc-fzomuh dQbNwz"
+          >
+            <span
+              class="sc-AxjAm ktSLrw"
+            >
+              Rating
+            </span>
+            <svg
+              class="sc-AxirZ ixFoSd"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                fill="#435465"
+              />
+            </svg>
+          </button>
+          <span
+            class="sc-fzoaKM clbPnL"
+          />
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sc-fzplWN skoPc"
+    >
+      <tr
+        class="sc-fznxKY hnUAYw"
+        style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
+      >
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Albus Percival Wulfric Brian Dumbledore"
+          >
+            Albus Percival Wulfric Brian Dumbledore
+          </span>
+        </td>
+        <td
+          class="sc-fznZeY lbNtXR"
+          style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+        >
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="6"
+            >
+              6
+            </span>
+          </div>
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="4"
+            >
+              4
+            </span>
+          </div>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="12"
+          >
+            12
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Yes"
+          >
+            Yes
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="5"
+          >
+            5
+          </span>
+        </td>
+      </tr>
+      <tr
+        class="sc-fznxKY hnUAYw"
+        style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
+      >
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Mary May"
+          >
+            Mary May
+          </span>
+        </td>
+        <td
+          class="sc-fznZeY lbNtXR"
+          style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+        >
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="4"
+            >
+              4
+            </span>
+          </div>
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="7"
+            >
+              7
+            </span>
+          </div>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="1"
+          >
+            1
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Yes"
+          >
+            Yes
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="4"
+          >
+            4
+          </span>
+        </td>
+      </tr>
+      <tr
+        class="sc-fznxKY hnUAYw"
+        style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
+      >
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Christine Lobowski"
+          >
+            Christine Lobowski
+          </span>
+        </td>
+        <td
+          class="sc-fznZeY lbNtXR"
+          style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+        >
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="4"
+            >
+              4
+            </span>
+          </div>
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="7"
+            >
+              7
+            </span>
+          </div>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="42"
+          >
+            42
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Yes"
+          >
+            Yes
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="4"
+          >
+            4
+          </span>
+        </td>
+      </tr>
+      <tr
+        class="sc-fznxKY hnUAYw"
+        style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
+      >
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Brendon Philips"
+          >
+            Brendon Philips
+          </span>
+        </td>
+        <td
+          class="sc-fznZeY lbNtXR"
+          style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+        >
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="10"
+            >
+              10
+            </span>
+          </div>
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="2"
+            >
+              2
+            </span>
+          </div>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="125"
+          >
+            125
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Yes"
+          >
+            Yes
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="4.5"
+          >
+            4.5
+          </span>
+        </td>
+      </tr>
+      <tr
+        class="sc-fznxKY hnUAYw"
+        style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
+      >
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Margret Marmajuke"
+          >
+            Margret Marmajuke
+          </span>
+        </td>
+        <td
+          class="sc-fznZeY lbNtXR"
+          style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+        >
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="7"
+            >
+              7
+            </span>
+          </div>
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="5"
+            >
+              5
+            </span>
+          </div>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="16"
+          >
+            16
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Yes"
+          >
+            Yes
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="4"
+          >
+            4
+          </span>
+        </td>
+      </tr>
+      <tr
+        class="sc-fznxKY hnUAYw"
+        style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
+      >
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Van Ng"
+          >
+            Van Ng
+          </span>
+        </td>
+        <td
+          class="sc-fznZeY lbNtXR"
+          style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+        >
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="9"
+            >
+              9
+            </span>
+          </div>
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="2"
+            >
+              2
+            </span>
+          </div>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="37"
+          >
+            37
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="No"
+          >
+            No
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="4"
+          >
+            4
+          </span>
+        </td>
+      </tr>
+      <tr
+        class="sc-fznxKY hnUAYw"
+        style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
+      >
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="Duc Ng"
+          >
+            Duc Ng
+          </span>
+        </td>
+        <td
+          class="sc-fznZeY lbNtXR"
+          style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+        >
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="10"
+            >
+              10
+            </span>
+          </div>
+          <div
+            class="sc-fzqBZW gmWqve"
+          >
+            <span
+              class="sc-AxjAm jAgQbD"
+              title="3"
+            >
+              3
+            </span>
+          </div>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="37"
+          >
+            37
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW jkhkah"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="No"
+          >
+            No
+          </span>
+        </td>
+        <td
+          class="sc-fzqBZW gmWqve"
+        >
+          <span
+            class="sc-AxjAm jAgQbD"
+            title="4"
+          >
+            4
+          </span>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      class="sc-fzoYHE bKyZkP"
+    >
+      <tr
+        class="sc-fzpkqZ ezXtAc"
+      >
+        <td>
+          <ul
+            class="sc-fznMnq kjDujO sc-fzoant coIOZb"
+          >
+            <li>
+              <button
+                class="sc-fzomME sc-fzqMAW dasckP"
+                type="button"
+              >
+                <svg
+                  class="sc-AxirZ jdJjVT"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 6.705a.996.996 0 0 0-1.41 0L9 11.295a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41l-3.88-3.89L15 8.115c.39-.39.38-1.03 0-1.41z"
+                    fill="#000"
+                    fill-opacity=".54"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button
+                class="sc-fzomME sc-fzqAbL jxpKlX"
+                type="button"
+              >
+                <span
+                  class="sc-AxjAm eglZjc"
+                >
+                  1
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="sc-fzomME sc-fzqAbL dHHegr"
+                type="button"
+              >
+                <strong
+                  class="sc-AxjAm IrAUV"
+                >
+                  2
+                </strong>
+              </button>
+            </li>
+            <li>
+              <button
+                class="sc-fzomME sc-fzqAbL jxpKlX"
+                type="button"
+              >
+                <span
+                  class="sc-AxjAm eglZjc"
+                >
+                  3
+                </span>
+              </button>
+            </li>
+            <li>
+              <div
+                class="sc-AxhUy bvIjeB"
+                id="medly-popover-wrapper"
+              >
+                <button
+                  class="sc-fzomME sc-fzqAbL jxpKlX"
+                  type="button"
+                >
+                  <h5
+                    class="sc-AxjAm dDHVmV"
+                  >
+                    ...
+                  </h5>
+                </button>
+              </div>
+            </li>
+            <li>
+              <button
+                class="sc-fzomME sc-fzqAbL jxpKlX"
+                type="button"
+              >
+                <span
+                  class="sc-AxjAm eglZjc"
+                >
+                  30
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="sc-fzomME sc-fzqMAW dasckP"
+                type="button"
+              >
+                <svg
+                  class="sc-AxirZ jdJjVT"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 6.71a.996.996 0 0 0 0 1.41L12.88 12 9 15.88a.996.996 0 1 0 1.41 1.41L15 12.7a.996.996 0 0 0 0-1.41L10.41 6.7c-.38-.38-1.02-.38-1.41.01z"
+                    fill="#000"
+                    fill-opacity=".54"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </td>
+        <td>
+          <span
+            class="sc-AxjAm jAgQbD"
+          >
+            Viewing
+          </span>
+          <strong
+            class="sc-AxjAm fQMbGc"
+          >
+             11 - 20 
+          </strong>
+          <span
+            class="sc-AxjAm jAgQbD"
+          >
+            of
+          </span>
+          <strong
+            class="sc-AxjAm fQMbGc"
+          >
+             300 
+          </strong>
+          <span
+            class="sc-AxjAm jAgQbD"
+          >
+            Results
+          </span>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+`;
+
 exports[`Table component should render properly 1`] = `
 .c7 {
   margin: 0;
