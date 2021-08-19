@@ -2,9 +2,11 @@ import { FontVariants } from '../font/types';
 
 export interface TableTheme {
     borderColor: string;
+    borderRadius?: string;
     scrollBarColor: string;
     shadowColor: string;
     row: {
+        fontVariant?: FontVariants;
         selectedBorderColor: string;
         separatorColor: string;
         bgColor: {
