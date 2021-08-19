@@ -1,14 +1,26 @@
 import { ChevronLeftIcon, ChevronRightIcon, SvgIcon } from '@medly-components/icons';
-import { css, getFontStyle, styled } from '@medly-components/utils';
+import { Theme } from '@medly-components/theme';
+import { css, styled } from '@medly-components/utils';
 import List from '../List';
 import Text from '../Text';
+
+const getStyling = ({ theme }: { theme: Theme }) => {
+    const { variants } = theme.font;
+    const { fontSize, letterSpacing, lineHeight } = variants[theme.pagination.fontVariant];
+
+    return css`
+        font-size: ${fontSize};
+        letter-spacing: ${letterSpacing};
+        line-height: ${lineHeight};
+    `;
+};
 
 export const ListWrapper = styled(List)`
     & > li {
         margin: 0;
     }
     ${Text.Style} {
-        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.pagination.fontVariant })}
+        ${getStyling}
     }
 `;
 

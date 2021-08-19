@@ -1,4 +1,4 @@
-import { FontVariants } from "../font/types";
+import { FontVariants, FontWeights } from '../font/types';
 
 export interface PaginationTheme {
     /** The font variant */
@@ -16,6 +16,10 @@ export interface PaginationTheme {
             hovered: string;
             pressed: string;
             active: string;
+        };
+        fontWeight: {
+            default: FontWeights;
+            selected: FontWeights;
         };
         borderRadius: string;
     };
