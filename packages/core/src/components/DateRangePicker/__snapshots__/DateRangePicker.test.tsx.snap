@@ -1893,7 +1893,7 @@ exports[`DateRangePicker Custom date range options should render properly with c
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 37.2rem;
+  min-width: 38rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 

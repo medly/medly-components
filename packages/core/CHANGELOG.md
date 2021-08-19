@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.17.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.17.0...@medly-components/core@2.17.1) (2021-08-18)
+
+
+### Bug Fixes
+
+* **core:** update the start day of the date range's current week selection ([c0f46fe](https://github.com/medly/medly-components/commit/c0f46feede765db491dc224c8b85181e0268f7f5))
+
+
+
+
+
+# [2.17.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.16.3...@medly-components/core@2.17.0) (2021-08-18)
+
+
+### Features
+
+* add onClick prop in Logo component ([#389](https://github.com/medly/medly-components/issues/389)) ([6bbc50d](https://github.com/medly/medly-components/commit/6bbc50dd5a0960bccc1b462a922fe7b6ac4a2119))
+
+
+
+
+
+## [2.16.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.16.2...@medly-components/core@2.16.3) (2021-08-18)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.16.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.16.1...@medly-components/core@2.16.2) (2021-08-18)
+
+
+### Bug Fixes
+
+* **core:** fix date range picker min width issue ([7ee0fc3](https://github.com/medly/medly-components/commit/7ee0fc3cdf1ffd6f652bba8aadcb00c7c64154aa))
+
+
+
+
+
 ## [2.16.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.16.0...@medly-components/core@2.16.1) (2021-08-17)
 
 **Note:** Version bump only for package @medly-components/core
