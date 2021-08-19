@@ -1,7 +1,16 @@
 import { Theme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
+import Pagination from '../../Pagination';
+import { PageNavButton, PageNumberButton } from '../../Pagination/Pagination.styled';
 import Text from '../../Text';
 import { TableProps } from '../types';
+
+export const FootPagination = styled(Pagination)<{ tableSize: TableProps['size'] }>`
+    & > * ${PageNavButton}, ${PageNumberButton} {
+        height: ${({ tableSize }) => tableSize === 'XS' && '3.1rem'};
+        width: ${({ tableSize }) => tableSize === 'XS' && '3.1rem'};
+    }
+`;
 
 export const TFoot = styled('tfoot')<{ showWithCardStyle: boolean; tableSize: TableProps['size'] }>`
     display: flex;
@@ -16,8 +25,8 @@ export const TFoot = styled('tfoot')<{ showWithCardStyle: boolean; tableSize: Ta
 `;
 
 const getStyling = ({ theme }: { theme: Theme }) => {
-    const {variants} = theme.font;
-    const {fontSize, letterSpacing, lineHeight} = variants[theme.pagination.fontVariant];
+    const { variants } = theme.font;
+    const { fontSize, letterSpacing, lineHeight } = variants[theme.pagination.fontVariant];
 
     return css`
         font-size: ${fontSize};
