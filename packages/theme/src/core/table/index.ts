@@ -5,6 +5,7 @@ const table: TableTheme = {
     borderColor: colors.grey[300],
     scrollBarColor: colors.grey[400],
     shadowColor: colors.grey[600],
+    borderRadius: '0.8rem',
     row: {
         separatorColor: colors.grey[300],
         bgColor: {
@@ -23,7 +24,8 @@ const table: TableTheme = {
             even: colors.black,
             selected: colors.black,
             disabled: colors.black
-        }
+        },
+        fontVariant: 'body2'
     },
     titleRow: {
         bgColor: {

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.12](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.11...@medly-components/utils@1.12.12) (2021-08-20)
+
+
+### Bug Fixes
+
+* update component after unmount in useAxios hook ([#394](https://github.com/medly/medly-components/issues/394)) ([8731915](https://github.com/medly/medly-components/commit/8731915186a653017910e39d79e22bb82966c2d9))
+
+
+
+
+
+## [1.12.11](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.10...@medly-components/utils@1.12.11) (2021-08-19)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
 ## [1.12.10](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.9...@medly-components/utils@1.12.10) (2021-08-18)
 
 

@@ -1,8 +1,14 @@
-import { css, styled } from '@medly-components/utils';
+import { css, getFontStyle, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
+import Text from '../../../Text';
 import { GridTemplateProps } from '../../types';
 import { defaultTableCellPaddings } from '../Cell/Styled';
 import { StyledProps } from './types';
+
+const getRowBackgroundColor = ({ theme, isSelected, disabled, even }: StyledProps & { even: boolean }) => {
+    const parity = even ? 'even' : 'odd';
+    return theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : parity];
+};
 
 const cardStyle = css<StyledProps>`
     border: none;
@@ -12,8 +18,7 @@ const cardStyle = css<StyledProps>`
     box-shadow: ${({ theme }) => `0 0.2rem 0.8rem ${rgba(theme.table.shadowColor, 0.2)} `};
     &,
     & > * {
-        background-color: ${({ theme, isSelected, disabled }) =>
-            theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
+        background-color: ${({ theme, isSelected, disabled }) => getRowBackgroundColor({ theme, isSelected, disabled, even: true })};
         color: ${({ theme, isSelected, disabled }) => theme.table.row.textColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
     }
 
@@ -67,8 +72,17 @@ const getHoverStateStyle = (style: 'shadow' | 'outlined') =>
 
 const getBorderStyle = (rowHoveredStyle: 'shadow' | 'outlined') =>
     rowHoveredStyle === 'outlined'
-        ? css`
-              border: 2px solid transparent;
+        ? css<StyledProps>`
+              border-width: 0.2rem;
+              border-style: solid;
+
+              &:nth-child(odd) {
+                  border-color: ${({ theme, isSelected, disabled }) => getRowBackgroundColor({ theme, isSelected, disabled, even: false })};
+              }
+
+              &:nth-child(even) {
+                  border-color: ${({ theme, isSelected, disabled }) => getRowBackgroundColor({ theme, isSelected, disabled, even: true })};
+              }
           `
         : ``;
 
@@ -88,8 +102,7 @@ const normalStyle = css<StyledProps>`
     &:nth-child(odd) {
         &,
         & > * {
-            background-color: ${({ theme, isSelected, disabled }) =>
-                theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'odd']};
+            background-color: ${({ theme, isSelected, disabled }) => getRowBackgroundColor({ theme, isSelected, disabled, even: false })};
             color: ${({ theme, isSelected, disabled }) =>
                 theme.table.row.textColor[disabled ? 'disabled' : isSelected ? 'selected' : 'odd']};
         }
@@ -98,8 +111,7 @@ const normalStyle = css<StyledProps>`
     &:nth-child(even) {
         &,
         & > * {
-            background-color: ${({ theme, isSelected, disabled }) =>
-                theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
+            background-color: ${({ theme, isSelected, disabled }) => getRowBackgroundColor({ theme, isSelected, disabled, even: true })};
             color: ${({ theme, isSelected, disabled }) =>
                 theme.table.row.textColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
         }
@@ -124,6 +136,9 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     min-width: fit-content;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
     ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? cardStyle : normalStyle)}
+    ${Text.Style} {
+        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.table.row.fontVariant })}
+    }
 `;
 
 export const NoResultCell = styled('td')<{ width: number; tableSize: keyof typeof defaultTableCellPaddings }>`

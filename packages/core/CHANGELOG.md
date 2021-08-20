@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.18.2...@medly-components/core@2.18.3) (2021-08-20)
+
+
+### Bug Fixes
+
+* default color of chevron icon in multiSelect component ([#395](https://github.com/medly/medly-components/issues/395)) ([eb567a9](https://github.com/medly/medly-components/commit/eb567a9457eb1dc2ee377cd7a282b16a73367cf3))
+
+
+
+
+
+## [2.18.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.18.1...@medly-components/core@2.18.2) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.18.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.18.0...@medly-components/core@2.18.1) (2021-08-19)
+
+
+### Bug Fixes
+
+* cleanup row background color selection and XS table header divider height ([2e43dca](https://github.com/medly/medly-components/commit/2e43dcab56d4e78c68401645c737277973bd5fa7))
+* decrease size of pagination component buttons for XS table size to limit footer to 4.0rem heigh ([3616984](https://github.com/medly/medly-components/commit/3616984e9060ababcc4ddb25124227118071e319))
+* increase height of table head cell dividers for XS size ([e97c064](https://github.com/medly/medly-components/commit/e97c064aba67b218d46f009843a6d1e493c7fe83))
+* merge master ([8f28df4](https://github.com/medly/medly-components/commit/8f28df42249dc72600558975846fc85aedf2c5f0))
+* merge master, update snapshots ([4c8a53e](https://github.com/medly/medly-components/commit/4c8a53e3d5b58b148ab8569db4b21f6ee8b16390))
+* remove outlined hoveredStyle border and padding when not hovered ([8ededcd](https://github.com/medly/medly-components/commit/8ededcdfc28a24dbb92438b355cab28367bce9d8))
+* revert some padding/border row changes ([c05df35](https://github.com/medly/medly-components/commit/c05df3504bb1221b7af601f41a952c443ac6f6f9))
+* small cleanup/fixes ([809cc5b](https://github.com/medly/medly-components/commit/809cc5b117f91d976925adc44c94176fdbd3505c))
+* update header padding for XS table size ([05435f1](https://github.com/medly/medly-components/commit/05435f1744eb1b0c199e3303f829de92e0f4a7b6))
+* update outlined hoveredStyle border color to match row bgColor when not hovered ([5f222b9](https://github.com/medly/medly-components/commit/5f222b9d8cdd224c87eb4dc9d18635560c90aa62))
+* update snapshots ([d35aab3](https://github.com/medly/medly-components/commit/d35aab38da6952f4b71a7d4bdcb71cc8094409e6))
+
+
+
+
+
+# [2.18.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.17.1...@medly-components/core@2.18.0) (2021-08-19)
+
+
+### Features
+
+* **core:** update pagination and table theme ([#366](https://github.com/medly/medly-components/issues/366)) ([60bacfc](https://github.com/medly/medly-components/commit/60bacfcbfc234df0f49afae5e58006887d235ea3))
+
+
+
+
+
 ## [2.17.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.17.0...@medly-components/core@2.17.1) (2021-08-18)
 
 
