@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/core",
-    "version": "2.18.2",
+    "version": "2.18.3",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
