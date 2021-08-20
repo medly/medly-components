@@ -1,4 +1,5 @@
 import { layoutDefaultTheme } from '@medly-components/theme';
+import { WithStyle } from 'packages/utils/src/types';
 import React, { useState } from 'react';
 import HeaderContext from './Header.context';
 import { Container, Content, HamburgerIcon } from './Header.styled';
@@ -6,10 +7,10 @@ import Nav from './Nav';
 import NavItem from './NavItem';
 import { HeaderProps, HeaderStaticProps } from './types';
 
-const Header: React.FC<HeaderProps> & HeaderStaticProps = ({ children, withNav }) => {
+const Header: React.FC<HeaderProps> & HeaderStaticProps & WithStyle = ({ children, withNav, ...resProps }) => {
     const [isOpen, toggleIsOpen] = useState(false);
     return (
-        <Container>
+        <Container {...resProps}>
             <Content>
                 {withNav && (
                     <HamburgerIcon
@@ -28,6 +29,7 @@ const Header: React.FC<HeaderProps> & HeaderStaticProps = ({ children, withNav }
 Header.Context = HeaderContext;
 Header.Nav = Nav;
 Header.NavItem = NavItem;
+Header.Style = Container;
 
 Header.defaultProps = {
     withNav: true
