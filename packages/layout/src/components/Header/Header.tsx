@@ -1,5 +1,5 @@
 import { layoutDefaultTheme } from '@medly-components/theme';
-import { WithStyle } from 'packages/utils/src/types';
+import { WithStyle } from '@medly-components/utils';
 import React, { useState } from 'react';
 import HeaderContext from './Header.context';
 import { Container, Content, HamburgerIcon } from './Header.styled';
