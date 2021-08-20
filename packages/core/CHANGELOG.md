@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.4](https://github.com/medly/medly-components/compare/@medly-components/core@2.18.3...@medly-components/core@2.18.4) (2021-08-20)
+
+
+### Bug Fixes
+
+* adding in critical dependency for handleOptionClick ([#391](https://github.com/medly/medly-components/issues/391)) ([6223f7c](https://github.com/medly/medly-components/commit/6223f7c594fe029ba0e099352f358e9202156111))
+
+
+
+
+
 ## [2.18.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.18.2...@medly-components/core@2.18.3) (2021-08-20)
 
 
