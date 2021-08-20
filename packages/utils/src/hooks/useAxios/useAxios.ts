@@ -1,12 +1,13 @@
 import axios, { AxiosResponse } from 'axios';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Result } from './types';
 
 export const useAxios = <Data = any, Error = { message: string; variant: 'error' }>(): Result<Data, Error> => {
     const [data, setData] = useState<Data>(),
         [response, setResponse] = useState<AxiosResponse<Data>>(),
         [error, setError] = useState<AxiosResponse<Error>>(),
-        [isLoading, setLoadingState] = useState(false);
+        [isLoading, setLoadingState] = useState(false),
+        isMounted = useRef<boolean>(true);
 
     const request = useCallback(async ({ onSuccess, onError, ...config }) => {
         setLoadingState(true);
@@ -30,9 +31,16 @@ export const useAxios = <Data = any, Error = { message: string; variant: 'error'
                 return { error: customizedError };
             })
             .finally(() => {
-                setLoadingState(false);
+                isMounted.current && setLoadingState(false);
             });
     }, []);
+
+    useEffect(
+        () => () => {
+            isMounted.current = false;
+        },
+        []
+    );
 
     const clear = useCallback(() => {
         setData(undefined);

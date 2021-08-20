@@ -409,10 +409,6 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c0 .c8 > .c12 * {
-  fill: #13181D;
-}
-
-.c0 .c8 > .c12 * {
   fill: #b0bcc8;
 }
 
@@ -842,6 +838,10 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 }
 
 .c0 .c8 > .c10 * {
+  fill: #546A7F;
+}
+
+.c0:not(:focus-within):hover .c8 > .c10 * {
   fill: #13181D;
 }
 
@@ -1386,6 +1386,10 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c34 .c8 > .c12 * {
+  fill: #546A7F;
+}
+
+.c34:not(:focus-within):hover .c8 > .c12 * {
   fill: #13181D;
 }
 
@@ -1428,6 +1432,10 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c0 .c8 > .c12 * {
+  fill: #546A7F;
+}
+
+.c0:not(:focus-within):hover .c8 > .c12 * {
   fill: #13181D;
 }
 
@@ -2694,6 +2702,10 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c35 .c8 > .c12 * {
+  fill: #546A7F;
+}
+
+.c35:not(:focus-within):hover .c8 > .c12 * {
   fill: #13181D;
 }
 
@@ -2736,6 +2748,10 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c0 .c8 > .c12 * {
+  fill: #546A7F;
+}
+
+.c0:not(:focus-within):hover .c8 > .c12 * {
   fill: #13181D;
 }
 

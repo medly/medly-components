@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.18.2...@medly-components/core@2.18.3) (2021-08-20)
+
+
+### Bug Fixes
+
+* default color of chevron icon in multiSelect component ([#395](https://github.com/medly/medly-components/issues/395)) ([eb567a9](https://github.com/medly/medly-components/commit/eb567a9457eb1dc2ee377cd7a282b16a73367cf3))
+
+
+
+
+
+## [2.18.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.18.1...@medly-components/core@2.18.2) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
 ## [2.18.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.18.0...@medly-components/core@2.18.1) (2021-08-19)
 
 

@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/utils",
-    "version": "1.12.11",
+    "version": "1.12.12",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
