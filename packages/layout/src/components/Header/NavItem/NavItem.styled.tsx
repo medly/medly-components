@@ -18,6 +18,7 @@ export const NavItem = styled.button<NavItemProps>`
     align-items: center;
     text-align: left;
     grid-auto-columns: max-content;
+    cursor: pointer;
 
     ${({ theme, isActive }) => media(breakpoints(theme.breakpoints).up('L'))`
         background: ${theme.header.backgroundColor};
