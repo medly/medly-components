@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.5](https://github.com/medly/medly-components/compare/@medly-components/core@2.18.4...@medly-components/core@2.18.5) (2021-08-21)
+
+
+### Bug Fixes
+
+* error not coming when required prop is provided in SingleSelect … ([#397](https://github.com/medly/medly-components/issues/397)) ([80c73eb](https://github.com/medly/medly-components/commit/80c73eba87db6ec347d7f1ed1c38763f6cf008ab))
+
+
+
+
+
 ## [2.18.4](https://github.com/medly/medly-components/compare/@medly-components/core@2.18.3...@medly-components/core@2.18.4) (2021-08-20)
 
 
