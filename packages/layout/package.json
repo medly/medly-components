@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/layout",
-    "version": "1.28.6",
+    "version": "1.28.7",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
