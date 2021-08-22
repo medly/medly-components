@@ -60,6 +60,13 @@ const expandIconHoveredStyle = css`
                 background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.active};
             }
         }
+    `,
+    customSearchNotActiveStyle = css`
+        ${SvgIcon} {
+            &:hover {
+                ${expandIconHoveredStyle}
+            }
+        }
     `;
 
 export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchActive?: boolean }>`
@@ -70,16 +77,9 @@ export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchAc
             transition: transform 0.2s ease-out;
             transform-origin: center;
         }
-        ${({ isCustomSearchActive }) =>
-            !isCustomSearchActive &&
-            `
-            &:hover {
-                ${expandIconHoveredStyle};
-            }
-        `}
         * {
             fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
         }
     }
-    ${({ isCustomSearchActive }) => isCustomSearchActive && customSearchActiveStyle}
+    ${({ isCustomSearchActive }) => isCustomSearchActive ? customSearchActiveStyle : customSearchNotActiveStyle}
 `;
