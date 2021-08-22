@@ -1,5 +1,6 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
 import React, { FC, FocusEvent, FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
+import { HelperAndErrorTextTooltip } from '../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import getMaskedValue from './getMaskedValue';
 import * as Styled from './Styled';
 import { TextFieldProps } from './types';
@@ -38,6 +39,10 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
             isPrefixPresent = useMemo(() => !!Prefix, [Prefix]),
             isSuffixPresent = useMemo(() => !!Suffix, [Suffix]),
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
+            displayCharacterCount = useMemo(
+                () => withCharacterCount && showDecorators && props.maxLength >= 0 && props.maxLength !== null,
+                [withCharacterCount, showDecorators, props.maxLength]
+            ),
             [isTextPresent, setIsTextPresent] = useState(!!value || !!restProps.defaultValue),
             [maskLabel, setMaskLabel] = useState(mask),
             [inputWidth, setInputWidth] = useState(0),
@@ -146,23 +151,29 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         >
                             {label}
                         </Styled.Label>
-                        {withCharacterCount && showDecorators && props.maxLength >= 0 && props.maxLength !== null && (
+                        {displayCharacterCount && (
                             <Styled.CharacterCount
                                 variant={props.variant}
                                 size={size}
                                 multiline={multiline}
                                 characterCount={characterCountValue}
                                 maxLength={props.maxLength}
+                                showTooltipForHelperAndErrorText={props.showTooltipForHelperAndErrorText}
                             >{`${characterCountValue}/${props.maxLength}`}</Styled.CharacterCount>
                         )}
                     </Styled.InputWrapper>
+                    {props.showTooltipForHelperAndErrorText && (
+                        <Styled.HelperAndErrorTextTooltipWrapper size={size} displayCharacterCount={displayCharacterCount}>
+                            <HelperAndErrorTextTooltip id={inputId} errorText={errorText || builtInErrorMessage} helperText={helperText} />
+                        </Styled.HelperAndErrorTextTooltipWrapper>
+                    )}
                     {isSuffixPresent && showDecorators && (
                         <Styled.Suffix size={size}>
                             <Suffix size={size} />
                         </Styled.Suffix>
                     )}
                 </Styled.InnerWrapper>
-                {(isErrorPresent || helperText) && showDecorators && (
+                {(isErrorPresent || helperText) && !props.showTooltipForHelperAndErrorText && (
                     <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size} variant={props.variant}>
                         {(errorText || builtInErrorMessage || helperText).trim()}
                     </Styled.HelperText>

@@ -23,7 +23,7 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     fullWidth?: boolean;
     /** Disable date selection */
     disabled?: boolean;
-    /** Show prefix, suffix, helper text, and character count elements. If set to false, only the input and label will be rendered. */
+    /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered. */
     showDecorators?: boolean;
     /** Popover placement */
     popoverPlacement?: Placement;
@@ -41,4 +41,6 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     endDateLabel?: string;
     /** Set it true to show single month in calendar popup */
     withSingleMonth?: boolean;
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
 };

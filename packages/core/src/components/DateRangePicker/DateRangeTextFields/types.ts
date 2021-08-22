@@ -21,4 +21,5 @@ export type Props = {
     endDateRef: React.MutableRefObject<HTMLInputElement>;
     validator?: (val: DateRangeType, eventType?: string) => string;
     onBlur: (event: React.FocusEvent<HTMLInputElement>) => void;
+    showTooltipForHelperAndErrorText?: boolean;
 };
