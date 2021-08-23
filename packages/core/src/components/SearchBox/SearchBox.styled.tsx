@@ -16,7 +16,7 @@ const getBorderRadius = ({ theme, areOptionsVisible, size }: SearchBoxProps & { 
 const activeSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
     box-shadow: ${searchBox.boxShadow.active};
     border-color: ${searchBox.borderColor.active};
-    border-width: 2px;
+    border-width: .2rem;
 `;
 
 const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
