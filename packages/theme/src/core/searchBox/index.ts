@@ -46,11 +46,13 @@ const SearchBox: SearchBoxTheme = {
         },
         borderRadius: '2.5rem',
         color: {
-            default: colors.grey[600],
-            hovered: colors.grey[900]
+            default: colors.grey[700],
+            hovered: colors.grey[800],
+            pressed: colors.grey[900]
         },
         bgColor: {
-            hovered: colors.grey[100]
+            hovered: colors.grey[100],
+            pressed: colors.grey[200]
         }
     },
     searchIcon: {
@@ -60,11 +62,14 @@ const SearchBox: SearchBoxTheme = {
         },
         borderRadius: '2.5rem',
         color: {
-            default: colors.grey[600],
-            active: colors.blue[500]
+            default: colors.grey[700],
+            active: colors.blue[500],
+            hovered: colors.blue[600],
+            pressed: colors.blue[700]
         },
         bgColor: {
-            hovered: colors.blue[100]
+            hovered: colors.blue[100],
+            pressed: colors.blue[200]
         }
     },
     expandIcon: {
@@ -76,11 +81,13 @@ const SearchBox: SearchBoxTheme = {
         color: {
             default: colors.grey[600],
             hovered: colors.grey[900],
+            pressed: colors.black,
             active: colors.grey[700]
         },
         bgColor: {
             hovered: colors.grey[100],
-            active: colors.grey[200]
+            active: colors.grey[200],
+            pressed: colors.grey[200]
         }
     },
     boxShadow: {
