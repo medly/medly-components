@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.13](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.12...@medly-components/utils@1.12.13) (2021-08-23)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.12.12](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.11...@medly-components/utils@1.12.12) (2021-08-20)
+
+
+### Bug Fixes
+
+* update component after unmount in useAxios hook ([#394](https://github.com/medly/medly-components/issues/394)) ([8731915](https://github.com/medly/medly-components/commit/8731915186a653017910e39d79e22bb82966c2d9))
+
+
+
+
+
+## [1.12.11](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.10...@medly-components/utils@1.12.11) (2021-08-19)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.12.10](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.9...@medly-components/utils@1.12.10) (2021-08-18)
+
+
+### Performance Improvements
+
+* **utils:** returns function if same key is pressed more than one time ([#390](https://github.com/medly/medly-components/issues/390)) ([8c376be](https://github.com/medly/medly-components/commit/8c376bedbd0bea399e2d414ac96c243f057cfe7f))
+
+
+
+
+
+## [1.12.9](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.8...@medly-components/utils@1.12.9) (2021-08-17)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
 ## [1.12.8](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.7...@medly-components/utils@1.12.8) (2021-08-16)
 
 **Note:** Version bump only for package @medly-components/utils

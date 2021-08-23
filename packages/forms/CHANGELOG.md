@@ -3,6 +3,130 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.28.12](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.11...@medly-components/forms@1.28.12) (2021-08-23)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.28.11](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.10...@medly-components/forms@1.28.11) (2021-08-21)
+
+
+### Bug Fixes
+
+* error not coming when required prop is provided in SingleSelect … ([#397](https://github.com/medly/medly-components/issues/397)) ([80c73eb](https://github.com/medly/medly-components/commit/80c73eba87db6ec347d7f1ed1c38763f6cf008ab))
+
+
+
+
+
+## [1.28.10](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.9...@medly-components/forms@1.28.10) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.28.9](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.8...@medly-components/forms@1.28.9) (2021-08-20)
+
+
+### Bug Fixes
+
+* default color of chevron icon in multiSelect component ([#395](https://github.com/medly/medly-components/issues/395)) ([eb567a9](https://github.com/medly/medly-components/commit/eb567a9457eb1dc2ee377cd7a282b16a73367cf3))
+
+
+
+
+
+## [1.28.8](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.7...@medly-components/forms@1.28.8) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.28.7](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.6...@medly-components/forms@1.28.7) (2021-08-19)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.28.6](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.5...@medly-components/forms@1.28.6) (2021-08-19)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.28.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.4...@medly-components/forms@1.28.5) (2021-08-18)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.28.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.3...@medly-components/forms@1.28.4) (2021-08-18)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.28.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.2...@medly-components/forms@1.28.3) (2021-08-18)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.28.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.1...@medly-components/forms@1.28.2) (2021-08-18)
+
+
+### Bug Fixes
+
+* **core:** fix date range picker min width issue ([7ee0fc3](https://github.com/medly/medly-components/commit/7ee0fc3cdf1ffd6f652bba8aadcb00c7c64154aa))
+
+
+
+
+
+## [1.28.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.0...@medly-components/forms@1.28.1) (2021-08-17)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.28.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.27.2...@medly-components/forms@1.28.0) (2021-08-17)
+
+
+### Features
+
+* **core:** add custom range selection options in date range picker ([#382](https://github.com/medly/medly-components/issues/382)) ([aece055](https://github.com/medly/medly-components/commit/aece0558151c1c194152e34cd0103887bf4c33e6))
+
+
+
+
+
+## [1.27.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.27.1...@medly-components/forms@1.27.2) (2021-08-17)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [1.27.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.27.0...@medly-components/forms@1.27.1) (2021-08-16)
 
 **Note:** Version bump only for package @medly-components/forms

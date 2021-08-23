@@ -45,7 +45,7 @@
         "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
         "test:jest": "jest --passWithNoTests --config jest.config.js",
         "test:update": "run-s typecheck \"test:jest -u\"",
-        "test:watch": "run-s \"typecheck -- -w\" \"test:jest -- --watch\"",
+        "test:watch": "run-p 'typecheck -w' 'test:jest --watch'",
         "test": "run-s typecheck test:jest",
         "typecheck": "tsc -p tsconfig.json",
         "watch": "lerna exec --no-sort -- rollup -w -c=../../rollup.config.js",

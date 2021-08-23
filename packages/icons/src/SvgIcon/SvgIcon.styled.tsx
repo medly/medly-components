@@ -28,7 +28,7 @@ export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { c
     margin: ${({ margin }) => margin};
     cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
     * {
-        fill-opacity: 1;
+        fill-opacity: ${({ fillOpacity }) => fillOpacity};
         transition: all 100ms linear;
         fill: ${({ disabled, colors, iconColor }) => (disabled ? colors.disabled.iconColor : iconColor || colors.default.iconColor)};
     }
@@ -39,5 +39,6 @@ export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { c
 SvgIconStyled.displayName = 'SvgIcon';
 
 SvgIconStyled.defaultProps = {
-    size: 'M'
+    size: 'M',
+    fillOpacity: 1
 };

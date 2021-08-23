@@ -2,6 +2,7 @@ import { cleanup, fireEvent, render, waitFor } from '@test-utils';
 import React, { useState } from 'react';
 import { placements } from '../Popover/Popover.stories';
 import { DateRangePicker } from './DateRangePicker';
+import { CustomDateRangeOptions } from './DateRangePicker.stories';
 import { DateRangeProps, DateRangeType } from './types';
 
 const DummyComponent = ({ value, ...restProps }: Omit<DateRangeProps, 'onChange'>) => {
@@ -24,17 +25,22 @@ const renderComponent = (props?: any) => {
         disabled: false,
         minSelectableDate: new Date(2020, 1, 1),
         maxSelectableDate: new Date(2022, 2, 15),
-        showDecorators: true
+        showDecorators: true,
+        customDateRangeOptions: []
     };
     const renderUtils = render(<DummyComponent {...defaultProps} {...props} />),
-        calendarIcon = renderUtils.container.querySelector('svg'),
+        calendarIcon = renderUtils.container.querySelector('#contract-calendar-icon'),
+        customDateRangeOptionsIcon = renderUtils.container.querySelector('#contract-custom-date-range-options-icon'),
         startDateInput = renderUtils.container.querySelector('#contract-startDate-input') as HTMLInputElement,
         endDateInput = renderUtils.container.querySelector('#contract-endDate-input') as HTMLInputElement;
 
-    return { ...renderUtils, calendarIcon, startDateInput, endDateInput };
+    return { ...renderUtils, calendarIcon, startDateInput, endDateInput, customDateRangeOptionsIcon };
 };
 
 describe('DateRangePicker', () => {
+    const customDateRangeOptionsPopoverSelector = '#contract-custom-date-range-options',
+        customDateRangeOptionsIconSelector = '#contract-custom-date-range-options-icon';
+
     afterEach(cleanup);
 
     it('should render properly', () => {
@@ -377,6 +383,140 @@ describe('DateRangePicker', () => {
                 showDecorators: false
             });
             expect(calendarIcon).toBeNull();
+        });
+    });
+
+    describe('Custom date range options', () => {
+        beforeEach(() => {
+            jest.spyOn(window.Date, 'now').mockImplementation(() => new Date(2021, 7, 11).valueOf());
+        });
+
+        afterEach(() => {
+            jest.clearAllMocks();
+            cleanup();
+        });
+
+        it('should render properly with custom date range options', () => {
+            const { container, customDateRangeOptionsIcon } = renderComponent({
+                value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
+                customDateRangeOptions: CustomDateRangeOptions,
+                minWidth: '38rem'
+            });
+            fireEvent.click(customDateRangeOptionsIcon);
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should not render custom date range options when date range picker is disabled', () => {
+            const { container, customDateRangeOptionsIcon } = renderComponent({
+                value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
+                customDateRangeOptions: CustomDateRangeOptions,
+                disabled: true
+            });
+            fireEvent.click(customDateRangeOptionsIcon);
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).not.toBeInTheDocument();
+        });
+
+        it('should hide/show custom date range options popover when clicked consecutively on custom date range icon', () => {
+            const { container, customDateRangeOptionsIcon } = renderComponent({
+                value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
+                customDateRangeOptions: CustomDateRangeOptions
+            });
+
+            fireEvent.click(customDateRangeOptionsIcon);
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
+
+            fireEvent.click(container.querySelector(customDateRangeOptionsIconSelector));
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).not.toBeInTheDocument();
+
+            fireEvent.click(container.querySelector(customDateRangeOptionsIconSelector));
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
+        });
+
+        test.each([
+            ['Current Week', { startDate: new Date(2021, 7, 9), endDate: new Date(2021, 7, 15, 23, 59, 59, 999) }],
+            ['Current Month', { startDate: new Date(2021, 7, 1), endDate: new Date(2021, 7, 31, 23, 59, 59, 999) }],
+            ['Current Quarter', { startDate: new Date(2021, 6, 1), endDate: new Date(2021, 8, 30, 23, 59, 59, 999) }],
+            ['Current Year', { startDate: new Date(2021, 0, 1), endDate: new Date(2021, 11, 31, 23, 59, 59, 999) }]
+        ])('should render expected start and end date when %o date range option is selected', async (option, dateRange) => {
+            const onChangeMock = jest.fn(),
+                { container, customDateRangeOptionsIcon, getByText } = renderComponent({
+                    value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
+                    customDateRangeOptions: CustomDateRangeOptions,
+                    onChange: onChangeMock
+                });
+
+            fireEvent.click(customDateRangeOptionsIcon);
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
+
+            fireEvent.click(getByText(option));
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).not.toBeInTheDocument();
+            expect(onChangeMock).toHaveBeenCalledWith(dateRange);
+        });
+
+        it('should select date min and max date range when selection falls out of range', () => {
+            const onChangeMock = jest.fn(),
+                minStartDate = new Date('2021-08-07T18:30:00.000Z'),
+                maxEndDate = new Date('2021-08-13T18:30:00.000Z'),
+                { container, customDateRangeOptionsIcon, getByText } = renderComponent({
+                    value: { startDate: new Date('2021-08-08T18:30:00.000Z'), endDate: new Date('2021-08-09T18:30:00.000Z') },
+                    customDateRangeOptions: CustomDateRangeOptions,
+                    onChange: onChangeMock,
+                    minSelectableDate: minStartDate,
+                    maxSelectableDate: maxEndDate
+                });
+
+            fireEvent.click(customDateRangeOptionsIcon);
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
+
+            fireEvent.click(getByText('Current Year'));
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).not.toBeInTheDocument();
+            expect(onChangeMock).toHaveBeenCalledWith({
+                startDate: minStartDate,
+                endDate: new Date('2021-08-13T18:30:00.000Z')
+            });
+        });
+
+        it('should show calendar and focus on start date when custom date range option is selected', async () => {
+            const { container, customDateRangeOptionsIcon, startDateInput, getByText } = renderComponent({
+                value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
+                customDateRangeOptions: CustomDateRangeOptions
+            });
+
+            fireEvent.click(customDateRangeOptionsIcon);
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
+
+            fireEvent.click(getByText('Custom'));
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).not.toBeInTheDocument();
+
+            await waitFor(() => expect(startDateInput).toHaveFocus());
+        });
+    });
+
+    describe('Custom date range options popover placement', () => {
+        afterEach(cleanup);
+        test.each(placements)('should render properly with %p position', (popoverPlacement: DateRangeProps['popoverPlacement']) => {
+            const { container, customDateRangeOptionsIcon } = renderComponent({
+                popoverPlacement,
+                value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
+                customDateRangeOptions: CustomDateRangeOptions
+            });
+            fireEvent.click(customDateRangeOptionsIcon);
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
+            expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toMatchSnapshot();
+        });
+
+        test.each([
+            ['S', '4rem'],
+            ['M', '5.6rem']
+        ])('should render custom options at the right position with %s size', async (size, position) => {
+            const { container, customDateRangeOptionsIcon } = renderComponent({
+                size,
+                onChange: jest.fn(),
+                customDateRangeOptions: CustomDateRangeOptions
+            });
+            fireEvent.click(customDateRangeOptionsIcon);
+            await waitFor(() => expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toHaveStyle(`top: ${position}`));
         });
     });
 });

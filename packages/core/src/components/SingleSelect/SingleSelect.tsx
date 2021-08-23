@@ -180,7 +180,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                         {...inputProps}
                         minWidth={minWidth}
                         maxWidth={maxWidth}
-                        readOnly={!isSearchable}
+                        readOnly={!inputProps.required && !isSearchable}
                     />
                 )}
                 {!disabled && areOptionsVisible && (

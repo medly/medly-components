@@ -132,7 +132,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                                 showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                             }}
                         />
-                        {withPagination && <Foot />}
+                        {withPagination && <Foot tableSize={size} />}
                     </TableStyled>
                 </TableComponentsCommonPropsContext.Provider>
             </TableStateContext.Provider>

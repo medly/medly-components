@@ -1,6 +1,16 @@
-import { styled } from '@medly-components/utils';
+import { Theme } from '@medly-components/theme';
+import { css, styled } from '@medly-components/utils';
+import Pagination from '../../Pagination';
+import { PageNavButton, PageNumberButton } from '../../Pagination/Pagination.styled';
 import Text from '../../Text';
 import { TableProps } from '../types';
+
+export const FootPagination = styled(Pagination)<{ tableSize: TableProps['size'] }>`
+    & > * ${PageNavButton}, ${PageNumberButton} {
+        height: ${({ tableSize }) => tableSize === 'XS' && '3.1rem'};
+        width: ${({ tableSize }) => tableSize === 'XS' && '3.1rem'};
+    }
+`;
 
 export const TFoot = styled('tfoot')<{ showWithCardStyle: boolean; tableSize: TableProps['size'] }>`
     display: flex;
@@ -13,6 +23,17 @@ export const TFoot = styled('tfoot')<{ showWithCardStyle: boolean; tableSize: Ta
     min-height: ${({ showWithCardStyle, tableSize }) => (showWithCardStyle ? '5.4rem' : tableSize === 'XS' ? '4rem' : '4.8rem')};
     border-top: ${({ theme, showWithCardStyle }) => !showWithCardStyle && `0.1rem solid ${theme.table.borderColor}`};
 `;
+
+const getStyling = ({ theme }: { theme: Theme }) => {
+    const { variants } = theme.font;
+    const { fontSize, letterSpacing, lineHeight } = variants[theme.pagination.fontVariant];
+
+    return css`
+        font-size: ${fontSize};
+        letter-spacing: ${letterSpacing};
+        line-height: ${lineHeight};
+    `;
+};
 
 export const FootRow = styled('tr')`
     width: 100%;
@@ -27,7 +48,6 @@ export const FootRow = styled('tr')`
     }
 
     td > ${Text.Style} {
-        line-height: 2rem;
-        font-size: 1.2rem;
+        ${getStyling}
     }
 `;

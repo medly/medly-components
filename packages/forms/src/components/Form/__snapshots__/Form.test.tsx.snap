@@ -1103,7 +1103,7 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
-  padding-left: 0.8rem;
+  padding: 0 1.6rem 0 0.8rem;
 }
 
 .c47 .c8 {
@@ -1200,8 +1200,14 @@ exports[`Form should render properly with initial state 1`] = `
   color: rgba(0,90,238,.2);
 }
 
-.c47 .c30 {
+.c47 .c30:first-of-type {
   margin-right: 0.8rem;
+}
+
+.c47 .c30:nth-of-type(2) {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
 }
 
 .c47:hover .c48 {
@@ -1236,7 +1242,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c12 .sc-fzobTh {
+.c12 .sc-fzooss {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1404,6 +1410,10 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c55 .c56 > .c30 * {
+  fill: #546A7F;
+}
+
+.c55:not(:focus-within):hover .c56 > .c30 * {
   fill: #13181D;
 }
 
@@ -2221,7 +2231,6 @@ exports[`Form should render properly with initial state 1`] = `
                 id="country-input"
                 name="country"
                 placeholder="Please Select . . ."
-                readonly=""
                 required=""
                 type="text"
                 value="India"
@@ -3429,7 +3438,7 @@ exports[`Form should render properly without initial state 1`] = `
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
-  padding-left: 0.8rem;
+  padding: 0 1.6rem 0 0.8rem;
 }
 
 .c47 .c11 {
@@ -3526,8 +3535,14 @@ exports[`Form should render properly without initial state 1`] = `
   color: rgba(0,90,238,.2);
 }
 
-.c47 .c32 {
+.c47 .c32:first-of-type {
   margin-right: 0.8rem;
+}
+
+.c47 .c32:nth-of-type(2) {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
 }
 
 .c47:hover .c48 {
@@ -3562,7 +3577,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c15 .sc-fzobTh {
+.c15 .sc-fzooss {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3663,6 +3678,10 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c55 .c56 > .c32 * {
+  fill: #546A7F;
+}
+
+.c55:not(:focus-within):hover .c56 > .c32 * {
   fill: #13181D;
 }
 
@@ -4470,7 +4489,6 @@ exports[`Form should render properly without initial state 1`] = `
                 id="country-input"
                 name="country"
                 placeholder="Please Select . . ."
-                readonly=""
                 required=""
                 type="text"
                 value=""

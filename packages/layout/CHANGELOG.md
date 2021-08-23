@@ -3,6 +3,151 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.29.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.8...@medly-components/layout@1.29.0) (2021-08-23)
+
+
+### Features
+
+* **layout:** allow setting a different height for header in mobile resoltuion ([#392](https://github.com/medly/medly-components/issues/392)) ([94e0e28](https://github.com/medly/medly-components/commit/94e0e2856c12a4674d39680d25001d64c9c42d47))
+
+
+
+
+
+## [1.28.8](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.7...@medly-components/layout@1.28.8) (2021-08-21)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.28.7](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.6...@medly-components/layout@1.28.7) (2021-08-21)
+
+
+### Bug Fixes
+
+* add Style attribute in Header component ([#396](https://github.com/medly/medly-components/issues/396)) ([06c5673](https://github.com/medly/medly-components/commit/06c5673553cff5d105f10b3b9da8d25167226c21))
+
+
+
+
+
+## [1.28.6](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.5...@medly-components/layout@1.28.6) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.28.5](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.4...@medly-components/layout@1.28.5) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.28.4](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.3...@medly-components/layout@1.28.4) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.28.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.2...@medly-components/layout@1.28.3) (2021-08-19)
+
+
+### Bug Fixes
+
+* merge master ([8f28df4](https://github.com/medly/medly-components/commit/8f28df42249dc72600558975846fc85aedf2c5f0))
+* merge master, update snapshots ([4c8a53e](https://github.com/medly/medly-components/commit/4c8a53e3d5b58b148ab8569db4b21f6ee8b16390))
+* update snapshots ([d35aab3](https://github.com/medly/medly-components/commit/d35aab38da6952f4b71a7d4bdcb71cc8094409e6))
+
+
+
+
+
+## [1.28.2](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.1...@medly-components/layout@1.28.2) (2021-08-19)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.28.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.0...@medly-components/layout@1.28.1) (2021-08-18)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+# [1.28.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.27.4...@medly-components/layout@1.28.0) (2021-08-18)
+
+
+### Features
+
+* add onClick prop in Logo component ([#389](https://github.com/medly/medly-components/issues/389)) ([6bbc50d](https://github.com/medly/medly-components/commit/6bbc50dd5a0960bccc1b462a922fe7b6ac4a2119))
+
+
+
+
+
+## [1.27.4](https://github.com/medly/medly-components/compare/@medly-components/layout@1.27.3...@medly-components/layout@1.27.4) (2021-08-18)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.27.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.27.2...@medly-components/layout@1.27.3) (2021-08-18)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.27.2](https://github.com/medly/medly-components/compare/@medly-components/layout@1.27.1...@medly-components/layout@1.27.2) (2021-08-18)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.27.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.27.0...@medly-components/layout@1.27.1) (2021-08-17)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+# [1.27.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.26.1...@medly-components/layout@1.27.0) (2021-08-17)
+
+
+### Features
+
+* **core:** add custom range selection options in date range picker ([#382](https://github.com/medly/medly-components/issues/382)) ([aece055](https://github.com/medly/medly-components/commit/aece0558151c1c194152e34cd0103887bf4c33e6))
+
+
+
+
+
+## [1.26.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.26.0...@medly-components/layout@1.26.1) (2021-08-17)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 # [1.26.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.25.8...@medly-components/layout@1.26.0) (2021-08-16)
 
 

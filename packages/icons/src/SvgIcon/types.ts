@@ -20,4 +20,6 @@ export interface SvgIconProps extends SVGProp, WithThemeProp {
     withHoverEffect?: boolean;
     /** Margin for the Icon */
     margin?: string;
+    /** Fill opacity for the Icon */
+    fillOpacity?: number;
 }
