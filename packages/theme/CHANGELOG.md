@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.13.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.12.0...@medly-components/theme@2.13.0) (2021-08-23)
+
+
+### Features
+
+* **layout:** allow setting a different height for header in mobile resoltuion ([#392](https://github.com/medly/medly-components/issues/392)) ([94e0e28](https://github.com/medly/medly-components/commit/94e0e2856c12a4674d39680d25001d64c9c42d47))
+
+
+
+
+
 # [2.12.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.11.0...@medly-components/theme@2.12.0) (2021-08-19)
 
 
