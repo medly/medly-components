@@ -5,8 +5,12 @@ export const Container = styled.header`
     display: flex;
     align-items: center;
     background: ${({ theme }) => theme.header.backgroundColor};
-    height: ${({ theme }) => theme.header.height};
+    height: ${({ theme }) => theme.header.height.mobile};
     position: relative;
+
+    ${({ theme }) => media(breakpoints(theme.breakpoints).up('M'))`
+        height: ${theme.header.height.desktop};
+    `}
 `;
 
 export const Content = styled.div`
@@ -20,12 +24,12 @@ export const Content = styled.div`
     padding: 0 1.6rem;
 
     ${({ theme }) => media(breakpoints(theme.breakpoints).up('M'))`
-            padding: 0 3.2rem;
-        `}
+        padding: 0 3.2rem;
+    `}
 `;
 
 export const HamburgerIcon = styled(MenuIcon)`
     ${({ theme }) => media(breakpoints(theme.breakpoints).up('L'))`
-            display: none;
-        `}
+        display: none;
+    `}
 `;
