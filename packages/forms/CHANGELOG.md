@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.28.12](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.11...@medly-components/forms@1.28.12) (2021-08-23)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.28.11](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.10...@medly-components/forms@1.28.11) (2021-08-21)
+
+
+### Bug Fixes
+
+* error not coming when required prop is provided in SingleSelect … ([#397](https://github.com/medly/medly-components/issues/397)) ([80c73eb](https://github.com/medly/medly-components/commit/80c73eba87db6ec347d7f1ed1c38763f6cf008ab))
+
+
+
+
+
+## [1.28.10](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.9...@medly-components/forms@1.28.10) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.28.9](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.8...@medly-components/forms@1.28.9) (2021-08-20)
+
+
+### Bug Fixes
+
+* default color of chevron icon in multiSelect component ([#395](https://github.com/medly/medly-components/issues/395)) ([eb567a9](https://github.com/medly/medly-components/commit/eb567a9457eb1dc2ee377cd7a282b16a73367cf3))
+
+
+
+
+
+## [1.28.8](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.7...@medly-components/forms@1.28.8) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [1.28.7](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.6...@medly-components/forms@1.28.7) (2021-08-19)
 
 **Note:** Version bump only for package @medly-components/forms

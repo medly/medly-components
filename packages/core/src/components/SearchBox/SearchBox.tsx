@@ -69,7 +69,7 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
                 inputRef.current.focus();
                 setOptionsVisibilityState(false);
                 onOptionSelected && onOptionSelected(option);
-            }, []),
+            }, [onOptionSelected]),
             handleFocus = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
                 updateIsTyping(event.target.value.length > 0);
                 isFocused.current = true;

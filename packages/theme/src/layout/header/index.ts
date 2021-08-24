@@ -4,7 +4,10 @@ import { HeaderTheme } from './types';
 const header: HeaderTheme = {
     backgroundColor: colors.professionalNavy,
     maxContentWidth: '1240px',
-    height: '72px',
+    height: {
+        mobile: '64px',
+        desktop: '72px'
+    },
     fontColor: colors.white,
     nav: {
         gutterSpace: '0.8rem'

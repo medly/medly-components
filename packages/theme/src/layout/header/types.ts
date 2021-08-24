@@ -1,7 +1,10 @@
 export interface HeaderTheme {
     backgroundColor: string;
     maxContentWidth: string;
-    height: string;
+    height: {
+        mobile: string;
+        desktop: string;
+    };
     fontColor: string;
     nav: {
         gutterSpace: string;

@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.29.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.8...@medly-components/layout@1.29.0) (2021-08-23)
+
+
+### Features
+
+* **layout:** allow setting a different height for header in mobile resoltuion ([#392](https://github.com/medly/medly-components/issues/392)) ([94e0e28](https://github.com/medly/medly-components/commit/94e0e2856c12a4674d39680d25001d64c9c42d47))
+
+
+
+
+
+## [1.28.8](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.7...@medly-components/layout@1.28.8) (2021-08-21)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.28.7](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.6...@medly-components/layout@1.28.7) (2021-08-21)
+
+
+### Bug Fixes
+
+* add Style attribute in Header component ([#396](https://github.com/medly/medly-components/issues/396)) ([06c5673](https://github.com/medly/medly-components/commit/06c5673553cff5d105f10b3b9da8d25167226c21))
+
+
+
+
+
+## [1.28.6](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.5...@medly-components/layout@1.28.6) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.28.5](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.4...@medly-components/layout@1.28.5) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.28.4](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.3...@medly-components/layout@1.28.4) (2021-08-20)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [1.28.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.28.2...@medly-components/layout@1.28.3) (2021-08-19)
 
 

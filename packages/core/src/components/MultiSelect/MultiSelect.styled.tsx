@@ -4,7 +4,15 @@ import TextField from '../TextField';
 import { InputSuffixStyled } from './InputSuffix/InputSuffix.styled';
 import { SelectWrapperProps } from './types';
 
-const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: SelectWrapperProps) => css`
+const iconStyle = (color: string) => css`
+        ${InputSuffixStyled} > ${ChevronDownIcon.Style} {
+            * {
+                fill: ${color};
+            }
+        }
+    `;
+
+const getDefaultStyle = ({ theme, variant, areOptionsVisible, disabled, isSearchable }: SelectWrapperProps) => css`
         ${TextField.Style} {
             margin: 0;
 
@@ -26,19 +34,16 @@ const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: S
                 padding-right: 1.6rem;
             }
         }
+
+        
         ${InputSuffixStyled} > ${ChevronDownIcon.Style} {
             transform: ${areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)'};
-            * {
-                fill: ${theme.colors.black};
-            }
         }
-    `;
 
-const iconStyle = (color: string) => css`
-        ${InputSuffixStyled} > ${ChevronDownIcon.Style} {
-            * {
-                fill: ${color};
-            }
+        ${!disabled && iconStyle(theme.textField[variant].default.labelColor)}
+        
+        &:not(:focus-within):hover{
+            ${!disabled && iconStyle(theme.textField[variant].default.textColor)}
         }
     `;
 
