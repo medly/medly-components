@@ -257,7 +257,7 @@ exports[`SearchBox options should render options when user search option specifi
   border-radius: .8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-color: #126AFA;
-  border-width: 2px;
+  border-width: .2rem;
 }
 
 .c0 input {
