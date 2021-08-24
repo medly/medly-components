@@ -149,8 +149,10 @@ describe('SingleSelect component', () => {
     });
 
     it('should show options on click on drop icon when options are custom components', async () => {
-        const componentAsOptions = [{ value: <>Component1</>, label: 'Component1' },
-        { value: <>Component2</>, label: 'Component2' }]
+        const componentAsOptions = [
+            { value: <>Component1</>, label: 'Component1' },
+            { value: <>Component2</>, label: 'Component2' }
+        ];
         const { container } = render(<SingleSelect options={componentAsOptions} />);
         fireEvent.click(container.querySelector('svg'));
         waitFor(() => expect(screen.getByRole('list')).toBeVisible());
@@ -277,7 +279,7 @@ describe('SingleSelect component', () => {
         const inputEl = screen.getByRole('textbox');
         fireEvent.click(inputEl);
         fireEvent.blur(inputEl);
-        expect(mockOnBlur).toHaveBeenCalled();
+        await waitFor(() => expect(mockOnBlur).toHaveBeenCalled());
         await waitFor(() => expect(screen.queryByRole('list')).toBeNull(), { timeout: 251 });
     });
 
@@ -304,12 +306,12 @@ describe('SingleSelect component', () => {
 
             it('should change input', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} isSearchable />);
+                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />);
                 fireEvent.click(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(screen.getByRole('textbox')).toHaveValue('Dummy1');
-                expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
+                await waitFor(() => expect(mockOnChange).toHaveBeenCalledWith('Dummy1'));
+                await waitFor(() => expect(screen.getByRole('textbox')).toHaveValue('Dummy1'));
             });
 
             it('should change input value to the first option when currently selected options is the last option ', async () => {

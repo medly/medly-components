@@ -66,13 +66,14 @@ describe('Form', () => {
         expect(getByRole('textbox', { name: 'Last Name' })).not.toBeDisabled();
     });
 
-    it('should render error message properly', () => {
-        const { container, getByText } = render(
+    it('should render error message properly', async () => {
+        const { container, findByText } = render(
             <Form fieldSchema={{ firstName: { required: true, type: 'text' } }} onSubmit={jest.fn()} />
         );
         fireEvent.focus(container.querySelector('#firstName-input'));
         fireEvent.blur(container.querySelector('#firstName-input'));
-        expect(getByText('Constraints not satisfied')).toBeInTheDocument();
+        const message = await findByText('Constraints not satisfied');
+        expect(message).toBeInTheDocument();
     });
 
     it('should not render any field if component type is not matched', () => {

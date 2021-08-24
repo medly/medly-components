@@ -171,7 +171,6 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 ) : (
                     <TextField
                         fullWidth
-                        key={selectedOption.value}
                         variant={variant}
                         autoComplete="off"
                         onChange={handleInputChange}

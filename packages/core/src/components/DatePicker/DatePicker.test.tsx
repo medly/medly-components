@@ -193,7 +193,7 @@ describe('DatePicker component', () => {
             expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
         });
 
-        it('should call focus and blur handlers if passed', () => {
+        it('should call focus and blur handlers if passed', async () => {
             const mockOnFocus = jest.fn(),
                 mockOnChange = jest.fn(),
                 mockOnBlur = jest.fn(),
@@ -211,7 +211,7 @@ describe('DatePicker component', () => {
             fireEvent.click(container.querySelector('svg'));
             expect(mockOnFocus).toHaveBeenCalled();
             fireEvent.blur(inputEl);
-            expect(mockOnBlur).toHaveBeenCalled();
+            await waitFor(() => expect(mockOnBlur).toHaveBeenCalled());
         });
 
         it('should call invalid handler if passed', () => {

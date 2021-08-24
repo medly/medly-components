@@ -57,7 +57,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                     validatorMessage = (validator && validator(element.value, event.type)) || '',
                     message = validator ? validatorMessage : element.validationMessage;
                 setErrorMessage(message);
-                validator && inputRef.current.setCustomValidity(validatorMessage);
+                validator && inputRef.current?.setCustomValidity(validatorMessage);
                 eventFunc && eventFunc(event);
             },
             [validator, builtInErrorMessage]
@@ -65,7 +65,14 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
 
         const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
             handleWrapperClick = useCallback(() => !disabled && inputRef.current.focus(), [inputRef, disabled]),
-            onBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
+            onBlur = useCallback(
+                (event: FocusEvent<HTMLInputElement>) => {
+                    event.persist();
+                    event.preventDefault();
+                    setTimeout(() => validate(event, props.onBlur), 100);
+                },
+                [validate, props.onBlur]
+            ),
             onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
             onChange = useCallback(
                 (e: React.ChangeEvent<HTMLInputElement>) => {

@@ -175,12 +175,13 @@ describe('TextField', () => {
         it('should render custom error message if validator function is returning error message', async () => {
             const mockOnBlur = jest.fn(),
                 validator = (val: string) => val.length < 3 && 'Email should be more then 3 characters',
-                { container, getByText } = render(
+                { container, findByText } = render(
                     <TextField label="Name" required type="email" value="du" onBlur={mockOnBlur} validator={validator} />
                 ),
                 input = container.querySelector('input');
             fireEvent.blur(input);
-            expect(getByText('Email should be more then 3 characters')).toBeInTheDocument();
+            const message = await findByText('Email should be more then 3 characters');
+            expect(message).toBeInTheDocument();
             expect(input.validationMessage).toEqual('Email should be more then 3 characters');
             expect(mockOnBlur).toBeCalled();
         });
