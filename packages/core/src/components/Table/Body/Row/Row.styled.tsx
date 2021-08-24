@@ -86,6 +86,20 @@ const getBorderStyle = (rowHoveredStyle: 'shadow' | 'outlined') =>
           `
         : ``;
 
+const getPadding = (rowHoveredStyle: 'shadow' | 'outlined') =>
+    rowHoveredStyle === 'outlined'
+        ? css`
+              padding-bottom: 0.1rem;
+          `
+        : '';
+
+const rowSeparatorStyle = css<StyledProps>`
+    &:not(:last-child) {
+        border-bottom: 0.1rem solid ${({ theme }) => theme.table.row.separatorColor};
+        ${({ theme }) => getPadding(theme.table.row.hoveredStyle.style)}
+    }
+`;
+
 const normalStyle = css<StyledProps>`
     &&:hover {
         z-index: 2;
@@ -111,10 +125,7 @@ const normalStyle = css<StyledProps>`
     }
 
     ${({ theme }) => getBorderStyle(theme.table.row.hoveredStyle.style)};
-
-    &:not(:last-child) {
-        border-bottom: 0.1rem solid ${({ theme }) => theme.table.row.separatorColor};
-    }
+    ${({ withRowSeparators }) => withRowSeparators && rowSeparatorStyle}
 `;
 
 export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({

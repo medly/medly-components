@@ -8,6 +8,7 @@ export type StyledProps = GridTemplateProps &
         isExpanded?: boolean;
         isExpandable?: boolean;
         showRowWithCardStyle?: boolean;
+        withRowSeparators?: boolean;
     };
 export type RowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
     data: { [key: string]: any };
