@@ -113,6 +113,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     onScrolledToBottom?: () => any;
     /** Enables a mini map to scroll horizontally across the table*/
     withMinimap?: boolean;
+    /** Enable separators between rows */
+    withRowSeparators?: boolean;
 }
 
 export interface StaticProps {
