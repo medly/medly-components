@@ -76,7 +76,7 @@ exports[`Pagination popup component should render correctly with all the default
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-weight: Medium;
+  font-weight: 600;
 }
 
 <div>
