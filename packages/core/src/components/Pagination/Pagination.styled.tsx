@@ -62,10 +62,10 @@ export const PageNumberButton = styled(BaseButton)<{ isActive?: boolean }>`
         font-weight: ${({ theme }) => theme.font.weights.Strong};
         ${getPageNumberButtonStyleByState('pageNumber', 'pressed')};
     }
-
     ${Text.Style} {
         ${({ theme }) => getFontStyle({ theme, fontVariant: theme.pagination.fontVariant })};
-        font-weight: ${({ theme, isActive }) => theme.pagination.pageNumber.fontWeight[isActive ? 'selected' : 'default']};
+        font-weight: ${({ theme, isActive }) =>
+            theme.font.weights[theme.pagination.pageNumber.fontWeight[isActive ? 'selected' : 'default']]};
     }
 `;
 
