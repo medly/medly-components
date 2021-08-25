@@ -1,8 +1,7 @@
-import { Text } from '@medly-components/core';
 import { ChevronLeftIcon, ChevronRightIcon, SvgIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
-import { getFontStyle } from 'packages/utils/src/style';
+import { css, getFontStyle, styled } from '@medly-components/utils';
 import List from '../List';
+import Text from '../Text';
 
 export const ListWrapper = styled(List)`
     & > li {
@@ -61,10 +60,11 @@ export const PageNumberButton = styled(BaseButton)<{ isActive?: boolean }>`
     }
     &:active {
         font-weight: ${({ theme }) => theme.font.weights.Strong};
-        ${getPageNumberButtonStyleByState('pageNumber', 'pressed')}
+        ${getPageNumberButtonStyleByState('pageNumber', 'pressed')};
     }
+
     ${Text.Style} {
-        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.pagination.fontVariant })}
+        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.pagination.fontVariant })};
         font-weight: ${({ theme, isActive }) => theme.pagination.pageNumber.fontWeight[isActive ? 'selected' : 'default']};
     }
 `;
