@@ -1,0 +1,57 @@
+import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Helpers/useStorage" />
+
+# useStorage
+
+`useStorage` can be used to handle the browsers `localStorage`/`sessionStorage`/`cookieStorage`. Default storage is `localStorage`.
+
+### Example
+
+```tsx
+import { SingleSelect } from '@medly-components/core';
+import { useStorage } from '@medly-components/utils';
+
+const Dummy: React.FC = () => {
+    const [state, updateState] = useStorage<string>('gender', 'male');
+
+    return (
+        <SingleSelect
+            value={state}
+            onChange={updateState}
+            options={[
+                { value: 'male', label: 'Male' },
+                { value: 'female', label: 'Female' }
+            ]}
+        />
+    );
+};
+```
+
+### Types
+
+```tsx
+import { Dispatch, SetStateAction } from 'react';
+
+type UseStorageType = <T>(
+    key: string,
+    initialValue?: T,
+    options?: { storage: 'localStorage' | 'sessionStorage' | 'cookieStorage' }; // default is `localStorage`
+) => [T, Dispatch<SetStateAction<T>>];
+```
+
+### Options
+
+```json
+{ "storage": "localStorage" | "sessionStorage" | "cookieStorage" }
+```
+
+You can pass the option in specific usage or you can set global config like below:
+
+```tsx
+import { StorageConfig } from '@medly-components/utils';
+
+const Dummy: React.FC = props => {
+    return <StorageConfig.Provider value={{ storage: 'sessionStorage' }}>{props.children}</StorageConfig.Provider>;
+};
+```
