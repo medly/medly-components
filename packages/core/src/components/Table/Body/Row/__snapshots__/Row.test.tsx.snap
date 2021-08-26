@@ -44,10 +44,6 @@ exports[`Row should render NoResult properly 1`] = `
   color: #13181D;
 }
 
-.c0:not(:last-child) {
-  border-bottom: 0.1rem solid #C7D0D8;
-}
-
 .c0 .sc-AxjAm {
   font-size: 1.4rem;
   font-weight: 400;
@@ -193,10 +189,6 @@ exports[`Row should render row properly 1`] = `
 .c0:nth-child(even) > * {
   background-color: #ffffff;
   color: #13181D;
-}
-
-.c0:not(:last-child) {
-  border-bottom: 0.1rem solid #C7D0D8;
 }
 
 .c0 .sc-AxjAm {

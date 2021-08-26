@@ -45,17 +45,6 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   margin: 0;
 }
 
-.c1 .sc-AxhCb {
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
 .c2 {
   margin: 0.4rem;
   height: 3.2rem;
@@ -189,7 +178,7 @@ exports[`Pagination component should render correctly with all the default props
   fill: #607890;
 }
 
-.c10 {
+.c9 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -201,7 +190,7 @@ exports[`Pagination component should render correctly with all the default props
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
@@ -210,20 +199,7 @@ exports[`Pagination component should render correctly with all the default props
   text-align: center;
 }
 
-.c9 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: center;
-}
-
-.c11 {
+.c10 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -265,17 +241,6 @@ exports[`Pagination component should render correctly with all the default props
   margin: 0;
 }
 
-.c1 .c6 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
 .c5 {
   margin: 0.4rem;
   height: 3.2rem;
@@ -314,6 +279,18 @@ exports[`Pagination component should render correctly with all the default props
   font-weight: 700;
   color: #13181D;
   background: #eff2f4;
+}
+
+.c5 .c6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
 }
 
 .c8 {
@@ -359,6 +336,18 @@ exports[`Pagination component should render correctly with all the default props
   font-weight: 700;
   color: #13181D;
   background: #eff2f4;
+}
+
+.c8 .c6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 600;
 }
 
 .c2 {
@@ -457,11 +446,11 @@ exports[`Pagination component should render correctly with all the default props
         class="sc-AxheI c5"
         type="button"
       >
-        <strong
+        <span
           class="c6 c7"
         >
           1
-        </strong>
+        </span>
       </button>
     </li>
     <li>
@@ -470,7 +459,7 @@ exports[`Pagination component should render correctly with all the default props
         type="button"
       >
         <span
-          class="c6 c9"
+          class="c6 c7"
         >
           2
         </span>
@@ -482,7 +471,7 @@ exports[`Pagination component should render correctly with all the default props
         type="button"
       >
         <span
-          class="c6 c9"
+          class="c6 c7"
         >
           3
         </span>
@@ -490,7 +479,7 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <div
-        class="c10"
+        class="c9"
         id="medly-popover-wrapper"
       >
         <button
@@ -498,7 +487,7 @@ exports[`Pagination component should render correctly with all the default props
           type="button"
         >
           <h5
-            class="c6 c11"
+            class="c6 c10"
           >
             ...
           </h5>
@@ -511,7 +500,7 @@ exports[`Pagination component should render correctly with all the default props
         type="button"
       >
         <span
-          class="c6 c9"
+          class="c6 c7"
         >
           8
         </span>
@@ -543,7 +532,7 @@ exports[`Pagination component should render correctly with all the default props
 `;
 
 exports[`Pagination component should render correctly with all the props given 1`] = `
-.c7 {
+.c6 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -555,7 +544,7 @@ exports[`Pagination component should render correctly with all the props given 1
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
@@ -564,20 +553,7 @@ exports[`Pagination component should render correctly with all the props given 1
   text-align: center;
 }
 
-.c6 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: center;
-}
-
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -619,17 +595,6 @@ exports[`Pagination component should render correctly with all the props given 1
   margin: 0;
 }
 
-.c1 .c3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
 .c2 {
   margin: 0.4rem;
   height: 3.2rem;
@@ -668,6 +633,18 @@ exports[`Pagination component should render correctly with all the props given 1
   font-weight: 700;
   color: #13181D;
   background: #eff2f4;
+}
+
+.c2 .c3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
 }
 
 .c5 {
@@ -715,6 +692,18 @@ exports[`Pagination component should render correctly with all the props given 1
   background: #eff2f4;
 }
 
+.c5 .c3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+}
+
 <div>
   <ul
     class="c0 c1"
@@ -724,11 +713,11 @@ exports[`Pagination component should render correctly with all the props given 1
         class="sc-AxheI c2"
         type="button"
       >
-        <strong
+        <span
           class="c3 c4"
         >
           1
-        </strong>
+        </span>
       </button>
     </li>
     <li>
@@ -737,7 +726,7 @@ exports[`Pagination component should render correctly with all the props given 1
         type="button"
       >
         <span
-          class="c3 c6"
+          class="c3 c4"
         >
           2
         </span>
@@ -749,7 +738,7 @@ exports[`Pagination component should render correctly with all the props given 1
         type="button"
       >
         <span
-          class="c3 c6"
+          class="c3 c4"
         >
           3
         </span>
@@ -757,7 +746,7 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <div
-        class="c7"
+        class="c6"
         id="medly-popover-wrapper"
       >
         <button
@@ -765,7 +754,7 @@ exports[`Pagination component should render correctly with all the props given 1
           type="button"
         >
           <h5
-            class="c3 c8"
+            class="c3 c7"
           >
             ...
           </h5>
@@ -778,7 +767,7 @@ exports[`Pagination component should render correctly with all the props given 1
         type="button"
       >
         <span
-          class="c3 c6"
+          class="c3 c4"
         >
           15
         </span>
