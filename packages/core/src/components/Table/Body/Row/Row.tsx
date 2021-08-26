@@ -28,6 +28,7 @@ export const Row: React.FC<RowProps> = React.memo(props => {
             showRowWithCardStyle,
             size: tableSize,
             expandedRowComponent,
+            withRowSeparators,
             rowHoverActions: RowHoverActions
         } = useContext(TableComponentsCommonPropsContext);
 
@@ -102,6 +103,7 @@ export const Row: React.FC<RowProps> = React.memo(props => {
                 gridTemplateColumns={getGridTemplateColumns(columns)}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
+                withRowSeparators={withRowSeparators}
             >
                 {(isRowSelectable || isRowExpandable) && (
                     <RowActionsCell

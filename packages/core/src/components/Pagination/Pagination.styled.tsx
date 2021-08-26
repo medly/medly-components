@@ -7,9 +7,6 @@ export const ListWrapper = styled(List)`
     & > li {
         margin: 0;
     }
-    ${Text.Style} {
-        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.pagination.fontVariant })}
-    }
 `;
 
 export const getPageNumberButtonStyleByState = (
@@ -63,7 +60,12 @@ export const PageNumberButton = styled(BaseButton)<{ isActive?: boolean }>`
     }
     &:active {
         font-weight: ${({ theme }) => theme.font.weights.Strong};
-        ${getPageNumberButtonStyleByState('pageNumber', 'pressed')}
+        ${getPageNumberButtonStyleByState('pageNumber', 'pressed')};
+    }
+    ${Text.Style} {
+        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.pagination.fontVariant })};
+        font-weight: ${({ theme, isActive }) =>
+            theme.font.weights[theme.pagination.pageNumber.fontWeight[isActive ? 'selected' : 'default']]};
     }
 `;
 
