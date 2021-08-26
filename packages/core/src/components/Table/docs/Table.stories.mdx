@@ -32,17 +32,39 @@ import { groupedData, getGroupedData } from './groupedData';
 
 Simple `Table` component to show set of data.
 
+```tsx
+import { Table } from '@medly-components/core';
+import { useSWRAxios } from '@medly-components/utils';
+import React from 'react';
+
+export const Dummy: React.FC = () => {
+    const { data, mutate, isValidating } = useSWRAxios('https://6124c2b9300c540017873d63.mockapi.io/api/users', { initialData: [] });
+
+    return (
+        <Table
+            data={data}
+            isLoading={isValidating}
+            columns={[
+                { title: 'Name', field: 'name' },
+                { title: 'Age', field: 'age' },
+                { title: 'Colour', field: 'colour' }
+            ]}
+        />
+    );
+};
+```
+
 ## Features
 
 -   [Row Accordion](#row-accordion)
 -   [Row as Card style](#row-as-card-style)
 -   [Row Grouping](#row-grouping)
 -   [Row Selection](#row-selection)
+-   [Row Hover Actions](#row-hover-actions)
+-   [No Result Row](#no-result-row)
 -   [Actions](#actions)
 -   [Minimap](#minimap)
--   [Row Hover Actions](#row-hover-actions)
 -   [Pagination](#pagination)
--   [No Result Row](#no-result-row)
 -   [Custom Column Cell Component](#custom-column-cell-component)
 -   [Props](#props)
 -   [Table Prop Types](#table-prop-types)
@@ -224,29 +246,6 @@ export const TableComponent: React.FC = () => {
 };
 ```
 
-## Actions
-
-To show action bar you have to pass `actions` in below format
-
-```tsx
-export const Actions = [
-    <Button size="S" variant="solid">
-        <RemoveCircleIcon size="S" />
-        Lorem
-    </Button>,
-    <Button size="S" variant="solid">
-        <RemoveCircleIcon size="S" />
-        Lorem ipsum
-    </Button>
-];
-
-<Table data={tableData} columns={columns} actions={Actions} />;
-```
-
-## Minimap
-
-To show minimap you have to pass `withMinimap` as `true` and it will be visible when there is an horizontal scroll available in the table
-
 ## Row Hover Actions
 
 To show row hover actions you have to pass `rowHoverActions` in below format. This component will render when the row is hovered and it will be passed the `rowId` and `rowData` of the row currently being hovered.
@@ -306,10 +305,6 @@ export const RowHoverActions: RowHoverActionsType = ({ rowId, rowData }) => {
     </Story>
 </Preview>
 
-### Pagination
-
-To show pagination you have to pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`
-
 ### No Result Row
 
 You can replace `No Result` Row with your Custom Component. You need to pass the Mounted Component Prop to Table component, and it will render that component on UI.
@@ -328,6 +323,33 @@ To show Custom Component, you need pass props in below format.
 ```
 
 **Note:** It is advisable to wrap your component in `<tr>` tag to avoid warnings.
+
+## Actions
+
+To show action bar you have to pass `actions` in below format
+
+```tsx
+export const Actions = [
+    <Button size="S" variant="solid">
+        <RemoveCircleIcon size="S" />
+        Lorem
+    </Button>,
+    <Button size="S" variant="solid">
+        <RemoveCircleIcon size="S" />
+        Lorem ipsum
+    </Button>
+];
+
+<Table data={tableData} columns={columns} actions={Actions} />;
+```
+
+## Minimap
+
+To show minimap you have to pass `withMinimap` as `true` and it will be visible when there is an horizontal scroll available in the table
+
+### Pagination
+
+To show pagination you have to pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`
 
 ### Custom Column Cell Component
 
