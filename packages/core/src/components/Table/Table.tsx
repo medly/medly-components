@@ -32,7 +32,6 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                 showRowWithCardStyle,
                 withPagination,
                 onScrolledToBottom,
-                withRowSeparators,
                 ...restProps
             } = props,
             isGroupedTable = !!restProps.groupBy,
@@ -130,8 +129,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                                 selectedRowIds: isGroupedTable ? selectedGroupIds : selectedRowIds,
                                 onRowSelection: toggleId,
                                 onGroupedRowSelection: groupedRowSelector.toggleIds,
-                                showShadowAfterFrozenElement: !scrollState.isScrolledToLeft,
-                                withRowSeparators
+                                showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                             }}
                         />
                         {withPagination && <Foot tableSize={size} />}

@@ -5,5 +5,4 @@ export interface TableBodyProps {
     showShadowAfterFrozenElement: boolean;
     setSelectAllDisableState: React.Dispatch<React.SetStateAction<boolean>>;
     onGroupedRowSelection: (id: number[] | string[]) => void;
-    withRowSeparators: boolean;
 }
