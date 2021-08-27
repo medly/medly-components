@@ -122,7 +122,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c2 .c3 * {
-  fill: #607890;
+  fill: #546A7F;
 }
 
 .c2 .c3:hover {
@@ -131,7 +131,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c2 .c3:hover * {
-  fill: #303C48;
+  fill: #435465;
 }
 
 .c14 .c3 {
@@ -139,7 +139,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c14 .c3 * {
-  fill: #607890;
+  fill: #546A7F;
 }
 
 .c14 .c3:hover {
@@ -152,7 +152,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c15 .c3 * {
-  fill: #607890;
+  fill: #546A7F;
 }
 
 .c15 .c3:hover {
@@ -257,7 +257,7 @@ exports[`SearchBox options should render options when user search option specifi
   border-radius: .8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-color: #126AFA;
-  border-width: 1.5px;
+  border-width: .2rem;
 }
 
 .c0 input {
@@ -474,7 +474,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 }
 
 .c3 .c4 * {
-  fill: #607890;
+  fill: #546A7F;
 }
 
 .c3 .c4:hover {
@@ -701,7 +701,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 }
 
 .c3 .c4 * {
-  fill: #607890;
+  fill: #546A7F;
 }
 
 .c3 .c4:hover {

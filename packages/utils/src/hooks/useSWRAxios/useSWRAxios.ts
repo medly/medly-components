@@ -5,9 +5,10 @@ import { AxiosConfig, Return, SWRConfig } from './types';
 const defaultSWRConfig = { revalidateOnMount: true, errorRetryCount: 5 };
 
 export const useSWRAxios = <Data = unknown, Error = unknown>(
-    axiosConfig: AxiosConfig,
+    config: string | AxiosConfig,
     { initialData, ...swrConfig }: SWRConfig<Data, Error> = {}
 ): Return<Data, Error> => {
+    const axiosConfig = typeof config === 'string' ? { url: config } : config;
     const { data: axiosSuccessResponse, error: axiosErrorResponse, ...swrResponse } = useSWR<AxiosResponse<Data>, AxiosError<Error>>(
         axiosConfig.url,
         () => axios(axiosConfig),
