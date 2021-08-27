@@ -7,11 +7,13 @@ import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
 
 This react hook can be used to call the api using `swr` and `axios`. `swr` helps to cache the data. With SWR, components will get a stream of data updates constantly and automatically. And the UI will be always fast and reactive. Chekout more about `swr` over [here](https://swr.vercel.app/)
 
-> **Note**: Use this hook to increase user experience as this basically cache the response so that if you move back and forth between pages the data will preloaded while revalidating in the background.
-
 ```tsx
-const { data, isValidating, error } = useSWRAxios<DataType, ErrorType>(<AxiosRequestConfig>, <SWRCongig>);
+const { data, isValidating, error } = useSWRAxios<DataType, ErrorType>(string | AxiosRequestConfig, SWRCongig);
 ```
+
+The first param could be either url or AxiosRequestConfig.
+
+> **Note**: Use this hook to increase user experience as this basically cache the response so that if you move back and forth between pages the data will preloaded while revalidating in the background.
 
 ### Configuration
 
@@ -65,10 +67,7 @@ import { useSWRAxios } from '@medly-components/utils';
 import React, { useEffect } from 'react';
 
 const Demo: React.SFC = React.memo(() => {
-    const { data, isValidating, error } = useSWRAxios<UserType, { message: string }>(
-        { url: 'https://somedummyurls.com/data' },
-        { initialData: [] }
-    );
+    const { data, isValidating, error } = useSWRAxios<UserType, { message: string }>('https://somedummyurls.com/data', { initialData: [] });
 
     useEffect(() => {
         error?.data?.message && addToast({ variant: 'error', message: error.data.message });
