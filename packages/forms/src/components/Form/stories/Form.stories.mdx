@@ -1,7 +1,7 @@
-import { Form } from './Form.tsx';
+import { Form } from '../Form.tsx';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs';
-import { testSchema } from './testSchema.ts';
+import { testSchema } from '../testSchema.ts';
 import { CustomFieldForm, CommonProps, NestedFieldProps, ActionSchema, CustomComponentPropSchema } from './Form.stories.tsx';
 import { action } from '@storybook/addon-actions';
 
@@ -102,16 +102,7 @@ To change the label of the form's default action button you can use `actionLabel
 
 #### 3) Custom fields
 
-There are use cases which are beyond the scope of predefined fields. You can always define a custom field type to render any content in the form.
-The custom field is provided with a `value` and an `onChange` method to update the form state along with some other useful props.
-
-<Preview withToolbar>
-    <CustomFieldForm />
-</Preview>
-
-##### Custom component props
-
-<Props of={CustomComponentPropSchema} />
+Please refer
 
 ### Form Props
 

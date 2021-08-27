@@ -52,7 +52,7 @@ export type FileInputProps = GetComponentProps<typeof FileInput> &
         maxSize?: number;
         accept?: string;
     };
-export type CustomFieldProps = { Component: FC<CustomComponentProps> } & CommonFieldProps & { type: 'custom' };
+export type CustomFieldProps = { component: FC<CustomComponentProps> } & CommonFieldProps & { type: 'custom' };
 
 export type NestedProps = {
     /** Type to identify field type */

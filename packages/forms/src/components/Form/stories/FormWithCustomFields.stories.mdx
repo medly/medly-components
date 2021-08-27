@@ -1,0 +1,119 @@
+import { Meta, Preview, Props } from '@storybook/addon-docs/blocks';
+import { CustomComponentPropSchema, CustomFieldForm, SimpleCustomFieldForm } from './Form.stories.tsx';
+
+<Meta title="Forms with custom fields" parameters={{ jest: ['Form.test.tsx', 'Actions/Actions.test.tsx'] }} />
+
+# Dynamic Forms
+
+Forms by default provide a long list of supported field types. Although it does satisfy most use cases, sometimes a custom implementation is necessary.
+The form schema provides a `custom` field type for the same. Here is a simple example of how custom fields could be utilized.
+
+<Preview withToolbar mdxSource="Preview">
+    <SimpleCustomFieldForm />
+</Preview>
+
+```tsx
+const TotalRent: FC<CustomComponentProps> = ({ values: { rent = 0, utilities = 0, internet = 0 } }) => <div>Total rent - {rent + utilities + internet}</div>;
+export const SimpleCustomFieldForm = () => (<Form fieldSchema={{
+    rent: { type: 'number', label: 'Rent', },
+    utilities: { type: 'number', label: 'Utilities', },
+    internet: { type: 'number', label: 'Internet', },
+    total: { type: 'custom', component: TotalRent}
+}} onSubmit={action('Submitted')} hideActions />);
+```
+
+##### Custom component props
+
+<Props of={CustomComponentPropSchema} />
+
+### Advanced usage
+
+Consider the following example. The form needs to have a dynamic set of fields which can be added and removed.
+Try clicking the '+ Add new phone number' button.
+
+<Preview withToolbar>
+    <CustomFieldForm />
+</Preview>
+
+This is the initial schema which would be converted to a `formSchema` object.
+```tsx
+const defaultFields = [
+    { fieldName: 'firstName', type: 'text', required: true, label: 'First name', gridColumn: '1/7' },
+    { fieldName: 'lastName', type: 'text', required: true, label: 'Last name', gridColumn: '7/-1' },
+    { fieldName: 'phone1', index: 1, type: 'tel', required: true, label: 'Phone number' }
+];
+```
+
+Here is what the form looks like -
+
+```tsx
+import { Form } from '@medly-components/forms';
+import { AddPhoneNumber } from './AddPhoneNumber';
+
+export const CustomFieldForm = () => {
+    const [fields, setFields] = useState(defaultFields);
+    const addPhoneNumberField = {
+        type: 'custom',
+        component: AddPhoneNumber,
+        fields: fields,
+        setFields: setFields
+    };
+    const fieldSchema = fields.reduce((acc, cur) => ({ ...acc, [cur.fieldName]: cur }), {});
+
+
+    return <Form fieldSchema={{ ...fieldSchema, addPhoneNumberField }} onSubmit={action('Submitted')} hideActions />;
+};
+```
+
+This is what the `Add another phone number` button looks like. It is a custom form field which simply adds another field to the form schema on click.
+The additional field could be normal field/nested field or in this case it is another custom field that allows removing fields from the phone schema.
+Notice that the `fields` and `setFields` are props passed by the `CustomFormField`.
+```tsx
+import CustomPhoneField from './CustomPhoneField';
+import { Button } from '@medly-components/core';
+
+type AddPhoneNumberProps = { fields: { [key: string]: any }[], setFields: (data: any) => void; };
+export const AddPhoneNumber: FC<AddPhoneNumberProps> = ({ fields, setFields }) => {
+    const lastField = fields[fields.length - 1];
+    const newFieldIndex = lastField.index + 1;
+    const disabled = newFieldIndex > 3;
+    const addPhoneNumberField = () => setFields([
+        ...fields,
+        {
+            fieldName: `phone${newFieldIndex}`,
+            index: newFieldIndex,
+            type: 'custom',
+            component: CustomPhoneField,
+            onRemoveField: (name: string) => setFields(fields.filter(field => field.fieldName !== name))
+        }
+    ]);
+    return (
+        <div>
+            <Button onClick={addPhoneNumberField} variant='flat' size='XS' disabled={disabled}>+ Add new phone number</Button>
+        </div>
+    );
+};
+```
+
+Here is the implementation for the CustomPhoneField.
+Notice that it gets the props `value`, `name` and `onChange` from the Form but also gets the any additional props like `onRemoveField` passed from the AddPhoneNumber component.
+```tsx
+import { Button, TextField } from '@medly-components/core';
+type CustomPhoneFieldProps = { value: string; name: string; onChange: (name: string, value: string) => void; onRemoveField: (name: string) => void; };
+const CustomPhoneField: FC<CustomPhoneFieldProps> = ({ value, name, onRemoveField, onChange }) => {
+    return (
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+            <TextField
+                value={value}
+                name={name}
+                label='Phone number'
+                required
+                fullWidth
+                onChange={(e: ChangeEvent<HTMLInputElement>) => onChange(name, e.target.value)} />
+            <Button variant='flat' size='XS' onClick={() => onRemoveField(name)}>Remove</Button>
+        </div>
+    );
+};
+```
+
+Using this recipe, you can hopefully create any type of custom/dynamic form fields.

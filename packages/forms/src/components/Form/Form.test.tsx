@@ -1,8 +1,9 @@
-import { cleanup, fireEvent, render } from '@test-utils';
+import { cleanup, fireEvent, render, screen } from '@test-utils';
 import { format } from 'date-fns';
-import React from 'react';
+import React, { FC } from 'react';
 import { Form } from './Form';
 import { testSchema } from './testSchema';
+import { CustomComponentProps } from '../Fields/types';
 
 const initialState = {
         firstName: 'first name',
@@ -78,6 +79,13 @@ describe('Form', () => {
     it('should not render any field if component type is not matched', () => {
         const { container } = render(<Form fieldSchema={{ dummy: { type: 'wrongType' } }} onSubmit={jest.fn()} />);
         expect(container).toMatchSnapshot();
+    });
+
+    it('should render any custom component type', () => {
+        const DummyCustomComponent: FC<CustomComponentProps> = jest.fn(() => <div>Dummy Custom component</div>);
+
+        render(<Form fieldSchema={{ dummy: { type: 'custom', component: DummyCustomComponent } }} onSubmit={jest.fn()} />);
+        expect(screen.getByText('Dummy Custom component')).toBeInTheDocument();
     });
 
     it('should hide actions when hideAction props is truthy', () => {
