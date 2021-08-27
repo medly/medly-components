@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.15...@medly-components/utils@1.13.0) (2021-08-27)
+
+
+### Features
+
+* provide feature to add only url as first param in useSWRAxios ([#404](https://github.com/medly/medly-components/issues/404)) ([b793bdd](https://github.com/medly/medly-components/commit/b793bdd8a3670a3c9b0bc5c8ec0c613e1abf4c26))
+
+
+
+
+
 ## [1.12.15](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.14...@medly-components/utils@1.12.15) (2021-08-27)
 
 **Note:** Version bump only for package @medly-components/utils
