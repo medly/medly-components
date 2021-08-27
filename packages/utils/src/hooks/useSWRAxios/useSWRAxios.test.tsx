@@ -21,14 +21,14 @@ describe('useSWRAxios', () => {
         mockAxios.reset();
     });
 
-    it('should return expected data is we pass axios config as first param', async () => {
+    it('should return expected data if we pass axios config as first param', async () => {
         mockAxios.onGet('/api/applications').replyOnce(200, 'Hello');
         const { findByText } = renderWithSWR(<DummyComp />);
         const message = await findByText('Hello');
         expect(message).toBeInTheDocument();
     });
 
-    it('should return expected data is we pass url as first param', async () => {
+    it('should return expected data if we pass url as first param', async () => {
         mockAxios.onGet('/api/applications').replyOnce(200, 'Hello');
         const { findByText } = renderWithSWR(<DummyComp passUrlOnly />);
         const message = await findByText('Hello');
