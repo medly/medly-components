@@ -33,7 +33,8 @@ export const Fields: React.FC<FieldsProps> = React.memo(props => {
             <>
                 {Object.keys(fields).map(key => {
                     // @ts-ignore
-                    const { gridColumn, gridRow, ...componentProps } = fields[key],
+                    const { gridColumn, gridRow, Component, ...componentProps } = fields[key],
+                        // @ts-ignore
                         disabled = props.disabled || componentProps.disabled,
                         showDecorators = props.showDecorators,
                         variant = props.variant,
@@ -213,6 +214,10 @@ export const Fields: React.FC<FieldsProps> = React.memo(props => {
                                                     } as DateRangePickerProps)
                                                 }}
                                             />
+                                        );
+                                    case 'custom':
+                                        return (
+                                            <Component {...commonProps} value={value} values={values} onChange={handlers.handleChange} />
                                         );
 
                                     default:
