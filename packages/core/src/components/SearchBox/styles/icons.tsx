@@ -60,22 +60,26 @@ const expandIconHoveredStyle = css`
                 background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.active};
             }
         }
+    `,
+    customSearchNotActiveStyle = css`
+        ${SvgIcon} {
+            &:hover {
+                ${expandIconHoveredStyle}
+            }
+        }
     `;
 
 export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchActive?: boolean }>`
     ${getIconWrapperStyle}
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.expandIcon.padding[size]};
-        * {
-            fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
-        }
         path {
             transition: transform 0.2s ease-out;
             transform-origin: center;
         }
-        &:hover {
-            ${expandIconHoveredStyle}
+        * {
+            fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
         }
     }
-    ${({ isCustomSearchActive }) => isCustomSearchActive && customSearchActiveStyle}
+    ${({ isCustomSearchActive }) => isCustomSearchActive ? customSearchActiveStyle : customSearchNotActiveStyle}
 `;
