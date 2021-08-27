@@ -10,24 +10,42 @@ Basic modal component. You can play with the component in the canvas tab.
 
 Modal consists of three sections Header, Content and Actions. All of these you can directly use from Modal component only like bellow . . .
 
-```typescript
-<Modal open={openState} onCloseModal={changeModalState(false)}>
-    <Modal.Header>Add User</Modal.Header>
-    <Modal.Content>
-        <Input id="name-input" type="text" fullWidth label="Name" placeholder="Enter your Name" />
-    </Modal.Content>
-    <Modal.Actions>
-        <Button variant="outlined">Add User</Button>
-    </Modal.Actions>
-</Modal>
+```tsx
+import { Modal } from '@medly-components/core';
+import React, { useState } from 'react';
+
+export const DummyComponent: React.FC = React.memo(() => {
+    const [state, updateState] = useState(false);
+
+    const toggleModal = () => updateState(val => !val);
+
+    return (
+        <Modal open={state} onCloseModal={toggleModal}>
+            <Modal.Header>Add User</Modal.Header>
+            <Modal.Content>
+                <Input id="name-input" type="text" fullWidth label="Name" placeholder="Enter your Name" />
+            </Modal.Content>
+            <Modal.Actions>
+                <Button variant="outlined">Add User</Button>
+            </Modal.Actions>
+        </Modal>
+    );
+});
+
+DummyComponent.displayName = 'DummyComponent';
 ```
 
-Shadow will apear on the Header & Actions section if you scroll the content.
-To close the modal you can perform below actions:
+## Shadow Effect
 
-1. Click on the cross icon
-2. Press `Esc` key
-3. If you have provided `shouldCloseOnOutsideClick` this prop then modal will close on clicking outside of modal
+Shadow will apear on the Header & Actions section if you scroll the content.
+
+### Keyboard Support
+
+It also supports keyboard navigation when it is in focus
+
+| Key | Function        |
+| --- | --------------- |
+| Esc | Close the modal |
 
 <Preview withToolbar>
     <Story name="Modal">{stories.Basic()}</Story>

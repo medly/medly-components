@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.14.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.13.0...@medly-components/theme@2.14.0) (2021-08-26)
+
+
+### Features
+
+* **core:** update pagination theme ([#393](https://github.com/medly/medly-components/issues/393)) ([b254569](https://github.com/medly/medly-components/commit/b2545698c36ab1bca1d5b65bf1ade04fd9df3540))
+
+
+
+
+
 # [2.13.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.12.0...@medly-components/theme@2.13.0) (2021-08-23)
 
 

@@ -9,7 +9,7 @@ exports[`Pagination popup component should render correctly with all the default
   display: inline-flex;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -67,6 +67,18 @@ exports[`Pagination popup component should render correctly with all the default
   background: #eff2f4;
 }
 
+.c1 .c2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+}
+
 <div>
   <div
     class="c0"
@@ -77,7 +89,7 @@ exports[`Pagination popup component should render correctly with all the default
       type="button"
     >
       <h5
-        class="c2"
+        class="c2 c3"
       >
         ...
       </h5>

@@ -154,7 +154,8 @@ Table.defaultProps = {
     itemsPerPage: 20,
     withMinimap: false,
     isRowSelectable: false,
-    isRowExpandable: false
+    isRowExpandable: false,
+    withRowSeparators: true
 };
 
 Table.displayName = 'Table';
