@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.19.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.1...@medly-components/core@2.19.2) (2021-08-27)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.19.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.0...@medly-components/core@2.19.1) (2021-08-27)
+
+
+### Bug Fixes
+
+* **core:** updated expandIcon to not show hover styles when active ([#381](https://github.com/medly/medly-components/issues/381)) ([210cdaa](https://github.com/medly/medly-components/commit/210cdaa1f923a7ce5215aec345d2528059e846b1))
+
+
+
+
+
 # [2.19.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.18.6...@medly-components/core@2.19.0) (2021-08-26)
 
 

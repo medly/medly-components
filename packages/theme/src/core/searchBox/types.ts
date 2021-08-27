@@ -41,9 +41,11 @@ export type SearchBoxTheme = {
         color: {
             default: string;
             hovered: string;
+            pressed: string;
         };
         bgColor: {
             hovered: string;
+            pressed: string;
         };
     };
     searchIcon: {
@@ -54,9 +56,12 @@ export type SearchBoxTheme = {
         color: {
             active: string;
             default: string;
+            hovered: string;
+            pressed: string;
         };
         bgColor: {
             hovered: string;
+            pressed: string;
         };
     };
     expandIcon: {
@@ -67,11 +72,13 @@ export type SearchBoxTheme = {
         color: {
             default: string;
             hovered: string;
+            pressed: string;
             active: string;
         };
         bgColor: {
             hovered: string;
             active: string;
+            pressed: string;
         };
     };
     boxShadow: {
