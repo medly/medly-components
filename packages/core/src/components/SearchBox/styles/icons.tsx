@@ -20,6 +20,12 @@ export const CloseIconWrapper = styled.span<SearchBoxProps & { isTyping?: boolea
                 fill: ${({ theme }) => theme.searchBox.closeIcon.color.hovered};
             }
         }
+        &:active {
+            background: ${({ theme }) => theme.searchBox.closeIcon.bgColor.pressed};
+            * {
+                fill: ${({ theme }) => theme.searchBox.closeIcon.color.pressed};
+            }
+        }
     }
 `;
 
@@ -33,6 +39,12 @@ export const SearchIconWrapper = styled.span<SearchBoxProps & { areOptionsVisibl
         &:hover {
             background: ${({ theme: { searchBox }, isTyping }) => (isTyping ? searchBox.searchIcon.bgColor.hovered : 'transparent')};
             border-radius: ${({ theme }) => theme.searchBox.searchIcon.borderRadius};
+        }
+        &:active {
+            background: ${({ theme }) => theme.searchBox.searchIcon.bgColor.pressed};
+            * {
+                fill: ${({ theme }) => theme.searchBox.searchIcon.color.pressed};
+            }
         }
     }
 `;
@@ -79,6 +91,12 @@ export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchAc
         }
         * {
             fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
+        }
+        &:active {
+            background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.pressed};
+            * {
+                fill: ${({ theme }) => theme.searchBox.expandIcon.color.pressed};
+            }
         }
     }
     ${({ isCustomSearchActive }) => isCustomSearchActive ? customSearchActiveStyle : customSearchNotActiveStyle}

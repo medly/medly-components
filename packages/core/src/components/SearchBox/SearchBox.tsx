@@ -98,6 +98,7 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
         }, [enterPress, areOptionsVisible]);
 
         const hasCustomSearchFilter = !!customSearchFilter;
+        const showCloseIcon = isTyping || inputRef?.current?.value
 
         return (
             <Styled.SearchBoxWrapper
@@ -117,7 +118,7 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
                     onBlur={handleBlur}
                     {...restProps}
                 />
-                {isTyping && (
+                {showCloseIcon && (
                     <CloseIconWrapper isTyping={isTyping} size={size} hasCustomSearchFilter={hasCustomSearchFilter}>
                         <CloseIcon title="close icon" onClick={clearSearchText} size={size} />
                     </CloseIconWrapper>
