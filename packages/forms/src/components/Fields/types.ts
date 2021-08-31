@@ -28,9 +28,9 @@ export type CustomComponentProps = {
     disabled: boolean;
     showDecorators: boolean;
     minWidth: string;
-    onFocus: () => void,
-    errorText: string,
-    variant: string,
+    onFocus: () => void;
+    errorText: string;
+    variant: string;
 };
 
 export type TextFieldProps = GetComponentProps<typeof TextField> & CommonFieldProps & { type: HTMLProps<HTMLInputElement>['type'] };
