@@ -71,7 +71,6 @@ export const SearchBoxWrapper = styled.div<
 
     input {
         ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.searchBox.textVariant[size] })}
-        ${({ theme }) => theme.searchBox.fontSize && `font-size: ${theme.searchBox.fontSize}`}
     }
 
     &:hover {
