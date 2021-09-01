@@ -64,7 +64,7 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
             handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
                 const value = event.target.value;
                 updateIsTyping(value.length !== 0);
-                setShowCloseIcon(true)
+                setShowCloseIcon(value.length !== 0)
                 onInputChange(value);
             }, []),
             handleOptionClick = useCallback((option: Option) => {
