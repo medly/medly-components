@@ -53,6 +53,13 @@ export const useForm = (initialState: object): UseFormResult => {
         []
     );
 
+    const handleChange: Handlers['handleChange'] = useCallback(
+        (name, value) => {
+            setValues(val => ({ ...val, [name]: value }));
+        },
+        []
+    );
+
     const handleTextChange: Handlers['handleTextChange'] = useCallback(
         memoize(name => event => {
             const { value } = event.target as HTMLInputElement;
@@ -135,7 +142,8 @@ export const useForm = (initialState: object): UseFormResult => {
             handleCheckboxGroupChange: handleValuesChange,
             handleRadioGroupChange: handleValueChange,
             handleSingleSelectChange: handleValueChange,
-            handleMultiSelectChange: handleValuesChange
+            handleMultiSelectChange: handleValuesChange,
+            handleChange
         }
     };
 };
