@@ -121,7 +121,7 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
                     {...restProps}
                 />
                 {showCloseIcon && (
-                    <CloseIconWrapper isTyping={isTyping} size={size} hasCustomSearchFilter={hasCustomSearchFilter}>
+                    <CloseIconWrapper showCloseIcon={showCloseIcon} size={size} hasCustomSearchFilter={hasCustomSearchFilter}>
                         <CloseIcon title="close icon" onClick={clearSearchText} size={size} />
                     </CloseIconWrapper>
                 )}

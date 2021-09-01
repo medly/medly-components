@@ -3,9 +3,9 @@ import { css, styled } from '@medly-components/utils';
 import { SearchBoxProps } from '../types';
 import { getIconWrapperStyle } from './utils';
 
-export const CloseIconWrapper = styled.span<SearchBoxProps & { isTyping?: boolean; hasCustomSearchFilter?: boolean }>`
+export const CloseIconWrapper = styled.span<SearchBoxProps & { showCloseIcon?: boolean; hasCustomSearchFilter?: boolean }>`
     ${getIconWrapperStyle};
-    border-right: ${({ theme, isTyping }) => isTyping && `0.1rem solid ${theme.colors.grey[200]}`};
+    border-right: ${({ theme, showCloseIcon }) => showCloseIcon && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
     padding-right: ${({ hasCustomSearchFilter }) => hasCustomSearchFilter && '0.4rem'};
     ${SvgIcon} {
