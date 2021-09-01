@@ -28,6 +28,8 @@ export interface Handlers {
     handleCheckboxChange: (name: string) => (event: React.FormEvent<HTMLInputElement>) => void;
     // File input Component
     handleFileChange: (name: string, maxSize?: number, onError?: (key: string, message: string) => void) => (files: FileList) => void;
+    // Generic Change
+    handleChange: (name: string, value: any) => void;
     // Common Focus handler
     getPeriodFromDates: (
         startDate: string | Date,

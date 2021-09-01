@@ -1,12 +1,11 @@
-import { Form } from './Form.tsx';
-import { defaultTheme } from '@medly-components/theme';
+import { Form } from '../Form.tsx';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs';
-import { testSchema } from './testSchema.ts';
-import { CommonProps, NestedFieldProps, ActionSchema } from './Form.stories.tsx';
+import { testSchema } from '../testSchema.ts';
+import { CustomFieldForm, CommonProps, NestedFieldProps, ActionSchema, CustomComponentPropSchema } from './Form.stories.tsx';
 import { action } from '@storybook/addon-actions';
 
-<Meta title="Forms" component={Form} parameters={{ jest: ['Form.test.tsx', 'Actions/Actions.test.tsx'] }} />
+<Meta title="Forms/Basic" component={Form} parameters={{ jest: ['Form.test.tsx', 'Actions/Actions.test.tsx'] }} />
 
 # Forms
 
@@ -35,7 +34,7 @@ const UserInfoForm = () => (
 
 #### 1) Field Design
 
-To arrange the fields in the form we have used css `display: grid` and `grid-template-columns: repeat(12, 1fr);`. So that we can arrange our fields using `grid-column` and `grid-row`. By default each field will take full width of the form. But you can adjust the width of the fields acrss the `12 colums`. Click on the `Show Code` below to check out the example.
+To arrange the fields in the form we have used css `display: grid` and `grid-template-columns: repeat(12, 1fr);`. So that we can arrange our fields using `grid-column` and `grid-row`. By default each field will take full width of the form. But you can adjust the width of the fields across the `12 colums`. Click on the `Show Code` below to check out the example.
 
 <Preview withToolbar>
     <Form
@@ -100,6 +99,10 @@ To change the label of the form's default action button you can use `actionLabel
 ##### Action Schema
 
 <Props of={ActionSchema} />
+
+#### 3) Custom fields and Dynamic forms
+
+Please refer to [Advanced Forms](?path=/docs/forms-advanced--page)
 
 ### Form Props
 
