@@ -53,7 +53,7 @@ const Demo: React.SFC = React.memo(() => {
     const { request, isLoading } = useAxios();
 
     const handleSubmit = (data: unknown) =>
-        fetch({
+        request({
             url: 'https://dummy.com/api/ba8e0a1/users',
             data,
             method: 'POST',
@@ -63,7 +63,7 @@ const Demo: React.SFC = React.memo(() => {
 
     return (
         <Form
-            disabled={isLoading}
+            isLoading={isLoading}
             fieldSchema={{
                 firstName: { type: 'text', label: 'First Name' },
                 lastName: { type: 'text', label: 'Last Name' },
