@@ -3,6 +3,7 @@ import { FontVariants } from '../font/types';
 export type Size = 'S' | 'M';
 
 export type SearchBoxTheme = {
+    fontSize?: string;
     height: {
         [k in Size]: string;
     };
