@@ -1,0 +1,36 @@
+import { LOCAL_STORAGE } from './localStorage.ts';
+import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Helpers/LOCAL_STORAGE" />
+
+# LOCAL_STORAGE
+
+`LOCAL_STORAGE` can be used to handle the browsers localStorage.
+
+#### Types
+
+Below is the LOCAL_STORAGE object type.
+
+```tsx
+export type LocalStorageType = {
+    /* Get value of the specific key from local storage */
+    getItem: (key: string) => any | null;
+    /* Set key value pair in local storage */
+    setItem: (key: string, value: any) => void;
+    /* Remove key value pair in local storage */
+    removeItem: (key: string) => void;
+    /* Remove all key value pair from local storage */
+    clear: () => void;
+};
+```
+
+#### Example
+
+```tsx
+import { LOCAL_STORAGE } from '@medly-components/utils';
+
+LOCAL_STORAGE.getItem('user');
+LOCAL_STORAGE.setItem('user', { firstName: 'dummy' });
+LOCAL_STORAGE.removeItem('user');
+LOCAL_STORAGE.clear();
+```

@@ -1,0 +1,36 @@
+import { COOKIE_STORAGE } from './cookieStorage.ts';
+import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Helpers/COOKIE_STORAGE" />
+
+# COOKIE_STORAGE
+
+`COOKIE_STORAGE` can be used to handle the browsers cookieStorage.
+
+#### Types
+
+Below is the COOKIE_STORAGE object type.
+
+```tsx
+export type COOKIEStorageType = {
+    /* Get value of the specific key from  cookie storage */
+    getItem: (key: string) => any | null;
+    /* Set key value pair in  cookie storage */
+    setItem: (key: string, value: any) => void;
+    /* Remove key value pair in  cookie storage */
+    removeItem: (key: string) => void;
+    /* Remove all key value pair from  cookie storage */
+    clear: () => void;
+};
+```
+
+#### Example
+
+```tsx
+import { COOKIE_STORAGE } from '@medly-components/utils';
+
+COOKIE_STORAGE.getItem('user');
+COOKIE_STORAGE.setItem('user', { firstName: 'dummy' });
+COOKIE_STORAGE.removeItem('user');
+COOKIE_STORAGE.clear();
+```
