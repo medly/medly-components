@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.29.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.29.0...@medly-components/forms@1.29.1) (2021-09-02)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.29.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.15...@medly-components/forms@1.29.0) (2021-09-01)
+
+
+### Features
+
+* **forms:** allow adding custom fields to forms ([#403](https://github.com/medly/medly-components/issues/403)) ([2aab6d7](https://github.com/medly/medly-components/commit/2aab6d704952a58fc9c76411fde3b639de8b4fd0))
+
+
+
+
+
 ## [1.28.15](https://github.com/medly/medly-components/compare/@medly-components/forms@1.28.14...@medly-components/forms@1.28.15) (2021-08-27)
 
 **Note:** Version bump only for package @medly-components/forms

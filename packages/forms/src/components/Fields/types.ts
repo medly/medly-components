@@ -11,7 +11,7 @@ import {
     TextField
 } from '@medly-components/core';
 import { GetComponentProps } from '@medly-components/utils';
-import { HTMLProps } from 'react';
+import { FC, HTMLProps } from 'react';
 import { Handlers } from '../../hooks/useForm/types';
 
 export type CommonFieldProps = {
@@ -19,6 +19,18 @@ export type CommonFieldProps = {
     gridColumn?: string;
     /** Grid row to render the field */
     gridRow?: string;
+};
+export type CustomComponentProps = {
+    name: string;
+    onChange: (name: string, value: any) => void;
+    value: any;
+    values: { [key: string]: any };
+    disabled: boolean;
+    showDecorators: boolean;
+    minWidth: string;
+    onFocus: () => void;
+    errorText: string;
+    variant: string;
 };
 
 export type TextFieldProps = GetComponentProps<typeof TextField> & CommonFieldProps & { type: HTMLProps<HTMLInputElement>['type'] };
@@ -40,6 +52,8 @@ export type FileInputProps = GetComponentProps<typeof FileInput> &
         maxSize?: number;
         accept?: string;
     };
+export type CustomFieldProps = { component: FC<CustomComponentProps> } & CommonFieldProps & { type: 'custom' };
+
 export type NestedProps = {
     /** Type to identify field type */
     type: 'nested';
@@ -68,7 +82,8 @@ export type FieldProperties =
     | RadioGroupProps
     | DatePickerProps
     | DateRangePickerProps
-    | NestedProps;
+    | NestedProps
+    | CustomFieldProps;
 
 export interface FieldsProps {
     // State variable which holds all the fields values
