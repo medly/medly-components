@@ -11,6 +11,7 @@ module.exports = {
         '!<rootDir>/packages/core/**/CssBaseline/**/*',
         '!<rootDir>/packages/loaders/**/*',
         '!<rootDir>/packages/icons/**/*',
+        '!<rootDir>/packages/**/stories/**',
         '!<rootDir>/packages/**/index.(ts|tsx)',
         '!<rootDir>/packages/**/types.(ts|tsx)'
     ],

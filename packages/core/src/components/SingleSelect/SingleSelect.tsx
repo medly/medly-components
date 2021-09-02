@@ -26,6 +26,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 onFocus,
                 onBlur,
                 className,
+                validator,
                 isSearchable,
                 ...inputProps
             } = props,
@@ -39,12 +40,21 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [inputValue, setInputValue] = useState(defaultSelectedOption.label),
             [selectedOption, setSelectedOption] = useState(defaultSelectedOption),
+            [builtInErrorMessage, setErrorMessage] = useState(''),
             [options, setOptions] = useState(getUpdatedOptions(defaultOptions, defaultSelectedOption));
 
         const updateToDefaultOptions = useCallback(() => setOptions(getUpdatedOptions(defaultOptions, selectedOption)), [
             defaultOptions,
             selectedOption
         ]);
+
+        const validate = useCallback(
+            () =>
+                setErrorMessage(
+                    (validator && validator(inputRef.current.value)) || (inputProps.required && !value && 'Please select one option.') || ''
+                ),
+            [inputProps.required, validator, value]
+        );
 
         const showOptions = useCallback(() => {
                 setOptionsVisibilityState(true);
@@ -87,6 +97,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                         setInputValue(option.label);
                         hideOptions();
                         onChange && onChange(option.value);
+                        setErrorMessage('');
                     } else {
                         inputRef.current.focus();
                     }
@@ -96,10 +107,11 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             handleOuterClick = useCallback(() => {
                 if (areOptionsVisible) {
                     hideOptions();
+                    validate();
                     updateToDefaultOptions();
                     setInputValue(defaultSelectedOption.label);
                 }
-            }, [areOptionsVisible, selectedOption, updateToDefaultOptions]),
+            }, [areOptionsVisible, selectedOption, updateToDefaultOptions, validate]),
             handleFocus = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>) => {
                     isFocused.current = true;
@@ -115,6 +127,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 },
                 [onBlur]
             ),
+            inputValidator = useCallback(() => undefined, []),
             handleKeyPress = useCallback((event: React.KeyboardEvent) => !isSearchable && event.preventDefault(), [isSearchable]);
 
         useUpdateEffect(() => {
@@ -146,13 +159,15 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             value: inputValue,
             label: inputProps.label,
             helperText: inputProps.helperText,
-            errorText: inputProps.errorText,
+            errorText: inputProps.errorText || builtInErrorMessage,
             onFocus: handleFocus,
             onBlur: handleBlur,
             onKeyPress: handleKeyPress,
             disabled,
             showDecorators,
-            areOptionsVisible
+            areOptionsVisible,
+            onInvalid: validate,
+            validator: inputValidator
         };
 
         return (
@@ -171,13 +186,12 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 ) : (
                     <TextField
                         fullWidth
-                        key={selectedOption.value}
                         variant={variant}
                         autoComplete="off"
                         onChange={handleInputChange}
                         suffix={ChevronDownIcon}
-                        {...commonProps}
                         {...inputProps}
+                        {...commonProps}
                         minWidth={minWidth}
                         maxWidth={maxWidth}
                         readOnly={!inputProps.required && !isSearchable}
