@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.13.0...@medly-components/utils@1.14.0) (2021-09-02)
+
+
+### Features
+
+* add storage utilities ([#401](https://github.com/medly/medly-components/issues/401)) ([12dd01c](https://github.com/medly/medly-components/commit/12dd01c48863dd80ec0a5d23a8e76822aa7267d2))
+
+
+
+
+
 # [1.13.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.15...@medly-components/utils@1.13.0) (2021-08-27)
 
 
