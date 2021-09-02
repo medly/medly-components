@@ -1,6 +1,6 @@
 import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
 
-<Meta title="Utils/Helpers/useStorage" />
+<Meta title="Utils/hooks/useStorage" />
 
 # useStorage
 
@@ -13,7 +13,7 @@ import { SingleSelect } from '@medly-components/core';
 import { useStorage } from '@medly-components/utils';
 
 const Dummy: React.FC = () => {
-    const [state, updateState] = useStorage<string>('gender', 'male');
+    const [state, updateState] = useStorage<string>('gender', { initialValue: 'male' });
 
     return (
         <SingleSelect
@@ -35,15 +35,14 @@ import { Dispatch, SetStateAction } from 'react';
 
 type UseStorageType = <T>(
     key: string,
-    initialValue?: T,
-    options?: { storage: 'localStorage' | 'sessionStorage' | 'cookieStorage' }; // default is `localStorage`
+    options?: { storage?: 'localStorage' | 'sessionStorage' | 'cookieStorage', initialValue?: T, }; // default storge is `localStorage`
 ) => [T, Dispatch<SetStateAction<T>>];
 ```
 
 ### Options
 
-```json
-{ "storage": "localStorage" | "sessionStorage" | "cookieStorage" }
+```tsx
+{ storage?: "localStorage" | "sessionStorage" | "cookieStorage", initialValue?: T }
 ```
 
 You can pass the option in specific usage or you can set global config like below:

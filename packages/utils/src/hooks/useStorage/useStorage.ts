@@ -11,10 +11,11 @@ const storageObj = {
     cookieStorage: COOKIE_STORAGE
 };
 
-export const useStorage = <T>(key: string, initialValue?: T, currOptions?: UseStorageOptions): [T, UseStorageSetValue<T>] => {
-    const contextOption = useContext(StorageConfig),
+export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): [T, UseStorageSetValue<T>] => {
+    const contextOption: UseStorageOptions<T> = useContext(StorageConfig),
         options = currOptions ?? contextOption,
-        storage = storageObj[options.storage];
+        storage = storageObj[options.storage || 'localStorage'],
+        initialValue = options.initialValue;
 
     const readValue = (): T => {
         if (typeof window === 'undefined') {

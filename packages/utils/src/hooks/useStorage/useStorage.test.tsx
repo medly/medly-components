@@ -4,7 +4,7 @@ import { render, screen } from '../../test-utils';
 import { useStorage } from './useStorage';
 
 const FirstComponent: React.FC = () => {
-        const [state, setState] = useStorage<string>('gender', 'male'),
+        const [state, setState] = useStorage<string>('gender', { initialValue: 'male' }),
             handleChange = (e: React.ChangeEvent<HTMLInputElement>) => setState(`${e.target.value}`);
         return (
             <>
