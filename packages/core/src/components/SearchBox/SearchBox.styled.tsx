@@ -20,7 +20,6 @@ const activeSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
 `;
 
 const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
-    border-bottom: 1.5px solid;
     border-color: ${searchBox.borderColor.default};
     transition: border-color 100ms, box-shadow 100ms;
     &:focus-within {
@@ -34,7 +33,7 @@ const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => cs
         }
     }
     &:hover {
-        ${getBorderAndBoxShadow(searchBox.borderColor.hovered, searchBox.boxShadow.hovered)};
+        ${getBorderAndBoxShadow(searchBox.borderColor.hovered, searchBox.boxShadow.hovered, '1.5px')};
     }
     &:focus-within:hover {
         ${getBorderAndBoxShadow(searchBox.borderColor.active, searchBox.boxShadow.active)};

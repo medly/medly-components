@@ -391,16 +391,19 @@ exports[`SideNav should render properly with shadow 1`] = `
             class="c5 c6"
             fill="none"
             height="1em"
-            viewBox="0 0 24 24"
+            viewBox="0 0 20 20"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
               clip-rule="evenodd"
-              d="M15.187 14.472h.79l4.24 4.26c.41.41.41 1.08 0 1.49-.41.41-1.08.41-1.49 0l-4.25-4.25v-.79l-.27-.28a6.5 6.5 0 0 1-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59a6.505 6.505 0 0 1 7.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 0 1-1.48 5.34l.28.27zm-9.71-4.5c0 2.49 2.01 4.5 4.5 4.5s4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5-4.5 2.01-4.5 4.5z"
-              fill="#000"
-              fill-opacity=".54"
+              d="M9.063 3.125a5.938 5.938 0 1 0 0 11.875 5.938 5.938 0 0 0 0-11.875zM1.875 9.063a7.187 7.187 0 1 1 12.692 4.621l3.375 3.374a.625.625 0 1 1-.884.884l-3.374-3.374A7.188 7.188 0 0 1 1.875 9.063z"
+              fill="#606878"
               fill-rule="evenodd"
+              stroke="#606878"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width=".3"
             />
           </svg>
           <span
@@ -895,16 +898,19 @@ exports[`SideNav should render properly without shadow 1`] = `
             class="c5 c6"
             fill="none"
             height="1em"
-            viewBox="0 0 24 24"
+            viewBox="0 0 20 20"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
               clip-rule="evenodd"
-              d="M15.187 14.472h.79l4.24 4.26c.41.41.41 1.08 0 1.49-.41.41-1.08.41-1.49 0l-4.25-4.25v-.79l-.27-.28a6.5 6.5 0 0 1-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59a6.505 6.505 0 0 1 7.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 0 1-1.48 5.34l.28.27zm-9.71-4.5c0 2.49 2.01 4.5 4.5 4.5s4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5-4.5 2.01-4.5 4.5z"
-              fill="#000"
-              fill-opacity=".54"
+              d="M9.063 3.125a5.938 5.938 0 1 0 0 11.875 5.938 5.938 0 0 0 0-11.875zM1.875 9.063a7.187 7.187 0 1 1 12.692 4.621l3.375 3.374a.625.625 0 1 1-.884.884l-3.374-3.374A7.188 7.188 0 0 1 1.875 9.063z"
+              fill="#606878"
               fill-rule="evenodd"
+              stroke="#606878"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width=".3"
             />
           </svg>
           <span
