@@ -35,14 +35,14 @@ import { Dispatch, SetStateAction } from 'react';
 
 type UseStorageType = <T>(
     key: string,
-    options?: { storage?: 'localStorage' | 'sessionStorage' | 'cookieStorage', initialValue?: T, }; // default storge is `localStorage`
+    options?: { storage?: 'localStorage' | 'sessionStorage' | 'cookieStorage', initialValue?: T }; // default storge is `localStorage`
 ) => [T, Dispatch<SetStateAction<T>>];
 ```
 
 ### Options
 
 ```tsx
-{ storage?: "localStorage" | "sessionStorage" | "cookieStorage", initialValue?: T }
+type UseStorageOptions<T> = { storage?: 'localStorage' | 'sessionStorage' | 'cookieStorage'; initialValue?: T };
 ```
 
 You can pass the option in specific usage or you can set global config like below:
