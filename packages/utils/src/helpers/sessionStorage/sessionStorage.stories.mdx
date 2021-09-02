@@ -1,0 +1,36 @@
+import { SESSION_STORAGE } from './sessionStorage.ts';
+import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Helpers/SESSION_STORAGE" />
+
+# SESSION_STORAGE
+
+`SESSION_STORAGE` can be used to handle the sessionStorage.
+
+#### Type
+
+Below is the SESSION_STORAGE object type.
+
+```tsx
+export type SessionStorageType = {
+    /* Get value of the specific key from session storage */
+    getItem: (key: string) => any | null;
+    /* Set key value pair in session storage */
+    setItem: (key: string, value: any) => void;
+    /* Remove key value pair in session storage */
+    removeItem: (key: string) => void;
+    /* Remove all key value pair from session storage */
+    clear: () => void;
+};
+```
+
+#### Example
+
+```tsx
+import { SESSION_STORAGE } from '@medly-components/utils';
+
+SESSION_STORAGE.getItem('user');
+SESSION_STORAGE.setItem('user', { firstName: 'dummy' });
+SESSION_STORAGE.removeItem('user');
+SESSION_STORAGE.clear();
+```
