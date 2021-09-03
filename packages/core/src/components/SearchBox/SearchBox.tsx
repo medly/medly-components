@@ -34,7 +34,8 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
             [isTyping, updateIsTyping] = useState(false),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [options, setOptions] = useState(defaultOptions),
-            [isCustomSearchActive, setIsCustomSearchActive] = useState(false);
+            [isCustomSearchActive, setIsCustomSearchActive] = useState(false),
+            [showCloseIcon, setShowCloseIcon] = useState(false);
 
         useEffect(() => {
             setOptions(props.options);
@@ -56,12 +57,14 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
                 inputRef.current.value = '';
                 inputRef.current.focus();
                 setOptionsVisibilityState(false);
+                setShowCloseIcon(false)
                 updateIsTyping(false);
                 onClear && onClear();
             }, []),
             handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
                 const value = event.target.value;
                 updateIsTyping(value.length !== 0);
+                setShowCloseIcon(value.length !== 0)
                 onInputChange(value);
             }, []),
             handleOptionClick = useCallback((option: Option) => {
@@ -117,8 +120,8 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
                     onBlur={handleBlur}
                     {...restProps}
                 />
-                {isTyping && (
-                    <CloseIconWrapper isTyping={isTyping} size={size} hasCustomSearchFilter={hasCustomSearchFilter}>
+                {showCloseIcon && (
+                    <CloseIconWrapper showCloseIcon={showCloseIcon} size={size} hasCustomSearchFilter={hasCustomSearchFilter}>
                         <CloseIcon title="close icon" onClick={clearSearchText} size={size} />
                     </CloseIconWrapper>
                 )}

@@ -3,9 +3,9 @@ import { css, styled } from '@medly-components/utils';
 import { SearchBoxProps } from '../types';
 import { getIconWrapperStyle } from './utils';
 
-export const CloseIconWrapper = styled.span<SearchBoxProps & { isTyping?: boolean; hasCustomSearchFilter?: boolean }>`
+export const CloseIconWrapper = styled.span<SearchBoxProps & { showCloseIcon?: boolean; hasCustomSearchFilter?: boolean }>`
     ${getIconWrapperStyle};
-    border-right: ${({ theme, isTyping }) => isTyping && `0.1rem solid ${theme.colors.grey[200]}`};
+    border-right: ${({ theme, showCloseIcon }) => showCloseIcon && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
     padding-right: ${({ hasCustomSearchFilter }) => hasCustomSearchFilter && '0.4rem'};
     ${SvgIcon} {
@@ -18,6 +18,12 @@ export const CloseIconWrapper = styled.span<SearchBoxProps & { isTyping?: boolea
             border-radius: ${({ theme }) => theme.searchBox.closeIcon.borderRadius};
             * {
                 fill: ${({ theme }) => theme.searchBox.closeIcon.color.hovered};
+            }
+        }
+        &:active {
+            background: ${({ theme }) => theme.searchBox.closeIcon.bgColor.pressed};
+            * {
+                fill: ${({ theme }) => theme.searchBox.closeIcon.color.pressed};
             }
         }
     }
@@ -33,6 +39,12 @@ export const SearchIconWrapper = styled.span<SearchBoxProps & { areOptionsVisibl
         &:hover {
             background: ${({ theme: { searchBox }, isTyping }) => (isTyping ? searchBox.searchIcon.bgColor.hovered : 'transparent')};
             border-radius: ${({ theme }) => theme.searchBox.searchIcon.borderRadius};
+        }
+        &:active {
+            background: ${({ theme }) => theme.searchBox.searchIcon.bgColor.pressed};
+            * {
+                fill: ${({ theme }) => theme.searchBox.searchIcon.color.pressed};
+            }
         }
     }
 `;
@@ -79,6 +91,12 @@ export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchAc
         }
         * {
             fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
+        }
+        &:active {
+            background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.pressed};
+            * {
+                fill: ${({ theme }) => theme.searchBox.expandIcon.color.pressed};
+            }
         }
     }
     ${({ isCustomSearchActive }) => isCustomSearchActive ? customSearchActiveStyle : customSearchNotActiveStyle}

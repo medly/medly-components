@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.19.5](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.4...@medly-components/core@2.19.5) (2021-09-02)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.19.4](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.3...@medly-components/core@2.19.4) (2021-09-02)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.19.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.2...@medly-components/core@2.19.3) (2021-09-02)
+
+
+### Bug Fixes
+
+* singleselect component error message issue ([#407](https://github.com/medly/medly-components/issues/407)) ([0308a9e](https://github.com/medly/medly-components/commit/0308a9e354a7a7df218a2053889740c337040a95))
+
+
+
+
+
 ## [2.19.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.1...@medly-components/core@2.19.2) (2021-08-27)
 
 **Note:** Version bump only for package @medly-components/core

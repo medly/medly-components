@@ -134,6 +134,14 @@ exports[`SearchBox options should render options when user search option specifi
   fill: #435465;
 }
 
+.c2 .c3:active {
+  background: #dfe4e9;
+}
+
+.c2 .c3:active * {
+  fill: #303C48;
+}
+
 .c14 .c3 {
   padding: 0.4rem;
 }
@@ -147,6 +155,14 @@ exports[`SearchBox options should render options when user search option specifi
   border-radius: 2.5rem;
 }
 
+.c14 .c3:active {
+  background: #D0E1FE;
+}
+
+.c14 .c3:active * {
+  fill: #0D4AAF;
+}
+
 .c15 .c3 {
   padding: 0.4rem;
 }
@@ -158,6 +174,14 @@ exports[`SearchBox options should render options when user search option specifi
 .c15 .c3:hover {
   background: #E7F0FF;
   border-radius: 2.5rem;
+}
+
+.c15 .c3:active {
+  background: #D0E1FE;
+}
+
+.c15 .c3:active * {
+  fill: #0D4AAF;
 }
 
 .c6 {
@@ -189,6 +213,14 @@ exports[`SearchBox options should render options when user search option specifi
 .c6 .c3:hover {
   background: #E7F0FF;
   border-radius: 2.5rem;
+}
+
+.c6 .c3:active {
+  background: #D0E1FE;
+}
+
+.c6 .c3:active * {
+  fill: #0D4AAF;
 }
 
 .c13 .c7 {
@@ -394,16 +426,19 @@ exports[`SearchBox options should render options when user search option specifi
         fill="none"
         height="1em"
         title="search icon"
-        viewBox="0 0 24 24"
+        viewBox="0 0 20 20"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           clip-rule="evenodd"
-          d="M15.187 14.472h.79l4.24 4.26c.41.41.41 1.08 0 1.49-.41.41-1.08.41-1.49 0l-4.25-4.25v-.79l-.27-.28a6.5 6.5 0 0 1-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59a6.505 6.505 0 0 1 7.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 0 1-1.48 5.34l.28.27zm-9.71-4.5c0 2.49 2.01 4.5 4.5 4.5s4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5-4.5 2.01-4.5 4.5z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M9.063 3.125a5.938 5.938 0 1 0 0 11.875 5.938 5.938 0 0 0 0-11.875zM1.875 9.063a7.187 7.187 0 1 1 12.692 4.621l3.375 3.374a.625.625 0 1 1-.884.884l-3.374-3.374A7.188 7.188 0 0 1 1.875 9.063z"
+          fill="#606878"
           fill-rule="evenodd"
+          stroke="#606878"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width=".3"
         />
       </svg>
     </span>
@@ -482,6 +517,14 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   border-radius: 2.5rem;
 }
 
+.c3 .c4:active {
+  background: #D0E1FE;
+}
+
+.c3 .c4:active * {
+  fill: #0D4AAF;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -502,7 +545,6 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   width: -moz-min-content;
   width: min-content;
   border-radius: .8rem;
-  border-bottom: 1.5px solid;
   border-color: #98A7B7;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
   transition: border-color 100ms,box-shadow 100ms;
@@ -566,6 +608,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 .c0:focus-within {
   border-color: #126AFA;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  border-width: .2rem;
 }
 
 .c0:focus-within .c2 .c4 * {
@@ -575,11 +618,13 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 .c0:hover {
   border-color: #607890;
   box-shadow: 0 0.2rem 0.8rem rgba(96,120,144,0.2);
+  border-width: 1.5px;
 }
 
 .c0:focus-within:hover {
   border-color: #126AFA;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  border-width: .2rem;
 }
 
 .c1 {
@@ -645,16 +690,19 @@ exports[`SearchBox should render properly with "M" size 1`] = `
         fill="none"
         height="1em"
         title="search icon"
-        viewBox="0 0 24 24"
+        viewBox="0 0 20 20"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           clip-rule="evenodd"
-          d="M15.187 14.472h.79l4.24 4.26c.41.41.41 1.08 0 1.49-.41.41-1.08.41-1.49 0l-4.25-4.25v-.79l-.27-.28a6.5 6.5 0 0 1-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59a6.505 6.505 0 0 1 7.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 0 1-1.48 5.34l.28.27zm-9.71-4.5c0 2.49 2.01 4.5 4.5 4.5s4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5-4.5 2.01-4.5 4.5z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M9.063 3.125a5.938 5.938 0 1 0 0 11.875 5.938 5.938 0 0 0 0-11.875zM1.875 9.063a7.187 7.187 0 1 1 12.692 4.621l3.375 3.374a.625.625 0 1 1-.884.884l-3.374-3.374A7.188 7.188 0 0 1 1.875 9.063z"
+          fill="#606878"
           fill-rule="evenodd"
+          stroke="#606878"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width=".3"
         />
       </svg>
     </span>
@@ -709,6 +757,14 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   border-radius: 2.5rem;
 }
 
+.c3 .c4:active {
+  background: #D0E1FE;
+}
+
+.c3 .c4:active * {
+  fill: #0D4AAF;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -729,7 +785,6 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   width: -moz-min-content;
   width: min-content;
   border-radius: .8rem;
-  border-bottom: 1.5px solid;
   border-color: #98A7B7;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
   transition: border-color 100ms,box-shadow 100ms;
@@ -793,6 +848,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 .c0:focus-within {
   border-color: #126AFA;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  border-width: .2rem;
 }
 
 .c0:focus-within .c2 .c4 * {
@@ -802,11 +858,13 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 .c0:hover {
   border-color: #607890;
   box-shadow: 0 0.2rem 0.8rem rgba(96,120,144,0.2);
+  border-width: 1.5px;
 }
 
 .c0:focus-within:hover {
   border-color: #126AFA;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  border-width: .2rem;
 }
 
 .c1 {
@@ -872,16 +930,19 @@ exports[`SearchBox should render properly with "S" size 1`] = `
         fill="none"
         height="1em"
         title="search icon"
-        viewBox="0 0 24 24"
+        viewBox="0 0 20 20"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           clip-rule="evenodd"
-          d="M15.187 14.472h.79l4.24 4.26c.41.41.41 1.08 0 1.49-.41.41-1.08.41-1.49 0l-4.25-4.25v-.79l-.27-.28a6.5 6.5 0 0 1-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59a6.505 6.505 0 0 1 7.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 0 1-1.48 5.34l.28.27zm-9.71-4.5c0 2.49 2.01 4.5 4.5 4.5s4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5-4.5 2.01-4.5 4.5z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M9.063 3.125a5.938 5.938 0 1 0 0 11.875 5.938 5.938 0 0 0 0-11.875zM1.875 9.063a7.187 7.187 0 1 1 12.692 4.621l3.375 3.374a.625.625 0 1 1-.884.884l-3.374-3.374A7.188 7.188 0 0 1 1.875 9.063z"
+          fill="#606878"
           fill-rule="evenodd"
+          stroke="#606878"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width=".3"
         />
       </svg>
     </span>
