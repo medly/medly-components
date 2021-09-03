@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.19.6](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.5...@medly-components/core@2.19.6) (2021-09-03)
+
+
+### Bug Fixes
+
+* pass all the props of modal content to the styled component ([#408](https://github.com/medly/medly-components/issues/408)) ([0ead6b2](https://github.com/medly/medly-components/commit/0ead6b296c957a1080903939df5d42ebba5a84eb))
+
+
+
+
+
 ## [2.19.5](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.4...@medly-components/core@2.19.5) (2021-09-02)
 
 **Note:** Version bump only for package @medly-components/core
