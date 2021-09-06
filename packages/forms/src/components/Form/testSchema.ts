@@ -52,6 +52,7 @@ export const testSchema: FormFieldSchema = {
     },
     birthDate: {
         type: 'date',
+        required: true,
         displayFormat: 'dd/MM/yyyy',
         label: 'Birth Date',
         placeholder: 'Birth Date'
