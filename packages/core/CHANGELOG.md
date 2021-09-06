@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.19.7](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.6...@medly-components/core@2.19.7) (2021-09-06)
+
+
+### Bug Fixes
+
+* wrong error validation in datepicker component ([#409](https://github.com/medly/medly-components/issues/409)) ([9b33516](https://github.com/medly/medly-components/commit/9b3351635041b2847dd1f5ffe375c80da01f1bfd))
+
+
+
+
+
 ## [2.19.6](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.5...@medly-components/core@2.19.6) (2021-09-03)
 
 
