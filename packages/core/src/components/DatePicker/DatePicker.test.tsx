@@ -86,6 +86,34 @@ describe('DatePicker component', () => {
             fireEvent.click(getByText('Click Here'));
             expect(container.querySelector('#dob-calendar')).toBeNull();
         });
+
+        it('should show error message on outer click if the datepicker is previously active', async () => {
+            const mockOnBlur = jest.fn(),
+                { container, getByText, findByText } = render(
+                    <>
+                        <p>Click Here</p>
+                        <DatePicker id="dob" required value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} onBlur={mockOnBlur} />
+                    </>
+                );
+            fireEvent.click(container.querySelector('svg'));
+            expect(container.querySelector('#dob-calendar')).toBeVisible();
+            fireEvent.click(getByText('Click Here'));
+            const message = await findByText('Please fill in this field');
+            expect(message).toBeInTheDocument();
+            expect(mockOnBlur).toBeCalled();
+        });
+
+        it('should not show error message on outer click if the datepicker is was not previously active', async () => {
+            const { getByText, queryByText } = render(
+                <>
+                    <p>Click Here</p>
+                    <DatePicker id="dob" required value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
+                </>
+            );
+            fireEvent.click(getByText('Click Here'));
+            const message = await queryByText('Please fill in this field');
+            expect(message).toBeNull();
+        });
     });
 
     describe('calendar icon', () => {

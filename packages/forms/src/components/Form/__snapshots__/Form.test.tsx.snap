@@ -197,7 +197,7 @@ exports[`Form should render properly with initial state 1`] = `
   fill: #607890;
 }
 
-.c45 {
+.c44 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -205,7 +205,7 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: pointer;
 }
 
-.c45 * {
+.c44 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -238,7 +238,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-align: initial;
 }
 
-.c59 {
+.c58 {
   margin: 0;
   color: inherit;
   font-size: 1.8rem;
@@ -251,7 +251,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-align: initial;
 }
 
-.c67 {
+.c66 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -279,68 +279,68 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c67,
-.c67 .c17,
-.c67 .c30,
-.c67 .c30 * {
+.c66,
+.c66 .c17,
+.c66 .c30,
+.c66 .c30 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c67:hover {
+.c66:hover {
   cursor: pointer;
 }
 
-.c67:focus {
+.c66:focus {
   outline: none;
 }
 
-.c67:disabled {
+.c66:disabled {
   cursor: not-allowed;
 }
 
-.c67:disabled {
+.c66:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c67:disabled .c30 * {
+.c66:disabled .c30 * {
   fill: #98A7B7;
 }
 
-.c67:not(:disabled):not(:hover) {
+.c66:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #126AFA;
 }
 
-.c67:not(:disabled):not(:hover) .c30 * {
+.c66:not(:disabled):not(:hover) .c30 * {
   fill: #ffffff;
 }
 
-.c67:not(:disabled):active {
+.c66:not(:disabled):active {
   color: #ffffff;
   background: #0D4AAF;
 }
 
-.c67:not(:disabled):active .c30 * {
+.c66:not(:disabled):active .c30 * {
   fill: #ffffff;
 }
 
-.c67:not(:disabled):not(:active):hover {
+.c66:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #0F5AD5;
   box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
-.c67:not(:disabled):not(:active):hover .c30 * {
+.c66:not(:disabled):not(:active):hover .c30 * {
   fill: #ffffff;
 }
 
-.c67 .c30 + .c17 {
+.c66 .c30 + .c17 {
   margin-left: 0.8rem;
 }
 
-.c67 .c17 + .c30 {
+.c66 .c17 + .c30 {
   margin-left: 0.8rem;
 }
 
@@ -565,7 +565,7 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #0F5AD5;
 }
 
-.c65 {
+.c64 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -585,23 +585,23 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: row;
 }
 
-.c65 * {
+.c64 * {
   cursor: pointer;
 }
 
-.c65.c65.c65:hover .c28 {
+.c64.c64.c64:hover .c28 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #0F5AD5;
   background-color: #0F5AD5;
 }
 
-.c65.c65.c65:active .c28 {
+.c64.c64.c64:active .c28 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
   border-color: #0D4AAF;
   background-color: #0D4AAF;
 }
 
-.c51 {
+.c50 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -654,45 +654,7 @@ exports[`Form should render properly with initial state 1`] = `
   content: ' *';
 }
 
-.c44 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c54 {
+.c53 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -724,17 +686,17 @@ exports[`Form should render properly with initial state 1`] = `
   color: #546A7F;
 }
 
-.c5 .c68,
-.c5 .c53 {
+.c5 .c67,
+.c5 .c52 {
   color: #546A7F;
 }
 
-.c5 .c68 *,
-.c5 .c53 * {
+.c5 .c67 *,
+.c5 .c52 * {
   fill: #546A7F;
 }
 
-.c5 ~ .c50 {
+.c5 ~ .c49 {
   color: #546A7F;
 }
 
@@ -775,17 +737,17 @@ exports[`Form should render properly with initial state 1`] = `
   color: #126AFA;
 }
 
-.c5:focus-within .c68,
-.c5:focus-within:hover .c68,
-.c5:focus-within .c53,
-.c5:focus-within:hover .c53 {
+.c5:focus-within .c67,
+.c5:focus-within:hover .c67,
+.c5:focus-within .c52,
+.c5:focus-within:hover .c52 {
   color: #126AFA;
 }
 
-.c5:focus-within .c68 *,
-.c5:focus-within:hover .c68 *,
-.c5:focus-within .c53 *,
-.c5:focus-within:hover .c53 * {
+.c5:focus-within .c67 *,
+.c5:focus-within:hover .c67 *,
+.c5:focus-within .c52 *,
+.c5:focus-within:hover .c52 * {
   fill: #126AFA;
 }
 
@@ -985,7 +947,7 @@ exports[`Form should render properly with initial state 1`] = `
   content: ' *';
 }
 
-.c52 {
+.c51 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -995,22 +957,22 @@ exports[`Form should render properly with initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c52 .c2 {
+.c51 .c2 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c52 .c2 label {
+.c51 .c2 label {
   pointer-events: none;
 }
 
-.c52 .c2 div,
-.c52 .c2 input,
-.c52 .c2 label {
+.c51 .c2 div,
+.c51 .c2 input,
+.c51 .c2 label {
   cursor: pointer;
 }
 
-.c52 .c2 .c53 {
+.c51 .c2 .c52 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -1019,25 +981,25 @@ exports[`Form should render properly with initial state 1`] = `
   transform: rotate(0deg);
 }
 
-.c52 .c2:not(:focus-within):hover .c53 * {
+.c51 .c2:not(:focus-within):hover .c52 * {
   fill: #13181D;
 }
 
-.c46 {
+.c45 {
   cursor: pointer;
   border-radius: 50%;
   padding: 0.8rem;
 }
 
-.c46 * {
+.c45 * {
   fill: #607890;
 }
 
-.c46:hover {
+.c45:hover {
   background-color: #dfe4e9;
 }
 
-.c46:hover * {
+.c45:hover * {
   fill: #303C48;
 }
 
@@ -1073,7 +1035,7 @@ exports[`Form should render properly with initial state 1`] = `
   top: 5.6rem;
 }
 
-.c49 {
+.c48 {
   border-right: 0.1rem solid rgba(84,106,127,0.2);
   height: 3.2rem;
   margin-right: 1.6rem;
@@ -1082,7 +1044,7 @@ exports[`Form should render properly with initial state 1`] = `
   transition: border-color 100ms ease-out;
 }
 
-.c47 {
+.c46 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1106,25 +1068,25 @@ exports[`Form should render properly with initial state 1`] = `
   padding: 0 1.6rem 0 0.8rem;
 }
 
-.c47 .c8 {
+.c46 .c8 {
   color: #546A7F;
 }
 
-.c47 .c68,
-.c47 .c53 {
+.c46 .c67,
+.c46 .c52 {
   color: #546A7F;
 }
 
-.c47 .c68 *,
-.c47 .c53 * {
+.c46 .c67 *,
+.c46 .c52 * {
   fill: #546A7F;
 }
 
-.c47 ~ .c50 {
+.c46 ~ .c49 {
   color: #546A7F;
 }
 
-.c47::after {
+.c46::after {
   content: '';
   width: 100%;
   height: 0;
@@ -1137,80 +1099,80 @@ exports[`Form should render properly with initial state 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c47:hover::after,
-.c47:focus-within::after {
+.c46:hover::after,
+.c46:focus-within::after {
   border-width: 0.2rem;
 }
 
-.c47 input {
+.c46 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c47:focus-within,
-.c47:focus-within:hover {
+.c46:focus-within,
+.c46:focus-within:hover {
   background-color: #E7F0FF;
 }
 
-.c47:focus-within::after,
-.c47:focus-within:hover::after {
+.c46:focus-within::after,
+.c46:focus-within:hover::after {
   border-color: #126AFA;
 }
 
-.c47:focus-within .c8,
-.c47:focus-within:hover .c8 {
+.c46:focus-within .c8,
+.c46:focus-within:hover .c8 {
   color: #126AFA;
 }
 
-.c47:focus-within .c68,
-.c47:focus-within:hover .c68,
-.c47:focus-within .c53,
-.c47:focus-within:hover .c53 {
+.c46:focus-within .c67,
+.c46:focus-within:hover .c67,
+.c46:focus-within .c52,
+.c46:focus-within:hover .c52 {
   color: #126AFA;
 }
 
-.c47:focus-within .c68 *,
-.c47:focus-within:hover .c68 *,
-.c47:focus-within .c53 *,
-.c47:focus-within:hover .c53 * {
+.c46:focus-within .c67 *,
+.c46:focus-within:hover .c67 *,
+.c46:focus-within .c52 *,
+.c46:focus-within:hover .c52 * {
   fill: #126AFA;
 }
 
-.c47:focus-within input,
-.c47:focus-within:hover input {
+.c46:focus-within input,
+.c46:focus-within:hover input {
   box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
-.c47:focus-within input::-webkit-input-placeholder,
-.c47:focus-within:hover input::-webkit-input-placeholder {
+.c46:focus-within input::-webkit-input-placeholder,
+.c46:focus-within:hover input::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c47:focus-within input::-moz-placeholder,
-.c47:focus-within:hover input::-moz-placeholder {
+.c46:focus-within input::-moz-placeholder,
+.c46:focus-within:hover input::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c47:focus-within input:-ms-input-placeholder,
-.c47:focus-within:hover input:-ms-input-placeholder {
+.c46:focus-within input:-ms-input-placeholder,
+.c46:focus-within:hover input:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c47:focus-within input::placeholder,
-.c47:focus-within:hover input::placeholder {
+.c46:focus-within input::placeholder,
+.c46:focus-within:hover input::placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c47 .c30:first-of-type {
+.c46 .c30:first-of-type {
   margin-right: 0.8rem;
 }
 
-.c47 .c30:nth-of-type(2) {
+.c46 .c30:nth-of-type(2) {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
 }
 
-.c47:hover .c48 {
+.c46:hover .c47 {
   border-color: #546A7F;
 }
 
@@ -1293,7 +1255,7 @@ exports[`Form should render properly with initial state 1`] = `
   outline: 0;
 }
 
-.c58 {
+.c57 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1323,16 +1285,16 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c58:focus {
+.c57:focus {
   outline: none;
 }
 
-.c58:disabled,
-.c58:disabled > .c30 {
+.c57:disabled,
+.c57:disabled > .c30 {
   cursor: not-allowed;
 }
 
-.c58 .c30 {
+.c57 .c30 {
   font-size: 1.2rem;
   border-radius: 50%;
   cursor: pointer;
@@ -1340,27 +1302,27 @@ exports[`Form should render properly with initial state 1`] = `
   margin-left: 0.6rem;
 }
 
-.c58 .c30 {
+.c57 .c30 {
   background-color: #b0bcc8;
 }
 
-.c58 .c30 * {
+.c57 .c30 * {
   fill: #303C48;
 }
 
-.c58 .c30:hover {
+.c57 .c30:hover {
   background-color: #98A7B7;
 }
 
-.c58 .c30:hover * {
+.c57 .c30:hover * {
   fill: #13181D;
 }
 
-.c58:hover {
+.c57:hover {
   border-color: #435465;
 }
 
-.c57 {
+.c56 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1371,7 +1333,7 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c55 {
+.c54 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1381,39 +1343,39 @@ exports[`Form should render properly with initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c55 .c2 {
+.c54 .c2 {
   margin: 0;
 }
 
-.c55 .c2 label {
+.c54 .c2 label {
   pointer-events: none;
 }
 
-.c55 .c2 div,
-.c55 .c2 input,
-.c55 .c2 label {
+.c54 .c2 div,
+.c54 .c2 input,
+.c54 .c2 label {
   cursor: pointer;
 }
 
-.c55 .c2:focus-within input {
+.c54 .c2:focus-within input {
   cursor: text;
 }
 
-.c55 .c2 input {
+.c54 .c2 input {
   padding-right: 1.6rem;
 }
 
-.c55 .c56 > .c30 {
+.c54 .c55 > .c30 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c55 .c56 > .c30 * {
+.c54 .c55 > .c30 * {
   fill: #546A7F;
 }
 
-.c55:not(:focus-within):hover .c56 > .c30 * {
+.c54:not(:focus-within):hover .c55 > .c30 * {
   fill: #13181D;
 }
 
@@ -1544,7 +1506,7 @@ exports[`Form should render properly with initial state 1`] = `
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 
-.c66 {
+.c65 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1560,7 +1522,7 @@ exports[`Form should render properly with initial state 1`] = `
   justify-content: flex-end;
 }
 
-.c66 > * + * {
+.c65 > * + * {
   margin-left: 1.6rem;
 }
 
@@ -1594,8 +1556,18 @@ exports[`Form should render properly with initial state 1`] = `
   min-width: auto;
 }
 
-.c62 {
+.c61 {
   grid-column: 1/5;
+}
+
+.c61 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c62 {
+  grid-column: 5/9;
 }
 
 .c62 > * {
@@ -1605,7 +1577,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c63 {
-  grid-column: 5/9;
+  grid-column: 9/-1;
 }
 
 .c63 > * {
@@ -1614,22 +1586,12 @@ exports[`Form should render properly with initial state 1`] = `
   min-width: auto;
 }
 
-.c64 {
-  grid-column: 9/-1;
-}
-
-.c64 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c60 {
+.c59 {
   grid-column: 1/-1;
   margin-top: 2.6rem;
 }
 
-.c61 {
+.c60 {
   margin-bottom: 1rem;
 }
 
@@ -2077,6 +2039,7 @@ exports[`Form should render properly with initial state 1`] = `
                 name="birthDate"
                 pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
                 placeholder="DD / MM / YYYY"
+                required=""
                 type="text"
                 value="01 / 01 / 2019"
               />
@@ -2086,14 +2049,15 @@ exports[`Form should render properly with initial state 1`] = `
                 01 / 01 / 2019
               </span>
               <label
-                class="c8 c44"
+                class="c8 c9"
                 for="birthDate-input"
+                required=""
               >
                 Birth Date
               </label>
             </div>
             <svg
-              class="c30 c45 c46"
+              class="c30 c44 c45"
               fill="none"
               height="1em"
               id="birthDate-calendar-icon"
@@ -2125,11 +2089,11 @@ exports[`Form should render properly with initial state 1`] = `
         type="date-range"
       >
         <div
-          class="c4 c47"
+          class="c4 c46"
           id="experience-textFields"
         >
           <svg
-            class="c30 c45 c46"
+            class="c30 c44 c45"
             fill="none"
             height="1em"
             id="experience-calendar-icon"
@@ -2172,7 +2136,7 @@ exports[`Form should render properly with initial state 1`] = `
             </label>
           </div>
           <i
-            class="c48 c49"
+            class="c47 c48"
           />
           <div
             class="c6"
@@ -2202,7 +2166,7 @@ exports[`Form should render properly with initial state 1`] = `
           </div>
         </div>
         <span
-          class="c50 c51"
+          class="c49 c50"
           id="experience-helper-text"
         />
       </div>
@@ -2211,7 +2175,7 @@ exports[`Form should render properly with initial state 1`] = `
       class="c11"
     >
       <div
-        class="c52"
+        class="c51"
         id="country-wrapper"
       >
         <div
@@ -2244,7 +2208,7 @@ exports[`Form should render properly with initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c30 c31 c53 c54"
+              class="c30 c31 c52 c53"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -2265,7 +2229,7 @@ exports[`Form should render properly with initial state 1`] = `
       class="c11"
     >
       <div
-        class="c55"
+        class="c54"
         id="graduation-wrapper"
         name="graduation"
         placeholder="Please Select . . ."
@@ -2299,11 +2263,11 @@ exports[`Form should render properly with initial state 1`] = `
               </label>
             </div>
             <div
-              class="c56 c57"
+              class="c55 c56"
               id="graduation-count"
             >
               <button
-                class="c58"
+                class="c57"
                 id="graduation-count-chip"
               >
                 <span
@@ -2312,7 +2276,7 @@ exports[`Form should render properly with initial state 1`] = `
                   1
                 </span>
                 <svg
-                  class="c30 c45"
+                  class="c30 c44"
                   fill="none"
                   height="1em"
                   id="graduation-count-chip-clear"
@@ -2347,17 +2311,17 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <h4
-      class="c17 c59 c60"
+      class="c17 c58 c59"
     >
       Marks
     </h4>
     <span
-      class="c17 c18 c61"
+      class="c17 c18 c60"
     >
       Marks Information
     </span>
     <div
-      class="c62"
+      class="c61"
     >
       <div
         class="c2 c3"
@@ -2392,7 +2356,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c63"
+      class="c62"
     >
       <div
         class="c2 c3"
@@ -2427,7 +2391,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c64"
+      class="c63"
     >
       <div
         class="c2 c3"
@@ -2466,7 +2430,7 @@ exports[`Form should render properly with initial state 1`] = `
     >
       
       <label
-        class="c65"
+        class="c64"
         for="agree"
         id="agree-wrapper"
         sizes="[object Object]"
@@ -2510,10 +2474,10 @@ exports[`Form should render properly with initial state 1`] = `
       </label>
     </div>
     <div
-      class="c66"
+      class="c65"
     >
       <button
-        class="c67"
+        class="c66"
         form="medly-dynamic-form"
         type="submit"
       >
@@ -2544,7 +2508,7 @@ exports[`Form should render properly without initial state 1`] = `
   fill: #607890;
 }
 
-.c45 {
+.c44 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -2552,7 +2516,7 @@ exports[`Form should render properly without initial state 1`] = `
   cursor: pointer;
 }
 
-.c45 * {
+.c44 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -2611,7 +2575,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-align: initial;
 }
 
-.c58 {
+.c57 {
   margin: 0;
   color: inherit;
   font-size: 1.8rem;
@@ -2624,7 +2588,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-align: initial;
 }
 
-.c66 {
+.c65 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -2652,68 +2616,68 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
-.c66,
-.c66 .c1,
-.c66 .c32,
-.c66 .c32 * {
+.c65,
+.c65 .c1,
+.c65 .c32,
+.c65 .c32 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c66:hover {
+.c65:hover {
   cursor: pointer;
 }
 
-.c66:focus {
+.c65:focus {
   outline: none;
 }
 
-.c66:disabled {
+.c65:disabled {
   cursor: not-allowed;
 }
 
-.c66:disabled {
+.c65:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c66:disabled .c32 * {
+.c65:disabled .c32 * {
   fill: #98A7B7;
 }
 
-.c66:not(:disabled):not(:hover) {
+.c65:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #126AFA;
 }
 
-.c66:not(:disabled):not(:hover) .c32 * {
+.c65:not(:disabled):not(:hover) .c32 * {
   fill: #ffffff;
 }
 
-.c66:not(:disabled):active {
+.c65:not(:disabled):active {
   color: #ffffff;
   background: #0D4AAF;
 }
 
-.c66:not(:disabled):active .c32 * {
+.c65:not(:disabled):active .c32 * {
   fill: #ffffff;
 }
 
-.c66:not(:disabled):not(:active):hover {
+.c65:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #0F5AD5;
   box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
-.c66:not(:disabled):not(:active):hover .c32 * {
+.c65:not(:disabled):not(:active):hover .c32 * {
   fill: #ffffff;
 }
 
-.c66 .c32 + .c1 {
+.c65 .c32 + .c1 {
   margin-left: 0.8rem;
 }
 
-.c66 .c1 + .c32 {
+.c65 .c1 + .c32 {
   margin-left: 0.8rem;
 }
 
@@ -2902,7 +2866,7 @@ exports[`Form should render properly without initial state 1`] = `
   border-color: #0F5AD5;
 }
 
-.c64 {
+.c63 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2922,21 +2886,21 @@ exports[`Form should render properly without initial state 1`] = `
   flex-direction: row;
 }
 
-.c64 * {
+.c63 * {
   cursor: pointer;
 }
 
-.c64.c64.c64:hover .c30 {
+.c63.c63.c63:hover .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c64.c64.c64:active .c30 {
+.c63.c63.c63:active .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
   border-color: #0F5AD5;
 }
 
-.c51 {
+.c50 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -2989,45 +2953,7 @@ exports[`Form should render properly without initial state 1`] = `
   content: ' *';
 }
 
-.c44 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c54 {
+.c53 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -3059,17 +2985,17 @@ exports[`Form should render properly without initial state 1`] = `
   color: #546A7F;
 }
 
-.c8 .c67,
-.c8 .c53 {
+.c8 .c66,
+.c8 .c52 {
   color: #546A7F;
 }
 
-.c8 .c67 *,
-.c8 .c53 * {
+.c8 .c66 *,
+.c8 .c52 * {
   fill: #546A7F;
 }
 
-.c8 ~ .c50 {
+.c8 ~ .c49 {
   color: #546A7F;
 }
 
@@ -3110,17 +3036,17 @@ exports[`Form should render properly without initial state 1`] = `
   color: #126AFA;
 }
 
-.c8:focus-within .c67,
-.c8:focus-within:hover .c67,
-.c8:focus-within .c53,
-.c8:focus-within:hover .c53 {
+.c8:focus-within .c66,
+.c8:focus-within:hover .c66,
+.c8:focus-within .c52,
+.c8:focus-within:hover .c52 {
   color: #126AFA;
 }
 
-.c8:focus-within .c67 *,
-.c8:focus-within:hover .c67 *,
-.c8:focus-within .c53 *,
-.c8:focus-within:hover .c53 * {
+.c8:focus-within .c66 *,
+.c8:focus-within:hover .c66 *,
+.c8:focus-within .c52 *,
+.c8:focus-within:hover .c52 * {
   fill: #126AFA;
 }
 
@@ -3320,7 +3246,7 @@ exports[`Form should render properly without initial state 1`] = `
   content: ' *';
 }
 
-.c52 {
+.c51 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3330,22 +3256,22 @@ exports[`Form should render properly without initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c52 .c5 {
+.c51 .c5 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c52 .c5 label {
+.c51 .c5 label {
   pointer-events: none;
 }
 
-.c52 .c5 div,
-.c52 .c5 input,
-.c52 .c5 label {
+.c51 .c5 div,
+.c51 .c5 input,
+.c51 .c5 label {
   cursor: pointer;
 }
 
-.c52 .c5 .c53 {
+.c51 .c5 .c52 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -3354,25 +3280,25 @@ exports[`Form should render properly without initial state 1`] = `
   transform: rotate(0deg);
 }
 
-.c52 .c5:not(:focus-within):hover .c53 * {
+.c51 .c5:not(:focus-within):hover .c52 * {
   fill: #13181D;
 }
 
-.c46 {
+.c45 {
   cursor: pointer;
   border-radius: 50%;
   padding: 0.8rem;
 }
 
-.c46 * {
+.c45 * {
   fill: #607890;
 }
 
-.c46:hover {
+.c45:hover {
   background-color: #dfe4e9;
 }
 
-.c46:hover * {
+.c45:hover * {
   fill: #303C48;
 }
 
@@ -3408,7 +3334,7 @@ exports[`Form should render properly without initial state 1`] = `
   top: 5.6rem;
 }
 
-.c49 {
+.c48 {
   border-right: 0.1rem solid rgba(84,106,127,0.2);
   height: 3.2rem;
   margin-right: 1.6rem;
@@ -3417,7 +3343,7 @@ exports[`Form should render properly without initial state 1`] = `
   transition: border-color 100ms ease-out;
 }
 
-.c47 {
+.c46 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3441,25 +3367,25 @@ exports[`Form should render properly without initial state 1`] = `
   padding: 0 1.6rem 0 0.8rem;
 }
 
-.c47 .c11 {
+.c46 .c11 {
   color: #546A7F;
 }
 
-.c47 .c67,
-.c47 .c53 {
+.c46 .c66,
+.c46 .c52 {
   color: #546A7F;
 }
 
-.c47 .c67 *,
-.c47 .c53 * {
+.c46 .c66 *,
+.c46 .c52 * {
   fill: #546A7F;
 }
 
-.c47 ~ .c50 {
+.c46 ~ .c49 {
   color: #546A7F;
 }
 
-.c47::after {
+.c46::after {
   content: '';
   width: 100%;
   height: 0;
@@ -3472,80 +3398,80 @@ exports[`Form should render properly without initial state 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c47:hover::after,
-.c47:focus-within::after {
+.c46:hover::after,
+.c46:focus-within::after {
   border-width: 0.2rem;
 }
 
-.c47 input {
+.c46 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c47:focus-within,
-.c47:focus-within:hover {
+.c46:focus-within,
+.c46:focus-within:hover {
   background-color: #E7F0FF;
 }
 
-.c47:focus-within::after,
-.c47:focus-within:hover::after {
+.c46:focus-within::after,
+.c46:focus-within:hover::after {
   border-color: #126AFA;
 }
 
-.c47:focus-within .c11,
-.c47:focus-within:hover .c11 {
+.c46:focus-within .c11,
+.c46:focus-within:hover .c11 {
   color: #126AFA;
 }
 
-.c47:focus-within .c67,
-.c47:focus-within:hover .c67,
-.c47:focus-within .c53,
-.c47:focus-within:hover .c53 {
+.c46:focus-within .c66,
+.c46:focus-within:hover .c66,
+.c46:focus-within .c52,
+.c46:focus-within:hover .c52 {
   color: #126AFA;
 }
 
-.c47:focus-within .c67 *,
-.c47:focus-within:hover .c67 *,
-.c47:focus-within .c53 *,
-.c47:focus-within:hover .c53 * {
+.c46:focus-within .c66 *,
+.c46:focus-within:hover .c66 *,
+.c46:focus-within .c52 *,
+.c46:focus-within:hover .c52 * {
   fill: #126AFA;
 }
 
-.c47:focus-within input,
-.c47:focus-within:hover input {
+.c46:focus-within input,
+.c46:focus-within:hover input {
   box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
-.c47:focus-within input::-webkit-input-placeholder,
-.c47:focus-within:hover input::-webkit-input-placeholder {
+.c46:focus-within input::-webkit-input-placeholder,
+.c46:focus-within:hover input::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c47:focus-within input::-moz-placeholder,
-.c47:focus-within:hover input::-moz-placeholder {
+.c46:focus-within input::-moz-placeholder,
+.c46:focus-within:hover input::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c47:focus-within input:-ms-input-placeholder,
-.c47:focus-within:hover input:-ms-input-placeholder {
+.c46:focus-within input:-ms-input-placeholder,
+.c46:focus-within:hover input:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c47:focus-within input::placeholder,
-.c47:focus-within:hover input::placeholder {
+.c46:focus-within input::placeholder,
+.c46:focus-within:hover input::placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c47 .c32:first-of-type {
+.c46 .c32:first-of-type {
   margin-right: 0.8rem;
 }
 
-.c47 .c32:nth-of-type(2) {
+.c46 .c32:nth-of-type(2) {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
 }
 
-.c47:hover .c48 {
+.c46:hover .c47 {
   border-color: #546A7F;
 }
 
@@ -3628,7 +3554,7 @@ exports[`Form should render properly without initial state 1`] = `
   outline: 0;
 }
 
-.c57 {
+.c56 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3639,7 +3565,7 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
-.c55 {
+.c54 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3649,39 +3575,39 @@ exports[`Form should render properly without initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c55 .c5 {
+.c54 .c5 {
   margin: 0;
 }
 
-.c55 .c5 label {
+.c54 .c5 label {
   pointer-events: none;
 }
 
-.c55 .c5 div,
-.c55 .c5 input,
-.c55 .c5 label {
+.c54 .c5 div,
+.c54 .c5 input,
+.c54 .c5 label {
   cursor: pointer;
 }
 
-.c55 .c5:focus-within input {
+.c54 .c5:focus-within input {
   cursor: text;
 }
 
-.c55 .c5 input {
+.c54 .c5 input {
   padding-right: 1.6rem;
 }
 
-.c55 .c56 > .c32 {
+.c54 .c55 > .c32 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c55 .c56 > .c32 * {
+.c54 .c55 > .c32 * {
   fill: #546A7F;
 }
 
-.c55:not(:focus-within):hover .c56 > .c32 * {
+.c54:not(:focus-within):hover .c55 > .c32 * {
   fill: #13181D;
 }
 
@@ -3792,7 +3718,7 @@ exports[`Form should render properly without initial state 1`] = `
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 
-.c65 {
+.c64 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3808,7 +3734,7 @@ exports[`Form should render properly without initial state 1`] = `
   justify-content: flex-end;
 }
 
-.c65 > * + * {
+.c64 > * + * {
   margin-left: 1.6rem;
 }
 
@@ -3842,8 +3768,18 @@ exports[`Form should render properly without initial state 1`] = `
   min-width: auto;
 }
 
-.c61 {
+.c60 {
   grid-column: 1/5;
+}
+
+.c60 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c61 {
+  grid-column: 5/9;
 }
 
 .c61 > * {
@@ -3853,7 +3789,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c62 {
-  grid-column: 5/9;
+  grid-column: 9/-1;
 }
 
 .c62 > * {
@@ -3862,22 +3798,12 @@ exports[`Form should render properly without initial state 1`] = `
   min-width: auto;
 }
 
-.c63 {
-  grid-column: 9/-1;
-}
-
-.c63 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c59 {
+.c58 {
   grid-column: 1/-1;
   margin-top: 2.6rem;
 }
 
-.c60 {
+.c59 {
   margin-bottom: 1rem;
 }
 
@@ -4335,6 +4261,7 @@ exports[`Form should render properly without initial state 1`] = `
                 name="birthDate"
                 pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
                 placeholder="DD / MM / YYYY"
+                required=""
                 type="text"
                 value=""
               />
@@ -4344,14 +4271,15 @@ exports[`Form should render properly without initial state 1`] = `
                 DD / MM / YYYY
               </span>
               <label
-                class="c11 c44"
+                class="c11 c12"
                 for="birthDate-input"
+                required=""
               >
                 Birth Date
               </label>
             </div>
             <svg
-              class="c32 c45 c46"
+              class="c32 c44 c45"
               fill="none"
               height="1em"
               id="birthDate-calendar-icon"
@@ -4383,11 +4311,11 @@ exports[`Form should render properly without initial state 1`] = `
         type="date-range"
       >
         <div
-          class="c7 c47"
+          class="c7 c46"
           id="experience-textFields"
         >
           <svg
-            class="c32 c45 c46"
+            class="c32 c44 c45"
             fill="none"
             height="1em"
             id="experience-calendar-icon"
@@ -4430,7 +4358,7 @@ exports[`Form should render properly without initial state 1`] = `
             </label>
           </div>
           <i
-            class="c48 c49"
+            class="c47 c48"
           />
           <div
             class="c9"
@@ -4460,7 +4388,7 @@ exports[`Form should render properly without initial state 1`] = `
           </div>
         </div>
         <span
-          class="c50 c51"
+          class="c49 c50"
           id="experience-helper-text"
         />
       </div>
@@ -4469,7 +4397,7 @@ exports[`Form should render properly without initial state 1`] = `
       class="c14"
     >
       <div
-        class="c52"
+        class="c51"
         id="country-wrapper"
       >
         <div
@@ -4502,7 +4430,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c32 c33 c53 c54"
+              class="c32 c33 c52 c53"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4523,7 +4451,7 @@ exports[`Form should render properly without initial state 1`] = `
       class="c14"
     >
       <div
-        class="c55"
+        class="c54"
         id="graduation-wrapper"
         name="graduation"
         placeholder="Please Select . . ."
@@ -4557,7 +4485,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <div
-              class="c56 c57"
+              class="c55 c56"
               id="graduation-count"
             >
               <svg
@@ -4580,17 +4508,17 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <h4
-      class="c1 c58 c59"
+      class="c1 c57 c58"
     >
       Marks
     </h4>
     <span
-      class="c1 c20 c60"
+      class="c1 c20 c59"
     >
       Marks Information
     </span>
     <div
-      class="c61"
+      class="c60"
     >
       <div
         class="c5 c6"
@@ -4625,7 +4553,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c62"
+      class="c61"
     >
       <div
         class="c5 c6"
@@ -4660,7 +4588,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c63"
+      class="c62"
     >
       <div
         class="c5 c6"
@@ -4699,7 +4627,7 @@ exports[`Form should render properly without initial state 1`] = `
     >
       
       <label
-        class="c64"
+        class="c63"
         for="agree"
         id="agree-wrapper"
         sizes="[object Object]"
@@ -4742,10 +4670,10 @@ exports[`Form should render properly without initial state 1`] = `
       </label>
     </div>
     <div
-      class="c65"
+      class="c64"
     >
       <button
-        class="c66"
+        class="c65"
         form="medly-dynamic-form"
         type="submit"
       >

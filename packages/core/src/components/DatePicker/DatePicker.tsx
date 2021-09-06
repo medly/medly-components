@@ -68,7 +68,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
             ),
             validate = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
-                    const inputValue = event.target.value,
+                    const inputValue = inputRef.current.value,
                         parsedDate = inputValue && parseToDate(inputValue, displayFormat),
                         isValidDate = inputValue && parsedDate.toString() !== 'Invalid Date',
                         emptyDateMessage = props.required && !inputValue && 'Please fill in this field',
@@ -78,12 +78,12 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                         validatorMessage = validator && validator(parsedDate || null, event.type),
                         message = validatorMessage || emptyDateMessage || invalidDateRangeMessage || invalidDateMessage || '';
 
-                    setTimeout(() => setErrorMessage(message), 0);
+                    setErrorMessage(message);
                     eventFunc && eventFunc(event);
                 },
                 [props.required, displayFormat, validator, minSelectableDate, maxSelectableDate]
             ),
-            onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [
+            onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => inputRef.current.value && validate(event, props.onBlur), [
                 props.onBlur,
                 displayFormat
             ]),
@@ -106,10 +106,16 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                     setActive(false);
                 },
                 [onChange]
-            );
-        useOuterClickNotifier(() => {
+            ),
+            inputValidator = useCallback(() => undefined, []);
+
+        useOuterClickNotifier((event: any) => {
             setActive(false);
             toggleCalendar(false);
+            if (active) {
+                validate(event, props.onBlur);
+                props.onBlur && props.onBlur(event);
+            }
         }, wrapperRef);
 
         useEffect(() => {
@@ -147,6 +153,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                     showDecorators={showDecorators}
                     value={textValue}
                     onChange={onTextChange}
+                    validator={inputValidator}
                     {...{ ...restProps, onBlur, onFocus, minWidth, onInvalid }}
                 />
 
