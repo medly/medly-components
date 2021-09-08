@@ -10,12 +10,12 @@ export const CloseIconWrapper = styled.span<SearchBoxProps & { showCloseIcon?: b
     padding-right: ${({ hasCustomSearchFilter }) => hasCustomSearchFilter && '0.4rem'};
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.closeIcon.padding[size]};
+        border-radius: ${({ theme }) => theme.searchBox.closeIcon.borderRadius};
         * {
             fill: ${({ theme }) => theme.searchBox.closeIcon.color.default};
         }
         &:hover {
             background: ${({ theme }) => theme.searchBox.closeIcon.bgColor.hovered};
-            border-radius: ${({ theme }) => theme.searchBox.closeIcon.borderRadius};
             * {
                 fill: ${({ theme }) => theme.searchBox.closeIcon.color.hovered};
             }
@@ -33,12 +33,12 @@ export const SearchIconWrapper = styled.span<SearchBoxProps & { areOptionsVisibl
     ${getIconWrapperStyle};
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.searchIcon.padding[size]};
+        border-radius: ${({ theme }) => theme.searchBox.searchIcon.borderRadius};
         * {
             fill: ${({ theme: { searchBox }, areOptionsVisible }) => searchBox.searchIcon.color[areOptionsVisible ? 'active' : 'default']};
         }
         &:hover {
-            background: ${({ theme: { searchBox }, isTyping }) => (isTyping ? searchBox.searchIcon.bgColor.hovered : 'transparent')};
-            border-radius: ${({ theme }) => theme.searchBox.searchIcon.borderRadius};
+            background: ${({ theme: { searchBox }}) => searchBox.searchIcon.bgColor.hovered};
         }
         &:active {
             background: ${({ theme }) => theme.searchBox.searchIcon.bgColor.pressed};
@@ -49,16 +49,8 @@ export const SearchIconWrapper = styled.span<SearchBoxProps & { areOptionsVisibl
     }
 `;
 
-const expandIconHoveredStyle = css`
-        background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.hovered};
-        border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
-        * {
-            fill: ${({ theme }) => theme.searchBox.expandIcon.color.hovered};
-        }
-    `,
-    customSearchActiveStyle = css`
+const customSearchActiveStyle = css`
         ${SvgIcon} {
-            ${expandIconHoveredStyle}
             background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.active};
             path {
                 transform: rotate(180deg);
@@ -73,24 +65,22 @@ const expandIconHoveredStyle = css`
             }
         }
     `,
-    customSearchNotActiveStyle = css`
-        ${SvgIcon} {
-            &:hover {
-                ${expandIconHoveredStyle}
-            }
-        }
-    `;
+    customSearchNotActiveStyle = css``;
 
 export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchActive?: boolean }>`
     ${getIconWrapperStyle}
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.expandIcon.padding[size]};
+        border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
         path {
             transition: transform 0.2s ease-out;
             transform-origin: center;
         }
         * {
             fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
+        }
+        &:hover {
+            background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.hovered};
         }
         &:active {
             background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.pressed};
