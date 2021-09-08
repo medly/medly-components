@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.0...@medly-components/utils@1.14.1) (2021-09-08)
+
+
+### Bug Fixes
+
+* window object undefined in local and session storage ([#410](https://github.com/medly/medly-components/issues/410)) ([179e8fb](https://github.com/medly/medly-components/commit/179e8fbc3359b47ab06360bcf076884097fb76c8))
+
+
+
+
+
 # [1.14.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.13.0...@medly-components/utils@1.14.0) (2021-09-02)
 
 
