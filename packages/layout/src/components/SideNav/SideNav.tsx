@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useRef, useState } from 'react';
+import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import NavGroup from './NavGroup';
 import NavItem from './NavItem';
 import NavList from './NavList';
@@ -14,7 +14,7 @@ export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = props 
 
     const ref = useRef(null),
         [isHovered, setHoveredState] = useState(false),
-        [isExpanded, setExpandedState] = useState(defaultOpen ?? window.innerWidth > 1024),
+        [isExpanded, setExpandedState] = useState(false),
         [activeItem, setActiveItem] = useState(defaultActive || '');
 
     const openSidenav = useCallback(() => !isExpanded && setHoveredState(true), [isExpanded]),
@@ -31,6 +31,10 @@ export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = props 
             },
             [active, onChange]
         );
+
+    useEffect(() => {
+        typeof window !== 'undefined' && setExpandedState(defaultOpen ?? window.innerWidth > 1024);
+    }, []);
 
     return (
         <SideNavContext.Provider value={{ isHovered, isExpanded, activeItem: active || activeItem, activeItemChangeHandler }}>

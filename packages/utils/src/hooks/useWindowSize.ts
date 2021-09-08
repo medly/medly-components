@@ -3,13 +3,14 @@ import { debounce } from '../helpers';
 
 export const useWindowSize = () => {
     const [windowSize, setWindowSize] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight
+        width: typeof window !== 'undefined' && window.innerWidth,
+        height: typeof window !== 'undefined' && window.innerHeight
     });
 
     useEffect(() => {
         const handleResize = debounce(
             () =>
+                typeof window !== 'undefined' &&
                 setWindowSize({
                     width: window.innerWidth,
                     height: window.innerHeight
@@ -17,9 +18,9 @@ export const useWindowSize = () => {
             25
         );
 
-        window.addEventListener('resize', handleResize);
+        typeof window !== 'undefined' && window.addEventListener('resize', handleResize);
         handleResize();
-        return () => window.removeEventListener('resize', handleResize);
+        return () => typeof window !== 'undefined' && window.removeEventListener('resize', handleResize);
     }, []);
 
     return windowSize;

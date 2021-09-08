@@ -71,7 +71,7 @@ export const Minimap: FC<MinimapProps> & WithStyle = React.memo(
             ),
             onSliderControllerReset = useCallback(() => {
                 setMouseDown(false);
-                window.removeEventListener('mousemove', positionSliderController);
+                typeof window !== 'undefined' && window.removeEventListener('mousemove', positionSliderController);
             }, [positionSliderController]);
 
         const resizeObserver = useMemo(
@@ -102,11 +102,15 @@ export const Minimap: FC<MinimapProps> & WithStyle = React.memo(
         }, [...minimapDimensionDeps]);
 
         useEffect(() => {
-            window.addEventListener('load', setMinimapDimensions);
-            window.addEventListener('resize', setMinimapDimensions);
+            if (typeof window !== 'undefined') {
+                window.addEventListener('load', setMinimapDimensions);
+                window.addEventListener('resize', setMinimapDimensions);
+            }
             return () => {
-                window.removeEventListener('load', setMinimapDimensions);
-                window.removeEventListener('resize', setMinimapDimensions);
+                if (typeof window !== 'undefined') {
+                    window.removeEventListener('load', setMinimapDimensions);
+                    window.removeEventListener('resize', setMinimapDimensions);
+                }
             };
         }, [setMinimapDimensions]);
 
@@ -117,18 +121,22 @@ export const Minimap: FC<MinimapProps> & WithStyle = React.memo(
         }, [onTableScroll]);
 
         useEffect(() => {
-            if (mouseDown) {
+            if (mouseDown && typeof window !== 'undefined') {
                 window.addEventListener('mousemove', positionSliderController);
                 return () => window.removeEventListener('mousemove', positionSliderController);
             }
         }, [mouseDown, positionSliderController]);
 
         useEffect(() => {
-            window.addEventListener('mouseup', onSliderControllerReset);
-            document.documentElement.addEventListener('mouseleave', onSliderControllerReset);
+            if (typeof window !== 'undefined') {
+                window.addEventListener('mouseup', onSliderControllerReset);
+                document.documentElement.addEventListener('mouseleave', onSliderControllerReset);
+            }
             return () => {
-                window.removeEventListener('mouseup', onSliderControllerReset);
-                document.documentElement.removeEventListener('mouseleave', onSliderControllerReset);
+                if (typeof window !== 'undefined') {
+                    window.removeEventListener('mouseup', onSliderControllerReset);
+                    document.documentElement.removeEventListener('mouseleave', onSliderControllerReset);
+                }
             };
         }, [onSliderControllerReset]);
 

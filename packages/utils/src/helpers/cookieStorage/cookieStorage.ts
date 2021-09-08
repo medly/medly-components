@@ -2,13 +2,15 @@ import { StorageUtilities } from '../storage/types';
 
 export const COOKIE_STORAGE: StorageUtilities = {
     setItem: (key: string, value: unknown) => {
-        document.cookie = `${key}=${JSON.stringify(value)}`;
+        if (typeof window !== 'undefined') document.cookie = `${key}=${JSON.stringify(value)}`;
     },
     getItem: (key: string) => {
-        const value = document.cookie
-            .split('; ')
-            .find(row => row.startsWith(`${key}=`))
-            ?.split('=')[1];
+        const value =
+            typeof window !== 'undefined' &&
+            document.cookie
+                .split('; ')
+                .find(row => row.startsWith(`${key}=`))
+                ?.split('=')[1];
         if (value) {
             try {
                 return JSON.parse(value);
@@ -20,9 +22,10 @@ export const COOKIE_STORAGE: StorageUtilities = {
         return null;
     },
     removeItem: (key: string) => {
-        document.cookie = `${key}=; expires=Thu, 01 Jan 1970 00:00:00 GMT`;
+        if (typeof window !== 'undefined') document.cookie = `${key}=; expires=Thu, 01 Jan 1970 00:00:00 GMT`;
     },
     clear: () =>
+        typeof window !== 'undefined' &&
         document.cookie
             .split('; ')
             .forEach(keyValue => (document.cookie = `${keyValue.split('=')[0]}=; expires=Thu, 01 Jan 1970 00:00:00 GMT`))

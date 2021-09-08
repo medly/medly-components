@@ -63,16 +63,20 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     }, [isLoading, sortable, sortState, onSortChange, field]);
 
     const onMouseUp = () => {
-        window.removeEventListener('mousemove', onMouseMove);
-        window.removeEventListener('mouseup', onMouseUp);
-        document.querySelector('body').style.cursor = 'auto';
+        if (typeof window !== 'undefined') {
+            window.removeEventListener('mousemove', onMouseMove);
+            window.removeEventListener('mouseup', onMouseUp);
+            document.querySelector('body').style.cursor = 'auto';
+        }
     };
 
     const initResize = (e: React.MouseEvent) => {
         pageX = e.pageX;
-        window.addEventListener('mousemove', onMouseMove);
-        window.addEventListener('mouseup', onMouseUp);
-        document.querySelector('body').style.cursor = 'ew-resize';
+        if (typeof window !== 'undefined') {
+            window.addEventListener('mousemove', onMouseMove);
+            window.addEventListener('mouseup', onMouseUp);
+            document.querySelector('body').style.cursor = 'ew-resize';
+        }
     };
 
     const handleDoubleClick = useCallback(

@@ -40,11 +40,15 @@ export const useKeyPress = (targetKeys: string | string[], defaultPrevented = fa
     }, [targetKeys, keysPressed]);
 
     useEffect(() => {
-        window.addEventListener('keydown', downHandler);
-        window.addEventListener('keyup', upHandler);
+        if (typeof window !== 'undefined') {
+            window.addEventListener('keydown', downHandler);
+            window.addEventListener('keyup', upHandler);
+        }
         return () => {
-            window.removeEventListener('keydown', downHandler);
-            window.removeEventListener('keyup', upHandler);
+            if (typeof window !== 'undefined') {
+                window.removeEventListener('keydown', downHandler);
+                window.removeEventListener('keyup', upHandler);
+            }
         };
     }, []);
 

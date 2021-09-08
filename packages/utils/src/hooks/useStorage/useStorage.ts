@@ -24,7 +24,7 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
         }
 
         const item = storage.getItem(key);
-        if (!item) {
+        if (!item && typeof window !== 'undefined') {
             storage.setItem(key, initialValue);
             window.dispatchEvent(new Event(`local-storage-${key}`));
             return initialValue;
@@ -42,7 +42,7 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
         try {
             storage.setItem(key, value);
             setStoredValue(value);
-            window.dispatchEvent(new Event(`local-storage-${key}`));
+            typeof window !== 'undefined' && window.dispatchEvent(new Event(`local-storage-${key}`));
         } catch (error) {
             console.warn(`Error setting localStorage key “${key}”:`, error);
         }
@@ -51,9 +51,10 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
     useEffect(() => {
         const handleStorageChange = () => setStoredValue(readValue());
 
-        window.addEventListener(`local-storage-${key}`, handleStorageChange);
-        return () => window.removeEventListener('local-storage', handleStorageChange);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+        if (typeof window !== 'undefined') {
+            window.addEventListener(`local-storage-${key}`, handleStorageChange);
+            return () => window.removeEventListener('local-storage', handleStorageChange);
+        }
     }, []);
 
     return [storedValue, setValue];
