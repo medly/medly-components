@@ -26,7 +26,7 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
         const item = storage.getItem(key);
         if (!item) {
             storage.setItem(key, initialValue);
-            window.dispatchEvent(new Event(`local-storage-${key}`));
+            window?.dispatchEvent(new Event(`local-storage-${key}`));
             return initialValue;
         }
         return item;
@@ -51,7 +51,7 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
     useEffect(() => {
         const handleStorageChange = () => setStoredValue(readValue());
 
-        window.addEventListener(`local-storage-${key}`, handleStorageChange);
+        window?.addEventListener(`local-storage-${key}`, handleStorageChange);
         return () => window.removeEventListener('local-storage', handleStorageChange);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
