@@ -61,6 +61,7 @@ const table: TableTheme = {
     header: {
         bgColor: colors.white,
         cell: {
+            borderRadius: '0.8rem',
             bgColor: {
                 default: colors.white,
                 hovered: colors.grey[50],
