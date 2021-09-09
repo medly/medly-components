@@ -25,6 +25,7 @@ export interface FontFaceItem {
     secondarySrc: string;
     fontWeight: number;
     fontStyle: string;
+    fontDisplay?: string;
 }
 
 export interface FontTheme {

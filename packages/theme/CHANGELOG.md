@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.15.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.14.1...@medly-components/theme@2.15.0) (2021-09-09)
+
+
+### Features
+
+* add font display in font face ([#415](https://github.com/medly/medly-components/issues/415)) ([88a3d0b](https://github.com/medly/medly-components/commit/88a3d0ba121c1333d6ef05b345e6cc04f9dd938d))
+
+
+
+
+
 ## [2.14.1](https://github.com/medly/medly-components/compare/@medly-components/theme@2.14.0...@medly-components/theme@2.14.1) (2021-08-27)
 
 
