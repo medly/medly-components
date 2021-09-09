@@ -126,7 +126,7 @@ export const HeadCellButton = styled.button<{
     padding: ${({ tableSize }) => resolveValueByTableSize(tableSize, headCellButtonTableSizeMap)};
     outline: unset;
     font-family: inherit;
-    border-radius: 0.8rem;
+    border-radius: ${({ theme }) => theme.table.header.cell.borderRadius ? theme.table.header.cell.borderRadius : '0.8rem'};
     cursor: ${({ withHoverEffect }) => (withHoverEffect ? 'pointer' : 'default')};
     ${({ isSelected, theme }) => getStyle(theme, 'default', isSelected)}
 
