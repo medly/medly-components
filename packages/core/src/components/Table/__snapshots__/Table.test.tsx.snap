@@ -2843,7 +2843,6 @@ exports[`Table component should render properly 1`] = `
   padding: 0.9rem 0.8rem 1.1rem;
   outline: unset;
   font-family: inherit;
-  border-radius: 0.8rem;
   cursor: pointer;
   background-color: #ffffff;
   color: #435465;
@@ -2903,7 +2902,6 @@ exports[`Table component should render properly 1`] = `
   padding: 0.9rem 0.8rem 1.1rem;
   outline: unset;
   font-family: inherit;
-  border-radius: 0.8rem;
   cursor: pointer;
   background-color: #ffffff;
   color: #435465;
