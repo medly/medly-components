@@ -50,22 +50,21 @@ export const SearchIconWrapper = styled.span<SearchBoxProps & { areOptionsVisibl
 `;
 
 const customSearchActiveStyle = css`
-        ${SvgIcon} {
-            background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.active};
-            path {
-                transform: rotate(180deg);
-            }
-
-            * {
-                fill: ${({ theme }) => theme.searchBox.expandIcon.color.active};
-            }
-
-            &:hover {
-                background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.active};
-            }
+    ${SvgIcon} {
+        background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.active};
+        path {
+            transform: rotate(180deg);
         }
-    `,
-    customSearchNotActiveStyle = css``;
+
+        * {
+            fill: ${({ theme }) => theme.searchBox.expandIcon.color.active};
+        }
+
+        &:hover {
+            background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.active};
+        }
+    }
+`
 
 export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchActive?: boolean }>`
     ${getIconWrapperStyle}
@@ -89,5 +88,5 @@ export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchAc
             }
         }
     }
-    ${({ isCustomSearchActive }) => isCustomSearchActive ? customSearchActiveStyle : customSearchNotActiveStyle}
+    ${({ isCustomSearchActive }) => isCustomSearchActive && customSearchActiveStyle};
 `;
