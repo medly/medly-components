@@ -15,6 +15,9 @@ const toast: ToastTheme = {
         info: colors.blue[500],
         warning: colors.yellow[500],
         error: colors.red[500]
+    },
+    icon: {
+        align: 'normal'
     }
 };
 

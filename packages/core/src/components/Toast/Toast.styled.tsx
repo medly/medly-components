@@ -22,11 +22,17 @@ export const Toast = styled('div')<ToastProps>`
     @media (min-width: 1440px) {
         max-width: ${({ fullWidth }) => (fullWidth ? '100%' : '103.6rem')};
     }
+
+    & > div {
+        ${({ theme, variant }) => theme.toast.boxBgColor && `background-color: ${theme.toast.boxBgColor[variant]};`}
+    }
+    ${({ theme, variant }) => theme.toast.boxBgColor && `border-left-color: ${theme.toast.boxBgColor[variant]};`}
 `;
 
 export const IconWrapper = styled('div')<ToastProps>`
     display: flex;
     background-color: ${({ theme, variant }) => theme.toast.bgColor[variant]};
+    align-items: ${({ theme }) => theme.toast.icon.align};
 
     ${SvgIcon} {
         padding: 1.2rem;

@@ -201,6 +201,10 @@ exports[`Toast should render action button 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c1 .c2 {
@@ -387,6 +391,10 @@ exports[`Toast should render custom icons 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c1 .c2 {
@@ -589,6 +597,10 @@ exports[`Toast should render header and message text 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c1 .c2 {
@@ -775,6 +787,10 @@ exports[`Toast should render properly with error variant 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #FAE6E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c1 .c2 {
@@ -966,6 +982,10 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c1 .c2 {
@@ -1147,6 +1167,10 @@ exports[`Toast should render properly with info variant 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E7F0FF;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c1 .c2 {
@@ -1325,6 +1349,10 @@ exports[`Toast should render properly with success variant 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c1 .c2 {
@@ -1500,6 +1528,10 @@ exports[`Toast should render properly with warning variant 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #FEF7DC;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c1 .c2 {

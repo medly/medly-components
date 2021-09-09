@@ -13,4 +13,13 @@ export interface ToastTheme {
         warning: string;
         error: string;
     };
+    boxBgColor?: {
+        success: string;
+        info: string;
+        warning: string;
+        error: string;
+    };
+    icon: {
+        align: 'center' | 'normal';
+    };
 }

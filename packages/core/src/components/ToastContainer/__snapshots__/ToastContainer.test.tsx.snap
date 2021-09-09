@@ -85,6 +85,10 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
@@ -323,6 +327,10 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
@@ -558,6 +566,10 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
@@ -793,6 +805,10 @@ exports[`ToastContainer should render properly with position left 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
@@ -1031,6 +1047,10 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
@@ -1264,6 +1284,10 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
@@ -1497,6 +1521,10 @@ exports[`ToastContainer should render properly with position right 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
@@ -1735,6 +1763,10 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
@@ -1968,6 +2000,10 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
@@ -2201,6 +2237,10 @@ exports[`ToastContainer should render properly with position top 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
@@ -2439,6 +2479,10 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
@@ -2674,6 +2718,10 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #E6F2E6;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .c2 .c3 {
