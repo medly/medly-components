@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.21.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.20.0...@medly-components/core@2.21.0) (2021-09-10)
+
+
+### Features
+
+* adding border radius for table header cell into theme ([#416](https://github.com/medly/medly-components/issues/416)) ([3714eec](https://github.com/medly/medly-components/commit/3714eec46fad09fd8422b06cdf8cc2b281c645ba))
+
+
+
+
+
+# [2.20.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.8...@medly-components/core@2.20.0) (2021-09-09)
+
+
+### Features
+
+* add font display in font face ([#415](https://github.com/medly/medly-components/issues/415)) ([88a3d0b](https://github.com/medly/medly-components/commit/88a3d0ba121c1333d6ef05b345e6cc04f9dd938d))
+
+
+
+
+
 ## [2.19.8](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.7...@medly-components/core@2.19.8) (2021-09-08)
 
 **Note:** Version bump only for package @medly-components/core

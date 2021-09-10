@@ -78,6 +78,7 @@ export interface TableTheme {
     header: {
         bgColor: string;
         cell: {
+            borderRadius?: string;
             bgColor: {
                 default: string;
                 hovered: string;

@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.29.12](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.11...@medly-components/layout@1.29.12) (2021-09-10)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.11](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.10...@medly-components/layout@1.29.11) (2021-09-09)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.10](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.9...@medly-components/layout@1.29.10) (2021-09-09)
+
+
+### Bug Fixes
+
+* context undefined issue in header nav component in cjs ([#414](https://github.com/medly/medly-components/issues/414)) ([65c5aae](https://github.com/medly/medly-components/commit/65c5aae7d8aeefa7ddda3347cdfcfa4ada16dd56))
+
+
+
+
+
 ## [1.29.9](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.8...@medly-components/layout@1.29.9) (2021-09-08)
 
 **Note:** Version bump only for package @medly-components/layout
