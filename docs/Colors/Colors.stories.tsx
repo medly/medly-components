@@ -4,12 +4,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const contrastingColor = (hex: string) => {
-    hex = hex.indexOf('#') === 0 ? hex.slice(1) : hex;
-    hex = hex.length === 3 ? hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2] : hex;
+    const hexCode = hex.indexOf('#') === 0 ? hex.slice(1) : hex,
+        finalHexCode = hexCode.length === 3 ? hexCode[0] + hexCode[0] + hexCode[1] + hexCode[1] + hexCode[2] + hexCode[2] : hexCode;
 
-    const r = parseInt(hex.slice(0, 2), 16),
-        g = parseInt(hex.slice(2, 4), 16),
-        b = parseInt(hex.slice(4, 6), 16);
+    const r = parseInt(finalHexCode.slice(0, 2), 16),
+        g = parseInt(finalHexCode.slice(2, 4), 16),
+        b = parseInt(finalHexCode.slice(4, 6), 16);
 
     return r * 0.299 + g * 0.587 + b * 0.114 > 186 ? '#000000' : '#FFFFFF';
 };
@@ -44,7 +44,7 @@ export const SingleShadeColors = () => {
         <Grid>
             {Object.entries(defaultTheme.colors)
                 .filter(([_, color]) => typeof color === 'string')
-                .map(([name, color]: Array<string>) => (
+                .map(([name, color]: [string, string]) => (
                     <div key={name}>
                         <Text textVariant="body1" fullWidth>
                             {name}
@@ -61,7 +61,7 @@ export const MultiShadeColors = () => {
         <Grid>
             {Object.entries(defaultTheme.colors)
                 .filter(([name, color]) => typeof color !== 'string' && name !== 'grey')
-                .map(([name, color]: Array<string>) => (
+                .map(([name, color]: [string, string]) => (
                     <div key={name}>
                         <Text textVariant="body1" fullWidth>
                             {name}
@@ -80,7 +80,7 @@ export const GreyScale = () => {
         <Grid>
             {Object.entries(defaultTheme.colors)
                 .filter(([name]) => name === 'grey')
-                .map(([name, color]: Array<string>) => (
+                .map(([name, color]: [string, string]) => (
                     <div key={name}>
                         <Text textVariant="body1" fullWidth>
                             {name}
