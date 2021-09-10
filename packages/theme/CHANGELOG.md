@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.16.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.15.0...@medly-components/theme@2.16.0) (2021-09-10)
+
+
+### Features
+
+* adding border radius for table header cell into theme ([#416](https://github.com/medly/medly-components/issues/416)) ([3714eec](https://github.com/medly/medly-components/commit/3714eec46fad09fd8422b06cdf8cc2b281c645ba))
+
+
+
+
+
 # [2.15.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.14.1...@medly-components/theme@2.15.0) (2021-09-09)
 
 
