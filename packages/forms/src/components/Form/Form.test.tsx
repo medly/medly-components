@@ -1,9 +1,9 @@
 import { cleanup, fireEvent, render, screen } from '@test-utils';
 import { format } from 'date-fns';
-import React, { FC } from 'react';
+import React from 'react';
+import { FormCustomComponent } from '../Fields/types';
 import { Form } from './Form';
 import { testSchema } from './testSchema';
-import { CustomComponentProps } from '../Fields/types';
 
 const initialState = {
         firstName: 'first name',
@@ -82,7 +82,7 @@ describe('Form', () => {
     });
 
     it('should render any custom component type', () => {
-        const DummyCustomComponent: FC<CustomComponentProps> = jest.fn(() => <div>Dummy Custom component</div>);
+        const DummyCustomComponent: FormCustomComponent = jest.fn(() => <div>Dummy Custom component</div>);
 
         render(<Form fieldSchema={{ dummy: { type: 'custom', component: DummyCustomComponent } }} onSubmit={jest.fn()} />);
         expect(screen.getByText('Dummy Custom component')).toBeInTheDocument();

@@ -1,11 +1,11 @@
 import { HTMLProps } from '@medly-components/utils';
 import { FormActionSchema } from '../Actions/types';
-import { FieldProperties } from '../Fields/types';
+import { FormFieldProperties } from '../Fields/types';
 
 type FormTypes = Omit<HTMLProps<HTMLFormElement>, 'onSubmit'>;
 
 export interface FormFieldSchema {
-    [key: string]: FieldProperties;
+    [key: string]: FormFieldProperties;
 }
 
 export interface FormProps extends FormTypes {
