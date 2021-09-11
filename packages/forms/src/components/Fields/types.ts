@@ -11,7 +11,7 @@ import {
     TextField
 } from '@medly-components/core';
 import { GetComponentProps } from '@medly-components/utils';
-import { FC, HTMLProps } from 'react';
+import { HTMLProps } from 'react';
 import { Handlers } from '../../hooks/useForm/types';
 
 export type CommonFieldProps = {
@@ -20,18 +20,20 @@ export type CommonFieldProps = {
     /** Grid row to render the field */
     gridRow?: string;
 };
-export type CustomComponentProps = {
-    name: string;
-    onChange: (name: string, value: any) => void;
-    value: any;
-    values: { [key: string]: any };
-    disabled: boolean;
-    showDecorators: boolean;
-    minWidth: string;
-    onFocus: () => void;
-    errorText: string;
-    variant: string;
-};
+export type FormCustomComponent<P = unknown> = React.FC<
+    P & {
+        name: string;
+        onChange: (name: string, value: any) => void;
+        value: any;
+        values: { [key: string]: any };
+        disabled: boolean;
+        showDecorators: boolean;
+        minWidth: string;
+        onFocus: () => void;
+        errorText: string;
+        variant: string;
+    }
+>;
 
 export type TextFieldProps = GetComponentProps<typeof TextField> & CommonFieldProps & { type: HTMLProps<HTMLInputElement>['type'] };
 export type SingleSelectProps = GetComponentProps<typeof SingleSelect> & CommonFieldProps & { type: 'single-select' };
@@ -52,14 +54,14 @@ export type FileInputProps = GetComponentProps<typeof FileInput> &
         maxSize?: number;
         accept?: string;
     };
-export type CustomFieldProps = { component: FC<CustomComponentProps> } & CommonFieldProps & { type: 'custom' };
+export type CustomFieldProps = { component: FormCustomComponent<any>; [k: string]: any } & CommonFieldProps & { type: 'custom' };
 
 export type NestedProps = {
     /** Type to identify field type */
     type: 'nested';
     /** Nested Fields */
     fields: {
-        [key: string]: FieldProperties;
+        [key: string]: FormFieldProperties;
     };
     /** Header for field group */
     header?: string;
@@ -71,7 +73,7 @@ export type NestedProps = {
 
 export type DisplayFormat = DatePickerProps['displayFormat'];
 
-export type FieldProperties =
+export type FormFieldProperties =
     | TextFieldProps
     | FileInputProps
     | SingleSelectProps
@@ -92,7 +94,7 @@ export interface FieldsProps {
     handlers: Handlers;
     // Fields json
     fields?: {
-        [key: string]: FieldProperties;
+        [key: string]: FormFieldProperties;
     };
     // Name of the parent component
     parentName?: string;

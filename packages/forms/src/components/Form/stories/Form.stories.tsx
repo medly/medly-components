@@ -1,7 +1,8 @@
-import React, { FC, useState } from 'react';
-import { Form, FormActionSchema } from '../../index';
-import { CommonFieldProps, CustomComponentProps, NestedProps } from '../../Fields/types';
+import { FormFieldSchema } from '@medly-components/forms';
 import { action } from '@storybook/addon-actions';
+import React, { useState } from 'react';
+import { CommonFieldProps, FormCustomComponent, FormFieldProperties, NestedProps } from '../../Fields/types';
+import { Form, FormActionSchema } from '../../index';
 import { AddPhoneNumber } from './AddPhoneNumber';
 
 export const CommonProps: React.FC<
@@ -47,18 +48,18 @@ const defaultFields = [
 
 export const CustomFieldForm = () => {
     const [fields, setFields] = useState(defaultFields);
-    const addPhoneNumberField = {
+    const addPhoneNumberField: FormFieldProperties = {
         type: 'custom',
         component: AddPhoneNumber,
         fields: fields,
         setFields: setFields
     };
-    const fieldSchema = fields.reduce((acc, cur) => ({ ...acc, [cur.fieldName]: cur }), {});
+    const fieldSchema: FormFieldSchema = fields.reduce((acc, cur) => ({ ...acc, [cur.fieldName]: cur }), {});
 
     return <Form fieldSchema={{ ...fieldSchema, addPhoneNumberField }} onSubmit={action('Submitted')} hideActions />;
 };
 
-const TotalRent: FC<CustomComponentProps> = ({ values: { rent = 0, utilities = 0, internet = 0 } }) => (
+const TotalRent: FormCustomComponent = ({ values: { rent = 0, utilities = 0, internet = 0 } }) => (
     <div>Total rent - {rent + utilities + internet}</div>
 );
 export const SimpleCustomFieldForm = () => (
@@ -74,4 +75,4 @@ export const SimpleCustomFieldForm = () => (
     />
 );
 
-export const CustomComponentPropSchema: FC<CustomComponentProps> = () => null;
+export const CustomComponentPropSchema: FormCustomComponent = () => null;

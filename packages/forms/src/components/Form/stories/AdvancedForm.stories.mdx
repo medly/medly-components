@@ -13,7 +13,9 @@ The form schema provides a `custom` field type for the same. Here is a simple ex
 </Preview>
 
 ```tsx
-const TotalRent: FC<CustomComponentProps> = ({ values: { rent = 0, utilities = 0, internet = 0 } }) => (
+import { Form, FormCustomComponent } from '@medly-components/forms';
+
+const TotalRent: FormCustomComponent = ({ values: { rent = 0, utilities = 0, internet = 0 } }) => (
     <div>Total rent - {rent + utilities + internet}</div>
 );
 export const SimpleCustomFieldForm = () => (
@@ -56,12 +58,12 @@ const defaultFields = [
 Here is what the form looks like -
 
 ```tsx
-import { Form } from '@medly-components/forms';
+import { Form, FormFieldProperties } from '@medly-components/forms';
 import { AddPhoneNumber } from './AddPhoneNumber';
 
 export const CustomFieldForm = () => {
     const [fields, setFields] = useState(defaultFields);
-    const addPhoneNumberField = {
+    const addPhoneNumberField: FormFieldProperties = {
         type: 'custom',
         component: AddPhoneNumber,
         fields: fields,
@@ -80,9 +82,11 @@ Notice that the `fields` and `setFields` are props passed by the `CustomFormFiel
 ```tsx
 import CustomPhoneField from './CustomPhoneField';
 import { Button } from '@medly-components/core';
+import { CustomFormComponent } from '@medly-components/forms';
 
 type AddPhoneNumberProps = { fields: { [key: string]: any }[]; setFields: (data: any) => void };
-export const AddPhoneNumber: FC<AddPhoneNumberProps> = ({ fields, setFields }) => {
+
+export const AddPhoneNumber: CustomFormComponent<AddPhoneNumberProps> = ({ fields, setFields }) => {
     const lastField = fields[fields.length - 1];
     const newFieldIndex = lastField.index + 1;
     const disabled = newFieldIndex > 3;
@@ -112,13 +116,16 @@ Notice that it gets the props `value`, `name` and `onChange` from the Form but a
 
 ```tsx
 import { Button, TextField } from '@medly-components/core';
+import { FormCustomComponent } from '@medly-components/forms';
+
 type CustomPhoneFieldProps = {
     value: string;
     name: string;
     onChange: (name: string, value: string) => void;
     onRemoveField: (name: string) => void;
 };
-const CustomPhoneField: FC<CustomPhoneFieldProps> = ({ value, name, onRemoveField, onChange }) => {
+
+const CustomPhoneField: FormCustomComponent<CustomPhoneFieldProps> = ({ value, name, onRemoveField, onChange }) => {
     return (
         <div style={{ display: 'flex', alignItems: 'center' }}>
             <TextField
