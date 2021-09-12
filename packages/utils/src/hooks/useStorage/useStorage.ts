@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
-import COOKIE_STORAGE from '../../helpers/cookieStorage';
-import LOCAL_STORAGE from '../../helpers/localStorage';
-import SESSION_STORAGE from '../../helpers/sessionStorage';
+import { COOKIE_STORAGE } from '../../helpers/cookieStorage';
+import { LOCAL_STORAGE } from '../../helpers/localStorage';
+import { SESSION_STORAGE } from '../../helpers/sessionStorage';
 import { StorageConfig } from './Storage.context';
 import { UseStorageOptions, UseStorageSetValue } from './types';
 
