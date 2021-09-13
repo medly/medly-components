@@ -1997,6 +1997,10 @@ exports[`DateRangePicker Custom date range options should render properly with c
   opacity: 1;
 }
 
+.c6:disabled {
+  color: #435465;
+}
+
 .c6:disabled ~ .c9,
 .c6:disabled ~ .c7 {
   cursor: not-allowed;
@@ -24203,6 +24207,10 @@ exports[`DateRangePicker should render properly 1`] = `
   opacity: 1;
 }
 
+.c6:disabled {
+  color: #435465;
+}
+
 .c6:disabled ~ .c9,
 .c6:disabled ~ .c7 {
   cursor: not-allowed;
@@ -26458,6 +26466,10 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 
 .c7.c7.c7:focus::placeholder {
   opacity: 1;
+}
+
+.c7:disabled {
+  color: #435465;
 }
 
 .c7:disabled ~ .c10,

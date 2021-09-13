@@ -2,9 +2,9 @@ import { css } from '@medly-components/utils';
 import { rgba } from 'polished';
 import { InnerWrapperProps } from '../../types';
 
-export const outlinedStyle = ({ theme, outlined, disabled, isErrorPresent }: InnerWrapperProps) => {
+export const outlinedStyle = ({ outlined, disabled, isErrorPresent }: InnerWrapperProps) => {
     return css`
-        border-radius: ${theme.spacing.S1};
+        border-radius: ${outlined.default.borderRadius};
         background-color: ${outlined.default.bgColor};
         input {
             box-shadow: 0 0 0 100000px ${outlined.default.bgColor} inset;
@@ -22,20 +22,26 @@ export const outlinedStyle = ({ theme, outlined, disabled, isErrorPresent }: Inn
             pointer-events: none;
             background-color: transparent;
             transition: all 100ms ease-out;
-            border-radius: ${theme.spacing.S1};
+            border-radius: ${outlined.default.borderRadius};
+            border-width: ${outlined.default.borderRadius};
             border: 0.1rem solid ${outlined.default.borderColor};
         }
         &:hover {
             box-shadow: ${!disabled && `0px 0.2rem 0.8rem ${rgba(outlined.hover.shadowColor, 0.2)}`};
         }
         &:focus-within {
+            border-radius: ${outlined.active.borderRadius};
             box-shadow: ${!disabled && `0px 0.2rem 0.8rem ${rgba(outlined[isErrorPresent ? 'error' : 'active'].shadowColor, 0.2)}`};
         }
 
-        &:hover::after,
-        &:focus-within::after {
-            border-width: ${!disabled && `0.15rem`};
+        &:hover::after {
+            border-width: ${!disabled && outlined.hover.borderWidth};
             border-color: ${!disabled && outlined.hover.borderColor};
         }
+        &:focus-within::after {
+            border-width: ${!disabled && outlined.active.borderWidth};
+            border-color: ${!disabled && outlined.active.borderColor};
+        }
+
     `;
 };

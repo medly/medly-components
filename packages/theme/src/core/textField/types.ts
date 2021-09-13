@@ -15,14 +15,17 @@ export interface TextFieldTheme {
         default: {
             bgColor: string;
             borderColor: string;
-            iconColor: string;
-            textColor: string;
-            labelColor: string;
+            borderRadius: string;
+            borderWidth: string;
             helperTextColor: string;
+            iconColor: string;
+            labelColor: string;
+            textColor: string;
         };
         hover: {
             borderColor: string;
             shadowColor: string;
+            borderWidth: string;
         };
         disabled: {
             bgColor: string;
@@ -33,9 +36,11 @@ export interface TextFieldTheme {
         };
         active: {
             bgColor: string;
-            placeholderColor: string;
             borderColor: string;
+            borderRadius: string;
+            borderWidth: string;
             labelColor: string;
+            placeholderColor: string;
             shadowColor: string;
         };
         error: {
@@ -70,10 +75,10 @@ export interface TextFieldTheme {
             cursor: string;
         };
         active: {
-            placeholderColor: string;
             bgColor: string;
             borderColor: string;
             labelColor: string;
+            placeholderColor: string;
         };
         error: {
             placeholderColor: string;
@@ -88,15 +93,18 @@ export interface TextFieldTheme {
     /** fusion variant theme */
     fusion: {
         default: {
-            borderColor: string;
             bgColor: string;
-            textColor: string;
-            labelColor: string;
+            borderColor: string;
+            borderRadius: string;
+            borderWidth: string;
             helperTextColor: string;
+            labelColor: string;
+            textColor: string;
         };
         hover: {
             bgColor: string;
             borderColor: string;
+            borderWidth: string;
         };
         disabled: {
             bgColor: string;
@@ -106,10 +114,12 @@ export interface TextFieldTheme {
             cursor: string;
         };
         active: {
-            placeholderColor: string;
             bgColor: string;
             borderColor: string;
+            borderRadius: string;
+            borderWidth: string;
             labelColor: string;
+            placeholderColor: string;
         };
         error: {
             placeholderColor: string;

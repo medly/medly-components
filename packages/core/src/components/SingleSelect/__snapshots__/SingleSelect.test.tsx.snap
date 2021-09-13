@@ -255,6 +255,10 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   opacity: 1;
 }
 
+.c5:disabled {
+  color: #435465;
+}
+
 .c5:disabled ~ .c6,
 .c5:disabled ~ .sc-fznKkj {
   cursor: not-allowed;
@@ -636,6 +640,10 @@ exports[`SingleSelect component should render properly when isSearchable is true
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -1227,6 +1235,10 @@ exports[`SingleSelect component should take passed max width 1`] = `
   opacity: 1;
 }
 
+.c5:disabled {
+  color: #435465;
+}
+
 .c5:disabled ~ .c6,
 .c5:disabled ~ .sc-fznKkj {
   cursor: not-allowed;
@@ -1764,6 +1776,10 @@ exports[`SingleSelect component with filled variant should render disabled state
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -2310,6 +2326,10 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   opacity: 1;
 }
 
+.c5:disabled {
+  color: #435465;
+}
+
 .c5:disabled ~ .c6,
 .c5:disabled ~ .sc-fznKkj {
   cursor: not-allowed;
@@ -2746,6 +2766,10 @@ exports[`SingleSelect component with filled variant should render properly when 
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -3395,6 +3419,10 @@ exports[`SingleSelect component with filled variant should render with label pro
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -5023,7 +5051,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  border-radius: 0.4rem;
   background-color: #ffffff;
   cursor: not-allowed;
   background-color: #ffffff;
@@ -5065,7 +5092,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -5182,6 +5208,10 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -5551,7 +5581,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -5591,7 +5620,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -5603,10 +5631,12 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
-.c3:hover::after,
-.c3:focus-within::after {
-  border-width: 0.15rem;
+.c3:hover::after {
   border-color: #607890;
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
 }
 
 .c3:focus-within,
@@ -5617,6 +5647,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: undefined;
 }
 
 .c3:focus-within .c6,
@@ -5740,6 +5771,10 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -5999,7 +6034,6 @@ exports[`SingleSelect component with outlined variant should render properly whe
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -6039,7 +6073,6 @@ exports[`SingleSelect component with outlined variant should render properly whe
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -6051,10 +6084,12 @@ exports[`SingleSelect component with outlined variant should render properly whe
   box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
-.c3:hover::after,
-.c3:focus-within::after {
-  border-width: 0.15rem;
+.c3:hover::after {
   border-color: #607890;
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
 }
 
 .c3:focus-within,
@@ -6065,6 +6100,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: undefined;
 }
 
 .c3:focus-within .c6,
@@ -6192,6 +6228,10 @@ exports[`SingleSelect component with outlined variant should render properly whe
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -6662,7 +6702,6 @@ exports[`SingleSelect component with outlined variant should render with label p
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -6702,7 +6741,6 @@ exports[`SingleSelect component with outlined variant should render with label p
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -6714,10 +6752,12 @@ exports[`SingleSelect component with outlined variant should render with label p
   box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
-.c3:hover::after,
-.c3:focus-within::after {
-  border-width: 0.15rem;
+.c3:hover::after {
   border-color: #607890;
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
 }
 
 .c3:focus-within,
@@ -6728,6 +6768,7 @@ exports[`SingleSelect component with outlined variant should render with label p
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: undefined;
 }
 
 .c3:focus-within .c6,
@@ -6855,6 +6896,10 @@ exports[`SingleSelect component with outlined variant should render with label p
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
