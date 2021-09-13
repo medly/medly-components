@@ -19,6 +19,7 @@ export const CloseIcon = styled(ClearIcon)`
     z-index: 20;
     position: absolute;
     border-radius: ${({ theme }) => theme.modal.closeIcon.borderRadius};
+    border: ${({ theme }) => theme.modal.closeIcon.border};
 
     ${props => getStyle({ ...props, styleType: 'default' })}
 
