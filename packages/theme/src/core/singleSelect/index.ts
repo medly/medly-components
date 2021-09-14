@@ -60,6 +60,7 @@ const singleSelect: SingleSelectTheme = {
         },
         textColor: {
             default: colors.black,
+            hovered: colors.black,
             selected: colors.blue[500],
             error: colors.red[500],
             disabled: colors.grey[500]

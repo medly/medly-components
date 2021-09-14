@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.22.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.21.3...@medly-components/core@2.22.0) (2021-09-14)
+
+
+### Features
+
+* **core:** add and use new single-select props for suffix icon + hovered color ([#421](https://github.com/medly/medly-components/issues/421)) ([1390919](https://github.com/medly/medly-components/commit/1390919be8cf21f831d728c3097296210fa62903))
+
+
+
+
+
 ## [2.21.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.21.2...@medly-components/core@2.21.3) (2021-09-12)
 
 **Note:** Version bump only for package @medly-components/core

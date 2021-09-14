@@ -807,6 +807,10 @@ exports[`SingleSelect component should render properly with M size 1`] = `
   background-color: #F7F8F9;
 }
 
+.c0:hover > .c1 {
+  color: #13181D;
+}
+
 .c0:active {
   background-color: #eff2f4;
 }
@@ -829,6 +833,10 @@ exports[`SingleSelect component should render properly with M size 1`] = `
 
 .c0 > .c3 * {
   fill: #13181D;
+}
+
+.c4:hover > .c1 {
+  color: #13181D;
 }
 
 .c4 > .c1 {
@@ -894,6 +902,10 @@ exports[`SingleSelect component should render properly with S size 1`] = `
   background-color: #F7F8F9;
 }
 
+.c0:hover > .c1 {
+  color: #13181D;
+}
+
 .c0:active {
   background-color: #eff2f4;
 }
@@ -916,6 +928,10 @@ exports[`SingleSelect component should render properly with S size 1`] = `
 
 .c0 > .c3 * {
   fill: #13181D;
+}
+
+.c4:hover > .c1 {
+  color: #13181D;
 }
 
 .c4 > .c1 {
@@ -1272,6 +1288,10 @@ exports[`SingleSelect component should take passed max width 1`] = `
 
 .c13:hover {
   background-color: #F7F8F9;
+}
+
+.c13:hover > .c14 {
+  color: #13181D;
 }
 
 .c13:active {
@@ -1924,6 +1944,10 @@ exports[`SingleSelect component with filled variant should render options correc
 
 .c1:hover {
   background-color: #F7F8F9;
+}
+
+.c1:hover > .c2 {
+  color: #13181D;
 }
 
 .c1:active {
@@ -2789,6 +2813,10 @@ exports[`SingleSelect component with filled variant should render properly when 
   background-color: #F7F8F9;
 }
 
+.c15:hover > .c16 {
+  color: #13181D;
+}
+
 .c15:active {
   background-color: #eff2f4;
 }
@@ -2832,6 +2860,10 @@ exports[`SingleSelect component with filled variant should render properly when 
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.c18:hover > .c16 {
+  color: #13181D;
 }
 
 .c18 > .c16 {
@@ -3794,6 +3826,10 @@ exports[`SingleSelect component with flat variant should render options correctl
   background-color: #F7F8F9;
 }
 
+.c1:hover > .c2 {
+  color: #13181D;
+}
+
 .c1:active {
   background-color: #eff2f4;
 }
@@ -4375,6 +4411,10 @@ exports[`SingleSelect component with flat variant should render properly when op
   background-color: #F7F8F9;
 }
 
+.c12:hover > .c5 {
+  color: #13181D;
+}
+
 .c12:active {
   background-color: #eff2f4;
 }
@@ -4418,6 +4458,10 @@ exports[`SingleSelect component with flat variant should render properly when op
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.c14:hover > .c5 {
+  color: #13181D;
 }
 
 .c14 > .c5 {
@@ -5320,6 +5364,10 @@ exports[`SingleSelect component with outlined variant should render options corr
   background-color: #F7F8F9;
 }
 
+.c1:hover > .c2 {
+  color: #13181D;
+}
+
 .c1:active {
   background-color: #eff2f4;
 }
@@ -6211,6 +6259,10 @@ exports[`SingleSelect component with outlined variant should render properly whe
   background-color: #F7F8F9;
 }
 
+.c15:hover > .c16 {
+  color: #13181D;
+}
+
 .c15:active {
   background-color: #eff2f4;
 }
@@ -6254,6 +6306,10 @@ exports[`SingleSelect component with outlined variant should render properly whe
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.c18:hover > .c16 {
+  color: #13181D;
 }
 
 .c18 > .c16 {
