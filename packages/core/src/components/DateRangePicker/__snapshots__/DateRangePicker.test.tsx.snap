@@ -39,6 +39,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -191,6 +195,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -340,6 +348,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -487,6 +499,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
 
 .c2:hover {
   background-color: #F7F8F9;
+}
+
+.c2:hover > .c3 {
+  color: #13181D;
 }
 
 .c2:active {
@@ -641,6 +657,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -790,6 +810,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -937,6 +961,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
 
 .c2:hover {
   background-color: #F7F8F9;
+}
+
+.c2:hover > .c3 {
+  color: #13181D;
 }
 
 .c2:active {
@@ -1091,6 +1119,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -1240,6 +1272,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -1387,6 +1423,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
 
 .c2:hover {
   background-color: #F7F8F9;
+}
+
+.c2:hover > .c3 {
+  color: #13181D;
 }
 
 .c2:active {
@@ -1541,6 +1581,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -1688,6 +1732,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
 
 .c2:hover {
   background-color: #F7F8F9;
+}
+
+.c2:hover > .c3 {
+  color: #13181D;
 }
 
 .c2:active {
@@ -2040,6 +2088,10 @@ exports[`DateRangePicker Custom date range options should render properly with c
 
 .c17:hover {
   background-color: #F7F8F9;
+}
+
+.c17:hover > .c18 {
+  color: #13181D;
 }
 
 .c17:active {
