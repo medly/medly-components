@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.23.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.22.0...@medly-components/core@2.23.0) (2021-09-14)
+
+
+### Features
+
+* **theme:** allow adding border to modal close icon ([#422](https://github.com/medly/medly-components/issues/422)) ([efe3170](https://github.com/medly/medly-components/commit/efe317052be3a37f16b7cb7571db8afcbf109f90))
+
+
+
+
+
 # [2.22.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.21.3...@medly-components/core@2.22.0) (2021-09-14)
 
 
