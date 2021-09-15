@@ -30,7 +30,7 @@ export const SelectorLabel = styled(Text)<SelectorLabelProps>`
     ${({ required }) => required && asterisk}
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'inherit')};
     color: ${({ disabled, theme, type }) => theme[type].labelColor[disabled ? 'disabled' : 'default']};
-    padding: ${({ labelPosition }) => labelPosition && (labelPosition === 'top' || labelPosition === 'bottom' ? '1.6rem 0' : '0 1.6rem')};
+    padding: ${({ labelPosition, theme, type }) => labelPosition && ( labelPosition === 'top' || labelPosition === 'bottom' ? '1.6rem 0' : type === 'checkbox' ? theme.checkbox.labelPadding : theme.radio.labelPadding )};
 `;
 
 export const SelectorGroupOptions = styled('div')<SelectorGroupOptionsProps>`

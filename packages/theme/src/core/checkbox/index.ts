@@ -15,6 +15,7 @@ const checkbox: CheckboxTheme = {
         default: 'inherit',
         disabled: colors.grey[500]
     },
+    labelPadding: '0 1.6rem',
     helperTextColor: {
         default: colors.black,
         disabled: colors.grey[500],
