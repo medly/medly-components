@@ -8269,6 +8269,10 @@ exports[`TextField with fusion variant and with label should render disabled sta
   border: 0.1rem solid #b0bcc8;
 }
 
+.c1:focus-within::after {
+  border-color: #126AFA;
+}
+
 .c1 input {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
@@ -9267,6 +9271,10 @@ exports[`TextField with fusion variant and without label should render disabled 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border: 0.1rem solid #b0bcc8;
+}
+
+.c1:focus-within::after {
+  border-color: #126AFA;
 }
 
 .c1 input {
@@ -10760,6 +10768,12 @@ exports[`TextField with fusion variant should render properly with custom border
   border: 0.1rem solid #b0bcc8;
 }
 
+.c1:focus-within::after {
+  border-color: #126AFA;
+  border-radius: 0.25rem;
+  border-width: 0.2rem;
+}
+
 .c1:focus-within {
   border-radius: 0.25rem;
   border-width: 0.2rem;
@@ -11116,6 +11130,10 @@ exports[`TextField with fusion variant should render properly with custom disabl
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border: 0.1rem solid #b0bcc8;
+}
+
+.c1:focus-within::after {
+  border-color: #126AFA;
 }
 
 .c1 input {
@@ -12545,7 +12563,7 @@ exports[`TextField with outlined variant and with label should render default st
 }
 
 .c1:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
@@ -12874,6 +12892,14 @@ exports[`TextField with outlined variant and with label should render disabled s
   border: 0.1rem solid #98A7B7;
 }
 
+.c1:focus-within {
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c1:focus-within::after {
+  border-color: #126AFA;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -13178,7 +13204,7 @@ exports[`TextField with outlined variant and with label should render focus stat
 }
 
 .c1:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
@@ -13510,7 +13536,7 @@ exports[`TextField with outlined variant and without label should render default
 }
 
 .c1:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
@@ -13833,6 +13859,14 @@ exports[`TextField with outlined variant and without label should render disable
   border: 0.1rem solid #98A7B7;
 }
 
+.c1:focus-within {
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c1:focus-within::after {
+  border-color: #126AFA;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -14131,7 +14165,7 @@ exports[`TextField with outlined variant and without label should render focus s
 }
 
 .c1:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
@@ -14468,7 +14502,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
 }
 
 .c1:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(204,0,0,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(204,0,0,0.2);
 }
 
 .c1:hover::after {
@@ -14847,7 +14881,7 @@ exports[`TextField with outlined variant should render error state properly with
 }
 
 .c1:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(204,0,0,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(204,0,0,0.2);
 }
 
 .c1:hover::after {
@@ -15292,6 +15326,13 @@ exports[`TextField with outlined variant should render properly with custom bord
 
 .c1:focus-within {
   border-radius: 0.25rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c1:focus-within::after {
+  border-color: #126AFA;
+  border-radius: 0.25rem;
+  border-width: 0.2rem;
 }
 
 .c1::after,
@@ -15628,6 +15669,14 @@ exports[`TextField with outlined variant should render properly with custom disa
   border: 0.1rem solid #98A7B7;
 }
 
+.c1:focus-within {
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c1:focus-within::after {
+  border-color: #126AFA;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -15945,7 +15994,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
 }
 
 .c1:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
@@ -16293,7 +16342,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 }
 
 .c1:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
@@ -16658,7 +16707,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 }
 
 .c1:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {

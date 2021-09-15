@@ -5095,6 +5095,14 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   border: 0.1rem solid #98A7B7;
 }
 
+.c3:focus-within {
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
+}
+
 .c3::after,
 .c3:hover::after {
   border-width: 0.1rem;
@@ -5628,7 +5636,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c3:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c3:hover::after {
@@ -6081,7 +6089,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
 }
 
 .c3:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c3:hover::after {
@@ -6749,7 +6757,7 @@ exports[`SingleSelect component with outlined variant should render with label p
 }
 
 .c3:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c3:hover::after {
