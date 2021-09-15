@@ -35,8 +35,9 @@ export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperPro
         }
         
         &:focus-within::after {
-            border-width: ${!disabled && fusion.active.borderWidth};
-            border-color: ${!disabled && fusion.active.borderColor};
+            border-color: ${fusion.active.borderColor};
+            border-radius: ${fusion.active.borderRadius}; 
+            border-width: ${fusion.active.borderWidth};
         }
 
         &:focus-within {

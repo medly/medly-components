@@ -31,16 +31,17 @@ export const outlinedStyle = ({ outlined, disabled, isErrorPresent }: InnerWrapp
         }
         &:focus-within {
             border-radius: ${outlined.active.borderRadius};
-            box-shadow: ${!disabled && `0px 0.2rem 0.8rem ${rgba(outlined[isErrorPresent ? 'error' : 'active'].shadowColor, 0.2)}`};
+            box-shadow: 0 0.2rem 0.8rem ${rgba(outlined[isErrorPresent ? 'error' : 'active'].shadowColor, 0.2)};
         }
 
         &:hover::after {
-            border-width: ${!disabled && outlined.hover.borderWidth};
             border-color: ${!disabled && outlined.hover.borderColor};
+            border-width: ${!disabled && outlined.hover.borderWidth};
         }
         &:focus-within::after {
-            border-width: ${!disabled && outlined.active.borderWidth};
-            border-color: ${!disabled && outlined.active.borderColor};
+            border-color: ${outlined.active.borderColor};
+            border-radius: ${outlined.active.borderRadius};
+            border-width: ${outlined.active.borderWidth};
         }
 
     `;
