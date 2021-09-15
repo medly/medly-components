@@ -14,7 +14,7 @@ export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = props 
 
     const ref = useRef(null),
         [isHovered, setHoveredState] = useState(false),
-        [isExpanded, setExpandedState] = useState(defaultOpen ?? window.innerWidth > 1024),
+        [isExpanded, setExpandedState] = useState(defaultOpen ?? (typeof window !== 'undefined' && window.innerWidth > 1024)),
         [activeItem, setActiveItem] = useState(defaultActive || '');
 
     const openSidenav = useCallback(() => !isExpanded && setHoveredState(true), [isExpanded]),
