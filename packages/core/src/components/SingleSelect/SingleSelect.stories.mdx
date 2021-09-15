@@ -143,8 +143,7 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
     <PreviewContent>
         {() => {
             const [filledValue, setFilledValue] = useState('Dummy4 option'),
-                [outlinedValue, setOutlinedValue] = useState('Dummy4 option'),
-                [flatValue, setFlatValue] = useState('Dummy4 option');
+                [outlinedValue, setOutlinedValue] = useState('Dummy4 option');
             return (
                 <>
                     <SingleSelect
@@ -155,7 +154,7 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
                         onChange={setFilledValue}
                         label="Pharmacy"
                         includesNestedOptions
-                        showTooltipForHelperAndErrorText={true}
+                        showTooltipForHelperAndErrorText
                     />
                     <SingleSelect
                         variant="outlined"
@@ -165,7 +164,7 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
                         onChange={setOutlinedValue}
                         label="Pharmacy"
                         includesNestedOptions
-                        showTooltipForHelperAndErrorText={true}
+                        showTooltipForHelperAndErrorText
                     />
                 </>
             );
