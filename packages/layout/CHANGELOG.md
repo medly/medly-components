@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.29.18](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.17...@medly-components/layout@1.29.18) (2021-09-15)
+
+
+### Bug Fixes
+
+* fixed window object undefined issue in nextJs ([#411](https://github.com/medly/medly-components/issues/411)) ([0319512](https://github.com/medly/medly-components/commit/031951279ef930a75deb3070480d34d4a72469b6))
+
+
+
+
+
 ## [1.29.17](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.16...@medly-components/layout@1.29.17) (2021-09-14)
 
 **Note:** Version bump only for package @medly-components/layout
