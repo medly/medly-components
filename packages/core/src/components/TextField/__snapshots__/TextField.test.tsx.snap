@@ -418,6 +418,8 @@ exports[`TextField character count should correctly render character count for f
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 .c4 {
@@ -452,15 +454,25 @@ exports[`TextField character count should correctly render character count for f
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:hover::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -475,6 +487,7 @@ exports[`TextField character count should correctly render character count for f
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 1rem;
 }
 
 .c1:focus-within .c4,
@@ -7902,6 +7915,8 @@ exports[`TextField with fusion variant and with label should render default stat
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 .c4 {
@@ -7936,15 +7951,25 @@ exports[`TextField with fusion variant and with label should render default stat
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:hover::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -7959,6 +7984,7 @@ exports[`TextField with fusion variant and with label should render default stat
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 1rem;
 }
 
 .c1:focus-within .c4,
@@ -8244,6 +8270,8 @@ exports[`TextField with fusion variant and with label should render disabled sta
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   cursor: not-allowed;
   background-color: #ffffff;
 }
@@ -8280,11 +8308,20 @@ exports[`TextField with fusion variant and with label should render disabled sta
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -8568,6 +8605,8 @@ exports[`TextField with fusion variant and with label should render focus state 
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 .c4 {
@@ -8602,15 +8641,25 @@ exports[`TextField with fusion variant and with label should render focus state 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:hover::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -8625,6 +8674,7 @@ exports[`TextField with fusion variant and with label should render focus state 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 1rem;
 }
 
 .c1:focus-within .c4,
@@ -8910,6 +8960,8 @@ exports[`TextField with fusion variant and without label should render default s
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 .c4 {
@@ -8944,15 +8996,25 @@ exports[`TextField with fusion variant and without label should render default s
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:hover::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -8967,6 +9029,7 @@ exports[`TextField with fusion variant and without label should render default s
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 1rem;
 }
 
 .c1:focus-within .c4,
@@ -9246,6 +9309,8 @@ exports[`TextField with fusion variant and without label should render disabled 
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   cursor: not-allowed;
   background-color: #ffffff;
 }
@@ -9282,11 +9347,20 @@ exports[`TextField with fusion variant and without label should render disabled 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -9564,6 +9638,8 @@ exports[`TextField with fusion variant and without label should render focus sta
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 .c4 {
@@ -9598,15 +9674,25 @@ exports[`TextField with fusion variant and without label should render focus sta
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:hover::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -9621,6 +9707,7 @@ exports[`TextField with fusion variant and without label should render focus sta
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 1rem;
 }
 
 .c1:focus-within .c4,
@@ -9911,6 +9998,8 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 .c4 {
@@ -9945,15 +10034,25 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:hover::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -10290,6 +10389,8 @@ exports[`TextField with fusion variant should render error state properly with a
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 .c4 {
@@ -10324,15 +10425,25 @@ exports[`TextField with fusion variant should render error state properly with a
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:hover::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -11104,6 +11215,8 @@ exports[`TextField with fusion variant should render properly with custom disabl
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   cursor: text;
   background-color: #ffffff;
 }
@@ -11140,11 +11253,20 @@ exports[`TextField with fusion variant should render properly with custom disabl
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -11441,6 +11563,8 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 .c4 {
@@ -11475,15 +11599,25 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:hover::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -11498,6 +11632,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 1rem;
 }
 
 .c1:focus-within .c4,
@@ -11799,6 +11934,8 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 .c7 {
@@ -11833,15 +11970,25 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:hover::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -11856,6 +12003,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 1rem;
 }
 
 .c1:focus-within .c7,
@@ -12174,6 +12322,8 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 .c4 {
@@ -12208,15 +12358,25 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:hover::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c1:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
 }
 
 .c1 input {
@@ -12231,6 +12391,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 1rem;
 }
 
 .c1:focus-within .c4,
@@ -12524,6 +12685,7 @@ exports[`TextField with outlined variant and with label should render default st
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -12563,6 +12725,8 @@ exports[`TextField with outlined variant and with label should render default st
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -12571,15 +12735,19 @@ exports[`TextField with outlined variant and with label should render default st
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within,
@@ -12590,6 +12758,7 @@ exports[`TextField with outlined variant and with label should render default st
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
@@ -12855,6 +13024,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
   cursor: not-allowed;
   background-color: #ffffff;
@@ -12896,15 +13066,20 @@ exports[`TextField with outlined variant and with label should render disabled s
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1::after,
@@ -13164,6 +13339,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -13203,6 +13379,8 @@ exports[`TextField with outlined variant and with label should render focus stat
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -13211,15 +13389,19 @@ exports[`TextField with outlined variant and with label should render focus stat
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within,
@@ -13230,6 +13412,7 @@ exports[`TextField with outlined variant and with label should render focus stat
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
@@ -13495,6 +13678,7 @@ exports[`TextField with outlined variant and without label should render default
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -13534,6 +13718,8 @@ exports[`TextField with outlined variant and without label should render default
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -13542,15 +13728,19 @@ exports[`TextField with outlined variant and without label should render default
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within,
@@ -13561,6 +13751,7 @@ exports[`TextField with outlined variant and without label should render default
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
@@ -13820,6 +14011,7 @@ exports[`TextField with outlined variant and without label should render disable
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
   cursor: not-allowed;
   background-color: #ffffff;
@@ -13861,15 +14053,20 @@ exports[`TextField with outlined variant and without label should render disable
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1::after,
@@ -14123,6 +14320,7 @@ exports[`TextField with outlined variant and without label should render focus s
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -14162,6 +14360,8 @@ exports[`TextField with outlined variant and without label should render focus s
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -14170,15 +14370,19 @@ exports[`TextField with outlined variant and without label should render focus s
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within,
@@ -14189,6 +14393,7 @@ exports[`TextField with outlined variant and without label should render focus s
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
@@ -14459,6 +14664,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -14498,6 +14704,8 @@ exports[`TextField with outlined variant should render error state properly  1`]
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -14506,15 +14714,19 @@ exports[`TextField with outlined variant should render error state properly  1`]
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(204,0,0,0.2);
 }
 
 .c1:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1,
@@ -14838,6 +15050,7 @@ exports[`TextField with outlined variant should render error state properly with
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -14877,6 +15090,8 @@ exports[`TextField with outlined variant should render error state properly with
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -14885,15 +15100,19 @@ exports[`TextField with outlined variant should render error state properly with
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(204,0,0,0.2);
 }
 
 .c1:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1,
@@ -15629,6 +15848,7 @@ exports[`TextField with outlined variant should render properly with custom disa
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
   cursor: text;
   background-color: #ffffff;
@@ -15670,15 +15890,20 @@ exports[`TextField with outlined variant should render properly with custom disa
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1::after,
@@ -15951,6 +16176,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -15990,6 +16216,8 @@ exports[`TextField with outlined variant should render properly with multiline 1
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -15998,15 +16226,19 @@ exports[`TextField with outlined variant should render properly with multiline 1
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within,
@@ -16017,6 +16249,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
@@ -16298,6 +16531,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -16337,6 +16571,8 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -16345,15 +16581,19 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within,
@@ -16364,6 +16604,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c7,
@@ -16662,6 +16903,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  border-radius: 0.4rem;
   background-color: #ffffff;
 }
 
@@ -16701,6 +16943,8 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -16709,15 +16953,19 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 }
 
 .c1:focus-within {
+  border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c1:focus-within,
@@ -16728,6 +16976,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
