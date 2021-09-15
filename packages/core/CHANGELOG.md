@@ -3,6 +3,74 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.23.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.22.0...@medly-components/core@2.23.0) (2021-09-14)
+
+
+### Features
+
+* **theme:** allow adding border to modal close icon ([#422](https://github.com/medly/medly-components/issues/422)) ([efe3170](https://github.com/medly/medly-components/commit/efe317052be3a37f16b7cb7571db8afcbf109f90))
+
+
+
+
+
+# [2.22.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.21.3...@medly-components/core@2.22.0) (2021-09-14)
+
+
+### Features
+
+* **core:** add and use new single-select props for suffix icon + hovered color ([#421](https://github.com/medly/medly-components/issues/421)) ([1390919](https://github.com/medly/medly-components/commit/1390919be8cf21f831d728c3097296210fa62903))
+
+
+
+
+
+## [2.21.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.21.2...@medly-components/core@2.21.3) (2021-09-12)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.21.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.21.1...@medly-components/core@2.21.2) (2021-09-11)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.21.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.21.0...@medly-components/core@2.21.1) (2021-09-10)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [2.21.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.20.0...@medly-components/core@2.21.0) (2021-09-10)
+
+
+### Features
+
+* adding border radius for table header cell into theme ([#416](https://github.com/medly/medly-components/issues/416)) ([3714eec](https://github.com/medly/medly-components/commit/3714eec46fad09fd8422b06cdf8cc2b281c645ba))
+
+
+
+
+
+# [2.20.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.8...@medly-components/core@2.20.0) (2021-09-09)
+
+
+### Features
+
+* add font display in font face ([#415](https://github.com/medly/medly-components/issues/415)) ([88a3d0b](https://github.com/medly/medly-components/commit/88a3d0ba121c1333d6ef05b345e6cc04f9dd938d))
+
+
+
+
+
 ## [2.19.8](https://github.com/medly/medly-components/compare/@medly-components/core@2.19.7...@medly-components/core@2.19.8) (2021-09-08)
 
 **Note:** Version bump only for package @medly-components/core

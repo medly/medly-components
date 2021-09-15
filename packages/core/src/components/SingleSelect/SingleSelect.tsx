@@ -28,6 +28,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 className,
                 validator,
                 isSearchable,
+                suffix,
                 ...inputProps
             } = props,
             selectId = useMemo(() => id || inputProps.label?.toLocaleLowerCase() || 'medly-singleSelect', [id, inputProps.label]),
@@ -189,7 +190,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                         variant={variant}
                         autoComplete="off"
                         onChange={handleInputChange}
-                        suffix={ChevronDownIcon}
+                        suffix={suffix || ChevronDownIcon}
                         {...inputProps}
                         {...commonProps}
                         minWidth={minWidth}

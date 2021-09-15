@@ -7,6 +7,7 @@ export interface ModalTheme {
     scrollbarThumbColor: string;
     closeIcon: {
         borderRadius: string;
+        border: string;
         color: {
             default: string;
             hovered: string;

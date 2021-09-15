@@ -54,6 +54,10 @@ exports[`SearchBox options should render options when user search option specifi
   background-color: #F7F8F9;
 }
 
+.c10:hover > .c11 {
+  color: #13181D;
+}
+
 .c10:active {
   background-color: #eff2f4;
 }
@@ -119,6 +123,7 @@ exports[`SearchBox options should render options when user search option specifi
 
 .c2 .c3 {
   padding: 0.4rem;
+  border-radius: 2.5rem;
 }
 
 .c2 .c3 * {
@@ -127,7 +132,6 @@ exports[`SearchBox options should render options when user search option specifi
 
 .c2 .c3:hover {
   background: #eff2f4;
-  border-radius: 2.5rem;
 }
 
 .c2 .c3:hover * {
@@ -144,6 +148,7 @@ exports[`SearchBox options should render options when user search option specifi
 
 .c14 .c3 {
   padding: 0.4rem;
+  border-radius: 2.5rem;
 }
 
 .c14 .c3 * {
@@ -151,8 +156,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c14 .c3:hover {
-  background: transparent;
-  border-radius: 2.5rem;
+  background: #E7F0FF;
 }
 
 .c14 .c3:active {
@@ -160,27 +164,6 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c14 .c3:active * {
-  fill: #0D4AAF;
-}
-
-.c15 .c3 {
-  padding: 0.4rem;
-}
-
-.c15 .c3 * {
-  fill: #546A7F;
-}
-
-.c15 .c3:hover {
-  background: #E7F0FF;
-  border-radius: 2.5rem;
-}
-
-.c15 .c3:active {
-  background: #D0E1FE;
-}
-
-.c15 .c3:active * {
   fill: #0D4AAF;
 }
 
@@ -204,6 +187,7 @@ exports[`SearchBox options should render options when user search option specifi
 
 .c6 .c3 {
   padding: 0.4rem;
+  border-radius: 2.5rem;
 }
 
 .c6 .c3 * {
@@ -212,7 +196,6 @@ exports[`SearchBox options should render options when user search option specifi
 
 .c6 .c3:hover {
   background: #E7F0FF;
-  border-radius: 2.5rem;
 }
 
 .c6 .c3:active {
@@ -506,6 +489,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 
 .c3 .c4 {
   padding: 0.4rem;
+  border-radius: 2.5rem;
 }
 
 .c3 .c4 * {
@@ -513,8 +497,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 }
 
 .c3 .c4:hover {
-  background: transparent;
-  border-radius: 2.5rem;
+  background: #E7F0FF;
 }
 
 .c3 .c4:active {
@@ -746,6 +729,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 
 .c3 .c4 {
   padding: 0.4rem;
+  border-radius: 2.5rem;
 }
 
 .c3 .c4 * {
@@ -753,8 +737,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 }
 
 .c3 .c4:hover {
-  background: transparent;
-  border-radius: 2.5rem;
+  background: #E7F0FF;
 }
 
 .c3 .c4:active {

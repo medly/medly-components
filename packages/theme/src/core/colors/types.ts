@@ -36,4 +36,5 @@ export interface ColorPallet {
     yellow: Color;
     blush: Color;
     heartbeat: Color;
+    [k: string]: string | Color;
 }
