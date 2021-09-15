@@ -46,7 +46,7 @@ const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => cs
         background-color: ${textField[variant].active.bgColor};
         &::after {
             border-color: ${textField[variant].active.borderColor};
-            border-radius: ${variant === 'outlined' || variant === 'fusion' ? textField[variant].active.borderRadius: '0'};
+            border-radius: ${variant === 'filled' ? '0' : textField[variant].active.borderRadius };
         }
 
         ${Label} {
