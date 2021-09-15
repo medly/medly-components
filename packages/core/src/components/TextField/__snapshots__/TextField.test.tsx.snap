@@ -127,6 +127,7 @@ exports[`TextField character count should correctly render character count for S
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -474,7 +475,6 @@ exports[`TextField character count should correctly render character count for f
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -824,6 +824,7 @@ exports[`TextField character count should correctly render character count for m
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -1158,6 +1159,7 @@ exports[`TextField character count should correctly render character count if we
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -1492,6 +1494,7 @@ exports[`TextField character count should correctly render character count when 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -1828,6 +1831,7 @@ exports[`TextField character count should correctly render character count when 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -2150,6 +2154,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -2580,6 +2585,7 @@ exports[`TextField should render properly with M size 1`] = `
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c7,
@@ -2964,6 +2970,7 @@ exports[`TextField should render properly with S size 1`] = `
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c7,
@@ -3311,6 +3318,7 @@ exports[`TextField should render properly with default props 1`] = `
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -3628,6 +3636,7 @@ exports[`TextField with filled variant and with label should render default stat
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -4243,6 +4252,7 @@ exports[`TextField with filled variant and with label should render focus state 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -4560,6 +4570,7 @@ exports[`TextField with filled variant and without label should render default s
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -5163,6 +5174,7 @@ exports[`TextField with filled variant and without label should render focus sta
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -6921,6 +6933,7 @@ exports[`TextField with filled variant should render properly with multiline 1`]
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -7254,6 +7267,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c7,
@@ -7604,6 +7618,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -7944,7 +7959,6 @@ exports[`TextField with fusion variant and with label should render default stat
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -8611,7 +8625,6 @@ exports[`TextField with fusion variant and with label should render focus state 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -8954,7 +8967,6 @@ exports[`TextField with fusion variant and without label should render default s
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -9609,7 +9621,6 @@ exports[`TextField with fusion variant and without label should render focus sta
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -11487,7 +11498,6 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -11846,7 +11856,6 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c7,
@@ -12222,7 +12231,6 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -12582,7 +12590,6 @@ exports[`TextField with outlined variant and with label should render default st
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -13223,7 +13230,6 @@ exports[`TextField with outlined variant and with label should render focus stat
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -13555,7 +13561,6 @@ exports[`TextField with outlined variant and without label should render default
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -14184,7 +14189,6 @@ exports[`TextField with outlined variant and without label should render focus s
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -16013,7 +16017,6 @@ exports[`TextField with outlined variant should render properly with multiline 1
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -16361,7 +16364,6 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c7,
@@ -16726,7 +16728,6 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c1:focus-within .c4,
@@ -17057,6 +17058,7 @@ exports[`TextField without label should render default state properly 1`] = `
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,
@@ -17368,6 +17370,7 @@ exports[`TextField without label should render focus state properly  1`] = `
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c4,

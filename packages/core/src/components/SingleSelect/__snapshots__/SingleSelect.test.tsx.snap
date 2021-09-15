@@ -130,6 +130,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -517,6 +518,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -1109,6 +1111,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -2201,6 +2204,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -2639,6 +2643,7 @@ exports[`SingleSelect component with filled variant should render properly when 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -3292,6 +3297,7 @@ exports[`SingleSelect component with filled variant should render with label pro
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -5655,7 +5661,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c3:focus-within .c6,
@@ -6108,7 +6113,6 @@ exports[`SingleSelect component with outlined variant should render properly whe
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c3:focus-within .c6,
@@ -6776,7 +6780,6 @@ exports[`SingleSelect component with outlined variant should render with label p
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: undefined;
 }
 
 .c3:focus-within .c6,

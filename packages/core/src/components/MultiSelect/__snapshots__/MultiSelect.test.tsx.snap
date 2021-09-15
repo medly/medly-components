@@ -627,6 +627,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -1049,6 +1050,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -2370,6 +2372,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
