@@ -2496,6 +2496,9 @@ exports[`DateRangePicker Custom date range options should render properly with c
       </li>
     </ul>
   </div>
+  <span>
+    Outer span
+  </span>
 </div>
 `;
 
@@ -26308,6 +26311,9 @@ exports[`DateRangePicker should render properly 1`] = `
       </div>
     </div>
   </div>
+  <span>
+    Outer span
+  </span>
 </div>
 `;
 
@@ -28246,5 +28252,8 @@ exports[`DateRangePicker should render properly with single month 1`] = `
       </div>
     </div>
   </div>
+  <span>
+    Outer span
+  </span>
 </div>
 `;
