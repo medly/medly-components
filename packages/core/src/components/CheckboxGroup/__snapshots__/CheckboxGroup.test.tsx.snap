@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxGroup component should render properly 1`] = `
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -9,7 +9,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -56,7 +56,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
   align-items: flex-start;
 }
 
-.c15 {
+.c14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -70,7 +70,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
   align-items: flex-start;
 }
 
-.c15 > :first-child {
+.c14 > :first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -83,22 +83,12 @@ exports[`CheckboxGroup component should render properly 1`] = `
   color: inherit;
 }
 
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: inherit;
-  color: inherit;
-  padding: 0 1.6rem;
-}
-
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
 }
 
-.c16 {
+.c15 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   margin-left: 4rem;
@@ -113,7 +103,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
   color: #13181D;
 }
 
-.c11 {
+.c10 {
   border: 0.15rem solid;
   box-sizing: border-box;
   width: 100%;
@@ -135,7 +125,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
   align-items: center;
 }
 
-.c11 .c12 {
+.c10 .c11 {
   pointer-events: none;
   z-index: 1;
   -webkit-transition: all 200ms ease-in-out;
@@ -148,7 +138,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
   margin-right: 0.05rem;
 }
 
-.c9 {
+.c8 {
   opacity: 0;
   margin: 0;
   top: 0;
@@ -159,36 +149,36 @@ exports[`CheckboxGroup component should render properly 1`] = `
   position: absolute;
 }
 
-.c9:checked ~ .c10 {
+.c8:checked ~ .c9 {
   border-color: #126AFA;
   background-color: #126AFA;
 }
 
-.c9:checked ~ .c10 .c12 {
+.c8:checked ~ .c9 .c11 {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.c9:checked ~ .c10 .c12 * {
+.c8:checked ~ .c9 .c11 * {
   fill: #ffffff;
 }
 
-.c9:not(:checked) ~ .c10 {
+.c8:not(:checked) ~ .c9 {
   background-color: transparent;
   border-color: #13181D;
 }
 
-.c9:not(:disabled):focus ~ .c10 {
+.c8:not(:disabled):focus ~ .c9 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c9:not(:disabled):focus:not(:checked) ~ .c10 {
+.c8:not(:disabled):focus:not(:checked) ~ .c9 {
   border-color: #126AFA;
 }
 
-.c8 {
+.c7 {
   margin: 0.3rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -222,17 +212,17 @@ exports[`CheckboxGroup component should render properly 1`] = `
   cursor: pointer;
 }
 
-.c5.c5.c5:hover .c10 {
+.c5.c5.c5:hover .c9 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c5.c5.c5:active .c10 {
+.c5.c5.c5:active .c9 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
   border-color: #0F5AD5;
 }
 
-.c14 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -252,17 +242,17 @@ exports[`CheckboxGroup component should render properly 1`] = `
   flex-direction: row-reverse;
 }
 
-.c14 * {
+.c13 * {
   cursor: pointer;
 }
 
-.c14.c14.c14:hover .c10 {
+.c13.c13.c13:hover .c9 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #0F5AD5;
   background-color: #0F5AD5;
 }
 
-.c14.c14.c14:active .c10 {
+.c13.c13.c13:active .c9 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
   border-color: #0D4AAF;
   background-color: #0D4AAF;
@@ -301,27 +291,27 @@ exports[`CheckboxGroup component should render properly 1`] = `
         sizes="[object Object]"
       >
         <span
-          class="c6 c7"
+          class="c6 c2"
           id="Honda-Cars-label"
           type="checkbox"
         >
           Honda
         </span>
         <div
-          class="c8"
+          class="c7"
         >
           <input
-            class="c9"
+            class="c8"
             id="Honda-Cars"
             name="honda"
             sizes="[object Object]"
             type="checkbox"
           />
           <div
-            class="c10 c11"
+            class="c9 c10"
           >
             <svg
-              class="c12 c13"
+              class="c11 c12"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -338,34 +328,34 @@ exports[`CheckboxGroup component should render properly 1`] = `
       </label>
       
       <label
-        class="c14"
+        class="c13"
         for="Hyundai-Cars"
         id="Hyundai-Cars-wrapper"
         sizes="[object Object]"
       >
         <span
-          class="c6 c7"
+          class="c6 c2"
           id="Hyundai-Cars-label"
           type="checkbox"
         >
           Hyundai
         </span>
         <div
-          class="c8"
+          class="c7"
         >
           <input
             checked=""
-            class="c9"
+            class="c8"
             id="Hyundai-Cars"
             name="hyundai"
             sizes="[object Object]"
             type="checkbox"
           />
           <div
-            class="c10 c11"
+            class="c9 c10"
           >
             <svg
-              class="c12 c13"
+              class="c11 c12"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -382,7 +372,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
       </label>
       <div
         aria-describedby="Tata-Cars-helper-text"
-        class="c15"
+        class="c14"
         id="Tata-Cars-wrapper"
         type="checkbox"
       >
@@ -394,26 +384,26 @@ exports[`CheckboxGroup component should render properly 1`] = `
           sizes="[object Object]"
         >
           <span
-            class="c1 c7"
+            class="c1 c2"
             id="Tata-Cars-select-all-label"
             type="checkbox"
           >
             Tata
           </span>
           <div
-            class="c8"
+            class="c7"
           >
             <input
-              class="c9"
+              class="c8"
               id="Tata-Cars-select-all"
               sizes="[object Object]"
               type="checkbox"
             />
             <div
-              class="c10 c11"
+              class="c9 c10"
             >
               <svg
-                class="c12 c13"
+                class="c11 c12"
                 fill="none"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -429,7 +419,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
           </div>
         </label>
         <div
-          class="c16"
+          class="c15"
           id="Tata-Cars-options"
         >
           
@@ -440,27 +430,27 @@ exports[`CheckboxGroup component should render properly 1`] = `
             sizes="[object Object]"
           >
             <span
-              class="c6 c7"
+              class="c6 c2"
               id="Jaguar-Tata-Cars-label"
               type="checkbox"
             >
               Jaguar
             </span>
             <div
-              class="c8"
+              class="c7"
             >
               <input
-                class="c9"
+                class="c8"
                 id="Jaguar-Tata-Cars"
                 name="jaguar"
                 sizes="[object Object]"
                 type="checkbox"
               />
               <div
-                class="c10 c11"
+                class="c9 c10"
               >
                 <svg
-                  class="c12 c13"
+                  class="c11 c12"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -483,27 +473,27 @@ exports[`CheckboxGroup component should render properly 1`] = `
             sizes="[object Object]"
           >
             <span
-              class="c6 c7"
+              class="c6 c2"
               id="Land Rover-Tata-Cars-label"
               type="checkbox"
             >
               Land Rover
             </span>
             <div
-              class="c8"
+              class="c7"
             >
               <input
-                class="c9"
+                class="c8"
                 id="Land Rover-Tata-Cars"
                 name="landRover"
                 sizes="[object Object]"
                 type="checkbox"
               />
               <div
-                class="c10 c11"
+                class="c9 c10"
               >
                 <svg
-                  class="c12 c13"
+                  class="c11 c12"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -526,7 +516,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
 `;
 
 exports[`CheckboxGroup component should render properly with disabled state 1`] = `
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -534,7 +524,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -581,7 +571,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   align-items: flex-start;
 }
 
-.c14 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -595,7 +585,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   align-items: flex-start;
 }
 
-.c14 > :first-child {
+.c13 > :first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -608,22 +598,12 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   color: #98A7B7;
 }
 
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: not-allowed;
-  color: #98A7B7;
-  padding: 0 1.6rem;
-}
-
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
 }
 
-.c15 {
+.c14 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   margin-left: 4rem;
@@ -638,7 +618,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   color: #98A7B7;
 }
 
-.c11 {
+.c10 {
   border: 0.15rem solid;
   box-sizing: border-box;
   width: 100%;
@@ -660,7 +640,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   align-items: center;
 }
 
-.c11 .c12 {
+.c10 .c11 {
   pointer-events: none;
   z-index: 1;
   -webkit-transition: all 200ms ease-in-out;
@@ -673,7 +653,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   margin-right: 0.05rem;
 }
 
-.c9 {
+.c8 {
   opacity: 0;
   margin: 0;
   top: 0;
@@ -684,36 +664,36 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   position: absolute;
 }
 
-.c9:checked ~ .c10 {
+.c8:checked ~ .c9 {
   border-color: #dfe4e9;
   background-color: #dfe4e9;
 }
 
-.c9:checked ~ .c10 .c12 {
+.c8:checked ~ .c9 .c11 {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.c9:checked ~ .c10 .c12 * {
+.c8:checked ~ .c9 .c11 * {
   fill: #98A7B7;
 }
 
-.c9:not(:checked) ~ .c10 {
+.c8:not(:checked) ~ .c9 {
   background-color: transparent;
   border-color: #98A7B7;
 }
 
-.c9:not(:disabled):focus ~ .c10 {
+.c8:not(:disabled):focus ~ .c9 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c9:not(:disabled):focus:not(:checked) ~ .c10 {
+.c8:not(:disabled):focus:not(:checked) ~ .c9 {
   border-color: #126AFA;
 }
 
-.c8 {
+.c7 {
   margin: 0.3rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -783,7 +763,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
         sizes="[object Object]"
       >
         <span
-          class="c6 c7"
+          class="c6 c2"
           disabled=""
           id="Honda-Cars-label"
           type="checkbox"
@@ -791,10 +771,10 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
           Honda
         </span>
         <div
-          class="c8"
+          class="c7"
         >
           <input
-            class="c9"
+            class="c8"
             disabled=""
             id="Honda-Cars"
             name="honda"
@@ -802,10 +782,10 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
             type="checkbox"
           />
           <div
-            class="c10 c11"
+            class="c9 c10"
           >
             <svg
-              class="c12 c13"
+              class="c11 c12"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -829,7 +809,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
         sizes="[object Object]"
       >
         <span
-          class="c6 c7"
+          class="c6 c2"
           disabled=""
           id="Hyundai-Cars-label"
           type="checkbox"
@@ -837,11 +817,11 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
           Hyundai
         </span>
         <div
-          class="c8"
+          class="c7"
         >
           <input
             checked=""
-            class="c9"
+            class="c8"
             disabled=""
             id="Hyundai-Cars"
             name="hyundai"
@@ -849,10 +829,10 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
             type="checkbox"
           />
           <div
-            class="c10 c11"
+            class="c9 c10"
           >
             <svg
-              class="c12 c13"
+              class="c11 c12"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -869,7 +849,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
       </label>
       <div
         aria-describedby="Tata-Cars-helper-text"
-        class="c14"
+        class="c13"
         id="Tata-Cars-wrapper"
         type="checkbox"
       >
@@ -882,7 +862,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
           sizes="[object Object]"
         >
           <span
-            class="c1 c7"
+            class="c1 c2"
             disabled=""
             id="Tata-Cars-select-all-label"
             type="checkbox"
@@ -890,20 +870,20 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
             Tata
           </span>
           <div
-            class="c8"
+            class="c7"
           >
             <input
-              class="c9"
+              class="c8"
               disabled=""
               id="Tata-Cars-select-all"
               sizes="[object Object]"
               type="checkbox"
             />
             <div
-              class="c10 c11"
+              class="c9 c10"
             >
               <svg
-                class="c12 c13"
+                class="c11 c12"
                 fill="none"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -919,7 +899,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
           </div>
         </label>
         <div
-          class="c15"
+          class="c14"
           id="Tata-Cars-options"
         >
           
@@ -931,7 +911,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
             sizes="[object Object]"
           >
             <span
-              class="c6 c7"
+              class="c6 c2"
               disabled=""
               id="Jaguar-Tata-Cars-label"
               type="checkbox"
@@ -939,10 +919,10 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
               Jaguar
             </span>
             <div
-              class="c8"
+              class="c7"
             >
               <input
-                class="c9"
+                class="c8"
                 disabled=""
                 id="Jaguar-Tata-Cars"
                 name="jaguar"
@@ -950,10 +930,10 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
                 type="checkbox"
               />
               <div
-                class="c10 c11"
+                class="c9 c10"
               >
                 <svg
-                  class="c12 c13"
+                  class="c11 c12"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -977,7 +957,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
             sizes="[object Object]"
           >
             <span
-              class="c6 c7"
+              class="c6 c2"
               disabled=""
               id="Land Rover-Tata-Cars-label"
               type="checkbox"
@@ -985,10 +965,10 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
               Land Rover
             </span>
             <div
-              class="c8"
+              class="c7"
             >
               <input
-                class="c9"
+                class="c8"
                 disabled=""
                 id="Land Rover-Tata-Cars"
                 name="landRover"
@@ -996,10 +976,10 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
                 type="checkbox"
               />
               <div
-                class="c10 c11"
+                class="c9 c10"
               >
                 <svg
-                  class="c12 c13"
+                  class="c11 c12"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -1022,7 +1002,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
 `;
 
 exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -1030,7 +1010,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -1077,7 +1057,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   align-items: flex-start;
 }
 
-.c14 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1091,7 +1071,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   align-items: flex-start;
 }
 
-.c14 > :first-child {
+.c13 > :first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -1104,22 +1084,12 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   color: #98A7B7;
 }
 
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: not-allowed;
-  color: #98A7B7;
-  padding: 0 1.6rem;
-}
-
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
 }
 
-.c15 {
+.c14 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   margin-left: 4rem;
@@ -1134,7 +1104,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   color: #98A7B7;
 }
 
-.c11 {
+.c10 {
   border: 0.15rem solid;
   box-sizing: border-box;
   width: 100%;
@@ -1156,7 +1126,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   align-items: center;
 }
 
-.c11 .c12 {
+.c10 .c11 {
   pointer-events: none;
   z-index: 1;
   -webkit-transition: all 200ms ease-in-out;
@@ -1169,7 +1139,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   margin-right: 0.05rem;
 }
 
-.c9 {
+.c8 {
   opacity: 0;
   margin: 0;
   top: 0;
@@ -1180,36 +1150,36 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   position: absolute;
 }
 
-.c9:checked ~ .c10 {
+.c8:checked ~ .c9 {
   border-color: #dfe4e9;
   background-color: #dfe4e9;
 }
 
-.c9:checked ~ .c10 .c12 {
+.c8:checked ~ .c9 .c11 {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.c9:checked ~ .c10 .c12 * {
+.c8:checked ~ .c9 .c11 * {
   fill: #98A7B7;
 }
 
-.c9:not(:checked) ~ .c10 {
+.c8:not(:checked) ~ .c9 {
   background-color: transparent;
   border-color: #98A7B7;
 }
 
-.c9:not(:disabled):focus ~ .c10 {
+.c8:not(:disabled):focus ~ .c9 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c9:not(:disabled):focus:not(:checked) ~ .c10 {
+.c8:not(:disabled):focus:not(:checked) ~ .c9 {
   border-color: #126AFA;
 }
 
-.c8 {
+.c7 {
   margin: 0.3rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -1279,7 +1249,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
         sizes="[object Object]"
       >
         <span
-          class="c6 c7"
+          class="c6 c2"
           disabled=""
           id="Honda-Cars-label"
           type="checkbox"
@@ -1287,10 +1257,10 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
           Honda
         </span>
         <div
-          class="c8"
+          class="c7"
         >
           <input
-            class="c9"
+            class="c8"
             disabled=""
             id="Honda-Cars"
             name="honda"
@@ -1298,10 +1268,10 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
             type="checkbox"
           />
           <div
-            class="c10 c11"
+            class="c9 c10"
           >
             <svg
-              class="c12 c13"
+              class="c11 c12"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -1325,7 +1295,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
         sizes="[object Object]"
       >
         <span
-          class="c6 c7"
+          class="c6 c2"
           disabled=""
           id="Hyundai-Cars-label"
           type="checkbox"
@@ -1333,11 +1303,11 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
           Hyundai
         </span>
         <div
-          class="c8"
+          class="c7"
         >
           <input
             checked=""
-            class="c9"
+            class="c8"
             disabled=""
             id="Hyundai-Cars"
             name="hyundai"
@@ -1345,10 +1315,10 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
             type="checkbox"
           />
           <div
-            class="c10 c11"
+            class="c9 c10"
           >
             <svg
-              class="c12 c13"
+              class="c11 c12"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -1365,7 +1335,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
       </label>
       <div
         aria-describedby="Tata-Cars-helper-text"
-        class="c14"
+        class="c13"
         id="Tata-Cars-wrapper"
         type="checkbox"
       >
@@ -1378,7 +1348,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
           sizes="[object Object]"
         >
           <span
-            class="c1 c7"
+            class="c1 c2"
             disabled=""
             id="Tata-Cars-select-all-label"
             type="checkbox"
@@ -1386,20 +1356,20 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
             Tata
           </span>
           <div
-            class="c8"
+            class="c7"
           >
             <input
-              class="c9"
+              class="c8"
               disabled=""
               id="Tata-Cars-select-all"
               sizes="[object Object]"
               type="checkbox"
             />
             <div
-              class="c10 c11"
+              class="c9 c10"
             >
               <svg
-                class="c12 c13"
+                class="c11 c12"
                 fill="none"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -1415,7 +1385,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
           </div>
         </label>
         <div
-          class="c15"
+          class="c14"
           id="Tata-Cars-options"
         >
           
@@ -1427,7 +1397,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
             sizes="[object Object]"
           >
             <span
-              class="c6 c7"
+              class="c6 c2"
               disabled=""
               id="Jaguar-Tata-Cars-label"
               type="checkbox"
@@ -1435,10 +1405,10 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
               Jaguar
             </span>
             <div
-              class="c8"
+              class="c7"
             >
               <input
-                class="c9"
+                class="c8"
                 disabled=""
                 id="Jaguar-Tata-Cars"
                 name="jaguar"
@@ -1446,10 +1416,10 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
                 type="checkbox"
               />
               <div
-                class="c10 c11"
+                class="c9 c10"
               >
                 <svg
-                  class="c12 c13"
+                  class="c11 c12"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -1473,7 +1443,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
             sizes="[object Object]"
           >
             <span
-              class="c6 c7"
+              class="c6 c2"
               disabled=""
               id="Land Rover-Tata-Cars-label"
               type="checkbox"
@@ -1481,10 +1451,10 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
               Land Rover
             </span>
             <div
-              class="c8"
+              class="c7"
             >
               <input
-                class="c9"
+                class="c8"
                 disabled=""
                 id="Land Rover-Tata-Cars"
                 name="landRover"
@@ -1492,10 +1462,10 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
                 type="checkbox"
               />
               <div
-                class="c10 c11"
+                class="c9 c10"
               >
                 <svg
-                  class="c12 c13"
+                  class="c11 c12"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"

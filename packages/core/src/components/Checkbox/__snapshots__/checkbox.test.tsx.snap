@@ -1848,7 +1848,6 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
   user-select: none;
   cursor: inherit;
   color: inherit;
-  padding: 0 1.6rem;
 }
 
 .c6 {
@@ -2052,7 +2051,6 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
   user-select: none;
   cursor: inherit;
   color: inherit;
-  padding: 0 1.6rem;
 }
 
 .c6 {

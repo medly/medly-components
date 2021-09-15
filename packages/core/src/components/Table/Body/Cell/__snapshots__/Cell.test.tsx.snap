@@ -90,7 +90,6 @@ exports[`Cell should render checkbox properly 1`] = `
   user-select: none;
   cursor: inherit;
   color: inherit;
-  padding: 0 1.6rem;
 }
 
 .c8 {
