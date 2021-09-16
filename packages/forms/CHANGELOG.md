@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.30.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.29.15...@medly-components/forms@1.30.0) (2021-09-16)
+
+
+### Features
+
+* **core:** textfield custom active border styles ([#424](https://github.com/medly/medly-components/issues/424)) ([2a22fc7](https://github.com/medly/medly-components/commit/2a22fc7bf85a8f4446ad0d837403044f6b194693))
+
+
+
+
+
 ## [1.29.15](https://github.com/medly/medly-components/compare/@medly-components/forms@1.29.14...@medly-components/forms@1.29.15) (2021-09-15)
 
 **Note:** Version bump only for package @medly-components/forms

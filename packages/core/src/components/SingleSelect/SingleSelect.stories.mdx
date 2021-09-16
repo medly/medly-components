@@ -138,6 +138,40 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
     </PreviewContent>
 </Preview>
 
+#### Error validation with Helper Tooltip
+<Preview>
+    <PreviewContent>
+        {() => {
+            const [filledValue, setFilledValue] = useState('Dummy4 option'),
+                [outlinedValue, setOutlinedValue] = useState('Dummy4 option');
+            return (
+                <>
+                    <SingleSelect
+                        variant="filled"
+                        errorText="Something wrong"
+                        options={options}
+                        value={filledValue}
+                        onChange={setFilledValue}
+                        label="Pharmacy"
+                        includesNestedOptions
+                        showTooltipForHelperAndErrorText
+                    />
+                    <SingleSelect
+                        variant="outlined"
+                        errorText="Something wrong"
+                        options={options}
+                        value={outlinedValue}
+                        onChange={setOutlinedValue}
+                        label="Pharmacy"
+                        includesNestedOptions
+                        showTooltipForHelperAndErrorText
+                    />
+                </>
+            );
+        }}
+    </PreviewContent>
+</Preview>
+
 ##### With Icons
 
 You can provide a prefix icon, which will always take the label color.

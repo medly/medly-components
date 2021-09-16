@@ -7,6 +7,8 @@ export const HelperAndErrorTextPopover = styled(Popover.Popup)`
 
 export const PopoverIconContainer = styled('div')`
     display: flex;
+    width: 0.8rem;
+    margin-top: 0.2rem;
     :hover {
         cursor: pointer;
     }
