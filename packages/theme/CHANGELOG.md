@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.19.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.18.0...@medly-components/theme@2.19.0) (2021-09-16)
+
+
+### Features
+
+* **core:** textfield custom active border styles ([#424](https://github.com/medly/medly-components/issues/424)) ([2a22fc7](https://github.com/medly/medly-components/commit/2a22fc7bf85a8f4446ad0d837403044f6b194693))
+
+
+
+
+
 # [2.18.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.17.0...@medly-components/theme@2.18.0) (2021-09-14)
 
 
