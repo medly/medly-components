@@ -248,6 +248,10 @@ exports[`MultiSelect component should render correctly with all the props given 
   opacity: 1;
 }
 
+.c5:disabled {
+  color: #435465;
+}
+
 .c5:disabled ~ .c6,
 .c5:disabled ~ .sc-fznyAO {
   cursor: not-allowed;
@@ -623,6 +627,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -746,6 +751,10 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -1041,6 +1050,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -1168,6 +1178,10 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -2358,6 +2372,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -2481,6 +2496,10 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,

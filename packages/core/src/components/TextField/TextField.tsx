@@ -163,7 +163,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         )}
                     </Styled.InputWrapper>
                     {props.showTooltipForHelperAndErrorText && (
-                        <Styled.HelperAndErrorTextTooltipWrapper size={size} displayCharacterCount={displayCharacterCount}>
+                        <Styled.HelperAndErrorTextTooltipWrapper size={size} displayCharacterCount={displayCharacterCount} isSuffixPresent={isSuffixPresent}>
                             <HelperAndErrorTextTooltip id={inputId} errorText={errorText || builtInErrorMessage} helperText={helperText} />
                         </Styled.HelperAndErrorTextTooltipWrapper>
                     )}

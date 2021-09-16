@@ -730,6 +730,7 @@ exports[`Form should render properly with initial state 1`] = `
 .c5:focus-within::after,
 .c5:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c5:focus-within .c8,
@@ -887,6 +888,10 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c7.c7.c7:focus::placeholder {
   opacity: 1;
+}
+
+.c7:disabled {
+  color: #435465;
 }
 
 .c7:disabled ~ .c8,
@@ -1116,6 +1121,7 @@ exports[`Form should render properly with initial state 1`] = `
 .c46:focus-within::after,
 .c46:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c46:focus-within .c8,
@@ -3029,6 +3035,7 @@ exports[`Form should render properly without initial state 1`] = `
 .c8:focus-within::after,
 .c8:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c8:focus-within .c11,
@@ -3186,6 +3193,10 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c10.c10.c10:focus::placeholder {
   opacity: 1;
+}
+
+.c10:disabled {
+  color: #435465;
 }
 
 .c10:disabled ~ .c11,
@@ -3415,6 +3426,7 @@ exports[`Form should render properly without initial state 1`] = `
 .c46:focus-within::after,
 .c46:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c46:focus-within .c11,
