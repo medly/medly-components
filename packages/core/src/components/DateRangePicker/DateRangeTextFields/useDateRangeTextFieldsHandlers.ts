@@ -15,7 +15,6 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         errorText,
         required,
         validator,
-        onBlur,
         selectedDates,
         onCalendarIconClick,
         onDateChange,
@@ -98,28 +97,16 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
             },
             [validator, displayFormat, selectedDates, onDateChange]
         ),
-        validateOnWrapperBlur = useCallback(
-            (event: FormEvent<HTMLDivElement>) => {
-                event.stopPropagation();
-                const currentTarget = event.currentTarget;
-                setTimeout(() => {
-                    if (!currentTarget.contains(document.activeElement)) {
-                        const validatorMessage = (validator && validator(selectedDates, 'blur')) || '',
-                            customMessage =
-                                (required && !selectedDates.startDate && !selectedDates.endDate && 'Please fill in this field.') || '',
-                            message = validator ? validatorMessage : customMessage;
-                        setErrorMessage(message);
-                        if (validator) {
-                            startDateRef.current.setCustomValidity(validatorMessage);
-                            endDateRef.current.setCustomValidity(validatorMessage);
-                        }
-                    }
-                    // @ts-ignore
-                    onBlur && onBlur(event);
-                }, 50);
-            },
-            [validator, selectedDates, required, onBlur]
-        );
+        validateOnWrapperBlur = useCallback(() => {
+            const validatorMessage = (validator && validator(selectedDates, 'blur')) || '',
+                customMessage = (required && !selectedDates.startDate && !selectedDates.endDate && 'Please fill in this field.') || '',
+                message = validator ? validatorMessage : customMessage;
+            setErrorMessage(message);
+            if (validator) {
+                startDateRef.current.setCustomValidity(validatorMessage);
+                endDateRef.current.setCustomValidity(validatorMessage);
+            }
+        }, [validator, selectedDates, required]);
 
     useEffect(() => {
         const formattedStartDate = selectedDates.startDate ? getFormattedDate(selectedDates.startDate, displayFormat) : '',

@@ -28,7 +28,12 @@ const renderComponent = (props?: any) => {
         showDecorators: true,
         customDateRangeOptions: []
     };
-    const renderUtils = render(<DummyComponent {...defaultProps} {...props} />),
+    const renderUtils = render(
+            <>
+                <DummyComponent {...defaultProps} {...props} />
+                <span>Outer span</span>
+            </>
+        ),
         calendarIcon = renderUtils.container.querySelector('#contract-calendar-icon'),
         customDateRangeOptionsIcon = renderUtils.container.querySelector('#contract-custom-date-range-options-icon'),
         startDateInput = renderUtils.container.querySelector('#contract-startDate-input') as HTMLInputElement,
@@ -240,23 +245,25 @@ describe('DateRangePicker', () => {
             await waitFor(() => expect(getByText('Enter valid date')).toBeInTheDocument());
         });
 
-        it('should show error message on blur if values are empty', async () => {
-            const { startDateInput, findByText } = renderComponent({
+        it('should show error message on outside click if values are empty', async () => {
+            const { startDateInput, findByText, getByText } = renderComponent({
                 value: { startDate: null, endDate: null },
                 required: true
             });
-            fireEvent.blur(startDateInput);
+            fireEvent.focus(startDateInput);
+            fireEvent.click(getByText('Outer span'));
             const message = await findByText('Please fill in this field.');
             expect(message).toBeInTheDocument();
         });
 
-        it('should show validator message on blur if values are empty', async () => {
-            const { startDateInput, findByText } = renderComponent({
+        it('should show validator error message on outside click if values are empty', async () => {
+            const { startDateInput, findByText, getByText } = renderComponent({
                 value: { startDate: null, endDate: null },
                 required: true,
                 validator: ({ startDate, endDate }: DateRangeType) => !startDate && !endDate && 'Please fill start and end dates'
             });
-            fireEvent.blur(startDateInput);
+            fireEvent.focus(startDateInput);
+            fireEvent.click(getByText('Outer span'));
             const message = await findByText('Please fill start and end dates');
             expect(message).toBeInTheDocument();
         });

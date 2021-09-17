@@ -37,6 +37,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
     const startDateRef = useRef<HTMLInputElement>(null),
         endDateRef = useRef<HTMLInputElement>(null),
         wrapperRef = useRef<HTMLDivElement>(null),
+        outerClickValidator = useRef<() => void>(null),
         [isActive, setActive] = useState(false),
         [activePopover, setActivePopover] = useState<PopoverTypes>(PopoverTypes.CALENDAR),
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
@@ -81,11 +82,21 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
             [onChange, focusElement]
         );
 
-    useOuterClickNotifier(() => setActive(false), wrapperRef);
+    useOuterClickNotifier(() => {
+        setActive(false);
+        isActive && outerClickValidator.current && outerClickValidator.current();
+    }, wrapperRef);
     useUpdateEffect(() => focusElement(focusedElement), [focusedElement]);
 
     return (
-        <TextFieldStyled.OuterWrapper id={`${id}-wrapper`} ref={wrapperRef} fullWidth={fullWidth} minWidth={wrapperMinWidth} {...restProps}>
+        <TextFieldStyled.OuterWrapper
+            id={`${id}-wrapper`}
+            ref={wrapperRef}
+            fullWidth={fullWidth}
+            minWidth={wrapperMinWidth}
+            {...restProps}
+            onBlur={onBlur}
+        >
             <DateRangeTextFields
                 id={id}
                 size={size}
@@ -107,10 +118,10 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 setFocusedElement={setFocusedElement}
                 startDateRef={startDateRef}
                 endDateRef={endDateRef}
-                onBlur={onBlur}
                 showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
                 onCustomRangeIconClick={onCustomRangeIconClick}
                 showChevronIcon={!!customDateRangeOptions.length}
+                outerClickValidator={outerClickValidator}
             />
             {isActive &&
                 (activePopover === PopoverTypes.CALENDAR ? (
