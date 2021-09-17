@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.24.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.24.0...@medly-components/core@2.24.1) (2021-09-17)
+
+
+### Bug Fixes
+
+* validation meesage issue in DateRangePicker component ([#427](https://github.com/medly/medly-components/issues/427)) ([e00c89e](https://github.com/medly/medly-components/commit/e00c89e42d778068b132944cab9771009863b883))
+
+
+
+
+
 # [2.24.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.23.1...@medly-components/core@2.24.0) (2021-09-16)
 
 
