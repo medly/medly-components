@@ -24,7 +24,7 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
         }
 
         const item = storage.getItem(key);
-        if (!item) {
+        if (item === null && initialValue !== undefined) {
             storage.setItem(key, initialValue);
             window?.dispatchEvent(new Event(`local-storage-${key}`));
             return initialValue;
