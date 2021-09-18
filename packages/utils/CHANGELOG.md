@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.10](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.9...@medly-components/utils@1.14.10) (2021-09-18)
+
+
+### Bug Fixes
+
+* empty string as initialValue in useStorage ([#428](https://github.com/medly/medly-components/issues/428)) ([765cbed](https://github.com/medly/medly-components/commit/765cbed3f539aa5b66b3d189eddcce39b37f9045))
+
+
+
+
+
 ## [1.14.9](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.8...@medly-components/utils@1.14.9) (2021-09-16)
 
 **Note:** Version bump only for package @medly-components/utils
