@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.11](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.10...@medly-components/utils@1.14.11) (2021-09-19)
+
+
+### Bug Fixes
+
+* update state issue when component is unmounted ([#429](https://github.com/medly/medly-components/issues/429)) ([a6bf18f](https://github.com/medly/medly-components/commit/a6bf18f872ecef26c031519170fe5dc1f9b7fd8c))
+
+
+
+
+
 ## [1.14.10](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.9...@medly-components/utils@1.14.10) (2021-09-18)
 
 
