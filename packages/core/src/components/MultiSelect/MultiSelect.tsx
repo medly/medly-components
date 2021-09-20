@@ -26,6 +26,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                 required,
                 isSearchable,
                 validator,
+                onInputChange,
                 showTooltipForHelperAndErrorText,
                 ...restProps
             } = props,
@@ -45,8 +46,9 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
         const updateToDefaultOptions = useCallback(() => setOptions(defaultOptions), [defaultOptions]),
             hideOptions = useCallback(() => {
                 setOptionsVisibilityState(false);
+                onInputChange && onInputChange('');
                 inputRef.current && inputRef.current.blur();
-            }, [areOptionsVisible]),
+            }, [areOptionsVisible, onInputChange]),
             showOptions = useCallback(() => {
                 setOptionsVisibilityState(true);
                 setInputValue('');
@@ -61,9 +63,10 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                     setInputValue(value);
                     const newOptions = filterOptions(options, value);
                     newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
+                    onInputChange && onInputChange(value);
                     !areOptionsVisible && setOptionsVisibilityState(true);
                 },
-                [areOptionsVisible, options, updateToDefaultOptions]
+                [areOptionsVisible, options, updateToDefaultOptions, onInputChange]
             ),
             handleOptionClick = useCallback(
                 (latestValues: any[]) => {
