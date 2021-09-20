@@ -46,8 +46,9 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
         const updateToDefaultOptions = useCallback(() => setOptions(defaultOptions), [defaultOptions]),
             hideOptions = useCallback(() => {
                 setOptionsVisibilityState(false);
+                onInputChange && onInputChange('');
                 inputRef.current && inputRef.current.blur();
-            }, [areOptionsVisible]),
+            }, [areOptionsVisible, onInputChange]),
             showOptions = useCallback(() => {
                 setOptionsVisibilityState(true);
                 setInputValue('');
