@@ -9,10 +9,10 @@ export interface CheckboxTheme {
         disabled: string;
     };
     labelPadding: {
-        bottom: string;
-        left: string;
-        right: string;
-        top: string;
+        bottomPositioned: string;
+        leftPositioned: string;
+        rightPositioned: string;
+        topPositioned: string;
     },
     helperTextColor: {
         default: string;

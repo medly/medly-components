@@ -15,10 +15,10 @@ const radio: RadioTheme = {
         disabled: colors.grey[500]
     },
     labelPadding: {
-        bottom: '1.6rem 0',
-        left: '0 1.6rem',
-        right: '0 1.6rem',
-        top: '1.6rem 0',
+        bottomPositioned: '1.6rem 0',
+        leftPositioned: '0 1.6rem',
+        rightPositioned: '0 1.6rem',
+        topPositioned: '1.6rem 0',
     },
     helperTextColor: {
         default: colors.black,
