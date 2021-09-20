@@ -54,6 +54,10 @@ exports[`SearchBox options should render options when user search option specifi
   background-color: #F7F8F9;
 }
 
+.c10:hover > .c11 {
+  color: #13181D;
+}
+
 .c10:active {
   background-color: #eff2f4;
 }

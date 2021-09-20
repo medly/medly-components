@@ -1,5 +1,6 @@
-import React, { ChangeEvent, FC } from 'react';
 import { Button, TextField } from '@medly-components/core';
+import React, { ChangeEvent } from 'react';
+import { FormCustomComponent } from '../../Fields/types';
 
 type CustomPhoneFieldProps = {
     value: string;
@@ -7,7 +8,8 @@ type CustomPhoneFieldProps = {
     onChange: (name: string, value: string) => void;
     onRemoveField: (name: string) => void;
 };
-const CustomPhoneField: FC<CustomPhoneFieldProps> = ({ value, name, onRemoveField, onChange }) => {
+
+const CustomPhoneField: FormCustomComponent<CustomPhoneFieldProps> = ({ value, name, onRemoveField, onChange }) => {
     return (
         <div style={{ display: 'flex', alignItems: 'center' }}>
             <TextField

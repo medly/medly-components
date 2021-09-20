@@ -3,6 +3,82 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.11](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.10...@medly-components/utils@1.14.11) (2021-09-19)
+
+
+### Bug Fixes
+
+* update state issue when component is unmounted ([#429](https://github.com/medly/medly-components/issues/429)) ([a6bf18f](https://github.com/medly/medly-components/commit/a6bf18f872ecef26c031519170fe5dc1f9b7fd8c))
+
+
+
+
+
+## [1.14.10](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.9...@medly-components/utils@1.14.10) (2021-09-18)
+
+
+### Bug Fixes
+
+* empty string as initialValue in useStorage ([#428](https://github.com/medly/medly-components/issues/428)) ([765cbed](https://github.com/medly/medly-components/commit/765cbed3f539aa5b66b3d189eddcce39b37f9045))
+
+
+
+
+
+## [1.14.9](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.8...@medly-components/utils@1.14.9) (2021-09-16)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.14.8](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.7...@medly-components/utils@1.14.8) (2021-09-15)
+
+
+### Bug Fixes
+
+* fixed window object undefined issue in nextJs ([#411](https://github.com/medly/medly-components/issues/411)) ([0319512](https://github.com/medly/medly-components/commit/031951279ef930a75deb3070480d34d4a72469b6))
+
+
+
+
+
+## [1.14.7](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.6...@medly-components/utils@1.14.7) (2021-09-14)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.14.6](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.5...@medly-components/utils@1.14.6) (2021-09-14)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.14.5](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.4...@medly-components/utils@1.14.5) (2021-09-12)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.14.4](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.3...@medly-components/utils@1.14.4) (2021-09-11)
+
+
+### Bug Fixes
+
+* storage utilities exports issue ([#420](https://github.com/medly/medly-components/issues/420)) ([283467c](https://github.com/medly/medly-components/commit/283467c9b868d67ed466e5425f8ab5342258a28b))
+
+
+
+
+
 ## [1.14.3](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.2...@medly-components/utils@1.14.3) (2021-09-10)
 
 **Note:** Version bump only for package @medly-components/utils

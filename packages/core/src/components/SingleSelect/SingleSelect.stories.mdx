@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { PreviewContent } from '@medly-components/utils';
-import { StarIcon } from '@medly-components/icons';
+import { ArrowDropDownCircleIcon, StarIcon } from '@medly-components/icons';
 import { SingleSelect } from './SingleSelect';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
@@ -138,9 +138,43 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
     </PreviewContent>
 </Preview>
 
+#### Error validation with Helper Tooltip
+<Preview>
+    <PreviewContent>
+        {() => {
+            const [filledValue, setFilledValue] = useState('Dummy4 option'),
+                [outlinedValue, setOutlinedValue] = useState('Dummy4 option');
+            return (
+                <>
+                    <SingleSelect
+                        variant="filled"
+                        errorText="Something wrong"
+                        options={options}
+                        value={filledValue}
+                        onChange={setFilledValue}
+                        label="Pharmacy"
+                        includesNestedOptions
+                        showTooltipForHelperAndErrorText
+                    />
+                    <SingleSelect
+                        variant="outlined"
+                        errorText="Something wrong"
+                        options={options}
+                        value={outlinedValue}
+                        onChange={setOutlinedValue}
+                        label="Pharmacy"
+                        includesNestedOptions
+                        showTooltipForHelperAndErrorText
+                    />
+                </>
+            );
+        }}
+    </PreviewContent>
+</Preview>
+
 ##### With Icons
 
-You can also provide prefix icon, which will always take the label color.
+You can provide a prefix icon, which will always take the label color.
 
 <Preview>
     <PreviewContent>
@@ -167,6 +201,40 @@ You can also provide prefix icon, which will always take the label color.
                         label="Pharmacy"
                         includesNestedOptions
                     />
+                </>
+            );
+        }}
+    </PreviewContent>
+</Preview>
+
+You can also provide a suffix icon, which also takes the label color.
+
+<Preview>
+    <PreviewContent>
+        {() => {
+            const [filledValue, setFilledValue] = useState('Dummy4 option'),
+                [outlinedValue, setOutlinedValue] = useState('Dummy4 option');
+            return (
+                <>                 
+                    <SingleSelect
+                        suffix={ArrowDropDownCircleIcon}
+                        variant="filled"
+                        options={options}
+                        value={outlinedValue}
+                        onChange={setOutlinedValue}
+                        label="Pharmacy"
+                        includesNestedOptions
+                    />
+                    <SingleSelect
+                        suffix={ArrowDropDownCircleIcon}
+                        variant="outlined"
+                        options={options}
+                        value={outlinedValue}
+                        onChange={setOutlinedValue}
+                        label="Pharmacy"
+                        includesNestedOptions
+                    />
+                  
                 </>
             );
         }}

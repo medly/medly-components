@@ -12622,6 +12622,10 @@ exports[`DatePicker component should render properly when value is of date type 
   opacity: 1;
 }
 
+.c6:disabled {
+  color: #435465;
+}
+
 .c6:disabled ~ .c9,
 .c6:disabled ~ .c7 {
   cursor: not-allowed;
@@ -13014,6 +13018,10 @@ exports[`DatePicker component should render properly when value is of string typ
 
 .c6.c6.c6:focus::placeholder {
   opacity: 1;
+}
+
+.c6:disabled {
+  color: #435465;
 }
 
 .c6:disabled ~ .c9,

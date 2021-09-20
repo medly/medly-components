@@ -39,6 +39,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -191,6 +195,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -340,6 +348,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -487,6 +499,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
 
 .c2:hover {
   background-color: #F7F8F9;
+}
+
+.c2:hover > .c3 {
+  color: #13181D;
 }
 
 .c2:active {
@@ -641,6 +657,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -790,6 +810,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -937,6 +961,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
 
 .c2:hover {
   background-color: #F7F8F9;
+}
+
+.c2:hover > .c3 {
+  color: #13181D;
 }
 
 .c2:active {
@@ -1091,6 +1119,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -1240,6 +1272,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -1387,6 +1423,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
 
 .c2:hover {
   background-color: #F7F8F9;
+}
+
+.c2:hover > .c3 {
+  color: #13181D;
 }
 
 .c2:active {
@@ -1541,6 +1581,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   background-color: #F7F8F9;
 }
 
+.c2:hover > .c3 {
+  color: #13181D;
+}
+
 .c2:active {
   background-color: #eff2f4;
 }
@@ -1688,6 +1732,10 @@ exports[`DateRangePicker Custom date range options popover placement should rend
 
 .c2:hover {
   background-color: #F7F8F9;
+}
+
+.c2:hover > .c3 {
+  color: #13181D;
 }
 
 .c2:active {
@@ -1949,6 +1997,10 @@ exports[`DateRangePicker Custom date range options should render properly with c
   opacity: 1;
 }
 
+.c6:disabled {
+  color: #435465;
+}
+
 .c6:disabled ~ .c9,
 .c6:disabled ~ .c7 {
   cursor: not-allowed;
@@ -2040,6 +2092,10 @@ exports[`DateRangePicker Custom date range options should render properly with c
 
 .c17:hover {
   background-color: #F7F8F9;
+}
+
+.c17:hover > .c18 {
+  color: #13181D;
 }
 
 .c17:active {
@@ -2233,6 +2289,7 @@ exports[`DateRangePicker Custom date range options should render properly with c
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c9,
@@ -2444,6 +2501,9 @@ exports[`DateRangePicker Custom date range options should render properly with c
       </li>
     </ul>
   </div>
+  <span>
+    Outer span
+  </span>
 </div>
 `;
 
@@ -24151,6 +24211,10 @@ exports[`DateRangePicker should render properly 1`] = `
   opacity: 1;
 }
 
+.c6:disabled {
+  color: #435465;
+}
+
 .c6:disabled ~ .c9,
 .c6:disabled ~ .c7 {
   cursor: not-allowed;
@@ -24886,6 +24950,7 @@ exports[`DateRangePicker should render properly 1`] = `
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c1:focus-within .c9,
@@ -26256,6 +26321,9 @@ exports[`DateRangePicker should render properly 1`] = `
       </div>
     </div>
   </div>
+  <span>
+    Outer span
+  </span>
 </div>
 `;
 
@@ -26406,6 +26474,10 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 
 .c7.c7.c7:focus::placeholder {
   opacity: 1;
+}
+
+.c7:disabled {
+  color: #435465;
 }
 
 .c7:disabled ~ .c10,
@@ -27313,6 +27385,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 .c2:focus-within::after,
 .c2:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c2:focus-within .c10,
@@ -28194,5 +28267,8 @@ exports[`DateRangePicker should render properly with single month 1`] = `
       </div>
     </div>
   </div>
+  <span>
+    Outer span
+  </span>
 </div>
 `;

@@ -27,6 +27,19 @@ This repo uses yarn workspaces, so you should install `yarn` as the package mana
 
 Before committing any thing just run `yarn init:commitizen` once, so that next time whenever you run `git commit` you will be asked right set of questions about the commit.
 
+## Props Naming Rules
+
+| Description                                       | Suggestion                      | Example                                               |
+| ------------------------------------------------- | ------------------------------- | ----------------------------------------------------- |
+| Initialize prop                                   | `default` + `PropName`          | `defaultActive` in `Tabs` component                   |
+| Display related naming                            | `show` + `PropName`             | `showSelectAll` in `CheckBoxGroup` component          |
+| Disable prop                                      | `disabled`                      | `disabled` in `TextField` component                   |
+| Current state of a component                      | `is` + `State`                  | `isLoading` in `Table` component                      |
+| If you want to trigger an HTML supported event    | `on` + `EventName`              | `onClick={(e) => void}` in `Button` component         |
+| If you want to trigger a prop event               | `on` + `PropName` + `EventName` | `onInputChange={() => void}` in `SearchBox` component |
+| If you want to trigger a function before an event | `before` + `EventName`          |                                                       |
+| If you want to trigger a function after an event  | `after` + `EventName`           |                                                       |
+
 ## Development workflow
 
 After setting the project, run yarn to fetch all the dependencies. Then, you can run several commands:

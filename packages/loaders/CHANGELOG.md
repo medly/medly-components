@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.33](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.32...@medly-components/loaders@1.2.33) (2021-09-19)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.32](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.31...@medly-components/loaders@1.2.32) (2021-09-18)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.31](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.30...@medly-components/loaders@1.2.31) (2021-09-16)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.30](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.29...@medly-components/loaders@1.2.30) (2021-09-15)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.29](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.28...@medly-components/loaders@1.2.29) (2021-09-14)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.28](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.27...@medly-components/loaders@1.2.28) (2021-09-14)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.27](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.26...@medly-components/loaders@1.2.27) (2021-09-12)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.26](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.25...@medly-components/loaders@1.2.26) (2021-09-11)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
 ## [1.2.25](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.24...@medly-components/loaders@1.2.25) (2021-09-10)
 
 **Note:** Version bump only for package @medly-components/loaders

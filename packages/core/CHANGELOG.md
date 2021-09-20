@@ -3,6 +3,90 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.24.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.24.2...@medly-components/core@2.24.3) (2021-09-19)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.24.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.24.1...@medly-components/core@2.24.2) (2021-09-18)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.24.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.24.0...@medly-components/core@2.24.1) (2021-09-17)
+
+
+### Bug Fixes
+
+* validation meesage issue in DateRangePicker component ([#427](https://github.com/medly/medly-components/issues/427)) ([e00c89e](https://github.com/medly/medly-components/commit/e00c89e42d778068b132944cab9771009863b883))
+
+
+
+
+
+# [2.24.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.23.1...@medly-components/core@2.24.0) (2021-09-16)
+
+
+### Features
+
+* **core:** textfield custom active border styles ([#424](https://github.com/medly/medly-components/issues/424)) ([2a22fc7](https://github.com/medly/medly-components/commit/2a22fc7bf85a8f4446ad0d837403044f6b194693))
+
+
+
+
+
+## [2.23.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.23.0...@medly-components/core@2.23.1) (2021-09-15)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [2.23.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.22.0...@medly-components/core@2.23.0) (2021-09-14)
+
+
+### Features
+
+* **theme:** allow adding border to modal close icon ([#422](https://github.com/medly/medly-components/issues/422)) ([efe3170](https://github.com/medly/medly-components/commit/efe317052be3a37f16b7cb7571db8afcbf109f90))
+
+
+
+
+
+# [2.22.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.21.3...@medly-components/core@2.22.0) (2021-09-14)
+
+
+### Features
+
+* **core:** add and use new single-select props for suffix icon + hovered color ([#421](https://github.com/medly/medly-components/issues/421)) ([1390919](https://github.com/medly/medly-components/commit/1390919be8cf21f831d728c3097296210fa62903))
+
+
+
+
+
+## [2.21.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.21.2...@medly-components/core@2.21.3) (2021-09-12)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.21.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.21.1...@medly-components/core@2.21.2) (2021-09-11)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
 ## [2.21.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.21.0...@medly-components/core@2.21.1) (2021-09-10)
 
 **Note:** Version bump only for package @medly-components/core

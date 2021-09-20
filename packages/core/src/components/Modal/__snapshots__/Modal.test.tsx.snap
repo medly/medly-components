@@ -141,6 +141,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   z-index: 20;
   position: absolute;
   border-radius: 50%;
+  border: none;
   background-color: #ffffff;
 }
 

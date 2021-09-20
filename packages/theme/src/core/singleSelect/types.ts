@@ -58,6 +58,7 @@ export interface SingleSelectTheme {
         };
         textColor: {
             default: string;
+            hovered: string;
             selected: string;
             error: string;
             disabled: string;

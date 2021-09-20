@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.19.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.18.0...@medly-components/theme@2.19.0) (2021-09-16)
+
+
+### Features
+
+* **core:** textfield custom active border styles ([#424](https://github.com/medly/medly-components/issues/424)) ([2a22fc7](https://github.com/medly/medly-components/commit/2a22fc7bf85a8f4446ad0d837403044f6b194693))
+
+
+
+
+
+# [2.18.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.17.0...@medly-components/theme@2.18.0) (2021-09-14)
+
+
+### Features
+
+* **theme:** allow adding border to modal close icon ([#422](https://github.com/medly/medly-components/issues/422)) ([efe3170](https://github.com/medly/medly-components/commit/efe317052be3a37f16b7cb7571db8afcbf109f90))
+
+
+
+
+
+# [2.17.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.16.1...@medly-components/theme@2.17.0) (2021-09-14)
+
+
+### Features
+
+* **core:** add and use new single-select props for suffix icon + hovered color ([#421](https://github.com/medly/medly-components/issues/421)) ([1390919](https://github.com/medly/medly-components/commit/1390919be8cf21f831d728c3097296210fa62903))
+
+
+
+
+
+## [2.16.1](https://github.com/medly/medly-components/compare/@medly-components/theme@2.16.0...@medly-components/theme@2.16.1) (2021-09-12)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
 # [2.16.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.15.0...@medly-components/theme@2.16.0) (2021-09-10)
 
 

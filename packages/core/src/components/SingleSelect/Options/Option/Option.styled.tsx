@@ -29,6 +29,9 @@ export const OptionStyled = styled('li').attrs(({ theme: { singleSelect } }) => 
 
     &:hover {
         background-color: ${({ disabled, selected, bgColor }) => !disabled && !selected && bgColor.hovered};
+        & > ${Text.Style} {
+            color: ${({ textColor }) => textColor.hovered};
+        }
     }
 
     &:active {

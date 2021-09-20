@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.29.22](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.21...@medly-components/layout@1.29.22) (2021-09-19)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.21](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.20...@medly-components/layout@1.29.21) (2021-09-18)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.20](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.19...@medly-components/layout@1.29.20) (2021-09-17)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.19](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.18...@medly-components/layout@1.29.19) (2021-09-16)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.18](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.17...@medly-components/layout@1.29.18) (2021-09-15)
+
+
+### Bug Fixes
+
+* fixed window object undefined issue in nextJs ([#411](https://github.com/medly/medly-components/issues/411)) ([0319512](https://github.com/medly/medly-components/commit/031951279ef930a75deb3070480d34d4a72469b6))
+
+
+
+
+
+## [1.29.17](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.16...@medly-components/layout@1.29.17) (2021-09-14)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.16](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.15...@medly-components/layout@1.29.16) (2021-09-14)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.15](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.14...@medly-components/layout@1.29.15) (2021-09-12)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.14](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.13...@medly-components/layout@1.29.14) (2021-09-11)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [1.29.13](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.12...@medly-components/layout@1.29.13) (2021-09-10)
 
 **Note:** Version bump only for package @medly-components/layout
