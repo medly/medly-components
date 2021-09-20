@@ -27,6 +27,8 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     label?: string;
     /** Set it it true to enable search functionality */
     isSearchable?: boolean;
+    /** Function to be called on input value changes */
+    onInputChange?: (value: string) => void;
     /** Set it true to disable the select action */
     disabled?: boolean;
     /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered. */
