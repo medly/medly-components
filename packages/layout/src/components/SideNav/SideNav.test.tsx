@@ -60,51 +60,51 @@ describe('SideNav', () => {
     });
 
     it('should expand aside on clicking on the expand icon', () => {
-        const { container } = renderer('/home');
-        fireEvent.click(container.querySelector('#medly-sidenav-toggle-expand'));
+        const { container, getByTitle } = renderer('/home');
+        fireEvent.click(getByTitle('medly-sidenav-toggle-expand'));
         expect(container.querySelector('aside')).toHaveStyle(`
            width: ${defaultTheme.sideNav.openSize};
         `);
     });
 
     it('should collapse aside on clicking on the hide icon', () => {
-        const { container } = renderer('/home');
-        fireEvent.click(container.querySelector('#medly-sidenav-toggle-expand'));
-        fireEvent.click(container.querySelector('#medly-sidenav-toggle-hide'));
+        const { container, getByTitle } = renderer('/home');
+        fireEvent.click(getByTitle('medly-sidenav-toggle-expand'));
+        fireEvent.click(getByTitle('medly-sidenav-toggle-hide'));
         expect(container.querySelector('aside')).toHaveStyle(`
            width: ${defaultTheme.sideNav.closeSize};
         `);
     });
 
     it('should expand nav on hovering on it', () => {
-        const { container } = renderer('/home');
-        fireEvent.mouseEnter(container.querySelector('nav'));
-        expect(container.querySelector('nav')).toHaveStyle(`
+        const { getByRole } = renderer('/home');
+        fireEvent.mouseEnter(getByRole('navigation'));
+        expect(getByRole('navigation')).toHaveStyle(`
             width: ${defaultTheme.sideNav.openSize};
         `);
     });
 
     it('should collapse nav on moving cursor out of it', () => {
-        const { container } = renderer('/home');
-        fireEvent.mouseEnter(container.querySelector('nav'));
-        fireEvent.mouseLeave(container.querySelector('nav'));
-        expect(container.querySelector('nav')).toHaveStyle(`
+        const { getByRole } = renderer('/home');
+        fireEvent.mouseEnter(getByRole('navigation'));
+        fireEvent.mouseLeave(getByRole('navigation'));
+        expect(getByRole('navigation')).toHaveStyle(`
             width: ${defaultTheme.sideNav.closeSize};
         `);
     });
 
     it('should call onChange with expected path when it is used as controlled component', () => {
         const mockOnChange = jest.fn();
-        const { container, getByText } = renderer('/home', mockOnChange);
-        fireEvent.click(container.querySelector('#medly-sidenav-toggle-expand'));
+        const { getByText, getByTitle } = renderer('/home', mockOnChange);
+        fireEvent.click(getByTitle('medly-sidenav-toggle-expand'));
         fireEvent.click(getByText('Search'));
         expect(mockOnChange).toBeCalledWith('/search');
     });
 
     it('should call onChange with expected path when it is used as uncontrolled component', () => {
         const mockOnChange = jest.fn();
-        const { container, getByText } = renderer(undefined, mockOnChange);
-        fireEvent.click(container.querySelector('#medly-sidenav-toggle-expand'));
+        const { getByText, getByTitle } = renderer('', mockOnChange);
+        fireEvent.click(getByTitle('medly-sidenav-toggle-expand'));
         fireEvent.click(getByText('Search'));
         expect(mockOnChange).toBeCalledWith('/search');
     });

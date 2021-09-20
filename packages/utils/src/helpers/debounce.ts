@@ -1,13 +1,13 @@
 export const debounce = (func: (...args: any) => void, wait: number) => {
-    let timeout: null | ReturnType<typeof setTimeout> = null;
+    let timeout: ReturnType<typeof setTimeout>;
 
     return function executedFunction(...args: any[]) {
         const later = () => {
-            clearTimeout(timeout);
+            timeout && clearTimeout(timeout);
             func(...args);
         };
 
-        clearTimeout(timeout);
+        timeout && clearTimeout(timeout);
         timeout = setTimeout(later, wait);
     };
 };

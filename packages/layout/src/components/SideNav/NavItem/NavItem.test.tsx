@@ -41,8 +41,8 @@ describe('NavItem', () => {
 
     it('should call onChange with expected data', () => {
         const mockOnChange = jest.fn();
-        const { container, getByText } = renderer(undefined, mockOnChange);
-        fireEvent.click(container.querySelector('#medly-sidenav-toggle-expand'));
+        const { getByText, getByTitle } = renderer('', mockOnChange);
+        fireEvent.click(getByTitle('medly-sidenav-toggle-expand'));
         fireEvent.click(getByText('Search'));
         expect(mockOnChange).toBeCalledWith('/search');
     });
