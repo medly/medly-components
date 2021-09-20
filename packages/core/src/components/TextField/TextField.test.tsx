@@ -307,6 +307,50 @@ describe('TextField', () => {
             expect(container).toMatchSnapshot();
         });
 
+        it('should render properly with custom border styles (themed)', () => {
+            const borderRadius = '0.25rem';
+            const borderWidth = '0.2rem';
+            const { container } = render(
+                <ThemeProvider
+                    theme={updateNestedValue(defaultTheme, 'textField', {
+                        ...defaultTheme.textField,
+                        filled: {
+                            ...defaultTheme.textField.filled,
+                        },
+                        outlined: {
+                            ...defaultTheme.textField.outlined,
+                            default: {
+                                ...defaultTheme.textField.outlined.default,
+                                borderRadius,
+                                borderWidth
+                            },
+                            active: {
+                                ...defaultTheme.textField.outlined.active,
+                                borderRadius,
+                                borderWidth
+                            }
+                        },
+                        fusion: {
+                            ...defaultTheme.textField.fusion,
+                            default: {
+                                ...defaultTheme.textField.fusion.default,
+                                borderRadius,
+                                borderWidth
+                            },
+                            active: {
+                                ...defaultTheme.textField.fusion.active,
+                                borderRadius,
+                                borderWidth
+                            }
+                        }
+                    })}
+                >
+                    <TextField variant={variant} label="Name" suffix={CheckIcon} disabled />
+                </ThemeProvider>
+            );
+            expect(container).toMatchSnapshot();
+        });
+
         it('should render without suffix/prefix/character-count if we pass showDecorators as false', () => {
             const prefix = () => <span>prefix</span>;
             const suffix = () => <span>suffix</span>;

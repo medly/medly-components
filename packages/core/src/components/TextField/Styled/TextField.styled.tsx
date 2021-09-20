@@ -68,6 +68,7 @@ export const Input = styled('input')<StyledProps>`
     }
 
     &:disabled {
+        color: ${({ variant, theme }) => theme.textField[variant].disabled.textColor};
         & ~ ${Label},& ~ ${MaskPlaceholder} {
             cursor: not-allowed;
         }

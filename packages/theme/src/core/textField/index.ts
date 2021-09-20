@@ -1,6 +1,18 @@
 import colors from '../colors';
 import { TextFieldTheme } from './types';
 
+const defaultBorderWidth = '0.15rem';
+
+const defaultOutlined = {
+    borderWidth: defaultBorderWidth,
+    borderRadius: '0.4rem'
+};
+
+const defaultFusion = {
+    borderWidth: defaultBorderWidth,
+    borderRadius: '1rem'
+};
+
 const textField: TextFieldTheme = {
     height: {
         S: '4rem',
@@ -14,13 +26,16 @@ const textField: TextFieldTheme = {
         default: {
             bgColor: colors.white,
             borderColor: colors.grey[500],
+            borderRadius: defaultOutlined.borderRadius,
+            borderWidth: defaultOutlined.borderWidth,
+            helperTextColor: colors.grey[700],
             iconColor: colors.grey[600],
-            textColor: colors.black,
             labelColor: colors.grey[600],
-            helperTextColor: colors.grey[700]
+            textColor: colors.black,
         },
         hover: {
             borderColor: colors.grey[600],
+            borderWidth: defaultOutlined.borderWidth,
             shadowColor: colors.grey[600]
         },
         disabled: {
@@ -32,9 +47,11 @@ const textField: TextFieldTheme = {
         },
         active: {
             bgColor: colors.white,
-            placeholderColor: colors.grey[300],
             borderColor: colors.blue[500],
+            borderRadius: defaultOutlined.borderRadius,
+            borderWidth: defaultOutlined.borderWidth,
             labelColor: colors.blue[500],
+            placeholderColor: colors.grey[300],
             shadowColor: colors.blue[500]
         },
         error: {
@@ -85,15 +102,18 @@ const textField: TextFieldTheme = {
     },
     fusion: {
         default: {
-            borderColor: colors.grey[400],
             bgColor: colors.grey[50],
-            textColor: colors.black,
+            borderColor: colors.grey[400],
+            borderRadius: defaultFusion.borderRadius,
+            borderWidth: defaultFusion.borderWidth,
+            helperTextColor: colors.grey[700],
             labelColor: colors.grey[700],
-            helperTextColor: colors.grey[700]
+            textColor: colors.black
         },
         hover: {
             bgColor: colors.grey[50],
-            borderColor: colors.grey[600]
+            borderColor: colors.grey[600],
+            borderWidth: defaultFusion.borderWidth
         },
         disabled: {
             bgColor: colors.white,
@@ -103,10 +123,12 @@ const textField: TextFieldTheme = {
             cursor: 'not-allowed'
         },
         active: {
-            placeholderColor: colors.grey[300],
             bgColor: colors.white,
             borderColor: colors.blue[500],
-            labelColor: colors.blue[500]
+            borderRadius: defaultFusion.borderRadius,
+            borderWidth: defaultFusion.borderWidth,
+            labelColor: colors.blue[500],
+            placeholderColor: colors.grey[300]
         },
         error: {
             caretColor: colors.black,

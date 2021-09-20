@@ -2840,7 +2840,7 @@ exports[`Table component should render properly 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 0.9rem 0.8rem 1.1rem;
+  padding: 0.9rem 0.8rem;
   outline: unset;
   font-family: inherit;
   border-radius: 0.8rem;
@@ -2876,6 +2876,7 @@ exports[`Table component should render properly 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
+  line-height: 1;
 }
 
 .c5 .c8 {
@@ -2900,7 +2901,7 @@ exports[`Table component should render properly 1`] = `
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 0.9rem 0.8rem 1.1rem;
+  padding: 0.9rem 0.8rem;
   outline: unset;
   font-family: inherit;
   border-radius: 0.8rem;
@@ -2936,6 +2937,7 @@ exports[`Table component should render properly 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
+  line-height: 1;
 }
 
 .c13 .c8 {
