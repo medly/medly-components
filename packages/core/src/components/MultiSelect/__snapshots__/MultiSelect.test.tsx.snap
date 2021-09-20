@@ -1482,7 +1482,6 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   user-select: none;
   cursor: inherit;
   color: inherit;
-  padding: 0 1.6rem;
 }
 
 .c32 {
@@ -1492,7 +1491,6 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   user-select: none;
   cursor: not-allowed;
   color: #98A7B7;
-  padding: 0 1.6rem;
 }
 
 .c30 {
@@ -2803,7 +2801,6 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   user-select: none;
   cursor: inherit;
   color: inherit;
-  padding: 0 1.6rem;
 }
 
 .c33 {
@@ -2813,7 +2810,6 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   user-select: none;
   cursor: not-allowed;
   color: #98A7B7;
-  padding: 0 1.6rem;
 }
 
 .c31 {

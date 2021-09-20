@@ -36,7 +36,6 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
   user-select: none;
   cursor: inherit;
   color: inherit;
-  padding: 1.6rem 0;
 }
 
 .c6 {
@@ -1848,7 +1847,6 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
   user-select: none;
   cursor: inherit;
   color: inherit;
-  padding: 0 1.6rem;
 }
 
 .c6 {
@@ -2052,7 +2050,6 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
   user-select: none;
   cursor: inherit;
   color: inherit;
-  padding: 0 1.6rem;
 }
 
 .c6 {
@@ -2256,7 +2253,6 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
   user-select: none;
   cursor: inherit;
   color: inherit;
-  padding: 1.6rem 0;
 }
 
 .c6 {

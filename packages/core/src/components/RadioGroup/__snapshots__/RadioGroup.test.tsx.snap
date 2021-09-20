@@ -50,16 +50,6 @@ exports[`Radio Group should render disabled state properly 1`] = `
   color: #98A7B7;
 }
 
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: not-allowed;
-  color: #98A7B7;
-  padding: 0 1.6rem;
-}
-
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
@@ -74,7 +64,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
   color: #98A7B7;
 }
 
-.c11 {
+.c10 {
   position: relative;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -85,7 +75,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
   border-radius: 100%;
 }
 
-.c11::after {
+.c10::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -101,7 +91,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
   transition: transform 100ms ease-out;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   opacity: 0;
   width: 1%;
@@ -109,41 +99,41 @@ exports[`Radio Group should render disabled state properly 1`] = `
   margin: 0;
 }
 
-.c9 ~ .c10 {
+.c8 ~ .c9 {
   border-color: #13181D;
 }
 
-.c9 ~ .c10::after {
+.c8 ~ .c9::after {
   background-color: #13181D;
 }
 
-.c9:checked ~ .c10::after {
+.c8:checked ~ .c9::after {
   -webkit-transform: translate(-50%,-50%) scale(1);
   -ms-transform: translate(-50%,-50%) scale(1);
   transform: translate(-50%,-50%) scale(1);
 }
 
-.c9:disabled ~ .c10 {
+.c8:disabled ~ .c9 {
   border-color: #98A7B7;
 }
 
-.c9:disabled ~ .c10::after {
+.c8:disabled ~ .c9::after {
   background-color: #98A7B7;
 }
 
-.c9:not(:disabled):checked ~ .c10 {
+.c8:not(:disabled):checked ~ .c9 {
   border-color: #126AFA;
 }
 
-.c9:not(:disabled):checked ~ .c10::after {
+.c8:not(:disabled):checked ~ .c9::after {
   background-color: #126AFA;
 }
 
-.c9:not(:disabled):focus ~ .c10 {
+.c8:not(:disabled):focus ~ .c9 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
-.c8 {
+.c7 {
   margin: 0.3rem;
   width: 1.8rem;
   height: 1.8rem;
@@ -206,7 +196,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
         sizes="[object Object]"
       >
         <span
-          class="c6 c7"
+          class="c6 c2"
           disabled=""
           id="Female-gender-label"
           type="radio"
@@ -214,10 +204,10 @@ exports[`Radio Group should render disabled state properly 1`] = `
           Female
         </span>
         <div
-          class="c8"
+          class="c7"
         >
           <input
-            class="c9"
+            class="c8"
             disabled=""
             id="Female-gender"
             name="gender"
@@ -226,7 +216,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
             value="female"
           />
           <div
-            class="c10 c11"
+            class="c9 c10"
           />
         </div>
       </label>
@@ -238,7 +228,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
         sizes="[object Object]"
       >
         <span
-          class="c6 c7"
+          class="c6 c2"
           disabled=""
           id="Male-gender-label"
           type="radio"
@@ -246,10 +236,10 @@ exports[`Radio Group should render disabled state properly 1`] = `
           Male
         </span>
         <div
-          class="c8"
+          class="c7"
         >
           <input
-            class="c9"
+            class="c8"
             disabled=""
             id="Male-gender"
             name="gender"
@@ -258,7 +248,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
             value="male"
           />
           <div
-            class="c10 c11"
+            class="c9 c10"
           />
         </div>
       </label>
@@ -317,16 +307,6 @@ exports[`Radio Group should render properly 1`] = `
   color: inherit;
 }
 
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: inherit;
-  color: inherit;
-  padding: 0 1.6rem;
-}
-
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
@@ -341,7 +321,7 @@ exports[`Radio Group should render properly 1`] = `
   color: #13181D;
 }
 
-.c11 {
+.c10 {
   position: relative;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -352,7 +332,7 @@ exports[`Radio Group should render properly 1`] = `
   border-radius: 100%;
 }
 
-.c11::after {
+.c10::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -368,7 +348,7 @@ exports[`Radio Group should render properly 1`] = `
   transition: transform 100ms ease-out;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   opacity: 0;
   width: 1%;
@@ -376,41 +356,41 @@ exports[`Radio Group should render properly 1`] = `
   margin: 0;
 }
 
-.c9 ~ .c10 {
+.c8 ~ .c9 {
   border-color: #13181D;
 }
 
-.c9 ~ .c10::after {
+.c8 ~ .c9::after {
   background-color: #13181D;
 }
 
-.c9:checked ~ .c10::after {
+.c8:checked ~ .c9::after {
   -webkit-transform: translate(-50%,-50%) scale(1);
   -ms-transform: translate(-50%,-50%) scale(1);
   transform: translate(-50%,-50%) scale(1);
 }
 
-.c9:disabled ~ .c10 {
+.c8:disabled ~ .c9 {
   border-color: #98A7B7;
 }
 
-.c9:disabled ~ .c10::after {
+.c8:disabled ~ .c9::after {
   background-color: #98A7B7;
 }
 
-.c9:not(:disabled):checked ~ .c10 {
+.c8:not(:disabled):checked ~ .c9 {
   border-color: #126AFA;
 }
 
-.c9:not(:disabled):checked ~ .c10::after {
+.c8:not(:disabled):checked ~ .c9::after {
   background-color: #126AFA;
 }
 
-.c9:not(:disabled):focus ~ .c10 {
+.c8:not(:disabled):focus ~ .c9 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
-.c8 {
+.c7 {
   margin: 0.3rem;
   width: 1.8rem;
   height: 1.8rem;
@@ -438,12 +418,12 @@ exports[`Radio Group should render properly 1`] = `
   flex-direction: row-reverse;
 }
 
-.c5:hover .c10 {
+.c5:hover .c9 {
   border-color: #126AFA;
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
-.c5:active .c10 {
+.c5:active .c9 {
   border-color: #0F5AD5;
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
@@ -480,17 +460,17 @@ exports[`Radio Group should render properly 1`] = `
         sizes="[object Object]"
       >
         <span
-          class="c6 c7"
+          class="c6 c2"
           id="Female-gender-label"
           type="radio"
         >
           Female
         </span>
         <div
-          class="c8"
+          class="c7"
         >
           <input
-            class="c9"
+            class="c8"
             id="Female-gender"
             name="gender"
             sizes="[object Object]"
@@ -498,7 +478,7 @@ exports[`Radio Group should render properly 1`] = `
             value="female"
           />
           <div
-            class="c10 c11"
+            class="c9 c10"
           />
         </div>
       </label>
@@ -509,17 +489,17 @@ exports[`Radio Group should render properly 1`] = `
         sizes="[object Object]"
       >
         <span
-          class="c6 c7"
+          class="c6 c2"
           id="Male-gender-label"
           type="radio"
         >
           Male
         </span>
         <div
-          class="c8"
+          class="c7"
         >
           <input
-            class="c9"
+            class="c8"
             id="Male-gender"
             name="gender"
             sizes="[object Object]"
@@ -527,7 +507,7 @@ exports[`Radio Group should render properly 1`] = `
             value="male"
           />
           <div
-            class="c10 c11"
+            class="c9 c10"
           />
         </div>
       </label>
