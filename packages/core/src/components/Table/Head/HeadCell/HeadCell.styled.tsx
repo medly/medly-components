@@ -108,9 +108,9 @@ const getStyle = (theme: Theme, styleType: 'default' | 'hovered' | 'pressed', is
     `;
 };
 const headCellButtonTableSizeMap = {
-    L: '0.9rem 1.6rem 1.1rem',
-    XS: '0.5rem 0.4rem 0.7rem',
-    default: '0.9rem 0.8rem 1.1rem'
+    L: '0.9rem 1.6rem',
+    XS: '0.5rem 0.4rem',
+    default: '0.9rem 0.8rem'
 };
 export const HeadCellButton = styled.button<{
     withHoverEffect: boolean;
@@ -143,6 +143,7 @@ export const HeadCellButton = styled.button<{
         overflow: hidden;
         white-space: nowrap;
         text-align: center;
+        line-height: 1;
     }
     ${SvgIcon} {
         margin-left: 0.4rem;
