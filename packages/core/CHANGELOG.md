@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.25.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.24.3...@medly-components/core@2.25.0) (2021-09-20)
+
+
+### Features
+
+* add onInputChange prop in MultiSelect component ([#430](https://github.com/medly/medly-components/issues/430)) ([85e1912](https://github.com/medly/medly-components/commit/85e1912236e3477768026837c55abd2f923b9290))
+
+
+
+
+
 ## [2.24.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.24.2...@medly-components/core@2.24.3) (2021-09-19)
 
 **Note:** Version bump only for package @medly-components/core
