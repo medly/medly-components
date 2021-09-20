@@ -14,7 +14,12 @@ const radio: RadioTheme = {
         default: 'inherit',
         disabled: colors.grey[500]
     },
-    labelPadding: '0 1.6rem',
+    labelPadding: {
+        bottom: '1.6rem 0',
+        left: '0 1.6rem',
+        right: '0 1.6rem',
+        top: '1.6rem 0',
+    },
     helperTextColor: {
         default: colors.black,
         disabled: colors.grey[500],

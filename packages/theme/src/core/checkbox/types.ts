@@ -8,7 +8,12 @@ export interface CheckboxTheme {
         default: string;
         disabled: string;
     };
-    labelPadding?: string;
+    labelPadding: {
+        bottom: string;
+        left: string;
+        right: string;
+        top: string;
+    },
     helperTextColor: {
         default: string;
         disabled: string;
