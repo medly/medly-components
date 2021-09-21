@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.26.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.25.2...@medly-components/core@2.26.0) (2021-09-21)
+
+
+### Features
+
+* move label paddings to theme for Checkbox + Radio selectors ([#425](https://github.com/medly/medly-components/issues/425)) ([247a435](https://github.com/medly/medly-components/commit/247a43553afbabc99843374f0d7f569c74f65de4))
+
+
+
+
+
 ## [2.25.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.25.1...@medly-components/core@2.25.2) (2021-09-21)
 
 **Note:** Version bump only for package @medly-components/core
