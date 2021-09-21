@@ -15,6 +15,12 @@ const checkbox: CheckboxTheme = {
         default: 'inherit',
         disabled: colors.grey[500]
     },
+    labelPadding: {
+        bottomPositioned: '1.6rem 0',
+        leftPositioned: '0 1.6rem',
+        rightPositioned: '0 1.6rem',
+        topPositioned: '1.6rem 0',
+    },
     helperTextColor: {
         default: colors.black,
         disabled: colors.grey[500],
