@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.26.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.26.0...@medly-components/core@2.26.1) (2021-09-21)
+
+
+### Bug Fixes
+
+* style issue of text component used in table rows ([#433](https://github.com/medly/medly-components/issues/433)) ([94b8a70](https://github.com/medly/medly-components/commit/94b8a70d8efdc70f3a139adf3110abf988c20508))
+
+
+
+
+
 # [2.26.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.25.2...@medly-components/core@2.26.0) (2021-09-21)
 
 
