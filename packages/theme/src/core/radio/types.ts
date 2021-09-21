@@ -7,6 +7,12 @@ export interface RadioTheme {
         default: string;
         disabled: string;
     };
+    labelPadding: {
+        bottomPositioned: string;
+        leftPositioned: string;
+        rightPositioned: string;
+        topPositioned: string;
+    },
     helperTextColor: {
         default: string;
         disabled: string;

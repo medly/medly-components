@@ -18,6 +18,7 @@ export const Checkbox: FC<CheckboxProps> & WithStyle = React.memo(
             validator,
             hasError,
             errorText,
+            className,
             ...inputProps
         } = props;
 
@@ -54,6 +55,7 @@ export const Checkbox: FC<CheckboxProps> & WithStyle = React.memo(
                     <Styled.ErrorText disabled={inputProps.disabled}>{errorText || builtInErrorMessage}</Styled.ErrorText>
                 )}
                 <Styled.CheckboxWithLabelWrapper
+                    className={className}
                     id={`${inputId}-wrapper`}
                     htmlFor={inputId}
                     isActive={isActive}
