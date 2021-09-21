@@ -21,7 +21,7 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
     const readValue = (): T => {
         if (typeof window === 'undefined') {
             console.warn(`Tried setting ${options.storage} key “${key}” even though environment is not a client`);
-            return initialValue;
+            return initialValue as T;
         }
 
         const item = storage.getItem(key);
