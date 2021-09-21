@@ -4,7 +4,7 @@ import { cache, SWRConfiguration } from 'swr';
 import { useSWRAxios } from './useSWRAxios';
 
 const DummyComp = ({ initialData, passUrlOnly = false }: SWRConfiguration & { passUrlOnly?: boolean }) => {
-    const { data, error } = useSWRAxios<unknown, { message: string }>(passUrlOnly ? '/api/applications' : { url: '/api/applications' }, {
+    const { data, error } = useSWRAxios<string, { message: string }>(passUrlOnly ? '/api/applications' : { url: '/api/applications' }, {
         initialData
     });
     return (
