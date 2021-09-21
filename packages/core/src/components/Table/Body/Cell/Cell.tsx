@@ -1,5 +1,5 @@
-import { WithStyle } from '@medly-components/utils';
-import React, { useEffect, useMemo, useRef } from 'react';
+import { ThemeContext, WithStyle } from '@medly-components/utils';
+import React, { useContext, useEffect, useMemo, useRef } from 'react';
 import Text from '../../../Text';
 import { Cell as StyledCell, CustomComponentWrapper, LoadingDiv } from './Styled';
 import { TableCellProps } from './types';
@@ -19,7 +19,8 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
             hiddenDivRef,
             ...restProps
         } = props,
-        { align, hidden, frozen, formatter, component: CustomComponent } = config,
+        { align, hidden, frozen, formatter, component: CustomComponent } = config;
+    const theme = useContext(ThemeContext),
         formattedData = useMemo(() => (formatter ? formatter(data, rowData) : data), [formatter, data]);
 
     useEffect(() => {
@@ -44,7 +45,7 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
                     <CustomComponent {...{ data: formattedData, rowId, disabled: isRowClickDisabled, rowData }} />
                 </CustomComponentWrapper>
             ) : (
-                <Text textVariant="body2" title={formattedData}>
+                <Text textVariant={theme.table.row.fontVariant} title={formattedData}>
                     {formattedData}
                 </Text>
             )}
