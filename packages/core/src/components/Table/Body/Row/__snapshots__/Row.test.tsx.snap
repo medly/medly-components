@@ -44,17 +44,6 @@ exports[`Row should render NoResult properly 1`] = `
   color: #13181D;
 }
 
-.c0 .sc-AxjAm {
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
 <div>
   <tr
     class="sc-AxhUy c0"
@@ -136,17 +125,6 @@ exports[`Row should render NoResult with Card design also 1`] = `
   margin-bottom: 0.8rem;
 }
 
-.c0 .sc-AxjAm {
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
 <div>
   <tr
     class="sc-AxhUy c0"
@@ -189,17 +167,6 @@ exports[`Row should render row properly 1`] = `
 .c0:nth-child(even) > * {
   background-color: #ffffff;
   color: #13181D;
-}
-
-.c0 .sc-AxjAm {
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 <div>
