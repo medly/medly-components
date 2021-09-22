@@ -124,7 +124,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 
@@ -362,7 +362,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 
@@ -597,7 +597,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 
@@ -832,7 +832,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 
@@ -1070,7 +1070,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 
@@ -1303,7 +1303,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 
@@ -1536,7 +1536,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 
@@ -1774,7 +1774,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 
@@ -2007,7 +2007,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 
@@ -2240,7 +2240,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 
@@ -2478,7 +2478,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 
@@ -2713,7 +2713,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-AxiKw {
+.c8 .sc-oVpqz {
   padding-top: 0.5rem;
 }
 

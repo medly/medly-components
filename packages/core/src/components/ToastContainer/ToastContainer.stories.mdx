@@ -3,7 +3,7 @@ import Button from '../Button';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { withKnobs, select } from '@storybook/addon-knobs';
 import { positions, ToastButtons, AddToast } from './ToastContainer.stories';
-import { addToast } from './ToastStore.ts';
+import { addToast, removeToast, removeAllToasts } from './ToastStore.ts';
 import { PersonAddIcon } from '@medly-components/icons';
 
 <Meta
@@ -44,11 +44,13 @@ export const App: React.FC = () => {
             <Button
                 onClick={() => {
                     addToast({
+                        id: 1,
                         variant: 'success',
                         header: 'Success Notification',
                         message: 'Lorem Ipsum is simply dummy text.'
                     });
                     addToast({
+                        id: 2,
                         variant: 'warning',
                         header: 'Warning Notification',
                         message: 'Lorem Ipsum is simply dummy text.'
@@ -74,6 +76,10 @@ export const App: React.FC = () => {
             >
                 Raise toast
             </Button>
+            &nbsp; &nbsp; &nbsp;
+            <Button variant="outlined" onClick={() => removeAllToasts()}>
+                Remove all toasts
+            </Button>
         </>
     </Story>
 </Preview>
@@ -84,13 +90,30 @@ export const App: React.FC = () => {
 
 ## addToast
 
-Whenever you want to rasie a toast, you can just call this function with variant and message. There are other params are also avialble to customize your toast.
+Whenever you want to raise a toast, you can just call this function with variant and message. There are other params are also avialble to customize your toast.
+
+## removeAllToasts
+
+Call this function to remove all the Toasts from the DOM.
+
+```tsx
+import { ToastContainer, removeAllToasts } from '@medly-components/core';
+
+export const App: React.FC = () => {
+    return (
+        <>
+            <button onClick={() => removeAllToasts()}>Clear all Toast Messages</button>
+            <ToastContainer position="top" />
+        </>
+    );
+};
+```
 
 #### Params
 
 <Props of={AddToast} />
 
-#### Custom Icon & Acion
+#### Custom Icon & Actions
 
 You can pass custom icon and action config to addToast function like below.
 
