@@ -11,6 +11,11 @@ export interface Context {
     activeItemChangeHandler: (val: string) => void;
 }
 
-const SideNavContext = React.createContext<Context>(null);
+const SideNavContext = React.createContext<Context>({
+    isExpanded: false,
+    isHovered: false,
+    activeItem: '',
+    activeItemChangeHandler: () => null
+});
 
 export default SideNavContext;

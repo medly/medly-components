@@ -35,13 +35,12 @@ describe('Table component', () => {
                 onPageChange: mockOnPageChange
             };
 
-        it.skip('should call onPageChange prop on click on any page', () => {
-            const { container } = renderTable({ ...commonProps, defaultActivePage: 2 });
+        it('should call onPageChange prop on click on any page', async () => {
+            const { container } = renderTable({ ...commonProps, defaultActivePage: 1 });
             expect(container).toMatchSnapshot();
-            // @ts-ignore
-            fireEvent.click(screen.getByRole('button', { name: '3' }));
+            fireEvent.click(screen.getByText('30'));
             expect(mockOnPageChange).toBeCalledWith({
-                activePage: 3,
+                activePage: 30,
                 sortOrder: 'desc'
             });
         });

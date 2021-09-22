@@ -1,6 +1,5 @@
 import { Theme } from '@medly-components/theme';
 import * as styledComponents from 'styled-components';
-// tslint:disable-next-line: no-duplicate-imports
 import { ThemedStyledComponentsModule } from 'styled-components';
 
 const {
@@ -11,6 +10,6 @@ const {
     ThemeProvider,
     withTheme,
     ThemeContext
-} = styledComponents as ThemedStyledComponentsModule<Theme>;
+} = (styledComponents as unknown) as ThemedStyledComponentsModule<Theme>;
 
 export { styled, css, createGlobalStyle, keyframes, ThemeProvider, withTheme, ThemeContext };

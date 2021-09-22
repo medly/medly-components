@@ -1,19 +1,20 @@
+import { IconSizes } from '@medly-components/theme';
 import { css, InjectClassName, styled } from '@medly-components/utils';
 import { SvgIconProps } from './types';
 
-const hoverStyle = ({ theme, hoverBgColor, hoverIconColor }: SvgIconProps) => css`
+const hoverStyle = ({ hoverBgColor, hoverIconColor }: SvgIconProps) => css`
     &:hover {
-        background-color: ${hoverBgColor || theme.icon.colors.hovered.bgColor};
+        background-color: ${({ theme }) => hoverBgColor || theme.icon.colors.hovered.bgColor};
         * {
-            fill: ${hoverIconColor || theme.icon.colors.hovered.iconColor};
+            fill: ${({ theme }) => hoverIconColor || theme.icon.colors.hovered.iconColor};
         }
     }
 `;
 
-const solidStyle = ({ size, theme, disabled, bgColor, withHoverEffect }: SvgIconProps) => css`
-    padding: ${theme.icon.sizes[size].padding};
-    border-radius: ${theme.icon.borderRadius};
-    background-color: ${disabled ? theme.icon.colors.disabled.bgColor : bgColor || theme.icon.colors.default.bgColor};
+const solidStyle = ({ size, disabled, bgColor, withHoverEffect }: SvgIconProps & { size: IconSizes }) => css`
+    padding: ${({ theme }) => theme.icon.sizes[size].padding};
+    border-radius: ${({ theme }) => theme.icon.borderRadius};
+    background-color: ${({ theme }) => (disabled ? theme.icon.colors.disabled.bgColor : bgColor || theme.icon.colors.default.bgColor)};
 
     ${!disabled && withHoverEffect && hoverStyle}
 `;
@@ -21,7 +22,7 @@ const solidStyle = ({ size, theme, disabled, bgColor, withHoverEffect }: SvgIcon
 export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { colors, sizes } } }) => ({
     colors,
     sizes
-}))<SvgIconProps>`
+}))<SvgIconProps & { size: IconSizes }>`
     overflow: visible;
     font-size: ${({ theme, size }) => theme.icon.sizes[size].iconSize};
     transition: all 100ms linear;
@@ -37,7 +38,6 @@ export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { c
 `;
 
 SvgIconStyled.displayName = 'SvgIcon';
-
 SvgIconStyled.defaultProps = {
     size: 'M',
     fillOpacity: 1

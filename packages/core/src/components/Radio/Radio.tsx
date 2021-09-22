@@ -6,13 +6,14 @@ import { RadioProps } from './types';
 
 export const Radio: FC<RadioProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, size, label, labelPosition, fullWidth, hasError, labelVariant, labelWeight, ...inputProps } = props,
+        const { id, size, label, labelPosition, fullWidth, hasError, labelVariant, labelWeight, className, ...inputProps } = props,
             inputId = useMemo(() => id || label, [id, label]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             isActive = useMemo(() => inputProps.checked || inputProps.defaultChecked, [inputProps.checked, inputProps.defaultChecked]);
 
         return (
             <Styled.RadioWithLabelWrapper
+                className={className}
                 id={`${inputId}-wrapper`}
                 htmlFor={inputId}
                 disabled={inputProps.disabled}
