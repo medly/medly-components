@@ -36,5 +36,5 @@ export { default as Text } from './Text';
 export { default as TextField } from './TextField';
 export { default as Toast } from './Toast';
 export { default as ToastContainer } from './ToastContainer';
-export { addToast } from './ToastContainer/ToastStore';
+export { addToast, removeAllToasts } from './ToastContainer/ToastStore';
 export { default as Toggle } from './Toggle';

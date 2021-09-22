@@ -1,4 +1,5 @@
-import { cleanup, fireEvent, render } from '@test-utils';
+import { removeAllToasts } from '@medly-components/core';
+import { cleanup, fireEvent, render, screen } from '@test-utils';
 import React from 'react';
 import { ToastContainer } from './ToastContainer.component';
 import { addToast } from './ToastStore';
@@ -57,5 +58,18 @@ describe('ToastContainer', () => {
         jest.runAllTimers();
         // should be removed after 5 second
         expect(queryByText('Info message')).toBeNull();
+    });
+
+    it('should remove all toasts from the container at once', () => {
+        render(<ToastContainer />);
+        addToast({ variant: 'success', header: 'Heading 1', message: 'Success message', timer: 2000 });
+        addToast({ variant: 'error', header: 'Heading 1', message: 'Error message', timer: 2000 });
+        addToast({ variant: 'warning', header: 'Heading 1', message: 'Warning message', timer: 2000 });
+        setTimeout(() => {
+            removeAllToasts();
+            expect(screen.queryByText('Success message')).toBeNull();
+            expect(screen.queryByText('Error message')).toBeNull();
+            expect(screen.queryByText('Warning message')).toBeNull();
+        }, 0);
     });
 });
