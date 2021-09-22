@@ -11,9 +11,10 @@ export const NavItem: FC<NavItemProps> & WithStyle = props => {
     const isActive = useMemo(() => path === activeItem || to === activeItem, [to, path, activeItem]),
         onClickHandler = useCallback(
             (event: React.MouseEvent<HTMLLIElement>) => {
+                const newItem = path || to;
                 event.stopPropagation();
                 onClick && onClick(event);
-                (path || to) && activeItemChangeHandler(path || to);
+                newItem && activeItemChangeHandler(newItem);
             },
             [onClick, path]
         );

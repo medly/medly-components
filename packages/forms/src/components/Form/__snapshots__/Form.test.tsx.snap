@@ -1804,6 +1804,7 @@ exports[`Form should render properly with initial state 1`] = `
         class="c20"
         id="languages-wrapper"
         name="languages"
+        type="checkbox"
       >
         <span
           class="c17 c21 c22"
@@ -1914,6 +1915,7 @@ exports[`Form should render properly with initial state 1`] = `
         aria-describedby="role-helper-text"
         class="c33"
         id="role-wrapper"
+        type="radio"
       >
         <span
           class="c17 c21 c22"
@@ -3842,6 +3844,7 @@ exports[`Form should render properly without initial state 1`] = `
   <form
     class="c0"
     id="medly-dynamic-form"
+    name="Test form"
   >
     <h2
       class="c1 c2"
@@ -4034,6 +4037,7 @@ exports[`Form should render properly without initial state 1`] = `
         class="c22"
         id="languages-wrapper"
         name="languages"
+        type="checkbox"
       >
         <span
           class="c1 c23 c24"
@@ -4143,6 +4147,7 @@ exports[`Form should render properly without initial state 1`] = `
         aria-describedby="role-helper-text"
         class="c34"
         id="role-wrapper"
+        type="radio"
       >
         <span
           class="c1 c23 c24"

@@ -53,12 +53,9 @@ export const useForm = (initialState: object): UseFormResult => {
         []
     );
 
-    const handleChange: Handlers['handleChange'] = useCallback(
-        (name, value) => {
-            setValues(val => ({ ...val, [name]: value }));
-        },
-        []
-    );
+    const handleChange: Handlers['handleChange'] = useCallback((name, value) => {
+        setValues(val => ({ ...val, [name]: value }));
+    }, []);
 
     const handleTextChange: Handlers['handleTextChange'] = useCallback(
         memoize(name => event => {
@@ -114,7 +111,7 @@ export const useForm = (initialState: object): UseFormResult => {
 
     const handleFileChange: Handlers['handleFileChange'] = useCallback(
         memoize((name, maxSize) => files => {
-            Array.from(files).find(file => file.size > maxSize)
+            maxSize && Array.from(files).find(file => file.size > maxSize)
                 ? addErrorMessage(name, `File size should be less then ${maxSize / 1000000}MB`)
                 : setValues(val => ({ ...val, [name]: files }));
         }),
