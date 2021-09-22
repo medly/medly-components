@@ -251,50 +251,6 @@ describe('Form', () => {
     });
 
     describe('should handle dates', () => {
-        it('with initial state date', async () => {
-            const mockOnSubmit = jest.fn(),
-                formData = {
-                    birthDate: '02/01/2020',
-                    experience: {
-                        startDate: '02/01/2020',
-                        endDate: '03/02/2020'
-                    }
-                };
-            render(
-                <Form
-                    name="Test Form"
-                    fieldSchema={{
-                        birthDate: {
-                            type: 'date',
-                            displayFormat: 'dd/MM/yyyy',
-                            label: 'Birth Date',
-                            placeholder: 'Birth Date'
-                        },
-                        experience: {
-                            type: 'date-range',
-                            displayFormat: 'dd/MM/yyyy',
-                            label: 'Experience'
-                        }
-                    }}
-                    onSubmit={mockOnSubmit}
-                    initialState={datesInitialState}
-                />
-            );
-            // DatePicker
-            fireEvent.change(screen.getByRole('textbox', { name: 'Birth Date' }), {
-                target: { value: '02/01/2020' }
-            });
-            // DateRangePicker
-            fireEvent.change(screen.getByRole('textbox', { name: 'From' }), {
-                target: { value: '02/01/2020' }
-            });
-            fireEvent.change(screen.getByRole('textbox', { name: 'To' }), {
-                target: { value: '03/02/2020' }
-            });
-            fireEvent.submit(screen.getByRole('form'));
-            expect(mockOnSubmit).toHaveBeenCalledWith(formData);
-        });
-
         it('with default date format', async () => {
             const mockOnSubmit = jest.fn(),
                 formData = {
