@@ -102,7 +102,7 @@ import { ToastContainer, removeAllToasts } from '@medly-components/core';
 export const App: React.FC = () => {
     return (
         <>
-            <button onClick={() => removeAllToasts()}>Clear all Toast Messages</button>
+            <button onClick={removeAllToasts}>Clear all Toast Messages</button>
             <ToastContainer position="top" />
         </>
     );
