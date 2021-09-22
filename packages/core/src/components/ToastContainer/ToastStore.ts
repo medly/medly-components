@@ -8,6 +8,7 @@ export type Toast = ToastProps & {
 
 export const addToast = createEvent<Toast>();
 export const removeToast = createEvent<number>();
+export const removeAllToasts = createEvent();
 
 export const toastStore = createStore<Toast[]>([])
     .on(addToast, (state, toast) => {
@@ -15,4 +16,5 @@ export const toastStore = createStore<Toast[]>([])
         setTimeout(() => removeToast(id), toast.timer || 5000);
         return [...state, { ...toast, id }];
     })
-    .on(removeToast, (state, id) => state.filter(toast => toast.id !== id));
+    .on(removeToast, (state, id) => state.filter(toast => toast.id !== id))
+    .reset(removeAllToasts)
