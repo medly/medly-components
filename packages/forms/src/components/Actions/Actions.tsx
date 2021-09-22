@@ -5,7 +5,7 @@ import { ActionProps } from './types';
 
 export const Actions: React.FC<ActionProps> = React.memo(({ formId, disabled, actionLabel, actionSchema, isLoading }) => {
     return (
-        <Styled.Actions alignItems={actionSchema?.alignItems} flexDirection={actionSchema?.flexDirection}>
+        <Styled.Actions alignItems={actionSchema?.alignItems} flexDirection={actionSchema?.flexDirection || 'row'}>
             {actionSchema ? (
                 <>
                     {actionSchema.actions.map(({ type, label, ...restProps }) => (
