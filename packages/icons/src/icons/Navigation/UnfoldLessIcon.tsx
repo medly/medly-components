@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import UnfoldLessIconSvg from '../../assets/Navigation/unfold_less_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const UnfoldLessIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const UnfoldLessIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'UnfoldLessIcon';
 
-UnfoldLessIcon.Style = SvgIcon;
-UnfoldLessIcon.displayName = 'UnfoldLessIcon';
+const UnfoldLessIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default UnfoldLessIcon

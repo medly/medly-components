@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PictureAsPdfIconSvg from '../../assets/Image/picture_as_pdf_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PictureAsPdfIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PictureAsPdfIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PictureAsPdfIcon';
 
-PictureAsPdfIcon.Style = SvgIcon;
-PictureAsPdfIcon.displayName = 'PictureAsPdfIcon';
+const PictureAsPdfIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PictureAsPdfIcon

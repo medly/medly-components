@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ReportProblemIconSvg from '../../assets/Action/report_problem_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ReportProblemIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ReportProblemIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ReportProblemIcon';
 
-ReportProblemIcon.Style = SvgIcon;
-ReportProblemIcon.displayName = 'ReportProblemIcon';
+const ReportProblemIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ReportProblemIcon

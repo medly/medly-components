@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Storage296LineIconSvg from '../../assets/GSDD/Storage_296_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Storage296LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Storage296LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Storage296LineIcon';
 
-Storage296LineIcon.Style = SvgIcon;
-Storage296LineIcon.displayName = 'Storage296LineIcon';
+const Storage296LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Storage296LineIcon

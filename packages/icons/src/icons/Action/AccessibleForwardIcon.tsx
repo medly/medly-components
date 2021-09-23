@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AccessibleForwardIconSvg from '../../assets/Action/accessible_forward_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AccessibleForwardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AccessibleForwardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'AccessibleForwardIcon';
 
-AccessibleForwardIcon.Style = SvgIcon;
-AccessibleForwardIcon.displayName = 'AccessibleForwardIcon';
+const AccessibleForwardIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AccessibleForwardIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AlternateEmailIconSvg from '../../assets/Communication/alternate_email_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AlternateEmailIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AlternateEmailIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AlternateEmailIcon';
 
-AlternateEmailIcon.Style = SvgIcon;
-AlternateEmailIcon.displayName = 'AlternateEmailIcon';
+const AlternateEmailIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AlternateEmailIcon

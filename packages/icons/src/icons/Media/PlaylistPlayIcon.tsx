@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PlaylistPlayIconSvg from '../../assets/Media/playlist_play_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PlaylistPlayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PlaylistPlayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PlaylistPlayIcon';
 
-PlaylistPlayIcon.Style = SvgIcon;
-PlaylistPlayIcon.displayName = 'PlaylistPlayIcon';
+const PlaylistPlayIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PlaylistPlayIcon

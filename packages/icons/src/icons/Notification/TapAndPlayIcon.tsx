@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import TapAndPlayIconSvg from '../../assets/Notification/tap_and_play_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TapAndPlayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const TapAndPlayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'TapAndPlayIcon';
 
-TapAndPlayIcon.Style = SvgIcon;
-TapAndPlayIcon.displayName = 'TapAndPlayIcon';
+const TapAndPlayIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default TapAndPlayIcon

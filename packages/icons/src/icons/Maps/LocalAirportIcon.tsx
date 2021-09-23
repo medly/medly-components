@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocalAirportIconSvg from '../../assets/Maps/local_airport_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocalAirportIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocalAirportIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LocalAirportIcon';
 
-LocalAirportIcon.Style = SvgIcon;
-LocalAirportIcon.displayName = 'LocalAirportIcon';
+const LocalAirportIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocalAirportIcon

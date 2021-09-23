@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PhonelinkRingIconSvg from '../../assets/Communication/phonelink_ring_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PhonelinkRingIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PhonelinkRingIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PhonelinkRingIcon';
 
-PhonelinkRingIcon.Style = SvgIcon;
-PhonelinkRingIcon.displayName = 'PhonelinkRingIcon';
+const PhonelinkRingIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PhonelinkRingIcon

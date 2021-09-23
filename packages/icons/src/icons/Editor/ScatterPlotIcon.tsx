@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ScatterPlotIconSvg from '../../assets/Editor/scatter_plot_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ScatterPlotIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ScatterPlotIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ScatterPlotIcon';
 
-ScatterPlotIcon.Style = SvgIcon;
-ScatterPlotIcon.displayName = 'ScatterPlotIcon';
+const ScatterPlotIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ScatterPlotIcon

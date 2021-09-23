@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Administration404LineIconSvg from '../../assets/GSDD/Administration_404_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Administration404LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Administration404LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props
         </SvgIcon>
     );
 });
+Component.displayName = 'Administration404LineIcon';
 
-Administration404LineIcon.Style = SvgIcon;
-Administration404LineIcon.displayName = 'Administration404LineIcon';
+const Administration404LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Administration404LineIcon

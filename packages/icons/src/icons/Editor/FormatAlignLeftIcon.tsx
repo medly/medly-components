@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FormatAlignLeftIconSvg from '../../assets/Editor/format_align_left_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FormatAlignLeftIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FormatAlignLeftIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FormatAlignLeftIcon';
 
-FormatAlignLeftIcon.Style = SvgIcon;
-FormatAlignLeftIcon.displayName = 'FormatAlignLeftIcon';
+const FormatAlignLeftIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FormatAlignLeftIcon

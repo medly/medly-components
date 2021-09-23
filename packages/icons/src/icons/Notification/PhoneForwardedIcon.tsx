@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PhoneForwardedIconSvg from '../../assets/Notification/phone_forwarded_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PhoneForwardedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PhoneForwardedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PhoneForwardedIcon';
 
-PhoneForwardedIcon.Style = SvgIcon;
-PhoneForwardedIcon.displayName = 'PhoneForwardedIcon';
+const PhoneForwardedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PhoneForwardedIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import TransferWithinAStationIconSvg from '../../assets/Maps/transfer_within_a_station_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TransferWithinAStationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const TransferWithinAStationIcon: FC<SvgIconProps> & WithStyle = React.memo(prop
         </SvgIcon>
     );
 });
+Component.displayName = 'TransferWithinAStationIcon';
 
-TransferWithinAStationIcon.Style = SvgIcon;
-TransferWithinAStationIcon.displayName = 'TransferWithinAStationIcon';
+const TransferWithinAStationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default TransferWithinAStationIcon

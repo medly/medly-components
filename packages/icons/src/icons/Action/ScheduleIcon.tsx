@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ScheduleIconSvg from '../../assets/Action/schedule_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ScheduleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ScheduleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ScheduleIcon';
 
-ScheduleIcon.Style = SvgIcon;
-ScheduleIcon.displayName = 'ScheduleIcon';
+const ScheduleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ScheduleIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ChatBubbleIconSvg from '../../assets/Communication/chat_bubble_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ChatBubbleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ChatBubbleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ChatBubbleIcon';
 
-ChatBubbleIcon.Style = SvgIcon;
-ChatBubbleIcon.displayName = 'ChatBubbleIcon';
+const ChatBubbleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ChatBubbleIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LinkedCameraIconSvg from '../../assets/Image/linked_camera_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LinkedCameraIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LinkedCameraIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LinkedCameraIcon';
 
-LinkedCameraIcon.Style = SvgIcon;
-LinkedCameraIcon.displayName = 'LinkedCameraIcon';
+const LinkedCameraIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LinkedCameraIcon

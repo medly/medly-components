@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ShowChartIconSvg from '../../assets/Editor/show_chart_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ShowChartIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ShowChartIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ShowChartIcon';
 
-ShowChartIcon.Style = SvgIcon;
-ShowChartIcon.displayName = 'ShowChartIcon';
+const ShowChartIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ShowChartIcon

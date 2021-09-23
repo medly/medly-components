@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import RefreshIconSvg from '../../assets/Navigation/refresh_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RefreshIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const RefreshIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'RefreshIcon';
 
-RefreshIcon.Style = SvgIcon;
-RefreshIcon.displayName = 'RefreshIcon';
+const RefreshIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default RefreshIcon

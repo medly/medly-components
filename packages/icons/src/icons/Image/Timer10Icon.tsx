@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Timer10IconSvg from '../../assets/Image/timer_10_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Timer10Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Timer10Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Timer10Icon';
 
-Timer10Icon.Style = SvgIcon;
-Timer10Icon.displayName = 'Timer10Icon';
+const Timer10Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Timer10Icon

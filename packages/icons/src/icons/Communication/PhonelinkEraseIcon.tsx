@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PhonelinkEraseIconSvg from '../../assets/Communication/phonelink_erase_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PhonelinkEraseIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PhonelinkEraseIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PhonelinkEraseIcon';
 
-PhonelinkEraseIcon.Style = SvgIcon;
-PhonelinkEraseIcon.displayName = 'PhonelinkEraseIcon';
+const PhonelinkEraseIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PhonelinkEraseIcon

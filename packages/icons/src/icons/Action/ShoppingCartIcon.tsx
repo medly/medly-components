@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ShoppingCartIconSvg from '../../assets/Action/shopping_cart_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ShoppingCartIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ShoppingCartIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ShoppingCartIcon';
 
-ShoppingCartIcon.Style = SvgIcon;
-ShoppingCartIcon.displayName = 'ShoppingCartIcon';
+const ShoppingCartIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ShoppingCartIcon

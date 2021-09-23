@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import WhatshotIconSvg from '../../assets/Social/whatshot_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const WhatshotIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const WhatshotIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'WhatshotIcon';
 
-WhatshotIcon.Style = SvgIcon;
-WhatshotIcon.displayName = 'WhatshotIcon';
+const WhatshotIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default WhatshotIcon

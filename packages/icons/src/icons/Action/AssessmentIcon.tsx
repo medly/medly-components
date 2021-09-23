@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AssessmentIconSvg from '../../assets/Action/assessment_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AssessmentIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AssessmentIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AssessmentIcon';
 
-AssessmentIcon.Style = SvgIcon;
-AssessmentIcon.displayName = 'AssessmentIcon';
+const AssessmentIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AssessmentIcon

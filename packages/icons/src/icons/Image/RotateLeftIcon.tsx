@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import RotateLeftIconSvg from '../../assets/Image/rotate_left_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RotateLeftIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const RotateLeftIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'RotateLeftIcon';
 
-RotateLeftIcon.Style = SvgIcon;
-RotateLeftIcon.displayName = 'RotateLeftIcon';
+const RotateLeftIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default RotateLeftIcon

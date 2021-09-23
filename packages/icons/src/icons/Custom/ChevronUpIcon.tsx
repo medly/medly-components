@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ChevronUpIconSvg from '../../assets/Custom/chevron_up_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ChevronUpIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ChevronUpIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ChevronUpIcon';
 
-ChevronUpIcon.Style = SvgIcon;
-ChevronUpIcon.displayName = 'ChevronUpIcon';
+const ChevronUpIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ChevronUpIcon

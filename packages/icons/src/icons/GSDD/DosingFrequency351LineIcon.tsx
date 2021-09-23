@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DosingFrequency351LineIconSvg from '../../assets/GSDD/DosingFrequency_351_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DosingFrequency351LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DosingFrequency351LineIcon: FC<SvgIconProps> & WithStyle = React.memo(prop
         </SvgIcon>
     );
 });
+Component.displayName = 'DosingFrequency351LineIcon';
 
-DosingFrequency351LineIcon.Style = SvgIcon;
-DosingFrequency351LineIcon.displayName = 'DosingFrequency351LineIcon';
+const DosingFrequency351LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DosingFrequency351LineIcon

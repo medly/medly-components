@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ToggleOffIconSvg from '../../assets/Toggle/toggle_off_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ToggleOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ToggleOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ToggleOffIcon';
 
-ToggleOffIcon.Style = SvgIcon;
-ToggleOffIcon.displayName = 'ToggleOffIcon';
+const ToggleOffIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ToggleOffIcon

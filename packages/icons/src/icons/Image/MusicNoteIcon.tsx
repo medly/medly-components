@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import MusicNoteIconSvg from '../../assets/Image/music_note_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MusicNoteIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const MusicNoteIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'MusicNoteIcon';
 
-MusicNoteIcon.Style = SvgIcon;
-MusicNoteIcon.displayName = 'MusicNoteIcon';
+const MusicNoteIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default MusicNoteIcon

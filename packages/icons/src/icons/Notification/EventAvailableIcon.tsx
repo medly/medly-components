@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import EventAvailableIconSvg from '../../assets/Notification/event_available_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const EventAvailableIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const EventAvailableIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'EventAvailableIcon';
 
-EventAvailableIcon.Style = SvgIcon;
-EventAvailableIcon.displayName = 'EventAvailableIcon';
+const EventAvailableIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default EventAvailableIcon

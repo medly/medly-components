@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CancelOutlinedIconSvg from '../../assets/Navigation/cancel_outlined_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CancelOutlinedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CancelOutlinedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CancelOutlinedIcon';
 
-CancelOutlinedIcon.Style = SvgIcon;
-CancelOutlinedIcon.displayName = 'CancelOutlinedIcon';
+const CancelOutlinedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CancelOutlinedIcon

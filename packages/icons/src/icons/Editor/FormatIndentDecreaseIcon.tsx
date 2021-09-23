@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FormatIndentDecreaseIconSvg from '../../assets/Editor/format_indent_decrease_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FormatIndentDecreaseIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FormatIndentDecreaseIcon: FC<SvgIconProps> & WithStyle = React.memo(props 
         </SvgIcon>
     );
 });
+Component.displayName = 'FormatIndentDecreaseIcon';
 
-FormatIndentDecreaseIcon.Style = SvgIcon;
-FormatIndentDecreaseIcon.displayName = 'FormatIndentDecreaseIcon';
+const FormatIndentDecreaseIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FormatIndentDecreaseIcon

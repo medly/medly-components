@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SortByAlphaIconSvg from '../../assets/Media/sort_by_alpha_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SortByAlphaIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SortByAlphaIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SortByAlphaIcon';
 
-SortByAlphaIcon.Style = SvgIcon;
-SortByAlphaIcon.displayName = 'SortByAlphaIcon';
+const SortByAlphaIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SortByAlphaIcon

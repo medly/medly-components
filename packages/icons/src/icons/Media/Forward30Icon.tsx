@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Forward30IconSvg from '../../assets/Media/forward_30_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Forward30Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Forward30Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Forward30Icon';
 
-Forward30Icon.Style = SvgIcon;
-Forward30Icon.displayName = 'Forward30Icon';
+const Forward30Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Forward30Icon

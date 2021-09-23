@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import HowToRegIconSvg from '../../assets/Content/how_to_reg_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const HowToRegIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const HowToRegIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'HowToRegIcon';
 
-HowToRegIcon.Style = SvgIcon;
-HowToRegIcon.displayName = 'HowToRegIcon';
+const HowToRegIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default HowToRegIcon

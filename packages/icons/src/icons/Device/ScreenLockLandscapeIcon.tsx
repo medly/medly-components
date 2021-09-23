@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ScreenLockLandscapeIconSvg from '../../assets/Device/screen_lock_landscape_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ScreenLockLandscapeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ScreenLockLandscapeIcon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'ScreenLockLandscapeIcon';
 
-ScreenLockLandscapeIcon.Style = SvgIcon;
-ScreenLockLandscapeIcon.displayName = 'ScreenLockLandscapeIcon';
+const ScreenLockLandscapeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ScreenLockLandscapeIcon

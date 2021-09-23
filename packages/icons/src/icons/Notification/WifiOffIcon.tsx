@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import WifiOffIconSvg from '../../assets/Notification/wifi_off_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const WifiOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const WifiOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'WifiOffIcon';
 
-WifiOffIcon.Style = SvgIcon;
-WifiOffIcon.displayName = 'WifiOffIcon';
+const WifiOffIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default WifiOffIcon

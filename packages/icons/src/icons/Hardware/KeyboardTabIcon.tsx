@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import KeyboardTabIconSvg from '../../assets/Hardware/keyboard_tab_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const KeyboardTabIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const KeyboardTabIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'KeyboardTabIcon';
 
-KeyboardTabIcon.Style = SvgIcon;
-KeyboardTabIcon.displayName = 'KeyboardTabIcon';
+const KeyboardTabIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default KeyboardTabIcon

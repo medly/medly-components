@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import MoreHorizIconSvg from '../../assets/Navigation/more_horiz_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MoreHorizIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const MoreHorizIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'MoreHorizIcon';
 
-MoreHorizIcon.Style = SvgIcon;
-MoreHorizIcon.displayName = 'MoreHorizIcon';
+const MoreHorizIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default MoreHorizIcon

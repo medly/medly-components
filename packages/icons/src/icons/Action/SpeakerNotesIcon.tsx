@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SpeakerNotesIconSvg from '../../assets/Action/speaker_notes_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SpeakerNotesIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SpeakerNotesIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SpeakerNotesIcon';
 
-SpeakerNotesIcon.Style = SvgIcon;
-SpeakerNotesIcon.displayName = 'SpeakerNotesIcon';
+const SpeakerNotesIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SpeakerNotesIcon

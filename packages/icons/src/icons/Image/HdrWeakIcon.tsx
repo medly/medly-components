@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import HdrWeakIconSvg from '../../assets/Image/hdr_weak_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const HdrWeakIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const HdrWeakIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'HdrWeakIcon';
 
-HdrWeakIcon.Style = SvgIcon;
-HdrWeakIcon.displayName = 'HdrWeakIcon';
+const HdrWeakIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default HdrWeakIcon

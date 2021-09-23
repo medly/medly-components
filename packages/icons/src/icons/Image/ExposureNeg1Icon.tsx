@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ExposureNeg1IconSvg from '../../assets/Image/exposure_neg_1_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ExposureNeg1Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ExposureNeg1Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ExposureNeg1Icon';
 
-ExposureNeg1Icon.Style = SvgIcon;
-ExposureNeg1Icon.displayName = 'ExposureNeg1Icon';
+const ExposureNeg1Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ExposureNeg1Icon

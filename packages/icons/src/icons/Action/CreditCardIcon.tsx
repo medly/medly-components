@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CreditCardIconSvg from '../../assets/Action/credit_card_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CreditCardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CreditCardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CreditCardIcon';
 
-CreditCardIcon.Style = SvgIcon;
-CreditCardIcon.displayName = 'CreditCardIcon';
+const CreditCardIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CreditCardIcon

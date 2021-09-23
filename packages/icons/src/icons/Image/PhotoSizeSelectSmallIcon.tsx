@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PhotoSizeSelectSmallIconSvg from '../../assets/Image/photo_size_select_small_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PhotoSizeSelectSmallIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PhotoSizeSelectSmallIcon: FC<SvgIconProps> & WithStyle = React.memo(props 
         </SvgIcon>
     );
 });
+Component.displayName = 'PhotoSizeSelectSmallIcon';
 
-PhotoSizeSelectSmallIcon.Style = SvgIcon;
-PhotoSizeSelectSmallIcon.displayName = 'PhotoSizeSelectSmallIcon';
+const PhotoSizeSelectSmallIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PhotoSizeSelectSmallIcon

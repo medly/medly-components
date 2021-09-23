@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import TouchAppIconSvg from '../../assets/Action/touch_app_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TouchAppIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const TouchAppIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'TouchAppIcon';
 
-TouchAppIcon.Style = SvgIcon;
-TouchAppIcon.displayName = 'TouchAppIcon';
+const TouchAppIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default TouchAppIcon

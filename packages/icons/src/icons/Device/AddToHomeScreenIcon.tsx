@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AddToHomeScreenIconSvg from '../../assets/Device/add_to_home_screen_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AddToHomeScreenIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AddToHomeScreenIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AddToHomeScreenIcon';
 
-AddToHomeScreenIcon.Style = SvgIcon;
-AddToHomeScreenIcon.displayName = 'AddToHomeScreenIcon';
+const AddToHomeScreenIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AddToHomeScreenIcon

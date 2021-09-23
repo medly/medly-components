@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ViewComfyIconSvg from '../../assets/Image/view_comfy_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ViewComfyIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ViewComfyIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ViewComfyIcon';
 
-ViewComfyIcon.Style = SvgIcon;
-ViewComfyIcon.displayName = 'ViewComfyIcon';
+const ViewComfyIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ViewComfyIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CropRotateIconSvg from '../../assets/Image/crop_rotate_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CropRotateIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CropRotateIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CropRotateIcon';
 
-CropRotateIcon.Style = SvgIcon;
-CropRotateIcon.displayName = 'CropRotateIcon';
+const CropRotateIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CropRotateIcon

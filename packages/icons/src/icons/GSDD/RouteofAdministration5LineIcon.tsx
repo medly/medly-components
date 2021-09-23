@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import RouteofAdministration5LineIconSvg from '../../assets/GSDD/RouteofAdministration_5_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RouteofAdministration5LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const RouteofAdministration5LineIcon: FC<SvgIconProps> & WithStyle = React.memo(
         </SvgIcon>
     );
 });
+Component.displayName = 'RouteofAdministration5LineIcon';
 
-RouteofAdministration5LineIcon.Style = SvgIcon;
-RouteofAdministration5LineIcon.displayName = 'RouteofAdministration5LineIcon';
+const RouteofAdministration5LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default RouteofAdministration5LineIcon

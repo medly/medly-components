@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import BatteryStdIconSvg from '../../assets/Device/battery_std_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BatteryStdIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const BatteryStdIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'BatteryStdIcon';
 
-BatteryStdIcon.Style = SvgIcon;
-BatteryStdIcon.displayName = 'BatteryStdIcon';
+const BatteryStdIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default BatteryStdIcon

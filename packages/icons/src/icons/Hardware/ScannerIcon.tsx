@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ScannerIconSvg from '../../assets/Hardware/scanner_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ScannerIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ScannerIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ScannerIcon';
 
-ScannerIcon.Style = SvgIcon;
-ScannerIcon.displayName = 'ScannerIcon';
+const ScannerIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ScannerIcon

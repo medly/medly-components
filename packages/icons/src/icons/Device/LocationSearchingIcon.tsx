@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocationSearchingIconSvg from '../../assets/Device/location_searching_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocationSearchingIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocationSearchingIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'LocationSearchingIcon';
 
-LocationSearchingIcon.Style = SvgIcon;
-LocationSearchingIcon.displayName = 'LocationSearchingIcon';
+const LocationSearchingIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocationSearchingIcon

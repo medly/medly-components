@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import RepeatOneIconSvg from '../../assets/Media/repeat_one_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RepeatOneIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const RepeatOneIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'RepeatOneIcon';
 
-RepeatOneIcon.Style = SvgIcon;
-RepeatOneIcon.displayName = 'RepeatOneIcon';
+const RepeatOneIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default RepeatOneIcon

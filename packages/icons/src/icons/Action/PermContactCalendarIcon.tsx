@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PermContactCalendarIconSvg from '../../assets/Action/perm_contact_calendar_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PermContactCalendarIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PermContactCalendarIcon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'PermContactCalendarIcon';
 
-PermContactCalendarIcon.Style = SvgIcon;
-PermContactCalendarIcon.displayName = 'PermContactCalendarIcon';
+const PermContactCalendarIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PermContactCalendarIcon

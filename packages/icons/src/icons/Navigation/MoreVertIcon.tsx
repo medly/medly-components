@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import MoreVertIconSvg from '../../assets/Navigation/more_vert_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MoreVertIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const MoreVertIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'MoreVertIcon';
 
-MoreVertIcon.Style = SvgIcon;
-MoreVertIcon.displayName = 'MoreVertIcon';
+const MoreVertIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default MoreVertIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import VoiceOverOffIconSvg from '../../assets/Action/voice_over_off_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const VoiceOverOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const VoiceOverOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'VoiceOverOffIcon';
 
-VoiceOverOffIcon.Style = SvgIcon;
-VoiceOverOffIcon.displayName = 'VoiceOverOffIcon';
+const VoiceOverOffIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default VoiceOverOffIcon

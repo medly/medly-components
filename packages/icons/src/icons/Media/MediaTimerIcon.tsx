@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import MediaTimerIconSvg from '../../assets/Media/media_timer_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MediaTimerIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const MediaTimerIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'MediaTimerIcon';
 
-MediaTimerIcon.Style = SvgIcon;
-MediaTimerIcon.displayName = 'MediaTimerIcon';
+const MediaTimerIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default MediaTimerIcon

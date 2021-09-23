@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import OfflineBoltIconSvg from '../../assets/Action/offline_bolt_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const OfflineBoltIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const OfflineBoltIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'OfflineBoltIcon';
 
-OfflineBoltIcon.Style = SvgIcon;
-OfflineBoltIcon.displayName = 'OfflineBoltIcon';
+const OfflineBoltIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default OfflineBoltIcon

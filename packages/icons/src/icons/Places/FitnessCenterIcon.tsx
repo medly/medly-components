@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FitnessCenterIconSvg from '../../assets/Places/fitness_center_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FitnessCenterIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FitnessCenterIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FitnessCenterIcon';
 
-FitnessCenterIcon.Style = SvgIcon;
-FitnessCenterIcon.displayName = 'FitnessCenterIcon';
+const FitnessCenterIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FitnessCenterIcon

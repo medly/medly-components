@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import BorderLeftIconSvg from '../../assets/Editor/border_left_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BorderLeftIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const BorderLeftIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'BorderLeftIcon';
 
-BorderLeftIcon.Style = SvgIcon;
-BorderLeftIcon.displayName = 'BorderLeftIcon';
+const BorderLeftIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default BorderLeftIcon

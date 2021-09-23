@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import TrafficIconSvg from '../../assets/Maps/traffic_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TrafficIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const TrafficIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'TrafficIcon';
 
-TrafficIcon.Style = SvgIcon;
-TrafficIcon.displayName = 'TrafficIcon';
+const TrafficIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default TrafficIcon

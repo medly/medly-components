@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import InsertChartOutlinedIconSvg from '../../assets/Editor/insert_chart_outlined_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const InsertChartOutlinedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const InsertChartOutlinedIcon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'InsertChartOutlinedIcon';
 
-InsertChartOutlinedIcon.Style = SvgIcon;
-InsertChartOutlinedIcon.displayName = 'InsertChartOutlinedIcon';
+const InsertChartOutlinedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default InsertChartOutlinedIcon

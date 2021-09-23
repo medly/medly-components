@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LineWeightIconSvg from '../../assets/Action/line_weight_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LineWeightIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LineWeightIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LineWeightIcon';
 
-LineWeightIcon.Style = SvgIcon;
-LineWeightIcon.displayName = 'LineWeightIcon';
+const LineWeightIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LineWeightIcon

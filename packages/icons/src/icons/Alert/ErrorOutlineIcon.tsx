@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ErrorOutlineIconSvg from '../../assets/Alert/error_outline_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ErrorOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ErrorOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ErrorOutlineIcon';
 
-ErrorOutlineIcon.Style = SvgIcon;
-ErrorOutlineIcon.displayName = 'ErrorOutlineIcon';
+const ErrorOutlineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ErrorOutlineIcon

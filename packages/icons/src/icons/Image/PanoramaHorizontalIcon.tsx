@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PanoramaHorizontalIconSvg from '../../assets/Image/panorama_horizontal_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PanoramaHorizontalIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PanoramaHorizontalIcon: FC<SvgIconProps> & WithStyle = React.memo(props =>
         </SvgIcon>
     );
 });
+Component.displayName = 'PanoramaHorizontalIcon';
 
-PanoramaHorizontalIcon.Style = SvgIcon;
-PanoramaHorizontalIcon.displayName = 'PanoramaHorizontalIcon';
+const PanoramaHorizontalIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PanoramaHorizontalIcon

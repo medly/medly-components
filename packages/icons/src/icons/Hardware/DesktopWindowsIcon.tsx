@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DesktopWindowsIconSvg from '../../assets/Hardware/desktop_windows_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DesktopWindowsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DesktopWindowsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DesktopWindowsIcon';
 
-DesktopWindowsIcon.Style = SvgIcon;
-DesktopWindowsIcon.displayName = 'DesktopWindowsIcon';
+const DesktopWindowsIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DesktopWindowsIcon

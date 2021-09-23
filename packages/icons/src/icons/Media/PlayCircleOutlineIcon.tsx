@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PlayCircleOutlineIconSvg from '../../assets/Media/play_circle_outline_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PlayCircleOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PlayCircleOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'PlayCircleOutlineIcon';
 
-PlayCircleOutlineIcon.Style = SvgIcon;
-PlayCircleOutlineIcon.displayName = 'PlayCircleOutlineIcon';
+const PlayCircleOutlineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PlayCircleOutlineIcon

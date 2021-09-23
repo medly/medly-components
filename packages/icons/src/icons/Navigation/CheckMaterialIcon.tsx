@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CheckMaterialIconSvg from '../../assets/Navigation/check_material_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CheckMaterialIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CheckMaterialIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CheckMaterialIcon';
 
-CheckMaterialIcon.Style = SvgIcon;
-CheckMaterialIcon.displayName = 'CheckMaterialIcon';
+const CheckMaterialIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CheckMaterialIcon

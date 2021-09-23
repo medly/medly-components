@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ReportGmailerrorredIconSvg from '../../assets/Content/report_gmailerrorred_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ReportGmailerrorredIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ReportGmailerrorredIcon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'ReportGmailerrorredIcon';
 
-ReportGmailerrorredIcon.Style = SvgIcon;
-ReportGmailerrorredIcon.displayName = 'ReportGmailerrorredIcon';
+const ReportGmailerrorredIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ReportGmailerrorredIcon

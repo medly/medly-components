@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SpeakerIconSvg from '../../assets/Hardware/speaker_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SpeakerIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SpeakerIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SpeakerIcon';
 
-SpeakerIcon.Style = SvgIcon;
-SpeakerIcon.displayName = 'SpeakerIcon';
+const SpeakerIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SpeakerIcon

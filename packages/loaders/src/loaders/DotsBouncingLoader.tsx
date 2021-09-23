@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DotsBouncingLoaderSvg from '../assets/DotsBouncingLoader.svg';
 import SvgLoader, { SvgLoaderProps } from '../SvgLoader';
 
-const Component: FC<SvgLoaderProps> & WithStyle = React.memo(props => (
+const Component: FC<SvgLoaderProps> = React.memo(props => (
     <SvgLoader {...props}>
         <DotsBouncingLoaderSvg {...props} width="1em" height="0.5em" />
     </SvgLoader>

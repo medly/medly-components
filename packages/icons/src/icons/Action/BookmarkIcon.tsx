@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import BookmarkIconSvg from '../../assets/Action/bookmark_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BookmarkIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const BookmarkIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'BookmarkIcon';
 
-BookmarkIcon.Style = SvgIcon;
-BookmarkIcon.displayName = 'BookmarkIcon';
+const BookmarkIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default BookmarkIcon

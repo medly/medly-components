@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import KeyboardHideIconSvg from '../../assets/Hardware/keyboard_hide_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const KeyboardHideIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const KeyboardHideIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'KeyboardHideIcon';
 
-KeyboardHideIcon.Style = SvgIcon;
-KeyboardHideIcon.displayName = 'KeyboardHideIcon';
+const KeyboardHideIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default KeyboardHideIcon

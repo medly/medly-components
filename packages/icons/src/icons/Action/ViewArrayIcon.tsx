@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ViewArrayIconSvg from '../../assets/Action/view_array_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ViewArrayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ViewArrayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ViewArrayIcon';
 
-ViewArrayIcon.Style = SvgIcon;
-ViewArrayIcon.displayName = 'ViewArrayIcon';
+const ViewArrayIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ViewArrayIcon

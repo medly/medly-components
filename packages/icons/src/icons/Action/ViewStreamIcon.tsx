@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ViewStreamIconSvg from '../../assets/Action/view_stream_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ViewStreamIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ViewStreamIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ViewStreamIcon';
 
-ViewStreamIcon.Style = SvgIcon;
-ViewStreamIcon.displayName = 'ViewStreamIcon';
+const ViewStreamIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ViewStreamIcon

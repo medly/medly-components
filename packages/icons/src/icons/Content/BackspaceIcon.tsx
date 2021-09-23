@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import BackspaceIconSvg from '../../assets/Content/backspace_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BackspaceIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const BackspaceIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'BackspaceIcon';
 
-BackspaceIcon.Style = SvgIcon;
-BackspaceIcon.displayName = 'BackspaceIcon';
+const BackspaceIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default BackspaceIcon

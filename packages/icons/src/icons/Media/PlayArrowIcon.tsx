@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PlayArrowIconSvg from '../../assets/Media/play_arrow_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PlayArrowIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PlayArrowIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PlayArrowIcon';
 
-PlayArrowIcon.Style = SvgIcon;
-PlayArrowIcon.displayName = 'PlayArrowIcon';
+const PlayArrowIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PlayArrowIcon

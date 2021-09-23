@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DeleteSweepIconSvg from '../../assets/Content/delete_sweep_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DeleteSweepIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DeleteSweepIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DeleteSweepIcon';
 
-DeleteSweepIcon.Style = SvgIcon;
-DeleteSweepIcon.displayName = 'DeleteSweepIcon';
+const DeleteSweepIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DeleteSweepIcon

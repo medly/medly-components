@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import NoEncryptionIconSvg from '../../assets/Notification/no_encryption_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const NoEncryptionIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const NoEncryptionIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'NoEncryptionIcon';
 
-NoEncryptionIcon.Style = SvgIcon;
-NoEncryptionIcon.displayName = 'NoEncryptionIcon';
+const NoEncryptionIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default NoEncryptionIcon

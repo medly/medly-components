@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Crop54IconSvg from '../../assets/Image/crop_5_4_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Crop54Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Crop54Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Crop54Icon';
 
-Crop54Icon.Style = SvgIcon;
-Crop54Icon.displayName = 'Crop54Icon';
+const Crop54Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Crop54Icon

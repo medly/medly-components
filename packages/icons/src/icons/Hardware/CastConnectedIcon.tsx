@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CastConnectedIconSvg from '../../assets/Hardware/cast_connected_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CastConnectedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CastConnectedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CastConnectedIcon';
 
-CastConnectedIcon.Style = SvgIcon;
-CastConnectedIcon.displayName = 'CastConnectedIcon';
+const CastConnectedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CastConnectedIcon

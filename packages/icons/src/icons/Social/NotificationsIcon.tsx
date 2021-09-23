@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import NotificationsIconSvg from '../../assets/Social/notifications_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const NotificationsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const NotificationsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'NotificationsIcon';
 
-NotificationsIcon.Style = SvgIcon;
-NotificationsIcon.displayName = 'NotificationsIcon';
+const NotificationsIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default NotificationsIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import RestoreFromTrashIconSvg from '../../assets/Action/restore_from_trash_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RestoreFromTrashIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const RestoreFromTrashIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'RestoreFromTrashIcon';
 
-RestoreFromTrashIcon.Style = SvgIcon;
-RestoreFromTrashIcon.displayName = 'RestoreFromTrashIcon';
+const RestoreFromTrashIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default RestoreFromTrashIcon

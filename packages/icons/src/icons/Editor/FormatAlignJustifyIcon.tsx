@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FormatAlignJustifyIconSvg from '../../assets/Editor/format_align_justify_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FormatAlignJustifyIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FormatAlignJustifyIcon: FC<SvgIconProps> & WithStyle = React.memo(props =>
         </SvgIcon>
     );
 });
+Component.displayName = 'FormatAlignJustifyIcon';
 
-FormatAlignJustifyIcon.Style = SvgIcon;
-FormatAlignJustifyIcon.displayName = 'FormatAlignJustifyIcon';
+const FormatAlignJustifyIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FormatAlignJustifyIcon

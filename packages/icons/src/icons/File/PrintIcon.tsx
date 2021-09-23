@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PrintIconSvg from '../../assets/File/print_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PrintIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PrintIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PrintIcon';
 
-PrintIcon.Style = SvgIcon;
-PrintIcon.displayName = 'PrintIcon';
+const PrintIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PrintIcon

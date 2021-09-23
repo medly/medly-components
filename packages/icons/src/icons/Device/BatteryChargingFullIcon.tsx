@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import BatteryChargingFullIconSvg from '../../assets/Device/battery_charging_full_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BatteryChargingFullIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const BatteryChargingFullIcon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'BatteryChargingFullIcon';
 
-BatteryChargingFullIcon.Style = SvgIcon;
-BatteryChargingFullIcon.displayName = 'BatteryChargingFullIcon';
+const BatteryChargingFullIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default BatteryChargingFullIcon

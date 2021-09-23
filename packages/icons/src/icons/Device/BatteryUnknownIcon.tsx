@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import BatteryUnknownIconSvg from '../../assets/Device/battery_unknown_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BatteryUnknownIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const BatteryUnknownIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'BatteryUnknownIcon';
 
-BatteryUnknownIcon.Style = SvgIcon;
-BatteryUnknownIcon.displayName = 'BatteryUnknownIcon';
+const BatteryUnknownIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default BatteryUnknownIcon

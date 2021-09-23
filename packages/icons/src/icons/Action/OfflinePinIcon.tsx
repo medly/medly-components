@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import OfflinePinIconSvg from '../../assets/Action/offline_pin_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const OfflinePinIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const OfflinePinIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'OfflinePinIcon';
 
-OfflinePinIcon.Style = SvgIcon;
-OfflinePinIcon.displayName = 'OfflinePinIcon';
+const OfflinePinIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default OfflinePinIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocalSeeIconSvg from '../../assets/Maps/local_see_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocalSeeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocalSeeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LocalSeeIcon';
 
-LocalSeeIcon.Style = SvgIcon;
-LocalSeeIcon.displayName = 'LocalSeeIcon';
+const LocalSeeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocalSeeIcon

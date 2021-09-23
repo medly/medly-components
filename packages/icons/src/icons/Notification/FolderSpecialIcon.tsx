@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FolderSpecialIconSvg from '../../assets/Notification/folder_special_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FolderSpecialIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FolderSpecialIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FolderSpecialIcon';
 
-FolderSpecialIcon.Style = SvgIcon;
-FolderSpecialIcon.displayName = 'FolderSpecialIcon';
+const FolderSpecialIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FolderSpecialIcon

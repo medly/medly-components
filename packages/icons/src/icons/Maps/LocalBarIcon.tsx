@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocalBarIconSvg from '../../assets/Maps/local_bar_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocalBarIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocalBarIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LocalBarIcon';
 
-LocalBarIcon.Style = SvgIcon;
-LocalBarIcon.displayName = 'LocalBarIcon';
+const LocalBarIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocalBarIcon

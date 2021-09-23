@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Brightness2IconSvg from '../../assets/Image/brightness_2_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Brightness2Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Brightness2Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Brightness2Icon';
 
-Brightness2Icon.Style = SvgIcon;
-Brightness2Icon.displayName = 'Brightness2Icon';
+const Brightness2Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Brightness2Icon

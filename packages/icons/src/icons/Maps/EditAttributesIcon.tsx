@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import EditAttributesIconSvg from '../../assets/Maps/edit_attributes_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const EditAttributesIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const EditAttributesIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'EditAttributesIcon';
 
-EditAttributesIcon.Style = SvgIcon;
-EditAttributesIcon.displayName = 'EditAttributesIcon';
+const EditAttributesIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default EditAttributesIcon

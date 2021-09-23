@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AssignmentReturnedIconSvg from '../../assets/Action/assignment_returned_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AssignmentReturnedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AssignmentReturnedIcon: FC<SvgIconProps> & WithStyle = React.memo(props =>
         </SvgIcon>
     );
 });
+Component.displayName = 'AssignmentReturnedIcon';
 
-AssignmentReturnedIcon.Style = SvgIcon;
-AssignmentReturnedIcon.displayName = 'AssignmentReturnedIcon';
+const AssignmentReturnedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AssignmentReturnedIcon

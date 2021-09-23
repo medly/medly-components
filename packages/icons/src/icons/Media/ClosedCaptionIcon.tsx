@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ClosedCaptionIconSvg from '../../assets/Media/closed_caption_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ClosedCaptionIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ClosedCaptionIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ClosedCaptionIcon';
 
-ClosedCaptionIcon.Style = SvgIcon;
-ClosedCaptionIcon.displayName = 'ClosedCaptionIcon';
+const ClosedCaptionIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ClosedCaptionIcon

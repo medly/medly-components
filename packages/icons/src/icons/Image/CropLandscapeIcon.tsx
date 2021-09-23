@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CropLandscapeIconSvg from '../../assets/Image/crop_landscape_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CropLandscapeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CropLandscapeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CropLandscapeIcon';
 
-CropLandscapeIcon.Style = SvgIcon;
-CropLandscapeIcon.displayName = 'CropLandscapeIcon';
+const CropLandscapeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CropLandscapeIcon

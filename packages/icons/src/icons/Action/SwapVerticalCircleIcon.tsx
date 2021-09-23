@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SwapVerticalCircleIconSvg from '../../assets/Action/swap_vertical_circle_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SwapVerticalCircleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SwapVerticalCircleIcon: FC<SvgIconProps> & WithStyle = React.memo(props =>
         </SvgIcon>
     );
 });
+Component.displayName = 'SwapVerticalCircleIcon';
 
-SwapVerticalCircleIcon.Style = SvgIcon;
-SwapVerticalCircleIcon.displayName = 'SwapVerticalCircleIcon';
+const SwapVerticalCircleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SwapVerticalCircleIcon

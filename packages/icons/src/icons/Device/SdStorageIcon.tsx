@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SdStorageIconSvg from '../../assets/Device/sd_storage_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SdStorageIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SdStorageIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SdStorageIcon';
 
-SdStorageIcon.Style = SvgIcon;
-SdStorageIcon.displayName = 'SdStorageIcon';
+const SdStorageIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SdStorageIcon

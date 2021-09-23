@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CopyrightIconSvg from '../../assets/Action/copyright_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CopyrightIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CopyrightIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CopyrightIcon';
 
-CopyrightIcon.Style = SvgIcon;
-CopyrightIcon.displayName = 'CopyrightIcon';
+const CopyrightIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CopyrightIcon

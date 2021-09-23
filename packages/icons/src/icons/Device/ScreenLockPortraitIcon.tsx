@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ScreenLockPortraitIconSvg from '../../assets/Device/screen_lock_portrait_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ScreenLockPortraitIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ScreenLockPortraitIcon: FC<SvgIconProps> & WithStyle = React.memo(props =>
         </SvgIcon>
     );
 });
+Component.displayName = 'ScreenLockPortraitIcon';
 
-ScreenLockPortraitIcon.Style = SvgIcon;
-ScreenLockPortraitIcon.displayName = 'ScreenLockPortraitIcon';
+const ScreenLockPortraitIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ScreenLockPortraitIcon

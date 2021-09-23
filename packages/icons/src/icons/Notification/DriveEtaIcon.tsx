@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DriveEtaIconSvg from '../../assets/Notification/drive_eta_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DriveEtaIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DriveEtaIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DriveEtaIcon';
 
-DriveEtaIcon.Style = SvgIcon;
-DriveEtaIcon.displayName = 'DriveEtaIcon';
+const DriveEtaIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DriveEtaIcon

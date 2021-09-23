@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import KeyboardBackspaceIconSvg from '../../assets/Hardware/keyboard_backspace_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const KeyboardBackspaceIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const KeyboardBackspaceIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'KeyboardBackspaceIcon';
 
-KeyboardBackspaceIcon.Style = SvgIcon;
-KeyboardBackspaceIcon.displayName = 'KeyboardBackspaceIcon';
+const KeyboardBackspaceIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default KeyboardBackspaceIcon

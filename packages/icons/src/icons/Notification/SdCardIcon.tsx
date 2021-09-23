@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SdCardIconSvg from '../../assets/Notification/sd_card_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SdCardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SdCardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SdCardIcon';
 
-SdCardIcon.Style = SvgIcon;
-SdCardIcon.displayName = 'SdCardIcon';
+const SdCardIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SdCardIcon

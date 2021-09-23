@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import MusicVideoIconSvg from '../../assets/Media/music_video_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MusicVideoIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const MusicVideoIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'MusicVideoIcon';
 
-MusicVideoIcon.Style = SvgIcon;
-MusicVideoIcon.displayName = 'MusicVideoIcon';
+const MusicVideoIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default MusicVideoIcon

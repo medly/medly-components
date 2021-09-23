@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AddAlarmIconSvg from '../../assets/Device/add_alarm_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AddAlarmIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AddAlarmIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AddAlarmIcon';
 
-AddAlarmIcon.Style = SvgIcon;
-AddAlarmIcon.displayName = 'AddAlarmIcon';
+const AddAlarmIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AddAlarmIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PauseCircleFilledIconSvg from '../../assets/Media/pause_circle_filled_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PauseCircleFilledIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PauseCircleFilledIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'PauseCircleFilledIcon';
 
-PauseCircleFilledIcon.Style = SvgIcon;
-PauseCircleFilledIcon.displayName = 'PauseCircleFilledIcon';
+const PauseCircleFilledIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PauseCircleFilledIcon

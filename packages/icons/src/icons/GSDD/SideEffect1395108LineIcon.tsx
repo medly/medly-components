@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SideEffect1395108LineIconSvg from '../../assets/GSDD/SideEffect_1395_108_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SideEffect1395108LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SideEffect1395108LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props
         </SvgIcon>
     );
 });
+Component.displayName = 'SideEffect1395108LineIcon';
 
-SideEffect1395108LineIcon.Style = SvgIcon;
-SideEffect1395108LineIcon.displayName = 'SideEffect1395108LineIcon';
+const SideEffect1395108LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SideEffect1395108LineIcon

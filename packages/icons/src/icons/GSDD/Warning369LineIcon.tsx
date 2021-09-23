@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Warning369LineIconSvg from '../../assets/GSDD/Warning_369_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Warning369LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Warning369LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Warning369LineIcon';
 
-Warning369LineIcon.Style = SvgIcon;
-Warning369LineIcon.displayName = 'Warning369LineIcon';
+const Warning369LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Warning369LineIcon

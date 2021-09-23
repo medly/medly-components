@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import StayPrimaryPortraitIconSvg from '../../assets/Communication/stay_primary_portrait_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const StayPrimaryPortraitIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const StayPrimaryPortraitIcon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'StayPrimaryPortraitIcon';
 
-StayPrimaryPortraitIcon.Style = SvgIcon;
-StayPrimaryPortraitIcon.displayName = 'StayPrimaryPortraitIcon';
+const StayPrimaryPortraitIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default StayPrimaryPortraitIcon

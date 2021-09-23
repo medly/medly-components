@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ViewCarouselIconSvg from '../../assets/Action/view_carousel_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ViewCarouselIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ViewCarouselIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ViewCarouselIcon';
 
-ViewCarouselIcon.Style = SvgIcon;
-ViewCarouselIcon.displayName = 'ViewCarouselIcon';
+const ViewCarouselIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ViewCarouselIcon

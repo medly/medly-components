@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import HelpOutlineIconSvg from '../../assets/Action/help_outline_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const HelpOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const HelpOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'HelpOutlineIcon';
 
-HelpOutlineIcon.Style = SvgIcon;
-HelpOutlineIcon.displayName = 'HelpOutlineIcon';
+const HelpOutlineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default HelpOutlineIcon

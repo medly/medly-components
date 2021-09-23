@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DesktopMacIconSvg from '../../assets/Hardware/desktop_mac_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DesktopMacIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DesktopMacIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DesktopMacIcon';
 
-DesktopMacIcon.Style = SvgIcon;
-DesktopMacIcon.displayName = 'DesktopMacIcon';
+const DesktopMacIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DesktopMacIcon

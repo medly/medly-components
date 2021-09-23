@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ReimbursementPricing129LineIconSvg from '../../assets/GSDD/Reimbursement_Pricing_129_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ReimbursementPricing129LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ReimbursementPricing129LineIcon: FC<SvgIconProps> & WithStyle = React.memo
         </SvgIcon>
     );
 });
+Component.displayName = 'ReimbursementPricing129LineIcon';
 
-ReimbursementPricing129LineIcon.Style = SvgIcon;
-ReimbursementPricing129LineIcon.displayName = 'ReimbursementPricing129LineIcon';
+const ReimbursementPricing129LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ReimbursementPricing129LineIcon

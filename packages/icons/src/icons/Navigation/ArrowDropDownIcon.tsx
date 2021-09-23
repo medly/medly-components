@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ArrowDropDownIconSvg from '../../assets/Navigation/arrow_drop_down_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ArrowDropDownIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ArrowDropDownIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ArrowDropDownIcon';
 
-ArrowDropDownIcon.Style = SvgIcon;
-ArrowDropDownIcon.displayName = 'ArrowDropDownIcon';
+const ArrowDropDownIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ArrowDropDownIcon
