@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/loaders",
-    "version": "1.2.35",
+    "version": "1.2.36",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
