@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import EventBusyIconSvg from '../../assets/Notification/event_busy_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const EventBusyIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const EventBusyIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'EventBusyIcon';
 
-EventBusyIcon.Style = SvgIcon;
-EventBusyIcon.displayName = 'EventBusyIcon';
+const EventBusyIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default EventBusyIcon

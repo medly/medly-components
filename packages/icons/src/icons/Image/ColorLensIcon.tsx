@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ColorLensIconSvg from '../../assets/Image/color_lens_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ColorLensIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ColorLensIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ColorLensIcon';
 
-ColorLensIcon.Style = SvgIcon;
-ColorLensIcon.displayName = 'ColorLensIcon';
+const ColorLensIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ColorLensIcon

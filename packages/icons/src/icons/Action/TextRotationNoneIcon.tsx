@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import TextRotationNoneIconSvg from '../../assets/Action/text_rotation_none_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TextRotationNoneIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const TextRotationNoneIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'TextRotationNoneIcon';
 
-TextRotationNoneIcon.Style = SvgIcon;
-TextRotationNoneIcon.displayName = 'TextRotationNoneIcon';
+const TextRotationNoneIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default TextRotationNoneIcon

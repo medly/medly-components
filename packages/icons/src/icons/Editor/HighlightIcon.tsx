@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import HighlightIconSvg from '../../assets/Editor/highlight_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const HighlightIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const HighlightIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'HighlightIcon';
 
-HighlightIcon.Style = SvgIcon;
-HighlightIcon.displayName = 'HighlightIcon';
+const HighlightIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default HighlightIcon

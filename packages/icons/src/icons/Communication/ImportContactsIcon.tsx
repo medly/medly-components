@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ImportContactsIconSvg from '../../assets/Communication/import_contacts_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ImportContactsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ImportContactsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ImportContactsIcon';
 
-ImportContactsIcon.Style = SvgIcon;
-ImportContactsIcon.displayName = 'ImportContactsIcon';
+const ImportContactsIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ImportContactsIcon

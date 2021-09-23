@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import StarBorderPurple500IconSvg from '../../assets/Toggle/star_border_purple500_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const StarBorderPurple500Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const StarBorderPurple500Icon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'StarBorderPurple500Icon';
 
-StarBorderPurple500Icon.Style = SvgIcon;
-StarBorderPurple500Icon.displayName = 'StarBorderPurple500Icon';
+const StarBorderPurple500Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default StarBorderPurple500Icon

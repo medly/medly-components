@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import WallpaperIconSvg from '../../assets/Device/wallpaper_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const WallpaperIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const WallpaperIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'WallpaperIcon';
 
-WallpaperIcon.Style = SvgIcon;
-WallpaperIcon.displayName = 'WallpaperIcon';
+const WallpaperIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default WallpaperIcon

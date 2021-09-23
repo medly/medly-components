@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import RingVolumeIconSvg from '../../assets/Communication/ring_volume_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RingVolumeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const RingVolumeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'RingVolumeIcon';
 
-RingVolumeIcon.Style = SvgIcon;
-RingVolumeIcon.displayName = 'RingVolumeIcon';
+const RingVolumeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default RingVolumeIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import RecentActorsIconSvg from '../../assets/Media/recent_actors_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RecentActorsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const RecentActorsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'RecentActorsIcon';
 
-RecentActorsIcon.Style = SvgIcon;
-RecentActorsIcon.displayName = 'RecentActorsIcon';
+const RecentActorsIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default RecentActorsIcon

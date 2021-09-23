@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import NewReleasesIconSvg from '../../assets/Media/new_releases_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const NewReleasesIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const NewReleasesIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'NewReleasesIcon';
 
-NewReleasesIcon.Style = SvgIcon;
-NewReleasesIcon.displayName = 'NewReleasesIcon';
+const NewReleasesIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default NewReleasesIcon

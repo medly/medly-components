@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import WifiLockIconSvg from '../../assets/Device/wifi_lock_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const WifiLockIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const WifiLockIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'WifiLockIcon';
 
-WifiLockIcon.Style = SvgIcon;
-WifiLockIcon.displayName = 'WifiLockIcon';
+const WifiLockIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default WifiLockIcon

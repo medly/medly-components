@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FilterCenterFocusIconSvg from '../../assets/Image/filter_center_focus_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FilterCenterFocusIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FilterCenterFocusIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'FilterCenterFocusIcon';
 
-FilterCenterFocusIcon.Style = SvgIcon;
-FilterCenterFocusIcon.displayName = 'FilterCenterFocusIcon';
+const FilterCenterFocusIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FilterCenterFocusIcon

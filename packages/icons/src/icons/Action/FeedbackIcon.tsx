@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FeedbackIconSvg from '../../assets/Action/feedback_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FeedbackIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FeedbackIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FeedbackIcon';
 
-FeedbackIcon.Style = SvgIcon;
-FeedbackIcon.displayName = 'FeedbackIcon';
+const FeedbackIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FeedbackIcon

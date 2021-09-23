@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ArrowDropDownCircleIconSvg from '../../assets/Navigation/arrow_drop_down_circle_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ArrowDropDownCircleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ArrowDropDownCircleIcon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'ArrowDropDownCircleIcon';
 
-ArrowDropDownCircleIcon.Style = SvgIcon;
-ArrowDropDownCircleIcon.displayName = 'ArrowDropDownCircleIcon';
+const ArrowDropDownCircleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ArrowDropDownCircleIcon

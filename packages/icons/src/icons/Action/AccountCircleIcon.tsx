@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AccountCircleIconSvg from '../../assets/Action/account_circle_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AccountCircleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AccountCircleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AccountCircleIcon';
 
-AccountCircleIcon.Style = SvgIcon;
-AccountCircleIcon.displayName = 'AccountCircleIcon';
+const AccountCircleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AccountCircleIcon

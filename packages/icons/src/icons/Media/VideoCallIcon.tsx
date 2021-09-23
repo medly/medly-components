@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import VideoCallIconSvg from '../../assets/Media/video_call_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const VideoCallIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const VideoCallIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'VideoCallIcon';
 
-VideoCallIcon.Style = SvgIcon;
-VideoCallIcon.displayName = 'VideoCallIcon';
+const VideoCallIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default VideoCallIcon

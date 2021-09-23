@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PausePresentationIconSvg from '../../assets/Communication/pause_presentation_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PausePresentationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PausePresentationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'PausePresentationIcon';
 
-PausePresentationIcon.Style = SvgIcon;
-PausePresentationIcon.displayName = 'PausePresentationIcon';
+const PausePresentationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PausePresentationIcon

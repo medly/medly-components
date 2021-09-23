@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import MultilineChartIconSvg from '../../assets/Editor/multiline_chart_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MultilineChartIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const MultilineChartIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'MultilineChartIcon';
 
-MultilineChartIcon.Style = SvgIcon;
-MultilineChartIcon.displayName = 'MultilineChartIcon';
+const MultilineChartIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default MultilineChartIcon

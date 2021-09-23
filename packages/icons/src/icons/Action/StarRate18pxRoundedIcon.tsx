@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import StarRate18pxRoundedIconSvg from '../../assets/Action/star_rate_18px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const StarRate18pxRoundedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const StarRate18pxRoundedIcon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'StarRate18pxRoundedIcon';
 
-StarRate18pxRoundedIcon.Style = SvgIcon;
-StarRate18pxRoundedIcon.displayName = 'StarRate18pxRoundedIcon';
+const StarRate18pxRoundedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default StarRate18pxRoundedIcon

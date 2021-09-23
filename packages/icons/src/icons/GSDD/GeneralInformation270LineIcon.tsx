@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import GeneralInformation270LineIconSvg from '../../assets/GSDD/GeneralInformation_270_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const GeneralInformation270LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const GeneralInformation270LineIcon: FC<SvgIconProps> & WithStyle = React.memo(p
         </SvgIcon>
     );
 });
+Component.displayName = 'GeneralInformation270LineIcon';
 
-GeneralInformation270LineIcon.Style = SvgIcon;
-GeneralInformation270LineIcon.displayName = 'GeneralInformation270LineIcon';
+const GeneralInformation270LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default GeneralInformation270LineIcon

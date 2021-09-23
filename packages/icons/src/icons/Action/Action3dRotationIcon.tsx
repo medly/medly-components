@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Action3dRotationIconSvg from '../../assets/Action/action_3d_rotation_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Action3dRotationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Action3dRotationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Action3dRotationIcon';
 
-Action3dRotationIcon.Style = SvgIcon;
-Action3dRotationIcon.displayName = 'Action3dRotationIcon';
+const Action3dRotationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Action3dRotationIcon

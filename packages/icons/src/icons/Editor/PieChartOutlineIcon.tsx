@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PieChartOutlineIconSvg from '../../assets/Editor/pie_chart_outline_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PieChartOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PieChartOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PieChartOutlineIcon';
 
-PieChartOutlineIcon.Style = SvgIcon;
-PieChartOutlineIcon.displayName = 'PieChartOutlineIcon';
+const PieChartOutlineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PieChartOutlineIcon

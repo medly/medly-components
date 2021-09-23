@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ContactMailIconSvg from '../../assets/Communication/contact_mail_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ContactMailIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ContactMailIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ContactMailIcon';
 
-ContactMailIcon.Style = SvgIcon;
-ContactMailIcon.displayName = 'ContactMailIcon';
+const ContactMailIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ContactMailIcon

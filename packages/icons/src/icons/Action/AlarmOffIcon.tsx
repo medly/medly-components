@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AlarmOffIconSvg from '../../assets/Action/alarm_off_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AlarmOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AlarmOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AlarmOffIcon';
 
-AlarmOffIcon.Style = SvgIcon;
-AlarmOffIcon.displayName = 'AlarmOffIcon';
+const AlarmOffIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AlarmOffIcon

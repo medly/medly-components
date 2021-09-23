@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocalGroceryStoreIconSvg from '../../assets/Maps/local_grocery_store_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocalGroceryStoreIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocalGroceryStoreIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'LocalGroceryStoreIcon';
 
-LocalGroceryStoreIcon.Style = SvgIcon;
-LocalGroceryStoreIcon.displayName = 'LocalGroceryStoreIcon';
+const LocalGroceryStoreIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocalGroceryStoreIcon

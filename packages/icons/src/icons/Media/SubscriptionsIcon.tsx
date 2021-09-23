@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SubscriptionsIconSvg from '../../assets/Media/subscriptions_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SubscriptionsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SubscriptionsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SubscriptionsIcon';
 
-SubscriptionsIcon.Style = SvgIcon;
-SubscriptionsIcon.displayName = 'SubscriptionsIcon';
+const SubscriptionsIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SubscriptionsIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SubdirectoryArrowLeftIconSvg from '../../assets/Navigation/subdirectory_arrow_left_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SubdirectoryArrowLeftIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SubdirectoryArrowLeftIcon: FC<SvgIconProps> & WithStyle = React.memo(props
         </SvgIcon>
     );
 });
+Component.displayName = 'SubdirectoryArrowLeftIcon';
 
-SubdirectoryArrowLeftIcon.Style = SvgIcon;
-SubdirectoryArrowLeftIcon.displayName = 'SubdirectoryArrowLeftIcon';
+const SubdirectoryArrowLeftIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SubdirectoryArrowLeftIcon

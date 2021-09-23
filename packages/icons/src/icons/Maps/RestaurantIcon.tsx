@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import RestaurantIconSvg from '../../assets/Maps/restaurant_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RestaurantIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const RestaurantIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'RestaurantIcon';
 
-RestaurantIcon.Style = SvgIcon;
-RestaurantIcon.displayName = 'RestaurantIcon';
+const RestaurantIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default RestaurantIcon

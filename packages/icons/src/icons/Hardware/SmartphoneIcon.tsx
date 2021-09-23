@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SmartphoneIconSvg from '../../assets/Hardware/smartphone_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SmartphoneIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SmartphoneIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SmartphoneIcon';
 
-SmartphoneIcon.Style = SvgIcon;
-SmartphoneIcon.displayName = 'SmartphoneIcon';
+const SmartphoneIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SmartphoneIcon

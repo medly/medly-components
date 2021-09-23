@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DragIndicatorIconSvg from '../../assets/Action/drag_indicator_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DragIndicatorIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DragIndicatorIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DragIndicatorIcon';
 
-DragIndicatorIcon.Style = SvgIcon;
-DragIndicatorIcon.displayName = 'DragIndicatorIcon';
+const DragIndicatorIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DragIndicatorIcon

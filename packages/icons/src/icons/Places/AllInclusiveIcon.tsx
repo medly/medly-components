@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AllInclusiveIconSvg from '../../assets/Places/all_inclusive_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AllInclusiveIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AllInclusiveIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AllInclusiveIcon';
 
-AllInclusiveIcon.Style = SvgIcon;
-AllInclusiveIcon.displayName = 'AllInclusiveIcon';
+const AllInclusiveIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AllInclusiveIcon

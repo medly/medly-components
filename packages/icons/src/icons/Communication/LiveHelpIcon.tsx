@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LiveHelpIconSvg from '../../assets/Communication/live_help_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LiveHelpIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LiveHelpIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LiveHelpIcon';
 
-LiveHelpIcon.Style = SvgIcon;
-LiveHelpIcon.displayName = 'LiveHelpIcon';
+const LiveHelpIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LiveHelpIcon

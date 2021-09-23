@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LineStyleIconSvg from '../../assets/Action/line_style_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LineStyleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LineStyleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LineStyleIcon';
 
-LineStyleIcon.Style = SvgIcon;
-LineStyleIcon.displayName = 'LineStyleIcon';
+const LineStyleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LineStyleIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PhotoCameraIconSvg from '../../assets/Image/photo_camera_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PhotoCameraIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PhotoCameraIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PhotoCameraIcon';
 
-PhotoCameraIcon.Style = SvgIcon;
-PhotoCameraIcon.displayName = 'PhotoCameraIcon';
+const PhotoCameraIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PhotoCameraIcon

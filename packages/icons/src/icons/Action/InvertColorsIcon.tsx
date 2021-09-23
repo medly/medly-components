@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import InvertColorsIconSvg from '../../assets/Action/invert_colors_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const InvertColorsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const InvertColorsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'InvertColorsIcon';
 
-InvertColorsIcon.Style = SvgIcon;
-InvertColorsIcon.displayName = 'InvertColorsIcon';
+const InvertColorsIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default InvertColorsIcon

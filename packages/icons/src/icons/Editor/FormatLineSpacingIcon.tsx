@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FormatLineSpacingIconSvg from '../../assets/Editor/format_line_spacing_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FormatLineSpacingIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FormatLineSpacingIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'FormatLineSpacingIcon';
 
-FormatLineSpacingIcon.Style = SvgIcon;
-FormatLineSpacingIcon.displayName = 'FormatLineSpacingIcon';
+const FormatLineSpacingIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FormatLineSpacingIcon

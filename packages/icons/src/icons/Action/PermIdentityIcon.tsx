@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PermIdentityIconSvg from '../../assets/Action/perm_identity_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PermIdentityIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PermIdentityIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PermIdentityIcon';
 
-PermIdentityIcon.Style = SvgIcon;
-PermIdentityIcon.displayName = 'PermIdentityIcon';
+const PermIdentityIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PermIdentityIcon

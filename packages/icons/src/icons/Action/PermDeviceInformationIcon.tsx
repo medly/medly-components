@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PermDeviceInformationIconSvg from '../../assets/Action/perm_device_information_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PermDeviceInformationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PermDeviceInformationIcon: FC<SvgIconProps> & WithStyle = React.memo(props
         </SvgIcon>
     );
 });
+Component.displayName = 'PermDeviceInformationIcon';
 
-PermDeviceInformationIcon.Style = SvgIcon;
-PermDeviceInformationIcon.displayName = 'PermDeviceInformationIcon';
+const PermDeviceInformationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PermDeviceInformationIcon

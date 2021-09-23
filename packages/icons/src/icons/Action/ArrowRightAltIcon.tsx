@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ArrowRightAltIconSvg from '../../assets/Action/arrow_right_alt_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ArrowRightAltIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ArrowRightAltIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ArrowRightAltIcon';
 
-ArrowRightAltIcon.Style = SvgIcon;
-ArrowRightAltIcon.displayName = 'ArrowRightAltIcon';
+const ArrowRightAltIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ArrowRightAltIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FormatTextdirectionLToRIconSvg from '../../assets/Editor/format_textdirection_l_to_r_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FormatTextdirectionLToRIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FormatTextdirectionLToRIcon: FC<SvgIconProps> & WithStyle = React.memo(pro
         </SvgIcon>
     );
 });
+Component.displayName = 'FormatTextdirectionLToRIcon';
 
-FormatTextdirectionLToRIcon.Style = SvgIcon;
-FormatTextdirectionLToRIcon.displayName = 'FormatTextdirectionLToRIcon';
+const FormatTextdirectionLToRIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FormatTextdirectionLToRIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Looks4IconSvg from '../../assets/Image/looks_4_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Looks4Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Looks4Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Looks4Icon';
 
-Looks4Icon.Style = SvgIcon;
-Looks4Icon.displayName = 'Looks4Icon';
+const Looks4Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Looks4Icon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SignalWifiStatusbarNull26x24pxRoundedIconSvg from '../../assets/Device/signal_wifi_statusbar_null_26x24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SignalWifiStatusbarNull26x24pxRoundedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SignalWifiStatusbarNull26x24pxRoundedIcon: FC<SvgIconProps> & WithStyle = 
         </SvgIcon>
     );
 });
+Component.displayName = 'SignalWifiStatusbarNull26x24pxRoundedIcon';
 
-SignalWifiStatusbarNull26x24pxRoundedIcon.Style = SvgIcon;
-SignalWifiStatusbarNull26x24pxRoundedIcon.displayName = 'SignalWifiStatusbarNull26x24pxRoundedIcon';
+const SignalWifiStatusbarNull26x24pxRoundedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SignalWifiStatusbarNull26x24pxRoundedIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AccessTimeIconSvg from '../../assets/Device/access_time_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AccessTimeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AccessTimeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AccessTimeIcon';
 
-AccessTimeIcon.Style = SvgIcon;
-AccessTimeIcon.displayName = 'AccessTimeIcon';
+const AccessTimeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AccessTimeIcon

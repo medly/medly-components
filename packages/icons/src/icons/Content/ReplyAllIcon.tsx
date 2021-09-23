@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ReplyAllIconSvg from '../../assets/Content/reply_all_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ReplyAllIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ReplyAllIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ReplyAllIcon';
 
-ReplyAllIcon.Style = SvgIcon;
-ReplyAllIcon.displayName = 'ReplyAllIcon';
+const ReplyAllIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ReplyAllIcon

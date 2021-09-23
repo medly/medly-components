@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AirlineSeatFlatIconSvg from '../../assets/Notification/airline_seat_flat_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AirlineSeatFlatIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AirlineSeatFlatIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AirlineSeatFlatIcon';
 
-AirlineSeatFlatIcon.Style = SvgIcon;
-AirlineSeatFlatIcon.displayName = 'AirlineSeatFlatIcon';
+const AirlineSeatFlatIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AirlineSeatFlatIcon

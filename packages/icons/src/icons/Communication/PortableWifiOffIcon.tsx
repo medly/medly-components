@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PortableWifiOffIconSvg from '../../assets/Communication/portable_wifi_off_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PortableWifiOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PortableWifiOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PortableWifiOffIcon';
 
-PortableWifiOffIcon.Style = SvgIcon;
-PortableWifiOffIcon.displayName = 'PortableWifiOffIcon';
+const PortableWifiOffIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PortableWifiOffIcon

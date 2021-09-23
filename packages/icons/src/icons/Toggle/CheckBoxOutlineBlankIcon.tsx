@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CheckBoxOutlineBlankIconSvg from '../../assets/Toggle/check_box_outline_blank_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CheckBoxOutlineBlankIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CheckBoxOutlineBlankIcon: FC<SvgIconProps> & WithStyle = React.memo(props 
         </SvgIcon>
     );
 });
+Component.displayName = 'CheckBoxOutlineBlankIcon';
 
-CheckBoxOutlineBlankIcon.Style = SvgIcon;
-CheckBoxOutlineBlankIcon.displayName = 'CheckBoxOutlineBlankIcon';
+const CheckBoxOutlineBlankIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CheckBoxOutlineBlankIcon

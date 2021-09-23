@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PermDataSettingIconSvg from '../../assets/Action/perm_data_setting_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PermDataSettingIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PermDataSettingIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PermDataSettingIcon';
 
-PermDataSettingIcon.Style = SvgIcon;
-PermDataSettingIcon.displayName = 'PermDataSettingIcon';
+const PermDataSettingIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PermDataSettingIcon

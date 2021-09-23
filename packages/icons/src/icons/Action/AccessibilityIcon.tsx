@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AccessibilityIconSvg from '../../assets/Action/accessibility_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AccessibilityIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AccessibilityIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AccessibilityIcon';
 
-AccessibilityIcon.Style = SvgIcon;
-AccessibilityIcon.displayName = 'AccessibilityIcon';
+const AccessibilityIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AccessibilityIcon

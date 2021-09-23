@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Generic87LineIconSvg from '../../assets/GSDD/Generic_87_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Generic87LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Generic87LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Generic87LineIcon';
 
-Generic87LineIcon.Style = SvgIcon;
-Generic87LineIcon.displayName = 'Generic87LineIcon';
+const Generic87LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Generic87LineIcon

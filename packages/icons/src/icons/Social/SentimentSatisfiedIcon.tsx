@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SentimentSatisfiedIconSvg from '../../assets/Social/sentiment_satisfied_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SentimentSatisfiedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SentimentSatisfiedIcon: FC<SvgIconProps> & WithStyle = React.memo(props =>
         </SvgIcon>
     );
 });
+Component.displayName = 'SentimentSatisfiedIcon';
 
-SentimentSatisfiedIcon.Style = SvgIcon;
-SentimentSatisfiedIcon.displayName = 'SentimentSatisfiedIcon';
+const SentimentSatisfiedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SentimentSatisfiedIcon

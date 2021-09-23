@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Filter5IconSvg from '../../assets/Image/filter_5_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Filter5Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Filter5Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Filter5Icon';
 
-Filter5Icon.Style = SvgIcon;
-Filter5Icon.displayName = 'Filter5Icon';
+const Filter5Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Filter5Icon

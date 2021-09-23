@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ReceiptOutlinedIconSvg from '../../assets/Action/receipt_outlined_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ReceiptOutlinedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ReceiptOutlinedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ReceiptOutlinedIcon';
 
-ReceiptOutlinedIcon.Style = SvgIcon;
-ReceiptOutlinedIcon.displayName = 'ReceiptOutlinedIcon';
+const ReceiptOutlinedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ReceiptOutlinedIcon

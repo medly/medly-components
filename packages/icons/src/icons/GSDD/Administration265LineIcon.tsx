@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Administration265LineIconSvg from '../../assets/GSDD/Administration_265_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Administration265LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Administration265LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props
         </SvgIcon>
     );
 });
+Component.displayName = 'Administration265LineIcon';
 
-Administration265LineIcon.Style = SvgIcon;
-Administration265LineIcon.displayName = 'Administration265LineIcon';
+const Administration265LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Administration265LineIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SnoozeIconSvg from '../../assets/Media/snooze_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SnoozeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SnoozeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SnoozeIcon';
 
-SnoozeIcon.Style = SvgIcon;
-SnoozeIcon.displayName = 'SnoozeIcon';
+const SnoozeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SnoozeIcon

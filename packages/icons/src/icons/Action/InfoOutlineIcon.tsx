@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import InfoOutlineIconSvg from '../../assets/Action/info_outline_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const InfoOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const InfoOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'InfoOutlineIcon';
 
-InfoOutlineIcon.Style = SvgIcon;
-InfoOutlineIcon.displayName = 'InfoOutlineIcon';
+const InfoOutlineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default InfoOutlineIcon

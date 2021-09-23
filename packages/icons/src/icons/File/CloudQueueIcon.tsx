@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CloudQueueIconSvg from '../../assets/File/cloud_queue_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CloudQueueIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CloudQueueIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CloudQueueIcon';
 
-CloudQueueIcon.Style = SvgIcon;
-CloudQueueIcon.displayName = 'CloudQueueIcon';
+const CloudQueueIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CloudQueueIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocalLibraryIconSvg from '../../assets/Maps/local_library_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocalLibraryIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocalLibraryIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LocalLibraryIcon';
 
-LocalLibraryIcon.Style = SvgIcon;
-LocalLibraryIcon.displayName = 'LocalLibraryIcon';
+const LocalLibraryIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocalLibraryIcon

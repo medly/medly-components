@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DeviceHubIconSvg from '../../assets/Hardware/device_hub_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DeviceHubIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DeviceHubIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DeviceHubIcon';
 
-DeviceHubIcon.Style = SvgIcon;
-DeviceHubIcon.displayName = 'DeviceHubIcon';
+const DeviceHubIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DeviceHubIcon

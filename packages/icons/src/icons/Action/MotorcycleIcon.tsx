@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import MotorcycleIconSvg from '../../assets/Action/motorcycle_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MotorcycleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const MotorcycleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'MotorcycleIcon';
 
-MotorcycleIcon.Style = SvgIcon;
-MotorcycleIcon.displayName = 'MotorcycleIcon';
+const MotorcycleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default MotorcycleIcon

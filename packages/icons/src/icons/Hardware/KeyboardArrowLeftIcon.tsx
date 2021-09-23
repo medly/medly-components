@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import KeyboardArrowLeftIconSvg from '../../assets/Hardware/keyboard_arrow_left_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const KeyboardArrowLeftIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const KeyboardArrowLeftIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'KeyboardArrowLeftIcon';
 
-KeyboardArrowLeftIcon.Style = SvgIcon;
-KeyboardArrowLeftIcon.displayName = 'KeyboardArrowLeftIcon';
+const KeyboardArrowLeftIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default KeyboardArrowLeftIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Replay30IconSvg from '../../assets/Media/replay_30_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Replay30Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Replay30Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Replay30Icon';
 
-Replay30Icon.Style = SvgIcon;
-Replay30Icon.displayName = 'Replay30Icon';
+const Replay30Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Replay30Icon

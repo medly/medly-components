@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FaceUnlockIconSvg from '../../assets/Action/face_unlock_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FaceUnlockIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FaceUnlockIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FaceUnlockIcon';
 
-FaceUnlockIcon.Style = SvgIcon;
-FaceUnlockIcon.displayName = 'FaceUnlockIcon';
+const FaceUnlockIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FaceUnlockIcon

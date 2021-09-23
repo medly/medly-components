@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PhonePausedIconSvg from '../../assets/Notification/phone_paused_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PhonePausedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PhonePausedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PhonePausedIcon';
 
-PhonePausedIcon.Style = SvgIcon;
-PhonePausedIcon.displayName = 'PhonePausedIcon';
+const PhonePausedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PhonePausedIcon

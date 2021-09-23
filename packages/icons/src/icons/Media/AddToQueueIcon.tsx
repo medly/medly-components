@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AddToQueueIconSvg from '../../assets/Media/add_to_queue_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AddToQueueIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AddToQueueIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AddToQueueIcon';
 
-AddToQueueIcon.Style = SvgIcon;
-AddToQueueIcon.displayName = 'AddToQueueIcon';
+const AddToQueueIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AddToQueueIcon

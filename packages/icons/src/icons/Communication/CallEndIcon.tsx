@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CallEndIconSvg from '../../assets/Communication/call_end_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CallEndIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CallEndIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CallEndIcon';
 
-CallEndIcon.Style = SvgIcon;
-CallEndIcon.displayName = 'CallEndIcon';
+const CallEndIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CallEndIcon

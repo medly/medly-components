@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import BorderBottomIconSvg from '../../assets/Editor/border_bottom_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BorderBottomIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const BorderBottomIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'BorderBottomIcon';
 
-BorderBottomIcon.Style = SvgIcon;
-BorderBottomIcon.displayName = 'BorderBottomIcon';
+const BorderBottomIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default BorderBottomIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import GroupWorkIconSvg from '../../assets/Action/group_work_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const GroupWorkIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const GroupWorkIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'GroupWorkIcon';
 
-GroupWorkIcon.Style = SvgIcon;
-GroupWorkIcon.displayName = 'GroupWorkIcon';
+const GroupWorkIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default GroupWorkIcon

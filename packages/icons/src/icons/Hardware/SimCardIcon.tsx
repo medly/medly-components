@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SimCardIconSvg from '../../assets/Hardware/sim_card_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SimCardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SimCardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SimCardIcon';
 
-SimCardIcon.Style = SvgIcon;
-SimCardIcon.displayName = 'SimCardIcon';
+const SimCardIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SimCardIcon

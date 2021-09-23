@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FolderSharedIconSvg from '../../assets/File/folder_shared_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FolderSharedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FolderSharedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FolderSharedIcon';
 
-FolderSharedIcon.Style = SvgIcon;
-FolderSharedIcon.displayName = 'FolderSharedIcon';
+const FolderSharedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FolderSharedIcon

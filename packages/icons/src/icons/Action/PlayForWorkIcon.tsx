@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PlayForWorkIconSvg from '../../assets/Action/play_for_work_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PlayForWorkIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PlayForWorkIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PlayForWorkIcon';
 
-PlayForWorkIcon.Style = SvgIcon;
-PlayForWorkIcon.displayName = 'PlayForWorkIcon';
+const PlayForWorkIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PlayForWorkIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import RadioButtonCheckedIconSvg from '../../assets/Toggle/radio_button_checked_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RadioButtonCheckedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const RadioButtonCheckedIcon: FC<SvgIconProps> & WithStyle = React.memo(props =>
         </SvgIcon>
     );
 });
+Component.displayName = 'RadioButtonCheckedIcon';
 
-RadioButtonCheckedIcon.Style = SvgIcon;
-RadioButtonCheckedIcon.displayName = 'RadioButtonCheckedIcon';
+const RadioButtonCheckedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default RadioButtonCheckedIcon

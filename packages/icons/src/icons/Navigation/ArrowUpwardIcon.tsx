@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ArrowUpwardIconSvg from '../../assets/Navigation/arrow_upward_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ArrowUpwardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ArrowUpwardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ArrowUpwardIcon';
 
-ArrowUpwardIcon.Style = SvgIcon;
-ArrowUpwardIcon.displayName = 'ArrowUpwardIcon';
+const ArrowUpwardIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ArrowUpwardIcon

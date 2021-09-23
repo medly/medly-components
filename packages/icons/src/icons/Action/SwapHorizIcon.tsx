@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SwapHorizIconSvg from '../../assets/Action/swap_horiz_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SwapHorizIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SwapHorizIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SwapHorizIcon';
 
-SwapHorizIcon.Style = SvgIcon;
-SwapHorizIcon.displayName = 'SwapHorizIcon';
+const SwapHorizIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SwapHorizIcon

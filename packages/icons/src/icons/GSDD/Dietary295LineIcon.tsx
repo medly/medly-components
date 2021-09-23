@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Dietary295LineIconSvg from '../../assets/GSDD/Dietary_295_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Dietary295LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const Dietary295LineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'Dietary295LineIcon';
 
-Dietary295LineIcon.Style = SvgIcon;
-Dietary295LineIcon.displayName = 'Dietary295LineIcon';
+const Dietary295LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default Dietary295LineIcon

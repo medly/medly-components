@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DoneAllIconSvg from '../../assets/Action/done_all_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DoneAllIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DoneAllIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DoneAllIcon';
 
-DoneAllIcon.Style = SvgIcon;
-DoneAllIcon.displayName = 'DoneAllIcon';
+const DoneAllIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DoneAllIcon

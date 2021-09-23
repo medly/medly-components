@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SettingsInputCompositeIconSvg from '../../assets/Action/settings_input_composite_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SettingsInputCompositeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SettingsInputCompositeIcon: FC<SvgIconProps> & WithStyle = React.memo(prop
         </SvgIcon>
     );
 });
+Component.displayName = 'SettingsInputCompositeIcon';
 
-SettingsInputCompositeIcon.Style = SvgIcon;
-SettingsInputCompositeIcon.displayName = 'SettingsInputCompositeIcon';
+const SettingsInputCompositeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SettingsInputCompositeIcon

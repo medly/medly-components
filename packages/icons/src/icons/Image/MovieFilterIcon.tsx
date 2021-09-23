@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import MovieFilterIconSvg from '../../assets/Image/movie_filter_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MovieFilterIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const MovieFilterIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'MovieFilterIcon';
 
-MovieFilterIcon.Style = SvgIcon;
-MovieFilterIcon.displayName = 'MovieFilterIcon';
+const MovieFilterIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default MovieFilterIcon

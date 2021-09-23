@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import StarHalfIconSvg from '../../assets/Toggle/star_half_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const StarHalfIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const StarHalfIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'StarHalfIcon';
 
-StarHalfIcon.Style = SvgIcon;
-StarHalfIcon.displayName = 'StarHalfIcon';
+const StarHalfIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default StarHalfIcon

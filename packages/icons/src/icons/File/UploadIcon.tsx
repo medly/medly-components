@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import UploadIconSvg from '../../assets/File/upload_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const UploadIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const UploadIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'UploadIcon';
 
-UploadIcon.Style = SvgIcon;
-UploadIcon.displayName = 'UploadIcon';
+const UploadIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default UploadIcon

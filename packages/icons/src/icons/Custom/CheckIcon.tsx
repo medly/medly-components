@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CheckIconSvg from '../../assets/Custom/check_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CheckIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CheckIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CheckIcon';
 
-CheckIcon.Style = SvgIcon;
-CheckIcon.displayName = 'CheckIcon';
+const CheckIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CheckIcon

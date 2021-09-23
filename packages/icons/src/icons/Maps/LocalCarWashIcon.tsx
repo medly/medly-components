@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocalCarWashIconSvg from '../../assets/Maps/local_car_wash_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocalCarWashIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocalCarWashIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LocalCarWashIcon';
 
-LocalCarWashIcon.Style = SvgIcon;
-LocalCarWashIcon.displayName = 'LocalCarWashIcon';
+const LocalCarWashIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocalCarWashIcon

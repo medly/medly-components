@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DirectionsRailwayIconSvg from '../../assets/Maps/directions_railway_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DirectionsRailwayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DirectionsRailwayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'DirectionsRailwayIcon';
 
-DirectionsRailwayIcon.Style = SvgIcon;
-DirectionsRailwayIcon.displayName = 'DirectionsRailwayIcon';
+const DirectionsRailwayIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DirectionsRailwayIcon

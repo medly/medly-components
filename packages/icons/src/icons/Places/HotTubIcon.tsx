@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import HotTubIconSvg from '../../assets/Places/hot_tub_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const HotTubIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const HotTubIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'HotTubIcon';
 
-HotTubIcon.Style = SvgIcon;
-HotTubIcon.displayName = 'HotTubIcon';
+const HotTubIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default HotTubIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LowPriorityIconSvg from '../../assets/Content/low_priority_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LowPriorityIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LowPriorityIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LowPriorityIcon';
 
-LowPriorityIcon.Style = SvgIcon;
-LowPriorityIcon.displayName = 'LowPriorityIcon';
+const LowPriorityIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LowPriorityIcon

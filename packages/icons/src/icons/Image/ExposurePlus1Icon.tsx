@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ExposurePlus1IconSvg from '../../assets/Image/exposure_plus_1_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ExposurePlus1Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ExposurePlus1Icon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ExposurePlus1Icon';
 
-ExposurePlus1Icon.Style = SvgIcon;
-ExposurePlus1Icon.displayName = 'ExposurePlus1Icon';
+const ExposurePlus1Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ExposurePlus1Icon

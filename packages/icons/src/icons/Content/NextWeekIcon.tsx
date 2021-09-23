@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import NextWeekIconSvg from '../../assets/Content/next_week_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const NextWeekIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const NextWeekIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'NextWeekIcon';
 
-NextWeekIcon.Style = SvgIcon;
-NextWeekIcon.displayName = 'NextWeekIcon';
+const NextWeekIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default NextWeekIcon

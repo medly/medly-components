@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import RemoveCircleOutlineIconSvg from '../../assets/Content/remove_circle_outline_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RemoveCircleOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const RemoveCircleOutlineIcon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'RemoveCircleOutlineIcon';
 
-RemoveCircleOutlineIcon.Style = SvgIcon;
-RemoveCircleOutlineIcon.displayName = 'RemoveCircleOutlineIcon';
+const RemoveCircleOutlineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default RemoveCircleOutlineIcon

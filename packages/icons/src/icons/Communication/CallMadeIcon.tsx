@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CallMadeIconSvg from '../../assets/Communication/call_made_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CallMadeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CallMadeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CallMadeIcon';
 
-CallMadeIcon.Style = SvgIcon;
-CallMadeIcon.displayName = 'CallMadeIcon';
+const CallMadeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CallMadeIcon

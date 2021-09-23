@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ExposureZeroIconSvg from '../../assets/Image/exposure_zero_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ExposureZeroIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ExposureZeroIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ExposureZeroIcon';
 
-ExposureZeroIcon.Style = SvgIcon;
-ExposureZeroIcon.displayName = 'ExposureZeroIcon';
+const ExposureZeroIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ExposureZeroIcon

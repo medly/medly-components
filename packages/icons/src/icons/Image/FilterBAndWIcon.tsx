@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FilterBAndWIconSvg from '../../assets/Image/filter_b_and_w_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FilterBAndWIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FilterBAndWIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FilterBAndWIcon';
 
-FilterBAndWIcon.Style = SvgIcon;
-FilterBAndWIcon.displayName = 'FilterBAndWIcon';
+const FilterBAndWIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FilterBAndWIcon

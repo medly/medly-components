@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import VerticalAlignTopIconSvg from '../../assets/Editor/vertical_align_top_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const VerticalAlignTopIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const VerticalAlignTopIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'VerticalAlignTopIcon';
 
-VerticalAlignTopIcon.Style = SvgIcon;
-VerticalAlignTopIcon.displayName = 'VerticalAlignTopIcon';
+const VerticalAlignTopIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default VerticalAlignTopIcon

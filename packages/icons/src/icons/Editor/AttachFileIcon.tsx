@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AttachFileIconSvg from '../../assets/Editor/attach_file_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AttachFileIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AttachFileIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AttachFileIcon';
 
-AttachFileIcon.Style = SvgIcon;
-AttachFileIcon.displayName = 'AttachFileIcon';
+const AttachFileIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AttachFileIcon

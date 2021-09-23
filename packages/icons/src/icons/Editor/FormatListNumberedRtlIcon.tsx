@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FormatListNumberedRtlIconSvg from '../../assets/Editor/format_list_numbered_rtl_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FormatListNumberedRtlIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FormatListNumberedRtlIcon: FC<SvgIconProps> & WithStyle = React.memo(props
         </SvgIcon>
     );
 });
+Component.displayName = 'FormatListNumberedRtlIcon';
 
-FormatListNumberedRtlIcon.Style = SvgIcon;
-FormatListNumberedRtlIcon.displayName = 'FormatListNumberedRtlIcon';
+const FormatListNumberedRtlIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FormatListNumberedRtlIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import TripOriginIconSvg from '../../assets/Maps/trip_origin_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TripOriginIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const TripOriginIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'TripOriginIcon';
 
-TripOriginIcon.Style = SvgIcon;
-TripOriginIcon.displayName = 'TripOriginIcon';
+const TripOriginIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default TripOriginIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import NavigateNextIconSvg from '../../assets/Image/navigate_next_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const NavigateNextIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const NavigateNextIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'NavigateNextIcon';
 
-NavigateNextIcon.Style = SvgIcon;
-NavigateNextIcon.displayName = 'NavigateNextIcon';
+const NavigateNextIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default NavigateNextIcon

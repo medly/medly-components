@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocalPostOfficeIconSvg from '../../assets/Maps/local_post_office_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocalPostOfficeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocalPostOfficeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LocalPostOfficeIcon';
 
-LocalPostOfficeIcon.Style = SvgIcon;
-LocalPostOfficeIcon.displayName = 'LocalPostOfficeIcon';
+const LocalPostOfficeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocalPostOfficeIcon

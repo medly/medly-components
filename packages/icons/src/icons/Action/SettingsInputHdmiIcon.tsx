@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SettingsInputHdmiIconSvg from '../../assets/Action/settings_input_hdmi_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SettingsInputHdmiIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SettingsInputHdmiIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'SettingsInputHdmiIcon';
 
-SettingsInputHdmiIcon.Style = SvgIcon;
-SettingsInputHdmiIcon.displayName = 'SettingsInputHdmiIcon';
+const SettingsInputHdmiIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SettingsInputHdmiIcon

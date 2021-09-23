@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import OpenInBrowserIconSvg from '../../assets/Action/open_in_browser_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const OpenInBrowserIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const OpenInBrowserIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'OpenInBrowserIcon';
 
-OpenInBrowserIcon.Style = SvgIcon;
-OpenInBrowserIcon.displayName = 'OpenInBrowserIcon';
+const OpenInBrowserIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default OpenInBrowserIcon

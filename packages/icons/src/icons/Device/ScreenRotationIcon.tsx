@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ScreenRotationIconSvg from '../../assets/Device/screen_rotation_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ScreenRotationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ScreenRotationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ScreenRotationIcon';
 
-ScreenRotationIcon.Style = SvgIcon;
-ScreenRotationIcon.displayName = 'ScreenRotationIcon';
+const ScreenRotationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ScreenRotationIcon

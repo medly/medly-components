@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AddBoxIconSvg from '../../assets/Content/add_box_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AddBoxIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AddBoxIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AddBoxIcon';
 
-AddBoxIcon.Style = SvgIcon;
-AddBoxIcon.displayName = 'AddBoxIcon';
+const AddBoxIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AddBoxIcon

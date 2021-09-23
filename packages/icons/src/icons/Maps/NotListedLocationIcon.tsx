@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import NotListedLocationIconSvg from '../../assets/Maps/not_listed_location_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const NotListedLocationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const NotListedLocationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'NotListedLocationIcon';
 
-NotListedLocationIcon.Style = SvgIcon;
-NotListedLocationIcon.displayName = 'NotListedLocationIcon';
+const NotListedLocationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default NotListedLocationIcon

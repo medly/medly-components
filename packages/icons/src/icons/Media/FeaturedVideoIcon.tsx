@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FeaturedVideoIconSvg from '../../assets/Media/featured_video_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FeaturedVideoIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FeaturedVideoIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FeaturedVideoIcon';
 
-FeaturedVideoIcon.Style = SvgIcon;
-FeaturedVideoIcon.displayName = 'FeaturedVideoIcon';
+const FeaturedVideoIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FeaturedVideoIcon
