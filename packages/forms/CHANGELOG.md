@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.10](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.9...@medly-components/forms@1.30.10) (2021-09-23)
+
+
+### Bug Fixes
+
+* strict null check in forms package ([#435](https://github.com/medly/medly-components/issues/435)) ([e13b352](https://github.com/medly/medly-components/commit/e13b3527d2dc135271cbe46a2323183a2455f357))
+
+
+
+
+
 ## [1.30.9](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.8...@medly-components/forms@1.30.9) (2021-09-22)
 
 **Note:** Version bump only for package @medly-components/forms
