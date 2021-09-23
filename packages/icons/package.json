@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/icons",
-    "version": "1.7.22",
+    "version": "1.7.23",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",

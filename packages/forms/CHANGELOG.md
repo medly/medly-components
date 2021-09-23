@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.11](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.10...@medly-components/forms@1.30.11) (2021-09-23)
+
+
+### Bug Fixes
+
+* style null check in forms, loaders & icons package ([#437](https://github.com/medly/medly-components/issues/437)) ([8019585](https://github.com/medly/medly-components/commit/801958543b126c39a87b73f0f7629934fcafb6a3))
+
+
+
+
+
 ## [1.30.10](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.9...@medly-components/forms@1.30.10) (2021-09-23)
 
 
