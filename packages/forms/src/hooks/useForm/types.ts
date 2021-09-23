@@ -2,12 +2,11 @@ import { DisplayFormat } from '../../components/Fields/types';
 
 export interface Handlers {
     // Form submit handler
-    handleFormSubmit: (onSubmit: (values: object) => void) => (e: React.FormEvent<Element>) => void;
+    handleFormSubmit: (onSubmit: (values: object) => void) => (e: React.FormEvent<HTMLFormElement>) => void;
     // Form reset handler
-    handleFormReset: (onReset?: (e: React.FormEvent<Element>) => void) => (e: React.FormEvent<Element>) => void;
-
+    handleFormReset: (onReset?: (e: React.FormEvent<HTMLFormElement>) => void) => (e: React.FormEvent<HTMLFormElement>) => void;
     // Common Focus handler
-    handleFocus: (name: string, onFocus: (e: any) => void) => (event: any) => void;
+    handleFocus: (name: string, onFocus?: (e: any) => void) => (event: any) => void;
     // Text change handler
     handleTextChange: (name: string) => (event: React.FormEvent<HTMLInputElement>) => void;
     // Number Change handler
@@ -35,7 +34,7 @@ export interface Handlers {
         startDate: string | Date,
         endDate: string | Date,
         displayFormat: DisplayFormat
-    ) => { startDate: Date; endDate: Date };
+    ) => { startDate: Date | null; endDate: Date | null };
 }
 
 export interface UseFormResult {

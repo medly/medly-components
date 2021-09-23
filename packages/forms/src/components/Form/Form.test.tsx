@@ -38,6 +38,7 @@ describe('Form', () => {
     it('should render properly without initial state', () => {
         const { container } = render(
             <Form
+                name="Test form"
                 fieldSchema={testSchema}
                 header="Dummy Form"
                 helperText="Dummy Description"
@@ -68,12 +69,11 @@ describe('Form', () => {
     });
 
     it('should render error message properly', () => {
-        const { container, getByText } = render(
-            <Form fieldSchema={{ firstName: { required: true, type: 'text' } }} onSubmit={jest.fn()} />
-        );
-        fireEvent.focus(container.querySelector('#firstName-input'));
-        fireEvent.blur(container.querySelector('#firstName-input'));
-        expect(getByText('Constraints not satisfied')).toBeInTheDocument();
+        render(<Form fieldSchema={{ firstName: { required: true, type: 'text', label: 'First Name' } }} onSubmit={jest.fn()} />);
+        const input = screen.getByRole('textbox', { name: 'First Name' });
+        fireEvent.focus(input);
+        fireEvent.blur(input);
+        expect(screen.getByText('Constraints not satisfied')).toBeInTheDocument();
     });
 
     it('should not render any field if component type is not matched', () => {
@@ -108,6 +108,7 @@ describe('Form', () => {
         const mockOnReset = jest.fn(),
             { container } = render(
                 <Form
+                    name="Test form"
                     fieldSchema={{ firstName: { type: 'text', label: 'First Name' } }}
                     actionSchema={{
                         actions: [{ type: 'reset', label: 'Reset' }]
@@ -117,11 +118,11 @@ describe('Form', () => {
                 />
             );
         const input = container.querySelector('#firstName-input');
-        fireEvent.change(input, {
+        fireEvent.change(screen.getByRole('textbox', { name: 'First Name' }), {
             target: { name: 'firstName', value: 'Dummy Value' }
         });
         expect(input).toHaveValue('Dummy Value');
-        fireEvent.reset(container.querySelector('form'));
+        fireEvent.reset(screen.getByRole('form'));
         expect(mockOnReset).toBeCalled();
     });
 
@@ -129,9 +130,9 @@ describe('Form', () => {
         afterEach(cleanup);
 
         it('with initial state', () => {
-            const mockOnSubmit = jest.fn(),
-                { container } = render(<Form fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={initialState} />);
-            fireEvent.submit(container.querySelector('form'));
+            const mockOnSubmit = jest.fn();
+            render(<Form name="Test form" fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={initialState} />);
+            fireEvent.submit(screen.getByRole('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith(initialState);
         });
 
@@ -170,52 +171,60 @@ describe('Form', () => {
                     resume: [fooFile]
                 },
                 renderComp = (state: object = dateStringInitialState) => (
-                    <Form fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={state} onChange={mockOnChange} />
-                ),
-                { container, getByText, findByText, getByPlaceholderText, getByTitle } = render(renderComp());
+                    <Form name="Test form" fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={state} onChange={mockOnChange} />
+                );
+            const { container } = render(renderComp());
             const fileInput = container.querySelector('#resume');
             Object.defineProperty(fileInput, 'files', {
                 value: [fooFile]
             });
-            fireEvent.change(container.querySelector('#firstName-input'), {
+            // TextField
+            fireEvent.change(screen.getByRole('textbox', { name: 'First Name' }), {
                 target: { name: 'firstName', value: formData.firstName }
             });
-            fireEvent.change(container.querySelector('#lastName-input'), {
+            fireEvent.change(screen.getByRole('textbox', { name: 'Last Name' }), {
                 target: { name: 'lastName', value: formData.lastName }
             });
-            fireEvent.change(container.querySelector('#email-input'), {
+            fireEvent.change(screen.getByRole('textbox', { name: 'Email' }), {
                 target: { value: formData.email }
             });
-            fireEvent.change(fileInput);
-            fireEvent.click(getByText('JAVA'));
-            fireEvent.click(getByText('Front End'));
-            fireEvent.click(container.querySelector('#country-input'));
-            const country = await findByText('India');
-            fireEvent.click(country);
+            // FileInput
+            fileInput && fireEvent.change(fileInput);
+            // Checkbox Group
+            fireEvent.click(screen.getByText('JAVA'));
+            // Radio Group
+            fireEvent.click(screen.getByText('Front End'));
+            // SingleSelect
+            fireEvent.click(screen.getByRole('textbox', { name: 'Country' }));
+            fireEvent.click(screen.getByText('India'));
 
-            fireEvent.click(container.querySelector('#birthDate-input-wrapper').querySelector('svg'));
-            fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
-
-            fireEvent.click(container.querySelector('#experience-calendar-icon'));
-            fireEvent.click(getByTitle(new Date(2019, 0, 2).toDateString()));
-            fireEvent.click(getByTitle(new Date(2019, 1, 3).toDateString()));
-
-            fireEvent.click(container.querySelector('#graduation-input'));
-            const graduation = await findByText('BTech');
-            fireEvent.click(graduation);
-
-            fireEvent.change(getByPlaceholderText('Database'), {
+            // DatePicker
+            fireEvent.change(screen.getByRole('textbox', { name: 'Birth Date' }), {
+                target: { value: '02/01/2020' }
+            });
+            // DateRangePicker
+            fireEvent.change(screen.getByRole('textbox', { name: 'From' }), {
+                target: { value: '02/01/2019' }
+            });
+            fireEvent.change(screen.getByRole('textbox', { name: 'To' }), {
+                target: { value: '03/02/2019' }
+            });
+            // MultiSelect
+            fireEvent.click(screen.getByRole('textbox', { name: 'Graduation' }));
+            fireEvent.click(screen.getByText('BTech'));
+            // TextField Number
+            fireEvent.change(screen.getByRole('spinbutton', { name: 'Database' }), {
                 target: { value: formData.marks.database }
             });
-            fireEvent.change(getByPlaceholderText('Algorithms'), {
+            fireEvent.change(screen.getByRole('spinbutton', { name: 'Algorithms' }), {
                 target: { value: formData.marks.algorithms }
             });
-            fireEvent.change(getByPlaceholderText('Maths'), {
+            fireEvent.change(screen.getByRole('spinbutton', { name: 'Maths' }), {
                 target: { value: formData.marks.maths }
             });
-            fireEvent.click(container.querySelector('#agree'));
-
-            fireEvent.submit(container.querySelector('form'));
+            // Checkbox
+            fireEvent.click(screen.getByRole('checkbox', { name: 'Do you Agree' }));
+            fireEvent.submit(screen.getByRole('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith(formData);
             expect(mockOnChange.mock.calls[mockOnChange.mock.calls.length - 1][0]).toEqual(formData);
             done();
@@ -223,64 +232,25 @@ describe('Form', () => {
     });
 
     it('should call onFocus on focusing on the input', () => {
-        const mockOnFocus = jest.fn(),
-            { container } = render(
-                <Form
-                    fieldSchema={{
-                        firstName: {
-                            type: 'text',
-                            label: 'First Name',
-                            onFocus: mockOnFocus
-                        }
-                    }}
-                    onSubmit={jest.fn()}
-                    onFocus={mockOnFocus}
-                />
-            );
-        fireEvent.focus(container.querySelector('#firstName-input'));
+        const mockOnFocus = jest.fn();
+        render(
+            <Form
+                fieldSchema={{
+                    firstName: {
+                        type: 'text',
+                        label: 'First Name',
+                        onFocus: mockOnFocus
+                    }
+                }}
+                onSubmit={jest.fn()}
+                onFocus={mockOnFocus}
+            />
+        );
+        fireEvent.focus(screen.getByRole('textbox', { name: 'First Name' }));
         expect(mockOnFocus).toHaveBeenCalled();
     });
 
     describe('should handle dates', () => {
-        it('with initial state date', async () => {
-            const mockOnSubmit = jest.fn(),
-                formData = {
-                    birthDate: '02/01/2020',
-                    experience: {
-                        startDate: '02/01/2020',
-                        endDate: '03/02/2020'
-                    }
-                },
-                { container, getByTitle } = render(
-                    <Form
-                        fieldSchema={{
-                            birthDate: {
-                                type: 'date',
-                                displayFormat: 'dd/MM/yyyy',
-                                label: 'Birth Date',
-                                placeholder: 'Birth Date'
-                            },
-                            experience: {
-                                type: 'date-range',
-                                displayFormat: 'dd/MM/yyyy',
-                                label: 'Experience'
-                            }
-                        }}
-                        onSubmit={mockOnSubmit}
-                        initialState={datesInitialState}
-                    />
-                );
-            fireEvent.click(container.querySelector('#birthDate-input-wrapper').querySelector('svg'));
-            fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
-
-            fireEvent.click(container.querySelector('#experience-calendar-icon'));
-            fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
-            fireEvent.click(getByTitle(new Date(2020, 1, 3).toDateString()));
-
-            fireEvent.submit(container.querySelector('form'));
-            expect(mockOnSubmit).toHaveBeenCalledWith(formData);
-        });
-
         it('with default date format', async () => {
             const mockOnSubmit = jest.fn(),
                 formData = {
@@ -289,53 +259,62 @@ describe('Form', () => {
                         startDate: '01/02/2020',
                         endDate: '02/03/2020'
                     }
-                },
-                { container, getByTitle } = render(
-                    <Form
-                        fieldSchema={{
-                            birthDate: {
-                                type: 'date',
-                                label: 'Birth Date',
-                                placeholder: 'Birth Date'
-                            },
-                            experience: {
-                                type: 'date-range',
-                                label: 'Experience'
-                            }
-                        }}
-                        onSubmit={mockOnSubmit}
-                        initialState={datesInitialState}
-                    />
-                );
-            fireEvent.click(container.querySelector('#birthDate-input-wrapper').querySelector('svg'));
-            fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
+                };
+            render(
+                <Form
+                    name="Test form"
+                    fieldSchema={{
+                        birthDate: {
+                            type: 'date',
+                            label: 'Birth Date',
+                            placeholder: 'Birth Date'
+                        },
+                        experience: {
+                            type: 'date-range',
+                            displayFormat: 'dd/MM/yyyy',
+                            label: 'Experience'
+                        }
+                    }}
+                    onSubmit={mockOnSubmit}
+                    initialState={datesInitialState}
+                />
+            );
+            // DatePicker
+            fireEvent.change(screen.getByRole('textbox', { name: 'Birth Date' }), {
+                target: { value: '01/02/2020' }
+            });
+            // DateRangePicker
+            fireEvent.change(screen.getByRole('textbox', { name: 'From' }), {
+                target: { value: '01/02/2020' }
+            });
+            fireEvent.change(screen.getByRole('textbox', { name: 'To' }), {
+                target: { value: '02/03/2020' }
+            });
 
-            fireEvent.click(container.querySelector('#experience-calendar-icon'));
-            fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
-            fireEvent.click(getByTitle(new Date(2020, 1, 3).toDateString()));
-
-            fireEvent.submit(container.querySelector('form'));
+            fireEvent.submit(screen.getByRole('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith(formData);
         });
 
         it('with initial dates as null', async () => {
-            const mockOnSubmit = jest.fn(),
-                { container, getAllByText } = render(
-                    <Form
-                        fieldSchema={{
-                            experience: {
-                                type: 'date-range',
-                                displayFormat: 'dd/MM/yyyy',
-                                label: 'Experience'
-                            }
-                        }}
-                        onSubmit={mockOnSubmit}
-                    />
-                );
-            fireEvent.click(container.querySelector('#experience-calendar-icon'));
-            fireEvent.click(getAllByText('2')[0]);
+            const mockOnSubmit = jest.fn();
+            render(
+                <Form
+                    name="Test form"
+                    fieldSchema={{
+                        experience: {
+                            type: 'date-range',
+                            displayFormat: 'dd/MM/yyyy',
+                            label: 'Experience'
+                        }
+                    }}
+                    onSubmit={mockOnSubmit}
+                />
+            );
+            fireEvent.change(screen.getByRole('textbox', { name: 'From' }), {
+                target: { value: '02/09/2021' }
+            });
 
-            fireEvent.submit(container.querySelector('form'));
+            fireEvent.submit(screen.getByRole('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith({
                 experience: {
                     startDate: format(new Date(new Date().getFullYear(), new Date().getMonth(), 2), 'dd/MM/yyyy'),

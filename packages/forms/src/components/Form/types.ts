@@ -10,11 +10,11 @@ export interface FormFieldSchema {
 
 export interface FormProps extends FormTypes {
     /** Field Schema */
-    fieldSchema: FormFieldSchema | ((values: { [key: string]: any }) => FormFieldSchema);
+    fieldSchema: FormFieldSchema | ((values: Record<string, any>) => FormFieldSchema);
     /** Action Schema */
     actionSchema?: FormActionSchema;
     /** Function to be called on submit */
-    onSubmit: (data: { [key: string]: any }) => void;
+    onSubmit: (data: Record<string, any>) => void;
     /** Label for default action */
     actionLabel?: string;
     /** Form header */
@@ -22,17 +22,17 @@ export interface FormProps extends FormTypes {
     /** Form Helper text */
     helperText?: string;
     /** Api failure error messages (key should be aligned with the field key) */
-    apiErrorMessages?: { [key: string]: any };
+    apiErrorMessages?: Record<string, any>;
     /** Set it to true to hide the actions */
     hideActions?: boolean;
     /** Initial state of the form */
-    initialState?: { [key: string]: any };
+    initialState?: Record<string, any>;
     /** Set it true to take the full width of the parent */
     fullWidth?: boolean;
     /** This key is to set the min width in px/rem/% (1rem = 10px) */
     minWidth?: string;
     /** Function to be called on values updating */
-    onChange?: (values: { [key: string]: any }) => void;
+    onChange?: (values: Record<string, any>) => void;
     /** optional css grid gap setting */
     gridGap?: string;
     /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered.

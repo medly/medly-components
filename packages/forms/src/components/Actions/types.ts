@@ -16,7 +16,7 @@ export type ActionProps = {
     /** Form id */
     formId: string;
     /** Disable the actions */
-    disabled: boolean;
+    disabled?: boolean;
     /** Action label for default button */
     actionLabel?: string;
     /** Action Schema */
