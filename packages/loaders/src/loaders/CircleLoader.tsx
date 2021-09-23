@@ -10,5 +10,4 @@ const Component: FC<SvgLoaderProps> = React.memo(props => (
 ));
 
 Component.displayName = 'CircleLoader';
-
 export const CircleLoader: FC<SvgLoaderProps> & WithStyle = Object.assign(Component, { Style: SvgLoader });

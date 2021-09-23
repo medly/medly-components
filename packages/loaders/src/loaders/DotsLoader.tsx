@@ -10,5 +10,4 @@ const Component: FC<SvgLoaderProps> = React.memo(props => (
 ));
 
 Component.displayName = 'DotsLoader';
-
 export const DotsLoader: FC<SvgLoaderProps> & WithStyle = Object.assign(Component, { Style: SvgLoader });
