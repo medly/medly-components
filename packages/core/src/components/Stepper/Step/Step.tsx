@@ -4,7 +4,7 @@ import Text from '../../Text';
 import { StepProps } from '../types';
 import { StepCounterStyled, StepStyled } from './Step.styled';
 
-const Step: React.FC<StepProps> & WithStyle = React.memo(props => {
+const Component: React.FC<StepProps> = React.memo(props => {
     const { step, children, onClick, ...restProps } = props;
 
     return (
@@ -19,7 +19,6 @@ const Step: React.FC<StepProps> & WithStyle = React.memo(props => {
     );
 });
 
-Step.displayName = 'Step';
-Step.Style = StepStyled;
-
+Component.displayName = 'Step';
+const Step: React.FC<StepProps> & WithStyle = Object.assign(Component, { Style: StepStyled });
 export default Step;

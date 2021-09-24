@@ -8,7 +8,7 @@ import { ListWrapper, PageNavButton, PageNumberButton } from './Pagination.style
 import PaginationPopup from './PaginationPopup';
 import { PaginationProps } from './types';
 
-export const Pagination: FC<PaginationProps> & WithStyle = React.memo(
+const Component: FC<PaginationProps> = React.memo(
     React.forwardRef((props, ref) => {
         const links = [],
             { hidePrevNextLinks, activePage, itemsPerPage, totalItems, onPageClick, ...restProps } = props,
@@ -60,10 +60,6 @@ export const Pagination: FC<PaginationProps> & WithStyle = React.memo(
     })
 );
 
-Pagination.displayName = 'Pagination';
-Pagination.Style = ListWrapper.Style;
-Pagination.defaultProps = {
-    activePage: 1,
-    itemsPerPage: 20,
-    hidePrevNextLinks: false
-};
+Component.displayName = 'Pagination';
+Component.defaultProps = { activePage: 1, itemsPerPage: 20, hidePrevNextLinks: false };
+export const Pagination: FC<PaginationProps> & WithStyle = Object.assign(Component, { Style: ListWrapper.Style });

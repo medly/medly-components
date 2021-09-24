@@ -5,22 +5,11 @@ import TabList from './TabList';
 import TabPanel from './TabPanel';
 import { TabsContext } from './Tabs.context';
 import * as Styled from './Tabs.styled';
-import { TabsProps, StaticProps } from './types';
+import { StaticProps, TabsProps } from './types';
 
-export const Tabs: React.FC<TabsProps> & StaticProps & WithStyle = React.memo(
+const Component: React.FC<TabsProps> = React.memo(
     React.forwardRef((props, ref) => {
-        const {
-                hidePanel,
-                defaultActive,
-                active,
-                onChange,
-                children,
-                tabSize,
-                tabBackground,
-                forceRender,
-                variant,
-                ...restProps
-            } = props,
+        const { hidePanel, defaultActive, active, onChange, children, tabSize, tabBackground, forceRender, variant, ...restProps } = props,
             tabsId = props.id || 'medly-tabs',
             tabIds = useMemo(
                 () =>
@@ -61,15 +50,7 @@ export const Tabs: React.FC<TabsProps> & StaticProps & WithStyle = React.memo(
         );
     })
 );
-Tabs.displayName = 'Tabs';
-Tabs.Style = Styled.Tabs;
-Tabs.Tab = Tab;
-Tabs.TabList = TabList;
-Tabs.TabPanel = TabPanel;
-Tabs.defaultProps = {
-    tabSize: 'S',
-    tabBackground: 'WHITE',
-    forceRender: false,
-    hidePanel: false,
-    variant: 'flat'
-};
+Component.displayName = 'Tabs';
+
+Component.defaultProps = { tabSize: 'S', tabBackground: 'WHITE', forceRender: false, hidePanel: false, variant: 'flat' };
+export const Tabs: React.FC<TabsProps> & StaticProps & WithStyle = Object.assign(Component, { Style: Styled.Tabs, Tab, TabList, TabPanel });

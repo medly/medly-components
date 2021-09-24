@@ -4,7 +4,7 @@ import { TabsContext } from '../Tabs.context';
 import * as Styled from './Tab.styled';
 import { TabProps } from './types';
 
-export const Tab: React.FC<TabProps> & WithStyle = React.memo(props => {
+const Component: React.FC<TabProps> = React.memo(props => {
     const { id, active, label, icon: Icon = null, helperText, count, disabled, disabledLabel, ...restProps } = props,
         { tabSize, tabBackground, variant } = useContext(TabsContext);
     return (
@@ -42,5 +42,5 @@ export const Tab: React.FC<TabProps> & WithStyle = React.memo(props => {
         </Styled.TabWrapper>
     );
 });
-Tab.displayName = 'Tab';
-Tab.Style = Styled.TabWrapper;
+Component.displayName = 'Tab';
+export const Tab: React.FC<TabProps> & WithStyle = Object.assign(Component, { Style: Styled.TabWrapper });

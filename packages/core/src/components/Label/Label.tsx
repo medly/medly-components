@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import { LabelStyled } from './Label.styled';
 import { LabelProps } from './types';
 
-export const Label: FC<LabelProps> & WithStyle = React.memo(
+const Component: FC<LabelProps> = React.memo(
     React.forwardRef((props, ref) => (
         <LabelStyled ref={ref} {...props}>
             {props.children}
@@ -11,9 +11,9 @@ export const Label: FC<LabelProps> & WithStyle = React.memo(
     ))
 );
 
-Label.defaultProps = {
+Component.defaultProps = {
     labelPosition: 'left',
     required: false
 };
-Label.displayName = 'Label';
-Label.Style = LabelStyled;
+Component.displayName = 'Label';
+export const Label: FC<LabelProps> & WithStyle = Object.assign(Component, { Style: LabelStyled });

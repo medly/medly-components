@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { DescriptionStyled, FieldStyled, FieldWithLabelStyled, LabelStyled } from './FieldWithLabel.styled';
 import { FieldWithLabelProps, StaticProps } from './types';
 
-export const FieldWithLabel: React.FC<FieldWithLabelProps> & WithStyle & StaticProps = React.memo(
+const Component: React.FC<FieldWithLabelProps> = React.memo(
     React.forwardRef((props, ref) => {
         const isLabelPresent = useMemo(
             () => !!React.Children.toArray(props.children).find((child: any) => child && child.type && child.type.displayName === 'Label'),
@@ -14,13 +14,11 @@ export const FieldWithLabel: React.FC<FieldWithLabelProps> & WithStyle & StaticP
     })
 );
 
-FieldWithLabel.Field = FieldStyled;
-FieldWithLabel.Label = LabelStyled;
-FieldWithLabel.Description = DescriptionStyled;
-FieldWithLabel.displayName = 'FieldWithLabel';
-FieldWithLabel.Style = FieldWithLabelStyled;
-FieldWithLabel.defaultProps = {
-    labelPosition: 'left',
-    fullWidth: false,
-    fieldWithMaxContent: false
-};
+Component.displayName = 'FieldWithLabel';
+Component.defaultProps = { labelPosition: 'left', fullWidth: false, fieldWithMaxContent: false };
+export const FieldWithLabel: React.FC<FieldWithLabelProps> & WithStyle & StaticProps = Object.assign(Component, {
+    Style: FieldWithLabelStyled,
+    Description: DescriptionStyled,
+    Label: LabelStyled,
+    Field: FieldStyled
+});

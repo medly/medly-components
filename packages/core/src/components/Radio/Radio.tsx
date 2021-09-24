@@ -4,7 +4,7 @@ import { SelectorLabel } from '../Selectors';
 import * as Styled from './Radio.styled';
 import { RadioProps } from './types';
 
-export const Radio: FC<RadioProps> & WithStyle = React.memo(
+const Component: FC<RadioProps> = React.memo(
     React.forwardRef((props, ref) => {
         const { id, size, label, labelPosition, fullWidth, hasError, labelVariant, labelWeight, className, ...inputProps } = props,
             inputId = useMemo(() => id || label, [id, label]),
@@ -41,9 +41,6 @@ export const Radio: FC<RadioProps> & WithStyle = React.memo(
     })
 );
 
-Radio.displayName = 'Radio';
-Radio.Style = Styled.RadioWithLabelWrapper;
-Radio.defaultProps = {
-    label: '',
-    labelPosition: 'right'
-};
+Component.displayName = 'Radio';
+Component.defaultProps = { label: '', labelPosition: 'right' };
+export const Radio: FC<RadioProps> & WithStyle = Object.assign(Component, { Style: Styled.RadioWithLabelWrapper });

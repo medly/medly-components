@@ -5,7 +5,7 @@ import getMaskedValue from './getMaskedValue';
 import * as Styled from './Styled';
 import { TextFieldProps } from './types';
 
-export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
+const Component: FC<TextFieldProps> = React.memo(
     React.forwardRef((props: TextFieldProps, ref) => {
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));
@@ -163,7 +163,11 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         )}
                     </Styled.InputWrapper>
                     {props.showTooltipForHelperAndErrorText && (
-                        <Styled.HelperAndErrorTextTooltipWrapper size={size} displayCharacterCount={displayCharacterCount} isSuffixPresent={isSuffixPresent}>
+                        <Styled.HelperAndErrorTextTooltipWrapper
+                            size={size}
+                            displayCharacterCount={displayCharacterCount}
+                            isSuffixPresent={isSuffixPresent}
+                        >
                             <HelperAndErrorTextTooltip id={inputId} errorText={errorText || builtInErrorMessage} helperText={helperText} />
                         </Styled.HelperAndErrorTextTooltipWrapper>
                     )}
@@ -182,9 +186,8 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
         );
     })
 );
-TextField.displayName = 'TextField';
-TextField.Style = Styled.OuterWrapper;
-TextField.defaultProps = {
+Component.displayName = 'TextField';
+Component.defaultProps = {
     size: 'M',
     type: 'text',
     variant: 'filled',
@@ -199,3 +202,4 @@ TextField.defaultProps = {
     withCharacterCount: false,
     showDecorators: true
 };
+export const TextField: FC<TextFieldProps> & WithStyle = Object.assign(Component, { Style: Styled.OuterWrapper });
