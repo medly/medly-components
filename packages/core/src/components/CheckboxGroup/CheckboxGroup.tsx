@@ -169,4 +169,4 @@ const Component: FC<CheckboxGroupProps> = React.memo(
 
 Component.displayName = 'CheckboxGroup';
 Component.defaultProps = { values: [], columns: 1, fullWidthOptions: false, labelVariant: 'body1', labelWeight: 'Medium' };
-export const checkboxGroup: FC<CheckboxGroupProps> & WithStyle = Object.assign(Component, { Style: SelectorGroup.Wrapper });
+export const CheckboxGroup: FC<CheckboxGroupProps> & WithStyle = Object.assign(Component, { Style: SelectorGroup.Wrapper });
