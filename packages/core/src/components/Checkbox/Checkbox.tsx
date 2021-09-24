@@ -4,7 +4,7 @@ import React, { FC, FocusEvent, FormEvent, useCallback, useMemo, useState } from
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Checkbox.styled';
 import { CheckboxProps } from './types';
-export const Checkbox: FC<CheckboxProps> & WithStyle = React.memo(
+const Component: FC<CheckboxProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
             id,
@@ -93,9 +93,6 @@ export const Checkbox: FC<CheckboxProps> & WithStyle = React.memo(
     })
 );
 
-Checkbox.displayName = 'Checkbox';
-Checkbox.Style = Styled.CheckboxWithLabelWrapper;
-Checkbox.defaultProps = {
-    label: '',
-    labelPosition: 'right'
-};
+Component.displayName = 'Checkbox';
+Component.defaultProps = { label: '', labelPosition: 'right' };
+export const Checkbox: FC<CheckboxProps> & WithStyle = Object.assign(Component, { Style: Styled.CheckboxWithLabelWrapper });

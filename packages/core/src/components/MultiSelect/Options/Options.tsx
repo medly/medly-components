@@ -7,7 +7,7 @@ import Chip from './Chip';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
-const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
+const Component: React.FC<OptionsProps> = React.memo(props => {
     const { id, values, size, options, onOptionClick } = props;
 
     const selectedValues = useMemo(() => values.map(op => op.value), [values]),
@@ -74,7 +74,7 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
         </Styled.OptionsWrapper>
     );
 });
-Options.displayName = 'Options';
-Options.Style = Styled.Options;
+Component.displayName = 'Options';
+const Options: React.FC<OptionsProps> & WithStyle = Object.assign(Component, { Style: Styled.Options });
 
 export default Options;

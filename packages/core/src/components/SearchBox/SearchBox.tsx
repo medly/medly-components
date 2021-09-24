@@ -10,7 +10,7 @@ import { CloseIconWrapper, ExpandIconWrapper, SearchIconWrapper } from './styles
 import { SearchInput } from './styles/input';
 import { SearchBoxProps } from './types';
 
-export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
+const Component: FC<SearchBoxProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
             options: defaultOptions,
@@ -57,22 +57,25 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
                 inputRef.current.value = '';
                 inputRef.current.focus();
                 setOptionsVisibilityState(false);
-                setShowCloseIcon(false)
+                setShowCloseIcon(false);
                 updateIsTyping(false);
                 onClear && onClear();
             }, []),
             handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
                 const value = event.target.value;
                 updateIsTyping(value.length !== 0);
-                setShowCloseIcon(value.length !== 0)
+                setShowCloseIcon(value.length !== 0);
                 onInputChange(value);
             }, []),
-            handleOptionClick = useCallback((option: Option) => {
-                inputRef.current.value = option.label;
-                inputRef.current.focus();
-                setOptionsVisibilityState(false);
-                onOptionSelected && onOptionSelected(option);
-            }, [onOptionSelected]),
+            handleOptionClick = useCallback(
+                (option: Option) => {
+                    inputRef.current.value = option.label;
+                    inputRef.current.focus();
+                    setOptionsVisibilityState(false);
+                    onOptionSelected && onOptionSelected(option);
+                },
+                [onOptionSelected]
+            ),
             handleFocus = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
                 updateIsTyping(event.target.value.length > 0);
                 isFocused.current = true;
@@ -140,12 +143,12 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
     })
 );
 
-SearchBox.displayName = 'SearchBox';
-SearchBox.Style = Styled.SearchBoxWrapper;
-SearchBox.defaultProps = {
+Component.displayName = 'SearchBox';
+Component.defaultProps = {
     options: [],
     placeholder: 'Search',
     size: 'S',
     minWidth: '25.6rem',
     fullWidth: false
 };
+export const SearchBox: FC<SearchBoxProps> & WithStyle = Object.assign(Component, { Style: Styled.SearchBoxWrapper });

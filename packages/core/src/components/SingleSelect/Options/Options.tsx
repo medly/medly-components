@@ -4,7 +4,7 @@ import Option from './Option';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
-const Options: React.FC<OptionsProps> & WithStyle = React.memo(
+const Component: React.FC<OptionsProps> = React.memo(
     React.forwardRef(({ options, onOptionClick, hasError, ...restProps }, ref) => (
         <Styled.Options {...restProps} ref={ref}>
             {options.map(option => (
@@ -22,10 +22,9 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(
         </Styled.Options>
     ))
 );
-Options.defaultProps = {
+Component.defaultProps = {
     isNested: false
 };
-Options.displayName = 'Options';
-Options.Style = Styled.Options;
-
+Component.displayName = 'Options';
+const Options: React.FC<OptionsProps> & WithStyle = Object.assign(Component, { Style: Styled.Options });
 export default Options;

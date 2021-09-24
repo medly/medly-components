@@ -7,7 +7,7 @@ import { Wrapper } from './MultiSelect.styled';
 import Options from './Options';
 import { MultiSelectProps } from './types';
 
-export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
+const Component: FC<MultiSelectProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 id,
@@ -189,9 +189,8 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
     })
 );
 
-MultiSelect.displayName = 'MultiSelect';
-MultiSelect.Style = Wrapper;
-MultiSelect.defaultProps = {
+Component.displayName = 'MultiSelect';
+Component.defaultProps = {
     size: 'M',
     values: [],
     minWidth: '20rem',
@@ -200,3 +199,4 @@ MultiSelect.defaultProps = {
     placeholder: 'Please Select . . .',
     showDecorators: true
 };
+export const MultiSelect: FC<MultiSelectProps> & WithStyle = Object.assign(Component, { Style: Wrapper });

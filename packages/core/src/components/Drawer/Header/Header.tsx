@@ -4,7 +4,7 @@ import Text from '../../Text';
 import { DrawerContext } from '../Drawer.context';
 import { CloseIconStyled, HeaderStyled } from './Header.styled';
 
-export const Header: React.FC & WithStyle = React.memo(({ children, ...restProps }) => {
+const Component: React.FC = React.memo(({ children, ...restProps }) => {
     const { id, scrollState, onClose } = useContext(DrawerContext);
     return (
         <HeaderStyled showShadow={!scrollState.scrolledToTop} {...restProps} id={`${id}-header`}>
@@ -16,5 +16,5 @@ export const Header: React.FC & WithStyle = React.memo(({ children, ...restProps
     );
 });
 
-Header.displayName = 'DrawerHeader';
-Header.Style = HeaderStyled;
+Component.displayName = 'DrawerHeader';
+export const Header: React.FC & WithStyle = Object.assign(Component, { Style: HeaderStyled });

@@ -2,19 +2,19 @@ import { ExpandMoreIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import React, { useCallback, useContext } from 'react';
 import { AccordionContext } from '../AccordionContext';
-import * as Styled from './Header.styled';
+import { Wrapper } from './Header.styled';
 
-export const Header: React.FC & WithStyle = React.memo(({ children, ...restProps }) => {
+const Component: React.FC = React.memo(({ children, ...restProps }) => {
     const [isActive, setActiveState] = useContext(AccordionContext),
         handleClick = useCallback(() => setActiveState(val => !val), []);
 
     return (
-        <Styled.Wrapper aria-expanded={isActive} isActive={isActive} onClick={handleClick} {...restProps}>
+        <Wrapper aria-expanded={isActive} isActive={isActive} onClick={handleClick} {...restProps}>
             {children}
             <ExpandMoreIcon size="M" />
-        </Styled.Wrapper>
+        </Wrapper>
     );
 });
 
-Header.displayName = 'Header';
-Header.Style = Styled.Wrapper;
+Component.displayName = 'Header';
+export const Header: React.FC & WithStyle = Object.assign(Component, { Style: Wrapper });

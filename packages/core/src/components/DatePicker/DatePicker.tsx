@@ -8,7 +8,7 @@ import { DateIconWrapper, Wrapper } from './DatePicker.styled';
 import datePickerPattern from './datePickerPattern';
 import { DatePickerProps } from './types';
 
-export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
+const Component: React.FC<DatePickerProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 value,
@@ -171,7 +171,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
         );
     })
 );
-DatePicker.defaultProps = {
+Component.defaultProps = {
     label: '',
     value: null,
     variant: 'filled',
@@ -186,5 +186,5 @@ DatePicker.defaultProps = {
     showCalendarIcon: true,
     showDecorators: true
 };
-DatePicker.displayName = 'DatePicker';
-DatePicker.Style = Wrapper;
+Component.displayName = 'DatePicker';
+export const DatePicker: React.FC<DatePickerProps> & WithStyle = Object.assign(Component, { Style: Wrapper });

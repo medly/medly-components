@@ -5,7 +5,7 @@ import Text from '../Text';
 import * as Styled from './Chip.styled';
 import { ChipProps } from './types';
 
-export const Chip: FC<ChipProps> & WithStyle = React.memo(
+const Component: FC<ChipProps> = React.memo(
     React.forwardRef((props, ref) => {
         const { label, onDelete, ...restProps } = props;
 
@@ -26,8 +26,8 @@ export const Chip: FC<ChipProps> & WithStyle = React.memo(
     })
 );
 
-Chip.defaultProps = {
+Component.defaultProps = {
     variant: 'solid'
 };
-Chip.displayName = 'Chip';
-Chip.Style = Styled.Chip;
+Component.displayName = 'Chip';
+export const Chip: FC<ChipProps> & WithStyle = Object.assign(Component, { Style: Styled.Chip });

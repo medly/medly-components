@@ -6,7 +6,7 @@ import * as Styled from './ToastContainer.styled';
 import { toastStore } from './ToastStore';
 import { ToastContainerProps } from './types';
 
-export const ToastContainer: FC<ToastContainerProps> & WithStyle = React.memo(
+const Component: FC<ToastContainerProps> = React.memo(
     React.forwardRef((props, ref) => {
         const toasts = useStore(toastStore);
 
@@ -21,8 +21,8 @@ export const ToastContainer: FC<ToastContainerProps> & WithStyle = React.memo(
         );
     })
 );
-ToastContainer.defaultProps = {
+Component.defaultProps = {
     position: 'top'
 };
-ToastContainer.displayName = 'ToastContainer';
-ToastContainer.Style = Styled.Container;
+Component.displayName = 'ToastContainer';
+export const ToastContainer: FC<ToastContainerProps> & WithStyle = Object.assign(Component, { Style: Styled.Container });

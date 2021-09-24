@@ -11,7 +11,7 @@ import {
 } from './Minimap.styled';
 import { MinimapProps } from './types';
 
-export const Minimap: FC<MinimapProps> & WithStyle = React.memo(
+const Component: FC<MinimapProps> & WithStyle = React.memo(
     ({ minimapWidth, controllerWidth, sliderContentPadding, tableRef, minimapDimensionDeps, ...restProps }) => {
         const sliderControllerRef = useRef(null),
             sliderRangeRef = useRef<HTMLDivElement>(null),
@@ -159,11 +159,11 @@ export const Minimap: FC<MinimapProps> & WithStyle = React.memo(
     }
 );
 
-Minimap.displayName = 'Minimap';
-Minimap.Style = MinimapContainer;
-Minimap.defaultProps = {
+Component.displayName = 'Minimap';
+Component.defaultProps = {
     minimapWidth: 126,
     controllerWidth: 40,
     sliderContentPadding: 8,
     minimapDimensionDeps: []
 };
+export const Minimap: FC<MinimapProps> & WithStyle = Object.assign(Component, { Style: MinimapContainer });

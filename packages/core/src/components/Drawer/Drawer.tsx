@@ -6,9 +6,9 @@ import { DrawerContext } from './Drawer.context';
 import { DrawerBackground, DrawerStyled } from './Drawer.styled';
 import Footer from './Footer';
 import Header from './Header';
-import { DrawerStaticProps, DrawerProps } from './types';
+import { DrawerProps, DrawerStaticProps } from './types';
 
-export const Drawer: React.FC<DrawerProps> & WithStyle & DrawerStaticProps = React.memo(
+const Component: React.FC<DrawerProps> = React.memo(
     React.forwardRef(({ id = 'medly-drawer', onClose, open, width, children, withOverlay, position, ...props }, ref) => {
         const isEscPressed = useKeyPress('Escape'),
             [shouldRender, setRenderState] = useState(open),
@@ -44,14 +44,16 @@ export const Drawer: React.FC<DrawerProps> & WithStyle & DrawerStaticProps = Rea
     })
 );
 
-Drawer.displayName = 'Drawer';
-Drawer.defaultProps = {
+Component.displayName = 'Drawer';
+Component.defaultProps = {
     open: false,
     position: 'right',
     width: '40rem',
     withOverlay: true
 };
-Drawer.Style = DrawerBackground;
-Drawer.Content = Content;
-Drawer.Footer = Footer;
-Drawer.Header = Header;
+export const Drawer: React.FC<DrawerProps> & WithStyle & DrawerStaticProps = Object.assign(Component, {
+    Style: DrawerBackground,
+    Content,
+    Footer,
+    Header
+});
