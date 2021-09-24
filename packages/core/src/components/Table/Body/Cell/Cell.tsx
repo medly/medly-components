@@ -4,7 +4,7 @@ import Text from '../../../Text';
 import { Cell as StyledCell, CustomComponentWrapper, LoadingDiv } from './Styled';
 import { TableCellProps } from './types';
 
-const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
+const Component: React.FC<TableCellProps> = React.memo(props => {
     const customComponentWrapperRef = useRef(null),
         {
             addColumnMaxSize,
@@ -52,7 +52,7 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
         </StyledCell>
     );
 });
-Cell.displayName = 'Cell';
-Cell.Style = StyledCell;
+Component.displayName = 'Cell';
+const Cell: React.FC<TableCellProps> & WithStyle = Object.assign(Component, { Style: StyledCell });
 
 export default Cell;

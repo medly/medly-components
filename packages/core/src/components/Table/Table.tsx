@@ -15,7 +15,7 @@ import useGroupedRowSelector from './useGroupedRowSelector';
 import useRowSelector from './useRowSelector';
 import { useScrollState } from './useScrollState';
 
-export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
+export const Component: FC<TableProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 data,
@@ -140,7 +140,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
     })
 );
 
-Table.defaultProps = {
+Component.defaultProps = {
     size: 'M',
     selectedRowIds: [],
     rowIdentifier: 'id',
@@ -158,6 +158,8 @@ Table.defaultProps = {
     withRowSeparators: true
 };
 
-Table.displayName = 'Table';
-Table.ColumnConfiguration = ColumnConfiguration;
-Table.Style = TableStyled;
+Component.displayName = 'Table';
+export const Table: FC<TableProps> & WithStyle & StaticProps = Object.assign(Component, {
+    Style: TableStyled,
+    ColumnConfiguration
+});

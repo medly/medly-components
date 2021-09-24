@@ -5,7 +5,7 @@ import Text from '../../../Text';
 import { HeadCellButton, HeadCellStyled, ResizeHandler } from './HeadCell.styled';
 import { HeadCellProps } from './types';
 
-const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
+const Component: React.FC<HeadCellProps> = React.memo(props => {
     let pageX: number;
     const {
         align,
@@ -121,7 +121,6 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     );
 });
 
-HeadCell.displayName = 'HeadCell';
-HeadCell.Style = HeadCellStyled;
-
+Component.displayName = 'HeadCell';
+const HeadCell: React.FC<HeadCellProps> & WithStyle = Object.assign(Component, { Style: HeadCellStyled });
 export default HeadCell;
