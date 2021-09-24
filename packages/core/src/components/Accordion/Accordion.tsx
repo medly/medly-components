@@ -5,7 +5,7 @@ import Content from './Content';
 import Header from './Header';
 import { StaticProps } from './types';
 
-export const Accordion: FC & StaticProps = React.memo(props => {
+const Component: FC = React.memo(props => {
     const activeState = useState(false);
 
     return (
@@ -15,7 +15,9 @@ export const Accordion: FC & StaticProps = React.memo(props => {
     );
 });
 
-Accordion.displayName = 'Accordion';
-Accordion.Header = Header;
-Accordion.Content = Content;
-Accordion.Context = AccordionContext;
+Component.displayName = 'Accordion';
+export const Accordion: FC & StaticProps = Object.assign(Component, {
+    Header,
+    Content,
+    Context: AccordionContext
+});

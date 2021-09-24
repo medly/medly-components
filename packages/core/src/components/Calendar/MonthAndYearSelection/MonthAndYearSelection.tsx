@@ -6,7 +6,7 @@ import { getMonthAndYearFromDate } from '../helper';
 import { Wrapper } from './MonthAndYearSelection.styled';
 import { MonthAndYearSelectionProps } from './types';
 
-export const MonthAndYearSelection: React.FC<MonthAndYearSelectionProps> & WithStyle = React.memo(
+const Component: React.FC<MonthAndYearSelectionProps> = React.memo(
     ({ id, month, year, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, ...restProps }) => {
         const { month: minMonth, year: minYear } = getMonthAndYearFromDate(minSelectableDate),
             { month: maxMonth, year: maxYear } = getMonthAndYearFromDate(maxSelectableDate);
@@ -66,5 +66,7 @@ export const MonthAndYearSelection: React.FC<MonthAndYearSelectionProps> & WithS
         );
     }
 );
-MonthAndYearSelection.displayName = 'MonthAndYearSelection';
-MonthAndYearSelection.Style = Wrapper;
+Component.displayName = 'MonthAndYearSelection';
+export const MonthAndYearSelection: React.FC<MonthAndYearSelectionProps> & WithStyle = Object.assign(Component, {
+    Style: Wrapper
+});

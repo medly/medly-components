@@ -5,7 +5,7 @@ import { SelectorGroup } from '../Selectors';
 import getValuesFromOptions from './getValuesFromOptions';
 import { CheckboxGroupProps } from './types';
 
-export const CheckboxGroup: FC<CheckboxGroupProps> & WithStyle = React.memo(
+const Component: FC<CheckboxGroupProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
             id,
@@ -133,7 +133,7 @@ export const CheckboxGroup: FC<CheckboxGroupProps> & WithStyle = React.memo(
                 >
                     {options.map(option => {
                         return Array.isArray(option.value) ? (
-                            <CheckboxGroup
+                            <Component
                                 key={option.label}
                                 parentHasError={hasError}
                                 id={`${option.label}-${checkboxGroupId}`}
@@ -167,12 +167,6 @@ export const CheckboxGroup: FC<CheckboxGroupProps> & WithStyle = React.memo(
     })
 );
 
-CheckboxGroup.displayName = 'CheckboxGroup';
-CheckboxGroup.Style = SelectorGroup.Wrapper;
-CheckboxGroup.defaultProps = {
-    values: [],
-    columns: 1,
-    fullWidthOptions: false,
-    labelVariant: 'body1',
-    labelWeight: 'Medium'
-};
+Component.displayName = 'CheckboxGroup';
+Component.defaultProps = { values: [], columns: 1, fullWidthOptions: false, labelVariant: 'body1', labelWeight: 'Medium' };
+export const checkboxGroup: FC<CheckboxGroupProps> & WithStyle = Object.assign(Component, { Style: SelectorGroup.Wrapper });
