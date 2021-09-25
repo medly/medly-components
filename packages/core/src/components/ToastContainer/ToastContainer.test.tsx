@@ -23,8 +23,8 @@ describe('ToastContainer', () => {
         'left-end',
         'left',
         'left-start'
-    ])('should render properly with position %s', (position: ToastContainerProps['position']) => {
-        const { container } = render(<ToastContainer position={position}></ToastContainer>);
+    ])('should render properly with position %s', position => {
+        const { container } = render(<ToastContainer position={position as ToastContainerProps['position']}></ToastContainer>);
         addToast({ variant: 'success', header: 'Heading 1', message: 'Info message', timer: 2000 });
         expect(container).toMatchSnapshot();
         jest.runAllTimers();

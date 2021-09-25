@@ -6,7 +6,7 @@ import * as Styled from './Styled';
 import { TextFieldProps } from './types';
 
 const Component: FC<TextFieldProps> = React.memo(
-    React.forwardRef((props: TextFieldProps, ref) => {
+    React.forwardRef((props, ref) => {
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));
 
@@ -39,10 +39,11 @@ const Component: FC<TextFieldProps> = React.memo(
             isPrefixPresent = useMemo(() => !!Prefix, [Prefix]),
             isSuffixPresent = useMemo(() => !!Suffix, [Suffix]),
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
-            displayCharacterCount = useMemo(
-                () => withCharacterCount && showDecorators && props.maxLength >= 0 && props.maxLength !== null,
-                [withCharacterCount, showDecorators, props.maxLength]
-            ),
+            displayCharacterCount = useMemo(() => !!(withCharacterCount && showDecorators && props.maxLength && props.maxLength >= 0), [
+                withCharacterCount,
+                showDecorators,
+                props.maxLength
+            ]),
             [isTextPresent, setIsTextPresent] = useState(!!value || !!restProps.defaultValue),
             [maskLabel, setMaskLabel] = useState(mask),
             [inputWidth, setInputWidth] = useState(0),
@@ -51,20 +52,20 @@ const Component: FC<TextFieldProps> = React.memo(
             );
 
         const validate = useCallback(
-            (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
+            (event: FormEvent<HTMLInputElement>, eventFunc?: (e: any) => void) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
                     validatorMessage = (validator && validator(element.value, event.type)) || '',
                     message = validator ? validatorMessage : element.validationMessage;
                 setErrorMessage(message);
-                validator && inputRef.current.setCustomValidity(validatorMessage);
+                validator && inputRef.current?.setCustomValidity(validatorMessage);
                 eventFunc && eventFunc(event);
             },
             [validator, builtInErrorMessage]
         );
 
         const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
-            handleWrapperClick = useCallback(() => !disabled && inputRef.current.focus(), [inputRef, disabled]),
+            handleWrapperClick = useCallback(() => !disabled && inputRef.current?.focus(), [inputRef, disabled]),
             onBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
             onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
             onChange = useCallback(
@@ -91,7 +92,7 @@ const Component: FC<TextFieldProps> = React.memo(
         }, [value, mask]);
 
         useEffect(() => {
-            setInputWidth(inputRef.current.offsetWidth);
+            inputRef.current?.offsetWidth && setInputWidth(inputRef.current.offsetWidth);
         }, []);
 
         return (
@@ -103,9 +104,9 @@ const Component: FC<TextFieldProps> = React.memo(
                 id={`${inputId}-input-wrapper`}
             >
                 <Styled.InnerWrapper
-                    size={size}
+                    size={size!}
                     onClick={handleWrapperClick}
-                    variant={props.variant}
+                    variant={props.variant!}
                     disabled={disabled}
                     isErrorPresent={isErrorPresent}
                     isLabelPresent={isLabelPresent}
@@ -113,12 +114,12 @@ const Component: FC<TextFieldProps> = React.memo(
                     minRows={minRows}
                     multiline={multiline}
                 >
-                    {isPrefixPresent && showDecorators && (
+                    {!!Prefix && showDecorators && (
                         <Styled.Prefix size={size}>
                             <Prefix size={size} />
                         </Styled.Prefix>
                     )}
-                    <Styled.InputWrapper multiline={multiline} size={size} variant={props.variant}>
+                    <Styled.InputWrapper multiline={multiline} size={size!} variant={props.variant!}>
                         <Styled.Input
                             ref={inputRef}
                             value={value}
@@ -131,10 +132,10 @@ const Component: FC<TextFieldProps> = React.memo(
                             isSuffixPresent={isSuffixPresent}
                             isLabelPresent={isLabelPresent}
                             errorText={errorText || builtInErrorMessage}
-                            variant={props.variant}
-                            as={multiline ? 'textarea' : 'input'}
+                            inputSize={size!}
+                            variant={props.variant!}
                             multiline={multiline}
-                            {...{ ...restProps, size, onBlur, onInvalid, onChange }}
+                            {...{ ...restProps, onBlur, onInvalid, onChange }}
                         />
                         {maskLabel && (
                             <Styled.MaskPlaceholder size={size} isLabelPresent={isLabelPresent} variant={props.variant}>
@@ -144,42 +145,42 @@ const Component: FC<TextFieldProps> = React.memo(
                         <Styled.Label
                             inputWidth={inputWidth}
                             htmlFor={`${inputId}-input`}
-                            size={size}
-                            required={required}
-                            variant={props.variant}
+                            size={size!}
+                            required={!!required}
+                            variant={props.variant!}
                             multiline={multiline}
                         >
                             {label}
                         </Styled.Label>
-                        {displayCharacterCount && (
+                        {displayCharacterCount && props.maxLength && (
                             <Styled.CharacterCount
-                                variant={props.variant}
-                                size={size}
+                                variant={props.variant!}
+                                size={size!}
                                 multiline={multiline}
                                 characterCount={characterCountValue}
                                 maxLength={props.maxLength}
-                                showTooltipForHelperAndErrorText={props.showTooltipForHelperAndErrorText}
+                                showTooltipForHelperAndErrorText={!!props.showTooltipForHelperAndErrorText}
                             >{`${characterCountValue}/${props.maxLength}`}</Styled.CharacterCount>
                         )}
                     </Styled.InputWrapper>
                     {props.showTooltipForHelperAndErrorText && (
                         <Styled.HelperAndErrorTextTooltipWrapper
-                            size={size}
+                            size={size!}
                             displayCharacterCount={displayCharacterCount}
                             isSuffixPresent={isSuffixPresent}
                         >
                             <HelperAndErrorTextTooltip id={inputId} errorText={errorText || builtInErrorMessage} helperText={helperText} />
                         </Styled.HelperAndErrorTextTooltipWrapper>
                     )}
-                    {isSuffixPresent && showDecorators && (
+                    {!!Suffix && showDecorators && (
                         <Styled.Suffix size={size}>
                             <Suffix size={size} />
                         </Styled.Suffix>
                     )}
                 </Styled.InnerWrapper>
                 {(isErrorPresent || helperText) && !props.showTooltipForHelperAndErrorText && (
-                    <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size} variant={props.variant}>
-                        {(errorText || builtInErrorMessage || helperText).trim()}
+                    <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size!} variant={props.variant!}>
+                        {(errorText || builtInErrorMessage || helperText || '').trim()}
                     </Styled.HelperText>
                 )}
             </Styled.OuterWrapper>
@@ -200,6 +201,7 @@ Component.defaultProps = {
     errorText: '',
     minRows: 1,
     withCharacterCount: false,
-    showDecorators: true
+    showDecorators: true,
+    showTooltipForHelperAndErrorText: false
 };
 export const TextField: FC<TextFieldProps> & WithStyle = Object.assign(Component, { Style: Styled.OuterWrapper });

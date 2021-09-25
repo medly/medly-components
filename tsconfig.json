@@ -8,8 +8,8 @@
         "noEmit": true,
         "skipLibCheck": true,
         "strict": true,
-        "strictFunctionTypes": false,
-        "strictNullChecks": false,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
         "target": "esnext",
         "paths": {
             "@medly-components/*": ["packages/*/src"],

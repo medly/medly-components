@@ -33,10 +33,8 @@ export const useTextInput = (initialState = ''): Result => {
     return [{ value, onChange }, setValue];
 };
 
-const emailValidation = (value: string) => {
-    if (value === '') return 'Email is required';
-    if (!value.includes('@')) return 'Email address should contain @';
-};
+const emailValidation = (value: string) =>
+    value === '' ? 'Email is required' : !value.includes('@') ? 'Email address should contain @' : '';
 
 export const Custom: React.FC = () => {
     const [email] = useTextInput(''),

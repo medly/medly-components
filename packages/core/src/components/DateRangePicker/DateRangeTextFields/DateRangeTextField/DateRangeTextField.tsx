@@ -19,7 +19,7 @@ export const DateRangeTextField: FC<Props> = React.memo(
                     id={id}
                     isLabelPresent
                     ref={inputRef}
-                    size={size}
+                    inputSize={size}
                     variant={variant}
                     required={required}
                     {...restProps}
