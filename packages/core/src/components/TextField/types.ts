@@ -1,7 +1,7 @@
 import { TextFieldTheme } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
-export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'>, WithThemeProp {
+export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'> {
     /** Input Variants */
     variant?: 'outlined' | 'filled' | 'fusion';
     /** Input Size */
@@ -44,20 +44,21 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     showTooltipForHelperAndErrorText?: boolean;
 }
 
-export interface StyledProps extends TextFieldProps, TextFieldTheme {
-    isPrefixPresent: boolean;
-    isSuffixPresent: boolean;
-    isLabelPresent: boolean;
+export interface StyledProps extends TextFieldProps {
+    isPrefixPresent?: boolean;
+    isSuffixPresent?: boolean;
+    isLabelPresent?: boolean;
     multiline?: boolean;
+    inputSize: 'S' | 'M';
     variant: 'filled' | 'outlined' | 'fusion';
-    inputWidth: number;
+    inputWidth?: number;
 }
 
-export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'height'>, TextFieldTheme, WithThemeProp {
-    variant?: 'outlined' | 'filled' | 'fusion';
+export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'height'> {
+    variant: 'outlined' | 'filled' | 'fusion';
     disabled?: boolean;
     showDecorators?: boolean;
-    size?: 'S' | 'M';
+    size: 'S' | 'M';
     isLabelPresent?: boolean;
     isErrorPresent?: boolean;
     multiline?: boolean;
@@ -65,3 +66,5 @@ export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size
     isTextPresent?: boolean;
     isActive?: boolean;
 }
+
+export type InnerWrapperModifiedProps = InnerWrapperProps & WithThemeProp & Omit<TextFieldTheme, 'height'>;

@@ -1,6 +1,6 @@
 import { css, getFontStyle, styled } from '@medly-components/utils';
 
-const getStyle = (required: boolean, variant: 'outlined' | 'filled' | 'fusion') => {
+const getStyle = (variant: 'outlined' | 'filled' | 'fusion', required?: boolean) => {
     if (required && variant !== 'fusion') {
         return css`
             ::after {
@@ -17,7 +17,7 @@ const getStyle = (required: boolean, variant: 'outlined' | 'filled' | 'fusion') 
 };
 
 export const Label = styled('label')<{
-    required: boolean;
+    required?: boolean;
     variant: 'outlined' | 'filled' | 'fusion';
     size: 'S' | 'M';
     multiline?: boolean;
@@ -42,5 +42,5 @@ export const Label = styled('label')<{
     overflow: hidden;
     text-overflow: ellipsis;
 
-    ${({ required, variant }) => getStyle(required, variant)}
+    ${({ required, variant }) => getStyle(variant, required)}
 `;

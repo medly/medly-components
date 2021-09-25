@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
-import { InnerWrapperProps } from '../../types';
+import { InnerWrapperModifiedProps } from '../../types';
 
-export const filledStyle = ({ theme, filled, disabled }: InnerWrapperProps) => {
+export const filledStyle = ({ theme, filled, disabled }: InnerWrapperModifiedProps) => {
     return css`
         border-radius: ${theme.spacing.S1} ${theme.spacing.S1} 0 0;
         background-color: ${filled.default.bgColor};

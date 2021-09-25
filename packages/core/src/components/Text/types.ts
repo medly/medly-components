@@ -1,7 +1,7 @@
 import { FontVariants, FontWeights } from '@medly-components/theme';
-import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps } from '@medly-components/utils';
 
-interface CommonProps extends HTMLProps<HTMLElement>, WithThemeProp {
+interface CommonProps extends HTMLProps<HTMLElement> {
     /** Text color */
     textColor?: string;
     /** To use uppercase text */
@@ -10,6 +10,8 @@ interface CommonProps extends HTMLProps<HTMLElement>, WithThemeProp {
     lineThrough?: boolean;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
+    /** To be used to render Text as any component*/
+    as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
 }
 
 export interface TextProps extends CommonProps {

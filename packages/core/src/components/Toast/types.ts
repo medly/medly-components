@@ -5,7 +5,7 @@ export type ToastVariants = 'success' | 'error' | 'info' | 'warning';
 
 export type ToastProps = Omit<HTMLProps<HTMLDivElement>, 'id' | 'action'> & {
     /** Id of the Toast */
-    id?: number;
+    id: number;
     /** Toast purpose */
     variant: ToastVariants;
     /** Icon to be shown in the toast */
@@ -19,3 +19,5 @@ export type ToastProps = Omit<HTMLProps<HTMLDivElement>, 'id' | 'action'> & {
     /** Set it true if you are using it without toast container and want to make it full width */
     fullWidth?: boolean;
 };
+
+export type StyledToastProps = Omit<ToastProps, 'id'>;

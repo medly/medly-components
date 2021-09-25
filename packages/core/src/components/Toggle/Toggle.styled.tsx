@@ -1,10 +1,11 @@
 import { defaultTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
+import { styled, WithThemeProp } from '@medly-components/utils';
 import FieldWithLabel from '../FieldWithLabel';
 import { ToggleProps, ToggleWrapperProps } from './types';
 
-const getHeight = ({ theme, size }: ToggleProps) => (size ? theme.toggle.sizes[size] : theme.toggle.sizes[theme.toggle.defaultSize]);
-const getWidth = (props: ToggleProps) => `calc(${getHeight(props)} * 2)`;
+const getHeight = ({ theme, size }: ToggleProps & WithThemeProp) =>
+    size ? theme.toggle.sizes[size] : theme.toggle.sizes[theme?.toggle.defaultSize];
+const getWidth = (props: ToggleProps & WithThemeProp) => `calc(${getHeight(props)} * 2)`;
 
 export const Wrapper = styled(FieldWithLabel.Field)<ToggleWrapperProps>`
     position: relative;

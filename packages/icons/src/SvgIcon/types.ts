@@ -1,9 +1,9 @@
 import { IconSizes } from '@medly-components/theme';
-import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit } from '@medly-components/utils';
 
-export type SVGProp = Omit<HTMLProps<HTMLOrSVGElement>, 'size'>;
+export type SVGProp = Omit<HTMLProps<HTMLOrSVGElement>, 'size' | 'sizes'>;
 
-export interface SvgIconProps extends SVGProp, WithThemeProp {
+export interface SvgIconProps extends SVGProp {
     /** Icon Size */
     size?: IconSizes;
     /** Icon variants */

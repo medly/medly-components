@@ -1,5 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
+import { css, styled, WithThemeProp } from '@medly-components/utils';
 import { TextProps } from './types';
 
 const uppercase = () => css`
@@ -9,7 +9,7 @@ const uppercase = () => css`
 const lineThrough = () => css`
     text-decoration: line-through;
 `;
-const getTextStyle = ({ theme, ...props }: TextProps) => {
+const getTextStyle = ({ theme, ...props }: TextProps & WithThemeProp) => {
     const { textColor, textVariant, textWeight, textAlign } = props,
         { defaults, weights, variants } = theme.font,
         { fontSize, fontWeight, lineHeight, letterSpacing } = variants[textVariant || defaults.variant];

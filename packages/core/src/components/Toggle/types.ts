@@ -1,15 +1,15 @@
 import { FontVariants, FontWeights, ToggleSizes } from '@medly-components/theme';
-import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
 type DivProps = Omit<HTMLProps<HTMLInputElement>, 'size'>;
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type'>;
 
-export interface ToggleWrapperProps extends DivProps, WithThemeProp {
+export interface ToggleWrapperProps extends DivProps {
     size?: ToggleSizes;
 }
 
-export interface ToggleProps extends InputProps, WithThemeProp {
+export interface ToggleProps extends InputProps {
     /** Toggle label */
     label?: string;
     /** Toggle size */

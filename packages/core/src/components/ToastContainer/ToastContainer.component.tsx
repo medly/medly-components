@@ -10,15 +10,13 @@ const Component: FC<ToastContainerProps> = React.memo(
     React.forwardRef((props, ref) => {
         const toasts = useStore(toastStore);
 
-        return (
-            toasts.length > 0 && (
-                <Styled.Container ref={ref} {...props}>
-                    {toasts.map(toast => (
-                        <Toast key={toast.id} {...toast} />
-                    ))}
-                </Styled.Container>
-            )
-        );
+        return toasts.length > 0 ? (
+            <Styled.Container ref={ref} {...props}>
+                {toasts.map(toast => (
+                    <Toast key={toast.id} {...toast} />
+                ))}
+            </Styled.Container>
+        ) : null;
     })
 );
 Component.defaultProps = {

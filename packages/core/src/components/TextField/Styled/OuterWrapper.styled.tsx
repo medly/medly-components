@@ -1,6 +1,6 @@
 import { styled } from '@medly-components/utils';
 
-export const OuterWrapper = styled('div')<{ fullWidth: boolean; minWidth?: string; maxWidth?: string }>`
+export const OuterWrapper = styled('div')<{ fullWidth?: boolean; minWidth?: string; maxWidth?: string }>`
     position: relative;
     flex-direction: column;
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};

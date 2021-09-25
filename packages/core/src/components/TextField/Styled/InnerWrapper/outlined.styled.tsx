@@ -1,8 +1,8 @@
 import { css } from '@medly-components/utils';
 import { rgba } from 'polished';
-import { InnerWrapperProps } from '../../types';
+import { InnerWrapperModifiedProps } from '../../types';
 
-export const outlinedStyle = ({ outlined, disabled, isErrorPresent }: InnerWrapperProps) => {
+export const outlinedStyle = ({ outlined, disabled, isErrorPresent }: InnerWrapperModifiedProps) => {
     return css`
         border-radius: ${outlined.default.borderRadius};
         background-color: ${outlined.default.bgColor};
@@ -43,6 +43,5 @@ export const outlinedStyle = ({ outlined, disabled, isErrorPresent }: InnerWrapp
             border-radius: ${outlined.active.borderRadius};
             border-width: ${outlined.active.borderWidth};
         }
-
     `;
 };
