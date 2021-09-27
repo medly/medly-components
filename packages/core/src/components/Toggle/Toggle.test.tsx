@@ -16,7 +16,7 @@ describe('Checkbox component', () => {
     it('should call onChange handler on click on checkbox', () => {
         const mockOnChange = jest.fn();
         render(<Toggle onChange={mockOnChange} disabled name="gender" label="Female" size="M" labelPosition="right" />);
-        fireEvent.click(screen.getByRole('textbox'));
+        fireEvent.click(screen.getByRole('checkbox'));
         expect(mockOnChange).toBeCalled();
     });
 });

@@ -57,7 +57,8 @@ describe('Tab', () => {
     });
 
     it('should render icon only when given', () => {
-        const { container } = renderer({ icon: undefined });
+        //@ts-ignore
+        const { container } = renderer({ icon: null });
         expect(container.querySelector('svg')).toBeNull();
     });
 });
