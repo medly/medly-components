@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.24](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.23...@medly-components/icons@1.7.24) (2021-09-27)
+
+
+### Bug Fixes
+
+* strict null check issue in Tabs, Toggle, ToastContainer, Toast, TextFi… ([#439](https://github.com/medly/medly-components/issues/439)) ([fc49370](https://github.com/medly/medly-components/commit/fc49370e5608b17429082e4379b67e730586c3c4))
+
+
+
+
+
 ## [1.7.23](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.22...@medly-components/icons@1.7.23) (2021-09-23)
 
 
