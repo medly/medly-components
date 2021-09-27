@@ -32,8 +32,8 @@ const renderer = ({
     );
 
 describe('Tabs', () => {
-    test.each(['flat', 'outlined', 'solid'])('should render properly with %s tab variant', (variant: Variant) => {
-        const { container } = renderer({ variant });
+    test.each(['flat', 'outlined', 'solid'])('should render properly with %s tab variant', variant => {
+        const { container } = renderer({ variant } as { variant: Variant });
         expect(container).toMatchSnapshot();
     });
 

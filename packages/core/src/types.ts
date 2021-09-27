@@ -1,5 +1,5 @@
 import { DateRangeSelectionEnum } from './components/DateRangePicker/types';
-import { TableColumnConfig, TableProps } from './components/Table/types';
+import { RowHoverActionsType, TableColumnConfig, TableProps } from './components/Table/types';
 import { ToastVariants } from './components/Toast/types';
 
-export { TableColumnConfig, TableProps, ToastVariants, DateRangeSelectionEnum };
+export { TableColumnConfig, TableProps, ToastVariants, DateRangeSelectionEnum, RowHoverActionsType };

@@ -1,7 +1,7 @@
 import { centerAligned, css, styled } from '@medly-components/utils';
-import { StyledProps } from './types';
+import { StyledSliderProps, StyledTabListProps } from './types';
 
-const solidStyle = () => css<StyledProps>`
+const solidStyle = () => css<StyledTabListProps>`
     justify-content: space-between;
     align-items: stretch;
     padding: ${({ theme, tabSize }) => theme.tabs.solid.tabList.padding[tabSize]};
@@ -12,7 +12,7 @@ const solidStyle = () => css<StyledProps>`
     background-color: ${({ theme }) => theme.tabs.solid.tabList.color};
 `;
 
-export const TabList = styled.div<StyledProps>`
+export const TabList = styled.div<StyledTabListProps>`
     ${centerAligned('flex')}
     flex-direction: row;
     justify-content: flex-start;
@@ -22,15 +22,15 @@ export const TabList = styled.div<StyledProps>`
     ${({ variant }) => variant === 'solid' && solidStyle}
 `;
 
-const transformSlider = ({ theme, tabSize, active }: StyledProps) =>
+const transformSlider = ({ theme, tabSize, active }: StyledSliderProps) =>
     `transform: translateX(${`calc(${active * 100}% + calc(${active} * ${theme.tabs.solid.tabList.padding[tabSize]})`}));`;
 
-const getSliderWidth = ({ totalTabs, theme, tabSize }: StyledProps) => {
+const getSliderWidth = ({ totalTabs, theme, tabSize }: StyledSliderProps) => {
     const totalHorizontalPadding = `calc(${theme.tabs.solid.tabList.padding[tabSize]} + ${theme.tabs.solid.tabList.padding[tabSize]} / ${totalTabs})`;
     return `calc(${100 / totalTabs}% - ${totalHorizontalPadding})`;
 };
 
-export const Slider = styled.div<StyledProps>`
+export const Slider = styled.div<StyledSliderProps>`
     background-color: ${({ theme }) => theme.tabs.bgColor.active};
     width: ${getSliderWidth};
     height: ${({ theme, tabSize }) => `calc(100% - calc(${theme.tabs.solid.tabList.padding[tabSize]} * 2)) `};

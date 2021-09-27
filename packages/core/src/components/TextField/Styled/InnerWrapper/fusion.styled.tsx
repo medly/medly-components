@@ -1,11 +1,11 @@
 import { css } from '@medly-components/utils';
-import { InnerWrapperProps } from '../../types';
+import { InnerWrapperModifiedProps } from '../../types';
 import { HelperText } from '../HelperText.styled';
 import { Label } from '../Label.styled';
 import { Prefix } from '../Prefix.styled';
 import { Suffix } from '../Suffix.styled';
 
-export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperProps) => {
+export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperModifiedProps) => {
     const bgColor = fusion[isTextPresent ? 'active' : 'default'].bgColor;
     return css`
         background-color: ${bgColor};
@@ -33,10 +33,10 @@ export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperPro
             border-width: ${!disabled && fusion.hover.borderWidth};
             border-color: ${!disabled && fusion.hover.borderColor};
         }
-        
+
         &:focus-within::after {
             border-color: ${fusion.active.borderColor};
-            border-radius: ${fusion.active.borderRadius}; 
+            border-radius: ${fusion.active.borderRadius};
             border-width: ${fusion.active.borderWidth};
         }
 
@@ -50,7 +50,7 @@ export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperPro
     `;
 };
 
-export const fusionErrorStyle = ({ theme: { textField }, isTextPresent }: InnerWrapperProps) => css`
+export const fusionErrorStyle = ({ theme: { textField }, isTextPresent }: InnerWrapperModifiedProps) => css`
     &,
     &:hover {
         color: ${textField.fusion.error.defaultTextColor};

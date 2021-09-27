@@ -41,8 +41,8 @@ const Component: React.FC<TabListProps> = React.memo(props => {
         changeFocusState = useCallback(() => setFocusState(val => !val), []);
 
     return (
-        <Styled.TabList variant={variant} tabSize={tabSize} onFocus={changeFocusState} onBlur={changeFocusState} {...restProps}>
-            {variant === 'solid' && <Styled.Slider tabSize={tabSize} active={activeTabIdx} totalTabs={totalTabs} />}
+        <Styled.TabList variant={variant!} tabSize={tabSize!} onFocus={changeFocusState} onBlur={changeFocusState} {...restProps}>
+            {variant === 'solid' && <Styled.Slider tabSize={tabSize!} active={activeTabIdx} totalTabs={totalTabs} />}
             {React.Children.toArray(props.children).reduce((acc: any[], child: any) => {
                 const { id, label, hide } = child.props;
                 const hideTab = hide && variant !== 'solid';
@@ -65,4 +65,4 @@ const Component: React.FC<TabListProps> = React.memo(props => {
     );
 });
 Component.displayName = 'TabList';
-export const TabList: React.FC<TabListProps> & WithStyle = Object.assign(Component, { STyle: Styled.TabList });
+export const TabList: React.FC<TabListProps> & WithStyle = Object.assign(Component, { Style: Styled.TabList });

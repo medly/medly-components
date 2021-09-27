@@ -52,6 +52,7 @@ exports[`TabList should render properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -92,7 +93,7 @@ exports[`TabList should render properly 1`] = `
 .c1:disabled .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
-  background-color: #F7F8F9;
+  background-color: transparent;
 }
 
 .c1:disabled .sc-AxjAm * {
@@ -122,7 +123,7 @@ exports[`TabList should render properly 1`] = `
 .c1 .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
-  background-color: #126AFA;
+  background-color: transparent;
 }
 
 .c1 .sc-AxjAm * {
@@ -130,7 +131,27 @@ exports[`TabList should render properly 1`] = `
 }
 
 .c1 .sc-AxjAm * {
-  fill: #ffffff;
+  fill: #126AFA;
+}
+
+.c1:first-child {
+  border-top-left-radius: 0.8rem;
+}
+
+.c1:last-child {
+  border-top-right-radius: 0.8rem;
+}
+
+.c1::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0.4rem;
+  bottom: -0.1rem;
+  left: 0;
+  width: 100%;
+  background-color: #126AFA;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .c7 {
@@ -160,6 +181,7 @@ exports[`TabList should render properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -199,7 +221,7 @@ exports[`TabList should render properly 1`] = `
 .c7:disabled .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
-  background-color: #F7F8F9;
+  background-color: transparent;
 }
 
 .c7:disabled .sc-AxjAm * {
@@ -229,7 +251,7 @@ exports[`TabList should render properly 1`] = `
 .c7 .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
-  background-color: #eff2f4;
+  background-color: transparent;
 }
 
 .c7 .sc-AxjAm * {
@@ -256,11 +278,31 @@ exports[`TabList should render properly 1`] = `
 .c7:not(:disabled):hover .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
-  background-color: #dfe4e9;
+  background-color: transparent;
 }
 
 .c7:not(:disabled):hover .sc-AxjAm * {
   fill: #435465;
+}
+
+.c7:first-child {
+  border-top-left-radius: 0.8rem;
+}
+
+.c7:last-child {
+  border-top-right-radius: 0.8rem;
+}
+
+.c7::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0.4rem;
+  bottom: -0.1rem;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .c2 {

@@ -1,11 +1,11 @@
 import { SvgIcon } from '@medly-components/icons';
 import { styled, WithThemeProp } from '@medly-components/utils';
 import Button from '../Button';
-import { ToastProps } from './types';
+import { StyledToastProps } from './types';
 
-const fillColor = ({ theme, variant }: ToastProps & WithThemeProp) => theme.toast.fillColor[variant];
+const fillColor = ({ theme, variant }: StyledToastProps & WithThemeProp) => theme?.toast.fillColor[variant];
 
-export const Toast = styled('div')<ToastProps>`
+export const Toast = styled('div')<StyledToastProps>`
     display: flex;
     flex-direction: row;
     position: relative;
@@ -24,7 +24,7 @@ export const Toast = styled('div')<ToastProps>`
     }
 `;
 
-export const IconWrapper = styled('div')<ToastProps>`
+export const IconWrapper = styled('div')<StyledToastProps>`
     display: flex;
     background-color: ${({ theme, variant }) => theme.toast.bgColor[variant]};
 

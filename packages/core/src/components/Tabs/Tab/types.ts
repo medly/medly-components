@@ -3,15 +3,15 @@ import { TabsTheme } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 import { TabBackground, TabSize, Variant } from '../types';
 
-export type StyledProps = HTMLProps<HTMLButtonElement> &
+export type StyledTabProps = HTMLProps<HTMLButtonElement> &
     WithThemeProp &
     TabsTheme & {
         active?: boolean;
-        tabSize?: TabSize;
-        fraction?: any;
-        tabBackground?: TabBackground;
-        variant?: Variant;
-        totalTabs?: number;
+        fraction?: number;
+        tabSize: TabSize;
+        tabBackground: TabBackground;
+        variant: Variant;
+        totalTabs: number;
     };
 
 export interface TabProps extends HTMLProps<HTMLButtonElement> {

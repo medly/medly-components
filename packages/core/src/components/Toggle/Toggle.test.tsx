@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import React from 'react';
 import { Toggle } from './Toggle';
 
@@ -15,10 +15,8 @@ describe('Checkbox component', () => {
 
     it('should call onChange handler on click on checkbox', () => {
         const mockOnChange = jest.fn();
-        const { container } = render(
-            <Toggle onChange={mockOnChange} disabled name="gender" label="Female" size="M" labelPosition="right" />
-        );
-        fireEvent.click(container.querySelector('input'));
+        render(<Toggle onChange={mockOnChange} disabled name="gender" label="Female" size="M" labelPosition="right" />);
+        fireEvent.click(screen.getByRole('checkbox'));
         expect(mockOnChange).toBeCalled();
     });
 });
