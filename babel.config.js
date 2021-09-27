@@ -33,6 +33,7 @@ module.exports = function (api) {
                     }
                 }
             ],
+            ['@babel/plugin-transform-modules-commonjs'],
             'polished'
         ],
         ignore = ['node_modules'];
