@@ -65,4 +65,4 @@ const Component: React.FC<TabListProps> = React.memo(props => {
     );
 });
 Component.displayName = 'TabList';
-export const TabList: React.FC<TabListProps> & WithStyle = Object.assign(Component, { STyle: Styled.TabList });
+export const TabList: React.FC<TabListProps> & WithStyle = Object.assign(Component, { Style: Styled.TabList });

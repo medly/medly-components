@@ -134,6 +134,7 @@ const Component: FC<TextFieldProps> = React.memo(
                             errorText={errorText || builtInErrorMessage}
                             inputSize={size!}
                             variant={props.variant!}
+                            as={multiline ? 'textarea' : 'input'}
                             multiline={multiline}
                             {...{ ...restProps, onBlur, onInvalid, onChange }}
                         />
