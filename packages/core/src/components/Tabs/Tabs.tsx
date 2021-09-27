@@ -22,7 +22,11 @@ const Component: React.FC<TabsProps> = React.memo(
             ),
             [key, setKey] = useState(defaultActive || tabIds[0]),
             activeTab = useMemo(() => active || key, [active, key]),
-            tabsContext = useMemo(() => ({ tabSize, tabBackground, variant }), [tabSize, tabBackground, variant]);
+            tabsContext = useMemo(() => ({ tabSize: tabSize!, tabBackground: tabBackground!, variant: variant! }), [
+                tabSize,
+                tabBackground,
+                variant
+            ]);
 
         const handleTabChange = useCallback(
             (id: any) => {
@@ -51,6 +55,6 @@ const Component: React.FC<TabsProps> = React.memo(
     })
 );
 Component.displayName = 'Tabs';
-
 Component.defaultProps = { tabSize: 'S', tabBackground: 'WHITE', forceRender: false, hidePanel: false, variant: 'flat' };
+
 export const Tabs: React.FC<TabsProps> & StaticProps & WithStyle = Object.assign(Component, { Style: Styled.Tabs, Tab, TabList, TabPanel });

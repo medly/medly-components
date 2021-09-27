@@ -36,28 +36,28 @@ describe('Tab', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['S', 'M', 'L'])('should render properly with %s tab size', (tabSize: TabSize) => {
-        const { container } = renderer({ tabSize });
+    test.each(['S', 'M', 'L'])('should render properly with %s tab size', tabSize => {
+        const { container } = renderer({ tabSize } as { tabSize: TabSize });
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['flat', 'outlined', 'solid'])('should render properly with %s tab variant', (variant: Variant) => {
-        const { container } = renderer({ variant });
+    test.each(['flat', 'outlined', 'solid'])('should render properly with %s tab variant', variant => {
+        const { container } = renderer({ variant } as { variant: Variant });
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['WHITE', 'GREY'])('should render properly with %s tab background', (tabBackground: TabBackground) => {
-        const { container } = renderer({ tabBackground });
+    test.each(['WHITE', 'GREY'])('should render properly with %s tab background', tabBackground => {
+        const { container } = renderer({ tabBackground } as { tabBackground: TabBackground });
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['S', 'M', 'L'])('should render properly with %s tab size', (tabSize: TabSize) => {
-        const { container } = renderer({ tabSize });
+    test.each(['S', 'M', 'L'])('should render properly with %s tab size', tabSize => {
+        const { container } = renderer({ tabSize } as { tabSize: TabSize });
         expect(container).toMatchSnapshot();
     });
 
     it('should render icon only when given', () => {
-        const { container } = renderer({ icon: null });
+        const { container } = renderer({ icon: undefined });
         expect(container.querySelector('svg')).toBeNull();
     });
 });
