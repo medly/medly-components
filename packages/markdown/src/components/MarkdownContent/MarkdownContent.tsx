@@ -4,11 +4,11 @@ import directive from 'remark-directive';
 import remarkFootnotes from 'remark-footnotes';
 import gfm from 'remark-gfm';
 import { CodeBlock } from './CodeBlock';
-import { ContentCSS } from './Content.styled';
 import customDirectives from './customDirectives';
+import { ContentCSS } from './MarkdownContent.styled';
 import { YouTube } from './Youtube';
 
-export const Content: FC<{ content: string }> = ({ content }) => (
+export const MarkdownContent: FC<{ content: string }> = ({ content }) => (
     <ContentCSS>
         <ReactMarkdown
             skipHtml={false}
