@@ -58,7 +58,7 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     height: 100%;
     display: flex;
     overflow: hidden;
-    align-items: flex-end;
+    align-items: center;
     justify-content: ${({ isRowActionCell }) => (isRowActionCell ? 'flex-end' : 'flex-start')};
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
