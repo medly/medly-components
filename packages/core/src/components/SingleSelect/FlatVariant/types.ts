@@ -1,4 +1,4 @@
-import { WithThemeProp } from 'packages/utils/src/types';
+import { WithThemeProp } from '@medly-components/utils';
 
 export interface FlatVariantProps {
     /** Id of flat variant */
