@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.27.6](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.5...@medly-components/core@2.27.6) (2021-09-28)
+
+
+### Bug Fixes
+
+* strict null check issue in stepper component ([#454](https://github.com/medly/medly-components/issues/454)) ([3fbe5bb](https://github.com/medly/medly-components/commit/3fbe5bb1c2c29749b9819ac6270981ccd83bd0af))
+
+
+
+
+
 ## [2.27.5](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.4...@medly-components/core@2.27.5) (2021-09-28)
 
 
