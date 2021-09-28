@@ -34,7 +34,10 @@ const DummyComponent = (props: Omit<SelectProps, 'options'>) => {
 describe('SingleSelect component', () => {
     afterEach(cleanup);
 
-    describe.each(['outlined', 'filled', 'flat'])('with %s variant', (variant: SelectProps['variant']) => {
+    const sizes: Required<SelectProps>['size'][] = ['S', 'M'],
+        variants: Required<SelectProps>['variant'][] = ['outlined', 'filled', 'flat', 'fusion'];
+
+    describe.each(variants)('with %s variant', variant => {
         it('should render properly', () => {
             const { container } = render(<SingleSelect options={options} variant={variant} value="Dummy1" fullWidth />);
             expect(container).toMatchSnapshot();
@@ -57,7 +60,7 @@ describe('SingleSelect component', () => {
                     value="Dummy1"
                 />
             );
-            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(container.querySelector('svg') as SVGSVGElement);
             await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
             expect(container).toMatchSnapshot();
             expect(queryByText('Component')).toBeInTheDocument();
@@ -80,7 +83,7 @@ describe('SingleSelect component', () => {
                 <SingleSelect errorText="Something went wrong" options={options} variant={variant} value="Dummy1" />
             );
             fireEvent.click(getByText('Something went wrong'));
-            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(container.querySelector('svg') as SVGSVGElement);
             await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
             expect(getByText('Something went wrong')).toHaveStyle(`color: rgb(204, 0, 0)`);
         });
@@ -93,9 +96,9 @@ describe('SingleSelect component', () => {
         });
     });
 
-    test.each(['S', 'M'])('should render properly with %s size', async (size: 'S' | 'M') => {
+    test.each(sizes)('should render properly with %s size', async size => {
         const { container } = render(<SingleSelect options={options} variant="filled" value="Dummy1" size={size} />);
-        fireEvent.click(container.querySelector('svg'));
+        fireEvent.click(container.querySelector('svg') as SVGSVGElement);
         await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
         expect(screen.getByRole('list')).toHaveStyle(`
             top: ${size === 'S' ? '4rem' : '5.6rem'}
@@ -137,22 +140,24 @@ describe('SingleSelect component', () => {
 
     it('should take passed max width', () => {
         const { container } = render(<SingleSelect options={options} value="dummy" maxWidth="30rem" />);
-        fireEvent.click(container.querySelector('svg'));
+        fireEvent.click(container.querySelector('svg') as SVGSVGElement);
         waitFor(() => expect(screen.getByRole('list')).toBeVisible());
         expect(container).toMatchSnapshot();
     });
 
     it('should show options on click on drop icon', async () => {
         const { container } = render(<SingleSelect options={options} />);
-        fireEvent.click(container.querySelector('svg'));
+        fireEvent.click(container.querySelector('svg') as SVGSVGElement);
         waitFor(() => expect(screen.getByRole('list')).toBeVisible());
     });
 
     it('should show options on click on drop icon when options are custom components', async () => {
-        const componentAsOptions = [{ value: <>Component1</>, label: 'Component1' },
-        { value: <>Component2</>, label: 'Component2' }]
+        const componentAsOptions = [
+            { value: <>Component1</>, label: 'Component1' },
+            { value: <>Component2</>, label: 'Component2' }
+        ];
         const { container } = render(<SingleSelect options={componentAsOptions} />);
-        fireEvent.click(container.querySelector('svg'));
+        fireEvent.click(container.querySelector('svg') as SVGSVGElement);
         waitFor(() => expect(screen.getByRole('list')).toBeVisible());
         waitFor(() => expect(container).toHaveTextContent('Component1'));
         waitFor(() => expect(container).toHaveTextContent('Component2'));
@@ -160,37 +165,37 @@ describe('SingleSelect component', () => {
 
     it('should not show options on click on drop icon, if disabled prop is set true', () => {
         const { container } = render(<SingleSelect options={options} disabled />);
-        fireEvent.click(container.querySelector('svg'));
+        fireEvent.click(container.querySelector('svg') as SVGSVGElement);
         expect(screen.queryByRole('list')).toBeNull();
     });
 
     it('should hide options on click on drop icon, if options are already visible', () => {
         const { container } = render(<SingleSelect options={options} />);
-        fireEvent.click(container.querySelector('svg'));
-        fireEvent.click(container.querySelector('svg'));
+        fireEvent.click(container.querySelector('svg') as SVGSVGElement);
+        fireEvent.click(container.querySelector('svg') as SVGSVGElement);
         expect(screen.queryByRole('list')).toBeNull();
     });
 
     it('should hide options on click outside of the container', () => {
-        const { container } = render(
+        render(
             <div>
-                <p id="sibling">Outer Element</p>
+                <p>Outer Element</p>
                 <SingleSelect options={options} />
             </div>
         );
         fireEvent.click(screen.getByRole('textbox'));
-        fireEvent.click(container.querySelector('#sibling'));
+        fireEvent.click(screen.getByText('Outer Element'));
         expect(screen.queryByRole('list')).toBeNull();
     });
 
     it('should not show options on click outside of the container', () => {
-        const { container } = render(
+        render(
             <div>
-                <p id="sibling">Outer Element</p>
+                <p>Outer Element</p>
                 <SingleSelect options={options} />
             </div>
         );
-        fireEvent.click(container.querySelector('#sibling'));
+        fireEvent.click(screen.getByText('Outer Element'));
         expect(screen.queryByRole('list')).toBeNull();
     });
 

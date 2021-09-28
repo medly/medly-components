@@ -86,6 +86,7 @@ exports[`SearchBox options should render options when user search option specifi
   z-index: 4;
   position: absolute;
   background: #ffffff;
+  top: 4rem;
   left: 0;
   margin: 0;
   padding: 0.8rem;

@@ -29,6 +29,7 @@ module.exports = {
         '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
         'arrow-parens': ['error', 'as-needed'],
         'no-param-reassign': 'error',
         'no-undef': 'error',
