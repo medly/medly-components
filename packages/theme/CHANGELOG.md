@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.20.1](https://github.com/medly/medly-components/compare/@medly-components/theme@2.20.0...@medly-components/theme@2.20.1) (2021-09-28)
+
+
+### Bug Fixes
+
+* strict null check issue in table component ([#453](https://github.com/medly/medly-components/issues/453)) ([9d3b9b2](https://github.com/medly/medly-components/commit/9d3b9b29d5512e28d1cf1ad44d88d8b50f8eda6f))
+
+
+
+
+
 # [2.20.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.19.1...@medly-components/theme@2.20.0) (2021-09-21)
 
 
