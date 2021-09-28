@@ -31,7 +31,7 @@ describe('Minimap component', () => {
     });
 
     it('should align slider controller with proper left offset when user scrolls over the table', () => {
-        let scrollCallback: Function = () => null;
+        let scrollCallback = jest.fn();
         tableRef.current.addEventListener = jest.fn().mockImplementation((a, b) => {
             if (a === 'scroll') {
                 scrollCallback = b;
@@ -47,7 +47,7 @@ describe('Minimap component', () => {
     });
 
     it('should not align slider controller when user performs mousedown on slider controller and performs mousemove on window', () => {
-        let scrollCallback: Function = () => null;
+        let scrollCallback = jest.fn();
         tableRef.current.addEventListener = jest.fn().mockImplementation((a, b) => {
             if (a === 'scroll') {
                 scrollCallback = b;
