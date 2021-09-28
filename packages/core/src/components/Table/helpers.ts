@@ -82,7 +82,8 @@ export const getGridTemplateColumns = (configs: TableColumnConfig[]) => {
 export const changeSize = (width: number, dottedField: string, columnConfigs: TableColumnConfig[]) => {
     const newColumnConfigs = [...columnConfigs],
         [currField, nextField] = dottedField.split(/\.(.+)/),
-        index = columnConfigs.findIndex(config => config.field === currField);
+        index = columnConfigs.findIndex(config => config.field === currField),
+        widthRegex = new RegExp(/(.*\()(.*)(,.*)/);
 
     if (index >= 0) {
         const config = { ...newColumnConfigs[index] };
@@ -91,9 +92,9 @@ export const changeSize = (width: number, dottedField: string, columnConfigs: Ta
         } else if (width < 84) {
             config.size = `minmax(84px, ${config.fraction || 1}fr)`;
         } else if (width > 900) {
-            config.size = config.size?.replace(/(.*\()(.*)(,.*)/, `$1700px$3`);
+            config.size = config.size?.replace(widthRegex, `$1700px$3`);
         } else {
-            config.size = config.size?.replace(/(.*\()(.*)(,.*)/, `$1${width}px$3`);
+            config.size = config.size?.replace(widthRegex, `$1${width}px$3`);
         }
 
         newColumnConfigs[index] = config;
