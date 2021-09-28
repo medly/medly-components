@@ -28,7 +28,7 @@ const Component: React.FC<ExtendedRowCellProps> = React.memo(props => {
             />
 
             <ExtendedRowCellStyled onClick={stopPropagation} tableSize={tableSize} isRowExpanded={isRowExpanded}>
-                {isRowExpanded ? (
+                {isRowExpanded && ExpandedRowComponent ? (
                     <Wrapper tableSize={tableSize}>
                         <ExpandedRowComponent rowId={rowId} rowData={rowData} disabled={isRowClickDisabled} />
                     </Wrapper>

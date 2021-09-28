@@ -31,7 +31,7 @@ describe('Minimap component', () => {
     });
 
     it('should align slider controller with proper left offset when user scrolls over the table', () => {
-        let scrollCallback: Function = null;
+        let scrollCallback = jest.fn();
         tableRef.current.addEventListener = jest.fn().mockImplementation((a, b) => {
             if (a === 'scroll') {
                 scrollCallback = b;
@@ -47,7 +47,7 @@ describe('Minimap component', () => {
     });
 
     it('should not align slider controller when user performs mousedown on slider controller and performs mousemove on window', () => {
-        let scrollCallback: Function = null;
+        let scrollCallback = jest.fn();
         tableRef.current.addEventListener = jest.fn().mockImplementation((a, b) => {
             if (a === 'scroll') {
                 scrollCallback = b;
@@ -55,7 +55,7 @@ describe('Minimap component', () => {
         });
         const { container } = renderMinimap();
         const stopPropagationMock = jest.fn();
-        const sliderController = container.querySelector('#sliderController');
+        const sliderController = container.querySelector('#sliderController') as HTMLDivElement;
         fireEvent.mouseDown(sliderController);
         scrollCallback({ stopPropagation: stopPropagationMock });
         expect(stopPropagationMock).toHaveBeenCalled();
@@ -85,7 +85,7 @@ describe('Minimap component', () => {
 
     it('should position slider controller when performed drag operation on it', () => {
         const { container } = renderMinimap();
-        const sliderController = container.querySelector('#sliderController');
+        const sliderController = container.querySelector('#sliderController') as HTMLDivElement;
         fireEvent.mouseDown(sliderController);
         fireEvent.mouseMove(sliderController);
         expect(sliderController).toHaveStyle('left: 0px');
@@ -94,7 +94,7 @@ describe('Minimap component', () => {
 
     it('should position slider controller at the extreme end of the slider content when dragged out of it', () => {
         const { container } = renderMinimap();
-        const sliderController = container.querySelector('#sliderController');
+        const sliderController = container.querySelector('#sliderController') as HTMLDivElement;
         fireEvent.mouseDown(sliderController);
         fireEvent.mouseMove(sliderController, { clientX: 200 });
         expect(sliderController).toHaveStyle('left: 70px');
@@ -103,7 +103,7 @@ describe('Minimap component', () => {
 
     it('should position slider controller at the correct position when dragged inside slider content', () => {
         const { container } = renderMinimap();
-        const sliderController = container.querySelector('#sliderController');
+        const sliderController = container.querySelector('#sliderController') as HTMLDivElement;
         fireEvent.mouseDown(sliderController);
         fireEvent.mouseMove(sliderController, { clientX: 40 });
         expect(sliderController).toHaveStyle('left: 20px');

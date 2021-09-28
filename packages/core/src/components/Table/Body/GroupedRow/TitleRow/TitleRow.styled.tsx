@@ -43,7 +43,7 @@ export const Row = styled('tr')<StyledProps>`
     }
 `;
 
-export const TitleCell = styled('td')<{ tableSize?: TableProps['size']; isRowExpandable?: boolean; isRowSelectable?: boolean }>`
+export const TitleCell = styled('td')<{ tableSize: Required<TableProps>['size']; isRowExpandable?: boolean; isRowSelectable?: boolean }>`
     height: 100%;
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@ export const ExpansionCell = styled('td')<{
     isRowExpanded?: boolean;
     isRowSelected?: boolean;
     showPadding?: boolean;
-    tableSize?: TableProps['size'];
+    tableSize: Required<TableProps>['size'];
 }>`
     height: 100%;
     position: sticky;

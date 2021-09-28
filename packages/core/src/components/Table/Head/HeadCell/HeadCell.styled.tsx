@@ -113,10 +113,10 @@ const headCellButtonTableSizeMap = {
     default: '0.9rem 0.8rem'
 };
 export const HeadCellButton = styled.button<{
-    withHoverEffect: boolean;
-    isSelected: boolean;
-    tableSize?: TableProps['size'];
-    align: string;
+    withHoverEffect?: boolean;
+    isSelected?: boolean;
+    tableSize: Required<TableProps>['size'];
+    align?: string;
 }>`
     border: 0;
     display: flex;

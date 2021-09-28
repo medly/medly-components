@@ -3,7 +3,7 @@ import { ButtonProps } from '../Button/types';
 
 export type ToastVariants = 'success' | 'error' | 'info' | 'warning';
 
-export type ToastProps = Omit<HTMLProps<HTMLDivElement>, 'id' | 'action'> & {
+export type ToastProps = {
     /** Id of the Toast */
     id: number;
     /** Toast purpose */
@@ -19,5 +19,7 @@ export type ToastProps = Omit<HTMLProps<HTMLDivElement>, 'id' | 'action'> & {
     /** Set it true if you are using it without toast container and want to make it full width */
     fullWidth?: boolean;
 };
+
+export type ToastComponentProps = Omit<HTMLProps<HTMLDivElement>, 'id' | 'action'> & ToastProps;
 
 export type StyledToastProps = Omit<ToastProps, 'id'>;

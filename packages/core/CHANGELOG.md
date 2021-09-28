@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.27.4](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.3...@medly-components/core@2.27.4) (2021-09-28)
+
+
+### Bug Fixes
+
+* css prop issue in toast component ([#457](https://github.com/medly/medly-components/issues/457)) ([2881907](https://github.com/medly/medly-components/commit/2881907054784efa59a08de604c5a1780e2b81e2))
+
+
+
+
+
 ## [2.27.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.2...@medly-components/core@2.27.3) (2021-09-27)
 
 
