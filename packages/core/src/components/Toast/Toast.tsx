@@ -1,5 +1,5 @@
 import { CheckIcon, ClearIcon, ErrorIcon, NotificationsIcon, WarningAmberIcon } from '@medly-components/icons';
-import { WithStyle } from '@medly-components/utils';
+import { HTMLProps, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback } from 'react';
 import Button from '../Button';
 import Text from '../Text';
