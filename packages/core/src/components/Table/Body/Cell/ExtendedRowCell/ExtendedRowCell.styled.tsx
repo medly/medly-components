@@ -24,6 +24,6 @@ const tableSizePaddingMap = {
     XS: '0.5rem 1.6rem',
     default: '1.2rem 1.6rem'
 };
-export const Wrapper = styled('div')<{ tableSize: TableProps['size'] }>`
+export const Wrapper = styled('div')<{ tableSize: Required<TableProps>['size'] }>`
     padding: ${({ tableSize }) => resolveValueByTableSize(tableSize, tableSizePaddingMap)};
 `;

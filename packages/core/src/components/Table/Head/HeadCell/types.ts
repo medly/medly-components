@@ -10,11 +10,11 @@ export type HeadCellStyledProps = {
     showShadowAtRight?: boolean;
     isRowActionCell?: boolean;
     isRowExpandable?: boolean;
-    tableSize?: TableProps['size'];
+    tableSize: Required<TableProps>['size'];
 };
 
 export type HeadCellProps = HeadCellStyledProps & {
-    field?: string;
+    field: string;
     columnMaxSize: number;
     sortable?: boolean;
     fitContent?: boolean;
@@ -23,9 +23,9 @@ export type HeadCellProps = HeadCellStyledProps & {
     isGroupedTable: boolean;
     defaultSortOrder?: SortOrder;
     tableSize?: TableProps['size'];
-    onWidthChange?: (width: number, key: string) => void;
+    onWidthChange: (width: number, key: string) => void;
     onSortChange?: (field: string, order: SortOrder) => void;
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
-    hiddenDivRef?: React.MutableRefObject<any>;
+    hiddenDivRef: React.MutableRefObject<any>;
     addColumnMaxSize?: (field: string, value: number) => void;
 };

@@ -103,7 +103,7 @@ export interface TableTheme {
         separatorColor?: string;
         fontVariant: FontVariants;
     };
-    actionBar?: {
+    actionBar: {
         bgColor: string;
         shadowColor: string;
         separatorColor: string;
@@ -112,7 +112,7 @@ export interface TableTheme {
             borderColor: string;
         };
     };
-    minimap?: {
+    minimap: {
         bgColor: string;
         borderRadius: string;
         opacity: {

@@ -12,7 +12,7 @@ export const FootPagination = styled(Pagination)<{ tableSize: TableProps['size']
     }
 `;
 
-export const TFoot = styled('tfoot')<{ showWithCardStyle: boolean; tableSize: TableProps['size'] }>`
+export const TFoot = styled('tfoot')<{ showWithCardStyle?: boolean; tableSize: TableProps['size'] }>`
     display: flex;
     align-items: center;
     position: sticky;
