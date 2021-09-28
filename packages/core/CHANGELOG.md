@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.27.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.2...@medly-components/core@2.27.3) (2021-09-27)
+
+
+### Bug Fixes
+
+* strict null check issue in Tabs, Toggle, ToastContainer, Toast, TextFi… ([#439](https://github.com/medly/medly-components/issues/439)) ([fc49370](https://github.com/medly/medly-components/commit/fc49370e5608b17429082e4379b67e730586c3c4))
+
+
+
+
+
 ## [2.27.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.1...@medly-components/core@2.27.2) (2021-09-24)
 
 **Note:** Version bump only for package @medly-components/core
