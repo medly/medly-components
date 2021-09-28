@@ -4,7 +4,7 @@ import React, { FC, useState } from 'react';
 import { Stepper } from './Stepper';
 import { StepperProps } from './types';
 
-const size: StepperProps['size'][] = ['S', 'M', 'L'];
+const size: Required<StepperProps>['size'][] = ['S', 'M', 'L'];
 
 export const ThemeInterface: FC<StepperTheme> = () => null;
 ThemeInterface.defaultProps = {
