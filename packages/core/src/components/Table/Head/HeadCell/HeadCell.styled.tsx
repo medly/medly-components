@@ -58,7 +58,8 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     height: 100%;
     display: flex;
     overflow: hidden;
-    align-items: center;
+    align-items: flex-end;
+    min-height: 3rem;
     justify-content: ${({ isRowActionCell }) => (isRowActionCell ? 'flex-end' : 'flex-start')};
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
@@ -143,10 +144,14 @@ export const HeadCellButton = styled.button<{
         overflow: hidden;
         white-space: nowrap;
         text-align: center;
-        line-height: 1;
     }
     ${SvgIcon} {
         margin-left: 0.4rem;
         flex-shrink: 0;
     }
+`;
+
+export const SpacerSvg = styled.svg`
+    width: 0;
+    height: 2rem;
 `;

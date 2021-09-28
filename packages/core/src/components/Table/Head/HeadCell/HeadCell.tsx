@@ -2,7 +2,7 @@ import { ArrowDropDownIcon, ArrowDropUpIcon, DropdownIcon } from '@medly-compone
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Text from '../../../Text';
-import { HeadCellButton, HeadCellStyled, ResizeHandler } from './HeadCell.styled';
+import { HeadCellButton, HeadCellStyled, ResizeHandler, SpacerSvg } from './HeadCell.styled';
 import { HeadCellProps } from './types';
 
 const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
@@ -108,7 +108,7 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
                                 withHoverEffect={sortable && !isLoading}
                             >
                                 <Text uppercase>{c}</Text>
-                                {sortable && sortIcon}
+                                {sortable ? sortIcon : <SpacerSvg />}
                             </HeadCellButton>
                         ) : (
                             c
