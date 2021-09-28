@@ -104,7 +104,7 @@ export const Component: FC<TableProps> = React.memo(
                     }}
                 >
                     <HiddenDiv ref={hiddenDivRef} />
-                    {restProps.actions?.length && selectedRowIds.length > 0 && <ActionBar />}
+                    {restProps.actions?.length > 0 && selectedRowIds.length > 0 && <ActionBar />}
                     <TableStyled
                         {...restProps}
                         ref={tableRef}
