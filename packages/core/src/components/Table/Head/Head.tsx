@@ -37,13 +37,13 @@ const Head: React.FC<TableHeadProps> = React.memo(props => {
     const [{ sortField }, setTableState] = useContext(TableStateContext);
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
-        handleSelectAllClick = useCallback(() => onSelectAllClick(-1), [onSelectAllClick]),
+        handleSelectAllClick = useCallback(() => onSelectAllClick && onSelectAllClick(-1), [onSelectAllClick]),
         handleWidthChange = useCallback((width: number, field: string) => setColumns(cl => changeSize(width, field, cl)), []),
         handleSortChange = useCallback(
             (field: string, order: SortOrder) => {
                 setTableState(val => {
                     const newState = { ...val, sortField: field, sortOrder: order };
-                    onSort(newState);
+                    onSort && onSort(newState);
                     return newState;
                 });
             },
@@ -53,7 +53,7 @@ const Head: React.FC<TableHeadProps> = React.memo(props => {
     const selectAllCheckBox = useMemo(
             () => (
                 <Checkbox
-                    size={tableSize === 'XS' ? tableSize : null}
+                    size={tableSize === 'XS' ? tableSize : undefined}
                     indeterminate={isAnyRowSelected}
                     disabled={isLoading || isSelectAllDisable}
                     checked={areAllRowsSelected}

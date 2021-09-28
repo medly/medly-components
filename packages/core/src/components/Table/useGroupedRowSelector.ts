@@ -5,13 +5,14 @@ type Result = {
     toggleIds: (ids: any[]) => void;
 };
 type Params = {
-    selectedIds?: (string | number)[];
-    setSelectedIds: Dispatch<SetStateAction<(string | number)[]>>;
+    selectedIds: (string | number)[];
+    setSelectedIds?: Dispatch<SetStateAction<(string | number)[]>>;
 };
 
 const useGroupedRowSelector = ({ selectedIds, setSelectedIds }: Params): Result => {
     const toggleIds = useCallback(
         (ids: number[] | string[]) =>
+            setSelectedIds &&
             setSelectedIds(sIds =>
                 // @ts-ignore
                 ids.reduce((acc, cur) => (acc.indexOf(cur) === -1 ? [...acc, cur] : acc.filter(id => id !== cur)), [...sIds])

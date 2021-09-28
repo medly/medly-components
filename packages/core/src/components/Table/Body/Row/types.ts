@@ -12,7 +12,7 @@ export type StyledProps = GridTemplateProps &
     };
 export type RowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
     data: { [key: string]: any };
-    selectedRowIds?: Array<any>;
-    onRowSelection?: (id: any) => void;
+    selectedRowIds: Array<any>;
+    onRowSelection: (id: any) => void;
     showShadowAfterFrozenElement?: boolean;
 };

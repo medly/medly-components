@@ -7,9 +7,9 @@ export type StyledProps = GridTemplateProps &
         isLoading?: boolean;
         tableWidth?: number;
         isRowSelected?: boolean;
-        isRowExpanded: boolean;
-        isRowExpandable: boolean;
-        isRowSelectable: boolean;
+        isRowExpanded?: boolean;
+        isRowExpandable?: boolean;
+        isRowSelectable?: boolean;
         showRowWithCardStyle?: boolean;
         tableSize: TableProps['size'];
     };

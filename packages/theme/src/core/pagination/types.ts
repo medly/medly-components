@@ -2,7 +2,7 @@ import { FontVariants, FontWeights } from '../font/types';
 
 export interface PaginationTheme {
     /** The font variant */
-    fontVariant?: FontVariants;
+    fontVariant: FontVariants;
     /** Theme for page number button */
     pageNumber: {
         color: {
