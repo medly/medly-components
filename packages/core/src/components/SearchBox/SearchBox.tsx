@@ -136,7 +136,9 @@ const Component: FC<SearchBoxProps> = React.memo(
                 <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size}>
                     <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />
                 </SearchIconWrapper>
-                {areOptionsVisible && <Options ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick} />}
+                {areOptionsVisible && (
+                    <Options size="M" ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick} />
+                )}
                 {isCustomSearchActive && <CustomSearchFilterWrapper size={size}>{customSearchFilter}</CustomSearchFilterWrapper>}
             </Styled.SearchBoxWrapper>
         );
