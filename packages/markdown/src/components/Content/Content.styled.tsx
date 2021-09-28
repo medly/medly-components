@@ -1,6 +1,6 @@
-import { css } from 'styled-components';
+import styled from 'styled-components';
 
-export const ContentCSS = css`
+export const ContentCSS = styled('div')`
     pre > pre {
         overflow: auto !important;
         border-radius: 0.8rem !important;
