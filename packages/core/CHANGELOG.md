@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.27.7](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.6...@medly-components/core@2.27.7) (2021-09-28)
+
+
+### Bug Fixes
+
+* strict null check issue in singleselect component ([#458](https://github.com/medly/medly-components/issues/458)) ([d2009d9](https://github.com/medly/medly-components/commit/d2009d9b49056c355179e1a11eb761f98600b361))
+
+
+
+
+
 ## [2.27.6](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.5...@medly-components/core@2.27.6) (2021-09-28)
 
 
