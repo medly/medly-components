@@ -40,7 +40,7 @@ yarn add styled-components @types/styled-components
 yarn add @medly-components/theme @medly-components/utils @medly-components/icons @medly-components/core @medly-components/layout @medly-components/loaders @medly-components/forms
 ```
 
-Replace content of `index.tsx` with the following:
+Replace the content of `index.tsx` with the following:
 
 ```tsx
 import { defaultTheme } from '@medly-components/theme';
@@ -70,43 +70,43 @@ const App: React.FC = () => <Button variant="solid">Click me!</Button>;
 export default App;
 ```
 
-If you are using any static property of any component like `Modal.Header`, you have to add `"strictNullChecks": false` in your `tsconfig.json` file.
+If you are using a static property of any component like `Modal.Header`, you must add `"strictNullChecks": false` in your `tsconfig.json` file.
 
 ## Packages
 
-Library consists of five packages:
+Library consists of the following five packages:
 
 ### [Core](https://github.com/medly/medly-components/tree/master/packages/core)
-
-Core package consists of components almost all basic React components like Avatar, Button, Input, List, Modal etc.
+The Core package consists of almost all basic React components like Avatar, Button, Input, List, Modal, etc.
 
 ### [Icons](https://github.com/medly/medly-components/tree/master/packages/icons)
 
-Icons package consists of the most commonly used SVG icons exposed as React components.
+The Icons package consists of the most commonly used SVG icons exposed as React components.
 
 ### [Loaders](https://github.com/medly/medly-components/tree/master/packages/loaders)
 
-A few simple svg loaders exposed as React components.
+A few simple SVG loaders exposed as React components.
 
 ### [Layout](https://github.com/medly/medly-components/tree/master/packages/layout)
 
-Layout package consists of components that help in creating a page layout using side panels and nav items, which are exposed as React components.
+The Layout package consists of components that help in creating a page layout using side panels and nav items, which are exposed as React components.
 
 ### [Forms](https://github.com/medly/medly-components/tree/master/packages/forms)
 
-Using this package you can create dynamic forms using simple json.
+The Forms package lets you create dynamic forms using simple json. 
 
 ### [Theme](https://github.com/medly/medly-components/tree/master/packages/theme)
 
-Themes let you define how a component should be styled across website. This can be done individually for particular types of components. E.g. all icons should be solid or can be done for the whole website, like color theme for all type of components across website should be orange.
+Define the theme i.e. the overall look, feel, and style of your website using the Theme package. Each component can be defined individually. For example, all icons of a website can be made solid, the color of all the components can be made orange, etc.
+
 
 ### [Utils](https://github.com/medly/medly-components/tree/master/packages/utils)
 
-Utils package consists of the most commonly used functionalities and components. E.g. [String Helper](https://github.com/medly/medly-components/tree/master/packages/utils/src/stringHelpers.ts) has functions to convert a string to camelCase, case insensitive string comparison etc.
+The Utils package consists of the most commonly used functionalities and components. E.g. [String Helper](https://github.com/medly/medly-components/tree/master/packages/utils/src/stringHelpers.ts) has functions to convert a string to camelCase, case insensitive string comparison etc.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/medly/medly-components/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/medly/medly-components/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting us the pull requests.
 
 ## Built With
 
