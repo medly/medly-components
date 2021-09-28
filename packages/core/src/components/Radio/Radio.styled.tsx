@@ -40,7 +40,7 @@ const getEventStyle = (event: 'hovered' | 'pressed' | 'focused') => ({
     theme,
     fillColor,
     borderColor
-}: RadioTheme & (WrapperProps | RadioProps)) => {
+}: RadioTheme & WithThemeProp & (WrapperProps | RadioProps)) => {
     const state = hasError ? 'error' : 'active';
     const { blurRadius, spreadRadius } = theme.radio.boxShadow;
     const borderColorValue = event !== 'focused' && borderColor[event][state];
