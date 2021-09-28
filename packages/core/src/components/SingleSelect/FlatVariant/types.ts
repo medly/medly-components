@@ -1,6 +1,8 @@
-import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { WithThemeProp } from 'packages/utils/src/types';
 
-export interface FlatVariantProps extends Omit<HTMLProps<HTMLButtonElement>, 'size'>, WithThemeProp {
+export interface FlatVariantProps {
+    /** Id of flat variant */
+    id: string;
     /** Selected Value */
     value: string;
     /** Label */
@@ -14,3 +16,5 @@ export interface FlatVariantProps extends Omit<HTMLProps<HTMLButtonElement>, 'si
     /** Set it true to when options are visible */
     areOptionsVisible?: boolean;
 }
+
+export type StyledFlatVariantProps = Omit<FlatVariantProps, 'value'> & WithThemeProp;

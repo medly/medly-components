@@ -52,7 +52,9 @@ const Component: FC<SelectProps> = React.memo(
         const validate = useCallback(
             () =>
                 setErrorMessage(
-                    (validator && validator(inputRef.current.value)) || (inputProps.required && !value && 'Please select one option.') || ''
+                    (validator && validator(inputRef.current?.value)) ||
+                        (inputProps.required && !value && 'Please select one option.') ||
+                        ''
                 ),
             [inputProps.required, validator, value]
         );
@@ -60,7 +62,7 @@ const Component: FC<SelectProps> = React.memo(
         const showOptions = useCallback(() => {
                 setOptionsVisibilityState(true);
                 isSearchable && setInputValue('');
-                inputRef.current.focus();
+                inputRef.current?.focus();
             }, [isSearchable, inputValue]),
             hideOptions = useCallback(() => {
                 setOptionsVisibilityState(false);
@@ -100,7 +102,7 @@ const Component: FC<SelectProps> = React.memo(
                         onChange && onChange(option.value);
                         setErrorMessage('');
                     } else {
-                        inputRef.current.focus();
+                        inputRef.current?.focus();
                     }
                 },
                 [inputRef.current, onChange]
@@ -128,7 +130,7 @@ const Component: FC<SelectProps> = React.memo(
                 },
                 [onBlur]
             ),
-            inputValidator = useCallback(() => undefined, []),
+            inputValidator = useCallback(() => '', []),
             handleKeyPress = useCallback((event: React.KeyboardEvent) => !isSearchable && event.preventDefault(), [isSearchable]);
 
         useUpdateEffect(() => {
@@ -174,7 +176,8 @@ const Component: FC<SelectProps> = React.memo(
         return (
             <Styled.Wrapper
                 id={`${selectId}-wrapper`}
-                {...{ variant, disabled, minWidth, maxWidth, fullWidth }}
+                {...{ disabled, minWidth, maxWidth, fullWidth }}
+                variant={variant!}
                 ref={wrapperRef}
                 className={className}
                 isSearchable={isSearchable}
@@ -200,9 +203,9 @@ const Component: FC<SelectProps> = React.memo(
                 )}
                 {!disabled && areOptionsVisible && (
                     <Options
-                        size={variant === 'flat' ? 'S' : inputProps.size}
+                        size={variant === 'flat' ? 'S' : inputProps.size!}
                         ref={optionsRef}
-                        variant={variant}
+                        variant={variant!}
                         id={`${selectId}-options`}
                         options={options}
                         hasError={!!props.errorText}
