@@ -9,7 +9,7 @@ export const ActionBar: React.FC = React.memo(() => {
         <PopoverWrapper>
             <PopupWrapper placement="top" withArrow={true}>
                 <ButtonSection>{actions}</ButtonSection>
-                <Text textVariant="body3">{`${selectedRowIds.length} Rows Selected`}</Text>
+                <Text textVariant="body3">{`${selectedRowIds?.length} Rows Selected`}</Text>
             </PopupWrapper>
         </PopoverWrapper>
     );

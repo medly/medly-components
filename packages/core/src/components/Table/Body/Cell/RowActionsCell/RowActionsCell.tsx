@@ -30,7 +30,7 @@ const Component: React.FC<RowActionProps> = React.memo(props => {
                     )}
                     {props.isRowSelectable && (
                         <Checkbox
-                            size={props.tableSize === 'XS' ? props.tableSize : null}
+                            size={props.tableSize === 'XS' ? props.tableSize : undefined}
                             indeterminate={props.isRowIndeterminate}
                             disabled={props.isRowSelectionDisabled}
                             checked={props.isRowSelected}

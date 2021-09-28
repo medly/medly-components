@@ -4,7 +4,7 @@ export const createValues = (columns: TableColumnConfig[], field = ''): string[]
     columns.reduce((acc, curr) => {
         const dottedField = field ? `${field}.${curr.field}` : curr.field;
         return [...acc, ...(curr.children ? createValues(curr.children, dottedField) : curr.hidden ? [dottedField] : [])];
-    }, []);
+    }, [] as string[]);
 
 export const createOptions = (columns: TableColumnConfig[], field = ''): any =>
     columns.map(config => {
@@ -18,7 +18,7 @@ export const createOptions = (columns: TableColumnConfig[], field = ''): any =>
 export const updateConfig = (configs: TableColumnConfig[], field: string) =>
     configs.map(config => ({ ...config, hidden: config.field === field ? !config.hidden : config.hidden }));
 
-export const updateColumns = (columns: TableColumnConfig[], selectedValues: string[], field = ''): any =>
+export const updateColumns = (columns: TableColumnConfig[], selectedValues: string[], field = ''): TableColumnConfig[] =>
     columns.reduce((acc, curr) => {
         const dottedField = field ? `${field}.${curr.field}` : curr.field,
             children = curr.children ? updateColumns(curr.children, selectedValues, dottedField) : undefined,
@@ -32,4 +32,4 @@ export const updateColumns = (columns: TableColumnConfig[], selectedValues: stri
                 children
             }
         ];
-    }, []);
+    }, [] as TableColumnConfig[]);

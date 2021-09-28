@@ -5,7 +5,7 @@ import { Cell as StyledCell, CustomComponentWrapper, LoadingDiv } from './Styled
 import { TableCellProps } from './types';
 
 const Component: React.FC<TableCellProps> = React.memo(props => {
-    const customComponentWrapperRef = useRef(null),
+    const customComponentWrapperRef = useRef<HTMLDivElement>(null),
         {
             addColumnMaxSize,
             config,

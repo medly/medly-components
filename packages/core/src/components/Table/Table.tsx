@@ -10,7 +10,7 @@ import Head from './Head';
 import { getUpdatedColumns } from './helpers';
 import { maxColumnSizeReducer } from './maxColumnSizeReducer';
 import { HiddenDiv, TableStyled } from './Table.styled';
-import { StaticProps, TableProps } from './types';
+import { StaticProps, TableProps, TableState } from './types';
 import useGroupedRowSelector from './useGroupedRowSelector';
 import useRowSelector from './useRowSelector';
 import { useScrollState } from './useScrollState';
@@ -28,7 +28,7 @@ export const Component: FC<TableProps> = React.memo(
                 isRowExpandable,
                 onRowSelection,
                 isLoading,
-                selectedRowIds,
+                selectedRowIds = [],
                 showRowWithCardStyle,
                 withPagination,
                 onScrolledToBottom,
@@ -38,28 +38,28 @@ export const Component: FC<TableProps> = React.memo(
             size = showRowWithCardStyle ? 'L' : restProps.size;
 
         const hiddenDivRef = useRef(null),
-            tableState = useState({
+            tableState = useState<TableState>({
                 sortField: props.defaultSortField,
                 sortOrder: props.defaultSortOrder,
                 activePage: props.defaultActivePage
             }),
             [scrollState, handleScroll] = useScrollState(),
-            [selectedGroupIds, setSelectedGroupIds] = useState([]),
+            [selectedGroupIds, setSelectedGroupIds] = useState<(string | number)[]>([]),
             [isSelectAllDisable, setSelectAllDisableState] = useState(true),
             tableRef = useCombinedRefs<HTMLTableElement>(ref, React.useRef(null)),
             [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
             [columns, setColumns] = useState(
-                getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable, maxColumnSizes)
+                getUpdatedColumns({ columnConfigs: props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable, maxColumnSizes })
             ),
             addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]);
 
         const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
             rowSelector = useRowSelector({
                 data,
-                rowSelectionDisableKey,
+                rowSelectionDisableKey: rowSelectionDisableKey!,
                 setSelectedIds: isGroupedTable ? setSelectedGroupIds : onRowSelection,
                 selectedIds: isGroupedTable ? selectedGroupIds : selectedRowIds,
-                rowIdentifier: restProps.groupBy || rowIdentifier
+                rowIdentifier: restProps.groupBy || rowIdentifier!
             }),
             { isAnyRowSelected, areAllRowsSelected, toggleId, setUniqueIds } = rowSelector,
             groupedRowSelector = useGroupedRowSelector({ setSelectedIds: onRowSelection, selectedIds: selectedRowIds });
@@ -69,11 +69,13 @@ export const Component: FC<TableProps> = React.memo(
         }, [data]);
 
         useEffect(() => {
-            setColumns(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable, maxColumnSizes));
+            setColumns(
+                getUpdatedColumns({ columnConfigs: props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable, maxColumnSizes })
+            );
         }, [props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable]);
 
         useEffect(() => {
-            setSelectAllDisableState(isGroupedTable ? true : data.every(dt => dt[rowSelectionDisableKey]));
+            setSelectAllDisableState(isGroupedTable ? true : data.every(dt => dt[rowSelectionDisableKey!]));
         }, [data, isGroupedTable, rowSelectionDisableKey]);
 
         useUpdateEffect(() => {
@@ -92,7 +94,8 @@ export const Component: FC<TableProps> = React.memo(
                     value={{
                         ...props,
                         columns,
-                        size,
+                        size: size!,
+                        rowIdentifier: props.rowIdentifier!,
                         data: isLoading ? loadingBodyData : data,
                         isGroupedTable,
                         tableRef,
@@ -101,7 +104,7 @@ export const Component: FC<TableProps> = React.memo(
                     }}
                 >
                     <HiddenDiv ref={hiddenDivRef} />
-                    {!!restProps.actions.length && selectedRowIds.length > 0 && <ActionBar />}
+                    {restProps.actions?.length && selectedRowIds.length > 0 && <ActionBar />}
                     <TableStyled
                         {...restProps}
                         ref={tableRef}
@@ -132,7 +135,7 @@ export const Component: FC<TableProps> = React.memo(
                                 showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                             }}
                         />
-                        {withPagination && <Foot tableSize={size} />}
+                        {withPagination && <Foot tableSize={size!} />}
                     </TableStyled>
                 </TableComponentsCommonPropsContext.Provider>
             </TableStateContext.Provider>

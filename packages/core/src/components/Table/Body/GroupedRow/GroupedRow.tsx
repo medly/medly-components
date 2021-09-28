@@ -33,12 +33,12 @@ export const GroupedRow: React.FC<GroupedRowProps> = React.memo(props => {
 
     const [isRowExpanded, setExpansionState] = useState(titleRowData[rowIdentifier] === defaultExpandedRowIdentifier),
         [isLoading, setLoadingState] = useState(true),
-        [selectedIds, setSelectedIds] = useState([]),
+        [selectedIds, setSelectedIds] = useState<(string | number)[]>([]),
         [groupedRows, setGroupedRows] = useState<Data>(loadingBodyData);
 
     const isTitleRowSelected = useMemo(() => !isLoading && selectedTitleRowIds.includes(id), [id, isLoading, selectedTitleRowIds]),
         isTitleRowSelectionDisable = useMemo(() => {
-            const isDisabled = groupedRows.every(dt => dt[rowSelectionDisableKey]);
+            const isDisabled = groupedRows.every(dt => rowSelectionDisableKey && dt[rowSelectionDisableKey]);
             !isDisabled && setSelectAllDisableState(false);
             return isDisabled;
         }, [groupedRows, rowSelectionDisableKey]),
@@ -63,11 +63,13 @@ export const GroupedRow: React.FC<GroupedRowProps> = React.memo(props => {
 
     useEffect(() => {
         const fetchData = async () => {
-            setLoadingState(true);
-            const dt = await getGroupedData(titleRowData[groupBy]);
-            setLoadingState(false);
-            setGroupedRows(dt);
-            setUniqueIds(array => Array.from(new Set(array.concat(titleRowData[groupBy]))));
+            if (groupBy && getGroupedData) {
+                setLoadingState(true);
+                const dt = await getGroupedData(titleRowData[groupBy]);
+                setLoadingState(false);
+                setGroupedRows(dt);
+                setUniqueIds(array => Array.from(new Set(array.concat(titleRowData[groupBy]))));
+            }
         };
         isRowExpanded && groupedRows === loadingBodyData && fetchData();
     }, [isRowExpanded]);

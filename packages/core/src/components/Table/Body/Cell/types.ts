@@ -6,7 +6,7 @@ export type TableCellStyledProps = {
     frozen?: boolean;
     align?: 'left' | 'right' | 'center';
     wrapText?: boolean;
-    tableSize?: TableProps['size'];
+    tableSize: Required<TableProps>['size'];
 };
 
 export type TableCellProps = TableCellStyledProps &
@@ -15,10 +15,10 @@ export type TableCellProps = TableCellStyledProps &
         rowId: any;
         rowData: ObjectType;
         config: TableColumnConfig;
-        dottedFieldName?: string;
+        dottedFieldName: string;
         isLoading?: boolean;
         isRowClickDisabled?: boolean;
-        hiddenDivRef?: React.MutableRefObject<any>;
+        hiddenDivRef: React.RefObject<any>;
         tableSize?: TableProps['size'];
         addColumnMaxSize?: (field: string, value: number) => void;
         as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
