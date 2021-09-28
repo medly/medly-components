@@ -4,7 +4,7 @@ import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './Toggle.styled';
 import { ToggleProps } from './types';
 
-export const Toggle: FC<ToggleProps> & WithStyle = React.memo(
+const Component: FC<ToggleProps> = React.memo(
     React.forwardRef((props, ref) => {
         const { size, label, required, labelPosition, labelVariant, labelWeight, labelColor, fullWidth, onChange, ...restProps } = props;
 
@@ -39,10 +39,10 @@ export const Toggle: FC<ToggleProps> & WithStyle = React.memo(
     })
 );
 
-Toggle.displayName = 'Toggle';
-Toggle.Style = FieldWithLabel.Style;
-Toggle.defaultProps = {
+Component.displayName = 'Toggle';
+Component.defaultProps = {
     label: '',
     required: false,
     labelPosition: 'right'
 };
+export const Toggle: FC<ToggleProps> & WithStyle = Object.assign(Component, { Style: FieldWithLabel.Style });

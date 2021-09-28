@@ -3,7 +3,7 @@ import React, { FC, useMemo } from 'react';
 import { TextStyled } from './Text.styled';
 import { TextProps } from './types';
 
-export const Text: FC<TextProps> & WithStyle = React.memo(
+const Component: FC<TextProps> = React.memo(
     React.forwardRef(({ as, textVariant, textWeight, textAlign, children, ...restProps }, ref) => {
         const componentType = useMemo(() => {
             let type: keyof JSX.IntrinsicElements | React.ComponentType<any> = (textVariant as keyof JSX.IntrinsicElements) || 'span';
@@ -29,12 +29,12 @@ export const Text: FC<TextProps> & WithStyle = React.memo(
     })
 );
 
-Text.defaultProps = {
+Component.defaultProps = {
     lineThrough: false,
     uppercase: false,
     fullWidth: false,
     textColor: 'inherit',
     textAlign: 'initial'
 };
-Text.displayName = 'Text';
-Text.Style = TextStyled;
+Component.displayName = 'Text';
+export const Text: FC<TextProps> & WithStyle = Object.assign(Component, { Style: TextStyled });

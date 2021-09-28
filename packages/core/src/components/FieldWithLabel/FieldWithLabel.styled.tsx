@@ -3,7 +3,7 @@ import { css, styled } from '@medly-components/utils';
 import { AnyStyledComponent } from 'styled-components';
 import Label from '../Label';
 import Text from '../Text';
-import { FieldStyledProps, FieldWithLabelStyledProps, StaticProps } from './types';
+import { FieldStyledProps, FieldWithLabelStyledProps } from './types';
 
 export const FieldStyled = styled('div')<FieldStyledProps>`
     grid-area: field;
@@ -24,7 +24,7 @@ export const DescriptionStyled = styled(Text)`
     color: ${({ theme, textColor }) => (textColor ? textColor : theme.input.descriptionColor)};
 `;
 
-export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('div')<FieldWithLabelStyledProps>`
+export const FieldWithLabelStyled: AnyStyledComponent = styled('div')<FieldWithLabelStyledProps>`
     margin: ${({ theme, fullWidth }) =>
         fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};
     display: ${({ fullWidth }) => (fullWidth ? 'grid' : 'inline-grid')};

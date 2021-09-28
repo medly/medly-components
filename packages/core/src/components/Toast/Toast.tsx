@@ -7,7 +7,7 @@ import { removeToast } from '../ToastContainer/ToastStore';
 import * as Styled from './Toast.styled';
 import { ToastProps } from './types';
 
-export const Toast: FC<ToastProps> & WithStyle = React.memo(
+const Component: FC<ToastProps> = React.memo(
     React.forwardRef((props, ref) => {
         const { id, variant, header, icon: Icon, message, action, ...restProps } = props;
 
@@ -43,5 +43,5 @@ export const Toast: FC<ToastProps> & WithStyle = React.memo(
         );
     })
 );
-Toast.displayName = 'Toast';
-Toast.Style = Styled.Toast;
+Component.displayName = 'Toast';
+export const Toast: FC<ToastProps> & WithStyle = Object.assign(Component, { Style: Styled.Toast });

@@ -5,7 +5,7 @@ import { ButtonStyled } from './Button.styled';
 import BtnLoader from './Loader';
 import { ButtonProps } from './types';
 
-export const Button: FC<ButtonProps> & WithStyle = React.memo(
+const Component: FC<ButtonProps> = React.memo(
     React.forwardRef((props, ref) => {
         const theme = useContext(ThemeContext);
         return (
@@ -18,12 +18,14 @@ export const Button: FC<ButtonProps> & WithStyle = React.memo(
         );
     })
 );
-Button.defaultProps = {
+Component.defaultProps = {
     type: 'button',
     variant: 'solid',
     disabled: false,
     edges: 'square',
     size: 'M'
 };
-Button.displayName = 'Button';
-Button.Style = ButtonStyled;
+Component.displayName = 'Button';
+export const Button: FC<ButtonProps> & WithStyle = Object.assign(Component, {
+    Style: ButtonStyled
+});

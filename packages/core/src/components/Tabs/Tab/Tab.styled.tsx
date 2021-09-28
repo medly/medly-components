@@ -2,7 +2,7 @@ import { SvgIcon } from '@medly-components/icons';
 import { centerAligned, css, getFontStyle, styled } from '@medly-components/utils';
 import Text from '../../Text';
 import { TabSize } from '../types';
-import { StyledProps } from './types';
+import { StyledTabProps } from './types';
 
 export const Count = styled.span<{ tabSize: TabSize }>`
     color: ${({ theme }) => theme.tabs.countColor};
@@ -39,7 +39,7 @@ const getStyle = ({
     countBgColor,
     helperTextColor,
     variant
-}: StyledProps & { styleType: 'active' | 'default' | 'hovered' | 'disabled' }) => css`
+}: StyledTabProps & { styleType: 'active' | 'default' | 'hovered' | 'disabled' }) => css`
     background-color: ${bgColor[styleType]};
     ${Label} {
         color: ${labelColor[styleType]};
@@ -62,7 +62,7 @@ const getStyle = ({
     }
 `;
 
-const activeStyle = ({ variant, tabBackground, iconColor, theme, bgColor, tabSize }: StyledProps) => css<StyledProps>`
+const activeStyle = ({ variant, tabBackground, iconColor, theme, bgColor, tabSize }: StyledTabProps) => css<StyledTabProps>`
     ${props => getStyle({ ...props, styleType: 'active' })}
     background-color: ${variant === 'outlined' && tabBackground === 'WHITE' ? bgColor.active : bgColor.default};
     ${SvgIcon} {
@@ -72,7 +72,7 @@ const activeStyle = ({ variant, tabBackground, iconColor, theme, bgColor, tabSiz
     }
 `;
 
-const nonActiveStyle = ({ tabBackground, bgColor }: StyledProps) => css<StyledProps>`
+const nonActiveStyle = ({ tabBackground, bgColor }: StyledTabProps) => css<StyledTabProps>`
     ${props => getStyle({ ...props, styleType: 'default' })}
     &:not(:disabled):hover {
         ${props => getStyle({ ...props, styleType: 'hovered' })}
@@ -80,16 +80,16 @@ const nonActiveStyle = ({ tabBackground, bgColor }: StyledProps) => css<StyledPr
     }
 `;
 
-const disabledStyle = css<StyledProps>`
+const disabledStyle = css<StyledTabProps>`
     ${props => getStyle({ ...props, styleType: 'disabled' })}
 `;
 
-const getSolidTabWidth = ({ totalTabs, theme, tabSize }: StyledProps) => {
+const getSolidTabWidth = ({ totalTabs, theme, tabSize }: StyledTabProps) => {
     const paddingBetweenTabs = `calc(${totalTabs - 1} * ${theme.tabs.solid.tabList.padding[tabSize]} / ${totalTabs}})`;
     return `calc(${100 / totalTabs}% - ${paddingBetweenTabs})`;
 };
 
-const solidStyle = css<StyledProps>`
+const solidStyle = css<StyledTabProps>`
     ${centerAligned('flex')}
     width: ${getSolidTabWidth};
     border: none;
@@ -98,7 +98,7 @@ const solidStyle = css<StyledProps>`
     border-radius: ${({ theme }) => theme.tabs.solid.tabBorderRadius};
 `;
 
-const flatOutlinedStyle = css<StyledProps>`
+const flatOutlinedStyle = css<StyledTabProps>`
     &:first-child {
         border-left-width: ${({ variant }) => variant === 'outlined' && `0.1rem`};
         border-top-left-radius: 0.8rem;
@@ -121,7 +121,7 @@ const flatOutlinedStyle = css<StyledProps>`
     }
 `;
 
-export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs }))<StyledProps>`
+export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs }))<StyledTabProps>`
     padding: 1.6rem;
     user-select: none;
     text-decoration: none;

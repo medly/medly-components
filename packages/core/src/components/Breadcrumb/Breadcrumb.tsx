@@ -7,7 +7,7 @@ import { BreadcrumbStyled } from './Breadcrumb.styled';
 import BreadcrumbItem from './Item';
 import { BreadcrumbProps, BreadcrumbStaticProps } from './types';
 
-export const Breadcrumb: FC<BreadcrumbProps> & WithStyle & BreadcrumbStaticProps = props => {
+const Component: FC<BreadcrumbProps> = props => {
     const { separator, children, ...restProps } = props,
         links = React.Children.toArray(children),
         linksWithSeparator = addSeparator(links, separator);
@@ -15,10 +15,10 @@ export const Breadcrumb: FC<BreadcrumbProps> & WithStyle & BreadcrumbStaticProps
     return <BreadcrumbStyled {...restProps}>{linksWithSeparator}</BreadcrumbStyled>;
 };
 
-Breadcrumb.displayName = 'Breadcrumb';
-Breadcrumb.Item = BreadcrumbItem;
-Breadcrumb.Back = BreadcrumbBack;
-Breadcrumb.Style = BreadcrumbStyled;
-Breadcrumb.defaultProps = {
-    separator: <ChevronRightIcon size="S" aria-hidden="true" />
-};
+Component.displayName = 'Breadcrumb';
+Component.defaultProps = { separator: <ChevronRightIcon size="S" aria-hidden="true" /> };
+export const Breadcrumb: FC<BreadcrumbProps> & WithStyle & BreadcrumbStaticProps = Object.assign(Component, {
+    Item: BreadcrumbItem,
+    Back: BreadcrumbBack,
+    Style: BreadcrumbStyled
+});

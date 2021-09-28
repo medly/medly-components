@@ -5,7 +5,7 @@ import Text from '../../../Text';
 import * as Styled from './Chip.styled';
 import { Props } from './types';
 
-export const Chip: FC<Props> & WithStyle = React.memo(({ id, value, label, disabled, onClear }) => {
+const Component: FC<Props> = React.memo(({ id, value, label, disabled, onClear }) => {
     const chipId = id ? id.replace(' ', '') : 'medly-options-chip',
         onClearHandler = useCallback(() => !disabled && onClear && onClear(value), [disabled, onClear]);
 
@@ -17,5 +17,5 @@ export const Chip: FC<Props> & WithStyle = React.memo(({ id, value, label, disab
     );
 });
 
-Chip.displayName = 'Chip';
-Chip.Style = Styled.Chip;
+Component.displayName = 'Chip';
+export const Chip: FC<Props> & WithStyle = Object.assign(Component, { Style: Styled.Chip });

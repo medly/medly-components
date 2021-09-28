@@ -4,7 +4,7 @@ import Radio from '../Radio';
 import { SelectorGroup } from '../Selectors';
 import { RadioGroupProps } from './types';
 
-export const RadioGroup: FC<RadioGroupProps> & WithStyle = React.memo(
+const Component: FC<RadioGroupProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
             id,
@@ -107,11 +107,11 @@ export const RadioGroup: FC<RadioGroupProps> & WithStyle = React.memo(
     })
 );
 
-RadioGroup.displayName = 'RadioGroup';
-RadioGroup.Style = SelectorGroup.Wrapper;
-RadioGroup.defaultProps = {
+Component.displayName = 'RadioGroup';
+Component.defaultProps = {
     columns: 1,
     fullWidth: true,
     labelWeight: 'Medium',
     labelVariant: 'body1'
 };
+export const RadioGroup: FC<RadioGroupProps> & WithStyle = Object.assign(Component, { Style: SelectorGroup.Wrapper });

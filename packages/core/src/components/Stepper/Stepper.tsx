@@ -4,7 +4,7 @@ import Step from './Step/Step';
 import { StepperStyled } from './Stepper.styled';
 import { StepperProps, StepperStaticProps } from './types';
 
-export const Stepper: FC<StepperProps> & WithStyle & StepperStaticProps = React.memo(
+const Component: FC<StepperProps> = React.memo(
     React.forwardRef((props, ref) => {
         const { size, activeStep, children, onStepClick, ...restProps } = props;
         return (
@@ -23,9 +23,11 @@ export const Stepper: FC<StepperProps> & WithStyle & StepperStaticProps = React.
     })
 );
 
-Stepper.defaultProps = {
+Component.defaultProps = {
     activeStep: 0
 };
-Stepper.Step = Step;
-Stepper.Style = StepperStyled;
-Stepper.displayName = 'Stepper';
+Component.displayName = 'Stepper';
+export const Stepper: FC<StepperProps> & WithStyle & StepperStaticProps = Object.assign(Component, {
+    Style: StepperStyled,
+    Step
+});

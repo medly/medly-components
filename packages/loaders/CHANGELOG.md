@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.38](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.37...@medly-components/loaders@1.2.38) (2021-09-27)
+
+
+### Bug Fixes
+
+* strict null check issue in Tabs, Toggle, ToastContainer, Toast, TextFi… ([#439](https://github.com/medly/medly-components/issues/439)) ([fc49370](https://github.com/medly/medly-components/commit/fc49370e5608b17429082e4379b67e730586c3c4))
+
+
+
+
+
 ## [1.2.37](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.36...@medly-components/loaders@1.2.37) (2021-09-23)
 
 

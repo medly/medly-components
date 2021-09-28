@@ -1,9 +1,9 @@
 import { LoaderSizes } from '@medly-components/theme';
-import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit } from '@medly-components/utils';
 
 export type SVGProp = Omit<HTMLProps<HTMLOrSVGElement>, 'size'>;
 
-export interface SvgLoaderProps extends SVGProp, WithThemeProp {
+export interface SvgLoaderProps extends SVGProp {
     /** Loader size */
     size?: LoaderSizes;
     /** Loader color */

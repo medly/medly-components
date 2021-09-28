@@ -9,7 +9,7 @@ import * as Styled from './SingleSelect.styled';
 import { Option, SelectProps } from './types';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
+const Component: FC<SelectProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 id,
@@ -216,9 +216,8 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
     })
 );
 
-SingleSelect.displayName = 'SingleSelect';
-SingleSelect.Style = Styled.Wrapper;
-SingleSelect.defaultProps = {
+Component.displayName = 'SingleSelect';
+Component.defaultProps = {
     value: '',
     size: 'M',
     label: '',
@@ -231,3 +230,4 @@ SingleSelect.defaultProps = {
     placeholder: 'Please Select . . .',
     showDecorators: true
 };
+export const SingleSelect: FC<SelectProps> & WithStyle = Object.assign(Component, { Style: Styled.Wrapper });

@@ -6,7 +6,7 @@ import { LoadingDiv } from '../Styled';
 import { RowActionsCellStyled } from './RowActionsCell.styled';
 import { RowActionProps } from './types';
 
-export const RowActionsCell: React.FC<RowActionProps> & WithStyle = React.memo(props => {
+const Component: React.FC<RowActionProps> = React.memo(props => {
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
 
     return (
@@ -43,5 +43,5 @@ export const RowActionsCell: React.FC<RowActionProps> & WithStyle = React.memo(p
         </RowActionsCellStyled>
     );
 });
-RowActionsCell.displayName = 'RowActionsCell';
-RowActionsCell.Style = RowActionsCellStyled;
+Component.displayName = 'RowActionsCell';
+export const RowActionsCell: React.FC<RowActionProps> & WithStyle = Object.assign(Component, { Style: RowActionsCellStyled });

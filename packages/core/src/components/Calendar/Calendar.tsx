@@ -10,7 +10,7 @@ import MonthAndYearSelection from './MonthAndYearSelection';
 import { CalendarProps } from './types';
 import WeekDays from './WeekDays';
 
-export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
+const Component: React.FC<CalendarProps> = React.memo(
     ({ date, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, ...restProps }) => {
         const today = new Date(),
             [, setCalenderVisibility] = useContext(PopoverContext),
@@ -97,10 +97,8 @@ export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
         );
     }
 );
-Calendar.displayName = 'Calendar';
-Calendar.Style = Styled.Calendar;
-Calendar.defaultProps = {
-    date: null,
-    minSelectableDate: new Date(1901, 0, 1),
-    maxSelectableDate: new Date(2100, 11, 1)
-};
+Component.displayName = 'Calendar';
+Component.defaultProps = { date: null, minSelectableDate: new Date(1901, 0, 1), maxSelectableDate: new Date(2100, 11, 1) };
+export const Calendar: React.FC<CalendarProps> & WithStyle = Object.assign(Component, {
+    Style: Styled.Calendar
+});

@@ -4,7 +4,7 @@ import { useScrollState } from '../../Modal/useScrollState';
 import { DrawerContext } from '../Drawer.context';
 import { ContentStyled } from './Content.styled';
 
-export const Content: React.FC & WithStyle = React.memo(props => {
+const Component: React.FC = React.memo(props => {
     const contentRef = useRef(),
         { id, dispatch, scrollState } = useContext(DrawerContext),
         handleScroll = useScrollState({ ref: contentRef, scrollState, dispatch });
@@ -12,5 +12,5 @@ export const Content: React.FC & WithStyle = React.memo(props => {
     return <ContentStyled ref={contentRef} onScroll={handleScroll} {...props} id={`${id}-content`} />;
 });
 
-Content.displayName = 'DrawerContent';
-Content.Style = ContentStyled;
+Component.displayName = 'DrawerContent';
+export const Content: React.FC & WithStyle = Object.assign(Component, { Style: ContentStyled });

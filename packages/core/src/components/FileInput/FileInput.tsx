@@ -4,7 +4,7 @@ import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './FileInput.styled';
 import { FileInputProps } from './types';
 
-export const FileInput: FC<FileInputProps> & WithStyle = React.memo(
+const Component: FC<FileInputProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 files,
@@ -63,9 +63,8 @@ export const FileInput: FC<FileInputProps> & WithStyle = React.memo(
     })
 );
 
-FileInput.displayName = 'FileInput';
-FileInput.Style = Styled.Input;
-FileInput.defaultProps = {
+Component.displayName = 'FileInput';
+Component.defaultProps = {
     // @ts-ignore
     files: [],
     disabled: false,
@@ -75,3 +74,6 @@ FileInput.defaultProps = {
     labelPosition: 'top',
     description: ''
 };
+export const FileInput: FC<FileInputProps> & WithStyle = Object.assign(Component, {
+    Style: Styled.Input
+});

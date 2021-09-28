@@ -5,7 +5,7 @@ import { Wrapper } from './Popover.styled';
 import Popup from './Popup';
 import { PopoverProps, StaticProps } from './types';
 
-export const Popover: FC<PopoverProps> & WithStyle & StaticProps = React.memo(({ id, interactionType, ...restProps }) => {
+const Component: FC<PopoverProps> = React.memo(({ id, interactionType, ...restProps }) => {
     const openState = useState(false),
         [, setOpenState] = openState,
         wrapperRef = useRef(null),
@@ -31,10 +31,12 @@ export const Popover: FC<PopoverProps> & WithStyle & StaticProps = React.memo(({
     );
 });
 
-Popover.displayName = 'Popover';
-Popover.defaultProps = {
+Component.displayName = 'Popover';
+Component.defaultProps = {
     interactionType: 'hover'
 };
-Popover.Popup = Popup;
-Popover.Context = PopoverContext;
-Popover.Style = Wrapper;
+export const Popover: FC<PopoverProps> & WithStyle & StaticProps = Object.assign(Component, {
+    STyle: Wrapper,
+    Popup,
+    Context: PopoverContext
+});

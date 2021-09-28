@@ -4,7 +4,7 @@ import { RowActionsCellStyled } from '../RowActionsCell/RowActionsCell.styled';
 import { ExtendedRowCellStyled, Wrapper } from './ExtendedRowCell.styled';
 import { ExtendedRowCellProps } from './types';
 
-export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = React.memo(props => {
+const Component: React.FC<ExtendedRowCellProps> = React.memo(props => {
     const {
         rowId,
         rowData,
@@ -37,5 +37,5 @@ export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = React
         </>
     );
 });
-ExtendedRowCell.displayName = 'ExtendedRowCell';
-ExtendedRowCell.Style = ExtendedRowCellStyled;
+Component.displayName = 'ExtendedRowCell';
+export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = Object.assign(Component, { Style: ExtendedRowCellStyled });

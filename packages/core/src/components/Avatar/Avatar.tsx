@@ -4,7 +4,7 @@ import Text from '../Text';
 import { AvatarStyled } from './Avatar.styled';
 import { AvatarProps } from './types';
 
-export const Avatar: FC<AvatarProps> & WithStyle = React.memo(
+const Component: FC<AvatarProps> = React.memo(
     React.forwardRef((props, ref) => {
         const isImage = React.Children.toArray(props.children).find(
             (child: any) => child.type === 'img' || child.props?.originalType === 'img'
@@ -24,5 +24,7 @@ export const Avatar: FC<AvatarProps> & WithStyle = React.memo(
         );
     })
 );
-Avatar.displayName = 'Avatar';
-Avatar.Style = AvatarStyled;
+Component.displayName = 'Avatar';
+export const Avatar: FC<AvatarProps> & WithStyle = Object.assign(Component, {
+    Style: AvatarStyled
+});
