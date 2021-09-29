@@ -122,6 +122,7 @@ export const HeadCellButton = styled.button<{
     display: flex;
     width: 100%;
     align-items: center;
+    min-height: 2rem;
     justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
     padding: ${({ tableSize }) => resolveValueByTableSize(tableSize, headCellButtonTableSizeMap)};
     outline: unset;
@@ -129,6 +130,10 @@ export const HeadCellButton = styled.button<{
     border-radius: ${({ theme }) => theme.table.header.cell.borderRadius};
     cursor: ${({ withHoverEffect }) => (withHoverEffect ? 'pointer' : 'default')};
     ${({ isSelected, theme }) => getStyle(theme, 'default', isSelected)}
+
+    &&& {
+        box-sizing: content-box;
+    }
 
     &:hover {
         ${({ isSelected, withHoverEffect, theme }) => withHoverEffect && getStyle(theme, 'hovered', isSelected)}

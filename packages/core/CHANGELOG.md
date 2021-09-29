@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.27.9](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.8...@medly-components/core@2.27.9) (2021-09-29)
+
+
+### Bug Fixes
+
+* fix regex Denial of service and Weak Cryptography issue ([#465](https://github.com/medly/medly-components/issues/465)) ([36c4fb2](https://github.com/medly/medly-components/commit/36c4fb273a2081168d8eb6bddffb532a7a38e559))
+
+
+
+
+
 ## [2.27.8](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.7...@medly-components/core@2.27.8) (2021-09-29)
 
 
