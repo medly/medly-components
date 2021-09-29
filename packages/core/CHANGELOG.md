@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.27.8](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.7...@medly-components/core@2.27.8) (2021-09-29)
+
+
+### Bug Fixes
+
+* strict null check for Radio and RadioGroup component ([#461](https://github.com/medly/medly-components/issues/461)) ([6c264f5](https://github.com/medly/medly-components/commit/6c264f582f88ca446958ea35c4a757e3251cc48b))
+* strict null check issue in searchbox component ([#460](https://github.com/medly/medly-components/issues/460)) ([32d66a3](https://github.com/medly/medly-components/commit/32d66a36d66a7b648cbe079ebfcf140160f6e5da))
+
+
+
+
+
 ## [2.27.7](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.6...@medly-components/core@2.27.7) (2021-09-28)
 
 
