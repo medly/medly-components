@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.27.11](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.10...@medly-components/core@2.27.11) (2021-09-29)
+
+
+### Bug Fixes
+
+* fix strict null check issue in Popup & Pagination component ([#464](https://github.com/medly/medly-components/issues/464)) ([13ba7e2](https://github.com/medly/medly-components/commit/13ba7e2e8c98daa217015ef5aa43d7fb4b6d1aba))
+
+
+
+
+
 ## [2.27.10](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.9...@medly-components/core@2.27.10) (2021-09-29)
 
 **Note:** Version bump only for package @medly-components/core
