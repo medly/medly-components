@@ -31,12 +31,7 @@ describe('Avatar component', () => {
 
     it('should render with default hover and pressed states', () => {
         const { container } = render(
-            <Avatar
-                size="M"
-                textColor={defaultTheme.colors.green[500]}
-                bgColor={defaultTheme.colors.green[100]}
-                onClick={jest.fn()}
-            >
+            <Avatar size="M" textColor={defaultTheme.colors.green[500]} bgColor={defaultTheme.colors.green[100]} onClick={jest.fn()}>
                 M
             </Avatar>
         );
@@ -55,7 +50,7 @@ describe('Avatar component', () => {
     it('should render image avatar properly', () => {
         const { container } = render(
             <Avatar size="L" onClick={jest.fn()}>
-                <img src="http://dummurl" />
+                <img src="https://dummurl" />
             </Avatar>
         );
         expect(container).toMatchSnapshot();
