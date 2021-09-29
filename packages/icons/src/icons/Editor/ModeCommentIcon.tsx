@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ModeCommentIconSvg from '../../assets/Editor/mode_comment_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ModeCommentIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ModeCommentIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ModeCommentIcon';
 
-ModeCommentIcon.Style = SvgIcon;
-ModeCommentIcon.displayName = 'ModeCommentIcon';
+const ModeCommentIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ModeCommentIcon

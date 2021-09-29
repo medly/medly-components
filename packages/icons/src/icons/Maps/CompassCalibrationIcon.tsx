@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CompassCalibrationIconSvg from '../../assets/Maps/compass_calibration_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CompassCalibrationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CompassCalibrationIcon: FC<SvgIconProps> & WithStyle = React.memo(props =>
         </SvgIcon>
     );
 });
+Component.displayName = 'CompassCalibrationIcon';
 
-CompassCalibrationIcon.Style = SvgIcon;
-CompassCalibrationIcon.displayName = 'CompassCalibrationIcon';
+const CompassCalibrationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CompassCalibrationIcon

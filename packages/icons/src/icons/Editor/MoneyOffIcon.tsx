@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import MoneyOffIconSvg from '../../assets/Editor/money_off_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MoneyOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const MoneyOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'MoneyOffIcon';
 
-MoneyOffIcon.Style = SvgIcon;
-MoneyOffIcon.displayName = 'MoneyOffIcon';
+const MoneyOffIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default MoneyOffIcon

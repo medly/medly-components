@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import NaturePeopleIconSvg from '../../assets/Image/nature_people_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const NaturePeopleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const NaturePeopleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'NaturePeopleIcon';
 
-NaturePeopleIcon.Style = SvgIcon;
-NaturePeopleIcon.displayName = 'NaturePeopleIcon';
+const NaturePeopleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default NaturePeopleIcon

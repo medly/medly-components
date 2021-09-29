@@ -3,6 +3,127 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.39](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.38...@medly-components/loaders@1.2.39) (2021-09-28)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.38](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.37...@medly-components/loaders@1.2.38) (2021-09-27)
+
+
+### Bug Fixes
+
+* strict null check issue in Tabs, Toggle, ToastContainer, Toast, TextFi… ([#439](https://github.com/medly/medly-components/issues/439)) ([fc49370](https://github.com/medly/medly-components/commit/fc49370e5608b17429082e4379b67e730586c3c4))
+
+
+
+
+
+## [1.2.37](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.36...@medly-components/loaders@1.2.37) (2021-09-23)
+
+
+### Bug Fixes
+
+* style null check in forms, loaders & icons package ([#437](https://github.com/medly/medly-components/issues/437)) ([8019585](https://github.com/medly/medly-components/commit/801958543b126c39a87b73f0f7629934fcafb6a3))
+
+
+
+
+
+## [1.2.36](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.35...@medly-components/loaders@1.2.36) (2021-09-23)
+
+
+### Bug Fixes
+
+* strict null check in loaders package ([#436](https://github.com/medly/medly-components/issues/436)) ([f6908f8](https://github.com/medly/medly-components/commit/f6908f8ec534f236b74ba6b13d5182c75d8f7588))
+
+
+
+
+
+## [1.2.35](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.34...@medly-components/loaders@1.2.35) (2021-09-21)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.34](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.33...@medly-components/loaders@1.2.34) (2021-09-21)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.33](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.32...@medly-components/loaders@1.2.33) (2021-09-19)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.32](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.31...@medly-components/loaders@1.2.32) (2021-09-18)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.31](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.30...@medly-components/loaders@1.2.31) (2021-09-16)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.30](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.29...@medly-components/loaders@1.2.30) (2021-09-15)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.29](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.28...@medly-components/loaders@1.2.29) (2021-09-14)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.28](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.27...@medly-components/loaders@1.2.28) (2021-09-14)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.27](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.26...@medly-components/loaders@1.2.27) (2021-09-12)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
+## [1.2.26](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.25...@medly-components/loaders@1.2.26) (2021-09-11)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
 ## [1.2.25](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.2.24...@medly-components/loaders@1.2.25) (2021-09-10)
 
 **Note:** Version bump only for package @medly-components/loaders

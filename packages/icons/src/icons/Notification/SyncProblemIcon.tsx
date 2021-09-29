@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SyncProblemIconSvg from '../../assets/Notification/sync_problem_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SyncProblemIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SyncProblemIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SyncProblemIcon';
 
-SyncProblemIcon.Style = SvgIcon;
-SyncProblemIcon.displayName = 'SyncProblemIcon';
+const SyncProblemIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SyncProblemIcon

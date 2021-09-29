@@ -4,7 +4,7 @@ import Radio from '../Radio';
 import { SelectorGroup } from '../Selectors';
 import { RadioGroupProps } from './types';
 
-export const RadioGroup: FC<RadioGroupProps> & WithStyle = React.memo(
+const Component: FC<RadioGroupProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
             id,
@@ -35,13 +35,13 @@ export const RadioGroup: FC<RadioGroupProps> & WithStyle = React.memo(
 
         const validate = useCallback(
             (selectedValue: string, validationMessage?: string) =>
-                setErrorMessage((validator && validator(selectedValue)) || validationMessage),
+                setErrorMessage((validator && validator(selectedValue)) || validationMessage || ''),
             [validator]
         );
 
         const handleOnInvalid = useCallback(
                 (event: React.FormEvent<HTMLInputElement>) => {
-                    validate(value, (event.target as HTMLInputElement).validationMessage);
+                    validate(value || '', (event.target as HTMLInputElement).validationMessage);
                     onInvalid && onInvalid(event);
                 },
                 [validate, onInvalid, value]
@@ -50,7 +50,7 @@ export const RadioGroup: FC<RadioGroupProps> & WithStyle = React.memo(
                 (event: React.FocusEvent<HTMLDivElement>) => {
                     const currentTarget = event.currentTarget,
                         target = event.target as HTMLInputElement;
-                    setTimeout(() => !currentTarget.contains(document.activeElement) && validate(value, target.validationMessage), 0);
+                    setTimeout(() => !currentTarget.contains(document.activeElement) && validate(value || '', target.validationMessage), 0);
                     onBlur && onBlur(event);
                 },
                 [validate, onBlur, value]
@@ -107,11 +107,11 @@ export const RadioGroup: FC<RadioGroupProps> & WithStyle = React.memo(
     })
 );
 
-RadioGroup.displayName = 'RadioGroup';
-RadioGroup.Style = SelectorGroup.Wrapper;
-RadioGroup.defaultProps = {
+Component.displayName = 'RadioGroup';
+Component.defaultProps = {
     columns: 1,
     fullWidth: true,
     labelWeight: 'Medium',
     labelVariant: 'body1'
 };
+export const RadioGroup: FC<RadioGroupProps> & WithStyle = Object.assign(Component, { Style: SelectorGroup.Wrapper });

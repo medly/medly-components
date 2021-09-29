@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import RecordVoiceOverIconSvg from '../../assets/Action/record_voice_over_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RecordVoiceOverIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const RecordVoiceOverIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'RecordVoiceOverIcon';
 
-RecordVoiceOverIcon.Style = SvgIcon;
-RecordVoiceOverIcon.displayName = 'RecordVoiceOverIcon';
+const RecordVoiceOverIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default RecordVoiceOverIcon

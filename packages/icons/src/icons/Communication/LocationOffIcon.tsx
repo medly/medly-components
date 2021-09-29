@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocationOffIconSvg from '../../assets/Communication/location_off_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocationOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocationOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LocationOffIcon';
 
-LocationOffIcon.Style = SvgIcon;
-LocationOffIcon.displayName = 'LocationOffIcon';
+const LocationOffIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocationOffIcon

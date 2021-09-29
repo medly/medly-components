@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import BubbleChartIconSvg from '../../assets/Editor/bubble_chart_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BubbleChartIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const BubbleChartIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'BubbleChartIcon';
 
-BubbleChartIcon.Style = SvgIcon;
-BubbleChartIcon.displayName = 'BubbleChartIcon';
+const BubbleChartIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default BubbleChartIcon

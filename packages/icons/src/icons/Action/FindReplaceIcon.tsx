@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FindReplaceIconSvg from '../../assets/Action/find_replace_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FindReplaceIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FindReplaceIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FindReplaceIcon';
 
-FindReplaceIcon.Style = SvgIcon;
-FindReplaceIcon.displayName = 'FindReplaceIcon';
+const FindReplaceIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FindReplaceIcon

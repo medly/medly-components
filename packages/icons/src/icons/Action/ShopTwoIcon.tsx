@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ShopTwoIconSvg from '../../assets/Action/shop_two_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ShopTwoIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ShopTwoIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ShopTwoIcon';
 
-ShopTwoIcon.Style = SvgIcon;
-ShopTwoIcon.displayName = 'ShopTwoIcon';
+const ShopTwoIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ShopTwoIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DraftsIconSvg from '../../assets/Content/drafts_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DraftsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DraftsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DraftsIcon';
 
-DraftsIcon.Style = SvgIcon;
-DraftsIcon.displayName = 'DraftsIcon';
+const DraftsIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DraftsIcon

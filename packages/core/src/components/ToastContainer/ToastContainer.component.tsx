@@ -6,23 +6,21 @@ import * as Styled from './ToastContainer.styled';
 import { toastStore } from './ToastStore';
 import { ToastContainerProps } from './types';
 
-export const ToastContainer: FC<ToastContainerProps> & WithStyle = React.memo(
+const Component: FC<ToastContainerProps> = React.memo(
     React.forwardRef((props, ref) => {
         const toasts = useStore(toastStore);
 
-        return (
-            toasts.length > 0 && (
-                <Styled.Container ref={ref} {...props}>
-                    {toasts.map(toast => (
-                        <Toast key={toast.id} {...toast} />
-                    ))}
-                </Styled.Container>
-            )
-        );
+        return toasts.length > 0 ? (
+            <Styled.Container ref={ref} {...props}>
+                {toasts.map(toast => (
+                    <Toast key={toast.id} {...toast} />
+                ))}
+            </Styled.Container>
+        ) : null;
     })
 );
-ToastContainer.defaultProps = {
+Component.defaultProps = {
     position: 'top'
 };
-ToastContainer.displayName = 'ToastContainer';
-ToastContainer.Style = Styled.Container;
+Component.displayName = 'ToastContainer';
+export const ToastContainer: FC<ToastContainerProps> & WithStyle = Object.assign(Component, { Style: Styled.Container });

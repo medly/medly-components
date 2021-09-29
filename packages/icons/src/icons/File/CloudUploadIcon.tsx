@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CloudUploadIconSvg from '../../assets/File/cloud_upload_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CloudUploadIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CloudUploadIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CloudUploadIcon';
 
-CloudUploadIcon.Style = SvgIcon;
-CloudUploadIcon.displayName = 'CloudUploadIcon';
+const CloudUploadIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CloudUploadIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AssignmentLateIconSvg from '../../assets/Action/assignment_late_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AssignmentLateIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AssignmentLateIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AssignmentLateIcon';
 
-AssignmentLateIcon.Style = SvgIcon;
-AssignmentLateIcon.displayName = 'AssignmentLateIcon';
+const AssignmentLateIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AssignmentLateIcon

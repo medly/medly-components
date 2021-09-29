@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FormatColorTextIconSvg from '../../assets/Editor/format_color_text_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FormatColorTextIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FormatColorTextIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FormatColorTextIcon';
 
-FormatColorTextIcon.Style = SvgIcon;
-FormatColorTextIcon.displayName = 'FormatColorTextIcon';
+const FormatColorTextIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FormatColorTextIcon

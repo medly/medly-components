@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SubtitlesIconSvg from '../../assets/Media/subtitles_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SubtitlesIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SubtitlesIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SubtitlesIcon';
 
-SubtitlesIcon.Style = SvgIcon;
-SubtitlesIcon.displayName = 'SubtitlesIcon';
+const SubtitlesIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SubtitlesIcon

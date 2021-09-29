@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PlayCircleFilledWhiteIconSvg from '../../assets/Media/play_circle_filled_white_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PlayCircleFilledWhiteIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PlayCircleFilledWhiteIcon: FC<SvgIconProps> & WithStyle = React.memo(props
         </SvgIcon>
     );
 });
+Component.displayName = 'PlayCircleFilledWhiteIcon';
 
-PlayCircleFilledWhiteIcon.Style = SvgIcon;
-PlayCircleFilledWhiteIcon.displayName = 'PlayCircleFilledWhiteIcon';
+const PlayCircleFilledWhiteIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PlayCircleFilledWhiteIcon

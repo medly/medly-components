@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PersonPinCircleIconSvg from '../../assets/Maps/person_pin_circle_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PersonPinCircleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PersonPinCircleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PersonPinCircleIcon';
 
-PersonPinCircleIcon.Style = SvgIcon;
-PersonPinCircleIcon.displayName = 'PersonPinCircleIcon';
+const PersonPinCircleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PersonPinCircleIcon

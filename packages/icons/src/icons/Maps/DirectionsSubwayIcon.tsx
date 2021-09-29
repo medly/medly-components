@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DirectionsSubwayIconSvg from '../../assets/Maps/directions_subway_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DirectionsSubwayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DirectionsSubwayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DirectionsSubwayIcon';
 
-DirectionsSubwayIcon.Style = SvgIcon;
-DirectionsSubwayIcon.displayName = 'DirectionsSubwayIcon';
+const DirectionsSubwayIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DirectionsSubwayIcon

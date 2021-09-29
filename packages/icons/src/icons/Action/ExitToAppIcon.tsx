@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ExitToAppIconSvg from '../../assets/Action/exit_to_app_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ExitToAppIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ExitToAppIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ExitToAppIcon';
 
-ExitToAppIcon.Style = SvgIcon;
-ExitToAppIcon.displayName = 'ExitToAppIcon';
+const ExitToAppIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ExitToAppIcon

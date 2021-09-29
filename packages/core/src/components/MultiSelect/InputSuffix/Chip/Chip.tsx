@@ -5,7 +5,7 @@ import Text from '../../../Text';
 import * as Styled from './Chip.styled';
 import { Props } from './types';
 
-export const Chip: FC<Props> & WithStyle = React.memo(({ id, label, onClear, ...restProps }) => {
+const Component: FC<Props> = React.memo(({ id, label, onClear, ...restProps }) => {
     const onClickHandler = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         onClearHandler = useCallback(
             (e: React.MouseEvent<HTMLOrSVGElement>) => {
@@ -25,9 +25,6 @@ export const Chip: FC<Props> & WithStyle = React.memo(({ id, label, onClear, ...
     );
 });
 
-Chip.displayName = 'Chip';
-Chip.Style = Styled.Chip;
-Chip.defaultProps = {
-    state: 'default',
-    variant: 'outlined'
-};
+Component.displayName = 'Chip';
+Component.defaultProps = { state: 'default', variant: 'outlined' };
+export const Chip: FC<Props> & WithStyle = Object.assign(Component, { Style: Styled.Chip });

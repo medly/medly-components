@@ -1,15 +1,16 @@
 import { css } from '@medly-components/utils';
-import { InnerWrapperProps } from '../../types';
+import { InnerWrapperModifiedProps } from '../../types';
 import { HelperText } from '../HelperText.styled';
 import { Label } from '../Label.styled';
 import { Prefix } from '../Prefix.styled';
 import { Suffix } from '../Suffix.styled';
 
-export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperProps) => {
+export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperModifiedProps) => {
     const bgColor = fusion[isTextPresent ? 'active' : 'default'].bgColor;
     return css`
-        border-radius: 1rem;
         background-color: ${bgColor};
+        border-radius: ${fusion.default.borderRadius};
+        border-width: ${fusion.default.borderWidth};
         &::after {
             content: '';
             box-sizing: border-box;
@@ -23,14 +24,25 @@ export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperPro
             pointer-events: none;
             background-color: transparent;
             transition: all 100ms ease-out;
-            border-radius: 1rem;
+            border-radius: ${fusion.default.borderRadius};
+            border-width: ${fusion.default.borderWidth};
             border: 0.1rem solid ${fusion.default.borderColor};
         }
 
-        &:hover::after,
-        &:focus-within::after {
-            border-width: ${!disabled && `0.15rem`};
+        &:hover::after {
+            border-width: ${!disabled && fusion.hover.borderWidth};
             border-color: ${!disabled && fusion.hover.borderColor};
+        }
+
+        &:focus-within::after {
+            border-color: ${fusion.active.borderColor};
+            border-radius: ${fusion.active.borderRadius};
+            border-width: ${fusion.active.borderWidth};
+        }
+
+        &:focus-within {
+            border-radius: ${fusion.active.borderRadius};
+            border-width: ${fusion.active.borderWidth};
         }
         input {
             box-shadow: 0 0 0 100000px ${bgColor} inset;
@@ -38,7 +50,7 @@ export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperPro
     `;
 };
 
-export const fusionErrorStyle = ({ theme: { textField }, isTextPresent }: InnerWrapperProps) => css`
+export const fusionErrorStyle = ({ theme: { textField }, isTextPresent }: InnerWrapperModifiedProps) => css`
     &,
     &:hover {
         color: ${textField.fusion.error.defaultTextColor};

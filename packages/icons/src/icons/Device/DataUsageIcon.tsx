@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DataUsageIconSvg from '../../assets/Device/data_usage_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DataUsageIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DataUsageIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DataUsageIcon';
 
-DataUsageIcon.Style = SvgIcon;
-DataUsageIcon.displayName = 'DataUsageIcon';
+const DataUsageIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DataUsageIcon

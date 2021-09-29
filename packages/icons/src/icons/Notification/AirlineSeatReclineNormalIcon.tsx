@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AirlineSeatReclineNormalIconSvg from '../../assets/Notification/airline_seat_recline_normal_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AirlineSeatReclineNormalIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AirlineSeatReclineNormalIcon: FC<SvgIconProps> & WithStyle = React.memo(pr
         </SvgIcon>
     );
 });
+Component.displayName = 'AirlineSeatReclineNormalIcon';
 
-AirlineSeatReclineNormalIcon.Style = SvgIcon;
-AirlineSeatReclineNormalIcon.displayName = 'AirlineSeatReclineNormalIcon';
+const AirlineSeatReclineNormalIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AirlineSeatReclineNormalIcon

@@ -1,9 +1,11 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
-import { SearchBoxProps } from '../types';
+import { css, styled, WithThemeProp } from '@medly-components/utils';
+import { StyledSearchBoxProps } from '../types';
 import { getIconWrapperStyle } from './utils';
 
-export const CloseIconWrapper = styled.span<SearchBoxProps & { showCloseIcon?: boolean; hasCustomSearchFilter?: boolean }>`
+export const CloseIconWrapper = styled.span<
+    StyledSearchBoxProps & WithThemeProp & { showCloseIcon?: boolean; hasCustomSearchFilter?: boolean }
+>`
     ${getIconWrapperStyle};
     border-right: ${({ theme, showCloseIcon }) => showCloseIcon && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
@@ -29,7 +31,7 @@ export const CloseIconWrapper = styled.span<SearchBoxProps & { showCloseIcon?: b
     }
 `;
 
-export const SearchIconWrapper = styled.span<SearchBoxProps & { areOptionsVisible?: boolean; isTyping?: boolean }>`
+export const SearchIconWrapper = styled.span<StyledSearchBoxProps & WithThemeProp & { areOptionsVisible?: boolean; isTyping?: boolean }>`
     ${getIconWrapperStyle};
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.searchIcon.padding[size]};
@@ -38,7 +40,7 @@ export const SearchIconWrapper = styled.span<SearchBoxProps & { areOptionsVisibl
             fill: ${({ theme: { searchBox }, areOptionsVisible }) => searchBox.searchIcon.color[areOptionsVisible ? 'active' : 'default']};
         }
         &:hover {
-            background: ${({ theme: { searchBox }}) => searchBox.searchIcon.bgColor.hovered};
+            background: ${({ theme: { searchBox } }) => searchBox.searchIcon.bgColor.hovered};
         }
         &:active {
             background: ${({ theme }) => theme.searchBox.searchIcon.bgColor.pressed};
@@ -64,9 +66,9 @@ const customSearchActiveStyle = css`
             background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.active};
         }
     }
-`
+`;
 
-export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchActive?: boolean }>`
+export const ExpandIconWrapper = styled.span<StyledSearchBoxProps & WithThemeProp & { isCustomSearchActive?: boolean }>`
     ${getIconWrapperStyle}
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.expandIcon.padding[size]};

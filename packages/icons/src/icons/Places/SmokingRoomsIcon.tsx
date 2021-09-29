@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SmokingRoomsIconSvg from '../../assets/Places/smoking_rooms_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SmokingRoomsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SmokingRoomsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SmokingRoomsIcon';
 
-SmokingRoomsIcon.Style = SvgIcon;
-SmokingRoomsIcon.displayName = 'SmokingRoomsIcon';
+const SmokingRoomsIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SmokingRoomsIcon

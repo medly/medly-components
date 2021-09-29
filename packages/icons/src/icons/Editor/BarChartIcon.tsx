@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import BarChartIconSvg from '../../assets/Editor/bar_chart_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BarChartIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const BarChartIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'BarChartIcon';
 
-BarChartIcon.Style = SvgIcon;
-BarChartIcon.displayName = 'BarChartIcon';
+const BarChartIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default BarChartIcon

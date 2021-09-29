@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LeakAddIconSvg from '../../assets/Image/leak_add_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LeakAddIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LeakAddIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LeakAddIcon';
 
-LeakAddIcon.Style = SvgIcon;
-LeakAddIcon.displayName = 'LeakAddIcon';
+const LeakAddIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LeakAddIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SettingsApplicationsIconSvg from '../../assets/Action/settings_applications_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SettingsApplicationsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SettingsApplicationsIcon: FC<SvgIconProps> & WithStyle = React.memo(props 
         </SvgIcon>
     );
 });
+Component.displayName = 'SettingsApplicationsIcon';
 
-SettingsApplicationsIcon.Style = SvgIcon;
-SettingsApplicationsIcon.displayName = 'SettingsApplicationsIcon';
+const SettingsApplicationsIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SettingsApplicationsIcon

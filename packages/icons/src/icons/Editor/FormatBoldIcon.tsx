@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FormatBoldIconSvg from '../../assets/Editor/format_bold_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FormatBoldIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FormatBoldIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FormatBoldIcon';
 
-FormatBoldIcon.Style = SvgIcon;
-FormatBoldIcon.displayName = 'FormatBoldIcon';
+const FormatBoldIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FormatBoldIcon

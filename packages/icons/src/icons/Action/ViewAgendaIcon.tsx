@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ViewAgendaIconSvg from '../../assets/Action/view_agenda_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ViewAgendaIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ViewAgendaIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ViewAgendaIcon';
 
-ViewAgendaIcon.Style = SvgIcon;
-ViewAgendaIcon.displayName = 'ViewAgendaIcon';
+const ViewAgendaIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ViewAgendaIcon

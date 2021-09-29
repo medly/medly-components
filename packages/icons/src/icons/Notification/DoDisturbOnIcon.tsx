@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DoDisturbOnIconSvg from '../../assets/Notification/do_disturb_on_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DoDisturbOnIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DoDisturbOnIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DoDisturbOnIcon';
 
-DoDisturbOnIcon.Style = SvgIcon;
-DoDisturbOnIcon.displayName = 'DoDisturbOnIcon';
+const DoDisturbOnIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DoDisturbOnIcon

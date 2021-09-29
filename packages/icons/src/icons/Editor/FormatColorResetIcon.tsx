@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FormatColorResetIconSvg from '../../assets/Editor/format_color_reset_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FormatColorResetIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FormatColorResetIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FormatColorResetIcon';
 
-FormatColorResetIcon.Style = SvgIcon;
-FormatColorResetIcon.displayName = 'FormatColorResetIcon';
+const FormatColorResetIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FormatColorResetIcon

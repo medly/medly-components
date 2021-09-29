@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FileCopyIconSvg from '../../assets/Content/file_copy_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FileCopyIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FileCopyIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FileCopyIcon';
 
-FileCopyIcon.Style = SvgIcon;
-FileCopyIcon.displayName = 'FileCopyIcon';
+const FileCopyIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FileCopyIcon

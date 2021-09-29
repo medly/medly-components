@@ -5,6 +5,6 @@ export interface Context {
     onClose: () => void;
 }
 
-const HeaderContext = React.createContext<Context>(null);
+const HeaderContext = React.createContext<Context>({ isOpen: false, onClose: () => null });
 
 export default HeaderContext;

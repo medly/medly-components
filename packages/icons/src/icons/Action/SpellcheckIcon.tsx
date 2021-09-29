@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SpellcheckIconSvg from '../../assets/Action/spellcheck_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SpellcheckIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SpellcheckIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SpellcheckIcon';
 
-SpellcheckIcon.Style = SvgIcon;
-SpellcheckIcon.displayName = 'SpellcheckIcon';
+const SpellcheckIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SpellcheckIcon

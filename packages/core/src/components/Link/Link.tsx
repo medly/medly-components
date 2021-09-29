@@ -4,7 +4,7 @@ import Text from '../Text';
 import { LinkStyled } from './Link.styled';
 import { LinkProps } from './types';
 
-export const Link: FC<LinkProps> & WithStyle = React.memo(
+const Component: FC<LinkProps> = React.memo(
     React.forwardRef(({ href, ...props }, ref) => {
         return (
             <LinkStyled href={href} {...props} ref={ref}>
@@ -16,5 +16,5 @@ export const Link: FC<LinkProps> & WithStyle = React.memo(
     })
 );
 
-Link.displayName = 'Link';
-Link.Style = LinkStyled;
+Component.displayName = 'Link';
+export const Link: FC<LinkProps> & WithStyle = Object.assign(Component, { Style: LinkStyled });

@@ -9,7 +9,7 @@ import * as Styled from './SingleSelect.styled';
 import { Option, SelectProps } from './types';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
+const Component: FC<SelectProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 id,
@@ -28,6 +28,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 className,
                 validator,
                 isSearchable,
+                suffix,
                 ...inputProps
             } = props,
             selectId = useMemo(() => id || inputProps.label?.toLocaleLowerCase() || 'medly-singleSelect', [id, inputProps.label]),
@@ -51,7 +52,9 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
         const validate = useCallback(
             () =>
                 setErrorMessage(
-                    (validator && validator(inputRef.current.value)) || (inputProps.required && !value && 'Please select one option.') || ''
+                    (validator && validator(inputRef.current?.value)) ||
+                        (inputProps.required && !value && 'Please select one option.') ||
+                        ''
                 ),
             [inputProps.required, validator, value]
         );
@@ -59,7 +62,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
         const showOptions = useCallback(() => {
                 setOptionsVisibilityState(true);
                 isSearchable && setInputValue('');
-                inputRef.current.focus();
+                inputRef.current?.focus();
             }, [isSearchable, inputValue]),
             hideOptions = useCallback(() => {
                 setOptionsVisibilityState(false);
@@ -99,7 +102,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                         onChange && onChange(option.value);
                         setErrorMessage('');
                     } else {
-                        inputRef.current.focus();
+                        inputRef.current?.focus();
                     }
                 },
                 [inputRef.current, onChange]
@@ -127,7 +130,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 },
                 [onBlur]
             ),
-            inputValidator = useCallback(() => undefined, []),
+            inputValidator = useCallback(() => '', []),
             handleKeyPress = useCallback((event: React.KeyboardEvent) => !isSearchable && event.preventDefault(), [isSearchable]);
 
         useUpdateEffect(() => {
@@ -173,7 +176,8 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
         return (
             <Styled.Wrapper
                 id={`${selectId}-wrapper`}
-                {...{ variant, disabled, minWidth, maxWidth, fullWidth }}
+                {...{ disabled, minWidth, maxWidth, fullWidth }}
+                variant={variant!}
                 ref={wrapperRef}
                 className={className}
                 isSearchable={isSearchable}
@@ -189,7 +193,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                         variant={variant}
                         autoComplete="off"
                         onChange={handleInputChange}
-                        suffix={ChevronDownIcon}
+                        suffix={suffix || ChevronDownIcon}
                         {...inputProps}
                         {...commonProps}
                         minWidth={minWidth}
@@ -199,9 +203,9 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 )}
                 {!disabled && areOptionsVisible && (
                     <Options
-                        size={variant === 'flat' ? 'S' : inputProps.size}
+                        size={variant === 'flat' ? 'S' : inputProps.size!}
                         ref={optionsRef}
-                        variant={variant}
+                        variant={variant!}
                         id={`${selectId}-options`}
                         options={options}
                         hasError={!!props.errorText}
@@ -215,9 +219,8 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
     })
 );
 
-SingleSelect.displayName = 'SingleSelect';
-SingleSelect.Style = Styled.Wrapper;
-SingleSelect.defaultProps = {
+Component.displayName = 'SingleSelect';
+Component.defaultProps = {
     value: '',
     size: 'M',
     label: '',
@@ -230,3 +233,4 @@ SingleSelect.defaultProps = {
     placeholder: 'Please Select . . .',
     showDecorators: true
 };
+export const SingleSelect: FC<SelectProps> & WithStyle = Object.assign(Component, { Style: Styled.Wrapper });

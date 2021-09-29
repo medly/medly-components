@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import WbSunnyIconSvg from '../../assets/Image/wb_sunny_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const WbSunnyIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const WbSunnyIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'WbSunnyIcon';
 
-WbSunnyIcon.Style = SvgIcon;
-WbSunnyIcon.displayName = 'WbSunnyIcon';
+const WbSunnyIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default WbSunnyIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import GolfCourseIconSvg from '../../assets/Places/golf_course_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const GolfCourseIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const GolfCourseIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'GolfCourseIcon';
 
-GolfCourseIcon.Style = SvgIcon;
-GolfCourseIcon.displayName = 'GolfCourseIcon';
+const GolfCourseIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default GolfCourseIcon

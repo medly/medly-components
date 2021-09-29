@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import TagFacesIconSvg from '../../assets/Image/tag_faces_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TagFacesIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const TagFacesIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'TagFacesIcon';
 
-TagFacesIcon.Style = SvgIcon;
-TagFacesIcon.displayName = 'TagFacesIcon';
+const TagFacesIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default TagFacesIcon

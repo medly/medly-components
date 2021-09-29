@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import VideocamIconSvg from '../../assets/Media/videocam_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const VideocamIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const VideocamIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'VideocamIcon';
 
-VideocamIcon.Style = SvgIcon;
-VideocamIcon.displayName = 'VideocamIcon';
+const VideocamIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default VideocamIcon

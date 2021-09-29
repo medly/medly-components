@@ -3,6 +3,116 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.25](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.24...@medly-components/icons@1.7.25) (2021-09-28)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.7.24](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.23...@medly-components/icons@1.7.24) (2021-09-27)
+
+
+### Bug Fixes
+
+* strict null check issue in Tabs, Toggle, ToastContainer, Toast, TextFi… ([#439](https://github.com/medly/medly-components/issues/439)) ([fc49370](https://github.com/medly/medly-components/commit/fc49370e5608b17429082e4379b67e730586c3c4))
+
+
+
+
+
+## [1.7.23](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.22...@medly-components/icons@1.7.23) (2021-09-23)
+
+
+### Bug Fixes
+
+* style null check in forms, loaders & icons package ([#437](https://github.com/medly/medly-components/issues/437)) ([8019585](https://github.com/medly/medly-components/commit/801958543b126c39a87b73f0f7629934fcafb6a3))
+
+
+
+
+
+## [1.7.22](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.21...@medly-components/icons@1.7.22) (2021-09-21)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.7.21](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.20...@medly-components/icons@1.7.21) (2021-09-21)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.7.20](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.19...@medly-components/icons@1.7.20) (2021-09-19)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.7.19](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.18...@medly-components/icons@1.7.19) (2021-09-18)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.7.18](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.17...@medly-components/icons@1.7.18) (2021-09-16)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.7.17](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.16...@medly-components/icons@1.7.17) (2021-09-15)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.7.16](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.15...@medly-components/icons@1.7.16) (2021-09-14)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.7.15](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.14...@medly-components/icons@1.7.15) (2021-09-14)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.7.14](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.13...@medly-components/icons@1.7.14) (2021-09-12)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.7.13](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.12...@medly-components/icons@1.7.13) (2021-09-11)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
 ## [1.7.12](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.11...@medly-components/icons@1.7.12) (2021-09-10)
 
 **Note:** Version bump only for package @medly-components/icons

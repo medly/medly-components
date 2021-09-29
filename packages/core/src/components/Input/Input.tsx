@@ -4,7 +4,7 @@ import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './Input.styled';
 import { InputProps } from './types';
 
-export const Input: FC<InputProps> & WithStyle = React.memo(
+const Component: FC<InputProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { description, label, labelPosition, fullWidth, required, descriptionColor, prefix, suffix, ...restProps } = props,
             id = props.id || 'medly-input';
@@ -26,9 +26,8 @@ export const Input: FC<InputProps> & WithStyle = React.memo(
     })
 );
 
-Input.displayName = 'Input';
-Input.Style = Styled.Input;
-Input.defaultProps = {
+Component.displayName = 'Input';
+Component.defaultProps = {
     type: 'text',
     disabled: false,
     fullWidth: false,
@@ -37,3 +36,4 @@ Input.defaultProps = {
     labelPosition: 'top',
     description: ''
 };
+export const Input: FC<InputProps> & WithStyle = Object.assign(Component, { Style: Styled.Input });

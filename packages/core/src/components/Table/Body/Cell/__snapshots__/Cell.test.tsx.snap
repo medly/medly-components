@@ -225,6 +225,7 @@ exports[`Cell should render checkbox properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   opacity: 1;
+  padding: 1.2rem 1.6rem;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -314,6 +315,7 @@ exports[`Cell should render frozen text properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   opacity: 1;
+  padding: 1.2rem 1.6rem;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -374,6 +376,7 @@ exports[`Cell should render text properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   opacity: 1;
+  padding: 1.2rem 1.6rem;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -426,6 +429,7 @@ exports[`Cell should render tooltip properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   opacity: 1;
+  padding: 1.2rem 1.6rem;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;

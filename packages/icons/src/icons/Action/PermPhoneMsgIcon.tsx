@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PermPhoneMsgIconSvg from '../../assets/Action/perm_phone_msg_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PermPhoneMsgIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PermPhoneMsgIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PermPhoneMsgIcon';
 
-PermPhoneMsgIcon.Style = SvgIcon;
-PermPhoneMsgIcon.displayName = 'PermPhoneMsgIcon';
+const PermPhoneMsgIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PermPhoneMsgIcon

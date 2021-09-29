@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AspectRatioIconSvg from '../../assets/Action/aspect_ratio_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AspectRatioIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AspectRatioIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AspectRatioIcon';
 
-AspectRatioIcon.Style = SvgIcon;
-AspectRatioIcon.displayName = 'AspectRatioIcon';
+const AspectRatioIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AspectRatioIcon

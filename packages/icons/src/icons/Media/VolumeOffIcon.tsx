@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import VolumeOffIconSvg from '../../assets/Media/volume_off_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const VolumeOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const VolumeOffIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'VolumeOffIcon';
 
-VolumeOffIcon.Style = SvgIcon;
-VolumeOffIcon.displayName = 'VolumeOffIcon';
+const VolumeOffIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default VolumeOffIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FreeBreakfastIconSvg from '../../assets/Places/free_breakfast_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FreeBreakfastIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FreeBreakfastIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FreeBreakfastIcon';
 
-FreeBreakfastIcon.Style = SvgIcon;
-FreeBreakfastIcon.displayName = 'FreeBreakfastIcon';
+const FreeBreakfastIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FreeBreakfastIcon

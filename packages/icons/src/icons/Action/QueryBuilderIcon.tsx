@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import QueryBuilderIconSvg from '../../assets/Action/query_builder_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const QueryBuilderIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const QueryBuilderIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'QueryBuilderIcon';
 
-QueryBuilderIcon.Style = SvgIcon;
-QueryBuilderIcon.displayName = 'QueryBuilderIcon';
+const QueryBuilderIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default QueryBuilderIcon

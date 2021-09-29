@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ShuffleIconSvg from '../../assets/Media/shuffle_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ShuffleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ShuffleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ShuffleIcon';
 
-ShuffleIcon.Style = SvgIcon;
-ShuffleIcon.displayName = 'ShuffleIcon';
+const ShuffleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ShuffleIcon

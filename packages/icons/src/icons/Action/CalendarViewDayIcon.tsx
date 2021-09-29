@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CalendarViewDayIconSvg from '../../assets/Action/calendar_view_day_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CalendarViewDayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CalendarViewDayIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CalendarViewDayIcon';
 
-CalendarViewDayIcon.Style = SvgIcon;
-CalendarViewDayIcon.displayName = 'CalendarViewDayIcon';
+const CalendarViewDayIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CalendarViewDayIcon

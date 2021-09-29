@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import VerifiedUserIconSvg from '../../assets/Action/verified_user_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const VerifiedUserIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const VerifiedUserIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'VerifiedUserIcon';
 
-VerifiedUserIcon.Style = SvgIcon;
-VerifiedUserIcon.displayName = 'VerifiedUserIcon';
+const VerifiedUserIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default VerifiedUserIcon

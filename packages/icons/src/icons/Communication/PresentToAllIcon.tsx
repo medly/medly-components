@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PresentToAllIconSvg from '../../assets/Communication/present_to_all_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PresentToAllIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PresentToAllIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PresentToAllIcon';
 
-PresentToAllIcon.Style = SvgIcon;
-PresentToAllIcon.displayName = 'PresentToAllIcon';
+const PresentToAllIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PresentToAllIcon

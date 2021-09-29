@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SystemUpdateIconSvg from '../../assets/Notification/system_update_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SystemUpdateIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SystemUpdateIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SystemUpdateIcon';
 
-SystemUpdateIcon.Style = SvgIcon;
-SystemUpdateIcon.displayName = 'SystemUpdateIcon';
+const SystemUpdateIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SystemUpdateIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import WidgetsIconSvg from '../../assets/Device/widgets_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const WidgetsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const WidgetsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'WidgetsIcon';
 
-WidgetsIcon.Style = SvgIcon;
-WidgetsIcon.displayName = 'WidgetsIcon';
+const WidgetsIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default WidgetsIcon

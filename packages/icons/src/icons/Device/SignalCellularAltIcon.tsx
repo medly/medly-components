@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SignalCellularAltIconSvg from '../../assets/Device/signal_cellular_alt_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SignalCellularAltIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SignalCellularAltIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'SignalCellularAltIcon';
 
-SignalCellularAltIcon.Style = SvgIcon;
-SignalCellularAltIcon.displayName = 'SignalCellularAltIcon';
+const SignalCellularAltIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SignalCellularAltIcon

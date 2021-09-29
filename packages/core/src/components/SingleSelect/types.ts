@@ -1,4 +1,6 @@
-import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { SvgIconProps } from '@medly-components/icons';
+import { HTMLProps, Omit } from '@medly-components/utils';
+import React from 'react';
 
 export interface Option {
     /** Option value */
@@ -20,7 +22,7 @@ export interface DefaultSelected {
 
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'prefix' | 'size'>;
 
-export interface SelectProps extends InputProps, WithThemeProp {
+export interface SelectProps extends InputProps {
     /** Selected Value */
     value?: any;
     /** Function to be called on selecting any option */
@@ -59,9 +61,12 @@ export interface SelectProps extends InputProps, WithThemeProp {
     validator?: (val: any) => string;
     /** Show Helper text and error text in a tooltip (popover) */
     showTooltipForHelperAndErrorText?: boolean;
+    /** Toggle icon */
+    suffix?: React.FC<SvgIconProps>;
 }
 
 export interface SelectWrapperProps extends Omit<SelectProps, 'ref' | 'options'> {
+    variant: Required<SelectProps>['variant'];
     isErrorPresent?: boolean;
     areOptionsVisible?: boolean;
 }

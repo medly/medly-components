@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import OpacityIconSvg from '../../assets/Action/opacity_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const OpacityIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const OpacityIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'OpacityIcon';
 
-OpacityIcon.Style = SvgIcon;
-OpacityIcon.displayName = 'OpacityIcon';
+const OpacityIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default OpacityIcon

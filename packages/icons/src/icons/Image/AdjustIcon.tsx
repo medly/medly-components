@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AdjustIconSvg from '../../assets/Image/adjust_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AdjustIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AdjustIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AdjustIcon';
 
-AdjustIcon.Style = SvgIcon;
-AdjustIcon.displayName = 'AdjustIcon';
+const AdjustIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AdjustIcon

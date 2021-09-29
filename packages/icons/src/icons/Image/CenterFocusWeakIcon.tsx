@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CenterFocusWeakIconSvg from '../../assets/Image/center_focus_weak_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CenterFocusWeakIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CenterFocusWeakIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CenterFocusWeakIcon';
 
-CenterFocusWeakIcon.Style = SvgIcon;
-CenterFocusWeakIcon.displayName = 'CenterFocusWeakIcon';
+const CenterFocusWeakIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CenterFocusWeakIcon

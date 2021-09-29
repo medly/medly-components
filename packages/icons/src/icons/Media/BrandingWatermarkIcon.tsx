@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import BrandingWatermarkIconSvg from '../../assets/Media/branding_watermark_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BrandingWatermarkIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const BrandingWatermarkIcon: FC<SvgIconProps> & WithStyle = React.memo(props => 
         </SvgIcon>
     );
 });
+Component.displayName = 'BrandingWatermarkIcon';
 
-BrandingWatermarkIcon.Style = SvgIcon;
-BrandingWatermarkIcon.displayName = 'BrandingWatermarkIcon';
+const BrandingWatermarkIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default BrandingWatermarkIcon

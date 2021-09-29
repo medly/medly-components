@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SentimentNeutralIconSvg from '../../assets/Social/sentiment_neutral_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SentimentNeutralIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SentimentNeutralIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SentimentNeutralIcon';
 
-SentimentNeutralIcon.Style = SvgIcon;
-SentimentNeutralIcon.displayName = 'SentimentNeutralIcon';
+const SentimentNeutralIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SentimentNeutralIcon

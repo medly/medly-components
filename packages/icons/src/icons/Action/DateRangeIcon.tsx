@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DateRangeIconSvg from '../../assets/Action/date_range_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DateRangeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DateRangeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DateRangeIcon';
 
-DateRangeIcon.Style = SvgIcon;
-DateRangeIcon.displayName = 'DateRangeIcon';
+const DateRangeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DateRangeIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PersonAddIconSvg from '../../assets/Social/person_add_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PersonAddIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PersonAddIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PersonAddIcon';
 
-PersonAddIcon.Style = SvgIcon;
-PersonAddIcon.displayName = 'PersonAddIcon';
+const PersonAddIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PersonAddIcon

@@ -4,11 +4,11 @@ import { BtnLoaderStyled } from './Loader.styled';
 import Loader from './Loader.svg';
 import { BtnLoaderProps } from './types';
 
-export const BtnLoader: FC<BtnLoaderProps> & WithStyle = React.memo(props => (
+const Component: FC<BtnLoaderProps> = React.memo(props => (
     <BtnLoaderStyled {...props}>
         <Loader />
     </BtnLoaderStyled>
 ));
 
-BtnLoader.Style = BtnLoaderStyled;
-BtnLoader.displayName = 'BtnLoader';
+Component.displayName = 'BtnLoader';
+export const BtnLoader: FC<BtnLoaderProps> & WithStyle = Object.assign(Component, { Style: BtnLoaderStyled });

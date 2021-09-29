@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction, useCallback, useEffect, useMemo, useState } f
 import { Data } from './types';
 
 type Result = {
-    uniqueIds?: (string | number)[];
+    uniqueIds: (string | number)[];
     areAllRowsSelected: boolean;
     isAnyRowSelected: boolean;
     toggleId: (id: number | string) => void;
@@ -10,19 +10,20 @@ type Result = {
 };
 type Params = {
     data: Data;
-    rowSelectionDisableKey: string;
+    rowSelectionDisableKey?: string;
     rowIdentifier: string;
-    selectedIds?: (string | number)[];
-    setSelectedIds: Dispatch<SetStateAction<(string | number)[]>>;
+    selectedIds: (string | number)[];
+    setSelectedIds?: Dispatch<SetStateAction<(string | number)[]>>;
 };
 
-const useRowSelector = ({ data, rowSelectionDisableKey, rowIdentifier, selectedIds, setSelectedIds }: Params): Result => {
-    const [uniqueIds, setUniqueIds] = useState([]),
+const useRowSelector = ({ data, rowSelectionDisableKey = '', rowIdentifier, selectedIds, setSelectedIds }: Params): Result => {
+    const [uniqueIds, setUniqueIds] = useState<any[]>([]),
         areAllRowsSelected = useMemo(() => uniqueIds.length > 0 && uniqueIds.length === selectedIds.length, [uniqueIds, selectedIds]),
         isAnyRowSelected = useMemo(() => selectedIds.length > 0 && !areAllRowsSelected, [selectedIds, areAllRowsSelected]);
 
     const toggleId = useCallback(
         (id: number | string) =>
+            setSelectedIds &&
             setSelectedIds(sIds => {
                 if (id === -1) {
                     return sIds.length === uniqueIds.length ? [] : uniqueIds;
@@ -33,7 +34,7 @@ const useRowSelector = ({ data, rowSelectionDisableKey, rowIdentifier, selectedI
     );
 
     useEffect(() => {
-        setUniqueIds(data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[rowIdentifier]));
+        setUniqueIds(data.filter(dt => rowSelectionDisableKey && !dt[rowSelectionDisableKey]).map(dt => dt[rowIdentifier]));
     }, [data, rowSelectionDisableKey, rowIdentifier]);
 
     return { areAllRowsSelected, isAnyRowSelected, uniqueIds, toggleId, setUniqueIds };

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SupervisedUserCircleIconSvg from '../../assets/Action/supervised_user_circle_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SupervisedUserCircleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SupervisedUserCircleIcon: FC<SvgIconProps> & WithStyle = React.memo(props 
         </SvgIcon>
     );
 });
+Component.displayName = 'SupervisedUserCircleIcon';
 
-SupervisedUserCircleIcon.Style = SvgIcon;
-SupervisedUserCircleIcon.displayName = 'SupervisedUserCircleIcon';
+const SupervisedUserCircleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SupervisedUserCircleIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DonutSmallIconSvg from '../../assets/Action/donut_small_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DonutSmallIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DonutSmallIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DonutSmallIcon';
 
-DonutSmallIcon.Style = SvgIcon;
-DonutSmallIcon.displayName = 'DonutSmallIcon';
+const DonutSmallIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DonutSmallIcon

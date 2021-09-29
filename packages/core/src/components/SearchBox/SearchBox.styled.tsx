@@ -1,25 +1,25 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css, getFontStyle, styled } from '@medly-components/utils';
+import { css, getFontStyle, styled, WithThemeProp } from '@medly-components/utils';
 import Options from '../SingleSelect/Options';
 import { SearchIconWrapper } from './styles/icons';
 import { getOptionsStyles } from './styles/options';
 import { getBorderAndBoxShadow, getSearchBoxSize } from './styles/utils';
-import { SearchBoxProps } from './types';
+import { StyledSearchBoxProps } from './types';
 
-const getBorderRadius = ({ theme, areOptionsVisible, size }: SearchBoxProps & { areOptionsVisible?: boolean }) => {
+const getBorderRadius = ({ theme, areOptionsVisible, size }: StyledSearchBoxProps & WithThemeProp & { areOptionsVisible?: boolean }) => {
     const border = theme.searchBox.borderRadius[size][areOptionsVisible ? 'active' : 'default'];
     return css`
         border-radius: ${border};
     `;
 };
 
-const activeSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
+const activeSearchBoxStyle = ({ theme: { searchBox } }: StyledSearchBoxProps & WithThemeProp) => css`
     box-shadow: ${searchBox.boxShadow.active};
     border-color: ${searchBox.borderColor.active};
-    border-width: .2rem;
+    border-width: 0.2rem;
 `;
 
-const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
+const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: StyledSearchBoxProps & WithThemeProp) => css`
     border-color: ${searchBox.borderColor.default};
     transition: border-color 100ms, box-shadow 100ms;
     &:focus-within {
@@ -55,7 +55,7 @@ const searchBoxWithExpandStyle = () => css`
 `;
 
 export const SearchBoxWrapper = styled.div<
-    SearchBoxProps & { areOptionsVisible?: boolean; hasCustomSearchFilter?: boolean; fullWidth?: boolean }
+    StyledSearchBoxProps & { areOptionsVisible?: boolean; hasCustomSearchFilter?: boolean; fullWidth?: boolean }
 >`
     display: flex;
     flex-direction: row;

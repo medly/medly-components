@@ -1,4 +1,4 @@
-import { css, styled } from '@medly-components/utils';
+import { css, styled, WithThemeProp } from '@medly-components/utils';
 import Text from '../Text';
 import {
     SelectorGroupOptionsProps,
@@ -18,7 +18,7 @@ export const SelectorGroupWrapper = styled('div')<SelectorGroupWrapperProps>`
     }
 `;
 
-export const asterisk = ({ hasError, theme, type }: SelectorLabelProps) => css`
+export const asterisk = ({ hasError, theme, type }: SelectorLabelProps & WithThemeProp) => css`
     ::after {
         content: ' *';
         color: ${hasError ? theme[type].helperTextColor.error : theme[type].labelColor};
@@ -30,7 +30,17 @@ export const SelectorLabel = styled(Text)<SelectorLabelProps>`
     ${({ required }) => required && asterisk}
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'inherit')};
     color: ${({ disabled, theme, type }) => theme[type].labelColor[disabled ? 'disabled' : 'default']};
-    padding: ${({ labelPosition }) => labelPosition && (labelPosition === 'top' || labelPosition === 'bottom' ? '1.6rem 0' : '0 1.6rem')};
+    padding: ${({ labelPosition, theme, type }) =>
+        labelPosition &&
+        theme[type].labelPadding[
+            labelPosition === 'bottom'
+                ? 'bottomPositioned'
+                : labelPosition === 'top'
+                ? 'topPositioned'
+                : labelPosition === 'right'
+                ? 'rightPositioned'
+                : 'leftPositioned'
+        ]};
 `;
 
 export const SelectorGroupOptions = styled('div')<SelectorGroupOptionsProps>`

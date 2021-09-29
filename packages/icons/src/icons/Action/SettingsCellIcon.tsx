@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SettingsCellIconSvg from '../../assets/Action/settings_cell_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SettingsCellIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SettingsCellIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SettingsCellIcon';
 
-SettingsCellIcon.Style = SvgIcon;
-SettingsCellIcon.displayName = 'SettingsCellIcon';
+const SettingsCellIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SettingsCellIcon

@@ -6,8 +6,8 @@ import Options from '../Options';
 import { CustomComponentWrapper, OptionStyled } from './Option.styled';
 import { OptionProps } from './types';
 
-const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
-    const ref = useRef(null),
+const Component: React.FC<OptionProps> = React.memo(props => {
+    const ref = useRef<HTMLLIElement>(null),
         [areOptionsVisible, setOptionsVisibilityState] = useState(false),
         { value, theme, label, disabled, selected, onClick, hasError, hovered, size, variant, maxWidth, includesNestedOptions } = props,
         id = label.replace(/ /g, '-'),
@@ -29,7 +29,7 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
 
     useEffect(() => {
         (selected || hovered) &&
-            ref.current.scrollIntoView({
+            ref.current?.scrollIntoView({
                 block: 'nearest'
             });
     }, [selected, hovered]);
@@ -57,19 +57,16 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
             onMouseEnter={showNestedOptions}
             onMouseLeave={hideNestedOptions}
         >
-            {
-                React.isValidElement(value) && !isNested ?
-                    <CustomComponentWrapper>
-                        {value}
-                    </CustomComponentWrapper>
-                    :
-                    <Text
-                        textWeight={selected ? 'Medium' : 'Regular'}
-                        textVariant={variant === 'flat' ? 'body3' : theme.singleSelect.option.textVariant[size]}
-                    >
-                        {label}
-                    </Text>
-            }
+            {React.isValidElement(value) && !isNested ? (
+                <CustomComponentWrapper>{value}</CustomComponentWrapper>
+            ) : (
+                <Text
+                    textWeight={selected ? 'Medium' : 'Regular'}
+                    textVariant={variant === 'flat' ? 'body3' : theme.singleSelect.option.textVariant[size]}
+                >
+                    {label}
+                </Text>
+            )}
             {isNested ? <ArrowRightIcon size={variant === 'flat' ? 'S' : 'M'} /> : selected && variant !== 'flat' && <CheckIcon />}
             {areOptionsVisible && isNested && (
                 <Options
@@ -87,7 +84,6 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
         </OptionStyled>
     );
 });
-Option.displayName = 'Option';
-Option.Style = OptionStyled;
-
+Component.displayName = 'Option';
+const Option: React.FC<OptionProps> & WithStyle = Object.assign(Component, { Style: OptionStyled });
 export default withTheme(Option);

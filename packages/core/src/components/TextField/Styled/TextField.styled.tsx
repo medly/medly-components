@@ -28,8 +28,8 @@ const transformCharacterCount = ({ variant }: StyledProps) => {
     }
 };
 
-const getInputHeight = ({ size, multiline, variant }: StyledProps) =>
-    multiline ? (size === 'M' ? (variant === 'fusion' ? '100%' : '90%') : '100%') : undefined;
+const getInputHeight = ({ inputSize, multiline, variant }: StyledProps) =>
+    multiline ? (inputSize === 'M' ? (variant === 'fusion' ? '100%' : '90%') : '100%') : undefined;
 
 const styleWithLabel = ({ variant }: StyledProps) => {
     return css`
@@ -41,7 +41,7 @@ const styleWithLabel = ({ variant }: StyledProps) => {
 export const Input = styled('input')<StyledProps>`
     color: ${({ variant, theme }) => theme.textField[variant].default.textColor};
     width: 100%;
-    margin: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
+    margin: ${({ multiline, variant, inputSize }) => (multiline && variant !== 'fusion' && inputSize === 'M' ? '1.6rem 0 0 0' : 0)};
     padding: 0;
     height: ${getInputHeight};
     box-sizing: border-box;
@@ -52,11 +52,11 @@ export const Input = styled('input')<StyledProps>`
     resize: none;
     z-index: 1;
 
-    ${({ isLabelPresent, size, multiline }) => isLabelPresent && size !== 'S' && !multiline && styleWithLabel};
+    ${({ isLabelPresent, inputSize, multiline }) => isLabelPresent && inputSize !== 'S' && !multiline && styleWithLabel};
     &,
     & ~ ${MaskPlaceholder} {
-        ${({ theme, size, multiline }) =>
-            getFontStyle({ theme, fontVariant: multiline && size === 'S' ? 'body2' : theme.textField.textVariant[size] })}
+        ${({ theme, inputSize, multiline }) =>
+            getFontStyle({ theme, fontVariant: multiline && inputSize === 'S' ? 'body2' : theme.textField.textVariant[inputSize] })}
     }
 
     &&&:focus {
@@ -68,6 +68,7 @@ export const Input = styled('input')<StyledProps>`
     }
 
     &:disabled {
+        color: ${({ variant, theme }) => theme.textField[variant].disabled.textColor};
         & ~ ${Label},& ~ ${MaskPlaceholder} {
             cursor: not-allowed;
         }
@@ -79,13 +80,13 @@ export const Input = styled('input')<StyledProps>`
     }
 
     &:not(:placeholder-shown) ~ ${Label}, &:focus ~ ${Label} {
-        opacity: ${({ size }) => size === 'S' && 0};
-        ${({ size }) => size === 'M' && transformLabel};
+        opacity: ${({ inputSize }) => inputSize === 'S' && 0};
+        ${({ inputSize }) => inputSize === 'M' && transformLabel};
     }
 
     &:not(:placeholder-shown) ~ ${CharacterCount}, &:focus ~ ${CharacterCount} {
-        position: ${({ size }) => size === 'S' && 'relative'};
-        ${({ size }) => size === 'M' && transformCharacterCount};
+        position: ${({ inputSize }) => inputSize === 'S' && 'relative'};
+        ${({ inputSize }) => inputSize === 'M' && transformCharacterCount};
     }
 
     &:focus ~ ${Label} {

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import FlashOnIconSvg from '../../assets/Image/flash_on_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FlashOnIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const FlashOnIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'FlashOnIcon';
 
-FlashOnIcon.Style = SvgIcon;
-FlashOnIcon.displayName = 'FlashOnIcon';
+const FlashOnIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default FlashOnIcon

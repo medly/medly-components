@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PermScanWifiIconSvg from '../../assets/Action/perm_scan_wifi_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PermScanWifiIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PermScanWifiIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PermScanWifiIcon';
 
-PermScanWifiIcon.Style = SvgIcon;
-PermScanWifiIcon.displayName = 'PermScanWifiIcon';
+const PermScanWifiIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PermScanWifiIcon

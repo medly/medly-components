@@ -1,5 +1,5 @@
 import { css, styled } from '@medly-components/utils';
-import { InnerWrapperProps } from '../../types';
+import { InnerWrapperModifiedProps, InnerWrapperProps } from '../../types';
 import { CharacterCount } from '../CharacterCount.styled';
 import { HelperText } from '../HelperText.styled';
 import { Label } from '../Label.styled';
@@ -9,7 +9,7 @@ import { filledStyle } from './filled.styled';
 import { fusionErrorStyle, fusionStyle } from './fusion.styled';
 import { outlinedStyle } from './outlined.styled';
 
-const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
+const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedProps) => css`
     cursor: ${textField[variant].disabled.cursor};
     background-color: ${textField[variant].disabled.bgColor};
     &::after,
@@ -40,12 +40,13 @@ const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => 
     }
 `;
 
-const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
+const activeStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedProps) => css`
     &:focus-within,
     &:focus-within:hover {
         background-color: ${textField[variant].active.bgColor};
         &::after {
             border-color: ${textField[variant].active.borderColor};
+            border-radius: ${variant === 'filled' ? '0' : textField[variant].active.borderRadius};
         }
 
         ${Label} {
@@ -66,7 +67,7 @@ const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => cs
     }
 `;
 
-const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) =>
+const errorStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedProps) =>
     variant === 'fusion'
         ? fusionErrorStyle
         : css`
@@ -100,7 +101,7 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) =>
               }
           `;
 
-const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperProps) => {
+const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperModifiedProps) => {
     const baseHeight = theme.textField.height[size];
     const baseHeightNumber = parseFloat(baseHeight.replace(/[^\d.-]/g, ''));
 
@@ -110,7 +111,7 @@ const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperPro
     const smallPadding = 1.1 * 2;
     const medPadding = 1.6 * 2;
 
-    if (multiline) {
+    if (multiline && minRows) {
         if (size === 'S' || variant === 'fusion') {
             return lineHeightNumber * minRows + smallPadding;
         } else {
@@ -131,9 +132,11 @@ const getPadding = ({ size, multiline }: InnerWrapperProps) => {
     }
 };
 
-export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({ ...textField, textField, height: undefined }))<
-    InnerWrapperProps
->`
+export const InnerWrapper = styled('div').attrs<InnerWrapperProps, InnerWrapperModifiedProps>(props => ({
+    ...props.theme.textField,
+    ...props,
+    height: undefined
+}))`
     position: relative;
     display: flex;
     align-items: center;
@@ -145,18 +148,18 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     cursor: text;
 
     ${Label} {
-        color: ${({ variant, textField }) => textField[variant].default.labelColor};
+        color: ${props => props[props.variant].default.labelColor};
     }
 
     ${Prefix}, ${Suffix} {
-        color: ${({ variant, textField }) => textField[variant].default.labelColor};
+        color: ${props => props[props.variant].default.labelColor};
         * {
-            fill: ${({ variant, textField }) => textField[variant].default.labelColor};
+            fill: ${props => props[props.variant].default.labelColor};
         }
     }
 
     & ~ ${HelperText} {
-        color: ${({ variant, textField }) => textField[variant].default.helperTextColor};
+        color: ${props => props[props.variant].default.helperTextColor};
     }
 
     ${({ variant }) => variant === 'filled' && filledStyle}

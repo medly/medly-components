@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CardGiftcardIconSvg from '../../assets/Action/card_giftcard_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CardGiftcardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CardGiftcardIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CardGiftcardIcon';
 
-CardGiftcardIcon.Style = SvgIcon;
-CardGiftcardIcon.displayName = 'CardGiftcardIcon';
+const CardGiftcardIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CardGiftcardIcon

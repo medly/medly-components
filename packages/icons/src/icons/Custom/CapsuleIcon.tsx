@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CapsuleIconSvg from '../../assets/Custom/capsule_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CapsuleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CapsuleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CapsuleIcon';
 
-CapsuleIcon.Style = SvgIcon;
-CapsuleIcon.displayName = 'CapsuleIcon';
+const CapsuleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CapsuleIcon

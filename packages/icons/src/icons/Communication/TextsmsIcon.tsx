@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import TextsmsIconSvg from '../../assets/Communication/textsms_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TextsmsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const TextsmsIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'TextsmsIcon';
 
-TextsmsIcon.Style = SvgIcon;
-TextsmsIcon.displayName = 'TextsmsIcon';
+const TextsmsIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default TextsmsIcon

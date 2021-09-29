@@ -33,8 +33,8 @@ export const Row: React.FC<RowProps> = React.memo(props => {
         } = useContext(TableComponentsCommonPropsContext);
 
     const isRowSelected = useMemo(() => !isLoading && selectedRowIds.includes(id), [id, isLoading, selectedRowIds]),
-        isRowClickDisabled = useMemo(() => data[rowClickDisableKey], [data, rowClickDisableKey]),
-        isRowSelectionDisabled = useMemo(() => data[rowSelectionDisableKey], [data, rowSelectionDisableKey]),
+        isRowClickDisabled = useMemo(() => rowClickDisableKey && data[rowClickDisableKey], [data, rowClickDisableKey]),
+        isRowSelectionDisabled = useMemo(() => rowSelectionDisableKey && data[rowSelectionDisableKey], [data, rowSelectionDisableKey]),
         handleRowSelection = useCallback(() => onRowSelection(id), [id, onRowSelection]),
         handleExpansionIconClick = useCallback(() => setExpansionState(val => !val), []),
         handleRowClick = useMemo(
@@ -86,7 +86,7 @@ export const Row: React.FC<RowProps> = React.memo(props => {
                               />
                           )
                       ];
-            }, []),
+            }, [] as React.ReactElement[]),
         [id, data, isLoading, columns, addColumnMaxSize, isRowClickDisabled, hiddenDivRef, tableSize]
     );
 
@@ -123,7 +123,7 @@ export const Row: React.FC<RowProps> = React.memo(props => {
                 {getCells(data)}
                 {isRowExpandable && expandedRowComponent && (
                     <ExtendedRowCell
-                        rowId={id}
+                        rowId={id!}
                         rowData={data}
                         tableSize={tableSize}
                         isRowExpanded={isExpanded}

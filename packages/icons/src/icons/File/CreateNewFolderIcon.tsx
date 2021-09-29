@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CreateNewFolderIconSvg from '../../assets/File/create_new_folder_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CreateNewFolderIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CreateNewFolderIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CreateNewFolderIcon';
 
-CreateNewFolderIcon.Style = SvgIcon;
-CreateNewFolderIcon.displayName = 'CreateNewFolderIcon';
+const CreateNewFolderIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CreateNewFolderIcon

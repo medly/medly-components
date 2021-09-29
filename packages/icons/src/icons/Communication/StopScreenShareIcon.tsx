@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import StopScreenShareIconSvg from '../../assets/Communication/stop_screen_share_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const StopScreenShareIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const StopScreenShareIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'StopScreenShareIcon';
 
-StopScreenShareIcon.Style = SvgIcon;
-StopScreenShareIcon.displayName = 'StopScreenShareIcon';
+const StopScreenShareIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default StopScreenShareIcon

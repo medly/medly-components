@@ -8,7 +8,7 @@ import Fields from '../Fields';
 import * as Styled from './Form.styled';
 import { FormProps } from './types';
 
-export const Form: React.FC<FormProps> & WithStyle = React.memo(
+const Component: React.FC<FormProps> = React.memo(
     React.forwardRef(
         (
             {
@@ -34,7 +34,8 @@ export const Form: React.FC<FormProps> & WithStyle = React.memo(
             ref
         ) => {
             const formId = useMemo(() => id || 'medly-dynamic-form', [id]),
-                { values, formKey, handlers, errorMessages, addErrorMessage, setErrorMessages } = useForm(initialState),
+                // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+                { values, formKey, handlers, errorMessages, addErrorMessage, setErrorMessages } = useForm(initialState!),
                 fields = useMemo(() => (typeof fieldSchema === 'object' ? fieldSchema : fieldSchema(values)), [values, fieldSchema]);
 
             useEffect(() => {
@@ -81,9 +82,8 @@ export const Form: React.FC<FormProps> & WithStyle = React.memo(
         }
     )
 );
-Form.displayName = 'Form';
-Form.Style = Styled.Form;
-Form.defaultProps = {
+Component.displayName = 'Form';
+Component.defaultProps = {
     initialState: {},
     hideActions: false,
     disabled: false,
@@ -91,3 +91,5 @@ Form.defaultProps = {
     showDecorators: true,
     isLoading: false
 };
+
+export const Form: React.FC<FormProps> & WithStyle = Object.assign(Component, { Style: Styled.Form });

@@ -1,3 +1,4 @@
+import React from 'react';
 import { DateRangeProps, DateRangeType, PopoverTypes } from '../types';
 
 export type Props = {
@@ -22,7 +23,7 @@ export type Props = {
     startDateRef: React.MutableRefObject<HTMLInputElement>;
     endDateRef: React.MutableRefObject<HTMLInputElement>;
     validator?: (val: DateRangeType, eventType?: string) => string;
-    onBlur: (event: React.FocusEvent<HTMLInputElement>) => void;
     showTooltipForHelperAndErrorText?: boolean;
     onCustomRangeIconClick: () => void;
+    outerClickValidator: React.MutableRefObject<() => void>;
 };

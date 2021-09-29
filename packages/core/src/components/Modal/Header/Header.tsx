@@ -4,7 +4,7 @@ import Text from '../../Text';
 import { ModalContext } from '../Modal.context';
 import * as Styled from './Header.styled';
 
-export const Header: React.FC & WithStyle = React.memo(({ children }) => {
+const Component: React.FC = React.memo(({ children }) => {
     const { id, setHeaderHeight, isSmallScreen, scrollState } = useContext(ModalContext);
     const headerRef = useRef<HTMLDivElement>();
 
@@ -20,5 +20,5 @@ export const Header: React.FC & WithStyle = React.memo(({ children }) => {
         </Styled.Header>
     );
 });
-Header.displayName = 'Header';
-Header.Style = Styled.Header;
+Component.displayName = 'Header';
+export const Header: React.FC & WithStyle = Object.assign(Component, { Style: Styled.Header });

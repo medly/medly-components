@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocalAtmIconSvg from '../../assets/Maps/local_atm_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocalAtmIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocalAtmIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LocalAtmIcon';
 
-LocalAtmIcon.Style = SvgIcon;
-LocalAtmIcon.displayName = 'LocalAtmIcon';
+const LocalAtmIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocalAtmIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import MoodBadIconSvg from '../../assets/Social/mood_bad_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MoodBadIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const MoodBadIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'MoodBadIcon';
 
-MoodBadIcon.Style = SvgIcon;
-MoodBadIcon.displayName = 'MoodBadIcon';
+const MoodBadIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default MoodBadIcon

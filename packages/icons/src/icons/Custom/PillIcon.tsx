@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PillIconSvg from '../../assets/Custom/pill_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PillIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PillIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PillIcon';
 
-PillIcon.Style = SvgIcon;
-PillIcon.displayName = 'PillIcon';
+const PillIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PillIcon

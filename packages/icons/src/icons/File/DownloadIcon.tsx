@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DownloadIconSvg from '../../assets/File/download_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DownloadIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DownloadIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DownloadIcon';
 
-DownloadIcon.Style = SvgIcon;
-DownloadIcon.displayName = 'DownloadIcon';
+const DownloadIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DownloadIcon

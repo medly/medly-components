@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ExtensionIconSvg from '../../assets/Action/extension_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ExtensionIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ExtensionIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ExtensionIcon';
 
-ExtensionIcon.Style = SvgIcon;
-ExtensionIcon.displayName = 'ExtensionIcon';
+const ExtensionIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ExtensionIcon

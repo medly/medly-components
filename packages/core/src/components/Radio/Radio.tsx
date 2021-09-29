@@ -4,15 +4,16 @@ import { SelectorLabel } from '../Selectors';
 import * as Styled from './Radio.styled';
 import { RadioProps } from './types';
 
-export const Radio: FC<RadioProps> & WithStyle = React.memo(
+const Component: FC<RadioProps> = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, size, label, labelPosition, fullWidth, hasError, labelVariant, labelWeight, ...inputProps } = props,
+        const { id, size, label, labelPosition, fullWidth, hasError, labelVariant, labelWeight, className, ...inputProps } = props,
             inputId = useMemo(() => id || label, [id, label]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             isActive = useMemo(() => inputProps.checked || inputProps.defaultChecked, [inputProps.checked, inputProps.defaultChecked]);
 
         return (
             <Styled.RadioWithLabelWrapper
+                className={className}
                 id={`${inputId}-wrapper`}
                 htmlFor={inputId}
                 disabled={inputProps.disabled}
@@ -32,7 +33,7 @@ export const Radio: FC<RadioProps> & WithStyle = React.memo(
                     </SelectorLabel>
                 )}
                 <Styled.RadioWrapper size={size}>
-                    <Styled.HiddenRadio id={inputId} size={size} ref={inputRef} hasError={hasError} {...inputProps} />
+                    <Styled.HiddenRadio id={inputId} ref={inputRef} hasError={hasError} {...inputProps} />
                     <Styled.StyledRadio />
                 </Styled.RadioWrapper>
             </Styled.RadioWithLabelWrapper>
@@ -40,9 +41,6 @@ export const Radio: FC<RadioProps> & WithStyle = React.memo(
     })
 );
 
-Radio.displayName = 'Radio';
-Radio.Style = Styled.RadioWithLabelWrapper;
-Radio.defaultProps = {
-    label: '',
-    labelPosition: 'right'
-};
+Component.displayName = 'Radio';
+Component.defaultProps = { label: '', labelPosition: 'right' };
+export const Radio: FC<RadioProps> & WithStyle = Object.assign(Component, { Style: Styled.RadioWithLabelWrapper });

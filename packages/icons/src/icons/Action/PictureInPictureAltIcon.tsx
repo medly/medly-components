@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PictureInPictureAltIconSvg from '../../assets/Action/picture_in_picture_alt_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PictureInPictureAltIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PictureInPictureAltIcon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'PictureInPictureAltIcon';
 
-PictureInPictureAltIcon.Style = SvgIcon;
-PictureInPictureAltIcon.displayName = 'PictureInPictureAltIcon';
+const PictureInPictureAltIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PictureInPictureAltIcon

@@ -8,7 +8,7 @@ import * as Styled from './DateRangeCalendar.styled';
 import Month from './Month';
 import { CalendarAnimationTypes, Props } from './types';
 
-export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props => {
+const Component: React.FC<Props> = React.memo(props => {
     const {
             id,
             size,
@@ -129,5 +129,5 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
         </Styled.DateRangeCalendar>
     );
 });
-DateRangeCalendar.displayName = 'DateRangeCalendar';
-DateRangeCalendar.Style = Styled.DateRangeCalendar;
+Component.displayName = 'DateRangeCalendar';
+export const DateRangeCalendar: React.FC<Props> & WithStyle = Object.assign(Component, { Style: Styled.DateRangeCalendar });

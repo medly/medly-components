@@ -5,7 +5,7 @@ import { TabsContext } from '../Tabs.context';
 import * as Styled from './TabList.styled';
 import { TabListProps } from './types';
 
-export const TabList: React.FC<TabListProps> & WithStyle = React.memo(props => {
+const Component: React.FC<TabListProps> = React.memo(props => {
     const { active, children, onChange, ...restProps } = props,
         leftPress = useKeyPress('ArrowLeft'),
         rightPress = useKeyPress('ArrowRight'),
@@ -41,8 +41,8 @@ export const TabList: React.FC<TabListProps> & WithStyle = React.memo(props => {
         changeFocusState = useCallback(() => setFocusState(val => !val), []);
 
     return (
-        <Styled.TabList variant={variant} tabSize={tabSize} onFocus={changeFocusState} onBlur={changeFocusState} {...restProps}>
-            {variant === 'solid' && <Styled.Slider tabSize={tabSize} active={activeTabIdx} totalTabs={totalTabs} />}
+        <Styled.TabList variant={variant!} tabSize={tabSize!} onFocus={changeFocusState} onBlur={changeFocusState} {...restProps}>
+            {variant === 'solid' && <Styled.Slider tabSize={tabSize!} active={activeTabIdx} totalTabs={totalTabs} />}
             {React.Children.toArray(props.children).reduce((acc: any[], child: any) => {
                 const { id, label, hide } = child.props;
                 const hideTab = hide && variant !== 'solid';
@@ -64,5 +64,5 @@ export const TabList: React.FC<TabListProps> & WithStyle = React.memo(props => {
         </Styled.TabList>
     );
 });
-TabList.displayName = 'TabList';
-TabList.Style = Styled.TabList;
+Component.displayName = 'TabList';
+export const TabList: React.FC<TabListProps> & WithStyle = Object.assign(Component, { Style: Styled.TabList });

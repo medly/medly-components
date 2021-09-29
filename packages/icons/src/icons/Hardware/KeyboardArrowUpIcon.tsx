@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import KeyboardArrowUpIconSvg from '../../assets/Hardware/keyboard_arrow_up_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const KeyboardArrowUpIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const KeyboardArrowUpIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'KeyboardArrowUpIcon';
 
-KeyboardArrowUpIcon.Style = SvgIcon;
-KeyboardArrowUpIcon.displayName = 'KeyboardArrowUpIcon';
+const KeyboardArrowUpIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default KeyboardArrowUpIcon

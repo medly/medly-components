@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LibraryMusic24pxRoundedIconSvg from '../../assets/Media/library_music24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LibraryMusic24pxRoundedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LibraryMusic24pxRoundedIcon: FC<SvgIconProps> & WithStyle = React.memo(pro
         </SvgIcon>
     );
 });
+Component.displayName = 'LibraryMusic24pxRoundedIcon';
 
-LibraryMusic24pxRoundedIcon.Style = SvgIcon;
-LibraryMusic24pxRoundedIcon.displayName = 'LibraryMusic24pxRoundedIcon';
+const LibraryMusic24pxRoundedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LibraryMusic24pxRoundedIcon

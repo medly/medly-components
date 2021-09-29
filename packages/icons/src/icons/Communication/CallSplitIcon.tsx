@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CallSplitIconSvg from '../../assets/Communication/call_split_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CallSplitIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CallSplitIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CallSplitIcon';
 
-CallSplitIcon.Style = SvgIcon;
-CallSplitIcon.displayName = 'CallSplitIcon';
+const CallSplitIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CallSplitIcon

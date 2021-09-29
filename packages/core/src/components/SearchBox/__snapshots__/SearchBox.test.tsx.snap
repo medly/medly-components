@@ -54,6 +54,10 @@ exports[`SearchBox options should render options when user search option specifi
   background-color: #F7F8F9;
 }
 
+.c10:hover > .c11 {
+  color: #13181D;
+}
+
 .c10:active {
   background-color: #eff2f4;
 }
@@ -82,6 +86,7 @@ exports[`SearchBox options should render options when user search option specifi
   z-index: 4;
   position: absolute;
   background: #ffffff;
+  top: 4rem;
   left: 0;
   margin: 0;
   padding: 0.8rem;
@@ -268,7 +273,7 @@ exports[`SearchBox options should render options when user search option specifi
   border-radius: .8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-color: #126AFA;
-  border-width: .2rem;
+  border-width: 0.2rem;
 }
 
 .c0 input {

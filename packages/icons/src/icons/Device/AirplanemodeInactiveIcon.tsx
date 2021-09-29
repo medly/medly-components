@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AirplanemodeInactiveIconSvg from '../../assets/Device/airplanemode_inactive_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AirplanemodeInactiveIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AirplanemodeInactiveIcon: FC<SvgIconProps> & WithStyle = React.memo(props 
         </SvgIcon>
     );
 });
+Component.displayName = 'AirplanemodeInactiveIcon';
 
-AirplanemodeInactiveIcon.Style = SvgIcon;
-AirplanemodeInactiveIcon.displayName = 'AirplanemodeInactiveIcon';
+const AirplanemodeInactiveIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AirplanemodeInactiveIcon

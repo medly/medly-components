@@ -1,7 +1,7 @@
 import { CheckIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { updateNestedValue } from '@medly-components/utils';
-import { fireEvent, render, waitFor } from '@test-utils';
+import { fireEvent, render, screen, waitFor } from '@test-utils';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { TextField } from './TextField';
@@ -13,8 +13,10 @@ describe('TextField', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['S', 'M'])('should render properly with %s size', (size: 'S' | 'M') => {
-        const { container } = render(<TextField label="Name" size={size} helperText="helper text" prefix={CheckIcon} suffix={CheckIcon} />);
+    test.each(['S', 'M'])('should render properly with %s size', size => {
+        const { container } = render(
+            <TextField label="Name" size={size as 'S' | 'M'} helperText="helper text" prefix={CheckIcon} suffix={CheckIcon} />
+        );
         expect(container).toMatchSnapshot();
     });
 
@@ -23,7 +25,7 @@ describe('TextField', () => {
         expect(container.querySelector('div')).toHaveStyle(`
             display: flex;
         `);
-        expect(container.querySelector('input')).toHaveStyle(`
+        expect(screen.getByRole('textbox')).toHaveStyle(`
             width: 100%;
         `);
     });
@@ -42,10 +44,10 @@ describe('TextField', () => {
         `);
     });
 
-    it('should focus on input when clicked on the wrapper', () => {
-        const { container } = render(<TextField label="Name" minWidth="30rem" id="dummy" />);
-        fireEvent.click(container.querySelector('#dummy-input-wrapper > div'));
-        expect(container.querySelector('input')).toHaveFocus();
+    it('should focus on input when clicked inside wrapper', () => {
+        render(<TextField label="Name" minWidth="30rem" id="dummy" />);
+        fireEvent.click(screen.getByRole('textbox'));
+        expect(screen.getByRole('textbox')).toHaveFocus();
     });
 
     describe('without label', () => {
@@ -56,7 +58,7 @@ describe('TextField', () => {
 
         it('should render focus state properly ', () => {
             const { container } = render(<TextField label="Name" />);
-            fireEvent.focusIn(container.querySelector('input'));
+            fireEvent.focusIn(screen.getByRole('textbox'));
             expect(container).toMatchSnapshot();
         });
     });
@@ -114,9 +116,9 @@ describe('TextField', () => {
     });
 
     it('should call onChange prop on changing the value', () => {
-        const mockOnChange = jest.fn(),
-            { container } = render(<TextField value="11" label="Name" required onChange={mockOnChange} />);
-        fireEvent.change(container.querySelector('input'), { target: { value: '11 / 11 / 1111' } });
+        const mockOnChange = jest.fn();
+        render(<TextField value="11" label="Name" required onChange={mockOnChange} />);
+        fireEvent.change(screen.getByRole('textbox'), { target: { value: '11 / 11 / 1111' } });
         expect(mockOnChange).toHaveBeenCalled();
     });
 
@@ -138,8 +140,8 @@ describe('TextField', () => {
 
         it('should on change on changing the value', async () => {
             const mockOnChange = jest.fn();
-            const { container } = render(<TextField minWidth="30rem" id="dummy" mask="DD / MM / YYYY" onChange={mockOnChange} />);
-            fireEvent.change(container.querySelector('input'), { target: { value: '11 / 11 / 1111', selectionStart: 14 } });
+            render(<TextField minWidth="30rem" id="dummy" mask="DD / MM / YYYY" onChange={mockOnChange} />);
+            fireEvent.change(screen.getByRole('textbox'), { target: { value: '11 / 11 / 1111', selectionStart: 14 } });
             expect(mockOnChange).toHaveBeenCalled();
         });
 
@@ -154,50 +156,47 @@ describe('TextField', () => {
 
     describe('error Validation', () => {
         it('should render html5 error message on invalid form submission', async () => {
-            const mockOnInvalid = jest.fn(),
-                { container, findByText } = render(<TextField label="Name" required type="email" onInvalid={mockOnInvalid} />);
-            fireEvent.invalid(container.querySelector('input'));
-            const message = await findByText('Constraints not satisfied');
+            const mockOnInvalid = jest.fn();
+            render(<TextField label="Name" required type="email" onInvalid={mockOnInvalid} />);
+            fireEvent.invalid(screen.getByRole('textbox'));
+            const message = await screen.findByText('Constraints not satisfied');
             expect(message).toBeInTheDocument();
             expect(mockOnInvalid).toHaveBeenCalled();
         });
 
         it('should render html5 error message on moving focus out with invalid value', async () => {
-            const mockOnBlur = jest.fn(),
-                { container, findByText } = render(<TextField label="Name" required type="email" value="a" onBlur={mockOnBlur} />);
-            fireEvent.focus(container.querySelector('input'));
-            fireEvent.blur(container.querySelector('input'));
-            const message = await findByText('Constraints not satisfied');
+            const mockOnBlur = jest.fn();
+            render(<TextField label="Name" required type="email" value="a" onBlur={mockOnBlur} />);
+            fireEvent.focus(screen.getByRole('textbox'));
+            fireEvent.blur(screen.getByRole('textbox'));
+            const message = await screen.findByText('Constraints not satisfied');
             expect(message).toBeInTheDocument();
             expect(mockOnBlur).toHaveBeenCalled();
         });
 
         it('should render custom error message if validator function is returning error message', async () => {
             const mockOnBlur = jest.fn(),
-                validator = (val: string) => val.length < 3 && 'Email should be more then 3 characters',
-                { container, getByText } = render(
-                    <TextField label="Name" required type="email" value="du" onBlur={mockOnBlur} validator={validator} />
-                ),
-                input = container.querySelector('input');
+                validator = (val: string) => (val.length < 3 ? 'Email should be more then 3 characters' : '');
+            render(<TextField label="Name" required type="email" value="du" onBlur={mockOnBlur} validator={validator} />);
+            const input = screen.getByRole('textbox') as HTMLInputElement;
             fireEvent.blur(input);
-            expect(getByText('Email should be more then 3 characters')).toBeInTheDocument();
+            expect(screen.getByText('Email should be more then 3 characters')).toBeInTheDocument();
             expect(input.validationMessage).toEqual('Email should be more then 3 characters');
             expect(mockOnBlur).toBeCalled();
         });
 
         it('should not return error message if it is not returning any message', async () => {
-            const validator = (val: string) => val.length < 3 && 'Email should be more then 3 characters',
-                { container, queryByText } = render(
-                    <TextField label="Name" required value="dummy" onBlur={jest.fn} validator={validator} />
-                ),
-                input = container.querySelector('input');
+            const validator = (val: string) => (val.length < 3 ? 'Email should be more then 3 characters' : '');
+            render(<TextField label="Name" required value="dummy" onBlur={jest.fn} validator={validator} />);
+            const input = screen.getByRole('textbox') as HTMLInputElement;
             fireEvent.blur(input);
             expect(input.validationMessage).toEqual('');
-            expect(queryByText('Email should be more then 3 characters')).toBeNull();
+            expect(screen.queryByText('Email should be more then 3 characters')).toBeNull();
         });
     });
 
-    describe.each(['outlined', 'filled', 'fusion'])('with %s variant', (variant: TextFieldProps['variant']) => {
+    describe.each(['outlined', 'filled', 'fusion'])('with %s variant', value => {
+        const variant = value as TextFieldProps['variant'];
         describe.each(['with label', 'without label'])('and %s', (labelCnd: string) => {
             it('should render default state properly', () => {
                 const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
@@ -205,12 +204,12 @@ describe('TextField', () => {
             });
             it('should render focus state properly', () => {
                 const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
-                fireEvent.focusIn(container.querySelector('input'));
+                fireEvent.focusIn(screen.getByRole('textbox'));
                 expect(container).toMatchSnapshot();
             });
             it('should render disabled state properly', () => {
                 const { container } = render(<TextField variant={variant} disabled label={labelCnd === 'with label' ? 'Name' : ''} />);
-                fireEvent.focusIn(container.querySelector('input'));
+                fireEvent.focusIn(screen.getByRole('textbox'));
                 expect(container).toMatchSnapshot();
             });
         });
@@ -253,24 +252,18 @@ describe('TextField', () => {
         });
 
         it('should render properly with helper-text tooltip', () => {
-            const { container } = render(
-                <TextField variant={variant} label="Name" showTooltipForHelperAndErrorText helperText="Some text" />
-            );
-            const popoverWrapper = container.querySelector('#medly-popover-wrapper');
-            fireEvent.mouseOver(popoverWrapper);
-            expect(container.querySelector('#medly-popover-popup').textContent).toEqual('Some text');
+            render(<TextField variant={variant} label="Name" showTooltipForHelperAndErrorText helperText="Some text" />);
+            fireEvent.mouseOver(screen.getByTitle('info-icon'));
+            expect(screen.getByText('Some text')).toBeVisible();
         });
 
         it('should render properly with error-text tooltip', () => {
-            const { container } = render(
-                <TextField variant={variant} label="Name" showTooltipForHelperAndErrorText errorText="Some text" />
-            );
-            const input = container.querySelector('input');
+            render(<TextField variant={variant} label="Name" showTooltipForHelperAndErrorText errorText="Some text" />);
+            const input = screen.getByRole('textbox');
             fireEvent.focusIn(input);
             fireEvent.blur(input);
-            const popoverWrapper = container.querySelector('#medly-popover-wrapper');
-            fireEvent.mouseOver(popoverWrapper);
-            expect(container.querySelector('#medly-popover-popup').textContent).toEqual('Some text');
+            fireEvent.mouseOver(screen.getByTitle('error-icon'));
+            expect(screen.getByText('Some text')).toBeVisible();
         });
 
         it('should render properly with custom disabled cursor (themed)', () => {
@@ -297,6 +290,50 @@ describe('TextField', () => {
                             disabled: {
                                 ...defaultTheme.textField.fusion.disabled,
                                 cursor: 'text'
+                            }
+                        }
+                    })}
+                >
+                    <TextField variant={variant} label="Name" suffix={CheckIcon} disabled />
+                </ThemeProvider>
+            );
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should render properly with custom border styles (themed)', () => {
+            const borderRadius = '0.25rem';
+            const borderWidth = '0.2rem';
+            const { container } = render(
+                <ThemeProvider
+                    theme={updateNestedValue(defaultTheme, 'textField', {
+                        ...defaultTheme.textField,
+                        filled: {
+                            ...defaultTheme.textField.filled
+                        },
+                        outlined: {
+                            ...defaultTheme.textField.outlined,
+                            default: {
+                                ...defaultTheme.textField.outlined.default,
+                                borderRadius,
+                                borderWidth
+                            },
+                            active: {
+                                ...defaultTheme.textField.outlined.active,
+                                borderRadius,
+                                borderWidth
+                            }
+                        },
+                        fusion: {
+                            ...defaultTheme.textField.fusion,
+                            default: {
+                                ...defaultTheme.textField.fusion.default,
+                                borderRadius,
+                                borderWidth
+                            },
+                            active: {
+                                ...defaultTheme.textField.fusion.active,
+                                borderRadius,
+                                borderWidth
                             }
                         }
                     })}

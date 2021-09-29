@@ -5,7 +5,7 @@ import Text from '../../../Text';
 import { HeadCellButton, HeadCellStyled, ResizeHandler } from './HeadCell.styled';
 import { HeadCellProps } from './types';
 
-const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
+const Component: React.FC<HeadCellProps> = React.memo(props => {
     let pageX: number;
     const {
         align,
@@ -26,8 +26,8 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
         ...restProps
     } = props;
 
-    const cellEl = useRef(null),
-        [sortState, setSortState] = useState<'asc' | 'desc'>(defaultSortOrder);
+    const cellEl = useRef<HTMLTableCellElement>(null),
+        [sortState, setSortState] = useState<'asc' | 'desc'>(defaultSortOrder ?? 'desc');
 
     useEffect(() => {
         if (sortField !== field) setSortState('desc');
@@ -49,7 +49,7 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
         requestAnimationFrame(() => {
             if (cellEl.current) {
                 const width = pageX - cellEl.current.getBoundingClientRect().left + (e.pageX - pageX + 2);
-                onWidthChange && onWidthChange(width, field);
+                onWidthChange(width, field);
             }
         });
     };
@@ -58,21 +58,21 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
         if (sortable && !isLoading) {
             const order = sortState === 'asc' ? 'desc' : 'asc';
             setSortState(order);
-            onSortChange(field, order);
+            onSortChange && onSortChange(field, order);
         }
     }, [isLoading, sortable, sortState, onSortChange, field]);
 
     const onMouseUp = () => {
         window.removeEventListener('mousemove', onMouseMove);
         window.removeEventListener('mouseup', onMouseUp);
-        document.querySelector('body').style.cursor = 'auto';
+        (document.querySelector('body') as HTMLBodyElement).style.cursor = 'auto';
     };
 
     const initResize = (e: React.MouseEvent) => {
         pageX = e.pageX;
         window.addEventListener('mousemove', onMouseMove);
         window.addEventListener('mouseup', onMouseUp);
-        document.querySelector('body').style.cursor = 'ew-resize';
+        (document.querySelector('body') as HTMLBodyElement).style.cursor = 'ew-resize';
     };
 
     const handleDoubleClick = useCallback(
@@ -121,7 +121,6 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     );
 });
 
-HeadCell.displayName = 'HeadCell';
-HeadCell.Style = HeadCellStyled;
-
+Component.displayName = 'HeadCell';
+const HeadCell: React.FC<HeadCellProps> & WithStyle = Object.assign(Component, { Style: HeadCellStyled });
 export default HeadCell;

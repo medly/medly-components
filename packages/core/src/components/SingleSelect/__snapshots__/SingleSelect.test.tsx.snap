@@ -130,6 +130,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -253,6 +254,10 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -513,6 +518,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -636,6 +642,10 @@ exports[`SingleSelect component should render properly when isSearchable is true
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -807,6 +817,10 @@ exports[`SingleSelect component should render properly with M size 1`] = `
   background-color: #F7F8F9;
 }
 
+.c0:hover > .c1 {
+  color: #13181D;
+}
+
 .c0:active {
   background-color: #eff2f4;
 }
@@ -829,6 +843,10 @@ exports[`SingleSelect component should render properly with M size 1`] = `
 
 .c0 > .c3 * {
   fill: #13181D;
+}
+
+.c4:hover > .c1 {
+  color: #13181D;
 }
 
 .c4 > .c1 {
@@ -894,6 +912,10 @@ exports[`SingleSelect component should render properly with S size 1`] = `
   background-color: #F7F8F9;
 }
 
+.c0:hover > .c1 {
+  color: #13181D;
+}
+
 .c0:active {
   background-color: #eff2f4;
 }
@@ -916,6 +938,10 @@ exports[`SingleSelect component should render properly with S size 1`] = `
 
 .c0 > .c3 * {
   fill: #13181D;
+}
+
+.c4:hover > .c1 {
+  color: #13181D;
 }
 
 .c4 > .c1 {
@@ -1085,6 +1111,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -1211,6 +1238,10 @@ exports[`SingleSelect component should take passed max width 1`] = `
   opacity: 1;
 }
 
+.c5:disabled {
+  color: #435465;
+}
+
 .c5:disabled ~ .c6,
 .c5:disabled ~ .sc-fznKkj {
   cursor: not-allowed;
@@ -1272,6 +1303,10 @@ exports[`SingleSelect component should take passed max width 1`] = `
 
 .c13:hover {
   background-color: #F7F8F9;
+}
+
+.c13:hover > .c14 {
+  color: #13181D;
 }
 
 .c13:active {
@@ -1746,6 +1781,10 @@ exports[`SingleSelect component with filled variant should render disabled state
   opacity: 1;
 }
 
+.c5:disabled {
+  color: #435465;
+}
+
 .c5:disabled ~ .c6,
 .c5:disabled ~ .sc-fznKkj {
   cursor: not-allowed;
@@ -1924,6 +1963,10 @@ exports[`SingleSelect component with filled variant should render options correc
 
 .c1:hover {
   background-color: #F7F8F9;
+}
+
+.c1:hover > .c2 {
+  color: #13181D;
 }
 
 .c1:active {
@@ -2161,6 +2204,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -2284,6 +2328,10 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -2595,6 +2643,7 @@ exports[`SingleSelect component with filled variant should render properly when 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -2724,6 +2773,10 @@ exports[`SingleSelect component with filled variant should render properly when 
   opacity: 1;
 }
 
+.c5:disabled {
+  color: #435465;
+}
+
 .c5:disabled ~ .c6,
 .c5:disabled ~ .sc-fznKkj {
   cursor: not-allowed;
@@ -2789,6 +2842,10 @@ exports[`SingleSelect component with filled variant should render properly when 
   background-color: #F7F8F9;
 }
 
+.c15:hover > .c16 {
+  color: #13181D;
+}
+
 .c15:active {
   background-color: #eff2f4;
 }
@@ -2832,6 +2889,10 @@ exports[`SingleSelect component with filled variant should render properly when 
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.c18:hover > .c16 {
+  color: #13181D;
 }
 
 .c18 > .c16 {
@@ -3236,6 +3297,7 @@ exports[`SingleSelect component with filled variant should render with label pro
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c3:focus-within .c6,
@@ -3363,6 +3425,10 @@ exports[`SingleSelect component with filled variant should render with label pro
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -3792,6 +3858,10 @@ exports[`SingleSelect component with flat variant should render options correctl
 
 .c1:hover {
   background-color: #F7F8F9;
+}
+
+.c1:hover > .c2 {
+  color: #13181D;
 }
 
 .c1:active {
@@ -4375,6 +4445,10 @@ exports[`SingleSelect component with flat variant should render properly when op
   background-color: #F7F8F9;
 }
 
+.c12:hover > .c5 {
+  color: #13181D;
+}
+
 .c12:active {
   background-color: #eff2f4;
 }
@@ -4418,6 +4492,10 @@ exports[`SingleSelect component with flat variant should render properly when op
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.c14:hover > .c5 {
+  color: #13181D;
 }
 
 .c14 > .c5 {
@@ -4890,6 +4968,2184 @@ exports[`SingleSelect component with flat variant should render with label prope
 </div>
 `;
 
+exports[`SingleSelect component with fusion variant should render disabled state properly  1`] = `
+.c8 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c8 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c12 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.4rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c7 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c7::after {
+  content: ' (optional)';
+}
+
+.c10 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+  cursor: not-allowed;
+  background-color: #ffffff;
+}
+
+.c3 .c6 {
+  color: #546A7F;
+}
+
+.c3 .sc-fzoLsD,
+.c3 .c9 {
+  color: #546A7F;
+}
+
+.c3 .sc-fzoLsD *,
+.c3 .c9 * {
+  fill: #546A7F;
+}
+
+.c3 ~ .c11 {
+  color: #546A7F;
+}
+
+.c3::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+  border: 0.1rem solid #b0bcc8;
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c3:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c3 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c3::after,
+.c3:hover::after {
+  border-width: 0.1rem;
+  border-color: #C7D0D8;
+}
+
+.c3 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c3 .c6 {
+  color: #b0bcc8;
+}
+
+.c3 .sc-Axmtr {
+  color: #b0bcc8;
+}
+
+.c3 .sc-fzoLsD,
+.c3 .c9 {
+  color: #b0bcc8;
+}
+
+.c3 .sc-fzoLsD *,
+.c3 .c9 * {
+  fill: #b0bcc8;
+}
+
+.c3 ~ .c11 {
+  color: #b0bcc8;
+}
+
+.c3 * {
+  cursor: not-allowed;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c2 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 20rem;
+  margin: 0.8rem 0;
+}
+
+.c5 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+}
+
+.c5,
+.c5 ~ .sc-fznKkj {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c5.c5.c5:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c5.c5.c5:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::placeholder {
+  opacity: 1;
+}
+
+.c5:disabled {
+  color: #546A7F;
+}
+
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-fznKkj {
+  cursor: not-allowed;
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:not(:placeholder-shown) ~ .c6,
+.c5:focus ~ .c6 {
+  background-color: white;
+  padding: 0 0.5rem;
+  -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+}
+
+.c5:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .sc-Axmtr {
+  background-color: white;
+  padding: 0 0.5rem;
+  -webkit-transform: translateY(-167%);
+  -ms-transform: translateY(-167%);
+  transform: translateY(-167%);
+}
+
+.c5:focus ~ .c6 {
+  font-weight: 600;
+}
+
+.c5:not(:placeholder-shown) ~ .sc-fznKkj {
+  opacity: 1;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c0 .c1 {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
+}
+
+.c0 .c1 .c9 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+<div>
+  <div
+    class="c0"
+    disabled=""
+    id="medly-singleSelect-wrapper"
+  >
+    <div
+      class="c1 c2"
+      id="medly-singleSelect-input-wrapper"
+    >
+      <div
+        class="c3"
+        disabled=""
+      >
+        <div
+          class="c4"
+        >
+          <input
+            aria-describedby="medly-singleSelect-helper-text"
+            autocomplete="off"
+            class="c5"
+            disabled=""
+            id="medly-singleSelect-input"
+            placeholder="Please Select . . ."
+            readonly=""
+            type="text"
+            value="Dummy1"
+          />
+          <label
+            class="c6 c7"
+            for="medly-singleSelect-input"
+          />
+        </div>
+        <svg
+          class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+      </div>
+      <span
+        class="c11 c12"
+        id="medly-singleSelect-helper-text"
+      >
+        Helper Text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SingleSelect component with fusion variant should render options correctly on click on the input 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+}
+
+.c5 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c5 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c1 {
+  cursor: pointer;
+  padding: 0 0.8rem;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  min-height: 4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.c1:hover {
+  background-color: #F7F8F9;
+}
+
+.c1:hover > .c2 {
+  color: #13181D;
+}
+
+.c1:active {
+  background-color: #eff2f4;
+}
+
+.c1 > .c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #13181D;
+}
+
+.c1 > .c4 {
+  margin-left: 1.6rem;
+}
+
+.c1 > .c4 * {
+  fill: #13181D;
+}
+
+.c0 {
+  z-index: 4;
+  position: absolute;
+  background: #ffffff;
+  top: 5.6rem;
+  left: 0;
+  margin: 0;
+  padding: 0.8rem;
+  width: 100%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  list-style: none;
+  box-sizing: border-box;
+  box-shadow: 0 0.2rem 0.8rem #B0BCC8;
+  border-radius: 1.0rem;
+  overflow: auto;
+  max-height: 20rem;
+}
+
+<ul
+  class="c0"
+  id="medly-singleSelect-options"
+>
+  <li
+    class="c1"
+    id="All"
+  >
+    <span
+      class="c2 c3"
+    >
+      All
+    </span>
+  </li>
+  <li
+    class="c1"
+    id="Dummy1"
+  >
+    <span
+      class="c2 c3"
+    >
+      Dummy1
+    </span>
+  </li>
+  <li
+    class="c1"
+    id="Dummy2"
+  >
+    <span
+      class="c2 c3"
+    >
+      Dummy2
+    </span>
+    <svg
+      class="c4 c5"
+      fill="none"
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M11.414 15.292l2.59-2.59a.996.996 0 0 0 0-1.41l-2.59-2.59c-.63-.62-1.71-.18-1.71.71v5.17c0 .9 1.08 1.34 1.71.71z"
+        fill="#000"
+        fill-opacity=".54"
+      />
+    </svg>
+  </li>
+  <li
+    class="c1"
+    id="Dummy3"
+  >
+    <span
+      class="c2 c3"
+    >
+      Dummy3
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`SingleSelect component with fusion variant should render properly 1`] = `
+.c8 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c8 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c7 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c7::after {
+  content: ' (optional)';
+}
+
+.c10 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c3 .c6 {
+  color: #546A7F;
+}
+
+.c3 .sc-fzoLsD,
+.c3 .c9 {
+  color: #546A7F;
+}
+
+.c3 .sc-fzoLsD *,
+.c3 .c9 * {
+  fill: #546A7F;
+}
+
+.c3 ~ .sc-AxmLO {
+  color: #546A7F;
+}
+
+.c3::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+  border: 0.1rem solid #b0bcc8;
+}
+
+.c3:hover::after {
+  border-width: 0.15rem;
+  border-color: #607890;
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c3:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c3 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c3:focus-within,
+.c3:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c3:focus-within::after,
+.c3:focus-within:hover::after {
+  border-color: #126AFA;
+  border-radius: 1rem;
+}
+
+.c3:focus-within .c6,
+.c3:focus-within:hover .c6 {
+  color: #126AFA;
+}
+
+.c3:focus-within .sc-fzoLsD,
+.c3:focus-within:hover .sc-fzoLsD,
+.c3:focus-within .c9,
+.c3:focus-within:hover .c9 {
+  color: #126AFA;
+}
+
+.c3:focus-within .sc-fzoLsD *,
+.c3:focus-within:hover .sc-fzoLsD *,
+.c3:focus-within .c9 *,
+.c3:focus-within:hover .c9 * {
+  fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c3:focus-within input::-webkit-input-placeholder,
+.c3:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input::-moz-placeholder,
+.c3:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input:-ms-input-placeholder,
+.c3:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input::placeholder,
+.c3:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c2 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 20rem;
+  margin: 0.8rem 0;
+}
+
+.c5 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+}
+
+.c5,
+.c5 ~ .sc-fznKkj {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c5.c5.c5:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c5.c5.c5:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::placeholder {
+  opacity: 1;
+}
+
+.c5:disabled {
+  color: #546A7F;
+}
+
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-fznKkj {
+  cursor: not-allowed;
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:not(:placeholder-shown) ~ .c6,
+.c5:focus ~ .c6 {
+  background-color: white;
+  padding: 0 0.5rem;
+  -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+}
+
+.c5:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .sc-Axmtr {
+  background-color: white;
+  padding: 0 0.5rem;
+  -webkit-transform: translateY(-167%);
+  -ms-transform: translateY(-167%);
+  transform: translateY(-167%);
+}
+
+.c5:focus ~ .c6 {
+  font-weight: 600;
+}
+
+.c5:not(:placeholder-shown) ~ .sc-fznKkj {
+  opacity: 1;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 20rem;
+  width: 100%;
+  margin: 0.8rem 0;
+}
+
+.c0 .c1 {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
+}
+
+.c0 .c1 div,
+.c0 .c1 input,
+.c0 .c1 label {
+  cursor: pointer;
+}
+
+.c0 .c1 .c9 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c0 .c1:not(:focus-within):hover .c9 * {
+  fill: #13181D;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-singleSelect-wrapper"
+  >
+    <div
+      class="c1 c2"
+      id="medly-singleSelect-input-wrapper"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <input
+            aria-describedby="medly-singleSelect-helper-text"
+            autocomplete="off"
+            class="c5"
+            id="medly-singleSelect-input"
+            placeholder="Please Select . . ."
+            readonly=""
+            type="text"
+            value="Dummy1"
+          />
+          <label
+            class="c6 c7"
+            for="medly-singleSelect-input"
+          />
+        </div>
+        <svg
+          class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SingleSelect component with fusion variant should render properly when option is custom component 1`] = `
+.c17 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+}
+
+.c19 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+}
+
+.c21 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c9 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c9 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c13 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.4rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c7 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c7::after {
+  content: ' (optional)';
+}
+
+.c11 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c3 .c6 {
+  color: #546A7F;
+}
+
+.c3 .sc-fzoLsD,
+.c3 .c10 {
+  color: #546A7F;
+}
+
+.c3 .sc-fzoLsD *,
+.c3 .c10 * {
+  fill: #546A7F;
+}
+
+.c3 ~ .c12 {
+  color: #546A7F;
+}
+
+.c3::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+  border: 0.1rem solid #b0bcc8;
+}
+
+.c3:hover::after {
+  border-width: 0.15rem;
+  border-color: #607890;
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c3:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c3 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c3:focus-within,
+.c3:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c3:focus-within::after,
+.c3:focus-within:hover::after {
+  border-color: #126AFA;
+  border-radius: 1rem;
+}
+
+.c3:focus-within .c6,
+.c3:focus-within:hover .c6 {
+  color: #126AFA;
+}
+
+.c3:focus-within .sc-fzoLsD,
+.c3:focus-within:hover .sc-fzoLsD,
+.c3:focus-within .c10,
+.c3:focus-within:hover .c10 {
+  color: #126AFA;
+}
+
+.c3:focus-within .sc-fzoLsD *,
+.c3:focus-within:hover .sc-fzoLsD *,
+.c3:focus-within .c10 *,
+.c3:focus-within:hover .c10 * {
+  fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c3:focus-within input::-webkit-input-placeholder,
+.c3:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input::-moz-placeholder,
+.c3:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input:-ms-input-placeholder,
+.c3:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input::placeholder,
+.c3:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c2 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 20rem;
+  margin: 0.8rem 0;
+}
+
+.c5 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 1.3rem;
+}
+
+.c5,
+.c5 ~ .sc-fznKkj {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c5.c5.c5:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c5.c5.c5:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::placeholder {
+  opacity: 1;
+}
+
+.c5:disabled {
+  color: #546A7F;
+}
+
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-fznKkj {
+  cursor: not-allowed;
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:not(:placeholder-shown) ~ .c6,
+.c5:focus ~ .c6 {
+  background-color: white;
+  padding: 0 0.5rem;
+  -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+}
+
+.c5:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .sc-Axmtr {
+  background-color: white;
+  padding: 0 0.5rem;
+  -webkit-transform: translateY(-167%);
+  -ms-transform: translateY(-167%);
+  transform: translateY(-167%);
+}
+
+.c5:focus ~ .c6 {
+  font-weight: 600;
+}
+
+.c5:not(:placeholder-shown) ~ .sc-fznKkj {
+  opacity: 1;
+}
+
+.c15 {
+  cursor: pointer;
+  padding: 0 0.8rem;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  min-height: 4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.c15:hover {
+  background-color: #F7F8F9;
+}
+
+.c15:hover > .c16 {
+  color: #13181D;
+}
+
+.c15:active {
+  background-color: #eff2f4;
+}
+
+.c15 > .c16 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #13181D;
+}
+
+.c15 > .c8 {
+  margin-left: 1.6rem;
+}
+
+.c15 > .c8 * {
+  fill: #13181D;
+}
+
+.c18 {
+  cursor: pointer;
+  padding: 0 0.8rem;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  min-height: 4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: #E7F0FF;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.c18:hover > .c16 {
+  color: #13181D;
+}
+
+.c18 > .c16 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  color: #126AFA;
+}
+
+.c18 > .c8 {
+  margin-left: 1.6rem;
+}
+
+.c18 > .c8 * {
+  fill: #126AFA;
+}
+
+.c20 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+.c14 {
+  z-index: 4;
+  position: absolute;
+  background: #ffffff;
+  top: 5.6rem;
+  left: 0;
+  margin: 0;
+  padding: 0.8rem;
+  width: 100%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  list-style: none;
+  box-sizing: border-box;
+  box-shadow: 0 0.2rem 0.8rem #B0BCC8;
+  border-radius: 1.0rem;
+  overflow: auto;
+  max-height: 20rem;
+}
+
+.c22 .c1 {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c22 .c1 label {
+  pointer-events: none;
+}
+
+.c22 .c1 div,
+.c22 .c1 input,
+.c22 .c1 label {
+  cursor: pointer;
+}
+
+.c22 .c1 .c10 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c22 .c1:not(:focus-within):hover .c10 * {
+  fill: #13181D;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c0 .c1 {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
+}
+
+.c0 .c1 div,
+.c0 .c1 input,
+.c0 .c1 label {
+  cursor: pointer;
+}
+
+.c0 .c1 .c10 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c0 .c1:not(:focus-within):hover .c10 * {
+  fill: #13181D;
+}
+
+<div>
+  <div
+    class="c0"
+    id="label-wrapper"
+  >
+    <div
+      class="c1 c2"
+      id="label-input-wrapper"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <input
+            aria-describedby="label-helper-text"
+            autocomplete="off"
+            class="c5"
+            id="label-input"
+            placeholder="Please Select . . ."
+            readonly=""
+            type="text"
+            value="Dummy1"
+          />
+          <label
+            class="c6 c7"
+            for="label-input"
+          >
+            Label
+          </label>
+        </div>
+        <svg
+          class="c8 c9 c10 c11"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+      </div>
+      <span
+        class="c12 c13"
+        id="label-helper-text"
+      >
+        Helper Text
+      </span>
+    </div>
+    <ul
+      class="c14"
+      id="label-options"
+    >
+      <li
+        class="c15"
+        id="All"
+      >
+        <span
+          class="c16 c17"
+        >
+          All
+        </span>
+      </li>
+      <li
+        class="c18"
+        id="Dummy1"
+      >
+        <span
+          class="c16 c19"
+        >
+          Dummy1
+        </span>
+        <svg
+          class="c8 c9"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+            fill="green"
+          />
+        </svg>
+      </li>
+      <li
+        class="c15"
+        id="Dummy2"
+      >
+        <span
+          class="c16 c17"
+        >
+          Dummy2
+        </span>
+        <svg
+          class="c8 c9"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.414 15.292l2.59-2.59a.996.996 0 0 0 0-1.41l-2.59-2.59c-.63-.62-1.71-.18-1.71.71v5.17c0 .9 1.08 1.34 1.71.71z"
+            fill="#000"
+            fill-opacity=".54"
+          />
+        </svg>
+      </li>
+      <li
+        class="c15"
+        id="Dummy3"
+      >
+        <span
+          class="c16 c17"
+        >
+          Dummy3
+        </span>
+      </li>
+      <li
+        class="c15"
+        id="Custom-component"
+      >
+        <div
+          class="c20"
+        >
+          <span
+            class="c16 c21"
+          >
+            Component
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`SingleSelect component with fusion variant should render with label properly 1`] = `
+.c8 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c8 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c12 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.4rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c7 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c7::after {
+  content: ' (optional)';
+}
+
+.c10 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c3 .c6 {
+  color: #546A7F;
+}
+
+.c3 .sc-fzoLsD,
+.c3 .c9 {
+  color: #546A7F;
+}
+
+.c3 .sc-fzoLsD *,
+.c3 .c9 * {
+  fill: #546A7F;
+}
+
+.c3 ~ .c11 {
+  color: #546A7F;
+}
+
+.c3::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+  border: 0.1rem solid #b0bcc8;
+}
+
+.c3:hover::after {
+  border-width: 0.15rem;
+  border-color: #607890;
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c3:focus-within {
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.c3 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c3:focus-within,
+.c3:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c3:focus-within::after,
+.c3:focus-within:hover::after {
+  border-color: #126AFA;
+  border-radius: 1rem;
+}
+
+.c3:focus-within .c6,
+.c3:focus-within:hover .c6 {
+  color: #126AFA;
+}
+
+.c3:focus-within .sc-fzoLsD,
+.c3:focus-within:hover .sc-fzoLsD,
+.c3:focus-within .c9,
+.c3:focus-within:hover .c9 {
+  color: #126AFA;
+}
+
+.c3:focus-within .sc-fzoLsD *,
+.c3:focus-within:hover .sc-fzoLsD *,
+.c3:focus-within .c9 *,
+.c3:focus-within:hover .c9 * {
+  fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c3:focus-within input::-webkit-input-placeholder,
+.c3:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input::-moz-placeholder,
+.c3:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input:-ms-input-placeholder,
+.c3:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input::placeholder,
+.c3:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c2 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 20rem;
+  margin: 0.8rem 0;
+}
+
+.c5 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 1.3rem;
+}
+
+.c5,
+.c5 ~ .sc-fznKkj {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c5.c5.c5:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c5.c5.c5:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::placeholder {
+  opacity: 1;
+}
+
+.c5:disabled {
+  color: #546A7F;
+}
+
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-fznKkj {
+  cursor: not-allowed;
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:not(:placeholder-shown) ~ .c6,
+.c5:focus ~ .c6 {
+  background-color: white;
+  padding: 0 0.5rem;
+  -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
+}
+
+.c5:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .sc-Axmtr {
+  background-color: white;
+  padding: 0 0.5rem;
+  -webkit-transform: translateY(-167%);
+  -ms-transform: translateY(-167%);
+  transform: translateY(-167%);
+}
+
+.c5:focus ~ .c6 {
+  font-weight: 600;
+}
+
+.c5:not(:placeholder-shown) ~ .sc-fznKkj {
+  opacity: 1;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c0 .c1 {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
+}
+
+.c0 .c1 div,
+.c0 .c1 input,
+.c0 .c1 label {
+  cursor: pointer;
+}
+
+.c0 .c1 .c9 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c0 .c1:not(:focus-within):hover .c9 * {
+  fill: #13181D;
+}
+
+<div>
+  <div
+    class="c0"
+    id="label-wrapper"
+  >
+    <div
+      class="c1 c2"
+      id="label-input-wrapper"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <input
+            aria-describedby="label-helper-text"
+            autocomplete="off"
+            class="c5"
+            id="label-input"
+            placeholder="Please Select . . ."
+            readonly=""
+            type="text"
+            value="Dummy1"
+          />
+          <label
+            class="c6 c7"
+            for="label-input"
+          >
+            Label
+          </label>
+        </div>
+        <svg
+          class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+      </div>
+      <span
+        class="c11 c12"
+        id="label-helper-text"
+      >
+        Helper Text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`SingleSelect component with outlined variant should render disabled state properly  1`] = `
 .c8 {
   overflow: visible;
@@ -5022,7 +7278,19 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
+}
+
+.c3:focus-within {
+  border-radius: 0.4rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c3::after,
@@ -5138,6 +7406,10 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -5318,6 +7590,10 @@ exports[`SingleSelect component with outlined variant should render options corr
 
 .c1:hover {
   background-color: #F7F8F9;
+}
+
+.c1:hover > .c2 {
+  color: #13181D;
 }
 
 .c1:active {
@@ -5544,6 +7820,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -5552,13 +7829,19 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c3:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  border-radius: 0.4rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
-.c3:hover::after,
-.c3:focus-within::after {
-  border-width: 0.15rem;
+.c3:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c3:focus-within,
@@ -5569,6 +7852,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
@@ -5692,6 +7976,10 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,
@@ -5992,6 +8280,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -6000,13 +8289,19 @@ exports[`SingleSelect component with outlined variant should render properly whe
 }
 
 .c3:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  border-radius: 0.4rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
-.c3:hover::after,
-.c3:focus-within::after {
-  border-width: 0.15rem;
+.c3:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c3:focus-within,
@@ -6017,6 +8312,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
@@ -6146,6 +8442,10 @@ exports[`SingleSelect component with outlined variant should render properly whe
   opacity: 1;
 }
 
+.c5:disabled {
+  color: #435465;
+}
+
 .c5:disabled ~ .c6,
 .c5:disabled ~ .sc-fznKkj {
   cursor: not-allowed;
@@ -6211,6 +8511,10 @@ exports[`SingleSelect component with outlined variant should render properly whe
   background-color: #F7F8F9;
 }
 
+.c15:hover > .c16 {
+  color: #13181D;
+}
+
 .c15:active {
   background-color: #eff2f4;
 }
@@ -6254,6 +8558,10 @@ exports[`SingleSelect component with outlined variant should render properly whe
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.c18:hover > .c16 {
+  color: #13181D;
 }
 
 .c18 > .c16 {
@@ -6647,6 +8955,7 @@ exports[`SingleSelect component with outlined variant should render with label p
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
+  border-width: 0.4rem;
   border: 0.1rem solid #98A7B7;
 }
 
@@ -6655,13 +8964,19 @@ exports[`SingleSelect component with outlined variant should render with label p
 }
 
 .c3:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+  border-radius: 0.4rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
-.c3:hover::after,
-.c3:focus-within::after {
-  border-width: 0.15rem;
+.c3:hover::after {
   border-color: #607890;
+  border-width: 0.15rem;
+}
+
+.c3:focus-within::after {
+  border-color: #126AFA;
+  border-radius: 0.4rem;
+  border-width: 0.15rem;
 }
 
 .c3:focus-within,
@@ -6672,6 +8987,7 @@ exports[`SingleSelect component with outlined variant should render with label p
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
@@ -6799,6 +9115,10 @@ exports[`SingleSelect component with outlined variant should render with label p
 
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled {
+  color: #435465;
 }
 
 .c5:disabled ~ .c6,

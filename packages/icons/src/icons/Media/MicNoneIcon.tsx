@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import MicNoneIconSvg from '../../assets/Media/mic_none_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MicNoneIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const MicNoneIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'MicNoneIcon';
 
-MicNoneIcon.Style = SvgIcon;
-MicNoneIcon.displayName = 'MicNoneIcon';
+const MicNoneIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default MicNoneIcon

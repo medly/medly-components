@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocationCityIconSvg from '../../assets/Social/location_city_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocationCityIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocationCityIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LocationCityIcon';
 
-LocationCityIcon.Style = SvgIcon;
-LocationCityIcon.displayName = 'LocationCityIcon';
+const LocationCityIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocationCityIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ThumbUpIconSvg from '../../assets/Action/thumb_up_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ThumbUpIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ThumbUpIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ThumbUpIcon';
 
-ThumbUpIcon.Style = SvgIcon;
-ThumbUpIcon.displayName = 'ThumbUpIcon';
+const ThumbUpIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ThumbUpIcon

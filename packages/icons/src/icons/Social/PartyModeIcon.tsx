@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PartyModeIconSvg from '../../assets/Social/party_mode_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PartyModeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PartyModeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PartyModeIcon';
 
-PartyModeIcon.Style = SvgIcon;
-PartyModeIcon.displayName = 'PartyModeIcon';
+const PartyModeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PartyModeIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ThumbDownAltIconSvg from '../../assets/Social/thumb_down_alt_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ThumbDownAltIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ThumbDownAltIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ThumbDownAltIcon';
 
-ThumbDownAltIcon.Style = SvgIcon;
-ThumbDownAltIcon.displayName = 'ThumbDownAltIcon';
+const ThumbDownAltIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ThumbDownAltIcon

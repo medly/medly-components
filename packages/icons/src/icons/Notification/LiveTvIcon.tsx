@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LiveTvIconSvg from '../../assets/Notification/live_tv_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LiveTvIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LiveTvIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LiveTvIcon';
 
-LiveTvIcon.Style = SvgIcon;
-LiveTvIcon.displayName = 'LiveTvIcon';
+const LiveTvIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LiveTvIcon

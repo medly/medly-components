@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SettingsInputComponentIconSvg from '../../assets/Action/settings_input_component_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SettingsInputComponentIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SettingsInputComponentIcon: FC<SvgIconProps> & WithStyle = React.memo(prop
         </SvgIcon>
     );
 });
+Component.displayName = 'SettingsInputComponentIcon';
 
-SettingsInputComponentIcon.Style = SvgIcon;
-SettingsInputComponentIcon.displayName = 'SettingsInputComponentIcon';
+const SettingsInputComponentIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SettingsInputComponentIcon

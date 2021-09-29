@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CancelPresentationIconSvg from '../../assets/Communication/cancel_presentation_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CancelPresentationIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CancelPresentationIcon: FC<SvgIconProps> & WithStyle = React.memo(props =>
         </SvgIcon>
     );
 });
+Component.displayName = 'CancelPresentationIcon';
 
-CancelPresentationIcon.Style = SvgIcon;
-CancelPresentationIcon.displayName = 'CancelPresentationIcon';
+const CancelPresentationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CancelPresentationIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CollectionsBookmarkIconSvg from '../../assets/Image/collections_bookmark_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CollectionsBookmarkIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CollectionsBookmarkIcon: FC<SvgIconProps> & WithStyle = React.memo(props =
         </SvgIcon>
     );
 });
+Component.displayName = 'CollectionsBookmarkIcon';
 
-CollectionsBookmarkIcon.Style = SvgIcon;
-CollectionsBookmarkIcon.displayName = 'CollectionsBookmarkIcon';
+const CollectionsBookmarkIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CollectionsBookmarkIcon

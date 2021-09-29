@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CallMissedIconSvg from '../../assets/Communication/call_missed_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CallMissedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const CallMissedIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'CallMissedIcon';
 
-CallMissedIcon.Style = SvgIcon;
-CallMissedIcon.displayName = 'CallMissedIcon';
+const CallMissedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default CallMissedIcon

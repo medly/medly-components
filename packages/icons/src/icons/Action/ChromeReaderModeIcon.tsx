@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import ChromeReaderModeIconSvg from '../../assets/Action/chrome_reader_mode_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ChromeReaderModeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const ChromeReaderModeIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'ChromeReaderModeIcon';
 
-ChromeReaderModeIcon.Style = SvgIcon;
-ChromeReaderModeIcon.displayName = 'ChromeReaderModeIcon';
+const ChromeReaderModeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default ChromeReaderModeIcon

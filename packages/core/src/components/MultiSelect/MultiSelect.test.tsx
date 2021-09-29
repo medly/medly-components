@@ -127,6 +127,15 @@ describe('MultiSelect component', () => {
         expect(queryByText('Dummy1')).toBeNull();
     });
 
+    it('should call onInputChange on changing the input value', async () => {
+        const mockInputChange = jest.fn();
+        render(<MultiSelect options={options} onChange={jest.fn()} onInputChange={mockInputChange} />);
+        const inputEl = screen.getByRole('textbox');
+        fireEvent.click(inputEl);
+        fireEvent.change(inputEl, { target: { value: 'Dummy2' } });
+        expect(mockInputChange).toBeCalledWith('Dummy2');
+    });
+
     it('should render all the options when input value is not matched to any option', async () => {
         const mockOnChange = jest.fn(),
             { queryByText } = render(<MultiSelect options={options} onChange={mockOnChange} />),

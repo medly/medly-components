@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import StreetviewIconSvg from '../../assets/Maps/streetview_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const StreetviewIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const StreetviewIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'StreetviewIcon';
 
-StreetviewIcon.Style = SvgIcon;
-StreetviewIcon.displayName = 'StreetviewIcon';
+const StreetviewIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default StreetviewIcon

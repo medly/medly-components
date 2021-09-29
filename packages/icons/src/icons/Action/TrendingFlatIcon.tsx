@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import TrendingFlatIconSvg from '../../assets/Action/trending_flat_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TrendingFlatIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const TrendingFlatIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'TrendingFlatIcon';
 
-TrendingFlatIcon.Style = SvgIcon;
-TrendingFlatIcon.displayName = 'TrendingFlatIcon';
+const TrendingFlatIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default TrendingFlatIcon

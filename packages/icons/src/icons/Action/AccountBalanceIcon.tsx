@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AccountBalanceIconSvg from '../../assets/Action/account_balance_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AccountBalanceIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AccountBalanceIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AccountBalanceIcon';
 
-AccountBalanceIcon.Style = SvgIcon;
-AccountBalanceIcon.displayName = 'AccountBalanceIcon';
+const AccountBalanceIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AccountBalanceIcon

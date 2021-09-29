@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LocationDisabledIconSvg from '../../assets/Device/location_disabled_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocationDisabledIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LocationDisabledIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LocationDisabledIcon';
 
-LocationDisabledIcon.Style = SvgIcon;
-LocationDisabledIcon.displayName = 'LocationDisabledIcon';
+const LocationDisabledIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LocationDisabledIcon

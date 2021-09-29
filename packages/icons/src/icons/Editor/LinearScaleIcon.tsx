@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import LinearScaleIconSvg from '../../assets/Editor/linear_scale_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LinearScaleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const LinearScaleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'LinearScaleIcon';
 
-LinearScaleIcon.Style = SvgIcon;
-LinearScaleIcon.displayName = 'LinearScaleIcon';
+const LinearScaleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default LinearScaleIcon

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import { ListStyled } from './List.styled';
 import { ListProps } from './types';
 
-export const List: FC<ListProps> & WithStyle = React.memo(
+const Component: FC<ListProps> = React.memo(
     React.forwardRef((props, ref) => (
         <ListStyled ref={ref} {...props}>
             {React.Children.map(props.children, (c, i) => {
@@ -13,8 +13,8 @@ export const List: FC<ListProps> & WithStyle = React.memo(
     ))
 );
 
-List.displayName = 'List';
-List.Style = ListStyled;
-List.defaultProps = {
+Component.displayName = 'List';
+Component.defaultProps = {
     variant: 'vertical'
 };
+export const List: FC<ListProps> & WithStyle = Object.assign(Component, { Style: ListStyled });

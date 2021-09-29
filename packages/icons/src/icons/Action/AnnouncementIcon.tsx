@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AnnouncementIconSvg from '../../assets/Action/announcement_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AnnouncementIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AnnouncementIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AnnouncementIcon';
 
-AnnouncementIcon.Style = SvgIcon;
-AnnouncementIcon.displayName = 'AnnouncementIcon';
+const AnnouncementIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AnnouncementIcon

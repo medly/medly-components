@@ -1,5 +1,5 @@
 import { Size } from '@medly-components/theme';
-import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps } from '@medly-components/utils';
 import { ReactElement } from 'react';
 
 export type Option = {
@@ -14,7 +14,7 @@ export type WrapperProps = {
     areOptionsVisible?: boolean;
 };
 
-export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'>, WithThemeProp {
+export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'> {
     /** Size for search box, can be 'S' | 'M' */
     size?: Size;
     /** Option for search results, in form of label and value */
@@ -34,3 +34,7 @@ export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'
     /** Function to be called on input value changes */
     onInputChange?: (value: string) => void;
 }
+
+export type StyledSearchBoxProps = SearchBoxProps & {
+    size: Size;
+};

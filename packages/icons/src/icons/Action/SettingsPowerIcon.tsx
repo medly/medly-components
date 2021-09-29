@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import SettingsPowerIconSvg from '../../assets/Action/settings_power_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SettingsPowerIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const SettingsPowerIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'SettingsPowerIcon';
 
-SettingsPowerIcon.Style = SvgIcon;
-SettingsPowerIcon.displayName = 'SettingsPowerIcon';
+const SettingsPowerIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default SettingsPowerIcon

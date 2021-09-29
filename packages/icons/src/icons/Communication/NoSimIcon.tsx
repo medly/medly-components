@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import NoSimIconSvg from '../../assets/Communication/no_sim_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const NoSimIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const NoSimIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'NoSimIcon';
 
-NoSimIcon.Style = SvgIcon;
-NoSimIcon.displayName = 'NoSimIcon';
+const NoSimIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default NoSimIcon

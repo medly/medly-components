@@ -3,7 +3,7 @@ import React from 'react';
 import * as Styled from './TabPanel.styled';
 import { TabPanelProps } from './types';
 
-export const TabPanel: React.FC<TabPanelProps> & WithStyle = React.memo(props => {
+const Component: React.FC<TabPanelProps> = React.memo(props => {
     const { active, children, forceRender, className } = props;
 
     return (
@@ -31,5 +31,5 @@ export const TabPanel: React.FC<TabPanelProps> & WithStyle = React.memo(props =>
         </>
     );
 });
-TabPanel.displayName = 'TabPanel';
-TabPanel.Style = Styled.TabPanel;
+Component.displayName = 'TabPanel';
+export const TabPanel: React.FC<TabPanelProps> & WithStyle = Object.assign(Component, { Style: Styled.TabPanel });

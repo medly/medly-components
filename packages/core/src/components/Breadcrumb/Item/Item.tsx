@@ -4,7 +4,7 @@ import Text from '../../Text';
 import { BreadcrumbItemStyled } from './Item.styled';
 import { BreadcrumbItemProps } from './types';
 
-export const BreadcrumbItem: FC<BreadcrumbItemProps> & WithStyle = React.memo(
+const Component: FC<BreadcrumbItemProps> = React.memo(
     React.forwardRef(({ children, ...restProps }, ref) => {
         return (
             <BreadcrumbItemStyled ref={ref} {...restProps}>
@@ -14,5 +14,5 @@ export const BreadcrumbItem: FC<BreadcrumbItemProps> & WithStyle = React.memo(
     })
 );
 
-BreadcrumbItem.displayName = 'BreadcrumbItem';
-BreadcrumbItem.Style = BreadcrumbItemStyled;
+Component.displayName = 'BreadcrumbItem';
+export const BreadcrumbItem: FC<BreadcrumbItemProps> & WithStyle = Object.assign(Component, { Style: BreadcrumbItemStyled });

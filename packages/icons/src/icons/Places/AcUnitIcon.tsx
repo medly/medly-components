@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import AcUnitIconSvg from '../../assets/Places/ac_unit_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AcUnitIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const AcUnitIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'AcUnitIcon';
 
-AcUnitIcon.Style = SvgIcon;
-AcUnitIcon.displayName = 'AcUnitIcon';
+const AcUnitIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default AcUnitIcon

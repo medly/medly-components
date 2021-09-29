@@ -730,6 +730,7 @@ exports[`Form should render properly with initial state 1`] = `
 .c5:focus-within::after,
 .c5:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c5:focus-within .c8,
@@ -887,6 +888,10 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c7.c7.c7:focus::placeholder {
   opacity: 1;
+}
+
+.c7:disabled {
+  color: #435465;
 }
 
 .c7:disabled ~ .c8,
@@ -1116,6 +1121,7 @@ exports[`Form should render properly with initial state 1`] = `
 .c46:focus-within::after,
 .c46:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c46:focus-within .c8,
@@ -1798,6 +1804,7 @@ exports[`Form should render properly with initial state 1`] = `
         class="c20"
         id="languages-wrapper"
         name="languages"
+        type="checkbox"
       >
         <span
           class="c17 c21 c22"
@@ -1908,6 +1915,7 @@ exports[`Form should render properly with initial state 1`] = `
         aria-describedby="role-helper-text"
         class="c33"
         id="role-wrapper"
+        type="radio"
       >
         <span
           class="c17 c21 c22"
@@ -3029,6 +3037,7 @@ exports[`Form should render properly without initial state 1`] = `
 .c8:focus-within::after,
 .c8:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c8:focus-within .c11,
@@ -3186,6 +3195,10 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c10.c10.c10:focus::placeholder {
   opacity: 1;
+}
+
+.c10:disabled {
+  color: #435465;
 }
 
 .c10:disabled ~ .c11,
@@ -3415,6 +3428,7 @@ exports[`Form should render properly without initial state 1`] = `
 .c46:focus-within::after,
 .c46:focus-within:hover::after {
   border-color: #126AFA;
+  border-radius: 0;
 }
 
 .c46:focus-within .c11,
@@ -3830,6 +3844,7 @@ exports[`Form should render properly without initial state 1`] = `
   <form
     class="c0"
     id="medly-dynamic-form"
+    name="Test form"
   >
     <h2
       class="c1 c2"
@@ -4022,6 +4037,7 @@ exports[`Form should render properly without initial state 1`] = `
         class="c22"
         id="languages-wrapper"
         name="languages"
+        type="checkbox"
       >
         <span
           class="c1 c23 c24"
@@ -4131,6 +4147,7 @@ exports[`Form should render properly without initial state 1`] = `
         aria-describedby="role-helper-text"
         class="c34"
         id="role-wrapper"
+        type="radio"
       >
         <span
           class="c1 c23 c24"

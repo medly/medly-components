@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import TimelapseIconSvg from '../../assets/Image/timelapse_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TimelapseIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const TimelapseIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'TimelapseIcon';
 
-TimelapseIcon.Style = SvgIcon;
-TimelapseIcon.displayName = 'TimelapseIcon';
+const TimelapseIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default TimelapseIcon

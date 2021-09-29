@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PhoneInTalkIconSvg from '../../assets/Notification/phone_in_talk_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PhoneInTalkIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const PhoneInTalkIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'PhoneInTalkIcon';
 
-PhoneInTalkIcon.Style = SvgIcon;
-PhoneInTalkIcon.displayName = 'PhoneInTalkIcon';
+const PhoneInTalkIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default PhoneInTalkIcon

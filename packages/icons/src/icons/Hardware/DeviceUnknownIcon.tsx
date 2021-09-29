@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import DeviceUnknownIconSvg from '../../assets/Hardware/device_unknown_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DeviceUnknownIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
+const Component: FC<SvgIconProps> = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
@@ -11,8 +11,8 @@ const DeviceUnknownIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
         </SvgIcon>
     );
 });
+Component.displayName = 'DeviceUnknownIcon';
 
-DeviceUnknownIcon.Style = SvgIcon;
-DeviceUnknownIcon.displayName = 'DeviceUnknownIcon';
+const DeviceUnknownIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
 
 export default DeviceUnknownIcon

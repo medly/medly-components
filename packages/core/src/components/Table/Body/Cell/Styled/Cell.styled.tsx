@@ -3,7 +3,7 @@ import Text from '../../../../Text';
 import { TableProps } from '../../../types';
 import { TableCellStyledProps } from '../types';
 
-export const defaultTableCellPaddings: { [k in TableProps['size']]: string } = {
+export const defaultTableCellPaddings: { [k in Required<TableProps>['size']]: string } = {
     XS: '0.5rem 0.8rem',
     S: '0.8rem 1.6rem',
     M: '1.2rem 1.6rem',
@@ -32,7 +32,7 @@ const wrapTextStyle = css`
         }
     `;
 
-const getRowHoverStateCellPadding = (style: 'shadow' | 'outlined', tableSize: TableProps['size']): string =>
+const getRowHoverStateCellPadding = (style: 'shadow' | 'outlined', tableSize: Required<TableProps>['size']): string =>
     style === 'outlined' ? outlinedTableCellPaddings[tableSize] : defaultTableCellPaddings[tableSize];
 
 export const Cell = styled('td')<TableCellStyledProps>`
