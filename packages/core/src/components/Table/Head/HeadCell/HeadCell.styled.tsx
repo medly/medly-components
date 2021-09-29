@@ -59,7 +59,6 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     display: flex;
     overflow: hidden;
     align-items: flex-end;
-    min-height: 3rem;
     justify-content: ${({ isRowActionCell }) => (isRowActionCell ? 'flex-end' : 'flex-start')};
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
@@ -123,6 +122,7 @@ export const HeadCellButton = styled.button<{
     display: flex;
     width: 100%;
     align-items: center;
+    min-height: 2rem;
     justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
     padding: ${({ tableSize }) => resolveValueByTableSize(tableSize, headCellButtonTableSizeMap)};
     outline: unset;
@@ -130,6 +130,10 @@ export const HeadCellButton = styled.button<{
     border-radius: ${({ theme }) => theme.table.header.cell.borderRadius};
     cursor: ${({ withHoverEffect }) => (withHoverEffect ? 'pointer' : 'default')};
     ${({ isSelected, theme }) => getStyle(theme, 'default', isSelected)}
+
+    &&& {
+        box-sizing: content-box;
+    }
 
     &:hover {
         ${({ isSelected, withHoverEffect, theme }) => withHoverEffect && getStyle(theme, 'hovered', isSelected)}
@@ -149,9 +153,4 @@ export const HeadCellButton = styled.button<{
         margin-left: 0.4rem;
         flex-shrink: 0;
     }
-`;
-
-export const SpacerSvg = styled.svg`
-    width: 0;
-    height: 2rem;
 `;

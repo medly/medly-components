@@ -2772,10 +2772,10 @@ exports[`Table component should render properly 1`] = `
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -2836,6 +2836,7 @@ exports[`Table component should render properly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 2rem;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -2851,6 +2852,10 @@ exports[`Table component should render properly 1`] = `
 
 .c5 .c8 * {
   fill: #435465;
+}
+
+.c5.c5.c5 {
+  box-sizing: content-box;
 }
 
 .c5:hover {
@@ -2876,7 +2881,6 @@ exports[`Table component should render properly 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
-  line-height: 1;
 }
 
 .c5 .c8 {
@@ -2897,6 +2901,7 @@ exports[`Table component should render properly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 2rem;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -2912,6 +2917,10 @@ exports[`Table component should render properly 1`] = `
 
 .c13 .c8 * {
   fill: #435465;
+}
+
+.c13.c13.c13 {
+  box-sizing: content-box;
 }
 
 .c13:hover {
@@ -2937,7 +2946,6 @@ exports[`Table component should render properly 1`] = `
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
-  line-height: 1;
 }
 
 .c13 .c8 {
