@@ -35,13 +35,13 @@ const Component: FC<RadioGroupProps> = React.memo(
 
         const validate = useCallback(
             (selectedValue: string, validationMessage?: string) =>
-                setErrorMessage((validator && validator(selectedValue)) || validationMessage),
+                setErrorMessage((validator && validator(selectedValue)) || validationMessage || ''),
             [validator]
         );
 
         const handleOnInvalid = useCallback(
                 (event: React.FormEvent<HTMLInputElement>) => {
-                    validate(value, (event.target as HTMLInputElement).validationMessage);
+                    validate(value || '', (event.target as HTMLInputElement).validationMessage);
                     onInvalid && onInvalid(event);
                 },
                 [validate, onInvalid, value]
@@ -50,7 +50,7 @@ const Component: FC<RadioGroupProps> = React.memo(
                 (event: React.FocusEvent<HTMLDivElement>) => {
                     const currentTarget = event.currentTarget,
                         target = event.target as HTMLInputElement;
-                    setTimeout(() => !currentTarget.contains(document.activeElement) && validate(value, target.validationMessage), 0);
+                    setTimeout(() => !currentTarget.contains(document.activeElement) && validate(value || '', target.validationMessage), 0);
                     onBlur && onBlur(event);
                 },
                 [validate, onBlur, value]

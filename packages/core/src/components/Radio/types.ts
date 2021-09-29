@@ -1,10 +1,10 @@
 import { FontVariants, FontWeights, RadioSizes } from '@medly-components/theme';
-import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type' | 'sizes'>;
 
-export interface RadioProps extends InputProps, WithThemeProp {
+export interface RadioProps extends InputProps {
     /** Value of the radio group */
     value: any;
     /** Radio size */
