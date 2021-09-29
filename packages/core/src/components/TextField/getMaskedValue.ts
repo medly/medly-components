@@ -17,7 +17,7 @@ const getMaskedValue = (event: React.ChangeEvent<HTMLInputElement>, mask: string
         newValue = value.slice(0, -1);
     } else if (specialCharsRegex.test(value[length - 1])) {
         // if user deletes till the special character
-        newValue = value.replace(/[^a-zA-Z0-9]+$/, '');
+        newValue = value.replace(/((?=([^a-zA-Z0-9]+))\2)+$/, '');
     } else if (specialCharsRegex.test(mask[length - 1])) {
         // if user reaches to special character
         const remainingMask = mask.substr(length - 1),

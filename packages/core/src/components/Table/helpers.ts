@@ -83,7 +83,7 @@ export const changeSize = (width: number, dottedField: string, columnConfigs: Ta
     const newColumnConfigs = [...columnConfigs],
         [currField, nextField] = dottedField.split(/\.(.+)/),
         index = columnConfigs.findIndex(config => config.field === currField),
-        widthRegex = new RegExp(/(.*\()(.*)(,.*)/);
+        widthRegex = new RegExp(/(minmax\()(.*)(,.*\))/);
 
     if (index >= 0) {
         const config = { ...newColumnConfigs[index] };
