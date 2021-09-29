@@ -1,6 +1,6 @@
 import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
 import { Placement } from '../../types';
-import { PopoverPopupProps } from '../types';
+import { StyledPopoverPopupProps } from '../types';
 import { getStyleWithArrow } from './WithArrow';
 
 export const getPosition = ({ placement, distance = '0px' }: { placement: Placement; distance?: string }) => {
@@ -72,7 +72,7 @@ export const getPosition = ({ placement, distance = '0px' }: { placement: Placem
     }
 };
 
-export const PopupStyled = styled('div')<PopoverPopupProps>`
+export const PopupStyled = styled('div')<StyledPopoverPopupProps>`
     z-index: 4;
     position: absolute;
     background-color: ${({ bgColor }) => bgColor};

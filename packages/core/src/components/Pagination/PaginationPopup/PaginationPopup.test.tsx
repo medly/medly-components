@@ -24,9 +24,9 @@ describe('Pagination popup component', () => {
     });
 
     it('should call onClick handler with expected page when selected from ellipsis popover', () => {
-        const { mockOnPageClick, getByText } = renderer();
-        fireEvent.click(getByText('...').closest('button'));
-        fireEvent.click(getByText('2').closest('button'));
+        const { mockOnPageClick, getByRole } = renderer();
+        fireEvent.click(getByRole('button', { name: '...' }));
+        fireEvent.click(getByRole('button', { name: '2' }));
         expect(mockOnPageClick).toBeCalledWith(2);
     });
 });

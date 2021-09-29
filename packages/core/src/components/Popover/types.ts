@@ -23,8 +23,8 @@ export type PopoverContextType = [
 ];
 
 export type StaticProps = {
-    Popup?: typeof Popup;
-    Context?: React.Context<PopoverContextType>;
+    Popup: typeof Popup;
+    Context: React.Context<PopoverContextType>;
 };
 
 export interface PopoverProps extends HTMLProps<HTMLDivElement> {

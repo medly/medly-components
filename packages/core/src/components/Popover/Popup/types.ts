@@ -15,3 +15,7 @@ export interface PopoverPopupProps extends HTMLProps<HTMLDivElement> {
     /** Takes full height of the parent component */
     fullHeight?: boolean;
 }
+
+export type StyledPopoverPopupProps = PopoverPopupProps & {
+    placement: Placement;
+};
