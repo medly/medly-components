@@ -1,3 +1,4 @@
+import { WithStyle } from '@medly-components/utils';
 import React, { FC } from 'react';
 import ReactMarkdown from 'react-markdown';
 import directive from 'remark-directive';
@@ -6,10 +7,11 @@ import gfm from 'remark-gfm';
 import { CodeBlock } from './CodeBlock';
 import customDirectives from './customDirectives';
 import { ContentCSS } from './MarkdownContent.styled';
+import { MarkdownContentProps } from './types';
 import { YouTube } from './Youtube';
 
-export const MarkdownContent: FC<{ content: string }> = ({ content }) => (
-    <ContentCSS>
+const Component: FC<MarkdownContentProps> = ({ content, className }) => (
+    <ContentCSS className={className}>
         <ReactMarkdown
             skipHtml={false}
             remarkPlugins={[gfm, remarkFootnotes, directive, customDirectives]}
@@ -23,3 +25,7 @@ export const MarkdownContent: FC<{ content: string }> = ({ content }) => (
         </ReactMarkdown>
     </ContentCSS>
 );
+
+export const MarkdownContent: FC<MarkdownContentProps> & WithStyle = Object.assign(Component, {
+    Style: ContentCSS
+});
