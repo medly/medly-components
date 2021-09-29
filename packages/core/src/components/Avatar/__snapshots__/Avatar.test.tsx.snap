@@ -121,7 +121,7 @@ exports[`Avatar component should render image avatar properly 1`] = `
     class="c0"
   >
     <img
-      src="http://dummurl"
+      src="https://dummurl"
     />
   </div>
 </div>
