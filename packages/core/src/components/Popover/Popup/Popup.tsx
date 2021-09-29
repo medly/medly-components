@@ -9,9 +9,17 @@ const Component: React.FC<PopoverPopupProps> = React.memo(
         const [isOpen] = useContext(PopoverContext),
             stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
 
-        return isOpen && <PopupStyled onClick={stopPropagation} ref={ref} {...props} id={props.id || 'medly-popover-popup'} />;
+        return isOpen ? <PopupStyled ref={ref} onClick={stopPropagation} placement={props.placement!} {...props} /> : null;
     })
 );
 Component.displayName = 'Popup';
-Component.defaultProps = { bgColor: 'white', distance: '0px', placement: 'bottom', withArrow: false, fullWidth: false, fullHeight: false };
+Component.defaultProps = {
+    id: 'medly-popover-popup',
+    bgColor: 'white',
+    distance: '0px',
+    placement: 'bottom',
+    withArrow: false,
+    fullWidth: false,
+    fullHeight: false
+};
 export const Popup: React.FC<PopoverPopupProps> & WithStyle = Object.assign(Component, { Style: PopupStyled });

@@ -29,45 +29,45 @@ describe('Pagination component', () => {
     });
 
     it('should call onClick handler with correct page number when any page link is clicked', () => {
-        const { getByText, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(getByText('4').closest('button'));
+        const { getByRole, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByRole('button', { name: '4' }));
         expect(mockOnPageClick).toBeCalledWith(4);
     });
 
     it('should call onClick handler with first page when first page is clicked', () => {
-        const { getByText, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(getByText('1').closest('button'));
+        const { getByRole, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByRole('button', { name: '1' }));
         expect(mockOnPageClick).toBeCalledWith(1);
     });
 
     it('should call onClick handler with last page when last page is clicked', () => {
-        const { getByText, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(getByText('15').closest('button'));
+        const { getByRole, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByRole('button', { name: '15' }));
         expect(mockOnPageClick).toBeCalledWith(15);
     });
 
     it('should call onClick handler with prev page when prev link is clicked', () => {
-        const { mockOnPageClick, container } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(container.querySelectorAll('svg')[0].closest('button'));
+        const { mockOnPageClick, getByTitle } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByTitle('prev'));
         expect(mockOnPageClick).toBeCalledWith(2);
     });
 
     it('should call onClick handler with next page when next link is clicked', () => {
-        const { mockOnPageClick, container } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(container.querySelectorAll('svg')[1].closest('button'));
+        const { mockOnPageClick, getByTitle } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByTitle('next'));
         expect(mockOnPageClick).toBeCalledWith(4);
     });
 
     it('should call onClick handler with expected page when selected from ellipsis popover', () => {
-        const { mockOnPageClick, getByText } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(getByText('...').closest('button'));
-        fireEvent.click(getByText('7').closest('button'));
+        const { mockOnPageClick, getByRole } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByRole('button', { name: '...' }));
+        fireEvent.click(getByRole('button', { name: '7' }));
         expect(mockOnPageClick).toBeCalledWith(7);
     });
 
     it('should not call onClick handler when clicked on active page', () => {
-        const { mockOnPageClick, getByText } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(getByText('3').closest('button'));
+        const { mockOnPageClick, getByRole } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByRole('button', { name: '3' }));
         expect(mockOnPageClick).not.toBeCalled();
     });
 });
