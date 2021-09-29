@@ -18,13 +18,14 @@
         }
     },
     "scripts": {
-        "build:core": "lerna exec --scope @medly-components/core -- rollup -c=../../rollup.config.js",
-        "build:layout": "lerna exec --scope @medly-components/layout -- rollup -c=../../rollup.config.js",
-        "build:utils": "lerna exec --scope @medly-components/utils -- rollup -c=../../rollup.config.js",
-        "build:loaders": "lerna exec --scope @medly-components/loaders -- rollup -c=../../rollup.config.js",
-        "build:icons": "lerna exec --scope @medly-components/icons -- rollup -c=../../rollup.config.js",
-        "build:forms": "lerna exec --scope @medly-components/forms -- rollup -c=../../rollup.config.js",
-        "build:theme": "lerna exec --scope @medly-components/theme -- rollup -c=../../rollup.config.js",
+        "build:core": "cross-env BABEL_ENV=production lerna exec --scope @medly-components/core -- rollup -c=../../rollup.config.js",
+        "build:layout": "cross-env BABEL_ENV=production lerna exec --scope @medly-components/layout -- rollup -c=../../rollup.config.js",
+        "build:utils": "cross-env BABEL_ENV=production lerna exec --scope @medly-components/utils -- rollup -c=../../rollup.config.js",
+        "build:loaders": "cross-env BABEL_ENV=production lerna exec --scope @medly-components/loaders -- rollup -c=../../rollup.config.js",
+        "build:icons": "cross-env BABEL_ENV=production lerna exec --scope @medly-components/icons -- rollup -c=../../rollup.config.js",
+        "build:forms": "cross-env BABEL_ENV=production lerna exec --scope @medly-components/forms -- rollup -c=../../rollup.config.js",
+        "build:theme": "cross-env BABEL_ENV=production lerna exec --scope @medly-components/theme -- rollup -c=../../rollup.config.js",
+        "build:markdown": "cross-env BABEL_ENV=production lerna exec --scope @medly-components/markdown -- rollup -c=../../rollup.config.js",
         "build": "cross-env BABEL_ENV=production lerna exec -- rollup -c=../../rollup.config.js",
         "chromatic": "chromatic -d .out -t 9e7b69d929cd --auto-accept-changes",
         "clean": "lerna clean && rimraf yarn.lock && rimraf node_modules",
@@ -55,7 +56,8 @@
         "watch:loaders": "lerna exec --scope @medly-components/loaders -- rollup -w -c=../../rollup.config.js",
         "watch:icons": "lerna exec --scope @medly-components/icons -- rollup -w -c=../../rollup.config.js",
         "watch:forms": "lerna exec --scope @medly-components/forms -- rollup -w -c=../../rollup.config.js",
-        "watch:theme": "lerna exec --scope @medly-components/theme -- rollup -w -c=../../rollup.config.js"
+        "watch:theme": "lerna exec --scope @medly-components/theme -- rollup -w -c=../../rollup.config.js",
+        "watch:markdown": "lerna exec --scope @medly-components/markdown -- rollup -w -c=../../rollup.config.js"
     },
     "repository": {
         "type": "git",
