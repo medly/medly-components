@@ -255,7 +255,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* singleselect component error message issue ([#407](https://github.com/medly/medly-components/issues/407)) ([0308a9e](https://github.com/medly/medly-components/commit/0308a9e354a7a7df218a2053889740c337040a95))
+* SingleSelect component error message issue ([#407](https://github.com/medly/medly-components/issues/407)) ([0308a9e](https://github.com/medly/medly-components/commit/0308a9e354a7a7df218a2053889740c337040a95))
 
 
 
@@ -274,7 +274,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **core:** updated expandIcon to not show hover styles when active ([#381](https://github.com/medly/medly-components/issues/381)) ([210cdaa](https://github.com/medly/medly-components/commit/210cdaa1f923a7ce5215aec345d2528059e846b1))
+* **core:** updated the expand Icon to not show hover styles when active ([#381](https://github.com/medly/medly-components/issues/381)) ([210cdaa](https://github.com/medly/medly-components/commit/210cdaa1f923a7ce5215aec345d2528059e846b1))
 
 
 
@@ -304,7 +304,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* error not coming when required prop is provided in SingleSelect … ([#397](https://github.com/medly/medly-components/issues/397)) ([80c73eb](https://github.com/medly/medly-components/commit/80c73eba87db6ec347d7f1ed1c38763f6cf008ab))
+* error not encountered when the required prop is provided in SingleSelect … ([#397](https://github.com/medly/medly-components/issues/397)) ([80c73eb](https://github.com/medly/medly-components/commit/80c73eba87db6ec347d7f1ed1c38763f6cf008ab))
 
 
 
@@ -345,14 +345,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* cleanup row background color selection and XS table header divider height ([2e43dca](https://github.com/medly/medly-components/commit/2e43dcab56d4e78c68401645c737277973bd5fa7))
+* clean up row background color selection and XS table header divider height ([2e43dca](https://github.com/medly/medly-components/commit/2e43dcab56d4e78c68401645c737277973bd5fa7))
 * decrease size of pagination component buttons for XS table size to limit footer to 4.0rem heigh ([3616984](https://github.com/medly/medly-components/commit/3616984e9060ababcc4ddb25124227118071e319))
 * increase height of table head cell dividers for XS size ([e97c064](https://github.com/medly/medly-components/commit/e97c064aba67b218d46f009843a6d1e493c7fe83))
 * merge master ([8f28df4](https://github.com/medly/medly-components/commit/8f28df42249dc72600558975846fc85aedf2c5f0))
 * merge master, update snapshots ([4c8a53e](https://github.com/medly/medly-components/commit/4c8a53e3d5b58b148ab8569db4b21f6ee8b16390))
 * remove outlined hoveredStyle border and padding when not hovered ([8ededcd](https://github.com/medly/medly-components/commit/8ededcdfc28a24dbb92438b355cab28367bce9d8))
-* revert some padding/border row changes ([c05df35](https://github.com/medly/medly-components/commit/c05df3504bb1221b7af601f41a952c443ac6f6f9))
-* small cleanup/fixes ([809cc5b](https://github.com/medly/medly-components/commit/809cc5b117f91d976925adc44c94176fdbd3505c))
+* revert some padding or border row changes ([c05df35](https://github.com/medly/medly-components/commit/c05df3504bb1221b7af601f41a952c443ac6f6f9))
+* small cleanup or fixes ([809cc5b](https://github.com/medly/medly-components/commit/809cc5b117f91d976925adc44c94176fdbd3505c))
 * update header padding for XS table size ([05435f1](https://github.com/medly/medly-components/commit/05435f1744eb1b0c199e3303f829de92e0f4a7b6))
 * update outlined hoveredStyle border color to match row bgColor when not hovered ([5f222b9](https://github.com/medly/medly-components/commit/5f222b9d8cdd224c87eb4dc9d18635560c90aa62))
 * update snapshots ([d35aab3](https://github.com/medly/medly-components/commit/d35aab38da6952f4b71a7d4bdcb71cc8094409e6))
