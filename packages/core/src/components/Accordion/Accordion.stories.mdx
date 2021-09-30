@@ -8,7 +8,7 @@ import Text from '../Text';
 
 # Accordion
 
-Simple accordion component with two children components `Accordion.Header` & `Accordion.Content`, which are just wrapper components. You can pass any component as children to `Accordion.Header` & `Accordion.Content`.
+Simple accordion component with two children components `Accordion.Header` and `Accordion.Content`, which are just wrapper components. You can pass any component as children to `Accordion.Header` and `Accordion.Content`.
 
 <Preview withToolbar>
     <Story name="Accordion">
@@ -27,13 +27,13 @@ Simple accordion component with two children components `Accordion.Header` & `Ac
     </Story>
 </Preview>
 
-We have also exposed `Accordion.Context`, so that you can find out the latest active state. Accordion context can be used like below:
+We have also exposed `Accordion.Context` to enable finding the latest active state. Accordion context can be used as follows:
 
 ```tsx
 const [isActive, setActiveState] = useContext(Accordion.Context);
 ```
 
-Type of Accordion Context is:
+Type of Accordion Context:
 
 ```tsx
 export type AccordionContextType = [
