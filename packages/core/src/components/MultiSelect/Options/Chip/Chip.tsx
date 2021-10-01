@@ -12,7 +12,7 @@ const Component: FC<Props> = React.memo(({ id, value, label, disabled, onClear }
     return (
         <Styled.Chip id={chipId} disabled={disabled}>
             <Text textVariant="button2">{label}</Text>
-            <ClearIcon id={`${chipId}-clear`} onClick={onClearHandler} />
+            <ClearIcon id={`${chipId}-clear`} title={`${chipId}-clear-icon`} onClick={onClearHandler} />
         </Styled.Chip>
     );
 });

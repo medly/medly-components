@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.27.13](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.12...@medly-components/core@2.27.13) (2021-10-01)
+
+
+### Bug Fixes
+
+* fix strict null check issue in FileInput, Hidden, Input, Label, … ([#471](https://github.com/medly/medly-components/issues/471)) ([bae1a89](https://github.com/medly/medly-components/commit/bae1a899fc33fa8f6d5885f205f2aa4ee930f393))
+
+
+
+
+
+## [2.27.12](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.11...@medly-components/core@2.27.12) (2021-10-01)
+
+
+### Bug Fixes
+
+* fix strict null check issue in MultiSelect component ([#468](https://github.com/medly/medly-components/issues/468)) ([ab3cd36](https://github.com/medly/medly-components/commit/ab3cd368e60b8281ddc6bfb7b5b8cd2867f17e10))
+
+
+
+
+
 ## [2.27.11](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.10...@medly-components/core@2.27.11) (2021-09-29)
 
 

@@ -1,0 +1,29 @@
+{
+    "name": "@medly-components/markdown",
+    "version": "0.1.1",
+    "sideEffects": false,
+    "main": "dist/cjs/index.js",
+    "module": "dist/es/index.js",
+    "types": "dist/es/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "license": "MIT",
+    "peerDependencies": {
+        "react": "16.x || 17.x",
+        "react-dom": "16.x || 17.x",
+        "styled-components": "^5.1.0"
+    },
+    "dependencies": {
+        "@medly-components/utils": "^1.14.15",
+        "react-markdown": "^7.0.1",
+        "react-syntax-highlighter": "^15.4.4",
+        "remark-directive": "^2.0.0",
+        "remark-footnotes": "^4.0.1",
+        "remark-gfm": "^2.0.0",
+        "unist-util-visit": "^4.1.0"
+    }
+}

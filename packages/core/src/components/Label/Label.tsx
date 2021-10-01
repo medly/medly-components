@@ -5,7 +5,7 @@ import { LabelProps } from './types';
 
 const Component: FC<LabelProps> = React.memo(
     React.forwardRef((props, ref) => (
-        <LabelStyled ref={ref} {...props}>
+        <LabelStyled ref={ref} labelPosition={props.labelPosition!} {...props}>
             {props.children}
         </LabelStyled>
     ))
