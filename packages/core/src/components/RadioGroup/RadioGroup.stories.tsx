@@ -5,7 +5,7 @@ import { RadioGroupProps } from './types';
 
 export const sizes: RadioGroupProps['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
-export const FormWithRadioGroup: React.FC = (props: RadioGroupProps) => {
+export const FormWithRadioGroup: React.FC<RadioGroupProps> = props => {
     const [value, setValue] = useState(),
         handleSubmit = (e: React.FormEvent) => e.preventDefault();
 

@@ -3,6 +3,92 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.27.11](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.10...@medly-components/core@2.27.11) (2021-09-29)
+
+
+### Bug Fixes
+
+* fix strict null check issue in Popup & Pagination component ([#464](https://github.com/medly/medly-components/issues/464)) ([13ba7e2](https://github.com/medly/medly-components/commit/13ba7e2e8c98daa217015ef5aa43d7fb4b6d1aba))
+
+
+
+
+
+## [2.27.10](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.9...@medly-components/core@2.27.10) (2021-09-29)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.27.9](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.8...@medly-components/core@2.27.9) (2021-09-29)
+
+
+### Bug Fixes
+
+* fix regex Denial of service and Weak Cryptography issue ([#465](https://github.com/medly/medly-components/issues/465)) ([36c4fb2](https://github.com/medly/medly-components/commit/36c4fb273a2081168d8eb6bddffb532a7a38e559))
+
+
+
+
+
+## [2.27.8](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.7...@medly-components/core@2.27.8) (2021-09-29)
+
+
+### Bug Fixes
+
+* strict null check for Radio and RadioGroup component ([#461](https://github.com/medly/medly-components/issues/461)) ([6c264f5](https://github.com/medly/medly-components/commit/6c264f582f88ca446958ea35c4a757e3251cc48b))
+* strict null check issue in searchbox component ([#460](https://github.com/medly/medly-components/issues/460)) ([32d66a3](https://github.com/medly/medly-components/commit/32d66a36d66a7b648cbe079ebfcf140160f6e5da))
+
+
+
+
+
+## [2.27.7](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.6...@medly-components/core@2.27.7) (2021-09-28)
+
+
+### Bug Fixes
+
+* strict null check issue in singleselect component ([#458](https://github.com/medly/medly-components/issues/458)) ([d2009d9](https://github.com/medly/medly-components/commit/d2009d9b49056c355179e1a11eb761f98600b361))
+
+
+
+
+
+## [2.27.6](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.5...@medly-components/core@2.27.6) (2021-09-28)
+
+
+### Bug Fixes
+
+* strict null check issue in stepper component ([#454](https://github.com/medly/medly-components/issues/454)) ([3fbe5bb](https://github.com/medly/medly-components/commit/3fbe5bb1c2c29749b9819ac6270981ccd83bd0af))
+
+
+
+
+
+## [2.27.5](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.4...@medly-components/core@2.27.5) (2021-09-28)
+
+
+### Bug Fixes
+
+* strict null check issue in table component ([#453](https://github.com/medly/medly-components/issues/453)) ([9d3b9b2](https://github.com/medly/medly-components/commit/9d3b9b29d5512e28d1cf1ad44d88d8b50f8eda6f))
+
+
+
+
+
+## [2.27.4](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.3...@medly-components/core@2.27.4) (2021-09-28)
+
+
+### Bug Fixes
+
+* css prop issue in toast component ([#457](https://github.com/medly/medly-components/issues/457)) ([2881907](https://github.com/medly/medly-components/commit/2881907054784efa59a08de604c5a1780e2b81e2))
+
+
+
+
+
 ## [2.27.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.2...@medly-components/core@2.27.3) (2021-09-27)
 
 

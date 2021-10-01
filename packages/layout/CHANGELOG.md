@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.29.40](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.39...@medly-components/layout@1.29.40) (2021-09-29)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.39](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.38...@medly-components/layout@1.29.39) (2021-09-29)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.38](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.37...@medly-components/layout@1.29.38) (2021-09-29)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.37](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.36...@medly-components/layout@1.29.37) (2021-09-29)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.36](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.35...@medly-components/layout@1.29.36) (2021-09-28)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.35](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.34...@medly-components/layout@1.29.35) (2021-09-28)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.34](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.33...@medly-components/layout@1.29.34) (2021-09-28)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.29.33](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.32...@medly-components/layout@1.29.33) (2021-09-28)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [1.29.32](https://github.com/medly/medly-components/compare/@medly-components/layout@1.29.31...@medly-components/layout@1.29.32) (2021-09-27)
 
 **Note:** Version bump only for package @medly-components/layout

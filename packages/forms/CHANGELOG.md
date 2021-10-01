@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.21](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.20...@medly-components/forms@1.30.21) (2021-09-29)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.30.20](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.19...@medly-components/forms@1.30.20) (2021-09-29)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.30.19](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.18...@medly-components/forms@1.30.19) (2021-09-29)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.30.18](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.17...@medly-components/forms@1.30.18) (2021-09-29)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.30.17](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.16...@medly-components/forms@1.30.17) (2021-09-28)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.30.16](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.15...@medly-components/forms@1.30.16) (2021-09-28)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.30.15](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.14...@medly-components/forms@1.30.15) (2021-09-28)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.30.14](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.13...@medly-components/forms@1.30.14) (2021-09-28)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [1.30.13](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.12...@medly-components/forms@1.30.13) (2021-09-27)
 
 **Note:** Version bump only for package @medly-components/forms

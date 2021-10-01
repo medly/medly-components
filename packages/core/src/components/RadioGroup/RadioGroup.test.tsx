@@ -2,15 +2,16 @@ import { fireEvent, render, screen, waitFor } from '@test-utils';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { RadioGroup } from './RadioGroup';
+import { RadioGroupProps } from './types';
 
 const renderer = ({
     label = 'Gender',
     name = 'gender',
     helperText = 'Helper Text',
-    errorText = undefined,
+    errorText = '',
     onChange = jest.fn(),
     required = false,
-    validator = undefined,
+    validator,
     onInvalid = jest.fn(),
     onBlur = jest.fn(),
     disabled = false,
@@ -18,7 +19,7 @@ const renderer = ({
         { value: 'female', label: 'Female' },
         { value: 'male', label: 'Male' }
     ]
-}) =>
+}: Partial<RadioGroupProps>) =>
     render(<RadioGroup {...{ required, disabled, label, name, onInvalid, onBlur, validator, helperText, options, errorText, onChange }} />);
 
 describe('Radio Group', () => {

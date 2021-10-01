@@ -4,12 +4,12 @@ I am really glad that you are visiting this page. Thanks for your interest in im
 
 This repo uses yarn workspaces, so you should install `yarn` as the package manager. See [installation guide](https://yarnpkg.com/en/docs/install).
 
-## Project setup
+## Project Setup
 
-1. Fork and clone the repo
-2. Run `yarn` to install dependencies
+1. Fork and clone the repo.
+2. Run `yarn` to install dependencies.
 3. Run `yarn build` to build the packages, so that they will be available across the packages.
-4. Create a branch for your PR with `git checkout -b pr/your-branch-name`
+4. Create a branch for your PR with `git checkout -b pr/your-branch-name`.
 
 > **Tip:** Keep your `master` branch pointing at the original repository and make pull requests from branches on your fork. To do this, run:
 >
@@ -42,29 +42,29 @@ Before committing any thing just run `yarn init:commitizen` once, so that next t
 
 ## Development workflow
 
-After setting the project, run yarn to fetch all the dependencies. Then, you can run several commands:
+After setting the project, run yarn to fetch all the dependencies. Then, you can run the following commands:
 
-- `yarn clean` to delete `node_modules` and remove all linking across packages. If you do this you have to run `yarn` & `yarn build` to build the packages again
-- `yarn storybook` to run storybook for local development
-- `yarn lint` to run both css & ts lint
+- `yarn clean` to delete `node_modules` and remove all linking across packages. If you do this you have to run `yarn` & `yarn build` to build the packages again.
+- `yarn storybook` to run storybook for local development.
+- `yarn lint` to run both css and ts lint.
 - `yarn watch` to continuously bundle the packages. This is helpful when you have linked any package with some local project.
-- `yarn build` to build the packages
-- `yarn test` to run tests and type check
+- `yarn build` to build the packages.
+- `yarn test` to run tests and type check.
 
-## Unit tests
+## Unit Tests
 
-We are using [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro) and [`jest`](https://jestjs.io/) for writing unit test cases. We are trying to maintain 100% test coverage. So please make sure to add unit tests for the changes.
+We use [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro) and [`jest`](https://jestjs.io/) for writing unit test cases. Since we try to maintain 100% test coverage, ensure to add unit tests for the changes.
 
 There are several test commands to help you run the tests:
 
-- `yarn test` to run tests and type check
-- `yarn test:update` to update snapshots
-- `yarn test:jest` is used to run jest with all the compatible jest CLI commands like `yarn test:jest Modal --watch`
-- `yarn test:watch` to watch all the tests
+- `yarn test` to run tests and type check.
+- `yarn test:update` to update snapshots.
+- `yarn test:jest` is used to run jest with all the compatible jest CLI commands like `yarn test:jest Modal --watch`.
+- `yarn test:watch` to watch all the tests.
 
 > **Note:**
 >
-> Please run `yarn build` before running unit tests. You have to run this command only once, but if your changes are spread across multiple packages then you have to run `yarn build` before running any tests.
+> Please run `yarn build` before running unit tests. You have to run this command only once, but if your changes are spread across multiple packages then you have to run `yarn build` before running any test.
 >
 > Some helpful blogs:
 >
@@ -72,7 +72,7 @@ There are several test commands to help you run the tests:
 >
 > https://kentcdodds.com/blog/write-tests
 
-## Pull request
+## Pull Request
 
 PLease fill in all the information asked in the pull request [template](https://github.com/medly/medly-components/blob/master/.github/PULL_REQUEST_TEMPLATE.md), this will help us tto understand your changes in the PR. Before you submit a new PR, please make sure that there is no lint error and none of the tests are failing.
 

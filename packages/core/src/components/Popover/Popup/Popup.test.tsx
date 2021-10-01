@@ -15,21 +15,23 @@ const renderer = (props: PopoverPopupProps) =>
 describe('Popover component', () => {
     afterEach(cleanup);
 
+    const placements: Placement[] = [
+        'top-start',
+        'top',
+        'top-end',
+        'right-start',
+        'right',
+        'right-end',
+        'bottom-end',
+        'bottom',
+        'bottom-start',
+        'left-end',
+        'left',
+        'left-start'
+    ];
+
     describe.each(['with arrow', 'without arrow'])('%s', str => {
-        test.each([
-            'top-start',
-            'top',
-            'top-end',
-            'right-start',
-            'right',
-            'right-end',
-            'bottom-end',
-            'bottom',
-            'bottom-start',
-            'left-end',
-            'left',
-            'left-start'
-        ])('and placement %s, should render properly', (placement: Placement) => {
+        test.each(placements)('and placement %s, should render properly', placement => {
             const { container } = renderer({ placement, withArrow: str === 'with arrow' });
             expect(container).toMatchSnapshot();
         });

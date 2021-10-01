@@ -15,14 +15,21 @@ export const addSizeToColumnConfig = (
     });
 };
 
-export const getUpdatedColumns = (
-    columnConfigs: TableColumnConfig[],
-    isRowSelectable: boolean,
-    isRowExpandable: boolean,
-    size: TableProps['size'],
-    isGroupedTable: boolean,
-    maxColumnSizes: MaxColumnSizes
-): TableColumnConfig[] => [
+export const getUpdatedColumns = ({
+    columnConfigs,
+    size,
+    isGroupedTable,
+    maxColumnSizes,
+    isRowSelectable,
+    isRowExpandable
+}: {
+    columnConfigs: TableColumnConfig[];
+    size: Required<TableProps['size']>;
+    isGroupedTable: boolean;
+    maxColumnSizes: MaxColumnSizes;
+    isRowSelectable?: boolean;
+    isRowExpandable?: boolean;
+}): TableColumnConfig[] => [
     ...(isGroupedTable
         ? [{ ...rowActionsColumnConfig, field: 'group-expansion', size: `minmax(${size === 'L' ? '5.5rem' : '4.8rem'}, 0.1fr)` }]
         : []),
@@ -47,8 +54,8 @@ const getCumulativeTemplate = (configs: TableColumnConfig[]): string => {
                 (val, index) =>
                     val +
                     (curr.children
-                        ? Number(getCumulativeTemplate(curr.children).match(/\d+(\.\d*)?/g)[index])
-                        : Number(curr.size.match(/\d+(\.\d*)?/g)[index]))
+                        ? Number(getCumulativeTemplate(curr.children).match(/\d+(\.\d*)?/g)?.[index] || 0)
+                        : Number(curr.size?.match(/\d+(\.\d*)?/g)?.[index] || 0))
             ),
         [0, 0]
     );
@@ -65,7 +72,7 @@ export const getGridTemplateColumns = (configs: TableColumnConfig[]) => {
             curr.children
                 ? `${acc} ${getCumulativeTemplate(curr.children)}`
                 : visibleChildrenCount === 1 && visibleChildren[0].field === curr.field
-                ? `${acc} minmax(${Number(visibleChildren[0].size.match(/\d+(\.\d*)?/g)[0])}px, 1fr)`
+                ? `${acc} minmax(${Number(visibleChildren[0]?.size?.match(/\d+(\.\d*)?/g)?.[0] || 0)}px, 1fr)`
                 : `${acc} ${curr.size}`,
         ``
     );
@@ -75,7 +82,8 @@ export const getGridTemplateColumns = (configs: TableColumnConfig[]) => {
 export const changeSize = (width: number, dottedField: string, columnConfigs: TableColumnConfig[]) => {
     const newColumnConfigs = [...columnConfigs],
         [currField, nextField] = dottedField.split(/\.(.+)/),
-        index = columnConfigs.findIndex(config => config.field === currField);
+        index = columnConfigs.findIndex(config => config.field === currField),
+        widthRegex = new RegExp(/(minmax\()(.*)(,.*\))/); //NOSONAR
 
     if (index >= 0) {
         const config = { ...newColumnConfigs[index] };
@@ -84,9 +92,9 @@ export const changeSize = (width: number, dottedField: string, columnConfigs: Ta
         } else if (width < 84) {
             config.size = `minmax(84px, ${config.fraction || 1}fr)`;
         } else if (width > 900) {
-            config.size = config.size.replace(/(.*\()(.*)(,.*)/, `$1700px$3`);
+            config.size = config.size?.replace(widthRegex, `$1700px$3`);
         } else {
-            config.size = config.size.replace(/(.*\()(.*)(,.*)/, `$1${width}px$3`);
+            config.size = config.size?.replace(widthRegex, `$1${width}px$3`);
         }
 
         newColumnConfigs[index] = config;
@@ -95,5 +103,7 @@ export const changeSize = (width: number, dottedField: string, columnConfigs: Ta
     return newColumnConfigs;
 };
 
-export const resolveValueByTableSize = (key: TableProps['size'], map: { [k in TableProps['size'] | 'default']?: string }) =>
-    map[key] ? map[key] : map.default;
+export const resolveValueByTableSize = (
+    key: Required<TableProps>['size'],
+    map: { [k in Required<TableProps>['size'] | 'default']?: string }
+): string => map[key] ?? map.default ?? '';

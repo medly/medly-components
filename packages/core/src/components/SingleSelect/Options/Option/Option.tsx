@@ -7,7 +7,7 @@ import { CustomComponentWrapper, OptionStyled } from './Option.styled';
 import { OptionProps } from './types';
 
 const Component: React.FC<OptionProps> = React.memo(props => {
-    const ref = useRef(null),
+    const ref = useRef<HTMLLIElement>(null),
         [areOptionsVisible, setOptionsVisibilityState] = useState(false),
         { value, theme, label, disabled, selected, onClick, hasError, hovered, size, variant, maxWidth, includesNestedOptions } = props,
         id = label.replace(/ /g, '-'),
@@ -29,7 +29,7 @@ const Component: React.FC<OptionProps> = React.memo(props => {
 
     useEffect(() => {
         (selected || hovered) &&
-            ref.current.scrollIntoView({
+            ref.current?.scrollIntoView({
                 block: 'nearest'
             });
     }, [selected, hovered]);

@@ -68,7 +68,7 @@ export const TitleRow: React.FC<TitleRowProps> = React.memo(props => {
                 ) : (
                     <>
                         <Text textVariant="body2" textWeight="Medium">
-                            {data[groupBy]}
+                            {groupBy ? data[groupBy] : ''}
                         </Text>
                         <CountChip>{data.count}</CountChip>
                         <SecondaryContent textVariant="body2" textWeight="Medium">

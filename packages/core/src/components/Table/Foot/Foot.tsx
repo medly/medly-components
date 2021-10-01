@@ -6,8 +6,8 @@ import { TableFootProps } from './types';
 
 export const Foot: React.FC<TableFootProps> = React.memo(props => {
     const { tableSize } = props;
-    const [{ activePage }, setTableState] = useContext(TableStateContext),
-        { onPageChange, totalItems, itemsPerPage, showRowWithCardStyle, size } = useContext(TableComponentsCommonPropsContext),
+    const [{ activePage = 1 }, setTableState] = useContext(TableStateContext),
+        { onPageChange, totalItems = 0, itemsPerPage = 20, showRowWithCardStyle, size } = useContext(TableComponentsCommonPropsContext),
         dataRange = useMemo(() => {
             const countTillPreviousPage = itemsPerPage * (activePage - 1);
             return `${totalItems ? countTillPreviousPage + 1 : totalItems} - ${

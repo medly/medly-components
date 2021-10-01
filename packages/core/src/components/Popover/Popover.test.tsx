@@ -13,7 +13,7 @@ const renderer = (interactionType: InteractionType = 'hover') => {
             </Popover>
         </>
     );
-    return { ...utils, wrapper: utils.container.querySelector('#medly-popover-wrapper') };
+    return { ...utils, wrapper: utils.container.querySelector('#medly-popover-wrapper')! };
 };
 
 describe('Popover component', () => {
@@ -47,7 +47,7 @@ describe('Popover component', () => {
         const { container, wrapper } = renderer('click');
         fireEvent.click(wrapper);
 
-        const popup = container.querySelector('#medly-popover-popup');
+        const popup = container.querySelector('#medly-popover-popup')!;
         fireEvent.click(popup);
         expect(popup).toBeVisible();
     });

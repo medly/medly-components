@@ -42,12 +42,12 @@ const Component: FC<PaginationProps> = React.memo(
         if (!hidePrevNextLinks) {
             links.unshift(
                 <PageNavButton key="first" disabled={currentPage < 2} onClick={onClickHandler(currentPage - 1)}>
-                    <ChevronLeftIcon size="M" />
+                    <ChevronLeftIcon size="M" title="prev" />
                 </PageNavButton>
             );
             links.push(
                 <PageNavButton key="last" disabled={currentPage === totalPages} onClick={onClickHandler(currentPage + 1)}>
-                    <ChevronRightIcon size="M" />
+                    <ChevronRightIcon size="M" title="next" />
                 </PageNavButton>
             );
         }

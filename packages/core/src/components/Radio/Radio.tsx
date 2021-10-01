@@ -33,7 +33,7 @@ const Component: FC<RadioProps> = React.memo(
                     </SelectorLabel>
                 )}
                 <Styled.RadioWrapper size={size}>
-                    <Styled.HiddenRadio id={inputId} size={size} ref={inputRef} hasError={hasError} {...inputProps} />
+                    <Styled.HiddenRadio id={inputId} ref={inputRef} hasError={hasError} {...inputProps} />
                     <Styled.StyledRadio />
                 </Styled.RadioWrapper>
             </Styled.RadioWithLabelWrapper>

@@ -1,8 +1,8 @@
-import { css } from '@medly-components/utils';
+import { css, WithThemeProp } from '@medly-components/utils';
 import { OptionStyled } from '../../SingleSelect/Options/Option/Option.styled';
-import { SearchBoxProps } from '../types';
+import { StyledSearchBoxProps } from '../types';
 
-const activeOptionStyle = ({ theme, size }: SearchBoxProps) => {
+const activeOptionStyle = ({ theme, size }: StyledSearchBoxProps & WithThemeProp) => {
     return css`
         border-radius: 0.8rem;
         box-shadow: ${theme.searchBox.options.boxShadow};
@@ -49,7 +49,11 @@ const getSmallOptionStyle = () => {
     `;
 };
 
-export const getOptionsStyles = ({ theme, size, areOptionsVisible }: SearchBoxProps & { areOptionsVisible?: boolean }) => css`
+export const getOptionsStyles = ({
+    theme,
+    size,
+    areOptionsVisible
+}: StyledSearchBoxProps & WithThemeProp & { areOptionsVisible?: boolean }) => css`
     box-shadow: none;
     border: none;
     padding: 0;

@@ -11,7 +11,7 @@ type Props = {
     areOptionsVisible: boolean;
     handleOptionClick: (op: Option) => void;
     showOptions: () => void;
-    optionsRef: React.MutableRefObject<HTMLUListElement>;
+    optionsRef: React.RefObject<HTMLUListElement>;
 };
 export const useKeyboardNavigation = (props: Props) => {
     const {
@@ -67,7 +67,11 @@ export const useKeyboardNavigation = (props: Props) => {
     }, [rightPress, areOptionsVisible, hoveredOption]);
 
     useEffect(() => {
-        isFocused.current && leftPress && areOptionsVisible && nestedOptions.current.length && hoverOption(nestedOptions.current.pop());
+        isFocused.current &&
+            leftPress &&
+            areOptionsVisible &&
+            nestedOptions.current.length > 0 &&
+            hoverOption(nestedOptions.current.pop()!);
     }, [leftPress, areOptionsVisible]);
 
     useEffect(() => {

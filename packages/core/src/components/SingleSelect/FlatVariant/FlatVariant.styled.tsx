@@ -1,14 +1,14 @@
-import { css, InjectClassName, styled } from '@medly-components/utils';
+import { css, InjectClassName, styled, WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Label from '../../Label';
-import { FlatVariantProps } from './types';
+import { StyledFlatVariantProps } from './types';
 
 const getButtonStyle = ({
     theme,
     areOptionsVisible,
     errorText,
     state
-}: FlatVariantProps & { state: 'default' | 'hovered' | 'pressed' | 'disabled' }) => {
+}: StyledFlatVariantProps & WithThemeProp & { state: 'default' | 'hovered' | 'pressed' | 'disabled' }) => {
     const { valueColor, labelColor, bgColor } = theme.singleSelect.variant.flat;
     const disabled = state === 'disabled';
     return css`
@@ -23,7 +23,7 @@ const getButtonStyle = ({
     `;
 };
 
-const buttonStyle = (props: FlatVariantProps) => css`
+const buttonStyle = (props: StyledFlatVariantProps & WithThemeProp) => css`
     &:disabled {
         ${getButtonStyle({ ...props, state: 'disabled' })}
     }
@@ -48,7 +48,7 @@ export const OuterWrapper = styled('div')`
     width: 100%;
 `;
 
-export const HelperText = styled('span')<{ isError: boolean; disabled: boolean }>`
+export const HelperText = styled('span')<{ isError?: boolean; disabled?: boolean }>`
     color: ${({ isError, disabled, theme }) =>
         theme.singleSelect.variant.flat.labelColor[disabled ? 'disabled' : isError ? 'error' : 'default']};
     font-size: 1rem;
@@ -58,13 +58,13 @@ export const HelperText = styled('span')<{ isError: boolean; disabled: boolean }
     user-select: none;
 `;
 
-export const Suffix = styled(InjectClassName)<{ areOptionsVisible: boolean }>`
+export const Suffix = styled(InjectClassName)<{ areOptionsVisible?: boolean }>`
     pointer-events: none;
     transition: transform 200ms ease-out;
     transform: ${({ areOptionsVisible }) => (areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)')};
 `;
 
-export const FlatVariantStyled = styled('button').attrs({ type: 'button' })<FlatVariantProps>`
+export const FlatVariantStyled = styled('button').attrs({ type: 'button' })<StyledFlatVariantProps>`
     border: none;
     position: relative;
     user-select: none;

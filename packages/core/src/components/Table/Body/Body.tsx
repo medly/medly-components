@@ -46,7 +46,14 @@ const Body: React.FC<TableBodyProps> = React.memo(props => {
                         {...{ ...restProps, onGroupedRowSelection }}
                     />
                 ) : (
-                    <Row id={identifier} key={identifier} data={row} {...{ ...restProps, selectedRowIds, onRowSelection }} />
+                    <Row
+                        id={identifier}
+                        key={identifier}
+                        data={row}
+                        selectedRowIds={selectedRowIds}
+                        onRowSelection={onRowSelection}
+                        {...restProps}
+                    />
                 );
             })}
             {withMinimap && <Minimap tableRef={tableRef} minimapDimensionDeps={minimapDimensionDeps} />}
