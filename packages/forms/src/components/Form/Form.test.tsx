@@ -1,5 +1,4 @@
 import { cleanup, fireEvent, render, screen } from '@test-utils';
-import { format } from 'date-fns';
 import React from 'react';
 import { FormCustomComponent } from '../Fields/types';
 import { Form } from './Form';
@@ -317,7 +316,7 @@ describe('Form', () => {
             fireEvent.submit(screen.getByRole('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith({
                 experience: {
-                    startDate: format(new Date(new Date().getFullYear(), new Date().getMonth(), 2), 'dd/MM/yyyy'),
+                    startDate: '02/09/2021',
                     endDate: ''
                 }
             });
