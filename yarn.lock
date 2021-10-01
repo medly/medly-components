@@ -2622,6 +2622,20 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.16.tgz#07a7342f6b61ea1ecbfb31e6e23bf7a8c79b9b57"
   integrity sha512-SFtLGIGZummuyMDPRL5KdmpgI8U19Ble28UjEWihPjGxF1Lgj8aDjLWY8KiaUy9eqb9CKiVCqEIrK9jbnANfkw==
 
+"@medly-components/theme@2.20.0":
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/@medly-components/theme/-/theme-2.20.0.tgz#9e2a847815de8d00cb6292dc35d81238475f2efc"
+  integrity sha512-HCrU6LzdjMY32exIYVhBWksPxw1RcI/UPZ6McgFjmN7DD4XHZvdwv5zD7LRAynIXsvE01VrXz2Nf+0Os+06EUA==
+
+"@medly-components/utils@1.14.14":
+  version "1.14.14"
+  resolved "https://registry.yarnpkg.com/@medly-components/utils/-/utils-1.14.14.tgz#1672114d6fd19c98297e43673391e97c71450ff0"
+  integrity sha512-iyb4GarlPj5qELF6cORVUI45Fb2ojf8neM3Pb442WsCWqESgD/uRn4VuJbkoZJgWyIzHeD1T97pWdCbJZXr6+Q==
+  dependencies:
+    "@medly-components/theme" "2.20.0"
+    date-fns "^2.16.1"
+    swr "^0.5.4"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

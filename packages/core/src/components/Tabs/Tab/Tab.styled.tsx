@@ -121,6 +121,14 @@ const flatOutlinedStyle = css<StyledTabProps>`
     }
 `;
 
+const flatBackgroundStyle = css`
+    background-color: transparent;
+
+    &:disabled {
+        background-color: transparent;
+    }
+`;
+
 export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs }))<StyledTabProps>`
     padding: 1.6rem;
     user-select: none;
@@ -167,6 +175,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     ${({ active }) => (active ? activeStyle : nonActiveStyle)}
     ${({ variant }) => variant === 'solid' && solidStyle};
     ${({ variant }) => (variant === 'flat' || variant === 'outlined') && flatOutlinedStyle};
+    ${({ variant }) => variant === 'flat' && flatBackgroundStyle};
 `;
 
 export const LabelAndDetailsWrapper = styled.div`
