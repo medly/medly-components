@@ -7,7 +7,7 @@ import { Hidden } from './Hidden';
 const useMediaQueryMock = jest.fn();
 
 jest.mock('@medly-components/utils', () => ({
-    ...jest.requireActual('@medly-components/utils'),
+    ...(jest.requireActual('@medly-components/utils') as any),
     useMediaQuery: jest.fn()
 }));
 

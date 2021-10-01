@@ -18,12 +18,12 @@
         "styled-components": "^5.1.0"
     },
     "dependencies": {
+        "@medly-components/utils": "^1.14.15",
         "react-markdown": "^7.0.1",
         "react-syntax-highlighter": "^15.4.4",
         "remark-directive": "^2.0.0",
         "remark-footnotes": "^4.0.1",
         "remark-gfm": "^2.0.0",
-        "unist-util-visit": "^4.1.0",
-        "@medly-components/utils": "1.14.14"
+        "unist-util-visit": "^4.1.0"
     }
 }
