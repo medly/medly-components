@@ -12,7 +12,7 @@ export interface DefaultSelected {
     label: string;
 }
 
-export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'size'>, WithThemeProp {
+export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'size'> {
     /** Array of selected values */
     values?: any[];
     /** This method will be called with selected values */
@@ -49,7 +49,8 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     showTooltipForHelperAndErrorText?: boolean;
 }
 
-export interface SelectWrapperProps extends Omit<MultiSelectProps, 'ref' | 'options'> {
+export interface SelectWrapperProps extends Omit<MultiSelectProps, 'ref' | 'options'>, WithThemeProp {
+    variant: Required<MultiSelectProps>['variant'];
     isErrorPresent?: boolean;
     areOptionsVisible?: boolean;
 }
