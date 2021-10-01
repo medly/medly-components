@@ -1,11 +1,11 @@
 import { Theme } from '@medly-components/theme';
-import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps } from '@medly-components/utils';
 import { StyledComponent } from 'styled-components';
 import Label from '../Label';
 import { LabelPositions } from '../Label/types';
 import Text from '../Text';
 
-export interface FieldWithLabelProps extends HTMLProps<HTMLDivElement>, Omit<WithThemeProp, 'as'> {
+export interface FieldWithLabelProps extends HTMLProps<HTMLDivElement> {
     /** Label Position */
     labelPosition?: LabelPositions;
     /** Takes full width of the parent component */

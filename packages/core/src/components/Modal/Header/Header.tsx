@@ -6,14 +6,14 @@ import * as Styled from './Header.styled';
 
 const Component: React.FC = React.memo(({ children }) => {
     const { id, setHeaderHeight, isSmallScreen, scrollState } = useContext(ModalContext);
-    const headerRef = useRef<HTMLDivElement>();
+    const headerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         headerRef.current && setHeaderHeight(headerRef.current.offsetHeight);
     }, [headerRef.current, isSmallScreen]);
 
     return (
-        <Styled.Header ref={headerRef} {...{ scrollState, id: `${id}-header` }}>
+        <Styled.Header id={`${id}-header`} ref={headerRef} scrollState={scrollState}>
             {React.Children.map(children, c => {
                 return isValidStringOrNumber(c) ? <Text textVariant={isSmallScreen ? 'h3' : 'h2'}>{c}</Text> : c;
             })}

@@ -1,7 +1,7 @@
-import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
-export interface InputProps extends HTMLProps<HTMLInputElement>, WithThemeProp {
+export interface InputProps extends HTMLProps<HTMLInputElement> {
     /** Label Position */
     labelPosition?: LabelPositions;
     /** Takes full width of the parent component */
