@@ -6,6 +6,7 @@ import { DatePickerProps as Props } from './types';
 
 export const variants: Props['variant'][] = ['outlined', 'filled', 'fusion'];
 export const sizes: Props['size'][] = ['S', 'M'];
+export const calendarIconPositions: Props['calendarIconPosition'][] = ['left', 'right'];
 export const displayFormats: Props['displayFormat'][] = [
     'dd/MM/yyyy',
     'MM/dd/yyyy',
