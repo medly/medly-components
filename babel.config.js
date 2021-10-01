@@ -40,7 +40,10 @@ module.exports = function (api) {
     if (api.env('production'))
         ignore.push('**/*.test.tsx', '**/*.test.ts', '**/test-utils.tsx', '**/*.stories.mdx', '**/*.stories.tsx', '__snapshots__', 'docs');
 
-    if (api.env('development') || api.env('storybook')) ignore.push('**/*.test.tsx', '**/*.test.ts', '__snapshots__');
+    if (api.env('development') || api.env('storybook')) {
+        ignore.push('**/*.test.tsx', '**/*.test.ts', '__snapshots__');
+        plugins.push(['@babel/plugin-transform-modules-commonjs']);
+    }
 
     if (api.env('test')) plugins.push('@babel/plugin-transform-runtime');
 
