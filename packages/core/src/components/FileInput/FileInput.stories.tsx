@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import { FileInput } from './FileInput';
 import { FileInputProps } from './types';
 
-const labelPosition: FileInputProps['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
+const labelPositions: Required<FileInputProps>['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 
 export const Basic = () => {
-    const [files, setFiles] = useState<FileList>();
+    // @ts-ignore
+    const [files, setFiles] = useState<FileList>([]);
 
     return (
         <FileInput
@@ -17,7 +18,7 @@ export const Basic = () => {
             fullWidth={boolean('Full Width', false)}
             disabled={boolean('Disabled', false)}
             label={text('Label', 'Test file')}
-            labelPosition={select('Label Position', labelPosition, 'top')}
+            labelPosition={select('Label Position', labelPositions, 'top')}
             required={boolean('Required', false)}
             onChange={setFiles}
             description={text('Description', 'Upload test file')}

@@ -28,14 +28,16 @@ const Component: FC<FileInputProps> = React.memo(
                 (event: any) => {
                     disabled && event.preventDefault();
                     onFocus && onFocus(event);
-                    inputRef.current.value = null;
+                    if (inputRef.current) {
+                        inputRef.current.value = '';
+                    }
                 },
                 [disabled, onFocus]
             ),
             handleOnChange = useCallback(
                 (event: React.FormEvent<HTMLInputElement>) => {
                     const target = event.target as HTMLInputElement;
-                    onChange(target.files);
+                    target.files && onChange(target.files);
                 },
                 [onChange]
             );
@@ -53,7 +55,7 @@ const Component: FC<FileInputProps> = React.memo(
         return (
             <FieldWithLabel id={`${id}-field`} {...{ fullWidth, labelPosition }}>
                 {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
-                <Styled.Label id={`${id}-label`} onClick={handleLabelClick} disabled={disabled} fullWidth={fullWidth}>
+                <Styled.Label id={`${id}-label`} htmlFor={id} onClick={handleLabelClick} disabled={disabled} fullWidth={fullWidth}>
                     {inputPlaceholder}
                     <Styled.Input id={id} ref={inputRef} files={files} required={required} {...restProps} onChange={handleOnChange} />
                 </Styled.Label>

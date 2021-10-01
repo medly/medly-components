@@ -125,6 +125,7 @@ exports[`FileInput component should render properly with all props 1`] = `
     <label
       class="c3"
       disabled=""
+      for="medly-file-input"
       id="medly-file-input-label"
     >
       foo.txt, bar.txt
@@ -216,6 +217,7 @@ exports[`FileInput component should render properly with default props 1`] = `
     
     <label
       class="c1"
+      for="medly-file-input"
       id="medly-file-input-label"
     >
       Click to choose file
