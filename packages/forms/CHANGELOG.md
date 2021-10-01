@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.23](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.22...@medly-components/forms@1.30.23) (2021-10-01)
+
+
+### Bug Fixes
+
+* fix strict null check issue in FileInput, Hidden, Input, Label, … ([#471](https://github.com/medly/medly-components/issues/471)) ([bae1a89](https://github.com/medly/medly-components/commit/bae1a899fc33fa8f6d5885f205f2aa4ee930f393))
+
+
+
+
+
 ## [1.30.22](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.21...@medly-components/forms@1.30.22) (2021-10-01)
 
 
