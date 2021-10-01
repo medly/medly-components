@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, waitFor } from '@test-utils';
+import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import React, { useCallback, useState } from 'react';
 import Drawer from './';
 
@@ -29,9 +29,9 @@ const scrollTo = (scrollHeight: number, clientHeight: number, scrollTop: number)
 };
 
 describe('Drawer component', () => {
-    const originalScrollHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollHeight'),
-        originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight'),
-        originalScrollTop = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollTop');
+    const originalScrollHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollHeight')!,
+        originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight')!,
+        originalScrollTop = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollTop')!;
 
     beforeAll(() => scrollTo(500, 500, 0));
 
@@ -42,8 +42,9 @@ describe('Drawer component', () => {
     });
 
     afterEach(cleanup);
+    const positions: ('left' | 'right')[] = ['left', 'right'];
 
-    test.each(['left', 'right'])('should render properly with %s positioned', async (position: 'left' | 'right') => {
+    test.each(positions)('should render properly with %s positioned', async position => {
         const { container } = render(<DummyComponent position={position} open />);
         expect(container).toMatchSnapshot();
     });
@@ -58,23 +59,25 @@ describe('Drawer component', () => {
 
     it('should close drawer component on click on close icon', async () => {
         const { container } = render(<DummyComponent open />);
-        fireEvent.click(container.querySelector('#medly-drawer-close-icon'));
-        fireEvent.animationEnd(container.querySelector('#medly-drawer'));
+        fireEvent.click(screen.getByTitle('medly-drawer-close-icon'));
+        fireEvent.animationEnd(container.querySelector('#medly-drawer') as HTMLDivElement);
         await waitFor(() => expect(container.querySelector('aside')).toBeNull());
     });
 
     it('should close drawer component on esc key press', async () => {
         const { container } = render(<DummyComponent open />);
         fireEvent.keyDown(container, { key: 'Escape', code: 27 });
-        fireEvent.animationEnd(container.querySelector('#medly-drawer'));
+        fireEvent.animationEnd(container.querySelector('#medly-drawer') as HTMLDivElement);
         await waitFor(() => expect(container.querySelector('aside')).toBeNull());
     });
 
-    test.each([
+    const testData: ['left' | 'center' | 'right', string][] = [
         ['left', 'flex-start'],
         ['center', 'center'],
         ['right', 'flex-end']
-    ])('should render footer element %s aligned', async (position: 'left' | 'center' | 'right', flexPosition) => {
+    ];
+
+    test.each(testData)('should render footer element %s aligned', async (position, flexPosition) => {
         const { container } = render(<DummyComponent open alignFooterItems={position} />);
         expect(container.querySelector('#medly-drawer-footer')).toHaveStyle(`
             justify-content: ${flexPosition}
@@ -82,9 +85,10 @@ describe('Drawer component', () => {
     });
 
     it('should hide shadow of header on scroll to top', () => {
-        const { container } = render(<DummyComponent open />);
+        const { container, getByRole } = render(<DummyComponent open />);
         scrollTo(800, 500, 0);
-        fireEvent.scroll(container.querySelector('#medly-drawer-content'), { target: { scrollY: 0 } });
+        fireEvent.scroll(container.querySelector('#medly-drawer-content') as HTMLDivElement, { target: { scrollY: 0 } });
+        getByRole('');
         expect(container.querySelector('#medly-drawer-header')).not.toHaveStyle(
             `box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`
         );
@@ -93,7 +97,7 @@ describe('Drawer component', () => {
     it('should hide shadow of footer on scroll to bottom', () => {
         const { container } = render(<DummyComponent open />);
         scrollTo(800, 500, 300);
-        fireEvent.scroll(container.querySelector('#medly-drawer-content'), { target: { scrollY: 300 } });
+        fireEvent.scroll(container.querySelector('#medly-drawer-content') as HTMLDivElement, { target: { scrollY: 300 } });
         expect(container.querySelector('#medly-drawer-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
         expect(container.querySelector('#medly-drawer-footer')).not.toHaveStyle(
             `box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`
@@ -103,7 +107,7 @@ describe('Drawer component', () => {
     it('should show shadow of header and footer on scroll', () => {
         const { container } = render(<DummyComponent open />);
         scrollTo(800, 500, 100);
-        fireEvent.scroll(container.querySelector('#medly-drawer-content'), { target: { scrollY: 100 } });
+        fireEvent.scroll(container.querySelector('#medly-drawer-content') as HTMLDivElement, { target: { scrollY: 100 } });
         expect(container.querySelector('#medly-drawer-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
         expect(container.querySelector('#medly-drawer-footer')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
     });
