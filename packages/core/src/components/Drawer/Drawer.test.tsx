@@ -85,10 +85,9 @@ describe('Drawer component', () => {
     });
 
     it('should hide shadow of header on scroll to top', () => {
-        const { container, getByRole } = render(<DummyComponent open />);
+        const { container } = render(<DummyComponent open />);
         scrollTo(800, 500, 0);
         fireEvent.scroll(container.querySelector('#medly-drawer-content') as HTMLDivElement, { target: { scrollY: 0 } });
-        getByRole('');
         expect(container.querySelector('#medly-drawer-header')).not.toHaveStyle(
             `box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`
         );
