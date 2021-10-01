@@ -13,7 +13,8 @@ module.exports = {
         '!<rootDir>/packages/icons/**/*',
         '!<rootDir>/packages/**/stories/**',
         '!<rootDir>/packages/**/index.(ts|tsx)',
-        '!<rootDir>/packages/**/types.(ts|tsx)'
+        '!<rootDir>/packages/**/types.(ts|tsx)',
+        '!<rootDir>/packages/markdown/**'
     ],
     coverageDirectory: '<rootDir>/coverage/',
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],

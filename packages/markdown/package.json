@@ -23,6 +23,7 @@
         "remark-directive": "^2.0.0",
         "remark-footnotes": "^4.0.1",
         "remark-gfm": "^2.0.0",
-        "unist-util-visit": "^4.1.0"
+        "unist-util-visit": "^4.1.0",
+        "@medly-components/utils": "1.14.14"
     }
 }
