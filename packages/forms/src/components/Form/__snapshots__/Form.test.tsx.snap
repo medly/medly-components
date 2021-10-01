@@ -2288,6 +2288,7 @@ exports[`Form should render properly with initial state 1`] = `
                   fill="none"
                   height="1em"
                   id="graduation-count-chip-clear"
+                  title="graduation-count-chip-clear-icon"
                   viewBox="0 0 24 24"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"

@@ -1,20 +1,23 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import React from 'react';
 import { MultiSelect } from './MultiSelect';
+import { MultiSelectProps } from './types';
 
 describe('MultiSelect component', () => {
     afterEach(cleanup);
-    const options = [
-        { value: 'all', label: 'All' },
-        { value: 'Dummy1', label: 'Dummy1' },
-        {
-            label: 'Nested Options',
-            value: [
-                { value: 'Dummy2', label: 'Dummy2' },
-                { value: 'Dummy3', label: 'Dummy3' }
-            ]
-        }
-    ];
+
+    const sizes: Required<MultiSelectProps>['size'][] = ['S', 'M'],
+        options = [
+            { value: 'all', label: 'All' },
+            { value: 'Dummy1', label: 'Dummy1' },
+            {
+                label: 'Nested Options',
+                value: [
+                    { value: 'Dummy2', label: 'Dummy2' },
+                    { value: 'Dummy3', label: 'Dummy3' }
+                ]
+            }
+        ];
 
     it('should render correctly with default props', () => {
         const mockOnChange = jest.fn(),
@@ -39,7 +42,7 @@ describe('MultiSelect component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['S', 'M'])('should render properly with %s size', (size: 'S' | 'M') => {
+    test.each(sizes)('should render properly with %s size', size => {
         const { container } = render(
             <MultiSelect
                 values={['disabled']}
@@ -163,66 +166,60 @@ describe('MultiSelect component', () => {
     });
 
     it('should clear options on click onClear function', () => {
-        const { container } = render(<MultiSelect values={['Dummy1', 'Dummy2']} options={options} onChange={jest.fn()} />);
-        fireEvent.click(container.querySelector('#medly-multiSelect-count-chip-clear'));
+        render(<MultiSelect id="dummy" values={['Dummy1', 'Dummy2']} options={options} onChange={jest.fn()} />);
+        fireEvent.click(screen.getByTitle('dummy-count-chip-clear-icon'));
         expect(screen.queryByRole('list')).toBeNull();
     });
 
     it('should show options on input change', () => {
         render(<MultiSelect options={options} />);
-        const input = document.getElementById('medly-multiSelect-input');
-        fireEvent.change(input, { target: { value: 'Dummy2' } });
+        fireEvent.change(screen.getByRole('textbox'), { target: { value: 'Dummy2' } });
         expect(screen.queryByRole('list')).toBeVisible();
     });
 
     it('should not show options if options are hidden', () => {
         render(<MultiSelect id="multiSelect" options={options} disabled={false} />);
-        const wrapper = document.getElementById('multiSelect-wrapper');
-        const input = document.getElementById('multiSelect-input');
-        fireEvent.change(input, { target: { value: 'Dummy2' } });
+        const wrapper = document.getElementById('multiSelect-wrapper') as HTMLDivElement;
+        fireEvent.change(screen.getByRole('textbox'), { target: { value: 'Dummy2' } });
         fireEvent.click(wrapper);
         expect(screen.queryByRole('list')).toBeNull();
     });
 
     it('should maintain focus even on blur of input', async () => {
         render(<MultiSelect options={options} />);
-        const input = document.getElementById('medly-multiSelect-input');
+        const input = screen.getByRole('textbox');
         fireEvent.change(input, { target: { value: 'Dummy' } });
-        fireEvent.click(document.getElementById('Dummy1-wrapper'));
+        fireEvent.click(document.getElementById('Dummy1-wrapper') as HTMLDivElement);
         expect(input).toBe(document.activeElement);
     });
 
     it('should make input required if options.length is zero and multiSelect is required', async () => {
-        const { container, findByText } = render(
-            <MultiSelect id="pharmacy" values={[]} options={options} onChange={jest.fn()} required={true} />
-        );
-        fireEvent.invalid(container.querySelector('input'));
+        const { findByText } = render(<MultiSelect id="pharmacy" values={[]} options={options} onChange={jest.fn()} required={true} />);
+        fireEvent.invalid(screen.getByRole('textbox'));
         const message = await findByText('Please select at least one option.');
         expect(message).toBeInTheDocument();
     });
 
     it('should render with passed error text', async () => {
-        const { container, findByText } = render(
-            <MultiSelect options={options} values={['Dummy1']} onChange={jest.fn()} errorText="some error" />
-        );
-        fireEvent.invalid(container.querySelector('input'));
+        const { findByText } = render(<MultiSelect options={options} values={['Dummy1']} onChange={jest.fn()} errorText="some error" />);
+        fireEvent.invalid(screen.getByRole('textbox'));
         const message = await findByText('some error');
         expect(message).toBeInTheDocument();
     });
 
     it('should make input read-only when required is false along with isSearchable', () => {
-        const { container } = render(<MultiSelect options={options} isSearchable={false} required={false} />);
-        const input = container.querySelector('input');
+        render(<MultiSelect options={options} isSearchable={false} required={false} />);
+        const input = screen.getByRole('textbox');
         fireEvent.focus(input);
         expect(input).not.toBe(document.activeElement);
     });
 
     it('should call validator with error message', async () => {
         const validatorMock = (val: any[]) => (val.length === 0 ? 'error' : '');
-        const { container, findByText } = render(<MultiSelect options={options} validator={validatorMock} />);
-        const input = container.querySelector('input');
+        const { findByText } = render(<MultiSelect options={options} validator={validatorMock} />);
+        const input = screen.getByRole('textbox');
         fireEvent.focus(input);
-        fireEvent.blur(document.getElementById('medly-multiSelect-wrapper'));
+        fireEvent.blur(document.getElementById('medly-multiSelect-wrapper') as HTMLDivElement);
         const message = await findByText('error');
         expect(message).toBeInTheDocument();
     });
