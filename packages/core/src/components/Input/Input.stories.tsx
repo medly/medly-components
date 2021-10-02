@@ -4,7 +4,7 @@ import React from 'react';
 import { Input } from './Input';
 import { InputProps } from './types';
 
-const labelPosition: InputProps['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
+const labelPositions: Required<InputProps>['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 
 export const ThemeInterface: React.FC<InputTheme> = () => null;
 ThemeInterface.defaultProps = {
@@ -18,7 +18,7 @@ export const Basic = () => (
         fullWidth={boolean('Full Width', false)}
         disabled={boolean('Disabled', false)}
         label={text('Label', 'Email Address')}
-        labelPosition={select('Label Position', labelPosition, 'top')}
+        labelPosition={select('Label Position', labelPositions, 'top')}
         required={boolean('Required', false)}
         placeholder={text('Placeholder', 'Enter Email Address')}
         description={text('Description', 'We will never share your email with anyone')}

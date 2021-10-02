@@ -6,7 +6,7 @@ import * as Styled from './Content.styled';
 
 const Component: React.FC = React.memo(props => {
     const { id, dispatch, scrollState, headerHeight } = useContext(ModalContext),
-        contentRef = useRef(),
+        contentRef = useRef<HTMLDivElement>(null),
         handleScroll = useScrollState({ ref: contentRef, scrollState, dispatch });
 
     return <Styled.Content ref={contentRef} onScroll={handleScroll} {...{ headerHeight, scrollState, id: `${id}-content` }} {...props} />;

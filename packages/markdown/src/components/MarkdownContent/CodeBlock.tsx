@@ -2,7 +2,7 @@
 import React from 'react';
 import { CodeComponent } from 'react-markdown/lib/ast-to-react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { tomorrow } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import tomorrow from './tomorrow';
 
 export const CodeBlock: CodeComponent = React.memo(props => {
     const { inline, className, children, ref, ...restProps } = props,

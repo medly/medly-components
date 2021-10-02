@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render } from '@test-utils';
+import { cleanup, fireEvent, render, screen } from '@test-utils';
 import React from 'react';
 import { FileInput } from './FileInput';
 
@@ -42,9 +42,8 @@ describe('FileInput component', () => {
         const mockOnFocus = jest.fn();
         const mockOnChange = jest.fn();
         // @ts-ignore
-        const { container } = render(<FileInput disabled files={[]} onFocus={mockOnFocus} onChange={mockOnChange} />);
-        const label = container.querySelector('#medly-file-input-label');
-        fireEvent.click(label);
+        render(<FileInput disabled files={[]} onFocus={mockOnFocus} onChange={mockOnChange} placeholder="Click to upload file" />);
+        fireEvent.click(screen.getByText('Click to upload file'));
         expect(mockOnFocus).toHaveBeenCalled();
     });
 
@@ -52,8 +51,8 @@ describe('FileInput component', () => {
         const mockOnFocus = jest.fn();
         const mockOnChange = jest.fn();
         // @ts-ignore
-        const { container } = render(<FileInput files={[]} onFocus={mockOnFocus} onChange={mockOnChange} />),
-            input = container.querySelector('#medly-file-input');
+        render(<FileInput files={[]} onFocus={mockOnFocus} onChange={mockOnChange} placeholder="Click to upload file" />);
+        const input = screen.getByLabelText('Click to upload file');
 
         Object.defineProperty(input, 'files', {
             value: [foo, bar]
