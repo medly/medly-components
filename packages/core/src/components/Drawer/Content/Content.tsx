@@ -5,7 +5,7 @@ import { DrawerContext } from '../Drawer.context';
 import { ContentStyled } from './Content.styled';
 
 const Component: React.FC = React.memo(props => {
-    const contentRef = useRef(),
+    const contentRef = useRef<HTMLDivElement>(null),
         { id, dispatch, scrollState } = useContext(DrawerContext),
         handleScroll = useScrollState({ ref: contentRef, scrollState, dispatch });
 

@@ -10,14 +10,13 @@ import { DialogBoxProps, DialogBoxStaticProps } from './types';
 
 const Component: FC<DialogBoxProps> = React.memo(
     React.forwardRef((props, ref) => {
-        const { open, onCloseModal, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
-            id = restProps.id || 'medly-dialog-box',
+        const { id, open, onCloseModal, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
             isEscPressed = useKeyPress('Escape'),
             dialogBoxRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
             [shouldRender, setShouldRender] = useState(open);
 
         const handleBackgroundClick = useCallback(() => {
-            shouldCloseOnOutsideClick && onCloseModal();
+            shouldCloseOnOutsideClick && onCloseModal && onCloseModal();
         }, [shouldCloseOnOutsideClick, onCloseModal]);
 
         useEffect(() => {
@@ -38,22 +37,21 @@ const Component: FC<DialogBoxProps> = React.memo(
         }, [open]);
 
         useEffect(() => {
-            open && isEscPressed && onCloseModal();
+            open && isEscPressed && onCloseModal && onCloseModal();
         }, [open, isEscPressed]);
 
-        return (
-            shouldRender && (
-                <DialogBoxBackgroundStyled {...{ ...restProps, id, open }} onClick={handleBackgroundClick}>
-                    <Popup ref={dialogBoxRef} id={`${id}-popup`} onAnimationEnd={handleAnimationEnd} {...{ minWidth, minHeight, open }}>
-                        <DialogBoxContext.Provider value={{ id }}>{children}</DialogBoxContext.Provider>
-                    </Popup>
-                </DialogBoxBackgroundStyled>
-            )
-        );
+        return shouldRender ? (
+            <DialogBoxBackgroundStyled {...{ ...restProps, id, open }} onClick={handleBackgroundClick}>
+                <Popup ref={dialogBoxRef} id={`${id}-popup`} onAnimationEnd={handleAnimationEnd} {...{ minWidth, minHeight, open }}>
+                    <DialogBoxContext.Provider value={{ id: id! }}>{children}</DialogBoxContext.Provider>
+                </Popup>
+            </DialogBoxBackgroundStyled>
+        ) : null;
     })
 );
 
 Component.defaultProps = {
+    id: 'medly-dialog-box',
     open: false,
     shouldCloseOnOutsideClick: false
 };

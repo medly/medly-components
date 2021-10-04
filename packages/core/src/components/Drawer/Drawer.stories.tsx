@@ -92,7 +92,7 @@ export const Basic = () => {
             >
                 <Drawer.Header>Add Filters</Drawer.Header>
                 <Drawer.Content>
-                    <FilterHeader label="CONTRACT" onClear={clearDates} showClear={contract.startDate || contract.endDate} />
+                    <FilterHeader label="CONTRACT" onClear={clearDates} showClear={!!contract.startDate || !!contract.endDate} />
                     <DateRangePicker value={contract} onChange={setContract} fullWidth withSingleMonth />
                     <FilterHeader label="LOCATION" onClear={clearLocation} showClear={locations.length > 0} />
                     <MultiSelect options={locationOptions} values={locations} onChange={setLocation} fullWidth />
