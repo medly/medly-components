@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.28.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.0...@medly-components/core@2.28.1) (2021-10-04)
+
+
+### Bug Fixes
+
+* fix strict null issue in Drawer and DialogBox component ([#474](https://github.com/medly/medly-components/issues/474)) ([bd2cb26](https://github.com/medly/medly-components/commit/bd2cb267933c1dc4f71683dc299bd47fd1667d49))
+
+
+
+
+
 # [2.28.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.13...@medly-components/core@2.28.0) (2021-10-04)
 
 

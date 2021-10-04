@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.25](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.24...@medly-components/forms@1.30.25) (2021-10-04)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [1.30.24](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.23...@medly-components/forms@1.30.24) (2021-10-04)
 
 **Note:** Version bump only for package @medly-components/forms
