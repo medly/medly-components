@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.28.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.13...@medly-components/core@2.28.0) (2021-10-04)
+
+
+### Features
+
+* add calendar icon position support ([#470](https://github.com/medly/medly-components/issues/470)) ([026410a](https://github.com/medly/medly-components/commit/026410a010e13e356651de4433a77575361c3414)), closes [#451](https://github.com/medly/medly-components/issues/451) [#451](https://github.com/medly/medly-components/issues/451) [#451](https://github.com/medly/medly-components/issues/451)
+
+
+
+
+
 ## [2.27.13](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.12...@medly-components/core@2.27.13) (2021-10-01)
 
 
