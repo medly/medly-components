@@ -27,6 +27,7 @@ const Component: React.FC<DatePickerProps> = React.memo(
                 minSelectableDate,
                 maxSelectableDate,
                 showCalendarIcon,
+                calendarIconPosition,
                 ...restProps
             } = props,
             id = props.id || props.label.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
@@ -122,7 +123,7 @@ const Component: React.FC<DatePickerProps> = React.memo(
             date && !showCalendar && setInputKey(key => key + 1);
         }, [date, showCalendar]);
 
-        const suffixEl = () => (
+        const dateIconEl = () => (
             <DateIconWrapper variant={restProps.variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
                 <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
             </DateIconWrapper>
@@ -144,7 +145,7 @@ const Component: React.FC<DatePickerProps> = React.memo(
                     key={inputKey}
                     ref={inputRef}
                     required={required}
-                    {...(showCalendarIcon && { suffix: suffixEl })}
+                    {...(showCalendarIcon && (calendarIconPosition === 'left' ? { prefix: dateIconEl } : { suffix: dateIconEl }))}
                     fullWidth
                     mask={displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
                     pattern={datePickerPattern[displayFormat]}
@@ -184,7 +185,8 @@ Component.defaultProps = {
     maxSelectableDate: new Date(2100, 11, 1),
     popoverPlacement: 'bottom-start',
     showCalendarIcon: true,
-    showDecorators: true
+    showDecorators: true,
+    calendarIconPosition: 'right'
 };
 Component.displayName = 'DatePicker';
 export const DatePicker: React.FC<DatePickerProps> & WithStyle = Object.assign(Component, { Style: Wrapper });
