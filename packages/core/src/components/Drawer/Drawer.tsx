@@ -9,7 +9,7 @@ import Header from './Header';
 import { DrawerProps, DrawerStaticProps } from './types';
 
 const Component: React.FC<DrawerProps> = React.memo(
-    React.forwardRef(({ id = 'medly-drawer', onClose, open, width, children, withOverlay, position, ...props }, ref) => {
+    React.forwardRef(({ id, onClose, open, width, children, withOverlay, position, ...props }, ref) => {
         const isEscPressed = useKeyPress('Escape'),
             [shouldRender, setRenderState] = useState(open),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 });
@@ -25,27 +25,26 @@ const Component: React.FC<DrawerProps> = React.memo(
             open && setRenderState(true);
         }, [open]);
 
-        return (
-            shouldRender && (
-                <DrawerBackground onClick={onClose} ref={ref} open={open} {...props} id={`${id}-overlay`} withOverlay={withOverlay}>
-                    <DrawerStyled
-                        id={id}
-                        position={position}
-                        onClick={stopPropagation}
-                        width={width}
-                        open={open}
-                        onAnimationEnd={handleAnimationEnd}
-                    >
-                        <DrawerContext.Provider value={{ id, scrollState, dispatch, onClose }}>{children}</DrawerContext.Provider>
-                    </DrawerStyled>
-                </DrawerBackground>
-            )
-        );
+        return shouldRender ? (
+            <DrawerBackground onClick={onClose} ref={ref} open={open} {...props} id={`${id}-overlay`} withOverlay={withOverlay}>
+                <DrawerStyled
+                    id={id!}
+                    position={position!}
+                    onClick={stopPropagation}
+                    width={width!}
+                    open={open}
+                    onAnimationEnd={handleAnimationEnd}
+                >
+                    <DrawerContext.Provider value={{ id: id!, scrollState, dispatch, onClose }}>{children}</DrawerContext.Provider>
+                </DrawerStyled>
+            </DrawerBackground>
+        ) : null;
     })
 );
 
 Component.displayName = 'Drawer';
 Component.defaultProps = {
+    id: 'medly-drawer',
     open: false,
     position: 'right',
     width: '40rem',
