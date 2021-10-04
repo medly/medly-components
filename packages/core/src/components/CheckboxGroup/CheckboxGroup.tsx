@@ -38,8 +38,8 @@ const Component: FC<CheckboxGroupProps> = React.memo(
             ]),
             hasHelperOrErrorText = useMemo(() => !!(errorText || helperText), [errorText, helperText]),
             allChildValues = useMemo(() => getValuesFromOptions(options), [options]),
-            areAllValuesSelected = useMemo(() => allChildValues.every(val => values.includes(val)), [options, values]),
-            indeterminate = useMemo(() => !areAllValuesSelected && allChildValues.some(el => values.includes(el)), [
+            areAllValuesSelected = useMemo(() => allChildValues.every(val => values?.includes(val)), [options, values]),
+            indeterminate = useMemo(() => !areAllValuesSelected && allChildValues.some(el => values?.includes(el)), [
                 areAllValuesSelected,
                 allChildValues
             ]);
@@ -68,7 +68,7 @@ const Component: FC<CheckboxGroupProps> = React.memo(
                     event.stopPropagation();
                     const item = event.target.name,
                         isChecked = event.target.checked,
-                        newValues = isChecked ? [...values, item] : values.filter(vl => vl !== item);
+                        newValues = isChecked ? [...values!, item] : values!.filter(vl => vl !== item);
                     validate(newValues);
                     onChange(newValues);
                 },
@@ -76,8 +76,8 @@ const Component: FC<CheckboxGroupProps> = React.memo(
             ),
             handleSelectAllClick = useCallback(() => {
                 const newValues = areAllValuesSelected
-                    ? values.filter(val => !allChildValues.includes(val))
-                    : Array.from(new Set([...values, ...allChildValues]));
+                    ? values!.filter(val => !allChildValues.includes(val))
+                    : Array.from(new Set([...values!, ...allChildValues]));
                 validate(newValues);
                 onChange(newValues);
             }, [options, values, onChange]);
@@ -85,10 +85,9 @@ const Component: FC<CheckboxGroupProps> = React.memo(
         return (
             <SelectorGroup.Wrapper
                 ref={checkboxGroupRef}
-                type="checkbox"
                 id={`${checkboxGroupId}-wrapper`}
                 aria-describedby={`${checkboxGroupId}-helper-text`}
-                {...{ ...wrapperProps, hasHelperOrErrorText, onBlur }}
+                {...{ ...wrapperProps, hasHelperOrErrorText, onBlur, type: 'checkbox' }}
             >
                 {label &&
                     (showSelectAll ? (
@@ -153,7 +152,7 @@ const Component: FC<CheckboxGroupProps> = React.memo(
                                 key={option.value}
                                 name={option.value}
                                 label={option.label}
-                                checked={values.includes(option.value)}
+                                checked={values?.includes(option.value)}
                                 onChange={handleOptionClick}
                                 disabled={disabled || option.disabled}
                                 hasError={hasError}

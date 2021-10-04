@@ -44,12 +44,12 @@ export const SingleShadeColors = () => {
         <Grid>
             {Object.entries(defaultTheme.colors)
                 .filter(([_, color]) => typeof color === 'string')
-                .map(([name, color]: [string, string]) => (
+                .map(([name, color]) => (
                     <div key={name}>
                         <Text textVariant="body1" fullWidth>
                             {name}
                         </Text>
-                        <ColorLine hex={color} shade="" />
+                        <ColorLine hex={color as string} shade="" />
                     </div>
                 ))}
         </Grid>
@@ -61,7 +61,7 @@ export const MultiShadeColors = () => {
         <Grid>
             {Object.entries(defaultTheme.colors)
                 .filter(([name, color]) => typeof color !== 'string' && name !== 'grey')
-                .map(([name, color]: [string, string]) => (
+                .map(([name, color]) => (
                     <div key={name}>
                         <Text textVariant="body1" fullWidth>
                             {name}
@@ -80,7 +80,7 @@ export const GreyScale = () => {
         <Grid>
             {Object.entries(defaultTheme.colors)
                 .filter(([name]) => name === 'grey')
-                .map(([name, color]: [string, string]) => (
+                .map(([name, color]) => (
                     <div key={name}>
                         <Text textVariant="body1" fullWidth>
                             {name}

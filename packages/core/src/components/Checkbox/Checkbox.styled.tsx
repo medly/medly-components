@@ -39,7 +39,7 @@ const getEventStyle = (event: 'hovered' | 'pressed' | 'focused') => ({
     borderColor,
     theme,
     bgColor
-}: CheckboxTheme & CheckboxProps & { isActive?: boolean }) => {
+}: CheckboxTheme & CheckboxProps & { isActive?: boolean } & WithThemeProp) => {
     const state = hasError ? 'error' : 'active';
     const borderColorEventValue = event === 'pressed' ? 'pressed' : state;
     const { blurRadius, spreadRadius } = theme.checkbox.boxShadow;
@@ -110,7 +110,7 @@ export const CheckboxWrapper = styled('div')`
     position: relative;
 `;
 
-export const ErrorText = styled(Text)<{ disabled: boolean }>`
+export const ErrorText = styled(Text)<{ disabled?: boolean }>`
     display: block;
     font-size: 1.2rem;
     line-height: 1.6rem;
@@ -118,7 +118,9 @@ export const ErrorText = styled(Text)<{ disabled: boolean }>`
     margin-bottom: 0.5rem;
 `;
 
-export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.checkbox }))<CheckboxProps & { isActive: boolean }>`
+export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.checkbox }))<
+    CheckboxProps & { isActive?: boolean }
+>`
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     * {

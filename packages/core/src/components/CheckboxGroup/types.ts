@@ -1,5 +1,5 @@
 import { CheckboxSizes, FontVariants, FontWeights } from '@medly-components/theme';
-import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit } from '@medly-components/utils';
 
 export type CheckboxGroupWrapperProps = {
     fullWidth?: boolean;
@@ -9,7 +9,7 @@ export type CheckboxGroupWrapperProps = {
     hasHelperOrErrorText?: boolean;
 };
 
-export interface CheckboxGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange'>, WithThemeProp {
+export interface CheckboxGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange'> {
     /** Array of selected values */
     values?: any[];
     /** This method will be called with checked values */

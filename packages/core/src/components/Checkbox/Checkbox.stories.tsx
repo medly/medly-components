@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 import Button from '../Button';
 import { Checkbox } from './Checkbox';
 import { CheckboxProps } from './types';
-export const labelPositions: CheckboxProps['labelPosition'][] = ['left', 'right', 'top', 'bottom'];
-export const sizes: CheckboxProps['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
+
+export const labelPositions: Required<CheckboxProps>['labelPosition'][] = ['left', 'right', 'top', 'bottom'];
+export const sizes: Required<CheckboxProps>['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
 export const ThemeInterface: React.FC<CheckboxTheme> = () => null;
 ThemeInterface.defaultProps = {
