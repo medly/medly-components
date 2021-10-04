@@ -3,7 +3,7 @@ import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { useState } from 'react';
-import { variants, sizes, displayFormats, ThemeInterface, FormWithDatePicker } from './DatePicker.stories';
+import { variants, sizes, calendarIconPositions, displayFormats, ThemeInterface, FormWithDatePicker } from './DatePicker.stories';
 import { placements } from '../Popover/Popover.stories.tsx';
 
 <Meta
@@ -48,6 +48,7 @@ To open the calendar click on the icon inside the datepicker component and to cl
                     variant={select('variant', variants, 'outlined')}
                     required={boolean('Required', false)}
                     showCalendarIcon={boolean('Show calendar icon', true)}
+                    calendarIconPosition={select('Calendar icon position', calendarIconPositions, 'right')}
                 />
             );
         }}

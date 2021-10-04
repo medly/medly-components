@@ -136,6 +136,33 @@ describe('DatePicker component', () => {
             );
             expect(container.querySelector('#dob-calendar-icon')).toBeNull();
         });
+
+        it('should show calendar icon displayed to the right', () => {
+            const { container } = render(
+                <DatePicker
+                    showCalendarIcon
+                    id="dob"
+                    value={new Date(2020, 0, 1)}
+                    displayFormat="MM/dd/yyyy"
+                    onChange={jest.fn()}
+                />
+            );
+            expect(container).toMatchSnapshot();
+        })
+
+        it('should show calendar icon displayed to the left', () => {
+            const { container } = render(
+                <DatePicker
+                    showCalendarIcon
+                    id="dob"
+                    value={new Date(2020, 0, 1)}
+                    displayFormat="MM/dd/yyyy"
+                    onChange={jest.fn()}
+                    calendarIconPosition="left"
+                />
+            );
+            expect(container).toMatchSnapshot();
+        })
     });
 
     describe('on text change', () => {
