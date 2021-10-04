@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, waitFor } from '@test-utils';
+import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import React from 'react';
 import { placements } from '../Popover/Popover.stories';
 import { DatePicker } from './DatePicker';
@@ -8,10 +8,8 @@ describe('DatePicker component', () => {
     afterEach(cleanup);
 
     it('should render properly when value is null', () => {
-        const { container } = render(
-                <DatePicker id="dob" disabled label="Start Date" value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
-            ),
-            inputEl = container.querySelector('input') as HTMLInputElement;
+        render(<DatePicker id="dob" disabled label="Start Date" value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />);
+        const inputEl = screen.getByRole('textbox') as HTMLInputElement;
         expect(inputEl.value).toEqual('');
     });
 
@@ -19,7 +17,7 @@ describe('DatePicker component', () => {
         const { container } = render(
                 <DatePicker disabled label="Start Date" value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
             ),
-            inputEl = container.querySelector('input') as HTMLInputElement;
+            inputEl = screen.getByRole('textbox') as HTMLInputElement;
         expect(inputEl.value).toEqual('01 / 01 / 2020');
         expect(container).toMatchSnapshot();
     });
@@ -35,7 +33,7 @@ describe('DatePicker component', () => {
                     maxSelectableDate={new Date(2030, 2, 1)}
                 />
             ),
-            inputEl = container.querySelector('input') as HTMLInputElement;
+            inputEl = screen.getByRole('textbox') as HTMLInputElement;
         expect(inputEl.value).toEqual('01 / 01 / 2020');
         expect(container).toMatchSnapshot();
     });
@@ -51,7 +49,7 @@ describe('DatePicker component', () => {
                     popoverPlacement={popoverPlacement}
                 />
             );
-            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
             expect(container.querySelector('#dob-calendar')).toBeVisible();
             expect(container.querySelector('#dob-calendar')).toMatchSnapshot();
         });
@@ -62,7 +60,7 @@ describe('DatePicker component', () => {
             const { container } = render(
                 <DatePicker id="dob" value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
             );
-            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
             expect(container.querySelector('#dob-calendar')).toBeVisible();
         });
 
@@ -70,7 +68,7 @@ describe('DatePicker component', () => {
             const { container } = render(
                 <DatePicker disabled id="dob" value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
             );
-            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
             expect(container.querySelector('#dob-calendar')).toBeNull();
         });
 
@@ -81,7 +79,7 @@ describe('DatePicker component', () => {
                     <DatePicker id="dob" value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
                 </>
             );
-            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
             expect(container.querySelector('#dob-calendar')).toBeVisible();
             fireEvent.click(getByText('Click Here'));
             expect(container.querySelector('#dob-calendar')).toBeNull();
@@ -95,7 +93,7 @@ describe('DatePicker component', () => {
                         <DatePicker id="dob" required value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} onBlur={mockOnBlur} />
                     </>
                 );
-            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
             expect(container.querySelector('#dob-calendar')).toBeVisible();
             fireEvent.click(getByText('Click Here'));
             const message = await findByText('Please fill in this field');
@@ -139,16 +137,10 @@ describe('DatePicker component', () => {
 
         it('should show calendar icon displayed to the right', () => {
             const { container } = render(
-                <DatePicker
-                    showCalendarIcon
-                    id="dob"
-                    value={new Date(2020, 0, 1)}
-                    displayFormat="MM/dd/yyyy"
-                    onChange={jest.fn()}
-                />
+                <DatePicker showCalendarIcon id="dob" value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
             );
             expect(container).toMatchSnapshot();
-        })
+        });
 
         it('should show calendar icon displayed to the left', () => {
             const { container } = render(
@@ -162,21 +154,21 @@ describe('DatePicker component', () => {
                 />
             );
             expect(container).toMatchSnapshot();
-        })
+        });
     });
 
     describe('on text change', () => {
         it('should change call onChange with expected date', () => {
             const mockOnChange = jest.fn(),
-                dateToSelect = new Date(2020, 0, 2),
-                { container } = render(<DatePicker id="dob" value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
-            fireEvent.change(container.querySelector('input'), { target: { value: '01 / 02 / 2020' } });
+                dateToSelect = new Date(2020, 0, 2);
+            render(<DatePicker id="dob" value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
+            fireEvent.change(screen.getByRole('textbox'), { target: { value: '01 / 02 / 2020' } });
             expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
         });
 
         it('should render error if typed date is out of range', async () => {
             const mockOnChange = jest.fn(),
-                { container, findByText } = render(
+                { findByText } = render(
                     <DatePicker
                         id="dob"
                         value={null}
@@ -185,17 +177,17 @@ describe('DatePicker component', () => {
                         minSelectableDate={new Date(2021, 0, 2)}
                     />
                 );
-            const inputEl = container.querySelector('input');
-            fireEvent.change(container.querySelector('input'), { target: { value: '01 / 02 / 2020' } });
+            const inputEl = screen.getByRole('textbox');
+            fireEvent.change(screen.getByRole('textbox'), { target: { value: '01 / 02 / 2020' } });
             fireEvent.blur(inputEl);
             const message = await findByText('Please select date from allowed range');
             expect(message).toBeInTheDocument();
         });
 
         it('should call onChange with null if typed date is invalid', async () => {
-            const mockOnChange = jest.fn(),
-                { container } = render(<DatePicker id="dob" value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
-            fireEvent.change(container.querySelector('input'), { target: { value: '01 / 02' } });
+            const mockOnChange = jest.fn();
+            render(<DatePicker id="dob" value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
+            fireEvent.change(screen.getByRole('textbox'), { target: { value: '01 / 02' } });
             expect(mockOnChange).toHaveBeenCalledWith(null);
         });
     });
@@ -206,9 +198,9 @@ describe('DatePicker component', () => {
             displayFormat: 'MM/dd/yyyy',
             onChange: jest.fn()
         };
-        const renderComponent = (required = false, validator?: (val: Date) => string) => {
-            const { container, getByText } = render(<DatePicker id="dob" {...props} required={required} validator={validator} />);
-            const inputEl = container.querySelector('input');
+        const renderComponent = (required = false, validator?: (val: Date | null) => string) => {
+            const { getByText } = render(<DatePicker id="dob" {...props} required={required} validator={validator} />);
+            const inputEl = screen.getByRole('textbox');
             return {
                 inputEl,
                 getByText
@@ -229,7 +221,7 @@ describe('DatePicker component', () => {
         });
 
         it('should return validator error message if given', async () => {
-            const validator = (val: Date | null) => !val && 'Please enter dob';
+            const validator = (val: Date | null) => (!val ? 'Please enter dob' : '');
             const { inputEl, getByText } = renderComponent(true, validator);
             fireEvent.invalid(inputEl);
             await waitFor(() => expect(getByText('Please enter dob')).toBeInTheDocument());
@@ -239,12 +231,10 @@ describe('DatePicker component', () => {
     describe('Handlers', () => {
         it('should call onChange on selecting date', async () => {
             const mockOnChange = jest.fn(),
-                dateToSelect = new Date(2020, 0, 2),
-                { container, getByTitle } = render(
-                    <DatePicker id="dob" value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />
-                );
-            fireEvent.click(container.querySelector('svg'));
-            fireEvent.click(getByTitle(dateToSelect.toDateString()));
+                dateToSelect = new Date(2020, 0, 2);
+            render(<DatePicker id="dob" value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
+            fireEvent.click(screen.getByTitle(dateToSelect.toDateString()));
             expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
         });
 
@@ -263,7 +253,7 @@ describe('DatePicker component', () => {
                     />
                 ),
                 inputEl = container.querySelector('#dob-input') as HTMLInputElement;
-            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
             expect(mockOnFocus).toHaveBeenCalled();
             fireEvent.blur(inputEl);
             expect(mockOnBlur).toHaveBeenCalled();
@@ -282,7 +272,7 @@ describe('DatePicker component', () => {
                     />
                 ),
                 inputEl = container.querySelector('#dob-input') as HTMLInputElement;
-            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
             fireEvent.invalid(inputEl);
             expect(mockOnInvalid).toHaveBeenCalled();
         });
@@ -298,7 +288,7 @@ describe('DatePicker component', () => {
 
         it('should change the size of datepicker based on size prop', () => {
             const { container } = render(<DatePicker id="dob" value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} size={'S'} />);
-            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
             expect(container.querySelector('#dob-calendar')).toHaveStyle(`top: 4rem`);
         });
     });

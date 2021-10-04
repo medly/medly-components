@@ -3,7 +3,7 @@ import { styled } from '@medly-components/utils';
 import * as TextFieldStyled from '../../TextField/Styled';
 import InputSeparator from './InputSeparator';
 
-export const Wrapper = styled(TextFieldStyled.InnerWrapper)<{ showChevronIcon: boolean; areCustomOptionsVisible: boolean }>`
+export const Wrapper = styled(TextFieldStyled.InnerWrapper)<{ showChevronIcon?: boolean; areCustomOptionsVisible: boolean }>`
     padding: ${({ showChevronIcon }) => (showChevronIcon ? '0 0.8rem 0' : '0 1.6rem 0 0.8rem')};
     ${SvgIcon}:first-of-type {
         margin-right: 0.8rem;

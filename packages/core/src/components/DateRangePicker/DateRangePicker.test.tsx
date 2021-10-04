@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, waitFor } from '@test-utils';
+import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import React, { useState } from 'react';
 import { placements } from '../Popover/Popover.stories';
 import { DateRangePicker } from './DateRangePicker';
@@ -34,17 +34,16 @@ const renderComponent = (props?: any) => {
                 <span>Outer span</span>
             </>
         ),
-        calendarIcon = renderUtils.container.querySelector('#contract-calendar-icon'),
-        customDateRangeOptionsIcon = renderUtils.container.querySelector('#contract-custom-date-range-options-icon'),
-        startDateInput = renderUtils.container.querySelector('#contract-startDate-input') as HTMLInputElement,
-        endDateInput = renderUtils.container.querySelector('#contract-endDate-input') as HTMLInputElement;
+        calendarIcon = screen.queryByTitle('contract-calendar-icon') as HTMLOrSVGImageElement,
+        customDateRangeOptionsIcon = screen.queryByTitle('contract-custom-date-range-options-icon') as HTMLOrSVGImageElement,
+        startDateInput = screen.getByRole('textbox', { name: 'From' }),
+        endDateInput = screen.getByRole('textbox', { name: 'To' });
 
     return { ...renderUtils, calendarIcon, startDateInput, endDateInput, customDateRangeOptionsIcon };
 };
 
 describe('DateRangePicker', () => {
-    const customDateRangeOptionsPopoverSelector = '#contract-custom-date-range-options',
-        customDateRangeOptionsIconSelector = '#contract-custom-date-range-options-icon';
+    const customDateRangeOptionsPopoverSelector = '#contract-custom-date-range-options';
 
     afterEach(cleanup);
 
@@ -117,8 +116,8 @@ describe('DateRangePicker', () => {
                     />
                 </>
             );
-            fireEvent.click(container.querySelector('svg'));
-            expect(container.querySelector('#contract-calendar')).toBeVisible();
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
+            await waitFor(() => expect(container.querySelector('#contract-calendar')).toBeVisible());
             fireEvent.click(getByText('Click Here'));
             expect(container.querySelector('#contract-calendar')).toBeNull();
         });
@@ -127,7 +126,7 @@ describe('DateRangePicker', () => {
             const { container, startDateInput, calendarIcon } = renderComponent();
             fireEvent.click(calendarIcon);
             expect(container.querySelector('#contract-calendar')).toBeVisible();
-            fireEvent.click(container.querySelector('#contract-calendar'));
+            fireEvent.click(container.querySelector('#contract-calendar') as HTMLDivElement);
             expect(startDateInput).toHaveFocus();
         });
 
@@ -142,8 +141,8 @@ describe('DateRangePicker', () => {
                 });
                 fireEvent.click(calendarIcon);
                 expect(container.querySelector('#contract-calendar')).toBeVisible();
-                icon && fireEvent.click(container.querySelector(`#contract-calendar-navigation-${icon}`));
-                fireEvent.animationEnd(container.querySelector('#contract-calendar-months-wrapper'));
+                icon && fireEvent.click(screen.getByTitle(`contract-calendar-navigation-${icon}-icon`));
+                fireEvent.animationEnd(container.querySelector('#contract-calendar-months-wrapper') as HTMLDivElement);
                 const expectedMonth = await findByText(`${month} 2021`);
                 expect(expectedMonth).toBeInTheDocument();
             });
@@ -156,9 +155,9 @@ describe('DateRangePicker', () => {
                     });
                 fireEvent.click(calendarIcon);
                 expect(container.querySelector('#contract-calendar')).toBeVisible();
-                fireEvent.click(container.querySelector('#contract-calendar-month-selector-button'));
+                fireEvent.click(screen.getByRole('button', { name: 'Dec' }));
                 fireEvent.click(getByText('Feb'));
-                fireEvent.click(container.querySelector('#contract-calendar-year-selector-button'));
+                fireEvent.click(screen.getByRole('button', { name: '2020' }));
                 fireEvent.click(getByText('2021'));
                 expect(getByTitle(dateToSelect.toDateString())).toBeInTheDocument();
             });
@@ -433,10 +432,10 @@ describe('DateRangePicker', () => {
             fireEvent.click(customDateRangeOptionsIcon);
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
 
-            fireEvent.click(container.querySelector(customDateRangeOptionsIconSelector));
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).not.toBeInTheDocument();
 
-            fireEvent.click(container.querySelector(customDateRangeOptionsIconSelector));
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
         });
 
