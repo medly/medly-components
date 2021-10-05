@@ -4,10 +4,10 @@ import Button from '../Button';
 import { DatePicker } from './DatePicker';
 import { DatePickerProps as Props } from './types';
 
-export const variants: Props['variant'][] = ['outlined', 'filled', 'fusion'];
-export const sizes: Props['size'][] = ['S', 'M'];
-export const calendarIconPositions: Props['calendarIconPosition'][] = ['left', 'right'];
-export const displayFormats: Props['displayFormat'][] = [
+export const variants: Required<Props>['variant'][] = ['outlined', 'filled', 'fusion'];
+export const sizes: Required<Props>['size'][] = ['S', 'M'];
+export const calendarIconPositions: Required<Props>['calendarIconPosition'][] = ['left', 'right'];
+export const displayFormats: Required<Props>['displayFormat'][] = [
     'dd/MM/yyyy',
     'MM/dd/yyyy',
     'dd/yyyy/MM',
@@ -28,7 +28,7 @@ ThemeInterface.defaultProps = {
 };
 
 export const FormWithDatePicker: React.FC = () => {
-    const [date, setDate] = useState(null),
+    const [date, setDate] = useState<Date | null>(null),
         handleSubmit = (e: React.FormEvent) => e.preventDefault();
     return (
         <form onSubmit={handleSubmit}>

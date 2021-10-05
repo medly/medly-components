@@ -7,13 +7,13 @@ export type Props = {
     id: string;
     size: 'S' | 'M';
     placement: Placement;
-    selectedDates: DateRangeProps['value'];
+    selectedDates: Required<DateRangeProps>['value'];
     minSelectableDate: Date;
     maxSelectableDate: Date;
-    withSingleMonth: boolean;
+    withSingleMonth?: boolean;
     focusedElement: 'START_DATE' | 'END_DATE';
-    onDateSelection: DateRangeProps['onChange'];
+    onDateSelection: Required<DateRangeProps>['onChange'];
     setFocusedElement: React.Dispatch<React.SetStateAction<'START_DATE' | 'END_DATE'>>;
-    setActive: React.Dispatch<React.SetStateAction<boolean>>;
+    setActive: (val: boolean) => void;
     focusElement: (element: 'START_DATE' | `END_DATE`) => void;
 };

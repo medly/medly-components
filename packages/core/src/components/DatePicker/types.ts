@@ -62,4 +62,5 @@ export interface StyleProps extends Pick<DatePickerProps, 'variant' | 'fullWidth
     isErrorPresent?: boolean;
     isActive?: boolean;
     placement: Placement;
+    variant: Required<DatePickerProps>['variant'];
 }

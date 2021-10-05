@@ -2363,6 +2363,7 @@ exports[`DateRangePicker Custom date range options should render properly with c
         fill="none"
         height="1em"
         id="contract-calendar-icon"
+        title="contract-calendar-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -2431,6 +2432,7 @@ exports[`DateRangePicker Custom date range options should render properly with c
         fill="none"
         height="1em"
         id="contract-custom-date-range-options-icon"
+        title="contract-custom-date-range-options-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -2674,6 +2676,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -3089,6 +3093,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -3109,6 +3114,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -4470,6 +4476,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -4885,6 +4893,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -4905,6 +4914,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -6266,6 +6276,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -6681,6 +6693,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -6701,6 +6714,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -8064,6 +8078,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -8479,6 +8495,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -8499,6 +8516,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -9859,6 +9877,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -10274,6 +10294,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -10294,6 +10315,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -11654,6 +11676,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -12069,6 +12093,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -12089,6 +12114,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -13452,6 +13478,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -13867,6 +13895,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -13887,6 +13916,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -15247,6 +15277,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -15662,6 +15694,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -15682,6 +15715,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -17042,6 +17076,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -17457,6 +17493,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -17477,6 +17514,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -18840,6 +18878,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -19255,6 +19295,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -19275,6 +19316,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -20635,6 +20677,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -21050,6 +21094,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -21070,6 +21115,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -22430,6 +22476,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c14 {
@@ -22845,6 +22893,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-backward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -22865,6 +22914,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
         class="c4 c5"
         fill="none"
         height="1em"
+        title="contract-calendar-navigation-forward-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -24433,6 +24483,8 @@ exports[`DateRangePicker should render properly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c28 {
@@ -25021,6 +25073,7 @@ exports[`DateRangePicker should render properly 1`] = `
         fill="none"
         height="1em"
         id="contract-calendar-icon"
+        title="contract-calendar-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -25105,6 +25158,7 @@ exports[`DateRangePicker should render properly 1`] = `
             class="c2 c19"
             fill="none"
             height="1em"
+            title="contract-calendar-navigation-backward-icon"
             viewBox="0 0 24 24"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
@@ -25125,6 +25179,7 @@ exports[`DateRangePicker should render properly 1`] = `
             class="c2 c19"
             fill="none"
             height="1em"
+            title="contract-calendar-navigation-forward-icon"
             viewBox="0 0 24 24"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
@@ -26878,6 +26933,8 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-animation: move-in-left 200ms ease-in-out;
+  animation: move-in-left 200ms ease-in-out;
 }
 
 .c33 {
@@ -27456,6 +27513,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
         fill="none"
         height="1em"
         id="contract-calendar-icon"
+        title="contract-calendar-icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -27612,6 +27670,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             class="c3 c27"
             fill="none"
             height="1em"
+            title="contract-calendar-navigation-backward-icon"
             viewBox="0 0 24 24"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
@@ -27632,6 +27691,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             class="c3 c27"
             fill="none"
             height="1em"
+            title="contract-calendar-navigation-forward-icon"
             viewBox="0 0 24 24"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
