@@ -20,8 +20,7 @@ export const Body: FC<Props> = React.memo(props => {
         return (
             <NoResult withWhiteBackground={withWhiteBackground} gridTemplateColumns={gridTemplateColumns}>
                 <Text textVariant="body2" textWeight="Strong">
-                    {' '}
-                    No Result{' '}
+                    No Result
                 </Text>
             </NoResult>
         );
