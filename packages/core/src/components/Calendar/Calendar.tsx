@@ -60,14 +60,14 @@ const Component: React.FC<CalendarProps> = React.memo(
                         disabled={isPrevBtnDisabled}
                         onClick={handlePreviousBtnClick}
                     >
-                        <KeyboardArrowLeftIcon />
+                        <KeyboardArrowLeftIcon title={`${restProps.id}-navigation-backward-icon`} />
                     </Styled.MonthNavigation>
                     <Styled.MonthNavigation
                         className="calendar-month-navigation-go-forward"
                         disabled={isNextBtnDisabled}
                         onClick={handleNextBtnClick}
                     >
-                        <KeyboardArrowRightIcon />
+                        <KeyboardArrowRightIcon title={`${restProps.id}-navigation-forward-icon`} />
                     </Styled.MonthNavigation>
                 </Styled.Header>
                 <Styled.CalendarGrid>

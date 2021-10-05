@@ -3,13 +3,13 @@ import { CalendarProps } from '../../../Calendar/types';
 
 export type Props = Omit<CalendarProps, 'size' | 'date'> & {
     id: string;
-    startDate: Date;
-    endDate: Date;
+    startDate: Date | null;
+    endDate: Date | null;
     month: number;
     year: number;
     minSelectableDate?: Date;
     maxSelectableDate?: Date;
-    hoveredDate?: Date;
+    hoveredDate: Date | null;
     hideMonthText?: boolean;
     onChange: (date: Date) => void;
     setHoveredDate?: (date: Date | null) => void;
