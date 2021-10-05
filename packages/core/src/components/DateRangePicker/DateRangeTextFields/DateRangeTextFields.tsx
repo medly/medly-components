@@ -72,17 +72,23 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
 
     const Prefix = () => (
         <IconWrapper {...iconProps}>
-            <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
+            <DateRangeIcon id={`${id}-calendar-icon`} title={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
         </IconWrapper>
     );
 
     const Suffix = () => (
         <IconWrapper {...iconProps}>
-            <ChevronDownIcon id={`${id}-custom-date-range-options-icon`} onClick={onCustomRangeIconClick} size={size} />
+            <ChevronDownIcon
+                id={`${id}-custom-date-range-options-icon`}
+                title={`${id}-custom-date-range-options-icon`}
+                onClick={onCustomRangeIconClick}
+                size={size}
+            />
         </IconWrapper>
     );
 
     useEffect(() => {
+        // @ts-ignore
         outerClickValidator.current = validateOnWrapperBlur;
     }, [validateOnWrapperBlur]);
 
@@ -97,7 +103,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                 isLabelPresent
                 isActive={isActive}
                 showChevronIcon={showChevronIcon}
-                areCustomOptionsVisible={isActive && activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS}
+                areCustomOptionsVisible={!!isActive && activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS}
             >
                 {showDecorators && (
                     <TextFieldStyled.Prefix size={size}>

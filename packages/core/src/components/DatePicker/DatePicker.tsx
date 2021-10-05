@@ -1,7 +1,7 @@
 import { DateRangeIcon } from '@medly-components/icons';
 import { parseToDate, useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import { format } from 'date-fns';
-import React, { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Calendar from '../Calendar';
 import TextField from '../TextField';
 import { DateIconWrapper, Wrapper } from './DatePicker.styled';
@@ -30,9 +30,9 @@ const Component: React.FC<DatePickerProps> = React.memo(
                 calendarIconPosition,
                 ...restProps
             } = props,
-            id = props.id || props.label.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
+            id = props.id || props.label?.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
             date: Date | null = useMemo(
-                () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat) : null),
+                () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat!) : null),
                 [value, displayFormat]
             );
         const wrapperRef = useRef<HTMLDivElement>(null),
@@ -45,12 +45,12 @@ const Component: React.FC<DatePickerProps> = React.memo(
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
         useEffect(() => {
-            date && setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
+            date && setTextValue(format(date, displayFormat!).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
         }, [date, displayFormat]);
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const inputValue = event.target.value,
-                        parsedDate = parseToDate(inputValue, displayFormat);
+                        parsedDate = parseToDate(inputValue, displayFormat!);
                     setTextValue(inputValue);
                     onChange(parsedDate.toString() !== 'Invalid Date' ? parsedDate : null);
                 },
@@ -62,19 +62,20 @@ const Component: React.FC<DatePickerProps> = React.memo(
                     if (!disabled) {
                         toggleCalendar(val => !val);
                         setActive(true);
-                        inputRef.current.focus();
+                        inputRef.current?.focus();
                     }
                 },
                 [disabled]
             ),
             validate = useCallback(
-                (event: React.FocusEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
-                    const inputValue = inputRef.current.value,
-                        parsedDate = inputValue && parseToDate(inputValue, displayFormat),
-                        isValidDate = inputValue && parsedDate.toString() !== 'Invalid Date',
+                (event: React.FocusEvent<HTMLInputElement>, eventFunc?: any) => {
+                    const inputValue = inputRef.current?.value,
+                        parsedDate = inputValue && parseToDate(inputValue, displayFormat!),
+                        isValidDate = parsedDate?.toString() !== 'Invalid Date',
                         emptyDateMessage = props.required && !inputValue && 'Please fill in this field',
                         invalidDateRangeMessage =
-                            (parsedDate < minSelectableDate || parsedDate > maxSelectableDate) && 'Please select date from allowed range',
+                            (parsedDate! < minSelectableDate! || parsedDate! > maxSelectableDate!) &&
+                            'Please select date from allowed range',
                         invalidDateMessage = inputValue && !isValidDate && 'Please enter a valid date',
                         validatorMessage = validator && validator(parsedDate || null, event.type),
                         message = validatorMessage || emptyDateMessage || invalidDateRangeMessage || invalidDateMessage || '';
@@ -84,7 +85,7 @@ const Component: React.FC<DatePickerProps> = React.memo(
                 },
                 [props.required, displayFormat, validator, minSelectableDate, maxSelectableDate]
             ),
-            onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => inputRef.current.value && validate(event, props.onBlur), [
+            onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => inputRef.current?.value && validate(event, props.onBlur), [
                 props.onBlur,
                 displayFormat
             ]),
@@ -108,7 +109,7 @@ const Component: React.FC<DatePickerProps> = React.memo(
                 },
                 [onChange]
             ),
-            inputValidator = useCallback(() => undefined, []);
+            inputValidator = useCallback(() => '', []);
 
         useOuterClickNotifier((event: any) => {
             setActive(false);
@@ -124,8 +125,8 @@ const Component: React.FC<DatePickerProps> = React.memo(
         }, [date, showCalendar]);
 
         const dateIconEl = () => (
-            <DateIconWrapper variant={restProps.variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
-                <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
+            <DateIconWrapper variant={restProps.variant!} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
+                <DateRangeIcon id={`${id}-calendar-icon`} title={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
             </DateIconWrapper>
         );
 
@@ -137,7 +138,8 @@ const Component: React.FC<DatePickerProps> = React.memo(
                 minWidth={minWidth}
                 size={size}
                 className={className}
-                placement={popoverPlacement}
+                variant={restProps.variant!}
+                placement={popoverPlacement!}
             >
                 <TextField
                     errorText={errorText || builtInErrorMessage}
@@ -147,8 +149,8 @@ const Component: React.FC<DatePickerProps> = React.memo(
                     required={required}
                     {...(showCalendarIcon && (calendarIconPosition === 'left' ? { prefix: dateIconEl } : { suffix: dateIconEl }))}
                     fullWidth
-                    mask={displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
-                    pattern={datePickerPattern[displayFormat]}
+                    mask={displayFormat!.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
+                    pattern={datePickerPattern[displayFormat!]}
                     size={size}
                     disabled={disabled}
                     showDecorators={showDecorators}
@@ -164,8 +166,8 @@ const Component: React.FC<DatePickerProps> = React.memo(
                         date={date}
                         isErrorPresent={isErrorPresent}
                         onChange={onDateChange}
-                        minSelectableDate={minSelectableDate}
-                        maxSelectableDate={maxSelectableDate}
+                        minSelectableDate={minSelectableDate!}
+                        maxSelectableDate={maxSelectableDate!}
                     />
                 )}
             </Wrapper>

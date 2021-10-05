@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.28.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.1...@medly-components/core@2.28.2) (2021-10-05)
+
+
+### Bug Fixes
+
+* strict null check issue in DatePicker and DateRangePicker component ([#475](https://github.com/medly/medly-components/issues/475)) ([a25857f](https://github.com/medly/medly-components/commit/a25857f862d8b20983ecb180a7d7c572328806ef))
+
+
+
+
+
 ## [2.28.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.0...@medly-components/core@2.28.1) (2021-10-04)
 
 

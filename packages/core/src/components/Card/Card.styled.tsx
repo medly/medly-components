@@ -1,5 +1,5 @@
 import { BreakpointsTheme, CardTheme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
+import { css, styled, WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
 import { CardProps } from './types';
 
@@ -20,13 +20,13 @@ const borderTop = (separatorColor: string) => css`
     borderLeft = (separatorColor: string) => css`
         border-left: 1px solid ${separatorColor};
     `,
-    applyBorder = ({ flowDirection, separatorColor }: Partial<CardProps & CardTheme>) => css`
+    applyBorder = ({ flowDirection, separatorColor }: CardProps & CardTheme & WithThemeProp) => css`
         > div + div {
-            ${flowDirection === 'vertical' ? borderTop(separatorColor) : borderLeft(separatorColor)}
+            ${flowDirection === 'vertical' ? borderTop(separatorColor!) : borderLeft(separatorColor!)}
         }
     `;
 
-const solid = ({ backgroundColor, shadowColor, onClick }: Partial<CardTheme> & CardProps) => css`
+const solid = ({ backgroundColor, shadowColor, onClick }: CardTheme & CardProps & WithThemeProp) => css`
         background-color: ${backgroundColor};
         border-radius: ${({ theme }) => theme.card.borderRadius};
         box-shadow: 0 0.2rem 0.8rem ${rgba(shadowColor, 0.2)};
@@ -42,12 +42,12 @@ const solid = ({ backgroundColor, shadowColor, onClick }: Partial<CardTheme> & C
         background-color: transparent;
     `;
 
-const media = ({ theme, breakpoint }: CardProps & { breakpoint: keyof BreakpointsTheme }) => css`
+const media = ({ theme, breakpoint }: CardProps & { breakpoint: keyof BreakpointsTheme } & WithThemeProp) => css`
         @media (min-width: ${theme.breakpoints[breakpoint].min}px) {
             padding: ${theme.card.padding[breakpoint]};
         }
     `,
-    getPadding = ({ theme }: CardProps) => css`
+    getPadding = ({ theme }: CardProps & WithThemeProp) => css`
         ${media({ theme, breakpoint: 'S' })}
         ${media({ theme, breakpoint: 'M' })}
         ${media({ theme, breakpoint: 'L' })}

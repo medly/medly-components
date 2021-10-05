@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.26](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.25...@medly-components/forms@1.30.26) (2021-10-05)
+
+
+### Bug Fixes
+
+* strict null check issue in DatePicker and DateRangePicker component ([#475](https://github.com/medly/medly-components/issues/475)) ([a25857f](https://github.com/medly/medly-components/commit/a25857f862d8b20983ecb180a7d7c572328806ef))
+
+
+
+
+
 ## [1.30.25](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.24...@medly-components/forms@1.30.25) (2021-10-04)
 
 **Note:** Version bump only for package @medly-components/forms

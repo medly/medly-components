@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render } from '@test-utils';
+import { cleanup, fireEvent, render, screen } from '@test-utils';
 import React from 'react';
 import { Chip } from './Chip';
 
@@ -37,10 +37,8 @@ describe('Chip component', () => {
         const mockOnClick = jest.fn(),
             mockOnDelete = jest.fn();
 
-        const { container } = render(
-            <Chip disabled={disabled} variant="flat" onClick={mockOnClick} onDelete={mockOnDelete} color="yellow" label="Flat Chip" />
-        );
-        fireEvent.click(container.querySelector('svg'));
+        render(<Chip disabled={disabled} variant="flat" onClick={mockOnClick} onDelete={mockOnDelete} color="yellow" label="Dummy" />);
+        fireEvent.click(screen.getByTitle('Dummy chip clear icon'));
         expect(mockOnDelete).toHaveBeenCalledTimes(disabled ? 0 : 1);
         expect(mockOnClick).not.toBeCalled();
     });

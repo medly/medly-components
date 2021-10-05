@@ -6,7 +6,7 @@ import { AvatarProps } from './types';
 
 const Component: FC<AvatarProps> = React.memo(
     React.forwardRef((props, ref) => {
-        const isImage = React.Children.toArray(props.children).find(
+        const isImage = !!React.Children.toArray(props.children).find(
             (child: any) => child.type === 'img' || child.props?.originalType === 'img'
         );
         return (

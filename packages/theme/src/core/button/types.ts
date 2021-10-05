@@ -19,8 +19,8 @@ export interface ButtonTheme {
     /** Outlined button colors */
     outlined: {
         textColor: Colors;
-        bgColor?: Colors;
-        borderColor?: Colors;
+        bgColor: Colors;
+        borderColor: Colors;
         hoverShadow: boolean;
     };
     /** Flat button colors */

@@ -1,10 +1,10 @@
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
 export interface CalendarProps extends Omit<HTMLProps<HTMLDivElement>, 'onChange'> {
-    date: Date;
+    date: Date | null;
     onChange: (date: Date) => void;
-    minSelectableDate?: Date;
-    maxSelectableDate?: Date;
+    minSelectableDate: Date;
+    maxSelectableDate: Date;
     isErrorPresent?: boolean;
 }
 

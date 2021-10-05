@@ -11,7 +11,7 @@ export const Head: FC<Props> = React.memo(({ onSort, columns, withWhiteBackgroun
         handleSortChange = useCallback(
             (field: string, order: SortOrder) => {
                 setSortField(field);
-                onSort(field, order);
+                onSort && onSort(field, order);
             },
             [onSort]
         );

@@ -2,7 +2,7 @@ import { endOfDay, endOfWeek, startOfWeek } from 'date-fns';
 import React, { useCallback } from 'react';
 import * as CalendarStyled from '../../../Calendar/Calendar.styled';
 import { LONG_CALENDAR_MONTHS } from '../../../Calendar/constants';
-import { getCalendarDates, isSameDay, isSameMonth } from '../../../Calendar/helper';
+import { getCalendarDates, isSameDay, isSameMonth, isValidDate } from '../../../Calendar/helper';
 import WeekDays from '../../../Calendar/WeekDays';
 import Text from '../../../Text';
 import * as Styled from './Styled';
@@ -31,7 +31,7 @@ export const Month: React.FC<Props> = React.memo(
                 },
                 [onChange]
             ),
-            handleMouseOver = useCallback((dt: Date | null) => () => setHoveredDate(dt), []);
+            handleMouseOver = useCallback((dt: Date | null) => () => dt && setHoveredDate && setHoveredDate(dt), []);
 
         return (
             <Styled.Wrapper id={id} {...restProps}>
@@ -47,23 +47,27 @@ export const Month: React.FC<Props> = React.memo(
                             isSelected = isSameDay(_date, startDate) || isSameDay(_date, endDate),
                             isSelectedStartDate = isSameDay(_date, startDate),
                             isSelectedEndDate = isSameDay(_date, endDate),
-                            isInDateRange = startDate && endDate && _date < endDate && _date > startDate,
-                            isInDateRangeHover =
+                            isInDateRange = !!(startDate && endDate && _date < endDate && _date > startDate),
+                            isInDateRangeHover = !!(
                                 hoveredDate &&
                                 ((startDate &&
                                     !endDate &&
                                     ((_date > startDate && _date < hoveredDate) || (_date > hoveredDate && _date < startDate))) ||
                                     (!startDate &&
                                         endDate &&
-                                        ((_date < endDate && _date > hoveredDate) || (_date > endDate && _date < hoveredDate)))),
-                            isInActiveMonth = isSameMonth(_date, new Date(year, month, 1)),
-                            isCurrentDate = isSameDay(_date, today),
+                                        ((_date < endDate && _date > hoveredDate) || (_date > endDate && _date < hoveredDate))))
+                            ),
+                            isInActiveMonth: boolean = isSameMonth(_date, new Date(year, month, 1)),
+                            isCurrentDate: boolean = isSameDay(_date, today),
                             isMonthFirstDate = new Date(year, month, 1).getDate() === _date.getDate(),
-                            isMonthLastDate = new Date(year, month + 1, 0).getDate() === _date.getDate(),
-                            isWeekFirstDate = isSameDay(_date, startOfWeek(_date)),
-                            isWeekLastDate = isSameDay(_date, endOfWeek(_date)),
-                            isHoverDateAfterDateSelection = !!(startDate && !endDate) || !!(!startDate && endDate),
-                            disabled = _date > maxSelectableDate || endOfDay(_date) < minSelectableDate;
+                            isMonthLastDate: boolean = new Date(year, month + 1, 0).getDate() === _date.getDate(),
+                            isWeekFirstDate: boolean = isSameDay(_date, startOfWeek(_date)),
+                            isWeekLastDate: boolean = isSameDay(_date, endOfWeek(_date)),
+                            isHoverDateAfterDateSelection: boolean = !!(startDate && !endDate) || !!(!startDate && endDate),
+                            disabled: boolean =
+                                (maxSelectableDate && _date > maxSelectableDate) ||
+                                (minSelectableDate && endOfDay(_date) < minSelectableDate) ||
+                                false;
 
                         return (
                             <Styled.DateContainer
@@ -72,8 +76,8 @@ export const Month: React.FC<Props> = React.memo(
                                 disabled={disabled}
                                 isCurrentDate={isCurrentDate}
                                 isSelected={isSelected}
-                                isStartDateNotSelected={!startDate}
-                                isEndDateNotSelected={!endDate}
+                                isStartDateNotSelected={!isValidDate(startDate)}
+                                isEndDateNotSelected={!isValidDate(endDate)}
                                 isInDateRangeHover={isInDateRangeHover}
                                 isInDateRange={isInDateRange}
                                 isSelectedStartDate={isSelectedStartDate}
@@ -83,8 +87,8 @@ export const Month: React.FC<Props> = React.memo(
                                 isMonthLastDate={isMonthLastDate}
                                 isWeekFirstDate={isWeekFirstDate}
                                 isWeekLastDate={isWeekLastDate}
-                                onClick={!disabled && handleDateChange(_date)}
-                                onMouseOver={!disabled && handleMouseOver(_date)}
+                                onClick={!disabled ? handleDateChange(_date) : undefined}
+                                onMouseOver={!disabled ? handleMouseOver(_date) : undefined}
                                 onMouseOut={handleMouseOver(null)}
                             >
                                 {isInActiveMonth && (

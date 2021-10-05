@@ -9,6 +9,6 @@ export interface Props {
 }
 
 export interface StyledProps {
-    align: 'left' | 'center' | 'right';
-    wrapText: false | true;
+    align?: 'left' | 'center' | 'right';
+    wrapText?: boolean;
 }

@@ -1,10 +1,9 @@
-import { WithStyle } from '@medly-components/utils';
 import React, { useMemo } from 'react';
 import Text from '../../../Text';
 import * as Style from './Cell.styled';
 import { Props } from './types';
 
-export const Cell: React.FC<Props> & WithStyle = React.memo(props => {
+export const Cell: React.FC<Props> = React.memo(props => {
     const { data, rowId, column, isRowClickDisabled, rowData } = props,
         { component: Component, align, wrapText } = column;
 

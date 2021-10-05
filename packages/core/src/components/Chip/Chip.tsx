@@ -20,7 +20,7 @@ const Component: FC<ChipProps> = React.memo(
         return (
             <Styled.Chip ref={ref} {...restProps}>
                 <Text>{label}</Text>
-                {onDelete && <ClearIcon size="S" onClick={handleDelete} />}
+                {onDelete && <ClearIcon size="S" onClick={handleDelete} title={`${label} chip clear icon`} />}
             </Styled.Chip>
         );
     })

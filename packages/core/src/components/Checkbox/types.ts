@@ -1,10 +1,10 @@
 import { CheckboxSizes, FontVariants, FontWeights } from '@medly-components/theme';
-import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
-type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type'>;
+type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type' | 'sizes'>;
 
-export interface CheckboxProps extends InputProps, WithThemeProp {
+export interface CheckboxProps extends InputProps {
     /** Checkbox label */
     label?: string;
     /** Checkbox size */

@@ -41,8 +41,8 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         [isActive, setActive] = useState(false),
         [activePopover, setActivePopover] = useState<PopoverTypes>(PopoverTypes.CALENDAR),
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
-        focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current.focus(), []),
-        wrapperMinWidth = useMemo(() => minWidth ?? (customDateRangeOptions.length ? '37.2rem' : '33.8rem'), [
+        focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current?.focus(), []),
+        wrapperMinWidth = useMemo(() => minWidth ?? (customDateRangeOptions?.length ? '37.2rem' : '33.8rem'), [
             customDateRangeOptions,
             minWidth
         ]),
@@ -69,10 +69,10 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                     const selectedRange = dateRangeHelpers[
                         option.value as Exclude<DateRangeSelectionEnum, DateRangeSelectionEnum.CUSTOM>
                     ]();
-                    if (minSelectableDate && selectedRange.startDate < minSelectableDate) {
+                    if (minSelectableDate && selectedRange.startDate && selectedRange.startDate < minSelectableDate) {
                         selectedRange.startDate = minSelectableDate;
                     }
-                    if (maxSelectableDate && selectedRange.endDate > maxSelectableDate) {
+                    if (maxSelectableDate && selectedRange.endDate && selectedRange.endDate > maxSelectableDate) {
                         selectedRange.endDate = maxSelectableDate;
                     }
                     onChange && onChange(selectedRange);
@@ -98,10 +98,10 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
             onBlur={onBlur}
         >
             <DateRangeTextFields
-                id={id}
-                size={size}
+                id={id!}
+                size={size!}
                 required={required}
-                variant={variant}
+                variant={variant!}
                 errorText={errorText}
                 helperText={helperText}
                 disabled={disabled}
@@ -109,26 +109,26 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 isActive={isActive}
                 activePopover={activePopover}
                 validator={validator}
-                startDateLabel={startDateLabel}
-                endDateLabel={endDateLabel}
+                startDateLabel={startDateLabel!}
+                endDateLabel={endDateLabel!}
                 selectedDates={value}
                 onDateChange={onChange}
-                displayFormat={displayFormat}
+                displayFormat={displayFormat!}
                 onCalendarIconClick={onCalendarIconClick}
                 setFocusedElement={setFocusedElement}
                 startDateRef={startDateRef}
                 endDateRef={endDateRef}
                 showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
                 onCustomRangeIconClick={onCustomRangeIconClick}
-                showChevronIcon={!!customDateRangeOptions.length}
+                showChevronIcon={customDateRangeOptions!.length > 0}
                 outerClickValidator={outerClickValidator}
             />
             {isActive &&
                 (activePopover === PopoverTypes.CALENDAR ? (
                     <DateRangeCalendar
                         id={`${id}-calendar`}
-                        size={size}
-                        placement={popoverPlacement}
+                        size={size!}
+                        placement={popoverPlacement!}
                         selectedDates={value}
                         setActive={onCalendarIconClick}
                         withSingleMonth={withSingleMonth}
@@ -136,17 +136,17 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                         onDateSelection={onChange}
                         focusedElement={focusedElement}
                         setFocusedElement={setFocusedElement}
-                        minSelectableDate={minSelectableDate}
-                        maxSelectableDate={maxSelectableDate}
+                        minSelectableDate={minSelectableDate!}
+                        maxSelectableDate={maxSelectableDate!}
                     />
                 ) : (
                     <CustomDateRangeOptions
                         id={`${id}-custom-date-range-options`}
-                        size={size}
-                        variant={variant}
+                        size={size!}
+                        variant={variant!}
                         onOptionClick={onOptionClick}
-                        options={customDateRangeOptions}
-                        placement={popoverPlacement}
+                        options={customDateRangeOptions!}
+                        placement={popoverPlacement!}
                     />
                 ))}
         </TextFieldStyled.OuterWrapper>

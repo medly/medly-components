@@ -33,7 +33,7 @@ const Component: FC<CheckboxProps> = React.memo(
             isErrorPresent = useMemo(() => !!errorText || hasError || !!builtInErrorMessage, [errorText, hasError, builtInErrorMessage]);
 
         const validate = useCallback(
-                (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void, preventDefault = true) => {
+                (event: FormEvent<HTMLInputElement>, eventFunc?: any, preventDefault = true) => {
                     preventDefault && event.preventDefault();
                     const element = event.target as HTMLInputElement,
                         message = (validator && validator(element.checked)) || element.validationMessage;
