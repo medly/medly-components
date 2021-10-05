@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.28.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.2...@medly-components/core@2.28.3) (2021-10-05)
+
+
+### Bug Fixes
+
+* strict null issue for Accordion, Button, Chip, Card and Card Tab… ([#476](https://github.com/medly/medly-components/issues/476)) ([5840021](https://github.com/medly/medly-components/commit/5840021aac069f355dd88afa891f2cf96963a06c))
+
+
+
+
+
 ## [2.28.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.1...@medly-components/core@2.28.2) (2021-10-05)
 
 
