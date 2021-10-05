@@ -58,6 +58,7 @@ exports[`TabList should render properly 1`] = `
   transition: all 100ms ease-out;
   background-color: #E7F0FF;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c1 * {
@@ -154,6 +155,10 @@ exports[`TabList should render properly 1`] = `
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
+.c1:disabled {
+  background-color: transparent;
+}
+
 .c7 {
   padding: 1.6rem;
   -webkit-user-select: none;
@@ -186,6 +191,7 @@ exports[`TabList should render properly 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c7 * {
@@ -303,6 +309,10 @@ exports[`TabList should render properly 1`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c7:disabled {
+  background-color: transparent;
 }
 
 .c2 {

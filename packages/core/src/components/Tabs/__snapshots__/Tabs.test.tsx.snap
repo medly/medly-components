@@ -67,6 +67,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   transition: all 100ms ease-out;
   background-color: #E7F0FF;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c1 * {
@@ -163,6 +164,10 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
+.c1:disabled {
+  background-color: transparent;
+}
+
 .c9 {
   padding: 1.6rem;
   -webkit-user-select: none;
@@ -195,6 +200,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c9 * {
@@ -312,6 +318,10 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c9:disabled {
+  background-color: transparent;
 }
 
 .c2 {

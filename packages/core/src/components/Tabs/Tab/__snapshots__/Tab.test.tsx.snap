@@ -82,6 +82,7 @@ exports[`Tab should render active state properly 1`] = `
   transition: all 100ms ease-out;
   background-color: #E7F0FF;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c0 * {
@@ -176,6 +177,10 @@ exports[`Tab should render active state properly 1`] = `
   width: 100%;
   background-color: #126AFA;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c0:disabled {
+  background-color: transparent;
 }
 
 .c3 {
@@ -333,6 +338,7 @@ exports[`Tab should render disabled state properly 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c0 * {
@@ -450,6 +456,10 @@ exports[`Tab should render disabled state properly 1`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c0:disabled {
+  background-color: transparent;
 }
 
 .c3 {
@@ -608,6 +618,7 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c0 * {
@@ -729,6 +740,10 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c0:disabled {
+  background-color: transparent;
 }
 
 .c3 {
@@ -894,6 +909,7 @@ exports[`Tab should render properly with L tab size 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c0 * {
@@ -1011,6 +1027,10 @@ exports[`Tab should render properly with L tab size 1`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c0:disabled {
+  background-color: transparent;
 }
 
 .c3 {
@@ -1182,6 +1202,7 @@ exports[`Tab should render properly with L tab size 2`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c0 * {
@@ -1299,6 +1320,10 @@ exports[`Tab should render properly with L tab size 2`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c0:disabled {
+  background-color: transparent;
 }
 
 .c3 {
@@ -1465,6 +1490,7 @@ exports[`Tab should render properly with M tab size 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c0 * {
@@ -1582,6 +1608,10 @@ exports[`Tab should render properly with M tab size 1`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c0:disabled {
+  background-color: transparent;
 }
 
 .c3 {
@@ -1742,6 +1772,7 @@ exports[`Tab should render properly with M tab size 2`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c0 * {
@@ -1859,6 +1890,10 @@ exports[`Tab should render properly with M tab size 2`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c0:disabled {
+  background-color: transparent;
 }
 
 .c3 {
@@ -2016,6 +2051,7 @@ exports[`Tab should render properly with S tab size 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c0 * {
@@ -2133,6 +2169,10 @@ exports[`Tab should render properly with S tab size 1`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c0:disabled {
+  background-color: transparent;
 }
 
 .c3 {
@@ -2290,6 +2330,7 @@ exports[`Tab should render properly with S tab size 2`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c0 * {
@@ -2407,6 +2448,10 @@ exports[`Tab should render properly with S tab size 2`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c0:disabled {
+  background-color: transparent;
 }
 
 .c3 {
@@ -2564,6 +2609,7 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c0 * {
@@ -2681,6 +2727,10 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c0:disabled {
+  background-color: transparent;
 }
 
 .c3 {
@@ -2838,6 +2888,7 @@ exports[`Tab should render properly with flat tab variant 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c0 * {
@@ -2955,6 +3006,10 @@ exports[`Tab should render properly with flat tab variant 1`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c0:disabled {
+  background-color: transparent;
 }
 
 .c3 {
