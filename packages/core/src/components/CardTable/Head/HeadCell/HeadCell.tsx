@@ -5,9 +5,9 @@ import Text from '../../../Text';
 import * as Styled from './HeadCell.styled';
 import { Props } from './types';
 
-export const HeadCell: FC<Props> & WithStyle = React.memo(({ defaultSortOrder, sortField, onSortChange, withWhiteBackground, column }) => {
+export const Component: FC<Props> = React.memo(({ defaultSortOrder, sortField, onSortChange, withWhiteBackground, column }) => {
     const { field, sortable, title, align } = column,
-        [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>(defaultSortOrder);
+        [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>(defaultSortOrder!);
 
     useEffect(() => {
         sortField !== field && setSortState('none');
@@ -16,7 +16,7 @@ export const HeadCell: FC<Props> & WithStyle = React.memo(({ defaultSortOrder, s
     const handleSort = useCallback(() => {
         const order = sortState === 'asc' ? 'desc' : 'asc';
         setSortState(order);
-        onSortChange(field, order);
+        onSortChange && onSortChange(field, order);
     }, [sortState, onSortChange, field]);
 
     const sortIcon = useMemo(
@@ -33,7 +33,7 @@ export const HeadCell: FC<Props> & WithStyle = React.memo(({ defaultSortOrder, s
 
     return (
         <Styled.HeadCell isActive={sortField === field} {...{ align, sortable, withWhiteBackground }}>
-            <Styled.HeadCellContent onClick={sortable && handleSort}>
+            <Styled.HeadCellContent onClick={sortable ? handleSort : undefined}>
                 <Text uppercase textVariant="h5">
                     {title}
                 </Text>
@@ -42,8 +42,9 @@ export const HeadCell: FC<Props> & WithStyle = React.memo(({ defaultSortOrder, s
         </Styled.HeadCell>
     );
 });
-HeadCell.defaultProps = {
+Component.defaultProps = {
     defaultSortOrder: 'none'
 };
-HeadCell.displayName = 'HeadCell';
-HeadCell.Style = Styled.HeadCell;
+Component.displayName = 'HeadCell';
+
+export const HeadCell: React.FC<Props> & WithStyle = Object.assign(Component, { Style: Styled.HeadCell });

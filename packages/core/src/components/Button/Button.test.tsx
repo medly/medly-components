@@ -8,7 +8,9 @@ import { Button } from './Button';
 import { ButtonProps } from './types';
 
 describe('Button component', () => {
-    describe.each(['solid', 'outlined', 'flat'])('with %p variant', (variant: ButtonProps['variant']) => {
+    const variants: Required<ButtonProps>['variant'][] = ['solid', 'outlined', 'flat'];
+
+    describe.each(variants)('with %p variant', variant => {
         test('should render properly', () => {
             const { container } = render(<Button variant={variant}>Button</Button>);
             expect(container).toMatchSnapshot();
@@ -32,7 +34,8 @@ describe('Button component', () => {
             expect(container).toMatchSnapshot();
         });
 
-        test.each(['XS', 'S', 'M', 'L'])('should render properly with %p size', (size: ButtonProps['size']) => {
+        const options: ButtonProps['size'][] = ['XS', 'S', 'M', 'L'];
+        test.each(options)('should render properly with %p size', size => {
             const { container } = render(
                 <Button size={size} variant={variant}>
                     Button
@@ -42,7 +45,8 @@ describe('Button component', () => {
         });
     });
 
-    test.each(['S', 'L'])('should render properly with %s size and loading state', (size: ButtonProps['size']) => {
+    const options: ButtonProps['size'][] = ['S', 'L'];
+    test.each(options)('should render properly with %s size and loading state', size => {
         const { container } = render(
             <Button size={size} isLoading>
                 Button
@@ -51,7 +55,8 @@ describe('Button component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['square', 'rounded', 'circle'])('should render properly with %p edges', (edges: ButtonProps['edges']) => {
+    const edgeOptions: Required<ButtonProps>['edges'][] = ['square', 'rounded', 'circle'];
+    test.each(edgeOptions)('should render properly with %p edges', edges => {
         const { container } = render(<Button edges={edges}>Flat Button</Button>);
         expect(container).toMatchSnapshot();
     });

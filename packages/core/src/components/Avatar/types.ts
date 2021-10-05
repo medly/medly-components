@@ -1,7 +1,7 @@
 import { AvatarSizes } from '@medly-components/theme';
-import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit } from '@medly-components/utils';
 
-export interface AvatarProps extends Omit<HTMLProps<HTMLDivElement>, 'size'>, WithThemeProp {
+export interface AvatarProps extends Omit<HTMLProps<HTMLDivElement>, 'size'> {
     /** Size of the avatar */
     size?: AvatarSizes;
     /** Text color */

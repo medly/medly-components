@@ -1,7 +1,7 @@
 export type StaticProps = {
-    Header?: React.FC;
-    Content?: React.FC;
-    Context?: React.Context<AccordionContextType>;
+    Header: React.FC;
+    Content: React.FC;
+    Context: React.Context<AccordionContextType>;
 };
 
 export type AccordionContextType = [

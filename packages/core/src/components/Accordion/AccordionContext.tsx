@@ -1,4 +1,5 @@
 import { createContext } from 'react';
 import { AccordionContextType } from './types';
 
-export const AccordionContext = createContext<AccordionContextType | null>(null);
+// eslint-disable-next-line @typescript-eslint/no-empty-function
+export const AccordionContext = createContext<AccordionContextType>([false, () => {}]);

@@ -11,9 +11,9 @@ const Component: FC<ButtonProps> = React.memo(
         return (
             <ButtonStyled ref={ref} {...props}>
                 {React.Children.map(props.children, c => {
-                    return isValidStringOrNumber(c) ? <Text textVariant={theme.button.textVariant[props.size]}>{c}</Text> : c;
+                    return isValidStringOrNumber(c) ? <Text textVariant={theme.button.textVariant[props.size!]}>{c}</Text> : c;
                 })}
-                {props.isLoading && <BtnLoader variant={props.variant} size={props.size} />}
+                {props.isLoading && <BtnLoader variant={props.variant!} size={props.size!} />}
             </ButtonStyled>
         );
     })

@@ -1,15 +1,15 @@
 import { SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { centerAligned, styled } from '@medly-components/utils';
+import { centerAligned, styled, WithThemeProp } from '@medly-components/utils';
 import Text from '../Text';
 import { flatButton, outlinedButton, solidButton } from './styles';
 import { ButtonProps } from './types';
 
-const getPaddings = ({ size, edges, theme }: ButtonProps & { isHovered?: boolean }) => {
+const getPaddings = ({ size, edges, theme }: ButtonProps & { isHovered?: boolean } & WithThemeProp) => {
     if (edges === 'circle') {
         return size === 'S' ? `1.4rem` : `1.6rem`;
     } else {
-        return theme.button.padding[size];
+        return theme.button.padding[size!];
     }
 };
 
@@ -22,7 +22,7 @@ export const ButtonStyled = styled('button')<ButtonProps>`
     transition: all 100ms ease-out;
     padding: ${getPaddings};
     width: ${({ fullWidth }) => fullWidth && '100%'};
-    border-radius: ${({ edges, theme }) => theme.button.borderRadius[edges]};
+    border-radius: ${({ edges, theme }) => theme.button.borderRadius[edges!]};
     pointer-events: ${({ isLoading }) => isLoading && 'none'};
 
     &, ${Text.Style}, ${SvgIcon}, ${SvgIcon} * {

@@ -3,7 +3,7 @@ import { styled } from '@medly-components/utils';
 import React from 'react';
 import { AvatarProps } from './types';
 
-export const sizes: AvatarProps['size'][] = ['S', 'M', 'L'];
+export const sizes: Required<AvatarProps>['size'][] = ['S', 'M', 'L'];
 
 export const ThemeInterface: React.FC<AvatarTheme> = () => null;
 ThemeInterface.defaultProps = {

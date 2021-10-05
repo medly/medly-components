@@ -38,7 +38,7 @@ FilterHeader.displayName = 'FilterHeader';
 
 export const Basic = () => {
     const [drawerState, setDrawerState] = useState(false),
-        [contract, setContract] = useState({ startDate: null, endDate: null }),
+        [contract, setContract] = useState<{ startDate: Date | null; endDate: Date | null }>({ startDate: null, endDate: null }),
         [locations, setLocation] = useState(['Delhi']),
         [brands, setBrands] = useState(['Jaguar']),
         locationOptions = [

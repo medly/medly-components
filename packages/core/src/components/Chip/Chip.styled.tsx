@@ -1,9 +1,10 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, css, styled } from '@medly-components/utils';
+import { centerAligned, css, styled, WithThemeProp } from '@medly-components/utils';
 import Text from '../Text';
 import { StyledProps } from './types';
 
-const getColor = ({ theme, color, disabled }: StyledProps) => (disabled ? theme.chip.disabledColor : color || theme.chip.defaultColor);
+const getColor = ({ theme, color, disabled }: StyledProps & WithThemeProp) =>
+    disabled ? theme.chip.disabledColor : color || theme.chip.defaultColor;
 
 const outlined = () => css`
     border: 1px solid ${getColor};

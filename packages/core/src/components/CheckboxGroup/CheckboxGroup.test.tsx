@@ -2,18 +2,19 @@ import { fireEvent, render, screen, waitFor } from '@test-utils';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { CheckboxGroup } from './CheckboxGroup';
+import { CheckboxGroupProps } from './types';
 
 const renderer = ({
     label = 'Cars',
     helperText = 'Helper Text',
-    errorText = undefined,
+    errorText = '',
     onChange = jest.fn(),
     required = false,
     disabled = false,
     showSelectAll = false,
     onBlur = jest.fn(),
     values = ['hyundai'],
-    validator = undefined,
+    validator,
     options = [
         { value: 'honda', label: 'Honda' },
         { value: 'hyundai', label: 'Hyundai' },
@@ -26,7 +27,7 @@ const renderer = ({
             label: 'Tata'
         }
     ]
-}) =>
+}: Partial<CheckboxGroupProps>) =>
     render(
         <CheckboxGroup
             {...{ values, required, showSelectAll, validator, onBlur, disabled, label, helperText, options, errorText, onChange }}
@@ -95,9 +96,9 @@ describe('CheckboxGroup component', () => {
         const { container } = renderer({
             values: [],
             onBlur: mockOnBlur,
-            validator: (val: string) => (val.length === 0 ? 'Please select at least one car' : '')
+            validator: (val: string[]) => (val.length === 0 ? 'Please select at least one car' : '')
         });
-        fireEvent.blur(container.querySelector('#Cars-wrapper'));
+        fireEvent.blur(container.querySelector('#Cars-wrapper') as HTMLDivElement);
         await waitFor(() => expect(screen.getByText('Please select at least one car')).toBeInTheDocument());
         expect(mockOnBlur).toBeCalled();
     });
@@ -109,7 +110,7 @@ describe('CheckboxGroup component', () => {
             values: [],
             onBlur: mockOnBlur
         });
-        fireEvent.blur(container.querySelector('#Cars-wrapper'));
+        fireEvent.blur(container.querySelector('#Cars-wrapper') as HTMLDivElement);
         await waitFor(() => expect(screen.getByText('Please select at least one option.')).toBeInTheDocument());
         expect(mockOnBlur).toBeCalled();
     });
