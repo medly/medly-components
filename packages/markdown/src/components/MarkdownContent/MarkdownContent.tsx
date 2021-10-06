@@ -10,7 +10,7 @@ import { ContentCSS } from './MarkdownContent.styled';
 import { MarkdownContentProps } from './types';
 import { YouTube } from './Youtube';
 
-const Component: FC<MarkdownContentProps> = ({ content, className }) => (
+const Component: FC<MarkdownContentProps> = ({ content, className, allowedElements }) => (
     <ContentCSS className={className}>
         <ReactMarkdown
             skipHtml={false}
@@ -20,6 +20,7 @@ const Component: FC<MarkdownContentProps> = ({ content, className }) => (
                 // @ts-ignore
                 youtube: YouTube
             }}
+            allowedElements={allowedElements}
         >
             {content}
         </ReactMarkdown>

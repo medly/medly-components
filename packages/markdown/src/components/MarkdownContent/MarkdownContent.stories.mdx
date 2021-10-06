@@ -29,6 +29,20 @@ import { FC } from 'react';
 export const Component: FC = () => <MarkdownContent content={'# DummyHeading'} />;
 ```
 
+> Note: If you're using Webpack 5, you'll need to add the following webpack config and need to add the following dependencies: `yarn add util assert buffer process`.
+
+```json
+{
+    resolve: { fallback: { util: require.resolve('util/'), assert: require.resolve('assert/'), buffer: require.resolve('buffer/') } },
+    plugins: [
+        new webpack.ProvidePlugin({
+            process: 'process/browser'
+        })
+    ],
+    ignoreWarnings: [/Critical dependency: the request of a dependency is an expression/]
+}
+```
+
 ## Props
 
 <Props of={MarkdownContent} />
