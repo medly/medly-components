@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.1.2...@medly-components/markdown@0.2.0) (2021-10-06)
+
+
+### Features
+
+* add allowElements props to MarkdownContent component ([#478](https://github.com/medly/medly-components/issues/478)) ([7a7592c](https://github.com/medly/medly-components/commit/7a7592c0c5b29c407468299a629bb6f1f6481a11))
+
+
+
+
+
 ## [0.1.2](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.1.1...@medly-components/markdown@0.1.2) (2021-10-05)
 
 **Note:** Version bump only for package @medly-components/markdown
