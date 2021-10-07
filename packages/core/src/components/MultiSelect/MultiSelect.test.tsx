@@ -1,3 +1,4 @@
+import { StarIcon } from '@medly-components/icons';
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import React from 'react';
 import { MultiSelect } from './MultiSelect';
@@ -37,6 +38,7 @@ describe('MultiSelect component', () => {
                     fullWidth
                     label="Pharmacy"
                     placeholder="Please Select"
+                    prefix={StarIcon}
                 />
             );
         expect(container).toMatchSnapshot();
