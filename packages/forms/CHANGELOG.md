@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.31.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.28...@medly-components/forms@1.31.0) (2021-10-06)
+
+
+### Features
+
+* **core:** fix number field to display int 0 ([#477](https://github.com/medly/medly-components/issues/477)) ([adb187d](https://github.com/medly/medly-components/commit/adb187d04230d9ed49f70cbfcc55a3e41e43994a))
+
+
+
+
+
 ## [1.30.28](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.27...@medly-components/forms@1.30.28) (2021-10-05)
 
 **Note:** Version bump only for package @medly-components/forms
