@@ -22,6 +22,8 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     value: DateRangeType;
     /** Function to be called on change of the dates */
     onChange: (value: DateRangeType) => void;
+    /** Function to be called after date selection */
+    onClose?: () => void;
     /** Variants */
     variant?: 'outlined' | 'filled';
     /** Function will called with the input value on blur and invalid event */
