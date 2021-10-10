@@ -333,6 +333,31 @@ describe('DateRangePicker', () => {
             fireEvent.invalid(startDateInput);
             expect(mockOnInvalid).toHaveBeenCalled();
         });
+
+        it('should call onClose after date selection', () => {
+            const mockOnClose = jest.fn(),
+                { container, getByText } = render(
+                    <>
+                        <p>Click Here</p>
+                        <DateRangePicker
+                            id="contract"
+                            value={{ startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }}
+                            displayFormat="MM/dd/yyyy"
+                            onChange={jest.fn()}
+                            onClose={mockOnClose}
+                        />
+                    </>
+                );
+            const startDateInput = screen.getByRole('textbox', { name: 'From' }),
+                endDateInput = screen.getByRole('textbox', { name: 'To' });
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
+            fireEvent.change(startDateInput, { target: { value: '06 / 05 / 2020' } });
+            fireEvent.change(endDateInput, { target: { value: '07 / 06 / 2020' } });
+            fireEvent.click(getByText('Click Here'));
+            expect(container.querySelector('#contract-calendar')).toBeNull();
+            fireEvent.click(getByText('Click Here'));
+            expect(mockOnClose).toHaveBeenCalledTimes(1);
+        });
     });
 
     describe('date selection', () => {
