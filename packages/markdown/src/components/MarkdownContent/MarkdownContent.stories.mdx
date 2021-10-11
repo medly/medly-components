@@ -45,7 +45,7 @@ export const Component: FC = () => <MarkdownContent content={'# DummyHeading'} /
 }
 ```
 
-> Note: If you're using jest for testing, you'll need to mock the `@medly-components/markdown`. This is due to `react-markdown` using some untranspiled modules. Since all files inside node_modules are not transformed by default, Jest will not understand the code in these modules, resulting in syntax errors.
+> Note: If you're using jest for testing, you'll need to mock the `@medly-components/markdown`. Since `react-markdown` is a pure ESM module and Jest ships with experimental support for ECMAScript Module, we are facing issues with writing tests. We are looking for proper solution. You can read more about it [here](https://jestjs.io/docs/ecmascript-modules)
 
 ```jsx
 const DummyComponent: React.FC<{ content: string }> = ({ content }) => <>{content}</>;
