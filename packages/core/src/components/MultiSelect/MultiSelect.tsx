@@ -28,6 +28,7 @@ const Component: FC<MultiSelectProps> = React.memo(
                 validator,
                 onInputChange,
                 showTooltipForHelperAndErrorText,
+                prefix,
                 ...restProps
             } = props,
             selectId = useMemo(() => id || label?.toLocaleLowerCase().replace(' ', '') || 'medly-multiSelect', [id, label]);
@@ -174,6 +175,7 @@ const Component: FC<MultiSelectProps> = React.memo(
                     errorText={errorText || builtInErrorMessage}
                     validator={inputValidator}
                     showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
+                    prefix={prefix}
                 />
                 {!disabled && areOptionsVisible && (
                     <Options
