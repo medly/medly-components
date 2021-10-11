@@ -33,14 +33,27 @@ export const Component: FC = () => <MarkdownContent content={'# DummyHeading'} /
 
 ```json
 {
-    resolve: { fallback: { util: require.resolve('util/'), assert: require.resolve('assert/'), buffer: require.resolve('buffer/') } },
-    plugins: [
+    "resolve": {
+        "fallback": { "util": require.resolve("util/"), "assert": require.resolve("assert/"), "buffer": require.resolve("buffer/") }
+    },
+    "plugins": [
         new webpack.ProvidePlugin({
-            process: 'process/browser'
+            "process": "process/browser"
         })
     ],
-    ignoreWarnings: [/Critical dependency: the request of a dependency is an expression/]
+    "ignoreWarnings": [/Critical dependency: the request of a dependency is an expression/]
 }
+```
+
+> Note: If you're using jest for testing, you'll need to mock the `@medly-components/markdown`. This is due to `react-markdown` using some untranspiled modules. Since all files inside node_modules are not transformed by default, Jest will not understand the code in these modules, resulting in syntax errors.
+
+```jsx
+const DummyComponent: React.FC<{ content: string }> = ({ content }) => <>{content}</>;
+DummyComponent.displayName = 'DummyComponent';
+
+jest.mock('@medly-components/markdown', () => ({
+    MarkdownContent: DummyComponent
+}));
 ```
 
 ## Props
