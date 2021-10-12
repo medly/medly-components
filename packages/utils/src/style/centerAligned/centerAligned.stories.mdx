@@ -1,0 +1,29 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Style/centerAligned" />
+
+# centerAligned
+
+`centerAligned` can be used to center a child element.
+
+#### Parameters
+
+`display` - It can be either `flex` or `inline-flex`.
+
+**Note: The default value for dispaly is `inline-flex`**
+
+#### Example
+
+You should use it when you need to center a child item.
+
+```tsx
+${centerAligned()}
+```
+
+The above snippet will return below css:
+
+```css
+display: inline-flex;
+justify-content: center;
+align-items: center;
+```
