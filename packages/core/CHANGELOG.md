@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.29.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.4...@medly-components/core@2.29.0) (2021-10-11)
+
+
+### Features
+
+* **core:** feat: add Prefix support in multiSelect component ([#479](https://github.com/medly/medly-components/issues/479)) ([91acb02](https://github.com/medly/medly-components/commit/91acb029de1e06ed7948f9515c775fb0f6b36cdc)), closes [#462](https://github.com/medly/medly-components/issues/462)
+
+
+
+
+
 ## [2.28.4](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.3...@medly-components/core@2.28.4) (2021-10-05)
 
 **Note:** Version bump only for package @medly-components/core

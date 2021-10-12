@@ -33,14 +33,27 @@ export const Component: FC = () => <MarkdownContent content={'# DummyHeading'} /
 
 ```json
 {
-    resolve: { fallback: { util: require.resolve('util/'), assert: require.resolve('assert/'), buffer: require.resolve('buffer/') } },
-    plugins: [
+    "resolve": {
+        "fallback": { "util": require.resolve("util/"), "assert": require.resolve("assert/"), "buffer": require.resolve("buffer/") }
+    },
+    "plugins": [
         new webpack.ProvidePlugin({
-            process: 'process/browser'
+            "process": "process/browser"
         })
     ],
-    ignoreWarnings: [/Critical dependency: the request of a dependency is an expression/]
+    "ignoreWarnings": [/Critical dependency: the request of a dependency is an expression/]
 }
+```
+
+> Note: If you're using jest for testing, you'll need to mock the `@medly-components/markdown`. Since `react-markdown` is a pure ESM module and Jest ships with experimental support for ECMAScript Module, we are facing issues with writing tests. We are looking for proper solution. You can read more about it [here](https://jestjs.io/docs/ecmascript-modules)
+
+```jsx
+const DummyComponent: React.FC<{ content: string }> = ({ content }) => <>{content}</>;
+DummyComponent.displayName = 'DummyComponent';
+
+jest.mock('@medly-components/markdown', () => ({
+    MarkdownContent: DummyComponent
+}));
 ```
 
 ## Props

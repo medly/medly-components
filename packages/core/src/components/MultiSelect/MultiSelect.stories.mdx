@@ -1,5 +1,6 @@
 import { MultiSelect } from './MultiSelect';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { StarIcon } from '@medly-components/icons';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { useState } from 'react';
 import { variants, sizes, options, disabledOptions, ThemeInterface } from './MultiSelect.stories';
@@ -57,6 +58,35 @@ import { variants, sizes, options, disabledOptions, ThemeInterface } from './Mul
                     helperText={text('Helper Text', 'We will show reports based on Pharmacy')}
                     errorText={text('Error Text', '')}
                     variant={select('Variant', variants, 'filled')}
+                />
+            );
+        }}
+    </Story>
+</Preview>
+
+#### 3. MultiSelect component with icon prefix
+
+<Preview withToolbar>
+    <Story name="WithIconPrefix">
+        {() => {
+            const [values, setValues] = useState(['lorem pharmacy', 'a pharmacy']);
+            return (
+                <MultiSelect
+                    options={options}
+                    values={values}
+                    onChange={setValues}
+                    size={select('Size', sizes, 'M')}
+                    disabled={boolean('Disabled', false)}
+                    fullWidth={boolean('Full Width', false)}
+                    required={boolean('Required', false)}
+                    label={text('Label', 'Pharmacy')}
+                    placeholder="Search Pharmacy"
+                    minWidth={text('Min Width', '20rem')}
+                    isSearchable={boolean('Is Searchable', true)}
+                    helperText={text('Helper Text', 'We will show reports based on Pharmacy')}
+                    errorText={text('Error Text', '')}
+                    variant={select('Variant', variants, 'filled')}
+                    prefix={StarIcon}
                 />
             );
         }}
