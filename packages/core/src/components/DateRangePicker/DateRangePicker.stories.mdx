@@ -62,6 +62,26 @@ return <DateRangePicker value={dates} onChange={setDates} />;
     </Story>
 </Preview>
 
+### onClose
+
+You can pass a function using onClose prop to perform any action after the date selection.
+onChange is required to make dateRangePicker a controlled component but onClose is there to handle action like api call which you want to perform once the you are done with the date selection.
+
+```tsx
+import { useCallApi } from '@effects';
+import { createUrlWithParams } from '@utils'
+const DateRangePickerWithOnClose: React.FC = () => {
+    const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null }),
+        [data, callApi] = useCallApi();
+         const handleApiCall = () =>
+            callApi({
+                url: createUrlWithParams(url, dates)
+                method: 'get',
+});
+ return <DateRangePicker value={dates} onChange={setDates} onClose={handleApiCall} />;
+};
+```
+
 ### Validations
 
 1. Validations would happen on invalid, and blur event.
