@@ -4,7 +4,7 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # centerAligned
 
-`centerAligned` can be used to center a child element.
+`centerAligned` can be used to add css for center aligning the child elements.
 
 #### Parameters
 
@@ -17,7 +17,12 @@ import { Meta } from '@storybook/addon-docs/blocks';
 You should use it when you need to center a child item.
 
 ```tsx
-${centerAligned()}
+import styled from 'styled-components';
+import { centerAligned } from '@medly-components/utils';
+
+const Element = styled('div')`
+    ${centerAligned()}
+`;
 ```
 
 The above snippet will return below css:
