@@ -42,10 +42,10 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         [activePopover, setActivePopover] = useState<PopoverTypes>(PopoverTypes.CALENDAR),
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
         focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current?.focus(), []),
-        wrapperMinWidth = useMemo(() => minWidth ?? (customDateRangeOptions?.length ? '37.2rem' : '33.8rem'), [
-            customDateRangeOptions,
-            minWidth
-        ]),
+        wrapperMinWidth = useMemo(
+            () => minWidth ?? (customDateRangeOptions?.length ? '37.2rem' : '33.8rem'),
+            [customDateRangeOptions, minWidth]
+        ),
         onCustomRangeIconClick = useCallback(() => {
             if (!disabled) {
                 if (activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS) {
@@ -66,9 +66,8 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                     focusElement('START_DATE');
                     setActive(true);
                 } else {
-                    const selectedRange = dateRangeHelpers[
-                        option.value as Exclude<DateRangeSelectionEnum, DateRangeSelectionEnum.CUSTOM>
-                    ]();
+                    const selectedRange =
+                        dateRangeHelpers[option.value as Exclude<DateRangeSelectionEnum, DateRangeSelectionEnum.CUSTOM>]();
                     if (minSelectableDate && selectedRange.startDate && selectedRange.startDate < minSelectableDate) {
                         selectedRange.startDate = minSelectableDate;
                     }

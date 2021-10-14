@@ -44,10 +44,10 @@ const Component: FC<SelectProps> = React.memo(
             [builtInErrorMessage, setErrorMessage] = useState(''),
             [options, setOptions] = useState(getUpdatedOptions(defaultOptions, defaultSelectedOption));
 
-        const updateToDefaultOptions = useCallback(() => setOptions(getUpdatedOptions(defaultOptions, selectedOption)), [
-            defaultOptions,
-            selectedOption
-        ]);
+        const updateToDefaultOptions = useCallback(
+            () => setOptions(getUpdatedOptions(defaultOptions, selectedOption)),
+            [defaultOptions, selectedOption]
+        );
 
         const validate = useCallback(
             () =>
@@ -68,10 +68,10 @@ const Component: FC<SelectProps> = React.memo(
                 setOptionsVisibilityState(false);
                 inputRef.current && inputRef.current.blur();
             }, []),
-            toggleOptions = useCallback(() => !disabled && (areOptionsVisible ? hideOptions() : showOptions()), [
-                disabled,
-                areOptionsVisible
-            ]),
+            toggleOptions = useCallback(
+                () => !disabled && (areOptionsVisible ? hideOptions() : showOptions()),
+                [disabled, areOptionsVisible]
+            ),
             handleInputChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const { value: inputValue } = event.target as HTMLInputElement,

@@ -55,10 +55,10 @@ const Component: FC<MultiSelectProps> = React.memo(
                 setInputValue('');
                 inputRef.current && inputRef.current.focus();
             }, [areOptionsVisible]),
-            toggleOptions = useCallback(() => !disabled && (areOptionsVisible ? hideOptions() : showOptions()), [
-                disabled,
-                areOptionsVisible
-            ]),
+            toggleOptions = useCallback(
+                () => !disabled && (areOptionsVisible ? hideOptions() : showOptions()),
+                [disabled, areOptionsVisible]
+            ),
             handleInputChange = useCallback(
                 ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
                     setInputValue(value);

@@ -5,9 +5,9 @@ const periwinkle: Color = {
     300: '#AEB7E8',
     400: '#7585D8',
     500: '#5d6fd1',
-    600: "#4F5EB2",
+    600: '#4F5EB2',
     700: '#414E92',
-    800: "#2F3868"
+    800: '#2F3868'
 };
 
 export default periwinkle;

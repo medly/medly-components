@@ -66,10 +66,7 @@
     },
     "prettier": "@medly/prettier-config",
     "stylelint": {
-        "extends": "@medly/stylelint-config",
-        "rules": {
-            "declaration-bang-space-before": null
-        }
+        "extends": "@medly/stylelint-config"
     },
     "eslintConfig": {
         "parser": "@typescript-eslint/parser",
@@ -141,6 +138,7 @@
         "cross-env": "7.0.0",
         "crypto": "^1.0.1",
         "cz-lerna-changelog": "^2.0.2",
+        "eslint-plugin-jest": "^25.0.6",
         "fork-ts-checker-webpack-plugin": "^4.1.1",
         "husky": "^4.2.3",
         "jest": "^25.1.0",

@@ -59,7 +59,7 @@ describe('Card Table HeadCell', () => {
 
     const positions: Required<StyledProps>['align'][] = ['left', 'center', 'right'];
 
-    test.each(positions)('should be able to %p align ', align => {
+    test.each(positions)('should be able to %p align', align => {
         const column: ColumnConfig = {
                 align,
                 title: 'Column 1',

@@ -31,18 +31,17 @@ const Component: FC<CheckboxGroupProps> = React.memo(
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             checkboxGroupId = useMemo(() => id || label, [id, label]),
             checkboxGroupRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
-            hasError = useMemo(() => !!errorText || !!builtInErrorMessage || parentHasError, [
-                builtInErrorMessage,
-                errorText,
-                parentHasError
-            ]),
+            hasError = useMemo(
+                () => !!errorText || !!builtInErrorMessage || parentHasError,
+                [builtInErrorMessage, errorText, parentHasError]
+            ),
             hasHelperOrErrorText = useMemo(() => !!(errorText || helperText), [errorText, helperText]),
             allChildValues = useMemo(() => getValuesFromOptions(options), [options]),
             areAllValuesSelected = useMemo(() => allChildValues.every(val => values?.includes(val)), [options, values]),
-            indeterminate = useMemo(() => !areAllValuesSelected && allChildValues.some(el => values?.includes(el)), [
-                areAllValuesSelected,
-                allChildValues
-            ]);
+            indeterminate = useMemo(
+                () => !areAllValuesSelected && allChildValues.some(el => values?.includes(el)),
+                [areAllValuesSelected, allChildValues]
+            );
 
         const validate = useCallback(
                 selectedValues => {

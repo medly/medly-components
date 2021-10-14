@@ -85,14 +85,14 @@ const Component: React.FC<DatePickerProps> = React.memo(
                 },
                 [props.required, displayFormat, validator, minSelectableDate, maxSelectableDate]
             ),
-            onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => inputRef.current?.value && validate(event, props.onBlur), [
-                props.onBlur,
-                displayFormat
-            ]),
-            onInvalid = useCallback((event: React.FocusEvent<HTMLInputElement>) => validate(event, props.onInvalid), [
-                props.onInvalid,
-                displayFormat
-            ]),
+            onBlur = useCallback(
+                (event: React.FocusEvent<HTMLInputElement>) => inputRef.current?.value && validate(event, props.onBlur),
+                [props.onBlur, displayFormat]
+            ),
+            onInvalid = useCallback(
+                (event: React.FocusEvent<HTMLInputElement>) => validate(event, props.onInvalid),
+                [props.onInvalid, displayFormat]
+            ),
             onFocus = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>) => {
                     setActive(true);

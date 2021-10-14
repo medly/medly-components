@@ -19,7 +19,7 @@ const checkbox: CheckboxTheme = {
         bottomPositioned: '1.6rem 0',
         leftPositioned: '0 1.6rem',
         rightPositioned: '0 1.6rem',
-        topPositioned: '1.6rem 0',
+        topPositioned: '1.6rem 0'
     },
     helperTextColor: {
         default: colors.black,

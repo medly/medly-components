@@ -66,7 +66,7 @@ describe('SingleSelect component', () => {
             expect(queryByText('Component')).toBeInTheDocument();
         });
 
-        it('should render disabled state properly ', () => {
+        it('should render disabled state properly', () => {
             const { container } = render(
                 <SingleSelect disabled helperText="Helper Text" options={options} variant={variant} value="Dummy1" />
             );
@@ -217,7 +217,7 @@ describe('SingleSelect component', () => {
         expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
     });
 
-    it('should not call onChange with input value when options are visible even if input value matches any option label ', async () => {
+    it('should not call onChange with input value when options are visible even if input value matches any option label', async () => {
         const mockOnChange = jest.fn();
         render(<SingleSelect options={options} onChange={mockOnChange} />);
 
@@ -317,7 +317,7 @@ describe('SingleSelect component', () => {
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
             });
 
-            it('should change input value to the first option when currently selected options is the last option ', async () => {
+            it('should change input value to the first option when currently selected options is the last option', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect value="Dummy3" options={options} onChange={mockOnChange} />);
                 fireEvent.click(screen.getByRole('textbox'));
@@ -327,7 +327,7 @@ describe('SingleSelect component', () => {
                 expect(mockOnChange).toHaveBeenCalledWith('all');
             });
 
-            it('should change input value to the first option when there is no option selected ', async () => {
+            it('should change input value to the first option when there is no option selected', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect options={options} onChange={mockOnChange} />);
                 fireEvent.click(screen.getByRole('textbox'));
@@ -404,7 +404,7 @@ describe('SingleSelect component', () => {
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy3');
             });
 
-            it('should change input value to the last option when there is no option selected ', async () => {
+            it('should change input value to the last option when there is no option selected', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect options={options} onChange={mockOnChange} />);
                 fireEvent.click(screen.getByRole('textbox'));

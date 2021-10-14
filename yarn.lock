@@ -2753,7 +2753,7 @@
     eslint-plugin-react "^7.23.2"
     eslint-plugin-react-hooks "^4.2.0"
 
-"@medly/eslint-config@0.3.2", "@medly/eslint-config@^0.3.2":
+"@medly/eslint-config@0.3.2":
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/@medly/eslint-config/-/eslint-config-0.3.2.tgz#0354da8ff906a4d3ce1ba09762b4068f8e74827b"
   integrity sha512-a7iG6kYkdUMWRTjROF253uZoCg+DZkEAN2e6ch28RtD+dJd3ZR5O4sqSIeEOWuRs5zmhQTWDEIrbFAMriir58Q==

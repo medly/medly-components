@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen } from '@test-utils';
+import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import React from 'react';
 import { FormCustomComponent } from '../Fields/types';
 import { Form } from './Form';
@@ -135,7 +135,7 @@ describe('Form', () => {
             expect(mockOnSubmit).toHaveBeenCalledWith(initialState);
         });
 
-        it('with expected data', async (done: any) => {
+        it('with expected data', async () => {
             const fooFile = new File(['foo'], 'foo.txt', {
                     type: 'text/plain'
                 }),
@@ -224,9 +224,8 @@ describe('Form', () => {
             // Checkbox
             fireEvent.click(screen.getByRole('checkbox', { name: 'Do you Agree' }));
             fireEvent.submit(screen.getByRole('form'));
-            expect(mockOnSubmit).toHaveBeenCalledWith(formData);
+            await waitFor(() => expect(mockOnSubmit).toHaveBeenCalledWith(formData), { timeout: 3000 });
             expect(mockOnChange.mock.calls[mockOnChange.mock.calls.length - 1][0]).toEqual(formData);
-            done();
         }, 30000);
     });
 

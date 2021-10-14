@@ -22,11 +22,10 @@ const Component: React.FC<TabsProps> = React.memo(
             ),
             [key, setKey] = useState(defaultActive || tabIds[0]),
             activeTab = useMemo(() => active || key, [active, key]),
-            tabsContext = useMemo(() => ({ tabSize: tabSize!, tabBackground: tabBackground!, variant: variant! }), [
-                tabSize,
-                tabBackground,
-                variant
-            ]);
+            tabsContext = useMemo(
+                () => ({ tabSize: tabSize!, tabBackground: tabBackground!, variant: variant! }),
+                [tabSize, tabBackground, variant]
+            );
 
         const handleTabChange = useCallback(
             (id: any) => {

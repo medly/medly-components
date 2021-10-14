@@ -33,7 +33,7 @@ describe('Paginator function', () => {
         });
     });
 
-    it('should return expected result when currentPage is first or last page ', () => {
+    it('should return expected result when currentPage is first or last page', () => {
         expect(paginator(150, 1, 20)).toEqual({
             currentPage: 1,
             linkItems: [1, 2, 3, '...', 8],
@@ -47,7 +47,7 @@ describe('Paginator function', () => {
         });
     });
 
-    it('should return expected result when currentPage is the middle page ', () => {
+    it('should return expected result when currentPage is the middle page', () => {
         expect(paginator(150, 8, 10)).toEqual({
             currentPage: 8,
             linkItems: [1, '...', 7, 8, 9, '...', 15],
@@ -55,7 +55,7 @@ describe('Paginator function', () => {
         });
     });
 
-    it('should return expected result when currentPage near by 4 pages to the last page ', () => {
+    it('should return expected result when currentPage near by 4 pages to the last page', () => {
         expect(paginator(150, 12, 10)).toEqual({
             currentPage: 12,
             linkItems: [1, '...', 11, 12, 13, 14, 15],

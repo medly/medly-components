@@ -8,7 +8,7 @@ const FirstComponent: React.FC = () => {
             handleChange = (e: React.ChangeEvent<HTMLInputElement>) => setState(`${e.target.value}`);
         return (
             <>
-                <input id="gender-input" type="text" value={state} onChange={handleChange}></input>
+                <input id="gender-input" type="text" value={state} onChange={handleChange} />
                 <label htmlFor="gender-input">Gender</label>
             </>
         );

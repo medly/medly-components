@@ -12,7 +12,6 @@ import { ColorPallet } from './types';
 import white from './white';
 import yellow from './yellow';
 
-
 const colors: ColorPallet = {
     black,
     professionalNavy,
@@ -25,7 +24,7 @@ const colors: ColorPallet = {
     blush,
     heartbeat,
     periwinkle,
-    medlyGreen,
+    medlyGreen
 };
 
 export default colors;

@@ -26,8 +26,7 @@ const getBoxShadow = ({ scrollState, theme }: Props) => {
         box-shadow: ${6.6 - scrollPositionRem < 2.1 && `0 1.8rem 1.6rem -1.6rem ${rgba(theme.colors.grey[400], 0.6)}`};
 
         @media (min-width: 768px) {
-            box-shadow: ${({ theme }) =>
-            !scrollState.scrolledToTop && `0 1.8rem 1.6rem -1.6rem ${rgba(theme.colors.grey[400], 0.6)}`};
+            box-shadow: ${({ theme }) => !scrollState.scrolledToTop && `0 1.8rem 1.6rem -1.6rem ${rgba(theme.colors.grey[400], 0.6)}`};
         }
     `;
 };

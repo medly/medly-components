@@ -44,9 +44,9 @@ const monthStartAndEndDateAfterStyle = css<Props>`
         }
     `;
 
-export const DateContainer = styled.div.attrs<ExtendedDateProps, Props>(({ theme }) => ({ dateTheme: theme.dateRangePicker.date }))<
-    ExtendedDateProps
->`
+export const DateContainer = styled.div.attrs<ExtendedDateProps, Props>(({ theme }) => ({
+    dateTheme: theme.dateRangePicker.date
+}))<ExtendedDateProps>`
     transition: all 100ms ease-out;
     text-align: center;
     padding: 0.4rem;
