@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.32.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.31.2...@medly-components/forms@1.32.0) (2021-10-14)
+
+
+### Features
+
+* export prop types of all the components ([#483](https://github.com/medly/medly-components/issues/483)) ([61e23b0](https://github.com/medly/medly-components/commit/61e23b0dea0840ebfad3869a3d67f1c7efbc4183))
+
+
+
+
+
 ## [1.31.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.31.1...@medly-components/forms@1.31.2) (2021-10-13)
 
 **Note:** Version bump only for package @medly-components/forms
