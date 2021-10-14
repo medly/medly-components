@@ -22,7 +22,7 @@ export interface DefaultSelected {
 
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'prefix' | 'size'>;
 
-export interface SelectProps extends InputProps {
+export interface SingleSelectProps extends InputProps {
     /** Selected Value */
     value?: any;
     /** Function to be called on selecting any option */
@@ -65,8 +65,8 @@ export interface SelectProps extends InputProps {
     suffix?: React.FC<SvgIconProps>;
 }
 
-export interface SelectWrapperProps extends Omit<SelectProps, 'ref' | 'options'> {
-    variant: Required<SelectProps>['variant'];
+export interface SelectWrapperProps extends Omit<SingleSelectProps, 'ref' | 'options'> {
+    variant: Required<SingleSelectProps>['variant'];
     isErrorPresent?: boolean;
     areOptionsVisible?: boolean;
 }
