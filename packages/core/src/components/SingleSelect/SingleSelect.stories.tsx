@@ -1,9 +1,9 @@
 import { defaultTheme, SingleSelectTheme } from '@medly-components/theme';
 import React from 'react';
-import { Option, SelectProps } from './types';
+import { Option, SingleSelectProps } from './types';
 
-export const variants: Required<SelectProps>['variant'][] = ['outlined', 'filled', 'flat', 'fusion'];
-export const sizes: Required<SelectProps>['size'][] = ['S', 'M'];
+export const variants: Required<SingleSelectProps>['variant'][] = ['outlined', 'filled', 'flat', 'fusion'];
+export const sizes: Required<SingleSelectProps>['size'][] = ['S', 'M'];
 
 export const options = [
     { value: 'all', label: 'All' },
