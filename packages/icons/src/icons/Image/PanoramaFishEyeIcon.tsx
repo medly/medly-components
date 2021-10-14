@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'PanoramaFishEyeIcon';
 
-const PanoramaFishEyeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const PanoramaFishEyeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default PanoramaFishEyeIcon
+export default PanoramaFishEyeIcon;

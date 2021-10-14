@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'SettingsBackupRestoreIcon';
 
-const SettingsBackupRestoreIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const SettingsBackupRestoreIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default SettingsBackupRestoreIcon
+export default SettingsBackupRestoreIcon;

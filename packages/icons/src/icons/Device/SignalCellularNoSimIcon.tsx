@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'SignalCellularNoSimIcon';
 
-const SignalCellularNoSimIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const SignalCellularNoSimIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default SignalCellularNoSimIcon
+export default SignalCellularNoSimIcon;

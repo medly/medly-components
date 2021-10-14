@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'WarningLegalinformation67LineIcon';
 
-const WarningLegalinformation67LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const WarningLegalinformation67LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default WarningLegalinformation67LineIcon
+export default WarningLegalinformation67LineIcon;

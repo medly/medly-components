@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'EnhancedEncryptionIcon';
 
-const EnhancedEncryptionIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const EnhancedEncryptionIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default EnhancedEncryptionIcon
+export default EnhancedEncryptionIcon;

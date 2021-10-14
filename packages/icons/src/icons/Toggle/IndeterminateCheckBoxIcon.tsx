@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'IndeterminateCheckBoxIcon';
 
-const IndeterminateCheckBoxIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const IndeterminateCheckBoxIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default IndeterminateCheckBoxIcon
+export default IndeterminateCheckBoxIcon;

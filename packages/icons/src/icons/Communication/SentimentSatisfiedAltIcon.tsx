@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'SentimentSatisfiedAltIcon';
 
-const SentimentSatisfiedAltIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const SentimentSatisfiedAltIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default SentimentSatisfiedAltIcon
+export default SentimentSatisfiedAltIcon;
