@@ -18,7 +18,7 @@ const extensions = ['.ts', '.tsx', '.js', '.jsx'];
 export default ['es', 'cjs'].map(format => ({
     input: INPUT,
     preserveModules: true,
-    external: [...Object.keys(PKG_JSON.peerDependencies || {}), ...Object.keys(PKG_JSON.dependencies || {}), 'date-fns'],
+    external: [...Object.keys(PKG_JSON.peerDependencies || {}), ...Object.keys(PKG_JSON.dependencies || {}), 'date-fns', /@babel\/runtime/],
     plugins: [
         commonjs(),
         resolve({
@@ -30,7 +30,7 @@ export default ['es', 'cjs'].map(format => ({
             configFile: BABEL_CONFIG,
             extensions,
             include: ['src/**/*'],
-            babelHelpers: 'bundled'
+            babelHelpers: 'runtime'
         }),
         typescript({
             tsconfig: TS_CONFIG,
@@ -46,7 +46,7 @@ export default ['es', 'cjs'].map(format => ({
     ],
     output: {
         format,
-        exports: "auto",
+        exports: 'auto',
         dir: `dist/${format}`
     }
 }));
