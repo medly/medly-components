@@ -10,7 +10,7 @@ const Component: FC<ChipProps> = React.memo(
         const { label, onDelete, ...restProps } = props;
 
         const handleDelete = useCallback(
-            (e: React.MouseEvent<HTMLOrSVGElement>) => {
+            (e: React.MouseEvent<SVGElement>) => {
                 e.stopPropagation();
                 !restProps.disabled && onDelete && onDelete();
             },

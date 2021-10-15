@@ -169,7 +169,7 @@ describe('Form', () => {
                     },
                     resume: [fooFile]
                 },
-                renderComp = (state: object = dateStringInitialState) => (
+                renderComp = (state: Record<string, unknown> = dateStringInitialState) => (
                     <Form name="Test form" fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={state} onChange={mockOnChange} />
                 );
             const { container } = render(renderComp());

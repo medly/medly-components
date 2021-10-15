@@ -1,8 +1,9 @@
 import { FormFieldSchema } from '@medly-components/forms';
 import { action } from '@storybook/addon-actions';
 import React, { useState } from 'react';
+import { FormActionSchema } from '../../Actions/types';
 import { CommonFieldProps, FormCustomComponent, FormFieldProperties, NestedProps } from '../../Fields/types';
-import { Form, FormActionSchema } from '../../index';
+import { Form } from '../../index';
 import { AddPhoneNumber } from './AddPhoneNumber';
 
 export const CommonProps: React.FC<

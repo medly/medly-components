@@ -1,4 +1,4 @@
-export const maxColumnSizeReducer = (state: {}, action: { type: 'ADD_SIZE'; field: string; value: number }) => {
+export const maxColumnSizeReducer = (state: Record<string, number>, action: { type: 'ADD_SIZE'; field: string; value: number }) => {
     switch (action.type) {
         case 'ADD_SIZE': {
             // @ts-ignore
