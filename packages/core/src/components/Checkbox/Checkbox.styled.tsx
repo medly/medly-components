@@ -1,7 +1,8 @@
 import { SvgIcon } from '@medly-components/icons';
 import { CheckboxSizes, CheckboxTheme } from '@medly-components/theme';
-import { centerAligned, css, styled, WithThemeProp } from '@medly-components/utils';
+import { centerAligned, WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { css } from 'styled-components';
 import { getSelectorLabelPositionStyle } from '../Selectors';
 import Text from '../Text';
 import { CheckboxProps } from './types';
@@ -98,7 +99,7 @@ export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkb
     }
 `;
 
-export const CheckboxWrapper = styled('div')`
+export const CheckboxWrapper = styled('div')<{ size?: CheckboxSizes }>`
     margin: 0.3rem;
     flex-shrink: 0;
     width: ${getCheckboxSize};

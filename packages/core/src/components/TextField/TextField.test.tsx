@@ -1,5 +1,5 @@
 import { CheckIcon } from '@medly-components/icons';
-import { defaultTheme } from '@medly-components/theme';
+import { defaultTheme, Theme } from '@medly-components/theme';
 import { updateNestedValue } from '@medly-components/utils';
 import { fireEvent, render, screen, waitFor } from '@test-utils';
 import React from 'react';
@@ -269,7 +269,7 @@ describe('TextField', () => {
         it('should render properly with custom disabled cursor (themed)', () => {
             const { container } = render(
                 <ThemeProvider
-                    theme={updateNestedValue(defaultTheme, 'textField', {
+                    theme={updateNestedValue<Theme>(defaultTheme, 'textField', {
                         ...defaultTheme.textField,
                         filled: {
                             ...defaultTheme.textField.filled,
@@ -305,7 +305,7 @@ describe('TextField', () => {
             const borderWidth = '0.2rem';
             const { container } = render(
                 <ThemeProvider
-                    theme={updateNestedValue(defaultTheme, 'textField', {
+                    theme={updateNestedValue<Theme>(defaultTheme, 'textField', {
                         ...defaultTheme.textField,
                         filled: {
                             ...defaultTheme.textField.filled

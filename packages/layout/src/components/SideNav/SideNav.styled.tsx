@@ -1,5 +1,5 @@
 import { Text } from '@medly-components/core';
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import SidePanel from '../SidePanel';
 import { NavGroupStyled } from './NavGroup/NavGroup.styled';
 import NavList from './NavList';

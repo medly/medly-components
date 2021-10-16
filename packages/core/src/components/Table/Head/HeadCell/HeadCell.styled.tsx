@@ -1,7 +1,8 @@
 import { SvgIcon } from '@medly-components/icons';
 import { Theme } from '@medly-components/theme';
-import { clearMarginPadding, css, getFontStyle, styled } from '@medly-components/utils';
+import { clearMarginPadding, getFontStyle } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { css } from 'styled-components';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
 import { resolveValueByTableSize } from '../../helpers';

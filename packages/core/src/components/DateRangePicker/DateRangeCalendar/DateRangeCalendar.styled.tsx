@@ -1,4 +1,4 @@
-import { css, styled } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import * as DatePickerStyled from '../../Calendar/Calendar.styled';
 import { getPosition } from '../../Popover/Popup/styled/Popup.styled';
 import { Placement } from '../../Popover/types';

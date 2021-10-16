@@ -17,10 +17,22 @@ const extensions = ['.ts', '.tsx', '.js', '.jsx'];
 
 export default ['es', 'cjs'].map(format => ({
     input: INPUT,
-    preserveModules: true,
-    external: [...Object.keys(PKG_JSON.peerDependencies || {}), ...Object.keys(PKG_JSON.dependencies || {}), 'date-fns', /@babel\/runtime/],
+    external: [
+        ...Object.keys(PKG_JSON.peerDependencies || {}),
+        ...Object.keys(PKG_JSON.dependencies || {}),
+        'date-fns',
+        'regenerator-runtime',
+        '@babel/runtime',
+        'react/jsx-runtime',
+        'react/jsx-dev-runtime'
+    ],
     plugins: [
-        commonjs(),
+        commonjs({
+            namedExports: {
+                'react/jsx-runtime': ['jsx', 'jsxs', 'Fragment'],
+                'react/jsx-dev-runtime': ['jsx', 'jsxs', 'jsxDEV']
+            }
+        }),
         resolve({
             extensions,
             customResolveOptions: { preserveSymlinks: false },
@@ -46,7 +58,9 @@ export default ['es', 'cjs'].map(format => ({
     ],
     output: {
         format,
-        exports: 'auto',
+        exports: 'named',
+        preserveModules: true,
+        preserveModulesRoot: 'src',
         dir: `dist/${format}`
     }
 }));

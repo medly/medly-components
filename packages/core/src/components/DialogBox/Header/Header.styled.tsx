@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import { DialogBoxHeaderProps } from './types';
 
 export const Header = styled('div')<DialogBoxHeaderProps>`

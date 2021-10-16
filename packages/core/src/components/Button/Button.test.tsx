@@ -1,5 +1,5 @@
 import { AddIcon } from '@medly-components/icons';
-import { defaultTheme } from '@medly-components/theme';
+import { defaultTheme, Theme } from '@medly-components/theme';
 import { updateNestedValue } from '@medly-components/utils';
 import { render } from '@test-utils';
 import React from 'react';
@@ -134,7 +134,7 @@ describe('Button component', () => {
     it('should render properly as outlined when theme has hover set to false', () => {
         const { container } = render(
             <ThemeProvider
-                theme={updateNestedValue(defaultTheme, 'button.outlined', {
+                theme={updateNestedValue<Theme>(defaultTheme, 'button.outlined', {
                     ...defaultTheme.button.outlined,
                     hoverShadow: false
                 })}
@@ -148,7 +148,7 @@ describe('Button component', () => {
     it('should render properly as solid when theme has hover set to false', () => {
         const { container } = render(
             <ThemeProvider
-                theme={updateNestedValue(defaultTheme, 'button.solid', {
+                theme={updateNestedValue<Theme>(defaultTheme, 'button.solid', {
                     ...defaultTheme.button.solid,
                     hoverShadow: false
                 })}

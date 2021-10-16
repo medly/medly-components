@@ -1,6 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
-import { AnyStyledComponent } from 'styled-components';
+import styled, { AnyStyledComponent, css } from 'styled-components';
 import Label from '../Label';
 import Text from '../Text';
 import { FieldStyledProps, FieldWithLabelStyledProps } from './types';

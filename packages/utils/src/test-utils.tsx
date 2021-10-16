@@ -3,8 +3,8 @@ import { render, RenderResult } from '@testing-library/react';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import { SWRConfig } from 'swr';
-import { ThemeProvider } from './styled';
 
 export const mockAxios = new MockAdapter(axios);
 

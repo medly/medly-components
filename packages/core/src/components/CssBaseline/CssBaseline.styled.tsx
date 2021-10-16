@@ -1,5 +1,6 @@
 import { Theme } from '@medly-components/theme';
-import { createGlobalStyle, css, getFontStyle } from '@medly-components/utils';
+import { getFontStyle } from '@medly-components/utils';
+import { createGlobalStyle, css } from 'styled-components';
 import fonts from './fonts';
 
 const getTextStyled = ({ theme }: { theme: Theme }) => {

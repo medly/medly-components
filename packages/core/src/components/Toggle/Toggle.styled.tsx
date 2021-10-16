@@ -1,5 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
-import { styled, WithThemeProp } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
+import styled from 'styled-components';
 import FieldWithLabel from '../FieldWithLabel';
 import { ToggleProps, ToggleWrapperProps } from './types';
 

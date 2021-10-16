@@ -1,5 +1,6 @@
-import { css, InjectClassName, styled, WithThemeProp } from '@medly-components/utils';
+import { InjectClassName, WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { css } from 'styled-components';
 import Label from '../../Label';
 import { StyledFlatVariantProps } from './types';
 

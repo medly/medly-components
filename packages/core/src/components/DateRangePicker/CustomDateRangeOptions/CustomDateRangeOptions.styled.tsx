@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import { getPosition } from '../../Popover/Popup/styled/Popup.styled';
 import { Placement } from '../../Popover/types';
 import Options from '../../SingleSelect/Options';

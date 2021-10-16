@@ -1,4 +1,5 @@
-import { centerAligned, css, styled } from '@medly-components/utils';
+import { centerAligned } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { StyledSliderProps, StyledTabListProps } from './types';
 
 const solidStyle = () => css<StyledTabListProps>`

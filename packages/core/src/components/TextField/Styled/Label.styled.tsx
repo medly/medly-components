@@ -1,4 +1,5 @@
-import { css, getFontStyle, styled } from '@medly-components/utils';
+import { getFontStyle } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 
 const getStyle = (variant: 'outlined' | 'filled' | 'fusion', required?: boolean) => {
     if (required && variant !== 'fusion') {

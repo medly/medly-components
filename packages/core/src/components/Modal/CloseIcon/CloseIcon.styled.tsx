@@ -1,6 +1,6 @@
 import { ClearIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { css } from 'styled-components';
 
 const getStyle = ({ styleType }: { styleType: 'default' | 'hovered' | 'pressed' }) => css`
     background-color: ${({ theme }) => theme.modal.closeIcon.bgColor[styleType]};

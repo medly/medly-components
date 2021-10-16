@@ -1,6 +1,7 @@
 import { SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { centerAligned, styled, WithThemeProp } from '@medly-components/utils';
+import { centerAligned, WithThemeProp } from '@medly-components/utils';
+import styled from 'styled-components';
 import Text from '../Text';
 import { flatButton, outlinedButton, solidButton } from './styles';
 import { ButtonProps } from './types';

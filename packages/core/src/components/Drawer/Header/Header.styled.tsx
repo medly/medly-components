@@ -1,6 +1,6 @@
 import { ClearIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { css } from 'styled-components';
 
 export const HeaderStyled = styled('div')<{ showShadow: boolean }>`
     padding: 1.9rem 2.4rem 2.2rem;

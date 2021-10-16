@@ -1,5 +1,6 @@
-import { isValidStringOrNumber, ThemeContext, WithStyle } from '@medly-components/utils';
+import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
 import React, { FC, useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 import Text from '../Text';
 import { ButtonStyled } from './Button.styled';
 import BtnLoader from './Loader';
