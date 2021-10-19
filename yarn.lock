@@ -2776,10 +2776,10 @@
   dependencies:
     prettier "^2.3.1"
 
-"@medly/stylelint-config@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@medly/stylelint-config/-/stylelint-config-0.1.2.tgz#a59734c910aa7c6feeee7ac560d6eb7305393841"
-  integrity sha512-2HLkDbiMnMt3LfcZI5mRRSMysyC62a84br2Otg9glUrOBcB4HW+jJfOdpIvWNzXDe3hMvqMGiCWgOzkq2EC/Ag==
+"@medly/stylelint-config@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@medly/stylelint-config/-/stylelint-config-0.2.0.tgz#5f1e8ce2cdc0a4577d723d79bb467bae7c3460cf"
+  integrity sha512-QtBweDNoDRUkyRiWS7MNxgF8AffBvqK2kSDmQR0lycUzRbBB9PjpiH134avYC20+6fAeTAW/QEE23PFRsMRmpQ==
   dependencies:
     prettier "^2.3.1"
     stylelint "^13.13.1"
