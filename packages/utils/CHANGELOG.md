@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.15.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.19...@medly-components/utils@1.15.0) (2021-10-19)
+
+
+### Features
+
+* add medly lint( eslint, stylelint & prettier ) configs ([#488](https://github.com/medly/medly-components/issues/488)) ([2a75fb4](https://github.com/medly/medly-components/commit/2a75fb432a15c64abcf939e969c280e701316a51))
+
+
+
+
+
 ## [1.14.19](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.18...@medly-components/utils@1.14.19) (2021-10-18)
 
 **Note:** Version bump only for package @medly-components/utils
