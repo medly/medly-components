@@ -6,10 +6,10 @@ import FlatVariant from './FlatVariant';
 import { filterOptions, getDefaultSelectedOption, getUpdatedOptions } from './helpers';
 import Options from './Options';
 import * as Styled from './SingleSelect.styled';
-import { Option, SelectProps } from './types';
+import { Option, SingleSelectProps } from './types';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-const Component: FC<SelectProps> = React.memo(
+const Component: FC<SingleSelectProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 id,
@@ -233,4 +233,4 @@ Component.defaultProps = {
     placeholder: 'Please Select . . .',
     showDecorators: true
 };
-export const SingleSelect: FC<SelectProps> & WithStyle = Object.assign(Component, { Style: Styled.Wrapper });
+export const SingleSelect: FC<SingleSelectProps> & WithStyle = Object.assign(Component, { Style: Styled.Wrapper });

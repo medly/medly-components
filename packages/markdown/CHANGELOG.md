@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.2](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.3.1...@medly-components/markdown@0.3.2) (2021-10-18)
+
+**Note:** Version bump only for package @medly-components/markdown
+
+
+
+
+
+## [0.3.1](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.3.0...@medly-components/markdown@0.3.1) (2021-10-18)
+
+**Note:** Version bump only for package @medly-components/markdown
+
+
+
+
+
+# [0.3.0](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.2.1...@medly-components/markdown@0.3.0) (2021-10-14)
+
+
+### Features
+
+* export prop types of all the components ([#483](https://github.com/medly/medly-components/issues/483)) ([61e23b0](https://github.com/medly/medly-components/commit/61e23b0dea0840ebfad3869a3d67f1c7efbc4183))
+
+
+
+
+
 ## [0.2.1](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.2.0...@medly-components/markdown@0.2.1) (2021-10-13)
 
 **Note:** Version bump only for package @medly-components/markdown

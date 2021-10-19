@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import React, { useState } from 'react';
 import Text from '../Text';
 import { SingleSelect } from './SingleSelect';
-import { SelectProps } from './types';
+import { SingleSelectProps } from './types';
 
 const options = [
     { value: 'all', label: 'All' },
@@ -20,7 +20,7 @@ const options = [
     }
 ];
 
-const DummyComponent = (props: Omit<SelectProps, 'options'>) => {
+const DummyComponent = (props: Omit<SingleSelectProps, 'options'>) => {
     const [opts, setOptions] = useState(options),
         updateOpts = () => setOptions([{ value: 'all', label: 'All' }]);
     return (
@@ -34,8 +34,8 @@ const DummyComponent = (props: Omit<SelectProps, 'options'>) => {
 describe('SingleSelect component', () => {
     afterEach(cleanup);
 
-    const sizes: Required<SelectProps>['size'][] = ['S', 'M'],
-        variants: Required<SelectProps>['variant'][] = ['outlined', 'filled', 'flat', 'fusion'];
+    const sizes: Required<SingleSelectProps>['size'][] = ['S', 'M'],
+        variants: Required<SingleSelectProps>['variant'][] = ['outlined', 'filled', 'flat', 'fusion'];
 
     describe.each(variants)('with %s variant', variant => {
         it('should render properly', () => {
