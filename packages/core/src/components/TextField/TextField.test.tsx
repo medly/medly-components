@@ -56,7 +56,7 @@ describe('TextField', () => {
             expect(container).toMatchSnapshot();
         });
 
-        it('should render focus state properly ', () => {
+        it('should render focus state properly', () => {
             const { container } = render(<TextField label="Name" />);
             fireEvent.focusIn(screen.getByRole('textbox'));
             expect(container).toMatchSnapshot();
@@ -214,7 +214,7 @@ describe('TextField', () => {
             });
         });
 
-        it('should render error state properly ', () => {
+        it('should render error state properly', () => {
             const { container } = render(<TextField variant={variant} label="Name" errorText="Something wen wrong" />);
             expect(container).toMatchSnapshot();
         });

@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'Rotate90DegreesCcwIcon';
 
-const Rotate90DegreesCcwIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const Rotate90DegreesCcwIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default Rotate90DegreesCcwIcon
+export default Rotate90DegreesCcwIcon;

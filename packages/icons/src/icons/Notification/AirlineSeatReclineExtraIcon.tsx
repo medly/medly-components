@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'AirlineSeatReclineExtraIcon';
 
-const AirlineSeatReclineExtraIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const AirlineSeatReclineExtraIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default AirlineSeatReclineExtraIcon
+export default AirlineSeatReclineExtraIcon;

@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'RadioButtonUncheckedIcon';
 
-const RadioButtonUncheckedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const RadioButtonUncheckedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default RadioButtonUncheckedIcon
+export default RadioButtonUncheckedIcon;

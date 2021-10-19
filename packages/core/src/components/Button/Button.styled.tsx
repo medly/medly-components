@@ -25,11 +25,12 @@ export const ButtonStyled = styled('button')<ButtonProps>`
     border-radius: ${({ edges, theme }) => theme.button.borderRadius[edges!]};
     pointer-events: ${({ isLoading }) => isLoading && 'none'};
 
-    &, ${Text.Style}, ${SvgIcon}, ${SvgIcon} * {
+    &,
+    ${Text.Style}, ${SvgIcon}, ${SvgIcon} * {
         transition: ${({ isLoading }) => (isLoading ? 'all 200ms ease-out' : 'all 100ms ease-out')};
     }
 
-    &>*:not(:last-child){
+    & > *:not(:last-child) {
         opacity: ${({ isLoading }) => isLoading && 0};
     }
 
@@ -49,13 +50,12 @@ export const ButtonStyled = styled('button')<ButtonProps>`
     ${({ variant }) => variant === 'outlined' && outlinedButton};
     ${({ variant }) => variant === 'solid' && solidButton};
 
-
-    ${SvgIcon} + ${Text.Style}{
-        margin-left: ${({ theme }) => theme.spacing.S2}
+    ${SvgIcon} + ${Text.Style} {
+        margin-left: ${({ theme }) => theme.spacing.S2};
     }
 
-    ${Text.Style} + ${SvgIcon}{
-        margin-left: ${({ theme }) => theme.spacing.S2}
+    ${Text.Style} + ${SvgIcon} {
+        margin-left: ${({ theme }) => theme.spacing.S2};
     }
 
     ${centerAligned()}

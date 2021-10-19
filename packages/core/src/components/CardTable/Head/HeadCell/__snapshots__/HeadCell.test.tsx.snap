@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card Table HeadCell should be able to "center" align  1`] = `
+exports[`Card Table HeadCell should be able to "center" align 1`] = `
 .c4 {
   margin: 0;
   color: inherit;
@@ -118,7 +118,7 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
 </div>
 `;
 
-exports[`Card Table HeadCell should be able to "left" align  1`] = `
+exports[`Card Table HeadCell should be able to "left" align 1`] = `
 .c4 {
   margin: 0;
   color: inherit;
@@ -236,7 +236,7 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
 </div>
 `;
 
-exports[`Card Table HeadCell should be able to "right" align  1`] = `
+exports[`Card Table HeadCell should be able to "right" align 1`] = `
 .c4 {
   margin: 0;
   color: inherit;

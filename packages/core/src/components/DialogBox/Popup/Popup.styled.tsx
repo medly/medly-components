@@ -42,10 +42,11 @@ export const Popup = styled('div')<DialogBoxPopupProps>`
             transform: translateY(4rem);
             opacity: 0;
         }
-    }    
+    }
     animation: ${({ open }) => `${open ? 'slideIn' : 'slideOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
 
-    @media (min-width: 608px) { /* 506px break point + (2 * 2.4rem margin) */
+    @media (min-width: 608px) {
+        /* 506px break point + (2 * 2.4rem margin) */
         max-width: 56rem;
         padding: 3.2rem;
 

@@ -692,7 +692,7 @@ exports[`Button component should render properly with L size and loading state 1
   transition: all 200ms ease-out;
 }
 
-.c0>*:not(:last-child) {
+.c0 > *:not(:last-child) {
   opacity: 0;
 }
 
@@ -879,7 +879,7 @@ exports[`Button component should render properly with S size and loading state 1
   transition: all 200ms ease-out;
 }
 
-.c0>*:not(:last-child) {
+.c0 > *:not(:last-child) {
   opacity: 0;
 }
 
@@ -1968,7 +1968,7 @@ exports[`Button component with "flat" variant should render properly when it is 
   transition: all 200ms ease-out;
 }
 
-.c0>*:not(:last-child) {
+.c0 > *:not(:last-child) {
   opacity: 0;
 }
 
@@ -3138,7 +3138,7 @@ exports[`Button component with "outlined" variant should render properly when it
   transition: all 200ms ease-out;
 }
 
-.c0>*:not(:last-child) {
+.c0 > *:not(:last-child) {
   opacity: 0;
 }
 
@@ -4241,7 +4241,7 @@ exports[`Button component with "solid" variant should render properly when it is
   transition: all 200ms ease-out;
 }
 
-.c0>*:not(:last-child) {
+.c0 > *:not(:last-child) {
   opacity: 0;
 }
 

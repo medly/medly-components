@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'MarkunreadMailboxIcon';
 
-const MarkunreadMailboxIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const MarkunreadMailboxIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default MarkunreadMailboxIcon
+export default MarkunreadMailboxIcon;

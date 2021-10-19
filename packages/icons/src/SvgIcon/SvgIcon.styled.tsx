@@ -18,10 +18,16 @@ const solidStyle = ({ size, disabled, bgColor, withHoverEffect }: SvgIconProps) 
     ${!disabled && withHoverEffect && hoverStyle}
 `;
 
-export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { colors, sizes } } }) => ({
-    colors,
-    sizes
-}))<SvgIconProps>`
+export const SvgIconStyled = styled(InjectClassName).attrs(
+    ({
+        theme: {
+            icon: { colors, sizes }
+        }
+    }) => ({
+        colors,
+        sizes
+    })
+)<SvgIconProps>`
     overflow: visible;
     font-size: ${({ theme, size }) => theme.icon.sizes[size!].iconSize};
     transition: all 100ms linear;

@@ -90,7 +90,7 @@ export const ExpansionCell = styled('td')<{
                 theme.table.titleRow.accordionIcon.color[isRowExpanded || isRowSelected ? 'expanded' : 'default']};
         }
         transition: ${({ isRowExpanded }) =>
-            `transform 200ms ${isRowExpanded ? 'ease-in' : 'ease-out'}, background-color 100ms ${isRowExpanded ? 'ease-in' : 'ease-out'}`} ;
+            `transform 200ms ${isRowExpanded ? 'ease-in' : 'ease-out'}, background-color 100ms ${isRowExpanded ? 'ease-in' : 'ease-out'}`};
         transform: ${props => props.isRowExpanded && `rotate(180deg) `};
 
         &:hover {

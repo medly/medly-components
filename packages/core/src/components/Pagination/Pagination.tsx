@@ -12,11 +12,10 @@ const Component: FC<PaginationProps> = React.memo(
     React.forwardRef((props, ref) => {
         const links = [],
             { hidePrevNextLinks, activePage, itemsPerPage, totalItems, onPageClick, ...restProps } = props,
-            { currentPage, linkItems, totalPages } = useMemo(() => paginator(totalItems, activePage, itemsPerPage), [
-                totalItems,
-                activePage,
-                itemsPerPage
-            ]);
+            { currentPage, linkItems, totalPages } = useMemo(
+                () => paginator(totalItems, activePage, itemsPerPage),
+                [totalItems, activePage, itemsPerPage]
+            );
 
         const onClickHandler = (page: number | '...') => () => page !== '...' && page !== currentPage && onPageClick(page);
 
@@ -28,7 +27,7 @@ const Component: FC<PaginationProps> = React.memo(
                             prevPageNumber={linkItems[i - 1] as number}
                             nextPageNumber={linkItems[i + 1] as number}
                             onClickHandler={onPageClick}
-                        ></PaginationPopup>
+                        />
                     </Popover>
                 );
             else

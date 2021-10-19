@@ -57,9 +57,15 @@ const getTextStyle = ({ theme, ...props }: StyledProps & WithThemeProp) => {
     `;
 };
 
-export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults } } }: StyledProps & WithThemeProp) => ({
-    defaults
-}))<StyledProps>`
+export const AvatarStyled = styled('div').attrs(
+    ({
+        theme: {
+            avatar: { defaults }
+        }
+    }: StyledProps & WithThemeProp) => ({
+        defaults
+    })
+)<StyledProps>`
     display: inline-block;
     text-align: center;
     min-width: max-content;

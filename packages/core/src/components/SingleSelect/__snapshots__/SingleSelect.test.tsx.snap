@@ -1536,7 +1536,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
 </div>
 `;
 
-exports[`SingleSelect component with filled variant should render disabled state properly  1`] = `
+exports[`SingleSelect component with filled variant should render disabled state properly 1`] = `
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
@@ -3566,7 +3566,7 @@ exports[`SingleSelect component with filled variant should render with label pro
 </div>
 `;
 
-exports[`SingleSelect component with flat variant should render disabled state properly  1`] = `
+exports[`SingleSelect component with flat variant should render disabled state properly 1`] = `
 .c3 {
   margin: 0;
   color: inherit;
@@ -4968,7 +4968,7 @@ exports[`SingleSelect component with flat variant should render with label prope
 </div>
 `;
 
-exports[`SingleSelect component with fusion variant should render disabled state properly  1`] = `
+exports[`SingleSelect component with fusion variant should render disabled state properly 1`] = `
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
@@ -7146,7 +7146,7 @@ exports[`SingleSelect component with fusion variant should render with label pro
 </div>
 `;
 
-exports[`SingleSelect component with outlined variant should render disabled state properly  1`] = `
+exports[`SingleSelect component with outlined variant should render disabled state properly 1`] = `
 .c8 {
   overflow: visible;
   font-size: 2.4rem;

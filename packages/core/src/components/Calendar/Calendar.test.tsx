@@ -131,7 +131,7 @@ describe('Calendar Component', () => {
         expect(queryByText('29')).toBeNull();
     });
 
-    it('should disable dates which are are out of range ', () => {
+    it('should disable dates which are are out of range', () => {
         const date = new Date(2020, 11, 15),
             { getByTitle } = render(
                 <Calendar

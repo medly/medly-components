@@ -25,11 +25,10 @@ const Component: FC<CheckboxProps> = React.memo(
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             inputId = useMemo(() => id || label, [id, label]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
-            isActive = useMemo(() => inputProps.checked || inputProps.defaultChecked || indeterminate, [
-                inputProps.checked,
-                inputProps.defaultChecked,
-                indeterminate
-            ]),
+            isActive = useMemo(
+                () => inputProps.checked || inputProps.defaultChecked || indeterminate,
+                [inputProps.checked, inputProps.defaultChecked, indeterminate]
+            ),
             isErrorPresent = useMemo(() => !!errorText || hasError || !!builtInErrorMessage, [errorText, hasError, builtInErrorMessage]);
 
         const validate = useCallback(
@@ -44,10 +43,10 @@ const Component: FC<CheckboxProps> = React.memo(
             ),
             onBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
             onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
-            onChange = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onChange, false), [
-                validate,
-                props.onChange
-            ]);
+            onChange = useCallback(
+                (event: FormEvent<HTMLInputElement>) => validate(event, props.onChange, false),
+                [validate, props.onChange]
+            );
 
         return (
             <>

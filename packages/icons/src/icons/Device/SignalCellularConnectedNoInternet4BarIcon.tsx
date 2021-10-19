@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'SignalCellularConnectedNoInternet4BarIcon';
 
-const SignalCellularConnectedNoInternet4BarIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const SignalCellularConnectedNoInternet4BarIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default SignalCellularConnectedNoInternet4BarIcon
+export default SignalCellularConnectedNoInternet4BarIcon;

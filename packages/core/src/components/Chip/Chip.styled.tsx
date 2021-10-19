@@ -56,7 +56,7 @@ export const Chip = styled('button')<StyledProps>`
     ${props => props.variant === 'outlined' && outlined()};
     ${props => props.variant === 'solid' && solid()};
 
-    ${Text.Style} + ${SvgIcon}{
+    ${Text.Style} + ${SvgIcon} {
         cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
         margin-left: 10px;
     }

@@ -39,11 +39,10 @@ const Component: FC<TextFieldProps> = React.memo(
             isPrefixPresent = useMemo(() => !!Prefix, [Prefix]),
             isSuffixPresent = useMemo(() => !!Suffix, [Suffix]),
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
-            displayCharacterCount = useMemo(() => !!(withCharacterCount && showDecorators && props.maxLength && props.maxLength >= 0), [
-                withCharacterCount,
-                showDecorators,
-                props.maxLength
-            ]),
+            displayCharacterCount = useMemo(
+                () => !!(withCharacterCount && showDecorators && props.maxLength && props.maxLength >= 0),
+                [withCharacterCount, showDecorators, props.maxLength]
+            ),
             [isTextPresent, setIsTextPresent] = useState(!!value || !!restProps.defaultValue),
             [maskLabel, setMaskLabel] = useState(mask),
             [inputWidth, setInputWidth] = useState(0),

@@ -7,7 +7,7 @@ const dialogBox: DialogBoxTheme = {
     headerColor: colors.black,
     backgroundColor: colors.white,
     scrollbarThumbColor: colors.grey[400],
-    borderRadius: '2.4rem',
+    borderRadius: '2.4rem'
 };
 
 export default dialogBox;

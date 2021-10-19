@@ -10,6 +10,6 @@ const {
     ThemeProvider,
     withTheme,
     ThemeContext
-} = (styledComponents as unknown) as ThemedStyledComponentsModule<Theme>;
+} = styledComponents as unknown as ThemedStyledComponentsModule<Theme>;
 
 export { styled, css, createGlobalStyle, keyframes, ThemeProvider, withTheme, ThemeContext };

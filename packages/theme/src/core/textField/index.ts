@@ -31,7 +31,7 @@ const textField: TextFieldTheme = {
             helperTextColor: colors.grey[700],
             iconColor: colors.grey[600],
             labelColor: colors.grey[600],
-            textColor: colors.black,
+            textColor: colors.black
         },
         hover: {
             borderColor: colors.grey[600],

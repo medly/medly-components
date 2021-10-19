@@ -34,7 +34,7 @@ describe('Card component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should render properly when it is clickable ', () => {
+    it('should render properly when it is clickable', () => {
         const { container } = render(
             <Card onClick={jest.fn()}>
                 <Text>Dummy Text</Text>

@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'ReimbursementPricing129LineIcon';
 
-const ReimbursementPricing129LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const ReimbursementPricing129LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default ReimbursementPricing129LineIcon
+export default ReimbursementPricing129LineIcon;

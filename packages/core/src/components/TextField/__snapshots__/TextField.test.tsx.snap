@@ -5389,7 +5389,7 @@ exports[`TextField with filled variant and without label should render focus sta
 </div>
 `;
 
-exports[`TextField with filled variant should render error state properly  1`] = `
+exports[`TextField with filled variant should render error state properly 1`] = `
 .c7 {
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -9924,7 +9924,7 @@ exports[`TextField with fusion variant and without label should render focus sta
 </div>
 `;
 
-exports[`TextField with fusion variant should render error state properly  1`] = `
+exports[`TextField with fusion variant should render error state properly 1`] = `
 .c7 {
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -14595,7 +14595,7 @@ exports[`TextField with outlined variant and without label should render focus s
 </div>
 `;
 
-exports[`TextField with outlined variant should render error state properly  1`] = `
+exports[`TextField with outlined variant should render error state properly 1`] = `
 .c7 {
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -17509,7 +17509,7 @@ exports[`TextField without label should render default state properly 1`] = `
 </div>
 `;
 
-exports[`TextField without label should render focus state properly  1`] = `
+exports[`TextField without label should render focus state properly 1`] = `
 .c5 {
   top: 50%;
   left: 0;

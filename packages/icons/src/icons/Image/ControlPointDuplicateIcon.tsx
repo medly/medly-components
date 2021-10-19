@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'ControlPointDuplicateIcon';
 
-const ControlPointDuplicateIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const ControlPointDuplicateIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default ControlPointDuplicateIcon
+export default ControlPointDuplicateIcon;

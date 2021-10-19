@@ -1,8 +1,0 @@
-node_modules
-packages/**/dist
-coverage
-babel.config.js
-jest.config.js
-jest.setupAfterEnv.js
-rollup.config.js
-commitlint.config.js

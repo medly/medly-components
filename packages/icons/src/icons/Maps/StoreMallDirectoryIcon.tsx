@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'StoreMallDirectoryIcon';
 
-const StoreMallDirectoryIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const StoreMallDirectoryIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default StoreMallDirectoryIcon
+export default StoreMallDirectoryIcon;

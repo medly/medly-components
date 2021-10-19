@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'SignalWifiStatusbarNull26x24pxRoundedIcon';
 
-const SignalWifiStatusbarNull26x24pxRoundedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const SignalWifiStatusbarNull26x24pxRoundedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default SignalWifiStatusbarNull26x24pxRoundedIcon
+export default SignalWifiStatusbarNull26x24pxRoundedIcon;

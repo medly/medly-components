@@ -12,7 +12,7 @@ describe('Chip of MultiSelect component', () => {
 
     it('should not call onClear if the chip is disabled', () => {
         const onClearMock = jest.fn();
-        render(<Chip id="dummy"  size="M" variant="filled" label={2} disabled={true} onClear={onClearMock} />);
+        render(<Chip id="dummy" size="M" variant="filled" label={2} disabled={true} onClear={onClearMock} />);
         fireEvent.click(screen.getByTitle('dummy-clear-icon'));
         expect(onClearMock).not.toHaveBeenCalled();
     });
