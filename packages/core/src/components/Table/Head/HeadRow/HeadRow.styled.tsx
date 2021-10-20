@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import { GridTemplateProps } from '../../types';
 import { HeadRowProps } from './types';
 

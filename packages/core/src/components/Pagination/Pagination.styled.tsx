@@ -1,5 +1,6 @@
 import { ChevronLeftIcon, ChevronRightIcon, SvgIcon } from '@medly-components/icons';
-import { css, getFontStyle, styled } from '@medly-components/utils';
+import { getFontStyle } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import List from '../List';
 import Text from '../Text';
 

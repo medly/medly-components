@@ -1,4 +1,5 @@
-import { getFontStyle, styled } from '@medly-components/utils';
+import { getFontStyle } from '@medly-components/utils';
+import styled from 'styled-components';
 import Text from '../../Text';
 
 export const BreadcrumbItemStyled = styled('li').attrs(({ theme: { breadcrumb } }) => ({ ...breadcrumb }))<{ disabled?: boolean }>`

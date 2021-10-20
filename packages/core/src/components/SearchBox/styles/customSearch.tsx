@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 
 export const CustomSearchFilterWrapper = styled.div<{ size: 'S' | 'M' }>`
     box-shadow: 0 0.2rem 1.6rem 0 rgba(72, 79, 94, 0.2);

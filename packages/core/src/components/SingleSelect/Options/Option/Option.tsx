@@ -1,6 +1,7 @@
 import { ArrowRightIcon, CheckIcon } from '@medly-components/icons';
-import { useKeyPress, useOuterClickNotifier, WithStyle, withTheme } from '@medly-components/utils';
+import { useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { withTheme } from 'styled-components';
 import Text from '../../../Text';
 import Options from '../Options';
 import { CustomComponentWrapper, OptionStyled } from './Option.styled';

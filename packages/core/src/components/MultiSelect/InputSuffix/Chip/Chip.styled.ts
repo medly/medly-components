@@ -1,5 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, css, styled } from '@medly-components/utils';
+import { centerAligned } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { StyledChipProps } from './types';
 
 const getStyle = ({ theme, variant, state }: StyledChipProps) => {

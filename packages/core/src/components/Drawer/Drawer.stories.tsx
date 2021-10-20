@@ -1,7 +1,7 @@
 import { defaultTheme } from '@medly-components/theme/src';
-import { styled } from '@medly-components/utils';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import React, { useCallback, useState } from 'react';
+import styled from 'styled-components';
 import Button from '../Button';
 import CheckboxGroup from '../CheckboxGroup';
 import DateRangePicker from '../DateRangePicker';

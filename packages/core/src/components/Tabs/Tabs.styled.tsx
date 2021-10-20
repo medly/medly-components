@@ -1,3 +1,3 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 
 export const Tabs = styled('div')``;

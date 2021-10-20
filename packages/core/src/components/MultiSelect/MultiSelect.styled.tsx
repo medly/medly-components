@@ -1,5 +1,5 @@
 import { ChevronDownIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import TextField from '../TextField';
 import { InputSuffixStyled } from './InputSuffix/InputSuffix.styled';
 import { SelectWrapperProps } from './types';

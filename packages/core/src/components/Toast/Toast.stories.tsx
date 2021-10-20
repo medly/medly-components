@@ -1,6 +1,6 @@
 import { defaultTheme, ToastTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
 import React from 'react';
+import styled from 'styled-components';
 import { ToastProps } from './types';
 
 export const variants: ToastProps['variant'][] = ['error', 'warning', 'success', 'info'];

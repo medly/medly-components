@@ -1,5 +1,6 @@
-import { InjectClassName, keyframes, styled } from '@medly-components/utils';
+import { InjectClassName } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { keyframes } from 'styled-components';
 import { BtnLoaderProps } from './types';
 
 const fadesIn = keyframes`

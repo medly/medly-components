@@ -1,5 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
-import { css, oppositePositionalSpacing, styled, WithThemeProp } from '@medly-components/utils';
+import { oppositePositionalSpacing, WithThemeProp } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { StyledLabelProps } from './types';
 
 const asterisk = () => css`

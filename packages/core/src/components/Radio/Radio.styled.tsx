@@ -1,6 +1,7 @@
 import { RadioSizes, RadioTheme } from '@medly-components/theme';
-import { css, styled, WithThemeProp } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { css } from 'styled-components';
 import { getSelectorLabelPositionStyle } from '../Selectors';
 import { RadioProps, WrapperProps } from './types';
 

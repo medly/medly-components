@@ -1,5 +1,5 @@
-import { css } from '@medly-components/utils';
 import { rgba } from 'polished';
+import { css } from 'styled-components';
 import { InnerWrapperModifiedProps } from '../../types';
 
 export const outlinedStyle = ({ outlined, disabled, isErrorPresent }: InnerWrapperModifiedProps) => {

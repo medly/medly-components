@@ -1,4 +1,4 @@
-import { css } from '../../styled';
+import { css } from 'styled-components';
 
 export const centerAligned = (display: 'flex' | 'inline-flex' = 'inline-flex') => css`
     display: ${display};

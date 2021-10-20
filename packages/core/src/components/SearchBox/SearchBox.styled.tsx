@@ -1,5 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css, getFontStyle, styled, WithThemeProp } from '@medly-components/utils';
+import { getFontStyle, WithThemeProp } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import Options from '../SingleSelect/Options';
 import { SearchIconWrapper } from './styles/icons';
 import { getOptionsStyles } from './styles/options';

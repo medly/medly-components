@@ -1,4 +1,5 @@
-import { css, WithThemeProp } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
+import { css } from 'styled-components';
 import { OptionStyled } from '../../SingleSelect/Options/Option/Option.styled';
 import { StyledSearchBoxProps } from '../types';
 

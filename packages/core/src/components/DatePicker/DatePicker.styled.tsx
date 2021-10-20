@@ -1,5 +1,6 @@
 /* stylelint-disable  property-no-unknown */
-import { css, InjectClassName, Omit, styled, WithThemeProp } from '@medly-components/utils';
+import { InjectClassName, Omit, WithThemeProp } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import Calendar from '../Calendar';
 import { getPosition } from '../Popover/Popup/styled/Popup.styled';
 import { InnerWrapper, OuterWrapper } from '../TextField/Styled';

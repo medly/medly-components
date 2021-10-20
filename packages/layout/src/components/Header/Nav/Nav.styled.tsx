@@ -1,5 +1,6 @@
 import { CloseIcon } from '@medly-components/icons';
-import { breakpoints, media, styled } from '@medly-components/utils';
+import { breakpoints, media } from '@medly-components/utils';
+import styled from 'styled-components';
 
 export const BGOverlay = styled.div<{ isOpen: boolean }>`
     position: absolute;

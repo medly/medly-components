@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import { Props } from './types';
 
 export const Row = styled('tr').attrs(({ withWhiteBackground, theme: { cardTable } }: Props) => ({

@@ -1,5 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 
 export const NavList = styled('ul')`
     flex: 1;
