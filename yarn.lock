@@ -2765,20 +2765,20 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.16.tgz#07a7342f6b61ea1ecbfb31e6e23bf7a8c79b9b57"
   integrity sha512-SFtLGIGZummuyMDPRL5KdmpgI8U19Ble28UjEWihPjGxF1Lgj8aDjLWY8KiaUy9eqb9CKiVCqEIrK9jbnANfkw==
 
-"@medly/eslint-config-react@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@medly/eslint-config-react/-/eslint-config-react-0.2.2.tgz#2aa88dfe039a3a047ee5b5f8cd09eebc4a4665fe"
-  integrity sha512-umQVQG/WHEDZVHtqUpTI9HkWTQpFnQcoEd5/4lctdXpwqW8cywaHWyt4ZNCC60pwK0fwhUOB6jRs+po+Udt+NQ==
+"@medly/eslint-config-react@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@medly/eslint-config-react/-/eslint-config-react-0.2.3.tgz#47119f24fe7c9ff477722a60b27dc9a612bda095"
+  integrity sha512-71x9kWmRnNeguJ2YTW9IbYqN5YgiqXbPEy64+ITBQVW11BGNDSVl8/qRYHlFPiz4r68vFVV1QSoKvqG6i6fQ4g==
   dependencies:
-    "@medly/eslint-config" "0.4.0"
+    "@medly/eslint-config" "0.4.1"
     eslint "^7.28.0"
     eslint-plugin-react "^7.23.2"
     eslint-plugin-react-hooks "^4.2.0"
 
-"@medly/eslint-config@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@medly/eslint-config/-/eslint-config-0.4.0.tgz#f03ca16e96077b6a86677c449b024402445b41e2"
-  integrity sha512-cBBYf9xaC4LIv9ITR+UizEaHbZrJCWxude2NFELQZV7ULha8FSVlqsWmpw5LJy1zcHGV9gTZBi3ZeG2DUxLvjw==
+"@medly/eslint-config@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@medly/eslint-config/-/eslint-config-0.4.1.tgz#5bfbf6557c2f674b69a45d870519ed38d84f4d25"
+  integrity sha512-VJu0tJY8TWWXwXuBSQcpl/a1BPqpsUWySChTZj7pZ8QOp9TE14KPPBjBBjV4CFo6TnAAZv8Xvih0VO53VaAAtg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.23.0"
     "@typescript-eslint/parser" "^4.23.0"
@@ -2789,7 +2789,7 @@
     eslint-plugin-react "^7.23.2"
     eslint-plugin-react-hooks "^4.2.0"
     prettier "^2.3.1"
-    typescript "4.3.4"
+    typescript "4.2.4"
 
 "@medly/prettier-config@^0.1.1":
   version "0.1.1"
@@ -2810,22 +2810,22 @@
     stylelint-config-styled-components "^0.1.1"
     stylelint-prettier "^1.2.0"
 
-"@medly/typescript-config-react@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@medly/typescript-config-react/-/typescript-config-react-1.2.0.tgz#260fab068a04f8fed74b3b4ff33fb25602fefef5"
-  integrity sha512-7az4ZtiAIVbZHbwFoSFSRKwDUWlM/rK50yDrEH8aGArYK6J8p5IbeA1B2qZKlhI3zyG3UKtTWjhJnLJlVGbD6g==
+"@medly/typescript-config-react@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@medly/typescript-config-react/-/typescript-config-react-1.3.0.tgz#44b51f701803360f071f84c88f13f01d796a795f"
+  integrity sha512-XBD97yhL1VL0E5r9n9ZEtYiIpn7nZSc7iayz2up5QKBqTqqOGc9Zg1LBpfw0ZqDfN/H7nWRKMUlpyS9dLeRsdg==
   dependencies:
-    "@medly/typescript-config" "^1.1.0"
+    "@medly/typescript-config" "1.1.1"
     "@testing-library/jest-dom" "^5.13.0"
-    typescript "4.3.4"
+    typescript "4.2.4"
 
-"@medly/typescript-config@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@medly/typescript-config/-/typescript-config-1.1.0.tgz#ba472884644c0fce5a86a039c9f0a1adcac75361"
-  integrity sha512-efAjlL4FRhGcutyOlzpWpSaZ4tm5h3l+ZVY98HULs8Ltm5mBv7hpeqrDNkFwRw6+y7WYjyDBINS5BnlENUPYZg==
+"@medly/typescript-config@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@medly/typescript-config/-/typescript-config-1.1.1.tgz#a9fe06112551de7ab951a5848f9aec778dd7ad00"
+  integrity sha512-eeM4KM9S96+6afEqsky79oD6ej5a6aMRfSpfRdbLUx3X6JJUFDpll+e5gbN4pMo5KSbqgEM+75+5lQxTXfkVXQ==
   dependencies:
     "@types/jest" "^26.0.23"
-    typescript "4.3.4"
+    typescript "4.2.4"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -18249,10 +18249,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@4.3.4:
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.4.tgz#3f85b986945bcf31071decdd96cf8bfa65f9dcbc"
-  integrity sha512-uauPG7XZn9F/mo+7MrsRjyvbxFpzemRjKEZXS4AK83oP2KKOJPvb+9cO/gmnv8arWZvhnjVOXz7B49m1l0e9Ew==
+typescript@4.2.4:
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
+  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
 
 uglify-js@^3.1.4:
   version "3.10.1"
