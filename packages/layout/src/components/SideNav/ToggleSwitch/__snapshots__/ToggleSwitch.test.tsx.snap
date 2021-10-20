@@ -163,7 +163,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
 
 <div>
   <ul
-    class="sc-oVpqz c0"
+    class="sc-pDbHj c0"
   >
     <li
       class="c1"
@@ -356,7 +356,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
 
 <div>
   <ul
-    class="sc-oVpqz c0"
+    class="sc-pDbHj c0"
   >
     <li
       class="c1"
@@ -549,7 +549,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
 
 <div>
   <ul
-    class="sc-oVpqz c0"
+    class="sc-pDbHj c0"
   >
     <li
       class="c1"

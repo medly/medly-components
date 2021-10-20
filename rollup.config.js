@@ -22,6 +22,7 @@ export default ['es', 'cjs'].map(format => ({
         ...Object.keys(PKG_JSON.peerDependencies || {}),
         ...Object.keys(PKG_JSON.dependencies || {}),
         'date-fns',
+        /@babel\/runtime/,
         'react/jsx-runtime',
         'react/jsx-dev-runtime'
     ],
@@ -41,7 +42,7 @@ export default ['es', 'cjs'].map(format => ({
             configFile: BABEL_CONFIG,
             extensions,
             include: ['src/**/*'],
-            babelHelpers: 'bundled'
+            babelHelpers: 'runtime'
         }),
         typescript({
             tsconfig: TS_CONFIG,

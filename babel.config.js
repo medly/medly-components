@@ -10,12 +10,14 @@ module.exports = function (api) {
             '@babel/typescript'
         ],
         plugins = [
+            '@babel/plugin-transform-runtime',
             [
                 'babel-plugin-styled-components',
                 {
                     pure: true,
-                    displayName: true,
                     minify: true,
+                    fileName: false,
+                    displayName: false,
                     transpileTemplateLiterals: true
                 }
             ],
@@ -44,8 +46,6 @@ module.exports = function (api) {
         ignore.push('**/*.test.tsx', '**/*.test.ts', '__snapshots__');
         plugins.push(['@babel/plugin-transform-modules-commonjs']);
     }
-
-    if (api.env('test')) plugins.push('@babel/plugin-transform-runtime');
 
     return { presets, plugins, ignore };
 };
