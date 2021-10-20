@@ -104,16 +104,16 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c3 .c6,
-.c3 .sc-fzoLsD {
+.c3 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c3 .c6 *,
-.c3 .sc-fzoLsD * {
+.c3 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-Axmtr {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -148,21 +148,21 @@ exports[`MultiSelect component should render correctly with all the props given 
   color: #b0bcc8;
 }
 
-.c3 .sc-AxheI {
+.c3 .sc-1i29ttz-0 {
   color: #b0bcc8;
 }
 
 .c3 .c6,
-.c3 .sc-fzoLsD {
+.c3 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c3 .c6 *,
-.c3 .sc-fzoLsD * {
+.c3 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c3 ~ .sc-Axmtr {
+.c3 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -221,7 +221,7 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c9,
-.c9 ~ .sc-fznyAO {
+.c9 ~ .sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -258,7 +258,7 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c9:disabled ~ .c10,
-.c9:disabled ~ .sc-fznyAO {
+.c9:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
@@ -293,7 +293,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c9:not(:placeholder-shown) ~ .sc-fznyAO {
+.c9:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
   opacity: 1;
 }
 
@@ -603,17 +603,17 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   color: #546A7F;
 }
 
-.c3 .sc-fzozJi,
-.c3 .sc-fzoLsD {
+.c3 .sc-1ubn8hn-0,
+.c3 .dynlvq-0 {
   color: #546A7F;
 }
 
-.c3 .sc-fzozJi *,
-.c3 .sc-fzoLsD * {
+.c3 .sc-1ubn8hn-0 *,
+.c3 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-Axmtr {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -655,17 +655,17 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   color: #126AFA;
 }
 
-.c3:focus-within .sc-fzozJi,
-.c3:focus-within:hover .sc-fzozJi,
-.c3:focus-within .sc-fzoLsD,
-.c3:focus-within:hover .sc-fzoLsD {
+.c3:focus-within .sc-1ubn8hn-0,
+.c3:focus-within:hover .sc-1ubn8hn-0,
+.c3:focus-within .dynlvq-0,
+.c3:focus-within:hover .dynlvq-0 {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-fzozJi *,
-.c3:focus-within:hover .sc-fzozJi *,
-.c3:focus-within .sc-fzoLsD *,
-.c3:focus-within:hover .sc-fzoLsD * {
+.c3:focus-within .sc-1ubn8hn-0 *,
+.c3:focus-within:hover .sc-1ubn8hn-0 *,
+.c3:focus-within .dynlvq-0 *,
+.c3:focus-within:hover .dynlvq-0 * {
   fill: #126AFA;
 }
 
@@ -741,7 +741,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 }
 
 .c5,
-.c5 ~ .sc-fznyAO {
+.c5 ~ .sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -778,7 +778,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-fznyAO {
+.c5:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
@@ -813,7 +813,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-fznyAO {
+.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
   opacity: 1;
 }
 
@@ -1026,17 +1026,17 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   color: #546A7F;
 }
 
-.c3 .sc-fzozJi,
-.c3 .sc-fzoLsD {
+.c3 .sc-1ubn8hn-0,
+.c3 .dynlvq-0 {
   color: #546A7F;
 }
 
-.c3 .sc-fzozJi *,
-.c3 .sc-fzoLsD * {
+.c3 .sc-1ubn8hn-0 *,
+.c3 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-Axmtr {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -1078,17 +1078,17 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   color: #126AFA;
 }
 
-.c3:focus-within .sc-fzozJi,
-.c3:focus-within:hover .sc-fzozJi,
-.c3:focus-within .sc-fzoLsD,
-.c3:focus-within:hover .sc-fzoLsD {
+.c3:focus-within .sc-1ubn8hn-0,
+.c3:focus-within:hover .sc-1ubn8hn-0,
+.c3:focus-within .dynlvq-0,
+.c3:focus-within:hover .dynlvq-0 {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-fzozJi *,
-.c3:focus-within:hover .sc-fzozJi *,
-.c3:focus-within .sc-fzoLsD *,
-.c3:focus-within:hover .sc-fzoLsD * {
+.c3:focus-within .sc-1ubn8hn-0 *,
+.c3:focus-within:hover .sc-1ubn8hn-0 *,
+.c3:focus-within .dynlvq-0 *,
+.c3:focus-within:hover .dynlvq-0 * {
   fill: #126AFA;
 }
 
@@ -1168,7 +1168,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c5,
-.c5 ~ .sc-fznyAO {
+.c5 ~ .sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1205,7 +1205,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-fznyAO {
+.c5:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
@@ -1240,7 +1240,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-fznyAO {
+.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
   opacity: 1;
 }
 
@@ -1491,7 +1491,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   align-items: flex-start;
 }
 
-.c29 > :first-child {
+.c29 >:first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -2349,17 +2349,17 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   color: #546A7F;
 }
 
-.c3 .sc-fzozJi,
-.c3 .sc-fzoLsD {
+.c3 .sc-1ubn8hn-0,
+.c3 .dynlvq-0 {
   color: #546A7F;
 }
 
-.c3 .sc-fzozJi *,
-.c3 .sc-fzoLsD * {
+.c3 .sc-1ubn8hn-0 *,
+.c3 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-Axmtr {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -2401,17 +2401,17 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   color: #126AFA;
 }
 
-.c3:focus-within .sc-fzozJi,
-.c3:focus-within:hover .sc-fzozJi,
-.c3:focus-within .sc-fzoLsD,
-.c3:focus-within:hover .sc-fzoLsD {
+.c3:focus-within .sc-1ubn8hn-0,
+.c3:focus-within:hover .sc-1ubn8hn-0,
+.c3:focus-within .dynlvq-0,
+.c3:focus-within:hover .dynlvq-0 {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-fzozJi *,
-.c3:focus-within:hover .sc-fzozJi *,
-.c3:focus-within .sc-fzoLsD *,
-.c3:focus-within:hover .sc-fzoLsD * {
+.c3:focus-within .sc-1ubn8hn-0 *,
+.c3:focus-within:hover .sc-1ubn8hn-0 *,
+.c3:focus-within .dynlvq-0 *,
+.c3:focus-within:hover .dynlvq-0 * {
   fill: #126AFA;
 }
 
@@ -2487,7 +2487,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c5,
-.c5 ~ .sc-fznyAO {
+.c5 ~ .sc-1r5xr2a-0 {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -2524,7 +2524,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-fznyAO {
+.c5:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
@@ -2557,12 +2557,12 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   opacity: 0;
 }
 
-.c5:not(:placeholder-shown) ~ .sc-AxheI,
-.c5:focus ~ .sc-AxheI {
+.c5:not(:placeholder-shown) ~ .sc-1i29ttz-0,
+.c5:focus ~ .sc-1i29ttz-0 {
   position: relative;
 }
 
-.c5:not(:placeholder-shown) ~ .sc-fznyAO {
+.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
   opacity: 1;
 }
 
@@ -2813,7 +2813,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   align-items: flex-start;
 }
 
-.c29 > :first-child {
+.c29 >:first-child {
   margin-bottom: 0.9rem;
 }
 

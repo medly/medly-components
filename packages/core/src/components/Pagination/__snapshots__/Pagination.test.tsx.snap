@@ -116,7 +116,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   >
     <li>
       <button
-        class="sc-AxheI c2"
+        class="sc-1dmgj8o-1 c2"
         disabled=""
         type="button"
       >
@@ -139,7 +139,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
     </li>
     <li>
       <button
-        class="sc-AxheI c2"
+        class="sc-1dmgj8o-1 c2"
         disabled=""
         type="button"
       >
@@ -423,7 +423,7 @@ exports[`Pagination component should render correctly with all the default props
   >
     <li>
       <button
-        class="sc-AxheI c2"
+        class="sc-1dmgj8o-1 c2"
         disabled=""
         type="button"
       >
@@ -446,7 +446,7 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-AxheI c5"
+        class="sc-1dmgj8o-1 c5"
         type="button"
       >
         <span
@@ -458,7 +458,7 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-AxheI c8"
+        class="sc-1dmgj8o-1 c8"
         type="button"
       >
         <span
@@ -470,7 +470,7 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-AxheI c8"
+        class="sc-1dmgj8o-1 c8"
         type="button"
       >
         <span
@@ -486,7 +486,7 @@ exports[`Pagination component should render correctly with all the default props
         id="medly-popover-wrapper"
       >
         <button
-          class="sc-AxheI c8"
+          class="sc-1dmgj8o-1 c8"
           type="button"
         >
           <h5
@@ -499,7 +499,7 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-AxheI c8"
+        class="sc-1dmgj8o-1 c8"
         type="button"
       >
         <span
@@ -511,7 +511,7 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-AxheI c2"
+        class="sc-1dmgj8o-1 c2"
         type="button"
       >
         <svg
@@ -714,7 +714,7 @@ exports[`Pagination component should render correctly with all the props given 1
   >
     <li>
       <button
-        class="sc-AxheI c2"
+        class="sc-1dmgj8o-1 c2"
         type="button"
       >
         <span
@@ -726,7 +726,7 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <button
-        class="sc-AxheI c5"
+        class="sc-1dmgj8o-1 c5"
         type="button"
       >
         <span
@@ -738,7 +738,7 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <button
-        class="sc-AxheI c5"
+        class="sc-1dmgj8o-1 c5"
         type="button"
       >
         <span
@@ -754,7 +754,7 @@ exports[`Pagination component should render correctly with all the props given 1
         id="medly-popover-wrapper"
       >
         <button
-          class="sc-AxheI c5"
+          class="sc-1dmgj8o-1 c5"
           type="button"
         >
           <h5
@@ -767,7 +767,7 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <button
-        class="sc-AxheI c5"
+        class="sc-1dmgj8o-1 c5"
         type="button"
       >
         <span

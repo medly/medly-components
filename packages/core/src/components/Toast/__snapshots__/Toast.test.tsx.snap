@@ -426,7 +426,7 @@ exports[`Toast should render custom icons 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c5 .sc-AxiKw {
+.c5 .sc-1k2druj-0 {
   padding-top: 0.5rem;
 }
 
@@ -628,7 +628,7 @@ exports[`Toast should render header and message text 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c7 .sc-AxiKw {
+.c7 .sc-1k2druj-0 {
   padding-top: 0.5rem;
 }
 
@@ -814,7 +814,7 @@ exports[`Toast should render properly with error variant 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c5 .sc-AxiKw {
+.c5 .sc-1k2druj-0 {
   padding-top: 0.5rem;
 }
 
@@ -1005,7 +1005,7 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c6 .sc-AxiKw {
+.c6 .sc-1k2druj-0 {
   padding-top: 0.5rem;
 }
 
@@ -1186,7 +1186,7 @@ exports[`Toast should render properly with info variant 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c5 .sc-AxiKw {
+.c5 .sc-1k2druj-0 {
   padding-top: 0.5rem;
 }
 
@@ -1364,7 +1364,7 @@ exports[`Toast should render properly with success variant 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c5 .sc-AxiKw {
+.c5 .sc-1k2druj-0 {
   padding-top: 0.5rem;
 }
 
@@ -1539,7 +1539,7 @@ exports[`Toast should render properly with warning variant 1`] = `
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c5 .sc-AxiKw {
+.c5 .sc-1k2druj-0 {
   padding-top: 0.5rem;
 }
 
