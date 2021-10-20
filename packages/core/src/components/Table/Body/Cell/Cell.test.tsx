@@ -47,7 +47,7 @@ describe('Cell', () => {
             <TableCell
                 data="hello"
                 rowId="1"
-                rowData={[{}]}
+                rowData={{}}
                 tableSize="M"
                 hiddenDivRef={{ current: jest.fn() }}
                 dottedFieldName="title"

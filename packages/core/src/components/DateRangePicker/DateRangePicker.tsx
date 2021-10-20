@@ -64,6 +64,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
             (option: any) => {
                 if (option.value === DateRangeSelectionEnum.CUSTOM) {
                     focusElement('START_DATE');
+                    setActivePopover(PopoverTypes.CALENDAR);
                     setActive(true);
                 } else {
                     const selectedRange =

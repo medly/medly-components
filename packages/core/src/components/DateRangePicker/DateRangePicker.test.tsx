@@ -314,10 +314,10 @@ describe('DateRangePicker', () => {
                     onFocus: mockOnFocus,
                     onBlur: mockOnBlur
                 });
-            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
+            fireEvent.focus(startDateInput);
             expect(mockOnFocus).toHaveBeenCalled();
             fireEvent.blur(startDateInput);
-            await waitFor(() => expect(mockOnBlur).toHaveBeenCalled());
+            expect(mockOnBlur).toHaveBeenCalled();
         });
 
         it('should call invalid handler if passed', () => {

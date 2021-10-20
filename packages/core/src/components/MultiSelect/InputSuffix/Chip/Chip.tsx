@@ -8,7 +8,7 @@ import { Props } from './types';
 const Component: FC<Props> = React.memo(({ id, label, onClear, state, ...restProps }) => {
     const onClickHandler = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         onClearHandler = useCallback(
-            (e: React.MouseEvent<HTMLOrSVGElement>) => {
+            (e: React.MouseEvent<SVGElement>) => {
                 e.stopPropagation();
                 !restProps.disabled && onClear && onClear(label);
             },

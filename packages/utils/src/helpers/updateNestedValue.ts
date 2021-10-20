@@ -1,4 +1,4 @@
-export const updateNestedValue = (obj: { [k: string]: any }, key: string, value: any): object => {
+export const updateNestedValue = (obj: { [k: string]: any }, key: string, value: any): Record<string, unknown> => {
     const keys = key.split(/\.(.+)/);
     if (keys.length === 1) {
         return { ...obj, [key]: value };

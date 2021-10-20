@@ -20,9 +20,11 @@ const WithSWR: React.FunctionComponent = props => (
     </SWRConfig>
 );
 
-const customRender = (ui: React.ReactElement<any>, options?: object): RenderResult => render(ui, { wrapper: WithTheme, ...options });
+const customRender = (ui: React.ReactElement<any>, options?: Record<string, unknown>): RenderResult =>
+    render(ui, { wrapper: WithTheme, ...options });
 
-const renderWithSWR = (ui: React.ReactElement<any>, options?: object): RenderResult => render(ui, { wrapper: WithSWR, ...options });
+const renderWithSWR = (ui: React.ReactElement<any>, options?: Record<string, unknown>): RenderResult =>
+    render(ui, { wrapper: WithSWR, ...options });
 
 // re-export everything
 export * from '@testing-library/react';

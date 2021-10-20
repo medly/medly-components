@@ -3,9 +3,7 @@ import { Dispatch, SetStateAction } from 'react';
 import ColumnConfiguration from './ColumnConfiguration';
 
 export type SortOrder = 'asc' | 'desc';
-export type ObjectType = {
-    [key: string]: any;
-};
+export type ObjectType = Record<string, unknown>;
 export type Data = ObjectType[];
 // TODO: need to remove in next major version
 export type RowHoverActionsType = React.FC<{ rowData?: ObjectType; rowId?: any }>;
@@ -94,7 +92,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Name of the key in data on which grouping is applied */
     groupBy?: string;
     /** Name of the key in data on which grouping is applied */
-    getGroupedData?: (title: string) => Promise<object[]>;
+    getGroupedData?: (title: string) => Promise<Record<string, unknown>[]>;
     /** Actions bar items */
     actions?: Array<JSX.Element>;
     /** Enable Pagination */

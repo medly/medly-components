@@ -1,4 +1,4 @@
-export const createObjectFromDottedKeys = (objectWithDottedKey: { [key: string]: any }): object => {
+export const createObjectFromDottedKeys = (objectWithDottedKey: { [key: string]: any }): Record<string, unknown> => {
     const obj: { [key: string]: any } = {};
 
     Object.keys(objectWithDottedKey).forEach(key => {
