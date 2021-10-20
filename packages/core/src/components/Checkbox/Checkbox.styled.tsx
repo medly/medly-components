@@ -98,7 +98,7 @@ export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkb
     }
 `;
 
-export const CheckboxWrapper = styled('div')`
+export const CheckboxWrapper = styled('div')<{ size: CheckboxSizes }>`
     margin: 0.3rem;
     flex-shrink: 0;
     width: ${getCheckboxSize};

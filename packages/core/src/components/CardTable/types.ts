@@ -38,7 +38,7 @@ export interface CardTableProps extends Omit<HTMLProps<HTMLOListElement>, 'data'
     /** Function to be called on click of sort icon */
     onSort?: (field: string, order: SortOrder) => void;
     /** Function to be called on row click */
-    onRowClick?: (rowData: object) => void;
+    onRowClick?: (rowData: Record<string, unknown>) => void;
     /** Key name to disable row click */
     rowClickDisableKey?: string;
     /** Key name to select background color */

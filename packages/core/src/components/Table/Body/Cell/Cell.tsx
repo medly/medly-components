@@ -1,5 +1,6 @@
-import { ThemeContext, WithStyle } from '@medly-components/utils';
+import { WithStyle } from '@medly-components/utils';
 import React, { useContext, useEffect, useMemo, useRef } from 'react';
+import { ThemeContext } from 'styled-components';
 import Text from '../../../Text';
 import { Cell as StyledCell, CustomComponentWrapper, LoadingDiv } from './Styled';
 import { TableCellProps } from './types';

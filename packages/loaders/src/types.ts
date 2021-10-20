@@ -1,1 +1,1 @@
-export { SvgLoaderProps } from './SvgLoader/types';
+export type { SvgLoaderProps } from './SvgLoader/types';
