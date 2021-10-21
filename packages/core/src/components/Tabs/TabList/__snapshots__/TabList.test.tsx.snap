@@ -83,21 +83,21 @@ exports[`TabList should render properly 1`] = `
   color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxgMl {
+.c1:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxiKw {
+.c1:disabled .sc-1kcg570-0 {
   background-color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxjAm {
+.c1:disabled .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c1:disabled .sc-AxjAm * {
+.c1:disabled .sc-1pf3x8a-0 * {
   fill: #b0bcc8;
 }
 
@@ -105,7 +105,7 @@ exports[`TabList should render properly 1`] = `
   cursor: pointer;
 }
 
-.c1 .sc-AxjAm {
+.c1 .sc-1pf3x8a-0 {
   margin-right: 1.6rem;
 }
 
@@ -113,25 +113,25 @@ exports[`TabList should render properly 1`] = `
   color: #126AFA;
 }
 
-.c1 .sc-AxgMl {
+.c1 .sc-1kcg570-3 {
   color: #607890;
 }
 
-.c1 .sc-AxiKw {
+.c1 .sc-1kcg570-0 {
   background-color: #126AFA;
 }
 
-.c1 .sc-AxjAm {
+.c1 .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c1 .sc-AxjAm * {
+.c1 .sc-1pf3x8a-0 * {
   fill: #126AFA;
 }
 
-.c1 .sc-AxjAm * {
+.c1 .sc-1pf3x8a-0 * {
   fill: #126AFA;
 }
 
@@ -216,21 +216,21 @@ exports[`TabList should render properly 1`] = `
   color: #b0bcc8;
 }
 
-.c7:disabled .sc-AxgMl {
+.c7:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
-.c7:disabled .sc-AxiKw {
+.c7:disabled .sc-1kcg570-0 {
   background-color: #b0bcc8;
 }
 
-.c7:disabled .sc-AxjAm {
+.c7:disabled .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c7:disabled .sc-AxjAm * {
+.c7:disabled .sc-1pf3x8a-0 * {
   fill: #b0bcc8;
 }
 
@@ -238,7 +238,7 @@ exports[`TabList should render properly 1`] = `
   cursor: pointer;
 }
 
-.c7 .sc-AxjAm {
+.c7 .sc-1pf3x8a-0 {
   margin-right: 1.6rem;
 }
 
@@ -246,21 +246,21 @@ exports[`TabList should render properly 1`] = `
   color: #607890;
 }
 
-.c7 .sc-AxgMl {
+.c7 .sc-1kcg570-3 {
   color: #607890;
 }
 
-.c7 .sc-AxiKw {
+.c7 .sc-1kcg570-0 {
   background-color: #607890;
 }
 
-.c7 .sc-AxjAm {
+.c7 .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c7 .sc-AxjAm * {
+.c7 .sc-1pf3x8a-0 * {
   fill: #607890;
 }
 
@@ -273,21 +273,21 @@ exports[`TabList should render properly 1`] = `
   color: #435465;
 }
 
-.c7:not(:disabled):hover .sc-AxgMl {
+.c7:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
-.c7:not(:disabled):hover .sc-AxiKw {
+.c7:not(:disabled):hover .sc-1kcg570-0 {
   background-color: #435465;
 }
 
-.c7:not(:disabled):hover .sc-AxjAm {
+.c7:not(:disabled):hover .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c7:not(:disabled):hover .sc-AxjAm * {
+.c7:not(:disabled):hover .sc-1pf3x8a-0 * {
   fill: #435465;
 }
 

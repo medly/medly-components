@@ -85,7 +85,7 @@ exports[`Pagination popup component should render correctly with all the default
     id="medly-popover-wrapper"
   >
     <button
-      class="sc-AxheI c1"
+      class="sc-1dmgj8o-1 c1"
       type="button"
     >
       <h5

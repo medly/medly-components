@@ -107,7 +107,7 @@ exports[`Tab should render active state properly 1`] = `
   color: #b0bcc8;
 }
 
-.c0:disabled .sc-AxgMl {
+.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -137,7 +137,7 @@ exports[`Tab should render active state properly 1`] = `
   color: #126AFA;
 }
 
-.c0 .sc-AxgMl {
+.c0 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -363,7 +363,7 @@ exports[`Tab should render disabled state properly 1`] = `
   color: #b0bcc8;
 }
 
-.c0:disabled .sc-AxgMl {
+.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -393,7 +393,7 @@ exports[`Tab should render disabled state properly 1`] = `
   color: #607890;
 }
 
-.c0 .sc-AxgMl {
+.c0 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -420,7 +420,7 @@ exports[`Tab should render disabled state properly 1`] = `
   color: #435465;
 }
 
-.c0:not(:disabled):hover .sc-AxgMl {
+.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -643,7 +643,7 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   color: #b0bcc8;
 }
 
-.c0:disabled .sc-AxgMl {
+.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -677,7 +677,7 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   color: #607890;
 }
 
-.c0 .sc-AxgMl {
+.c0 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -704,7 +704,7 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   color: #435465;
 }
 
-.c0:not(:disabled):hover .sc-AxgMl {
+.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -1515,7 +1515,7 @@ exports[`Tab should render properly with M tab size 1`] = `
   color: #b0bcc8;
 }
 
-.c0:disabled .sc-AxgMl {
+.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -1545,7 +1545,7 @@ exports[`Tab should render properly with M tab size 1`] = `
   color: #607890;
 }
 
-.c0 .sc-AxgMl {
+.c0 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -1572,7 +1572,7 @@ exports[`Tab should render properly with M tab size 1`] = `
   color: #435465;
 }
 
-.c0:not(:disabled):hover .sc-AxgMl {
+.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -1797,7 +1797,7 @@ exports[`Tab should render properly with M tab size 2`] = `
   color: #b0bcc8;
 }
 
-.c0:disabled .sc-AxgMl {
+.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -1827,7 +1827,7 @@ exports[`Tab should render properly with M tab size 2`] = `
   color: #607890;
 }
 
-.c0 .sc-AxgMl {
+.c0 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -1854,7 +1854,7 @@ exports[`Tab should render properly with M tab size 2`] = `
   color: #435465;
 }
 
-.c0:not(:disabled):hover .sc-AxgMl {
+.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -2076,7 +2076,7 @@ exports[`Tab should render properly with S tab size 1`] = `
   color: #b0bcc8;
 }
 
-.c0:disabled .sc-AxgMl {
+.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -2106,7 +2106,7 @@ exports[`Tab should render properly with S tab size 1`] = `
   color: #607890;
 }
 
-.c0 .sc-AxgMl {
+.c0 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -2133,7 +2133,7 @@ exports[`Tab should render properly with S tab size 1`] = `
   color: #435465;
 }
 
-.c0:not(:disabled):hover .sc-AxgMl {
+.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -2355,7 +2355,7 @@ exports[`Tab should render properly with S tab size 2`] = `
   color: #b0bcc8;
 }
 
-.c0:disabled .sc-AxgMl {
+.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -2385,7 +2385,7 @@ exports[`Tab should render properly with S tab size 2`] = `
   color: #607890;
 }
 
-.c0 .sc-AxgMl {
+.c0 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -2412,7 +2412,7 @@ exports[`Tab should render properly with S tab size 2`] = `
   color: #435465;
 }
 
-.c0:not(:disabled):hover .sc-AxgMl {
+.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -2634,7 +2634,7 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   color: #b0bcc8;
 }
 
-.c0:disabled .sc-AxgMl {
+.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -2664,7 +2664,7 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   color: #607890;
 }
 
-.c0 .sc-AxgMl {
+.c0 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -2691,7 +2691,7 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   color: #435465;
 }
 
-.c0:not(:disabled):hover .sc-AxgMl {
+.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -2913,7 +2913,7 @@ exports[`Tab should render properly with flat tab variant 1`] = `
   color: #b0bcc8;
 }
 
-.c0:disabled .sc-AxgMl {
+.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -2943,7 +2943,7 @@ exports[`Tab should render properly with flat tab variant 1`] = `
   color: #607890;
 }
 
-.c0 .sc-AxgMl {
+.c0 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -2970,7 +2970,7 @@ exports[`Tab should render properly with flat tab variant 1`] = `
   color: #435465;
 }
 
-.c0:not(:disabled):hover .sc-AxgMl {
+.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -3191,7 +3191,7 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
   color: #b0bcc8;
 }
 
-.c0:disabled .sc-AxgMl {
+.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -3221,7 +3221,7 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
   color: #607890;
 }
 
-.c0 .sc-AxgMl {
+.c0 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -3248,7 +3248,7 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
   color: #435465;
 }
 
-.c0:not(:disabled):hover .sc-AxgMl {
+.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -3482,7 +3482,7 @@ exports[`Tab should render properly with solid tab variant 1`] = `
   line-height: 1.6rem;
 }
 
-.c0:disabled .sc-AxgMl {
+.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
   text-align: center;
 }
@@ -3513,7 +3513,7 @@ exports[`Tab should render properly with solid tab variant 1`] = `
   color: #607890;
 }
 
-.c0 .sc-AxgMl {
+.c0 .sc-1kcg570-3 {
   color: #607890;
   text-align: center;
 }
@@ -3541,7 +3541,7 @@ exports[`Tab should render properly with solid tab variant 1`] = `
   color: #435465;
 }
 
-.c0:not(:disabled):hover .sc-AxgMl {
+.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
   text-align: center;
 }

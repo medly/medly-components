@@ -59,7 +59,7 @@ exports[`FileInput component should render properly with all props 1`] = `
   grid-template-areas: 'label' 'field' 'description';
 }
 
-.c0 .sc-AxiKw {
+.c0 .sc-12atfcu-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -158,7 +158,7 @@ exports[`FileInput component should render properly with default props 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c0 .sc-AxiKw {
+.c0 .sc-12atfcu-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
