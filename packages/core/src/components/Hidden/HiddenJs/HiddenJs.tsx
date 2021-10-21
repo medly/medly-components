@@ -1,5 +1,6 @@
-import { breakpoints, ThemeContext, useMediaQuery } from '@medly-components/utils';
+import { breakpoints, useMediaQuery } from '@medly-components/utils';
 import React, { useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 import { HiddenProps } from '../types';
 
 export const HiddenJs: React.FC<HiddenProps> = React.memo(props => {

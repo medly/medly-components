@@ -1,1 +1,1 @@
-export { MarkdownContentProps } from './components/MarkdownContent/types';
+export type { MarkdownContentProps } from './components/MarkdownContent/types';

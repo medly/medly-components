@@ -253,7 +253,7 @@ describe('DatePicker component', () => {
                     />
                 ),
                 inputEl = container.querySelector('#dob-input') as HTMLInputElement;
-            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
+            fireEvent.focus(inputEl);
             expect(mockOnFocus).toHaveBeenCalled();
             fireEvent.blur(inputEl);
             expect(mockOnBlur).toHaveBeenCalled();

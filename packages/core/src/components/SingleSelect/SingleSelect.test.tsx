@@ -118,7 +118,7 @@ describe('SingleSelect component', () => {
         const input = screen.getByRole('textbox');
 
         fireEvent.focus(input);
-        fireEvent.keyPress(input, { key: 'a', code: 65, charCode: 65 });
+        fireEvent.keyDown(input, { key: 'a', code: 65 });
         expect(input).toHaveValue('Dummy1');
     });
 
@@ -309,8 +309,8 @@ describe('SingleSelect component', () => {
 
             it('should change input', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} isSearchable />);
-                fireEvent.click(screen.getByRole('textbox'));
+                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />);
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('Dummy1');
@@ -320,7 +320,7 @@ describe('SingleSelect component', () => {
             it('should change input value to the first option when currently selected options is the last option', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect value="Dummy3" options={options} onChange={mockOnChange} />);
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('All');
@@ -330,7 +330,7 @@ describe('SingleSelect component', () => {
             it('should change input value to the first option when there is no option selected', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect options={options} onChange={mockOnChange} />);
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('All');
@@ -346,7 +346,7 @@ describe('SingleSelect component', () => {
                             onChange={mockOnChange}
                         />
                     );
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('All');
@@ -368,7 +368,7 @@ describe('SingleSelect component', () => {
                             onChange={mockOnChange}
                         />
                     );
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('Dummy6');
@@ -387,7 +387,7 @@ describe('SingleSelect component', () => {
             it('should change input value', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect value="Some 1" options={options} onChange={mockOnChange} />);
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('Dummy1');
@@ -397,7 +397,7 @@ describe('SingleSelect component', () => {
             it('should change input value to the last option when currently selected option is the first option', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />);
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('Dummy3');
@@ -407,7 +407,7 @@ describe('SingleSelect component', () => {
             it('should change input value to the last option when there is no option selected', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect options={options} onChange={mockOnChange} />);
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('Dummy3');
@@ -427,7 +427,7 @@ describe('SingleSelect component', () => {
                             onChange={mockOnChange}
                         />
                     );
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('Dummy3');
@@ -443,7 +443,7 @@ describe('SingleSelect component', () => {
                             onChange={mockOnChange}
                         />
                     );
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('Dummy3');
@@ -455,7 +455,7 @@ describe('SingleSelect component', () => {
             it('should open nested options', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} includesNestedOptions />);
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'ArrowRight', code: 39 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
@@ -468,7 +468,7 @@ describe('SingleSelect component', () => {
             it('should close nested options', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} includesNestedOptions />);
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'ArrowRight', code: 39 });
                 fireEvent.keyDown(container, { key: 'ArrowLeft', code: 37 });
@@ -481,7 +481,7 @@ describe('SingleSelect component', () => {
             it('should close options and select the hovered option', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />);
-                fireEvent.click(screen.getByRole('textbox'));
+                fireEvent.focus(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('Dummy1');

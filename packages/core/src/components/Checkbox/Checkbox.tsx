@@ -76,7 +76,7 @@ const Component: FC<CheckboxProps> = React.memo(
                             {label}
                         </SelectorLabel>
                     )}
-                    <Styled.CheckboxWrapper size={size}>
+                    <Styled.CheckboxWrapper size={size!}>
                         <Styled.HiddenCheckbox
                             ref={inputRef}
                             id={inputId}
@@ -93,5 +93,5 @@ const Component: FC<CheckboxProps> = React.memo(
 );
 
 Component.displayName = 'Checkbox';
-Component.defaultProps = { label: '', labelPosition: 'right' };
+Component.defaultProps = { size: 'S', label: '', labelPosition: 'right' };
 export const Checkbox: FC<CheckboxProps> & WithStyle = Object.assign(Component, { Style: Styled.CheckboxWithLabelWrapper });

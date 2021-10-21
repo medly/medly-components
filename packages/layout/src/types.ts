@@ -1,2 +1,2 @@
-export { HeaderProps } from './components/Header/types';
-export { SideNavProps } from './components/SideNav/types';
+export type { HeaderProps } from './components/Header/types';
+export type { SideNavProps } from './components/SideNav/types';

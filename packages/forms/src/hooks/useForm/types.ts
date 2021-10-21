@@ -2,7 +2,7 @@ import { DisplayFormat } from '../../components/Fields/types';
 
 export interface Handlers {
     // Form submit handler
-    handleFormSubmit: (onSubmit: (values: object) => void) => (e: React.FormEvent<HTMLFormElement>) => void;
+    handleFormSubmit: (onSubmit: (values: Record<string, unknown>) => void) => (e: React.FormEvent<HTMLFormElement>) => void;
     // Form reset handler
     handleFormReset: (onReset?: (e: React.FormEvent<HTMLFormElement>) => void) => (e: React.FormEvent<HTMLFormElement>) => void;
     // Common Focus handler
@@ -49,7 +49,7 @@ export interface UseFormResult {
     // Function to change error messages
     addErrorMessage: (key: string, message: string) => void;
     // Function can be called to reset the values
-    setValues: React.Dispatch<React.SetStateAction<{}>>;
+    setValues: React.Dispatch<React.SetStateAction<Record<string, unknown>>>;
     // Function can be called to reset the error messages
-    setErrorMessages: React.Dispatch<React.SetStateAction<{}>>;
+    setErrorMessages: React.Dispatch<React.SetStateAction<Record<string, unknown>>>;
 }

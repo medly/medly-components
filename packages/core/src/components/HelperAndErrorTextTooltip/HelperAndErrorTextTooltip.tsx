@@ -1,6 +1,6 @@
 import { ErrorIcon, InfoOutlineIcon } from '@medly-components/icons';
-import { ThemeContext } from '@medly-components/utils';
 import React, { FC, useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 import Popover from '../Popover';
 import * as Styled from './HelperAndErrorTextTooltip.styled';
 import { HelperTextTooltipProps } from './types';
