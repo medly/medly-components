@@ -1,6 +1,7 @@
 import { defaultTheme, PaginationTheme } from '@medly-components/theme';
-import { centerAligned, styled } from '@medly-components/utils';
+import { centerAligned } from '@medly-components/utils';
 import React from 'react';
+import styled from 'styled-components';
 
 export const ThemeInterface: React.FC<PaginationTheme> = () => null;
 ThemeInterface.defaultProps = {

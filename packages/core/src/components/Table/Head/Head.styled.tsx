@@ -1,5 +1,5 @@
-import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { css } from 'styled-components';
 
 export const THead = styled('thead')<{ showShadowAtBottom: boolean }>`
     display: block;

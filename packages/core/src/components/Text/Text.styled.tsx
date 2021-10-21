@@ -1,5 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
-import { css, styled, WithThemeProp } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { TextProps } from './types';
 
 const uppercase = () => css`

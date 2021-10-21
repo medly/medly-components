@@ -1,4 +1,5 @@
-import { breakpoints, css, InjectClassName, media, styled } from '@medly-components/utils';
+import { breakpoints, InjectClassName, media } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { HiddenProps } from '../types';
 
 const hide = css`

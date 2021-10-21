@@ -1,5 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, css, styled, WithThemeProp } from '@medly-components/utils';
+import { centerAligned, WithThemeProp } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import Text from '../Text';
 import { StyledProps } from './types';
 

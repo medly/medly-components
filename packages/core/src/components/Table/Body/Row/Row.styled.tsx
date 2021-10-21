@@ -1,5 +1,5 @@
-import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { css } from 'styled-components';
 import { GridTemplateProps } from '../../types';
 import { defaultTableCellPaddings } from '../Cell/Styled';
 import { StyledProps } from './types';

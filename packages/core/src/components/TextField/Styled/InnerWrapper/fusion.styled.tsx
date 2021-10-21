@@ -1,4 +1,4 @@
-import { css } from '@medly-components/utils';
+import { css } from 'styled-components';
 import { InnerWrapperModifiedProps } from '../../types';
 import { HelperText } from '../HelperText.styled';
 import { Label } from '../Label.styled';

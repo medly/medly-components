@@ -1,6 +1,7 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css, WithThemeProp } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
+import { css } from 'styled-components';
 import { ButtonProps } from '../types';
 
 const getStyle = (textColor: string, bgColor = 'transparent', borderColor: string, borderWidth = '0.1rem') => css`

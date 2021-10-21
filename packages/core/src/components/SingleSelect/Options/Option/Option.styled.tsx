@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import Text from '../../../Text';
 import { OptionStyledProps } from './types';
 

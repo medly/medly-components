@@ -1,7 +1,8 @@
 import { Text } from '@medly-components/core';
 import { SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { css, getFontStyle, styled } from '@medly-components/utils';
+import { getFontStyle } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { NavItemStyledProps } from './types';
 
 const getStyle = ({ navItem, state }: NavItemStyledProps & { state: 'default' | 'hovered' | 'pressed' | 'active' }) => css`

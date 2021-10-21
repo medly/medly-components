@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import * as TextFieldStyled from '../../TextField/Styled';
 import InputSeparator from './InputSeparator';
 

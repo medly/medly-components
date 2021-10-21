@@ -1,5 +1,5 @@
-import { keyframes, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { keyframes } from 'styled-components';
 import Text from '../Text';
 import { CenterAlignedProps } from './types';
 

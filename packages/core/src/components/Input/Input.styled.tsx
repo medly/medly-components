@@ -1,4 +1,5 @@
-import { fullWidth, getFontStyle, styled } from '@medly-components/utils';
+import { fullWidth, getFontStyle } from '@medly-components/utils';
+import styled from 'styled-components';
 import FieldWithLabel from '../FieldWithLabel';
 import { InputProps } from './types';
 

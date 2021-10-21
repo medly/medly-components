@@ -1,4 +1,5 @@
-import { centerAligned, styled } from '@medly-components/utils';
+import { centerAligned } from '@medly-components/utils';
+import styled from 'styled-components';
 import Text from '../../Text';
 import { getPageNumberButtonStyleByState, PageNumberButton } from '../Pagination.styled';
 

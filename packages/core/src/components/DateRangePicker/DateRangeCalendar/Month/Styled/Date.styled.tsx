@@ -1,5 +1,5 @@
 import { DateRangePickerTheme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import Text from '../../../../Text';
 import { ExtendedDateProps } from '../types';
 

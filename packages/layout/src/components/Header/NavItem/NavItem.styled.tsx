@@ -1,4 +1,5 @@
-import { breakpoints, media, styled } from '@medly-components/utils';
+import { breakpoints, media } from '@medly-components/utils';
+import styled from 'styled-components';
 
 export type NavItemProps = { isActive?: boolean };
 export const NavItem = styled.button<NavItemProps>`

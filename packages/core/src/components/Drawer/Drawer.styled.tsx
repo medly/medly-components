@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import { DrawerStyledProps } from './types';
 
 export const DrawerBackground = styled('div')<{ open?: boolean; withOverlay?: boolean }>`

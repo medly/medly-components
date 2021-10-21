@@ -1,4 +1,4 @@
-import { css, styled } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { ToastContainerProps } from './types';
 
 const getPosition = (position: ToastContainerProps['position']) => {
