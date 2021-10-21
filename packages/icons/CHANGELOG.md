@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.9.0...@medly-components/icons@1.10.0) (2021-10-20)
+
+
+### Features
+
+* use medly typescript config ([#490](https://github.com/medly/medly-components/issues/490)) ([7c78c00](https://github.com/medly/medly-components/commit/7c78c0021209f558878e2a47fce101d54237ca33))
+
+
+
+
+
 # [1.9.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.8.2...@medly-components/icons@1.9.0) (2021-10-19)
 
 
