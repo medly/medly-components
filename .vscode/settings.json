@@ -14,7 +14,7 @@
         "commitlint.config.js": true,
         "coverage": true,
         "node_modules/": true,
-        "packages/**/dist/": false,
+        "packages/**/dist/": true,
         "packages/**/node_modules/": true,
         "yarn.lock": true
     }
