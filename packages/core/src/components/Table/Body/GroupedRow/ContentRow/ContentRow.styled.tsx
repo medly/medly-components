@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import { StyledProps } from './types';
 
 export const ContentRowStyled = styled('tr')<StyledProps>`

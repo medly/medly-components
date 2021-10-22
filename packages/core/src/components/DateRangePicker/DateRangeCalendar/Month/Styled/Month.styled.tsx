@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import * as CalendarStyled from '../../../../Calendar/Calendar.styled';
 import Text from '../../../../Text';
 

@@ -1,6 +1,6 @@
 import { defaultTheme, FontFaceTheme, FontTheme, FontVariantTheme, FontWeightTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
 import * as React from 'react';
+import styled from 'styled-components';
 
 export const VerticalAlign = styled.div`
     width: 100%;

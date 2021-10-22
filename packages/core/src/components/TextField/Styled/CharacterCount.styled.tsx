@@ -1,4 +1,5 @@
-import { styled, WithThemeProp } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
+import styled from 'styled-components';
 
 const getMarginTop = ({ size, multiline }: { multiline?: boolean; size: 'S' | 'M' }) => {
     if (multiline) return '.1rem';

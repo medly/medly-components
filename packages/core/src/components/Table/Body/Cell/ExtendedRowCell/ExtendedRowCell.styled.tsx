@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import { resolveValueByTableSize } from '../../../helpers';
 import { TableProps } from '../../../types';
 

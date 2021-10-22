@@ -70,7 +70,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
   align-items: flex-start;
 }
 
-.c15 > :first-child {
+.c15 >:first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -595,7 +595,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   align-items: flex-start;
 }
 
-.c14 > :first-child {
+.c14 >:first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -1091,7 +1091,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   align-items: flex-start;
 }
 
-.c14 > :first-child {
+.c14 >:first-child {
   margin-bottom: 0.9rem;
 }
 

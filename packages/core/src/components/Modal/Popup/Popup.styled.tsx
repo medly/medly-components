@@ -1,4 +1,4 @@
-import { keyframes, styled } from '@medly-components/utils';
+import styled, { keyframes } from 'styled-components';
 import { ModalPopupProps } from './types';
 
 const mobileModalSlideIn = keyframes`

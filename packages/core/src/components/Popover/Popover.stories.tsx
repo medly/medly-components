@@ -1,4 +1,5 @@
-import { centerAligned, styled, css } from '@medly-components/utils';
+import { centerAligned } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { InteractionType, Placement } from './types';
 
 export const placements: Placement[] = [

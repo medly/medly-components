@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import TextField from '../../TextField';
 
 export const Wrapper = styled.div`

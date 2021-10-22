@@ -1,5 +1,5 @@
-import { styled } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled from 'styled-components';
 import { DialogBoxBackgroundProps } from './types';
 
 export const DialogBoxBackgroundStyled = styled.div<DialogBoxBackgroundProps>`

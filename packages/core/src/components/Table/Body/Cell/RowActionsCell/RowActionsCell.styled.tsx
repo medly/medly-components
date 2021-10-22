@@ -1,6 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { css } from 'styled-components';
 import Checkbox from '../../../../Checkbox';
 import { RowActionProps } from './types';
 

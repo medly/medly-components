@@ -1,4 +1,5 @@
-import { css, getFontStyle, styled } from '@medly-components/utils';
+import { getFontStyle } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { TableProps, TableStyledProps } from './types';
 
 export const HiddenDiv = styled('div')`

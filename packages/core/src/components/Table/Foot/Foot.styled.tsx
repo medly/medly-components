@@ -1,5 +1,5 @@
 import { Theme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import Pagination from '../../Pagination';
 import { PageNavButton, PageNumberButton } from '../../Pagination/Pagination.styled';
 import Text from '../../Text';

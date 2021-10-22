@@ -1,6 +1,7 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, styled } from '@medly-components/utils';
+import { centerAligned } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled from 'styled-components';
 import Text from '../../../../Text';
 import { TableProps } from '../../../types';
 import { defaultTableCellPaddings } from '../../Cell/Styled';

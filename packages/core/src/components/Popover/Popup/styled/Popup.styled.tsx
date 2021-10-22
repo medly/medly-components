@@ -1,4 +1,5 @@
-import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
+import { fullHeight, fullWidth } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { Placement } from '../../types';
 import { StyledPopoverPopupProps } from '../types';
 import { getStyleWithArrow } from './WithArrow';

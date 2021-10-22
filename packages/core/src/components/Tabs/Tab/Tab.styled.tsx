@@ -1,5 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, css, getFontStyle, styled } from '@medly-components/utils';
+import { centerAligned, getFontStyle } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import Text from '../../Text';
 import { TabSize } from '../types';
 import { StyledTabProps } from './types';

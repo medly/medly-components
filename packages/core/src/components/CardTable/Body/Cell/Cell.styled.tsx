@@ -1,4 +1,4 @@
-import { css, styled } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import Text from '../../../Text';
 import { StyledProps } from './types';
 

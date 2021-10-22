@@ -1,4 +1,4 @@
-import { css } from '@medly-components/utils';
+import { css } from 'styled-components';
 import { PopoverPopupProps } from '../types';
 
 const getPositionWithArrow = ({ placement }: PopoverPopupProps) => {

@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import NavList from '../NavList';
 
 export const ToggleContainer = styled(NavList)`

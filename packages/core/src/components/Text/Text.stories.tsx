@@ -1,7 +1,7 @@
 import { FontVariants, FontWeights } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
 import { boolean, color, select } from '@storybook/addon-knobs';
 import React from 'react';
+import styled from 'styled-components';
 import { Text } from './Text';
 
 const variantOptions: FontVariants[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'body1', 'body2'];

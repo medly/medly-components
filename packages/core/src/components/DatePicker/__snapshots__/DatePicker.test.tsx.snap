@@ -82,16 +82,16 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 }
 
 .c4 .c13,
-.c4 .sc-fzpjYC {
+.c4 .sc-dynlvq-0 {
   color: #546A7F;
 }
 
 .c4 .c13 *,
-.c4 .sc-fzpjYC * {
+.c4 .sc-dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-fzoyAV {
+.c4 ~ .sc-avlt8d-0 {
   color: #546A7F;
 }
 
@@ -135,15 +135,15 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 
 .c4:focus-within .c13,
 .c4:focus-within:hover .c13,
-.c4:focus-within .sc-fzpjYC,
-.c4:focus-within:hover .sc-fzpjYC {
+.c4:focus-within .sc-dynlvq-0,
+.c4:focus-within:hover .sc-dynlvq-0 {
   color: #126AFA;
 }
 
 .c4:focus-within .c13 *,
 .c4:focus-within:hover .c13 *,
-.c4:focus-within .sc-fzpjYC *,
-.c4:focus-within:hover .sc-fzpjYC * {
+.c4:focus-within .sc-dynlvq-0 *,
+.c4:focus-within:hover .sc-dynlvq-0 * {
   fill: #126AFA;
 }
 
@@ -354,7 +354,7 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   padding-right: 0.8rem;
 }
 
-.c1 .sc-AxmLO {
+.c1 .sc-zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -502,17 +502,17 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   color: #546A7F;
 }
 
-.c4 .sc-fzoXzr,
-.c4 .sc-fzpjYC {
+.c4 .sc-1ubn8hn-0,
+.c4 .sc-dynlvq-0 {
   color: #546A7F;
 }
 
-.c4 .sc-fzoXzr *,
-.c4 .sc-fzpjYC * {
+.c4 .sc-1ubn8hn-0 *,
+.c4 .sc-dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-fzoyAV {
+.c4 ~ .sc-avlt8d-0 {
   color: #546A7F;
 }
 
@@ -554,17 +554,17 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   color: #126AFA;
 }
 
-.c4:focus-within .sc-fzoXzr,
-.c4:focus-within:hover .sc-fzoXzr,
-.c4:focus-within .sc-fzpjYC,
-.c4:focus-within:hover .sc-fzpjYC {
+.c4:focus-within .sc-1ubn8hn-0,
+.c4:focus-within:hover .sc-1ubn8hn-0,
+.c4:focus-within .sc-dynlvq-0,
+.c4:focus-within:hover .sc-dynlvq-0 {
   color: #126AFA;
 }
 
-.c4:focus-within .sc-fzoXzr *,
-.c4:focus-within:hover .sc-fzoXzr *,
-.c4:focus-within .sc-fzpjYC *,
-.c4:focus-within:hover .sc-fzpjYC * {
+.c4:focus-within .sc-1ubn8hn-0 *,
+.c4:focus-within:hover .sc-1ubn8hn-0 *,
+.c4:focus-within .sc-dynlvq-0 *,
+.c4:focus-within:hover .sc-dynlvq-0 * {
   fill: #126AFA;
 }
 
@@ -775,7 +775,7 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   padding-right: 0.8rem;
 }
 
-.c1 .sc-AxmLO {
+.c1 .sc-zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -1176,7 +1176,7 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1199,7 +1199,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -1212,7 +1212,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -1225,7 +1225,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -1239,7 +1239,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -2212,7 +2212,7 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -2235,7 +2235,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -2248,7 +2248,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -2261,7 +2261,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -2275,7 +2275,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -3245,7 +3245,7 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -3268,7 +3268,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -3281,7 +3281,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -3294,7 +3294,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -3308,7 +3308,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -4278,7 +4278,7 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -4301,7 +4301,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -4314,7 +4314,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -4327,7 +4327,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -4341,7 +4341,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -5313,7 +5313,7 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -5336,7 +5336,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -5349,7 +5349,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -5362,7 +5362,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -5376,7 +5376,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -6345,7 +6345,7 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -6368,7 +6368,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -6381,7 +6381,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -6394,7 +6394,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -6408,7 +6408,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -7377,7 +7377,7 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -7400,7 +7400,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -7413,7 +7413,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -7426,7 +7426,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -7440,7 +7440,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -8412,7 +8412,7 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -8435,7 +8435,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -8448,7 +8448,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -8461,7 +8461,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -8475,7 +8475,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -9444,7 +9444,7 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -9467,7 +9467,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -9480,7 +9480,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -9493,7 +9493,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -9507,7 +9507,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -10476,7 +10476,7 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -10499,7 +10499,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -10512,7 +10512,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -10525,7 +10525,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -10539,7 +10539,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -11511,7 +11511,7 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -11534,7 +11534,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -11547,7 +11547,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -11560,7 +11560,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -11574,7 +11574,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -12543,7 +12543,7 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6,
-.c6 .sc-fzqNqU {
+.c6 .sc-975cgx-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -12566,7 +12566,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #b0bcc8;
 }
 
-.c6:disabled .sc-fzqNqU {
+.c6:disabled .sc-975cgx-0 {
   color: #b0bcc8;
 }
 
@@ -12579,7 +12579,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #126AFA;
 }
 
-.c6:not(:disabled):not(:hover) .sc-fzqNqU {
+.c6:not(:disabled):not(:hover) .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -12592,7 +12592,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #0D4AAF;
 }
 
-.c6:not(:disabled):active .sc-fzqNqU {
+.c6:not(:disabled):active .sc-975cgx-0 {
   color: #13181D;
 }
 
@@ -12606,7 +12606,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #0F5AD5;
 }
 
-.c6:not(:disabled):not(:active):hover .sc-fzqNqU {
+.c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
   color: #303C48;
 }
 
@@ -13324,17 +13324,17 @@ exports[`DatePicker component should render properly when value is of date type 
   color: #546A7F;
 }
 
-.c4 .sc-fzoXzr,
-.c4 .sc-fzpjYC {
+.c4 .sc-1ubn8hn-0,
+.c4 .sc-dynlvq-0 {
   color: #546A7F;
 }
 
-.c4 .sc-fzoXzr *,
-.c4 .sc-fzpjYC * {
+.c4 .sc-1ubn8hn-0 *,
+.c4 .sc-dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-fzoyAV {
+.c4 ~ .sc-avlt8d-0 {
   color: #546A7F;
 }
 
@@ -13369,21 +13369,21 @@ exports[`DatePicker component should render properly when value is of date type 
   color: #b0bcc8;
 }
 
-.c4 .sc-fzqNJr {
+.c4 .sc-1i29ttz-0 {
   color: #b0bcc8;
 }
 
-.c4 .sc-fzoXzr,
-.c4 .sc-fzpjYC {
+.c4 .sc-1ubn8hn-0,
+.c4 .sc-dynlvq-0 {
   color: #b0bcc8;
 }
 
-.c4 .sc-fzoXzr *,
-.c4 .sc-fzpjYC * {
+.c4 .sc-1ubn8hn-0 *,
+.c4 .sc-dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c4 ~ .sc-fzoyAV {
+.c4 ~ .sc-avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -13570,7 +13570,7 @@ exports[`DatePicker component should render properly when value is of date type 
   padding-right: 0.8rem;
 }
 
-.c1 .sc-AxmLO {
+.c1 .sc-zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -13724,17 +13724,17 @@ exports[`DatePicker component should render properly when value is of string typ
   color: #546A7F;
 }
 
-.c4 .sc-fzoXzr,
-.c4 .sc-fzpjYC {
+.c4 .sc-1ubn8hn-0,
+.c4 .sc-dynlvq-0 {
   color: #546A7F;
 }
 
-.c4 .sc-fzoXzr *,
-.c4 .sc-fzpjYC * {
+.c4 .sc-1ubn8hn-0 *,
+.c4 .sc-dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-fzoyAV {
+.c4 ~ .sc-avlt8d-0 {
   color: #546A7F;
 }
 
@@ -13769,21 +13769,21 @@ exports[`DatePicker component should render properly when value is of string typ
   color: #b0bcc8;
 }
 
-.c4 .sc-fzqNJr {
+.c4 .sc-1i29ttz-0 {
   color: #b0bcc8;
 }
 
-.c4 .sc-fzoXzr,
-.c4 .sc-fzpjYC {
+.c4 .sc-1ubn8hn-0,
+.c4 .sc-dynlvq-0 {
   color: #b0bcc8;
 }
 
-.c4 .sc-fzoXzr *,
-.c4 .sc-fzpjYC * {
+.c4 .sc-1ubn8hn-0 *,
+.c4 .sc-dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c4 ~ .sc-fzoyAV {
+.c4 ~ .sc-avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -13969,7 +13969,7 @@ exports[`DatePicker component should render properly when value is of string typ
   padding-right: 0.8rem;
 }
 
-.c1 .sc-AxmLO {
+.c1 .sc-zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);

@@ -1,5 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
-import { fullWidth, getFontStyle, styled } from '@medly-components/utils';
+import { fullWidth, getFontStyle } from '@medly-components/utils';
+import styled from 'styled-components';
 import { StyledInputProps, StyledLabelProps } from './types';
 
 export const Input = styled('input').attrs({ type: 'file' })<StyledInputProps>`

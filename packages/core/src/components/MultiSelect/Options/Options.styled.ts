@@ -1,4 +1,5 @@
-import { getFontStyle, styled, WithThemeProp } from '@medly-components/utils';
+import { getFontStyle, WithThemeProp } from '@medly-components/utils';
+import styled from 'styled-components';
 import Checkbox from '../../Checkbox';
 import { SelectorGroup } from '../../Selectors';
 

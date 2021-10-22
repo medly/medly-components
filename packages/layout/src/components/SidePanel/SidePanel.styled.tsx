@@ -1,5 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { SidePanelStyledProps } from './types';
 
 const leftPositioned = () => css`

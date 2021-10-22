@@ -1,5 +1,5 @@
-import { styled } from '@medly-components/utils';
 import React from 'react';
+import styled from 'styled-components';
 import { ColumnConfig } from '../types';
 
 interface StatusReport {

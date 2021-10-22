@@ -46,7 +46,7 @@ exports[`Row should render NoResult properly 1`] = `
 
 <div>
   <tr
-    class="sc-AxhUy c0"
+    class="sc-1yxujaa-0 c0"
   >
     <td
       class="c1"
@@ -127,7 +127,7 @@ exports[`Row should render NoResult with Card design also 1`] = `
 
 <div>
   <tr
-    class="sc-AxhUy c0"
+    class="sc-1yxujaa-0 c0"
   >
     <td
       class="c1"

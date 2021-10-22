@@ -1,4 +1,5 @@
-import { css, InjectClassName, styled } from '@medly-components/utils';
+import { InjectClassName } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { SvgIconProps } from './types';
 
 const hoverStyle = ({ hoverBgColor, hoverIconColor }: SvgIconProps) => css`
