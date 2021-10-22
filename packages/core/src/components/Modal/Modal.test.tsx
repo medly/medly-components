@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import React from 'react';
 import { Modal } from './Modal';
 import { ModalBackgroundStyled } from './Modal.styled';
@@ -21,22 +21,11 @@ const modalRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHe
         </Modal>
     );
 describe('Modal component', () => {
-    const originalScrollHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollHeight')!,
-        originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight')!,
-        originalScrollTop = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollTop')!;
-
     beforeAll(() => {
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 0 });
     });
-
-    afterAll(() => {
-        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', originalScrollHeight);
-        Object.defineProperty(HTMLElement.prototype, 'clientHeight', originalClientHeight);
-        Object.defineProperty(HTMLElement.prototype, 'scrollTop', originalScrollTop);
-    });
-    afterEach(cleanup);
 
     it('should render properly when it is open', () => {
         const { container } = modalRenderer({ open: true, minWidth: '200px', minHeight: '200px' });

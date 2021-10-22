@@ -946,21 +946,6 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   fill: #607890;
 }
 
-.c18 {
-  overflow: visible;
-  font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  cursor: pointer;
-}
-
-.c18 * {
-  fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  fill: #607890;
-}
-
 .c7 {
   top: 50%;
   left: 0;
@@ -1257,61 +1242,6 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   text-align: initial;
 }
 
-.c17 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-}
-
-.c22 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-}
-
-.c35:disabled,
-.c35:disabled > .c12 {
-  cursor: not-allowed;
-}
-
-.c35 .c12 {
-  font-size: 1.2rem;
-  border-radius: 50%;
-  cursor: pointer;
-  padding: 0.4rem;
-  margin-left: 0.6rem;
-}
-
-.c35 .c12 {
-  background-color: #b0bcc8;
-}
-
-.c35 .c12 * {
-  fill: #303C48;
-}
-
-.c35 .c12:hover {
-  background-color: #98A7B7;
-}
-
-.c35 .c12:hover * {
-  fill: #13181D;
-}
-
 .c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1326,8 +1256,8 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   border-radius: 50%;
   margin-right: 0.8rem;
   color: #303C48;
-  border-color: #126AFA;
-  background-color: rgba(0,90,238,0.2);
+  border-color: #607890;
+  background-color: #dfe4e9;
   padding: 0.3rem 1.2rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1361,23 +1291,52 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c10 .c12 {
-  background-color: #126AFA;
+  background-color: #b0bcc8;
 }
 
 .c10 .c12 * {
-  fill: #ffffff;
+  fill: #303C48;
 }
 
 .c10 .c12:hover {
-  background-color: #0F5AD5;
+  background-color: #98A7B7;
 }
 
 .c10 .c12:hover * {
-  fill: #ffffff;
+  fill: #13181D;
 }
 
 .c10:hover {
-  border-color: #0F5AD5;
+  border-color: #435465;
+}
+
+.c15:disabled,
+.c15:disabled > .c12 {
+  cursor: not-allowed;
+}
+
+.c15 .c12 {
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.4rem;
+  margin-left: 0.6rem;
+}
+
+.c15 .c12 {
+  background-color: #126AFA;
+}
+
+.c15 .c12 * {
+  fill: #ffffff;
+}
+
+.c15 .c12:hover {
+  background-color: #0F5AD5;
+}
+
+.c15 .c12:hover * {
+  fill: #ffffff;
 }
 
 .c9 {
@@ -1389,42 +1348,6 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c34 .c1 {
-  margin: 0;
-}
-
-.c34 .c1 label {
-  pointer-events: none;
-}
-
-.c34 .c1 div,
-.c34 .c1 input,
-.c34 .c1 label {
-  cursor: pointer;
-}
-
-.c34 .c1:focus-within input {
-  cursor: text;
-}
-
-.c34 .c1 input {
-  padding-right: 1.6rem;
-}
-
-.c34 .c8 > .c12 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c34 .c8 > .c12 * {
-  fill: #546A7F;
-}
-
-.c34:not(:focus-within):hover .c8 > .c12 * {
-  fill: #13181D;
 }
 
 .c0 {
@@ -1460,9 +1383,9 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c0 .c8 > .c12 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c0 .c8 > .c12 * {
@@ -1473,83 +1396,47 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   fill: #13181D;
 }
 
-.c0 .c8 > .c12 * {
+.c14 .c1 {
+  margin: 0;
+}
+
+.c14 .c1 label {
+  pointer-events: none;
+}
+
+.c14 .c1 div,
+.c14 .c1 input,
+.c14 .c1 label {
+  cursor: pointer;
+}
+
+.c14 .c1:focus-within input {
+  cursor: text;
+}
+
+.c14 .c1 input {
+  padding-right: 1.6rem;
+}
+
+.c14 .c8 > .c12 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c14 .c8 > .c12 * {
+  fill: #546A7F;
+}
+
+.c14:not(:focus-within):hover .c8 > .c12 * {
+  fill: #13181D;
+}
+
+.c14 .c8 > .c12 * {
   fill: #126AFA;
 }
 
-.c29 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c29 >:first-child {
-  margin-bottom: 0.9rem;
-}
-
-.c23 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: inherit;
-  color: inherit;
-  padding: 0 1.6rem;
-}
-
-.c32 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: not-allowed;
-  color: #98A7B7;
-  padding: 0 1.6rem;
-}
-
-.c30 {
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  margin-left: 4rem;
-  width: 100%;
-  margin-left: 0;
-}
-
-.c30 > label {
-  padding-left: 5rem;
-}
-
-.c27 {
-  border: 0.15rem solid;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c27 .c12 {
+.c20 .c12 {
   pointer-events: none;
   z-index: 1;
   -webkit-transition: all 200ms ease-in-out;
@@ -1562,182 +1449,24 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   margin-right: 0.05rem;
 }
 
-.c25 {
-  opacity: 0;
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  position: absolute;
-}
-
-.c25:checked ~ .c26 {
-  border-color: #126AFA;
-  background-color: #126AFA;
-}
-
-.c25:checked ~ .c26 .c12 {
+.c17:checked ~ .c19 .c12 {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.c25:checked ~ .c26 .c12 * {
+.c17:checked ~ .c19 .c12 * {
   fill: #ffffff;
 }
 
-.c25:not(:checked) ~ .c26 {
-  background-color: transparent;
-  border-color: #13181D;
-}
-
-.c25:not(:disabled):focus ~ .c26 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
-  border-color: #126AFA;
-}
-
-.c25:not(:disabled):focus:not(:checked) ~ .c26 {
-  border-color: #126AFA;
-}
-
-.c33 {
-  opacity: 0;
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  position: absolute;
-}
-
-.c33:checked ~ .c26 {
-  border-color: #dfe4e9;
-  background-color: #dfe4e9;
-}
-
-.c33:checked ~ .c26 .c12 {
+.c18:checked ~ .c19 .c12 {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.c33:checked ~ .c26 .c12 * {
+.c18:checked ~ .c19 .c12 * {
   fill: #98A7B7;
-}
-
-.c33:not(:checked) ~ .c26 {
-  background-color: transparent;
-  border-color: #98A7B7;
-}
-
-.c33:not(:disabled):focus ~ .c26 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
-  border-color: #126AFA;
-}
-
-.c33:not(:disabled):focus:not(:checked) ~ .c26 {
-  border-color: #126AFA;
-}
-
-.c24 {
-  margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 1.8rem;
-  height: 1.8rem;
-  position: relative;
-}
-
-.c21 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c21 * {
-  cursor: pointer;
-}
-
-.c21.c21.c21:hover .c26 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
-  border-color: #126AFA;
-}
-
-.c21.c21.c21:active .c26 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
-  border-color: #0F5AD5;
-}
-
-.c31 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: not-allowed;
-  padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c31 * {
-  cursor: not-allowed;
-}
-
-.c16 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-  cursor: default;
-  border-radius: 1.2rem;
-  padding: 0 0.3rem 0 0.9rem;
-  margin: 0.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #303C48;
-  border-color: #C7D0D8;
-  background-color: #eff2f4;
 }
 
 .c16 .c12 {
@@ -1761,22 +1490,6 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   fill: #13181D;
 }
 
-.c16:focus {
-  outline: none;
-}
-
-.c16:hover {
-  color: #303C48;
-  border-color: #b0bcc8;
-  background-color: #eff2f4;
-}
-
-.c16:disabled {
-  color: #546A7F;
-  border-color: #eff2f4;
-  background-color: #eff2f4;
-}
-
 .c16:disabled > .c12 {
   cursor: not-allowed;
   background-color: transparent;
@@ -1784,72 +1497,6 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 
 .c16:disabled > .c12 * {
   fill: #C7D0D8;
-}
-
-.c15 {
-  border-bottom: 1px solid #dfe4e9;
-  padding: 0.5rem 1.3rem;
-}
-
-.c15 > p {
-  margin: 0.3rem;
-}
-
-.c14 {
-  position: absolute;
-  top: 5.6rem;
-  box-shadow: 0px 2px 8px #b0bcc8;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  border-radius: 0.4rem;
-  width: 100%;
-  z-index: 4;
-}
-
-.c19 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  max-height: 20rem;
-  overflow: auto;
-}
-
-.c19 .c20 {
-  width: 100%;
-  margin: 0;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-  box-sizing: border-box;
-}
-
-.c19 .c20 span {
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
-.c19 .c20:hover {
-  background-color: #F7F8F9;
-}
-
-.c19 > .c20 {
-  padding: 0.7rem 0 0.7rem 1.3rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c19 > div {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c19 .c28 > label {
-  padding-left: 1.3rem;
 }
 
 <div>
@@ -1875,7 +1522,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
             id="pharmacy-input"
             placeholder="1 options selected"
             type="text"
-            value=""
+            value="Disabled"
           />
           <label
             class="c6 c7"
@@ -1914,325 +1561,6 @@ exports[`MultiSelect component should render properly with M size 1`] = `
         </div>
       </div>
       
-    </div>
-    <div
-      class="c14"
-      id="pharmacy-options-wrapper"
-    >
-      <div
-        class="c15"
-        id="pharmacy-selected-chips"
-      >
-        <button
-          class="c16"
-          disabled=""
-          id="pharmacy-disabled-chip"
-          type="button"
-        >
-          <span
-            class="c17"
-          >
-            Disabled
-          </span>
-          <svg
-            class="c12 c18"
-            fill="none"
-            height="1em"
-            id="pharmacy-disabled-chip-clear"
-            title="pharmacy-disabled-chip-clear-icon"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
-              fill="#000"
-              fill-opacity=".54"
-            />
-          </svg>
-        </button>
-      </div>
-      <ul
-        class="c19"
-        id="pharmacy-options"
-      >
-        
-        <label
-          class="c20 c21"
-          for="All"
-          id="All-wrapper"
-          sizes="[object Object]"
-        >
-          <span
-            class="c22 c23"
-            id="All-label"
-            type="checkbox"
-          >
-            All
-          </span>
-          <div
-            class="c24"
-          >
-            <input
-              class="c25"
-              id="All"
-              name="all"
-              sizes="[object Object]"
-              type="checkbox"
-              value="all"
-            />
-            <div
-              class="c26 c27"
-            >
-              <svg
-                class="c12 c13"
-                fill="none"
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                  fill="green"
-                />
-              </svg>
-            </div>
-          </div>
-        </label>
-        
-        <label
-          class="c20 c21"
-          for="Dummy1"
-          id="Dummy1-wrapper"
-          sizes="[object Object]"
-        >
-          <span
-            class="c22 c23"
-            id="Dummy1-label"
-            type="checkbox"
-          >
-            Dummy1
-          </span>
-          <div
-            class="c24"
-          >
-            <input
-              class="c25"
-              id="Dummy1"
-              name="Dummy1"
-              sizes="[object Object]"
-              type="checkbox"
-              value="Dummy1"
-            />
-            <div
-              class="c26 c27"
-            >
-              <svg
-                class="c12 c13"
-                fill="none"
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                  fill="green"
-                />
-              </svg>
-            </div>
-          </div>
-        </label>
-        <div
-          aria-describedby="Nested Options-helper-text"
-          class="c28 c29"
-          id="Nested Options-wrapper"
-          type="checkbox"
-        >
-          
-          <label
-            class="c20 c21"
-            for="Nested Options-select-all"
-            id="Nested Options-select-all-wrapper"
-            sizes="[object Object]"
-          >
-            <span
-              class="c11 c23"
-              id="Nested Options-select-all-label"
-              type="checkbox"
-            >
-              Nested Options
-            </span>
-            <div
-              class="c24"
-            >
-              <input
-                class="c25"
-                id="Nested Options-select-all"
-                sizes="[object Object]"
-                type="checkbox"
-              />
-              <div
-                class="c26 c27"
-              >
-                <svg
-                  class="c12 c13"
-                  fill="none"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                    fill="green"
-                  />
-                </svg>
-              </div>
-            </div>
-          </label>
-          <div
-            class="c30"
-            id="Nested Options-options"
-          >
-            
-            <label
-              class="c20 c21"
-              for="Dummy2-Nested Options"
-              id="Dummy2-Nested Options-wrapper"
-              sizes="[object Object]"
-            >
-              <span
-                class="c22 c23"
-                id="Dummy2-Nested Options-label"
-                type="checkbox"
-              >
-                Dummy2
-              </span>
-              <div
-                class="c24"
-              >
-                <input
-                  class="c25"
-                  id="Dummy2-Nested Options"
-                  name="Dummy2"
-                  sizes="[object Object]"
-                  type="checkbox"
-                />
-                <div
-                  class="c26 c27"
-                >
-                  <svg
-                    class="c12 c13"
-                    fill="none"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                      fill="green"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </label>
-            
-            <label
-              class="c20 c21"
-              for="Dummy3-Nested Options"
-              id="Dummy3-Nested Options-wrapper"
-              sizes="[object Object]"
-            >
-              <span
-                class="c22 c23"
-                id="Dummy3-Nested Options-label"
-                type="checkbox"
-              >
-                Dummy3
-              </span>
-              <div
-                class="c24"
-              >
-                <input
-                  class="c25"
-                  id="Dummy3-Nested Options"
-                  name="Dummy3"
-                  sizes="[object Object]"
-                  type="checkbox"
-                />
-                <div
-                  class="c26 c27"
-                >
-                  <svg
-                    class="c12 c13"
-                    fill="none"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                      fill="green"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </label>
-          </div>
-        </div>
-        
-        <label
-          class="c20 c31"
-          disabled=""
-          for="Disabled"
-          id="Disabled-wrapper"
-          sizes="[object Object]"
-        >
-          <span
-            class="c22 c32"
-            disabled=""
-            id="Disabled-label"
-            type="checkbox"
-          >
-            Disabled
-          </span>
-          <div
-            class="c24"
-          >
-            <input
-              checked=""
-              class="c33"
-              disabled=""
-              id="Disabled"
-              name="disabled"
-              sizes="[object Object]"
-              type="checkbox"
-              value="disabled"
-            />
-            <div
-              class="c26 c27"
-            >
-              <svg
-                class="c12 c13"
-                fill="none"
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                  fill="green"
-                />
-              </svg>
-            </div>
-          </div>
-        </label>
-      </ul>
     </div>
   </div>
 </div>

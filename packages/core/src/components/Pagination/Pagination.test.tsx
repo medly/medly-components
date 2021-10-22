@@ -29,20 +29,20 @@ describe('Pagination component', () => {
     });
 
     it('should call onClick handler with correct page number when any page link is clicked', () => {
-        const { getByRole, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(getByRole('button', { name: '4' }));
+        const { getByText, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByText('4'));
         expect(mockOnPageClick).toBeCalledWith(4);
     });
 
     it('should call onClick handler with first page when first page is clicked', () => {
-        const { getByRole, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(getByRole('button', { name: '1' }));
+        const { getByText, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByText('1'));
         expect(mockOnPageClick).toBeCalledWith(1);
     });
 
     it('should call onClick handler with last page when last page is clicked', () => {
-        const { getByRole, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(getByRole('button', { name: '15' }));
+        const { getByText, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByText('15'));
         expect(mockOnPageClick).toBeCalledWith(15);
     });
 
@@ -59,15 +59,15 @@ describe('Pagination component', () => {
     });
 
     it('should call onClick handler with expected page when selected from ellipsis popover', () => {
-        const { mockOnPageClick, getByRole } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(getByRole('button', { name: '...' }));
-        fireEvent.click(getByRole('button', { name: '7' }));
+        const { mockOnPageClick, getByText } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByText('...'));
+        fireEvent.click(getByText('7'));
         expect(mockOnPageClick).toBeCalledWith(7);
     });
 
     it('should not call onClick handler when clicked on active page', () => {
-        const { mockOnPageClick, getByRole } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(getByRole('button', { name: '3' }));
+        const { mockOnPageClick, getByText } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByText('3'));
         expect(mockOnPageClick).not.toBeCalled();
     });
 });

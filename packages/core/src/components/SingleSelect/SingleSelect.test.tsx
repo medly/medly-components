@@ -32,8 +32,6 @@ const DummyComponent = (props: Omit<SingleSelectProps, 'options'>) => {
 };
 
 describe('SingleSelect component', () => {
-    afterEach(cleanup);
-
     const sizes: Required<SingleSelectProps>['size'][] = ['S', 'M'],
         variants: Required<SingleSelectProps>['variant'][] = ['outlined', 'filled', 'flat', 'fusion'];
 
@@ -176,16 +174,17 @@ describe('SingleSelect component', () => {
         expect(screen.queryByRole('list')).toBeNull();
     });
 
-    it('should hide options on click outside of the container', () => {
-        render(
+    it('should hide options on click outside of the container', async () => {
+        const { container } = render(
             <div>
-                <p>Outer Element</p>
-                <SingleSelect options={options} />
+                <button>Outer Element</button>
+                <SingleSelect options={options} value="Dummy1" fullWidth />
             </div>
         );
-        fireEvent.click(screen.getByRole('textbox'));
+        fireEvent.focus(screen.getByRole('textbox'));
+        fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
         fireEvent.click(screen.getByText('Outer Element'));
-        expect(screen.queryByRole('list')).toBeNull();
+        await waitFor(() => expect(screen.queryByRole('list')).toBeNull());
     });
 
     it('should not show options on click outside of the container', () => {

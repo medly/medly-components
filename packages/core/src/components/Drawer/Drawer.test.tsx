@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
+import { fireEvent, render, screen, waitFor } from '@test-utils';
 import React, { useCallback, useState } from 'react';
 import Drawer from './';
 
@@ -29,19 +29,8 @@ const scrollTo = (scrollHeight: number, clientHeight: number, scrollTop: number)
 };
 
 describe('Drawer component', () => {
-    const originalScrollHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollHeight')!,
-        originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight')!,
-        originalScrollTop = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollTop')!;
-
     beforeAll(() => scrollTo(500, 500, 0));
 
-    afterAll(() => {
-        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', originalScrollHeight);
-        Object.defineProperty(HTMLElement.prototype, 'clientHeight', originalClientHeight);
-        Object.defineProperty(HTMLElement.prototype, 'scrollTop', originalScrollTop);
-    });
-
-    afterEach(cleanup);
     const positions: ('left' | 'right')[] = ['left', 'right'];
 
     test.each(positions)('should render properly with %s positioned', async position => {
