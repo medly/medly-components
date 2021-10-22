@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.33.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.32.2...@medly-components/core@2.33.0) (2021-10-22)
+
+
+### Features
+
+* use medly babel config ([#492](https://github.com/medly/medly-components/issues/492)) ([1e10132](https://github.com/medly/medly-components/commit/1e1013259cbb9d473a58031fe6502ae54330d676))
+
+
+### Reverts
+
+* **core:** change rowData prop type ([#494](https://github.com/medly/medly-components/issues/494)) ([d46efe9](https://github.com/medly/medly-components/commit/d46efe9af948b4be1ebe2e5f0fc1af5a5e7f5ec3))
+
+
+
+
+
 ## [2.32.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.32.1...@medly-components/core@2.32.2) (2021-10-22)
 
 **Note:** Version bump only for package @medly-components/core

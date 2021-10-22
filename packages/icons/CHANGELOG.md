@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.10.2...@medly-components/icons@1.11.0) (2021-10-22)
+
+
+### Features
+
+* use medly babel config ([#492](https://github.com/medly/medly-components/issues/492)) ([1e10132](https://github.com/medly/medly-components/commit/1e1013259cbb9d473a58031fe6502ae54330d676))
+
+
+
+
+
 ## [1.10.2](https://github.com/medly/medly-components/compare/@medly-components/icons@1.10.1...@medly-components/icons@1.10.2) (2021-10-22)
 
 **Note:** Version bump only for package @medly-components/icons
