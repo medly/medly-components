@@ -3,7 +3,7 @@ import { Dispatch, SetStateAction } from 'react';
 import ColumnConfiguration from './ColumnConfiguration';
 
 export type SortOrder = 'asc' | 'desc';
-export type ObjectType = Record<string, unknown>;
+export type ObjectType = Record<string, any>;
 export type Data = ObjectType[];
 // TODO: need to remove in next major version
 export type RowHoverActionsType = React.FC<{ rowData?: ObjectType; rowId?: any }>;
