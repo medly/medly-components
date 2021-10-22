@@ -18,7 +18,7 @@ import { boolean, select, text } from '@storybook/addon-knobs';
 
 # Checkbox
 
-Simple checkbox component. It's a controlled react component. So you have to have the handle state like below.
+It's a simple checkbox and a controlled react component. Handle the state as follows:
 
 ```tsx
 const [isChecked, setChecked] = useState(false),
@@ -57,7 +57,7 @@ return <Checkbox label="Lorem Ipsum" checked={isChecked} onChange={onChangeHandl
 
 ### Validations
 
-1. This component will call the validator prop function with latest value on blur, invalid & change event. If you haven't passed the validator function then it will show default html5 error validation meessage if present.
+1. This component calls the validator prop function with the latest value on blur, invalid, and change events. If you haven't passed the validator function, it will show the default html5 error validation message, if present.
 
 ```tsx
 export const FormWithCheckbox: React.FC = props => {
@@ -77,7 +77,8 @@ export const FormWithCheckbox: React.FC = props => {
     <FormWithCheckbox />
 </Preview>
 
-2. If you pass validator function then it will be called with latest selected value, so that if you want you can return the desired error message.
+2. If you pass the validator function, it will be called with the latest selected value, so that, if required you can return the desired error message.
+
 
 ```tsx
 validator={val => (!val ? 'Please accept the terms & conditions to continue.' : '')}
