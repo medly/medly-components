@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import { DialogBoxActionUserProps } from './types';
 
 export const Actions = styled('div')<DialogBoxActionUserProps>`
@@ -15,14 +15,14 @@ export const Actions = styled('div')<DialogBoxActionUserProps>`
     & > * + * {
         margin: 1.6rem 0 0;
     }
-    
+
     @media (min-width: 600px) {
         flex-direction: row;
 
         & > * {
-            max-width: 50%
+            max-width: 50%;
         }
-            
+
         & > * + * {
             margin: 0 0 0 1.6rem;
         }

@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'CameraFrontIcon';
 
-const CameraFrontIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const CameraFrontIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default CameraFrontIcon
+export default CameraFrontIcon;

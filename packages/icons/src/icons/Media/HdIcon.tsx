@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'HdIcon';
 
-const HdIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const HdIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default HdIcon
+export default HdIcon;

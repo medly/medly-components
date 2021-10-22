@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'AddLocationIcon';
 
-const AddLocationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const AddLocationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default AddLocationIcon
+export default AddLocationIcon;

@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'VideogameAssetIcon';
 
-const VideogameAssetIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const VideogameAssetIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default VideogameAssetIcon
+export default VideogameAssetIcon;

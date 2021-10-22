@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'TonalityIcon';
 
-const TonalityIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const TonalityIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default TonalityIcon
+export default TonalityIcon;

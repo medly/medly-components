@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardTable Cell should be able to "center" align  1`] = `
+exports[`CardTable Cell should be able to "center" align 1`] = `
 .c2 {
   margin: 0;
   color: inherit;
@@ -61,7 +61,7 @@ exports[`CardTable Cell should be able to "center" align  1`] = `
 </div>
 `;
 
-exports[`CardTable Cell should be able to "left" align  1`] = `
+exports[`CardTable Cell should be able to "left" align 1`] = `
 .c2 {
   margin: 0;
   color: inherit;
@@ -122,7 +122,7 @@ exports[`CardTable Cell should be able to "left" align  1`] = `
 </div>
 `;
 
-exports[`CardTable Cell should be able to "right" align  1`] = `
+exports[`CardTable Cell should be able to "right" align 1`] = `
 .c2 {
   margin: 0;
   color: inherit;

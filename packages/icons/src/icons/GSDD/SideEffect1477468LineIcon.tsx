@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'SideEffect1477468LineIcon';
 
-const SideEffect1477468LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const SideEffect1477468LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default SideEffect1477468LineIcon
+export default SideEffect1477468LineIcon;

@@ -1,16 +1,8 @@
 {
+    "extends": "@medly/typescript-config-react",
     "compilerOptions": {
         "baseUrl": "./",
-        "esModuleInterop": true,
-        "jsx": "react",
-        "lib": ["es2015", "dom"],
-        "moduleResolution": "node",
-        "noEmit": true,
-        "skipLibCheck": true,
-        "strict": true,
-        "strictFunctionTypes": false,
-        "strictNullChecks": false,
-        "target": "esnext",
+        "jsx": "react-jsx",
         "paths": {
             "@medly-components/*": ["packages/*/src"],
             "@test-utils": ["packages/utils/src/test-utils"]

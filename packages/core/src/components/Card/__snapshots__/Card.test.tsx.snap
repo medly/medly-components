@@ -494,7 +494,7 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
 </div>
 `;
 
-exports[`Card component should render properly when it is clickable  1`] = `
+exports[`Card component should render properly when it is clickable 1`] = `
 .c1 {
   margin: 0;
   color: inherit;

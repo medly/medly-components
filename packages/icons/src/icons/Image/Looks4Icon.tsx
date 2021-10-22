@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'Looks4Icon';
 
-const Looks4Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const Looks4Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default Looks4Icon
+export default Looks4Icon;

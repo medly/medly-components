@@ -1,4 +1,5 @@
-import { css, InjectClassName, styled } from '@medly-components/utils';
+import { InjectClassName } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { SvgIconProps } from './types';
 
 const hoverStyle = ({ hoverBgColor, hoverIconColor }: SvgIconProps) => css`
@@ -18,10 +19,16 @@ const solidStyle = ({ size, disabled, bgColor, withHoverEffect }: SvgIconProps) 
     ${!disabled && withHoverEffect && hoverStyle}
 `;
 
-export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { colors, sizes } } }) => ({
-    colors,
-    sizes
-}))<SvgIconProps>`
+export const SvgIconStyled = styled(InjectClassName).attrs(
+    ({
+        theme: {
+            icon: { colors, sizes }
+        }
+    }) => ({
+        colors,
+        sizes
+    })
+)<SvgIconProps>`
     overflow: visible;
     font-size: ${({ theme, size }) => theme.icon.sizes[size!].iconSize};
     transition: all 100ms linear;

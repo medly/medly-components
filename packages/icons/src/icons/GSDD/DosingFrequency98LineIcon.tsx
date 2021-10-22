@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'DosingFrequency98LineIcon';
 
-const DosingFrequency98LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const DosingFrequency98LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default DosingFrequency98LineIcon
+export default DosingFrequency98LineIcon;

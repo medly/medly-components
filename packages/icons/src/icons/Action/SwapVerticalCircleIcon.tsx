@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'SwapVerticalCircleIcon';
 
-const SwapVerticalCircleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const SwapVerticalCircleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default SwapVerticalCircleIcon
+export default SwapVerticalCircleIcon;

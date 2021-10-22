@@ -2,6 +2,7 @@ import { fireEvent, render } from '@test-utils';
 import React from 'react';
 import { ColumnConfig } from '../../types';
 import { HeadCell } from './HeadCell';
+import { StyledProps } from './types';
 
 const dummyColumn: ColumnConfig = { title: 'Demo', field: 'demo', sortable: true },
     renderer = ({ withWhiteBackground = false, sortField = 'random', onSortChange = jest.fn(), column = dummyColumn }) =>
@@ -56,7 +57,9 @@ describe('Card Table HeadCell', () => {
         expect(mockOnSortChange).toHaveBeenCalledWith('demo', 'desc');
     });
 
-    test.each(['left', 'center', 'right'])('should be able to %p align ', (align: 'left' | 'center' | 'right') => {
+    const positions: Required<StyledProps>['align'][] = ['left', 'center', 'right'];
+
+    test.each(positions)('should be able to %p align', align => {
         const column: ColumnConfig = {
                 align,
                 title: 'Column 1',

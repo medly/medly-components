@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'Forward30Icon';
 
-const Forward30Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const Forward30Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default Forward30Icon
+export default Forward30Icon;

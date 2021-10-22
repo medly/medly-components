@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'Crop75Icon';
 
-const Crop75Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const Crop75Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default Crop75Icon
+export default Crop75Icon;

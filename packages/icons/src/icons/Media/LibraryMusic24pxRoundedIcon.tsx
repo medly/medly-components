@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'LibraryMusic24pxRoundedIcon';
 
-const LibraryMusic24pxRoundedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const LibraryMusic24pxRoundedIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default LibraryMusic24pxRoundedIcon
+export default LibraryMusic24pxRoundedIcon;

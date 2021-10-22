@@ -4,7 +4,7 @@ import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './Input.styled';
 import { InputProps } from './types';
 
-const Component: FC<InputProps> & WithStyle = React.memo(
+const Component: FC<InputProps> = React.memo(
     React.forwardRef((props, ref) => {
         const { description, label, labelPosition, fullWidth, required, descriptionColor, prefix, suffix, ...restProps } = props,
             id = props.id || 'medly-input';

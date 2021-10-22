@@ -1,5 +1,5 @@
-import { styled } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled from 'styled-components';
 import { DrawerFooterProps } from './types';
 
 export const FooterStyled = styled('div')<{ showShadow: boolean } & DrawerFooterProps>`

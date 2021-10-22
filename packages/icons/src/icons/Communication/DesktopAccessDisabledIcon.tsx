@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'DesktopAccessDisabledIcon';
 
-const DesktopAccessDisabledIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const DesktopAccessDisabledIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default DesktopAccessDisabledIcon
+export default DesktopAccessDisabledIcon;

@@ -67,6 +67,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   transition: all 100ms ease-out;
   background-color: #E7F0FF;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c1 * {
@@ -91,7 +92,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxgMl {
+.c1:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -99,13 +100,13 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   background-color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxjAm {
+.c1:disabled .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c1:disabled .sc-AxjAm * {
+.c1:disabled .sc-1pf3x8a-0 * {
   fill: #b0bcc8;
 }
 
@@ -113,7 +114,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   cursor: pointer;
 }
 
-.c1 .sc-AxjAm {
+.c1 .sc-1pf3x8a-0 {
   margin-right: 1.6rem;
 }
 
@@ -121,7 +122,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   color: #126AFA;
 }
 
-.c1 .sc-AxgMl {
+.c1 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -129,17 +130,17 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   background-color: #126AFA;
 }
 
-.c1 .sc-AxjAm {
+.c1 .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c1 .sc-AxjAm * {
+.c1 .sc-1pf3x8a-0 * {
   fill: #126AFA;
 }
 
-.c1 .sc-AxjAm * {
+.c1 .sc-1pf3x8a-0 * {
   fill: #126AFA;
 }
 
@@ -161,6 +162,10 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   width: 100%;
   background-color: #126AFA;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c1:disabled {
+  background-color: transparent;
 }
 
 .c9 {
@@ -195,6 +200,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
+  background-color: transparent;
 }
 
 .c9 * {
@@ -219,7 +225,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   color: #b0bcc8;
 }
 
-.c9:disabled .sc-AxgMl {
+.c9:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -227,13 +233,13 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   background-color: #b0bcc8;
 }
 
-.c9:disabled .sc-AxjAm {
+.c9:disabled .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c9:disabled .sc-AxjAm * {
+.c9:disabled .sc-1pf3x8a-0 * {
   fill: #b0bcc8;
 }
 
@@ -241,7 +247,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   cursor: pointer;
 }
 
-.c9 .sc-AxjAm {
+.c9 .sc-1pf3x8a-0 {
   margin-right: 1.6rem;
 }
 
@@ -249,7 +255,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   color: #607890;
 }
 
-.c9 .sc-AxgMl {
+.c9 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -257,13 +263,13 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   background-color: #607890;
 }
 
-.c9 .sc-AxjAm {
+.c9 .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c9 .sc-AxjAm * {
+.c9 .sc-1pf3x8a-0 * {
   fill: #607890;
 }
 
@@ -276,7 +282,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   color: #435465;
 }
 
-.c9:not(:disabled):hover .sc-AxgMl {
+.c9:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -284,13 +290,13 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   background-color: #435465;
 }
 
-.c9:not(:disabled):hover .sc-AxjAm {
+.c9:not(:disabled):hover .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c9:not(:disabled):hover .sc-AxjAm * {
+.c9:not(:disabled):hover .sc-1pf3x8a-0 * {
   fill: #435465;
 }
 
@@ -312,6 +318,10 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   width: 100%;
   background-color: transparent;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c9:disabled {
+  background-color: transparent;
 }
 
 .c2 {
@@ -569,7 +579,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxgMl {
+.c1:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -577,13 +587,13 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   background-color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxjAm {
+.c1:disabled .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c1:disabled .sc-AxjAm * {
+.c1:disabled .sc-1pf3x8a-0 * {
   fill: #b0bcc8;
 }
 
@@ -591,7 +601,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   cursor: pointer;
 }
 
-.c1 .sc-AxjAm {
+.c1 .sc-1pf3x8a-0 {
   margin-right: 1.6rem;
 }
 
@@ -599,7 +609,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   color: #126AFA;
 }
 
-.c1 .sc-AxgMl {
+.c1 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -607,17 +617,17 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   background-color: #126AFA;
 }
 
-.c1 .sc-AxjAm {
+.c1 .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c1 .sc-AxjAm * {
+.c1 .sc-1pf3x8a-0 * {
   fill: #126AFA;
 }
 
-.c1 .sc-AxjAm * {
+.c1 .sc-1pf3x8a-0 * {
   fill: #126AFA;
 }
 
@@ -697,7 +707,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   color: #b0bcc8;
 }
 
-.c9:disabled .sc-AxgMl {
+.c9:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -705,13 +715,13 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   background-color: #b0bcc8;
 }
 
-.c9:disabled .sc-AxjAm {
+.c9:disabled .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c9:disabled .sc-AxjAm * {
+.c9:disabled .sc-1pf3x8a-0 * {
   fill: #b0bcc8;
 }
 
@@ -719,7 +729,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   cursor: pointer;
 }
 
-.c9 .sc-AxjAm {
+.c9 .sc-1pf3x8a-0 {
   margin-right: 1.6rem;
 }
 
@@ -727,7 +737,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   color: #607890;
 }
 
-.c9 .sc-AxgMl {
+.c9 .sc-1kcg570-3 {
   color: #607890;
 }
 
@@ -735,13 +745,13 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   background-color: #607890;
 }
 
-.c9 .sc-AxjAm {
+.c9 .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c9 .sc-AxjAm * {
+.c9 .sc-1pf3x8a-0 * {
   fill: #607890;
 }
 
@@ -754,7 +764,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   color: #435465;
 }
 
-.c9:not(:disabled):hover .sc-AxgMl {
+.c9:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -762,13 +772,13 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   background-color: #435465;
 }
 
-.c9:not(:disabled):hover .sc-AxjAm {
+.c9:not(:disabled):hover .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c9:not(:disabled):hover .sc-AxjAm * {
+.c9:not(:disabled):hover .sc-1pf3x8a-0 * {
   fill: #435465;
 }
 
@@ -1077,7 +1087,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   line-height: 1.6rem;
 }
 
-.c2:disabled .sc-AxgMl {
+.c2:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
   text-align: center;
 }
@@ -1086,13 +1096,13 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   background-color: #b0bcc8;
 }
 
-.c2:disabled .sc-AxjAm {
+.c2:disabled .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c2:disabled .sc-AxjAm * {
+.c2:disabled .sc-1pf3x8a-0 * {
   fill: #b0bcc8;
 }
 
@@ -1100,7 +1110,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   cursor: pointer;
 }
 
-.c2 .sc-AxjAm {
+.c2 .sc-1pf3x8a-0 {
   margin-right: 1.6rem;
 }
 
@@ -1108,7 +1118,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   color: #126AFA;
 }
 
-.c2 .sc-AxgMl {
+.c2 .sc-1kcg570-3 {
   color: #607890;
   text-align: center;
 }
@@ -1117,17 +1127,17 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   background-color: #126AFA;
 }
 
-.c2 .sc-AxjAm {
+.c2 .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c2 .sc-AxjAm * {
+.c2 .sc-1pf3x8a-0 * {
   fill: #126AFA;
 }
 
-.c2 .sc-AxjAm * {
+.c2 .sc-1pf3x8a-0 * {
   fill: #126AFA;
 }
 
@@ -1204,7 +1214,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   line-height: 1.6rem;
 }
 
-.c10:disabled .sc-AxgMl {
+.c10:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
   text-align: center;
 }
@@ -1213,13 +1223,13 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   background-color: #b0bcc8;
 }
 
-.c10:disabled .sc-AxjAm {
+.c10:disabled .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c10:disabled .sc-AxjAm * {
+.c10:disabled .sc-1pf3x8a-0 * {
   fill: #b0bcc8;
 }
 
@@ -1227,7 +1237,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   cursor: pointer;
 }
 
-.c10 .sc-AxjAm {
+.c10 .sc-1pf3x8a-0 {
   margin-right: 1.6rem;
 }
 
@@ -1235,7 +1245,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   color: #607890;
 }
 
-.c10 .sc-AxgMl {
+.c10 .sc-1kcg570-3 {
   color: #607890;
   text-align: center;
 }
@@ -1244,13 +1254,13 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   background-color: #607890;
 }
 
-.c10 .sc-AxjAm {
+.c10 .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c10 .sc-AxjAm * {
+.c10 .sc-1pf3x8a-0 * {
   fill: #607890;
 }
 
@@ -1263,7 +1273,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   color: #435465;
 }
 
-.c10:not(:disabled):hover .sc-AxgMl {
+.c10:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
   text-align: center;
 }
@@ -1272,13 +1282,13 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   background-color: #435465;
 }
 
-.c10:not(:disabled):hover .sc-AxjAm {
+.c10:not(:disabled):hover .sc-1pf3x8a-0 {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c10:not(:disabled):hover .sc-AxjAm * {
+.c10:not(:disabled):hover .sc-1pf3x8a-0 * {
   fill: #435465;
 }
 

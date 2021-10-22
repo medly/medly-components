@@ -1,4 +1,5 @@
-import { css, getFontStyle, styled } from '@medly-components/utils';
+import { getFontStyle } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { StyledProps } from '../types';
 import { CharacterCount } from './CharacterCount.styled';
 import { Label } from './Label.styled';

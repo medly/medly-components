@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'KeyboardArrowRightIcon';
 
-const KeyboardArrowRightIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const KeyboardArrowRightIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default KeyboardArrowRightIcon
+export default KeyboardArrowRightIcon;

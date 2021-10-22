@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'AirlineSeatFlatAngledIcon';
 
-const AirlineSeatFlatAngledIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const AirlineSeatFlatAngledIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default AirlineSeatFlatAngledIcon
+export default AirlineSeatFlatAngledIcon;

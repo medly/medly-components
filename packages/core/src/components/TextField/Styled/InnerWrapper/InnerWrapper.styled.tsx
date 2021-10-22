@@ -1,4 +1,4 @@
-import { css, styled } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { InnerWrapperModifiedProps, InnerWrapperProps } from '../../types';
 import { CharacterCount } from '../CharacterCount.styled';
 import { HelperText } from '../HelperText.styled';

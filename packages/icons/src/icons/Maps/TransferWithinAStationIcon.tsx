@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'TransferWithinAStationIcon';
 
-const TransferWithinAStationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const TransferWithinAStationIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default TransferWithinAStationIcon
+export default TransferWithinAStationIcon;

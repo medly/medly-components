@@ -1,6 +1,6 @@
 import { defaultTheme, TextFieldTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
 import React, { useCallback, useState } from 'react';
+import styled from 'styled-components';
 import Button from '../Button';
 import { TextField } from './TextField';
 import { TextFieldProps as Props } from './types';

@@ -1,5 +1,5 @@
 import { HTMLProps, WithStyle } from '@medly-components/utils';
-import {  TabProps } from './Tab/types';
+import { TabProps } from './Tab/types';
 import { TabListProps } from './TabList/types';
 import { TabPanelProps } from './TabPanel/types';
 
@@ -31,7 +31,7 @@ export interface TabsProps extends HTMLProps<HTMLDivElement> {
 }
 
 export interface StaticProps {
-    Tab?: React.FC<TabProps> & WithStyle;
-    TabList?: React.FC<TabListProps> & WithStyle;
-    TabPanel?: React.FC<TabPanelProps> & WithStyle;
+    Tab: React.FC<TabProps> & WithStyle;
+    TabList: React.FC<TabListProps> & WithStyle;
+    TabPanel: React.FC<TabPanelProps> & WithStyle;
 }

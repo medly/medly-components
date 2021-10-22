@@ -6,10 +6,10 @@ import FlatVariant from './FlatVariant';
 import { filterOptions, getDefaultSelectedOption, getUpdatedOptions } from './helpers';
 import Options from './Options';
 import * as Styled from './SingleSelect.styled';
-import { Option, SelectProps } from './types';
+import { Option, SingleSelectProps } from './types';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-const Component: FC<SelectProps> = React.memo(
+const Component: FC<SingleSelectProps> = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 id,
@@ -44,10 +44,10 @@ const Component: FC<SelectProps> = React.memo(
             [builtInErrorMessage, setErrorMessage] = useState(''),
             [options, setOptions] = useState(getUpdatedOptions(defaultOptions, defaultSelectedOption));
 
-        const updateToDefaultOptions = useCallback(() => setOptions(getUpdatedOptions(defaultOptions, selectedOption)), [
-            defaultOptions,
-            selectedOption
-        ]);
+        const updateToDefaultOptions = useCallback(
+            () => setOptions(getUpdatedOptions(defaultOptions, selectedOption)),
+            [defaultOptions, selectedOption]
+        );
 
         const validate = useCallback(
             () =>
@@ -68,10 +68,10 @@ const Component: FC<SelectProps> = React.memo(
                 setOptionsVisibilityState(false);
                 inputRef.current && inputRef.current.blur();
             }, []),
-            toggleOptions = useCallback(() => !disabled && (areOptionsVisible ? hideOptions() : showOptions()), [
-                disabled,
-                areOptionsVisible
-            ]),
+            toggleOptions = useCallback(
+                () => !disabled && (areOptionsVisible ? hideOptions() : showOptions()),
+                [disabled, areOptionsVisible]
+            ),
             handleInputChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const { value: inputValue } = event.target as HTMLInputElement,
@@ -233,4 +233,4 @@ Component.defaultProps = {
     placeholder: 'Please Select . . .',
     showDecorators: true
 };
-export const SingleSelect: FC<SelectProps> & WithStyle = Object.assign(Component, { Style: Styled.Wrapper });
+export const SingleSelect: FC<SingleSelectProps> & WithStyle = Object.assign(Component, { Style: Styled.Wrapper });

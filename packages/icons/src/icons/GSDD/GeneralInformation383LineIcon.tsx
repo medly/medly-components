@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'GeneralInformation383LineIcon';
 
-const GeneralInformation383LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const GeneralInformation383LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default GeneralInformation383LineIcon
+export default GeneralInformation383LineIcon;

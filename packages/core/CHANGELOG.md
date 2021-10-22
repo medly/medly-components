@@ -3,6 +3,164 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.32.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.32.1...@medly-components/core@2.32.2) (2021-10-22)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.32.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.32.0...@medly-components/core@2.32.1) (2021-10-21)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [2.32.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.31.0...@medly-components/core@2.32.0) (2021-10-20)
+
+
+### Features
+
+* use medly typescript config ([#490](https://github.com/medly/medly-components/issues/490)) ([7c78c00](https://github.com/medly/medly-components/commit/7c78c0021209f558878e2a47fce101d54237ca33))
+
+
+
+
+
+# [2.31.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.30.2...@medly-components/core@2.31.0) (2021-10-19)
+
+
+### Features
+
+* add medly lint( eslint, stylelint & prettier ) configs ([#488](https://github.com/medly/medly-components/issues/488)) ([2a75fb4](https://github.com/medly/medly-components/commit/2a75fb432a15c64abcf939e969c280e701316a51))
+
+
+
+
+
+## [2.30.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.30.1...@medly-components/core@2.30.2) (2021-10-18)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.30.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.30.0...@medly-components/core@2.30.1) (2021-10-18)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [2.30.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.29.1...@medly-components/core@2.30.0) (2021-10-14)
+
+
+### Features
+
+* export prop types of all the components ([#483](https://github.com/medly/medly-components/issues/483)) ([61e23b0](https://github.com/medly/medly-components/commit/61e23b0dea0840ebfad3869a3d67f1c7efbc4183))
+
+
+
+
+
+## [2.29.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.29.0...@medly-components/core@2.29.1) (2021-10-13)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [2.29.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.4...@medly-components/core@2.29.0) (2021-10-11)
+
+
+### Features
+
+* **core:** feat: add Prefix support in multiSelect component ([#479](https://github.com/medly/medly-components/issues/479)) ([91acb02](https://github.com/medly/medly-components/commit/91acb029de1e06ed7948f9515c775fb0f6b36cdc)), closes [#462](https://github.com/medly/medly-components/issues/462)
+
+
+
+
+
+## [2.28.4](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.3...@medly-components/core@2.28.4) (2021-10-05)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.28.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.2...@medly-components/core@2.28.3) (2021-10-05)
+
+
+### Bug Fixes
+
+* strict null issue for Accordion, Button, Chip, Card and Card Tab… ([#476](https://github.com/medly/medly-components/issues/476)) ([5840021](https://github.com/medly/medly-components/commit/5840021aac069f355dd88afa891f2cf96963a06c))
+
+
+
+
+
+## [2.28.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.1...@medly-components/core@2.28.2) (2021-10-05)
+
+
+### Bug Fixes
+
+* strict null check issue in DatePicker and DateRangePicker component ([#475](https://github.com/medly/medly-components/issues/475)) ([a25857f](https://github.com/medly/medly-components/commit/a25857f862d8b20983ecb180a7d7c572328806ef))
+
+
+
+
+
+## [2.28.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.28.0...@medly-components/core@2.28.1) (2021-10-04)
+
+
+### Bug Fixes
+
+* fix strict null issue in Drawer and DialogBox component ([#474](https://github.com/medly/medly-components/issues/474)) ([bd2cb26](https://github.com/medly/medly-components/commit/bd2cb267933c1dc4f71683dc299bd47fd1667d49))
+
+
+
+
+
+# [2.28.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.13...@medly-components/core@2.28.0) (2021-10-04)
+
+
+### Features
+
+* add calendar icon position support ([#470](https://github.com/medly/medly-components/issues/470)) ([026410a](https://github.com/medly/medly-components/commit/026410a010e13e356651de4433a77575361c3414)), closes [#451](https://github.com/medly/medly-components/issues/451) [#451](https://github.com/medly/medly-components/issues/451) [#451](https://github.com/medly/medly-components/issues/451)
+
+
+
+
+
+## [2.27.13](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.12...@medly-components/core@2.27.13) (2021-10-01)
+
+
+### Bug Fixes
+
+* fix strict null check issue in FileInput, Hidden, Input, Label, … ([#471](https://github.com/medly/medly-components/issues/471)) ([bae1a89](https://github.com/medly/medly-components/commit/bae1a899fc33fa8f6d5885f205f2aa4ee930f393))
+
+
+
+
+
+## [2.27.12](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.11...@medly-components/core@2.27.12) (2021-10-01)
+
+
+### Bug Fixes
+
+* fix strict null check issue in MultiSelect component ([#468](https://github.com/medly/medly-components/issues/468)) ([ab3cd36](https://github.com/medly/medly-components/commit/ab3cd368e60b8281ddc6bfb7b5b8cd2867f17e10))
+
+
+
+
+
 ## [2.27.11](https://github.com/medly/medly-components/compare/@medly-components/core@2.27.10...@medly-components/core@2.27.11) (2021-09-29)
 
 

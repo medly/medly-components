@@ -5,10 +5,10 @@ import Text from '../../../Text';
 import * as Styled from './Chip.styled';
 import { Props } from './types';
 
-const Component: FC<Props> = React.memo(({ id, label, onClear, ...restProps }) => {
+const Component: FC<Props> = React.memo(({ id, label, onClear, state, ...restProps }) => {
     const onClickHandler = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         onClearHandler = useCallback(
-            (e: React.MouseEvent<HTMLOrSVGElement>) => {
+            (e: React.MouseEvent<SVGElement>) => {
                 e.stopPropagation();
                 !restProps.disabled && onClear && onClear(label);
             },
@@ -16,11 +16,11 @@ const Component: FC<Props> = React.memo(({ id, label, onClear, ...restProps }) =
         );
 
     return (
-        <Styled.Chip id={id} {...restProps} onClick={onClickHandler}>
+        <Styled.Chip id={id} state={state!} {...restProps} onClick={onClickHandler}>
             <Text textWeight="Medium" textVariant={restProps.size === 'S' ? 'body2' : 'body1'}>
                 {label}
             </Text>
-            {!restProps.hideClearIcon && <ClearIcon id={`${id}-clear`} onClick={onClearHandler} />}
+            {!restProps.hideClearIcon && <ClearIcon id={`${id}-clear`} title={`${id}-clear-icon`} onClick={onClearHandler} />}
         </Styled.Chip>
     );
 });

@@ -1,8 +1,9 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, css, styled } from '@medly-components/utils';
-import { Props } from './types';
+import { centerAligned } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
+import { StyledChipProps } from './types';
 
-const getStyle = ({ theme, variant, state }: Props) => {
+const getStyle = ({ theme, variant, state }: StyledChipProps) => {
         const { multiSelect } = theme;
         const {
             chip: { [state]: chipStyle },
@@ -29,7 +30,7 @@ const getStyle = ({ theme, variant, state }: Props) => {
             }
         `;
     },
-    getPadding = ({ hideClearIcon, size }: Props) => css`
+    getPadding = ({ hideClearIcon, size }: StyledChipProps) => css`
         padding: ${hideClearIcon
             ? size === 'S'
                 ? '0.2rem 0.9rem'
@@ -39,7 +40,7 @@ const getStyle = ({ theme, variant, state }: Props) => {
             : '0.2rem 0.5rem 0.2rem 0.9rem'};
     `;
 
-export const Chip = styled('button')<Props>`
+export const Chip = styled('button')<StyledChipProps>`
     user-select: none;
     max-width: max-content;
     cursor: default;

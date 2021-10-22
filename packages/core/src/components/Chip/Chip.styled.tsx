@@ -1,9 +1,11 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, css, styled } from '@medly-components/utils';
+import { centerAligned, WithThemeProp } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import Text from '../Text';
 import { StyledProps } from './types';
 
-const getColor = ({ theme, color, disabled }: StyledProps) => (disabled ? theme.chip.disabledColor : color || theme.chip.defaultColor);
+const getColor = ({ theme, color, disabled }: StyledProps & WithThemeProp) =>
+    disabled ? theme.chip.disabledColor : color || theme.chip.defaultColor;
 
 const outlined = () => css`
     border: 1px solid ${getColor};
@@ -55,7 +57,7 @@ export const Chip = styled('button')<StyledProps>`
     ${props => props.variant === 'outlined' && outlined()};
     ${props => props.variant === 'solid' && solid()};
 
-    ${Text.Style} + ${SvgIcon}{
+    ${Text.Style} + ${SvgIcon} {
         cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
         margin-left: 10px;
     }

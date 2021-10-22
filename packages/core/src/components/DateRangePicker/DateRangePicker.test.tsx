@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, waitFor } from '@test-utils';
+import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import React, { useState } from 'react';
 import { placements } from '../Popover/Popover.stories';
 import { DateRangePicker } from './DateRangePicker';
@@ -34,35 +34,30 @@ const renderComponent = (props?: any) => {
                 <span>Outer span</span>
             </>
         ),
-        calendarIcon = renderUtils.container.querySelector('#contract-calendar-icon'),
-        customDateRangeOptionsIcon = renderUtils.container.querySelector('#contract-custom-date-range-options-icon'),
-        startDateInput = renderUtils.container.querySelector('#contract-startDate-input') as HTMLInputElement,
-        endDateInput = renderUtils.container.querySelector('#contract-endDate-input') as HTMLInputElement;
+        startDateInput = screen.getByRole('textbox', { name: 'From' }),
+        endDateInput = screen.getByRole('textbox', { name: 'To' });
 
-    return { ...renderUtils, calendarIcon, startDateInput, endDateInput, customDateRangeOptionsIcon };
+    return { ...renderUtils, startDateInput, endDateInput };
 };
 
 describe('DateRangePicker', () => {
-    const customDateRangeOptionsPopoverSelector = '#contract-custom-date-range-options',
-        customDateRangeOptionsIconSelector = '#contract-custom-date-range-options-icon';
-
-    afterEach(cleanup);
+    const customDateRangeOptionsPopoverSelector = '#contract-custom-date-range-options';
 
     it('should render properly', () => {
-        const { container, calendarIcon } = renderComponent({
+        const { container } = renderComponent({
             value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }
         });
-        fireEvent.click(calendarIcon);
+        fireEvent.click(screen.getByTitle('contract-calendar-icon'));
         expect(container.querySelector('#contract-calendar')).toBeVisible();
         expect(container).toMatchSnapshot();
     });
 
     it('should render properly with single month', () => {
-        const { container, calendarIcon } = renderComponent({
+        const { container } = renderComponent({
             withSingleMonth: true,
             value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }
         });
-        fireEvent.click(calendarIcon);
+        fireEvent.click(screen.getByTitle('contract-calendar-icon'));
         expect(container.querySelector('#contract-calendar')).toBeVisible();
         expect(container).toMatchSnapshot();
     });
@@ -70,11 +65,11 @@ describe('DateRangePicker', () => {
     describe('popover placement', () => {
         afterEach(cleanup);
         test.each(placements)('should render properly with %p position', (popoverPlacement: DateRangeProps['popoverPlacement']) => {
-            const { container, calendarIcon } = renderComponent({
+            const { container } = renderComponent({
                 popoverPlacement,
                 value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }
             });
-            fireEvent.click(calendarIcon);
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             expect(container.querySelector('#contract-calendar')).toBeVisible();
             expect(container.querySelector('#contract-calendar')).toMatchSnapshot();
         });
@@ -83,25 +78,25 @@ describe('DateRangePicker', () => {
             ['S', '4rem'],
             ['M', '5.6rem']
         ])('should render calendar at the right position with %s size', async (size, position) => {
-            const { container, calendarIcon } = renderComponent({
+            const { container } = renderComponent({
                 size,
                 onChange: jest.fn()
             });
-            fireEvent.click(calendarIcon);
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             await waitFor(() => expect(container.querySelector('#contract-calendar')).toHaveStyle(`top: ${position}`));
         });
     });
 
     describe('calendar', () => {
         it('should show calendar on click on icon', () => {
-            const { container, calendarIcon } = renderComponent();
-            fireEvent.click(calendarIcon);
+            const { container } = renderComponent();
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             expect(container.querySelector('#contract-calendar')).toBeVisible();
         });
 
         it('should not show calendar on click on icon if disabled prop is passed', () => {
-            const { container, calendarIcon } = renderComponent({ disabled: true });
-            fireEvent.click(calendarIcon);
+            const { container } = renderComponent({ disabled: true });
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             expect(container.querySelector('#contract-calendar')).toBeNull();
         });
 
@@ -117,17 +112,17 @@ describe('DateRangePicker', () => {
                     />
                 </>
             );
-            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             expect(container.querySelector('#contract-calendar')).toBeVisible();
             fireEvent.click(getByText('Click Here'));
             expect(container.querySelector('#contract-calendar')).toBeNull();
         });
 
         it('should focus the same input element on click on the calendar', () => {
-            const { container, startDateInput, calendarIcon } = renderComponent();
-            fireEvent.click(calendarIcon);
+            const { container, startDateInput } = renderComponent();
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             expect(container.querySelector('#contract-calendar')).toBeVisible();
-            fireEvent.click(container.querySelector('#contract-calendar'));
+            fireEvent.click(container.querySelector('#contract-calendar') as HTMLDivElement);
             expect(startDateInput).toHaveFocus();
         });
 
@@ -137,28 +132,28 @@ describe('DateRangePicker', () => {
                 ['backward', 'January'],
                 ['', 'February']
             ])('should render expected months on click on %s arrow', async (icon, month) => {
-                const { container, findByText, calendarIcon } = renderComponent({
+                const { container, findByText } = renderComponent({
                     value: { startDate: new Date(2021, 1, 1), endDate: new Date(2021, 2, 2) }
                 });
-                fireEvent.click(calendarIcon);
+                fireEvent.click(screen.getByTitle('contract-calendar-icon'));
                 expect(container.querySelector('#contract-calendar')).toBeVisible();
-                icon && fireEvent.click(container.querySelector(`#contract-calendar-navigation-${icon}`));
-                fireEvent.animationEnd(container.querySelector('#contract-calendar-months-wrapper'));
+                icon && fireEvent.click(screen.getByTitle(`contract-calendar-navigation-${icon}-icon`));
+                fireEvent.animationEnd(container.querySelector('#contract-calendar-months-wrapper') as HTMLDivElement);
                 const expectedMonth = await findByText(`${month} 2021`);
                 expect(expectedMonth).toBeInTheDocument();
             });
 
             it('should change month on selecting month and year from dropdown in single month calendar', () => {
                 const dateToSelect = new Date(2021, 1, 1),
-                    { container, calendarIcon, getByText, getByTitle } = renderComponent({
+                    { container, getByText, getByTitle } = renderComponent({
                         withSingleMonth: true,
                         value: { startDate: new Date(2020, 11, 25), endDate: null }
                     });
-                fireEvent.click(calendarIcon);
+                fireEvent.click(screen.getByTitle('contract-calendar-icon'));
                 expect(container.querySelector('#contract-calendar')).toBeVisible();
-                fireEvent.click(container.querySelector('#contract-calendar-month-selector-button'));
+                fireEvent.click(screen.getByRole('button', { name: 'Dec' }));
                 fireEvent.click(getByText('Feb'));
-                fireEvent.click(container.querySelector('#contract-calendar-year-selector-button'));
+                fireEvent.click(screen.getByRole('button', { name: '2020' }));
                 fireEvent.click(getByText('2021'));
                 expect(getByTitle(dateToSelect.toDateString())).toBeInTheDocument();
             });
@@ -169,11 +164,11 @@ describe('DateRangePicker', () => {
         it('should call onChange with expected start date', () => {
             const mockOnChange = jest.fn(),
                 dateToSelect: any = { endDate: new Date(2020, 2, 5), startDate: new Date(2020, 1, 3) },
-                { calendarIcon, startDateInput, getByTitle } = renderComponent({
+                { startDateInput, getByTitle } = renderComponent({
                     value: { startDate: new Date(2020, 1, 2), endDate: new Date(2020, 2, 5) },
                     onChange: mockOnChange
                 });
-            fireEvent.click(calendarIcon);
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             fireEvent.focus(startDateInput);
             fireEvent.mouseOver(getByTitle(dateToSelect.startDate.toDateString()));
             fireEvent.change(startDateInput, { target: { value: '02 / 03 / 2020' } });
@@ -184,11 +179,11 @@ describe('DateRangePicker', () => {
             const mockOnChange = jest.fn(),
                 startDate = new Date(2020, 1, 3),
                 dateToSelect: any = { startDate: new Date(2020, 1, 3), endDate: new Date(2020, 1, 5) },
-                { calendarIcon, getByTitle, endDateInput } = renderComponent({
+                { getByTitle, endDateInput } = renderComponent({
                     value: { startDate: startDate, endDate: null },
                     onChange: mockOnChange
                 });
-            fireEvent.click(calendarIcon);
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             fireEvent.focus(endDateInput);
             fireEvent.mouseOver(getByTitle(dateToSelect.endDate.toDateString()));
             fireEvent.change(endDateInput, { target: { value: '02 / 05 / 2020' } });
@@ -196,20 +191,20 @@ describe('DateRangePicker', () => {
         });
 
         it('should change display month on selecting startDate out of displayed months', async () => {
-            const { calendarIcon, startDateInput, findByText } = renderComponent({
+            const { startDateInput, findByText } = renderComponent({
                 value: { startDate: new Date(2020, 5, 2), endDate: null }
             });
-            fireEvent.click(calendarIcon);
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             fireEvent.change(startDateInput, { target: { value: '01 / 03 / 2020' } });
             const month = await findByText('January 2020');
             expect(month).toBeInTheDocument();
         });
 
         it('should change display month on selecting endDate out of displayed months', async () => {
-            const { calendarIcon, endDateInput, findByText } = renderComponent({
+            const { endDateInput, findByText } = renderComponent({
                 value: { startDate: null, endDate: new Date(2020, 1, 5) }
             });
-            fireEvent.click(calendarIcon);
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             fireEvent.change(endDateInput, { target: { value: '06 / 05 / 2020' } });
             const month = await findByText('June 2020');
             expect(month).toBeInTheDocument();
@@ -296,11 +291,11 @@ describe('DateRangePicker', () => {
             const mockOnChange = jest.fn(),
                 initialDates = { startDate: new Date(2020, 1, 2), endDate: new Date(2020, 2, 5) },
                 datesToSelect: any = { endDate: new Date(2020, 2, 5), startDate: new Date(2020, 1, 3) },
-                { endDateInput, calendarIcon, startDateInput, getByTitle } = renderComponent({
+                { endDateInput, startDateInput, getByTitle } = renderComponent({
                     value: initialDates,
                     onChange: mockOnChange
                 });
-            fireEvent.click(calendarIcon);
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             fireEvent.click(getByTitle(datesToSelect.startDate.toDateString()));
             expect(mockOnChange).toHaveBeenCalledWith({ endDate: initialDates.endDate, startDate: datesToSelect.startDate });
             await waitFor(() => expect(endDateInput).toHaveFocus());
@@ -313,28 +308,28 @@ describe('DateRangePicker', () => {
             const mockOnFocus = jest.fn(),
                 mockOnChange = jest.fn(),
                 mockOnBlur = jest.fn(),
-                { calendarIcon, startDateInput } = renderComponent({
+                { startDateInput } = renderComponent({
                     value: { startDate: new Date(2020, 0, 1), endDate: new Date(2020, 0, 1) },
                     onChange: mockOnChange,
                     onFocus: mockOnFocus,
                     onBlur: mockOnBlur
                 });
-            fireEvent.click(calendarIcon);
+            fireEvent.focus(startDateInput);
             expect(mockOnFocus).toHaveBeenCalled();
             fireEvent.blur(startDateInput);
-            await waitFor(() => expect(mockOnBlur).toHaveBeenCalled());
+            expect(mockOnBlur).toHaveBeenCalled();
         });
 
         it('should call invalid handler if passed', () => {
             const mockOnInvalid = jest.fn(),
                 mockOnChange = jest.fn(),
-                { calendarIcon, startDateInput } = renderComponent({
+                { startDateInput } = renderComponent({
                     value: { startDate: new Date(2020, 0, 1), endDate: new Date(2020, 0, 1) },
                     onChange: mockOnChange,
                     onInvalid: mockOnInvalid,
                     required: true
                 });
-            fireEvent.click(calendarIcon);
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             fireEvent.invalid(startDateInput);
             expect(mockOnInvalid).toHaveBeenCalled();
         });
@@ -344,12 +339,12 @@ describe('DateRangePicker', () => {
         it('should swap the date if start date is greater than end date', () => {
             const mockOnChange = jest.fn(),
                 dateToSelect = new Date(2020, 1, 5),
-                { calendarIcon, getByTitle, startDateInput } = renderComponent({
+                { getByTitle, startDateInput } = renderComponent({
                     value: { startDate: new Date(2020, 0, 1), endDate: new Date(2020, 1, 1) },
                     onChange: mockOnChange,
                     fullWidth: true
                 });
-            fireEvent.click(calendarIcon);
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             fireEvent.focus(startDateInput);
             fireEvent.mouseOver(getByTitle(dateToSelect.toDateString()));
             fireEvent.click(getByTitle(dateToSelect.toDateString()));
@@ -359,12 +354,12 @@ describe('DateRangePicker', () => {
         it('should swap the date if end date is less than start date', () => {
             const mockOnChange = jest.fn(),
                 dateToSelect = new Date(2020, 1, 1),
-                { calendarIcon, getByTitle, endDateInput } = renderComponent({
+                { getByTitle, endDateInput } = renderComponent({
                     value: { startDate: new Date(2020, 1, 5), endDate: null },
                     onChange: mockOnChange,
                     fullWidth: true
                 });
-            fireEvent.click(calendarIcon);
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             fireEvent.focus(endDateInput);
             fireEvent.mouseOver(getByTitle(dateToSelect.toDateString()));
             fireEvent.click(getByTitle(dateToSelect.toDateString()));
@@ -383,13 +378,13 @@ describe('DateRangePicker', () => {
         });
 
         it('should not display the calendar Icon when showDecorators is false', () => {
-            const { calendarIcon } = renderComponent({
+            renderComponent({
                 value: { startDate: null, endDate: null },
                 onChange: jest.fn(),
                 fullWidth: true,
                 showDecorators: false
             });
-            expect(calendarIcon).toBeNull();
+            expect(screen.queryByTitle('contract-calendar-icon')).toBeNull();
         });
     });
 
@@ -404,39 +399,39 @@ describe('DateRangePicker', () => {
         });
 
         it('should render properly with custom date range options', () => {
-            const { container, customDateRangeOptionsIcon } = renderComponent({
+            const { container } = renderComponent({
                 value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
                 customDateRangeOptions: CustomDateRangeOptions,
                 minWidth: '38rem'
             });
-            fireEvent.click(customDateRangeOptionsIcon);
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
             expect(container).toMatchSnapshot();
         });
 
         it('should not render custom date range options when date range picker is disabled', () => {
-            const { container, customDateRangeOptionsIcon } = renderComponent({
+            const { container } = renderComponent({
                 value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
                 customDateRangeOptions: CustomDateRangeOptions,
                 disabled: true
             });
-            fireEvent.click(customDateRangeOptionsIcon);
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).not.toBeInTheDocument();
         });
 
         it('should hide/show custom date range options popover when clicked consecutively on custom date range icon', () => {
-            const { container, customDateRangeOptionsIcon } = renderComponent({
+            const { container } = renderComponent({
                 value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
                 customDateRangeOptions: CustomDateRangeOptions
             });
 
-            fireEvent.click(customDateRangeOptionsIcon);
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
 
-            fireEvent.click(container.querySelector(customDateRangeOptionsIconSelector));
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).not.toBeInTheDocument();
 
-            fireEvent.click(container.querySelector(customDateRangeOptionsIconSelector));
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
         });
 
@@ -447,13 +442,13 @@ describe('DateRangePicker', () => {
             ['Current Year', { startDate: new Date(2021, 0, 1), endDate: new Date(2021, 11, 31, 23, 59, 59, 999) }]
         ])('should render expected start and end date when %o date range option is selected', async (option, dateRange) => {
             const onChangeMock = jest.fn(),
-                { container, customDateRangeOptionsIcon, getByText } = renderComponent({
+                { container, getByText } = renderComponent({
                     value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
                     customDateRangeOptions: CustomDateRangeOptions,
                     onChange: onChangeMock
                 });
 
-            fireEvent.click(customDateRangeOptionsIcon);
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
 
             fireEvent.click(getByText(option));
@@ -465,7 +460,7 @@ describe('DateRangePicker', () => {
             const onChangeMock = jest.fn(),
                 minStartDate = new Date('2021-08-07T18:30:00.000Z'),
                 maxEndDate = new Date('2021-08-13T18:30:00.000Z'),
-                { container, customDateRangeOptionsIcon, getByText } = renderComponent({
+                { container, getByText } = renderComponent({
                     value: { startDate: new Date('2021-08-08T18:30:00.000Z'), endDate: new Date('2021-08-09T18:30:00.000Z') },
                     customDateRangeOptions: CustomDateRangeOptions,
                     onChange: onChangeMock,
@@ -473,7 +468,7 @@ describe('DateRangePicker', () => {
                     maxSelectableDate: maxEndDate
                 });
 
-            fireEvent.click(customDateRangeOptionsIcon);
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
 
             fireEvent.click(getByText('Current Year'));
@@ -485,12 +480,12 @@ describe('DateRangePicker', () => {
         });
 
         it('should show calendar and focus on start date when custom date range option is selected', async () => {
-            const { container, customDateRangeOptionsIcon, startDateInput, getByText } = renderComponent({
+            const { container, startDateInput, getByText } = renderComponent({
                 value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
                 customDateRangeOptions: CustomDateRangeOptions
             });
 
-            fireEvent.click(customDateRangeOptionsIcon);
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
 
             fireEvent.click(getByText('Custom'));
@@ -503,12 +498,12 @@ describe('DateRangePicker', () => {
     describe('Custom date range options popover placement', () => {
         afterEach(cleanup);
         test.each(placements)('should render properly with %p position', (popoverPlacement: DateRangeProps['popoverPlacement']) => {
-            const { container, customDateRangeOptionsIcon } = renderComponent({
+            const { container } = renderComponent({
                 popoverPlacement,
                 value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) },
                 customDateRangeOptions: CustomDateRangeOptions
             });
-            fireEvent.click(customDateRangeOptionsIcon);
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toBeVisible();
             expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toMatchSnapshot();
         });
@@ -517,12 +512,12 @@ describe('DateRangePicker', () => {
             ['S', '4rem'],
             ['M', '5.6rem']
         ])('should render custom options at the right position with %s size', async (size, position) => {
-            const { container, customDateRangeOptionsIcon } = renderComponent({
+            const { container } = renderComponent({
                 size,
                 onChange: jest.fn(),
                 customDateRangeOptions: CustomDateRangeOptions
             });
-            fireEvent.click(customDateRangeOptionsIcon);
+            fireEvent.click(screen.getByTitle('contract-custom-date-range-options-icon'));
             await waitFor(() => expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toHaveStyle(`top: ${position}`));
         });
     });

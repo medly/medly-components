@@ -28,6 +28,7 @@ const Component: FC<MultiSelectProps> = React.memo(
                 validator,
                 onInputChange,
                 showTooltipForHelperAndErrorText,
+                prefix,
                 ...restProps
             } = props,
             selectId = useMemo(() => id || label?.toLocaleLowerCase().replace(' ', '') || 'medly-multiSelect', [id, label]);
@@ -38,9 +39,9 @@ const Component: FC<MultiSelectProps> = React.memo(
             [options, setOptions] = useState(defaultOptions),
             [builtInErrorMessage, setErrorMessage] = useState(''),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
-            [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(defaultOptions, values)),
+            [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(defaultOptions, values!)),
             [inputValue, setInputValue] = useState(getInputValue(selectedOptions)),
-            [placeholder, setPlaceholder] = useState(values.length > 0 ? `${values.length} options selected` : props.placeholder),
+            [placeholder, setPlaceholder] = useState(values!.length > 0 ? `${values!.length} options selected` : props.placeholder),
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [builtInErrorMessage, errorText]);
 
         const updateToDefaultOptions = useCallback(() => setOptions(defaultOptions), [defaultOptions]),
@@ -54,10 +55,10 @@ const Component: FC<MultiSelectProps> = React.memo(
                 setInputValue('');
                 inputRef.current && inputRef.current.focus();
             }, [areOptionsVisible]),
-            toggleOptions = useCallback(() => !disabled && (areOptionsVisible ? hideOptions() : showOptions()), [
-                disabled,
-                areOptionsVisible
-            ]),
+            toggleOptions = useCallback(
+                () => !disabled && (areOptionsVisible ? hideOptions() : showOptions()),
+                [disabled, areOptionsVisible]
+            ),
             handleInputChange = useCallback(
                 ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
                     setInputValue(value);
@@ -83,8 +84,8 @@ const Component: FC<MultiSelectProps> = React.memo(
                 const filteredOptions = selectedOptions.filter(({ disabled }) => disabled).map(({ value }) => value);
                 onChange && onChange(filteredOptions);
             }, [selectedOptions]),
-            handleInputOnBlur = useCallback(() => areOptionsVisible && inputRef.current.focus(), [areOptionsVisible]),
-            inputValidator = useCallback(() => undefined, []);
+            handleInputOnBlur = useCallback(() => areOptionsVisible && inputRef.current?.focus(), [areOptionsVisible]),
+            inputValidator = useCallback(() => '', []);
 
         const validate = useCallback(() => {
                 const message =
@@ -102,8 +103,8 @@ const Component: FC<MultiSelectProps> = React.memo(
             );
 
         useEffect(() => {
-            setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values));
-            setOptions(inputRef.current.value ? filterOptions(defaultOptions, inputRef.current.value) : defaultOptions);
+            setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values!));
+            setOptions(inputRef.current?.value ? filterOptions(defaultOptions, inputRef.current?.value) : defaultOptions);
         }, [defaultOptions, values]);
 
         useEffect(() => {
@@ -128,9 +129,9 @@ const Component: FC<MultiSelectProps> = React.memo(
         const ChipEl = () => (
             <InputSuffix
                 id={`${selectId}-count`}
-                size={size}
+                size={size!}
                 disabled={disabled}
-                variant={variant}
+                variant={variant!}
                 hasError={hasError}
                 onClear={onClearHandler}
                 isActive={areOptionsVisible}
@@ -148,7 +149,8 @@ const Component: FC<MultiSelectProps> = React.memo(
                 isErrorPresent={hasError}
                 onBlur={handleWrapperOnBlur}
                 areOptionsVisible={areOptionsVisible}
-                {...{ ...restProps, variant, disabled, minWidth, fullWidth }}
+                variant={variant!}
+                {...{ ...restProps, disabled, minWidth, fullWidth }}
             >
                 <TextField
                     fullWidth
@@ -173,11 +175,12 @@ const Component: FC<MultiSelectProps> = React.memo(
                     errorText={errorText || builtInErrorMessage}
                     validator={inputValidator}
                     showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
+                    prefix={prefix}
                 />
                 {!disabled && areOptionsVisible && (
                     <Options
                         id={`${selectId}`}
-                        size={size}
+                        size={size!}
                         ref={optionsRef}
                         values={selectedOptions}
                         options={options}

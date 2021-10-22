@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'TextRotationAngleDownIcon';
 
-const TextRotationAngleDownIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const TextRotationAngleDownIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default TextRotationAngleDownIcon
+export default TextRotationAngleDownIcon;

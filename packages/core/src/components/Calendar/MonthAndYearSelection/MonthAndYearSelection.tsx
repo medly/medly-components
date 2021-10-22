@@ -1,6 +1,7 @@
 import { useUpdateEffect, WithStyle } from '@medly-components/utils';
 import React, { useCallback, useMemo } from 'react';
 import SingleSelect from '../../SingleSelect';
+import { Option } from '../../SingleSelect/types';
 import { SHORT_CALENDAR_MONTHS } from '../constants';
 import { getMonthAndYearFromDate } from '../helper';
 import { Wrapper } from './MonthAndYearSelection.styled';
@@ -20,7 +21,7 @@ const Component: React.FC<MonthAndYearSelectionProps> = React.memo(
                     SHORT_CALENDAR_MONTHS.reduce((acc, curr, index) => {
                         const isDisabled = new Date(year, index, 1) > maxSelectableDate || new Date(year, index + 1, 0) < minSelectableDate;
                         return [...acc, { label: curr, value: index, disabled: isDisabled }];
-                    }, []),
+                    }, [] as Option[]),
                 [minMonth, maxMonth, year]
             ),
             yearOptions = useMemo(

@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'Brightness6Icon';
 
-const Brightness6Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const Brightness6Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default Brightness6Icon
+export default Brightness6Icon;

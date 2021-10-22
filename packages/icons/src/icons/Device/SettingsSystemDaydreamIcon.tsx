@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'SettingsSystemDaydreamIcon';
 
-const SettingsSystemDaydreamIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const SettingsSystemDaydreamIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default SettingsSystemDaydreamIcon
+export default SettingsSystemDaydreamIcon;

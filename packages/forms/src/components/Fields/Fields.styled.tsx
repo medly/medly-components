@@ -1,5 +1,5 @@
 import { Text } from '@medly-components/core';
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import { CommonFieldProps } from './types';
 
 export const FieldWrapper = styled('div')<CommonFieldProps>`

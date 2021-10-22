@@ -1,6 +1,7 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
+import { css } from 'styled-components';
 import { ButtonProps } from '../types';
 
 const getStyle = (textColor: string, bgColor = 'transparent', borderColor: string, borderWidth = '0.1rem') => css`
@@ -21,7 +22,7 @@ const getHoverShadow = (shadowColor: string) => css`
     box-shadow: 0 0.2rem 0.8rem ${rgba(shadowColor, 0.35)};
 `;
 
-export const outlinedButton = ({ theme, isLoading, edges }: ButtonProps) => {
+export const outlinedButton = ({ theme, isLoading, edges }: ButtonProps & WithThemeProp) => {
     const { textColor, bgColor, borderColor, hoverShadow } = theme.button.outlined;
 
     return css`
@@ -38,7 +39,7 @@ export const outlinedButton = ({ theme, isLoading, edges }: ButtonProps) => {
             left: 0;
             background-color: transparent;
             transition: all 100ms ease-out;
-            border-radius: ${theme.button.borderRadius[edges]};
+            border-radius: ${theme.button.borderRadius[edges!]};
             border-style: solid;
         }
         &:disabled {

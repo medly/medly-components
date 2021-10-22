@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'PhonelinkEraseIcon';
 
-const PhonelinkEraseIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const PhonelinkEraseIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default PhonelinkEraseIcon
+export default PhonelinkEraseIcon;

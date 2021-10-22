@@ -154,12 +154,12 @@ exports[`CardTable Body should render no result row when there is no data 1`] = 
 
 <div>
   <tr
-    class="sc-AxiKw c0"
+    class="sc-1fyt1yf-0 c0"
   >
     <strong
       class="c1"
     >
-       No Result 
+      No Result
     </strong>
   </tr>
 </div>

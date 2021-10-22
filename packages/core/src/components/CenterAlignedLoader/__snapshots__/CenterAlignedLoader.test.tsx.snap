@@ -43,8 +43,8 @@ exports[`Center Aligned Loader should render properly with all props given 1`] =
 }
 
 .c0 > * {
-  -webkit-animation: cwwion 300ms ease-in-out;
-  animation: cwwion 300ms ease-in-out;
+  -webkit-animation: hHgZmL 300ms ease-in-out;
+  animation: hHgZmL 300ms ease-in-out;
 }
 
 .c1 {
@@ -161,8 +161,8 @@ exports[`Center Aligned Loader should render properly with default props 1`] = `
 }
 
 .c0 > * {
-  -webkit-animation: cwwion 300ms ease-in;
-  animation: cwwion 300ms ease-in;
+  -webkit-animation: hHgZmL 300ms ease-in;
+  animation: hHgZmL 300ms ease-in;
 }
 
 <div>

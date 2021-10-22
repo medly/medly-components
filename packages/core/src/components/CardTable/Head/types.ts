@@ -3,7 +3,7 @@ import { ColumnConfig, SortOrder } from '../types';
 export interface Props {
     defaultSortField?: string;
     defaultSortOrder?: SortOrder;
-    withWhiteBackground: boolean;
+    withWhiteBackground?: boolean;
     columns: ColumnConfig[];
     onSort?: (field: string, order: SortOrder) => void;
 }

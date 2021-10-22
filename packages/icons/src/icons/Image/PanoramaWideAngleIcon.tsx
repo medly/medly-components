@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'PanoramaWideAngleIcon';
 
-const PanoramaWideAngleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const PanoramaWideAngleIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default PanoramaWideAngleIcon
+export default PanoramaWideAngleIcon;

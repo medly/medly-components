@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'Crop32Icon';
 
-const Crop32Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const Crop32Icon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default Crop32Icon
+export default Crop32Icon;

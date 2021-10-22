@@ -1,19 +1,20 @@
-import { css, styled } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import Text from '../Text';
 import { StyledProps } from './types';
 
-const getAvatarSize = ({ theme: { avatar }, size }: StyledProps) => {
+const getAvatarSize = ({ theme: { avatar }, size }: StyledProps & WithThemeProp) => {
     const { sizes, defaults } = avatar;
     return sizes[size || defaults.size].avatarSize;
 };
 
-const getShadowColor = ({ theme: { avatar }, hoverTextShadowColor, hoverImgShadowColor, isImage }: StyledProps) => {
+const getShadowColor = ({ theme: { avatar }, hoverTextShadowColor, hoverImgShadowColor, isImage }: StyledProps & WithThemeProp) => {
     return isImage
         ? hoverImgShadowColor || avatar.defaults.hover.imgShadowColor
         : hoverTextShadowColor || avatar.defaults.hover.textShadowColor;
 };
 
-const hoverStyle = ({ theme, hoverBgColor, hoverTextColor }: StyledProps) => {
+const hoverStyle = ({ theme, hoverBgColor, hoverTextColor }: StyledProps & WithThemeProp) => {
     const { defaults } = theme.avatar;
     return css`
         &:hover {
@@ -26,7 +27,7 @@ const hoverStyle = ({ theme, hoverBgColor, hoverTextColor }: StyledProps) => {
     `;
 };
 
-const pressedStyle = ({ theme, pressedBgColor, pressedTextColor }: StyledProps) => {
+const pressedStyle = ({ theme, pressedBgColor, pressedTextColor }: StyledProps & WithThemeProp) => {
     const { defaults } = theme.avatar;
     return css`
         &:active {
@@ -38,7 +39,7 @@ const pressedStyle = ({ theme, pressedBgColor, pressedTextColor }: StyledProps) 
     `;
 };
 
-const getTextStyle = ({ theme, ...props }: StyledProps) => {
+const getTextStyle = ({ theme, ...props }: StyledProps & WithThemeProp) => {
     const { size, textColor, bgColor } = props,
         { defaults, sizes } = theme.avatar,
         { avatarSize, fontSize } = sizes[size || defaults.size];
@@ -57,9 +58,15 @@ const getTextStyle = ({ theme, ...props }: StyledProps) => {
     `;
 };
 
-export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults } } }: StyledProps) => ({
-    defaults
-}))<StyledProps>`
+export const AvatarStyled = styled('div').attrs(
+    ({
+        theme: {
+            avatar: { defaults }
+        }
+    }: StyledProps & WithThemeProp) => ({
+        defaults
+    })
+)<StyledProps>`
     display: inline-block;
     text-align: center;
     min-width: max-content;

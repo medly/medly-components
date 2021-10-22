@@ -1,5 +1,4 @@
-import { cleanup, fireEvent, render, screen } from '@test-utils';
-import { format } from 'date-fns';
+import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import React from 'react';
 import { FormCustomComponent } from '../Fields/types';
 import { Form } from './Form';
@@ -136,7 +135,7 @@ describe('Form', () => {
             expect(mockOnSubmit).toHaveBeenCalledWith(initialState);
         });
 
-        it('with expected data', async (done: any) => {
+        it('with expected data', async () => {
             const fooFile = new File(['foo'], 'foo.txt', {
                     type: 'text/plain'
                 }),
@@ -170,7 +169,7 @@ describe('Form', () => {
                     },
                     resume: [fooFile]
                 },
-                renderComp = (state: object = dateStringInitialState) => (
+                renderComp = (state: Record<string, unknown> = dateStringInitialState) => (
                     <Form name="Test form" fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={state} onChange={mockOnChange} />
                 );
             const { container } = render(renderComp());
@@ -225,9 +224,8 @@ describe('Form', () => {
             // Checkbox
             fireEvent.click(screen.getByRole('checkbox', { name: 'Do you Agree' }));
             fireEvent.submit(screen.getByRole('form'));
-            expect(mockOnSubmit).toHaveBeenCalledWith(formData);
+            await waitFor(() => expect(mockOnSubmit).toHaveBeenCalledWith(formData), { timeout: 3000 });
             expect(mockOnChange.mock.calls[mockOnChange.mock.calls.length - 1][0]).toEqual(formData);
-            done();
         }, 30000);
     });
 
@@ -317,7 +315,7 @@ describe('Form', () => {
             fireEvent.submit(screen.getByRole('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith({
                 experience: {
-                    startDate: format(new Date(new Date().getFullYear(), new Date().getMonth(), 2), 'dd/MM/yyyy'),
+                    startDate: '02/09/2021',
                     endDate: ''
                 }
             });

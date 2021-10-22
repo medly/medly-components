@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 
 export const Form = styled('form')<{ fullWidth?: boolean; minWidth?: string; gridGap?: string }>`
     grid-template-rows: auto;

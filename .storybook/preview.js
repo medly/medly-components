@@ -5,11 +5,10 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { addDecorator, addParameters } from '@storybook/react';
 import React from 'react';
 import { jsxDecorator } from 'storybook-addon-jsx';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import results from '../.jest-test-results.json';
 import { CssBaseline } from '../packages/core/src';
 import { defaultTheme } from '../packages/theme/src';
-import { ThemeProvider } from '../packages/utils/src';
 
 const PreviewOverflow = createGlobalStyle`
     .sbdocs h5, .sbdocs h3, .sbdocs h4 {

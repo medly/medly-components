@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'RouteofAdministration3LineIcon';
 
-const RouteofAdministration3LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const RouteofAdministration3LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default RouteofAdministration3LineIcon
+export default RouteofAdministration3LineIcon;

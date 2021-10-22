@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 
 export const Container = styled.button`
     display: inline-grid;

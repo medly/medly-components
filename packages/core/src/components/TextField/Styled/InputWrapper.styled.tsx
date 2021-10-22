@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 
 export const InputWrapper = styled('div')<{ multiline?: boolean; size: 'S' | 'M'; variant: 'fusion' | 'outlined' | 'filled' }>`
     display: flex;

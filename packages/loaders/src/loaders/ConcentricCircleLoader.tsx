@@ -1,7 +1,8 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { FC } from 'react';
 import ConcentricCircleLoaderSvg from '../assets/ConcentricCircleLoader.svg';
-import SvgLoader, { SvgLoaderProps } from '../SvgLoader';
+import SvgLoader from '../SvgLoader';
+import { SvgLoaderProps } from '../SvgLoader/types';
 
 const Component: FC<SvgLoaderProps> = React.memo(props => (
     <SvgLoader {...props}>

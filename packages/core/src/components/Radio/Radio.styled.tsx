@@ -1,6 +1,7 @@
 import { RadioSizes, RadioTheme } from '@medly-components/theme';
-import { css, styled, WithThemeProp } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled, { css } from 'styled-components';
 import { getSelectorLabelPositionStyle } from '../Selectors';
 import { RadioProps, WrapperProps } from './types';
 
@@ -35,20 +36,17 @@ const getStyle = (color: string) => css`
     }
 `;
 
-const getEventStyle = (event: 'hovered' | 'pressed' | 'focused') => ({
-    hasError,
-    theme,
-    fillColor,
-    borderColor
-}: RadioTheme & WithThemeProp & (WrapperProps | RadioProps)) => {
-    const state = hasError ? 'error' : 'active';
-    const { blurRadius, spreadRadius } = theme.radio.boxShadow;
-    const borderColorValue = event !== 'focused' && borderColor[event][state];
-    return css`
-        border-color: ${borderColorValue};
-        box-shadow: 0 0 ${blurRadius} ${spreadRadius} ${rgba(fillColor[state], event === 'pressed' ? 0.5 : 0.35)};
-    `;
-};
+const getEventStyle =
+    (event: 'hovered' | 'pressed' | 'focused') =>
+    ({ hasError, theme, fillColor, borderColor }: RadioTheme & WithThemeProp & (WrapperProps | RadioProps)) => {
+        const state = hasError ? 'error' : 'active';
+        const { blurRadius, spreadRadius } = theme.radio.boxShadow;
+        const borderColorValue = event !== 'focused' && borderColor[event][state];
+        return css`
+            border-color: ${borderColorValue};
+            box-shadow: 0 0 ${blurRadius} ${spreadRadius} ${rgba(fillColor[state], event === 'pressed' ? 0.5 : 0.35)};
+        `;
+    };
 
 export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio', ...theme.radio }))<RadioProps>`
     position: absolute;

@@ -1,8 +1,8 @@
-import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit } from '@medly-components/utils';
 
 type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, 'type'>;
 
-export interface StyledProps extends ButtonProps, WithThemeProp {
+export interface StyledProps extends ButtonProps {
     /** Chip design */
     variant?: 'solid' | 'flat' | 'outlined';
     /** Button colors */

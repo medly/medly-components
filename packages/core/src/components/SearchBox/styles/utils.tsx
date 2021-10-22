@@ -1,4 +1,5 @@
-import { css, WithThemeProp } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
+import { css } from 'styled-components';
 import { StyledSearchBoxProps } from '../types';
 
 export const getSearchBoxSize = ({ theme, size }: StyledSearchBoxProps & WithThemeProp) => theme.searchBox.height[size];

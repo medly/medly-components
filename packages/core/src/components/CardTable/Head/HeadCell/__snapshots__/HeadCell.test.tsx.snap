@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card Table HeadCell should be able to "center" align  1`] = `
+exports[`Card Table HeadCell should be able to "center" align 1`] = `
 .c4 {
   margin: 0;
   color: inherit;
@@ -68,7 +68,7 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
   color: #70ADE9;
 }
 
-.c0 .c1:hover .sc-AxjAm * {
+.c0 .c1:hover .sc-1pf3x8a-0 * {
   fill: #70ADE9;
 }
 
@@ -83,7 +83,7 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
   color: #435465;
 }
 
-.c0 .sc-AxjAm {
+.c0 .sc-1pf3x8a-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
@@ -91,7 +91,7 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
   padding-left: 0.4rem;
 }
 
-.c0 .sc-AxjAm * {
+.c0 .sc-1pf3x8a-0 * {
   fill: #435465;
 }
 
@@ -118,7 +118,7 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
 </div>
 `;
 
-exports[`Card Table HeadCell should be able to "left" align  1`] = `
+exports[`Card Table HeadCell should be able to "left" align 1`] = `
 .c4 {
   margin: 0;
   color: inherit;
@@ -186,7 +186,7 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
   color: #70ADE9;
 }
 
-.c0 .c1:hover .sc-AxjAm * {
+.c0 .c1:hover .sc-1pf3x8a-0 * {
   fill: #70ADE9;
 }
 
@@ -201,7 +201,7 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
   color: #435465;
 }
 
-.c0 .sc-AxjAm {
+.c0 .sc-1pf3x8a-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
@@ -209,7 +209,7 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
   padding-left: 0.4rem;
 }
 
-.c0 .sc-AxjAm * {
+.c0 .sc-1pf3x8a-0 * {
   fill: #435465;
 }
 
@@ -236,7 +236,7 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
 </div>
 `;
 
-exports[`Card Table HeadCell should be able to "right" align  1`] = `
+exports[`Card Table HeadCell should be able to "right" align 1`] = `
 .c4 {
   margin: 0;
   color: inherit;
@@ -304,7 +304,7 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
   color: #70ADE9;
 }
 
-.c0 .c1:hover .sc-AxjAm * {
+.c0 .c1:hover .sc-1pf3x8a-0 * {
   fill: #70ADE9;
 }
 
@@ -319,7 +319,7 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
   color: #435465;
 }
 
-.c0 .sc-AxjAm {
+.c0 .sc-1pf3x8a-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
@@ -327,7 +327,7 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
   padding-left: 0.4rem;
 }
 
-.c0 .sc-AxjAm * {
+.c0 .sc-1pf3x8a-0 * {
   fill: #435465;
 }
 
@@ -714,7 +714,7 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   color: #70ADE9;
 }
 
-.c0 .c1:hover .sc-AxjAm * {
+.c0 .c1:hover .sc-1pf3x8a-0 * {
   fill: #70ADE9;
 }
 
@@ -729,7 +729,7 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   color: #435465;
 }
 
-.c0 .sc-AxjAm {
+.c0 .sc-1pf3x8a-0 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
@@ -737,7 +737,7 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   padding-left: 0.4rem;
 }
 
-.c0 .sc-AxjAm * {
+.c0 .sc-1pf3x8a-0 * {
   fill: #435465;
 }
 

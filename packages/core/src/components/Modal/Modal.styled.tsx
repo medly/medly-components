@@ -1,5 +1,5 @@
-import { styled } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled from 'styled-components';
 import { InnerContainerProps, ModalBackgroundProps } from './types';
 
 export const ModalBackgroundStyled = styled.div<ModalBackgroundProps>`

@@ -1,51 +1,50 @@
 import { ChevronDownIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import TextField from '../TextField';
 import { InputSuffixStyled } from './InputSuffix/InputSuffix.styled';
 import { SelectWrapperProps } from './types';
 
 const iconStyle = (color: string) => css`
-        ${InputSuffixStyled} > ${ChevronDownIcon.Style} {
-            * {
-                fill: ${color};
-            }
+    ${InputSuffixStyled} > ${ChevronDownIcon.Style} {
+        * {
+            fill: ${color};
         }
-    `;
+    }
+`;
 
 const getDefaultStyle = ({ theme, variant, areOptionsVisible, disabled, isSearchable }: SelectWrapperProps) => css`
-        ${TextField.Style} {
-            margin: 0;
+    ${TextField.Style} {
+        margin: 0;
 
-            label {
-                pointer-events: none;
-            }
+        label {
+            pointer-events: none;
+        }
 
-            div,
-            input,
-            label {
-                cursor: ${!disabled && 'pointer'};
-            }
-            &:focus-within {
-                input {
-                    cursor: ${!disabled && isSearchable && 'text'};
-                }
-            }
+        div,
+        input,
+        label {
+            cursor: ${!disabled && 'pointer'};
+        }
+        &:focus-within {
             input {
-                padding-right: 1.6rem;
+                cursor: ${!disabled && isSearchable && 'text'};
             }
         }
-
-        
-        ${InputSuffixStyled} > ${ChevronDownIcon.Style} {
-            transform: ${areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)'};
+        input {
+            padding-right: 1.6rem;
         }
+    }
 
-        ${!disabled && iconStyle(theme.textField[variant].default.labelColor)}
-        
-        &:not(:focus-within):hover{
-            ${!disabled && iconStyle(theme.textField[variant].default.textColor)}
-        }
-    `;
+    ${InputSuffixStyled} > ${ChevronDownIcon.Style} {
+        transform: ${areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)'};
+    }
+
+    ${!disabled && iconStyle(theme.textField[variant].default.labelColor)}
+
+    &:not(:focus-within):hover {
+        ${!disabled && iconStyle(theme.textField[variant].default.textColor)}
+    }
+`;
 
 export const Wrapper = styled.div<SelectWrapperProps>`
     position: relative;

@@ -3,6 +3,79 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.16.2](https://github.com/medly/medly-components/compare/@medly-components/utils@1.16.1...@medly-components/utils@1.16.2) (2021-10-22)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.16.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.16.0...@medly-components/utils@1.16.1) (2021-10-21)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+# [1.16.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.15.0...@medly-components/utils@1.16.0) (2021-10-20)
+
+
+### Features
+
+* use medly typescript config ([#490](https://github.com/medly/medly-components/issues/490)) ([7c78c00](https://github.com/medly/medly-components/commit/7c78c0021209f558878e2a47fce101d54237ca33))
+
+
+
+
+
+# [1.15.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.19...@medly-components/utils@1.15.0) (2021-10-19)
+
+
+### Features
+
+* add medly lint( eslint, stylelint & prettier ) configs ([#488](https://github.com/medly/medly-components/issues/488)) ([2a75fb4](https://github.com/medly/medly-components/commit/2a75fb432a15c64abcf939e969c280e701316a51))
+
+
+
+
+
+## [1.14.19](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.18...@medly-components/utils@1.14.19) (2021-10-18)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.14.18](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.17...@medly-components/utils@1.14.18) (2021-10-18)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.14.17](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.16...@medly-components/utils@1.14.17) (2021-10-13)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.14.16](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.15...@medly-components/utils@1.14.16) (2021-10-05)
+
+
+### Bug Fixes
+
+* strict null issue for Accordion, Button, Chip, Card and Card Tab… ([#476](https://github.com/medly/medly-components/issues/476)) ([5840021](https://github.com/medly/medly-components/commit/5840021aac069f355dd88afa891f2cf96963a06c))
+
+
+
+
+
 ## [1.14.15](https://github.com/medly/medly-components/compare/@medly-components/utils@1.14.14...@medly-components/utils@1.14.15) (2021-09-28)
 
 **Note:** Version bump only for package @medly-components/utils

@@ -1,4 +1,5 @@
-import { css, getFontStyle, styled } from '@medly-components/utils';
+import { getFontStyle } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import { TableProps, TableStyledProps } from './types';
 
 export const HiddenDiv = styled('div')`
@@ -27,7 +28,7 @@ export const TableStyled = styled('table')<TableStyledProps>`
     display: block;
     border: ${({ showRowWithCardStyle, theme }) => !showRowWithCardStyle && `1px solid ${theme.table.borderColor}`};
     padding: ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? '0 0 0.8rem 0' : 0)};
-    border-radius: ${({theme}) => theme.table.borderRadius};
+    border-radius: ${({ theme }) => theme.table.borderRadius};
     border-collapse: separate;
     border-spacing: 0;
     margin: 0;

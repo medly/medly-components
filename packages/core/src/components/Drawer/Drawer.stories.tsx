@@ -1,7 +1,7 @@
 import { defaultTheme } from '@medly-components/theme/src';
-import { styled } from '@medly-components/utils';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import React, { useCallback, useState } from 'react';
+import styled from 'styled-components';
 import Button from '../Button';
 import CheckboxGroup from '../CheckboxGroup';
 import DateRangePicker from '../DateRangePicker';
@@ -38,7 +38,7 @@ FilterHeader.displayName = 'FilterHeader';
 
 export const Basic = () => {
     const [drawerState, setDrawerState] = useState(false),
-        [contract, setContract] = useState({ startDate: null, endDate: null }),
+        [contract, setContract] = useState<{ startDate: Date | null; endDate: Date | null }>({ startDate: null, endDate: null }),
         [locations, setLocation] = useState(['Delhi']),
         [brands, setBrands] = useState(['Jaguar']),
         locationOptions = [
@@ -92,7 +92,7 @@ export const Basic = () => {
             >
                 <Drawer.Header>Add Filters</Drawer.Header>
                 <Drawer.Content>
-                    <FilterHeader label="CONTRACT" onClear={clearDates} showClear={contract.startDate || contract.endDate} />
+                    <FilterHeader label="CONTRACT" onClear={clearDates} showClear={!!contract.startDate || !!contract.endDate} />
                     <DateRangePicker value={contract} onChange={setContract} fullWidth withSingleMonth />
                     <FilterHeader label="LOCATION" onClear={clearLocation} showClear={locations.length > 0} />
                     <MultiSelect options={locationOptions} values={locations} onChange={setLocation} fullWidth />

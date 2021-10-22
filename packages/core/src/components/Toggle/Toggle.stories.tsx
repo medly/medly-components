@@ -9,5 +9,3 @@ export const ThemeInterface: React.FC<ToggleTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.toggle
 };
-
-

@@ -3,7 +3,13 @@ import React from 'react';
 import { DialogBox } from './DialogBox';
 import { DialogBoxProps } from './types';
 
-const dialogBoxRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHeight, shouldCloseOnOutsideClick = false }: DialogBoxProps) =>
+const dialogBoxRenderer = ({
+    open = false,
+    onCloseModal = jest.fn(),
+    minWidth,
+    minHeight,
+    shouldCloseOnOutsideClick = false
+}: DialogBoxProps) =>
     render(
         <DialogBox {...{ open, onCloseModal, minHeight, minWidth, shouldCloseOnOutsideClick }}>
             <DialogBox.Header>
@@ -30,7 +36,6 @@ describe('DialogBox component', () => {
         expect(container).toBeEmptyDOMElement();
     });
 
-
     it('should call onCloseModal on pressing escape key', () => {
         const mockOnCloseModal = jest.fn();
         const { container } = dialogBoxRenderer({ open: true, onCloseModal: mockOnCloseModal });
@@ -41,7 +46,7 @@ describe('DialogBox component', () => {
     it('should call onCloseModal on click on overlay background', () => {
         const mockOnCloseModal = jest.fn();
         const { container } = dialogBoxRenderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true });
-        fireEvent.click(container.querySelector('#medly-dialog-box'));
+        fireEvent.click(container.querySelector('#medly-dialog-box') as HTMLDivElement);
         expect(mockOnCloseModal).toBeCalled();
     });
 

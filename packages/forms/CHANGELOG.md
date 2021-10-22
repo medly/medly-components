@@ -3,6 +3,163 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.34.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.34.1...@medly-components/forms@1.34.2) (2021-10-22)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.34.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.34.0...@medly-components/forms@1.34.1) (2021-10-21)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.34.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.33.0...@medly-components/forms@1.34.0) (2021-10-20)
+
+
+### Features
+
+* use medly typescript config ([#490](https://github.com/medly/medly-components/issues/490)) ([7c78c00](https://github.com/medly/medly-components/commit/7c78c0021209f558878e2a47fce101d54237ca33))
+
+
+
+
+
+# [1.33.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.32.2...@medly-components/forms@1.33.0) (2021-10-19)
+
+
+### Features
+
+* add medly lint( eslint, stylelint & prettier ) configs ([#488](https://github.com/medly/medly-components/issues/488)) ([2a75fb4](https://github.com/medly/medly-components/commit/2a75fb432a15c64abcf939e969c280e701316a51))
+
+
+
+
+
+## [1.32.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.32.1...@medly-components/forms@1.32.2) (2021-10-18)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.32.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.32.0...@medly-components/forms@1.32.1) (2021-10-18)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.32.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.31.2...@medly-components/forms@1.32.0) (2021-10-14)
+
+
+### Features
+
+* export prop types of all the components ([#483](https://github.com/medly/medly-components/issues/483)) ([61e23b0](https://github.com/medly/medly-components/commit/61e23b0dea0840ebfad3869a3d67f1c7efbc4183))
+
+
+
+
+
+## [1.31.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.31.1...@medly-components/forms@1.31.2) (2021-10-13)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.31.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.31.0...@medly-components/forms@1.31.1) (2021-10-11)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.31.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.28...@medly-components/forms@1.31.0) (2021-10-06)
+
+
+### Features
+
+* **core:** fix number field to display int 0 ([#477](https://github.com/medly/medly-components/issues/477)) ([adb187d](https://github.com/medly/medly-components/commit/adb187d04230d9ed49f70cbfcc55a3e41e43994a))
+
+
+
+
+
+## [1.30.28](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.27...@medly-components/forms@1.30.28) (2021-10-05)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.30.27](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.26...@medly-components/forms@1.30.27) (2021-10-05)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.30.26](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.25...@medly-components/forms@1.30.26) (2021-10-05)
+
+
+### Bug Fixes
+
+* strict null check issue in DatePicker and DateRangePicker component ([#475](https://github.com/medly/medly-components/issues/475)) ([a25857f](https://github.com/medly/medly-components/commit/a25857f862d8b20983ecb180a7d7c572328806ef))
+
+
+
+
+
+## [1.30.25](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.24...@medly-components/forms@1.30.25) (2021-10-04)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.30.24](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.23...@medly-components/forms@1.30.24) (2021-10-04)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.30.23](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.22...@medly-components/forms@1.30.23) (2021-10-01)
+
+
+### Bug Fixes
+
+* fix strict null check issue in FileInput, Hidden, Input, Label, … ([#471](https://github.com/medly/medly-components/issues/471)) ([bae1a89](https://github.com/medly/medly-components/commit/bae1a899fc33fa8f6d5885f205f2aa4ee930f393))
+
+
+
+
+
+## [1.30.22](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.21...@medly-components/forms@1.30.22) (2021-10-01)
+
+
+### Bug Fixes
+
+* fix strict null check issue in MultiSelect component ([#468](https://github.com/medly/medly-components/issues/468)) ([ab3cd36](https://github.com/medly/medly-components/commit/ab3cd368e60b8281ddc6bfb7b5b8cd2867f17e10))
+
+
+
+
+
 ## [1.30.21](https://github.com/medly/medly-components/compare/@medly-components/forms@1.30.20...@medly-components/forms@1.30.21) (2021-09-29)
 
 **Note:** Version bump only for package @medly-components/forms

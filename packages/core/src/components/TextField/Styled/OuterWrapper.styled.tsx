@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 
 export const OuterWrapper = styled('div')<{ fullWidth?: boolean; minWidth?: string; maxWidth?: string }>`
     position: relative;

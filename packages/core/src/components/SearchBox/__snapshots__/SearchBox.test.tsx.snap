@@ -549,7 +549,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   background-color: #ffffff;
 }
 
-.c0 .sc-AxhUy {
+.c0 .sc-1kflsvi-0 {
   box-shadow: none;
   border: none;
   padding: 0;
@@ -566,25 +566,25 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   top: 4.7rem;
 }
 
-.c0 .sc-AxhUy svg {
+.c0 .sc-1kflsvi-0 svg {
   display: none;
 }
 
-.c0 .sc-AxhUy strong {
+.c0 .sc-1kflsvi-0 strong {
   font-weight: normal;
 }
 
-.c0 .sc-AxhUy .sc-AxiKw:hover {
+.c0 .sc-1kflsvi-0 .sc-1yc1o3f-0:hover {
   background-color: #F7F8F9;
 }
 
-.c0 .sc-AxhUy li {
+.c0 .sc-1kflsvi-0 li {
   width: calc(100% - 1.6rem);
   margin: 0 0.8rem;
 }
 
-.c0 .sc-AxhUy li span,
-.c0 .sc-AxhUy li strong {
+.c0 .sc-1kflsvi-0 li span,
+.c0 .sc-1kflsvi-0 li strong {
   font-size: 1.6rem;
   line-height: 2.6rem;
 }
@@ -789,7 +789,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   background-color: #ffffff;
 }
 
-.c0 .sc-AxhUy {
+.c0 .sc-1kflsvi-0 {
   box-shadow: none;
   border: none;
   padding: 0;
@@ -806,25 +806,25 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   top: 3.9rem;
 }
 
-.c0 .sc-AxhUy svg {
+.c0 .sc-1kflsvi-0 svg {
   display: none;
 }
 
-.c0 .sc-AxhUy strong {
+.c0 .sc-1kflsvi-0 strong {
   font-weight: normal;
 }
 
-.c0 .sc-AxhUy .sc-AxiKw:hover {
+.c0 .sc-1kflsvi-0 .sc-1yc1o3f-0:hover {
   background-color: #F7F8F9;
 }
 
-.c0 .sc-AxhUy li {
+.c0 .sc-1kflsvi-0 li {
   width: calc(100% - 0.8rem);
   margin: 0 0.4rem;
 }
 
-.c0 .sc-AxhUy li span,
-.c0 .sc-AxhUy li strong {
+.c0 .sc-1kflsvi-0 li span,
+.c0 .sc-1kflsvi-0 li strong {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }

@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'SettingsInputCompositeIcon';
 
-const SettingsInputCompositeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const SettingsInputCompositeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default SettingsInputCompositeIcon
+export default SettingsInputCompositeIcon;

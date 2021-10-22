@@ -1,9 +1,10 @@
-import { fullWidth, getFontStyle, styled } from '@medly-components/utils';
+import { fullWidth, getFontStyle } from '@medly-components/utils';
+import styled from 'styled-components';
 import FieldWithLabel from '../FieldWithLabel';
 import { InputProps } from './types';
 
 export const Wrapper = styled(FieldWithLabel.Field).attrs(({ theme: { input, font } }) => ({ input, font }))<{
-    fullWidth: boolean;
+    fullWidth?: boolean;
 }>`
     display: flex;
     &&& {

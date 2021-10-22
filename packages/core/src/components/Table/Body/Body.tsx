@@ -9,9 +9,8 @@ import { NoResultCell, NoResultRow } from './Row/Row.styled';
 import { TableBodyProps } from './types';
 
 const Body: React.FC<TableBodyProps> = React.memo(props => {
-    const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap, columns, size } = useContext(
-            TableComponentsCommonPropsContext
-        ),
+    const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap, columns, size } =
+            useContext(TableComponentsCommonPropsContext),
         { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props,
         /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
         tableVisibleWidth = tableRef.current?.clientWidth ?? 0,

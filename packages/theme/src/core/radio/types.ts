@@ -12,7 +12,7 @@ export interface RadioTheme {
         leftPositioned: string;
         rightPositioned: string;
         topPositioned: string;
-    },
+    };
     helperTextColor: {
         default: string;
         disabled: string;
@@ -37,7 +37,7 @@ export interface RadioTheme {
             error: string;
             active: string;
         };
-    }
+    };
     boxShadow: {
         spreadRadius: string;
         blurRadius: string;

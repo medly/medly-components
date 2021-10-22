@@ -3,8 +3,8 @@ import { render, RenderResult } from '@testing-library/react';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import { SWRConfig } from 'swr';
-import { ThemeProvider } from './styled';
 
 export const mockAxios = new MockAdapter(axios);
 
@@ -20,9 +20,11 @@ const WithSWR: React.FunctionComponent = props => (
     </SWRConfig>
 );
 
-const customRender = (ui: React.ReactElement<any>, options?: object): RenderResult => render(ui, { wrapper: WithTheme, ...options });
+const customRender = (ui: React.ReactElement<any>, options?: Record<string, unknown>): RenderResult =>
+    render(ui, { wrapper: WithTheme, ...options });
 
-const renderWithSWR = (ui: React.ReactElement<any>, options?: object): RenderResult => render(ui, { wrapper: WithSWR, ...options });
+const renderWithSWR = (ui: React.ReactElement<any>, options?: Record<string, unknown>): RenderResult =>
+    render(ui, { wrapper: WithSWR, ...options });
 
 // re-export everything
 export * from '@testing-library/react';

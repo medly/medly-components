@@ -18,7 +18,7 @@ const radio: RadioTheme = {
         bottomPositioned: '1.6rem 0',
         leftPositioned: '0 1.6rem',
         rightPositioned: '0 1.6rem',
-        topPositioned: '1.6rem 0',
+        topPositioned: '1.6rem 0'
     },
     helperTextColor: {
         default: colors.black,
@@ -33,7 +33,7 @@ const radio: RadioTheme = {
             default: colors.blue[500],
             error: colors.red[600]
         },
-        disabled: colors.grey[500],
+        disabled: colors.grey[500]
     },
     borderColor: {
         hovered: {

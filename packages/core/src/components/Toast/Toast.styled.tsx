@@ -1,5 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
-import { styled, WithThemeProp } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
+import styled from 'styled-components';
 import Button from '../Button';
 import { StyledToastProps } from './types';
 

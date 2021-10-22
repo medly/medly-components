@@ -1,5 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, css, getFontStyle, styled } from '@medly-components/utils';
+import { centerAligned, getFontStyle } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 import Text from '../../Text';
 import { TabSize } from '../types';
 import { StyledTabProps } from './types';
@@ -121,6 +122,14 @@ const flatOutlinedStyle = css<StyledTabProps>`
     }
 `;
 
+const flatBackgroundStyle = css`
+    background-color: transparent;
+
+    &:disabled {
+        background-color: transparent;
+    }
+`;
+
 export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs }))<StyledTabProps>`
     padding: 1.6rem;
     user-select: none;
@@ -167,6 +176,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     ${({ active }) => (active ? activeStyle : nonActiveStyle)}
     ${({ variant }) => variant === 'solid' && solidStyle};
     ${({ variant }) => (variant === 'flat' || variant === 'outlined') && flatOutlinedStyle};
+    ${({ variant }) => variant === 'flat' && flatBackgroundStyle};
 `;
 
 export const LabelAndDetailsWrapper = styled.div`

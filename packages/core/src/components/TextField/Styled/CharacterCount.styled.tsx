@@ -1,4 +1,5 @@
-import { styled, WithThemeProp } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
+import styled from 'styled-components';
 
 const getMarginTop = ({ size, multiline }: { multiline?: boolean; size: 'S' | 'M' }) => {
     if (multiline) return '.1rem';
@@ -31,10 +32,12 @@ const getTextColor = ({
     }
 };
 
-const getTransform = (translateXValue: string) => ({ variant }: { variant: 'fusion' | 'outlined' | 'filled' }): string => {
-    // If variant is fusion, we preserve the -167% translateY value which is applied on focus
-    return variant === 'fusion' ? `transform: translate(${translateXValue}, -167%)` : `transform: translateX(${translateXValue})`;
-};
+const getTransform =
+    (translateXValue: string) =>
+    ({ variant }: { variant: 'fusion' | 'outlined' | 'filled' }): string => {
+        // If variant is fusion, we preserve the -167% translateY value which is applied on focus
+        return variant === 'fusion' ? `transform: translate(${translateXValue}, -167%)` : `transform: translateX(${translateXValue})`;
+    };
 
 export const CharacterCount = styled.div<{
     maxLength: number;

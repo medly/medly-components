@@ -8,9 +8,8 @@ import * as Styled from './SideNav.styled';
 import ToggleSwitch from './ToggleSwitch';
 import { SideNavProps, SideNavStaticProps } from './types';
 
-export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = props => {
-    const { active, children, defaultActive, onChange, hideShadow, defaultOpen } = props,
-        id = props.id || 'medly-sidenav';
+export const Component: FC<SideNavProps> = React.memo(props => {
+    const { id, active, children, defaultActive, onChange, hideShadow, defaultOpen } = props;
 
     const ref = useRef(null),
         [isHovered, setHoveredState] = useState(false),
@@ -48,14 +47,18 @@ export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = props 
             </Styled.Aside>
         </SideNavContext.Provider>
     );
-};
+});
 
-SideNav.List = NavList;
-SideNav.Nav = NavItem;
-SideNav.Group = NavGroup;
-SideNav.Context = SideNavContext;
-SideNav.displayName = 'SideNav';
-SideNav.Style = Styled.Aside;
-SideNav.defaultProps = {
+Component.displayName = 'SideNav';
+Component.defaultProps = {
+    id: 'medly-sidenav',
     hideShadow: false
 };
+
+export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = Object.assign(Component, {
+    List: NavList,
+    Nav: NavItem,
+    Group: NavGroup,
+    Context: SideNavContext,
+    Style: Styled.Aside
+});

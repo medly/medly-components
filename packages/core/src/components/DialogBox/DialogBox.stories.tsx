@@ -25,11 +25,14 @@ export const Basic = () => {
             <DialogBox open={modalState} onCloseModal={changeModalState} shouldCloseOnOutsideClick={true}>
                 <DialogBox.Header>Are you sure?</DialogBox.Header>
                 <DialogBox.Content>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
                 </DialogBox.Content>
                 <DialogBox.Actions>
                     <Button edges="rounded">Delete</Button>
-                    <Button variant="outlined" edges="rounded" onClick={()=>changeModalState()}>Cancel</Button>
+                    <Button variant="outlined" edges="rounded" onClick={() => changeModalState()}>
+                        Cancel
+                    </Button>
                 </DialogBox.Actions>
             </DialogBox>
         </>

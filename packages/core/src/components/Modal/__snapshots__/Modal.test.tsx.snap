@@ -319,8 +319,8 @@ exports[`Modal component should render properly when it is open 1`] = `
   .c1 {
     width: 100%;
     height: calc(100% - 2.4rem);
-    -webkit-animation: chwwZo 0.4s cubic-bezier(0,0,0.33,1);
-    animation: chwwZo 0.4s cubic-bezier(0,0,0.33,1);
+    -webkit-animation: cQwfQi 0.4s cubic-bezier(0,0,0.33,1);
+    animation: cQwfQi 0.4s cubic-bezier(0,0,0.33,1);
   }
 }
 
@@ -346,8 +346,8 @@ exports[`Modal component should render properly when it is open 1`] = `
 
 @media (min-width:768px) {
   .c1 {
-    -webkit-animation: pAVcc 0.2s cubic-bezier(0,0,0.33,1);
-    animation: pAVcc 0.2s cubic-bezier(0,0,0.33,1);
+    -webkit-animation: hvOvm 0.2s cubic-bezier(0,0,0.33,1);
+    animation: hvOvm 0.2s cubic-bezier(0,0,0.33,1);
   }
 }
 
@@ -367,6 +367,7 @@ exports[`Modal component should render properly when it is open 1`] = `
         fill="none"
         height="1em"
         id="medly-modal-close-button"
+        title="medly-modal-close-icon"
         variant="solid"
         viewBox="0 0 24 24"
         width="1em"

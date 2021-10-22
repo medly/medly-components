@@ -14,8 +14,8 @@ const Component: FC = React.memo(props => {
         </AccordionContext.Provider>
     );
 });
-
 Component.displayName = 'Accordion';
+
 export const Accordion: FC & StaticProps = Object.assign(Component, {
     Header,
     Content,

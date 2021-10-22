@@ -1,5 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css } from '@medly-components/utils';
+import { WithThemeProp } from '@medly-components/utils';
+import { css } from 'styled-components';
 import { ButtonProps } from '../types';
 
 const getStyle = (color: string) => css`
@@ -14,7 +15,7 @@ const getStyle = (color: string) => css`
     }
 `;
 
-export const flatButton = ({ theme, size }: ButtonProps) => {
+export const flatButton = ({ theme, size }: ButtonProps & WithThemeProp) => {
     const { textColor } = theme.button.flat;
     return css`
         background-color: transparent;

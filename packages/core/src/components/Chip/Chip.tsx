@@ -10,7 +10,7 @@ const Component: FC<ChipProps> = React.memo(
         const { label, onDelete, ...restProps } = props;
 
         const handleDelete = useCallback(
-            (e: React.MouseEvent<HTMLOrSVGElement>) => {
+            (e: React.MouseEvent<SVGElement>) => {
                 e.stopPropagation();
                 !restProps.disabled && onDelete && onDelete();
             },
@@ -20,7 +20,7 @@ const Component: FC<ChipProps> = React.memo(
         return (
             <Styled.Chip ref={ref} {...restProps}>
                 <Text>{label}</Text>
-                {onDelete && <ClearIcon size="S" onClick={handleDelete} />}
+                {onDelete && <ClearIcon size="S" onClick={handleDelete} title={`${label} chip clear icon`} />}
             </Styled.Chip>
         );
     })

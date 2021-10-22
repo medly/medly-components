@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'YoutubeSearchedForIcon';
 
-const YoutubeSearchedForIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const YoutubeSearchedForIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default YoutubeSearchedForIcon
+export default YoutubeSearchedForIcon;

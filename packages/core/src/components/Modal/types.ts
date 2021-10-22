@@ -1,9 +1,9 @@
-import { HTMLProps, WithStyle, WithThemeProp } from '@medly-components/utils';
-import { MutableRefObject } from 'react';
+import { HTMLProps, WithStyle } from '@medly-components/utils';
 import { ModalActionUserProps } from './Actions/types';
-import {  ModalPopupProps } from './Popup/types';
+import { ModalPopupProps } from './Popup/types';
+import { ScrollActionTypes } from './scrollStateReducer/types';
 
-export interface ModalProps extends HTMLProps<HTMLDivElement>, WithThemeProp {
+export interface ModalProps extends HTMLProps<HTMLDivElement> {
     /** Shows modal only when this prop is true */
     open?: boolean;
     /** Function to be called on closing modal */
@@ -22,10 +22,10 @@ export interface ModalBackgroundProps {
 }
 
 export interface ModalStaticProps {
-    Popup?: React.FC<ModalPopupProps> & WithStyle;
-    Header?: React.FC & WithStyle;
-    Content?: React.FC & WithStyle;
-    Actions?: React.FC<ModalActionUserProps> & WithStyle;
+    Popup: React.FC<ModalPopupProps> & WithStyle;
+    Header: React.FC & WithStyle;
+    Content: React.FC & WithStyle;
+    Actions: React.FC<ModalActionUserProps> & WithStyle;
 }
 
 export interface InnerContainerProps {
@@ -35,23 +35,17 @@ export interface InnerContainerProps {
 
 export interface UseScrollStateProps {
     scrollState: ScrollState;
-    ref: MutableRefObject<HTMLDivElement>;
-    dispatch: React.Dispatch<{
-        type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
-        value: boolean | number;
-    }>;
+    ref: React.RefObject<HTMLDivElement>;
+    dispatch: React.Dispatch<ScrollActionTypes>;
 }
 
 export interface ModalContextType {
-    headerHeight?: number;
-    setHeaderHeight?: (height: number) => void;
-    scrollState?: ScrollState;
-    dispatch?: React.Dispatch<{
-        type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
-        value: boolean | number;
-    }>;
-    id?: string;
-    isSmallScreen?: boolean;
+    headerHeight: number;
+    setHeaderHeight: (height: number) => void;
+    scrollState: ScrollState;
+    dispatch: React.Dispatch<ScrollActionTypes>;
+    id: string;
+    isSmallScreen: boolean;
 }
 
 export interface ScrollState {

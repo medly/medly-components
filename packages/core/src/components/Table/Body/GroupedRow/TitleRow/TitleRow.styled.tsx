@@ -1,6 +1,7 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, styled } from '@medly-components/utils';
+import { centerAligned } from '@medly-components/utils';
 import { rgba } from 'polished';
+import styled from 'styled-components';
 import Text from '../../../../Text';
 import { TableProps } from '../../../types';
 import { defaultTableCellPaddings } from '../../Cell/Styled';
@@ -90,7 +91,7 @@ export const ExpansionCell = styled('td')<{
                 theme.table.titleRow.accordionIcon.color[isRowExpanded || isRowSelected ? 'expanded' : 'default']};
         }
         transition: ${({ isRowExpanded }) =>
-            `transform 200ms ${isRowExpanded ? 'ease-in' : 'ease-out'}, background-color 100ms ${isRowExpanded ? 'ease-in' : 'ease-out'}`} ;
+            `transform 200ms ${isRowExpanded ? 'ease-in' : 'ease-out'}, background-color 100ms ${isRowExpanded ? 'ease-in' : 'ease-out'}`};
         transform: ${props => props.isRowExpanded && `rotate(180deg) `};
 
         &:hover {

@@ -1,5 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, css, styled, WithThemeProp } from '@medly-components/utils';
+import { centerAligned, WithThemeProp } from '@medly-components/utils';
+import styled, { css } from 'styled-components';
 
 const getOuterStyle = ({ theme, state }: WithThemeProp & { state: 'default' | 'hovered' | 'disabled' }) => css`
         color: ${theme.multiSelect.options.chip.color[state]};

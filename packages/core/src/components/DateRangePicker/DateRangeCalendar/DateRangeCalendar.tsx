@@ -26,7 +26,7 @@ const Component: React.FC<Props> = React.memo(props => {
         { startDate, endDate } = selectedDates;
 
     const [hoveredDate, setHoveredDate] = useState<Date | null>(null),
-        [slideDirection, setSlideDirection] = useState<CalendarAnimationTypes>(),
+        [slideDirection, setSlideDirection] = useState<CalendarAnimationTypes>('move-in-left'),
         [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(startDate || new Date())),
         { month: nextMonth, year: nextYear } = useMemo(() => getNextMonthAndYear(month, year), [month, year]),
         handleNextIconClick = useCallback(() => setSlideDirection('move-out-left'), []),
@@ -89,11 +89,13 @@ const Component: React.FC<Props> = React.memo(props => {
             !selectedDates.endDate &&
             selectedDates.startDate.getMonth() !== month &&
             selectedDates.startDate.getMonth() !== nextMonth &&
+            startDate &&
             setMonthAndYear(getMonthAndYearFromDate(startDate));
         selectedDates.endDate &&
             !selectedDates.startDate &&
             selectedDates.endDate.getMonth() !== month &&
             selectedDates.endDate.getMonth() !== nextMonth &&
+            endDate &&
             setMonthAndYear(getPreviousMonthAndYear(endDate.getMonth(), endDate.getFullYear()));
     }, [selectedDates.startDate, selectedDates.endDate]);
 
@@ -111,10 +113,10 @@ const Component: React.FC<Props> = React.memo(props => {
                     />
                 )}
                 <DatePickerStyled.MonthNavigation id={`${id}-navigation-backward`} onClick={handlePrevIconClick}>
-                    <KeyboardArrowLeftIcon />
+                    <KeyboardArrowLeftIcon title={`${id}-navigation-backward-icon`} />
                 </DatePickerStyled.MonthNavigation>
                 <DatePickerStyled.MonthNavigation id={`${id}-navigation-forward`} onClick={handleNextIconClick}>
-                    <KeyboardArrowRightIcon />
+                    <KeyboardArrowRightIcon title={`${id}-navigation-forward-icon`} />
                 </DatePickerStyled.MonthNavigation>
             </Styled.Header>
             <Styled.MonthsWrapper

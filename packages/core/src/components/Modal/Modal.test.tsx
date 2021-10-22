@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render } from '@test-utils';
+import { cleanup, fireEvent, render, screen } from '@test-utils';
 import React from 'react';
 import { Modal } from './Modal';
 import { ModalBackgroundStyled } from './Modal.styled';
@@ -21,9 +21,9 @@ const modalRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHe
         </Modal>
     );
 describe('Modal component', () => {
-    const originalScrollHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollHeight');
-    const originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight');
-    const originalScrollTop = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollTop');
+    const originalScrollHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollHeight')!,
+        originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight')!,
+        originalScrollTop = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollTop')!;
 
     beforeAll(() => {
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 500 });
@@ -52,8 +52,8 @@ describe('Modal component', () => {
 
     it('should call onCloseModal on click on close icon', () => {
         const mockOnCloseModal = jest.fn();
-        const { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal });
-        fireEvent.click(container.querySelector('#medly-modal-close-button'));
+        modalRenderer({ open: true, onCloseModal: mockOnCloseModal });
+        fireEvent.click(screen.getByTitle('medly-modal-close-icon'));
         expect(mockOnCloseModal).toBeCalled();
     });
 
@@ -67,7 +67,7 @@ describe('Modal component', () => {
     it('should call onCloseModal on click on overlay background', () => {
         const mockOnCloseModal = jest.fn();
         const { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true });
-        fireEvent.click(container.querySelector('#medly-modal'));
+        fireEvent.click(container.querySelector('#medly-modal') as HTMLDivElement);
         expect(mockOnCloseModal).toBeCalled();
     });
 
@@ -90,7 +90,7 @@ describe('Modal component', () => {
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 0 });
-        fireEvent.scroll(container.querySelector('#medly-modal-content'), { target: { scrollY: 0 } });
+        fireEvent.scroll(container.querySelector('#medly-modal-content') as HTMLDivElement, { target: { scrollY: 0 } });
         expect(container.querySelector('#medly-modal-header')).not.toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
         expect(container.querySelector('#medly-modal-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
     });
@@ -99,7 +99,7 @@ describe('Modal component', () => {
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 300 });
-        fireEvent.scroll(container.querySelector('#medly-modal-content'), { target: { scrollY: 300 } });
+        fireEvent.scroll(container.querySelector('#medly-modal-content') as HTMLDivElement, { target: { scrollY: 300 } });
         expect(container.querySelector('#medly-modal-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
         expect(container.querySelector('#medly-modal-actions')).not.toHaveStyle(
             `box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`
@@ -111,7 +111,7 @@ describe('Modal component', () => {
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 100 });
-        fireEvent.scroll(container.querySelector('#medly-modal-content'), { target: { scrollY: 100 } });
+        fireEvent.scroll(container.querySelector('#medly-modal-content') as HTMLDivElement, { target: { scrollY: 100 } });
         expect(container.querySelector('#medly-modal-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
         expect(container.querySelector('#medly-modal-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
     });

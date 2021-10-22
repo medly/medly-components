@@ -3,6 +3,87 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.2](https://github.com/medly/medly-components/compare/@medly-components/icons@1.10.1...@medly-components/icons@1.10.2) (2021-10-22)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.10.1](https://github.com/medly/medly-components/compare/@medly-components/icons@1.10.0...@medly-components/icons@1.10.1) (2021-10-21)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+# [1.10.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.9.0...@medly-components/icons@1.10.0) (2021-10-20)
+
+
+### Features
+
+* use medly typescript config ([#490](https://github.com/medly/medly-components/issues/490)) ([7c78c00](https://github.com/medly/medly-components/commit/7c78c0021209f558878e2a47fce101d54237ca33))
+
+
+
+
+
+# [1.9.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.8.2...@medly-components/icons@1.9.0) (2021-10-19)
+
+
+### Features
+
+* add medly lint( eslint, stylelint & prettier ) configs ([#488](https://github.com/medly/medly-components/issues/488)) ([2a75fb4](https://github.com/medly/medly-components/commit/2a75fb432a15c64abcf939e969c280e701316a51))
+
+
+
+
+
+## [1.8.2](https://github.com/medly/medly-components/compare/@medly-components/icons@1.8.1...@medly-components/icons@1.8.2) (2021-10-18)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.8.1](https://github.com/medly/medly-components/compare/@medly-components/icons@1.8.0...@medly-components/icons@1.8.1) (2021-10-18)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+# [1.8.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.27...@medly-components/icons@1.8.0) (2021-10-14)
+
+
+### Features
+
+* export prop types of all the components ([#483](https://github.com/medly/medly-components/issues/483)) ([61e23b0](https://github.com/medly/medly-components/commit/61e23b0dea0840ebfad3869a3d67f1c7efbc4183))
+
+
+
+
+
+## [1.7.27](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.26...@medly-components/icons@1.7.27) (2021-10-13)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.7.26](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.25...@medly-components/icons@1.7.26) (2021-10-05)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
 ## [1.7.25](https://github.com/medly/medly-components/compare/@medly-components/icons@1.7.24...@medly-components/icons@1.7.25) (2021-09-28)
 
 **Note:** Version bump only for package @medly-components/icons

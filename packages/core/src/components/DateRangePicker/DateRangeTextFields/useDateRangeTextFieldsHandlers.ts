@@ -35,7 +35,7 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                 event.stopPropagation();
                 if (!disabled) {
                     onCalendarIconClick(true);
-                    startDateRef.current.focus();
+                    startDateRef.current?.focus();
                 }
             },
             [disabled]
@@ -74,7 +74,7 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
                     isInvalidDate = element.value && parseToDate(element.value, displayFormat).toString() === 'Invalid Date',
-                    message = isInvalidDate && 'Enter valid date';
+                    message = isInvalidDate ? 'Enter valid date' : '';
                 if (isInvalidDate) {
                     setErrorMessage(message);
                     onDateChange({
@@ -91,9 +91,9 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                 const element = event.target as HTMLInputElement,
                     validatorMessage = (validator && validator(selectedDates, 'invalid')) || '',
                     isInvalidDate = element.value && parseToDate(element.value, displayFormat).toString() === 'Invalid Date',
-                    message = validator ? validatorMessage : element.validationMessage || (isInvalidDate && 'Enter valid date');
+                    message = validator ? validatorMessage : element.validationMessage || (isInvalidDate ? 'Enter valid date' : '');
                 setErrorMessage(message);
-                validator && (element.name === 'START_DATE' ? startDateRef : endDateRef).current.setCustomValidity(validatorMessage);
+                validator && (element.name === 'START_DATE' ? startDateRef : endDateRef).current?.setCustomValidity(validatorMessage);
             },
             [validator, displayFormat, selectedDates, onDateChange]
         ),
@@ -103,8 +103,8 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                 message = validator ? validatorMessage : customMessage;
             setErrorMessage(message);
             if (validator) {
-                startDateRef.current.setCustomValidity(validatorMessage);
-                endDateRef.current.setCustomValidity(validatorMessage);
+                startDateRef.current?.setCustomValidity(validatorMessage);
+                endDateRef.current?.setCustomValidity(validatorMessage);
             }
         }, [validator, selectedDates, required]);
 

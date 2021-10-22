@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'PhotoSizeSelectLargeIcon';
 
-const PhotoSizeSelectLargeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const PhotoSizeSelectLargeIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default PhotoSizeSelectLargeIcon
+export default PhotoSizeSelectLargeIcon;

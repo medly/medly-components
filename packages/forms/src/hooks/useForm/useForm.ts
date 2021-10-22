@@ -5,7 +5,7 @@ import { useCallback, useState } from 'react';
 import { createDottedKeyObject, createObjectFromDottedKeys } from '../../helpers';
 import { Handlers, UseFormResult } from './types';
 
-export const useForm = (initialState: object): UseFormResult => {
+export const useForm = (initialState: Record<string, unknown>): UseFormResult => {
     const [values, setValues] = useState(createDottedKeyObject(initialState));
     const [errorMessages, setErrorMessages] = useState({});
     const [formKey, setFormKey] = useState(0);

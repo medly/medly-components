@@ -1,9 +1,9 @@
 import { FontVariants, FontWeights } from '@medly-components/theme';
-import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps } from '@medly-components/utils';
 
 export type LabelPositions = 'top' | 'right' | 'left' | 'bottom';
 
-export interface LabelCommonProps extends HTMLProps<HTMLLabelElement>, WithThemeProp {
+export interface LabelCommonProps extends HTMLProps<HTMLLabelElement> {
     /** Shows pointer while hovering on it
      * @default false
      */
@@ -26,3 +26,7 @@ export interface LabelProps extends LabelCommonProps {
     /** Label Weight */
     labelWeight?: FontWeights;
 }
+
+export type StyledLabelProps = LabelProps & {
+    labelPosition: LabelPositions;
+};

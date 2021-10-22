@@ -44,8 +44,8 @@ exports[`Form should not render any field if component type is not matched 1`] =
 
 .c3,
 .c3 .c4,
-.c3 .sc-AxiKw,
-.c3 .sc-AxiKw * {
+.c3 .sc-1pf3x8a-0,
+.c3 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -67,7 +67,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
   background: #dfe4e9;
 }
 
-.c3:disabled .sc-AxiKw * {
+.c3:disabled .sc-1pf3x8a-0 * {
   fill: #98A7B7;
 }
 
@@ -76,7 +76,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
   background: #126AFA;
 }
 
-.c3:not(:disabled):not(:hover) .sc-AxiKw * {
+.c3:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
   fill: #ffffff;
 }
 
@@ -85,7 +85,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
   background: #0D4AAF;
 }
 
-.c3:not(:disabled):active .sc-AxiKw * {
+.c3:not(:disabled):active .sc-1pf3x8a-0 * {
   fill: #ffffff;
 }
 
@@ -95,15 +95,15 @@ exports[`Form should not render any field if component type is not matched 1`] =
   box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
-.c3:not(:disabled):not(:active):hover .sc-AxiKw * {
+.c3:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
   fill: #ffffff;
 }
 
-.c3 .sc-AxiKw + .c4 {
+.c3 .sc-1pf3x8a-0 + .c4 {
   margin-left: 0.8rem;
 }
 
-.c3 .c4 + .sc-AxiKw {
+.c3 .c4 + .sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
@@ -358,7 +358,7 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: flex-start;
 }
 
-.c20 > :first-child {
+.c20 >:first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -376,7 +376,7 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: flex-start;
 }
 
-.c33 > :first-child {
+.c33 >:first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -1032,7 +1032,7 @@ exports[`Form should render properly with initial state 1`] = `
   padding-right: 0.8rem;
 }
 
-.c40 .sc-fzomuh {
+.c40 .sc-zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -1210,7 +1210,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c12 .sc-fzooss {
+.c12 .sc-12atfcu-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1778,6 +1778,7 @@ exports[`Form should render properly with initial state 1`] = `
         </label>
         <label
           class="c15"
+          for="resume"
           id="resume-label"
         >
           Click to choose file
@@ -2069,6 +2070,7 @@ exports[`Form should render properly with initial state 1`] = `
               fill="none"
               height="1em"
               id="birthDate-calendar-icon"
+              title="birthDate-calendar-icon"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -2105,6 +2107,7 @@ exports[`Form should render properly with initial state 1`] = `
             fill="none"
             height="1em"
             id="experience-calendar-icon"
+            title="experience-calendar-icon"
             viewBox="0 0 24 24"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
@@ -2288,6 +2291,7 @@ exports[`Form should render properly with initial state 1`] = `
                   fill="none"
                   height="1em"
                   id="graduation-count-chip-clear"
+                  title="graduation-count-chip-clear-icon"
                   viewBox="0 0 24 24"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -2703,7 +2707,7 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: flex-start;
 }
 
-.c22 > :first-child {
+.c22 >:first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -2721,7 +2725,7 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: flex-start;
 }
 
-.c34 > :first-child {
+.c34 >:first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -3339,7 +3343,7 @@ exports[`Form should render properly without initial state 1`] = `
   padding-right: 0.8rem;
 }
 
-.c40 .sc-fzomuh {
+.c40 .sc-zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -3517,7 +3521,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c15 .sc-fzooss {
+.c15 .sc-12atfcu-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4011,6 +4015,7 @@ exports[`Form should render properly without initial state 1`] = `
         </label>
         <label
           class="c18"
+          for="resume"
           id="resume-label"
         >
           Click to choose file
@@ -4300,6 +4305,7 @@ exports[`Form should render properly without initial state 1`] = `
               fill="none"
               height="1em"
               id="birthDate-calendar-icon"
+              title="birthDate-calendar-icon"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -4336,6 +4342,7 @@ exports[`Form should render properly without initial state 1`] = `
             fill="none"
             height="1em"
             id="experience-calendar-icon"
+            title="experience-calendar-icon"
             viewBox="0 0 24 24"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"

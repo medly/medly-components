@@ -7,11 +7,11 @@ export const getFirstDayOfMonth = (month: number, year: number) => {
     return +new Date(year, month, 1).getDay() + 1;
 };
 
-export const dateDiff = (date1: Date, date2: Date) => {
-    return isValidDate(date1) && isValidDate(date2) ? date1.setHours(0, 0, 0, 0) - date2.setHours(0, 0, 0, 0) : null;
+export const dateDiff = (date1: Date | null, date2: Date | null) => {
+    return isValidDate(date1) && isValidDate(date2) ? date1!.setHours(0, 0, 0, 0) - date2!.setHours(0, 0, 0, 0) : null;
 };
 
-export const isSameDay = (date1: Date, date2: Date) => dateDiff(date1, date2) === 0;
+export const isSameDay = (date1: Date | null, date2: Date | null) => dateDiff(date1, date2) === 0;
 
 export const isSameMonth = (date1: Date, date2: Date) => isValidDate(date1) && isValidDate(date2) && date1.getMonth() === date2.getMonth();
 

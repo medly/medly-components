@@ -5,6 +5,8 @@ import { Card } from './Card';
 import { CardProps } from './types';
 
 describe('Card component', () => {
+    const variants: Required<CardProps>['variant'][] = ['solid', 'flat'],
+        displayOptions: Required<CardProps>['display'][] = ['block', 'flex'];
     it('should render correctly with all the default props', () => {
         const { container } = render(
             <Card>
@@ -14,7 +16,7 @@ describe('Card component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['solid', 'flat'])('should render properly with %p variant', (variant: CardProps['variant']) => {
+    test.each(variants)('should render properly with %p variant', variant => {
         const { container } = render(
             <Card variant={variant}>
                 <Text>Dummy Text</Text>
@@ -23,7 +25,7 @@ describe('Card component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['block', 'flex'])('should render properly with display %p', (display: CardProps['display']) => {
+    test.each(displayOptions)('should render properly with display %p', display => {
         const { container } = render(
             <Card display={display}>
                 <Text>Dummy Text</Text>
@@ -32,7 +34,7 @@ describe('Card component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should render properly when it is clickable ', () => {
+    it('should render properly when it is clickable', () => {
         const { container } = render(
             <Card onClick={jest.fn()}>
                 <Text>Dummy Text</Text>

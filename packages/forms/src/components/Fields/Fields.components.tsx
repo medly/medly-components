@@ -95,7 +95,7 @@ export const Fields: React.FC<FieldsProps> = React.memo(props => {
                                         <TextField
                                             {...({
                                                 ...commonProps,
-                                                value: value || '',
+                                                value: value ?? '',
                                                 onChange: handlers.handleNumberChange(name)
                                             } as TextFieldProps)}
                                         />

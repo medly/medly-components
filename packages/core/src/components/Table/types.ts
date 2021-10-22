@@ -3,14 +3,16 @@ import { Dispatch, SetStateAction } from 'react';
 import ColumnConfiguration from './ColumnConfiguration';
 
 export type SortOrder = 'asc' | 'desc';
-export type ObjectType = {
-    [key: string]: any;
-};
+export type ObjectType = Record<string, any>;
 export type Data = ObjectType[];
+// TODO: need to remove in next major version
 export type RowHoverActionsType = React.FC<{ rowData?: ObjectType; rowId?: any }>;
 export type MaxColumnSizes = { [k: string]: number };
 
 export type TableState = { activePage?: number; sortField?: string; sortOrder?: SortOrder };
+
+export type CustomTableCellComponent = React.FC<{ data?: any; rowId?: any; disabled?: boolean; rowData?: ObjectType }>;
+export type RowHoverActionsComponent = React.FC<{ rowData?: ObjectType; rowId?: any }>;
 
 export interface TableColumnConfig {
     /** Title of the column */
@@ -36,7 +38,7 @@ export interface TableColumnConfig {
     /** Pass any function to format the column data */
     formatter?: (data: any, rowData?: ObjectType) => any;
     /** Custom component */
-    component?: React.FC<{ data?: any; rowId?: any; disabled?: boolean; rowData?: ObjectType }>;
+    component?: CustomTableCellComponent;
     /** This will be handled internally */
     size?: string;
 }
@@ -90,7 +92,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Name of the key in data on which grouping is applied */
     groupBy?: string;
     /** Name of the key in data on which grouping is applied */
-    getGroupedData?: (title: string) => Promise<object[]>;
+    getGroupedData?: (title: string) => Promise<Record<string, unknown>[]>;
     /** Actions bar items */
     actions?: Array<JSX.Element>;
     /** Enable Pagination */
@@ -108,7 +110,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Value of the default expanded Row's identifier */
     defaultExpandedRowIdentifier?: unknown;
     /** Row hover actions component */
-    rowHoverActions?: React.FC<{ rowData?: ObjectType; rowId?: any }>;
+    rowHoverActions?: RowHoverActionsComponent;
     /** Function to be called when table is scrolled all the way to the bottom */
     onScrolledToBottom?: () => any;
     /** Enables a mini map to scroll horizontally across the table*/

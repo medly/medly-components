@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'FormatTextdirectionRToLIcon';
 
-const FormatTextdirectionRToLIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const FormatTextdirectionRToLIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default FormatTextdirectionRToLIcon
+export default FormatTextdirectionRToLIcon;

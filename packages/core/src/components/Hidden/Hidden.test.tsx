@@ -1,13 +1,14 @@
 import { defaultTheme } from '@medly-components/theme';
-import { ThemeContext, useMediaQuery } from '@medly-components/utils';
+import { useMediaQuery } from '@medly-components/utils';
 import { render } from '@test-utils';
 import React from 'react';
+import { ThemeContext } from 'styled-components';
 import { Hidden } from './Hidden';
 
 const useMediaQueryMock = jest.fn();
 
 jest.mock('@medly-components/utils', () => ({
-    ...jest.requireActual('@medly-components/utils'),
+    ...(jest.requireActual('@medly-components/utils') as any),
     useMediaQuery: jest.fn()
 }));
 

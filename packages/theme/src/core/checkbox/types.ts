@@ -13,7 +13,7 @@ export interface CheckboxTheme {
         leftPositioned: string;
         rightPositioned: string;
         topPositioned: string;
-    },
+    };
     helperTextColor: {
         default: string;
         disabled: string;

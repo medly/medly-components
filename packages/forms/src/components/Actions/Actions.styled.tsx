@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 
 export const Actions = styled('div')<{ alignItems?: 'left' | 'center' | 'right'; flexDirection: 'row' | 'column' }>`
     display: flex;

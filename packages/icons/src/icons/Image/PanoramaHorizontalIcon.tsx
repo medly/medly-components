@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'PanoramaHorizontalIcon';
 
-const PanoramaHorizontalIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const PanoramaHorizontalIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default PanoramaHorizontalIcon
+export default PanoramaHorizontalIcon;

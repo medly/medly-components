@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import styled from 'styled-components';
 import Text from '../../Text';
 
 export const WeekDay = styled(Text)`

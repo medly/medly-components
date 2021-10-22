@@ -13,6 +13,6 @@ const Component: FC<SvgIconProps> = React.memo(props => {
 });
 Component.displayName = 'SubdirectoryArrowLeftIcon';
 
-const SubdirectoryArrowLeftIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon })
+const SubdirectoryArrowLeftIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default SubdirectoryArrowLeftIcon
+export default SubdirectoryArrowLeftIcon;
