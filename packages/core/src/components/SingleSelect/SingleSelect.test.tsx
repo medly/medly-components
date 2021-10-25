@@ -136,17 +136,17 @@ describe('SingleSelect component', () => {
         `);
     });
 
-    it('should take passed max width', () => {
+    it('should take passed max width', async () => {
         const { container } = render(<SingleSelect options={options} value="dummy" maxWidth="30rem" />);
         fireEvent.click(container.querySelector('svg') as SVGSVGElement);
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
         expect(container).toMatchSnapshot();
     });
 
     it('should show options on click on drop icon', async () => {
         const { container } = render(<SingleSelect options={options} />);
         fireEvent.click(container.querySelector('svg') as SVGSVGElement);
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
     });
 
     it('should show options on click on drop icon when options are custom components', async () => {
@@ -156,9 +156,9 @@ describe('SingleSelect component', () => {
         ];
         const { container } = render(<SingleSelect options={componentAsOptions} />);
         fireEvent.click(container.querySelector('svg') as SVGSVGElement);
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
-        waitFor(() => expect(container).toHaveTextContent('Component1'));
-        waitFor(() => expect(container).toHaveTextContent('Component2'));
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        await waitFor(() => expect(container).toHaveTextContent('Component1'));
+        await waitFor(() => expect(container).toHaveTextContent('Component2'));
     });
 
     it('should not show options on click on drop icon, if disabled prop is set true', () => {
