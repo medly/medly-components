@@ -29,6 +29,7 @@ export type FormCustomComponent<P = unknown> = React.FC<
         disabled: boolean;
         showDecorators: boolean;
         minWidth: string;
+        onRemoveField?: (fieldName: string) => void;
         onFocus: () => void;
         errorText: string;
         variant: string;
