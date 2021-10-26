@@ -1,6 +1,6 @@
 import { FormFieldSchema } from '@medly-components/forms';
 import { action } from '@storybook/addon-actions';
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { FormActionSchema } from '../../Actions/types';
 import { CommonFieldProps, FormCustomComponent, FormFieldProperties, NestedProps } from '../../Fields/types';
 import { Form } from '../../index';
@@ -57,12 +57,13 @@ export const CustomFieldForm = () => {
     };
     const fieldSchema: FormFieldSchema = fields.reduce((acc, cur) => ({ ...acc, [cur.fieldName]: cur }), {});
 
-    return <Form fieldSchema={{ ...fieldSchema, addPhoneNumberField }} onSubmit={action('Submitted')} hideActions />;
+    return <Form fieldSchema={{ ...fieldSchema, addPhoneNumberField }} onSubmit={action('Submitted')} />;
 };
 
 const TotalRent: FormCustomComponent = ({ values: { rent = 0, utilities = 0, internet = 0 } }) => (
     <div>Total rent - {rent + utilities + internet}</div>
 );
+
 export const SimpleCustomFieldForm = () => (
     <Form
         fieldSchema={{
