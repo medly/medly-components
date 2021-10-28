@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.34.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.33.0...@medly-components/core@2.34.0) (2021-10-28)
+
+
+### Features
+
+* add as prop in card component ([#501](https://github.com/medly/medly-components/issues/501)) ([4db7574](https://github.com/medly/medly-components/commit/4db75740f3ec06c934ad38a0173c0f9566438b2d))
+
+
+
+
+
 # [2.33.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.32.2...@medly-components/core@2.33.0) (2021-10-22)
 
 
