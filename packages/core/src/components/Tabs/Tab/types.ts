@@ -16,7 +16,7 @@ export type StyledTabProps = HTMLProps<HTMLButtonElement> &
 
 export interface TabProps extends HTMLProps<HTMLButtonElement> {
     /** To be used to render tab as any html tag */
-    as?: any;
+    as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     /** Id of tab */
     id: any;
     /** Label of the tab */
