@@ -6,7 +6,7 @@ export type FlowDirection = 'vertical' | 'horizontal';
 
 export interface CardProps extends HTMLProps<HTMLDivElement> {
     /** To be used to render component as any HTML tag */
-    as?: any;
+    as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     /** To be used if rendering like Link */
     to?: string;
     /** Card design */
