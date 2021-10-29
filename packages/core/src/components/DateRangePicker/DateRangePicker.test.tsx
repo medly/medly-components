@@ -352,8 +352,6 @@ describe('DateRangePicker', () => {
             fireEvent.click(screen.getByTitle('contract-calendar-icon'));
             expect(container.querySelector('#contract-calendar')).toBeInTheDocument();
             fireEvent.click(getByText('Click Here'));
-            expect(container.querySelector('#contract-calendar')).toBeNull();
-            fireEvent.click(getByText('Click Here'));
             expect(mockOnPopupClose).toHaveBeenCalledTimes(1);
         });
     });
