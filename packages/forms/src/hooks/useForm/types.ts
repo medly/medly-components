@@ -29,6 +29,8 @@ export interface Handlers {
     handleFileChange: (name: string, maxSize?: number, onError?: (key: string, message: string) => void) => (files: FileList) => void;
     // Generic Change
     handleChange: (name: string, value: any) => void;
+    // Common remove field handler
+    handleRemoveField: (fieldName: string) => (name: string) => void;
     // Common Focus handler
     getPeriodFromDates: (
         startDate: string | Date,
