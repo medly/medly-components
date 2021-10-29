@@ -9,6 +9,7 @@ export const AddPhoneNumber: FormCustomComponent<AddPhoneNumberProps> = ({ field
     const lastField = fields[fields.length - 1];
     const newFieldIndex = lastField.index + 1;
     const disabled = newFieldIndex > 3;
+
     const addPhoneNumberField = () =>
         setFields([
             ...fields,
@@ -17,7 +18,7 @@ export const AddPhoneNumber: FormCustomComponent<AddPhoneNumberProps> = ({ field
                 index: newFieldIndex,
                 type: 'custom',
                 component: CustomPhoneField,
-                onRemoveField: (name: string) => setFields(fields.filter(field => field.fieldName !== name))
+                setFields: setFields
             }
         ]);
     return (
