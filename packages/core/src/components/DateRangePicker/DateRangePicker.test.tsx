@@ -358,6 +358,26 @@ describe('DateRangePicker', () => {
         });
     });
 
+    it('should not call onPopupClose when calendar is hidden', () => {
+        const mockOnPopupClose = jest.fn(),
+            { container, getByText } = render(
+                <>
+                    <p>Click Here</p>
+                    <DateRangePicker
+                        id="contract"
+                        value={{ startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }}
+                        displayFormat="MM/dd/yyyy"
+                        onChange={jest.fn()}
+                        onPopupClose={mockOnPopupClose}
+                    />
+                </>
+            );
+
+        expect(container.querySelector('#contract-calendar')).toBeNull();
+        fireEvent.click(getByText('Click Here'));
+        expect(mockOnPopupClose).not.toHaveBeenCalled();
+    });
+
     describe('date selection', () => {
         it('should swap the date if start date is greater than end date', () => {
             const mockOnChange = jest.fn(),
