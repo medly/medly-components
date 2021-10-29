@@ -3,10 +3,6 @@ import React, { ChangeEvent, useCallback } from 'react';
 import { FormCustomComponent } from '../../Fields/types';
 
 type CustomPhoneFieldProps = {
-    value: string;
-    name: string;
-    onChange: (name: string, value: string) => void;
-    onRemoveField: (name: string) => void;
     setFields: (data: any) => void;
 };
 

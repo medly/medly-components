@@ -1,4 +1,5 @@
 import { Meta, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs } from '@storybook/addon-knobs';
 import { CustomComponentPropSchema, CustomFieldForm, SimpleCustomFieldForm } from './Form.stories.tsx';
 
 <Meta title="Forms/Advanced" parameters={{ jest: ['Form.test.tsx', 'Actions/Actions.test.tsx'] }} />
@@ -34,6 +35,8 @@ export const SimpleCustomFieldForm = () => (
 
 ##### Custom component props
 
+Apart from the additional props passed to the custom component, you will get below props from `Form` component.
+
 <Props of={CustomComponentPropSchema} />
 
 ### Advanced usage
@@ -42,7 +45,9 @@ Consider the following example. The form needs to have a dynamic set of fields w
 Try clicking the '+ Add phone number' button.
 
 <Preview withToolbar>
-    <CustomFieldForm />
+    <Story name="Form" decorators={[withKnobs]}>
+        <CustomFieldForm />
+    </Story>
 </Preview>
 
 This is the initial schema (_which would be converted to a `formSchema` object_).
@@ -66,8 +71,8 @@ export const CustomFieldForm = () => {
     const addPhoneNumberField: FormFieldProperties = {
         type: 'custom',
         component: AddPhoneNumber,
-        fields: fields,
-        setFields: setFields
+        fields: fields, // This is the additional prop passing to the component
+        setFields: setFields // This is the additional prop passing to the component
     };
     const fieldSchema = fields.reduce((acc, cur) => ({ ...acc, [cur.fieldName]: cur }), {});
 
@@ -97,7 +102,8 @@ export const AddPhoneNumber: CustomFormComponent<AddPhoneNumberProps> = ({ field
                 fieldName: `phone${newFieldIndex}`,
                 index: newFieldIndex,
                 type: 'custom',
-                component: CustomPhoneField
+                component: CustomPhoneField,
+                setFields: setFields // This is the additional prop passing to the component
             }
         ]);
     return (
@@ -111,19 +117,13 @@ export const AddPhoneNumber: CustomFormComponent<AddPhoneNumberProps> = ({ field
 ```
 
 Here is the implementation for the CustomPhoneField.
-Notice that it gets the props `value`, `name` and `onChange` from the Form but also gets the any additional props like `onRemoveField` passed from the AddPhoneNumber component.
+Notice that it gets the props `value`, `name`, `onChange` and `onRemoveField` from the Form but also gets the any additional props like `setFields` passed from the AddPhoneNumber component.
 
 ```tsx
 import { Button, TextField } from '@medly-components/core';
 import { FormCustomComponent } from '@medly-components/forms';
 
-type CustomPhoneFieldProps = {
-    value: string;
-    name: string;
-    onChange: (name: string, value: string) => void;
-    onRemoveField: (name: string) => void;
-    setFields: (data: any) => void;
-};
+type CustomPhoneFieldProps = { setFields: (data: any) => void };
 
 const CustomPhoneField: FormCustomComponent<CustomPhoneFieldProps> = ({ value, name, onRemoveField, onChange, setFields }) => {
     const handleOnRemoveField = useCallback(() => {
