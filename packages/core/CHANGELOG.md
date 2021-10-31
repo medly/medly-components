@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.35.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.34.0...@medly-components/core@2.35.0) (2021-10-31)
+
+
+### Features
+
+* add onPopupClose prop in DateRangePIcker component ([#498](https://github.com/medly/medly-components/issues/498)) ([eac386f](https://github.com/medly/medly-components/commit/eac386fa2b4606dc7be1b05bf3e36a2d87707ce6)), closes [#228](https://github.com/medly/medly-components/issues/228) [#228](https://github.com/medly/medly-components/issues/228) [#228](https://github.com/medly/medly-components/issues/228) [#228](https://github.com/medly/medly-components/issues/228) [#228](https://github.com/medly/medly-components/issues/228)
+
+
+
+
+
 # [2.34.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.33.0...@medly-components/core@2.34.0) (2021-10-28)
 
 
