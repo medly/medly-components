@@ -32,6 +32,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         withSingleMonth,
         showTooltipForHelperAndErrorText,
         customDateRangeOptions,
+        onPopupClose,
         ...restProps
     } = props;
     const startDateRef = useRef<HTMLInputElement>(null),
@@ -84,6 +85,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
 
     useOuterClickNotifier(() => {
         setActive(false);
+        isActive && onPopupClose && onPopupClose();
         isActive && outerClickValidator.current && outerClickValidator.current();
     }, wrapperRef);
     useUpdateEffect(() => focusElement(focusedElement), [focusedElement]);
