@@ -64,8 +64,8 @@ return <DateRangePicker value={dates} onChange={setDates} />;
 
 ### onPopupClose
 
-You can pass a function using `onPopupClose` prop to perform any action when the calendar popup closes.
-`onChange` is required to make dateRangePicker a controlled component but `onPopupClose` is there to handle action like api call which you want to perform once you are done with the date selection.
+To perform an action after the calendar popup closes, pass a function using the `onPopupClose` prop. 
+Use the onChangeprop to make dateRangePicker a controlled component, and the `onPopupCloseprop` to handle actions (e.g. API calls) that you want to perform after date selection.
 
 ```tsx
 import { useAxios } from '@medly-components/utils';
