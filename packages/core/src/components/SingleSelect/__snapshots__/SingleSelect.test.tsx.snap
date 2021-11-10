@@ -96,7 +96,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -484,7 +484,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -1077,7 +1077,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -2170,7 +2170,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -3749,7 +3749,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   pointer-events: none;
 }
 
-.c0 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c0 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -4147,7 +4147,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   cursor: pointer;
 }
 
-.c0 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c0 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -4575,7 +4575,7 @@ exports[`SingleSelect component with flat variant should render properly when op
   cursor: pointer;
 }
 
-.c0 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c0 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -4909,7 +4909,7 @@ exports[`SingleSelect component with flat variant should render with label prope
   cursor: pointer;
 }
 
-.c0 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c0 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -5644,7 +5644,7 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -7797,7 +7797,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   fill: #607890;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
