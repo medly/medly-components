@@ -11,7 +11,7 @@ export type Variant = 'flat' | 'outlined' | 'solid';
 
 export interface TabsProps extends HTMLProps<HTMLDivElement> {
     /** To be used to render tabs as any html tag */
-    as?: any;
+    as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     /** Id of the default active tab */
     defaultActive?: any;
     /** Id of the active tab */

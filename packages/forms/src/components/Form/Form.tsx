@@ -37,7 +37,6 @@ const Component: React.FC<FormProps> = React.memo(
                 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
                 { values, formKey, handlers, errorMessages, addErrorMessage, setErrorMessages } = useForm(initialState!),
                 fields = useMemo(() => (typeof fieldSchema === 'object' ? fieldSchema : fieldSchema(values)), [values, fieldSchema]);
-
             useEffect(() => {
                 apiErrorMessages && Object.keys(apiErrorMessages).length && setErrorMessages(apiErrorMessages);
             }, [apiErrorMessages]);
