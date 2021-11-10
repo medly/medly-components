@@ -333,6 +333,47 @@ describe('DateRangePicker', () => {
             fireEvent.invalid(startDateInput);
             expect(mockOnInvalid).toHaveBeenCalled();
         });
+
+        it('should call onPopupClose when calendar popup closes', () => {
+            const mockOnPopupClose = jest.fn(),
+                { container, getByText } = render(
+                    <>
+                        <p>Click Here</p>
+                        <DateRangePicker
+                            id="contract"
+                            value={{ startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }}
+                            displayFormat="MM/dd/yyyy"
+                            onChange={jest.fn()}
+                            onPopupClose={mockOnPopupClose}
+                        />
+                    </>
+                );
+
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
+            expect(container.querySelector('#contract-calendar')).toBeInTheDocument();
+            fireEvent.click(getByText('Click Here'));
+            expect(mockOnPopupClose).toHaveBeenCalledTimes(1);
+        });
+    });
+
+    it('should not call onPopupClose when calendar is hidden', () => {
+        const mockOnPopupClose = jest.fn(),
+            { container, getByText } = render(
+                <>
+                    <p>Click Here</p>
+                    <DateRangePicker
+                        id="contract"
+                        value={{ startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }}
+                        displayFormat="MM/dd/yyyy"
+                        onChange={jest.fn()}
+                        onPopupClose={mockOnPopupClose}
+                    />
+                </>
+            );
+
+        expect(container.querySelector('#contract-calendar')).toBeNull();
+        fireEvent.click(getByText('Click Here'));
+        expect(mockOnPopupClose).not.toHaveBeenCalled();
     });
 
     describe('date selection', () => {

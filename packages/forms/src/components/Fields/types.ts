@@ -22,15 +22,23 @@ export type CommonFieldProps = {
 };
 export type FormCustomComponent<P = unknown> = React.FC<
     P & {
+        /** Name of the field */
         name: string;
-        onChange: (name: string, value: any) => void;
+        /** Current value of the field */
         value: any;
+        /** On change handler of the field */
+        onChange: (name: string, value: any) => void;
+        /** This function can be called to remove value from current state */
+        onRemoveField: (fieldName: string) => void;
+        /** Current values of all the fields */
         values: { [key: string]: any };
+        /** This will be set true when it is passed to form */
         disabled: boolean;
+        /** This will be set true when it is passed to form */
         showDecorators: boolean;
-        minWidth: string;
-        onFocus: () => void;
-        errorText: string;
+        /** This will be present if errorMessages passed to form contains error message with key as name of this field  */
+        errorText?: string;
+        /** This will be passed from form props */
         variant: string;
     }
 >;

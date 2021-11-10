@@ -118,6 +118,20 @@ export const useForm = (initialState: Record<string, unknown>): UseFormResult =>
         []
     );
 
+    const handleRemoveField: Handlers['handleRemoveField'] = useCallback(
+        memoize(() => name => {
+            setValues(val =>
+                Object.keys(val || {})
+                    .filter(key => key !== name)
+                    .reduce((acc: Record<string, unknown>, key: string) => {
+                        acc[key] = val[key];
+                        return acc;
+                    }, {})
+            );
+        }),
+        []
+    );
+
     return {
         formKey,
         values,
@@ -140,7 +154,8 @@ export const useForm = (initialState: Record<string, unknown>): UseFormResult =>
             handleRadioGroupChange: handleValueChange,
             handleSingleSelectChange: handleValueChange,
             handleMultiSelectChange: handleValuesChange,
-            handleChange
+            handleChange,
+            handleRemoveField
         }
     };
 };

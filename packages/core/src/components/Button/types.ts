@@ -3,7 +3,7 @@ import { HTMLProps } from '@medly-components/utils';
 
 export type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, 'size'> & { theme?: Theme } & {
     /** To be used to render any component as Button */
-    as?: any;
+    as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     /** To be used if rendering like Link */
     to?: string;
     /** Button sizes */
