@@ -64,50 +64,72 @@ const Head: React.FC<TableHeadProps> = React.memo(props => {
             ),
             [isLoading, isAnyRowSelected, areAllRowsSelected, isSelectAllDisable, tableSize, handleSelectAllClick]
         ),
+        headCellWrapper = useCallback(
+            (value: React.ReactChild, field: any, fieldName: string, config: TableColumnConfig) => (
+                <HeadCell
+                    as={field ? 'div' : 'th'}
+                    key={fieldName}
+                    field={fieldName}
+                    isLoading={isLoading}
+                    fitContent={config.fitContent}
+                    columnMaxSize={maxColumnSizes[fieldName]}
+                    sortField={sortField}
+                    align={config.align}
+                    frozen={config.frozen}
+                    hidden={config.hidden}
+                    sortable={config.sortable}
+                    defaultSortOrder={defaultSortOrder}
+                    onSortChange={handleSortChange}
+                    onWidthChange={handleWidthChange}
+                    isRowExpandable={isRowExpandable}
+                    tableSize={tableSize}
+                    isGroupedTable={isGroupedTable}
+                    hiddenDivRef={hiddenDivRef}
+                    addColumnMaxSize={addColumnMaxSize}
+                    isRowActionCell={config.field === 'row-actions'}
+                    showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
+                >
+                    {value}
+                </HeadCell>
+            ),
+            [
+                tableSize,
+                isRowExpandable,
+                isRowSelectable,
+                sortField,
+                addColumnMaxSize,
+                maxColumnSizes,
+                selectAllCheckBox,
+                showShadowAfterFrozenElement
+            ]
+        ),
         headCell = useCallback(
             (configs: TableColumnConfig[], field = '') =>
                 configs.map(config => {
                     const fieldName = field ? `${field}.${config.field}` : config.field;
-                    return config.children ? (
+                    return config.children || config.field.includes('.') ? (
                         <GroupCell
                             as={field ? 'div' : 'th'}
                             key={config.field}
                             hidden={config.hidden}
-                            gridTemplateColumns={getGridTemplateColumns(config.children)}
+                            gridTemplateColumns={config.children ? getGridTemplateColumns(config.children) : config.field}
                             isTitleCell
                             tableSize={tableSize}
                         >
                             <GroupCellTitle textVariant="h5" textWeight="Strong" uppercase>
                                 {config.title}
                             </GroupCellTitle>
-                            {headCell(config.children, fieldName)}
+                            {config.children
+                                ? headCell(config.children, fieldName)
+                                : headCellWrapper(config.field.split('.').pop()!, field, fieldName, config)}
                         </GroupCell>
                     ) : (
-                        <HeadCell
-                            as={field ? 'div' : 'th'}
-                            key={fieldName}
-                            field={fieldName}
-                            isLoading={isLoading}
-                            fitContent={config.fitContent}
-                            columnMaxSize={maxColumnSizes[fieldName]}
-                            sortField={sortField}
-                            align={config.align}
-                            frozen={config.frozen}
-                            hidden={config.hidden}
-                            sortable={config.sortable}
-                            defaultSortOrder={defaultSortOrder}
-                            onSortChange={handleSortChange}
-                            onWidthChange={handleWidthChange}
-                            isRowExpandable={isRowExpandable}
-                            tableSize={tableSize}
-                            isGroupedTable={isGroupedTable}
-                            hiddenDivRef={hiddenDivRef}
-                            addColumnMaxSize={addColumnMaxSize}
-                            isRowActionCell={config.field === 'row-actions'}
-                            showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
-                        >
-                            {config.field === 'row-actions' && isRowSelectable ? selectAllCheckBox : config.title}
-                        </HeadCell>
+                        headCellWrapper(
+                            config.field === 'row-actions' && isRowSelectable ? selectAllCheckBox : config.title,
+                            field,
+                            fieldName,
+                            config
+                        )
                     );
                 }),
             [
