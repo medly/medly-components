@@ -62,6 +62,31 @@ return <DateRangePicker value={dates} onChange={setDates} />;
     </Story>
 </Preview>
 
+### onPopupClose
+
+You can pass a function using `onPopupClose` prop to perform any action when the calendar popup closes.
+`onChange` is required to make dateRangePicker a controlled component but `onPopupClose` is there to handle action like api call which you want to perform once you are done with the date selection.
+
+```tsx
+import { useAxios } from '@medly-components/utils';
+import { createUrlWithParams } from '@utils';
+
+const DateRangePickerWithOnClose: React.FC = () => {
+    const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null }),
+        { request } = useAxios();
+
+    const handleApiCall = () =>
+        dates.startDate &&
+        dates.endDate &&
+        request({
+            url: createUrlWithParams(url, dates)
+            method: 'get'
+        });
+
+    return <DateRangePicker value={dates} onChange={setDates} onPopupClose={handleApiCall} />;
+};
+```
+
 ### Validations
 
 1. Validations would happen on invalid, and blur event.
