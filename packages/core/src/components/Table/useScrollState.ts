@@ -6,6 +6,7 @@ type Result = [
         isScrolledToLeft: boolean;
         // isScrolledToRight: boolean;
         isScrolledToBottom: boolean;
+        scrolledPercentage: number;
     },
     (e: React.UIEvent<HTMLDivElement>) => void
 ];
@@ -14,7 +15,8 @@ export const useScrollState = (): Result => {
         isScrolledToTop: true,
         isScrolledToLeft: true,
         // isScrolledToRight: true,
-        isScrolledToBottom: false
+        isScrolledToBottom: false,
+        scrolledPercentage: 0
     });
 
     const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
@@ -25,14 +27,17 @@ export const useScrollState = (): Result => {
             isScrolledToLeft = scrollLeft === 0,
             // isScrolledToRight = Math.floor(scrollLeft + clientWidth) === scrollWidth,
             isScrolledToBottom =
-                Math.floor(scrollTop + clientHeight) === scrollHeight || Math.ceil(scrollTop + clientHeight) === scrollHeight;
+                Math.floor(scrollTop + clientHeight) === scrollHeight || Math.ceil(scrollTop + clientHeight) === scrollHeight,
+            scrolledPercentage =
+                (Math.floor(scrollTop + clientHeight) / scrollHeight) * 100 || (Math.ceil(scrollTop + clientHeight) / scrollHeight) * 100;
+
         if (
             isScrolledToTop !== scrollState.isScrolledToTop ||
             isScrolledToLeft !== scrollState.isScrolledToLeft ||
             // isScrolledToRight !== scrollState.isScrolledToRight ||
             isScrolledToBottom !== scrollState.isScrolledToBottom
         ) {
-            setScrollState({ isScrolledToTop, isScrolledToLeft, isScrolledToBottom });
+            setScrollState({ isScrolledToTop, isScrolledToLeft, isScrolledToBottom, scrolledPercentage });
         }
     };
 

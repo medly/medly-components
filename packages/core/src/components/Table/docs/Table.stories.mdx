@@ -1,7 +1,7 @@
 import { Table } from '../Table';
 import { useState, useCallback } from 'react';
 import { action } from '@storybook/addon-actions';
-import { boolean, select } from '@storybook/addon-knobs';
+import { boolean, select, text } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import {
     ThemeInterface,
@@ -76,9 +76,10 @@ export const Dummy: React.FC = () => {
         {() => {
             const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
                 [tableData, setTableData] = useState(data),
-                handleFilterData = useCallback(({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)), [
-                    tableData
-                ]);
+                handleFilterData = useCallback(
+                    ({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)),
+                    [tableData]
+                );
             return (
                 <DummyWrapper>
                     <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
@@ -132,9 +133,10 @@ Rows can be shown with card style when you set `showRowWithCardStyle` as true, a
         {() => {
             const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
                 [tableData, setTableData] = useState(data),
-                handleFilterData = useCallback(({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)), [
-                    tableData
-                ]);
+                handleFilterData = useCallback(
+                    ({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)),
+                    [tableData]
+                );
             return (
                 <DummyWrapper>
                     <DarkBackground showRowWithCardStyle />
@@ -173,9 +175,10 @@ And once the user expands any row `getGroupedData` function will be called with 
         {() => {
             const [selectedRowIds, setSelectedRowIds] = useState([]),
                 [tableData, setTableData] = useState(data),
-                handleFilterData = useCallback((dottedField, order) => setTableData(filterData(dottedField, order, tableData)), [
-                    tableData
-                ]);
+                handleFilterData = useCallback(
+                    (dottedField, order) => setTableData(filterData(dottedField, order, tableData)),
+                    [tableData]
+                );
             return (
                 <>
                     <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
@@ -270,9 +273,10 @@ export const RowHoverActions: RowHoverActionsType = ({ rowId, rowData }) => {
         {() => {
             const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
                 [tableData, setTableData] = useState(data),
-                handleFilterData = useCallback(({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)), [
-                    tableData
-                ]);
+                handleFilterData = useCallback(
+                    ({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)),
+                    [tableData]
+                );
             return (
                 <DummyWrapper>
                     <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
@@ -342,6 +346,57 @@ export const Actions = [
 
 <Table data={tableData} columns={columns} actions={Actions} />;
 ```
+
+## Infinite scroll
+
+To enable infinite scroll you have to pass `withInfiniteScroll` prop. This will allow you to automatically load more content whenever user scrolls more than 70%.
+
+**Note:** `withInfiniteScroll` automatically disables `withPagination` flag.
+
+<Preview withToolbar>
+    <Story name="Table with infinite scroll">
+        {() => {
+            const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
+                [tableData, setTableData] = useState(data),
+                handleFilterData = useCallback(
+                    ({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)),
+                    [tableData]
+                ),
+                updateData = useCallback(() => setTableData(prevData => [...prevData, ...data]), [tableData]);
+            return (
+                <DummyWrapper>
+                    <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
+                    <Table
+                        data={tableData}
+                        columns={columns}
+                        onSort={handleFilterData}
+                        selectedRowIds={selectedRowIds}
+                        onRowSelection={setSelectedRowIds}
+                        onRowClick={action('Row Clicked')}
+                        isLoading={boolean('Loading', false)}
+                        isRowSelectable={boolean('Is row selectable', true)}
+                        isRowExpandable={boolean('Is row expandable', true)}
+                        rowSelectionDisableKey="disabled"
+                        rowClickDisableKey="disabled"
+                        size={select('Size', ['XS', 'S', 'M', 'L'], 'M')}
+                        showRowWithCardStyle={boolean('Show Row With Card Style', false)}
+                        expandedRowComponent={ExpandedRowComponent}
+                        actions={Actions}
+                        withMinimap={boolean('Enable minimap', false)}
+                        withPagination={boolean('Enable pagination', true)}
+                        totalItems={20}
+                        itemsPerPage={10}
+                        onPageChange={updateData}
+                        onScrolledToBottom={action('Scrolled to bottom')}
+                        withRowSeparators={boolean('Enable row separators', true)}
+                        withInfiniteScroll={boolean('Enable infinite scroll', true)}
+                        maxHeight={text('Max height', '300px')}
+                    />
+                </DummyWrapper>
+            );
+        }}
+    </Story>
+</Preview>
 
 ## Minimap
 
