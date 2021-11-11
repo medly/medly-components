@@ -1,0 +1,39 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Components/InjectClassName" />
+
+# InjectClassName
+
+`InjectClassName` can be used to create styles for child elements without providing the html tag to styled-components.
+
+#### Example
+
+```tsx
+import { defaultTheme } from '@medly-components/theme';
+import { InjectClassName } from '@medly-components/utils';
+import styled from 'styled-components';
+import { SvgLoaderProps } from './types';
+
+export const SvgLoaderStyled = styled(InjectClassName)<SvgLoaderProps>`
+    font-size: ${({ theme, size }) => theme.loader.sizes[size!]};
+    * {
+        fill: ${({ theme, color }) => color || theme.loader.defaultColor};
+    }
+`;
+
+SvgLoaderStyled.displayName = 'SvgLoader';
+SvgLoaderStyled.defaultProps = {
+    size: 'S',
+    theme: defaultTheme
+};
+```
+
+Now the above SvgLoader can be used to style any loader as below:
+
+```jsx
+<SvgLoader>
+    <ConcentricCircleLoaderSvg />
+</SvgLoader>
+```
+
+**Note: Here, the SvgLoader style applies directly to ConcentricCircleLoaderSvg.**
