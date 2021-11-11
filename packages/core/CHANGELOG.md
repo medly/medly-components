@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.36.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.35.3...@medly-components/core@2.36.0) (2021-11-11)
+
+
+### Features
+
+* add infinite scroll to table component ([#505](https://github.com/medly/medly-components/issues/505)) ([9e2836a](https://github.com/medly/medly-components/commit/9e2836aed889ad441de64c6a5c8e412ae246be28))
+
+
+
+
+
 ## [2.35.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.35.2...@medly-components/core@2.35.3) (2021-11-11)
 
 **Note:** Version bump only for package @medly-components/core
