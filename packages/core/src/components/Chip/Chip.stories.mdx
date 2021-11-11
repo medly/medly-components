@@ -14,10 +14,11 @@ import { action } from '@storybook/addon-actions';
 Chips represent complex entities in small blocks, such as a contact or a location.
 
 ### When To Use
+Use it to:
+-   Tag by property
+-   Categorize the selected items from the dropdown list
+-   Highlight an item status for quick recognition
 
--   It can be used to tag by property.
--   When categorizing selected items from a dropdown.
--   To highlight an item's status for quick recognition.
 
 ### Basic Chip
 
@@ -36,7 +37,7 @@ Chips represent complex entities in small blocks, such as a contact or a locatio
 
 ### Variants
 
-Use variant prop to change the style of the button.
+Changes the style of the button.
 
 <Preview>
     <Chip label="Solid Chip" onDelete={action('Delete Clicked')} variant="solid" color={defaultTheme.chip.defaultColor} />
@@ -46,7 +47,7 @@ Use variant prop to change the style of the button.
 
 ### Disabled
 
-Disable style for all the variants.
+Disables the style for all the variants.
 
 <Preview>
     <Chip disabled label="Solid Chip" variant="solid" color={defaultTheme.chip.defaultColor} />
@@ -56,7 +57,7 @@ Disable style for all the variants.
 
 ### Delete Icon
 
-If you skip the `onDelete` prop, the chip will not feature a delete 'x' icon.
+Use the `onDelete` prop to feature a delete 'x' icon on the chip.
 
 <Preview withToolbar>
     <Chip label="Chip without delete icon" onClick={action('Clicked')} color={defaultTheme.chip.defaultColor} />
@@ -64,7 +65,7 @@ If you skip the `onDelete` prop, the chip will not feature a delete 'x' icon.
 
 ### Custom Colors
 
-To use custom colors for `chip` component you can provide the custom `theme` to the `chip` component. You can use the `updateNestedValue` function available in `@medly-components/utils` to update the nested values in the `defaultTheme` object. Check out the `ChipTheme` section to find out which all properties are customizable.
+To use custom colors, provide the `custom` theme to the `chip` component. Use the `updateNestedValue` function available in `@medly-components/utils` to update the nested values in the `defaultTheme` object. Check out the `ChipTheme` section to find out the customizable properties.
 
 ```tsx
 import { updateNestedValue } from '@medly-components/utils';
