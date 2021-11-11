@@ -4,7 +4,7 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # InjectClassName
 
-`InjectClassName` can be used to add a className to all its children.
+`InjectClassName` can be used to create styles for child elements without providing the html tag to styled-components.
 
 #### Parameters
 
@@ -13,21 +13,31 @@ It takes only one parameter `className` which is of type string.
 #### Example
 
 ```tsx
+import { defaultTheme } from '@medly-components/theme';
 import { InjectClassName } from '@medly-components/utils';
+import styled from 'styled-components';
+import { SvgLoaderProps } from './types';
 
-const InjectClassNameComponent: React.FC = () => {
-    return (
-        <InjectClassName className="box">
-            <div>Box 1</div>
-            <div>Box 2</div>
-        </InjectClassName>
-    );
+export const SvgLoaderStyled = styled(InjectClassName)<SvgLoaderProps>`
+    font-size: ${({ theme, size }) => theme.loader.sizes[size!]};
+    * {
+        fill: ${({ theme, color }) => color || theme.loader.defaultColor};
+    }
+`;
+
+SvgLoaderStyled.displayName = 'SvgLoader';
+SvgLoaderStyled.defaultProps = {
+    size: 'S',
+    theme: defaultTheme
 };
 ```
 
-The above code snippet will return below jsx:
+Now the above SvgLoader can be used to style any loader as below:
 
 ```jsx
-<div className="box">Box 1</div>
-<div className="box">Box 2</div>
+<SvgLoader>
+    <ConcentricCircleLoaderSvg />
+</SvgLoader>
 ```
+
+**Note: Here, the SvgLoader style applies directly to ConcentricCircleLoaderSvg.**
