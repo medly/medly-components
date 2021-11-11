@@ -32,13 +32,16 @@ export const Component: FC<TableProps> = React.memo(
                 showRowWithCardStyle,
                 withPagination,
                 onScrolledToBottom,
+                withInfiniteScroll,
+                onPageChange,
+                maxHeight,
                 ...restProps
             } = props,
             isGroupedTable = !!restProps.groupBy,
             size = showRowWithCardStyle ? 'L' : restProps.size;
 
         const hiddenDivRef = useRef(null),
-            tableState = useState<TableState>({
+            [tableState, setTableState] = useState<TableState>({
                 sortField: props.defaultSortField,
                 sortOrder: props.defaultSortOrder,
                 activePage: props.defaultActivePage
@@ -88,8 +91,18 @@ export const Component: FC<TableProps> = React.memo(
             }
         }, [scrollState.isScrolledToBottom]);
 
+        useEffect(() => {
+            if (withInfiniteScroll && scrollState.scrolledPercentage > 70) {
+                setTableState(state => {
+                    const newState = { ...state, activePage: (state.activePage ?? 0) + 1 };
+                    onPageChange && onPageChange(newState);
+                    return newState;
+                });
+            }
+        }, [withInfiniteScroll, scrollState.scrolledPercentage]);
+
         return (
-            <TableStateContext.Provider value={tableState}>
+            <TableStateContext.Provider value={[tableState, setTableState]}>
                 <TableComponentsCommonPropsContext.Provider
                     value={{
                         ...props,
@@ -111,6 +124,7 @@ export const Component: FC<TableProps> = React.memo(
                         onScroll={handleScroll}
                         isRowClickable={isRowClickable}
                         showRowWithCardStyle={showRowWithCardStyle}
+                        maxHeight={maxHeight}
                     >
                         <Head
                             {...{
@@ -135,7 +149,7 @@ export const Component: FC<TableProps> = React.memo(
                                 showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                             }}
                         />
-                        {withPagination && <Foot tableSize={size!} />}
+                        {withPagination && !withInfiniteScroll && <Foot tableSize={size!} />}
                     </TableStyled>
                 </TableComponentsCommonPropsContext.Provider>
             </TableStateContext.Provider>
