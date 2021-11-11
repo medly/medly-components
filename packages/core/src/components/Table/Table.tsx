@@ -92,11 +92,14 @@ export const Component: FC<TableProps> = React.memo(
         }, [scrollState.isScrolledToBottom]);
 
         useEffect(() => {
-            if (withInfiniteScroll && tableState.activePage && scrollState.scrolledPercentage > 70) {
-                const newState = { ...tableState, activePage: tableState.activePage + 1 };
-                onPageChange && onPageChange(newState);
+            if (withInfiniteScroll && scrollState.scrolledPercentage > 70) {
+                setTableState(state => {
+                    const newState = { ...state, activePage: (state.activePage ?? 0) + 1 };
+                    onPageChange && onPageChange(newState);
+                    return newState;
+                });
             }
-        }, [scrollState.scrolledPercentage]);
+        }, [withInfiniteScroll, scrollState.scrolledPercentage]);
 
         return (
             <TableStateContext.Provider value={[tableState, setTableState]}>
