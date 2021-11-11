@@ -192,7 +192,15 @@ export const Fields: React.FC<FieldsProps> = React.memo(props => {
                                         />
                                     );
                                 case 'custom':
-                                    return <Component {...commonProps} value={value} values={values} onChange={handlers.handleChange} />;
+                                    return (
+                                        <Component
+                                            {...commonProps}
+                                            value={value}
+                                            values={values}
+                                            onChange={handlers.handleChange}
+                                            onRemoveField={handlers.handleRemoveField(name)}
+                                        />
+                                    );
 
                                 default:
                                     return null;

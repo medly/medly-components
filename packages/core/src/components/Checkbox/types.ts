@@ -9,20 +9,20 @@ export interface CheckboxProps extends InputProps {
     label?: string;
     /** Checkbox size */
     size?: CheckboxSizes;
-    /** Takes full width of the parent component */
+    /** Full width of the parent component */
     fullWidth?: boolean;
     /** Label position */
     labelPosition?: LabelPositions;
-    /** Label Variant */
+    /** Label variant */
     labelVariant?: FontVariants;
-    /** Label Weight */
+    /** Label weight */
     labelWeight?: FontWeights;
     /** Indeterminate state for checkbox */
     indeterminate?: boolean;
     /** Error Text */
     errorText?: string;
-    /** Function will called with the input value on blur, change and invalid event */
+    /** Function will be called with the input value on blur, change and invalid event */
     validator?: (checked: boolean) => string;
-    /** This will be used internally by Checkbox group */
+    /** This will be used internally by the Checkbox group */
     hasError?: boolean;
 }

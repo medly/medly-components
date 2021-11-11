@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.36.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.36.2...@medly-components/forms@1.36.3) (2021-11-10)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.36.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.36.1...@medly-components/forms@1.36.2) (2021-10-31)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.36.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.36.0...@medly-components/forms@1.36.1) (2021-10-31)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.36.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.35.1...@medly-components/forms@1.36.0) (2021-10-29)
+
+
+### Features
+
+* **forms:** add onRemoveField for CustomFormComponent ([#500](https://github.com/medly/medly-components/issues/500)) ([ae69a59](https://github.com/medly/medly-components/commit/ae69a5903e61891256c502e896bb68d8b3bd8663)), closes [#491](https://github.com/medly/medly-components/issues/491)
+
+
+
+
+
+## [1.35.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.35.0...@medly-components/forms@1.35.1) (2021-10-28)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 # [1.35.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.34.2...@medly-components/forms@1.35.0) (2021-10-22)
 
 

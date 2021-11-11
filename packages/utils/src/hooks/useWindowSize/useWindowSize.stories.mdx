@@ -1,0 +1,28 @@
+import { useWindowSize } from './useWindowSize.ts';
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Hooks/useWindowSize" />
+
+# useWindowSize
+
+This hook can be used to get the current size of the browser window. This hook returns an object containing the window's width and height.
+
+#### Example
+
+```tsx
+import { useWindowSize } from '@medly-components/utils';
+import { Text } from '@medly-components/core';
+
+export const Demo = () => {
+    const { height, width } = useWindowSize();
+
+    return (
+        <>
+            <Text>The current window dimensions are: </Text>
+            <code>{JSON.stringify({ height, width })}</code>
+        </>
+    );
+};
+```
+
+**Note: It uses debouncing internally, to improve performance.**
