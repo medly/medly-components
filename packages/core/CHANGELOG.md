@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.38.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.37.0...@medly-components/core@2.38.0) (2021-11-12)
+
+
+### Features
+
+* **core:** add getNestedValue in table row ([#515](https://github.com/medly/medly-components/issues/515)) ([4c4c978](https://github.com/medly/medly-components/commit/4c4c978a08dab717ea341ebd705a4401053c0263))
+
+
+
+
+
 # [2.37.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.36.0...@medly-components/core@2.37.0) (2021-11-12)
 
 
