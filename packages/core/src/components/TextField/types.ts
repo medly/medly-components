@@ -38,7 +38,7 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     multiline?: boolean;
     /** Use minRows when multiline is true; minRows is the number of rows in text area */
     minRows?: number;
-    /** Set to true to display the character count of the current input value */
+    /** Set to true to display the character count of the current input value. This requires maxLength prop as well. */
     withCharacterCount?: boolean;
     /** Show Helper text and error text in a tooltip (popover) */
     showTooltipForHelperAndErrorText?: boolean;
