@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.37.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.36.0...@medly-components/core@2.37.0) (2021-11-12)
+
+
+### Features
+
+* use new JSX transform ([#506](https://github.com/medly/medly-components/issues/506)) ([b997806](https://github.com/medly/medly-components/commit/b997806286f990fd5e2b789aa184d0c7d3a3a5a8))
+
+
+
+
+
 # [2.36.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.35.3...@medly-components/core@2.36.0) (2021-11-11)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.33.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.32.6...@medly-components/layout@1.33.0) (2021-11-12)
+
+
+### Features
+
+* use new JSX transform ([#506](https://github.com/medly/medly-components/issues/506)) ([b997806](https://github.com/medly/medly-components/commit/b997806286f990fd5e2b789aa184d0c7d3a3a5a8))
+
+
+
+
+
 ## [1.32.6](https://github.com/medly/medly-components/compare/@medly-components/layout@1.32.5...@medly-components/layout@1.32.6) (2021-11-11)
 
 **Note:** Version bump only for package @medly-components/layout
