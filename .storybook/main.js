@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
@@ -74,7 +75,12 @@ module.exports = {
             ]
         });
 
-        config.plugins.push(new ForkTsCheckerWebpackPlugin());
+        config.plugins.push(
+            new ForkTsCheckerWebpackPlugin(),
+            new webpack.ProvidePlugin({
+                React: 'react'
+            })
+        );
 
         config.resolve.extensions.push('.ts', '.tsx');
         config.resolve['plugins'] = [new TsconfigPathsPlugin()];
