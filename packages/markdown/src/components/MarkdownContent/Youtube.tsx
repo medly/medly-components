@@ -1,8 +1,8 @@
 /* eslint-disable react/display-name */
-import React from 'react';
+import { memo } from 'react';
 import { CodeComponent } from 'react-markdown/lib/ast-to-react';
 
-export const YouTube: CodeComponent = React.memo(props => {
+export const YouTube: CodeComponent = memo(props => {
     // @ts-ignore
     const params = new URL(props.link || props.children[0]?.props?.href).searchParams;
     return (

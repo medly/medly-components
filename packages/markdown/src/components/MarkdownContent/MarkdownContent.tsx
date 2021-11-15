@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import ReactMarkdown from 'react-markdown';
 import directive from 'remark-directive';
 import remarkFootnotes from 'remark-footnotes';
