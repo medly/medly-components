@@ -1,5 +1,4 @@
 import { cleanup, fireEvent, render } from '@test-utils';
-import React from 'react';
 import { Minimap } from './Minimap';
 
 const tableRef = {

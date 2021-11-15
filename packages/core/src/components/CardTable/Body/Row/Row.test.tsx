@@ -1,5 +1,4 @@
 import { fireEvent, render } from '@test-utils';
-import React from 'react';
 import { Row } from './Row.styled';
 
 const renderer = ({ withWhiteBackground = false, onClick = jest.fn(), isRowClickDisabled = false }) =>

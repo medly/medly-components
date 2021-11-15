@@ -1,11 +1,12 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useMemo } from 'react';
+import type { FC } from 'react';
+import { forwardRef, memo, useCallback, useMemo, useRef } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './FileInput.styled';
 import { FileInputProps } from './types';
 
-const Component: FC<FileInputProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<FileInputProps> = memo(
+    forwardRef((props, ref) => {
         const {
                 files,
                 disabled,
@@ -22,7 +23,7 @@ const Component: FC<FileInputProps> = React.memo(
             } = props,
             id = props.id || 'medly-file-input';
 
-        const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));
+        const inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null));
 
         const handleLabelClick = useCallback(
                 (event: any) => {

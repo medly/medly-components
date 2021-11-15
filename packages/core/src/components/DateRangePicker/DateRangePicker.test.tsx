@@ -1,5 +1,5 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { placements } from '../Popover/Popover.stories';
 import { DateRangePicker } from './DateRangePicker';
 import { CustomDateRangeOptions } from './DateRangePicker.stories';

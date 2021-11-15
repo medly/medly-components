@@ -1,6 +1,7 @@
 import { defaultTheme } from '@medly-components/theme/src';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import React, { useCallback, useState } from 'react';
+import type { FC } from 'react';
+import { memo, useCallback, useState } from 'react';
 import styled from 'styled-components';
 import Button from '../Button';
 import CheckboxGroup from '../CheckboxGroup';
@@ -20,7 +21,7 @@ const FilterHeaderStyled = styled('div')`
     }
 `;
 
-const FilterHeader: React.FC<{ label: string; onClear: () => void; showClear: boolean }> = React.memo(({ label, onClear, showClear }) => (
+const FilterHeader: FC<{ label: string; onClear: () => void; showClear: boolean }> = memo(({ label, onClear, showClear }) => (
     <FilterHeaderStyled>
         <Text textVariant="h5" textColor={defaultTheme.colors.grey[600]}>
             {label}

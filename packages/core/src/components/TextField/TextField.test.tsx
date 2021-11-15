@@ -2,7 +2,6 @@ import { CheckIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { updateNestedValue } from '@medly-components/utils';
 import { fireEvent, render, screen, waitFor } from '@test-utils';
-import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { TextField } from './TextField';
 import { TextFieldProps } from './types';

@@ -1,6 +1,7 @@
 import { CloseIcon, ExpandIcon, SearchIcon } from '@medly-components/icons';
 import { useCombinedRefs, useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
+import type { FC } from 'react';
+import { forwardRef, memo, useCallback, useEffect, useRef, useState } from 'react';
 import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
 import { useKeyboardNavigation } from '../SingleSelect/useKeyboardNavigation';
@@ -10,8 +11,8 @@ import { CloseIconWrapper, ExpandIconWrapper, SearchIconWrapper } from './styles
 import { SearchInput } from './styles/input';
 import { SearchBoxProps } from './types';
 
-const Component: FC<SearchBoxProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<SearchBoxProps> = memo(
+    forwardRef((props, ref) => {
         const {
             options: defaultOptions,
             size,
@@ -27,7 +28,7 @@ const Component: FC<SearchBoxProps> = React.memo(
             ...restProps
         } = props;
         const wrapperRef = useRef<any>(null),
-            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             isFocused = useRef(false),
             enterPress = useKeyPress('Enter'),
             optionsRef = useRef<HTMLUListElement>(null),

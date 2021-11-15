@@ -1,12 +1,13 @@
 import { ChevronDownIcon } from '@medly-components/icons';
-import React, { useCallback } from 'react';
+import { useCallback, forwardRef, memo } from 'react';
 import Label from '../../Label';
 import Text from '../../Text';
 import { FlatVariantStyled, HelperText, OuterWrapper, Suffix } from './FlatVariant.styled';
 import { FlatVariantProps } from './types';
+import type { FC } from 'react';
 
-export const FlatVariant: React.FC<FlatVariantProps> = React.memo(
-    React.forwardRef<HTMLButtonElement, FlatVariantProps>((props, ref) => {
+export const FlatVariant: FC<FlatVariantProps> = memo(
+    forwardRef<HTMLButtonElement, FlatVariantProps>((props, ref) => {
         const { label, value, id, areOptionsVisible, errorText, helperText, disabled, ...restProps } = props;
         const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []);
         return (

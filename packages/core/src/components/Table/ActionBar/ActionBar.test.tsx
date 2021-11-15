@@ -1,6 +1,5 @@
 import { RemoveCircleIcon } from '@medly-components/icons';
 import { cleanup, render } from '@test-utils';
-import React from 'react';
 import { Button } from '../..';
 import { TableComponentsCommonPropsContext } from '../context/TableComponentsCommonProps.context';
 import { ActionBar } from './ActionBar';

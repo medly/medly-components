@@ -1,14 +1,15 @@
 import { defaultTheme, TextFieldTheme } from '@medly-components/theme';
-import React, { useCallback, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 import styled from 'styled-components';
 import Button from '../Button';
 import { TextField } from './TextField';
 import { TextFieldProps as Props } from './types';
+import type { FC } from 'react';
 
 export const variants: Props['variant'][] = ['filled', 'outlined', 'fusion'];
 export const sizes: Props['size'][] = ['S', 'M'];
 
-export const ThemeInterface: React.FC<TextFieldTheme> = () => null;
+export const ThemeInterface: FC<TextFieldTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.textField
 };
@@ -36,7 +37,7 @@ export const useTextInput = (initialState = ''): Result => {
 const emailValidation = (value: string) =>
     value === '' ? 'Email is required' : !value.includes('@') ? 'Email address should contain @' : '';
 
-export const Custom: React.FC = () => {
+export const Custom: FC = () => {
     const [email] = useTextInput(''),
         handleFormSubmit = useCallback((e: React.FormEvent) => e.preventDefault(), []);
 

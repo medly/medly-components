@@ -1,11 +1,12 @@
 import { useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useRef, useState } from 'react';
+import { memo, useCallback, useRef, useState } from 'react';
 import { PopoverContext } from './Popover.context';
 import { Wrapper } from './Popover.styled';
 import Popup from './Popup';
 import { PopoverProps, StaticProps } from './types';
+import type { FC } from 'react';
 
-const Component: FC<PopoverProps> = React.memo(({ interactionType, ...restProps }) => {
+const Component: FC<PopoverProps> = memo(({ interactionType, ...restProps }) => {
     const openState = useState(false),
         [, setOpenState] = openState,
         wrapperRef = useRef(null);

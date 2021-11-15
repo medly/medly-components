@@ -1,6 +1,5 @@
 import { StarIcon } from '@medly-components/icons';
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
-import React from 'react';
 import { MultiSelect } from './MultiSelect';
 import { MultiSelectProps } from './types';
 

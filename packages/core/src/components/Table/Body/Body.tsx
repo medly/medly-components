@@ -1,4 +1,4 @@
-import React, { useContext, useMemo } from 'react';
+import { memo, useContext, useMemo } from 'react';
 import { TableComponentsCommonPropsContext } from '../context';
 import { getGridTemplateColumns } from '../helpers';
 import Minimap from '../Minimap';
@@ -7,8 +7,9 @@ import GroupedRow from './GroupedRow';
 import Row from './Row';
 import { NoResultCell, NoResultRow } from './Row/Row.styled';
 import { TableBodyProps } from './types';
+import type { FC } from 'react';
 
-const Body: React.FC<TableBodyProps> = React.memo(props => {
+const Body: FC<TableBodyProps> = memo(props => {
     const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap, columns, size } =
             useContext(TableComponentsCommonPropsContext),
         { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props,

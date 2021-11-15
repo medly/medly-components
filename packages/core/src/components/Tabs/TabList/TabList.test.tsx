@@ -1,5 +1,4 @@
 import { fireEvent, render, screen } from '@test-utils';
-import React from 'react';
 import Tab from '../Tab';
 import { TabList } from './TabList';
 

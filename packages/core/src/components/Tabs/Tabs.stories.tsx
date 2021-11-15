@@ -1,9 +1,9 @@
 import { defaultTheme, TabsTheme } from '@medly-components/theme';
-import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { TabBackground, TabSize } from './types';
+import type { FC } from 'react';
 
-export const ThemeInterface: React.FC<TabsTheme> = () => null;
+export const ThemeInterface: FC<TabsTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.tabs
 };

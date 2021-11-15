@@ -1,5 +1,4 @@
 import { select } from '@storybook/addon-knobs';
-import React from 'react';
 import Text from '../Text';
 import { List } from './List';
 import { ListProps } from './types';

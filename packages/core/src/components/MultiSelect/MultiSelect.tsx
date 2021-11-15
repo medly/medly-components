@@ -1,5 +1,6 @@
 import { useCombinedRefs, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import type { FC, FocusEvent } from 'react';
+import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
 import { filterOptions, getDefaultSelectedOptions, getInputValue } from './helpers';
 import InputSuffix from './InputSuffix';
@@ -7,8 +8,8 @@ import { Wrapper } from './MultiSelect.styled';
 import Options from './Options';
 import { MultiSelectProps } from './types';
 
-const Component: FC<MultiSelectProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<MultiSelectProps> = memo(
+    forwardRef((props, ref) => {
         const {
                 id,
                 size,
@@ -35,7 +36,7 @@ const Component: FC<MultiSelectProps> = React.memo(
 
         const wrapperRef = useRef<HTMLDivElement>(null),
             optionsRef = useRef<HTMLUListElement>(null),
-            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             [options, setOptions] = useState(defaultOptions),
             [builtInErrorMessage, setErrorMessage] = useState(''),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
@@ -95,7 +96,7 @@ const Component: FC<MultiSelectProps> = React.memo(
                 setErrorMessage(message);
             }, [selectedOptions, validator]),
             handleWrapperOnBlur = useCallback(
-                (event: React.FocusEvent<HTMLDivElement>) => {
+                (event: FocusEvent<HTMLDivElement>) => {
                     const currentTarget = event.currentTarget;
                     setTimeout(() => !currentTarget.contains(document.activeElement) && validate(), 0);
                 },

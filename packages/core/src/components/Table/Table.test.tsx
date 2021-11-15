@@ -1,5 +1,4 @@
 import { fireEvent, render, screen } from '@test-utils';
-import React from 'react';
 import testColumns from './docs/columns';
 import testData from './docs/data';
 import { Table } from './Table';

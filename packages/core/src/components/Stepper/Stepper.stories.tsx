@@ -1,6 +1,6 @@
 import { defaultTheme, StepperTheme } from '@medly-components/theme';
 import { select } from '@storybook/addon-knobs';
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import { Stepper } from './Stepper';
 import { StepperProps } from './types';
 

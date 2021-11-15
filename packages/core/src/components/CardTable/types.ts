@@ -1,4 +1,5 @@
 import { HTMLProps } from '@medly-components/utils';
+import type { FC } from 'react';
 
 export type SortOrder = 'asc' | 'desc';
 
@@ -20,7 +21,7 @@ export interface ColumnConfig {
     /** Provide the fraction of the of the total width of the row */
     fraction?: number;
     /** Custom component */
-    component?: React.FC<{ data: any; rowId?: any; disabled?: boolean; rowData?: Data }>;
+    component?: FC<{ data: any; rowId?: any; disabled?: boolean; rowData?: Data }>;
 }
 export interface CardTableProps extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'> {
     /** Table data */

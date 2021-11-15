@@ -1,13 +1,14 @@
 import { WithStyle } from '@medly-components/utils';
 import { useStore } from 'effector-react';
-import React, { FC } from 'react';
+import { memo, forwardRef } from 'react';
 import Toast from '../Toast';
 import * as Styled from './ToastContainer.styled';
 import { toastStore } from './ToastStore';
 import { ToastContainerProps } from './types';
+import type { FC } from 'react';
 
-const Component: FC<ToastContainerProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<ToastContainerProps> = memo(
+    forwardRef((props, ref) => {
         const toasts = useStore(toastStore);
 
         return toasts.length > 0 ? (

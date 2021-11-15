@@ -1,15 +1,16 @@
 import { ChevronRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { FC } from 'react';
+import { Children } from 'react';
 import addSeparator from './addSeparator';
 import BreadcrumbBack from './Back';
 import { BreadcrumbStyled } from './Breadcrumb.styled';
 import BreadcrumbItem from './Item';
 import { BreadcrumbProps, BreadcrumbStaticProps } from './types';
+import type { FC } from 'react';
 
 const Component: FC<BreadcrumbProps> = props => {
     const { separator, children, ...restProps } = props,
-        links = React.Children.toArray(children),
+        links = Children.toArray(children),
         linksWithSeparator = addSeparator(links, separator);
 
     return <BreadcrumbStyled {...restProps}>{linksWithSeparator}</BreadcrumbStyled>;

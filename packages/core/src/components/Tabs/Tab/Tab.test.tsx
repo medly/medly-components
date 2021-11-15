@@ -1,6 +1,5 @@
 import { AddIcon } from '@medly-components/icons';
 import { render } from '@test-utils';
-import React from 'react';
 import { TabsContext } from '../Tabs.context';
 import { TabBackground, TabSize, Variant } from '../types';
 import { Tab } from './Tab';

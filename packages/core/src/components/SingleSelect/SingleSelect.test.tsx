@@ -1,5 +1,5 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Text from '../Text';
 import { SingleSelect } from './SingleSelect';
 import { SingleSelectProps } from './types';

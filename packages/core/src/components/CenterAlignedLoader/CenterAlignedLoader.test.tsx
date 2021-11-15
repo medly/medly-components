@@ -1,6 +1,5 @@
 import { ConcentricCircleLoader } from '@medly-components/loaders';
 import { render } from '@test-utils';
-import React from 'react';
 import { CenterAlignedLoader } from './CenterAlignedLoader';
 
 describe('Center Aligned Loader', () => {

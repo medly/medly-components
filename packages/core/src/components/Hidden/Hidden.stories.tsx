@@ -1,7 +1,7 @@
 import { BreakpointsTheme, defaultTheme } from '@medly-components/theme';
-import React from 'react';
+import type { FC } from 'react';
 
-export const BreakpointsThemeInterface: React.FC<BreakpointsTheme> = () => null;
+export const BreakpointsThemeInterface: FC<BreakpointsTheme> = () => null;
 BreakpointsThemeInterface.defaultProps = {
     ...defaultTheme.breakpoints
 };

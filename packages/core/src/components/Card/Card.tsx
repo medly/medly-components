@@ -1,9 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC } from 'react';
+import { memo, forwardRef } from 'react';
 import * as Styled from './Card.styled';
 import { CardProps } from './types';
+import type { FC } from 'react';
 
-const Component: FC<CardProps> = React.memo(React.forwardRef((props, ref) => <Styled.Card ref={ref} {...props} />));
+const Component: FC<CardProps> = memo(forwardRef((props, ref) => <Styled.Card ref={ref} {...props} />));
 Component.defaultProps = {
     display: 'block',
     variant: 'solid',

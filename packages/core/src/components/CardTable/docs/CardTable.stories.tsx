@@ -1,13 +1,14 @@
 import { CardTableTheme, defaultTheme } from '@medly-components/theme';
-import React, { FC, useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { CardTable } from '../CardTable';
 import { ColumnConfig, SortOrder } from '../types';
 import columns from './columns';
 import data from './data';
 import { filterData } from './filterData';
 import { DarkBackground } from './GlobalStyle.styled';
+import type { FC } from 'react';
 
-export const Theme: React.FC<CardTableTheme> = () => null;
+export const Theme: FC<CardTableTheme> = () => null;
 Theme.defaultProps = {
     ...defaultTheme.cardTable
 };

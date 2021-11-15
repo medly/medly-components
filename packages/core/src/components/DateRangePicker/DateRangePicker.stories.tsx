@@ -1,9 +1,10 @@
 import { DateRangePickerTheme, defaultTheme } from '@medly-components/theme';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Button from '../Button';
 import { Placement } from '../Popover/types';
 import { DateRangePicker } from './DateRangePicker';
 import { DateRangeProps, DateRangeSelectionEnum, DateRangeType } from './types';
+import type { FormEvent, FC } from 'react';
 
 export const placement: Placement[] = [
     'top-start',
@@ -43,14 +44,14 @@ export const CustomDateRangeOptions = [
     { label: 'Custom', value: DateRangeSelectionEnum.CUSTOM }
 ];
 
-export const ThemeInterface: React.FC<DateRangePickerTheme> = () => null;
+export const ThemeInterface: FC<DateRangePickerTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.dateRangePicker
 };
 
-export const FormWithDateRangePicker: React.FC = () => {
+export const FormWithDateRangePicker: FC = () => {
     const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null }),
-        handleSubmit = (e: React.FormEvent) => e.preventDefault();
+        handleSubmit = (e: FormEvent) => e.preventDefault();
     return (
         <form onSubmit={handleSubmit}>
             <div>
@@ -61,7 +62,7 @@ export const FormWithDateRangePicker: React.FC = () => {
     );
 };
 
-export const DateRangePickerWithStateForDoc: React.FC = () => {
+export const DateRangePickerWithStateForDoc: FC = () => {
     const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null });
     return <DateRangePicker value={dates} onChange={setDates} required />;
 };

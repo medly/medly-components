@@ -1,7 +1,7 @@
-import React from 'react';
+import { createContext } from 'react';
 import { TabBackground, TabSize, Variant } from './types';
 
-export const TabsContext = React.createContext<{
+export const TabsContext = createContext<{
     tabSize: TabSize;
     tabBackground: TabBackground;
     variant: Variant;

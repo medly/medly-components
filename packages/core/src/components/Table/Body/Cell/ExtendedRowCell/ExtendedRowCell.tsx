@@ -1,10 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useCallback } from 'react';
+import { memo, useCallback } from 'react';
 import { RowActionsCellStyled } from '../RowActionsCell/RowActionsCell.styled';
 import { ExtendedRowCellStyled, Wrapper } from './ExtendedRowCell.styled';
 import { ExtendedRowCellProps } from './types';
+import type { FC } from 'react';
 
-const Component: React.FC<ExtendedRowCellProps> = React.memo(props => {
+const Component: FC<ExtendedRowCellProps> = memo(props => {
     const {
         rowId,
         rowData,
@@ -38,4 +39,4 @@ const Component: React.FC<ExtendedRowCellProps> = React.memo(props => {
     );
 });
 Component.displayName = 'ExtendedRowCell';
-export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = Object.assign(Component, { Style: ExtendedRowCellStyled });
+export const ExtendedRowCell: FC<ExtendedRowCellProps> & WithStyle = Object.assign(Component, { Style: ExtendedRowCellStyled });

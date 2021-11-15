@@ -1,10 +1,11 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { useCallback, useContext } from 'react';
+import { useCallback, useContext, memo } from 'react';
 import { AccordionContext } from '../AccordionContext';
 import { Wrapper } from './Header.styled';
+import type { FC } from 'react';
 
-const Component: React.FC = React.memo(({ children, ...restProps }) => {
+const Component: FC = memo(({ children, ...restProps }) => {
     const [isActive, setActiveState] = useContext(AccordionContext),
         handleClick = useCallback(() => setActiveState(val => !val), []);
 
@@ -17,4 +18,4 @@ const Component: React.FC = React.memo(({ children, ...restProps }) => {
 });
 
 Component.displayName = 'Header';
-export const Header: React.FC & WithStyle = Object.assign(Component, { Style: Wrapper });
+export const Header: FC & WithStyle = Object.assign(Component, { Style: Wrapper });

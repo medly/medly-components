@@ -1,6 +1,5 @@
 import { fireEvent, render, screen } from '@test-utils';
 import userEvent from '@testing-library/user-event';
-import React from 'react';
 import { LabelPositions } from '../Label/types';
 import { Checkbox } from './Checkbox';
 

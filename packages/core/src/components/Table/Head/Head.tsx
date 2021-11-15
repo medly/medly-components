@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useMemo } from 'react';
+import { memo, useCallback, useContext, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
 import { TableComponentsCommonPropsContext, TableStateContext } from '../context';
 import { GroupCell, GroupCellTitle } from '../GroupCell';
@@ -8,8 +8,9 @@ import { THead } from './Head.styled';
 import HeadCell from './HeadCell';
 import HeadRow from './HeadRow';
 import { TableHeadProps } from './types';
+import type { FC } from 'react';
 
-const Head: React.FC<TableHeadProps> = React.memo(props => {
+const Head: FC<TableHeadProps> = memo(props => {
     const {
             columns,
             isLoading,

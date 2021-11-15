@@ -1,14 +1,15 @@
 import { CheckIcon, ClearIcon, ErrorIcon, NotificationsIcon, WarningAmberIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback } from 'react';
+import { memo, forwardRef, useCallback } from 'react';
 import Button from '../Button';
 import Text from '../Text';
 import { removeToast } from '../ToastContainer/ToastStore';
 import * as Styled from './Toast.styled';
 import { ToastComponentProps } from './types';
+import type { FC } from 'react';
 
-const Component: FC<ToastComponentProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<ToastComponentProps> = memo(
+    forwardRef((props, ref) => {
         const { id, variant, header, icon: Icon, message, action, ...restProps } = props;
 
         const handleClose = useCallback(() => removeToast(id), [id]);

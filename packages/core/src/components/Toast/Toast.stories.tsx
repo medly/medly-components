@@ -1,11 +1,11 @@
 import { defaultTheme, ToastTheme } from '@medly-components/theme';
-import React from 'react';
+import type { FC } from 'react';
 import styled from 'styled-components';
 import { ToastProps } from './types';
 
 export const variants: ToastProps['variant'][] = ['error', 'warning', 'success', 'info'];
 
-export const ThemeInterface: React.FC<ToastTheme> = () => null;
+export const ThemeInterface: FC<ToastTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.toast
 };

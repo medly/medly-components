@@ -1,6 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
 import { render } from '@test-utils';
-import React from 'react';
 import { Avatar } from './Avatar';
 
 describe('Avatar component', () => {

@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import { DrawerContext } from '../Drawer.context';
 import { Header } from './Header';
 

@@ -1,16 +1,17 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC } from 'react';
+import { memo, forwardRef, Children, cloneElement } from 'react';
 import Step from './Step/Step';
 import { StepperStyled } from './Stepper.styled';
 import { StepperProps, StepperStaticProps } from './types';
+import type { FC } from 'react';
 
-const Component: FC<StepperProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<StepperProps> = memo(
+    forwardRef((props, ref) => {
         const { size, activeStep, children, onStepClick, ...restProps } = props;
         return (
             <StepperStyled ref={ref} {...restProps}>
-                {React.Children.map(children, (child, index) => {
-                    return React.cloneElement(child as any, {
+                {Children.map(children, (child, index) => {
+                    return cloneElement(child as any, {
                         size,
                         key: index + 1,
                         step: index + 1,

@@ -1,5 +1,4 @@
 import { cleanup, render } from '@test-utils';
-import React from 'react';
 import { PopoverContext } from '../Popover.context';
 import { Placement } from '../types';
 import { Popup } from './Popup';

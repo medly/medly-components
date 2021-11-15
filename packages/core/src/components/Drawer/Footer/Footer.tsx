@@ -1,13 +1,14 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useContext } from 'react';
+import { useContext, memo } from 'react';
 import { DrawerContext } from '../Drawer.context';
 import { FooterStyled } from './Footer.styled';
 import { DrawerFooterProps } from './types';
+import type { FC } from 'react';
 
-const Component: React.FC<DrawerFooterProps> = React.memo(props => {
+const Component: FC<DrawerFooterProps> = memo(props => {
     const { id, scrollState } = useContext(DrawerContext);
     return <FooterStyled showShadow={!scrollState.scrolledToBottom} {...props} id={`${id}-footer`} />;
 });
 
 Component.displayName = 'DrawerFooter';
-export const Footer: React.FC<DrawerFooterProps> & WithStyle = Object.assign(Component, { Style: FooterStyled });
+export const Footer: FC<DrawerFooterProps> & WithStyle = Object.assign(Component, { Style: FooterStyled });

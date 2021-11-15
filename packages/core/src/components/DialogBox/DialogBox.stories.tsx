@@ -1,15 +1,16 @@
 import { defaultTheme, DialogBoxTheme } from '@medly-components/theme';
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import Button from '../Button';
 import { DialogBoxActionUserProps } from './Actions/types';
 import { DialogBox } from './DialogBox';
+import type { FC } from 'react';
 
-export const ThemeInterface: React.FC<DialogBoxTheme> = () => null;
+export const ThemeInterface: FC<DialogBoxTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.modal
 };
 
-export const DialogBoxActionProps: React.FC<DialogBoxActionUserProps> = () => null;
+export const DialogBoxActionProps: FC<DialogBoxActionUserProps> = () => null;
 DialogBoxActionProps.defaultProps = {
     alignItems: 'right'
 };

@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
 import TableCell from './Cell';

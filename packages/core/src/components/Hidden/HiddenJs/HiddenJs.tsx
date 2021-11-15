@@ -1,9 +1,10 @@
 import { breakpoints, useMediaQuery } from '@medly-components/utils';
-import React, { useContext } from 'react';
+import { useContext, memo } from 'react';
 import { ThemeContext } from 'styled-components';
 import { HiddenProps } from '../types';
+import type { FC } from 'react';
 
-export const HiddenJs: React.FC<HiddenProps> = React.memo(props => {
+export const HiddenJs: FC<HiddenProps> = memo(props => {
     const theme = useContext(ThemeContext),
         { up, down, between, only, multiple } = props;
 

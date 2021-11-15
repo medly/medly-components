@@ -1,5 +1,5 @@
 import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useState } from 'react';
+import { memo, forwardRef, useRef, useCallback, useEffect, useState } from 'react';
 import Actions from './Actions';
 import Content from './Content';
 import { DialogBoxContext } from './DialogBox.context';
@@ -7,12 +7,13 @@ import { DialogBoxBackgroundStyled } from './DialogBox.styled';
 import Header from './Header';
 import Popup from './Popup';
 import { DialogBoxProps, DialogBoxStaticProps } from './types';
+import type { FC } from 'react';
 
-const Component: FC<DialogBoxProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<DialogBoxProps> = memo(
+    forwardRef((props, ref) => {
         const { id, open, onCloseModal, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
             isEscPressed = useKeyPress('Escape'),
-            dialogBoxRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
+            dialogBoxRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
             [shouldRender, setShouldRender] = useState(open);
 
         const handleBackgroundClick = useCallback(() => {

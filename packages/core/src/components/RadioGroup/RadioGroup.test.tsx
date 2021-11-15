@@ -1,6 +1,5 @@
 import { fireEvent, render, screen, waitFor } from '@test-utils';
 import userEvent from '@testing-library/user-event';
-import React from 'react';
 import { RadioGroup } from './RadioGroup';
 import { RadioGroupProps } from './types';
 

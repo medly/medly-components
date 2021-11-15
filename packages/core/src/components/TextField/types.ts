@@ -1,5 +1,6 @@
 import { TextFieldTheme } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import type { FC } from 'react';
 
 export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'> {
     /** Input Variants */
@@ -15,9 +16,9 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Leading icon */
-    prefix?: React.FC<any>;
+    prefix?: FC<any>;
     /** Trailing icon */
-    suffix?: React.FC<any>;
+    suffix?: FC<any>;
     /** Disable Input */
     disabled?: boolean;
     /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered. */

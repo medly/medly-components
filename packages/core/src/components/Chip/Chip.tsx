@@ -1,16 +1,17 @@
 import { ClearIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback } from 'react';
+import { useCallback, forwardRef, memo } from 'react';
 import Text from '../Text';
 import * as Styled from './Chip.styled';
 import { ChipProps } from './types';
+import type { FC, MouseEvent } from 'react';
 
-const Component: FC<ChipProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<ChipProps> = memo(
+    forwardRef((props, ref) => {
         const { label, onDelete, ...restProps } = props;
 
         const handleDelete = useCallback(
-            (e: React.MouseEvent<SVGElement>) => {
+            (e: MouseEvent<SVGElement>) => {
                 e.stopPropagation();
                 !restProps.disabled && onDelete && onDelete();
             },

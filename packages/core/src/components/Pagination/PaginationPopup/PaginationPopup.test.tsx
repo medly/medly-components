@@ -1,5 +1,4 @@
 import { cleanup, fireEvent, render } from '@test-utils';
-import React from 'react';
 import PaginationPopup from '.';
 import Popover from '../../Popover';
 

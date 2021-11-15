@@ -1,12 +1,13 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useMemo, useState } from 'react';
+import type { ChangeEvent, FC, FocusEvent } from 'react';
+import { forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
 import Checkbox from '../Checkbox';
 import { SelectorGroup } from '../Selectors';
 import getValuesFromOptions from './getValuesFromOptions';
 import { CheckboxGroupProps } from './types';
 
-const Component: FC<CheckboxGroupProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<CheckboxGroupProps> = memo(
+    forwardRef((props, ref) => {
         const {
             id,
             values,
@@ -30,7 +31,7 @@ const Component: FC<CheckboxGroupProps> = React.memo(
 
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             checkboxGroupId = useMemo(() => id || label, [id, label]),
-            checkboxGroupRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
+            checkboxGroupRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
             hasError = useMemo(
                 () => !!errorText || !!builtInErrorMessage || parentHasError,
                 [builtInErrorMessage, errorText, parentHasError]
@@ -54,7 +55,7 @@ const Component: FC<CheckboxGroupProps> = React.memo(
                 [validator]
             ),
             onBlur = useCallback(
-                (event: React.FocusEvent<HTMLDivElement>) => {
+                (event: FocusEvent<HTMLDivElement>) => {
                     const currentTarget = event.currentTarget;
                     setTimeout(() => !currentTarget.contains(document.activeElement) && validate(values), 0);
                     props.onBlur && props.onBlur(event);
@@ -63,7 +64,7 @@ const Component: FC<CheckboxGroupProps> = React.memo(
             );
 
         const handleOptionClick = useCallback(
-                (event: React.ChangeEvent<HTMLInputElement>) => {
+                (event: ChangeEvent<HTMLInputElement>) => {
                     event.stopPropagation();
                     const item = event.target.name,
                         isChecked = event.target.checked,

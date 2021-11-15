@@ -1,5 +1,4 @@
 import { render, screen } from '@test-utils';
-import React from 'react';
 import Tab from '../Tab';
 import { TabPanel } from './TabPanel';
 

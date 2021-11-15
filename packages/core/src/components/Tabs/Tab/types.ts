@@ -2,6 +2,7 @@ import { SvgIconProps } from '@medly-components/icons';
 import { TabsTheme } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 import { TabBackground, TabSize, Variant } from '../types';
+import type { FC } from 'react';
 
 export type StyledTabProps = HTMLProps<HTMLButtonElement> &
     WithThemeProp &
@@ -28,7 +29,7 @@ export interface TabProps extends HTMLProps<HTMLButtonElement> {
     /** To be used to hide the tab (cannot be used with the `solid` Tabs variant) */
     hide?: boolean;
     /** Icon to be shown */
-    icon?: React.FC<SvgIconProps>;
+    icon?: FC<SvgIconProps>;
     /** Disabled State */
     disabled?: boolean;
     /** This will be handled internally */
