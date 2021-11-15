@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.38.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.37.0...@medly-components/core@2.38.0) (2021-11-12)
+
+
+### Features
+
+* **core:** add getNestedValue in table row ([#515](https://github.com/medly/medly-components/issues/515)) ([4c4c978](https://github.com/medly/medly-components/commit/4c4c978a08dab717ea341ebd705a4401053c0263))
+
+
+
+
+
+# [2.37.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.36.0...@medly-components/core@2.37.0) (2021-11-12)
+
+
+### Features
+
+* use new JSX transform ([#506](https://github.com/medly/medly-components/issues/506)) ([b997806](https://github.com/medly/medly-components/commit/b997806286f990fd5e2b789aa184d0c7d3a3a5a8))
+
+
+
+
+
+# [2.36.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.35.3...@medly-components/core@2.36.0) (2021-11-11)
+
+
+### Features
+
+* add infinite scroll to table component ([#505](https://github.com/medly/medly-components/issues/505)) ([9e2836a](https://github.com/medly/medly-components/commit/9e2836aed889ad441de64c6a5c8e412ae246be28))
+
+
+
+
+
+## [2.35.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.35.2...@medly-components/core@2.35.3) (2021-11-11)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.35.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.35.1...@medly-components/core@2.35.2) (2021-11-10)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
 ## [2.35.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.35.0...@medly-components/core@2.35.1) (2021-10-31)
 
 **Note:** Version bump only for package @medly-components/core

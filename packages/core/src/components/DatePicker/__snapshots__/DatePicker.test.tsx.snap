@@ -82,16 +82,16 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 }
 
 .c4 .c13,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c4 .c13 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -135,15 +135,15 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 
 .c4:focus-within .c13,
 .c4:focus-within:hover .c13,
-.c4:focus-within .sc-dynlvq-0,
-.c4:focus-within:hover .sc-dynlvq-0 {
+.c4:focus-within .dynlvq-0,
+.c4:focus-within:hover .dynlvq-0 {
   color: #126AFA;
 }
 
 .c4:focus-within .c13 *,
 .c4:focus-within:hover .c13 *,
-.c4:focus-within .sc-dynlvq-0 *,
-.c4:focus-within:hover .sc-dynlvq-0 * {
+.c4:focus-within .dynlvq-0 *,
+.c4:focus-within:hover .dynlvq-0 * {
   fill: #126AFA;
 }
 
@@ -354,7 +354,7 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   padding-right: 0.8rem;
 }
 
-.c1 .sc-zv8j3p-0 {
+.c1 .zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -503,16 +503,16 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 }
 
 .c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -556,15 +556,15 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 
 .c4:focus-within .sc-1ubn8hn-0,
 .c4:focus-within:hover .sc-1ubn8hn-0,
-.c4:focus-within .sc-dynlvq-0,
-.c4:focus-within:hover .sc-dynlvq-0 {
+.c4:focus-within .dynlvq-0,
+.c4:focus-within:hover .dynlvq-0 {
   color: #126AFA;
 }
 
 .c4:focus-within .sc-1ubn8hn-0 *,
 .c4:focus-within:hover .sc-1ubn8hn-0 *,
-.c4:focus-within .sc-dynlvq-0 *,
-.c4:focus-within:hover .sc-dynlvq-0 * {
+.c4:focus-within .dynlvq-0 *,
+.c4:focus-within:hover .dynlvq-0 * {
   fill: #126AFA;
 }
 
@@ -775,7 +775,7 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   padding-right: 0.8rem;
 }
 
-.c1 .sc-zv8j3p-0 {
+.c1 .zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -13325,16 +13325,16 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -13374,16 +13374,16 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -13570,7 +13570,7 @@ exports[`DatePicker component should render properly when value is of date type 
   padding-right: 0.8rem;
 }
 
-.c1 .sc-zv8j3p-0 {
+.c1 .zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -13725,16 +13725,16 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -13774,16 +13774,16 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -13969,7 +13969,7 @@ exports[`DatePicker component should render properly when value is of string typ
   padding-right: 0.8rem;
 }
 
-.c1 .sc-zv8j3p-0 {
+.c1 .zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);

@@ -104,16 +104,16 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c3 .c6,
-.c3 .sc-dynlvq-0 {
+.c3 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c3 .c6 *,
-.c3 .sc-dynlvq-0 * {
+.c3 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -153,16 +153,16 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c3 .c6,
-.c3 .sc-dynlvq-0 {
+.c3 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c3 .c6 *,
-.c3 .sc-dynlvq-0 * {
+.c3 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -604,16 +604,16 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 }
 
 .c3 .sc-1ubn8hn-0,
-.c3 .sc-dynlvq-0 {
+.c3 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c3 .sc-1ubn8hn-0 *,
-.c3 .sc-dynlvq-0 * {
+.c3 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -657,15 +657,15 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
-.c3:focus-within .sc-dynlvq-0,
-.c3:focus-within:hover .sc-dynlvq-0 {
+.c3:focus-within .dynlvq-0,
+.c3:focus-within:hover .dynlvq-0 {
   color: #126AFA;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
-.c3:focus-within .sc-dynlvq-0 *,
-.c3:focus-within:hover .sc-dynlvq-0 * {
+.c3:focus-within .dynlvq-0 *,
+.c3:focus-within:hover .dynlvq-0 * {
   fill: #126AFA;
 }
 
@@ -1027,16 +1027,16 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c3 .sc-1ubn8hn-0,
-.c3 .sc-dynlvq-0 {
+.c3 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c3 .sc-1ubn8hn-0 *,
-.c3 .sc-dynlvq-0 * {
+.c3 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -1080,15 +1080,15 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
-.c3:focus-within .sc-dynlvq-0,
-.c3:focus-within:hover .sc-dynlvq-0 {
+.c3:focus-within .dynlvq-0,
+.c3:focus-within:hover .dynlvq-0 {
   color: #126AFA;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
-.c3:focus-within .sc-dynlvq-0 *,
-.c3:focus-within:hover .sc-dynlvq-0 * {
+.c3:focus-within .dynlvq-0 *,
+.c3:focus-within:hover .dynlvq-0 * {
   fill: #126AFA;
 }
 
@@ -2350,16 +2350,16 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c3 .sc-1ubn8hn-0,
-.c3 .sc-dynlvq-0 {
+.c3 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c3 .sc-1ubn8hn-0 *,
-.c3 .sc-dynlvq-0 * {
+.c3 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -2403,15 +2403,15 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
-.c3:focus-within .sc-dynlvq-0,
-.c3:focus-within:hover .sc-dynlvq-0 {
+.c3:focus-within .dynlvq-0,
+.c3:focus-within:hover .dynlvq-0 {
   color: #126AFA;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
-.c3:focus-within .sc-dynlvq-0 *,
-.c3:focus-within:hover .sc-dynlvq-0 * {
+.c3:focus-within .dynlvq-0 *,
+.c3:focus-within:hover .dynlvq-0 * {
   fill: #126AFA;
 }
 

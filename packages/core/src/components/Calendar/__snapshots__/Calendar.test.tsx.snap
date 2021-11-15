@@ -426,7 +426,7 @@ exports[`Calendar Component should render given date 1`] = `
   cursor: pointer;
 }
 
-.c3 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c3 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -1453,7 +1453,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   cursor: pointer;
 }
 
-.c3 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c3 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
