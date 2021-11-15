@@ -1,6 +1,6 @@
 import { Text } from '@medly-components/core';
 import { WithStyle } from '@medly-components/utils';
-import React, { FC, useContext } from 'react';
+import { FC, useContext } from 'react';
 import NavList from '../NavList';
 import SideNavContext from '../SideNav.context';
 import { NavGroupStyled } from './NavGroup.styled';

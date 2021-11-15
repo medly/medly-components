@@ -1,5 +1,4 @@
 import { cleanup, render, screen } from '@test-utils';
-import React from 'react';
 import SidenavContext from '../SideNav.context';
 import { MedlySidenavHeader } from './MedlySidenavHeader';
 

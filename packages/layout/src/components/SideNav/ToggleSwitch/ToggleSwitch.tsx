@@ -1,11 +1,11 @@
 import { Text } from '@medly-components/core';
 import { MenuExpandIcon, MenuHideIcon } from '@medly-components/icons';
-import React from 'react';
+import { FC } from 'react';
 import NavItem from '../NavItem';
 import * as Styled from './ToggleSwitch.styled';
 import { Props } from './types';
 
-export const ToggleSwitch: React.FC<Props> = ({ id, isActive, onClick }) => (
+export const ToggleSwitch: FC<Props> = ({ id, isActive, onClick }) => (
     <Styled.ToggleContainer>
         <NavItem onClick={onClick}>
             {isActive ? (

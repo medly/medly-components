@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import { SidePanelStyled as SidePanel } from './SidePanel.styled';
 
 describe('SidePanel component', () => {
