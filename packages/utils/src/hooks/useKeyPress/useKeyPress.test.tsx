@@ -1,9 +1,9 @@
-import { fireEvent, render, screen } from '@test-utils';
 import { Text } from '@medly-components/core';
-import React from 'react';
 import { useKeyPress } from '@medly-components/utils';
+import { fireEvent, render, screen } from '@test-utils';
+import { FC } from 'react';
 
-const DummyComponent: React.FC = () => {
+const DummyComponent: FC = () => {
     const arrowUpPressed = useKeyPress('ArrowUp'),
         isShiftCPressed = useKeyPress(['Shift', 'C']);
     return (
