@@ -31,7 +31,7 @@ module.exports = function (api) {
             [
                 '@babel/plugin-transform-react-jsx',
                 {
-                    runtime: api.env('production') ? 'automatic' : 'classic'
+                    runtime: 'automatic'
                 }
             ]
         ],
