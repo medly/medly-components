@@ -1,5 +1,5 @@
 import { Button, TextField } from '@medly-components/core';
-import React, { ChangeEvent, useCallback } from 'react';
+import { ChangeEvent, useCallback } from 'react';
 import { FormCustomComponent } from '../../Fields/types';
 
 type CustomPhoneFieldProps = {
