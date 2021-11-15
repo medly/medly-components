@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC } from 'react';
+import { memo, FC } from 'react';
 import SideEffect156360LineIconSvg from '../../assets/GSDD/SideEffect_1563_60_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Component: FC<SvgIconProps> = React.memo(props => {
+const Component: FC<SvgIconProps> = memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
