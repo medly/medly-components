@@ -1,5 +1,4 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
-import React from 'react';
 import { FormCustomComponent } from '../Fields/types';
 import { Form } from './Form';
 import { testSchema } from './testSchema';

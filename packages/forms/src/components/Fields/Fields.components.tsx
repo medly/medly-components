@@ -10,11 +10,11 @@ import {
     TextField
 } from '@medly-components/core';
 import { GetComponentProps } from '@medly-components/utils';
-import React from 'react';
+import { FC, Fragment, memo } from 'react';
 import { FieldWrapper, Header, HelperText } from './Fields.styled';
 import { CheckboxProps, DatePickerProps, DateRangePickerProps, FieldsProps, FileInputProps, NestedProps, TextFieldProps } from './types';
 
-export const Fields: React.FC<FieldsProps> = React.memo(props => {
+export const Fields: FC<FieldsProps> = memo(props => {
     const { fields, values, handlers, parentName, errorMessages, addErrorMessage } = props;
 
     return fields ? (
@@ -46,7 +46,7 @@ export const Fields: React.FC<FieldsProps> = React.memo(props => {
 
                 if (componentProps.type === 'nested') {
                     return (
-                        <React.Fragment key={name}>
+                        <Fragment key={name}>
                             {(componentProps as NestedProps).header && (
                                 <Header textVariant="h4">{(componentProps as NestedProps).header}</Header>
                             )}
@@ -62,7 +62,7 @@ export const Fields: React.FC<FieldsProps> = React.memo(props => {
                                 addErrorMessage={addErrorMessage}
                                 parentName={name}
                             />
-                        </React.Fragment>
+                        </Fragment>
                     );
                 }
 
