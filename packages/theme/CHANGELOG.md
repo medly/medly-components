@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.22.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.21.0...@medly-components/theme@2.22.0) (2021-11-16)
+
+
+### Features
+
+* add new colors ([#525](https://github.com/medly/medly-components/issues/525)) ([34e5559](https://github.com/medly/medly-components/commit/34e5559481f7f1ec46cc1a2a9210e64907189a1b))
+
+
+
+
+
 # [2.21.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.20.2...@medly-components/theme@2.21.0) (2021-10-19)
 
 
