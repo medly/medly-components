@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render } from '@test-utils';
 import Text from '../../../Text';
 import { ColumnConfig } from '../../types';
 import { Cell } from './Cell';

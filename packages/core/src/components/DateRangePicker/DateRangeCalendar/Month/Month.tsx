@@ -7,7 +7,7 @@ import WeekDays from '../../../Calendar/WeekDays';
 import Text from '../../../Text';
 import * as Styled from './Styled';
 import { Props } from './types';
-import type { FC } from 'react';
+import type { FC, MouseEvent } from 'react';
 
 export const Month: FC<Props> = memo(
     ({
@@ -26,7 +26,7 @@ export const Month: FC<Props> = memo(
     }) => {
         const today = new Date(),
             handleDateChange = useCallback(
-                (dt: Date) => (event: React.MouseEvent) => {
+                (dt: Date) => (event: MouseEvent) => {
                     event.stopPropagation();
                     onChange(dt);
                 },
