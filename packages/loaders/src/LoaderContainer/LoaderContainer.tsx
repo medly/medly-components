@@ -1,10 +1,10 @@
-import React from 'react';
+import { Children, FC, memo } from 'react';
 import * as Styled from './LoaderContainer.styled';
 
-export const LoaderContainer: React.FC = React.memo(props => {
+export const LoaderContainer: FC = memo(props => {
     return (
         <Styled.List>
-            {React.Children.map(props.children, (child: any) => (
+            {Children.map(props.children, (child: any) => (
                 <Styled.Item>
                     {child}
                     <span>{child.type.displayName}</span>
