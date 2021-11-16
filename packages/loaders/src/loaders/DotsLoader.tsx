@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC } from 'react';
+import { FC, memo } from 'react';
 import DotsLoaderSvg from '../assets/DotsLoader.svg';
 import SvgLoader from '../SvgLoader';
 import { SvgLoaderProps } from '../SvgLoader/types';
 
-const Component: FC<SvgLoaderProps> = React.memo(props => (
+const Component: FC<SvgLoaderProps> = memo(props => (
     <SvgLoader {...props}>
         <DotsLoaderSvg {...props} width="1em" height="0.5em" />
     </SvgLoader>
