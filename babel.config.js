@@ -45,7 +45,7 @@ module.exports = function (api) {
             [
                 '@babel/preset-react',
                 {
-                    runtime: api.env('production') ? 'automatic' : 'classic'
+                    runtime: api.env('storybook') ? 'classic' : 'automatic'
                 }
             ],
             '@babel/typescript'
