@@ -1,4 +1,4 @@
-import React from 'react';
+import { createContext } from 'react';
 
 export interface Context {
     /** Will be true when user hovers on sidenav */
@@ -11,7 +11,7 @@ export interface Context {
     activeItemChangeHandler: (val: string) => void;
 }
 
-const SideNavContext = React.createContext<Context>({
+const SideNavContext = createContext<Context>({
     isExpanded: false,
     isHovered: false,
     activeItem: '',

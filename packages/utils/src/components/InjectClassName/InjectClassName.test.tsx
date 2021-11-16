@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import InjectClassName from './InjectClassName';
 
 describe('InjectClassName component', () => {

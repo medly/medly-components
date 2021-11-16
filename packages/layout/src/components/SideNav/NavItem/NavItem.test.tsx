@@ -1,7 +1,6 @@
 import { Text } from '@medly-components/core';
 import { HomeIcon, SearchIcon } from '@medly-components/icons';
 import { cleanup, fireEvent, render } from '@test-utils';
-import React from 'react';
 import { SideNav } from '../SideNav';
 
 const renderer = (active: string, mockOnClick = jest.fn()) =>

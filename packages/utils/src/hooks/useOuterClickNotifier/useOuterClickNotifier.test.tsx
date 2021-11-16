@@ -1,11 +1,11 @@
 import { fireEvent, render, screen } from '@test-utils';
-import React, { useRef, useState } from 'react';
+import { FC, useRef, useState } from 'react';
 import { useOuterClickNotifier } from '../useOuterClickNotifier';
 
 const createTestContainer = (spyFns?: (() => void)[]) => {
     let innerNextSpyFn: (() => void) | undefined;
     const nextSpyFn = () => (innerNextSpyFn ? innerNextSpyFn() : undefined);
-    const TestContainer: React.FC = () => {
+    const TestContainer: FC = () => {
         const ref1 = useRef<HTMLInputElement>(null);
         const ref2 = useRef<HTMLInputElement>(null);
         const [spyFnIndex, setSpyFnIndex] = useState(0);
