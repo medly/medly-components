@@ -1,5 +1,4 @@
 import { mockAxios, renderWithSWR } from '@test-utils';
-import React from 'react';
 import { cache, SWRConfiguration } from 'swr';
 import { useSWRAxios } from './useSWRAxios';
 

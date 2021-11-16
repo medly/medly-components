@@ -1,6 +1,5 @@
 import { render, waitFor } from '@test-utils';
 import { fireEvent } from '@testing-library/dom';
-import React from 'react';
 import { useWindowSize } from './useWindowSize';
 
 const DummyComp = () => {
