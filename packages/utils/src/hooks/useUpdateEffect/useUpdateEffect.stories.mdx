@@ -1,0 +1,24 @@
+import { useUpdateEffect } from './useUpdateEffect.ts';
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Hooks/useUpdateEffect" />
+
+# useUpdateEffect
+
+`useUpdateEffect` is simply an `useEffect` that does not run on first render/mount.
+
+#### Example
+
+```tsx
+import { useUpdateEffect } from '@medly-components/utils';
+
+export const Demo = () => {
+    const [count, setCount] = useState(0);
+
+    useUpdateEffect(() => {
+        console.log(`Button was clicked ${count} times.`); // This will show the counter 1 onwards
+    });
+
+    return <button onClick={() => setCount(value => value + 1)}>Increase</button>;
+};
+```
