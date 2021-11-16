@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import AirlineSeatLegroomReducedIconSvg from '../../assets/Notification/airline_seat_legroom_reduced_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

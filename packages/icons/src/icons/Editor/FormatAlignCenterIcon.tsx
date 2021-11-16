@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import FormatAlignCenterIconSvg from '../../assets/Editor/format_align_center_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

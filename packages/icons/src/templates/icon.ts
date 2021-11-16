@@ -1,5 +1,6 @@
 export const iconTemplate = (iconName: string, assetPath: string) => `import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import ${iconName}Svg from '${assetPath}';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

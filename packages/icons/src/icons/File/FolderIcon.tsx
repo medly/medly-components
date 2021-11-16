@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import FolderIconSvg from '../../assets/File/folder_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

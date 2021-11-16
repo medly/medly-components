@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import StarRate18pxRoundedIconSvg from '../../assets/Action/star_rate_18px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

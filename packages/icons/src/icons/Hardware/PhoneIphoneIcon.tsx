@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import PhoneIphoneIconSvg from '../../assets/Hardware/phone_iphone_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import AddToHomeScreenIconSvg from '../../assets/Device/add_to_home_screen_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

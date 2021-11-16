@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import HdrWeakIconSvg from '../../assets/Image/hdr_weak_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

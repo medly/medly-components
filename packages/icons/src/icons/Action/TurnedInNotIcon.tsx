@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import TurnedInNotIconSvg from '../../assets/Action/turned_in_not_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

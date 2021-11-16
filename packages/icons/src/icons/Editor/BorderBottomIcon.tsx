@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import BorderBottomIconSvg from '../../assets/Editor/border_bottom_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import FilterCenterFocusIconSvg from '../../assets/Image/filter_center_focus_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

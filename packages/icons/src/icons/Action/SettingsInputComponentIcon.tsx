@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import SettingsInputComponentIconSvg from '../../assets/Action/settings_input_component_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

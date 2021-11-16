@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import VoicemailIconSvg from '../../assets/Communication/voicemail_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

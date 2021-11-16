@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import DriveEtaIconSvg from '../../assets/Notification/drive_eta_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

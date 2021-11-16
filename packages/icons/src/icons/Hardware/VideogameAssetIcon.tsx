@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import VideogameAssetIconSvg from '../../assets/Hardware/videogame_asset_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

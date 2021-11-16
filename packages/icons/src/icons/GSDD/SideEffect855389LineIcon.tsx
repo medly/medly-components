@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import SideEffect855389LineIconSvg from '../../assets/GSDD/SideEffect_855_389_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

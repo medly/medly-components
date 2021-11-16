@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import KeyboardArrowRightIconSvg from '../../assets/Hardware/keyboard_arrow_right_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import FeaturedPlayListIconSvg from '../../assets/Media/featured_play_list_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

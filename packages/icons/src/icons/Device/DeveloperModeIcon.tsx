@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import DeveloperModeIconSvg from '../../assets/Device/developer_mode_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

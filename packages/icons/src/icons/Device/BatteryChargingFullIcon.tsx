@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import BatteryChargingFullIconSvg from '../../assets/Device/battery_charging_full_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

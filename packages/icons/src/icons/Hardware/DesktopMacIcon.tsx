@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import DesktopMacIconSvg from '../../assets/Hardware/desktop_mac_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 

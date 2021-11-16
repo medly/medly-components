@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import CancelOutlinedIconSvg from '../../assets/Navigation/cancel_outlined_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
