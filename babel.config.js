@@ -31,7 +31,7 @@ module.exports = function (api) {
             [
                 '@babel/plugin-transform-react-jsx',
                 {
-                    runtime: 'automatic'
+                    runtime: api.env('storybook') ? 'classic' : 'automatic'
                 }
             ]
         ],
@@ -45,7 +45,7 @@ module.exports = function (api) {
             [
                 '@babel/preset-react',
                 {
-                    runtime: api.env('storybook') ? 'classic' : 'automatic'
+                    runtime: api.env('production') ? 'automatic' : 'classic'
                 }
             ],
             '@babel/typescript'
