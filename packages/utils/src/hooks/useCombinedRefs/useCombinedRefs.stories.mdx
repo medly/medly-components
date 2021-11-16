@@ -1,0 +1,21 @@
+import { useCombinedRefs } from './useCombinedRefs.ts';
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Hooks/useCombinedRefs" />
+
+# useCombinedRefs
+
+This hook can be used to combine multiple refs. For example, while developing low level UI components, it is common to have a local ref but also support an external one. Since React does not offer a way to set multiple refs inside `ref` property, this hook can be used to combine multiple refs.
+
+#### Example
+
+```tsx
+import { useCombinedRefs } from '@medly-components/utils';
+import { Text } from '@medly-components/core';
+
+export const Demo = ({ someOutsideRef }) => {
+    const combinedRefs = useCombinedRefs<HTMLInputElement>(someOutsideRef, useRef(null));
+
+    return <input ref={combinedRefs} type="text" />;
+};
+```
