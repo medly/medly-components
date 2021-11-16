@@ -1,5 +1,7 @@
 import { Color } from './types';
+
 const medlyGreen: Color = {
+    50: '#ecfbf9',
     100: '#ecfbf9',
     200: '#D8F8F2',
     300: '#9EEDE0',

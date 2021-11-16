@@ -1,5 +1,7 @@
 import { Color } from './types';
+
 const periwinkle: Color = {
+    50: '#EFF1FA',
     100: '#EFF1FA',
     200: '#DFE2F6',
     300: '#AEB7E8',
