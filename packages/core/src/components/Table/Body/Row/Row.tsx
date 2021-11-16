@@ -1,7 +1,7 @@
 import { memo, useCallback, useContext, useMemo, useState } from 'react';
 import { TableComponentsCommonPropsContext } from '../../context';
 import { GroupCell } from '../../GroupCell';
-import { getGridTemplateColumns } from '../../helpers';
+import { getGridTemplateColumns, getNestedValue } from '../../helpers';
 import { TableColumnConfig } from '../../types';
 import Cell from '../Cell';
 import ExtendedRowCell from '../Cell/ExtendedRowCell';
@@ -78,7 +78,7 @@ export const Row: FC<RowProps> = memo(props => {
                                   as={field ? 'div' : 'td'}
                                   isLoading={isLoading}
                                   rowData={rowData}
-                                  data={rowData[config.field]}
+                                  data={getNestedValue(rowData, config.field)}
                                   addColumnMaxSize={addColumnMaxSize}
                                   isRowClickDisabled={isRowClickDisabled}
                                   dottedFieldName={fieldName}

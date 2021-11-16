@@ -107,3 +107,7 @@ export const resolveValueByTableSize = (
     key: Required<TableProps>['size'],
     map: { [k in Required<TableProps>['size'] | 'default']?: string }
 ): string => map[key] ?? map.default ?? '';
+
+export const getNestedValue = (obj: Record<string, unknown>, dottedKey: string) =>
+    // @ts-ignore
+    dottedKey.split('.').reduce((acc, curr) => acc[curr], obj);

@@ -1,7 +1,5 @@
+import { getNestedValue } from '../helpers';
 import { Data, SortOrder } from '../types';
-
-// @ts-ignore
-const getNestedValue = (obj: Record<string, unknown>, dottedKey: string) => dottedKey.split('.').reduce((acc, curr) => acc[curr], obj);
 
 export const filterData = (dottedField: string, order: SortOrder, tableData: Data) => {
     const newArray = [...tableData];

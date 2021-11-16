@@ -51,6 +51,7 @@ export interface GridTemplateProps {
 export interface TableStyledProps {
     isRowClickable?: boolean;
     showRowWithCardStyle?: boolean;
+    maxHeight?: string;
 }
 
 export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type' | 'size'> {
@@ -118,6 +119,10 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     withMinimap?: boolean;
     /** Enable separators between rows */
     withRowSeparators?: boolean;
+    /** Enable infinite scroll */
+    withInfiniteScroll?: boolean;
+    /** CSS max-height property */
+    maxHeight?: string;
 }
 
 export interface StaticProps {
