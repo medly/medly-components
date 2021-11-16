@@ -1,6 +1,9 @@
+import apricot from './apricot';
 import black from './black';
 import blue from './blue';
 import blush from './blush';
+import classyGreen from './classyGreen';
+import everGreen from './everGreen';
 import green from './green';
 import grey from './grey';
 import heartbeat from './heartbeat';
@@ -13,11 +16,14 @@ import white from './white';
 import yellow from './yellow';
 
 const colors: ColorPallet = {
+    apricot,
     black,
     professionalNavy,
     white,
     blue,
     green,
+    classyGreen,
+    everGreen,
     grey,
     yellow,
     red,

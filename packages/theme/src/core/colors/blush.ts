@@ -1,5 +1,7 @@
 import { Color } from './types';
+
 const blush: Color = {
+    50: '#FFF1F0',
     100: '#FFF1F0',
     200: '#FFE3E2',
     300: '#FFBAB6',

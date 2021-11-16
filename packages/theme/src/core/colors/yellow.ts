@@ -1,5 +1,7 @@
 import { Color } from './types';
+
 const yellow: Color = {
+    50: '#FFFBED',
     100: '#FFFBED',
     200: '#FEF7DC',
     300: '#FDECA7',

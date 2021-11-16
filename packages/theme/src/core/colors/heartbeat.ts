@@ -1,5 +1,7 @@
 import { Color } from './types';
+
 const heartbeat: Color = {
+    50: '#FFF1F3',
     100: '#FFF1F3',
     200: '#FFE3E6',
     300: '#FEB8C1',

@@ -1,6 +1,7 @@
 import { Color } from './types';
 
 const green: Color = {
+    50: '#F4F9F6',
     100: '#E6F2E6',
     200: '#CCE6CC',
     300: '#80BF80',
