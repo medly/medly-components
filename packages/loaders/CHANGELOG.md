@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.7](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.5.6...@medly-components/loaders@1.5.7) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
 ## [1.5.6](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.5.5...@medly-components/loaders@1.5.6) (2021-11-16)
 
 **Note:** Version bump only for package @medly-components/loaders

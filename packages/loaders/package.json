@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/loaders",
-    "version": "1.5.6",
+    "version": "1.5.7",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -19,6 +19,6 @@
     },
     "dependencies": {
         "@medly-components/theme": "2.22.0",
-        "@medly-components/utils": "1.17.5"
+        "@medly-components/utils": "1.17.6"
     }
 }
