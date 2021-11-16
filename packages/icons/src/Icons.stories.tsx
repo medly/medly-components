@@ -1,17 +1,17 @@
 import { defaultTheme, IconSizes, IconTheme } from '@medly-components/theme';
-import React from 'react';
+import { FC } from 'react';
 import styled from 'styled-components';
 import { SvgIconProps } from './SvgIcon';
 
 export const sizes: IconSizes[] = ['XS', 'S', 'M', 'L', 'XL'];
 export const variants: SvgIconProps['variant'][] = ['solid', 'flat'];
 
-export const ThemeInterface: React.FC<IconTheme> = () => null;
+export const ThemeInterface: FC<IconTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.icon
 };
 
-export const IconProps: React.FC<SvgIconProps> = () => null;
+export const IconProps: FC<SvgIconProps> = () => null;
 IconProps.defaultProps = {
     size: 'M'
 };

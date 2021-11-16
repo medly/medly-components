@@ -1,9 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC } from 'react';
+import type { FC } from 'react';
+import { memo } from 'react';
 import ExposurePlus2IconSvg from '../../assets/Image/exposure_plus_2_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Component: FC<SvgIconProps> = React.memo(props => {
+const Component: FC<SvgIconProps> = memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
