@@ -1,9 +1,9 @@
 import { Button } from '@medly-components/core';
-import React from 'react';
+import { FC, memo } from 'react';
 import * as Styled from './Actions.styled';
 import { ActionProps } from './types';
 
-export const Actions: React.FC<ActionProps> = React.memo(({ formId, disabled, actionLabel, actionSchema, isLoading }) => {
+export const Actions: FC<ActionProps> = memo(({ formId, disabled, actionLabel, actionSchema, isLoading }) => {
     return (
         <Styled.Actions alignItems={actionSchema?.alignItems} flexDirection={actionSchema?.flexDirection || 'row'}>
             {actionSchema ? (
