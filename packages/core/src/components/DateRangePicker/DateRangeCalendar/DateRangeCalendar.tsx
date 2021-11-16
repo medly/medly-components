@@ -1,14 +1,15 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { memo, useCallback, useEffect, useMemo, useState } from 'react';
 import * as DatePickerStyled from '../../Calendar/Calendar.styled';
 import { getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear } from '../../Calendar/helper';
 import MonthAndYearSelection from '../../Calendar/MonthAndYearSelection';
 import * as Styled from './DateRangeCalendar.styled';
 import Month from './Month';
 import { CalendarAnimationTypes, Props } from './types';
+import type { FC } from 'react';
 
-const Component: React.FC<Props> = React.memo(props => {
+const Component: FC<Props> = memo(props => {
     const {
             id,
             size,
@@ -132,4 +133,4 @@ const Component: React.FC<Props> = React.memo(props => {
     );
 });
 Component.displayName = 'DateRangeCalendar';
-export const DateRangeCalendar: React.FC<Props> & WithStyle = Object.assign(Component, { Style: Styled.DateRangeCalendar });
+export const DateRangeCalendar: FC<Props> & WithStyle = Object.assign(Component, { Style: Styled.DateRangeCalendar });

@@ -1,5 +1,6 @@
 import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useReducer, useRef, useState } from 'react';
+import type { FC } from 'react';
+import { forwardRef, memo, useCallback, useEffect, useReducer, useRef, useState } from 'react';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
@@ -11,12 +12,12 @@ import { reducer } from './scrollStateReducer/scrollStateReducer';
 import { ModalProps, ModalStaticProps } from './types';
 import { useScrollState } from './useScrollState';
 
-const Component: FC<ModalProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<ModalProps> = memo(
+    forwardRef((props, ref) => {
         const { open, onCloseModal, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
             id = restProps.id || 'medly-modal',
             isEscPressed = useKeyPress('Escape'),
-            modalRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
+            modalRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
             innerContainerRef = useRef<HTMLDivElement>(null),
             [headerHeight, setHeaderHeight] = useState(0),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }),

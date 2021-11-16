@@ -1,5 +1,4 @@
 import { isValidStringOrNumber } from '@medly-components/utils';
-import React from 'react';
 import Text from '../Text';
 import { BreadcrumbProps } from './types';
 

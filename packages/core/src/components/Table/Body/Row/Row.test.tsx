@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import { NoResultCell, NoResultRow, Row } from './Row.styled';
 
 describe('Row', () => {

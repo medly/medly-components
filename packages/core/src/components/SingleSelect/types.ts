@@ -1,6 +1,6 @@
 import { SvgIconProps } from '@medly-components/icons';
 import { HTMLProps, Omit } from '@medly-components/utils';
-import React from 'react';
+import type { FC } from 'react';
 
 export interface Option {
     /** Option value */
@@ -52,7 +52,7 @@ export interface SingleSelectProps extends InputProps {
     /** Label */
     label?: string;
     /** Leading icon */
-    prefix?: React.FC<any>;
+    prefix?: FC<any>;
     /** Helper Text */
     helperText?: string;
     /** Error Text */
@@ -62,7 +62,7 @@ export interface SingleSelectProps extends InputProps {
     /** Show Helper text and error text in a tooltip (popover) */
     showTooltipForHelperAndErrorText?: boolean;
     /** Toggle icon */
-    suffix?: React.FC<SvgIconProps>;
+    suffix?: FC<SvgIconProps>;
 }
 
 export interface SelectWrapperProps extends Omit<SingleSelectProps, 'ref' | 'options'> {

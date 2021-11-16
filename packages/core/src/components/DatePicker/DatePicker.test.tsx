@@ -1,5 +1,4 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
-import React from 'react';
 import { placements } from '../Popover/Popover.stories';
 import { DatePicker } from './DatePicker';
 import { DatePickerProps } from './types';

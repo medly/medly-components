@@ -1,5 +1,4 @@
 import { fireEvent, render, screen } from '@test-utils';
-import React from 'react';
 import Logo from './Logo';
 
 describe('Logo', () => {

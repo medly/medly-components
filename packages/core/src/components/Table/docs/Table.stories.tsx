@@ -1,6 +1,6 @@
 import { DeleteIcon, RemoveCircleIcon } from '@medly-components/icons';
 import { defaultTheme, TableTheme } from '@medly-components/theme';
-import React, { FC } from 'react';
+import type { FC } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import Button from '../../Button';
 import Text from '../../Text';

@@ -1,11 +1,12 @@
-import React, { FC, useCallback, useMemo } from 'react';
+import { memo, useCallback, useMemo } from 'react';
 import Text from '../../Text';
 import Cell from './Cell';
 import Row from './Row';
 import { NoResult } from './Row/Row.styled';
 import { Props } from './types';
+import type { FC } from 'react';
 
-export const Body: FC<Props> = React.memo(props => {
+export const Body: FC<Props> = memo(props => {
     const { data, columns, onRowClick, rowClickDisableKey, uniqueKeyName, withWhiteBackground } = props;
 
     const gridTemplateColumns = useMemo(() => columns.reduce((acc, curr) => acc.concat(`${curr.fraction || 1}fr `), ''), [columns]),

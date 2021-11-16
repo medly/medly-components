@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import Text from '../Text';
 import { Card } from './Card';
 import { CardProps } from './types';

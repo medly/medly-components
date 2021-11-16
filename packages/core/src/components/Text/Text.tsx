@@ -1,10 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC, useMemo } from 'react';
+import { forwardRef, memo, useMemo } from 'react';
 import { TextStyled } from './Text.styled';
 import { TextProps } from './types';
+import type { FC } from 'react';
 
-const Component: FC<TextProps> = React.memo(
-    React.forwardRef(({ as, textVariant, textWeight, textAlign, children, ...restProps }, ref) => {
+const Component: FC<TextProps> = memo(
+    forwardRef(({ as, textVariant, textWeight, textAlign, children, ...restProps }, ref) => {
         const componentType = useMemo(() => {
             let type: keyof JSX.IntrinsicElements | React.ComponentType<any> = (textVariant as keyof JSX.IntrinsicElements) || 'span';
 

@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import { Popup } from './Popup';
 import { DialogBoxPopupProps } from './types';
 

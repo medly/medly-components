@@ -1,11 +1,12 @@
 import { HTMLProps } from '@medly-components/utils';
+import type { FC, ReactNode } from 'react';
 
 export type BreadcrumbProps = Omit<HTMLProps<HTMLOListElement>, 'type'> & {
     /** Separator to be used between links */
-    separator?: string | React.ReactNode;
+    separator?: string | ReactNode;
 };
 
 export type BreadcrumbStaticProps = {
-    Item: React.FC<HTMLProps<HTMLLIElement>>;
-    Back: React.FC<HTMLProps<HTMLLIElement>>;
+    Item: FC<HTMLProps<HTMLLIElement>>;
+    Back: FC<HTMLProps<HTMLLIElement>>;
 };

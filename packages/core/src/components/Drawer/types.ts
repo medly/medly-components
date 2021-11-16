@@ -1,6 +1,7 @@
 import { HTMLProps, WithStyle } from '@medly-components/utils';
 import { ScrollActionTypes } from '../Modal/scrollStateReducer/types';
 import { DrawerFooterProps } from './Footer/types';
+import type { FC, Dispatch } from 'react';
 
 export interface DrawerProps extends HTMLProps<HTMLDivElement> {
     open?: boolean;
@@ -11,9 +12,9 @@ export interface DrawerProps extends HTMLProps<HTMLDivElement> {
 }
 
 export interface DrawerStaticProps {
-    Content: React.FC & WithStyle;
-    Footer: React.FC<DrawerFooterProps> & WithStyle;
-    Header: React.FC & WithStyle;
+    Content: FC & WithStyle;
+    Footer: FC<DrawerFooterProps> & WithStyle;
+    Header: FC & WithStyle;
 }
 
 interface ScrollState {
@@ -25,7 +26,7 @@ interface ScrollState {
 export interface DrawerContextType {
     id: string;
     scrollState: ScrollState;
-    dispatch: React.Dispatch<ScrollActionTypes>;
+    dispatch: Dispatch<ScrollActionTypes>;
     onClose: () => void;
 }
 

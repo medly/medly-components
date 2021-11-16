@@ -2,6 +2,7 @@ import { HTMLProps, WithStyle } from '@medly-components/utils';
 import { ModalActionUserProps } from './Actions/types';
 import { ModalPopupProps } from './Popup/types';
 import { ScrollActionTypes } from './scrollStateReducer/types';
+import type { FC, Dispatch, RefObject } from 'react';
 
 export interface ModalProps extends HTMLProps<HTMLDivElement> {
     /** Shows modal only when this prop is true */
@@ -22,10 +23,10 @@ export interface ModalBackgroundProps {
 }
 
 export interface ModalStaticProps {
-    Popup: React.FC<ModalPopupProps> & WithStyle;
-    Header: React.FC & WithStyle;
-    Content: React.FC & WithStyle;
-    Actions: React.FC<ModalActionUserProps> & WithStyle;
+    Popup: FC<ModalPopupProps> & WithStyle;
+    Header: FC & WithStyle;
+    Content: FC & WithStyle;
+    Actions: FC<ModalActionUserProps> & WithStyle;
 }
 
 export interface InnerContainerProps {
@@ -35,15 +36,15 @@ export interface InnerContainerProps {
 
 export interface UseScrollStateProps {
     scrollState: ScrollState;
-    ref: React.RefObject<HTMLDivElement>;
-    dispatch: React.Dispatch<ScrollActionTypes>;
+    ref: RefObject<HTMLDivElement>;
+    dispatch: Dispatch<ScrollActionTypes>;
 }
 
 export interface ModalContextType {
     headerHeight: number;
     setHeaderHeight: (height: number) => void;
     scrollState: ScrollState;
-    dispatch: React.Dispatch<ScrollActionTypes>;
+    dispatch: Dispatch<ScrollActionTypes>;
     id: string;
     isSmallScreen: boolean;
 }

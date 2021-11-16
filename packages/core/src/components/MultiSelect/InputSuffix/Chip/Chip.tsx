@@ -1,11 +1,12 @@
 import { ClearIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback } from 'react';
+import { memo, useCallback } from 'react';
 import Text from '../../../Text';
 import * as Styled from './Chip.styled';
 import { Props } from './types';
+import type { FC } from 'react';
 
-const Component: FC<Props> = React.memo(({ id, label, onClear, state, ...restProps }) => {
+const Component: FC<Props> = memo(({ id, label, onClear, state, ...restProps }) => {
     const onClickHandler = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         onClearHandler = useCallback(
             (e: React.MouseEvent<SVGElement>) => {

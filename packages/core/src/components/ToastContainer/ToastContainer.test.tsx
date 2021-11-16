@@ -1,6 +1,5 @@
 import { removeAllToasts } from '@medly-components/core';
 import { cleanup, fireEvent, render, screen } from '@test-utils';
-import React from 'react';
 import { ToastContainer } from './ToastContainer.component';
 import { addToast } from './ToastStore';
 import { ToastContainerProps } from './types';

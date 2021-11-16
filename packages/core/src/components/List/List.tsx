@@ -1,12 +1,13 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC } from 'react';
+import { memo, forwardRef, Children } from 'react';
 import { ListStyled } from './List.styled';
 import { ListProps } from './types';
+import type { FC } from 'react';
 
-const Component: FC<ListProps> = React.memo(
-    React.forwardRef((props, ref) => (
+const Component: FC<ListProps> = memo(
+    forwardRef((props, ref) => (
         <ListStyled ref={ref} {...props}>
-            {React.Children.map(props.children, (c, i) => {
+            {Children.map(props.children, (c, i) => {
                 return <li key={i}>{c}</li>;
             })}
         </ListStyled>

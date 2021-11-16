@@ -1,8 +1,9 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import Drawer from './';
+import type { FC } from 'react';
 
-const DummyComponent: React.FC<{
+const DummyComponent: FC<{
     open?: boolean;
     position?: 'left' | 'right';
     alignFooterItems?: 'left' | 'center' | 'right';

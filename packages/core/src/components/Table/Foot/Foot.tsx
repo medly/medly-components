@@ -1,10 +1,11 @@
-import React, { useCallback, useContext, useMemo } from 'react';
+import { memo, useCallback, useContext, useMemo } from 'react';
 import Text from '../../Text';
 import { TableComponentsCommonPropsContext, TableStateContext } from '../context';
 import { FootPagination, FootRow, TFoot } from './Foot.styled';
 import { TableFootProps } from './types';
+import type { FC } from 'react';
 
-export const Foot: React.FC<TableFootProps> = React.memo(props => {
+export const Foot: FC<TableFootProps> = memo(props => {
     const { tableSize } = props;
     const [{ activePage = 1 }, setTableState] = useContext(TableStateContext),
         { onPageChange, totalItems = 0, itemsPerPage = 20, showRowWithCardStyle, size } = useContext(TableComponentsCommonPropsContext),

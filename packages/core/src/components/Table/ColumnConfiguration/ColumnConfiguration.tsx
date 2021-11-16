@@ -1,11 +1,12 @@
-import React from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
 import { TableColumnConfig } from '../types';
 import { createOptions, createValues, updateColumns, updateConfig } from './helpers';
 import { ColumnConfigurationProps } from './types';
+import type { FC } from 'react';
+import { memo } from 'react';
 
-const ColumnConfiguration: React.FC<ColumnConfigurationProps> = React.memo(({ columns, onChange }) => {
+const ColumnConfiguration: FC<ColumnConfigurationProps> = memo(({ columns, onChange }) => {
     const handleCheckboxClick = (fieldName: string) => () => onChange(updateConfig(columns, fieldName)),
         handleCheckboxGroupClick = (fieldName: string) => (fields: string[]) => {
             const newColumns = [...columns],

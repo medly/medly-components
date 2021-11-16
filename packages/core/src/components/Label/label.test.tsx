@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import { Label } from './Label';
 
 describe('Label component', () => {

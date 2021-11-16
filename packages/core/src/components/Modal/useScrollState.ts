@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { UseScrollStateProps } from './types';
+import type { UIEvent } from 'react';
 
 export const useScrollState = ({ ref, scrollState, dispatch }: UseScrollStateProps): ((e: React.UIEvent<HTMLDivElement>) => void) => {
     useEffect(() => {
@@ -7,7 +8,7 @@ export const useScrollState = ({ ref, scrollState, dispatch }: UseScrollStatePro
         ref.current && dispatch({ type: 'scrolledToBottom', value: element.clientHeight === element.scrollHeight });
     }, [ref.current]);
 
-    const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
+    const handleScroll = (e: UIEvent<HTMLDivElement>) => {
         // e.stopPropagation(); /* Allowing event to propagate for table minimap table scroll handle */
         const element = e.target as HTMLElement,
             isScrolledToTop = element.scrollTop === 0,

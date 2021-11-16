@@ -1,12 +1,13 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useMemo } from 'react';
+import { Children, useMemo, memo, forwardRef } from 'react';
 import { DescriptionStyled, FieldStyled, FieldWithLabelStyled, LabelStyled } from './FieldWithLabel.styled';
 import { FieldWithLabelProps, StaticProps } from './types';
+import type { FC } from 'react';
 
-const Component: React.FC<FieldWithLabelProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<FieldWithLabelProps> = memo(
+    forwardRef((props, ref) => {
         const isLabelPresent = useMemo(
-            () => !!React.Children.toArray(props.children).find((child: any) => child && child.type && child.type.displayName === 'Label'),
+            () => !!Children.toArray(props.children).find((child: any) => child && child.type && child.type.displayName === 'Label'),
             [props.children]
         );
 
@@ -16,7 +17,7 @@ const Component: React.FC<FieldWithLabelProps> = React.memo(
 
 Component.displayName = 'FieldWithLabel';
 Component.defaultProps = { labelPosition: 'left', fullWidth: false, fieldWithMaxContent: false };
-export const FieldWithLabel: React.FC<FieldWithLabelProps> & WithStyle & StaticProps = Object.assign(Component, {
+export const FieldWithLabel: FC<FieldWithLabelProps> & WithStyle & StaticProps = Object.assign(Component, {
     Style: FieldWithLabelStyled,
     Description: DescriptionStyled,
     Label: LabelStyled,

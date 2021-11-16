@@ -1,4 +1,5 @@
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import type { FC } from 'react';
 
 export interface Option {
     value: any;
@@ -48,7 +49,7 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     /** Show Helper text and error text in a tooltip (popover) */
     showTooltipForHelperAndErrorText?: boolean;
     /** Leading icon or text */
-    prefix?: React.FC<any>;
+    prefix?: FC<any>;
 }
 
 export interface SelectWrapperProps extends Omit<MultiSelectProps, 'ref' | 'options'>, WithThemeProp {

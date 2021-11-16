@@ -1,12 +1,13 @@
 import { useKeyPress, WithStyle } from '@medly-components/utils';
-import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import type { FC } from 'react';
+import { Children, memo, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import Tab from '../Tab';
 import { TabsContext } from '../Tabs.context';
 import * as Styled from './TabList.styled';
 import { TabListProps } from './types';
 
-const Component: React.FC<TabListProps> = React.memo(props => {
-    const { active, children, onChange, ...restProps } = props,
+const Component: FC<TabListProps> = memo(props => {
+    const { active, onChange, ...restProps } = props,
         leftPress = useKeyPress('ArrowLeft'),
         rightPress = useKeyPress('ArrowRight'),
         homePress = useKeyPress('Home'),
@@ -14,14 +15,14 @@ const Component: React.FC<TabListProps> = React.memo(props => {
         [isFocused, setFocusState] = useState(false),
         tabIds = useMemo(
             () =>
-                React.Children.toArray(children)
+                Children.toArray(props.children)
                     .filter((child: any) => !child.props.disabled)
                     .map((child: any) => child.props.id),
-            [children]
+            [props.children]
         ),
         { 0: first, [tabIds.length - 1]: last } = tabIds,
         activeTabIdx = tabIds.indexOf(active),
-        totalTabs = React.Children.toArray(children).length,
+        totalTabs = Children.toArray(props.children).length,
         { tabSize, variant } = useContext(TabsContext);
 
     useEffect(() => {
@@ -43,7 +44,7 @@ const Component: React.FC<TabListProps> = React.memo(props => {
     return (
         <Styled.TabList variant={variant!} tabSize={tabSize!} onFocus={changeFocusState} onBlur={changeFocusState} {...restProps}>
             {variant === 'solid' && <Styled.Slider tabSize={tabSize!} active={activeTabIdx} totalTabs={totalTabs} />}
-            {React.Children.toArray(props.children).reduce((acc: any[], child: any) => {
+            {Children.toArray(props.children).reduce((acc: any[], child: any) => {
                 const { id, label, hide } = child.props;
                 const hideTab = hide && variant !== 'solid';
 
@@ -65,4 +66,4 @@ const Component: React.FC<TabListProps> = React.memo(props => {
     );
 });
 Component.displayName = 'TabList';
-export const TabList: React.FC<TabListProps> & WithStyle = Object.assign(Component, { Style: Styled.TabList });
+export const TabList: FC<TabListProps> & WithStyle = Object.assign(Component, { Style: Styled.TabList });

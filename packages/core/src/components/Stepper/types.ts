@@ -1,5 +1,6 @@
 import { StepperSizes } from '@medly-components/theme';
 import { HTMLProps, Omit } from '@medly-components/utils';
+import type { FC } from 'react';
 
 export interface CounterProps extends Omit<HTMLProps<HTMLDivElement>, 'size'> {
     size?: StepperSizes;
@@ -20,5 +21,5 @@ export interface StepperProps extends Omit<HTMLProps<HTMLDivElement>, 'size'> {
 }
 
 export interface StepperStaticProps {
-    Step: React.FC<StepProps>;
+    Step: FC<StepProps>;
 }

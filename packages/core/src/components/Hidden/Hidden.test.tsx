@@ -1,7 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
 import { useMediaQuery } from '@medly-components/utils';
 import { render } from '@test-utils';
-import React from 'react';
 import { ThemeContext } from 'styled-components';
 import { Hidden } from './Hidden';
 

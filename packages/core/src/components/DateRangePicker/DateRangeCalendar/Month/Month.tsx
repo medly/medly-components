@@ -1,5 +1,5 @@
 import { endOfDay, endOfWeek, startOfWeek } from 'date-fns';
-import React, { useCallback } from 'react';
+import { memo, useCallback } from 'react';
 import * as CalendarStyled from '../../../Calendar/Calendar.styled';
 import { LONG_CALENDAR_MONTHS } from '../../../Calendar/constants';
 import { getCalendarDates, isSameDay, isSameMonth, isValidDate } from '../../../Calendar/helper';
@@ -7,8 +7,9 @@ import WeekDays from '../../../Calendar/WeekDays';
 import Text from '../../../Text';
 import * as Styled from './Styled';
 import { Props } from './types';
+import type { FC, MouseEvent } from 'react';
 
-export const Month: React.FC<Props> = React.memo(
+export const Month: FC<Props> = memo(
     ({
         id,
         startDate,
@@ -25,7 +26,7 @@ export const Month: React.FC<Props> = React.memo(
     }) => {
         const today = new Date(),
             handleDateChange = useCallback(
-                (dt: Date) => (event: React.MouseEvent) => {
+                (dt: Date) => (event: MouseEvent) => {
                     event.stopPropagation();
                     onChange(dt);
                 },

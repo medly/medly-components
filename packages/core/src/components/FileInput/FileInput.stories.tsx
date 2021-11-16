@@ -1,6 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
 import { boolean, color, select, text } from '@storybook/addon-knobs';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FileInput } from './FileInput';
 import { FileInputProps } from './types';
 

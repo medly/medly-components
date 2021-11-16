@@ -1,18 +1,19 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
 import { Dispatch, SetStateAction } from 'react';
 import ColumnConfiguration from './ColumnConfiguration';
+import type { FC } from 'react';
 
 export type SortOrder = 'asc' | 'desc';
 export type ObjectType = Record<string, any>;
 export type Data = ObjectType[];
 // TODO: need to remove in next major version
-export type RowHoverActionsType = React.FC<{ rowData?: ObjectType; rowId?: any }>;
+export type RowHoverActionsType = FC<{ rowData?: ObjectType; rowId?: any }>;
 export type MaxColumnSizes = { [k: string]: number };
 
 export type TableState = { activePage?: number; sortField?: string; sortOrder?: SortOrder };
 
-export type CustomTableCellComponent = React.FC<{ data?: any; rowId?: any; disabled?: boolean; rowData?: ObjectType }>;
-export type RowHoverActionsComponent = React.FC<{ rowData?: ObjectType; rowId?: any }>;
+export type CustomTableCellComponent = FC<{ data?: any; rowId?: any; disabled?: boolean; rowData?: ObjectType }>;
+export type RowHoverActionsComponent = FC<{ rowData?: ObjectType; rowId?: any }>;
 
 export interface TableColumnConfig {
     /** Title of the column */
@@ -89,7 +90,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Function to be called on click of sort icon */
     onSort?: ({ activePage, sortField, sortOrder }: TableState) => void;
     /** Component to show when row is expanded */
-    expandedRowComponent?: React.FC<{ rowData?: ObjectType; rowId?: any; disabled?: boolean }>;
+    expandedRowComponent?: FC<{ rowData?: ObjectType; rowId?: any; disabled?: boolean }>;
     /** Name of the key in data on which grouping is applied */
     groupBy?: string;
     /** Name of the key in data on which grouping is applied */

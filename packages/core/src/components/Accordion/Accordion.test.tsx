@@ -1,5 +1,4 @@
 import { fireEvent, render } from '@test-utils';
-import React from 'react';
 import { Accordion } from './Accordion';
 
 describe('Accordion component', () => {

@@ -1,5 +1,4 @@
 import { cleanup, fireEvent, render, screen } from '@test-utils';
-import React from 'react';
 import { Calendar } from './Calendar';
 import { SHORT_CALENDAR_MONTHS } from './constants';
 import { getMonthAndYearFromDate } from './helper';

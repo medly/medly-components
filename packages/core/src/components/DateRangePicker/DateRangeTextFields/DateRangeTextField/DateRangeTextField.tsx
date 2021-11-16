@@ -1,13 +1,14 @@
 import { useCombinedRefs } from '@medly-components/utils';
-import React, { FC, useEffect, useState } from 'react';
+import { memo, forwardRef, useRef, useEffect, useState } from 'react';
 import * as TextFieldStyled from '../../../TextField/Styled';
 import { Props } from './types';
+import type { FC } from 'react';
 
-export const DateRangeTextField: FC<Props> = React.memo(
-    React.forwardRef((props: Props, ref) => {
+export const DateRangeTextField: FC<Props> = memo(
+    forwardRef((props: Props, ref) => {
         const [inputWidth, setInputWidth] = useState(0),
             { id, size, variant, dateMaskLabel, required, label, ...restProps } = props,
-            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null));
 
         useEffect(() => {
             inputRef.current && setInputWidth(inputRef.current.offsetWidth);

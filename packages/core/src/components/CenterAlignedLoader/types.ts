@@ -1,5 +1,5 @@
 import { HTMLProps } from '@medly-components/utils';
-import React from 'react';
+import type { ReactNode } from 'react';
 
 export interface CenterAlignedProps extends HTMLProps<HTMLDivElement> {
     /** You can set it true to show box with text and loader */
@@ -12,5 +12,5 @@ export interface CenterAlignedProps extends HTMLProps<HTMLDivElement> {
 
 export interface CenterAlignedLoaderProps extends CenterAlignedProps {
     /** You can use any react component as loader */
-    loader?: React.ReactNode;
+    loader?: ReactNode;
 }

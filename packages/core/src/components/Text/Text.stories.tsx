@@ -1,6 +1,5 @@
 import { FontVariants, FontWeights } from '@medly-components/theme';
 import { boolean, color, select } from '@storybook/addon-knobs';
-import React from 'react';
 import styled from 'styled-components';
 import { Text } from './Text';
 
