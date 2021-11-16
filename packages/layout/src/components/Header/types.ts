@@ -1,5 +1,5 @@
 import { Theme } from '@medly-components/theme';
-import React from 'react';
+import { Context as ReactContext, FC } from 'react';
 import { StyledComponent } from 'styled-components';
 import { Context } from './Header.context';
 import { NavProps } from './Nav/Nav';
@@ -10,7 +10,7 @@ export type HeaderProps = {
 };
 
 export type HeaderStaticProps = {
-    Context: React.Context<Context>;
-    Nav: React.FC<NavProps>;
+    Context: ReactContext<Context>;
+    Nav: FC<NavProps>;
     NavItem: StyledComponent<'button', Theme, NavItemProps>;
 };

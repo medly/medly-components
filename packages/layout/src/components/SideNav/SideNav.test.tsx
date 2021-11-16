@@ -2,7 +2,6 @@ import { Text } from '@medly-components/core';
 import { DateRangeIcon, HomeIcon, SearchIcon, SettingsIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { cleanup, fireEvent, render } from '@test-utils';
-import React from 'react';
 import { SideNav } from './SideNav';
 
 const renderer = (active: string, mockOnChange = jest.fn(), hideShadow = false) =>

@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useContext, useMemo } from 'react';
+import { FC, MouseEvent, useCallback, useContext, useMemo } from 'react';
 import SideNavContext from '../SideNav.context';
 import { NavItemStyled } from './NavItem.styled';
 import { NavItemProps } from './types';
@@ -10,7 +10,7 @@ export const NavItem: FC<NavItemProps> & WithStyle = props => {
 
     const isActive = useMemo(() => path === activeItem || to === activeItem, [to, path, activeItem]),
         onClickHandler = useCallback(
-            (event: React.MouseEvent<HTMLLIElement>) => {
+            (event: MouseEvent<HTMLLIElement>) => {
                 const newItem = path || to;
                 event.stopPropagation();
                 onClick && onClick(event);

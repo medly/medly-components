@@ -3,7 +3,7 @@ import { DashboardIcon, DateRangeIcon, FolderOpenIcon, InsertChartIcon, Settings
 import { defaultTheme, SideNavTheme } from '@medly-components/theme';
 import { action } from '@storybook/addon-actions';
 import { boolean } from '@storybook/addon-knobs';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import Header from './MedlySidenavHeader';
 import { SideNav } from './SideNav';
 import { Context } from './SideNav.context';
