@@ -34,7 +34,7 @@ const useRowSelector = ({ data, rowSelectionDisableKey = '', rowIdentifier, sele
     );
 
     useEffect(() => {
-        setUniqueIds(data.filter(dt => rowSelectionDisableKey && !dt[rowSelectionDisableKey]).map(dt => dt[rowIdentifier]));
+        setUniqueIds(data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[rowIdentifier]));
     }, [data, rowSelectionDisableKey, rowIdentifier]);
 
     return { areAllRowsSelected, isAnyRowSelected, uniqueIds, toggleId, setUniqueIds };
