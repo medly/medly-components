@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.38.5](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.4...@medly-components/core@2.38.5) (2021-11-17)
+
+
+### Bug Fixes
+
+* **core:** fix table select issue when rowSelectionDisableKey is not provided ([#528](https://github.com/medly/medly-components/issues/528)) ([eacd684](https://github.com/medly/medly-components/commit/eacd684be330e4fa75cca0222fe25e333cd1d57b))
+
+
+
+
+
 ## [2.38.4](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.3...@medly-components/core@2.38.4) (2021-11-16)
 
 **Note:** Version bump only for package @medly-components/core
