@@ -95,45 +95,45 @@ exports[`Button component should render properly as outlined when theme has hove
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background-color: transparent;
 }
 
 .c0:not(:disabled):not(:hover)::after {
   border-width: 0.1rem;
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
-  background-color: #E7F0FF;
+  color: #275093;
+  background-color: #EBF1FA;
 }
 
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
-  border-color: #0D4AAF;
+  border-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background-color: transparent;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
   border-width: 0.2rem;
-  border-color: #0F5AD5;
+  border-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0 .sc-1pf3x8a-0 + .c1 {
@@ -231,7 +231,7 @@ exports[`Button component should render properly as solid when theme has hover s
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -240,7 +240,7 @@ exports[`Button component should render properly as solid when theme has hover s
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -249,7 +249,7 @@ exports[`Button component should render properly as solid when theme has hover s
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
+  background: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -351,7 +351,7 @@ exports[`Button component should render properly with "circle" edges 1`] = `
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -360,7 +360,7 @@ exports[`Button component should render properly with "circle" edges 1`] = `
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -369,8 +369,8 @@ exports[`Button component should render properly with "circle" edges 1`] = `
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -472,7 +472,7 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -481,7 +481,7 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -490,8 +490,8 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -593,7 +593,7 @@ exports[`Button component should render properly with "square" edges 1`] = `
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -602,7 +602,7 @@ exports[`Button component should render properly with "square" edges 1`] = `
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -611,8 +611,8 @@ exports[`Button component should render properly with "square" edges 1`] = `
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -715,7 +715,7 @@ exports[`Button component should render properly with L size and loading state 1
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #0F5AD5;
+  background: #3061B3;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -724,7 +724,7 @@ exports[`Button component should render properly with L size and loading state 1
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -733,8 +733,8 @@ exports[`Button component should render properly with L size and loading state 1
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -902,7 +902,7 @@ exports[`Button component should render properly with S size and loading state 1
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #0F5AD5;
+  background: #3061B3;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -911,7 +911,7 @@ exports[`Button component should render properly with S size and loading state 1
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -920,8 +920,8 @@ exports[`Button component should render properly with S size and loading state 1
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -1103,7 +1103,7 @@ exports[`Button component should render properly with any icon at the beginning 
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .c1 * {
@@ -1112,7 +1112,7 @@ exports[`Button component should render properly with any icon at the beginning 
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .c1 * {
@@ -1121,8 +1121,8 @@ exports[`Button component should render properly with any icon at the beginning 
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .c1 * {
@@ -1253,7 +1253,7 @@ exports[`Button component should render properly with any icon at the end of the
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .c1 * {
@@ -1262,7 +1262,7 @@ exports[`Button component should render properly with any icon at the end of the
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .c1 * {
@@ -1271,8 +1271,8 @@ exports[`Button component should render properly with any icon at the end of the
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .c1 * {
@@ -1410,46 +1410,46 @@ exports[`Button component should render properly with outlined and theme doesn't
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #cc0000;
+  color: #D73A43;
   background-color: transparent;
 }
 
 .c0:not(:disabled):not(:hover)::after {
   border-width: 0.1rem;
-  border-color: #cc0000;
+  border-color: #D73A43;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #cc0000;
+  fill: #D73A43;
 }
 
 .c0:not(:disabled):active {
-  color: #8F0000;
+  color: #97292F;
   background-color: transparent;
 }
 
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
-  border-color: #8F0000;
+  border-color: #97292F;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #8F0000;
+  fill: #97292F;
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #AD0000;
+  color: #B73139;
   background-color: transparent;
-  box-shadow: 0 0.2rem 0.8rem rgba(173,0,0,0.35);
+  box-shadow: 0 0.2rem 0.8rem rgba(183,49,57,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover::after {
   border-width: 0.2rem;
-  border-color: #AD0000;
+  border-color: #B73139;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #AD0000;
+  fill: #B73139;
 }
 
 .c0 .sc-1pf3x8a-0 + .c1 {
@@ -1547,7 +1547,7 @@ exports[`Button component should wrap children into Text component when renderin
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -1556,7 +1556,7 @@ exports[`Button component should wrap children into Text component when renderin
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -1565,8 +1565,8 @@ exports[`Button component should wrap children into Text component when renderin
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -1693,27 +1693,27 @@ exports[`Button component with "flat" variant should render properly 1`] = `
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover)::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
 }
 
 .c0:not(:disabled):active::after {
-  background-color: #0D4AAF;
+  background-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -1721,15 +1721,15 @@ exports[`Button component with "flat" variant should render properly 1`] = `
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
-  background-color: #0F5AD5;
+  background-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
@@ -1850,27 +1850,27 @@ exports[`Button component with "flat" variant should render properly when it is 
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover)::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
 }
 
 .c0:not(:disabled):active::after {
-  background-color: #0D4AAF;
+  background-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -1878,15 +1878,15 @@ exports[`Button component with "flat" variant should render properly when it is 
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
-  background-color: #0F5AD5;
+  background-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
@@ -2009,27 +2009,27 @@ exports[`Button component with "flat" variant should render properly when it is 
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover)::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
 }
 
 .c0:not(:disabled):active::after {
-  background-color: #0D4AAF;
+  background-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -2037,15 +2037,15 @@ exports[`Button component with "flat" variant should render properly when it is 
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
-  background-color: #0F5AD5;
+  background-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
@@ -2078,11 +2078,11 @@ exports[`Button component with "flat" variant should render properly when it is 
 }
 
 .c3 stop:first-child {
-  stop-color: rgba(15,90,213,0.2);
+  stop-color: rgba(48,97,179,0.2);
 }
 
 .c3 stop:last-child {
-  stop-color: #0F5AD5;
+  stop-color: #3061B3;
 }
 
 <div>
@@ -2231,27 +2231,27 @@ exports[`Button component with "flat" variant should render properly with "L" si
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover)::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
 }
 
 .c0:not(:disabled):active::after {
-  background-color: #0D4AAF;
+  background-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -2259,15 +2259,15 @@ exports[`Button component with "flat" variant should render properly with "L" si
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
-  background-color: #0F5AD5;
+  background-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
@@ -2388,27 +2388,27 @@ exports[`Button component with "flat" variant should render properly with "M" si
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover)::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
 }
 
 .c0:not(:disabled):active::after {
-  background-color: #0D4AAF;
+  background-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -2416,15 +2416,15 @@ exports[`Button component with "flat" variant should render properly with "M" si
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
-  background-color: #0F5AD5;
+  background-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
@@ -2545,27 +2545,27 @@ exports[`Button component with "flat" variant should render properly with "S" si
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover)::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
 }
 
 .c0:not(:disabled):active::after {
-  background-color: #0D4AAF;
+  background-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -2573,15 +2573,15 @@ exports[`Button component with "flat" variant should render properly with "S" si
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
-  background-color: #0F5AD5;
+  background-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
@@ -2702,27 +2702,27 @@ exports[`Button component with "flat" variant should render properly with "XS" s
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover)::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
 }
 
 .c0:not(:disabled):active::after {
-  background-color: #0D4AAF;
+  background-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -2730,15 +2730,15 @@ exports[`Button component with "flat" variant should render properly with "XS" s
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
-  background-color: #0F5AD5;
+  background-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover::after {
@@ -2862,46 +2862,46 @@ exports[`Button component with "outlined" variant should render properly 1`] = `
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background-color: transparent;
 }
 
 .c0:not(:disabled):not(:hover)::after {
   border-width: 0.1rem;
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
-  background-color: #E7F0FF;
+  color: #275093;
+  background-color: #EBF1FA;
 }
 
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
-  border-color: #0D4AAF;
+  border-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background-color: transparent;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover::after {
   border-width: 0.2rem;
-  border-color: #0F5AD5;
+  border-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0 .sc-1pf3x8a-0 + .c1 {
@@ -3021,46 +3021,46 @@ exports[`Button component with "outlined" variant should render properly when it
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background-color: transparent;
 }
 
 .c0:not(:disabled):not(:hover)::after {
   border-width: 0.1rem;
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
-  background-color: #E7F0FF;
+  color: #275093;
+  background-color: #EBF1FA;
 }
 
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
-  border-color: #0D4AAF;
+  border-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background-color: transparent;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover::after {
   border-width: 0.2rem;
-  border-color: #0F5AD5;
+  border-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0 .sc-1pf3x8a-0 + .c1 {
@@ -3182,46 +3182,46 @@ exports[`Button component with "outlined" variant should render properly when it
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background-color: transparent;
 }
 
 .c0:not(:disabled):not(:hover)::after {
   border-width: 0.1rem;
-  border-color: #0F5AD5;
+  border-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
-  background-color: #E7F0FF;
+  color: #275093;
+  background-color: #EBF1FA;
 }
 
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
-  border-color: #0D4AAF;
+  border-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background-color: transparent;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover::after {
   border-width: 0.2rem;
-  border-color: #0F5AD5;
+  border-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0 .sc-1pf3x8a-0 + .c1 {
@@ -3250,11 +3250,11 @@ exports[`Button component with "outlined" variant should render properly when it
 }
 
 .c3 stop:first-child {
-  stop-color: rgba(15,90,213,0.2);
+  stop-color: rgba(48,97,179,0.2);
 }
 
 .c3 stop:last-child {
-  stop-color: #0F5AD5;
+  stop-color: #3061B3;
 }
 
 <div>
@@ -3406,46 +3406,46 @@ exports[`Button component with "outlined" variant should render properly with "L
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background-color: transparent;
 }
 
 .c0:not(:disabled):not(:hover)::after {
   border-width: 0.1rem;
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
-  background-color: #E7F0FF;
+  color: #275093;
+  background-color: #EBF1FA;
 }
 
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
-  border-color: #0D4AAF;
+  border-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background-color: transparent;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover::after {
   border-width: 0.2rem;
-  border-color: #0F5AD5;
+  border-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0 .sc-1pf3x8a-0 + .c1 {
@@ -3565,46 +3565,46 @@ exports[`Button component with "outlined" variant should render properly with "M
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background-color: transparent;
 }
 
 .c0:not(:disabled):not(:hover)::after {
   border-width: 0.1rem;
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
-  background-color: #E7F0FF;
+  color: #275093;
+  background-color: #EBF1FA;
 }
 
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
-  border-color: #0D4AAF;
+  border-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background-color: transparent;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover::after {
   border-width: 0.2rem;
-  border-color: #0F5AD5;
+  border-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0 .sc-1pf3x8a-0 + .c1 {
@@ -3724,46 +3724,46 @@ exports[`Button component with "outlined" variant should render properly with "S
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background-color: transparent;
 }
 
 .c0:not(:disabled):not(:hover)::after {
   border-width: 0.1rem;
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
-  background-color: #E7F0FF;
+  color: #275093;
+  background-color: #EBF1FA;
 }
 
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
-  border-color: #0D4AAF;
+  border-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background-color: transparent;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover::after {
   border-width: 0.2rem;
-  border-color: #0F5AD5;
+  border-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0 .sc-1pf3x8a-0 + .c1 {
@@ -3883,46 +3883,46 @@ exports[`Button component with "outlined" variant should render properly with "X
 }
 
 .c0:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background-color: transparent;
 }
 
 .c0:not(:disabled):not(:hover)::after {
   border-width: 0.1rem;
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
-  color: #0D4AAF;
-  background-color: #E7F0FF;
+  color: #275093;
+  background-color: #EBF1FA;
 }
 
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
-  border-color: #0D4AAF;
+  border-color: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background-color: transparent;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover::after {
   border-width: 0.2rem;
-  border-color: #0F5AD5;
+  border-color: #3061B3;
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c0 .sc-1pf3x8a-0 + .c1 {
@@ -4020,7 +4020,7 @@ exports[`Button component with "solid" variant should render properly 1`] = `
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -4029,7 +4029,7 @@ exports[`Button component with "solid" variant should render properly 1`] = `
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -4038,8 +4038,8 @@ exports[`Button component with "solid" variant should render properly 1`] = `
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -4141,7 +4141,7 @@ exports[`Button component with "solid" variant should render properly when it is
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -4150,7 +4150,7 @@ exports[`Button component with "solid" variant should render properly when it is
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -4159,8 +4159,8 @@ exports[`Button component with "solid" variant should render properly when it is
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -4264,7 +4264,7 @@ exports[`Button component with "solid" variant should render properly when it is
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #0F5AD5;
+  background: #3061B3;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -4273,7 +4273,7 @@ exports[`Button component with "solid" variant should render properly when it is
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -4282,8 +4282,8 @@ exports[`Button component with "solid" variant should render properly when it is
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -4450,7 +4450,7 @@ exports[`Button component with "solid" variant should render properly with "L" s
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -4459,7 +4459,7 @@ exports[`Button component with "solid" variant should render properly with "L" s
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -4468,8 +4468,8 @@ exports[`Button component with "solid" variant should render properly with "L" s
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -4571,7 +4571,7 @@ exports[`Button component with "solid" variant should render properly with "M" s
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -4580,7 +4580,7 @@ exports[`Button component with "solid" variant should render properly with "M" s
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -4589,8 +4589,8 @@ exports[`Button component with "solid" variant should render properly with "M" s
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -4692,7 +4692,7 @@ exports[`Button component with "solid" variant should render properly with "S" s
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -4701,7 +4701,7 @@ exports[`Button component with "solid" variant should render properly with "S" s
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -4710,8 +4710,8 @@ exports[`Button component with "solid" variant should render properly with "S" s
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -4813,7 +4813,7 @@ exports[`Button component with "solid" variant should render properly with "XS" 
 
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -4822,7 +4822,7 @@ exports[`Button component with "solid" variant should render properly with "XS" 
 
 .c0:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c0:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -4831,8 +4831,8 @@ exports[`Button component with "solid" variant should render properly with "XS" 
 
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {

@@ -65,11 +65,11 @@ exports[`Card Table HeadCell should be able to "center" align 1`] = `
 }
 
 .c0 .c1:hover .c3 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c0 .c1:hover .sc-1pf3x8a-0 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c0 .c3 {
@@ -183,11 +183,11 @@ exports[`Card Table HeadCell should be able to "left" align 1`] = `
 }
 
 .c0 .c1:hover .c3 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c0 .c1:hover .sc-1pf3x8a-0 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c0 .c3 {
@@ -301,11 +301,11 @@ exports[`Card Table HeadCell should be able to "right" align 1`] = `
 }
 
 .c0 .c1:hover .c3 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c0 .c1:hover .sc-1pf3x8a-0 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c0 .c3 {
@@ -422,7 +422,7 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
   position: absolute;
   bottom: -1.6rem;
   left: 0;
-  background-color: #126AFA;
+  background-color: #3872D2;
   height: 0.2rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -434,11 +434,11 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
 }
 
 .c0 .c1:hover .c3 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c0 .c1:hover .c5 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c0 .c3 {
@@ -449,7 +449,7 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
   -ms-user-select: none;
   user-select: none;
   display: inline;
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c0 .c5 {
@@ -461,7 +461,7 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
 }
 
 .c0 .c5 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 <div>
@@ -568,7 +568,7 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
   position: absolute;
   bottom: -1.6rem;
   left: 0;
-  background-color: #126AFA;
+  background-color: #3872D2;
   height: 0.2rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -580,11 +580,11 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
 }
 
 .c0 .c1:hover .c3 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c0 .c1:hover .c5 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c0 .c3 {
@@ -595,7 +595,7 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
   -ms-user-select: none;
   user-select: none;
   display: inline;
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c0 .c5 {
@@ -607,7 +607,7 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
 }
 
 .c0 .c5 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 <div>
@@ -711,11 +711,11 @@ exports[`Card Table HeadCell should render properly with dark background and dro
 }
 
 .c0 .c1:hover .c3 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c0 .c1:hover .sc-1pf3x8a-0 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c0 .c3 {
@@ -844,11 +844,11 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
 }
 
 .c0 .c1:hover .c3 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c0 .c1:hover .c5 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c0 .c3 {
@@ -990,11 +990,11 @@ exports[`Card Table HeadCell should render properly with light background and dr
 }
 
 .c0 .c1:hover .c3 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c0 .c1:hover .c5 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c0 .c3 {

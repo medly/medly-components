@@ -85,7 +85,7 @@ describe('SingleSelect component', () => {
             fireEvent.click(getByText('Something went wrong'));
             fireEvent.click(container.querySelector('svg') as SVGSVGElement);
             await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
-            expect(getByText('Something went wrong')).toHaveStyle(`color: rgb(204, 0, 0)`);
+            expect(getByText('Something went wrong')).toHaveStyle(`color: rgb(215, 58, 67)`);
         });
 
         it('should render options correctly on click on the input', () => {

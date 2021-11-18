@@ -66,15 +66,15 @@ exports[`Minimap component should align slider controller with proper left offse
   cursor: move;
   height: 100%;
   position: absolute;
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:hover {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:active {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 <div>
@@ -193,15 +193,15 @@ exports[`Minimap component should not align slider controller when user performs
   cursor: move;
   height: 100%;
   position: absolute;
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:hover {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:active {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 <div>
@@ -320,15 +320,15 @@ exports[`Minimap component should position minimap at the right hand side bottom
   cursor: move;
   height: 100%;
   position: absolute;
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:hover {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:active {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 <div>
@@ -446,15 +446,15 @@ exports[`Minimap component should position minimap at the right hand side bottom
   cursor: move;
   height: 100%;
   position: absolute;
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:hover {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:active {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 <div>
@@ -572,15 +572,15 @@ exports[`Minimap component should position slider controller at the correct posi
   cursor: move;
   height: 100%;
   position: absolute;
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:hover {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:active {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 <div>
@@ -699,15 +699,15 @@ exports[`Minimap component should position slider controller at the extreme end 
   cursor: move;
   height: 100%;
   position: absolute;
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:hover {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:active {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 <div>
@@ -826,15 +826,15 @@ exports[`Minimap component should position slider controller when performed drag
   cursor: move;
   height: 100%;
   position: absolute;
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:hover {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:active {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 <div>
@@ -953,15 +953,15 @@ exports[`Minimap component should render properly 1`] = `
   cursor: move;
   height: 100%;
   position: absolute;
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:hover {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:active {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 <div>
@@ -1079,15 +1079,15 @@ exports[`Minimap component should stop slider controller positioning when we mov
   cursor: move;
   height: 100%;
   position: absolute;
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:hover {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 .c6:active {
-  border: 2px solid #126AFA;
+  border: 2px solid #3872D2;
 }
 
 <div>

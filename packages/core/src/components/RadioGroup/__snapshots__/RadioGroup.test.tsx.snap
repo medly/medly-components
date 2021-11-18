@@ -132,15 +132,15 @@ exports[`Radio Group should render disabled state properly 1`] = `
 }
 
 .c9:not(:disabled):checked ~ .c10 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c9:not(:disabled):checked ~ .c10::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c9:not(:disabled):focus ~ .c10 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c8 {
@@ -399,15 +399,15 @@ exports[`Radio Group should render properly 1`] = `
 }
 
 .c9:not(:disabled):checked ~ .c10 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c9:not(:disabled):checked ~ .c10::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c9:not(:disabled):focus ~ .c10 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c8 {
@@ -439,13 +439,13 @@ exports[`Radio Group should render properly 1`] = `
 }
 
 .c5:hover .c10 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #3872D2;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c5:active .c10 {
-  border-color: #0F5AD5;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
+  border-color: #3061B3;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
 }
 
 <div>

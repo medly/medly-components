@@ -260,8 +260,8 @@ exports[`Pagination component should render correctly with all the default props
   transition: all 100ms ease-out;
   color: #435465;
   background: #ffffff;
-  color: #126AFA;
-  background: #E7F0FF;
+  color: #3872D2;
+  background: #EBF1FA;
   border-radius: 50%;
 }
 
@@ -616,8 +616,8 @@ exports[`Pagination component should render correctly with all the props given 1
   transition: all 100ms ease-out;
   color: #435465;
   background: #ffffff;
-  color: #126AFA;
-  background: #E7F0FF;
+  color: #3872D2;
+  background: #EBF1FA;
   border-radius: 50%;
 }
 

@@ -156,11 +156,11 @@ exports[`CardTable should render properly with grey background 1`] = `
 }
 
 .c2 .c3:hover .c5 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c2 .c3:hover .c7 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c2 .c5 {
@@ -434,11 +434,11 @@ exports[`CardTable should render properly with white background 1`] = `
 }
 
 .c2 .c3:hover .c5 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c2 .c3:hover .c7 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c2 .c5 {

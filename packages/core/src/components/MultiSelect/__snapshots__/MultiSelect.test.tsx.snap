@@ -641,37 +641,37 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .dynlvq-0,
 .c3:focus-within:hover .dynlvq-0 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .dynlvq-0 *,
 .c3:focus-within:hover .dynlvq-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
 .c3:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -1064,37 +1064,37 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .dynlvq-0,
 .c3:focus-within:hover .dynlvq-0 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .dynlvq-0 *,
 .c3:focus-within:hover .dynlvq-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
 .c3:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -1326,7 +1326,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   border-radius: 50%;
   margin-right: 0.8rem;
   color: #303C48;
-  border-color: #126AFA;
+  border-color: #3872D2;
   background-color: rgba(0,90,238,0.2);
   padding: 0.3rem 1.2rem;
   display: -webkit-inline-box;
@@ -1361,7 +1361,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c10 .c12 {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c10 .c12 * {
@@ -1369,7 +1369,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c10 .c12:hover {
-  background-color: #0F5AD5;
+  background-color: #3061B3;
 }
 
 .c10 .c12:hover * {
@@ -1377,7 +1377,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c10:hover {
-  border-color: #0F5AD5;
+  border-color: #3061B3;
 }
 
 .c9 {
@@ -1474,7 +1474,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c0 .c8 > .c12 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c29 {
@@ -1574,8 +1574,8 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c25:checked ~ .c26 {
-  border-color: #126AFA;
-  background-color: #126AFA;
+  border-color: #3872D2;
+  background-color: #3872D2;
 }
 
 .c25:checked ~ .c26 .c12 {
@@ -1594,12 +1594,12 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c25:not(:disabled):focus ~ .c26 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
-  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+  border-color: #3872D2;
 }
 
 .c25:not(:disabled):focus:not(:checked) ~ .c26 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c33 {
@@ -1634,12 +1634,12 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c33:not(:disabled):focus ~ .c26 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
-  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+  border-color: #3872D2;
 }
 
 .c33:not(:disabled):focus:not(:checked) ~ .c26 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -1677,13 +1677,13 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c21.c21.c21:hover .c26 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
-  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+  border-color: #3872D2;
 }
 
 .c21.c21.c21:active .c26 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
-  border-color: #0F5AD5;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
+  border-color: #3061B3;
 }
 
 .c31 {
@@ -2387,37 +2387,37 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .dynlvq-0,
 .c3:focus-within:hover .dynlvq-0 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .dynlvq-0 *,
 .c3:focus-within:hover .dynlvq-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
 .c3:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -2648,7 +2648,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   border-radius: 50%;
   margin-right: 0.6rem;
   color: #303C48;
-  border-color: #126AFA;
+  border-color: #3872D2;
   background-color: rgba(0,90,238,0.2);
   padding: 0.2rem 0.9rem;
   display: -webkit-inline-box;
@@ -2683,7 +2683,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c10 .c12 {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c10 .c12 * {
@@ -2691,7 +2691,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c10 .c12:hover {
-  background-color: #0F5AD5;
+  background-color: #3061B3;
 }
 
 .c10 .c12:hover * {
@@ -2699,7 +2699,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c10:hover {
-  border-color: #0F5AD5;
+  border-color: #3061B3;
 }
 
 .c9 {
@@ -2796,7 +2796,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c0 .c8 > .c12 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c29 {
@@ -2896,8 +2896,8 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c24:checked ~ .c25 {
-  border-color: #126AFA;
-  background-color: #126AFA;
+  border-color: #3872D2;
+  background-color: #3872D2;
 }
 
 .c24:checked ~ .c25 .c12 {
@@ -2916,12 +2916,12 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c24:not(:disabled):focus ~ .c25 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
-  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+  border-color: #3872D2;
 }
 
 .c24:not(:disabled):focus:not(:checked) ~ .c25 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c34 {
@@ -2956,12 +2956,12 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c34:not(:disabled):focus ~ .c25 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
-  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+  border-color: #3872D2;
 }
 
 .c34:not(:disabled):focus:not(:checked) ~ .c25 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -2999,13 +2999,13 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c20.c20.c20:hover .c25 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
-  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+  border-color: #3872D2;
 }
 
 .c20.c20.c20:active .c25 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
-  border-color: #0F5AD5;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
+  border-color: #3061B3;
 }
 
 .c32 {

@@ -6,7 +6,7 @@ exports[`Center Aligned Loader should render properly with all props given 1`] =
 }
 
 .c2 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c4 {
