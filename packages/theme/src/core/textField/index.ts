@@ -10,7 +10,7 @@ const defaultOutlined = {
 
 const defaultFusion = {
     borderWidth: defaultBorderWidth,
-    borderRadius: '1rem'
+    borderRadius: '0.4rem'
 };
 
 const textField: TextFieldTheme = {
