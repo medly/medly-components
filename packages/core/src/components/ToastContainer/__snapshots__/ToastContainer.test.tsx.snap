@@ -24,7 +24,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -75,7 +75,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -84,7 +84,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -92,7 +92,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {
@@ -262,7 +262,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -313,7 +313,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -322,7 +322,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -330,7 +330,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {
@@ -497,7 +497,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -548,7 +548,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -557,7 +557,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -565,7 +565,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {
@@ -732,7 +732,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -783,7 +783,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -792,7 +792,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -800,7 +800,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {
@@ -970,7 +970,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -1021,7 +1021,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -1030,7 +1030,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -1038,7 +1038,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {
@@ -1203,7 +1203,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -1254,7 +1254,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -1263,7 +1263,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -1271,7 +1271,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {
@@ -1436,7 +1436,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -1487,7 +1487,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -1496,7 +1496,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -1504,7 +1504,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {
@@ -1674,7 +1674,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -1725,7 +1725,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -1734,7 +1734,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -1742,7 +1742,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {
@@ -1907,7 +1907,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -1958,7 +1958,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -1967,7 +1967,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -1975,7 +1975,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {
@@ -2140,7 +2140,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -2191,7 +2191,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -2200,7 +2200,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -2208,7 +2208,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {
@@ -2378,7 +2378,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -2429,7 +2429,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -2438,7 +2438,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -2446,7 +2446,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {
@@ -2613,7 +2613,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c9 * {
@@ -2664,7 +2664,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -2673,7 +2673,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c2 .c3 {
@@ -2681,7 +2681,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 }
 
 .c2 .c3 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c5 {

@@ -68,7 +68,7 @@ exports[`Drawer component should render properly with left positioned 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c3 * {
@@ -235,7 +235,7 @@ exports[`Drawer component should render properly with right positioned 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c3 * {

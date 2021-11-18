@@ -65,7 +65,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
   background-color: #ffffff;
   background-color: transparent;
 }
@@ -119,7 +119,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
 }
 
 .c1 .c5 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1 .sc-1kcg570-3 {
@@ -127,7 +127,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
 }
 
 .c1 .c7 {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c1 .sc-1pf3x8a-0 {
@@ -137,11 +137,11 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
 }
 
 .c1 .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c1 .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c1:first-child {
@@ -160,7 +160,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   bottom: -0.1rem;
   left: 0;
   width: 100%;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -553,8 +553,8 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   border-width: 0.1rem 0.1rem 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background-color: #E7F0FF;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
+  background-color: #EBF1FA;
 }
 
 .c1 * {
@@ -606,7 +606,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
 }
 
 .c1 .c5 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1 .sc-1kcg570-3 {
@@ -614,7 +614,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
 }
 
 .c1 .c7 {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c1 .sc-1pf3x8a-0 {
@@ -624,11 +624,11 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
 }
 
 .c1 .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c1 .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c1:first-child {
@@ -648,7 +648,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   bottom: -0.1rem;
   left: -0.1rem;
   width: calc(100% + 0.2rem);
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c9 {
@@ -1043,7 +1043,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
   background-color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1115,7 +1115,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
 }
 
 .c2 .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c2 .sc-1kcg570-3 {
@@ -1124,7 +1124,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
 }
 
 .c2 .c8 {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c2 .sc-1pf3x8a-0 {
@@ -1134,11 +1134,11 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
 }
 
 .c2 .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c2 .sc-1pf3x8a-0 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c10 {
@@ -1355,7 +1355,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
 }
 
 .c1 {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
   width: calc(25% - calc(.4rem + .4rem / 4));
   height: calc(100% - calc(.4rem * 2));
   position: absolute;

@@ -157,15 +157,15 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c14 .c3:hover {
-  background: #E7F0FF;
+  background: #EBF1FA;
 }
 
 .c14 .c3:active {
-  background: #D0E1FE;
+  background: #D7E3F6;
 }
 
 .c14 .c3:active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6 {
@@ -192,19 +192,19 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c6 .c3 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6 .c3:hover {
-  background: #E7F0FF;
+  background: #EBF1FA;
 }
 
 .c6 .c3:active {
-  background: #D0E1FE;
+  background: #D7E3F6;
 }
 
 .c6 .c3:active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c13 .c7 {
@@ -248,7 +248,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c13:focus-within .c5 .c3 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0 {
@@ -272,7 +272,7 @@ exports[`SearchBox options should render options when user search option specifi
   width: min-content;
   border-radius: .8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-width: 0.2rem;
 }
 
@@ -498,15 +498,15 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 }
 
 .c3 .c4:hover {
-  background: #E7F0FF;
+  background: #EBF1FA;
 }
 
 .c3 .c4:active {
-  background: #D0E1FE;
+  background: #D7E3F6;
 }
 
 .c3 .c4:active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0 {
@@ -590,13 +590,13 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 }
 
 .c0:focus-within {
-  border-color: #126AFA;
+  border-color: #3872D2;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-width: .2rem;
 }
 
 .c0:focus-within .c2 .c4 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:hover {
@@ -606,7 +606,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 }
 
 .c0:focus-within:hover {
-  border-color: #126AFA;
+  border-color: #3872D2;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-width: .2rem;
 }
@@ -738,15 +738,15 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 }
 
 .c3 .c4:hover {
-  background: #E7F0FF;
+  background: #EBF1FA;
 }
 
 .c3 .c4:active {
-  background: #D0E1FE;
+  background: #D7E3F6;
 }
 
 .c3 .c4:active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c0 {
@@ -830,13 +830,13 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 }
 
 .c0:focus-within {
-  border-color: #126AFA;
+  border-color: #3872D2;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-width: .2rem;
 }
 
 .c0:focus-within .c2 .c4 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:hover {
@@ -846,7 +846,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 }
 
 .c0:focus-within:hover {
-  border-color: #126AFA;
+  border-color: #3872D2;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-width: .2rem;
 }

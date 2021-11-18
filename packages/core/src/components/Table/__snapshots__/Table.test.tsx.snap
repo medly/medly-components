@@ -362,8 +362,8 @@ exports[`Table component pagination should call onPageChange prop on click on an
   transition: all 100ms ease-out;
   color: #435465;
   background: #ffffff;
-  color: #126AFA;
-  background: #E7F0FF;
+  color: #3872D2;
+  background: #EBF1FA;
   border-radius: 50%;
 }
 

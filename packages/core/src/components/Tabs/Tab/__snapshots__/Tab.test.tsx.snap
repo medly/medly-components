@@ -80,7 +80,7 @@ exports[`Tab should render active state properly 1`] = `
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
   background-color: #ffffff;
   background-color: transparent;
 }
@@ -134,7 +134,7 @@ exports[`Tab should render active state properly 1`] = `
 }
 
 .c0 .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c0 .sc-1kcg570-3 {
@@ -142,7 +142,7 @@ exports[`Tab should render active state properly 1`] = `
 }
 
 .c0 .c8 {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c0 .c1 {
@@ -152,11 +152,11 @@ exports[`Tab should render active state properly 1`] = `
 }
 
 .c0 .c1 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0 .c1 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0:first-child {
@@ -175,7 +175,7 @@ exports[`Tab should render active state properly 1`] = `
   bottom: -0.1rem;
   left: 0;
   width: 100%;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -829,7 +829,7 @@ exports[`Tab should render properly with L tab size 1`] = `
   cursor: inherit;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c2 * {
@@ -1122,7 +1122,7 @@ exports[`Tab should render properly with L tab size 2`] = `
   cursor: inherit;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c2 * {
@@ -1415,7 +1415,7 @@ exports[`Tab should render properly with M tab size 1`] = `
   cursor: inherit;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c2 * {
@@ -1697,7 +1697,7 @@ exports[`Tab should render properly with M tab size 2`] = `
   cursor: inherit;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c2 * {

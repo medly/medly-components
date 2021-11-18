@@ -140,8 +140,8 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c6:checked ~ .c7 {
-  border-color: #126AFA;
-  background-color: #126AFA;
+  border-color: #3872D2;
+  background-color: #3872D2;
 }
 
 .c6:checked ~ .c7 .c9 {
@@ -160,12 +160,12 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c6:not(:disabled):focus ~ .c7 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
-  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+  border-color: #3872D2;
 }
 
 .c6:not(:disabled):focus:not(:checked) ~ .c7 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c5 {
@@ -203,13 +203,13 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c1.c1.c1:hover .c7 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
-  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+  border-color: #3872D2;
 }
 
 .c1.c1.c1:active .c7 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
-  border-color: #0F5AD5;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
+  border-color: #3061B3;
 }
 
 .c0 {

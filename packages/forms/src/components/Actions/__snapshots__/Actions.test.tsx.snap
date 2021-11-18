@@ -73,7 +73,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
 
 .c1:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c1:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -82,7 +82,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
 
 .c1:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c1:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -91,8 +91,8 @@ exports[`Form Actions should render center aligned actions defined in action sch
 
 .c1:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c1:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -220,7 +220,7 @@ exports[`Form Actions should render default action button 1`] = `
 
 .c1:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c1:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -229,7 +229,7 @@ exports[`Form Actions should render default action button 1`] = `
 
 .c1:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c1:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -238,8 +238,8 @@ exports[`Form Actions should render default action button 1`] = `
 
 .c1:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c1:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
@@ -367,7 +367,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
 
 .c1:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c1:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
@@ -376,7 +376,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
 
 .c1:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c1:not(:disabled):active .sc-1pf3x8a-0 * {
@@ -385,8 +385,8 @@ exports[`Form Actions should render left aligned actions defined in action schem
 
 .c1:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c1:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
