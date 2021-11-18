@@ -5062,7 +5062,7 @@ exports[`SingleSelect component with fusion variant should render disabled state
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   cursor: not-allowed;
   background-color: #ffffff;
@@ -5100,19 +5100,19 @@ exports[`SingleSelect component with fusion variant should render disabled state
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c3:focus-within::after {
   border-color: #126AFA;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c3:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -5626,7 +5626,7 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -5662,7 +5662,7 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -5674,12 +5674,12 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
 
 .c3:focus-within::after {
   border-color: #126AFA;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c3:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -5695,7 +5695,7 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
@@ -6102,7 +6102,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -6138,7 +6138,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -6150,12 +6150,12 @@ exports[`SingleSelect component with fusion variant should render properly when 
 
 .c3:focus-within::after {
   border-color: #126AFA;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c3:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -6171,7 +6171,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
@@ -6793,7 +6793,7 @@ exports[`SingleSelect component with fusion variant should render with label pro
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -6829,7 +6829,7 @@ exports[`SingleSelect component with fusion variant should render with label pro
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -6841,12 +6841,12 @@ exports[`SingleSelect component with fusion variant should render with label pro
 
 .c3:focus-within::after {
   border-color: #126AFA;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c3:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -6862,7 +6862,7 @@ exports[`SingleSelect component with fusion variant should render with label pro
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
   border-color: #126AFA;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
