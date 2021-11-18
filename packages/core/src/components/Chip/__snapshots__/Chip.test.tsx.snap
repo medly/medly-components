@@ -253,8 +253,8 @@ exports[`Chip component should render properly with solid variant 1`] = `
   max-width: -moz-max-content;
   max-width: max-content;
   cursor: default;
-  border: 1px solid #126AFA;
-  background-color: #126AFA;
+  border: 1px solid #3872D2;
+  background-color: #3872D2;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

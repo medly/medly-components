@@ -24,7 +24,7 @@ exports[`Toast should render action button 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c10 * {
@@ -125,27 +125,27 @@ exports[`Toast should render action button 1`] = `
 }
 
 .c7:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c7:not(:disabled):not(:hover)::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c7:not(:disabled):not(:hover) .c2 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c7:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
 }
 
 .c7:not(:disabled):active::after {
-  background-color: #0D4AAF;
+  background-color: #275093;
 }
 
 .c7:not(:disabled):active .c2 * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c7:not(:disabled):active::after {
@@ -153,15 +153,15 @@ exports[`Toast should render action button 1`] = `
 }
 
 .c7:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c7:not(:disabled):not(:active):hover::after {
-  background-color: #0F5AD5;
+  background-color: #3061B3;
 }
 
 .c7:not(:disabled):not(:active):hover .c2 * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c7:not(:disabled):not(:active):hover::after {
@@ -191,7 +191,7 @@ exports[`Toast should render action button 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -200,7 +200,7 @@ exports[`Toast should render action button 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c1 .c2 {
@@ -208,7 +208,7 @@ exports[`Toast should render action button 1`] = `
 }
 
 .c1 .c2 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c4 {
@@ -352,7 +352,7 @@ exports[`Toast should render custom icons 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c6 * {
@@ -377,7 +377,7 @@ exports[`Toast should render custom icons 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -386,7 +386,7 @@ exports[`Toast should render custom icons 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c1 .c2 {
@@ -394,7 +394,7 @@ exports[`Toast should render custom icons 1`] = `
 }
 
 .c1 .c2 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c4 {
@@ -528,7 +528,7 @@ exports[`Toast should render header and message text 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c8 * {
@@ -579,7 +579,7 @@ exports[`Toast should render header and message text 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -588,7 +588,7 @@ exports[`Toast should render header and message text 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c1 .c2 {
@@ -596,7 +596,7 @@ exports[`Toast should render header and message text 1`] = `
 }
 
 .c1 .c2 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c4 {
@@ -740,7 +740,7 @@ exports[`Toast should render properly with error variant 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c6 * {
@@ -765,7 +765,7 @@ exports[`Toast should render properly with error variant 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #cc0000;
+  border-left: 0.4rem solid #D73A43;
   min-width: 25rem;
 }
 
@@ -774,7 +774,7 @@ exports[`Toast should render properly with error variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #FAE6E6;
+  background-color: #FBEBEC;
 }
 
 .c1 .c2 {
@@ -782,7 +782,7 @@ exports[`Toast should render properly with error variant 1`] = `
 }
 
 .c1 .c2 * {
-  fill: #cc0000;
+  fill: #D73A43;
 }
 
 .c4 {
@@ -918,7 +918,7 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c7 * {
@@ -956,7 +956,7 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 100%;
 }
 
@@ -965,7 +965,7 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c1 .c2 {
@@ -973,7 +973,7 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
 }
 
 .c1 .c2 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c4 {
@@ -1112,7 +1112,7 @@ exports[`Toast should render properly with info variant 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c6 * {
@@ -1137,7 +1137,7 @@ exports[`Toast should render properly with info variant 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #126AFA;
+  border-left: 0.4rem solid #3872D2;
   min-width: 25rem;
 }
 
@@ -1146,7 +1146,7 @@ exports[`Toast should render properly with info variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1 .c2 {
@@ -1154,7 +1154,7 @@ exports[`Toast should render properly with info variant 1`] = `
 }
 
 .c1 .c2 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c4 {
@@ -1290,7 +1290,7 @@ exports[`Toast should render properly with success variant 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c6 * {
@@ -1315,7 +1315,7 @@ exports[`Toast should render properly with success variant 1`] = `
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #008000;
+  border-left: 0.4rem solid #1E864E;
   min-width: 25rem;
 }
 
@@ -1324,7 +1324,7 @@ exports[`Toast should render properly with success variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E6F2E6;
+  background-color: #E8F3ED;
 }
 
 .c1 .c2 {
@@ -1332,7 +1332,7 @@ exports[`Toast should render properly with success variant 1`] = `
 }
 
 .c1 .c2 * {
-  fill: #008000;
+  fill: #1E864E;
 }
 
 .c4 {
@@ -1465,7 +1465,7 @@ exports[`Toast should render properly with warning variant 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c6 * {

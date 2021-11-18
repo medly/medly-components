@@ -46,7 +46,7 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #126AFA;
+  color: #3872D2;
   font-size: 1.4rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
@@ -58,7 +58,7 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
 }
 
 .c6:hover .c4 {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c7 {
@@ -79,7 +79,7 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #126AFA;
+  color: #3872D2;
   font-size: 1.4rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
@@ -91,7 +91,7 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
 }
 
 .c7:hover .c4 {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c1 {
@@ -111,7 +111,7 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #126AFA;
+  color: #3872D2;
   font-size: 1.4rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
@@ -123,11 +123,11 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
 }
 
 .c1:hover .c4 {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c1 > .c2 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0 {
@@ -153,7 +153,7 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
 }
 
 .c0 > .c2 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 <div>
@@ -263,7 +263,7 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #126AFA;
+  color: #3872D2;
   font-size: 1.4rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
@@ -275,7 +275,7 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
 }
 
 .c6:hover .c4 {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c7 {
@@ -296,7 +296,7 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #126AFA;
+  color: #3872D2;
   font-size: 1.4rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
@@ -308,7 +308,7 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
 }
 
 .c7:hover .c4 {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c1 {
@@ -328,7 +328,7 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #126AFA;
+  color: #3872D2;
   font-size: 1.4rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
@@ -340,11 +340,11 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
 }
 
 .c1:hover .c4 {
-  color: #0F5AD5;
+  color: #3061B3;
 }
 
 .c1 > .c2 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c0 {
@@ -370,7 +370,7 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
 }
 
 .c0 > .c2 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 <div>
