@@ -1,7 +1,8 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
-import { Dispatch, SetStateAction } from 'react';
-import ColumnConfiguration from './ColumnConfiguration';
 import type { FC } from 'react';
+import { Dispatch, SetStateAction } from 'react';
+import { FreezePosition } from './Body/Cell/types';
+import ColumnConfiguration from './ColumnConfiguration';
 
 export type SortOrder = 'asc' | 'desc';
 export type ObjectType = Record<string, any>;
@@ -24,8 +25,10 @@ export interface TableColumnConfig {
     fraction?: number;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
-    /** WIP | Set it true to freeze the component on the left side*/
+    /** WIP | Set it true to freeze the component on the left side */
     frozen?: boolean;
+    /** Set freeze position. Requires frozen prop to be true */
+    freezePosition?: FreezePosition;
     /** Set it true to show sort icons */
     sortable?: boolean;
     /** Set it true to hide the column */

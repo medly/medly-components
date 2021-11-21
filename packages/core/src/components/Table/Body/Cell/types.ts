@@ -1,9 +1,12 @@
 import { HTMLProps } from '@medly-components/utils';
 import { ObjectType, TableColumnConfig, TableProps } from '../../types';
 
+export type FreezePosition = 'left' | 'right';
+
 export type TableCellStyledProps = {
     hidden?: boolean;
     frozen?: boolean;
+    freezePosition?: FreezePosition;
     align?: 'left' | 'right' | 'center';
     wrapText?: boolean;
     tableSize: Required<TableProps>['size'];
