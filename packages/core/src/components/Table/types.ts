@@ -25,7 +25,7 @@ export interface TableColumnConfig {
     fraction?: number;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
-    /** WIP | Set it true to freeze the component on the left side */
+    /** Set it true to freeze the column based on freezePosition */
     frozen?: boolean;
     /** Set freeze position. Requires frozen prop to be true */
     freezePosition?: FreezePosition;
