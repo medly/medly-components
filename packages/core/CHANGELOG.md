@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.0.2...@medly-components/core@3.1.0) (2021-11-22)
+
+
+### Features
+
+* add freezePosition prop to tableColumnConfig ([#535](https://github.com/medly/medly-components/issues/535)) ([5402547](https://github.com/medly/medly-components/commit/5402547536a56e4ffb8142ef867205e34d4a2b0f))
+
+
+
+
+
 ## [3.0.2](https://github.com/medly/medly-components/compare/@medly-components/core@3.0.1...@medly-components/core@3.0.2) (2021-11-22)
 
 **Note:** Version bump only for package @medly-components/core
