@@ -1,5 +1,5 @@
 import { HTMLProps as ReactHTMLProps, RefObject } from 'react';
-import { Omit } from './Omit';
+import { Omit } from '../Omit';
 
 type HTMLPropsReact<T> = Omit<ReactHTMLProps<T>, 'ref' | 'as'>;
 
