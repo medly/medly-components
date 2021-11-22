@@ -98,6 +98,14 @@ describe('MultiSelect component', () => {
         expect(mockOnChange).toHaveBeenCalledWith(['Dummy1']);
     });
 
+    it('should call onChange prop with expected values on selecting option with numeric value', () => {
+        const mockOnChange = jest.fn();
+        render(<MultiSelect options={[{ value: 1, label: 'one' }]} onChange={mockOnChange} />);
+        fireEvent.click(screen.getByRole('textbox'));
+        fireEvent.click(screen.getByText('one'));
+        expect(mockOnChange).toHaveBeenCalledWith([1]);
+    });
+
     it('should deselect on click of already selected option', () => {
         const mockOnChange = jest.fn(),
             { getAllByText } = render(<MultiSelect values={['Dummy1', 'Dummy2']} options={options} onChange={mockOnChange} />);

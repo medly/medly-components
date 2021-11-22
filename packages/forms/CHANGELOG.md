@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/medly/medly-components/compare/@medly-components/forms@2.0.0...@medly-components/forms@2.0.1) (2021-11-21)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [2.0.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.37.7...@medly-components/forms@2.0.0) (2021-11-18)
+
+
+### Code Refactoring
+
+* update hex of rgb color ([#533](https://github.com/medly/medly-components/issues/533)) ([71b5d45](https://github.com/medly/medly-components/commit/71b5d45fd8cbacd55b7c752357d6e63c4f0d9306))
+
+
+### BREAKING CHANGES
+
+* update red, blue & green color hex values
+
+
+
+
+
+## [1.37.7](https://github.com/medly/medly-components/compare/@medly-components/forms@1.37.6...@medly-components/forms@1.37.7) (2021-11-18)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [1.37.6](https://github.com/medly/medly-components/compare/@medly-components/forms@1.37.5...@medly-components/forms@1.37.6) (2021-11-17)
 
 **Note:** Version bump only for package @medly-components/forms

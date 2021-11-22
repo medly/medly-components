@@ -19,9 +19,8 @@ const Component: FC<OptionsProps> = memo(props => {
             onOptionClick(Array.from(newValues));
         },
         handleCheckboxClick = useCallback(
-            (event: React.ChangeEvent<HTMLInputElement>) => {
-                const item = event.target.name,
-                    isChecked = event.target.checked,
+            (item: any) => (event: React.ChangeEvent<HTMLInputElement>) => {
+                const isChecked = event.target.checked,
                     newValues = isChecked ? [...selectedValues, item] : selectedValues.filter(vl => vl !== item);
                 onOptionClick(newValues);
             },
@@ -67,7 +66,12 @@ const Component: FC<OptionsProps> = memo(props => {
                                 fullWidthOptions={true}
                             />
                         ) : (
-                            <Checkbox {...op} checked={selectedValues.includes(op.value)} name={op.value} onChange={handleCheckboxClick} />
+                            <Checkbox
+                                {...op}
+                                name={op.value}
+                                checked={selectedValues.includes(op.value)}
+                                onChange={handleCheckboxClick(op.value)}
+                            />
                         )}
                     </Fragment>
                 ))}

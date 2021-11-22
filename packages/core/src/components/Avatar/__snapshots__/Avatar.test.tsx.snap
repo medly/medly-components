@@ -26,8 +26,8 @@ exports[`Avatar component should render avatar without hover and pressed states 
   border-radius: 50%;
   overflow: hidden;
   cursor: inherit;
-  color: #008000;
-  background: #E6F2E6;
+  color: #1E864E;
+  background: #E8F3ED;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -75,8 +75,8 @@ exports[`Avatar component should render image avatar properly 1`] = `
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
-  color: #126AFA;
-  background: #E7F0FF;
+  color: #3872D2;
+  background: #EBF1FA;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -100,7 +100,7 @@ exports[`Avatar component should render image avatar properly 1`] = `
 }
 
 .c0:hover {
-  background: #126AFA;
+  background: #3872D2;
   box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
 }
 
@@ -109,7 +109,7 @@ exports[`Avatar component should render image avatar properly 1`] = `
 }
 
 .c0:active {
-  background: #0F5AD5;
+  background: #3061B3;
 }
 
 .c0:active .sc-1ntgl3l-0 {
@@ -153,8 +153,8 @@ exports[`Avatar component should render with all the props given 1`] = `
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
-  color: #008000;
-  background: #E6F2E6;
+  color: #1E864E;
+  background: #E8F3ED;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -178,7 +178,7 @@ exports[`Avatar component should render with all the props given 1`] = `
 }
 
 .c0:hover {
-  background: #269326;
+  background: #409869;
   box-shadow: 0 0.4rem 0.8rem rgba(0,128,0,0.35);
 }
 
@@ -233,8 +233,8 @@ exports[`Avatar component should render with default hover and pressed states 1`
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
-  color: #008000;
-  background: #E6F2E6;
+  color: #1E864E;
+  background: #E8F3ED;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -258,7 +258,7 @@ exports[`Avatar component should render with default hover and pressed states 1`
 }
 
 .c0:hover {
-  background: #126AFA;
+  background: #3872D2;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
@@ -267,7 +267,7 @@ exports[`Avatar component should render with default hover and pressed states 1`
 }
 
 .c0:active {
-  background: #0F5AD5;
+  background: #3061B3;
 }
 
 .c0:active .c1 {
@@ -313,8 +313,8 @@ exports[`Avatar component should render with default theme 1`] = `
   border-radius: 50%;
   overflow: hidden;
   cursor: inherit;
-  color: #126AFA;
-  background: #E7F0FF;
+  color: #3872D2;
+  background: #EBF1FA;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -376,8 +376,8 @@ exports[`Avatar component should render with not-allowed cursor when it is disab
   border-radius: 50%;
   overflow: hidden;
   cursor: not-allowed;
-  color: #126AFA;
-  background: #E7F0FF;
+  color: #3872D2;
+  background: #EBF1FA;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

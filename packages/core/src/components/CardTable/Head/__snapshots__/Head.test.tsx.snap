@@ -86,11 +86,11 @@ exports[`Card Table Head should render properly with dark background 1`] = `
 }
 
 .c1 .c2:hover .c4 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c1 .c2:hover .c6 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c1 .c4 {
@@ -266,11 +266,11 @@ exports[`Card Table Head should render properly with light background 1`] = `
 }
 
 .c1 .c2:hover .c4 {
-  color: #70ADE9;
+  color: #5687D9;
 }
 
 .c1 .c2:hover .c6 * {
-  fill: #70ADE9;
+  fill: #5687D9;
 }
 
 .c1 .c4 {

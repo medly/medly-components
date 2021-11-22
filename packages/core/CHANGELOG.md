@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/medly/medly-components/compare/@medly-components/core@3.0.0...@medly-components/core@3.0.1) (2021-11-21)
+
+
+### Bug Fixes
+
+* selecting option with numeric value ([#534](https://github.com/medly/medly-components/issues/534)) ([5099404](https://github.com/medly/medly-components/commit/50994041a96923bf4988820a7ed4be782c9f1e94))
+
+
+
+
+
+# [3.0.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.6...@medly-components/core@3.0.0) (2021-11-18)
+
+
+### Code Refactoring
+
+* update hex of rgb color ([#533](https://github.com/medly/medly-components/issues/533)) ([71b5d45](https://github.com/medly/medly-components/commit/71b5d45fd8cbacd55b7c752357d6e63c4f0d9306))
+
+
+### BREAKING CHANGES
+
+* update red, blue & green color hex values
+
+
+
+
+
+## [2.38.6](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.5...@medly-components/core@2.38.6) (2021-11-18)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
 ## [2.38.5](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.4...@medly-components/core@2.38.5) (2021-11-17)
 
 

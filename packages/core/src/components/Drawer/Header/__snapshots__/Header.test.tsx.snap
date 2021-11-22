@@ -9,7 +9,7 @@ exports[`Drawer Header Test should render component if its passed 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1 * {
@@ -105,7 +105,7 @@ exports[`Drawer Header Test should render text if string is passed 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c2 * {

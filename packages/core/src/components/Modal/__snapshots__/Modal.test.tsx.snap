@@ -116,7 +116,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c2 * {
