@@ -1,0 +1,34 @@
+import { Box } from './Box.tsx';
+import { fontVariants, colors, bgColors } from './Box.stories';
+import { withKnobs, color, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Core" component={Box} />
+
+# Box
+
+A simple box component with customizable properties.
+
+<Preview withToolbar>
+    <Story name="Box" decorators={[withKnobs]}>
+        <Box
+            fontVariant={select('Font Variant', fontVariants, 'h2')}
+            color={color('Text Color', 'white')}
+            bg={color('Background Color', 'black')}
+            isLoading={boolean('Is Loading', false)}
+            px={number('Padding x-axis', 4)}
+            py={number('Padding y-axis', 4)}
+            mx={number('Margin x-axis', 2)}
+            my={number('Margin y-axis', 2)}
+            borderRadius={number('Border radius', 2)}
+            borderColor={color('Border color', 'tomato')}
+            borderWidth={number('Border width', 1)}
+        >
+            Box Text
+        </Box>
+    </Story>
+</Preview>
+
+<Preview>
+    <Box>Sample Box Component</Box>
+</Preview>
