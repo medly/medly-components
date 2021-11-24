@@ -15,7 +15,7 @@ export const getDefaultSelectedOptions = (options: Option[], defaultValues: any[
 };
 
 export const filterOptions = (options: Option[], str: string) => {
-    let newValues: any[] = [];
+    let newValues: Option[] = [];
     options.forEach(op => {
         if (Array.isArray(op.value)) newValues = [...newValues, ...filterOptions(op.value, str)];
         else if (includesIgnoreCase(op.label, str)) newValues.push(op);

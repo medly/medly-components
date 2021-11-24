@@ -50,6 +50,8 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     showTooltipForHelperAndErrorText?: boolean;
     /** Leading icon or text */
     prefix?: FC<any>;
+    /** Allow user to create dynamic options on the fly */
+    isCreatable?: boolean;
 }
 
 export interface SelectWrapperProps extends Omit<MultiSelectProps, 'ref' | 'options'>, WithThemeProp {

@@ -30,6 +30,7 @@ const Component: FC<MultiSelectProps> = memo(
                 onInputChange,
                 showTooltipForHelperAndErrorText,
                 prefix,
+                isCreatable = false,
                 ...restProps
             } = props,
             selectId = useMemo(() => id || label?.toLocaleLowerCase().replace(' ', '') || 'medly-multiSelect', [id, label]);
@@ -181,11 +182,14 @@ const Component: FC<MultiSelectProps> = memo(
                 {!disabled && areOptionsVisible && (
                     <Options
                         id={`${selectId}`}
+                        inputValue={inputValue}
                         size={size!}
                         ref={optionsRef}
                         values={selectedOptions}
+                        setValues={setSelectedOptions}
                         options={options}
                         onOptionClick={handleOptionClick}
+                        isCreatable={isCreatable}
                     />
                 )}
             </Wrapper>
