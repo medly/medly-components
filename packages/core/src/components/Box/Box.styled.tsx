@@ -4,7 +4,7 @@ import Text from '../Text';
 import { BoxProps } from './types';
 
 const numberToRem = (val: number | undefined) => (val ? `calc(${val} * 0.25rem)` : 0);
-const getShadow = (shadowSize: BoxProps['shadow'], shadowColor = 'rgba(0, 0, 0, 0.2)') => {
+const getShadow = (shadowSize: BoxProps['shadowSize'], shadowColor = 'rgba(0, 0, 0, 0.2)') => {
     switch (shadowSize) {
         case 'S':
             return `0px 1px 3px ${shadowColor}`;
@@ -29,7 +29,7 @@ export const BoxStyled = styled('div')<BoxProps>`
     padding: ${({ px, py }) => `${numberToRem(py)} ${numberToRem(px)}`};
     margin: ${({ mx, my }) => `${numberToRem(my)} ${numberToRem(mx)}`};
     border: ${({ borderColor, borderWidth }) => borderColor && borderWidth && `${numberToRem(borderWidth)} solid ${borderColor}`};
-    box-shadow: ${({ shadow, shadowColor }) => getShadow(shadow, shadowColor)};
+    box-shadow: ${({ shadowSize, shadowColor }) => getShadow(shadowSize, shadowColor)};
 
     &,
     ${Text.Style}, ${SvgIcon}, ${SvgIcon} * {
@@ -38,10 +38,7 @@ export const BoxStyled = styled('div')<BoxProps>`
 
     & > *:not(:last-child) {
         opacity: ${({ isLoading }) => isLoading && 0};
-    }
-
-    &:hover {
-        cursor: ${({ isLoading }) => !isLoading && 'pointer'};
+        display: none;
     }
 
     &:focus {

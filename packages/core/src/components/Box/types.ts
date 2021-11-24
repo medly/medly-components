@@ -33,7 +33,7 @@ export type BoxProps = Omit<HTMLProps<HTMLDivElement>, 'size'> & { theme?: Theme
     /** Set font variant for text inside component */
     fontVariant?: FontVariants;
     /** Set shadow for the box component */
-    shadow?: 'S' | 'M' | 'L' | 'XL';
+    shadowSize?: 'S' | 'M' | 'L' | 'XL';
     /** Set shadow color for the box component */
     shadowColor?: string;
 };
