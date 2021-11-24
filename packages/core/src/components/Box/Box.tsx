@@ -10,9 +10,9 @@ const Component: FC<BoxProps> = React.memo(
     React.forwardRef((props, ref) => (
         <BoxStyled ref={ref} {...props}>
             {React.Children.map(props.children, c => {
-                return isValidStringOrNumber(c) ? <Text textVariant={props.fontVariant!}>{c}</Text> : c;
+                return isValidStringOrNumber(c) ? <Text textVariant={props.fontVariant}>{c}</Text> : c;
             })}
-            {props.isLoading && <CenterAlignedLoader loader={<ConcentricCircleLoader color={props.color!} size="XS" />} />}
+            {props.isLoading && <CenterAlignedLoader loader={<ConcentricCircleLoader color={props.color} size="XS" />} />}
         </BoxStyled>
     ))
 );
@@ -20,11 +20,10 @@ Component.defaultProps = {
     px: 4,
     py: 4,
     bg: 'white',
-    width: '80%',
-    height: '40%',
     color: 'black',
     display: 'flex',
-    fontVariant: 'body1'
+    borderRadius: 2,
+    fontVariant: 'body2'
 };
 Component.displayName = 'Box';
 export const Box: FC<BoxProps> & WithStyle = Object.assign(Component, {
