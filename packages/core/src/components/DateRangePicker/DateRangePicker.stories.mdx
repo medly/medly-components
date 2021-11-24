@@ -26,7 +26,9 @@ import { DateRangeType, DateRangeSelectionEnum } from './types';
 
 # DateRangePicker
 
-It's a controlled component. So we have to handle the state.
+The DateRangePicker component allows you to select a range of dates through input text or calendar date selection. 
+
+It is a controlled component and must have the following handle state:
 
 ```tsx
 const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null });
@@ -64,9 +66,7 @@ return <DateRangePicker value={dates} onChange={setDates} />;
 
 ### onPopupClose
 
-You can pass a function using `onPopupClose` prop to perform any action when the calendar popup closes.
-`onChange` is required to make dateRangePicker a controlled component but `onPopupClose` is there to handle action like api call which you want to perform once you are done with the date selection.
-
+To perform any action after the calendar popup closes, pass a function using the `onPopupClose` prop.  You require the `onChange` prop to make dateRangePicker a controlled component and the `onPopupClose` prop to handle actions like API calls that you want to perform after the date selection.
 ```tsx
 import { useAxios } from '@medly-components/utils';
 import { createUrlWithParams } from '@utils';
@@ -89,7 +89,7 @@ const DateRangePickerWithOnClose: React.FC = () => {
 
 ### Validations
 
-1. Validations would happen on invalid, and blur event.
+1. Validations would happen on invalid and blur event.
 
 ```tsx
 const FormWithDateRangePicker: React.FC = () => {
@@ -110,7 +110,8 @@ const FormWithDateRangePicker: React.FC = () => {
     <FormWithDateRangePicker />
 </Preview>
 
-2. Validations would also happen on blur event if you focus out of the component without selecting the date and required prop is passed.
+2. Validations happen only on blur events if you focus out of the component without selecting the date and pass the required prop.
+
 
 ```tsx
 const FormWithDatePicker: React.FC = () => {
@@ -125,7 +126,7 @@ const FormWithDatePicker: React.FC = () => {
 
 ### Custom date range options
 
-User can provide custom date range selection options using `customDateRangeOptions`, here is the example-
+Use `customDateRangeOptions` to provide custom date range selection options. For example: 
 
 ```tsx
 import { DateRangePicker, DateRangeSelectionEnum } from '@medly-components/core';
