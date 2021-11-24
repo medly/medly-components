@@ -1,7 +1,7 @@
-import { CenterAlignedLoader } from '@medly-components/core';
 import { ConcentricCircleLoader } from '@medly-components/loaders';
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
 import React, { FC } from 'react';
+import CenterAlignedLoader from '../CenterAlignedLoader';
 import Text from '../Text';
 import { BoxStyled } from './Box.styled';
 import { BoxProps } from './types';
