@@ -4,16 +4,16 @@ import Text from '../Text';
 import { BoxProps } from './types';
 
 const numberToRem = (val: number | undefined) => (val ? `calc(${val} * 0.25rem)` : 0);
-const getShadow = (shadowSize: BoxProps['shadow']) => {
+const getShadow = (shadowSize: BoxProps['shadow'], shadowColor = 'rgba(0, 0, 0, 0.2)') => {
     switch (shadowSize) {
         case 'S':
-            return '0px 1px 3px rgba(0, 0, 0, 0.2)';
+            return `0px 1px 3px ${shadowColor}`;
         case 'M':
-            return '0px 4px 6px rgba(0, 0, 0, 0.2)';
+            return `0px 4px 6px ${shadowColor}`;
         case 'L':
-            return '0 10px 15px rgba(0, 0, 0, 0.2)';
+            return `0 10px 15px ${shadowColor}`;
         case 'XL':
-            return '0 10px 15px rgba(0, 0, 0, 0.4)';
+            return `0 20px 25px ${shadowColor}`;
         default:
             return 'none';
     }
@@ -29,7 +29,7 @@ export const BoxStyled = styled('div')<BoxProps>`
     padding: ${({ px, py }) => `${numberToRem(py)} ${numberToRem(px)}`};
     margin: ${({ mx, my }) => `${numberToRem(my)} ${numberToRem(mx)}`};
     border: ${({ borderColor, borderWidth }) => borderColor && borderWidth && `${numberToRem(borderWidth)} solid ${borderColor}`};
-    box-shadow: ${({ shadow }) => getShadow(shadow)};
+    box-shadow: ${({ shadow, shadowColor }) => getShadow(shadow, shadowColor)};
 
     &,
     ${Text.Style}, ${SvgIcon}, ${SvgIcon} * {
