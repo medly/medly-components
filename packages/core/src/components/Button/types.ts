@@ -20,4 +20,6 @@ export type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, 'size'> & { theme?:
     fullWidth?: boolean;
     /** Set it true to show loading state */
     isLoading?: boolean;
+    /** toggle flat button underline, this property will only works on flat variant  */
+    hideUnderline?: boolean;
 };
