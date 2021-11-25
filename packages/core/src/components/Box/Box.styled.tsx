@@ -7,13 +7,13 @@ const numberToRem = (val: number | undefined) => (val ? `calc(${val} * 0.25rem)`
 const getShadow = (shadowSize: BoxProps['shadowSize'], shadowColor = 'rgba(0, 0, 0, 0.2)') => {
     switch (shadowSize) {
         case 'S':
-            return `0px 1px 3px ${shadowColor}`;
+            return `0rem 0.1rem 0.3rem ${shadowColor}`;
         case 'M':
-            return `0px 4px 6px ${shadowColor}`;
+            return `0rem 0.4rem 0.6rem ${shadowColor}`;
         case 'L':
-            return `0 10px 15px ${shadowColor}`;
+            return `0rem 0.10rem 0.15rem ${shadowColor}`;
         case 'XL':
-            return `0 20px 25px ${shadowColor}`;
+            return `0rem 0.20rem 0.25rem ${shadowColor}`;
         default:
             return 'none';
     }

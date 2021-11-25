@@ -1,5 +1,4 @@
 import { defaultTheme } from '@medly-components/theme';
-import React from 'react';
 import { BoxProps } from './types';
 
 export const fontVariants: Required<BoxProps>['fontVariant'][] = ['h1', 'h2', 'h3', 'h4', 'h5', 'body1', 'body2', 'body3'];

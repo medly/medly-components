@@ -29,8 +29,8 @@ exports[`Box Component should not render with border if borderColor is not provi
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -88,8 +88,8 @@ exports[`Box Component should not render with border if borderWidth is not provi
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -147,8 +147,8 @@ exports[`Box Component should not render with given shadowColor if shadow size i
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -206,8 +206,8 @@ exports[`Box Component should render properly 1`] = `
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -237,30 +237,6 @@ exports[`Box Component should render properly 1`] = `
 `;
 
 exports[`Box Component should render properly when loading 1`] = `
-.c3 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 1001;
-  position: relative;
-}
-
-.c3 > * {
-  -webkit-animation: cwwion 300ms ease-in;
-  animation: cwwion 300ms ease-in;
-}
-
 .c4 {
   font-size: 48px;
 }
@@ -282,6 +258,30 @@ exports[`Box Component should render properly when loading 1`] = `
   text-align: initial;
 }
 
+.c3 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1001;
+  position: relative;
+}
+
+.c3 > * {
+  -webkit-animation: hHgZmL 300ms ease-in;
+  animation: hHgZmL 300ms ease-in;
+}
+
 .c0 {
   color: black;
   background-color: white;
@@ -297,8 +297,8 @@ exports[`Box Component should render properly when loading 1`] = `
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
@@ -404,13 +404,13 @@ exports[`Box Component should render properly with "L" shadow size 1`] = `
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.10rem 0.15rem rgba(0,0,0,0.2);
 }
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -463,13 +463,13 @@ exports[`Box Component should render properly with "M" shadow size 1`] = `
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.4rem 0.6rem rgba(0,0,0,0.2);
 }
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -522,13 +522,13 @@ exports[`Box Component should render properly with "S" shadow size 1`] = `
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.1rem 0.3rem rgba(0,0,0,0.2);
 }
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -581,13 +581,13 @@ exports[`Box Component should render properly with "XL" shadow size 1`] = `
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.20rem 0.25rem rgba(0,0,0,0.2);
 }
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -617,30 +617,6 @@ exports[`Box Component should render properly with "XL" shadow size 1`] = `
 `;
 
 exports[`Box Component should render properly with L size and loading state 1`] = `
-.c3 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 1001;
-  position: relative;
-}
-
-.c3 > * {
-  -webkit-animation: cwwion 300ms ease-in;
-  animation: cwwion 300ms ease-in;
-}
-
 .c4 {
   font-size: 48px;
 }
@@ -662,6 +638,30 @@ exports[`Box Component should render properly with L size and loading state 1`] 
   text-align: initial;
 }
 
+.c3 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1001;
+  position: relative;
+}
+
+.c3 > * {
+  -webkit-animation: hHgZmL 300ms ease-in;
+  animation: hHgZmL 300ms ease-in;
+}
+
 .c0 {
   color: black;
   background-color: white;
@@ -672,13 +672,13 @@ exports[`Box Component should render properly with L size and loading state 1`] 
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.10rem 0.15rem rgba(0,0,0,0.2);
 }
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
@@ -761,30 +761,6 @@ exports[`Box Component should render properly with L size and loading state 1`] 
 `;
 
 exports[`Box Component should render properly with M size and loading state 1`] = `
-.c3 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 1001;
-  position: relative;
-}
-
-.c3 > * {
-  -webkit-animation: cwwion 300ms ease-in;
-  animation: cwwion 300ms ease-in;
-}
-
 .c4 {
   font-size: 48px;
 }
@@ -806,6 +782,30 @@ exports[`Box Component should render properly with M size and loading state 1`] 
   text-align: initial;
 }
 
+.c3 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1001;
+  position: relative;
+}
+
+.c3 > * {
+  -webkit-animation: hHgZmL 300ms ease-in;
+  animation: hHgZmL 300ms ease-in;
+}
+
 .c0 {
   color: black;
   background-color: white;
@@ -816,13 +816,13 @@ exports[`Box Component should render properly with M size and loading state 1`] 
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.4rem 0.6rem rgba(0,0,0,0.2);
 }
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
@@ -905,30 +905,6 @@ exports[`Box Component should render properly with M size and loading state 1`] 
 `;
 
 exports[`Box Component should render properly with S size and loading state 1`] = `
-.c3 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 1001;
-  position: relative;
-}
-
-.c3 > * {
-  -webkit-animation: cwwion 300ms ease-in;
-  animation: cwwion 300ms ease-in;
-}
-
 .c4 {
   font-size: 48px;
 }
@@ -950,6 +926,30 @@ exports[`Box Component should render properly with S size and loading state 1`] 
   text-align: initial;
 }
 
+.c3 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1001;
+  position: relative;
+}
+
+.c3 > * {
+  -webkit-animation: hHgZmL 300ms ease-in;
+  animation: hHgZmL 300ms ease-in;
+}
+
 .c0 {
   color: black;
   background-color: white;
@@ -960,13 +960,13 @@ exports[`Box Component should render properly with S size and loading state 1`] 
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.1rem 0.3rem rgba(0,0,0,0.2);
 }
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
@@ -1049,30 +1049,6 @@ exports[`Box Component should render properly with S size and loading state 1`] 
 `;
 
 exports[`Box Component should render properly with XL size and loading state 1`] = `
-.c3 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 1001;
-  position: relative;
-}
-
-.c3 > * {
-  -webkit-animation: cwwion 300ms ease-in;
-  animation: cwwion 300ms ease-in;
-}
-
 .c4 {
   font-size: 48px;
 }
@@ -1094,6 +1070,30 @@ exports[`Box Component should render properly with XL size and loading state 1`]
   text-align: initial;
 }
 
+.c3 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1001;
+  position: relative;
+}
+
+.c3 > * {
+  -webkit-animation: hHgZmL 300ms ease-in;
+  animation: hHgZmL 300ms ease-in;
+}
+
 .c0 {
   color: black;
   background-color: white;
@@ -1104,13 +1104,13 @@ exports[`Box Component should render properly with XL size and loading state 1`]
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.20rem 0.25rem rgba(0,0,0,0.2);
 }
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
@@ -1222,8 +1222,8 @@ exports[`Box Component should render properly with border 1`] = `
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1281,8 +1281,8 @@ exports[`Box Component should render properly with given bg and color 1`] = `
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1342,8 +1342,8 @@ exports[`Box Component should render properly with given height and width 1`] = 
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1403,8 +1403,8 @@ exports[`Box Component should render with given margin 1`] = `
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1462,8 +1462,8 @@ exports[`Box Component should render with given padding 1`] = `
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1516,13 +1516,13 @@ exports[`Box Component should render with given shadowColor 1`] = `
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0px 4px 6px tomato;
+  box-shadow: 0rem 0.4rem 0.6rem tomato;
 }
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1580,8 +1580,8 @@ exports[`Box Component should wrap children into Text component when rendering s
 
 .c0,
 .c0 .c1,
-.c0 .sc-AxiKw,
-.c0 .sc-AxiKw * {
+.c0 .sc-1pf3x8a-0,
+.c0 .sc-1pf3x8a-0 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }

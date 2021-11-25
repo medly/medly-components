@@ -1,15 +1,16 @@
 import { ConcentricCircleLoader } from '@medly-components/loaders';
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import React, { FC } from 'react';
+import type { FC } from 'react';
+import { Children, forwardRef, memo } from 'react';
 import CenterAlignedLoader from '../CenterAlignedLoader';
 import Text from '../Text';
 import { BoxStyled } from './Box.styled';
 import { BoxProps } from './types';
 
-const Component: FC<BoxProps> = React.memo(
-    React.forwardRef((props, ref) => (
+const Component: FC<BoxProps> = memo(
+    forwardRef((props, ref) => (
         <BoxStyled ref={ref} {...props}>
-            {React.Children.map(props.children, c => {
+            {Children.map(props.children, c => {
                 return isValidStringOrNumber(c) ? <Text textVariant={props.fontVariant}>{c}</Text> : c;
             })}
             {props.isLoading && <CenterAlignedLoader loader={<ConcentricCircleLoader color={props.color} size="XS" />} />}
