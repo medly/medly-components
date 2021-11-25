@@ -17,7 +17,7 @@ export const Row: FC<RowProps> = memo(props => {
         {
             id,
             data,
-            isNavigated,
+            isNavigated = false,
             isRowSelectedFromKeyboard,
             isRowExpandedFromKeyboard,
             showShadowAfterFrozenElement,

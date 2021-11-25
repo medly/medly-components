@@ -1,4 +1,4 @@
-import { useKeyPress } from 'packages/utils/src/hooks';
+import { useKeyPress } from '@medly-components/utils';
 import { FC, memo, useContext, useEffect, useMemo, useState } from 'react';
 import { TableComponentsCommonPropsContext } from '../context';
 import { getGridTemplateColumns } from '../helpers';

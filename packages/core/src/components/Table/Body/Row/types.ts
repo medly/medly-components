@@ -16,7 +16,7 @@ export type RowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & 
     selectedRowIds: Array<any>;
     onRowSelection: (id: any) => void;
     showShadowAfterFrozenElement?: boolean;
-    isNavigated: boolean;
+    isNavigated?: boolean;
     isRowSelectedFromKeyboard?: boolean;
     isRowExpandedFromKeyboard?: boolean;
 };
