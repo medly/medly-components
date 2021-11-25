@@ -1,15 +1,15 @@
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
-import { Fragment, memo, useCallback, useMemo } from 'react';
+import { FC, Fragment, memo, useCallback, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
+import OptionComponent from '../../SingleSelect/Options/Option';
 import { Option } from '../types';
 import Chip from './Chip';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
 const Component: FC<OptionsProps> = memo(props => {
-    const { id, values, size, options, onOptionClick } = props;
+    const { id, inputValue, values, setValues, size, options, onOptionClick, isCreatable } = props;
 
     const selectedValues = useMemo(() => values.map(op => op.value), [values]),
         stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
@@ -32,7 +32,10 @@ const Component: FC<OptionsProps> = memo(props => {
                 onOptionClick(newValues);
             },
             [selectedValues, onOptionClick]
-        );
+        ),
+        handleCreatableOptionClick = () => {
+            setValues && setValues(prevValues => [...prevValues, { label: inputValue, value: inputValue, creatable: true }]);
+        };
 
     return (
         <Styled.OptionsWrapper size={size} id={`${id}-options-wrapper`} onClick={stopPropagation}>
@@ -52,30 +55,46 @@ const Component: FC<OptionsProps> = memo(props => {
                     ))
                 )}
             </Styled.ChipArea>
-            <Styled.Options id={`${id}-options`} onClick={stopPropagation} size={size}>
-                {options.map((op, index) => (
-                    <Fragment key={index}>
-                        {Array.isArray(op.value) ? (
-                            <CheckboxGroup
-                                values={selectedValues.filter(vl => op.value.map((nestedOp: Option) => nestedOp.value).includes(vl))}
-                                showSelectAll
-                                disabled={op.disabled}
-                                label={op.label}
-                                options={op.value}
-                                onChange={handleGroupClick(op.value)}
-                                fullWidthOptions={true}
-                            />
-                        ) : (
-                            <Checkbox
-                                {...op}
-                                name={op.value}
-                                checked={selectedValues.includes(op.value)}
-                                onChange={handleCheckboxClick(op.value)}
-                            />
-                        )}
-                    </Fragment>
-                ))}
-            </Styled.Options>
+            {isCreatable &&
+            inputValue &&
+            inputValue.length &&
+            !options.some(({ value }) => value.includes(inputValue)) &&
+            !values.some(({ value }) => value === inputValue) ? (
+                <Styled.Options id={`${id}-options`} onClick={stopPropagation} size={size}>
+                    <OptionComponent
+                        value={inputValue}
+                        label={`Create "${inputValue}"`}
+                        variant="filled"
+                        onClick={handleCreatableOptionClick}
+                        size={size}
+                    />
+                </Styled.Options>
+            ) : (
+                <Styled.Options id={`${id}-options`} onClick={stopPropagation} size={size}>
+                    {options.map((op, index) => (
+                        <Fragment key={index}>
+                            {Array.isArray(op.value) ? (
+                                <CheckboxGroup
+                                    values={selectedValues.filter(vl => op.value.map((nestedOp: Option) => nestedOp.value).includes(vl))}
+                                    showSelectAll
+                                    disabled={op.disabled}
+                                    label={op.label}
+                                    options={op.value}
+                                    onChange={handleGroupClick(op.value)}
+                                    fullWidthOptions={true}
+                                />
+                            ) : (
+                                <Checkbox
+                                    {...op}
+                                    name={op.value}
+                                    checked={selectedValues.includes(op.value)}
+                                    onChange={handleCheckboxClick(op.value)}
+                                />
+                            )}
+                        </Fragment>
+                    ))}
+                </Styled.Options>
+            )}
         </Styled.OptionsWrapper>
     );
 });

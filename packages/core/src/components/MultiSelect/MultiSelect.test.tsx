@@ -240,4 +240,33 @@ describe('MultiSelect component', () => {
         fireEvent.click(getByText('Dummy1'));
         expect(validatorMock).toHaveBeenCalledWith(['Dummy1']);
     });
+
+    it('should create options if isCreatable flag is passed', async () => {
+        const option = 'optionThatDoesNotExist';
+        const mockOnChange = jest.fn();
+        render(<MultiSelect options={options} onChange={mockOnChange} isCreatable />);
+        fireEvent.change(screen.getByRole('textbox'), { target: { value: option } });
+        fireEvent.click(screen.getByText(`Create "${option}"`));
+        const createdOption = await screen.findByText(option);
+        expect(createdOption).toBeTruthy();
+        waitFor(() => expect(mockOnChange).toHaveBeenCalledWith([option]));
+    });
+
+    it('should not create option if option already exists in list', async () => {
+        const optionToCreate = 'Dummy1';
+        render(<MultiSelect options={options} isCreatable />);
+        const input = screen.getByRole('textbox');
+        fireEvent.change(input, { target: { value: optionToCreate } });
+        const findElement = screen.queryByText(`Create "${optionToCreate}"`);
+        expect(findElement).toBeFalsy();
+    });
+
+    it('should not create option if option already exists in values', async () => {
+        const optionToCreate = 'Dummy1';
+        render(<MultiSelect values={['Dummy1']} options={options} isCreatable />);
+        const input = screen.getByRole('textbox');
+        fireEvent.change(input, { target: { value: optionToCreate } });
+        const findElement = screen.queryByText(`Create "${optionToCreate}"`);
+        expect(findElement).toBeFalsy();
+    });
 });

@@ -93,6 +93,37 @@ import { variants, sizes, options, disabledOptions, ThemeInterface } from './Mul
     </Story>
 </Preview>
 
+#### 3. MultiSelect component with creatable options
+
+MultiSelect with creatable options allows user to create new options apart from what are already present. This feature requires `isCreatable` flag set to be true.
+
+<Preview withToolbar>
+    <Story name="WithCreatableOptions">
+        {() => {
+            const [values, setValues] = useState(['lorem pharmacy', 'a pharmacy']);
+            return (
+                <MultiSelect
+                    options={options}
+                    values={values}
+                    onChange={setValues}
+                    size={select('Size', sizes, 'M')}
+                    disabled={boolean('Disabled', false)}
+                    fullWidth={boolean('Full Width', false)}
+                    required={boolean('Required', false)}
+                    label={text('Label', 'Pharmacy')}
+                    placeholder="Search Pharmacy"
+                    minWidth={text('Min Width', '20rem')}
+                    isSearchable={boolean('Is Searchable', true)}
+                    helperText={text('Helper Text', 'We will show reports based on Pharmacy')}
+                    errorText={text('Error Text', '')}
+                    variant={select('Variant', variants, 'filled')}
+                    isCreatable={boolean('Creatable', true)}
+                />
+            );
+        }}
+    </Story>
+</Preview>
+
 ### Props
 
 <Props of={MultiSelect} />

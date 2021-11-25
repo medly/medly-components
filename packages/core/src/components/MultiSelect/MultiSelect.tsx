@@ -30,6 +30,7 @@ const Component: FC<MultiSelectProps> = memo(
                 onInputChange,
                 showTooltipForHelperAndErrorText,
                 prefix,
+                isCreatable = false,
                 ...restProps
             } = props,
             selectId = useMemo(() => id || label?.toLocaleLowerCase().replace(' ', '') || 'medly-multiSelect', [id, label]);
@@ -104,7 +105,9 @@ const Component: FC<MultiSelectProps> = memo(
             );
 
         useEffect(() => {
-            setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values!));
+            setSelectedOptions(
+                getDefaultSelectedOptions([...defaultOptions, ...selectedOptions.filter(val => val.creatable === true)], values!)
+            );
             setOptions(inputRef.current?.value ? filterOptions(defaultOptions, inputRef.current?.value) : defaultOptions);
         }, [defaultOptions, values]);
 
@@ -181,11 +184,14 @@ const Component: FC<MultiSelectProps> = memo(
                 {!disabled && areOptionsVisible && (
                     <Options
                         id={`${selectId}`}
+                        inputValue={inputValue}
                         size={size!}
                         ref={optionsRef}
                         values={selectedOptions}
+                        setValues={setSelectedOptions}
                         options={options}
                         onOptionClick={handleOptionClick}
+                        isCreatable={isCreatable}
                     />
                 )}
             </Wrapper>
@@ -201,6 +207,7 @@ Component.defaultProps = {
     variant: 'filled',
     isSearchable: true,
     placeholder: 'Please Select . . .',
-    showDecorators: true
+    showDecorators: true,
+    isCreatable: false
 };
 export const MultiSelect: FC<MultiSelectProps> & WithStyle = Object.assign(Component, { Style: Wrapper });

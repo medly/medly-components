@@ -1,4 +1,5 @@
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { Dispatch, SetStateAction } from 'react';
 import { Option } from '../types';
 
 export interface OptionsProps extends Omit<HTMLProps<HTMLUListElement>, 'size'> {
@@ -6,6 +7,9 @@ export interface OptionsProps extends Omit<HTMLProps<HTMLUListElement>, 'size'> 
     options: Option[];
     values: any[];
     onOptionClick: (options: any[]) => void;
+    isCreatable?: boolean;
+    setValues?: Dispatch<SetStateAction<any[]>>;
+    inputValue?: string;
 }
 
 export interface OptionStyledProps extends HTMLProps<HTMLLIElement>, WithThemeProp {
