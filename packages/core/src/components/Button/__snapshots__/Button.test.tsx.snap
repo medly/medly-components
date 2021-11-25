@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component should render properly as flat when hideUnderline set to false 1`] = `
+exports[`Button component should render flat variant properly when hideUnderline set to false 1`] = `
 .c2 {
   margin: 0;
   color: inherit;
@@ -157,7 +157,7 @@ exports[`Button component should render properly as flat when hideUnderline set 
 </div>
 `;
 
-exports[`Button component should render properly as flat when hideUnderline set to true 1`] = `
+exports[`Button component should render flat variant properly when hideUnderline set to true 1`] = `
 .c2 {
   margin: 0;
   color: inherit;
