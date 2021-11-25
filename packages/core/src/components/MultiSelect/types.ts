@@ -6,6 +6,7 @@ export interface Option {
     label: string;
     selected?: boolean;
     disabled?: boolean;
+    creatable?: boolean;
 }
 
 export interface DefaultSelected {
