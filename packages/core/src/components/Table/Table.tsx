@@ -36,6 +36,7 @@ export const Component: FC<TableProps> = memo(
                 withInfiniteScroll,
                 onPageChange,
                 maxHeight,
+                keybindings,
                 ...restProps
             } = props,
             isGroupedTable = !!restProps.groupBy,
@@ -147,7 +148,8 @@ export const Component: FC<TableProps> = memo(
                                 selectedRowIds: isGroupedTable ? selectedGroupIds : selectedRowIds,
                                 onRowSelection: toggleId,
                                 onGroupedRowSelection: groupedRowSelector.toggleIds,
-                                showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
+                                showShadowAfterFrozenElement: !scrollState.isScrolledToLeft,
+                                keybindings: keybindings!
                             }}
                         />
                         {withPagination && !withInfiniteScroll && <Foot tableSize={size!} />}
@@ -173,7 +175,13 @@ Component.defaultProps = {
     withMinimap: false,
     isRowSelectable: false,
     isRowExpandable: false,
-    withRowSeparators: true
+    withRowSeparators: true,
+    keybindings: {
+        up: 'ArrowUp',
+        down: 'ArrowDown',
+        selectRow: 'x',
+        expandRow: ' '
+    }
 };
 
 Component.displayName = 'Table';

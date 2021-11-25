@@ -1,4 +1,7 @@
+import { Keybindings } from '../types';
+
 export interface TableBodyProps {
+    keybindings: Keybindings;
     setUniqueIds: React.Dispatch<React.SetStateAction<any[]>>;
     selectedRowIds: Array<number | string>;
     onRowSelection: (id: number | string) => void;
