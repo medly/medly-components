@@ -38,6 +38,10 @@ const Component: FC<HeadCellProps> = memo(props => {
     }, [columnMaxSize]);
 
     useEffect(() => {
+        cellEl.current?.clientWidth && onWidthChange(cellEl.current?.clientWidth, field);
+    }, [cellEl.current?.clientWidth]);
+
+    useEffect(() => {
         if (!isLoading && addColumnMaxSize && hiddenDivRef.current) {
             hiddenDivRef.current.innerHTML = children;
             const currentSize = hiddenDivRef.current.clientWidth;
