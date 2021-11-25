@@ -1,10 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useContext } from 'react';
+import { memo, useContext } from 'react';
 import { TabsContext } from '../Tabs.context';
 import * as Styled from './Tab.styled';
 import { TabProps } from './types';
+import type { FC } from 'react';
 
-const Component: React.FC<TabProps> = React.memo(props => {
+const Component: FC<TabProps> = memo(props => {
     const { id, active, label, icon: Icon = null, helperText, count, disabled, disabledLabel, ...restProps } = props,
         { tabSize, tabBackground, variant } = useContext(TabsContext);
     return (
@@ -43,4 +44,4 @@ const Component: React.FC<TabProps> = React.memo(props => {
     );
 });
 Component.displayName = 'Tab';
-export const Tab: React.FC<TabProps> & WithStyle = Object.assign(Component, { Style: Styled.TabWrapper });
+export const Tab: FC<TabProps> & WithStyle = Object.assign(Component, { Style: Styled.TabWrapper });

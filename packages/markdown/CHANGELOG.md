@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.12](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.4.11...@medly-components/markdown@0.4.12) (2021-11-22)
+
+**Note:** Version bump only for package @medly-components/markdown
+
+
+
+
+
+## [0.4.11](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.4.10...@medly-components/markdown@0.4.11) (2021-11-18)
+
+**Note:** Version bump only for package @medly-components/markdown
+
+
+
+
+
+## [0.4.10](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.4.9...@medly-components/markdown@0.4.10) (2021-11-18)
+
+**Note:** Version bump only for package @medly-components/markdown
+
+
+
+
+
+## [0.4.9](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.4.8...@medly-components/markdown@0.4.9) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/markdown
+
+
+
+
+
+## [0.4.8](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.4.7...@medly-components/markdown@0.4.8) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/markdown
+
+
+
+
+
+## [0.4.7](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.4.6...@medly-components/markdown@0.4.7) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/markdown
+
+
+
+
+
+## [0.4.6](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.4.5...@medly-components/markdown@0.4.6) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/markdown
+
+
+
+
+
+## [0.4.5](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.4.4...@medly-components/markdown@0.4.5) (2021-11-11)
+
+**Note:** Version bump only for package @medly-components/markdown
+
+
+
+
+
 ## [0.4.4](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.4.3...@medly-components/markdown@0.4.4) (2021-10-31)
 
 **Note:** Version bump only for package @medly-components/markdown

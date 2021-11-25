@@ -3,6 +3,137 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/medly/medly-components/compare/@medly-components/forms@2.0.2...@medly-components/forms@2.0.3) (2021-11-22)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.0.2](https://github.com/medly/medly-components/compare/@medly-components/forms@2.0.1...@medly-components/forms@2.0.2) (2021-11-22)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.0.1](https://github.com/medly/medly-components/compare/@medly-components/forms@2.0.0...@medly-components/forms@2.0.1) (2021-11-21)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [2.0.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.37.7...@medly-components/forms@2.0.0) (2021-11-18)
+
+
+### Code Refactoring
+
+* update hex of rgb color ([#533](https://github.com/medly/medly-components/issues/533)) ([71b5d45](https://github.com/medly/medly-components/commit/71b5d45fd8cbacd55b7c752357d6e63c4f0d9306))
+
+
+### BREAKING CHANGES
+
+* update red, blue & green color hex values
+
+
+
+
+
+## [1.37.7](https://github.com/medly/medly-components/compare/@medly-components/forms@1.37.6...@medly-components/forms@1.37.7) (2021-11-18)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.37.6](https://github.com/medly/medly-components/compare/@medly-components/forms@1.37.5...@medly-components/forms@1.37.6) (2021-11-17)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.37.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.37.4...@medly-components/forms@1.37.5) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.37.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.37.3...@medly-components/forms@1.37.4) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.37.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.37.2...@medly-components/forms@1.37.3) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.37.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.37.1...@medly-components/forms@1.37.2) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.37.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.37.0...@medly-components/forms@1.37.1) (2021-11-12)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.37.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.36.5...@medly-components/forms@1.37.0) (2021-11-12)
+
+
+### Features
+
+* use new JSX transform ([#506](https://github.com/medly/medly-components/issues/506)) ([b997806](https://github.com/medly/medly-components/commit/b997806286f990fd5e2b789aa184d0c7d3a3a5a8))
+
+
+
+
+
+## [1.36.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.36.4...@medly-components/forms@1.36.5) (2021-11-11)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.36.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.36.3...@medly-components/forms@1.36.4) (2021-11-11)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.36.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.36.2...@medly-components/forms@1.36.3) (2021-11-10)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [1.36.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.36.1...@medly-components/forms@1.36.2) (2021-10-31)
 
 **Note:** Version bump only for package @medly-components/forms

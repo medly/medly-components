@@ -23,7 +23,7 @@ describe('updateNestedValue', () => {
     it('should retain references to non-primitive and non-object values', () => {
         const shared = [1, 2, 3];
         const input = { a: { b: 0 }, shared };
-        const result = updateNestedValue(input, 'a', { b: 1 }) as any;
+        const result = updateNestedValue(input, 'a', { b: 1 });
         expect(result.shared).toBe(shared);
     });
 });

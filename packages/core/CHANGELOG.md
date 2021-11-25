@@ -3,6 +3,152 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.0.2...@medly-components/core@3.1.0) (2021-11-22)
+
+
+### Features
+
+* add freezePosition prop to tableColumnConfig ([#535](https://github.com/medly/medly-components/issues/535)) ([5402547](https://github.com/medly/medly-components/commit/5402547536a56e4ffb8142ef867205e34d4a2b0f))
+
+
+
+
+
+## [3.0.2](https://github.com/medly/medly-components/compare/@medly-components/core@3.0.1...@medly-components/core@3.0.2) (2021-11-22)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [3.0.1](https://github.com/medly/medly-components/compare/@medly-components/core@3.0.0...@medly-components/core@3.0.1) (2021-11-21)
+
+
+### Bug Fixes
+
+* selecting option with numeric value ([#534](https://github.com/medly/medly-components/issues/534)) ([5099404](https://github.com/medly/medly-components/commit/50994041a96923bf4988820a7ed4be782c9f1e94))
+
+
+
+
+
+# [3.0.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.6...@medly-components/core@3.0.0) (2021-11-18)
+
+
+### Code Refactoring
+
+* update hex of rgb color ([#533](https://github.com/medly/medly-components/issues/533)) ([71b5d45](https://github.com/medly/medly-components/commit/71b5d45fd8cbacd55b7c752357d6e63c4f0d9306))
+
+
+### BREAKING CHANGES
+
+* update red, blue & green color hex values
+
+
+
+
+
+## [2.38.6](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.5...@medly-components/core@2.38.6) (2021-11-18)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.38.5](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.4...@medly-components/core@2.38.5) (2021-11-17)
+
+
+### Bug Fixes
+
+* **core:** fix table select issue when rowSelectionDisableKey is not provided ([#528](https://github.com/medly/medly-components/issues/528)) ([eacd684](https://github.com/medly/medly-components/commit/eacd684be330e4fa75cca0222fe25e333cd1d57b))
+
+
+
+
+
+## [2.38.4](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.3...@medly-components/core@2.38.4) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.38.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.2...@medly-components/core@2.38.3) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.38.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.1...@medly-components/core@2.38.2) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.38.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.38.0...@medly-components/core@2.38.1) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [2.38.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.37.0...@medly-components/core@2.38.0) (2021-11-12)
+
+
+### Features
+
+* **core:** add getNestedValue in table row ([#515](https://github.com/medly/medly-components/issues/515)) ([4c4c978](https://github.com/medly/medly-components/commit/4c4c978a08dab717ea341ebd705a4401053c0263))
+
+
+
+
+
+# [2.37.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.36.0...@medly-components/core@2.37.0) (2021-11-12)
+
+
+### Features
+
+* use new JSX transform ([#506](https://github.com/medly/medly-components/issues/506)) ([b997806](https://github.com/medly/medly-components/commit/b997806286f990fd5e2b789aa184d0c7d3a3a5a8))
+
+
+
+
+
+# [2.36.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.35.3...@medly-components/core@2.36.0) (2021-11-11)
+
+
+### Features
+
+* add infinite scroll to table component ([#505](https://github.com/medly/medly-components/issues/505)) ([9e2836a](https://github.com/medly/medly-components/commit/9e2836aed889ad441de64c6a5c8e412ae246be28))
+
+
+
+
+
+## [2.35.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.35.2...@medly-components/core@2.35.3) (2021-11-11)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.35.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.35.1...@medly-components/core@2.35.2) (2021-11-10)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
 ## [2.35.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.35.0...@medly-components/core@2.35.1) (2021-10-31)
 
 **Note:** Version bump only for package @medly-components/core

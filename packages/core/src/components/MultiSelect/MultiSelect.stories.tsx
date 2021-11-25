@@ -1,6 +1,6 @@
 import { defaultTheme, MultiSelectTheme } from '@medly-components/theme';
-import React from 'react';
 import { MultiSelectProps } from './types';
+import type { FC } from 'react';
 
 export const variants: Required<MultiSelectProps>['variant'][] = ['outlined', 'filled', 'fusion'];
 export const sizes: Required<MultiSelectProps>['size'][] = ['S', 'M'];
@@ -20,7 +20,7 @@ export const options = [
     ],
     disabledOptions = [{ value: 'disabled pharmacy', label: 'Disabled Pharmacy', disabled: true }, ...options];
 
-export const ThemeInterface: React.FC<MultiSelectTheme> = () => null;
+export const ThemeInterface: FC<MultiSelectTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.multiSelect
 };

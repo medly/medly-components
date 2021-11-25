@@ -1,11 +1,11 @@
 import { ArrowDropDownIcon, ArrowDropUpIcon, DropdownIcon } from '@medly-components/icons';
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Children, FC, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Text from '../../../Text';
 import { HeadCellButton, HeadCellStyled, ResizeHandler } from './HeadCell.styled';
 import { HeadCellProps } from './types';
 
-const Component: React.FC<HeadCellProps> = React.memo(props => {
+const Component: FC<HeadCellProps> = memo(props => {
     let pageX: number;
     const {
         align,
@@ -98,7 +98,7 @@ const Component: React.FC<HeadCellProps> = React.memo(props => {
         <HeadCellStyled as="th" ref={cellEl} frozen={frozen} hidden={hidden} {...restProps} tableSize={tableSize}>
             {children && (
                 <>
-                    {React.Children.map(children, c => {
+                    {Children.map(children, c => {
                         return isValidStringOrNumber(c) ? (
                             <HeadCellButton
                                 align={align}
@@ -122,5 +122,5 @@ const Component: React.FC<HeadCellProps> = React.memo(props => {
 });
 
 Component.displayName = 'HeadCell';
-const HeadCell: React.FC<HeadCellProps> & WithStyle = Object.assign(Component, { Style: HeadCellStyled });
+const HeadCell: FC<HeadCellProps> & WithStyle = Object.assign(Component, { Style: HeadCellStyled });
 export default HeadCell;

@@ -1,5 +1,4 @@
 import { cleanup, fireEvent, render, screen } from '@test-utils';
-import React from 'react';
 import { Chip } from './Chip';
 
 describe('Chip component', () => {

@@ -1,5 +1,4 @@
 import { fireEvent, render } from '@test-utils';
-import React from 'react';
 import { DialogBox } from './DialogBox';
 import { DialogBoxProps } from './types';
 

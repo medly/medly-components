@@ -1,9 +1,10 @@
-import React, { useContext } from 'react';
+import { useContext, memo } from 'react';
 import Text from '../../Text';
 import { TableComponentsCommonPropsContext } from '../context';
 import { ButtonSection, PopoverWrapper, PopupWrapper } from './ActionBar.styled';
+import type { FC } from 'react';
 
-export const ActionBar: React.FC = React.memo(() => {
+export const ActionBar: FC = memo(() => {
     const { actions, selectedRowIds } = useContext(TableComponentsCommonPropsContext);
     return (
         <PopoverWrapper>

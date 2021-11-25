@@ -1,15 +1,16 @@
 import { DateRangeIcon } from '@medly-components/icons';
 import { parseToDate, useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import { format } from 'date-fns';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import type { FC } from 'react';
+import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Calendar from '../Calendar';
 import TextField from '../TextField';
 import { DateIconWrapper, Wrapper } from './DatePicker.styled';
 import datePickerPattern from './datePickerPattern';
 import { DatePickerProps } from './types';
 
-const Component: React.FC<DatePickerProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<DatePickerProps> = memo(
+    forwardRef((props, ref) => {
         const {
                 value,
                 onChange,
@@ -36,7 +37,7 @@ const Component: React.FC<DatePickerProps> = React.memo(
                 [value, displayFormat]
             );
         const wrapperRef = useRef<HTMLDivElement>(null),
-            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             [inputKey, setInputKey] = useState(0),
             [textValue, setTextValue] = useState(''),
             [builtInErrorMessage, setErrorMessage] = useState(''),
@@ -191,4 +192,4 @@ Component.defaultProps = {
     calendarIconPosition: 'right'
 };
 Component.displayName = 'DatePicker';
-export const DatePicker: React.FC<DatePickerProps> & WithStyle = Object.assign(Component, { Style: Wrapper });
+export const DatePicker: FC<DatePickerProps> & WithStyle = Object.assign(Component, { Style: Wrapper });

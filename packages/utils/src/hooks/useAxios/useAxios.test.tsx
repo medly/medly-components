@@ -1,11 +1,11 @@
 import { cleanup, fireEvent, mockAxios, render, screen, waitFor } from '@test-utils';
-import React from 'react';
+import { FC } from 'react';
 import { useAxios } from '../useAxios';
 import { Result } from './types';
 
 type Props = Parameters<Result['request']>[0];
 
-const DummyComponent: React.FC<Props> = (config: Props) => {
+const DummyComponent: FC<Props> = (config: Props) => {
     const { data, error, request, isLoading, clear } = useAxios();
 
     const handleApiCall = () => request(config);

@@ -1,5 +1,6 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
 import { ButtonProps } from '../Button/types';
+import type { FC } from 'react';
 
 export type ToastVariants = 'success' | 'error' | 'info' | 'warning';
 
@@ -9,7 +10,7 @@ export type ToastProps = {
     /** Toast purpose */
     variant: ToastVariants;
     /** Icon to be shown in the toast */
-    icon?: React.FC<any>;
+    icon?: FC<any>;
     /** Toast Header */
     header?: string;
     /** Toast message */

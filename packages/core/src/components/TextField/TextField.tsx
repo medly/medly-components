@@ -1,14 +1,15 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, FocusEvent, FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
+import { useRef, forwardRef, memo, useCallback, useEffect, useMemo, useState } from 'react';
 import { HelperAndErrorTextTooltip } from '../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import getMaskedValue from './getMaskedValue';
 import * as Styled from './Styled';
 import { TextFieldProps } from './types';
+import type { FC, ChangeEvent, FocusEvent, FormEvent } from 'react';
 
-const Component: FC<TextFieldProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<TextFieldProps> = memo(
+    forwardRef((props, ref) => {
         const [builtInErrorMessage, setErrorMessage] = useState(''),
-            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null));
 
         const {
                 id,
@@ -68,7 +69,7 @@ const Component: FC<TextFieldProps> = React.memo(
             onBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
             onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
             onChange = useCallback(
-                (e: React.ChangeEvent<HTMLInputElement>) => {
+                (e: ChangeEvent<HTMLInputElement>) => {
                     const valueString = e.target.value ? e.target.value.toString() : '';
                     setCharacterCountValue(valueString.length);
 

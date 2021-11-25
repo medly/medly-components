@@ -232,7 +232,7 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c16,
 .c16:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -362,12 +362,12 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c5:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c5:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c5:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -375,12 +375,12 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c5:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c5:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c5:not(:disabled):active .sc-975cgx-0 {
@@ -388,13 +388,13 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c5:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c5:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c5:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -426,7 +426,7 @@ exports[`Calendar Component should render given date 1`] = `
   cursor: pointer;
 }
 
-.c3 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c3 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -1259,7 +1259,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 
 .c16,
 .c16:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -1389,12 +1389,12 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 }
 
 .c5:not(:disabled):not(:hover) {
-  color: #cc0000;
+  color: #D73A43;
   background: #ffffff;
 }
 
 .c5:not(:disabled):not(:hover) * {
-  fill: #cc0000;
+  fill: #D73A43;
 }
 
 .c5:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -1402,12 +1402,12 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 }
 
 .c5:not(:disabled):active {
-  color: #cc0000;
+  color: #D73A43;
   background: #eff2f4;
 }
 
 .c5:not(:disabled):active * {
-  fill: #cc0000;
+  fill: #D73A43;
 }
 
 .c5:not(:disabled):active .sc-975cgx-0 {
@@ -1415,13 +1415,13 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 }
 
 .c5:not(:disabled):not(:active):hover {
-  color: #cc0000;
+  color: #D73A43;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c5:not(:disabled):not(:active):hover * {
-  fill: #cc0000;
+  fill: #D73A43;
 }
 
 .c5:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -1453,7 +1453,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   cursor: pointer;
 }
 
-.c3 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c3 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;

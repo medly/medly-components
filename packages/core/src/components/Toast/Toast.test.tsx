@@ -1,6 +1,5 @@
 import { HomeIcon } from '@medly-components/icons';
 import { fireEvent, render } from '@test-utils';
-import React from 'react';
 import { Toast } from './Toast';
 import { ToastProps } from './types';
 

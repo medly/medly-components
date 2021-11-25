@@ -1,5 +1,4 @@
 import { cleanup, fireEvent, render, screen } from '@test-utils';
-import React from 'react';
 import { Modal } from './Modal';
 import { ModalBackgroundStyled } from './Modal.styled';
 import { ModalBackgroundProps, ModalProps } from './types';

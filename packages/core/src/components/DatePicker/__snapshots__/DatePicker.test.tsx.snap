@@ -82,16 +82,16 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 }
 
 .c4 .c13,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c4 .c13 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -119,37 +119,37 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 
 .c4:focus-within,
 .c4:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c4:focus-within::after,
 .c4:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c4:focus-within .c11,
 .c4:focus-within:hover .c11 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c4:focus-within .c13,
 .c4:focus-within:hover .c13,
-.c4:focus-within .sc-dynlvq-0,
-.c4:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c4:focus-within .dynlvq-0,
+.c4:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c4:focus-within .c13 *,
 .c4:focus-within:hover .c13 *,
-.c4:focus-within .sc-dynlvq-0 *,
-.c4:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c4:focus-within .dynlvq-0 *,
+.c4:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c4:focus-within input,
 .c4:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c4:focus-within input::-webkit-input-placeholder,
@@ -354,7 +354,7 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   padding-right: 0.8rem;
 }
 
-.c1 .sc-zv8j3p-0 {
+.c1 .zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -503,16 +503,16 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 }
 
 .c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -540,37 +540,37 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 
 .c4:focus-within,
 .c4:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c4:focus-within::after,
 .c4:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c4:focus-within .c9,
 .c4:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c4:focus-within .sc-1ubn8hn-0,
 .c4:focus-within:hover .sc-1ubn8hn-0,
-.c4:focus-within .sc-dynlvq-0,
-.c4:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c4:focus-within .dynlvq-0,
+.c4:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c4:focus-within .sc-1ubn8hn-0 *,
 .c4:focus-within:hover .sc-1ubn8hn-0 *,
-.c4:focus-within .sc-dynlvq-0 *,
-.c4:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c4:focus-within .dynlvq-0 *,
+.c4:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c4:focus-within input,
 .c4:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c4:focus-within input::-webkit-input-placeholder,
@@ -775,7 +775,7 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   padding-right: 0.8rem;
 }
 
-.c1 .sc-zv8j3p-0 {
+.c1 .zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -1074,7 +1074,7 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -1204,12 +1204,12 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -1217,12 +1217,12 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -1230,13 +1230,13 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -2110,7 +2110,7 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -2240,12 +2240,12 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -2253,12 +2253,12 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -2266,13 +2266,13 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -3143,7 +3143,7 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -3273,12 +3273,12 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -3286,12 +3286,12 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -3299,13 +3299,13 @@ exports[`DatePicker component popover placement should render properly with "bot
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -4176,7 +4176,7 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -4306,12 +4306,12 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -4319,12 +4319,12 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -4332,13 +4332,13 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -5211,7 +5211,7 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -5341,12 +5341,12 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -5354,12 +5354,12 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -5367,13 +5367,13 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -6243,7 +6243,7 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -6373,12 +6373,12 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -6386,12 +6386,12 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -6399,13 +6399,13 @@ exports[`DatePicker component popover placement should render properly with "lef
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -7275,7 +7275,7 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -7405,12 +7405,12 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -7418,12 +7418,12 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -7431,13 +7431,13 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -8310,7 +8310,7 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -8440,12 +8440,12 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -8453,12 +8453,12 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -8466,13 +8466,13 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -9342,7 +9342,7 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -9472,12 +9472,12 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -9485,12 +9485,12 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -9498,13 +9498,13 @@ exports[`DatePicker component popover placement should render properly with "rig
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -10374,7 +10374,7 @@ exports[`DatePicker component popover placement should render properly with "top
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -10504,12 +10504,12 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -10517,12 +10517,12 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -10530,13 +10530,13 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -11409,7 +11409,7 @@ exports[`DatePicker component popover placement should render properly with "top
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -11539,12 +11539,12 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -11552,12 +11552,12 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -11565,13 +11565,13 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -12441,7 +12441,7 @@ exports[`DatePicker component popover placement should render properly with "top
 
 .c17,
 .c17:hover {
-  background-color: #126AFA;
+  background-color: #3872D2;
   color: #ffffff;
 }
 
@@ -12571,12 +12571,12 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c6:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c6:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -12584,12 +12584,12 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c6:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c6:not(:disabled):active .sc-975cgx-0 {
@@ -12597,13 +12597,13 @@ exports[`DatePicker component popover placement should render properly with "top
 }
 
 .c6:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c6:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c6:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -13325,16 +13325,16 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -13374,16 +13374,16 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -13570,7 +13570,7 @@ exports[`DatePicker component should render properly when value is of date type 
   padding-right: 0.8rem;
 }
 
-.c1 .sc-zv8j3p-0 {
+.c1 .zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
@@ -13725,16 +13725,16 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -13774,16 +13774,16 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
+.c4 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
+.c4 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -13969,7 +13969,7 @@ exports[`DatePicker component should render properly when value is of string typ
   padding-right: 0.8rem;
 }
 
-.c1 .sc-zv8j3p-0 {
+.c1 .zv8j3p-0 {
   z-index: 4;
   position: absolute;
   top: calc(100% + 0px);

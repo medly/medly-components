@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useCallback, useMemo, useState } from 'react';
+import type { FC } from 'react';
+import { Children, forwardRef, memo, useCallback, useMemo, useState } from 'react';
 import Tab from './Tab';
 import TabList from './TabList';
 import TabPanel from './TabPanel';
@@ -7,14 +8,14 @@ import { TabsContext } from './Tabs.context';
 import * as Styled from './Tabs.styled';
 import { StaticProps, TabsProps } from './types';
 
-const Component: React.FC<TabsProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<TabsProps> = memo(
+    forwardRef((props, ref) => {
         const { hidePanel, defaultActive, active, onChange, children, tabSize, tabBackground, forceRender, variant, ...restProps } = props,
             tabsId = props.id || 'medly-tabs',
             tabIds = useMemo(
                 () =>
-                    children
-                        ? React.Children.toArray(children)
+                    props.children
+                        ? Children.toArray(props.children)
                               .filter((child: any) => !child.props.hide)
                               .map((child: any) => child.props.id)
                         : [],
@@ -56,4 +57,4 @@ const Component: React.FC<TabsProps> = React.memo(
 Component.displayName = 'Tabs';
 Component.defaultProps = { tabSize: 'S', tabBackground: 'WHITE', forceRender: false, hidePanel: false, variant: 'flat' };
 
-export const Tabs: React.FC<TabsProps> & StaticProps & WithStyle = Object.assign(Component, { Style: Styled.Tabs, Tab, TabList, TabPanel });
+export const Tabs: FC<TabsProps> & StaticProps & WithStyle = Object.assign(Component, { Style: Styled.Tabs, Tab, TabList, TabPanel });

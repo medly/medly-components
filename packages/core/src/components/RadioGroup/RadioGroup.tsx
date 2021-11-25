@@ -1,11 +1,11 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useMemo, useState } from 'react';
+import type { ChangeEvent, FC, FocusEvent, FormEvent } from 'react';
+import { forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
 import Radio from '../Radio';
 import { SelectorGroup } from '../Selectors';
 import { RadioGroupProps } from './types';
-
-const Component: FC<RadioGroupProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<RadioGroupProps> = memo(
+    forwardRef((props, ref) => {
         const {
             id,
             size,
@@ -29,7 +29,7 @@ const Component: FC<RadioGroupProps> = React.memo(
 
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             radioGroupId = useMemo(() => id || name, [id, name]),
-            radioGroupRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
+            radioGroupRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
             hasHelperOrErrorText = useMemo(() => !!(errorText || helperText), [errorText, helperText]);
 
@@ -40,14 +40,14 @@ const Component: FC<RadioGroupProps> = React.memo(
         );
 
         const handleOnInvalid = useCallback(
-                (event: React.FormEvent<HTMLInputElement>) => {
+                (event: FormEvent<HTMLInputElement>) => {
                     validate(value || '', (event.target as HTMLInputElement).validationMessage);
                     onInvalid && onInvalid(event);
                 },
                 [validate, onInvalid, value]
             ),
             handleOnBlur = useCallback(
-                (event: React.FocusEvent<HTMLDivElement>) => {
+                (event: FocusEvent<HTMLDivElement>) => {
                     const currentTarget = event.currentTarget,
                         target = event.target as HTMLInputElement;
                     setTimeout(() => !currentTarget.contains(document.activeElement) && validate(value || '', target.validationMessage), 0);
@@ -56,7 +56,7 @@ const Component: FC<RadioGroupProps> = React.memo(
                 [validate, onBlur, value]
             ),
             handleOnChange = useCallback(
-                (event: React.ChangeEvent<HTMLInputElement>) => {
+                (event: ChangeEvent<HTMLInputElement>) => {
                     const value = event.target.value;
                     validate(value);
                     onChange && onChange(value);

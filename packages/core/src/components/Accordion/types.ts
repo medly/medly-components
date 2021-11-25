@@ -1,10 +1,12 @@
+import type { Context, FC, Dispatch, SetStateAction } from 'react';
+
 export type StaticProps = {
-    Header: React.FC;
-    Content: React.FC;
-    Context: React.Context<AccordionContextType>;
+    Header: FC;
+    Content: FC;
+    Context: Context<AccordionContextType>;
 };
 
 export type AccordionContextType = [
     boolean /** Current active state */,
-    React.Dispatch<React.SetStateAction<boolean>> /** Function to be called to toggle the active state */
+    Dispatch<SetStateAction<boolean>> /** Function to be called to toggle the active state */
 ];

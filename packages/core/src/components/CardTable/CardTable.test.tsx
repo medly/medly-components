@@ -1,5 +1,4 @@
 import { fireEvent, render } from '@test-utils';
-import React from 'react';
 import { CardTable } from './CardTable';
 import { ColumnConfig } from './types';
 

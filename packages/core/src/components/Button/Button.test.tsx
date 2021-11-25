@@ -2,7 +2,6 @@ import { AddIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { updateNestedValue } from '@medly-components/utils';
 import { render } from '@test-utils';
-import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Button } from './Button';
 import { ButtonProps } from './types';

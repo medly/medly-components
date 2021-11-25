@@ -1,5 +1,4 @@
 import { render, screen } from '@test-utils';
-import React from 'react';
 import styled from 'styled-components';
 import { centerAligned } from './centerAligned';
 

@@ -1,12 +1,13 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { useCallback } from 'react';
+import { useCallback, memo } from 'react';
 import Checkbox from '../../../../Checkbox';
 import { LoadingDiv } from '../Styled';
 import { RowActionsCellStyled } from './RowActionsCell.styled';
 import { RowActionProps } from './types';
+import type { FC } from 'react';
 
-const Component: React.FC<RowActionProps> = React.memo(props => {
+const Component: FC<RowActionProps> = memo(props => {
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
 
     return (
@@ -44,4 +45,4 @@ const Component: React.FC<RowActionProps> = React.memo(props => {
     );
 });
 Component.displayName = 'RowActionsCell';
-export const RowActionsCell: React.FC<RowActionProps> & WithStyle = Object.assign(Component, { Style: RowActionsCellStyled });
+export const RowActionsCell: FC<RowActionProps> & WithStyle = Object.assign(Component, { Style: RowActionsCellStyled });

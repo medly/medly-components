@@ -22,9 +22,9 @@ const wrapTextStyle = css`
             white-space: nowrap;
         }
     `,
-    frozenStyle = css`
+    frozenStyle = css<TableCellStyledProps>`
         position: sticky;
-        left: 0;
+        ${props => props.freezePosition || 'left'}: 0;
         z-index: 1;
 
         * {

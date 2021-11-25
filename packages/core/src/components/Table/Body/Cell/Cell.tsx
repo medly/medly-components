@@ -1,11 +1,12 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useContext, useEffect, useMemo, useRef } from 'react';
+import { memo, useContext, useEffect, useMemo, useRef } from 'react';
 import { ThemeContext } from 'styled-components';
 import Text from '../../../Text';
 import { Cell as StyledCell, CustomComponentWrapper, LoadingDiv } from './Styled';
 import { TableCellProps } from './types';
+import type { FC } from 'react';
 
-const Component: React.FC<TableCellProps> = React.memo(props => {
+const Component: FC<TableCellProps> = memo(props => {
     const customComponentWrapperRef = useRef<HTMLDivElement>(null),
         {
             addColumnMaxSize,
@@ -54,6 +55,6 @@ const Component: React.FC<TableCellProps> = React.memo(props => {
     );
 });
 Component.displayName = 'Cell';
-const Cell: React.FC<TableCellProps> & WithStyle = Object.assign(Component, { Style: StyledCell });
+const Cell: FC<TableCellProps> & WithStyle = Object.assign(Component, { Style: StyledCell });
 
 export default Cell;

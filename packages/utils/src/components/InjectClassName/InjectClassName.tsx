@@ -1,12 +1,12 @@
-import React from 'react';
+import { Children, cloneElement, FunctionComponent } from 'react';
 import { Props } from './types';
 
-const InjectClassName: React.FunctionComponent<Props> = props => {
+const InjectClassName: FunctionComponent<Props> = props => {
     const { className, children } = props;
     return (
         <>
-            {React.Children.map(children, child => {
-                return React.cloneElement(child as any, {
+            {Children.map(children, child => {
+                return cloneElement(child as any, {
                     className
                 });
             })}

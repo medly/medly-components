@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import styled from 'styled-components';
 import { getFontStyle } from './getFontStyle';
 

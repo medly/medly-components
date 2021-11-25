@@ -20,14 +20,16 @@ import { placements } from '../Popover/Popover.stories.tsx';
 
 # DatePicker component
 
-It is a controlled component and its state must handled.
+The datepicker component allows you to select a date through input text or calendar date selection. 
+
+It is a controlled react component and must have the following handle state:
 
 ```tsx
 const [date, setDate] = useState<Date | null>(null);
 return <DatePicker label="Select Date" value={date} onChange={setDate} />;
 ```
 
-You can either enter the date manually or use the calendar inside the datepicker component. To open the calendar, click on the calendar icon inside the datepicker component, and to close the calendar, select any date or click outside the component.
+To open the calendar, click on the calendar icon inside the DatePicker component. To close the calendar, select any date or click outside of the DatePicker component. You can also manually enter the date.
 
 <Preview withToolbar>
     <Story name="DatePicker">
@@ -57,7 +59,7 @@ You can either enter the date manually or use the calendar inside the datepicker
 
 ### Validations
 
-1. Validations happen on invalid and blur events.
+1. Validations happen on both invalid and blur events.
 
 ```tsx
 const FormWithDatePicker: React.FC = () => {
@@ -78,7 +80,7 @@ const FormWithDatePicker: React.FC = () => {
     <FormWithDatePicker />
 </Preview>
 
-2. Validations happen only on blur events when you either enter an incorrect value or focus out of the component.
+2. Validations happen only on blur events if we enter an incorrect value and focus out of the DatePicker component.
 
 ```tsx
 const DatePicker: React.FC = () => {

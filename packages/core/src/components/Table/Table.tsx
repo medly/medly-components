@@ -1,5 +1,6 @@
 import { useCombinedRefs, useUpdateEffect, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react';
+import type { FC } from 'react';
+import { forwardRef, memo, useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import ActionBar from './ActionBar';
 import Body from './Body';
 import ColumnConfiguration from './ColumnConfiguration';
@@ -15,8 +16,8 @@ import useGroupedRowSelector from './useGroupedRowSelector';
 import useRowSelector from './useRowSelector';
 import { useScrollState } from './useScrollState';
 
-export const Component: FC<TableProps> = React.memo(
-    React.forwardRef((props, ref) => {
+export const Component: FC<TableProps> = memo(
+    forwardRef((props, ref) => {
         const {
                 data,
                 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -32,13 +33,16 @@ export const Component: FC<TableProps> = React.memo(
                 showRowWithCardStyle,
                 withPagination,
                 onScrolledToBottom,
+                withInfiniteScroll,
+                onPageChange,
+                maxHeight,
                 ...restProps
             } = props,
             isGroupedTable = !!restProps.groupBy,
             size = showRowWithCardStyle ? 'L' : restProps.size;
 
         const hiddenDivRef = useRef(null),
-            tableState = useState<TableState>({
+            [tableState, setTableState] = useState<TableState>({
                 sortField: props.defaultSortField,
                 sortOrder: props.defaultSortOrder,
                 activePage: props.defaultActivePage
@@ -46,7 +50,7 @@ export const Component: FC<TableProps> = React.memo(
             [scrollState, handleScroll] = useScrollState(),
             [selectedGroupIds, setSelectedGroupIds] = useState<(string | number)[]>([]),
             [isSelectAllDisable, setSelectAllDisableState] = useState(true),
-            tableRef = useCombinedRefs<HTMLTableElement>(ref, React.useRef(null)),
+            tableRef = useCombinedRefs<HTMLTableElement>(ref, useRef(null)),
             [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
             [columns, setColumns] = useState(
                 getUpdatedColumns({ columnConfigs: props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable, maxColumnSizes })
@@ -88,8 +92,18 @@ export const Component: FC<TableProps> = React.memo(
             }
         }, [scrollState.isScrolledToBottom]);
 
+        useEffect(() => {
+            if (withInfiniteScroll && scrollState.scrolledPercentage > 70) {
+                setTableState(state => {
+                    const newState = { ...state, activePage: (state.activePage ?? 0) + 1 };
+                    onPageChange && onPageChange(newState);
+                    return newState;
+                });
+            }
+        }, [withInfiniteScroll, scrollState.scrolledPercentage]);
+
         return (
-            <TableStateContext.Provider value={tableState}>
+            <TableStateContext.Provider value={[tableState, setTableState]}>
                 <TableComponentsCommonPropsContext.Provider
                     value={{
                         ...props,
@@ -111,6 +125,7 @@ export const Component: FC<TableProps> = React.memo(
                         onScroll={handleScroll}
                         isRowClickable={isRowClickable}
                         showRowWithCardStyle={showRowWithCardStyle}
+                        maxHeight={maxHeight}
                     >
                         <Head
                             {...{
@@ -135,7 +150,7 @@ export const Component: FC<TableProps> = React.memo(
                                 showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                             }}
                         />
-                        {withPagination && <Foot tableSize={size!} />}
+                        {withPagination && !withInfiniteScroll && <Foot tableSize={size!} />}
                     </TableStyled>
                 </TableComponentsCommonPropsContext.Provider>
             </TableStateContext.Provider>

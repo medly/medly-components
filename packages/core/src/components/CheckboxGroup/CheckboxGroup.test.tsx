@@ -1,6 +1,5 @@
 import { fireEvent, render, screen, waitFor } from '@test-utils';
 import userEvent from '@testing-library/user-event';
-import React from 'react';
 import { CheckboxGroup } from './CheckboxGroup';
 import { CheckboxGroupProps } from './types';
 
@@ -88,7 +87,7 @@ describe('CheckboxGroup component', () => {
         renderer({ errorText: 'Something went wrong' });
         const errorText = screen.getByText('Something went wrong');
         expect(errorText).toBeInTheDocument();
-        expect(errorText).toHaveStyle(`color: rgb(204, 0, 0)`);
+        expect(errorText).toHaveStyle(`color: rgb(215, 58, 67)`);
     });
 
     it('should call validator function on blur', async () => {

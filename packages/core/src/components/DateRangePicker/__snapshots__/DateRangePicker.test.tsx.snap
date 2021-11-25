@@ -2170,19 +2170,19 @@ exports[`DateRangePicker Custom date range options should render properly with c
 }
 
 .c4 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c4:hover {
-  background-color: #D0E1FE;
+  background-color: #D7E3F6;
 }
 
 .c4:hover * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c12 {
-  border-right: 0.1rem solid #126AFA;
+  border-right: 0.1rem solid #3872D2;
   height: 3.2rem;
   margin-right: 1.6rem;
   border-radius: 0.1rem;
@@ -2200,7 +2200,7 @@ exports[`DateRangePicker Custom date range options should render properly with c
 
 .c20:focus-within .c9,
 .c20:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c20 .c2:first-of-type {
@@ -2246,12 +2246,12 @@ exports[`DateRangePicker Custom date range options should render properly with c
 }
 
 .c1 .c21,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .c21 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
@@ -2283,37 +2283,37 @@ exports[`DateRangePicker Custom date range options should render properly with c
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c9,
 .c1:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .c21,
 .c1:focus-within:hover .c21,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .c21 *,
 .c1:focus-within:hover .c21 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2734,7 +2734,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -2768,7 +2768,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -2800,7 +2800,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -2846,7 +2846,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -2891,7 +2891,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -2932,7 +2932,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -2980,7 +2980,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -2989,7 +2989,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -3078,7 +3078,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -4534,7 +4534,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -4568,7 +4568,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -4600,7 +4600,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -4646,7 +4646,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -4691,7 +4691,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -4732,7 +4732,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -4780,7 +4780,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -4789,7 +4789,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -4878,7 +4878,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -6334,7 +6334,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -6368,7 +6368,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -6400,7 +6400,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -6446,7 +6446,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -6491,7 +6491,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -6532,7 +6532,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -6580,7 +6580,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -6589,7 +6589,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -6678,7 +6678,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -8136,7 +8136,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -8170,7 +8170,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -8202,7 +8202,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -8248,7 +8248,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -8293,7 +8293,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -8334,7 +8334,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -8382,7 +8382,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -8391,7 +8391,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -8480,7 +8480,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -9935,7 +9935,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -9969,7 +9969,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -10001,7 +10001,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -10047,7 +10047,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -10092,7 +10092,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -10133,7 +10133,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -10181,7 +10181,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -10190,7 +10190,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -10279,7 +10279,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -11734,7 +11734,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -11768,7 +11768,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -11800,7 +11800,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -11846,7 +11846,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -11891,7 +11891,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -11932,7 +11932,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -11980,7 +11980,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -11989,7 +11989,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -12078,7 +12078,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -13536,7 +13536,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -13570,7 +13570,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -13602,7 +13602,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -13648,7 +13648,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -13693,7 +13693,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -13734,7 +13734,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -13782,7 +13782,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -13791,7 +13791,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -13880,7 +13880,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -15335,7 +15335,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -15369,7 +15369,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -15401,7 +15401,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -15447,7 +15447,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -15492,7 +15492,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -15533,7 +15533,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -15581,7 +15581,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -15590,7 +15590,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -15679,7 +15679,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -17134,7 +17134,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -17168,7 +17168,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -17200,7 +17200,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -17246,7 +17246,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -17291,7 +17291,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -17332,7 +17332,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -17380,7 +17380,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -17389,7 +17389,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -17478,7 +17478,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -18936,7 +18936,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -18970,7 +18970,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -19002,7 +19002,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -19048,7 +19048,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -19093,7 +19093,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -19134,7 +19134,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -19182,7 +19182,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -19191,7 +19191,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -19280,7 +19280,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -20735,7 +20735,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -20769,7 +20769,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -20801,7 +20801,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -20847,7 +20847,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -20892,7 +20892,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -20933,7 +20933,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -20981,7 +20981,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -20990,7 +20990,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -21079,7 +21079,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -22534,7 +22534,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c15:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c16 {
@@ -22568,7 +22568,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c16:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c17 {
@@ -22600,7 +22600,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c17:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c19 {
@@ -22646,7 +22646,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c19:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c20 {
@@ -22691,7 +22691,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c20:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c23 {
@@ -22732,7 +22732,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c23:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c24 {
@@ -22780,7 +22780,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c24:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c18 {
@@ -22789,7 +22789,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -22878,7 +22878,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 <div
-  class="sc-zv8j3p-0 c0"
+  class="zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -24541,7 +24541,7 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c29:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c30 {
@@ -24575,7 +24575,7 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c30:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c31 {
@@ -24607,7 +24607,7 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c31:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c33 {
@@ -24653,7 +24653,7 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c33:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c34 {
@@ -24698,7 +24698,7 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c34:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c37 {
@@ -24739,7 +24739,7 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c37:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c38 {
@@ -24787,7 +24787,7 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c38:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c32 {
@@ -24796,7 +24796,7 @@ exports[`DateRangePicker should render properly 1`] = `
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -24883,19 +24883,19 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c4 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c4:hover {
-  background-color: #D0E1FE;
+  background-color: #D7E3F6;
 }
 
 .c4:hover * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c12 {
-  border-right: 0.1rem solid #126AFA;
+  border-right: 0.1rem solid #3872D2;
   height: 3.2rem;
   margin-right: 1.6rem;
   border-radius: 0.1rem;
@@ -24913,7 +24913,7 @@ exports[`DateRangePicker should render properly 1`] = `
 
 .c39:focus-within .c9,
 .c39:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c39 .c2:first-of-type {
@@ -24959,12 +24959,12 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c1 .c40,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .c40 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
@@ -24996,37 +24996,37 @@ exports[`DateRangePicker should render properly 1`] = `
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c9,
 .c1:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .c40,
 .c1:focus-within:hover .c40,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .c40 *,
 .c1:focus-within:hover .c40 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -25143,7 +25143,7 @@ exports[`DateRangePicker should render properly 1`] = `
       id="contract-helper-text"
     />
     <div
-      class="sc-zv8j3p-0 c15"
+      class="zv8j3p-0 c15"
       id="contract-calendar"
     >
       <div
@@ -26785,12 +26785,12 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c21:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c21:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c21:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -26798,12 +26798,12 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c21:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c21:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c21:not(:disabled):active .sc-975cgx-0 {
@@ -26811,13 +26811,13 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c21:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c21:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c21:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -26849,7 +26849,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   cursor: pointer;
 }
 
-.c19 .c0 .sc-dynlvq-0 {
+.c19 .c0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -26991,7 +26991,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c34:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c35 {
@@ -27025,7 +27025,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c35:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c36 {
@@ -27057,7 +27057,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c36:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c38 {
@@ -27103,7 +27103,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c38:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c39 {
@@ -27148,7 +27148,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c39:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c42 {
@@ -27189,7 +27189,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c42:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c43 {
@@ -27237,7 +27237,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c43:hover > button:not(:disabled) {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c37 {
@@ -27246,7 +27246,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #126AFA;
+  background-color: #3872D2;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -27323,19 +27323,19 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c5 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c5:hover {
-  background-color: #D0E1FE;
+  background-color: #D7E3F6;
 }
 
 .c5:hover * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c13 {
-  border-right: 0.1rem solid #126AFA;
+  border-right: 0.1rem solid #3872D2;
   height: 3.2rem;
   margin-right: 1.6rem;
   border-radius: 0.1rem;
@@ -27353,7 +27353,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 
 .c44:focus-within .c10,
 .c44:focus-within:hover .c10 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c44 .c3:first-of-type {
@@ -27399,12 +27399,12 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c2 .c45,
-.c2 .sc-dynlvq-0 {
+.c2 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c2 .c45 *,
-.c2 .sc-dynlvq-0 * {
+.c2 .dynlvq-0 * {
   fill: #546A7F;
 }
 
@@ -27436,37 +27436,37 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 
 .c2:focus-within,
 .c2:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c2:focus-within::after,
 .c2:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c2:focus-within .c10,
 .c2:focus-within:hover .c10 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c2:focus-within .c45,
 .c2:focus-within:hover .c45,
-.c2:focus-within .sc-dynlvq-0,
-.c2:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c2:focus-within .dynlvq-0,
+.c2:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c2:focus-within .c45 *,
 .c2:focus-within:hover .c45 *,
-.c2:focus-within .sc-dynlvq-0 *,
-.c2:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c2:focus-within .dynlvq-0 *,
+.c2:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c2:focus-within input,
 .c2:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c2:focus-within input::-webkit-input-placeholder,
@@ -27583,7 +27583,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
       id="contract-helper-text"
     />
     <div
-      class="sc-zv8j3p-0 c16"
+      class="zv8j3p-0 c16"
       id="contract-calendar"
     >
       <div

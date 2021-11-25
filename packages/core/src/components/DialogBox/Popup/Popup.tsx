@@ -1,10 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC, Ref, useCallback } from 'react';
+import { memo, forwardRef, Ref, useCallback } from 'react';
 import * as Styled from './Popup.styled';
 import { DialogBoxPopupProps } from './types';
+import type { FC } from 'react';
 
-const Component: FC<DialogBoxPopupProps> = React.memo(
-    React.forwardRef((props, ref: Ref<HTMLDivElement>) => {
+const Component: FC<DialogBoxPopupProps> = memo(
+    forwardRef((props, ref: Ref<HTMLDivElement>) => {
         const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
         return <Styled.Popup ref={ref} onClick={stopPropagation} {...props} />;
     })

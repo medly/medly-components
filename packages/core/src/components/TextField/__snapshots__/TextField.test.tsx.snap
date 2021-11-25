@@ -84,16 +84,16 @@ exports[`TextField character count should correctly render character count for S
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -121,37 +121,37 @@ exports[`TextField character count should correctly render character count for S
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -418,7 +418,7 @@ exports[`TextField character count should correctly render character count for f
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -427,16 +427,16 @@ exports[`TextField character count should correctly render character count for f
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -454,7 +454,7 @@ exports[`TextField character count should correctly render character count for f
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -465,13 +465,13 @@ exports[`TextField character count should correctly render character count for f
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -486,27 +486,27 @@ exports[`TextField character count should correctly render character count for f
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -794,16 +794,16 @@ exports[`TextField character count should correctly render character count for m
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -831,37 +831,37 @@ exports[`TextField character count should correctly render character count for m
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -1129,16 +1129,16 @@ exports[`TextField character count should correctly render character count if we
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -1166,37 +1166,37 @@ exports[`TextField character count should correctly render character count if we
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -1464,16 +1464,16 @@ exports[`TextField character count should correctly render character count when 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -1501,37 +1501,37 @@ exports[`TextField character count should correctly render character count when 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -1723,7 +1723,7 @@ exports[`TextField character count should correctly render character count when 
   position: absolute;
   top: 0;
   right: 0;
-  color: #cc0000;
+  color: #D73A43;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
@@ -1801,16 +1801,16 @@ exports[`TextField character count should correctly render character count when 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -1838,37 +1838,37 @@ exports[`TextField character count should correctly render character count when 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2124,16 +2124,16 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -2161,37 +2161,37 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2428,7 +2428,7 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
 
 .c2:focus-within .c0,
 .c2:focus-within:hover .c0 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:disabled ~ .c0,
@@ -2592,37 +2592,37 @@ exports[`TextField should render properly with M size 1`] = `
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
 .c1:focus-within .c9,
 .c1:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
 .c1:focus-within .c9 *,
 .c1:focus-within:hover .c9 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2977,37 +2977,37 @@ exports[`TextField should render properly with S size 1`] = `
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
 .c1:focus-within .c9,
 .c1:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
 .c1:focus-within .c9 *,
 .c1:focus-within:hover .c9 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -3288,16 +3288,16 @@ exports[`TextField should render properly with default props 1`] = `
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -3325,37 +3325,37 @@ exports[`TextField should render properly with default props 1`] = `
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -3606,16 +3606,16 @@ exports[`TextField with filled variant and with label should render default stat
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -3643,37 +3643,37 @@ exports[`TextField with filled variant and with label should render default stat
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -3926,16 +3926,16 @@ exports[`TextField with filled variant and with label should render disabled sta
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -3975,16 +3975,16 @@ exports[`TextField with filled variant and with label should render disabled sta
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -4222,16 +4222,16 @@ exports[`TextField with filled variant and with label should render focus state 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -4259,37 +4259,37 @@ exports[`TextField with filled variant and with label should render focus state 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -4540,16 +4540,16 @@ exports[`TextField with filled variant and without label should render default s
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -4577,37 +4577,37 @@ exports[`TextField with filled variant and without label should render default s
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -4854,16 +4854,16 @@ exports[`TextField with filled variant and without label should render disabled 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -4903,16 +4903,16 @@ exports[`TextField with filled variant and without label should render disabled 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -5144,16 +5144,16 @@ exports[`TextField with filled variant and without label should render focus sta
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -5181,37 +5181,37 @@ exports[`TextField with filled variant and without label should render focus sta
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -5467,12 +5467,12 @@ exports[`TextField with filled variant should render error state properly 1`] = 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
@@ -5506,58 +5506,58 @@ exports[`TextField with filled variant should render error state properly 1`] = 
 .c1:hover,
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #FAE6E6;
+  background-color: #FBEBEC;
 }
 
 .c1::after,
 .c1:hover::after,
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #cc0000;
+  border-color: #D73A43;
 }
 
 .c1 .c4,
 .c1:hover .c4,
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0,
 .c1:hover .sc-1ubn8hn-0,
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0,
-.c1:hover .sc-dynlvq-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #cc0000;
+.c1 .dynlvq-0,
+.c1:hover .dynlvq-0,
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0 *,
 .c1:hover .sc-1ubn8hn-0 *,
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 *,
-.c1:hover .sc-dynlvq-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #cc0000;
+.c1 .dynlvq-0 *,
+.c1:hover .dynlvq-0 *,
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #D73A43;
 }
 
 .c1 ~ .c6,
 .c1:hover ~ .c6,
 .c1:focus-within ~ .c6,
 .c1:focus-within:hover ~ .c6 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 input,
 .c1:hover input,
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #FAE6E6 inset;
-  caret-color: #cc0000;
+  box-shadow: 0 0 0 100000px #FBEBEC inset;
+  caret-color: #D73A43;
 }
 
 .c1 input::-webkit-input-placeholder,
@@ -5832,12 +5832,12 @@ exports[`TextField with filled variant should render error state properly with a
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
@@ -5871,58 +5871,58 @@ exports[`TextField with filled variant should render error state properly with a
 .c1:hover,
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #FAE6E6;
+  background-color: #FBEBEC;
 }
 
 .c1::after,
 .c1:hover::after,
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #cc0000;
+  border-color: #D73A43;
 }
 
 .c1 .c4,
 .c1:hover .c4,
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0,
 .c1:hover .sc-1ubn8hn-0,
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0,
-.c1:hover .sc-dynlvq-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #cc0000;
+.c1 .dynlvq-0,
+.c1:hover .dynlvq-0,
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0 *,
 .c1:hover .sc-1ubn8hn-0 *,
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 *,
-.c1:hover .sc-dynlvq-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #cc0000;
+.c1 .dynlvq-0 *,
+.c1:hover .dynlvq-0 *,
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #D73A43;
 }
 
 .c1 ~ .c6,
 .c1:hover ~ .c6,
 .c1:focus-within ~ .c6,
 .c1:focus-within:hover ~ .c6 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 input,
 .c1:hover input,
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #FAE6E6 inset;
-  caret-color: #cc0000;
+  box-shadow: 0 0 0 100000px #FBEBEC inset;
+  caret-color: #D73A43;
 }
 
 .c1 input::-webkit-input-placeholder,
@@ -6139,7 +6139,7 @@ exports[`TextField with filled variant should render error text properly 1`] = `
 .c2:hover ~ .c0,
 .c2:focus-within ~ .c0,
 .c2:focus-within:hover ~ .c0 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 <span
@@ -6272,7 +6272,7 @@ exports[`TextField with filled variant should render properly with custom border
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -6321,7 +6321,7 @@ exports[`TextField with filled variant should render properly with custom border
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -6603,7 +6603,7 @@ exports[`TextField with filled variant should render properly with custom disabl
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -6652,7 +6652,7 @@ exports[`TextField with filled variant should render properly with custom disabl
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -6903,16 +6903,16 @@ exports[`TextField with filled variant should render properly with multiline 1`]
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -6940,37 +6940,37 @@ exports[`TextField with filled variant should render properly with multiline 1`]
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -7237,16 +7237,16 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 }
 
 .c1 .c3,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .c3 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -7274,37 +7274,37 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -7597,7 +7597,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -7625,37 +7625,37 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -7915,7 +7915,7 @@ exports[`TextField with fusion variant and with label should render default stat
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -7924,16 +7924,16 @@ exports[`TextField with fusion variant and with label should render default stat
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -7951,7 +7951,7 @@ exports[`TextField with fusion variant and with label should render default stat
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -7962,13 +7962,13 @@ exports[`TextField with fusion variant and with label should render default stat
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -7983,27 +7983,27 @@ exports[`TextField with fusion variant and with label should render default stat
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -8270,7 +8270,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   cursor: not-allowed;
   background-color: #ffffff;
@@ -8281,16 +8281,16 @@ exports[`TextField with fusion variant and with label should render disabled sta
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -8308,19 +8308,19 @@ exports[`TextField with fusion variant and with label should render disabled sta
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -8347,16 +8347,16 @@ exports[`TextField with fusion variant and with label should render disabled sta
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -8605,7 +8605,7 @@ exports[`TextField with fusion variant and with label should render focus state 
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -8614,16 +8614,16 @@ exports[`TextField with fusion variant and with label should render focus state 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -8641,7 +8641,7 @@ exports[`TextField with fusion variant and with label should render focus state 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -8652,13 +8652,13 @@ exports[`TextField with fusion variant and with label should render focus state 
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -8673,27 +8673,27 @@ exports[`TextField with fusion variant and with label should render focus state 
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -8960,7 +8960,7 @@ exports[`TextField with fusion variant and without label should render default s
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -8969,16 +8969,16 @@ exports[`TextField with fusion variant and without label should render default s
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -8996,7 +8996,7 @@ exports[`TextField with fusion variant and without label should render default s
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -9007,13 +9007,13 @@ exports[`TextField with fusion variant and without label should render default s
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -9028,27 +9028,27 @@ exports[`TextField with fusion variant and without label should render default s
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -9309,7 +9309,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   cursor: not-allowed;
   background-color: #ffffff;
@@ -9320,16 +9320,16 @@ exports[`TextField with fusion variant and without label should render disabled 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -9347,19 +9347,19 @@ exports[`TextField with fusion variant and without label should render disabled 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -9386,16 +9386,16 @@ exports[`TextField with fusion variant and without label should render disabled 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -9638,7 +9638,7 @@ exports[`TextField with fusion variant and without label should render focus sta
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -9647,16 +9647,16 @@ exports[`TextField with fusion variant and without label should render focus sta
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -9674,7 +9674,7 @@ exports[`TextField with fusion variant and without label should render focus sta
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -9685,13 +9685,13 @@ exports[`TextField with fusion variant and without label should render focus sta
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -9706,27 +9706,27 @@ exports[`TextField with fusion variant and without label should render focus sta
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -9998,7 +9998,7 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -10007,12 +10007,12 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
@@ -10034,7 +10034,7 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -10045,13 +10045,13 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -10061,32 +10061,32 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
 
 .c1,
 .c1:hover {
-  color: #cc0000;
+  color: #D73A43;
   background-color: #FCF2F2;
 }
 
 .c1 .c4,
 .c1:hover .c4 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0,
 .c1:hover .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0,
-.c1:hover .sc-dynlvq-0 {
-  color: #cc0000;
+.c1 .dynlvq-0,
+.c1:hover .dynlvq-0 {
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0 *,
 .c1:hover .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 *,
-.c1:hover .sc-dynlvq-0 * {
-  fill: #cc0000;
+.c1 .dynlvq-0 *,
+.c1:hover .dynlvq-0 * {
+  fill: #D73A43;
 }
 
 .c1 ~ .c6,
 .c1:hover ~ .c6 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 input,
@@ -10131,7 +10131,7 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
 }
 
 .c1.c1::after {
-  border-color: #cc0000;
+  border-color: #D73A43;
 }
 
 .c2 {
@@ -10389,7 +10389,7 @@ exports[`TextField with fusion variant should render error state properly with a
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -10398,12 +10398,12 @@ exports[`TextField with fusion variant should render error state properly with a
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
@@ -10425,7 +10425,7 @@ exports[`TextField with fusion variant should render error state properly with a
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -10436,13 +10436,13 @@ exports[`TextField with fusion variant should render error state properly with a
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -10452,32 +10452,32 @@ exports[`TextField with fusion variant should render error state properly with a
 
 .c1,
 .c1:hover {
-  color: #cc0000;
+  color: #D73A43;
   background-color: #FCF2F2;
 }
 
 .c1 .c4,
 .c1:hover .c4 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0,
 .c1:hover .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0,
-.c1:hover .sc-dynlvq-0 {
-  color: #cc0000;
+.c1 .dynlvq-0,
+.c1:hover .dynlvq-0 {
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0 *,
 .c1:hover .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 *,
-.c1:hover .sc-dynlvq-0 * {
-  fill: #cc0000;
+.c1 .dynlvq-0 *,
+.c1:hover .dynlvq-0 * {
+  fill: #D73A43;
 }
 
 .c1 ~ .c6,
 .c1:hover ~ .c6 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 input,
@@ -10527,7 +10527,7 @@ exports[`TextField with fusion variant should render error state properly with a
 }
 
 .c1.c1::after {
-  border-color: #cc0000;
+  border-color: #D73A43;
 }
 
 .c2 {
@@ -10729,7 +10729,7 @@ exports[`TextField with fusion variant should render error text properly 1`] = `
 
 .c2 ~ .c0,
 .c2:hover ~ .c0 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 <span
@@ -10867,7 +10867,7 @@ exports[`TextField with fusion variant should render properly with custom border
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -10891,7 +10891,7 @@ exports[`TextField with fusion variant should render properly with custom border
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.25rem;
   border-width: 0.2rem;
 }
@@ -10933,7 +10933,7 @@ exports[`TextField with fusion variant should render properly with custom border
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -11215,7 +11215,7 @@ exports[`TextField with fusion variant should render properly with custom disabl
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   cursor: text;
   background-color: #ffffff;
@@ -11235,7 +11235,7 @@ exports[`TextField with fusion variant should render properly with custom disabl
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -11253,19 +11253,19 @@ exports[`TextField with fusion variant should render properly with custom disabl
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -11301,7 +11301,7 @@ exports[`TextField with fusion variant should render properly with custom disabl
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -11563,7 +11563,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -11572,16 +11572,16 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -11599,7 +11599,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -11610,13 +11610,13 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -11631,27 +11631,27 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -11934,7 +11934,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -11943,16 +11943,16 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 }
 
 .c1 .c3,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .c3 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -11970,7 +11970,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -11981,13 +11981,13 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -12002,27 +12002,27 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -12322,7 +12322,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #F7F8F9;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -12340,7 +12340,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -12358,7 +12358,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -12369,13 +12369,13 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c1:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -12390,27 +12390,27 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -12694,16 +12694,16 @@ exports[`TextField with outlined variant and with label should render default st
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #607890;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #607890;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -12736,7 +12736,7 @@ exports[`TextField with outlined variant and with label should render default st
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c1:hover::after {
@@ -12745,7 +12745,7 @@ exports[`TextField with outlined variant and with label should render default st
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -12757,27 +12757,27 @@ exports[`TextField with outlined variant and with label should render default st
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -13035,16 +13035,16 @@ exports[`TextField with outlined variant and with label should render disabled s
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #607890;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #607890;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -13073,11 +13073,11 @@ exports[`TextField with outlined variant and with label should render disabled s
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -13101,16 +13101,16 @@ exports[`TextField with outlined variant and with label should render disabled s
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -13348,16 +13348,16 @@ exports[`TextField with outlined variant and with label should render focus stat
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #607890;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #607890;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -13390,7 +13390,7 @@ exports[`TextField with outlined variant and with label should render focus stat
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c1:hover::after {
@@ -13399,7 +13399,7 @@ exports[`TextField with outlined variant and with label should render focus stat
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -13411,27 +13411,27 @@ exports[`TextField with outlined variant and with label should render focus stat
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -13687,16 +13687,16 @@ exports[`TextField with outlined variant and without label should render default
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #607890;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #607890;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -13729,7 +13729,7 @@ exports[`TextField with outlined variant and without label should render default
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c1:hover::after {
@@ -13738,7 +13738,7 @@ exports[`TextField with outlined variant and without label should render default
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -13750,27 +13750,27 @@ exports[`TextField with outlined variant and without label should render default
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -14022,16 +14022,16 @@ exports[`TextField with outlined variant and without label should render disable
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #607890;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #607890;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -14060,11 +14060,11 @@ exports[`TextField with outlined variant and without label should render disable
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -14088,16 +14088,16 @@ exports[`TextField with outlined variant and without label should render disable
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #b0bcc8;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -14329,16 +14329,16 @@ exports[`TextField with outlined variant and without label should render focus s
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #607890;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #607890;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -14371,7 +14371,7 @@ exports[`TextField with outlined variant and without label should render focus s
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c1:hover::after {
@@ -14380,7 +14380,7 @@ exports[`TextField with outlined variant and without label should render focus s
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -14392,27 +14392,27 @@ exports[`TextField with outlined variant and without label should render focus s
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -14673,12 +14673,12 @@ exports[`TextField with outlined variant should render error state properly 1`] 
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #607890;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #607890;
 }
 
@@ -14715,7 +14715,7 @@ exports[`TextField with outlined variant should render error state properly 1`] 
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(204,0,0,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(215,58,67,0.2);
 }
 
 .c1:hover::after {
@@ -14724,7 +14724,7 @@ exports[`TextField with outlined variant should render error state properly 1`] 
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -14740,43 +14740,43 @@ exports[`TextField with outlined variant should render error state properly 1`] 
 .c1:hover::after,
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #cc0000;
+  border-color: #D73A43;
 }
 
 .c1 .c4,
 .c1:hover .c4,
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0,
 .c1:hover .sc-1ubn8hn-0,
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0,
-.c1:hover .sc-dynlvq-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #cc0000;
+.c1 .dynlvq-0,
+.c1:hover .dynlvq-0,
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0 *,
 .c1:hover .sc-1ubn8hn-0 *,
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 *,
-.c1:hover .sc-dynlvq-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #cc0000;
+.c1 .dynlvq-0 *,
+.c1:hover .dynlvq-0 *,
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #D73A43;
 }
 
 .c1 ~ .c6,
 .c1:hover ~ .c6,
 .c1:focus-within ~ .c6,
 .c1:focus-within:hover ~ .c6 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 input,
@@ -14784,7 +14784,7 @@ exports[`TextField with outlined variant should render error state properly 1`] 
 .c1:focus-within input,
 .c1:focus-within:hover input {
   box-shadow: 0 0 0 100000px #ffffff inset;
-  caret-color: #cc0000;
+  caret-color: #D73A43;
 }
 
 .c1 input::-webkit-input-placeholder,
@@ -15059,12 +15059,12 @@ exports[`TextField with outlined variant should render error state properly with
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #607890;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #607890;
 }
 
@@ -15101,7 +15101,7 @@ exports[`TextField with outlined variant should render error state properly with
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(204,0,0,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(215,58,67,0.2);
 }
 
 .c1:hover::after {
@@ -15110,7 +15110,7 @@ exports[`TextField with outlined variant should render error state properly with
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -15126,43 +15126,43 @@ exports[`TextField with outlined variant should render error state properly with
 .c1:hover::after,
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #cc0000;
+  border-color: #D73A43;
 }
 
 .c1 .c4,
 .c1:hover .c4,
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0,
 .c1:hover .sc-1ubn8hn-0,
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0,
-.c1:hover .sc-dynlvq-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #cc0000;
+.c1 .dynlvq-0,
+.c1:hover .dynlvq-0,
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #D73A43;
 }
 
 .c1 .sc-1ubn8hn-0 *,
 .c1:hover .sc-1ubn8hn-0 *,
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 *,
-.c1:hover .sc-dynlvq-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #cc0000;
+.c1 .dynlvq-0 *,
+.c1:hover .dynlvq-0 *,
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #D73A43;
 }
 
 .c1 ~ .c6,
 .c1:hover ~ .c6,
 .c1:focus-within ~ .c6,
 .c1:focus-within:hover ~ .c6 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 .c1 input,
@@ -15170,7 +15170,7 @@ exports[`TextField with outlined variant should render error state properly with
 .c1:focus-within input,
 .c1:focus-within:hover input {
   box-shadow: 0 0 0 100000px #ffffff inset;
-  caret-color: #cc0000;
+  caret-color: #D73A43;
 }
 
 .c1 input::-webkit-input-placeholder,
@@ -15387,7 +15387,7 @@ exports[`TextField with outlined variant should render error text properly 1`] =
 .c2:hover ~ .c0,
 .c2:focus-within ~ .c0,
 .c2:focus-within:hover ~ .c0 {
-  color: #cc0000;
+  color: #D73A43;
 }
 
 <span
@@ -15520,7 +15520,7 @@ exports[`TextField with outlined variant should render properly with custom bord
   fill: #607890;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -15549,11 +15549,11 @@ exports[`TextField with outlined variant should render properly with custom bord
 
 .c1:focus-within {
   border-radius: 0.25rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.25rem;
   border-width: 0.2rem;
 }
@@ -15586,7 +15586,7 @@ exports[`TextField with outlined variant should render properly with custom bord
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -15868,7 +15868,7 @@ exports[`TextField with outlined variant should render properly with custom disa
   fill: #607890;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -15897,11 +15897,11 @@ exports[`TextField with outlined variant should render properly with custom disa
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -15934,7 +15934,7 @@ exports[`TextField with outlined variant should render properly with custom disa
   fill: #b0bcc8;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #b0bcc8;
 }
 
@@ -16185,16 +16185,16 @@ exports[`TextField with outlined variant should render properly with multiline 1
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #607890;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #607890;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -16227,7 +16227,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c1:hover::after {
@@ -16236,7 +16236,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -16248,27 +16248,27 @@ exports[`TextField with outlined variant should render properly with multiline 1
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -16540,16 +16540,16 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 }
 
 .c1 .c3,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #607890;
 }
 
 .c1 .c3 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #607890;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -16582,7 +16582,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c1:hover::after {
@@ -16591,7 +16591,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -16603,27 +16603,27 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
 }
 
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -16921,7 +16921,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   fill: #607890;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -16954,7 +16954,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 
 .c1:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c1:hover::after {
@@ -16963,7 +16963,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 }
 
 .c1:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -16975,27 +16975,27 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
@@ -17264,16 +17264,16 @@ exports[`TextField without label should render default state properly 1`] = `
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -17301,37 +17301,37 @@ exports[`TextField without label should render default state properly 1`] = `
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -17576,16 +17576,16 @@ exports[`TextField without label should render focus state properly 1`] = `
 }
 
 .c1 .sc-1ubn8hn-0,
-.c1 .sc-dynlvq-0 {
+.c1 .dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .sc-1ubn8hn-0 *,
-.c1 .sc-dynlvq-0 * {
+.c1 .dynlvq-0 * {
   fill: #546A7F;
 }
 
-.c1 ~ .sc-avlt8d-0 {
+.c1 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -17613,37 +17613,37 @@ exports[`TextField without label should render focus state properly 1`] = `
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0,
 .c1:focus-within:hover .sc-1ubn8hn-0,
-.c1:focus-within .sc-dynlvq-0,
-.c1:focus-within:hover .sc-dynlvq-0 {
-  color: #126AFA;
+.c1:focus-within .dynlvq-0,
+.c1:focus-within:hover .dynlvq-0 {
+  color: #3872D2;
 }
 
 .c1:focus-within .sc-1ubn8hn-0 *,
 .c1:focus-within:hover .sc-1ubn8hn-0 *,
-.c1:focus-within .sc-dynlvq-0 *,
-.c1:focus-within:hover .sc-dynlvq-0 * {
-  fill: #126AFA;
+.c1:focus-within .dynlvq-0 *,
+.c1:focus-within:hover .dynlvq-0 * {
+  fill: #3872D2;
 }
 
 .c1:focus-within input,
 .c1:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,

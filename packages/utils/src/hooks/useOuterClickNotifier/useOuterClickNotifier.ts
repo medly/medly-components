@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import { MutableRefObject, useEffect } from 'react';
 
-export const useOuterClickNotifier = (onOuterClick: (e: any) => void, innerRef: React.MutableRefObject<any>) => {
+export const useOuterClickNotifier = (onOuterClick: (e: any) => void, innerRef: MutableRefObject<any>) => {
     const handleClick = (e: any) => {
         const isReactDatePicker = e.target.closest('[data-testid = "Day"]');
 

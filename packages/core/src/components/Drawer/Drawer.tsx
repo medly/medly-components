@@ -1,5 +1,5 @@
 import { useKeyPress, WithStyle } from '@medly-components/utils';
-import React, { useCallback, useEffect, useReducer, useState } from 'react';
+import { forwardRef, memo, useCallback, useEffect, useReducer, useState } from 'react';
 import { reducer } from '../Modal/scrollStateReducer';
 import Content from './Content';
 import { DrawerContext } from './Drawer.context';
@@ -7,9 +7,10 @@ import { DrawerBackground, DrawerStyled } from './Drawer.styled';
 import Footer from './Footer';
 import Header from './Header';
 import { DrawerProps, DrawerStaticProps } from './types';
+import type { FC } from 'react';
 
-const Component: React.FC<DrawerProps> = React.memo(
-    React.forwardRef(({ id, onClose, open, width, children, withOverlay, position, ...props }, ref) => {
+const Component: FC<DrawerProps> = memo(
+    forwardRef(({ id, onClose, open, width, children, withOverlay, position, ...props }, ref) => {
         const isEscPressed = useKeyPress('Escape'),
             [shouldRender, setRenderState] = useState(open),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 });
@@ -50,7 +51,7 @@ Component.defaultProps = {
     width: '40rem',
     withOverlay: true
 };
-export const Drawer: React.FC<DrawerProps> & WithStyle & DrawerStaticProps = Object.assign(Component, {
+export const Drawer: FC<DrawerProps> & WithStyle & DrawerStaticProps = Object.assign(Component, {
     Style: DrawerBackground,
     Content,
     Footer,

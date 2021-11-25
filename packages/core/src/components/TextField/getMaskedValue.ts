@@ -1,6 +1,6 @@
-import React from 'react';
+import type { ChangeEvent } from 'react';
 
-const getMaskedValue = (event: React.ChangeEvent<HTMLInputElement>, mask: string): string => {
+const getMaskedValue = (event: ChangeEvent<HTMLInputElement>, mask: string): string => {
     const value = event.target.value,
         alphaNumericRegex = /[a-zA-Z0-9]/,
         specialCharsRegex = /[^a-zA-Z0-9]/,

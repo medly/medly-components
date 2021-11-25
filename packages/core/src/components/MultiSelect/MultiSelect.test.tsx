@@ -1,6 +1,5 @@
 import { StarIcon } from '@medly-components/icons';
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
-import React from 'react';
 import { MultiSelect } from './MultiSelect';
 import { MultiSelectProps } from './types';
 
@@ -97,6 +96,14 @@ describe('MultiSelect component', () => {
         fireEvent.click(screen.getByRole('textbox'));
         fireEvent.click(screen.getByText('Dummy1'));
         expect(mockOnChange).toHaveBeenCalledWith(['Dummy1']);
+    });
+
+    it('should call onChange prop with expected values on selecting option with numeric value', () => {
+        const mockOnChange = jest.fn();
+        render(<MultiSelect options={[{ value: 1, label: 'one' }]} onChange={mockOnChange} />);
+        fireEvent.click(screen.getByRole('textbox'));
+        fireEvent.click(screen.getByText('one'));
+        expect(mockOnChange).toHaveBeenCalledWith([1]);
     });
 
     it('should deselect on click of already selected option', () => {

@@ -1,15 +1,16 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { FC, useMemo } from 'react';
+import { memo, forwardRef, useMemo } from 'react';
 import Popover from '../Popover';
 import Text from '../Text';
 import { paginator } from './helper';
 import { ListWrapper, PageNavButton, PageNumberButton } from './Pagination.styled';
 import PaginationPopup from './PaginationPopup';
 import { PaginationProps } from './types';
+import type { FC } from 'react';
 
-const Component: FC<PaginationProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<PaginationProps> = memo(
+    forwardRef((props, ref) => {
         const links = [],
             { hidePrevNextLinks, activePage, itemsPerPage, totalItems, onPageClick, ...restProps } = props,
             { currentPage, linkItems, totalPages } = useMemo(

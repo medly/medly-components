@@ -1,10 +1,10 @@
-import React from 'react';
 import MedlyLogoName from './assets/MedlyLogo.svg';
 import MedlyLogo from './assets/MLogo.svg';
 import { Container } from './Logo.styled';
 import { LogoProps } from './types';
+import type { FC } from 'react';
 
-const Logo: React.FC<LogoProps> = ({ showName, logo, name, onClick }) => (
+const Logo: FC<LogoProps> = ({ showName, logo, name, onClick }) => (
     <Container onClick={onClick}>
         {logo}
         {showName && name}

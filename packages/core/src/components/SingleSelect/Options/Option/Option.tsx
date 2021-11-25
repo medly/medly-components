@@ -1,13 +1,14 @@
 import { ArrowRightIcon, CheckIcon } from '@medly-components/icons';
 import { useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import type { FC } from 'react';
+import { isValidElement, memo, useCallback, useEffect, useRef, useState } from 'react';
 import { withTheme } from 'styled-components';
 import Text from '../../../Text';
 import Options from '../Options';
 import { CustomComponentWrapper, OptionStyled } from './Option.styled';
 import { OptionProps } from './types';
 
-const Component: React.FC<OptionProps> = React.memo(props => {
+const Component: FC<OptionProps> = memo(props => {
     const ref = useRef<HTMLLIElement>(null),
         [areOptionsVisible, setOptionsVisibilityState] = useState(false),
         { value, theme, label, disabled, selected, onClick, hasError, hovered, size, variant, maxWidth, includesNestedOptions } = props,
@@ -58,7 +59,7 @@ const Component: React.FC<OptionProps> = React.memo(props => {
             onMouseEnter={showNestedOptions}
             onMouseLeave={hideNestedOptions}
         >
-            {React.isValidElement(value) && !isNested ? (
+            {isValidElement(value) && !isNested ? (
                 <CustomComponentWrapper>{value}</CustomComponentWrapper>
             ) : (
                 <Text
@@ -86,5 +87,5 @@ const Component: React.FC<OptionProps> = React.memo(props => {
     );
 });
 Component.displayName = 'Option';
-const Option: React.FC<OptionProps> & WithStyle = Object.assign(Component, { Style: OptionStyled });
+const Option: FC<OptionProps> & WithStyle = Object.assign(Component, { Style: OptionStyled });
 export default withTheme(Option);

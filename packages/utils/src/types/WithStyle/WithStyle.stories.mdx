@@ -1,0 +1,22 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Types/WithStyle" />
+
+# WithStyle
+
+This helps to add styled component class' reference as a property to the component. Then `MyComponent.Style` can be used to override styles of `MyComponent` in any other styled component.
+
+#### Example
+
+```ts
+import { WithStyle } from '@medly-components/utils';
+import { memo } from 'react';
+import { Wrapper } from './Content.styled';
+import type { FC } from 'react';
+
+const Component: FC = memo(props => {
+    return <Wrapper {...props} />;
+});
+Component.displayName = 'Content';
+export const Content: FC & WithStyle = Object.assign(Component, { Style: Wrapper });
+```

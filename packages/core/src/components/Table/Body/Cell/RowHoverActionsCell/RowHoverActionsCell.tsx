@@ -1,8 +1,9 @@
-import React, { useCallback } from 'react';
+import { useCallback, memo } from 'react';
 import { RowHoverActionsWrapper } from './RowHoverActionsCell.styled';
 import { RowHoverActionsCellProps } from './types';
+import type { FC } from 'react';
 
-export const RowHoverActionsCell: React.FC<RowHoverActionsCellProps> = React.memo(props => {
+export const RowHoverActionsCell: FC<RowHoverActionsCellProps> = memo(props => {
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
 
     return <RowHoverActionsWrapper onClick={stopPropagation} {...props} />;

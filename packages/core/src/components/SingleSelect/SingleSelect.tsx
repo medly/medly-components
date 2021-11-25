@@ -1,6 +1,7 @@
 import { ChevronDownIcon } from '@medly-components/icons';
 import { useCombinedRefs, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useMemo, useRef, useState } from 'react';
+import type { FC } from 'react';
+import { forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
 import FlatVariant from './FlatVariant';
 import { filterOptions, getDefaultSelectedOption, getUpdatedOptions } from './helpers';
@@ -9,8 +10,8 @@ import * as Styled from './SingleSelect.styled';
 import { Option, SingleSelectProps } from './types';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-const Component: FC<SingleSelectProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<SingleSelectProps> = memo(
+    forwardRef((props, ref) => {
         const {
                 id,
                 value,
@@ -36,7 +37,7 @@ const Component: FC<SingleSelectProps> = React.memo(
 
         const wrapperRef = useRef<HTMLDivElement>(null),
             optionsRef = useRef<HTMLUListElement>(null),
-            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             isFocused = useRef(false),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [inputValue, setInputValue] = useState(defaultSelectedOption.label),

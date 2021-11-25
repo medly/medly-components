@@ -72,7 +72,7 @@ return (
 
 ### Validations
 
-1. For now `CheckboxGroup` will call the `validator` prop function with latest values on `blur` & `change` event. If you havn't passed the validator function then it will show default error message if you pass `required` prop.
+1. For now `CheckboxGroup` calls the `validator` prop function with the latest values on `blur` and `change` event. If you havn't passed the validator function then it will show default error message if you pass `required` prop.
 
 > **Note**: Right now validation message will not apear on `submit` event. We are working on it.
 
@@ -106,7 +106,7 @@ export const FormWithCheckboxGroup: React.FC = props => {
     <FormWithCheckboxGroup />
 </Preview>
 
-2. If you pass validator function then it will be called with latest selected value, so that if you want you can return the desired error message.
+2. Passing the validator function calls it with the latest selected value and enables returning the desired error message if required.
 
 ```tsx
 validator={val => (!val.length == 0 ? 'Please select at least on company.' : '')}

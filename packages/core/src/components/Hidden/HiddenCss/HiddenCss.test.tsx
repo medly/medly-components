@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import { HiddenCss } from './HiddenCss.styled';
 
 describe('HiddenCss', () => {

@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useCallback, useMemo } from 'react';
+import type { FC } from 'react';
+import { Fragment, memo, useCallback, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
 import { Option } from '../types';
@@ -7,7 +8,7 @@ import Chip from './Chip';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
-const Component: React.FC<OptionsProps> = React.memo(props => {
+const Component: FC<OptionsProps> = memo(props => {
     const { id, values, size, options, onOptionClick } = props;
 
     const selectedValues = useMemo(() => values.map(op => op.value), [values]),
@@ -18,9 +19,8 @@ const Component: React.FC<OptionsProps> = React.memo(props => {
             onOptionClick(Array.from(newValues));
         },
         handleCheckboxClick = useCallback(
-            (event: React.ChangeEvent<HTMLInputElement>) => {
-                const item = event.target.name,
-                    isChecked = event.target.checked,
+            (item: any) => (event: React.ChangeEvent<HTMLInputElement>) => {
+                const isChecked = event.target.checked,
                     newValues = isChecked ? [...selectedValues, item] : selectedValues.filter(vl => vl !== item);
                 onOptionClick(newValues);
             },
@@ -54,7 +54,7 @@ const Component: React.FC<OptionsProps> = React.memo(props => {
             </Styled.ChipArea>
             <Styled.Options id={`${id}-options`} onClick={stopPropagation} size={size}>
                 {options.map((op, index) => (
-                    <React.Fragment key={index}>
+                    <Fragment key={index}>
                         {Array.isArray(op.value) ? (
                             <CheckboxGroup
                                 values={selectedValues.filter(vl => op.value.map((nestedOp: Option) => nestedOp.value).includes(vl))}
@@ -66,15 +66,20 @@ const Component: React.FC<OptionsProps> = React.memo(props => {
                                 fullWidthOptions={true}
                             />
                         ) : (
-                            <Checkbox {...op} checked={selectedValues.includes(op.value)} name={op.value} onChange={handleCheckboxClick} />
+                            <Checkbox
+                                {...op}
+                                name={op.value}
+                                checked={selectedValues.includes(op.value)}
+                                onChange={handleCheckboxClick(op.value)}
+                            />
                         )}
-                    </React.Fragment>
+                    </Fragment>
                 ))}
             </Styled.Options>
         </Styled.OptionsWrapper>
     );
 });
 Component.displayName = 'Options';
-const Options: React.FC<OptionsProps> & WithStyle = Object.assign(Component, { Style: Styled.Options });
+const Options: FC<OptionsProps> & WithStyle = Object.assign(Component, { Style: Styled.Options });
 
 export default Options;

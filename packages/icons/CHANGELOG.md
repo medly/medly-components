@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.9](https://github.com/medly/medly-components/compare/@medly-components/icons@1.11.8...@medly-components/icons@1.11.9) (2021-11-22)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.11.8](https://github.com/medly/medly-components/compare/@medly-components/icons@1.11.7...@medly-components/icons@1.11.8) (2021-11-18)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.11.7](https://github.com/medly/medly-components/compare/@medly-components/icons@1.11.6...@medly-components/icons@1.11.7) (2021-11-18)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.11.6](https://github.com/medly/medly-components/compare/@medly-components/icons@1.11.5...@medly-components/icons@1.11.6) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.11.5](https://github.com/medly/medly-components/compare/@medly-components/icons@1.11.4...@medly-components/icons@1.11.5) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.11.4](https://github.com/medly/medly-components/compare/@medly-components/icons@1.11.3...@medly-components/icons@1.11.4) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.11.3](https://github.com/medly/medly-components/compare/@medly-components/icons@1.11.2...@medly-components/icons@1.11.3) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.11.2](https://github.com/medly/medly-components/compare/@medly-components/icons@1.11.1...@medly-components/icons@1.11.2) (2021-11-11)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
 ## [1.11.1](https://github.com/medly/medly-components/compare/@medly-components/icons@1.11.0...@medly-components/icons@1.11.1) (2021-10-31)
 
 **Note:** Version bump only for package @medly-components/icons

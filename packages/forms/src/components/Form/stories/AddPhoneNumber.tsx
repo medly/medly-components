@@ -1,5 +1,4 @@
 import { Button } from '@medly-components/core';
-import React from 'react';
 import { FormCustomComponent } from '../../Fields/types';
 import CustomPhoneField from './CustomPhoneField';
 

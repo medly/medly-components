@@ -101,7 +101,7 @@ exports[`ActionBar component should not render Action bar with passed parameters
 
 .c4:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c4:not(:disabled):not(:hover) .c5 * {
@@ -110,7 +110,7 @@ exports[`ActionBar component should not render Action bar with passed parameters
 
 .c4:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c4:not(:disabled):active .c5 * {
@@ -119,8 +119,8 @@ exports[`ActionBar component should not render Action bar with passed parameters
 
 .c4:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c4:not(:disabled):not(:active):hover .c5 * {
@@ -167,7 +167,7 @@ exports[`ActionBar component should not render Action bar with passed parameters
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: #126AFA;
+  background: #3872D2;
   width: 100%;
   height: max-height;
   padding: 0;
@@ -176,7 +176,7 @@ exports[`ActionBar component should not render Action bar with passed parameters
   -ms-transform: none;
   transform: none;
   left: auto;
-  box-shadow: 0 0.4rem 1.6rem rgba(15,90,213,0.2);
+  box-shadow: 0 0.4rem 1.6rem rgba(48,97,179,0.2);
 }
 
 .c1::after {
@@ -200,7 +200,7 @@ exports[`ActionBar component should not render Action bar with passed parameters
 
 .c1::after {
   left: 2.4rem;
-  border-top-color: #126AFA;
+  border-top-color: #3872D2;
 }
 
 .c1 > .c7 {
@@ -415,7 +415,7 @@ exports[`ActionBar component should render correctly with all the default props 
 
 .c4:not(:disabled):not(:hover) {
   color: #ffffff;
-  background: #126AFA;
+  background: #3872D2;
 }
 
 .c4:not(:disabled):not(:hover) .c5 * {
@@ -424,7 +424,7 @@ exports[`ActionBar component should render correctly with all the default props 
 
 .c4:not(:disabled):active {
   color: #ffffff;
-  background: #0D4AAF;
+  background: #275093;
 }
 
 .c4:not(:disabled):active .c5 * {
@@ -433,8 +433,8 @@ exports[`ActionBar component should render correctly with all the default props 
 
 .c4:not(:disabled):not(:active):hover {
   color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+  background: #3061B3;
+  box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
 .c4:not(:disabled):not(:active):hover .c5 * {
@@ -481,7 +481,7 @@ exports[`ActionBar component should render correctly with all the default props 
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: #126AFA;
+  background: #3872D2;
   width: 100%;
   height: max-height;
   padding: 0;
@@ -490,7 +490,7 @@ exports[`ActionBar component should render correctly with all the default props 
   -ms-transform: none;
   transform: none;
   left: auto;
-  box-shadow: 0 0.4rem 1.6rem rgba(15,90,213,0.2);
+  box-shadow: 0 0.4rem 1.6rem rgba(48,97,179,0.2);
 }
 
 .c1::after {
@@ -514,7 +514,7 @@ exports[`ActionBar component should render correctly with all the default props 
 
 .c1::after {
   left: 2.4rem;
-  border-top-color: #126AFA;
+  border-top-color: #3872D2;
 }
 
 .c1 > .c7 {

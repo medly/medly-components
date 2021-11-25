@@ -1,5 +1,6 @@
 import { TextFieldTheme } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import type { FC } from 'react';
 
 export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'> {
     /** Input Variants */
@@ -15,9 +16,9 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Leading icon */
-    prefix?: React.FC<any>;
+    prefix?: FC<any>;
     /** Trailing icon */
-    suffix?: React.FC<any>;
+    suffix?: FC<any>;
     /** Disable Input */
     disabled?: boolean;
     /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered. */
@@ -38,7 +39,7 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     multiline?: boolean;
     /** Use minRows when multiline is true; minRows is the number of rows in text area */
     minRows?: number;
-    /** Set to true to display the character count of the current input value */
+    /** Set to true to display the character count of the current input value. This requires maxLength prop as well. */
     withCharacterCount?: boolean;
     /** Show Helper text and error text in a tooltip (popover) */
     showTooltipForHelperAndErrorText?: boolean;

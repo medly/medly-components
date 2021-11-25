@@ -1,11 +1,12 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback } from 'react';
+import { memo, forwardRef, useCallback } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './Toggle.styled';
 import { ToggleProps } from './types';
+import type { FC } from 'react';
 
-const Component: FC<ToggleProps> = React.memo(
-    React.forwardRef((props, ref) => {
+const Component: FC<ToggleProps> = memo(
+    forwardRef((props, ref) => {
         const { size, label, required, labelPosition, labelVariant, labelWeight, labelColor, fullWidth, onChange, ...restProps } = props;
 
         const changeHandler = useCallback(

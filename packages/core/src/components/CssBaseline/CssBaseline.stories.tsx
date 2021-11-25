@@ -1,4 +1,3 @@
-import React from 'react';
 import Text from '../Text';
 import { CssBaseline } from './CssBaseline.styled';
 

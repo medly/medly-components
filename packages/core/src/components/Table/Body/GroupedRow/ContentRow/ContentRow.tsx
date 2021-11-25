@@ -1,10 +1,11 @@
-import React, { useCallback, useContext } from 'react';
+import { memo, useCallback, useContext } from 'react';
 import { TableComponentsCommonPropsContext } from '../../../context';
 import Row from '../../Row';
 import { BlankCell, ContentRowStyled, DataCell } from './ContentRow.styled';
 import { ContentRowProps } from './types';
+import type { FC } from 'react';
 
-export const ContentRow: React.FC<ContentRowProps> = React.memo(props => {
+export const ContentRow: FC<ContentRowProps> = memo(props => {
     const { data, ...restProps } = props,
         { rowIdentifier, size } = useContext(TableComponentsCommonPropsContext);
 

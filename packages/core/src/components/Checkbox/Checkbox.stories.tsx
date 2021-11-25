@@ -1,18 +1,19 @@
 import { CheckboxTheme, defaultTheme } from '@medly-components/theme';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Button from '../Button';
 import { Checkbox } from './Checkbox';
 import { CheckboxProps } from './types';
+import type { FC } from 'react';
 
 export const labelPositions: Required<CheckboxProps>['labelPosition'][] = ['left', 'right', 'top', 'bottom'];
 export const sizes: Required<CheckboxProps>['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
-export const ThemeInterface: React.FC<CheckboxTheme> = () => null;
+export const ThemeInterface: FC<CheckboxTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.checkbox
 };
 
-export const FormWithCheckbox: React.FC = props => {
+export const FormWithCheckbox: FC = props => {
     const [checked, setChecked] = useState<boolean>(),
         onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => setChecked(e.target.checked),
         handleSubmit = (e: React.FormEvent) => e.preventDefault();

@@ -1,6 +1,5 @@
 import { ChevronRightIcon } from '@medly-components/icons';
 import { render } from '@test-utils';
-import React from 'react';
 import Text from '../Text';
 import { Breadcrumb } from './Breadcrumb';
 import { BreadcrumbProps } from './types';

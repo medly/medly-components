@@ -1,11 +1,12 @@
 import { defaultTheme, ModalTheme } from '@medly-components/theme';
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import styled from 'styled-components';
 import Button from '../Button';
 import Input from '../Input';
 import SingleSelect from '../SingleSelect';
 import { ModalActionUserProps } from './Actions/types';
 import { Modal } from './Modal';
+import type { FC } from 'react';
 
 const options = [
     { value: '0', label: 'Admin' },
@@ -13,12 +14,12 @@ const options = [
     { value: '2', label: 'Covered Entity' }
 ];
 
-export const ThemeInterface: React.FC<ModalTheme> = () => null;
+export const ThemeInterface: FC<ModalTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.modal
 };
 
-export const ModalActionProps: React.FC<ModalActionUserProps> = () => null;
+export const ModalActionProps: FC<ModalActionUserProps> = () => null;
 ModalActionProps.defaultProps = {
     alignItems: 'right'
 };

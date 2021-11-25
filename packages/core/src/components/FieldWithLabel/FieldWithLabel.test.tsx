@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import { FieldWithLabel } from './FieldWithLabel';
 
 describe('FieldWithLabel component', () => {

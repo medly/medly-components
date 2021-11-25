@@ -82,15 +82,15 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
 }
 
 .c4:not(:disabled):checked ~ .c5 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c4:not(:disabled):checked ~ .c5::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c4:not(:disabled):focus ~ .c5 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c3 {
@@ -118,13 +118,13 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
 }
 
 .c0:hover .c5 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #3872D2;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c0:active .c5 {
-  border-color: #0F5AD5;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
+  border-color: #3061B3;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
 }
 
 <div>
@@ -218,15 +218,15 @@ exports[`Radio component should render correctly with checked false and checked 
 }
 
 .c2:not(:disabled):checked ~ .c3 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c2:not(:disabled):checked ~ .c3::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c2:not(:disabled):focus ~ .c3 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c1 {
@@ -258,13 +258,13 @@ exports[`Radio component should render correctly with checked false and checked 
 }
 
 .c0:hover .c3 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #3872D2;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c0:active .c3 {
-  border-color: #0F5AD5;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
+  border-color: #3061B3;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
 }
 
 <div>
@@ -352,15 +352,15 @@ exports[`Radio component should render correctly with checked false and disabled
 }
 
 .c2:not(:disabled):checked ~ .c3 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c2:not(:disabled):checked ~ .c3::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c2:not(:disabled):focus ~ .c3 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c1 {
@@ -456,11 +456,11 @@ exports[`Radio component should render correctly with checked false and hasError
 }
 
 .c2 ~ .c3 {
-  border-color: #cc0000;
+  border-color: #D73A43;
 }
 
 .c2 ~ .c3::after {
-  background-color: #cc0000;
+  background-color: #D73A43;
 }
 
 .c2:checked ~ .c3::after {
@@ -478,15 +478,15 @@ exports[`Radio component should render correctly with checked false and hasError
 }
 
 .c2:not(:disabled):checked ~ .c3 {
-  border-color: #cc0000;
+  border-color: #D73A43;
 }
 
 .c2:not(:disabled):checked ~ .c3::after {
-  background-color: #cc0000;
+  background-color: #D73A43;
 }
 
 .c2:not(:disabled):focus ~ .c3 {
-  box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.35);
 }
 
 .c1 {
@@ -518,13 +518,13 @@ exports[`Radio component should render correctly with checked false and hasError
 }
 
 .c0:hover .c3 {
-  border-color: #cc0000;
-  box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+  border-color: #D73A43;
+  box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.35);
 }
 
 .c0:active .c3 {
-  border-color: #AD0000;
-  box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
+  border-color: #B73139;
+  box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.5);
 }
 
 <div>
@@ -612,15 +612,15 @@ exports[`Radio component should render correctly with checked true and checked s
 }
 
 .c2:not(:disabled):checked ~ .c3 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c2:not(:disabled):checked ~ .c3::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c2:not(:disabled):focus ~ .c3 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c1 {
@@ -737,15 +737,15 @@ exports[`Radio component should render correctly with checked true and disabled 
 }
 
 .c2:not(:disabled):checked ~ .c3 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c2:not(:disabled):checked ~ .c3::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c2:not(:disabled):focus ~ .c3 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c1 {
@@ -842,11 +842,11 @@ exports[`Radio component should render correctly with checked true and hasError 
 }
 
 .c2 ~ .c3 {
-  border-color: #cc0000;
+  border-color: #D73A43;
 }
 
 .c2 ~ .c3::after {
-  background-color: #cc0000;
+  background-color: #D73A43;
 }
 
 .c2:checked ~ .c3::after {
@@ -864,15 +864,15 @@ exports[`Radio component should render correctly with checked true and hasError 
 }
 
 .c2:not(:disabled):checked ~ .c3 {
-  border-color: #cc0000;
+  border-color: #D73A43;
 }
 
 .c2:not(:disabled):checked ~ .c3::after {
-  background-color: #cc0000;
+  background-color: #D73A43;
 }
 
 .c2:not(:disabled):focus ~ .c3 {
-  box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.35);
 }
 
 .c1 {
@@ -1012,15 +1012,15 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
 }
 
 .c4:not(:disabled):checked ~ .c5 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c4:not(:disabled):checked ~ .c5::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c4:not(:disabled):focus ~ .c5 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c3 {
@@ -1052,13 +1052,13 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
 }
 
 .c0:hover .c5 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #3872D2;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c0:active .c5 {
-  border-color: #0F5AD5;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
+  border-color: #3061B3;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
 }
 
 <div>
@@ -1175,15 +1175,15 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
 }
 
 .c4:not(:disabled):checked ~ .c5 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c4:not(:disabled):checked ~ .c5::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c4:not(:disabled):focus ~ .c5 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c3 {
@@ -1215,13 +1215,13 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
 }
 
 .c0:hover .c5 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #3872D2;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c0:active .c5 {
-  border-color: #0F5AD5;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
+  border-color: #3061B3;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
 }
 
 <div>
@@ -1338,15 +1338,15 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
 }
 
 .c4:not(:disabled):checked ~ .c5 {
-  border-color: #126AFA;
+  border-color: #3872D2;
 }
 
 .c4:not(:disabled):checked ~ .c5::after {
-  background-color: #126AFA;
+  background-color: #3872D2;
 }
 
 .c4:not(:disabled):focus ~ .c5 {
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c3 {
@@ -1374,13 +1374,13 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
 }
 
 .c0:hover .c5 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #3872D2;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
 .c0:active .c5 {
-  border-color: #0F5AD5;
-  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
+  border-color: #3061B3;
+  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
 }
 
 <div>

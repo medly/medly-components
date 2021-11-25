@@ -96,7 +96,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -124,37 +124,37 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
 .c3:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -484,7 +484,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -512,37 +512,37 @@ exports[`SingleSelect component should render properly when isSearchable is true
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
 .c3:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -858,7 +858,7 @@ exports[`SingleSelect component should render properly with M size 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  color: #126AFA;
+  color: #3872D2;
 }
 
 <li
@@ -953,7 +953,7 @@ exports[`SingleSelect component should render properly with S size 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  color: #126AFA;
+  color: #3872D2;
 }
 
 <li
@@ -1077,7 +1077,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -1105,37 +1105,37 @@ exports[`SingleSelect component should take passed max width 1`] = `
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c10,
 .c3:focus-within:hover .c10 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c10 *,
 .c3:focus-within:hover .c10 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
 .c3:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -2170,7 +2170,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -2198,37 +2198,37 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
 .c3:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -2637,37 +2637,37 @@ exports[`SingleSelect component with filled variant should render properly when 
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c10,
 .c3:focus-within:hover .c10 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c10 *,
 .c3:focus-within:hover .c10 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
 .c3:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -2885,7 +2885,7 @@ exports[`SingleSelect component with filled variant should render properly when 
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -2904,7 +2904,7 @@ exports[`SingleSelect component with filled variant should render properly when 
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c18 > .c8 {
@@ -2912,7 +2912,7 @@ exports[`SingleSelect component with filled variant should render properly when 
 }
 
 .c18 > .c8 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c20 {
@@ -3291,37 +3291,37 @@ exports[`SingleSelect component with filled variant should render with label pro
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
 .c3:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #E7F0FF inset;
+  box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -3691,12 +3691,12 @@ exports[`SingleSelect component with flat variant should render disabled state p
 }
 
 .c2:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c2:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c2:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -3704,12 +3704,12 @@ exports[`SingleSelect component with flat variant should render disabled state p
 }
 
 .c2:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c2:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c2:not(:disabled):active .sc-975cgx-0 {
@@ -3717,13 +3717,13 @@ exports[`SingleSelect component with flat variant should render disabled state p
 }
 
 .c2:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c2:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c2:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -3749,7 +3749,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   pointer-events: none;
 }
 
-.c0 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c0 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -4082,12 +4082,12 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
 }
 
 .c2:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c2:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c2:not(:disabled):not(:hover) .sc-975cgx-0 {
@@ -4095,12 +4095,12 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
 }
 
 .c2:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c2:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c2:not(:disabled):active .sc-975cgx-0 {
@@ -4108,13 +4108,13 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
 }
 
 .c2:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c2:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c2:not(:disabled):not(:active):hover .sc-975cgx-0 {
@@ -4147,7 +4147,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   cursor: pointer;
 }
 
-.c0 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c0 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -4381,12 +4381,12 @@ exports[`SingleSelect component with flat variant should render properly when op
 }
 
 .c2:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #F7F8F9;
 }
 
 .c2:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c2:not(:disabled):not(:hover) .c3 {
@@ -4394,12 +4394,12 @@ exports[`SingleSelect component with flat variant should render properly when op
 }
 
 .c2:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #F7F8F9;
 }
 
 .c2:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c2:not(:disabled):active .c3 {
@@ -4407,13 +4407,13 @@ exports[`SingleSelect component with flat variant should render properly when op
 }
 
 .c2:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c2:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c2:not(:disabled):not(:active):hover .c3 {
@@ -4488,7 +4488,7 @@ exports[`SingleSelect component with flat variant should render properly when op
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -4507,7 +4507,7 @@ exports[`SingleSelect component with flat variant should render properly when op
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c14 > .c7 {
@@ -4515,7 +4515,7 @@ exports[`SingleSelect component with flat variant should render properly when op
 }
 
 .c14 > .c7 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c15 {
@@ -4575,7 +4575,7 @@ exports[`SingleSelect component with flat variant should render properly when op
   cursor: pointer;
 }
 
-.c0 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c0 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -4845,12 +4845,12 @@ exports[`SingleSelect component with flat variant should render with label prope
 }
 
 .c2:not(:disabled):not(:hover) {
-  color: #126AFA;
+  color: #3872D2;
   background: #ffffff;
 }
 
 .c2:not(:disabled):not(:hover) * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c2:not(:disabled):not(:hover) .c3 {
@@ -4858,12 +4858,12 @@ exports[`SingleSelect component with flat variant should render with label prope
 }
 
 .c2:not(:disabled):active {
-  color: #0D4AAF;
+  color: #275093;
   background: #eff2f4;
 }
 
 .c2:not(:disabled):active * {
-  fill: #0D4AAF;
+  fill: #275093;
 }
 
 .c2:not(:disabled):active .c3 {
@@ -4871,13 +4871,13 @@ exports[`SingleSelect component with flat variant should render with label prope
 }
 
 .c2:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
+  color: #3061B3;
   background: #F7F8F9;
   box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
 }
 
 .c2:not(:disabled):not(:active):hover * {
-  fill: #0F5AD5;
+  fill: #3061B3;
 }
 
 .c2:not(:disabled):not(:active):hover .c3 {
@@ -4909,7 +4909,7 @@ exports[`SingleSelect component with flat variant should render with label prope
   cursor: pointer;
 }
 
-.c0 .sc-17d4s39-0 .sc-dynlvq-0 {
+.c0 .sc-17d4s39-0 .dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -5062,7 +5062,7 @@ exports[`SingleSelect component with fusion variant should render disabled state
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   cursor: not-allowed;
   background-color: #ffffff;
@@ -5100,19 +5100,19 @@ exports[`SingleSelect component with fusion variant should render disabled state
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
 
 .c3:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c3:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -5626,7 +5626,7 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -5644,7 +5644,7 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   fill: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -5662,7 +5662,7 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -5673,13 +5673,13 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
 }
 
 .c3:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c3:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -5694,27 +5694,27 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
@@ -6102,7 +6102,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -6138,7 +6138,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -6149,13 +6149,13 @@ exports[`SingleSelect component with fusion variant should render properly when 
 }
 
 .c3:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c3:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -6170,27 +6170,27 @@ exports[`SingleSelect component with fusion variant should render properly when 
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c10,
 .c3:focus-within:hover .c10 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c10 *,
 .c3:focus-within:hover .c10 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
@@ -6428,7 +6428,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -6447,7 +6447,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c18 > .c8 {
@@ -6455,7 +6455,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
 }
 
 .c18 > .c8 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c20 {
@@ -6793,7 +6793,7 @@ exports[`SingleSelect component with fusion variant should render with label pro
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -6829,7 +6829,7 @@ exports[`SingleSelect component with fusion variant should render with label pro
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
   border: 0.1rem solid #b0bcc8;
 }
@@ -6840,13 +6840,13 @@ exports[`SingleSelect component with fusion variant should render with label pro
 }
 
 .c3:focus-within::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
 .c3:focus-within {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   border-width: 0.15rem;
 }
 
@@ -6861,27 +6861,27 @@ exports[`SingleSelect component with fusion variant should render with label pro
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
-  border-radius: 1rem;
+  border-color: #3872D2;
+  border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
@@ -7284,11 +7284,11 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 
 .c3:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c3:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -7797,7 +7797,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   fill: #607890;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3 ~ .avlt8d-0 {
   color: #546A7F;
 }
 
@@ -7830,7 +7830,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c3:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c3:hover::after {
@@ -7839,7 +7839,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c3:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -7851,27 +7851,27 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
@@ -8290,7 +8290,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
 
 .c3:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c3:hover::after {
@@ -8299,7 +8299,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
 }
 
 .c3:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -8311,27 +8311,27 @@ exports[`SingleSelect component with outlined variant should render properly whe
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c10,
 .c3:focus-within:hover .c10 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c10 *,
 .c3:focus-within:hover .c10 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,
@@ -8554,7 +8554,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -8573,7 +8573,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c18 > .c8 {
@@ -8581,7 +8581,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
 }
 
 .c18 > .c8 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c20 {
@@ -8965,7 +8965,7 @@ exports[`SingleSelect component with outlined variant should render with label p
 
 .c3:focus-within {
   border-radius: 0.4rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(56,114,210,0.2);
 }
 
 .c3:hover::after {
@@ -8974,7 +8974,7 @@ exports[`SingleSelect component with outlined variant should render with label p
 }
 
 .c3:focus-within::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
   border-width: 0.15rem;
 }
@@ -8986,27 +8986,27 @@ exports[`SingleSelect component with outlined variant should render with label p
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  border-color: #126AFA;
+  border-color: #3872D2;
   border-radius: 0.4rem;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0,
 .c3:focus-within:hover .sc-1ubn8hn-0,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c3:focus-within .sc-1ubn8hn-0 *,
 .c3:focus-within:hover .sc-1ubn8hn-0 *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c3:focus-within input,

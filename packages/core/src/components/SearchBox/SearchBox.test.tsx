@@ -1,5 +1,4 @@
 import { fireEvent, getByPlaceholderText, render, screen } from '@test-utils';
-import React from 'react';
 import { SearchBox } from './SearchBox';
 import { PlaceholderComponent } from './SearchBox.stories';
 import { SearchBoxProps } from './types';

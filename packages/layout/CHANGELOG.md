@@ -3,6 +3,137 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/medly/medly-components/compare/@medly-components/layout@2.0.2...@medly-components/layout@2.0.3) (2021-11-22)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [2.0.2](https://github.com/medly/medly-components/compare/@medly-components/layout@2.0.1...@medly-components/layout@2.0.2) (2021-11-22)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [2.0.1](https://github.com/medly/medly-components/compare/@medly-components/layout@2.0.0...@medly-components/layout@2.0.1) (2021-11-21)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+# [2.0.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.33.7...@medly-components/layout@2.0.0) (2021-11-18)
+
+
+### Code Refactoring
+
+* update hex of rgb color ([#533](https://github.com/medly/medly-components/issues/533)) ([71b5d45](https://github.com/medly/medly-components/commit/71b5d45fd8cbacd55b7c752357d6e63c4f0d9306))
+
+
+### BREAKING CHANGES
+
+* update red, blue & green color hex values
+
+
+
+
+
+## [1.33.7](https://github.com/medly/medly-components/compare/@medly-components/layout@1.33.6...@medly-components/layout@1.33.7) (2021-11-18)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.33.6](https://github.com/medly/medly-components/compare/@medly-components/layout@1.33.5...@medly-components/layout@1.33.6) (2021-11-17)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.33.5](https://github.com/medly/medly-components/compare/@medly-components/layout@1.33.4...@medly-components/layout@1.33.5) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.33.4](https://github.com/medly/medly-components/compare/@medly-components/layout@1.33.3...@medly-components/layout@1.33.4) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.33.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.33.2...@medly-components/layout@1.33.3) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.33.2](https://github.com/medly/medly-components/compare/@medly-components/layout@1.33.1...@medly-components/layout@1.33.2) (2021-11-16)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.33.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.33.0...@medly-components/layout@1.33.1) (2021-11-12)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+# [1.33.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.32.6...@medly-components/layout@1.33.0) (2021-11-12)
+
+
+### Features
+
+* use new JSX transform ([#506](https://github.com/medly/medly-components/issues/506)) ([b997806](https://github.com/medly/medly-components/commit/b997806286f990fd5e2b789aa184d0c7d3a3a5a8))
+
+
+
+
+
+## [1.32.6](https://github.com/medly/medly-components/compare/@medly-components/layout@1.32.5...@medly-components/layout@1.32.6) (2021-11-11)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.32.5](https://github.com/medly/medly-components/compare/@medly-components/layout@1.32.4...@medly-components/layout@1.32.5) (2021-11-11)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.32.4](https://github.com/medly/medly-components/compare/@medly-components/layout@1.32.3...@medly-components/layout@1.32.4) (2021-11-10)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [1.32.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.32.2...@medly-components/layout@1.32.3) (2021-10-31)
 
 **Note:** Version bump only for package @medly-components/layout

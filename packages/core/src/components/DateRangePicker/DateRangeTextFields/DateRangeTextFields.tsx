@@ -1,5 +1,5 @@
 import { ChevronDownIcon, DateRangeIcon } from '@medly-components/icons';
-import React, { useEffect } from 'react';
+import { memo, useEffect } from 'react';
 import { DateIconWrapper as IconWrapper } from '../../DatePicker/DatePicker.styled';
 import datePickerPattern from '../../DatePicker/datePickerPattern';
 import { HelperAndErrorTextTooltip } from '../../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
@@ -10,8 +10,9 @@ import { Wrapper } from './DateRangeTextFields.styled';
 import InputSeparator from './InputSeparator';
 import { Props } from './types';
 import { useDateRangeTextFieldsHandlers } from './useDateRangeTextFieldsHandlers';
+import type { FC } from 'react';
 
-export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
+export const DateRangeTextFields: FC<Props> = memo(props => {
     const {
             id,
             size,

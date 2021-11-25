@@ -139,7 +139,7 @@ exports[`SideNav should render properly with shadow 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: pointer;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c4 .c5 {
@@ -168,11 +168,11 @@ exports[`SideNav should render properly with shadow 1`] = `
 }
 
 .c4 .c5 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c4 .c7 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c9 {
@@ -352,7 +352,7 @@ exports[`SideNav should render properly with shadow 1`] = `
 
 <div>
   <aside
-    class="sc-n4yfoe-0 c0"
+    class="n4yfoe-0 c0"
     id="medly-sidenav"
   >
     <nav
@@ -648,7 +648,7 @@ exports[`SideNav should render properly without shadow 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: pointer;
-  background-color: #E7F0FF;
+  background-color: #EBF1FA;
 }
 
 .c4 .c5 {
@@ -677,11 +677,11 @@ exports[`SideNav should render properly without shadow 1`] = `
 }
 
 .c4 .c5 * {
-  fill: #126AFA;
+  fill: #3872D2;
 }
 
 .c4 .c7 {
-  color: #126AFA;
+  color: #3872D2;
 }
 
 .c9 {
@@ -860,7 +860,7 @@ exports[`SideNav should render properly without shadow 1`] = `
 
 <div>
   <aside
-    class="sc-n4yfoe-0 c0"
+    class="n4yfoe-0 c0"
     id="medly-sidenav"
   >
     <nav

@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@test-utils';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import Header from './Header';
 
 describe('Header', () => {

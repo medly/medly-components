@@ -1,5 +1,4 @@
 import { fireEvent, render } from '@test-utils';
-import React from 'react';
 import { ColumnConfig } from '../../types';
 import { HeadCell } from './HeadCell';
 import { StyledProps } from './types';

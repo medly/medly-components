@@ -1,5 +1,4 @@
 import { render } from '@test-utils';
-import React from 'react';
 import { Input } from './Input';
 
 describe('Input component', () => {

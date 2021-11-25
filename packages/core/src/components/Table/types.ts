@@ -1,18 +1,20 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
+import type { FC } from 'react';
 import { Dispatch, SetStateAction } from 'react';
+import { FreezePosition } from './Body/Cell/types';
 import ColumnConfiguration from './ColumnConfiguration';
 
 export type SortOrder = 'asc' | 'desc';
 export type ObjectType = Record<string, any>;
 export type Data = ObjectType[];
 // TODO: need to remove in next major version
-export type RowHoverActionsType = React.FC<{ rowData?: ObjectType; rowId?: any }>;
+export type RowHoverActionsType = FC<{ rowData?: ObjectType; rowId?: any }>;
 export type MaxColumnSizes = { [k: string]: number };
 
 export type TableState = { activePage?: number; sortField?: string; sortOrder?: SortOrder };
 
-export type CustomTableCellComponent = React.FC<{ data?: any; rowId?: any; disabled?: boolean; rowData?: ObjectType }>;
-export type RowHoverActionsComponent = React.FC<{ rowData?: ObjectType; rowId?: any }>;
+export type CustomTableCellComponent = FC<{ data?: any; rowId?: any; disabled?: boolean; rowData?: ObjectType }>;
+export type RowHoverActionsComponent = FC<{ rowData?: ObjectType; rowId?: any }>;
 
 export interface TableColumnConfig {
     /** Title of the column */
@@ -23,8 +25,10 @@ export interface TableColumnConfig {
     fraction?: number;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
-    /** WIP | Set it true to freeze the component on the left side*/
+    /** Set it true to freeze the column based on freezePosition */
     frozen?: boolean;
+    /** Set freeze position. Requires frozen prop to be true */
+    freezePosition?: FreezePosition;
     /** Set it true to show sort icons */
     sortable?: boolean;
     /** Set it true to hide the column */
@@ -50,6 +54,7 @@ export interface GridTemplateProps {
 export interface TableStyledProps {
     isRowClickable?: boolean;
     showRowWithCardStyle?: boolean;
+    maxHeight?: string;
 }
 
 export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type' | 'size'> {
@@ -88,7 +93,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Function to be called on click of sort icon */
     onSort?: ({ activePage, sortField, sortOrder }: TableState) => void;
     /** Component to show when row is expanded */
-    expandedRowComponent?: React.FC<{ rowData?: ObjectType; rowId?: any; disabled?: boolean }>;
+    expandedRowComponent?: FC<{ rowData?: ObjectType; rowId?: any; disabled?: boolean }>;
     /** Name of the key in data on which grouping is applied */
     groupBy?: string;
     /** Name of the key in data on which grouping is applied */
@@ -117,6 +122,10 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     withMinimap?: boolean;
     /** Enable separators between rows */
     withRowSeparators?: boolean;
+    /** Enable infinite scroll */
+    withInfiniteScroll?: boolean;
+    /** CSS max-height property */
+    maxHeight?: string;
 }
 
 export interface StaticProps {

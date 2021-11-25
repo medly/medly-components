@@ -1,5 +1,4 @@
 import { cleanup, fireEvent, render, screen } from '@test-utils';
-import React from 'react';
 import { FileInput } from './FileInput';
 
 describe('FileInput component', () => {

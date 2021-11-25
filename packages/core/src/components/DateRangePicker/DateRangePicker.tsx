@@ -1,13 +1,14 @@
 import { useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
-import React, { FC, useCallback, useMemo, useRef, useState } from 'react';
+import { memo, useCallback, useMemo, useRef, useState } from 'react';
 import * as TextFieldStyled from '../TextField/Styled';
 import CustomDateRangeOptions from './CustomDateRangeOptions';
 import DateRangeCalendar from './DateRangeCalendar';
 import DateRangeTextFields from './DateRangeTextFields';
 import { dateRangeHelpers } from './helpers/dateRangeHelpers';
 import { DateRangeProps, DateRangeSelectionEnum, PopoverTypes } from './types';
+import type { FC } from 'react';
 
-export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
+export const DateRangePicker: FC<DateRangeProps> = memo(props => {
     const {
         id,
         value,

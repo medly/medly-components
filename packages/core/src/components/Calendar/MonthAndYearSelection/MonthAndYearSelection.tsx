@@ -1,5 +1,6 @@
 import { useUpdateEffect, WithStyle } from '@medly-components/utils';
-import React, { useCallback, useMemo } from 'react';
+import type { FC } from 'react';
+import { memo, useCallback, useMemo } from 'react';
 import SingleSelect from '../../SingleSelect';
 import { Option } from '../../SingleSelect/types';
 import { SHORT_CALENDAR_MONTHS } from '../constants';
@@ -7,7 +8,7 @@ import { getMonthAndYearFromDate } from '../helper';
 import { Wrapper } from './MonthAndYearSelection.styled';
 import { MonthAndYearSelectionProps } from './types';
 
-const Component: React.FC<MonthAndYearSelectionProps> = React.memo(
+const Component: FC<MonthAndYearSelectionProps> = memo(
     ({ id, month, year, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, ...restProps }) => {
         const { month: minMonth, year: minYear } = getMonthAndYearFromDate(minSelectableDate),
             { month: maxMonth, year: maxYear } = getMonthAndYearFromDate(maxSelectableDate);
@@ -68,6 +69,6 @@ const Component: React.FC<MonthAndYearSelectionProps> = React.memo(
     }
 );
 Component.displayName = 'MonthAndYearSelection';
-export const MonthAndYearSelection: React.FC<MonthAndYearSelectionProps> & WithStyle = Object.assign(Component, {
+export const MonthAndYearSelection: FC<MonthAndYearSelectionProps> & WithStyle = Object.assign(Component, {
     Style: Wrapper
 });

@@ -1,5 +1,5 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import { memo, useContext, useEffect, useRef, useState } from 'react';
 import Text from '../../../../Text';
 import { TableComponentsCommonPropsContext } from '../../../context';
 import { getGridTemplateColumns } from '../../../helpers';
@@ -7,8 +7,9 @@ import RowActionsCell from '../../Cell/RowActionsCell';
 import { LoadingDiv } from '../../Cell/Styled';
 import { CountChip, ExpansionCell, Row, SecondaryContent, TitleCell } from './TitleRow.styled';
 import { TitleRowProps } from './types';
+import type { FC } from 'react';
 
-export const TitleRow: React.FC<TitleRowProps> = React.memo(props => {
+export const TitleRow: FC<TitleRowProps> = memo(props => {
     const [tableWidth, setTableWidth] = useState(),
         { data, isRowExpanded, onClick, onRowSelection, isRowIndeterminate, ...restProps } = props,
         {
