@@ -34,7 +34,7 @@ const Component: FC<OptionsProps> = memo(props => {
             [selectedValues, onOptionClick]
         ),
         handleCreatableOptionClick = () => {
-            setValues && setValues(prevValues => [...prevValues, { label: inputValue, value: inputValue }]);
+            setValues && setValues(prevValues => [...prevValues, { label: inputValue, value: inputValue, creatable: true }]);
         };
 
     return (

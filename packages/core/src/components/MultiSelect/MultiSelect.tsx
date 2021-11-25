@@ -105,7 +105,9 @@ const Component: FC<MultiSelectProps> = memo(
             );
 
         useEffect(() => {
-            setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values!));
+            setSelectedOptions(
+                getDefaultSelectedOptions([...defaultOptions, ...selectedOptions.filter(val => val.creatable === true)], values!)
+            );
             setOptions(inputRef.current?.value ? filterOptions(defaultOptions, inputRef.current?.value) : defaultOptions);
         }, [defaultOptions, values]);
 
