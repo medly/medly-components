@@ -15,13 +15,13 @@ const getStyle = (color: string) => css`
     }
 `;
 
-export const flatButton = ({ theme, size }: ButtonProps & WithThemeProp) => {
+export const flatButton = ({ theme, size, hideUnderline }: ButtonProps & WithThemeProp) => {
     const { textColor } = theme.button.flat;
     return css`
         background-color: transparent;
         &::after {
             content: '';
-            display: block;
+            display: ${hideUnderline ? 'none' : 'block'};
             position: absolute;
             width: 0;
             bottom: ${size === 'M' ? `1.05rem` : `0.85rem`};

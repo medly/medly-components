@@ -157,4 +157,20 @@ describe('Button component', () => {
         );
         expect(container).toMatchSnapshot();
     });
+    it('should render flat variant properly when hideUnderline set to true', () => {
+        const { container } = render(
+            <Button variant="flat" hideUnderline>
+                Some text
+            </Button>
+        );
+        expect(container).toMatchSnapshot();
+    });
+    it('should render flat variant properly when hideUnderline set to false', () => {
+        const { container } = render(
+            <Button variant="flat" hideUnderline={false}>
+                Some text
+            </Button>
+        );
+        expect(container).toMatchSnapshot();
+    });
 });
