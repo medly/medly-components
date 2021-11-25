@@ -14,8 +14,17 @@ import { RowProps } from './types';
 export const Row: FC<RowProps> = memo(props => {
     const [isExpanded, setExpansionState] = useState(false),
         [isRowHovered, setIsRowHovered] = useState(false),
-        { id, data, isNavigated, isRowSelectedFromKeyboard, showShadowAfterFrozenElement, selectedRowIds, onRowSelection, ...restProps } =
-            props,
+        {
+            id,
+            data,
+            isNavigated,
+            isRowSelectedFromKeyboard,
+            isRowExpandedFromKeyboard,
+            showShadowAfterFrozenElement,
+            selectedRowIds,
+            onRowSelection,
+            ...restProps
+        } = props,
         {
             columns,
             isLoading,
@@ -94,7 +103,11 @@ export const Row: FC<RowProps> = memo(props => {
 
     useEffect(() => {
         if (isRowSelectedFromKeyboard && !isRowClickDisabled) handleRowSelection();
-    }, [isRowSelectedFromKeyboard, handleRowSelection, id]);
+    }, [isRowSelectedFromKeyboard, isRowClickDisabled, handleRowSelection]);
+
+    useEffect(() => {
+        if (isRowExpandedFromKeyboard && !isRowClickDisabled) handleExpansionIconClick();
+    }, [isRowExpandedFromKeyboard, isRowClickDisabled, handleExpansionIconClick]);
 
     return (
         <>

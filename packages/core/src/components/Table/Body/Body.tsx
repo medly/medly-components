@@ -15,12 +15,14 @@ const Body: FC<TableBodyProps> = memo(props => {
         { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props,
         [cursor, setCursor] = useState(-1),
         [isRowSelected, setIsRowSelected] = useState(false),
+        [isRowExpanded, setIsRowExpanded] = useState(false),
         /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
         tableVisibleWidth = tableRef.current?.clientWidth ?? 0,
         minimapDimensionDeps = useMemo(() => [columns], [columns]),
         isUpKeyPressed = useKeyPress('ArrowUp', true),
         isDownKeyPressed = useKeyPress('ArrowDown', true),
-        isSelectionKeyPressed = useKeyPress('x');
+        isSelectionKeyPressed = useKeyPress('x'),
+        isExpansionKeyPressed = useKeyPress(' ');
 
     useEffect(() => {
         if (data.length && isUpKeyPressed) {
@@ -38,6 +40,11 @@ const Body: FC<TableBodyProps> = memo(props => {
         if (isSelectionKeyPressed) setIsRowSelected(true);
         else setIsRowSelected(false);
     }, [isSelectionKeyPressed]);
+
+    useEffect(() => {
+        if (isExpansionKeyPressed) setIsRowExpanded(true);
+        else setIsRowExpanded(false);
+    }, [isExpansionKeyPressed]);
 
     return (
         <TBody>
@@ -76,6 +83,7 @@ const Body: FC<TableBodyProps> = memo(props => {
                         onRowSelection={onRowSelection}
                         isNavigated={index === cursor}
                         isRowSelectedFromKeyboard={isRowSelected && index === cursor}
+                        isRowExpandedFromKeyboard={isRowExpanded && index === cursor}
                         {...restProps}
                     />
                 );
