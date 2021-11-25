@@ -101,13 +101,10 @@ MultiSelect with creatable options allows user to create new options apart from 
     <Story name="WithCreatableOptions">
         {() => {
             const [values, setValues] = useState(['lorem pharmacy', 'a pharmacy']);
-            const [inputValue, setInputValue] = useState('lorem pharmacy, a pharmacy');
             return (
                 <MultiSelect
-                    inputValue={inputValue}
                     options={options}
                     values={values}
-                    setValues={setValues}
                     onChange={setValues}
                     size={select('Size', sizes, 'M')}
                     disabled={boolean('Disabled', false)}
