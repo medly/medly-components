@@ -30,29 +30,29 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     displayFormat?: DisplayFormat;
     /** Disable date selection */
     disabled?: boolean;
-    /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered. */
+    /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper text icon will be rendered. */
     showDecorators?: boolean;
-    /** To be used when it is required in any form */
+    /** Use when required in any form */
     required?: boolean;
     /** Date picker label */
     label?: string;
-    /** Takes full width of the parent component */
+    /** Take full width of the parent component */
     fullWidth?: boolean;
     /** Min width of the component */
     minWidth?: string;
-    /** Minimum selectable Date */
+    /** Minimum selectable date */
     minSelectableDate?: Date;
-    /** Maximum selectable Date */
+    /** Maximum selectable date */
     maxSelectableDate?: Date;
-    /** Helper Text */
+    /** Helper text */
     helperText?: string;
-    /** Error Text */
+    /** Error text */
     errorText?: string;
     /** Popover placement */
     popoverPlacement?: Placement;
     /** Show the calendar icon */
     showCalendarIcon?: boolean;
-    /** Show Helper text and error text in a tooltip (popover) */
+    /** Show helper text and error text in a tooltip (popover) */
     showTooltipForHelperAndErrorText?: boolean;
     /** Display calendar icon left or right */
     calendarIconPosition?: 'left' | 'right';
