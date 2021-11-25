@@ -157,7 +157,7 @@ describe('Button component', () => {
         );
         expect(container).toMatchSnapshot();
     });
-    it('should render properly as flat when hideUnderline set to true', () => {
+    it('should render flat variant properly when hideUnderline set to true', () => {
         const { container } = render(
             <Button variant="flat" hideUnderline>
                 Some text
@@ -165,7 +165,7 @@ describe('Button component', () => {
         );
         expect(container).toMatchSnapshot();
     });
-    it('should render properly as flat when hideUnderline set to false', () => {
+    it('should render flat variant properly when hideUnderline set to false', () => {
         const { container } = render(
             <Button variant="flat" hideUnderline={false}>
                 Some text
