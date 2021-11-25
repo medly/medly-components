@@ -207,6 +207,7 @@ Component.defaultProps = {
     variant: 'filled',
     isSearchable: true,
     placeholder: 'Please Select . . .',
-    showDecorators: true
+    showDecorators: true,
+    isCreatable: false
 };
 export const MultiSelect: FC<MultiSelectProps> & WithStyle = Object.assign(Component, { Style: Wrapper });

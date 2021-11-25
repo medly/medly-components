@@ -242,11 +242,14 @@ describe('MultiSelect component', () => {
     });
 
     it('should create options if isCreatable flag is passed', async () => {
-        render(<MultiSelect options={options} isCreatable />);
-        fireEvent.change(screen.getByRole('textbox'), { target: { value: 'option that does not exist' } });
-        fireEvent.click(screen.getByText(`Create "option that does not exist"`));
-        const createdOption = await screen.findByText('option that does not exist');
+        const option = 'optionThatDoesNotExist';
+        const mockOnChange = jest.fn();
+        render(<MultiSelect options={options} onChange={mockOnChange} isCreatable />);
+        fireEvent.change(screen.getByRole('textbox'), { target: { value: option } });
+        fireEvent.click(screen.getByText(`Create "${option}"`));
+        const createdOption = await screen.findByText(option);
         expect(createdOption).toBeTruthy();
+        waitFor(() => expect(mockOnChange).toHaveBeenCalledWith([option]));
     });
 
     it('should not create option if option already exists in list', async () => {
