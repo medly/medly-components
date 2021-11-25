@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.1.2...@medly-components/core@3.2.0) (2021-11-25)
+
+
+### Features
+
+* add feature to have creatable options in MultiSelect component ([#539](https://github.com/medly/medly-components/issues/539)) ([e99fdba](https://github.com/medly/medly-components/commit/e99fdbad13f48065209f0157b10b2effe66b3ffa))
+
+
+
+
+
 ## [3.1.2](https://github.com/medly/medly-components/compare/@medly-components/core@3.1.1...@medly-components/core@3.1.2) (2021-11-25)
 
 **Note:** Version bump only for package @medly-components/core
