@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.2](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.1...@medly-components/core@3.4.2) (2021-11-26)
+
+
+### Bug Fixes
+
+* add left and right arrow to expand and collapse row ([#544](https://github.com/medly/medly-components/issues/544)) ([04dd3f7](https://github.com/medly/medly-components/commit/04dd3f7890e473bed2482ba84a31040fd5ba2190))
+* fix multiselect tests ([#545](https://github.com/medly/medly-components/issues/545)) ([33a1a36](https://github.com/medly/medly-components/commit/33a1a3603d0389e1ddb21656a2994c83d4ecc05e))
+
+
+
+
+
 ## [3.4.1](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.0...@medly-components/core@3.4.1) (2021-11-26)
 
 
