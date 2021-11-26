@@ -177,7 +177,8 @@ const Component: FC<SingleSelectProps> = memo(
         return (
             <Styled.Wrapper
                 id={`${selectId}-wrapper`}
-                {...{ disabled, minWidth, maxWidth, fullWidth }}
+                {...{ disabled, maxWidth, fullWidth }}
+                minWidth={variant === 'flat' ? 'fit-content' : minWidth}
                 variant={variant!}
                 ref={wrapperRef}
                 className={className}
