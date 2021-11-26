@@ -1249,7 +1249,9 @@ exports[`DatePicker component popover placement should render properly with "bot
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -2285,7 +2287,9 @@ exports[`DatePicker component popover placement should render properly with "bot
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -3318,7 +3322,9 @@ exports[`DatePicker component popover placement should render properly with "bot
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -4351,7 +4357,9 @@ exports[`DatePicker component popover placement should render properly with "lef
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -5386,7 +5394,9 @@ exports[`DatePicker component popover placement should render properly with "lef
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -6418,7 +6428,9 @@ exports[`DatePicker component popover placement should render properly with "lef
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -7450,7 +7462,9 @@ exports[`DatePicker component popover placement should render properly with "rig
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -8485,7 +8499,9 @@ exports[`DatePicker component popover placement should render properly with "rig
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -9517,7 +9533,9 @@ exports[`DatePicker component popover placement should render properly with "rig
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -10549,7 +10567,9 @@ exports[`DatePicker component popover placement should render properly with "top
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -11584,7 +11604,9 @@ exports[`DatePicker component popover placement should render properly with "top
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -12616,7 +12638,9 @@ exports[`DatePicker component popover placement should render properly with "top
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 

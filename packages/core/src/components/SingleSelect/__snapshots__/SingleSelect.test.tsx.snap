@@ -3736,7 +3736,9 @@ exports[`SingleSelect component with flat variant should render disabled state p
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 20rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -4127,7 +4129,9 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-width: 20rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   width: 100%;
   margin: 0.8rem 0;
 }
@@ -4556,7 +4560,9 @@ exports[`SingleSelect component with flat variant should render properly when op
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 20rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -4890,7 +4896,9 @@ exports[`SingleSelect component with flat variant should render with label prope
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 20rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
