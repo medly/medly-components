@@ -246,10 +246,8 @@ describe('MultiSelect component', () => {
         const mockOnChange = jest.fn();
         render(<MultiSelect options={options} onChange={mockOnChange} isCreatable />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: option } });
-        fireEvent.click(screen.getByText(`Create "${option}"`));
-        const createdOption = await screen.findByText(option);
-        expect(createdOption).toBeTruthy();
-        waitFor(() => expect(mockOnChange).toHaveBeenCalledWith([option]));
+        fireEvent.click(await screen.findByText(`Create "${option}"`));
+        waitFor(() => expect(mockOnChange).toHaveBeenCalledWith(['optionThatDoesNotExist']), { timeout: 10000 });
     });
 
     it('should not create option if option already exists in list', async () => {
