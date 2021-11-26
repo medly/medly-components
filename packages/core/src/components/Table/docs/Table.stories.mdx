@@ -331,13 +331,13 @@ To show Custom Component, you need pass props in below format.
 ## Keyboard navigation
 
 You can navigate rows in table using `Up Arrow` and `Down Arrow` key. To select a row you can use `x` key whereas you can expand a row using the `space` key.
-These are the default values, you can also override the default key values by passing the keybindings object to the `keybindings` prop. Be sure to match the key values to the HTML spec. You can view the key values [here](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values).
+These are the default values, you can also override the default key values by passing the keyBindings object to the `keyBindings` prop. Be sure to match the key values to the HTML spec. You can view the key values [here](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values).
 
 ```tsx
 <Table
     data="Data Object"
     columns="Columns Object"
-    keybindings={{
+    keyBindings={{
         up: 'ArrowUp', // Up arrow key
         down: 'ArrowDown', // Down arrow key
         selectRow: 'x', // 'x' key

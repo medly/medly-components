@@ -102,12 +102,12 @@ export const Row: FC<RowProps> = memo(props => {
     );
 
     useEffect(() => {
-        if (isRowSelectedFromKeyboard && !isRowClickDisabled) handleRowSelection();
-    }, [isRowSelectedFromKeyboard, isRowClickDisabled, handleRowSelection]);
+        if (isRowSelectedFromKeyboard && !isRowSelectionDisabled) handleRowSelection();
+    }, [isRowSelectedFromKeyboard, isRowSelectionDisabled, handleRowSelection]);
 
     useEffect(() => {
-        if (isRowExpandedFromKeyboard && !isRowClickDisabled) handleExpansionIconClick();
-    }, [isRowExpandedFromKeyboard, isRowClickDisabled, handleExpansionIconClick]);
+        if (isRowExpandedFromKeyboard) handleExpansionIconClick();
+    }, [isRowExpandedFromKeyboard, handleExpansionIconClick]);
 
     return (
         <>

@@ -15,7 +15,7 @@ export type TableState = { activePage?: number; sortField?: string; sortOrder?: 
 
 export type CustomTableCellComponent = FC<{ data?: any; rowId?: any; disabled?: boolean; rowData?: ObjectType }>;
 export type RowHoverActionsComponent = FC<{ rowData?: ObjectType; rowId?: any }>;
-export type Keybindings = {
+export type KeyBindings = {
     up?: string;
     down?: string;
     selectRow?: string;
@@ -132,8 +132,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     withInfiniteScroll?: boolean;
     /** CSS max-height property */
     maxHeight?: string;
-    /** Set keybindings for keyboard navigation */
-    keybindings?: Keybindings;
+    /** Set keyBindings for keyboard navigation */
+    keyBindings?: KeyBindings;
 }
 
 export interface StaticProps {
