@@ -26830,7 +26830,9 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 5.6rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
