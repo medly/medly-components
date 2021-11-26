@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.1](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.0...@medly-components/core@3.4.1) (2021-11-26)
+
+
+### Bug Fixes
+
+* change width to `fit-content` of the flat variant of SingleSelect component ([#543](https://github.com/medly/medly-components/issues/543)) ([1ed5d13](https://github.com/medly/medly-components/commit/1ed5d13169f159a126c4c2821a3b2535cec3fc86))
+
+
+
+
+
 # [3.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.3.0...@medly-components/core@3.4.0) (2021-11-26)
 
 
