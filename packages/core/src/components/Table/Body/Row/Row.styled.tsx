@@ -138,6 +138,7 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     min-width: fit-content;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
     ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? cardStyle : normalStyle)}
+    box-shadow: ${({ theme, isNavigated }) => isNavigated && `0 0.2rem 0.8rem ${rgba(theme.table.shadowColor, 0.8)} `};
 `;
 
 export const NoResultCell = styled('td')<{ width: number; tableSize: keyof typeof defaultTableCellPaddings }>`

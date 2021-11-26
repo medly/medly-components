@@ -10,6 +10,7 @@ export type RowActionProps = HTMLProps<HTMLTableCellElement> & {
     isRowSelected?: boolean;
     isRowIndeterminate?: boolean;
     isRowSelectionDisabled?: boolean;
+    isNavigated?: boolean;
     showShadowAtRight?: boolean;
     tableSize?: TableProps['size'];
     onRowSelection?: (id: any) => void;

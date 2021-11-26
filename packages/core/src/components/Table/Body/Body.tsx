@@ -1,4 +1,5 @@
-import { memo, useContext, useMemo } from 'react';
+import { useKeyPress } from '@medly-components/utils';
+import { FC, memo, useContext, useEffect, useMemo, useState } from 'react';
 import { TableComponentsCommonPropsContext } from '../context';
 import { getGridTemplateColumns } from '../helpers';
 import Minimap from '../Minimap';
@@ -7,15 +8,31 @@ import GroupedRow from './GroupedRow';
 import Row from './Row';
 import { NoResultCell, NoResultRow } from './Row/Row.styled';
 import { TableBodyProps } from './types';
-import type { FC } from 'react';
 
 const Body: FC<TableBodyProps> = memo(props => {
     const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap, columns, size } =
             useContext(TableComponentsCommonPropsContext),
-        { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props,
+        { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, keyBindings, ...restProps } = props,
+        [cursor, setCursor] = useState(-1),
         /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
         tableVisibleWidth = tableRef.current?.clientWidth ?? 0,
-        minimapDimensionDeps = useMemo(() => [columns], [columns]);
+        minimapDimensionDeps = useMemo(() => [columns], [columns]),
+        isUpKeyPressed = useKeyPress(keyBindings.up!, true),
+        isDownKeyPressed = useKeyPress(keyBindings.down!, true),
+        isSelectionKeyPressed = useKeyPress(keyBindings.selectRow!),
+        isExpansionKeyPressed = useKeyPress(keyBindings.expandRow!);
+
+    useEffect(() => {
+        if (data.length && isUpKeyPressed) {
+            setCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
+        }
+    }, [isUpKeyPressed, data]);
+
+    useEffect(() => {
+        if (data.length && isDownKeyPressed) {
+            setCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
+        }
+    }, [isDownKeyPressed, data]);
 
     return (
         <TBody>
@@ -52,6 +69,9 @@ const Body: FC<TableBodyProps> = memo(props => {
                         data={row}
                         selectedRowIds={selectedRowIds}
                         onRowSelection={onRowSelection}
+                        isNavigated={index === cursor}
+                        isRowSelectedFromKeyboard={isSelectionKeyPressed && index === cursor}
+                        isRowExpandedFromKeyboard={isExpansionKeyPressed && index === cursor}
                         {...restProps}
                     />
                 );
