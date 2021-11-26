@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.3.0...@medly-components/core@3.4.0) (2021-11-26)
+
+
+### Features
+
+* add keyboard navigation support to table component ([#542](https://github.com/medly/medly-components/issues/542)) ([a4d7559](https://github.com/medly/medly-components/commit/a4d7559c766b265fbf3a052ea77ddb442d146208))
+
+
+
+
+
 # [3.3.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.2.0...@medly-components/core@3.3.0) (2021-11-25)
 
 
