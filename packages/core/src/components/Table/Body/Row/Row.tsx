@@ -20,6 +20,7 @@ export const Row: FC<RowProps> = memo(props => {
             isNavigated = false,
             isRowSelectedFromKeyboard,
             isRowExpandedFromKeyboard,
+            isRowCollapsedFromKeyboard,
             showShadowAfterFrozenElement,
             selectedRowIds,
             onRowSelection,
@@ -106,8 +107,12 @@ export const Row: FC<RowProps> = memo(props => {
     }, [isRowSelectedFromKeyboard, isRowSelectionDisabled, handleRowSelection]);
 
     useEffect(() => {
-        if (isRowExpandedFromKeyboard) handleExpansionIconClick();
-    }, [isRowExpandedFromKeyboard, handleExpansionIconClick]);
+        isRowExpandedFromKeyboard && setExpansionState(true);
+    }, [isRowExpandedFromKeyboard]);
+
+    useEffect(() => {
+        isRowCollapsedFromKeyboard && setExpansionState(false);
+    }, [isRowCollapsedFromKeyboard]);
 
     return (
         <>

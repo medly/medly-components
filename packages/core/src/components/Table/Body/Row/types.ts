@@ -19,4 +19,5 @@ export type RowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & 
     isNavigated?: boolean;
     isRowSelectedFromKeyboard?: boolean;
     isRowExpandedFromKeyboard?: boolean;
+    isRowCollapsedFromKeyboard?: boolean;
 };

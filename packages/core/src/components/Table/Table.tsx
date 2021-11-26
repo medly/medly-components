@@ -4,7 +4,7 @@ import { forwardRef, memo, useCallback, useEffect, useMemo, useReducer, useRef, 
 import ActionBar from './ActionBar';
 import Body from './Body';
 import ColumnConfiguration from './ColumnConfiguration';
-import { loadingBodyData } from './constants';
+import { defaultKeyBindings, loadingBodyData } from './constants';
 import { TableComponentsCommonPropsContext, TableStateContext } from './context';
 import Foot from './Foot';
 import Head from './Head';
@@ -115,7 +115,11 @@ export const Component: FC<TableProps> = memo(
                         isGroupedTable,
                         tableRef,
                         hiddenDivRef,
-                        addColumnMaxSize
+                        addColumnMaxSize,
+                        keyBindings: {
+                            ...defaultKeyBindings,
+                            ...keyBindings
+                        }
                     }}
                 >
                     <HiddenDiv ref={hiddenDivRef} />
@@ -148,8 +152,7 @@ export const Component: FC<TableProps> = memo(
                                 selectedRowIds: isGroupedTable ? selectedGroupIds : selectedRowIds,
                                 onRowSelection: toggleId,
                                 onGroupedRowSelection: groupedRowSelector.toggleIds,
-                                showShadowAfterFrozenElement: !scrollState.isScrolledToLeft,
-                                keyBindings: keyBindings!
+                                showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                             }}
                         />
                         {withPagination && !withInfiniteScroll && <Foot tableSize={size!} />}
@@ -176,12 +179,7 @@ Component.defaultProps = {
     isRowSelectable: false,
     isRowExpandable: false,
     withRowSeparators: true,
-    keyBindings: {
-        up: 'ArrowUp',
-        down: 'ArrowDown',
-        selectRow: 'x',
-        expandRow: ' '
-    }
+    keyBindings: defaultKeyBindings
 };
 
 Component.displayName = 'Table';

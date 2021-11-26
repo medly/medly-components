@@ -20,6 +20,7 @@ export type KeyBindings = {
     down?: string;
     selectRow?: string;
     expandRow?: string;
+    collapseRow?: string;
 };
 
 export interface TableColumnConfig {
