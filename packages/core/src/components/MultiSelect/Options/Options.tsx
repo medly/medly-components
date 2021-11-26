@@ -33,9 +33,9 @@ const Component: FC<OptionsProps> = memo(props => {
             },
             [selectedValues, onOptionClick]
         ),
-        handleCreatableOptionClick = () => {
+        handleCreatableOptionClick = useCallback(() => {
             setValues && setValues(prevValues => [...prevValues, { label: inputValue, value: inputValue, creatable: true }]);
-        };
+        }, [setValues, inputValue]);
 
     return (
         <Styled.OptionsWrapper size={size} id={`${id}-options-wrapper`} onClick={stopPropagation}>
