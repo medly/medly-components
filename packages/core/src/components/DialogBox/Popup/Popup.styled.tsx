@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import { DialogBoxPopupProps } from './types';
 
 export const Popup = styled('div')<DialogBoxPopupProps>`
-    background: ${({ theme }) => theme.modal.backgroundColor};
+    background: ${({ theme }) => theme.dialogBox.backgroundColor};
     display: flex;
     flex-direction: column;
     position: relative;
-    box-shadow: 0 0.4rem 3.2 ${({ theme }) => theme.modal.shadowColor};
+    box-shadow: 0 0.4rem 3.2 ${({ theme }) => theme.dialogBox.shadowColor};
     box-sizing: border-box;
-    border-radius: 1.6rem;
+    border-radius: ${({ theme }) => theme.dialogBox.borderRadius};
     overflow-y: auto;
     max-height: 80%;
     width: calc(100% - 4.8rem);
@@ -58,7 +58,7 @@ export const Popup = styled('div')<DialogBoxPopupProps>`
         }
         &::-webkit-scrollbar-thumb {
             border-radius: 1rem;
-            background-color: ${({ theme }) => theme.modal.scrollbarThumbColor};
+            background-color: ${({ theme }) => theme.dialogBox.scrollbarThumbColor};
         }
     }
 `;

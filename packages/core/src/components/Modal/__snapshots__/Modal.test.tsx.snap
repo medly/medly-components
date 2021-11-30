@@ -327,7 +327,7 @@ exports[`Modal component should render properly when it is open 1`] = `
 @media (min-width:768px) and (max-width:1439px) {
   .c1 {
     padding: 4.8rem 3.2rem;
-    border-radius: 2.4rem;
+    border-radius: 1.2rem;
     max-width: 72%;
     min-width: 200px;
     max-height: 80%;
@@ -337,7 +337,7 @@ exports[`Modal component should render properly when it is open 1`] = `
 @media (min-width:1440px) {
   .c1 {
     padding: 4.8rem 3.2rem;
-    border-radius: 2.4rem;
+    border-radius: 1.2rem;
     min-width: 200px;
     max-width: 103.6rem;
     max-height: 80%;
