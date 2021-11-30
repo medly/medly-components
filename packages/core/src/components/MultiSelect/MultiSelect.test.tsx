@@ -1,11 +1,9 @@
 import { StarIcon } from '@medly-components/icons';
-import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
+import { fireEvent, render, screen, waitFor } from '@test-utils';
 import { MultiSelect } from './MultiSelect';
 import { MultiSelectProps } from './types';
 
 describe('MultiSelect component', () => {
-    afterEach(cleanup);
-
     const sizes: Required<MultiSelectProps>['size'][] = ['S', 'M'],
         options = [
             { value: 'all', label: 'All' },
@@ -43,7 +41,7 @@ describe('MultiSelect component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(sizes)('should render properly with %s size', size => {
+    test.each(sizes)('should render properly with %s size', async size => {
         const { container } = render(
             <MultiSelect
                 values={['disabled']}
@@ -54,14 +52,14 @@ describe('MultiSelect component', () => {
             />
         );
         fireEvent.click(screen.getByRole('textbox'));
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
         expect(container).toMatchSnapshot();
     });
 
     it('should show options on click on input', async () => {
         render(<MultiSelect options={options} onChange={jest.fn()} />);
         fireEvent.click(screen.getByRole('textbox'));
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
     });
 
     it('should hide options when clicked outside', () => {
@@ -246,8 +244,17 @@ describe('MultiSelect component', () => {
         const mockOnChange = jest.fn();
         render(<MultiSelect options={options} onChange={mockOnChange} isCreatable />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: option } });
-        fireEvent.click(await screen.findByText(`Create "${option}"`));
-        waitFor(() => expect(mockOnChange).toHaveBeenCalledWith(['optionThatDoesNotExist']), { timeout: 10000 });
+        fireEvent.click(screen.getByText(`Create "${option}"`));
+        expect(mockOnChange).toHaveBeenCalledWith([option]);
+    });
+
+    it('should create options if isCreatable flag is passed and enter key is pressed', async () => {
+        const mockOnChange = jest.fn(),
+            option = 'optionThatDoesNotExist',
+            { container } = render(<MultiSelect options={options} onChange={mockOnChange} isCreatable />);
+        fireEvent.change(screen.getByRole('textbox'), { target: { value: option } });
+        fireEvent.keyDown(container, { key: 'Enter', code: 13 });
+        await waitFor(() => expect(mockOnChange).toHaveBeenCalledWith([option]));
     });
 
     it('should not create option if option already exists in list', async () => {
