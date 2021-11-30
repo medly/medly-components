@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.3](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.2...@medly-components/core@3.4.3) (2021-11-30)
+
+
+### Bug Fixes
+
+* the content to be passed to onChange prop of MultiSelect component ([#546](https://github.com/medly/medly-components/issues/546)) ([aea6376](https://github.com/medly/medly-components/commit/aea6376f902ba3d0170459e5a72f96955dd4239f))
+
+
+
+
+
 ## [3.4.2](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.1...@medly-components/core@3.4.2) (2021-11-26)
 
 
