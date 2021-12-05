@@ -15,7 +15,7 @@ export const PaginationPopup: FC<PaginationPopupProps> = memo(({ prevPageNumber,
         };
     return (
         <>
-            <PageNumberButton key={prevPageNumber + '...'}>
+            <PageNumberButton key={`${prevPageNumber}...`}>
                 <Text textVariant="h5" textAlign="center" textWeight="Medium">
                     ...
                 </Text>

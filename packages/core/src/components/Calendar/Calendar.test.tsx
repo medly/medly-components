@@ -14,6 +14,7 @@ const getDateValues = (container: HTMLElement) => {
 
 describe('Calendar Component', () => {
     afterAll(cleanup);
+
     const selectableDateRange = {
         minSelectableDate: new Date(1901, 0, 1),
         maxSelectableDate: new Date(2100, 11, 1)
@@ -127,7 +128,7 @@ describe('Calendar Component', () => {
         const date = new Date(2021, 1, 1),
             { queryByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} {...selectableDateRange} />);
 
-        expect(queryByText('29')).toBeNull();
+        expect(queryByText('29')).not.toBeInTheDocument();
     });
 
     it('should disable dates which are are out of range', () => {
@@ -146,7 +147,7 @@ describe('Calendar Component', () => {
         expect(getByTitle('Mon Dec 21 2020')).toBeDisabled();
         expect(screen.getByTitle('test-calendar-navigation-backward-icon').closest('button')).toBeDisabled();
         expect(screen.getByTitle('test-calendar-navigation-forward-icon').closest('button')).toBeDisabled();
-        expect(getByTitle('Tue Dec 15 2020')).not.toBeDisabled();
+        expect(getByTitle('Tue Dec 15 2020')).toBeEnabled();
     });
 
     it('should change month to first non disable month on changing year if selected month is disabled in the newly selected year', () => {

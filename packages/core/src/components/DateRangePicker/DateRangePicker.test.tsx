@@ -64,6 +64,7 @@ describe('DateRangePicker', () => {
 
     describe('popover placement', () => {
         afterEach(cleanup);
+
         test.each(placements)('should render properly with %p position', (popoverPlacement: DateRangeProps['popoverPlacement']) => {
             const { container } = renderComponent({
                 popoverPlacement,
@@ -180,7 +181,7 @@ describe('DateRangePicker', () => {
                 startDate = new Date(2020, 1, 3),
                 dateToSelect: any = { startDate: new Date(2020, 1, 3), endDate: new Date(2020, 1, 5) },
                 { getByTitle, endDateInput } = renderComponent({
-                    value: { startDate: startDate, endDate: null },
+                    value: { startDate, endDate: null },
                     onChange: mockOnChange
                 });
             fireEvent.click(screen.getByTitle('contract-calendar-icon'));
@@ -218,6 +219,7 @@ describe('DateRangePicker', () => {
             fireEvent.change(startDateInput, { target: { value: '01 / 02' } });
             expect(mockOnChange).toHaveBeenCalledTimes(0);
         });
+
         it('should call onChange with null if typed end date is invalid', async () => {
             const mockOnChange = jest.fn(),
                 { endDateInput } = renderComponent({ onChange: mockOnChange });
@@ -225,19 +227,20 @@ describe('DateRangePicker', () => {
             expect(mockOnChange).toHaveBeenCalledTimes(0);
         });
     });
+
     describe('error messages', () => {
         it('should return error message if FROM date entered is incomplete', async () => {
-            const { startDateInput, getByText } = renderComponent({ required: true });
+            const { startDateInput, findByText } = renderComponent({ required: true });
             fireEvent.change(startDateInput, { target: { value: '04/31' } });
             fireEvent.blur(startDateInput);
-            await waitFor(() => expect(getByText('Enter valid date')).toBeInTheDocument());
+            await findByText('Enter valid date');
         });
 
         it('should return error message if TO date entered is incomplete', async () => {
-            const { endDateInput, getByText } = renderComponent({ required: true });
+            const { endDateInput, findByText } = renderComponent({ required: true });
             fireEvent.change(endDateInput, { target: { value: '04/31' } });
             fireEvent.blur(endDateInput);
-            await waitFor(() => expect(getByText('Enter valid date')).toBeInTheDocument());
+            await findByText('Enter valid date');
         });
 
         it('should show error message on outside click if values are empty', async () => {
@@ -425,7 +428,7 @@ describe('DateRangePicker', () => {
                 fullWidth: true,
                 showDecorators: false
             });
-            expect(screen.queryByTitle('contract-calendar-icon')).toBeNull();
+            expect(screen.queryByTitle('contract-calendar-icon')).not.toBeInTheDocument();
         });
     });
 
@@ -538,6 +541,7 @@ describe('DateRangePicker', () => {
 
     describe('Custom date range options popover placement', () => {
         afterEach(cleanup);
+
         test.each(placements)('should render properly with %p position', (popoverPlacement: DateRangeProps['popoverPlacement']) => {
             const { container } = renderComponent({
                 popoverPlacement,

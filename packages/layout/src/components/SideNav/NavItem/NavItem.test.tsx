@@ -18,6 +18,7 @@ const renderer = (active: string, mockOnClick = jest.fn()) =>
             </SideNav.List>
         </SideNav>
     );
+
 describe('NavItem', () => {
     afterEach(cleanup);
 

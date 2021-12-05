@@ -1,4 +1,4 @@
-import { fireEvent } from '@testing-library/dom';
+import { fireEvent } from '@testing-library/react';
 import { ChangeEvent, FC } from 'react';
 import { render, screen } from '../../test-utils';
 import { useStorage } from './useStorage';

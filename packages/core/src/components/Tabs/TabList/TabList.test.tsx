@@ -21,6 +21,7 @@ const renderer = (active = 'tab1', onChange = jest.fn()) =>
 
 describe('TabList', () => {
     const mockOnChange = jest.fn();
+
     afterEach(() => mockOnChange.mockClear());
 
     it('should render properly', () => {

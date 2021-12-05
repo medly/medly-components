@@ -1,5 +1,5 @@
-import { render, waitFor } from '@test-utils';
-import { fireEvent } from '@testing-library/dom';
+import { render } from '@test-utils';
+import { fireEvent } from '@testing-library/react';
 import { useWindowSize } from './useWindowSize';
 
 const DummyComp = () => {
@@ -20,9 +20,9 @@ describe('useWindowSize', () => {
     });
 
     it('should return expected window dimensions on window resize', async () => {
-        const { getByText } = render(<DummyComp />);
+        const { findByText } = render(<DummyComp />);
         Object.defineProperty(window, 'innerWidth', { value: 500 });
         fireEvent(window, new Event('resize'));
-        await waitFor(() => expect(getByText(`{"height":768,"width":500}`)).toBeInTheDocument());
+        await findByText(`{"height":768,"width":500}`);
     });
 });

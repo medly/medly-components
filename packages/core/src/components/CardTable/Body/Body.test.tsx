@@ -53,6 +53,6 @@ describe('CardTable Body', () => {
     it('should render no result row when there is no data', () => {
         const { container, queryByText } = render(<Body data={[]} columns={columns} />);
         expect(container).toMatchSnapshot();
-        expect(queryByText('No Result')).toBeTruthy();
+        expect(queryByText('No Result')).toBeInTheDocument();
     });
 });

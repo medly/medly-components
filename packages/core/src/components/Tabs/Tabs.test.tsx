@@ -44,7 +44,7 @@ describe('Tabs', () => {
                 </Tab>
             </Tabs>
         );
-        expect(screen.queryByText('Content for the delete panel')).toBeNull();
+        expect(screen.queryByText('Content for the delete panel')).not.toBeInTheDocument();
         expect(container).toBeEmptyDOMElement();
     });
 
@@ -77,8 +77,8 @@ describe('Tabs', () => {
     it('should render only the active tab when forceRender prop is false', async () => {
         renderer({});
         expect(screen.queryByText('Content for the add panel')).toBeInTheDocument();
-        expect(screen.queryByText('Content for the edit panel')).toBeNull();
-        expect(screen.queryByText('Content for the delete panel')).toBeNull();
-        expect(screen.queryByText('Content for the disabled panel')).toBeNull();
+        expect(screen.queryByText('Content for the edit panel')).not.toBeInTheDocument();
+        expect(screen.queryByText('Content for the delete panel')).not.toBeInTheDocument();
+        expect(screen.queryByText('Content for the disabled panel')).not.toBeInTheDocument();
     });
 });

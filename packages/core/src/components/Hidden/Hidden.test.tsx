@@ -16,6 +16,7 @@ describe('Hidden', () => {
         // @ts-ignore
         useMediaQuery.mockImplementation(useMediaQueryMock);
     });
+
     afterEach(() => jest.clearAllMocks());
 
     it('should render Js component', () => {

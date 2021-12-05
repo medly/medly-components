@@ -33,6 +33,7 @@ const initialState = {
 
 describe('Form', () => {
     afterEach(cleanup);
+
     it('should render properly without initial state', () => {
         const { container } = render(
             <Form
@@ -63,7 +64,7 @@ describe('Form', () => {
         const { getByRole } = render(<Form fieldSchema={testSchema} onSubmit={jest.fn()} initialState={{}} />);
         expect(getByRole('textbox', { name: 'Last Name' })).toBeDisabled();
         fireEvent.change(getByRole('textbox', { name: 'First Name' }), { target: { value: 'demo' } });
-        expect(getByRole('textbox', { name: 'Last Name' })).not.toBeDisabled();
+        expect(getByRole('textbox', { name: 'Last Name' })).toBeEnabled();
     });
 
     it('should render error message properly', () => {
@@ -88,7 +89,7 @@ describe('Form', () => {
 
     it('should hide actions when hideAction props is truthy', () => {
         const { queryByText } = render(<Form hideActions fieldSchema={testSchema} initialState={initialState} onSubmit={jest.fn()} />);
-        expect(queryByText('Save')).toBeNull();
+        expect(queryByText('Save')).not.toBeInTheDocument();
     });
 
     it('should be able to add api validation error causes', () => {

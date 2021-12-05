@@ -29,6 +29,7 @@ const renderer = (active: string, mockOnChange = jest.fn(), hideShadow = false) 
             </SideNav.List>
         </SideNav>
     );
+
 describe('SideNav', () => {
     afterEach(cleanup);
 
