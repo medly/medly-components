@@ -17,8 +17,8 @@ const Body: FC<TableBodyProps> = memo(props => {
         /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
         tableVisibleWidth = tableRef.current?.clientWidth ?? 0,
         minimapDimensionDeps = useMemo(() => [columns], [columns]),
-        isUpKeyPressed = useKeyPress(keyBindings.up!, true),
-        isDownKeyPressed = useKeyPress(keyBindings.down!, true),
+        isUpKeyPressed = useKeyPress(keyBindings.up!),
+        isDownKeyPressed = useKeyPress(keyBindings.down!),
         isSelectionKeyPressed = useKeyPress(keyBindings.selectRow!),
         isExpansionKeyPressed = useKeyPress(keyBindings.expandRow!),
         isCollapseKeyPressed = useKeyPress(keyBindings.collapseRow!);
