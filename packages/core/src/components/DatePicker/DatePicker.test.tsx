@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
+import { cleanup, fireEvent, render, screen } from '@test-utils';
 import { placements } from '../Popover/Popover.stories';
 import { DatePicker } from './DatePicker';
 import { DatePickerProps } from './types';
@@ -9,7 +9,7 @@ describe('DatePicker component', () => {
     it('should render properly when value is null', () => {
         render(<DatePicker id="dob" disabled label="Start Date" value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />);
         const inputEl = screen.getByRole('textbox') as HTMLInputElement;
-        expect(inputEl.value).toEqual('');
+        expect(inputEl).toHaveValue('');
     });
 
     it('should render properly when value is of date type', () => {
@@ -17,7 +17,7 @@ describe('DatePicker component', () => {
                 <DatePicker disabled label="Start Date" value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
             ),
             inputEl = screen.getByRole('textbox') as HTMLInputElement;
-        expect(inputEl.value).toEqual('01 / 01 / 2020');
+        expect(inputEl).toHaveValue('01 / 01 / 2020');
         expect(container).toMatchSnapshot();
     });
 
@@ -33,7 +33,7 @@ describe('DatePicker component', () => {
                 />
             ),
             inputEl = screen.getByRole('textbox') as HTMLInputElement;
-        expect(inputEl.value).toEqual('01 / 01 / 2020');
+        expect(inputEl).toHaveValue('01 / 01 / 2020');
         expect(container).toMatchSnapshot();
     });
 
@@ -109,7 +109,7 @@ describe('DatePicker component', () => {
             );
             fireEvent.click(getByText('Click Here'));
             const message = await queryByText('Please fill in this field');
-            expect(message).toBeNull();
+            expect(message).not.toBeInTheDocument();
         });
     });
 
@@ -198,32 +198,32 @@ describe('DatePicker component', () => {
             onChange: jest.fn()
         };
         const renderComponent = (required = false, validator?: (val: Date | null) => string) => {
-            const { getByText } = render(<DatePicker id="dob" {...props} required={required} validator={validator} />);
+            const { getByText, findByText } = render(<DatePicker id="dob" {...props} required={required} validator={validator} />);
             const inputEl = screen.getByRole('textbox');
             return {
                 inputEl,
-                getByText
+                findByText
             };
         };
 
         it('should return error when value is empty and field is required', async () => {
-            const { inputEl, getByText } = renderComponent(true);
+            const { inputEl, findByText } = renderComponent(true);
             fireEvent.invalid(inputEl);
-            await waitFor(() => expect(getByText('Please fill in this field')).toBeInTheDocument());
+            await findByText('Please fill in this field');
         });
 
         it('should return error message if date entered is incomplete', async () => {
-            const { inputEl, getByText } = renderComponent();
+            const { inputEl, findByText } = renderComponent();
             fireEvent.change(inputEl, { target: { value: '04/31' } });
             fireEvent.blur(inputEl);
-            await waitFor(() => expect(getByText('Please enter a valid date')).toBeInTheDocument());
+            await findByText('Please enter a valid date');
         });
 
         it('should return validator error message if given', async () => {
             const validator = (val: Date | null) => (!val ? 'Please enter dob' : '');
-            const { inputEl, getByText } = renderComponent(true, validator);
+            const { inputEl, findByText } = renderComponent(true, validator);
             fireEvent.invalid(inputEl);
-            await waitFor(() => expect(getByText('Please enter dob')).toBeInTheDocument());
+            await findByText('Please enter dob');
         });
     });
 

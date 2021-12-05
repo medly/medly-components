@@ -15,6 +15,7 @@ function renderComponent(props: SearchBoxProps) {
 
 describe('SearchBox', () => {
     const sizes: Required<SearchBoxProps>['size'][] = ['S', 'M'];
+
     test.each(sizes)('should render properly with %p size', size => {
         const { container } = render(<SearchBox size={size} />);
         expect(container).toMatchSnapshot();
@@ -74,7 +75,7 @@ describe('SearchBox', () => {
 
         it('should not render close icon in initial state', () => {
             const { queryByTitle } = renderComponent(props);
-            expect(queryByTitle('close icon')).toBeFalsy();
+            expect(queryByTitle('close icon')).not.toBeInTheDocument();
         });
 
         it('should hide the close icon and maintain the focus on input when clicked on close icon', () => {
@@ -84,7 +85,7 @@ describe('SearchBox', () => {
             expect(closeIcon).toBeInTheDocument();
             fireEvent.click(closeIcon);
             expect(inputEl.value).toHaveLength(0);
-            expect(queryByTitle('close icon')).toBeNull();
+            expect(queryByTitle('close icon')).not.toBeInTheDocument();
             expect(document.activeElement === inputEl).toBeTruthy();
         });
 
@@ -92,7 +93,7 @@ describe('SearchBox', () => {
             const { inputEl, queryByTitle } = renderComponent(props);
             fireEvent.change(inputEl, { target: { value: 'R' } });
             fireEvent.change(inputEl, { target: { value: '' } });
-            expect(queryByTitle('close icon')).toBeNull();
+            expect(queryByTitle('close icon')).not.toBeInTheDocument();
         });
     });
 
@@ -121,7 +122,7 @@ describe('SearchBox', () => {
 
         it('should not show options initially', () => {
             renderComponent(props);
-            expect(screen.queryByRole('list')).toBeNull();
+            expect(screen.queryByRole('list')).not.toBeInTheDocument();
         });
 
         it('should hide options when clicked outside', () => {
@@ -135,7 +136,7 @@ describe('SearchBox', () => {
             fireEvent.change(inputEl, defaultReturnObj);
             expect(screen.getByRole('list').children).toHaveLength(2);
             fireEvent.click(getByText('Outside span'));
-            expect(screen.queryByRole('list')).toBeNull();
+            expect(screen.queryByRole('list')).not.toBeInTheDocument();
         });
 
         it('should render options when user search option specified', () => {
@@ -156,7 +157,7 @@ describe('SearchBox', () => {
             const { inputEl } = renderComponent(props);
             fireEvent.blur(inputEl, defaultReturnObj);
             fireEvent.keyDown(inputEl, { key: 'ArrowDown', code: 40 });
-            expect(screen.queryByRole('list')).toBeNull();
+            expect(screen.queryByRole('list')).not.toBeInTheDocument();
         });
 
         it('should not call on OptionSelected when onOptionSelected is not passed', () => {

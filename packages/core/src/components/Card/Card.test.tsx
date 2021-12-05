@@ -6,6 +6,7 @@ import { CardProps } from './types';
 describe('Card component', () => {
     const variants: Required<CardProps>['variant'][] = ['solid', 'flat'],
         displayOptions: Required<CardProps>['display'][] = ['block', 'flex'];
+
     it('should render correctly with all the default props', () => {
         const { container } = render(
             <Card>

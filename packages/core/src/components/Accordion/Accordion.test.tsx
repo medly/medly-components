@@ -9,6 +9,7 @@ describe('Accordion component', () => {
                 <Accordion.Content>Avatar</Accordion.Content>
             </Accordion>
         );
+
     it('should render properly', () => {
         const { container } = renderAccordion();
         expect(container).toMatchSnapshot();

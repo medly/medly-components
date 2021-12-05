@@ -1,7 +1,7 @@
 import { CheckIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { updateNestedValue } from '@medly-components/utils';
-import { fireEvent, render, screen, waitFor } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { ThemeProvider } from 'styled-components';
 import { TextField } from './TextField';
 import { TextFieldProps } from './types';
@@ -146,10 +146,10 @@ describe('TextField', () => {
 
         it('should update mask label if mask and input value are same', async () => {
             const mockOnChange = jest.fn();
-            const { getByText } = render(
+            const { findByText } = render(
                 <TextField minWidth="30rem" id="dummy" value="11 / 11 / 1111" mask="DD / MM / YYYY" onChange={mockOnChange} />
             );
-            await waitFor(() => expect(getByText('11 / 11 / 1111')).toBeInTheDocument());
+            await findByText('11 / 11 / 1111');
         });
     });
 
@@ -190,22 +190,25 @@ describe('TextField', () => {
             const input = screen.getByRole('textbox') as HTMLInputElement;
             fireEvent.blur(input);
             expect(input.validationMessage).toEqual('');
-            expect(screen.queryByText('Email should be more then 3 characters')).toBeNull();
+            expect(screen.queryByText('Email should be more then 3 characters')).not.toBeInTheDocument();
         });
     });
 
     describe.each(['outlined', 'filled', 'fusion'])('with %s variant', value => {
         const variant = value as TextFieldProps['variant'];
+
         describe.each(['with label', 'without label'])('and %s', (labelCnd: string) => {
             it('should render default state properly', () => {
                 const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
                 expect(container).toMatchSnapshot();
             });
+
             it('should render focus state properly', () => {
                 const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
                 fireEvent.focusIn(screen.getByRole('textbox'));
                 expect(container).toMatchSnapshot();
             });
+
             it('should render disabled state properly', () => {
                 const { container } = render(<TextField variant={variant} disabled label={labelCnd === 'with label' ? 'Name' : ''} />);
                 fireEvent.focusIn(screen.getByRole('textbox'));
@@ -358,9 +361,9 @@ describe('TextField', () => {
                     showDecorators={false}
                 />
             );
-            expect(queryByText('prefix')).toBeNull();
-            expect(queryByText('suffix')).toBeNull();
-            expect(queryByText('4')).toBeNull();
+            expect(queryByText('prefix')).not.toBeInTheDocument();
+            expect(queryByText('suffix')).not.toBeInTheDocument();
+            expect(queryByText('4')).not.toBeInTheDocument();
         });
     });
 });

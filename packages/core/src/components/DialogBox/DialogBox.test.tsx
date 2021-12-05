@@ -24,6 +24,7 @@ const dialogBoxRenderer = ({
             <DialogBox.Actions>Demo Actions</DialogBox.Actions>
         </DialogBox>
     );
+
 describe('DialogBox component', () => {
     it('should render properly when it is open', () => {
         const { container } = dialogBoxRenderer({ open: true, minWidth: '200px', minHeight: '200px' });

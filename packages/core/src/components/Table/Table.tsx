@@ -138,7 +138,7 @@ export const Component: FC<TableProps> = memo(
                                 maxColumnSizes,
                                 areAllRowsSelected,
                                 onSelectAllClick: toggleId,
-                                isSelectAllDisable: isSelectAllDisable,
+                                isSelectAllDisable,
                                 showShadowAtBottom: !scrollState.isScrolledToTop,
                                 showShadowAfterFrozenElement: !scrollState.isScrolledToLeft,
                                 isAnyRowSelected:

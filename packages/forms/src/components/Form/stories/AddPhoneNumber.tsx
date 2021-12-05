@@ -17,7 +17,7 @@ export const AddPhoneNumber: FormCustomComponent<AddPhoneNumberProps> = ({ field
                 index: newFieldIndex,
                 type: 'custom',
                 component: CustomPhoneField,
-                setFields: setFields
+                setFields
             }
         ]);
     return (

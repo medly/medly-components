@@ -23,6 +23,7 @@ describe('HiddenJs', () => {
         // @ts-ignore
         useMediaQuery.mockImplementation(useMediaQueryMock);
     });
+
     afterEach(() => jest.clearAllMocks());
 
     test.each([
@@ -47,7 +48,7 @@ describe('HiddenJs', () => {
         useMediaQueryMock.mockReturnValue(true);
         const { queryByText } = renderComponent(props);
         expect(useMediaQueryMock).toHaveBeenCalledWith(query);
-        expect(queryByText('Strong text')).toBeNull();
+        expect(queryByText('Strong text')).not.toBeInTheDocument();
     });
 
     it('should show the children if media query does not match', () => {
@@ -60,6 +61,6 @@ describe('HiddenJs', () => {
     it('should hide the children if none of the prop is passed', () => {
         const { queryByText } = renderComponent({});
         expect(useMediaQueryMock).toHaveBeenCalledWith('');
-        expect(queryByText('Strong text')).toBeNull();
+        expect(queryByText('Strong text')).not.toBeInTheDocument();
     });
 });

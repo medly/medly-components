@@ -67,7 +67,7 @@ const Component: FC<SearchBoxProps> = memo(
                 onClear && onClear();
             }, []),
             handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-                const value = event.target.value;
+                const { value } = event.target;
                 updateIsTyping(value.length !== 0);
                 setShowCloseIcon(value.length !== 0);
                 onInputChange && onInputChange(value);

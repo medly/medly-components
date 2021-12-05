@@ -166,14 +166,14 @@ describe('SingleSelect component', () => {
     it('should not show options on click on drop icon, if disabled prop is set true', () => {
         const { container } = render(<SingleSelect options={options} disabled />);
         fireEvent.click(container.querySelector('svg') as SVGSVGElement);
-        expect(screen.queryByRole('list')).toBeNull();
+        expect(screen.queryByRole('list')).not.toBeInTheDocument();
     });
 
     it('should hide options on click on drop icon, if options are already visible', () => {
         const { container } = render(<SingleSelect options={options} />);
         fireEvent.click(container.querySelector('svg') as SVGSVGElement);
         fireEvent.click(container.querySelector('svg') as SVGSVGElement);
-        expect(screen.queryByRole('list')).toBeNull();
+        expect(screen.queryByRole('list')).not.toBeInTheDocument();
     });
 
     it('should hide options on click outside of the container', () => {
@@ -185,7 +185,7 @@ describe('SingleSelect component', () => {
         );
         fireEvent.click(screen.getByRole('textbox'));
         fireEvent.click(screen.getByText('Outer Element'));
-        expect(screen.queryByRole('list')).toBeNull();
+        expect(screen.queryByRole('list')).not.toBeInTheDocument();
     });
 
     it('should not show options on click outside of the container', () => {
@@ -196,7 +196,7 @@ describe('SingleSelect component', () => {
             </div>
         );
         fireEvent.click(screen.getByText('Outer Element'));
-        expect(screen.queryByRole('list')).toBeNull();
+        expect(screen.queryByRole('list')).not.toBeInTheDocument();
     });
 
     it('should show the selected option label in input on click on the option', () => {
@@ -255,7 +255,7 @@ describe('SingleSelect component', () => {
     it('should render matched options when input values changes', async () => {
         render(<SingleSelect options={options} />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: 'Dummy' } });
-        expect(screen.queryByText('All')).toBeNull();
+        expect(screen.queryByText('All')).not.toBeInTheDocument();
         expect(screen.getByRole('list')).toBeVisible();
     });
 
@@ -283,7 +283,7 @@ describe('SingleSelect component', () => {
         fireEvent.click(inputEl);
         fireEvent.blur(inputEl);
         expect(mockOnBlur).toHaveBeenCalled();
-        await waitFor(() => expect(screen.queryByRole('list')).toBeNull(), { timeout: 251 });
+        await waitFor(() => expect(screen.queryByRole('list')).not.toBeInTheDocument(), { timeout: 251 });
     });
 
     it('should handle builtin form validation', () => {

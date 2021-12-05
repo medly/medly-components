@@ -10,7 +10,7 @@ describe('Header', () => {
 
     it('hides the hamburger icon when rendered without the nav', () => {
         render(<Header withNav={false} />);
-        expect(screen.queryByTestId('hamburger-icon')).toBeNull();
+        expect(screen.queryByTestId('hamburger-icon')).not.toBeInTheDocument();
     });
 
     describe('navigation context', () => {
