@@ -1,5 +1,5 @@
-import { useKeyPress, WithStyle } from '@medly-components/utils';
-import { FC, Fragment, memo, useCallback, useEffect, useMemo } from 'react';
+import { WithStyle } from '@medly-components/utils';
+import { FC, Fragment, memo, useCallback, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
 import OptionComponent from '../../SingleSelect/Options/Option';
@@ -9,8 +9,7 @@ import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
 const Component: FC<OptionsProps> = memo(props => {
-    const isEnterKeyPressed = useKeyPress('Enter'),
-        { id, inputValue, values, size, setValues, options, onOptionClick, isCreatable } = props;
+    const { id, inputValue, values, size, setValues, options, onOptionClick, isCreatable } = props;
 
     const showCreatableOption =
         isCreatable &&
@@ -44,10 +43,6 @@ const Component: FC<OptionsProps> = memo(props => {
             onOptionClick([...selectedValues, inputValue]);
             setValues && setValues([...selectedValues, { label: inputValue, value: inputValue, creatable: true }]);
         }, [selectedValues, onOptionClick, inputValue, setValues]);
-
-    useEffect(() => {
-        isEnterKeyPressed && showCreatableOption && handleCreatableOptionClick();
-    }, [isEnterKeyPressed, showCreatableOption, handleCreatableOptionClick]);
 
     return (
         <Styled.OptionsWrapper size={size} id={`${id}-options-wrapper`} onClick={stopPropagation}>
