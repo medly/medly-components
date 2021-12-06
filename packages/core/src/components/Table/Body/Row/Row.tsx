@@ -1,4 +1,5 @@
-import { memo, useCallback, useContext, useMemo, useState } from 'react';
+import type { FC } from 'react';
+import { memo, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { TableComponentsCommonPropsContext } from '../../context';
 import { GroupCell } from '../../GroupCell';
 import { getGridTemplateColumns, getNestedValue } from '../../helpers';
@@ -9,12 +10,22 @@ import RowActionsCell from '../Cell/RowActionsCell';
 import RowHoverActionsCell from '../Cell/RowHoverActionsCell';
 import * as Styled from './Row.styled';
 import { RowProps } from './types';
-import type { FC } from 'react';
 
 export const Row: FC<RowProps> = memo(props => {
     const [isExpanded, setExpansionState] = useState(false),
         [isRowHovered, setIsRowHovered] = useState(false),
-        { id, data, showShadowAfterFrozenElement, selectedRowIds, onRowSelection, ...restProps } = props,
+        {
+            id,
+            data,
+            isNavigated = false,
+            isRowSelectedFromKeyboard,
+            isRowExpandedFromKeyboard,
+            isRowCollapsedFromKeyboard,
+            showShadowAfterFrozenElement,
+            selectedRowIds,
+            onRowSelection,
+            ...restProps
+        } = props,
         {
             columns,
             isLoading,
@@ -91,6 +102,18 @@ export const Row: FC<RowProps> = memo(props => {
         [id, data, isLoading, columns, addColumnMaxSize, isRowClickDisabled, hiddenDivRef, tableSize]
     );
 
+    useEffect(() => {
+        if (isRowSelectedFromKeyboard && !isRowSelectionDisabled) handleRowSelection();
+    }, [isRowSelectedFromKeyboard, isRowSelectionDisabled, handleRowSelection]);
+
+    useEffect(() => {
+        isRowExpandedFromKeyboard && setExpansionState(true);
+    }, [isRowExpandedFromKeyboard]);
+
+    useEffect(() => {
+        isRowCollapsedFromKeyboard && setExpansionState(false);
+    }, [isRowCollapsedFromKeyboard]);
+
     return (
         <>
             <Styled.Row
@@ -105,6 +128,7 @@ export const Row: FC<RowProps> = memo(props => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 withRowSeparators={withRowSeparators}
+                isNavigated={isNavigated}
             >
                 {(isRowSelectable || isRowExpandable) && (
                     <RowActionsCell
@@ -119,6 +143,7 @@ export const Row: FC<RowProps> = memo(props => {
                         onRowSelection={handleRowSelection}
                         onRowExpansionIconClick={handleExpansionIconClick}
                         showShadowAtRight={showShadowAfterFrozenElement}
+                        isNavigated={isNavigated}
                     />
                 )}
                 {getCells(data)}

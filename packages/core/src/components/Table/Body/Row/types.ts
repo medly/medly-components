@@ -7,6 +7,7 @@ export type StyledProps = GridTemplateProps &
         isSelected?: boolean;
         isExpanded?: boolean;
         isExpandable?: boolean;
+        isNavigated?: boolean;
         showRowWithCardStyle?: boolean;
         withRowSeparators?: boolean;
     };
@@ -15,4 +16,8 @@ export type RowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & 
     selectedRowIds: Array<any>;
     onRowSelection: (id: any) => void;
     showShadowAfterFrozenElement?: boolean;
+    isNavigated?: boolean;
+    isRowSelectedFromKeyboard?: boolean;
+    isRowExpandedFromKeyboard?: boolean;
+    isRowCollapsedFromKeyboard?: boolean;
 };

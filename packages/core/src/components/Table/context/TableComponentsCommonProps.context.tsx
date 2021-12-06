@@ -9,6 +9,7 @@ export const TableComponentsCommonPropsContext = createContext<
         tableRef: React.RefObject<HTMLTableElement>;
         hiddenDivRef: React.MutableRefObject<any>;
         addColumnMaxSize: (field: string, value: number) => void;
+        keyBindings: Required<TableProps>['keyBindings'];
     }
     // @ts-ignore
 >({});

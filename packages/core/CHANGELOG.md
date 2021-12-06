@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.5](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.4...@medly-components/core@3.4.5) (2021-12-05)
+
+
+### Bug Fixes
+
+* editing textfield problem due to table keyboard event ([#548](https://github.com/medly/medly-components/issues/548)) ([fe04d0b](https://github.com/medly/medly-components/commit/fe04d0befbfecfb3d1863c641044195ff07e07de))
+
+
+
+
+
+## [3.4.4](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.3...@medly-components/core@3.4.4) (2021-11-30)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [3.4.3](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.2...@medly-components/core@3.4.3) (2021-11-30)
+
+
+### Bug Fixes
+
+* the content to be passed to onChange prop of MultiSelect component ([#546](https://github.com/medly/medly-components/issues/546)) ([aea6376](https://github.com/medly/medly-components/commit/aea6376f902ba3d0170459e5a72f96955dd4239f))
+
+
+
+
+
+## [3.4.2](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.1...@medly-components/core@3.4.2) (2021-11-26)
+
+
+### Bug Fixes
+
+* add left and right arrow to expand and collapse row ([#544](https://github.com/medly/medly-components/issues/544)) ([04dd3f7](https://github.com/medly/medly-components/commit/04dd3f7890e473bed2482ba84a31040fd5ba2190))
+* fix multiselect tests ([#545](https://github.com/medly/medly-components/issues/545)) ([33a1a36](https://github.com/medly/medly-components/commit/33a1a3603d0389e1ddb21656a2994c83d4ecc05e))
+
+
+
+
+
+## [3.4.1](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.0...@medly-components/core@3.4.1) (2021-11-26)
+
+
+### Bug Fixes
+
+* change width to `fit-content` of the flat variant of SingleSelect component ([#543](https://github.com/medly/medly-components/issues/543)) ([1ed5d13](https://github.com/medly/medly-components/commit/1ed5d13169f159a126c4c2821a3b2535cec3fc86))
+
+
+
+
+
+# [3.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.3.0...@medly-components/core@3.4.0) (2021-11-26)
+
+
+### Features
+
+* add keyboard navigation support to table component ([#542](https://github.com/medly/medly-components/issues/542)) ([a4d7559](https://github.com/medly/medly-components/commit/a4d7559c766b265fbf3a052ea77ddb442d146208))
+
+
+
+
+
 # [3.3.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.2.0...@medly-components/core@3.3.0) (2021-11-25)
 
 

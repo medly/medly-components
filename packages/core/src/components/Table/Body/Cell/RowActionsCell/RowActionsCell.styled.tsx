@@ -90,5 +90,5 @@ export const RowActionsCellStyled = styled('td')<RowActionProps>`
     }
 
     ${props => props.showShadowAtRight && shadowStyle};
-    ${props => props.isRowSelected && selectedBorderStyle}
+    ${props => (props.isRowSelected || props.isNavigated) && selectedBorderStyle}
 `;

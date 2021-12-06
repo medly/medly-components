@@ -9,7 +9,13 @@ import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
 const Component: FC<OptionsProps> = memo(props => {
-    const { id, inputValue, values, setValues, size, options, onOptionClick, isCreatable } = props;
+    const { id, inputValue, values, size, setValues, options, onOptionClick, isCreatable } = props;
+
+    const showCreatableOption =
+        isCreatable &&
+        inputValue?.length &&
+        !options.some(({ value }) => value.includes(inputValue)) &&
+        !values.some(({ value }) => value === inputValue);
 
     const selectedValues = useMemo(() => values.map(op => op.value), [values]),
         stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
@@ -33,9 +39,10 @@ const Component: FC<OptionsProps> = memo(props => {
             },
             [selectedValues, onOptionClick]
         ),
-        handleCreatableOptionClick = () => {
-            setValues && setValues(prevValues => [...prevValues, { label: inputValue, value: inputValue, creatable: true }]);
-        };
+        handleCreatableOptionClick = useCallback(() => {
+            onOptionClick([...selectedValues, inputValue]);
+            setValues && setValues([...selectedValues, { label: inputValue, value: inputValue, creatable: true }]);
+        }, [selectedValues, onOptionClick, inputValue, setValues]);
 
     return (
         <Styled.OptionsWrapper size={size} id={`${id}-options-wrapper`} onClick={stopPropagation}>
@@ -55,11 +62,7 @@ const Component: FC<OptionsProps> = memo(props => {
                     ))
                 )}
             </Styled.ChipArea>
-            {isCreatable &&
-            inputValue &&
-            inputValue.length &&
-            !options.some(({ value }) => value.includes(inputValue)) &&
-            !values.some(({ value }) => value === inputValue) ? (
+            {showCreatableOption ? (
                 <Styled.Options id={`${id}-options`} onClick={stopPropagation} size={size}>
                     <OptionComponent
                         value={inputValue}

@@ -1,11 +1,9 @@
 import { StarIcon } from '@medly-components/icons';
-import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
+import { fireEvent, render, screen, waitFor } from '@test-utils';
 import { MultiSelect } from './MultiSelect';
 import { MultiSelectProps } from './types';
 
 describe('MultiSelect component', () => {
-    afterEach(cleanup);
-
     const sizes: Required<MultiSelectProps>['size'][] = ['S', 'M'],
         options = [
             { value: 'all', label: 'All' },
@@ -43,7 +41,7 @@ describe('MultiSelect component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(sizes)('should render properly with %s size', size => {
+    test.each(sizes)('should render properly with %s size', async size => {
         const { container } = render(
             <MultiSelect
                 values={['disabled']}
@@ -54,14 +52,14 @@ describe('MultiSelect component', () => {
             />
         );
         fireEvent.click(screen.getByRole('textbox'));
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
         expect(container).toMatchSnapshot();
     });
 
     it('should show options on click on input', async () => {
         render(<MultiSelect options={options} onChange={jest.fn()} />);
         fireEvent.click(screen.getByRole('textbox'));
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
     });
 
     it('should hide options when clicked outside', () => {
@@ -75,7 +73,7 @@ describe('MultiSelect component', () => {
         fireEvent.click(screen.getByRole('textbox'));
         expect(screen.getByRole('list')).toBeVisible();
         fireEvent.click(screen.getByText('Outer Element'));
-        expect(screen.queryByRole('list')).toBeNull();
+        expect(screen.queryByRole('list')).not.toBeInTheDocument();
     });
 
     it('should not render options when clicked outside', () => {
@@ -87,7 +85,7 @@ describe('MultiSelect component', () => {
             </div>
         );
         fireEvent.click(screen.getByText('Outer Element'));
-        expect(screen.queryByRole('list')).toBeNull();
+        expect(screen.queryByRole('list')).not.toBeInTheDocument();
     });
 
     it('should call onChange prop on selecting one of the option', () => {
@@ -136,7 +134,7 @@ describe('MultiSelect component', () => {
         fireEvent.click(inputEl);
         fireEvent.change(inputEl, { target: { value: 'Dummy2' } });
         expect(queryByText('Dummy2')).toBeVisible();
-        expect(queryByText('Dummy1')).toBeNull();
+        expect(queryByText('Dummy1')).not.toBeInTheDocument();
     });
 
     it('should call onInputChange on changing the input value', async () => {
@@ -171,13 +169,13 @@ describe('MultiSelect component', () => {
             outer = getByText('Outer');
         fireEvent.click(screen.getByRole('textbox'));
         fireEvent.click(outer);
-        expect(screen.queryByRole('list')).toBeNull();
+        expect(screen.queryByRole('list')).not.toBeInTheDocument();
     });
 
     it('should clear options on click onClear function', () => {
         render(<MultiSelect id="dummy" values={['Dummy1', 'Dummy2']} options={options} onChange={jest.fn()} />);
         fireEvent.click(screen.getByTitle('dummy-count-chip-clear-icon'));
-        expect(screen.queryByRole('list')).toBeNull();
+        expect(screen.queryByRole('list')).not.toBeInTheDocument();
     });
 
     it('should show options on input change', () => {
@@ -191,7 +189,7 @@ describe('MultiSelect component', () => {
         const wrapper = document.getElementById('multiSelect-wrapper') as HTMLDivElement;
         fireEvent.change(screen.getByRole('textbox'), { target: { value: 'Dummy2' } });
         fireEvent.click(wrapper);
-        expect(screen.queryByRole('list')).toBeNull();
+        expect(screen.queryByRole('list')).not.toBeInTheDocument();
     });
 
     it('should maintain focus even on blur of input', async () => {
@@ -199,7 +197,7 @@ describe('MultiSelect component', () => {
         const input = screen.getByRole('textbox');
         fireEvent.change(input, { target: { value: 'Dummy' } });
         fireEvent.click(document.getElementById('Dummy1-wrapper') as HTMLDivElement);
-        expect(input).toBe(document.activeElement);
+        expect(input).toHaveFocus();
     });
 
     it('should make input required if options.length is zero and multiSelect is required', async () => {
@@ -220,7 +218,7 @@ describe('MultiSelect component', () => {
         render(<MultiSelect options={options} isSearchable={false} required={false} />);
         const input = screen.getByRole('textbox');
         fireEvent.focus(input);
-        expect(input).not.toBe(document.activeElement);
+        expect(input).not.toHaveFocus();
     });
 
     it('should call validator with error message', async () => {
@@ -247,9 +245,7 @@ describe('MultiSelect component', () => {
         render(<MultiSelect options={options} onChange={mockOnChange} isCreatable />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: option } });
         fireEvent.click(screen.getByText(`Create "${option}"`));
-        const createdOption = await screen.findByText(option);
-        expect(createdOption).toBeTruthy();
-        waitFor(() => expect(mockOnChange).toHaveBeenCalledWith([option]));
+        expect(mockOnChange).toHaveBeenCalledWith([option]);
     });
 
     it('should not create option if option already exists in list', async () => {
@@ -258,7 +254,7 @@ describe('MultiSelect component', () => {
         const input = screen.getByRole('textbox');
         fireEvent.change(input, { target: { value: optionToCreate } });
         const findElement = screen.queryByText(`Create "${optionToCreate}"`);
-        expect(findElement).toBeFalsy();
+        expect(findElement).not.toBeInTheDocument();
     });
 
     it('should not create option if option already exists in values', async () => {
@@ -267,6 +263,6 @@ describe('MultiSelect component', () => {
         const input = screen.getByRole('textbox');
         fireEvent.change(input, { target: { value: optionToCreate } });
         const findElement = screen.queryByText(`Create "${optionToCreate}"`);
-        expect(findElement).toBeFalsy();
+        expect(findElement).not.toBeInTheDocument();
     });
 });

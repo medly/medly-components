@@ -9,6 +9,10 @@ const getRowBackgroundColor = ({ theme, isSelected, disabled, even }: StyledProp
     return theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : parity];
 };
 
+const getHoverStyleForCardStyle = css`
+    box-shadow: ${({ theme }) => `0 0.2rem 0.8rem ${rgba(theme.table.shadowColor, 0.35)} `};
+`;
+
 const cardStyle = css<StyledProps>`
     border: none;
     border-radius: 0.8rem;
@@ -57,14 +61,16 @@ const cardStyle = css<StyledProps>`
     }
 `;
 
-const getHoverStateStyle = (style: 'shadow' | 'outlined') =>
+const getHoverStyleForNormalStyle = (style: 'shadow' | 'outlined') =>
     style === 'outlined'
         ? css<StyledProps>`
+              z-index: 2;
               border-radius: 0.2rem;
               border: 0.2rem solid ${({ theme }) => theme.table.row.hoveredStyle.color};
               padding-bottom: 0;
           `
         : css<StyledProps>`
+              z-index: 2;
               box-shadow: ${({ disabled, onClick, theme }) =>
                   !disabled && onClick && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
           `;
@@ -101,8 +107,7 @@ const rowSeparatorStyle = css<StyledProps>`
 
 const normalStyle = css<StyledProps>`
     &&:hover {
-        z-index: 2;
-        ${({ theme }) => getHoverStateStyle(theme.table.row.hoveredStyle.style)};
+        ${({ theme }) => getHoverStyleForNormalStyle(theme.table.row.hoveredStyle.style)};
     }
 
     &:nth-child(odd) {
@@ -138,6 +143,8 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     min-width: fit-content;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
     ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? cardStyle : normalStyle)}
+    ${({ isNavigated, showRowWithCardStyle, theme }) =>
+        isNavigated && (showRowWithCardStyle ? getHoverStyleForCardStyle : getHoverStyleForNormalStyle(theme.table.row.hoveredStyle.style))}
 `;
 
 export const NoResultCell = styled('td')<{ width: number; tableSize: keyof typeof defaultTableCellPaddings }>`

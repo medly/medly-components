@@ -1,4 +1,4 @@
-import { TableColumnConfig } from './types';
+import { KeyBindings, TableColumnConfig } from './types';
 
 export const rowActionsColumnConfig: TableColumnConfig = {
     title: '',
@@ -7,3 +7,11 @@ export const rowActionsColumnConfig: TableColumnConfig = {
 };
 
 export const loadingBodyData = [{ id: 'loading1' }, { id: 'loading2' }, { id: 'loading3' }, { id: 'loading4' }, { id: 'loading5' }];
+
+export const defaultKeyBindings: KeyBindings = {
+    up: 'ArrowUp',
+    down: 'ArrowDown',
+    selectRow: 'x',
+    expandRow: 'ArrowRight',
+    collapseRow: 'ArrowLeft'
+};

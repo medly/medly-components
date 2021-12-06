@@ -4,7 +4,7 @@ import { forwardRef, memo, useCallback, useEffect, useMemo, useReducer, useRef, 
 import ActionBar from './ActionBar';
 import Body from './Body';
 import ColumnConfiguration from './ColumnConfiguration';
-import { loadingBodyData } from './constants';
+import { defaultKeyBindings, loadingBodyData } from './constants';
 import { TableComponentsCommonPropsContext, TableStateContext } from './context';
 import Foot from './Foot';
 import Head from './Head';
@@ -36,6 +36,7 @@ export const Component: FC<TableProps> = memo(
                 withInfiniteScroll,
                 onPageChange,
                 maxHeight,
+                keyBindings,
                 ...restProps
             } = props,
             isGroupedTable = !!restProps.groupBy,
@@ -114,7 +115,11 @@ export const Component: FC<TableProps> = memo(
                         isGroupedTable,
                         tableRef,
                         hiddenDivRef,
-                        addColumnMaxSize
+                        addColumnMaxSize,
+                        keyBindings: {
+                            ...defaultKeyBindings,
+                            ...keyBindings
+                        }
                     }}
                 >
                     <HiddenDiv ref={hiddenDivRef} />
@@ -173,7 +178,8 @@ Component.defaultProps = {
     withMinimap: false,
     isRowSelectable: false,
     isRowExpandable: false,
-    withRowSeparators: true
+    withRowSeparators: true,
+    keyBindings: defaultKeyBindings
 };
 
 Component.displayName = 'Table';
