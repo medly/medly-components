@@ -1,0 +1,141 @@
+import { Box } from './Box.tsx';
+import { fontVariants, shadows } from './Box.stories';
+import { withKnobs, color, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Props, Story } from '@storybook/addon-docs/blocks';
+import { defaultTheme } from '@medly-components/theme';
+
+<Meta title="Core" component={Box} />
+
+# Box
+
+A simple box component with customizable properties.
+
+You can play with the props in the **Canvas** tab.
+
+<Preview withToolbar>
+    <Story name="Box" decorators={[withKnobs]}>
+        <Box
+            fontVariant={select('Font Variant', fontVariants, 'h2')}
+            color={color('Text Color', 'white')}
+            bg={color('Background Color', 'black')}
+            isLoading={boolean('Is Loading', false)}
+            px={number('Padding x-axis', 4)}
+            py={number('Padding y-axis', 4)}
+            mx={number('Margin x-axis', 2)}
+            my={number('Margin y-axis', 2)}
+            borderRadius={number('Border radius', 2)}
+            borderColor={color('Border color', 'tomato')}
+            borderWidth={number('Border width', 1)}
+            shadow={select('Shadow', shadows, 'M')}
+            shadowColor={color('Shadow Color', 'rgba(0, 0, 0, 0.2)')}
+        >
+            Box Text
+        </Box>
+    </Story>
+</Preview>
+
+### Padding and Margin
+
+Padding can be defined with `px` and `py`.
+
+-   `px` means padding along x-axis.
+-   `py` means padding along y-axis.
+
+Margin can be defined with `mx` and `my`.
+
+-   `mx` means margin along x-axis.
+-   `my` means margin along y-axis.
+
+> **Note**: Values for padding and margin are defined as a `number` and then converted into `rem` using `(value * 0.25rem)`
+
+<Preview>
+    <Box px={4} py={4} mx={0} my={0} borderWidth={1} borderColor="tomato">
+        Box with padding
+    </Box>
+    <Box mx={8} my={4} px={0} py={0} borderWidth={1} borderColor="tomato">
+        Box with margin
+    </Box>
+</Preview>
+
+### Color and Background Color
+
+Color and Background color can be provided to box component as `color` and `bg` respectively.
+
+<Preview>
+    <Box color="white" bg="black" mx={2}>
+        Box with white color and black background
+    </Box>
+    <Box color="white" bg={defaultTheme.colors.blue[500]} mx={2}>
+        Box with white color and blue background
+    </Box>
+</Preview>
+
+### Height and width
+
+Height and widht can be defined as any css unit, eg: `100%`, `10rem`, `200px`
+
+<Preview>
+    <Box color="white" bg="black" mx={2} height="20rem" width="40rem">
+        Box with 20rem height and 40rem width
+    </Box>
+    <Box color="white" bg="black" mx={2} height="10rem" width="20rem">
+        Box with 10rem height and 20rem width
+    </Box>
+</Preview>
+
+### Border
+
+Border can be added using `borderWidth` and `borderColor`. Border Radius can also be added using `borderRadius`.
+
+> **Note**: Border will be added only when both `borderWidth` and `borderColor` are provided.
+
+> Value for borderWidth and borderRadius are defined as a `number` and then converted into `rem` using `(value * 0.25rem)`
+
+<Preview>
+    <Box borderColor={defaultTheme.colors.grey[500]} borderWidth={1} mx={2} borderRadius={0}>
+        Box with grey border
+    </Box>
+    <Box borderColor={defaultTheme.colors.grey[500]} borderWidth={1} mx={2} borderRadius={4}>
+        Box with border radius of 4
+    </Box>
+</Preview>
+
+### Font Variant
+
+It defines the font size that will be used for font inside the box component.
+
+> **Note** Font Variant is only applied if child is text
+
+<Preview>
+    <Box mx={2} fontVariant="h1" borderColor={defaultTheme.colors.grey[500]} borderWidth={1}>
+        Box with h1 font
+    </Box>
+    <Box mx={2} fontVariant="h4" borderColor={defaultTheme.colors.grey[500]} borderWidth={1}>
+        Box with h4 font
+    </Box>
+</Preview>
+
+### Shadow
+
+There are four available `shadowSize` sizes: `S` | `M` | `L` | `XL`
+
+Customize shadow using `shadowColor`.
+
+<Preview>
+    <Box mx={2} shadowSize="S">
+        Box with small shadow
+    </Box>
+    <Box mx={2} shadowSize="M">
+        Box with medium shadow
+    </Box>
+    <Box mx={2} shadowSize="L">
+        Box with large shadow
+    </Box>
+    <Box mx={2} shadowSize="XL">
+        Box with extra large shadow
+    </Box>
+</Preview>
+
+### Props
+
+<Props of={Box} />
