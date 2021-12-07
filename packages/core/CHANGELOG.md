@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.6](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.5...@medly-components/core@3.4.6) (2021-12-07)
+
+
+### Bug Fixes
+
+* nested field issue in table component ([a3f9984](https://github.com/medly/medly-components/commit/a3f9984f3d413c2b5ff07c6a0ee2c439a6ca89f6))
+
+
+
+
+
 ## [3.4.5](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.4...@medly-components/core@3.4.5) (2021-12-05)
 
 
