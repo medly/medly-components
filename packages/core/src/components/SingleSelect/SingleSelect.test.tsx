@@ -51,7 +51,7 @@ describe('SingleSelect component', () => {
         });
 
         it('should render properly when option is custom component', async () => {
-            const { container, queryByText } = render(
+            const { container } = render(
                 <SingleSelect
                     label="Label"
                     helperText="Helper Text"
@@ -63,7 +63,7 @@ describe('SingleSelect component', () => {
             fireEvent.click(container.querySelector('svg') as SVGSVGElement);
             await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
             expect(container).toMatchSnapshot();
-            expect(queryByText('Component')).toBeInTheDocument();
+            expect(screen.getByText('Component')).toBeInTheDocument();
         });
 
         it('should render disabled state properly', () => {
@@ -74,18 +74,18 @@ describe('SingleSelect component', () => {
         });
 
         it('should render helper text properly', () => {
-            const { getByText } = render(<SingleSelect helperText="Helper Text" options={options} variant={variant} value="Dummy1" />);
-            expect(getByText('Helper Text')).toBeInTheDocument();
+            render(<SingleSelect helperText="Helper Text" options={options} variant={variant} value="Dummy1" />);
+            expect(screen.getByText('Helper Text')).toBeInTheDocument();
         });
 
         it('should render error text properly', async () => {
-            const { container, getByText } = render(
+            const { container } = render(
                 <SingleSelect errorText="Something went wrong" options={options} variant={variant} value="Dummy1" />
             );
-            fireEvent.click(getByText('Something went wrong'));
+            fireEvent.click(screen.getByText('Something went wrong'));
             fireEvent.click(container.querySelector('svg') as SVGSVGElement);
             await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
-            expect(getByText('Something went wrong')).toHaveStyle(`color: rgb(215, 58, 67)`);
+            expect(screen.getByText('Something went wrong')).toHaveStyle(`color: rgb(215, 58, 67)`);
         });
 
         it('should render options correctly on click on the input', () => {
@@ -138,17 +138,17 @@ describe('SingleSelect component', () => {
         `);
     });
 
-    it('should take passed max width', () => {
+    it('should take passed max width', async () => {
         const { container } = render(<SingleSelect options={options} value="dummy" maxWidth="30rem" />);
         fireEvent.click(container.querySelector('svg') as SVGSVGElement);
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
         expect(container).toMatchSnapshot();
     });
 
     it('should show options on click on drop icon', async () => {
         const { container } = render(<SingleSelect options={options} />);
         fireEvent.click(container.querySelector('svg') as SVGSVGElement);
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
     });
 
     it('should show options on click on drop icon when options are custom components', async () => {
@@ -158,9 +158,9 @@ describe('SingleSelect component', () => {
         ];
         const { container } = render(<SingleSelect options={componentAsOptions} />);
         fireEvent.click(container.querySelector('svg') as SVGSVGElement);
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
-        waitFor(() => expect(container).toHaveTextContent('Component1'));
-        waitFor(() => expect(container).toHaveTextContent('Component2'));
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        await waitFor(() => expect(container).toHaveTextContent('Component1'));
+        await waitFor(() => expect(container).toHaveTextContent('Component2'));
     });
 
     it('should not show options on click on drop icon, if disabled prop is set true', () => {
@@ -237,17 +237,17 @@ describe('SingleSelect component', () => {
     });
 
     it('should not select option on click on the disable option', () => {
-        const mockOnChange = jest.fn(),
-            { getByText } = render(
-                <SingleSelect
-                    value="Dummy1"
-                    options={[...options, { value: 'Dummy4', label: 'Dummy4', disabled: true }]}
-                    onChange={mockOnChange}
-                />
-            );
+        const mockOnChange = jest.fn();
+        render(
+            <SingleSelect
+                value="Dummy1"
+                options={[...options, { value: 'Dummy4', label: 'Dummy4', disabled: true }]}
+                onChange={mockOnChange}
+            />
+        );
         const inputEl = screen.getByRole('textbox');
         fireEvent.click(inputEl);
-        fireEvent.click(getByText('Dummy4'));
+        fireEvent.click(screen.getByText('Dummy4'));
         expect(inputEl).toHaveValue('Dummy1');
         expect(mockOnChange).not.toBeCalled();
     });

@@ -1,4 +1,4 @@
-import { fireEvent, getByPlaceholderText, render, screen } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { SearchBox } from './SearchBox';
 import { PlaceholderComponent } from './SearchBox.stories';
 import { SearchBoxProps } from './types';
@@ -8,7 +8,7 @@ function renderComponent(props: SearchBoxProps) {
 
     return {
         container,
-        inputEl: getByPlaceholderText(container, 'search') as HTMLInputElement,
+        inputEl: screen.getByPlaceholderText('search') as HTMLInputElement,
         ...rest
     };
 }
@@ -27,15 +27,15 @@ describe('SearchBox', () => {
     });
 
     it('should render search icon', () => {
-        const { getByTitle } = render(<SearchBox />);
-        expect(getByTitle('search icon')).toBeInTheDocument();
+        render(<SearchBox />);
+        expect(screen.getByTitle('search icon')).toBeInTheDocument();
     });
 
     it('should call onSearch on clicking on search icon with input value', () => {
         const onSearch = jest.fn();
-        const { inputEl, getByTitle } = renderComponent({ onSearch, onInputChange: jest.fn(), placeholder: 'search' });
+        const { inputEl } = renderComponent({ onSearch, onInputChange: jest.fn(), placeholder: 'search' });
         fireEvent.change(inputEl, { target: { value: 'R' } });
-        fireEvent.click(getByTitle('search icon'));
+        fireEvent.click(screen.getByTitle('search icon'));
         expect(onSearch).toHaveBeenCalledWith('R');
     });
 
@@ -52,10 +52,10 @@ describe('SearchBox', () => {
 
     it('should call onClear on clicking on clear icon', () => {
         const onClear = jest.fn(),
-            { container, inputEl, getByTitle } = renderComponent({ placeholder: 'search', onInputChange: jest.fn(), onClear });
+            { container, inputEl } = renderComponent({ placeholder: 'search', onInputChange: jest.fn(), onClear });
         fireEvent.change(inputEl, { target: { value: 'Dummy' } });
         fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-        fireEvent.click(getByTitle('close icon'));
+        fireEvent.click(screen.getByTitle('close icon'));
         expect(onClear).toHaveBeenCalledWith();
         expect(inputEl.value).toEqual('');
     });
@@ -67,33 +67,33 @@ describe('SearchBox', () => {
         };
 
         it('should render close icon when user starts typing', () => {
-            const { inputEl, getByTitle } = renderComponent(props);
+            const { inputEl } = renderComponent(props);
             fireEvent.change(inputEl, { target: { value: 'R' } });
             expect(inputEl.value).toHaveLength(1);
-            expect(getByTitle('close icon')).toBeInTheDocument();
+            expect(screen.getByTitle('close icon')).toBeInTheDocument();
         });
 
         it('should not render close icon in initial state', () => {
-            const { queryByTitle } = renderComponent(props);
-            expect(queryByTitle('close icon')).not.toBeInTheDocument();
+            renderComponent(props);
+            expect(screen.queryByTitle('close icon')).not.toBeInTheDocument();
         });
 
         it('should hide the close icon and maintain the focus on input when clicked on close icon', () => {
-            const { inputEl, getByTitle, queryByTitle } = renderComponent(props);
+            const { inputEl } = renderComponent(props);
             fireEvent.change(inputEl, { target: { value: 'R' } });
-            const closeIcon = getByTitle('close icon');
+            const closeIcon = screen.getByTitle('close icon');
             expect(closeIcon).toBeInTheDocument();
             fireEvent.click(closeIcon);
             expect(inputEl.value).toHaveLength(0);
-            expect(queryByTitle('close icon')).not.toBeInTheDocument();
+            expect(screen.queryByTitle('close icon')).not.toBeInTheDocument();
             expect(document.activeElement === inputEl).toBeTruthy();
         });
 
         it('should hide the close icon when length of input is 0', () => {
-            const { inputEl, queryByTitle } = renderComponent(props);
+            const { inputEl } = renderComponent(props);
             fireEvent.change(inputEl, { target: { value: 'R' } });
             fireEvent.change(inputEl, { target: { value: '' } });
-            expect(queryByTitle('close icon')).not.toBeInTheDocument();
+            expect(screen.queryByTitle('close icon')).not.toBeInTheDocument();
         });
     });
 
@@ -104,8 +104,8 @@ describe('SearchBox', () => {
         };
 
         it('should render expand icon when showExpandIcon prop is true', () => {
-            const { queryByTitle } = renderComponent(props);
-            expect(queryByTitle('expand icon')).toBeInTheDocument();
+            renderComponent(props);
+            expect(screen.getByTitle('expand icon')).toBeInTheDocument();
         });
     });
 
@@ -126,16 +126,16 @@ describe('SearchBox', () => {
         });
 
         it('should hide options when clicked outside', () => {
-            const { getByPlaceholderText, getByText } = render(
-                    <>
-                        <SearchBox {...props} />
-                        <span>Outside span</span>
-                    </>
-                ),
-                inputEl = getByPlaceholderText('search') as HTMLInputElement;
+            render(
+                <>
+                    <SearchBox {...props} />
+                    <span>Outside span</span>
+                </>
+            );
+            const inputEl = screen.getByPlaceholderText('search') as HTMLInputElement;
             fireEvent.change(inputEl, defaultReturnObj);
             expect(screen.getByRole('list').children).toHaveLength(2);
-            fireEvent.click(getByText('Outside span'));
+            fireEvent.click(screen.getByText('Outside span'));
             expect(screen.queryByRole('list')).not.toBeInTheDocument();
         });
 

@@ -35,28 +35,28 @@ describe('ToastContainer', () => {
     });
 
     it('should add toast in the container and raising the addToast event', () => {
-        const { getByText, queryByText } = render(<ToastContainer />);
+        render(<ToastContainer />);
         addToast({ variant: 'success', header: 'Heading 1', message: 'Info message', timer: 2000 });
-        expect(getByText('Info message')).toBeInTheDocument();
+        expect(screen.getByText('Info message')).toBeInTheDocument();
         jest.runAllTimers();
         // should be removed after 2 second
-        expect(queryByText('Info message')).not.toBeInTheDocument();
+        expect(screen.queryByText('Info message')).not.toBeInTheDocument();
     });
 
     it('should remove toast from the container on clicking on close icon', () => {
-        const { container, queryByText } = render(<ToastContainer />);
+        const { container } = render(<ToastContainer />);
         addToast({ variant: 'success', header: 'Heading 1', message: 'Info message' });
         fireEvent.click(container.querySelectorAll('svg')[1]);
-        expect(queryByText('Info message')).not.toBeInTheDocument();
+        expect(screen.queryByText('Info message')).not.toBeInTheDocument();
     });
 
     it('should automatically remove toast in the container after 5 second', () => {
-        const { getByText, queryByText } = render(<ToastContainer />);
+        render(<ToastContainer />);
         addToast({ variant: 'success', header: 'Heading 1', message: 'Info message' });
-        expect(getByText('Info message')).toBeInTheDocument();
+        expect(screen.getByText('Info message')).toBeInTheDocument();
         jest.runAllTimers();
         // should be removed after 5 second
-        expect(queryByText('Info message')).not.toBeInTheDocument();
+        expect(screen.queryByText('Info message')).not.toBeInTheDocument();
     });
 
     it('should remove all toasts from the container at once', () => {

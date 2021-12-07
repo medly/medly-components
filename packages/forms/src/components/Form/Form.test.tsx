@@ -61,10 +61,10 @@ describe('Form', () => {
             firstName: { type: 'text', label: 'First Name' },
             lastName: { type: 'text', label: 'Last Name', disabled: !values.firstName }
         });
-        const { getByRole } = render(<Form fieldSchema={testSchema} onSubmit={jest.fn()} initialState={{}} />);
-        expect(getByRole('textbox', { name: 'Last Name' })).toBeDisabled();
-        fireEvent.change(getByRole('textbox', { name: 'First Name' }), { target: { value: 'demo' } });
-        expect(getByRole('textbox', { name: 'Last Name' })).toBeEnabled();
+        render(<Form fieldSchema={testSchema} onSubmit={jest.fn()} initialState={{}} />);
+        expect(screen.getByRole('textbox', { name: 'Last Name' })).toBeDisabled();
+        fireEvent.change(screen.getByRole('textbox', { name: 'First Name' }), { target: { value: 'demo' } });
+        expect(screen.getByRole('textbox', { name: 'Last Name' })).toBeEnabled();
     });
 
     it('should render error message properly', () => {
@@ -88,19 +88,19 @@ describe('Form', () => {
     });
 
     it('should hide actions when hideAction props is truthy', () => {
-        const { queryByText } = render(<Form hideActions fieldSchema={testSchema} initialState={initialState} onSubmit={jest.fn()} />);
-        expect(queryByText('Save')).not.toBeInTheDocument();
+        render(<Form hideActions fieldSchema={testSchema} initialState={initialState} onSubmit={jest.fn()} />);
+        expect(screen.queryByText('Save')).not.toBeInTheDocument();
     });
 
     it('should be able to add api validation error causes', () => {
-        const { getByText } = render(
+        render(
             <Form
                 apiErrorMessages={{ firstName: 'First name should be at least 8 character' }}
                 fieldSchema={{ firstName: { required: true, type: 'text' } }}
                 onSubmit={jest.fn()}
             />
         );
-        expect(getByText('First name should be at least 8 character')).toBeInTheDocument();
+        expect(screen.getByText('First name should be at least 8 character')).toBeInTheDocument();
     });
 
     it('should reset all the fields on clicking on reset button', () => {

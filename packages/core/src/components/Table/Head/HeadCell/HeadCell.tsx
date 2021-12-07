@@ -73,6 +73,7 @@ const Component: FC<HeadCellProps> = memo(props => {
     };
 
     const initResize = (e: React.MouseEvent) => {
+        // eslint-disable-next-line prefer-destructuring
         pageX = e.pageX;
         window.addEventListener('mousemove', onMouseMove);
         window.addEventListener('mouseup', onMouseUp);

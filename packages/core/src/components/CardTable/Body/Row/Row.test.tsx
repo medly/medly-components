@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { Row } from './Row.styled';
 
 const renderer = ({ withWhiteBackground = false, onClick = jest.fn(), isRowClickDisabled = false }) =>
@@ -35,15 +35,15 @@ describe('CardTable Row', () => {
 
     it('should call onClick on click of the row', () => {
         const onClick = jest.fn();
-        const { getByText } = renderer({ isRowClickDisabled: false, onClick });
-        fireEvent.click(getByText('Demo'));
+        renderer({ isRowClickDisabled: false, onClick });
+        fireEvent.click(screen.getByText('Demo'));
         expect(onClick).toHaveBeenCalled();
     });
 
     it('should not call onClick on click of the row, if the row is disabled', () => {
         const onClick = jest.fn();
-        const { getByText } = renderer({ isRowClickDisabled: true, onClick: undefined });
-        fireEvent.click(getByText('Demo'));
+        renderer({ isRowClickDisabled: true, onClick: undefined });
+        fireEvent.click(screen.getByText('Demo'));
         expect(onClick).not.toHaveBeenCalled();
     });
 });

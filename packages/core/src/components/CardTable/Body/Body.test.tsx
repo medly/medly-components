@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { ColumnConfig } from '../types';
 import { Body } from './Body';
 
@@ -37,22 +37,22 @@ describe('CardTable Body', () => {
     });
 
     it('should call onRowClick on click of a row', () => {
-        const mockOnRowClick = jest.fn(),
-            { getByText } = renderer(mockOnRowClick);
-        fireEvent.click(getByText('Metaformin'));
+        const mockOnRowClick = jest.fn();
+        renderer(mockOnRowClick);
+        fireEvent.click(screen.getByText('Metaformin'));
         expect(mockOnRowClick).toHaveBeenCalled();
     });
 
     it('should not call onRowClick on click of a row, if we that row is disabled', () => {
-        const mockOnRowClick = jest.fn(),
-            { getByText } = renderer(mockOnRowClick, 'reported', 'random');
-        fireEvent.click(getByText('Metaformin'));
+        const mockOnRowClick = jest.fn();
+        renderer(mockOnRowClick, 'reported', 'random');
+        fireEvent.click(screen.getByText('Metaformin'));
         expect(mockOnRowClick).not.toHaveBeenCalled();
     });
 
     it('should render no result row when there is no data', () => {
-        const { container, queryByText } = render(<Body data={[]} columns={columns} />);
+        const { container } = render(<Body data={[]} columns={columns} />);
         expect(container).toMatchSnapshot();
-        expect(queryByText('No Result')).toBeInTheDocument();
+        expect(screen.getByText('No Result')).toBeInTheDocument();
     });
 });

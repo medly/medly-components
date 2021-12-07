@@ -38,7 +38,7 @@ describe('Header', () => {
         it('shows the nav on click of the hamburger icon', () => {
             renderHeaderWithNav();
             fireEvent.click(screen.getByTestId('hamburger-icon'));
-            expect(screen.queryByText('Close')).toBeInTheDocument();
+            expect(screen.getByText('Close')).toBeInTheDocument();
         });
 
         it('hides the nav on click of the close button', () => {

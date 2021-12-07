@@ -1,7 +1,7 @@
 import { Text } from '@medly-components/core';
 import { DateRangeIcon, HomeIcon, SearchIcon, SettingsIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { cleanup, fireEvent, render } from '@test-utils';
+import { cleanup, fireEvent, render, screen } from '@test-utils';
 import { SideNav } from './SideNav';
 
 const renderer = (active: string, mockOnChange = jest.fn(), hideShadow = false) =>
@@ -60,52 +60,52 @@ describe('SideNav', () => {
     });
 
     it('should expand aside on clicking on the expand icon', () => {
-        const { container, getByTitle } = renderer('/home');
-        fireEvent.click(getByTitle('medly-sidenav-toggle-expand'));
+        const { container } = renderer('/home');
+        fireEvent.click(screen.getByTitle('medly-sidenav-toggle-expand'));
         expect(container.querySelector('aside')).toHaveStyle(`
            width: ${defaultTheme.sideNav.openSize};
         `);
     });
 
     it('should collapse aside on clicking on the hide icon', () => {
-        const { container, getByTitle } = renderer('/home');
-        fireEvent.click(getByTitle('medly-sidenav-toggle-expand'));
-        fireEvent.click(getByTitle('medly-sidenav-toggle-hide'));
+        const { container } = renderer('/home');
+        fireEvent.click(screen.getByTitle('medly-sidenav-toggle-expand'));
+        fireEvent.click(screen.getByTitle('medly-sidenav-toggle-hide'));
         expect(container.querySelector('aside')).toHaveStyle(`
            width: ${defaultTheme.sideNav.closeSize};
         `);
     });
 
     it('should expand nav on hovering on it', () => {
-        const { getByRole } = renderer('/home');
-        fireEvent.mouseEnter(getByRole('navigation'));
-        expect(getByRole('navigation')).toHaveStyle(`
+        renderer('/home');
+        fireEvent.mouseEnter(screen.getByRole('navigation'));
+        expect(screen.getByRole('navigation')).toHaveStyle(`
             width: ${defaultTheme.sideNav.openSize};
         `);
     });
 
     it('should collapse nav on moving cursor out of it', () => {
-        const { getByRole } = renderer('/home');
-        fireEvent.mouseEnter(getByRole('navigation'));
-        fireEvent.mouseLeave(getByRole('navigation'));
-        expect(getByRole('navigation')).toHaveStyle(`
+        renderer('/home');
+        fireEvent.mouseEnter(screen.getByRole('navigation'));
+        fireEvent.mouseLeave(screen.getByRole('navigation'));
+        expect(screen.getByRole('navigation')).toHaveStyle(`
             width: ${defaultTheme.sideNav.closeSize};
         `);
     });
 
     it('should call onChange with expected path when it is used as controlled component', () => {
         const mockOnChange = jest.fn();
-        const { getByText, getByTitle } = renderer('/home', mockOnChange);
-        fireEvent.click(getByTitle('medly-sidenav-toggle-expand'));
-        fireEvent.click(getByText('Search'));
+        renderer('/home', mockOnChange);
+        fireEvent.click(screen.getByTitle('medly-sidenav-toggle-expand'));
+        fireEvent.click(screen.getByText('Search'));
         expect(mockOnChange).toBeCalledWith('/search');
     });
 
     it('should call onChange with expected path when it is used as uncontrolled component', () => {
         const mockOnChange = jest.fn();
-        const { getByText, getByTitle } = renderer('', mockOnChange);
-        fireEvent.click(getByTitle('medly-sidenav-toggle-expand'));
-        fireEvent.click(getByText('Search'));
+        renderer('', mockOnChange);
+        fireEvent.click(screen.getByTitle('medly-sidenav-toggle-expand'));
+        fireEvent.click(screen.getByText('Search'));
         expect(mockOnChange).toBeCalledWith('/search');
     });
 });

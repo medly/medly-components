@@ -1,6 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
 import { useMediaQuery } from '@medly-components/utils';
-import { render } from '@test-utils';
+import { render, screen } from '@test-utils';
 import { ThemeContext } from 'styled-components';
 import { HiddenProps } from '../types';
 import { HiddenJs } from './HiddenJs';
@@ -46,21 +46,21 @@ describe('HiddenJs', () => {
         ]
     ])('should hide the children %s breakpoint', (propKey: any, props: any, query: string) => {
         useMediaQueryMock.mockReturnValue(true);
-        const { queryByText } = renderComponent(props);
+        renderComponent(props);
         expect(useMediaQueryMock).toHaveBeenCalledWith(query);
-        expect(queryByText('Strong text')).not.toBeInTheDocument();
+        expect(screen.queryByText('Strong text')).not.toBeInTheDocument();
     });
 
     it('should show the children if media query does not match', () => {
         useMediaQueryMock.mockReturnValue(false);
-        const { queryByText } = renderComponent({ up: 'S' });
+        renderComponent({ up: 'S' });
         expect(useMediaQueryMock).toHaveBeenCalledWith(`@media (min-width: ${defaultTheme.breakpoints.S.min}px)`);
-        expect(queryByText('Strong text')).toBeInTheDocument();
+        expect(screen.getByText('Strong text')).toBeInTheDocument();
     });
 
     it('should hide the children if none of the prop is passed', () => {
-        const { queryByText } = renderComponent({});
+        renderComponent({});
         expect(useMediaQueryMock).toHaveBeenCalledWith('');
-        expect(queryByText('Strong text')).not.toBeInTheDocument();
+        expect(screen.queryByText('Strong text')).not.toBeInTheDocument();
     });
 });

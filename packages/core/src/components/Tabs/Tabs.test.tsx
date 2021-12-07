@@ -63,20 +63,20 @@ describe('Tabs', () => {
         renderer({ onChange: mockOnchange });
         fireEvent.click(screen.getByText('Edit'));
         expect(mockOnchange).toBeCalledWith('tab2');
-        expect(screen.queryByText('Content for the edit panel')).toBeInTheDocument();
+        expect(screen.getByText('Content for the edit panel')).toBeInTheDocument();
     });
 
     it('should render all tabs when forceRender prop is true', async () => {
         renderer({ forceRender: true });
-        expect(screen.queryByText('Content for the add panel')).toBeInTheDocument();
-        expect(screen.queryByText('Content for the edit panel')).toBeInTheDocument();
-        expect(screen.queryByText('Content for the delete panel')).toBeInTheDocument();
-        expect(screen.queryByText('Content for the disabled panel')).toBeInTheDocument();
+        expect(screen.getByText('Content for the add panel')).toBeInTheDocument();
+        expect(screen.getByText('Content for the edit panel')).toBeInTheDocument();
+        expect(screen.getByText('Content for the delete panel')).toBeInTheDocument();
+        expect(screen.getByText('Content for the disabled panel')).toBeInTheDocument();
     });
 
     it('should render only the active tab when forceRender prop is false', async () => {
         renderer({});
-        expect(screen.queryByText('Content for the add panel')).toBeInTheDocument();
+        expect(screen.getByText('Content for the add panel')).toBeInTheDocument();
         expect(screen.queryByText('Content for the edit panel')).not.toBeInTheDocument();
         expect(screen.queryByText('Content for the delete panel')).not.toBeInTheDocument();
         expect(screen.queryByText('Content for the disabled panel')).not.toBeInTheDocument();

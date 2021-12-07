@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { CardTable } from './CardTable';
 import { ColumnConfig } from './types';
 
@@ -53,9 +53,9 @@ describe('CardTable', () => {
     });
 
     it('should call onRowClick on click on any row', () => {
-        const onRowClick = jest.fn(),
-            { getByText } = renderer({ withWhiteBackground: true, onRowClick });
-        fireEvent.click(getByText('Oli Bob'));
+        const onRowClick = jest.fn();
+        renderer({ withWhiteBackground: true, onRowClick });
+        fireEvent.click(screen.getByText('Oli Bob'));
         expect(onRowClick).toHaveBeenCalled();
     });
 });
