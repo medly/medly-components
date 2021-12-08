@@ -1,4 +1,5 @@
 import { useUpdateEffect } from '@medly-components/utils';
+import type { FC } from 'react';
 import { memo, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { loadingBodyData } from '../../constants';
 import { TableComponentsCommonPropsContext } from '../../context';
@@ -7,7 +8,6 @@ import useRowSelector from '../../useRowSelector';
 import ContentRow from './ContentRow';
 import TitleRow from './TitleRow';
 import { GroupedRowProps } from './types';
-import type { FC } from 'react';
 
 export const GroupedRow: FC<GroupedRowProps> = memo(props => {
     const tableProps = useContext(TableComponentsCommonPropsContext),
@@ -29,7 +29,11 @@ export const GroupedRow: FC<GroupedRowProps> = memo(props => {
             onTitleRowSelection,
             showShadowAfterFrozenElement,
             onGroupedRowSelection,
-            setSelectAllDisableState
+            setSelectAllDisableState,
+            isNavigated,
+            isRowCollapsedFromKeyboard,
+            isRowExpandedFromKeyboard,
+            isRowSelectedFromKeyboard
         } = props;
 
     const [isRowExpanded, setExpansionState] = useState(titleRowData[rowIdentifier] === defaultExpandedRowIdentifier),
@@ -93,6 +97,18 @@ export const GroupedRow: FC<GroupedRowProps> = memo(props => {
         }
     }, [isTitleRowSelected]);
 
+    useEffect(() => {
+        if (isRowSelectedFromKeyboard && !isTitleRowSelectionDisable) handleSelectAllClick();
+    }, [isRowSelectedFromKeyboard, isTitleRowSelectionDisable, handleSelectAllClick]);
+
+    useEffect(() => {
+        isRowExpandedFromKeyboard && setExpansionState(true);
+    }, [isRowExpandedFromKeyboard]);
+
+    useEffect(() => {
+        isRowCollapsedFromKeyboard && setExpansionState(false);
+    }, [isRowCollapsedFromKeyboard]);
+
     return (
         <>
             <TitleRow
@@ -105,6 +121,7 @@ export const GroupedRow: FC<GroupedRowProps> = memo(props => {
                 onClick={handleExpansion}
                 isRowSelectionDisabled={isLoading || isTitleRowSelectionDisable}
                 showShadowAfterFrozenElement={showShadowAfterFrozenElement}
+                isNavigated={isNavigated}
             />
             <TableComponentsCommonPropsContext.Provider value={{ ...tableProps, columns: columns.slice(1), isLoading }}>
                 <ContentRow

@@ -8,4 +8,8 @@ export type GroupedRowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'da
     onGroupedRowSelection: (id: any[]) => void;
     showShadowAfterFrozenElement: boolean;
     setSelectAllDisableState: React.Dispatch<React.SetStateAction<boolean>>;
+    isNavigated?: boolean;
+    isRowSelectedFromKeyboard?: boolean;
+    isRowExpandedFromKeyboard?: boolean;
+    isRowCollapsedFromKeyboard?: boolean;
 };

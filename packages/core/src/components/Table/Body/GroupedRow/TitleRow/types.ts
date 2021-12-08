@@ -12,6 +12,7 @@ export type StyledProps = GridTemplateProps &
         isRowSelectable?: boolean;
         showRowWithCardStyle?: boolean;
         tableSize: TableProps['size'];
+        isNavigated?: boolean;
     };
 export type TitleRowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
     isRowExpanded?: boolean;
@@ -21,4 +22,5 @@ export type TitleRowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data
     onRowSelection?: (id: any) => void;
     isRowSelectionDisabled?: boolean;
     showShadowAfterFrozenElement: boolean;
+    isNavigated?: boolean;
 };

@@ -1,4 +1,5 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
+import type { FC } from 'react';
 import { memo, useContext, useEffect, useRef, useState } from 'react';
 import Text from '../../../../Text';
 import { TableComponentsCommonPropsContext } from '../../../context';
@@ -7,11 +8,10 @@ import RowActionsCell from '../../Cell/RowActionsCell';
 import { LoadingDiv } from '../../Cell/Styled';
 import { CountChip, ExpansionCell, Row, SecondaryContent, TitleCell } from './TitleRow.styled';
 import { TitleRowProps } from './types';
-import type { FC } from 'react';
 
 export const TitleRow: FC<TitleRowProps> = memo(props => {
     const [tableWidth, setTableWidth] = useState(),
-        { data, isRowExpanded, onClick, onRowSelection, isRowIndeterminate, ...restProps } = props,
+        { data, isRowExpanded, onClick, onRowSelection, isRowIndeterminate, isNavigated, ...restProps } = props,
         {
             tableRef,
             columns,
@@ -47,6 +47,7 @@ export const TitleRow: FC<TitleRowProps> = memo(props => {
             isRowExpandable={isRowExpandable}
             showRowWithCardStyle={showRowWithCardStyle}
             gridTemplateColumns={getGridTemplateColumns(columns)}
+            isNavigated={isNavigated}
         >
             <ExpansionCell isRowExpanded={isRowExpanded} showPadding={isLoading} tableSize={tableSize}>
                 {isLoading ? <LoadingDiv /> : <ExpandMoreIcon size={tableSize === 'L' ? 'M' : 'S'} />}

@@ -61,6 +61,10 @@ const Body: FC<TableBodyProps> = memo(props => {
                         setUniqueIds={setUniqueIds}
                         selectedTitleRowIds={selectedRowIds}
                         onTitleRowSelection={onRowSelection}
+                        isNavigated={index === cursor}
+                        isRowSelectedFromKeyboard={isSelectionKeyPressed && index === cursor}
+                        isRowExpandedFromKeyboard={isExpansionKeyPressed && index === cursor}
+                        isRowCollapsedFromKeyboard={isCollapseKeyPressed && index === cursor}
                         {...{ ...restProps, onGroupedRowSelection }}
                     />
                 ) : (

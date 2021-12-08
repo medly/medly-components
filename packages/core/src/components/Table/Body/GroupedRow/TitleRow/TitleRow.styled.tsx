@@ -30,13 +30,14 @@ export const Row = styled('tr')<StyledProps>`
 
     &,
     & > * {
-        background-color: ${({ theme, isRowSelected, isRowExpanded }) =>
-            theme.table.titleRow.bgColor[isRowSelected ? 'selected' : isRowExpanded ? 'expanded' : 'default']};
+        background-color: ${({ theme, isRowSelected, isRowExpanded, isNavigated }) =>
+            theme.table.titleRow.bgColor[isRowSelected || isNavigated ? 'selected' : isRowExpanded ? 'expanded' : 'default']};
     }
 
     &:hover {
         z-index: 2;
-        box-shadow: ${({ disabled, onClick, theme }) => !disabled && onClick && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
+        box-shadow: ${({ disabled, onClick, theme, isNavigated }) =>
+            !disabled && (onClick || isNavigated) && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
     }
 
     &:not(:last-child) {
