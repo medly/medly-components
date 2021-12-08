@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Text from '../Text';
 import { BoxProps } from './types';
 
@@ -11,13 +11,17 @@ const getShadow = (shadowSize: BoxProps['shadowSize'], shadowColor = 'rgba(0, 0,
         case 'M':
             return `0rem 0.4rem 0.6rem ${shadowColor}`;
         case 'L':
-            return `0rem 0.10rem 0.15rem ${shadowColor}`;
+            return `0rem 0.8rem 0.9rem ${shadowColor}`;
         case 'XL':
-            return `0rem 0.20rem 0.25rem ${shadowColor}`;
+            return `0rem 1.2rem 1.2rem ${shadowColor}`;
         default:
             return 'none';
     }
 };
+const hideElements = () => css`
+    opacity: 0;
+    display: none;
+`;
 
 export const BoxStyled = styled('div')<BoxProps>`
     width: ${({ width }) => width};
@@ -37,8 +41,7 @@ export const BoxStyled = styled('div')<BoxProps>`
     }
 
     & > *:not(:last-child) {
-        opacity: ${({ isLoading }) => isLoading && 0};
-        display: none;
+        ${({ isLoading }) => isLoading && hideElements}
     }
 
     &:focus {

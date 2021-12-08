@@ -16,20 +16,20 @@ You can play with the props in the **Canvas** tab.
     <Story name="Box" decorators={[withKnobs]}>
         <Box
             fontVariant={select('Font Variant', fontVariants, 'h2')}
-            color={color('Text Color', 'white')}
-            bg={color('Background Color', 'black')}
+            color={color('Text Color', 'black')}
+            bg={color('Background Color', '#e6effd')}
             isLoading={boolean('Is Loading', false)}
             px={number('Padding x-axis', 4)}
             py={number('Padding y-axis', 4)}
             mx={number('Margin x-axis', 2)}
             my={number('Margin y-axis', 2)}
             borderRadius={number('Border radius', 2)}
-            borderColor={color('Border color', 'tomato')}
+            borderColor={color('Border color', defaultTheme.colors.medlyGreen[500])}
             borderWidth={number('Border width', 1)}
-            shadow={select('Shadow', shadows, 'M')}
+            shadowSize={select('Shadow', shadows, 'M')}
             shadowColor={color('Shadow Color', 'rgba(0, 0, 0, 0.2)')}
         >
-            Box Text
+            <p>Box Text</p>
         </Box>
     </Story>
 </Preview>
@@ -38,13 +38,13 @@ You can play with the props in the **Canvas** tab.
 
 Padding can be defined with `px` and `py`.
 
--   `px` means padding along x-axis.
--   `py` means padding along y-axis.
+-   `px` - padding along x-axis.
+-   `py` - padding along y-axis.
 
 Margin can be defined with `mx` and `my`.
 
--   `mx` means margin along x-axis.
--   `my` means margin along y-axis.
+-   `mx` - margin along x-axis.
+-   `my` - margin along y-axis.
 
 > **Note**: Values for padding and margin are defined as a `number` and then converted into `rem` using `(value * 0.25rem)`
 
@@ -70,9 +70,9 @@ Color and Background color can be provided to box component as `color` and `bg` 
     </Box>
 </Preview>
 
-### Height and width
+### Height and Width
 
-Height and widht can be defined as any css unit, eg: `100%`, `10rem`, `200px`
+`height` and `width` can be defined as any CSS unit ( rem | px | percent | ... ).
 
 <Preview>
     <Box color="white" bg="black" mx={2} height="20rem" width="40rem">
