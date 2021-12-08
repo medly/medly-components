@@ -86,7 +86,20 @@ const Component: FC<MultiSelectProps> = memo(
                 const filteredOptions = selectedOptions.filter(({ disabled }) => disabled).map(({ value }) => value);
                 onChange && onChange(filteredOptions);
             }, [selectedOptions]),
+            handleCreatableOptionClick = useCallback(() => {
+                const values = selectedOptions.map(op => op.value);
+                handleOptionClick([...values, inputValue]);
+                setSelectedOptions &&
+                    setSelectedOptions(prevValues => [...prevValues, { value: inputValue, label: inputValue, creatable: true }]);
+                showOptions();
+            }, [showOptions, selectedOptions, handleOptionClick, inputValue, setSelectedOptions]),
             handleInputOnBlur = useCallback(() => areOptionsVisible && inputRef.current?.focus(), [areOptionsVisible]),
+            handleInputKeyUp = useCallback(
+                (e: React.KeyboardEvent<HTMLInputElement>) => {
+                    if (isCreatable && e.key === 'Enter') handleCreatableOptionClick();
+                },
+                [isCreatable, handleCreatableOptionClick]
+            ),
             inputValidator = useCallback(() => '', []);
 
         const validate = useCallback(() => {
@@ -180,6 +193,7 @@ const Component: FC<MultiSelectProps> = memo(
                     validator={inputValidator}
                     showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
                     prefix={prefix}
+                    onKeyUp={handleInputKeyUp}
                 />
                 {!disabled && areOptionsVisible && (
                     <Options
@@ -192,6 +206,7 @@ const Component: FC<MultiSelectProps> = memo(
                         options={options}
                         onOptionClick={handleOptionClick}
                         isCreatable={isCreatable}
+                        handleCreatableOptionClick={handleCreatableOptionClick}
                     />
                 )}
             </Wrapper>

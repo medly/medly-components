@@ -10,6 +10,7 @@ export interface OptionsProps extends Omit<HTMLProps<HTMLUListElement>, 'size'> 
     isCreatable?: boolean;
     setValues?: Dispatch<SetStateAction<any[]>>;
     inputValue?: string;
+    handleCreatableOptionClick?: (op: Option) => void;
 }
 
 export interface OptionStyledProps extends HTMLProps<HTMLLIElement>, WithThemeProp {
