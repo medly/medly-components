@@ -79,7 +79,7 @@ exports[`DialogBox component should render properly when it is open 1`] = `
   position: relative;
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
   box-sizing: border-box;
-  border-radius: 2.4rem;
+  border-radius: 1.2rem;
   overflow-y: auto;
   max-height: 80%;
   width: calc(100% - 4.8rem);
