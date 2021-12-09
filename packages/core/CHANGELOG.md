@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.6...@medly-components/core@3.5.0) (2021-12-09)
+
+
+### Features
+
+* update eslint rules and fixed lint issues ([#550](https://github.com/medly/medly-components/issues/550)) ([49569eb](https://github.com/medly/medly-components/commit/49569eb5d2a14418e930b9a0072b237735076ceb))
+
+
+
+
+
 ## [3.4.6](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.5...@medly-components/core@3.4.6) (2021-12-07)
 
 
