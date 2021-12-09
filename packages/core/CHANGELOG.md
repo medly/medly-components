@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.6.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.5.0...@medly-components/core@3.6.0) (2021-12-09)
+
+
+### Features
+
+* create multi-select creatable option on enter keypress ([#552](https://github.com/medly/medly-components/issues/552)) ([6478b3b](https://github.com/medly/medly-components/commit/6478b3bf56c1a50f757ce0a9046a566eaa04c3ad))
+
+
+
+
+
 # [3.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.6...@medly-components/core@3.5.0) (2021-12-09)
 
 
