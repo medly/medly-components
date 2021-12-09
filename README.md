@@ -77,6 +77,7 @@ If you are using a static property of any component like `Modal.Header`, you mus
 Library consists of the following five packages:
 
 ### [Core](https://github.com/medly/medly-components/tree/master/packages/core)
+
 The Core package consists of almost all basic React components like Avatar, Button, Input, List, Modal, etc.
 
 ### [Icons](https://github.com/medly/medly-components/tree/master/packages/icons)
@@ -93,12 +94,11 @@ The Layout package consists of components that help in creating a page layout us
 
 ### [Forms](https://github.com/medly/medly-components/tree/master/packages/forms)
 
-The Forms package lets you create dynamic forms using simple json. 
+The Forms package lets you create dynamic forms using simple json.
 
 ### [Theme](https://github.com/medly/medly-components/tree/master/packages/theme)
 
 Define the theme i.e. the overall look, feel, and style of your website using the Theme package. Each component can be defined individually. For example, all icons of a website can be made solid, the color of all the components can be made orange, etc.
-
 
 ### [Utils](https://github.com/medly/medly-components/tree/master/packages/utils)
 
@@ -107,6 +107,14 @@ The Utils package consists of the most commonly used functionalities and compone
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/medly/medly-components/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting us the pull requests.
+
+## Contributors
+
+This project exists thanks to all the people who contribute.
+
+<a href="https://github.com/medly/medly-components/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=medly/medly-components" />
+</a>
 
 ## Built With
 
