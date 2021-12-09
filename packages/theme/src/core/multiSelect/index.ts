@@ -1,11 +1,11 @@
 import colors from '../colors';
 import { MultiSelectTheme } from './types';
 
-const grey = colors.grey;
-const black = colors.black;
-const white = colors.white;
-const red = colors.red;
-const blue = colors.blue;
+const { grey } = colors;
+const { black } = colors;
+const { white } = colors;
+const { red } = colors;
+const { blue } = colors;
 
 const iconStyles = {
     default: {

@@ -15,7 +15,7 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
     const contextOption: UseStorageOptions<T> = useContext(StorageConfig),
         options = currOptions ?? contextOption,
         storage = storageObj[options.storage || 'localStorage'],
-        initialValue = options.initialValue,
+        { initialValue } = options,
         isMounted = useRef<boolean>(true);
 
     const readValue = (): T => {

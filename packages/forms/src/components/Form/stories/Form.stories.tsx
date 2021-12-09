@@ -52,8 +52,8 @@ export const CustomFieldForm = () => {
     const addPhoneNumberField: FormFieldProperties = {
         type: 'custom',
         component: AddPhoneNumber,
-        fields: fields, // This is the additional prop passing to the component
-        setFields: setFields // This is the additional prop passing to the component
+        fields, // This is the additional prop passing to the component
+        setFields // This is the additional prop passing to the component
     };
     const fieldSchema: FormFieldSchema = fields.reduce((acc, cur) => ({ ...acc, [cur.fieldName]: cur }), {});
 

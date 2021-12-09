@@ -56,7 +56,7 @@ const Component: FC<CheckboxGroupProps> = memo(
             ),
             onBlur = useCallback(
                 (event: FocusEvent<HTMLDivElement>) => {
-                    const currentTarget = event.currentTarget;
+                    const { currentTarget } = event;
                     setTimeout(() => !currentTarget.contains(document.activeElement) && validate(values), 0);
                     props.onBlur && props.onBlur(event);
                 },

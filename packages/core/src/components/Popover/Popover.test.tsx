@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render } from '@test-utils';
+import { cleanup, fireEvent, render, screen } from '@test-utils';
 import { Popover } from './Popover';
 import { InteractionType } from './types';
 
@@ -35,10 +35,10 @@ describe('Popover component', () => {
     });
 
     it('should hide popover on clicking outside when interactionType prop is set to click', () => {
-        const { container, getByText, wrapper } = renderer('click');
+        const { container, wrapper } = renderer('click');
         fireEvent.click(wrapper);
         expect(container.querySelector('#medly-popover-popup')).toBeVisible();
-        fireEvent.click(getByText('outside span'));
+        fireEvent.click(screen.getByText('outside span'));
         expect(container.querySelector('#medly-popover-popup')).toBeNull();
     });
 

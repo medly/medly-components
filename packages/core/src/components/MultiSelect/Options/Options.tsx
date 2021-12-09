@@ -9,13 +9,7 @@ import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
 const Component: FC<OptionsProps> = memo(props => {
-    const { id, inputValue, values, size, setValues, options, onOptionClick, isCreatable } = props;
-
-    const showCreatableOption =
-        isCreatable &&
-        inputValue?.length &&
-        !options.some(({ value }) => value.includes(inputValue)) &&
-        !values.some(({ value }) => value === inputValue);
+    const { id, inputValue, values, size, options, onOptionClick, showCreatableOption, handleCreatableOptionClick } = props;
 
     const selectedValues = useMemo(() => values.map(op => op.value), [values]),
         stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
@@ -38,11 +32,7 @@ const Component: FC<OptionsProps> = memo(props => {
                 onOptionClick(newValues);
             },
             [selectedValues, onOptionClick]
-        ),
-        handleCreatableOptionClick = useCallback(() => {
-            onOptionClick([...selectedValues, inputValue]);
-            setValues && setValues([...selectedValues, { label: inputValue, value: inputValue, creatable: true }]);
-        }, [selectedValues, onOptionClick, inputValue, setValues]);
+        );
 
     return (
         <Styled.OptionsWrapper size={size} id={`${id}-options-wrapper`} onClick={stopPropagation}>
@@ -68,8 +58,9 @@ const Component: FC<OptionsProps> = memo(props => {
                         value={inputValue}
                         label={`Create "${inputValue}"`}
                         variant="filled"
-                        onClick={handleCreatableOptionClick}
+                        onClick={handleCreatableOptionClick!}
                         size={size}
+                        hovered
                     />
                 </Styled.Options>
             ) : (

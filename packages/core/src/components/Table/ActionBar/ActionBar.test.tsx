@@ -1,5 +1,5 @@
 import { RemoveCircleIcon } from '@medly-components/icons';
-import { cleanup, render } from '@test-utils';
+import { cleanup, render, screen } from '@test-utils';
 import { Button } from '../..';
 import { TableComponentsCommonPropsContext } from '../context/TableComponentsCommonProps.context';
 import { ActionBar } from './ActionBar';
@@ -22,18 +22,18 @@ describe('ActionBar component', () => {
     afterEach(cleanup);
 
     it('should render correctly with all the default props', () => {
-        const { container, getByText } = renderer();
+        const { container } = renderer();
         expect(container).toMatchSnapshot();
-        expect(getByText('Lorem')).toBeInTheDocument();
-        expect(getByText('1 Rows Selected')).toBeInTheDocument();
+        expect(screen.getByText('Lorem')).toBeInTheDocument();
+        expect(screen.getByText('1 Rows Selected')).toBeInTheDocument();
     });
 
     it('should not render Action bar with passed parameters', () => {
         const actionElements = [getButtonElement('Test1'), getButtonElement('Test2')];
-        const { container, getByText } = renderer({ actions: actionElements, selectedRowIds: [1, 2] });
-        expect(getByText('Test1')).toBeInTheDocument();
-        expect(getByText('Test2')).toBeInTheDocument();
-        expect(getByText('2 Rows Selected')).toBeInTheDocument();
+        const { container } = renderer({ actions: actionElements, selectedRowIds: [1, 2] });
+        expect(screen.getByText('Test1')).toBeInTheDocument();
+        expect(screen.getByText('Test2')).toBeInTheDocument();
+        expect(screen.getByText('2 Rows Selected')).toBeInTheDocument();
         expect(container).toMatchSnapshot();
     });
 });

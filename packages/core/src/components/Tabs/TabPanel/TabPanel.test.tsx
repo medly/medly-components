@@ -16,6 +16,6 @@ describe('TabPanel', () => {
         );
         expect(container).toMatchSnapshot();
         expect(screen.getByText('Content for the add panel')).toBeInTheDocument();
-        expect(screen.queryByText(' Content for the edit panel')).toBeNull();
+        expect(screen.queryByText(' Content for the edit panel')).not.toBeInTheDocument();
     });
 });

@@ -27,8 +27,8 @@ describe('Chip component', () => {
     test.each([true, false])('should handle on click when chip is disabled: %p', (disabled: boolean) => {
         const mockOnClick = jest.fn();
 
-        const { getByText } = render(<Chip disabled={disabled} variant="flat" color="yellow" onClick={mockOnClick} label="Flat Chip" />);
-        fireEvent.click(getByText('Flat Chip'));
+        render(<Chip disabled={disabled} variant="flat" color="yellow" onClick={mockOnClick} label="Flat Chip" />);
+        fireEvent.click(screen.getByText('Flat Chip'));
         expect(mockOnClick).toHaveBeenCalledTimes(disabled ? 0 : 1);
     });
 

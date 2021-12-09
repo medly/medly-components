@@ -1,10 +1,10 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import { useRef, forwardRef, memo, useCallback, useEffect, useMemo, useState } from 'react';
+import type { ChangeEvent, FC, FocusEvent, FormEvent } from 'react';
+import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { HelperAndErrorTextTooltip } from '../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import getMaskedValue from './getMaskedValue';
 import * as Styled from './Styled';
 import { TextFieldProps } from './types';
-import type { FC, ChangeEvent, FocusEvent, FormEvent } from 'react';
 
 const Component: FC<TextFieldProps> = memo(
     forwardRef((props, ref) => {
