@@ -2,7 +2,7 @@ import { FontVariants, Theme } from '@medly-components/theme';
 import { HTMLProps } from '@medly-components/utils';
 
 export type BoxProps = Omit<HTMLProps<HTMLDivElement>, 'size'> & { theme?: Theme } & {
-    /** To be used to render any component as Button */
+    /** To be used to render Box component as any component */
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     /** Padding along x-axis */
     px?: number;

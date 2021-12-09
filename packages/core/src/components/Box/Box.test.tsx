@@ -99,6 +99,7 @@ describe('Box Component', () => {
     });
 
     const shadowOptions: BoxProps['shadowSize'][] = ['S', 'M', 'L', 'XL'];
+
     it.each(shadowOptions)('should render properly with %p shadow size', shadowSize => {
         const { container } = render(<Box shadowSize={shadowSize}>Box</Box>);
         expect(container).toMatchSnapshot();
