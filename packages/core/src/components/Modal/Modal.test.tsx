@@ -19,6 +19,7 @@ const modalRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHe
             <Modal.Actions>Demo Actions</Modal.Actions>
         </Modal>
     );
+
 describe('Modal component', () => {
     const originalScrollHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollHeight')!,
         originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight')!,
@@ -35,18 +36,19 @@ describe('Modal component', () => {
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', originalClientHeight);
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', originalScrollTop);
     });
+
     afterEach(cleanup);
 
     it('should render properly when it is open', () => {
         const { container } = modalRenderer({ open: true, minWidth: '200px', minHeight: '200px' });
         expect(container).toMatchSnapshot();
-        expect(document.body.style.overflow).toEqual('hidden');
+        expect(document.body).toHaveStyle({ overflow: 'hidden' });
     });
 
     it('should not render when open prop is falsy', () => {
         const { container } = modalRenderer({});
         expect(container).toBeEmptyDOMElement();
-        expect(document.body.style.overflow).toEqual('unset');
+        expect(document.body).toHaveStyle({ overflow: 'unset' });
     });
 
     it('should call onCloseModal on click on close icon', () => {
@@ -93,6 +95,7 @@ describe('Modal component', () => {
         expect(container.querySelector('#medly-modal-header')).not.toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
         expect(container.querySelector('#medly-modal-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
     });
+
     it('should hide shadow of actions on scroll to bottom', () => {
         const { container } = modalRenderer({ open: true });
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });

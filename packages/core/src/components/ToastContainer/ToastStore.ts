@@ -13,7 +13,7 @@ export const removeAllToasts = createEvent();
 export const toastStore = createStore<Toast[]>([])
     .on(addToast, (state, toast) => {
         const array = new Uint32Array(1),
-            id = window.crypto.getRandomValues(array)[0];
+            [id] = window.crypto.getRandomValues(array);
         setTimeout(() => removeToast(id), toast.timer || 5000);
         return [...state, { ...toast, id }];
     })

@@ -1,9 +1,9 @@
 import colors from '../colors';
 import { DatePickerTheme } from './types';
 
-const grey = colors.grey;
-const red = colors.red;
-const blue = colors.blue;
+const { grey } = colors;
+const { red } = colors;
+const { blue } = colors;
 
 const iconStyles = {
     default: {

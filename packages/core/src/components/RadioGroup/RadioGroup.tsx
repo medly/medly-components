@@ -48,7 +48,7 @@ const Component: FC<RadioGroupProps> = memo(
             ),
             handleOnBlur = useCallback(
                 (event: FocusEvent<HTMLDivElement>) => {
-                    const currentTarget = event.currentTarget,
+                    const { currentTarget } = event,
                         target = event.target as HTMLInputElement;
                     setTimeout(() => !currentTarget.contains(document.activeElement) && validate(value || '', target.validationMessage), 0);
                     onBlur && onBlur(event);
@@ -57,7 +57,7 @@ const Component: FC<RadioGroupProps> = memo(
             ),
             handleOnChange = useCallback(
                 (event: ChangeEvent<HTMLInputElement>) => {
-                    const value = event.target.value;
+                    const { value } = event.target;
                     validate(value);
                     onChange && onChange(value);
                 },

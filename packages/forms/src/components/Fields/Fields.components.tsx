@@ -24,8 +24,8 @@ export const Fields: FC<FieldsProps> = memo(props => {
                 const { gridColumn, gridRow, component: Component, ...componentProps } = fields[key],
                     // @ts-ignore
                     disabled = props.disabled || componentProps.disabled,
-                    showDecorators = props.showDecorators,
-                    variant = props.variant,
+                    { showDecorators } = props,
+                    { variant } = props,
                     name = parentName ? `${parentName}.${key}` : key,
                     value = values[name];
 
@@ -38,7 +38,7 @@ export const Fields: FC<FieldsProps> = memo(props => {
                     minWidth: 'auto',
                     onFocus: handlers.handleFocus(name, (componentProps as TextFieldProps).onFocus),
                     errorText: errorMessages?.[name],
-                    variant: variant,
+                    variant,
                     // These two fields will be removed very soon
                     description: errorMessages?.[name] || (componentProps as FileInputProps).description,
                     descriptionColor: errorMessages?.[name] && 'red'

@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import userEvent from '@testing-library/user-event';
 import { RadioGroup } from './RadioGroup';
 import { RadioGroupProps } from './types';
@@ -59,6 +59,6 @@ describe('Radio Group', () => {
             validator: () => 'Please select any one gender'
         });
         fireEvent.blur(screen.getByRole('radio', { name: 'Female' }));
-        await waitFor(() => expect(screen.getByText('Please select any one gender')).toBeInTheDocument());
+        expect(await screen.findByText('Please select any one gender')).toBeInTheDocument();
     });
 });

@@ -1,10 +1,10 @@
 import type { ChangeEvent } from 'react';
 
 const getMaskedValue = (event: ChangeEvent<HTMLInputElement>, mask: string): string => {
-    const value = event.target.value,
+    const { value } = event.target,
         alphaNumericRegex = /[a-zA-Z0-9]/,
         specialCharsRegex = /[^a-zA-Z0-9]/,
-        length = value.length,
+        { length } = value,
         lastChar = value[length - 1];
 
     let newValue;

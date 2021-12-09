@@ -34,6 +34,7 @@ describe('Button component', () => {
         });
 
         const options: ButtonProps['size'][] = ['XS', 'S', 'M', 'L'];
+
         test.each(options)('should render properly with %p size', size => {
             const { container } = render(
                 <Button size={size} variant={variant}>
@@ -45,6 +46,7 @@ describe('Button component', () => {
     });
 
     const options: ButtonProps['size'][] = ['S', 'L'];
+
     test.each(options)('should render properly with %s size and loading state', size => {
         const { container } = render(
             <Button size={size} isLoading>
@@ -55,6 +57,7 @@ describe('Button component', () => {
     });
 
     const edgeOptions: Required<ButtonProps>['edges'][] = ['square', 'rounded', 'circle'];
+
     test.each(edgeOptions)('should render properly with %p edges', edges => {
         const { container } = render(<Button edges={edges}>Flat Button</Button>);
         expect(container).toMatchSnapshot();
@@ -157,6 +160,7 @@ describe('Button component', () => {
         );
         expect(container).toMatchSnapshot();
     });
+
     it('should render flat variant properly when hideUnderline set to true', () => {
         const { container } = render(
             <Button variant="flat" hideUnderline>
@@ -165,6 +169,7 @@ describe('Button component', () => {
         );
         expect(container).toMatchSnapshot();
     });
+
     it('should render flat variant properly when hideUnderline set to false', () => {
         const { container } = render(
             <Button variant="flat" hideUnderline={false}>
