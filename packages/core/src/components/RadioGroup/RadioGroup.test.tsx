@@ -59,6 +59,6 @@ describe('Radio Group', () => {
             validator: () => 'Please select any one gender'
         });
         fireEvent.blur(screen.getByRole('radio', { name: 'Female' }));
-        await screen.findByText('Please select any one gender');
+        expect(await screen.findByText('Please select any one gender')).toBeInTheDocument();
     });
 });

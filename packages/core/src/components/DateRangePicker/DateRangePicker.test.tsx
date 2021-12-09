@@ -233,14 +233,14 @@ describe('DateRangePicker', () => {
             const { startDateInput } = renderComponent({ required: true });
             fireEvent.change(startDateInput, { target: { value: '04/31' } });
             fireEvent.blur(startDateInput);
-            await screen.findByText('Enter valid date');
+            expect(await screen.findByText('Enter valid date')).toBeInTheDocument();
         });
 
         it('should return error message if TO date entered is incomplete', async () => {
             const { endDateInput } = renderComponent({ required: true });
             fireEvent.change(endDateInput, { target: { value: '04/31' } });
             fireEvent.blur(endDateInput);
-            await screen.findByText('Enter valid date');
+            expect(await screen.findByText('Enter valid date')).toBeInTheDocument();
         });
 
         it('should show error message on outside click if values are empty', async () => {

@@ -23,6 +23,6 @@ describe('useWindowSize', () => {
         render(<DummyComp />);
         Object.defineProperty(window, 'innerWidth', { value: 500 });
         fireEvent(window, new Event('resize'));
-        await screen.findByText(`{"height":768,"width":500}`);
+        expect(await screen.findByText(`{"height":768,"width":500}`)).toBeInTheDocument();
     });
 });

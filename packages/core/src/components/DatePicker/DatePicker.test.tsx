@@ -208,21 +208,21 @@ describe('DatePicker component', () => {
         it('should return error when value is empty and field is required', async () => {
             const { inputEl } = renderComponent(true);
             fireEvent.invalid(inputEl);
-            await screen.findByText('Please fill in this field');
+            expect(await screen.findByText('Please fill in this field')).toBeInTheDocument();
         });
 
         it('should return error message if date entered is incomplete', async () => {
             const { inputEl } = renderComponent();
             fireEvent.change(inputEl, { target: { value: '04/31' } });
             fireEvent.blur(inputEl);
-            await screen.findByText('Please enter a valid date');
+            expect(await screen.findByText('Please enter a valid date')).toBeInTheDocument();
         });
 
         it('should return validator error message if given', async () => {
             const validator = (val: Date | null) => (!val ? 'Please enter dob' : '');
             const { inputEl } = renderComponent(true, validator);
             fireEvent.invalid(inputEl);
-            await screen.findByText('Please enter dob');
+            expect(await screen.findByText('Please enter dob')).toBeInTheDocument();
         });
     });
 

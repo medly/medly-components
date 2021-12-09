@@ -147,7 +147,7 @@ describe('TextField', () => {
         it('should update mask label if mask and input value are same', async () => {
             const mockOnChange = jest.fn();
             render(<TextField minWidth="30rem" id="dummy" value="11 / 11 / 1111" mask="DD / MM / YYYY" onChange={mockOnChange} />);
-            await screen.findByText('11 / 11 / 1111');
+            expect(await screen.findByText('11 / 11 / 1111')).toBeInTheDocument();
         });
     });
 
