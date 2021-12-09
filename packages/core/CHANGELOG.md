@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.6](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.5...@medly-components/core@3.4.6) (2021-12-07)
+
+
+### Bug Fixes
+
+* nested field issue in table component ([a3f9984](https://github.com/medly/medly-components/commit/a3f9984f3d413c2b5ff07c6a0ee2c439a6ca89f6))
+
+
+
+
+
+## [3.4.5](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.4...@medly-components/core@3.4.5) (2021-12-05)
+
+
+### Bug Fixes
+
+* editing textfield problem due to table keyboard event ([#548](https://github.com/medly/medly-components/issues/548)) ([fe04d0b](https://github.com/medly/medly-components/commit/fe04d0befbfecfb3d1863c641044195ff07e07de))
+
+
+
+
+
 ## [3.4.4](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.3...@medly-components/core@3.4.4) (2021-11-30)
 
 **Note:** Version bump only for package @medly-components/core
