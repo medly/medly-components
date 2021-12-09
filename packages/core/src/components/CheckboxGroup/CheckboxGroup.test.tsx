@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import userEvent from '@testing-library/user-event';
 import { CheckboxGroup } from './CheckboxGroup';
 import { CheckboxGroupProps } from './types';
@@ -98,7 +98,7 @@ describe('CheckboxGroup component', () => {
             validator: (val: string[]) => (val.length === 0 ? 'Please select at least one car' : '')
         });
         fireEvent.blur(container.querySelector('#Cars-wrapper') as HTMLDivElement);
-        await waitFor(() => expect(screen.getByText('Please select at least one car')).toBeInTheDocument());
+        await screen.findByText('Please select at least one car');
         expect(mockOnBlur).toBeCalled();
     });
 
@@ -110,7 +110,7 @@ describe('CheckboxGroup component', () => {
             onBlur: mockOnBlur
         });
         fireEvent.blur(container.querySelector('#Cars-wrapper') as HTMLDivElement);
-        await waitFor(() => expect(screen.getByText('Please select at least one option.')).toBeInTheDocument());
+        await screen.findByText('Please select at least one option.');
         expect(mockOnBlur).toBeCalled();
     });
 

@@ -14,8 +14,8 @@ const Component: FC<MonthAndYearSelectionProps> = memo(
             { month: maxMonth, year: maxYear } = getMonthAndYearFromDate(maxSelectableDate);
 
         const stopPropagation = useCallback(e => e.stopPropagation(), []),
-            handleMonthChange = useCallback((value: number) => onChange({ year: year, month: value }), [year, onChange]),
-            handleYearChange = useCallback((value: number) => onChange({ month: month, year: value }), [month, onChange]);
+            handleMonthChange = useCallback((value: number) => onChange({ year, month: value }), [year, onChange]),
+            handleYearChange = useCallback((value: number) => onChange({ month, year: value }), [month, onChange]);
 
         const monthOptions = useMemo(
                 () =>

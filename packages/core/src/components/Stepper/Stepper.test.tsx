@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { Stepper } from './Stepper';
 import { StepperProps } from './types';
 
@@ -25,8 +25,8 @@ describe('Stepper component', () => {
 
     it('should change active step when click on any step', async () => {
         const mockOnStepClick = jest.fn();
-        const { container, getByText } = renderer({ activeStep: 0, size: 'S', onStepClick: mockOnStepClick });
-        fireEvent.click(getByText('Payment information'));
+        const { container } = renderer({ activeStep: 0, size: 'S', onStepClick: mockOnStepClick });
+        fireEvent.click(screen.getByText('Payment information'));
         expect(mockOnStepClick).toBeCalledWith(1);
         expect(container).toMatchSnapshot();
     });

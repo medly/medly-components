@@ -13,7 +13,7 @@ describe('Table component', () => {
     });
 
     it('should render no result row', () => {
-        const { queryByText } = renderTable({
+        renderTable({
             data: [],
             noResultRow: (
                 <tr>
@@ -21,7 +21,7 @@ describe('Table component', () => {
                 </tr>
             )
         });
-        expect(queryByText('NO RESULT CUSTOM COMPONENT')).toBeInTheDocument();
+        expect(screen.getByText('NO RESULT CUSTOM COMPONENT')).toBeInTheDocument();
     });
 
     describe('pagination', () => {
@@ -45,23 +45,23 @@ describe('Table component', () => {
         });
 
         it('should display 1 to 5 in results text if total entries is less than items per page', () => {
-            const { queryByText } = renderTable({ ...commonProps, totalItems: 5 });
-            expect(queryByText('1 - 5')).toBeInTheDocument();
+            renderTable({ ...commonProps, totalItems: 5 });
+            expect(screen.getByText('1 - 5')).toBeInTheDocument();
         });
 
         it('should display 1 to 18 in results text if total entries is less than items per page * no of page', () => {
-            const { queryByText } = renderTable({ ...commonProps, totalItems: 18, defaultActivePage: 2 });
-            expect(queryByText('11 - 18')).toBeInTheDocument();
+            renderTable({ ...commonProps, totalItems: 18, defaultActivePage: 2 });
+            expect(screen.getByText('11 - 18')).toBeInTheDocument();
         });
 
         it('should display 1 to 10 in results text if total entries is greater than items per page', () => {
-            const { queryByText } = renderTable({
+            renderTable({
                 ...commonProps,
                 totalItems: 50,
                 itemsPerPage: 10
             });
-            expect(queryByText('1 - 10')).toBeInTheDocument();
-            expect(queryByText('50')).toBeInTheDocument();
+            expect(screen.getByText('1 - 10')).toBeInTheDocument();
+            expect(screen.getByText('50')).toBeInTheDocument();
         });
     });
 });

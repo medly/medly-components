@@ -123,7 +123,7 @@ const Component: FC<MultiSelectProps> = memo(
             }, [selectedOptions, validator]),
             handleWrapperOnBlur = useCallback(
                 (event: FocusEvent<HTMLDivElement>) => {
-                    const currentTarget = event.currentTarget;
+                    const { currentTarget } = event;
                     setTimeout(() => !currentTarget.contains(document.activeElement) && validate(), 0);
                 },
                 [validate]

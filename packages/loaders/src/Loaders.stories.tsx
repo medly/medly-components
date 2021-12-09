@@ -9,7 +9,7 @@ import { DotsLoader } from './loaders/DotsLoader';
 import { SvgLoaderProps, SVGProp } from './SvgLoader/types';
 
 const size: LoaderSizes[] = ['XXS', 'XS', 'S', 'M', 'L', 'XL'];
-const defaultColor = defaultTheme.loader.defaultColor;
+const { defaultColor } = defaultTheme.loader;
 
 export const ThemeInterface: FC<LoaderTheme> = () => null;
 ThemeInterface.defaultProps = {

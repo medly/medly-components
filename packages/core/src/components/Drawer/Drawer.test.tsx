@@ -43,6 +43,7 @@ describe('Drawer component', () => {
     });
 
     afterEach(cleanup);
+
     const positions: ('left' | 'right')[] = ['left', 'right'];
 
     test.each(positions)('should render properly with %s positioned', async position => {
@@ -94,6 +95,7 @@ describe('Drawer component', () => {
         );
         expect(container.querySelector('#medly-drawer-footer')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
     });
+
     it('should hide shadow of footer on scroll to bottom', () => {
         const { container } = render(<DummyComponent open />);
         scrollTo(800, 500, 300);

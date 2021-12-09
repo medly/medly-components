@@ -6,7 +6,7 @@ import { Prefix } from '../Prefix.styled';
 import { Suffix } from '../Suffix.styled';
 
 export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperModifiedProps) => {
-    const bgColor = fusion[isTextPresent ? 'active' : 'default'].bgColor;
+    const { bgColor } = fusion[isTextPresent ? 'active' : 'default'];
     return css`
         background-color: ${bgColor};
         border-radius: ${fusion.default.borderRadius};
