@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.6.0...@medly-components/core@3.7.0) (2021-12-09)
+
+
+### Features
+
+* add Box component ([#551](https://github.com/medly/medly-components/issues/551)) ([721ed06](https://github.com/medly/medly-components/commit/721ed06a23baa753de5e62f759a92b31743db748)), closes [#463](https://github.com/medly/medly-components/issues/463) [#463](https://github.com/medly/medly-components/issues/463)
+
+
+
+
+
 # [3.6.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.5.0...@medly-components/core@3.6.0) (2021-12-09)
 
 
