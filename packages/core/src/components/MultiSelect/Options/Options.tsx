@@ -9,13 +9,7 @@ import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
 const Component: FC<OptionsProps> = memo(props => {
-    const { id, inputValue, values, size, options, onOptionClick, isCreatable, handleCreatableOptionClick } = props;
-
-    const showCreatableOption =
-        isCreatable &&
-        inputValue?.length &&
-        !options.some(({ value }) => value.includes(inputValue)) &&
-        !values.some(({ value }) => value === inputValue);
+    const { id, inputValue, values, size, options, onOptionClick, showCreatableOption, handleCreatableOptionClick } = props;
 
     const selectedValues = useMemo(() => values.map(op => op.value), [values]),
         stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
@@ -66,7 +60,7 @@ const Component: FC<OptionsProps> = memo(props => {
                         variant="filled"
                         onClick={handleCreatableOptionClick!}
                         size={size}
-                        hovered={isCreatable}
+                        hovered
                     />
                 </Styled.Options>
             ) : (

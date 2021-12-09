@@ -7,9 +7,9 @@ export interface OptionsProps extends Omit<HTMLProps<HTMLUListElement>, 'size'> 
     options: Option[];
     values: any[];
     onOptionClick: (options: any[]) => void;
-    isCreatable?: boolean;
     setValues?: Dispatch<SetStateAction<any[]>>;
     inputValue?: string;
+    showCreatableOption?: boolean;
     handleCreatableOptionClick?: (op: Option) => void;
 }
 

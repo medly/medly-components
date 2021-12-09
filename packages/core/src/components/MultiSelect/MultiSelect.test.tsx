@@ -265,4 +265,14 @@ describe('MultiSelect component', () => {
         const findElement = screen.queryByText(`Create "${optionToCreate}"`);
         expect(findElement).not.toBeInTheDocument();
     });
+
+    it('should create an option on enter key press', async () => {
+        const option = 'SomeText';
+        const mockOnChange = jest.fn();
+        render(<MultiSelect options={options} onChange={mockOnChange} isCreatable />);
+        const input = screen.getByRole('textbox');
+        fireEvent.change(input, { target: { value: option } });
+        fireEvent.keyDown(input, { key: 'Enter', code: 13 });
+        expect(mockOnChange).toHaveBeenCalledWith([option]);
+    });
 });
