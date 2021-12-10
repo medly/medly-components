@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.6.0...@medly-components/core@3.7.0) (2021-12-09)
+
+
+### Features
+
+* add Box component ([#551](https://github.com/medly/medly-components/issues/551)) ([721ed06](https://github.com/medly/medly-components/commit/721ed06a23baa753de5e62f759a92b31743db748)), closes [#463](https://github.com/medly/medly-components/issues/463) [#463](https://github.com/medly/medly-components/issues/463)
+
+
+
+
+
+# [3.6.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.5.0...@medly-components/core@3.6.0) (2021-12-09)
+
+
+### Features
+
+* create multi-select creatable option on enter keypress ([#552](https://github.com/medly/medly-components/issues/552)) ([6478b3b](https://github.com/medly/medly-components/commit/6478b3bf56c1a50f757ce0a9046a566eaa04c3ad))
+
+
+
+
+
+# [3.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.6...@medly-components/core@3.5.0) (2021-12-09)
+
+
+### Features
+
+* update eslint rules and fixed lint issues ([#550](https://github.com/medly/medly-components/issues/550)) ([49569eb](https://github.com/medly/medly-components/commit/49569eb5d2a14418e930b9a0072b237735076ceb))
+
+
+
+
+
+## [3.4.6](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.5...@medly-components/core@3.4.6) (2021-12-07)
+
+
+### Bug Fixes
+
+* nested field issue in table component ([a3f9984](https://github.com/medly/medly-components/commit/a3f9984f3d413c2b5ff07c6a0ee2c439a6ca89f6))
+
+
+
+
+
 ## [3.4.5](https://github.com/medly/medly-components/compare/@medly-components/core@3.4.4...@medly-components/core@3.4.5) (2021-12-05)
 
 

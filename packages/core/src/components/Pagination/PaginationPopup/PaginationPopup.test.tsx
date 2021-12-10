@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render } from '@test-utils';
+import { cleanup, fireEvent, render, screen } from '@test-utils';
 import PaginationPopup from '.';
 import Popover from '../../Popover';
 
@@ -23,9 +23,9 @@ describe('Pagination popup component', () => {
     });
 
     it('should call onClick handler with expected page when selected from ellipsis popover', () => {
-        const { mockOnPageClick, getByRole } = renderer();
-        fireEvent.click(getByRole('button', { name: '...' }));
-        fireEvent.click(getByRole('button', { name: '2' }));
+        const { mockOnPageClick } = renderer();
+        fireEvent.click(screen.getByRole('button', { name: '...' }));
+        fireEvent.click(screen.getByRole('button', { name: '2' }));
         expect(mockOnPageClick).toBeCalledWith(2);
     });
 });

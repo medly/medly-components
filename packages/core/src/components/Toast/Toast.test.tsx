@@ -1,5 +1,5 @@
 import { HomeIcon } from '@medly-components/icons';
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { Toast } from './Toast';
 import { ToastProps } from './types';
 
@@ -26,10 +26,8 @@ describe('Toast', () => {
 
     it('should render action button', () => {
         const mockOnButtonClick = jest.fn(),
-            { container, getByRole } = render(
-                <Toast id={1} variant="success" action={{ label: 'Action 1', onClick: mockOnButtonClick }} />
-            );
-        fireEvent.click(getByRole('button', { name: 'Action 1' }));
+            { container } = render(<Toast id={1} variant="success" action={{ label: 'Action 1', onClick: mockOnButtonClick }} />);
+        fireEvent.click(screen.getByRole('button', { name: 'Action 1' }));
         expect(mockOnButtonClick).toBeCalled();
         expect(container).toMatchSnapshot();
     });

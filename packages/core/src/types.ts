@@ -1,5 +1,6 @@
 export type { AccordionContextType } from './components/Accordion/types';
 export type { AvatarProps } from './components/Avatar/types';
+export type { BoxProps } from './components/Box/types';
 export type { BreadcrumbProps } from './components/Breadcrumb/types';
 export type { ButtonProps } from './components/Button/types';
 export type { CalendarProps } from './components/Calendar/types';

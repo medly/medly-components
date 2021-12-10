@@ -1,6 +1,6 @@
 import { Text } from '@medly-components/core';
 import { HomeIcon, SearchIcon } from '@medly-components/icons';
-import { cleanup, fireEvent, render } from '@test-utils';
+import { cleanup, fireEvent, render, screen } from '@test-utils';
 import { SideNav } from '../SideNav';
 
 const renderer = (active: string, mockOnClick = jest.fn()) =>
@@ -18,31 +18,32 @@ const renderer = (active: string, mockOnClick = jest.fn()) =>
             </SideNav.List>
         </SideNav>
     );
+
 describe('NavItem', () => {
     afterEach(cleanup);
 
     it('should render properly when it is in default state', () => {
-        const { getByText } = renderer('/home');
-        fireEvent.mouseOver(getByText('Search'));
-        expect(getByText('Search')).toMatchSnapshot();
+        renderer('/home');
+        fireEvent.mouseOver(screen.getByText('Search'));
+        expect(screen.getByText('Search')).toMatchSnapshot();
     });
 
     it('should render properly when it is in active state', () => {
-        const { getByText } = renderer('/home');
-        expect(getByText('Home')).toMatchSnapshot();
+        renderer('/home');
+        expect(screen.getByText('Home')).toMatchSnapshot();
     });
 
     it('should render properly when it is in hovered state', () => {
-        const { getByText } = renderer('/home');
-        fireEvent.mouseOver(getByText('Search'));
-        expect(getByText('Search')).toMatchSnapshot();
+        renderer('/home');
+        fireEvent.mouseOver(screen.getByText('Search'));
+        expect(screen.getByText('Search')).toMatchSnapshot();
     });
 
     it('should call onChange with expected data', () => {
         const mockOnChange = jest.fn();
-        const { getByText, getByTitle } = renderer('', mockOnChange);
-        fireEvent.click(getByTitle('medly-sidenav-toggle-expand'));
-        fireEvent.click(getByText('Search'));
+        renderer('', mockOnChange);
+        fireEvent.click(screen.getByTitle('medly-sidenav-toggle-expand'));
+        fireEvent.click(screen.getByText('Search'));
         expect(mockOnChange).toBeCalledWith('/search');
     });
 });

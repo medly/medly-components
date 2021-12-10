@@ -105,36 +105,36 @@ describe('MultiSelect component', () => {
     });
 
     it('should deselect on click of already selected option', () => {
-        const mockOnChange = jest.fn(),
-            { getAllByText } = render(<MultiSelect values={['Dummy1', 'Dummy2']} options={options} onChange={mockOnChange} />);
+        const mockOnChange = jest.fn();
+        render(<MultiSelect values={['Dummy1', 'Dummy2']} options={options} onChange={mockOnChange} />);
         fireEvent.click(screen.getByRole('textbox'));
-        fireEvent.click(getAllByText('Dummy1')[1]);
+        fireEvent.click(screen.getAllByText('Dummy1')[1]);
         expect(mockOnChange).toHaveBeenCalledWith(['Dummy2']);
     });
 
     it('should handle group name click as expected', () => {
-        const mockOnChange = jest.fn(),
-            { getByText, getAllByText } = render(
-                <div>
-                    <p>Outer Element</p>
-                    <MultiSelect values={['Dummy2']} options={options} onChange={mockOnChange} />
-                </div>
-            );
+        const mockOnChange = jest.fn();
+        render(
+            <div>
+                <p>Outer Element</p>
+                <MultiSelect values={['Dummy2']} options={options} onChange={mockOnChange} />
+            </div>
+        );
         fireEvent.click(screen.getByRole('textbox'));
-        fireEvent.click(getByText('Nested Options'));
-        expect(getAllByText('Dummy2').length).toEqual(2);
-        fireEvent.click(getByText('Nested Options'));
-        expect(getAllByText('Dummy3').length).toEqual(1);
+        fireEvent.click(screen.getByText('Nested Options'));
+        expect(screen.getAllByText('Dummy2').length).toEqual(2);
+        fireEvent.click(screen.getByText('Nested Options'));
+        expect(screen.getAllByText('Dummy3').length).toEqual(1);
     });
 
     it('should render only matched options when input value changed', async () => {
-        const mockOnChange = jest.fn(),
-            { queryByText } = render(<MultiSelect options={options} onChange={mockOnChange} />),
-            inputEl = screen.getByRole('textbox');
+        const mockOnChange = jest.fn();
+        render(<MultiSelect options={options} onChange={mockOnChange} />);
+        const inputEl = screen.getByRole('textbox');
         fireEvent.click(inputEl);
         fireEvent.change(inputEl, { target: { value: 'Dummy2' } });
-        expect(queryByText('Dummy2')).toBeVisible();
-        expect(queryByText('Dummy1')).not.toBeInTheDocument();
+        expect(screen.queryByText('Dummy2')).toBeVisible();
+        expect(screen.queryByText('Dummy1')).not.toBeInTheDocument();
     });
 
     it('should call onInputChange on changing the input value', async () => {
@@ -147,28 +147,28 @@ describe('MultiSelect component', () => {
     });
 
     it('should render all the options when input value is not matched to any option', async () => {
-        const mockOnChange = jest.fn(),
-            { queryByText } = render(<MultiSelect options={options} onChange={mockOnChange} />),
-            inputEl = screen.getByRole('textbox');
+        const mockOnChange = jest.fn();
+        render(<MultiSelect options={options} onChange={mockOnChange} />);
+        const inputEl = screen.getByRole('textbox');
         fireEvent.click(inputEl);
         fireEvent.change(inputEl, { target: { value: 'Hello' } });
-        expect(queryByText('All')).toBeVisible();
-        expect(queryByText('Dummy1')).toBeVisible();
-        expect(queryByText('Dummy2')).toBeVisible();
-        expect(queryByText('Dummy3')).toBeVisible();
+        expect(screen.queryByText('All')).toBeVisible();
+        expect(screen.queryByText('Dummy1')).toBeVisible();
+        expect(screen.queryByText('Dummy2')).toBeVisible();
+        expect(screen.queryByText('Dummy3')).toBeVisible();
     });
 
     it('should close options when clicked outside', async () => {
-        const mockOnChange = jest.fn(),
-            { getByText } = render(
-                <>
-                    <p>Outer</p>
-                    <MultiSelect options={options} onChange={mockOnChange} />
-                </>
-            ),
-            outer = getByText('Outer');
+        const mockOnChange = jest.fn();
+        render(
+            <>
+                <p>Outer</p>
+                <MultiSelect options={options} onChange={mockOnChange} />
+            </>
+        );
+
         fireEvent.click(screen.getByRole('textbox'));
-        fireEvent.click(outer);
+        fireEvent.click(screen.getByText('Outer'));
         expect(screen.queryByRole('list')).not.toBeInTheDocument();
     });
 
@@ -201,16 +201,16 @@ describe('MultiSelect component', () => {
     });
 
     it('should make input required if options.length is zero and multiSelect is required', async () => {
-        const { findByText } = render(<MultiSelect id="pharmacy" values={[]} options={options} onChange={jest.fn()} required={true} />);
+        render(<MultiSelect id="pharmacy" values={[]} options={options} onChange={jest.fn()} required={true} />);
         fireEvent.invalid(screen.getByRole('textbox'));
-        const message = await findByText('Please select at least one option.');
+        const message = await screen.findByText('Please select at least one option.');
         expect(message).toBeInTheDocument();
     });
 
     it('should render with passed error text', async () => {
-        const { findByText } = render(<MultiSelect options={options} values={['Dummy1']} onChange={jest.fn()} errorText="some error" />);
+        render(<MultiSelect options={options} values={['Dummy1']} onChange={jest.fn()} errorText="some error" />);
         fireEvent.invalid(screen.getByRole('textbox'));
-        const message = await findByText('some error');
+        const message = await screen.findByText('some error');
         expect(message).toBeInTheDocument();
     });
 
@@ -223,19 +223,19 @@ describe('MultiSelect component', () => {
 
     it('should call validator with error message', async () => {
         const validatorMock = (val: any[]) => (val.length === 0 ? 'error' : '');
-        const { findByText } = render(<MultiSelect options={options} validator={validatorMock} />);
+        render(<MultiSelect options={options} validator={validatorMock} />);
         const input = screen.getByRole('textbox');
         fireEvent.focus(input);
         fireEvent.blur(document.getElementById('medly-multiSelect-wrapper') as HTMLDivElement);
-        const message = await findByText('error');
+        const message = await screen.findByText('error');
         expect(message).toBeInTheDocument();
     });
 
     it('should call validator on option click if validator is passed', () => {
         const validatorMock = jest.fn();
-        const { getByText, getByRole } = render(<MultiSelect options={options} validator={validatorMock} />);
-        fireEvent.click(getByRole('textbox'));
-        fireEvent.click(getByText('Dummy1'));
+        render(<MultiSelect options={options} validator={validatorMock} />);
+        fireEvent.click(screen.getByRole('textbox'));
+        fireEvent.click(screen.getByText('Dummy1'));
         expect(validatorMock).toHaveBeenCalledWith(['Dummy1']);
     });
 
@@ -264,5 +264,15 @@ describe('MultiSelect component', () => {
         fireEvent.change(input, { target: { value: optionToCreate } });
         const findElement = screen.queryByText(`Create "${optionToCreate}"`);
         expect(findElement).not.toBeInTheDocument();
+    });
+
+    it('should create an option on enter key press', async () => {
+        const option = 'SomeText';
+        const mockOnChange = jest.fn();
+        render(<MultiSelect options={options} onChange={mockOnChange} isCreatable />);
+        const input = screen.getByRole('textbox');
+        fireEvent.change(input, { target: { value: option } });
+        fireEvent.keyDown(input, { key: 'Enter', code: 13 });
+        expect(mockOnChange).toHaveBeenCalledWith([option]);
     });
 });

@@ -1,7 +1,7 @@
 import { CheckIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { updateNestedValue } from '@medly-components/utils';
-import { fireEvent, render, screen, waitFor } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { ThemeProvider } from 'styled-components';
 import { TextField } from './TextField';
 import { TextFieldProps } from './types';
@@ -99,8 +99,8 @@ describe('TextField', () => {
         });
 
         it('should render correct character count if we pass withCharacterCount, maxlength, and defaultValue', () => {
-            const { getByText } = render(<TextField withCharacterCount maxLength={20} defaultValue="test" />);
-            expect(getByText('4/20')).toBeInTheDocument();
+            render(<TextField withCharacterCount maxLength={20} defaultValue="test" />);
+            expect(screen.getByText('4/20')).toBeInTheDocument();
         });
 
         it('should correctly render character count when the count value is 80% of the maxLength', () => {
@@ -123,18 +123,18 @@ describe('TextField', () => {
 
     describe('masking', () => {
         it('should render mask if provided with outlined variant', () => {
-            const { getByText } = render(<TextField label="Date" minWidth="30rem" id="dummy" variant="outlined" mask="DD / MM / YYYY" />);
-            expect(getByText('DD / MM / YYYY')).toBeInTheDocument();
+            render(<TextField label="Date" minWidth="30rem" id="dummy" variant="outlined" mask="DD / MM / YYYY" />);
+            expect(screen.getByText('DD / MM / YYYY')).toBeInTheDocument();
         });
 
         it('should render mask if provided with filled variant', () => {
-            const { getByText } = render(<TextField label="Date" minWidth="30rem" id="dummy" variant="filled" mask="DD / MM / YYYY" />);
-            expect(getByText('DD / MM / YYYY')).toBeInTheDocument();
+            render(<TextField label="Date" minWidth="30rem" id="dummy" variant="filled" mask="DD / MM / YYYY" />);
+            expect(screen.getByText('DD / MM / YYYY')).toBeInTheDocument();
         });
 
         it('should render mask if provided with fusion variant', () => {
-            const { getByText } = render(<TextField label="Date" minWidth="30rem" id="dummy" variant="fusion" mask="DD / MM / YYYY" />);
-            expect(getByText('DD / MM / YYYY')).toBeInTheDocument();
+            render(<TextField label="Date" minWidth="30rem" id="dummy" variant="fusion" mask="DD / MM / YYYY" />);
+            expect(screen.getByText('DD / MM / YYYY')).toBeInTheDocument();
         });
 
         it('should on change on changing the value', async () => {
@@ -146,10 +146,8 @@ describe('TextField', () => {
 
         it('should update mask label if mask and input value are same', async () => {
             const mockOnChange = jest.fn();
-            const { getByText } = render(
-                <TextField minWidth="30rem" id="dummy" value="11 / 11 / 1111" mask="DD / MM / YYYY" onChange={mockOnChange} />
-            );
-            await waitFor(() => expect(getByText('11 / 11 / 1111')).toBeInTheDocument());
+            render(<TextField minWidth="30rem" id="dummy" value="11 / 11 / 1111" mask="DD / MM / YYYY" onChange={mockOnChange} />);
+            expect(await screen.findByText('11 / 11 / 1111')).toBeInTheDocument();
         });
     });
 
@@ -190,22 +188,25 @@ describe('TextField', () => {
             const input = screen.getByRole('textbox') as HTMLInputElement;
             fireEvent.blur(input);
             expect(input.validationMessage).toEqual('');
-            expect(screen.queryByText('Email should be more then 3 characters')).toBeNull();
+            expect(screen.queryByText('Email should be more then 3 characters')).not.toBeInTheDocument();
         });
     });
 
     describe.each(['outlined', 'filled', 'fusion'])('with %s variant', value => {
         const variant = value as TextFieldProps['variant'];
+
         describe.each(['with label', 'without label'])('and %s', (labelCnd: string) => {
             it('should render default state properly', () => {
                 const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
                 expect(container).toMatchSnapshot();
             });
+
             it('should render focus state properly', () => {
                 const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
                 fireEvent.focusIn(screen.getByRole('textbox'));
                 expect(container).toMatchSnapshot();
             });
+
             it('should render disabled state properly', () => {
                 const { container } = render(<TextField variant={variant} disabled label={labelCnd === 'with label' ? 'Name' : ''} />);
                 fireEvent.focusIn(screen.getByRole('textbox'));
@@ -346,7 +347,7 @@ describe('TextField', () => {
         it('should render without suffix/prefix/character-count if we pass showDecorators as false', () => {
             const prefix = () => <span>prefix</span>;
             const suffix = () => <span>suffix</span>;
-            const { queryByText } = render(
+            render(
                 <TextField
                     variant={variant}
                     label="Name"
@@ -358,9 +359,9 @@ describe('TextField', () => {
                     showDecorators={false}
                 />
             );
-            expect(queryByText('prefix')).toBeNull();
-            expect(queryByText('suffix')).toBeNull();
-            expect(queryByText('4')).toBeNull();
+            expect(screen.queryByText('prefix')).not.toBeInTheDocument();
+            expect(screen.queryByText('suffix')).not.toBeInTheDocument();
+            expect(screen.queryByText('4')).not.toBeInTheDocument();
         });
     });
 });

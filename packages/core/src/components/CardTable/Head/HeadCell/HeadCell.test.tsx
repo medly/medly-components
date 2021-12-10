@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { ColumnConfig } from '../../types';
 import { HeadCell } from './HeadCell';
 import { StyledProps } from './types';
@@ -32,8 +32,8 @@ describe('Card Table HeadCell', () => {
     });
 
     it('should render properly with hover state', () => {
-        const { container, getByText } = renderer({ withWhiteBackground: true });
-        fireEvent.mouseEnter(getByText('Demo'));
+        const { container } = renderer({ withWhiteBackground: true });
+        fireEvent.mouseEnter(screen.getByText('Demo'));
         expect(container).toMatchSnapshot();
     });
 

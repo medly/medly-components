@@ -14,6 +14,7 @@ describe('Radio component', () => {
             expect(container).toMatchSnapshot();
         });
     });
+
     test.each(labelPositions)('should render correctly with %s labelPosition', labelPosition => {
         const { container } = render(<Radio label="Dummy" labelPosition={labelPosition} value="female" />);
         expect(container).toMatchSnapshot();

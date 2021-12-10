@@ -18,7 +18,7 @@ const getIcons = (DIR: string): IconInfo[] =>
         iconName: `${filenameWithExt.split('_24px')[0].split('.')[0].split('_').map(capitalize).join('')}Icon`
     }));
 
-const getDirectories = () => readdirSync(ASSETS_DIR).map(DIR => DIR + '/'),
+const getDirectories = () => readdirSync(ASSETS_DIR).map(DIR => `${DIR}/`),
     getIconNames = (DIR: string) => getIcons(DIR).map(({ iconName }) => iconName);
 
 const createComponents = (directories: string[]) =>

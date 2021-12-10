@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { Accordion } from './Accordion';
 
 describe('Accordion component', () => {
@@ -9,16 +9,17 @@ describe('Accordion component', () => {
                 <Accordion.Content>Avatar</Accordion.Content>
             </Accordion>
         );
+
     it('should render properly', () => {
         const { container } = renderAccordion();
         expect(container).toMatchSnapshot();
     });
 
     it('should render content when header is clicked', async () => {
-        const { getByText, getByRole } = renderAccordion();
-        fireEvent.click(getByText(/List Of Components/));
-        expect(getByRole('region')).toHaveStyle(`opacity: 1; max-height: 100vh`);
-        fireEvent.click(getByText(/List Of Components/));
-        expect(getByRole('region')).toHaveStyle(`opacity: 0; max-height: 0`);
+        renderAccordion();
+        fireEvent.click(screen.getByText(/List Of Components/));
+        expect(screen.getByRole('region')).toHaveStyle(`opacity: 1; max-height: 100vh`);
+        fireEvent.click(screen.getByText(/List Of Components/));
+        expect(screen.getByRole('region')).toHaveStyle(`opacity: 0; max-height: 0`);
     });
 });

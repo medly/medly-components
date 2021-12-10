@@ -110,4 +110,4 @@ export const resolveValueByTableSize = (
 
 export const getNestedValue = (obj: Record<string, unknown>, dottedKey: string) =>
     // @ts-ignore
-    dottedKey.split('.').reduce((acc, curr) => acc[curr], obj);
+    dottedKey.split('.').reduce((acc, curr) => acc?.[curr], obj);

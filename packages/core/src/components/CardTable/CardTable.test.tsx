@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { CardTable } from './CardTable';
 import { ColumnConfig } from './types';
 
@@ -39,20 +39,23 @@ describe('CardTable', () => {
         const { container } = renderer({ withWhiteBackground: false });
         expect(container).toMatchSnapshot();
     });
+
     it('should render properly with white background', () => {
         const { container } = renderer({ withWhiteBackground: true });
         expect(container).toMatchSnapshot();
     });
+
     it('should call onSort with expected data', () => {
         const onSort = jest.fn(),
             { container } = renderer({ withWhiteBackground: true, onSort });
         fireEvent.click(container.querySelectorAll('svg')[0]);
         expect(onSort).toHaveBeenCalledWith('patientInfo', 'asc');
     });
+
     it('should call onRowClick on click on any row', () => {
-        const onRowClick = jest.fn(),
-            { getByText } = renderer({ withWhiteBackground: true, onRowClick });
-        fireEvent.click(getByText('Oli Bob'));
+        const onRowClick = jest.fn();
+        renderer({ withWhiteBackground: true, onRowClick });
+        fireEvent.click(screen.getByText('Oli Bob'));
         expect(onRowClick).toHaveBeenCalled();
     });
 });

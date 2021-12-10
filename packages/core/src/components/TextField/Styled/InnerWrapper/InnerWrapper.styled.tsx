@@ -105,7 +105,7 @@ const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperMod
     const baseHeight = theme.textField.height[size];
     const baseHeightNumber = parseFloat(baseHeight.replace(/[^\d.-]/g, ''));
 
-    const lineHeight = theme.font.variants[theme.textField.textVariant[size]].lineHeight;
+    const { lineHeight } = theme.font.variants[theme.textField.textVariant[size]];
     const lineHeightNumber = parseFloat(lineHeight.replace(/[^\d.-]/g, ''));
 
     const smallPadding = 1.1 * 2;

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.5.11...@medly-components/loaders@1.6.0) (2021-12-09)
+
+
+### Features
+
+* update eslint rules and fixed lint issues ([#550](https://github.com/medly/medly-components/issues/550)) ([49569eb](https://github.com/medly/medly-components/commit/49569eb5d2a14418e930b9a0072b237735076ceb))
+
+
+
+
+
 ## [1.5.11](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.5.10...@medly-components/loaders@1.5.11) (2021-11-30)
 
 **Note:** Version bump only for package @medly-components/loaders
