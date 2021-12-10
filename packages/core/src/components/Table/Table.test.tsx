@@ -1,4 +1,5 @@
 import { fireEvent, render, screen } from '@test-utils';
+import Text from '../Text';
 import testColumns from './docs/columns';
 import testData from './docs/data';
 import { Table } from './Table';
@@ -65,19 +66,21 @@ describe('Table component', () => {
         });
     });
 
-    const downArrowKeyPress = (container: HTMLElement) => {
-        fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
-        fireEvent.keyUp(container, { key: 'ArrowDown', code: 40 });
-    };
-
     describe('keyboard navigation', () => {
+        const downArrowKeyPress = (container: HTMLElement) => {
+            fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
+            fireEvent.keyUp(container, { key: 'ArrowDown', code: 40 });
+        };
+
+        const ExpandedRowComponent: TableProps['expandedRowComponent'] = () => <Text>Hello from Accordion</Text>;
+
         const mockOnRowClick = jest.fn(),
             commonProps = {
                 isRowSelectable: true,
                 onRowClick: mockOnRowClick
             };
 
-        it('keyboard navigation should be able to click a row', async () => {
+        it('space key should trigger onRowClick', async () => {
             renderTable({
                 ...commonProps
             });
@@ -87,6 +90,8 @@ describe('Table component', () => {
             downArrowKeyPress(table);
             downArrowKeyPress(table);
             downArrowKeyPress(table);
+            downArrowKeyPress(table);
+            fireEvent.keyDown(table, { key: 'ArrowUp', code: 38 });
             fireEvent.keyDown(table, { key: ' ', code: 32 });
 
             expect(mockOnRowClick).toBeCalledWith({
@@ -98,6 +103,37 @@ describe('Table component', () => {
                 name: 'Christine Lobowski',
                 rating: 4
             });
+        });
+
+        it('right arrow key should open the collapsible row', async () => {
+            renderTable({
+                ...commonProps,
+                isRowExpandable: true,
+                expandedRowComponent: ExpandedRowComponent
+            });
+
+            const table = screen.getByRole('table');
+
+            downArrowKeyPress(table);
+            fireEvent.keyDown(table, { key: 'ArrowRight', code: 39 });
+
+            expect(screen.getByText('Hello from Accordion')).toBeInTheDocument();
+        });
+
+        it('left arrow key should close the collapsible row', async () => {
+            renderTable({
+                ...commonProps,
+                isRowExpandable: true,
+                expandedRowComponent: ExpandedRowComponent
+            });
+
+            const table = screen.getByRole('table');
+
+            downArrowKeyPress(table);
+            fireEvent.keyDown(table, { key: 'ArrowRight', code: 39 });
+            fireEvent.keyDown(table, { key: 'ArrowLeft', code: 37 });
+
+            expect(screen.queryByText('Hello from Accordion')).not.toBeInTheDocument();
         });
     });
 });
