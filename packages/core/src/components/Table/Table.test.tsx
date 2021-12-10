@@ -80,7 +80,7 @@ describe('Table component', () => {
                 onRowClick: mockOnRowClick
             };
 
-        it('space key should trigger onRowClick', async () => {
+        it('enter key should trigger onRowClick', async () => {
             renderTable({
                 ...commonProps
             });
@@ -92,7 +92,7 @@ describe('Table component', () => {
             downArrowKeyPress(table);
             downArrowKeyPress(table);
             fireEvent.keyDown(table, { key: 'ArrowUp', code: 38 });
-            fireEvent.keyDown(table, { key: ' ', code: 32 });
+            fireEvent.keyDown(table, { key: 'Enter', code: 13 });
 
             expect(mockOnRowClick).toBeCalledWith({
                 age: '42',
