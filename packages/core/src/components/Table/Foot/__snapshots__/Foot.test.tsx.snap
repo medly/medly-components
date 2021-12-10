@@ -1,0 +1,1127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table Foot should render correctly for L 1`] = `
+.c8 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c9 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c2 {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 li {
+  margin: 0 0.4rem;
+}
+
+.c2 li:last-child {
+  margin-right: 0.8rem;
+}
+
+.c2 li:first-child {
+  margin-left: 0.8rem;
+}
+
+.c3 > li {
+  margin: 0;
+}
+
+.c4 {
+  margin: 0.4rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  background: #ffffff;
+}
+
+.c4:hover {
+  cursor: pointer;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+}
+
+.c4 > .c5,
+.c4 .c5 {
+  padding: 0.4rem;
+}
+
+.c4 .c5 * {
+  fill: #435465;
+}
+
+.c4:disabled {
+  background: #ffffff;
+}
+
+.c4:disabled .c5 * {
+  fill: #C7D0D8;
+}
+
+.c4:not(:disabled):hover {
+  background: #F7F8F9;
+}
+
+.c4:not(:disabled):hover .c5 * {
+  fill: #303C48;
+}
+
+.c4:not(:disabled):active {
+  background: #eff2f4;
+}
+
+.c4:not(:disabled):active .c5 * {
+  fill: #13181D;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: #ffffff;
+  min-height: 4.8rem;
+  border-top: 0.1rem solid #C7D0D8;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0 1.6rem 0 0.8rem;
+}
+
+.c1 td {
+  padding: 0;
+}
+
+.c1 td > .c7 {
+  font-size: 1.2rem;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+}
+
+<div>
+  <tfoot
+    class="c0"
+  >
+    <tr
+      class="c1"
+    >
+      <td>
+        <ul
+          class="c2 c3 "
+          data-testid="foot-pagination"
+        >
+          <li>
+            <button
+              class="sc-1dmgj8o-1 c4"
+              disabled=""
+              type="button"
+            >
+              <svg
+                class="c5 c6"
+                fill="none"
+                height="1em"
+                title="prev"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 6.705a.996.996 0 0 0-1.41 0L9 11.295a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41l-3.88-3.89L15 8.115c.39-.39.38-1.03 0-1.41z"
+                  fill="#000"
+                  fill-opacity=".54"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button
+              class="sc-1dmgj8o-1 c4"
+              disabled=""
+              type="button"
+            >
+              <svg
+                class="c5 c6"
+                fill="none"
+                height="1em"
+                title="next"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 6.71a.996.996 0 0 0 0 1.41L12.88 12 9 15.88a.996.996 0 1 0 1.41 1.41L15 12.7a.996.996 0 0 0 0-1.41L10.41 6.7c-.38-.38-1.02-.38-1.41.01z"
+                  fill="#000"
+                  fill-opacity=".54"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <span
+          class="c7 c8"
+        >
+          Viewing
+        </span>
+        <strong
+          class="c7 c9"
+        >
+           0 - 0 
+        </strong>
+        <span
+          class="c7 c8"
+        >
+          of
+        </span>
+        <strong
+          class="c7 c9"
+        >
+           0 
+        </strong>
+        <span
+          class="c7 c8"
+        >
+          Results
+        </span>
+      </td>
+    </tr>
+  </tfoot>
+</div>
+`;
+
+exports[`Table Foot should render correctly for M 1`] = `
+.c8 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c9 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c2 {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 li {
+  margin: 0 0.4rem;
+}
+
+.c2 li:last-child {
+  margin-right: 0.8rem;
+}
+
+.c2 li:first-child {
+  margin-left: 0.8rem;
+}
+
+.c3 > li {
+  margin: 0;
+}
+
+.c4 {
+  margin: 0.4rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  background: #ffffff;
+}
+
+.c4:hover {
+  cursor: pointer;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+}
+
+.c4 > .c5,
+.c4 .c5 {
+  padding: 0.4rem;
+}
+
+.c4 .c5 * {
+  fill: #435465;
+}
+
+.c4:disabled {
+  background: #ffffff;
+}
+
+.c4:disabled .c5 * {
+  fill: #C7D0D8;
+}
+
+.c4:not(:disabled):hover {
+  background: #F7F8F9;
+}
+
+.c4:not(:disabled):hover .c5 * {
+  fill: #303C48;
+}
+
+.c4:not(:disabled):active {
+  background: #eff2f4;
+}
+
+.c4:not(:disabled):active .c5 * {
+  fill: #13181D;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: #ffffff;
+  min-height: 4.8rem;
+  border-top: 0.1rem solid #C7D0D8;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0 1.6rem 0 0.8rem;
+}
+
+.c1 td {
+  padding: 0;
+}
+
+.c1 td > .c7 {
+  font-size: 1.2rem;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+}
+
+<div>
+  <tfoot
+    class="c0"
+  >
+    <tr
+      class="c1"
+    >
+      <td>
+        <ul
+          class="c2 c3 "
+          data-testid="foot-pagination"
+        >
+          <li>
+            <button
+              class="sc-1dmgj8o-1 c4"
+              disabled=""
+              type="button"
+            >
+              <svg
+                class="c5 c6"
+                fill="none"
+                height="1em"
+                title="prev"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 6.705a.996.996 0 0 0-1.41 0L9 11.295a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41l-3.88-3.89L15 8.115c.39-.39.38-1.03 0-1.41z"
+                  fill="#000"
+                  fill-opacity=".54"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button
+              class="sc-1dmgj8o-1 c4"
+              disabled=""
+              type="button"
+            >
+              <svg
+                class="c5 c6"
+                fill="none"
+                height="1em"
+                title="next"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 6.71a.996.996 0 0 0 0 1.41L12.88 12 9 15.88a.996.996 0 1 0 1.41 1.41L15 12.7a.996.996 0 0 0 0-1.41L10.41 6.7c-.38-.38-1.02-.38-1.41.01z"
+                  fill="#000"
+                  fill-opacity=".54"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <span
+          class="c7 c8"
+        >
+          Viewing
+        </span>
+        <strong
+          class="c7 c9"
+        >
+           0 - 0 
+        </strong>
+        <span
+          class="c7 c8"
+        >
+          of
+        </span>
+        <strong
+          class="c7 c9"
+        >
+           0 
+        </strong>
+        <span
+          class="c7 c8"
+        >
+          Results
+        </span>
+      </td>
+    </tr>
+  </tfoot>
+</div>
+`;
+
+exports[`Table Foot should render correctly for S 1`] = `
+.c8 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c9 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c2 {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 li {
+  margin: 0 0.4rem;
+}
+
+.c2 li:last-child {
+  margin-right: 0.8rem;
+}
+
+.c2 li:first-child {
+  margin-left: 0.8rem;
+}
+
+.c3 > li {
+  margin: 0;
+}
+
+.c4 {
+  margin: 0.4rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  background: #ffffff;
+}
+
+.c4:hover {
+  cursor: pointer;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+}
+
+.c4 > .c5,
+.c4 .c5 {
+  padding: 0.4rem;
+}
+
+.c4 .c5 * {
+  fill: #435465;
+}
+
+.c4:disabled {
+  background: #ffffff;
+}
+
+.c4:disabled .c5 * {
+  fill: #C7D0D8;
+}
+
+.c4:not(:disabled):hover {
+  background: #F7F8F9;
+}
+
+.c4:not(:disabled):hover .c5 * {
+  fill: #303C48;
+}
+
+.c4:not(:disabled):active {
+  background: #eff2f4;
+}
+
+.c4:not(:disabled):active .c5 * {
+  fill: #13181D;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: #ffffff;
+  min-height: 4.8rem;
+  border-top: 0.1rem solid #C7D0D8;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0 1.6rem 0 0.8rem;
+}
+
+.c1 td {
+  padding: 0;
+}
+
+.c1 td > .c7 {
+  font-size: 1.2rem;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+}
+
+<div>
+  <tfoot
+    class="c0"
+  >
+    <tr
+      class="c1"
+    >
+      <td>
+        <ul
+          class="c2 c3 "
+          data-testid="foot-pagination"
+        >
+          <li>
+            <button
+              class="sc-1dmgj8o-1 c4"
+              disabled=""
+              type="button"
+            >
+              <svg
+                class="c5 c6"
+                fill="none"
+                height="1em"
+                title="prev"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 6.705a.996.996 0 0 0-1.41 0L9 11.295a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41l-3.88-3.89L15 8.115c.39-.39.38-1.03 0-1.41z"
+                  fill="#000"
+                  fill-opacity=".54"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button
+              class="sc-1dmgj8o-1 c4"
+              disabled=""
+              type="button"
+            >
+              <svg
+                class="c5 c6"
+                fill="none"
+                height="1em"
+                title="next"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 6.71a.996.996 0 0 0 0 1.41L12.88 12 9 15.88a.996.996 0 1 0 1.41 1.41L15 12.7a.996.996 0 0 0 0-1.41L10.41 6.7c-.38-.38-1.02-.38-1.41.01z"
+                  fill="#000"
+                  fill-opacity=".54"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <span
+          class="c7 c8"
+        >
+          Viewing
+        </span>
+        <strong
+          class="c7 c9"
+        >
+           0 - 0 
+        </strong>
+        <span
+          class="c7 c8"
+        >
+          of
+        </span>
+        <strong
+          class="c7 c9"
+        >
+           0 
+        </strong>
+        <span
+          class="c7 c8"
+        >
+          Results
+        </span>
+      </td>
+    </tr>
+  </tfoot>
+</div>
+`;
+
+exports[`Table Foot should render correctly for XS 1`] = `
+.c10 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c11 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c8 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c8 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c2 {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 li {
+  margin: 0 0.4rem;
+}
+
+.c2 li:last-child {
+  margin-right: 0.8rem;
+}
+
+.c2 li:first-child {
+  margin-left: 0.8rem;
+}
+
+.c3 > li {
+  margin: 0;
+}
+
+.c6 {
+  margin: 0.4rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  background: #ffffff;
+}
+
+.c6:hover {
+  cursor: pointer;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6:disabled {
+  cursor: not-allowed;
+}
+
+.c6 > .c7,
+.c6 .c7 {
+  padding: 0.4rem;
+}
+
+.c6 .c7 * {
+  fill: #435465;
+}
+
+.c6:disabled {
+  background: #ffffff;
+}
+
+.c6:disabled .c7 * {
+  fill: #C7D0D8;
+}
+
+.c6:not(:disabled):hover {
+  background: #F7F8F9;
+}
+
+.c6:not(:disabled):hover .c7 * {
+  fill: #303C48;
+}
+
+.c6:not(:disabled):active {
+  background: #eff2f4;
+}
+
+.c6:not(:disabled):active .c7 * {
+  fill: #13181D;
+}
+
+.c4 > * .c5,
+.c4 .sc-1dmgj8o-2 {
+  height: 3.1rem;
+  width: 3.1rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: #ffffff;
+  min-height: 4.8rem;
+  border-top: 0.1rem solid #C7D0D8;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0 1.6rem 0 0.8rem;
+}
+
+.c1 td {
+  padding: 0;
+}
+
+.c1 td > .c9 {
+  font-size: 1.2rem;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+}
+
+<div>
+  <tfoot
+    class="c0"
+  >
+    <tr
+      class="c1"
+    >
+      <td>
+        <ul
+          class="c2 c3 c4"
+          data-testid="foot-pagination"
+        >
+          <li>
+            <button
+              class="sc-1dmgj8o-1 c5 c6"
+              disabled=""
+              type="button"
+            >
+              <svg
+                class="c7 c8"
+                fill="none"
+                height="1em"
+                title="prev"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 6.705a.996.996 0 0 0-1.41 0L9 11.295a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41l-3.88-3.89L15 8.115c.39-.39.38-1.03 0-1.41z"
+                  fill="#000"
+                  fill-opacity=".54"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button
+              class="sc-1dmgj8o-1 c5 c6"
+              disabled=""
+              type="button"
+            >
+              <svg
+                class="c7 c8"
+                fill="none"
+                height="1em"
+                title="next"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 6.71a.996.996 0 0 0 0 1.41L12.88 12 9 15.88a.996.996 0 1 0 1.41 1.41L15 12.7a.996.996 0 0 0 0-1.41L10.41 6.7c-.38-.38-1.02-.38-1.41.01z"
+                  fill="#000"
+                  fill-opacity=".54"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <span
+          class="c9 c10"
+        >
+          Viewing
+        </span>
+        <strong
+          class="c9 c11"
+        >
+           0 - 0 
+        </strong>
+        <span
+          class="c9 c10"
+        >
+          of
+        </span>
+        <strong
+          class="c9 c11"
+        >
+           0 
+        </strong>
+        <span
+          class="c9 c10"
+        >
+          Results
+        </span>
+      </td>
+    </tr>
+  </tfoot>
+</div>
+`;
