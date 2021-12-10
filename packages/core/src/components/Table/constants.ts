@@ -13,5 +13,6 @@ export const defaultKeyBindings: KeyBindings = {
     down: 'ArrowDown',
     selectRow: 'x',
     expandRow: 'ArrowRight',
-    collapseRow: 'ArrowLeft'
+    collapseRow: 'ArrowLeft',
+    rowClick: ' '
 };

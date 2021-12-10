@@ -21,7 +21,8 @@ const Body: FC<TableBodyProps> = memo(props => {
         isDownKeyPressed = useKeyPress(keyBindings.down!),
         isSelectionKeyPressed = useKeyPress(keyBindings.selectRow!),
         isExpansionKeyPressed = useKeyPress(keyBindings.expandRow!),
-        isCollapseKeyPressed = useKeyPress(keyBindings.collapseRow!);
+        isCollapseKeyPressed = useKeyPress(keyBindings.collapseRow!),
+        isRowClickKeyPressed = useKeyPress(keyBindings.rowClick!);
 
     useEffect(() => {
         if (data.length && isUpKeyPressed) {
@@ -74,6 +75,7 @@ const Body: FC<TableBodyProps> = memo(props => {
                         isRowSelectedFromKeyboard={isSelectionKeyPressed && index === cursor}
                         isRowExpandedFromKeyboard={isExpansionKeyPressed && index === cursor}
                         isRowCollapsedFromKeyboard={isCollapseKeyPressed && index === cursor}
+                        isRowClickedFromKeyboard={isRowClickKeyPressed && index === cursor}
                         {...restProps}
                     />
                 );

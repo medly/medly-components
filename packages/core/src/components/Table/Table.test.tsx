@@ -64,4 +64,40 @@ describe('Table component', () => {
             expect(screen.getByText('50')).toBeInTheDocument();
         });
     });
+
+    const downArrowKeyPress = (container: HTMLElement) => {
+        fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
+        fireEvent.keyUp(container, { key: 'ArrowDown', code: 40 });
+    };
+
+    describe('keyboard navigation', () => {
+        const mockOnRowClick = jest.fn(),
+            commonProps = {
+                isRowSelectable: true,
+                onRowClick: mockOnRowClick
+            };
+
+        it('keyboard navigation should be able to click a row', async () => {
+            renderTable({
+                ...commonProps
+            });
+
+            const table = screen.getByRole('table');
+
+            downArrowKeyPress(table);
+            downArrowKeyPress(table);
+            downArrowKeyPress(table);
+            fireEvent.keyDown(table, { key: ' ', code: 32 });
+
+            expect(mockOnRowClick).toBeCalledWith({
+                age: '42',
+                color: 'green',
+                id: 3,
+                isPassed: true,
+                marks: { maths: 4, science: 7 },
+                name: 'Christine Lobowski',
+                rating: 4
+            });
+        });
+    });
 });
