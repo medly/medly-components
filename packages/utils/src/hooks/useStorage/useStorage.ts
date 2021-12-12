@@ -41,8 +41,9 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
         }
 
         try {
-            storage.setItem(key, value);
-            isMounted.current && setStoredValue(value);
+            const newValue = value instanceof Function ? value(storedValue) : value;
+            storage.setItem(key, newValue);
+            isMounted.current && setStoredValue(newValue);
             window.dispatchEvent(new Event(`local-storage-${key}`));
         } catch (error) {
             console.warn(`Error setting localStorage key “${key}”:`, error);
