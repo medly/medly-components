@@ -27,8 +27,6 @@ const Component: FC<ModalProps> = memo(
             isSmallScreen = windowWidth < 768,
             handleScroll = useScrollState({ ref: innerContainerRef, scrollState, dispatch });
 
-        console.log('open', open);
-
         const handleBackgroundClick = useCallback(() => {
                 console.log('handleBgClick');
                 shouldCloseOnOutsideClick && onCloseModal && onCloseModal();
@@ -51,12 +49,10 @@ const Component: FC<ModalProps> = memo(
         }, [open]);
 
         useEffect(() => {
-            isEscPressed && console.log('isEsckey', isEscPressed);
             open && isEscPressed && onCloseModal && onCloseModal();
         }, [open, isEscPressed]);
 
         const tempHandler = () => {
-            console.log('onclose click');
             onCloseModal && onCloseModal();
         };
 
