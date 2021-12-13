@@ -25,40 +25,25 @@ const onPageChange = jest.fn(),
 describe('Table Foot', () => {
     const options: TableFootProps['tableSize'][] = ['XS', 'S', 'M', 'L'];
 
-    test.each(options)('should render correctly for %s', size => {
+    test.each(options)('should render correctly with %s size', size => {
         const { container } = render(<Foot tableSize={size} />);
         expect(container).toMatchSnapshot();
     });
 
-    it('should render table foot with content', () => {
-        render(<Foot tableSize="M" />);
-
-        expect(screen.getByText(/viewing/i)).toBeInTheDocument();
-        expect(screen.getByText(/0 - 0/i)).toBeInTheDocument();
-        expect(screen.getByText(/of/i)).toBeInTheDocument();
-        expect(screen.getByText(/results/i)).toBeInTheDocument();
-    });
-
-    it('should render table foot with pagination', () => {
-        render(<Foot tableSize="M" />);
-
-        expect(screen.getByTestId('foot-pagination')).toBeInTheDocument();
-    });
-
-    it('should check table foot pagination', async () => {
+    it('should update content on click on next button', async () => {
         renderTable();
 
-        await fireEvent.click(await screen.findByTitle(/next/i));
+        fireEvent.click(screen.getByTitle(/next/i));
         await waitFor(() => expect(onPageChange).toHaveBeenCalledTimes(1));
-        expect(await screen.findByText(/11 - 15/i)).toBeInTheDocument();
+        expect(screen.getByText(/11 - 15/i)).toBeInTheDocument();
     });
 
-    it('should check style of table with showRowWithCardStyle true', () => {
+    it('should render properly when showRowWithCardStyle is set to true', () => {
         renderTable({ showRowWithCardStyle: true });
         expect(document.body.querySelector('tfoot')).toHaveStyle('min-height:5.4rem');
     });
 
-    it('should check style of table with showRowWithCardStyle false', () => {
+    it('should render properly when showRowWithCardStyle is set to false', () => {
         renderTable({ showRowWithCardStyle: false });
         expect(document.body.querySelector('tfoot')).toHaveStyle('min-height:4rem');
     });

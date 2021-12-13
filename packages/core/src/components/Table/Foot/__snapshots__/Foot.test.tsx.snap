@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Table Foot should render correctly for L 1`] = `
+exports[`Table Foot should render correctly with L size 1`] = `
 .c8 {
   margin: 0;
   color: inherit;
@@ -280,7 +280,7 @@ exports[`Table Foot should render correctly for L 1`] = `
 </div>
 `;
 
-exports[`Table Foot should render correctly for M 1`] = `
+exports[`Table Foot should render correctly with M size 1`] = `
 .c8 {
   margin: 0;
   color: inherit;
@@ -560,7 +560,7 @@ exports[`Table Foot should render correctly for M 1`] = `
 </div>
 `;
 
-exports[`Table Foot should render correctly for S 1`] = `
+exports[`Table Foot should render correctly with S size 1`] = `
 .c8 {
   margin: 0;
   color: inherit;
@@ -840,7 +840,7 @@ exports[`Table Foot should render correctly for S 1`] = `
 </div>
 `;
 
-exports[`Table Foot should render correctly for XS 1`] = `
+exports[`Table Foot should render correctly with XS size 1`] = `
 .c10 {
   margin: 0;
   color: inherit;
