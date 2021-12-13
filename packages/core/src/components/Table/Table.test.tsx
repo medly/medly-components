@@ -135,5 +135,24 @@ describe('Table component', () => {
 
             expect(screen.queryByText('Hello from Accordion')).not.toBeInTheDocument();
         });
+
+        it('space key should select the row', async () => {
+            const onRowSelectionFn = jest.fn();
+            renderTable({
+                ...commonProps,
+                onRowSelection: onRowSelectionFn,
+                isRowSelectable: true
+            });
+
+            const table = screen.getByRole('table');
+
+            downArrowKeyPress(table);
+            downArrowKeyPress(table);
+            downArrowKeyPress(table);
+            downArrowKeyPress(table);
+            fireEvent.keyDown(table, { key: ' ', code: 32 });
+
+            expect(onRowSelectionFn).toBeCalledTimes(1);
+        });
     });
 });
