@@ -6,21 +6,20 @@ import { TableProps } from '../types';
 import { Foot } from './Foot';
 import { TableFootProps } from './types';
 
-const onPageChange = jest.fn(),
-    renderTable = (props?: Partial<TableProps>) =>
-        render(
-            <Table
-                onPageChange={onPageChange}
-                size="XS"
-                withPagination
-                defaultActivePage={1}
-                totalItems={15}
-                itemsPerPage={10}
-                data={testData}
-                columns={testColumns}
-                {...props}
-            />
-        );
+const renderTable = (props?: Partial<TableProps>) =>
+    render(
+        <Table
+            size="XS"
+            withPagination
+            onPageChange={props?.onPageChange}
+            defaultActivePage={1}
+            totalItems={15}
+            itemsPerPage={10}
+            data={testData}
+            columns={testColumns}
+            {...props}
+        />
+    );
 
 describe('Table Foot', () => {
     const options: TableFootProps['tableSize'][] = ['XS', 'S', 'M', 'L'];
@@ -31,8 +30,8 @@ describe('Table Foot', () => {
     });
 
     it('should update content on click on next button', async () => {
-        renderTable();
-
+        const onPageChange = jest.fn();
+        renderTable({ onPageChange });
         fireEvent.click(screen.getByTitle(/next/i));
         await waitFor(() => expect(onPageChange).toHaveBeenCalledTimes(1));
         expect(screen.getByText(/11 - 15/i)).toBeInTheDocument();
