@@ -1,9 +1,9 @@
+import type { FC } from 'react';
 import { memo, useCallback, useContext, useMemo } from 'react';
 import Text from '../../Text';
 import { TableComponentsCommonPropsContext, TableStateContext } from '../context';
 import { FootPagination, FootRow, TFoot } from './Foot.styled';
 import { TableFootProps } from './types';
-import type { FC } from 'react';
 
 export const Foot: FC<TableFootProps> = memo(props => {
     const { tableSize } = props;
@@ -37,6 +37,7 @@ export const Foot: FC<TableFootProps> = memo(props => {
             <FootRow>
                 <td>
                     <FootPagination
+                        data-testid="foot-pagination"
                         tableSize={tableSize}
                         activePage={activePage}
                         totalItems={totalItems}

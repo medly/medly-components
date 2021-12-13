@@ -1497,6 +1497,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
         <td>
           <ul
             class="c22 c23 "
+            data-testid="foot-pagination"
           >
             <li>
               <button
