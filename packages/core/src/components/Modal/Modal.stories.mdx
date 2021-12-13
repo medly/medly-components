@@ -15,20 +15,24 @@ import { Modal } from '@medly-components/core';
 import React, { useState } from 'react';
 
 export const DummyComponent: React.FC = React.memo(() => {
-    const [state, updateState] = useState(false);
+    const [state, setState] = useState(false);
 
-    const toggleModal = () => updateState(val => !val);
+    const openModal = () => setState(true);
+    const closeModal = () => setState(false);
 
     return (
-        <Modal open={state} onCloseModal={toggleModal}>
-            <Modal.Header>Add User</Modal.Header>
-            <Modal.Content>
-                <Input id="name-input" type="text" fullWidth label="Name" placeholder="Enter your Name" />
-            </Modal.Content>
-            <Modal.Actions>
-                <Button variant="outlined">Add User</Button>
-            </Modal.Actions>
-        </Modal>
+        <>
+            <Button onClick={openModal}>Open Modal</Button>
+            <Modal open={state} onCloseModal={closeModal}>
+                <Modal.Header>Add User</Modal.Header>
+                <Modal.Content>
+                    <Input id="name-input" type="text" fullWidth label="Name" placeholder="Enter your Name" />
+                </Modal.Content>
+                <Modal.Actions>
+                    <Button variant="outlined">Add User</Button>
+                </Modal.Actions>
+            </Modal>
+        </>
     );
 });
 

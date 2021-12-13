@@ -1,4 +1,5 @@
 import { defaultTheme, ModalTheme } from '@medly-components/theme';
+import type { FC } from 'react';
 import { useCallback, useState } from 'react';
 import styled from 'styled-components';
 import Button from '../Button';
@@ -6,7 +7,6 @@ import Input from '../Input';
 import SingleSelect from '../SingleSelect';
 import { ModalActionUserProps } from './Actions/types';
 import { Modal } from './Modal';
-import type { FC } from 'react';
 
 const options = [
     { value: '0', label: 'Admin' },
@@ -37,12 +37,13 @@ export const ModalStoryWrapper = styled('div')<{ expand: boolean }>`
 export const Basic = () => {
     const [modalState, setModalState] = useState(false);
 
-    const changeModalState = useCallback(() => setModalState(val => !val), []);
+    const openModal = useCallback(() => setModalState(true), []);
+    const closeModal = useCallback(() => setModalState(false), []);
 
     return (
         <ModalStoryWrapper expand={modalState}>
-            <Button onClick={changeModalState}>Click to Open</Button>
-            <Modal open={modalState} onCloseModal={changeModalState}>
+            <Button onClick={openModal}>Click to Open</Button>
+            <Modal open={modalState} onCloseModal={closeModal}>
                 <Modal.Header>Add User</Modal.Header>
                 <Modal.Content>
                     <Form>

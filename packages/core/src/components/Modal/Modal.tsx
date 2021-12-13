@@ -1,6 +1,7 @@
 import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
 import type { FC } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useReducer, useRef, useState } from 'react';
+import Button from '../Button';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
@@ -26,7 +27,10 @@ const Component: FC<ModalProps> = memo(
             isSmallScreen = windowWidth < 768,
             handleScroll = useScrollState({ ref: innerContainerRef, scrollState, dispatch });
 
+        console.log('open', open);
+
         const handleBackgroundClick = useCallback(() => {
+                console.log('handleBgClick');
                 shouldCloseOnOutsideClick && onCloseModal && onCloseModal();
             }, [shouldCloseOnOutsideClick, onCloseModal]),
             handleAnimationEnd = useCallback(() => {
@@ -47,13 +51,21 @@ const Component: FC<ModalProps> = memo(
         }, [open]);
 
         useEffect(() => {
+            isEscPressed && console.log('isEsckey', isEscPressed);
             open && isEscPressed && onCloseModal && onCloseModal();
         }, [open, isEscPressed]);
+
+        const tempHandler = () => {
+            console.log('onclose click');
+            onCloseModal && onCloseModal();
+        };
 
         return shouldRender ? (
             <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
                 <Popup ref={modalRef} id={`${id}-popup`} onAnimationEnd={handleAnimationEnd} {...{ minWidth, minHeight, open }}>
-                    <CloseIcon id={`${id}-close-button`} title={`${id}-close-icon`} onClick={onCloseModal} size="M" variant="solid" />
+                    <Button variant="flat" type="button" onClick={tempHandler}>
+                        <CloseIcon id={`${id}-close-button`} title={`${id}-close-icon`} size="M" variant="solid" />
+                    </Button>
                     <InnerContainerStyled
                         id={`${id}-inner-container`}
                         ref={innerContainerRef}
