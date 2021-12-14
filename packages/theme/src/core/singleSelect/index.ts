@@ -37,7 +37,7 @@ const singleSelect: SingleSelectTheme = {
             flat: '0.8rem',
             filled: '0 0 0.4rem 0.4rem',
             outlined: '0.4rem',
-            fusion: '1.0rem'
+            fusion: '0.4rem'
         }
     },
     option: {

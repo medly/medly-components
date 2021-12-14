@@ -5485,7 +5485,7 @@ exports[`SingleSelect component with fusion variant should render options correc
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
-  border-radius: 1.0rem;
+  border-radius: 0.4rem;
   overflow: auto;
   max-height: 20rem;
 }
@@ -6493,7 +6493,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
-  border-radius: 1.0rem;
+  border-radius: 0.4rem;
   overflow: auto;
   max-height: 20rem;
 }
