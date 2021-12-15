@@ -25,4 +25,6 @@ export interface CheckboxProps extends InputProps {
     validator?: (checked: boolean) => string;
     /** This will be used internally by the Checkbox group */
     hasError?: boolean;
+    /** This will be used internally by the Checkbox group for keyboard navigation */
+    isHovered?: boolean;
 }

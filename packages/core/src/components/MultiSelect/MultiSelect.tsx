@@ -1,4 +1,4 @@
-import { useCombinedRefs, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, useKeyPress, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
 import type { FC, FocusEvent } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
@@ -44,6 +44,10 @@ const Component: FC<MultiSelectProps> = memo(
             [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(defaultOptions, values!)),
             [inputValue, setInputValue] = useState(getInputValue(selectedOptions)),
             [placeholder, setPlaceholder] = useState(values!.length > 0 ? `${values!.length} options selected` : props.placeholder),
+            [cursor, setCursor] = useState(-1),
+            [isParentCursorEnabled, setIsParentCursorEnabled] = useState(true),
+            isUpKeyPressed = useKeyPress('ArrowUp'),
+            isDownKeyPressed = useKeyPress('ArrowDown'),
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [builtInErrorMessage, errorText]),
             showCreatableOption = useMemo(
                 () =>
@@ -155,6 +159,18 @@ const Component: FC<MultiSelectProps> = memo(
             handleOuterClick();
         }, wrapperRef);
 
+        useEffect(() => {
+            if (isParentCursorEnabled && options.length && isUpKeyPressed) {
+                setCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
+            }
+        }, [isUpKeyPressed, options, isParentCursorEnabled]);
+
+        useEffect(() => {
+            if (isParentCursorEnabled && options.length && isDownKeyPressed) {
+                setCursor(prevState => (prevState < options.length - 1 ? prevState + 1 : prevState));
+            }
+        }, [isDownKeyPressed, options, isParentCursorEnabled]);
+
         const ChipEl = () => (
             <InputSuffix
                 id={`${selectId}-count`}
@@ -217,6 +233,8 @@ const Component: FC<MultiSelectProps> = memo(
                         setValues={setSelectedOptions}
                         options={options}
                         onOptionClick={handleOptionClick}
+                        cursor={cursor}
+                        setIsParentCursorEnabled={setIsParentCursorEnabled}
                         showCreatableOption={!!showCreatableOption}
                         handleCreatableOptionClick={handleCreatableOptionClick}
                     />

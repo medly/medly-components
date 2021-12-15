@@ -1,6 +1,5 @@
-import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import type { ChangeEvent, FC, FocusEvent } from 'react';
-import { forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
+import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
+import { ChangeEvent, FC, FocusEvent, forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Checkbox from '../Checkbox';
 import { SelectorGroup } from '../Selectors';
 import getValuesFromOptions from './getValuesFromOptions';
@@ -26,10 +25,15 @@ const Component: FC<CheckboxGroupProps> = memo(
             validator,
             parentHasError,
             fullWidthOptions,
+            isHovered,
+            setIsHovered,
             ...wrapperProps
         } = props;
 
-        const [builtInErrorMessage, setErrorMessage] = useState(''),
+        const [cursor, setCursor] = useState(-2),
+            [builtInErrorMessage, setErrorMessage] = useState(''),
+            isUpKeyPressed = useKeyPress('ArrowUp'),
+            isDownKeyPressed = useKeyPress('ArrowDown'),
             checkboxGroupId = useMemo(() => id || label, [id, label]),
             checkboxGroupRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
             hasError = useMemo(
@@ -82,6 +86,25 @@ const Component: FC<CheckboxGroupProps> = memo(
                 onChange(newValues);
             }, [options, values, onChange]);
 
+        useEffect(() => {
+            if (isHovered && options.length && isUpKeyPressed) {
+                setCursor(prevState => (prevState > -2 ? prevState - 1 : prevState));
+            }
+        }, [isHovered, isUpKeyPressed, options]);
+
+        useEffect(() => {
+            if (isHovered && options.length && isDownKeyPressed) {
+                setCursor(prevState => (prevState < options.length ? prevState + 1 : prevState));
+            }
+        }, [isHovered, isDownKeyPressed, options]);
+
+        useEffect(() => {
+            if (isHovered && setIsHovered) {
+                if (cursor > -2) setIsHovered(false);
+                if (cursor === -2 || cursor === options.length) setIsHovered(true);
+            }
+        }, [cursor, setIsHovered, isHovered]);
+
         return (
             <SelectorGroup.Wrapper
                 ref={checkboxGroupRef}
@@ -98,6 +121,7 @@ const Component: FC<CheckboxGroupProps> = memo(
                             onChange={handleSelectAllClick}
                             indeterminate={indeterminate}
                             id={`${checkboxGroupId}-select-all`}
+                            isHovered={cursor === -1}
                             {...{ size, hasError, disabled, labelVariant, labelWeight }}
                         />
                     ) : (
@@ -130,7 +154,7 @@ const Component: FC<CheckboxGroupProps> = memo(
                     isIndented={showSelectAll}
                     fullWidthOptions={fullWidthOptions}
                 >
-                    {options.map(option => {
+                    {options.map((option, index) => {
                         return Array.isArray(option.value) ? (
                             <Component
                                 key={option.label}
@@ -157,6 +181,7 @@ const Component: FC<CheckboxGroupProps> = memo(
                                 disabled={disabled || option.disabled}
                                 hasError={hasError}
                                 id={`${option.label}-${checkboxGroupId}`}
+                                isHovered={isHovered && cursor === index}
                             />
                         );
                     })}

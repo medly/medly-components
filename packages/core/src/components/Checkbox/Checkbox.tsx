@@ -1,8 +1,7 @@
 import { CheckIcon, MinimizeIcon } from '@medly-components/icons';
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import { memo, forwardRef, useRef, FocusEvent, FormEvent, useCallback, useMemo, useState } from 'react';
 import type { FC } from 'react';
-
+import { FocusEvent, FormEvent, forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Checkbox.styled';
 import { CheckboxProps } from './types';
@@ -21,6 +20,7 @@ const Component: FC<CheckboxProps> = memo(
             hasError,
             errorText,
             className,
+            isHovered,
             ...inputProps
         } = props;
 
@@ -60,6 +60,7 @@ const Component: FC<CheckboxProps> = memo(
                     id={`${inputId}-wrapper`}
                     htmlFor={inputId}
                     isActive={isActive}
+                    isHovered={isHovered}
                     hasError={isErrorPresent}
                     disabled={inputProps.disabled}
                     {...{ fullWidth, labelPosition }}

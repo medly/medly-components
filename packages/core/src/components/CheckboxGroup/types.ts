@@ -1,5 +1,6 @@
 import { CheckboxSizes, FontVariants, FontWeights } from '@medly-components/theme';
 import { HTMLProps, Omit } from '@medly-components/utils';
+import { Dispatch, SetStateAction } from 'react';
 
 export type CheckboxGroupWrapperProps = {
     fullWidth?: boolean;
@@ -52,4 +53,8 @@ export interface CheckboxGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'siz
     validator?: (values: any[]) => string;
     /** This will be handled internally */
     parentHasError?: boolean;
+    /** This will be handled internally for keyboard navigation */
+    isHovered?: boolean;
+    /** This will be handled internally for keyboard navigation */
+    setIsHovered?: Dispatch<SetStateAction<boolean>>;
 }
