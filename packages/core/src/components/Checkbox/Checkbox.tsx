@@ -1,7 +1,6 @@
 import { CheckIcon, MinimizeIcon } from '@medly-components/icons';
-import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
-import { FocusEvent, FormEvent, forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
+import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
+import { FC, FocusEvent, FormEvent, forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Checkbox.styled';
 import { CheckboxProps } from './types';
@@ -21,10 +20,12 @@ const Component: FC<CheckboxProps> = memo(
             errorText,
             className,
             isHovered,
+            onSelectionFromKeyboard,
             ...inputProps
         } = props;
 
         const [builtInErrorMessage, setErrorMessage] = useState(''),
+            isSelectionKeyPressed = useKeyPress(' '),
             inputId = useMemo(() => id || label, [id, label]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             isActive = useMemo(
@@ -49,6 +50,19 @@ const Component: FC<CheckboxProps> = memo(
                 (event: FormEvent<HTMLInputElement>) => validate(event, props.onChange, false),
                 [validate, props.onChange]
             );
+
+        useEffect(() => {
+            isHovered &&
+                inputRef.current?.scrollIntoView({
+                    block: 'nearest'
+                });
+        }, [isHovered]);
+
+        useEffect(() => {
+            if (isHovered && isSelectionKeyPressed && onSelectionFromKeyboard) {
+                onSelectionFromKeyboard(!inputRef.current?.checked);
+            }
+        }, [isHovered, isSelectionKeyPressed]);
 
         return (
             <>

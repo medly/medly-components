@@ -34,6 +34,7 @@ const Component: FC<CheckboxGroupProps> = memo(
             [builtInErrorMessage, setErrorMessage] = useState(''),
             isUpKeyPressed = useKeyPress('ArrowUp'),
             isDownKeyPressed = useKeyPress('ArrowDown'),
+            isSelectionKeyPressed = useKeyPress(' '),
             checkboxGroupId = useMemo(() => id || label, [id, label]),
             checkboxGroupRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
             hasError = useMemo(
@@ -45,7 +46,7 @@ const Component: FC<CheckboxGroupProps> = memo(
             areAllValuesSelected = useMemo(() => allChildValues.every(val => values?.includes(val)), [options, values]),
             indeterminate = useMemo(
                 () => !areAllValuesSelected && allChildValues.some(el => values?.includes(el)),
-                [areAllValuesSelected, allChildValues]
+                [areAllValuesSelected, allChildValues, isSelectionKeyPressed]
             );
 
         const validate = useCallback(
@@ -78,6 +79,14 @@ const Component: FC<CheckboxGroupProps> = memo(
                 },
                 [values, onChange]
             ),
+            handleSelectionFromKeyboard = useCallback(
+                (item: any) => (isChecked: boolean) => {
+                    const newValues = isChecked ? [...values!, item] : values!.filter(vl => vl !== item);
+                    validate(newValues);
+                    onChange(newValues);
+                },
+                [values, onChange]
+            ),
             handleSelectAllClick = useCallback(() => {
                 const newValues = areAllValuesSelected
                     ? values!.filter(val => !allChildValues.includes(val))
@@ -97,6 +106,10 @@ const Component: FC<CheckboxGroupProps> = memo(
                 setCursor(prevState => (prevState < options.length ? prevState + 1 : prevState));
             }
         }, [isHovered, isDownKeyPressed, options]);
+
+        useEffect(() => {
+            isHovered && options.length && isSelectionKeyPressed && cursor === -1 && handleSelectAllClick();
+        }, [isHovered, isSelectionKeyPressed, options, cursor]);
 
         useEffect(() => {
             if (isHovered && setIsHovered) {
@@ -182,6 +195,7 @@ const Component: FC<CheckboxGroupProps> = memo(
                                 hasError={hasError}
                                 id={`${option.label}-${checkboxGroupId}`}
                                 isHovered={isHovered && cursor === index}
+                                onSelectionFromKeyboard={handleSelectionFromKeyboard(option.value)}
                             />
                         );
                     })}

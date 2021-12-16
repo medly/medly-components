@@ -48,6 +48,7 @@ const Component: FC<MultiSelectProps> = memo(
             [isParentCursorEnabled, setIsParentCursorEnabled] = useState(true),
             isUpKeyPressed = useKeyPress('ArrowUp'),
             isDownKeyPressed = useKeyPress('ArrowDown'),
+            isSelectKeyPressed = useKeyPress(' '),
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [builtInErrorMessage, errorText]),
             showCreatableOption = useMemo(
                 () =>
@@ -76,13 +77,15 @@ const Component: FC<MultiSelectProps> = memo(
             ),
             handleInputChange = useCallback(
                 ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
-                    setInputValue(value);
-                    const newOptions = filterOptions(options, value);
-                    newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
-                    onInputChange && onInputChange(value);
-                    !areOptionsVisible && setOptionsVisibilityState(true);
+                    if (!isSelectKeyPressed) {
+                        setInputValue(value);
+                        const newOptions = filterOptions(options, value);
+                        newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
+                        onInputChange && onInputChange(value);
+                        !areOptionsVisible && setOptionsVisibilityState(true);
+                    }
                 },
-                [areOptionsVisible, options, updateToDefaultOptions, onInputChange]
+                [areOptionsVisible, options, updateToDefaultOptions, onInputChange, isSelectKeyPressed]
             ),
             handleOptionClick = useCallback(
                 (latestValues: any[]) => {

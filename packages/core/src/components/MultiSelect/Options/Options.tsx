@@ -37,6 +37,13 @@ const Component: FC<OptionsProps> = memo(props => {
             },
             [selectedValues, onOptionClick]
         ),
+        handleSelectionFromKeyboard = useCallback(
+            (item: any) => (isChecked: boolean) => {
+                const newValues = isChecked ? [...selectedValues, item] : selectedValues.filter(vl => vl !== item);
+                onOptionClick(newValues);
+            },
+            [selectedValues, onOptionClick]
+        ),
         handleClearHandler = useCallback(
             value => {
                 const newValues = selectedValues.filter(vl => vl !== value);
@@ -97,6 +104,7 @@ const Component: FC<OptionsProps> = memo(props => {
                                     checked={selectedValues.includes(op.value)}
                                     isHovered={cursor === index}
                                     onChange={handleCheckboxClick(op.value)}
+                                    onSelectionFromKeyboard={handleSelectionFromKeyboard(op.value)}
                                 />
                             )}
                         </Fragment>

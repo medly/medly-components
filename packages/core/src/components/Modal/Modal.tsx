@@ -28,7 +28,6 @@ const Component: FC<ModalProps> = memo(
             handleScroll = useScrollState({ ref: innerContainerRef, scrollState, dispatch });
 
         const handleBackgroundClick = useCallback(() => {
-                console.log('handleBgClick');
                 shouldCloseOnOutsideClick && onCloseModal && onCloseModal();
             }, [shouldCloseOnOutsideClick, onCloseModal]),
             handleAnimationEnd = useCallback(() => {

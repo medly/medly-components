@@ -27,4 +27,6 @@ export interface CheckboxProps extends InputProps {
     hasError?: boolean;
     /** This will be used internally by the Checkbox group for keyboard navigation */
     isHovered?: boolean;
+    /** This will be used internally by the Checkbox group for keyboard navigation */
+    onSelectionFromKeyboard?: (isChecked: boolean) => void;
 }
