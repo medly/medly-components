@@ -17,6 +17,16 @@ describe('MultiSelect component', () => {
             }
         ];
 
+    const downArrowKeyPress = (container: HTMLElement) => {
+        fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
+        fireEvent.keyUp(container, { key: 'ArrowDown', code: 40 });
+    };
+
+    const upArrowKeyPress = (container: HTMLElement) => {
+        fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
+        fireEvent.keyUp(container, { key: 'ArrowUp', code: 38 });
+    };
+
     it('should render correctly with default props', () => {
         const mockOnChange = jest.fn(),
             { container } = render(<MultiSelect value={['Dummy1', 'Dummy2']} options={options} onChange={mockOnChange} />);
@@ -273,6 +283,20 @@ describe('MultiSelect component', () => {
         const input = screen.getByRole('textbox');
         fireEvent.change(input, { target: { value: option } });
         fireEvent.keyDown(input, { key: 'Enter', code: 13 });
+        expect(mockOnChange).toHaveBeenCalledWith([option]);
+    });
+
+    it('should select an option using keyboard navigation', async () => {
+        const option = 'Dummy1';
+        const mockOnChange = jest.fn();
+        render(<MultiSelect options={options} onChange={mockOnChange} />);
+        fireEvent.click(screen.getByRole('textbox'));
+        const input = screen.getByRole('list');
+        downArrowKeyPress(input);
+        downArrowKeyPress(input);
+        downArrowKeyPress(input);
+        upArrowKeyPress(input);
+        fireEvent.keyDown(input, { key: ' ', code: 32 });
         expect(mockOnChange).toHaveBeenCalledWith([option]);
     });
 });
