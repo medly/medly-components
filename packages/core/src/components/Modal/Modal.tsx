@@ -1,7 +1,6 @@
 import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
 import type { FC } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useReducer, useRef, useState } from 'react';
-import Button from '../Button';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
@@ -51,16 +50,10 @@ const Component: FC<ModalProps> = memo(
             open && isEscPressed && onCloseModal && onCloseModal();
         }, [open, isEscPressed]);
 
-        const tempHandler = () => {
-            onCloseModal && onCloseModal();
-        };
-
         return shouldRender ? (
             <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
                 <Popup ref={modalRef} id={`${id}-popup`} onAnimationEnd={handleAnimationEnd} {...{ minWidth, minHeight, open }}>
-                    <Button variant="flat" type="button" onClick={tempHandler}>
-                        <CloseIcon id={`${id}-close-button`} title={`${id}-close-icon`} size="M" variant="solid" />
-                    </Button>
+                    <CloseIcon id={`${id}-close-button`} title={`${id}-close-icon`} size="M" variant="solid" onClick={onCloseModal} />
                     <InnerContainerStyled
                         id={`${id}-inner-container`}
                         ref={innerContainerRef}
