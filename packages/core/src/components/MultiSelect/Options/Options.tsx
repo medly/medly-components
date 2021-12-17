@@ -29,20 +29,16 @@ const Component: FC<OptionsProps> = memo(props => {
             options.forEach(op => (values.includes(op.value) ? newValues.add(op.value) : newValues.delete(op.value)));
             onOptionClick(Array.from(newValues));
         },
-        handleCheckboxClick = useCallback(
-            (item: any) => (event: React.ChangeEvent<HTMLInputElement>) => {
-                const isChecked = event.target.checked,
-                    newValues = isChecked ? [...selectedValues, item] : selectedValues.filter(vl => vl !== item);
-                onOptionClick(newValues);
-            },
-            [selectedValues, onOptionClick]
-        ),
-        handleSelectionFromKeyboard = useCallback(
+        handleOptionSelection = useCallback(
             (item: any) => (isChecked: boolean) => {
                 const newValues = isChecked ? [...selectedValues, item] : selectedValues.filter(vl => vl !== item);
                 onOptionClick(newValues);
             },
             [selectedValues, onOptionClick]
+        ),
+        handleCheckboxClick = useCallback(
+            (item: any) => (event: React.ChangeEvent<HTMLInputElement>) => handleOptionSelection(item)(event.target.checked),
+            [handleOptionSelection]
         ),
         handleClearHandler = useCallback(
             value => {
@@ -104,7 +100,7 @@ const Component: FC<OptionsProps> = memo(props => {
                                     checked={selectedValues.includes(op.value)}
                                     isHovered={cursor === index}
                                     onChange={handleCheckboxClick(op.value)}
-                                    onSelectionFromKeyboard={handleSelectionFromKeyboard(op.value)}
+                                    onSelectionFromKeyboard={handleOptionSelection(op.value)}
                                 />
                             )}
                         </Fragment>

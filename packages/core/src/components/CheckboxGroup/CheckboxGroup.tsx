@@ -68,24 +68,21 @@ const Component: FC<CheckboxGroupProps> = memo(
                 [validate, values, props.onBlur]
             );
 
-        const handleOptionClick = useCallback(
-                (event: ChangeEvent<HTMLInputElement>) => {
-                    event.stopPropagation();
-                    const item = event.target.name,
-                        isChecked = event.target.checked,
-                        newValues = isChecked ? [...values!, item] : values!.filter(vl => vl !== item);
-                    validate(newValues);
-                    onChange(newValues);
-                },
-                [values, onChange]
-            ),
-            handleSelectionFromKeyboard = useCallback(
+        const handleOptionSelection = useCallback(
                 (item: any) => (isChecked: boolean) => {
                     const newValues = isChecked ? [...values!, item] : values!.filter(vl => vl !== item);
                     validate(newValues);
                     onChange(newValues);
                 },
                 [values, onChange]
+            ),
+            handleOptionClick = useCallback(
+                (event: ChangeEvent<HTMLInputElement>) => {
+                    event.stopPropagation();
+                    const { name, checked } = event.target as HTMLInputElement;
+                    handleOptionSelection(name)(checked);
+                },
+                [handleOptionSelection]
             ),
             handleSelectAllClick = useCallback(() => {
                 const newValues = areAllValuesSelected
@@ -195,7 +192,7 @@ const Component: FC<CheckboxGroupProps> = memo(
                                 hasError={hasError}
                                 id={`${option.label}-${checkboxGroupId}`}
                                 isHovered={isHovered && cursor === index}
-                                onSelectionFromKeyboard={handleSelectionFromKeyboard(option.value)}
+                                onSelectionFromKeyboard={handleOptionSelection(option.value)}
                             />
                         );
                     })}
