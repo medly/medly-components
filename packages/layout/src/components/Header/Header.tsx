@@ -15,7 +15,7 @@ const Header: FC<HeaderProps> & HeaderStaticProps & WithStyle = ({ children, wit
                 {withNav && (
                     <HamburgerIcon
                         data-testid="hamburger-icon"
-                        iconColor={layoutDefaultTheme.header.fontColor}
+                        iconColor={layoutDefaultTheme.header.navItem.textColor.default}
                         onClick={() => toggleIsOpen(true)}
                         size="L"
                     />

@@ -8,14 +8,12 @@ const header: HeaderTheme = {
         mobile: '64px',
         desktop: '72px'
     },
-    fontColor: colors.white,
     nav: {
         gutterSpace: '0.8rem'
     },
     navItem: {
-        fontColor: colors.white,
-        activeColor: colors.blue[600],
-        hoverColor: colors.blue[700],
+        textColor: { active: colors.medlyGreen[500], default: colors.white, hovered: colors.white, pressed: colors.white },
+        bgColor: { active: 'transparent', default: 'transparent', hovered: colors.everGreen[500], pressed: colors.everGreen[600] },
         activeIndicatorColor: colors.medlyGreen[500],
         height: {
             mobile: '48px',
