@@ -1,3 +1,4 @@
+import { Logo } from '@medly-components/core';
 import { MenuIcon } from '@medly-components/icons';
 import { breakpoints, media } from '@medly-components/utils';
 import styled from 'styled-components';
@@ -20,12 +21,27 @@ export const Content = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    position: relative;
     max-width: ${({ theme }) => theme.header.maxContentWidth};
     color: ${({ theme }) => theme.header.fontColor};
     padding: 0 1.6rem;
 
+    ${Logo.Style} {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     ${({ theme }) => media(breakpoints(theme.breakpoints).up('M'))`
         padding: 0 3.2rem;
+    `}
+
+    ${({ theme }) => media(breakpoints(theme.breakpoints).up('L'))`
+         ${Logo.Style} {
+            position: static;
+            left: unset;
+            transform: none;
+        }
     `}
 `;
 

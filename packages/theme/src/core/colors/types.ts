@@ -27,6 +27,7 @@ export interface ColorPallet {
     black: string;
     white: string;
     professionalNavy: string;
+    everGreen: Color;
     grey: GreyScale;
     medlyGreen: Color;
     blue: Color;

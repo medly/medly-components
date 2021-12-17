@@ -5,14 +5,12 @@ export interface HeaderTheme {
         mobile: string;
         desktop: string;
     };
-    fontColor: string;
     nav: {
         gutterSpace: string;
     };
     navItem: {
-        fontColor: string;
-        activeColor: string;
-        hoverColor: string;
+        textColor: { default: string; hovered: string; pressed: string; active: string };
+        bgColor: { default: string; hovered: string; pressed: string; active: string };
         activeIndicatorColor: string;
         height: {
             mobile: string;

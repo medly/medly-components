@@ -1,12 +1,22 @@
 import { breakpoints, media } from '@medly-components/utils';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const style = (state: 'default' | 'hovered' | 'pressed' | 'active') => css`
+    color: ${({ theme }) => theme.header.navItem.textColor[state]};
+    background: ${({ theme }) => theme.header.navItem.bgColor[state]};
+
+    svg {
+        * {
+            fill: ${({ theme }) => theme.header.navItem.textColor[state]};
+        }
+    }
+`;
 
 export type NavItemProps = { isActive?: boolean };
 export const NavItem = styled.button<NavItemProps>`
     color: ${({ theme }) => theme.header.navItem.fontColor};
     padding: 0 1.2rem;
-    border-radius: 1rem;
-    background: ${({ theme, ...props }) => (props.isActive ? theme.header.navItem.activeColor : theme.header.backgroundColor)};
+    border-radius: 0.4rem;
     border: none;
     font-family: inherit;
     text-decoration: none;
@@ -20,6 +30,27 @@ export const NavItem = styled.button<NavItemProps>`
     text-align: left;
     grid-auto-columns: max-content;
     cursor: pointer;
+    transition: all 100ms ease-out;
+
+    ${({ isActive }) => style(isActive ? 'active' : 'default')};
+
+    :hover {
+        ${style('hovered')};
+    }
+
+    :active {
+        ${style('pressed')};
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: ${({ isActive }) => (isActive ? 'block' : 'none')};
+        background: ${({ theme }) => theme.header.navItem.activeIndicatorColor};
+        width: 0.4rem;
+        left: -1rem;
+        height: 100%;
+    }
 
     ${({ theme, isActive }) => media(breakpoints(theme.breakpoints).up('L'))`
         background: ${theme.header.backgroundColor};
@@ -29,20 +60,11 @@ export const NavItem = styled.button<NavItemProps>`
         font-weight: ${isActive ? theme.font.weights.Medium : theme.font.weights.Regular};
         padding: 0 1.6rem;
 
-        &::before {
-            display: ${isActive ? 'block' : 'none'};
-            content: '';
-            position: absolute;
+        &::after {
+            bottom: calc((${theme.header.navItem.height.desktop} - ${theme.header.height.desktop}) / 2);
             width: calc(100% - 1.6rem * 2);
-            top: calc((${theme.header.navItem.height.desktop} - ${theme.header.height.desktop}) / 2);
             left: 1.6rem;
-            background: ${theme.header.navItem.activeIndicatorColor};
-            height: 4px;
-            border-radius: 0 0 2px 2px;
-        }
-
-        &:hover {
-            background-color: ${theme.header.navItem.hoverColor};
+            height: 0.4rem;
         }
     `}
 
