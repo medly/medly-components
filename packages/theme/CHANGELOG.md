@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/medly/medly-components/compare/@medly-components/theme@3.1.1...@medly-components/theme@4.0.0) (2021-12-17)
+
+
+### Features
+
+* update header component style as per new style ([#559](https://github.com/medly/medly-components/issues/559)) ([18199c8](https://github.com/medly/medly-components/commit/18199c875539ec07d4a0e82e341e2d92fd1aa6ce))
+
+
+### BREAKING CHANGES
+
+* theme structure of header component is changed to accomodate new style
+
+
+
+
+
 ## [3.1.1](https://github.com/medly/medly-components/compare/@medly-components/theme@3.1.0...@medly-components/theme@3.1.1) (2021-12-14)
 
 **Note:** Version bump only for package @medly-components/theme
