@@ -20,8 +20,9 @@ const Component: FC<TabListProps> = memo(props => {
                     .map((child: any) => child.props.id),
             [props.children]
         ),
+        enabledTabIds = useMemo(() => Children.toArray(props.children).map((child: any) => child.props.id), [props.children]),
         { 0: first, [tabIds.length - 1]: last } = tabIds,
-        activeTabIdx = tabIds.indexOf(active),
+        activeTabIdx = enabledTabIds.indexOf(active),
         totalTabs = Children.toArray(props.children).length,
         { tabSize, variant } = useContext(TabsContext);
 
