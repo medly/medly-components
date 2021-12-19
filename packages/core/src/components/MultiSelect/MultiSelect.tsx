@@ -163,15 +163,13 @@ const Component: FC<MultiSelectProps> = memo(
         }, wrapperRef);
 
         useEffect(() => {
-            if (isParentCursorEnabled && options.length && isUpKeyPressed) {
-                setCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
-            }
+            if (isParentCursorEnabled && options.length && isUpKeyPressed)
+                setCursor(prevState => (prevState > 0 ? prevState - 1 : options.length - 1));
         }, [isUpKeyPressed, options, isParentCursorEnabled]);
 
         useEffect(() => {
-            if (isParentCursorEnabled && options.length && isDownKeyPressed) {
-                setCursor(prevState => (prevState < options.length - 1 ? prevState + 1 : prevState));
-            }
+            if (isParentCursorEnabled && options.length && isDownKeyPressed)
+                setCursor(prevState => (prevState < options.length - 1 ? prevState + 1 : 0));
         }, [isDownKeyPressed, options, isParentCursorEnabled]);
 
         const ChipEl = () => (
