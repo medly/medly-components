@@ -32,11 +32,11 @@ const Component: FC<CheckboxGroupProps> = memo(
 
         const [cursor, setCursor] = useState(-2),
             [builtInErrorMessage, setErrorMessage] = useState(''),
-            isUpKeyPressed = useKeyPress('ArrowUp'),
-            isDownKeyPressed = useKeyPress('ArrowDown'),
             isSelectionKeyPressed = useKeyPress(' '),
             checkboxGroupId = useMemo(() => id || label, [id, label]),
             checkboxGroupRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
+            isUpKeyPressed = useKeyPress('ArrowUp', false, checkboxGroupRef),
+            isDownKeyPressed = useKeyPress('ArrowDown', false, checkboxGroupRef),
             hasError = useMemo(
                 () => !!errorText || !!builtInErrorMessage || parentHasError,
                 [builtInErrorMessage, errorText, parentHasError]

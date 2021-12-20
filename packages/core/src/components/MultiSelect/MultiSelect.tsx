@@ -46,9 +46,9 @@ const Component: FC<MultiSelectProps> = memo(
             [placeholder, setPlaceholder] = useState(values!.length > 0 ? `${values!.length} options selected` : props.placeholder),
             [cursor, setCursor] = useState(-1),
             [isParentCursorEnabled, setIsParentCursorEnabled] = useState(true),
-            isUpKeyPressed = useKeyPress('ArrowUp'),
-            isDownKeyPressed = useKeyPress('ArrowDown'),
-            isSelectKeyPressed = useKeyPress(' '),
+            isUpKeyPressed = useKeyPress('ArrowUp', false, wrapperRef),
+            isDownKeyPressed = useKeyPress('ArrowDown', false, wrapperRef),
+            isSelectKeyPressed = useKeyPress(' ', false, wrapperRef),
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [builtInErrorMessage, errorText]),
             showCreatableOption = useMemo(
                 () =>
