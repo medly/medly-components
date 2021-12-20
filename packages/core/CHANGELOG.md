@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/medly/medly-components/compare/@medly-components/core@4.0.0...@medly-components/core@4.0.1) (2021-12-20)
+
+
+### Bug Fixes
+
+* fix active tab value for TabList ([#560](https://github.com/medly/medly-components/issues/560)) ([253091b](https://github.com/medly/medly-components/commit/253091bf5a05aed493b8bc757dbd08329a151418))
+
+
+
+
+
 # [4.0.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.7.3...@medly-components/core@4.0.0) (2021-12-17)
 
 
