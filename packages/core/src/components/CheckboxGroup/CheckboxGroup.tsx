@@ -1,5 +1,5 @@
 import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
-import { ChangeEvent, FC, FocusEvent, forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ChangeEvent, FC, FocusEvent, forwardRef, memo, MutableRefObject, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Checkbox from '../Checkbox';
 import { SelectorGroup } from '../Selectors';
 import getValuesFromOptions from './getValuesFromOptions';
@@ -35,8 +35,8 @@ const Component: FC<CheckboxGroupProps> = memo(
             isSelectionKeyPressed = useKeyPress(' '),
             checkboxGroupId = useMemo(() => id || label, [id, label]),
             checkboxGroupRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
-            isUpKeyPressed = useKeyPress('ArrowUp', false, checkboxGroupRef),
-            isDownKeyPressed = useKeyPress('ArrowDown', false, checkboxGroupRef),
+            isUpKeyPressed = useKeyPress('ArrowUp', false, ref as MutableRefObject<HTMLDivElement>),
+            isDownKeyPressed = useKeyPress('ArrowDown', false, ref as MutableRefObject<HTMLDivElement>),
             hasError = useMemo(
                 () => !!errorText || !!builtInErrorMessage || parentHasError,
                 [builtInErrorMessage, errorText, parentHasError]
