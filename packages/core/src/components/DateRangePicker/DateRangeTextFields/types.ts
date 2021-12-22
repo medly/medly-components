@@ -1,5 +1,5 @@
+import type { ChangeEvent, Dispatch, RefObject, SetStateAction } from 'react';
 import { DateRangeProps, DateRangeType, PopoverTypes } from '../types';
-import type { Dispatch, RefObject, SetStateAction } from 'react';
 
 export type Props = {
     id: string;
@@ -22,7 +22,7 @@ export type Props = {
     setFocusedElement: Dispatch<SetStateAction<'START_DATE' | 'END_DATE'>>;
     startDateRef: RefObject<HTMLInputElement>;
     endDateRef: RefObject<HTMLInputElement>;
-    validator?: (val: DateRangeType, eventType?: string) => string;
+    validator?: (val: DateRangeType, eventType: ChangeEvent<HTMLInputElement>) => string;
     showTooltipForHelperAndErrorText?: boolean;
     onCustomRangeIconClick: () => void;
     outerClickValidator: RefObject<() => void>;
