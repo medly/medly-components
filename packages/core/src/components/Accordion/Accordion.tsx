@@ -1,22 +1,27 @@
+import type { FC } from 'react';
 import { memo, useState } from 'react';
 import { Section } from './Accordion.styled';
 import { AccordionContext } from './AccordionContext';
 import Content from './Content';
 import Header from './Header';
-import { StaticProps } from './types';
-import type { FC } from 'react';
-const Component: FC = memo(props => {
-    const activeState = useState(false);
+import { AccordionProps, StaticProps } from './types';
+
+const Component: FC<AccordionProps> = memo(({ active, defaultActive, onChange, ...restProps }) => {
+    const activeState = useState(defaultActive as boolean);
 
     return (
-        <AccordionContext.Provider value={activeState}>
-            <Section {...props} />
+        <AccordionContext.Provider value={active !== undefined && onChange !== undefined ? [active, onChange] : activeState}>
+            <Section {...restProps} />
         </AccordionContext.Provider>
     );
 });
+
+Component.defaultProps = {
+    defaultActive: false
+};
 Component.displayName = 'Accordion';
 
-export const Accordion: FC & StaticProps = Object.assign(Component, {
+export const Accordion: FC<AccordionProps> & StaticProps = Object.assign(Component, {
     Header,
     Content,
     Context: AccordionContext
