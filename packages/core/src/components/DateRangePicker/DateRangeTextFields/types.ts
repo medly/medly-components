@@ -25,5 +25,5 @@ export type Props = {
     validator?: (val: DateRangeType, eventType: ChangeEvent<HTMLInputElement>) => string;
     showTooltipForHelperAndErrorText?: boolean;
     onCustomRangeIconClick: () => void;
-    outerClickValidator: RefObject<() => void>;
+    outerClickValidator: RefObject<(e: MouseEvent) => void>;
 };
