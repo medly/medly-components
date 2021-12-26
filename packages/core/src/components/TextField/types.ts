@@ -1,6 +1,6 @@
 import { TextFieldTheme } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { ChangeEvent, FC } from 'react';
 
 export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'> {
     /** Input Variants */
@@ -8,7 +8,7 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     /** Input Size */
     size?: 'S' | 'M';
     /** Function will called with the input value on blur and invalid event */
-    validator?: (val: any, eventType?: string) => string;
+    validator?: (val: any, eventType: ChangeEvent<HTMLInputElement>) => string;
     /** Mask format eg. DD / MM / YYYY */
     mask?: string;
     /** Set it true if you do not want to validate on blur event*/

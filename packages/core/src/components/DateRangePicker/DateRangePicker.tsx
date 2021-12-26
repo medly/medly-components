@@ -1,4 +1,5 @@
 import { useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
+import type { FC } from 'react';
 import { memo, useCallback, useMemo, useRef, useState } from 'react';
 import * as TextFieldStyled from '../TextField/Styled';
 import CustomDateRangeOptions from './CustomDateRangeOptions';
@@ -6,7 +7,6 @@ import DateRangeCalendar from './DateRangeCalendar';
 import DateRangeTextFields from './DateRangeTextFields';
 import { dateRangeHelpers } from './helpers/dateRangeHelpers';
 import { DateRangeProps, DateRangeSelectionEnum, PopoverTypes } from './types';
-import type { FC } from 'react';
 
 export const DateRangePicker: FC<DateRangeProps> = memo(props => {
     const {
@@ -39,7 +39,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
     const startDateRef = useRef<HTMLInputElement>(null),
         endDateRef = useRef<HTMLInputElement>(null),
         wrapperRef = useRef<HTMLDivElement>(null),
-        outerClickValidator = useRef<() => void>(null),
+        outerClickValidator = useRef<(e: MouseEvent) => void>(null),
         [isActive, setActive] = useState(false),
         [activePopover, setActivePopover] = useState<PopoverTypes>(PopoverTypes.CALENDAR),
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
@@ -84,10 +84,10 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
             [onChange, focusElement]
         );
 
-    useOuterClickNotifier(() => {
+    useOuterClickNotifier((e: MouseEvent) => {
         setActive(false);
         isActive && onPopupClose && onPopupClose();
-        isActive && outerClickValidator.current && outerClickValidator.current();
+        isActive && outerClickValidator.current && outerClickValidator.current(e);
     }, wrapperRef);
     useUpdateEffect(() => focusElement(focusedElement), [focusedElement]);
 
