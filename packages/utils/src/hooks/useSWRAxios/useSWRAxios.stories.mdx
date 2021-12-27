@@ -8,7 +8,7 @@ import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
 This react hook can be used to call the api using `swr` and `axios`. `swr` helps to cache the data. With SWR, components will get a stream of data updates constantly and automatically. And the UI will be always fast and reactive. Chekout more about `swr` over [here](https://swr.vercel.app/)
 
 ```tsx
-const { data, isValidating, error } = useSWRAxios<DataType, ErrorType>(string | AxiosRequestConfig, SWRCongig);
+const { data, isValidating, error } = useSWRAxios<DataType, ErrorType>(string | AxiosRequestConfig, SWRConfig);
 ```
 
 The first param could be either url or AxiosRequestConfig.
