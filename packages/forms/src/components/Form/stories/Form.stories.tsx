@@ -22,6 +22,7 @@ export const CommonProps: FC<
             | 'date'
             | 'date-range'
             | 'url'
+            | 'number'
             | 'tel'
             | 'time'
             | 'month'
