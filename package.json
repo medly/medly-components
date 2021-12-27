@@ -162,5 +162,7 @@
         "tsconfig-paths-webpack-plugin": "^3.2.0",
         "webpack": "^4.43.0"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@etchteam/storybook-addon-status": "^4.1.0"
+    }
 }

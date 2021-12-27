@@ -15,7 +15,10 @@ import { ColumnConfigInterface, WithGreyBackground, WithWhiteBackground, Theme }
             'CardTable/Body/Body.test.tsx',
             'CardTable/Body/Row/Row.test.tsx',
             'CardTable/Body/Cell/Cell.test.tsx'
-        ]
+        ],
+        status: {
+            type: 'deprecated'
+        }
     }}
 />
 
@@ -70,7 +73,7 @@ Only two props are required: `data` and `columns`.
 
 #### ColumnConfig
 
-To change the style of an individual column, provide an array of the following column config to the table.  
+To change the style of an individual column, provide an array of the following column config to the table.
 
 <Props of={ColumnConfigInterface} />
 
@@ -93,7 +96,7 @@ const columns: ColumnConfig[] = [
 
 #### Custom Cells
 
-To change the style of any cell, you can provide a custom component as follows: 
+To change the style of any cell, you can provide a custom component as follows:
 
 ```tsx
 import { GetComponentProps } from '@medly-components/utils';
