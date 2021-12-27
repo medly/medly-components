@@ -1,5 +1,5 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import type { ChangeEvent, FC, FocusEvent, FormEvent } from 'react';
+import type { ChangeEvent, FC } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { HelperAndErrorTextTooltip } from '../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import getMaskedValue from './getMaskedValue';
@@ -52,10 +52,10 @@ const Component: FC<TextFieldProps> = memo(
             );
 
         const validate = useCallback(
-            (event: FormEvent<HTMLInputElement>, eventFunc?: (e: any) => void) => {
+            (event: ChangeEvent<HTMLInputElement>, eventFunc?: (e: any) => void) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
-                    validatorMessage = (validator && validator(element.value, event.type)) || '',
+                    validatorMessage = (validator && validator(element.value, event)) || '',
                     message = validator ? validatorMessage : element.validationMessage;
                 setErrorMessage(message);
                 validator && inputRef.current?.setCustomValidity(validatorMessage);
@@ -66,8 +66,11 @@ const Component: FC<TextFieldProps> = memo(
 
         const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
             handleWrapperClick = useCallback(() => !disabled && inputRef.current?.focus(), [inputRef, disabled]),
-            onBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
-            onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
+            onBlur = useCallback((event: ChangeEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
+            onInvalid = useCallback(
+                (event: ChangeEvent<HTMLInputElement>) => validate(event, props.onInvalid),
+                [validate, props.onInvalid]
+            ),
             onChange = useCallback(
                 (e: ChangeEvent<HTMLInputElement>) => {
                     const valueString = e.target.value ? e.target.value.toString() : '';

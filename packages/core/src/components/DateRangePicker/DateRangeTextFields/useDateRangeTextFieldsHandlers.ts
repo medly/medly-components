@@ -1,5 +1,5 @@
 import { parseToDate } from '@medly-components/utils';
-import { FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
+import { ChangeEvent, FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import { isValidDate } from '../../Calendar/helper';
 import getMaskedValue from '../../TextField/getMaskedValue';
 import { getFormattedDate } from '../helpers';
@@ -86,10 +86,10 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
             [selectedDates, onDateChange]
         ),
         validateOnTextFieldInvalid = useCallback(
-            (event: FormEvent<HTMLInputElement>) => {
+            (event: ChangeEvent<HTMLInputElement>) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
-                    validatorMessage = (validator && validator(selectedDates, 'invalid')) || '',
+                    validatorMessage = (validator && validator(selectedDates, event)) || '',
                     isInvalidDate = element.value && parseToDate(element.value, displayFormat).toString() === 'Invalid Date',
                     message = validator ? validatorMessage : element.validationMessage || (isInvalidDate ? 'Enter valid date' : '');
                 setErrorMessage(message);
@@ -97,16 +97,19 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
             },
             [validator, displayFormat, selectedDates, onDateChange]
         ),
-        validateOnWrapperBlur = useCallback(() => {
-            const validatorMessage = (validator && validator(selectedDates, 'blur')) || '',
-                customMessage = (required && !selectedDates.startDate && !selectedDates.endDate && 'Please fill in this field.') || '',
-                message = validator ? validatorMessage : customMessage;
-            setErrorMessage(message);
-            if (validator) {
-                startDateRef.current?.setCustomValidity(validatorMessage);
-                endDateRef.current?.setCustomValidity(validatorMessage);
-            }
-        }, [validator, selectedDates, required]);
+        validateOnWrapperBlur = useCallback(
+            (event: ChangeEvent<HTMLInputElement>) => {
+                const validatorMessage = (validator && validator(selectedDates, event)) || '',
+                    customMessage = (required && !selectedDates.startDate && !selectedDates.endDate && 'Please fill in this field.') || '',
+                    message = validator ? validatorMessage : customMessage;
+                setErrorMessage(message);
+                if (validator) {
+                    startDateRef.current?.setCustomValidity(validatorMessage);
+                    endDateRef.current?.setCustomValidity(validatorMessage);
+                }
+            },
+            [validator, selectedDates, required]
+        );
 
     useEffect(() => {
         const formattedStartDate = selectedDates.startDate ? getFormattedDate(selectedDates.startDate, displayFormat) : '',
