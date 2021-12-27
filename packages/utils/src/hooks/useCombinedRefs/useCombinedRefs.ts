@@ -1,5 +1,12 @@
 import { useEffect, useRef } from 'react';
 
+/**
+ * Combines all the refs provided
+ *
+ * @param {...<T>} refs refs to be combined
+ *
+ * @returns {React.MutableRefObject<T>} The combined ref
+ */
 export const useCombinedRefs = <T>(...refs: any[]) => {
     const targetRef = useRef<T>(null);
 

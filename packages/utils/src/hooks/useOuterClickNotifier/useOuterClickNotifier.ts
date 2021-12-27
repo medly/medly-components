@@ -1,5 +1,11 @@
 import { MutableRefObject, useEffect } from 'react';
 
+/**
+ * Triggers a function when user clicks outside the given ref or presses Esc key
+ *
+ * @param {(e: any) => void} onOuterClick function to be fired when user clicks outside
+ * @param {React.MutableRefObject<any>} innerRef ref of the element
+ */
 export const useOuterClickNotifier = (onOuterClick: (e: any) => void, innerRef: MutableRefObject<any>) => {
     const handleClick = (e: any) => {
         const isReactDatePicker = e.target.closest('[data-testid = "Day"]');
