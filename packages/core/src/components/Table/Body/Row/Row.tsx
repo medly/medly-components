@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import { memo, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import { memo, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { TableComponentsCommonPropsContext } from '../../context';
 import { GroupCell } from '../../GroupCell';
 import { getGridTemplateColumns, getNestedValue } from '../../helpers';
@@ -18,7 +18,6 @@ export const Row: FC<RowProps> = memo(props => {
             id,
             data,
             isNavigated = false,
-            isRowSelectedFromKeyboard,
             isRowExpandedFromKeyboard,
             isRowCollapsedFromKeyboard,
             isRowClickedFromKeyboard,
@@ -55,7 +54,8 @@ export const Row: FC<RowProps> = memo(props => {
             [isLoading, data, onRowClick, isRowClickDisabled, isRowExpandable, handleExpansionIconClick]
         ),
         handleMouseEnter = useCallback(() => setIsRowHovered(true), []),
-        handleMouseLeave = useCallback(() => setIsRowHovered(false), []);
+        handleMouseLeave = useCallback(() => setIsRowHovered(false), []),
+        ref = useRef<HTMLTableRowElement>(null);
 
     const getCells = useCallback(
         (rowData: any = {}, configs: TableColumnConfig[] = columns, field = '') =>
@@ -97,8 +97,11 @@ export const Row: FC<RowProps> = memo(props => {
     );
 
     useEffect(() => {
-        if (isRowSelectedFromKeyboard && !isRowSelectionDisabled) handleRowSelection();
-    }, [isRowSelectedFromKeyboard, isRowSelectionDisabled, handleRowSelection]);
+        if (isNavigated) {
+            if (isRowSelectable && !isRowSelectionDisabled) ref.current?.querySelector('input')?.focus();
+            else ref.current?.focus();
+        }
+    }, [isNavigated]);
 
     useEffect(() => {
         isRowExpandedFromKeyboard && setExpansionState(true);
@@ -116,6 +119,8 @@ export const Row: FC<RowProps> = memo(props => {
         <>
             <Styled.Row
                 {...restProps}
+                ref={ref}
+                tabIndex={Number(id)}
                 disabled={isRowClickDisabled}
                 onClick={handleRowClick}
                 isSelected={isRowSelected}

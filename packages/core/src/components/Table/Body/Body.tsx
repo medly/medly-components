@@ -17,12 +17,11 @@ const Body: FC<TableBodyProps> = memo(props => {
         /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
         tableVisibleWidth = tableRef.current?.clientWidth ?? 0,
         minimapDimensionDeps = useMemo(() => [columns], [columns]),
-        isUpKeyPressed = useKeyPress(keyBindings.up!),
-        isDownKeyPressed = useKeyPress(keyBindings.down!),
-        isSelectionKeyPressed = useKeyPress(keyBindings.selectRow!),
-        isExpansionKeyPressed = useKeyPress(keyBindings.expandRow!),
-        isCollapseKeyPressed = useKeyPress(keyBindings.collapseRow!),
-        isRowClickKeyPressed = useKeyPress(keyBindings.rowClick!);
+        isUpKeyPressed = useKeyPress(keyBindings.up!, false, tableRef),
+        isDownKeyPressed = useKeyPress(keyBindings.down!, false, tableRef),
+        isExpansionKeyPressed = useKeyPress(keyBindings.expandRow!, false, tableRef),
+        isCollapseKeyPressed = useKeyPress(keyBindings.collapseRow!, false, tableRef),
+        isRowClickKeyPressed = useKeyPress(keyBindings.rowClick!, false, tableRef);
 
     useEffect(() => {
         if (data.length && isUpKeyPressed) {
@@ -72,7 +71,6 @@ const Body: FC<TableBodyProps> = memo(props => {
                         selectedRowIds={selectedRowIds}
                         onRowSelection={onRowSelection}
                         isNavigated={index === cursor}
-                        isRowSelectedFromKeyboard={isSelectionKeyPressed && index === cursor}
                         isRowExpandedFromKeyboard={isExpansionKeyPressed && index === cursor}
                         isRowCollapsedFromKeyboard={isCollapseKeyPressed && index === cursor}
                         isRowClickedFromKeyboard={isRowClickKeyPressed && index === cursor}
