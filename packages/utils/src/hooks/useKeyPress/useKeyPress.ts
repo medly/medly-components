@@ -20,22 +20,22 @@ export const useKeyPress = (targetKeys: string | string[], stopPropagation = fal
     const downHandler = useCallback(
         (event: KeyboardEvent) => {
             if (event.repeat) return;
-            setKeyPressed(oldKeys => Array.from(new Set([...oldKeys, event.key])));
-            stopPropagation &&
-                (Array.isArray(targetKeys) ? targetKeys.includes(event.key) : event.key === targetKeys) &&
-                event.stopPropagation();
+            if (Array.isArray(targetKeys) ? targetKeys.includes(event.key) : event.key === targetKeys) {
+                setKeyPressed(oldKeys => Array.from(new Set([...oldKeys, event.key])));
+                stopPropagation && event.stopPropagation();
+            }
         },
-        [stopPropagation]
+        [stopPropagation, targetKeys]
     );
 
     const upHandler = useCallback(
         (event: KeyboardEvent) => {
-            setKeyPressed(oldKeys => oldKeys.filter(oldKey => oldKey !== event.key));
-            stopPropagation &&
-                (Array.isArray(targetKeys) ? targetKeys.includes(event.key) : event.key === targetKeys) &&
-                event.stopPropagation();
+            if (Array.isArray(targetKeys) ? targetKeys.includes(event.key) : event.key === targetKeys) {
+                setKeyPressed(oldKeys => oldKeys.filter(oldKey => oldKey !== event.key));
+                stopPropagation && event.stopPropagation();
+            }
         },
-        [stopPropagation]
+        [stopPropagation, targetKeys]
     );
 
     useEffect(() => {

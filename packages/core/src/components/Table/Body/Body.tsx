@@ -20,19 +20,14 @@ const Body: FC<TableBodyProps> = memo(props => {
         isUpKeyPressed = useKeyPress(keyBindings.up!, false, tableRef),
         isDownKeyPressed = useKeyPress(keyBindings.down!, false, tableRef),
         isExpansionKeyPressed = useKeyPress(keyBindings.expandRow!, false, tableRef),
-        isCollapseKeyPressed = useKeyPress(keyBindings.collapseRow!, false, tableRef),
-        isRowClickKeyPressed = useKeyPress(keyBindings.rowClick!, false, tableRef);
+        isCollapseKeyPressed = useKeyPress(keyBindings.collapseRow!, false, tableRef);
 
     useEffect(() => {
-        if (data.length && isUpKeyPressed) {
-            setCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
-        }
+        data.length && isUpKeyPressed && setCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
     }, [isUpKeyPressed, data]);
 
     useEffect(() => {
-        if (data.length && isDownKeyPressed) {
-            setCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
-        }
+        data.length && isDownKeyPressed && setCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
     }, [isDownKeyPressed, data]);
 
     return (
@@ -73,7 +68,6 @@ const Body: FC<TableBodyProps> = memo(props => {
                         isNavigated={index === cursor}
                         isRowExpandedFromKeyboard={isExpansionKeyPressed && index === cursor}
                         isRowCollapsedFromKeyboard={isCollapseKeyPressed && index === cursor}
-                        isRowClickedFromKeyboard={isRowClickKeyPressed && index === cursor}
                         {...restProps}
                     />
                 );

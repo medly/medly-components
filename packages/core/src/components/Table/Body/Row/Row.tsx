@@ -1,3 +1,4 @@
+import { useKeyPress, useUpdateEffect } from '@medly-components/utils';
 import type { FC } from 'react';
 import { memo, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { TableComponentsCommonPropsContext } from '../../context';
@@ -20,13 +21,13 @@ export const Row: FC<RowProps> = memo(props => {
             isNavigated = false,
             isRowExpandedFromKeyboard,
             isRowCollapsedFromKeyboard,
-            isRowClickedFromKeyboard,
             showShadowAfterFrozenElement,
             selectedRowIds,
             onRowSelection,
             ...restProps
         } = props,
         {
+            keyBindings,
             columns,
             isLoading,
             onRowClick,
@@ -55,7 +56,8 @@ export const Row: FC<RowProps> = memo(props => {
         ),
         handleMouseEnter = useCallback(() => setIsRowHovered(true), []),
         handleMouseLeave = useCallback(() => setIsRowHovered(false), []),
-        ref = useRef<HTMLTableRowElement>(null);
+        ref = useRef<HTMLTableRowElement>(null),
+        isRowClickKeyPressed = useKeyPress(keyBindings.rowClick!, false, ref);
 
     const getCells = useCallback(
         (rowData: any = {}, configs: TableColumnConfig[] = columns, field = '') =>
@@ -111,9 +113,9 @@ export const Row: FC<RowProps> = memo(props => {
         isRowCollapsedFromKeyboard && setExpansionState(false);
     }, [isRowCollapsedFromKeyboard]);
 
-    useEffect(() => {
-        isRowClickedFromKeyboard && handleRowClick && handleRowClick();
-    }, [isRowClickedFromKeyboard]);
+    useUpdateEffect(() => {
+        isNavigated && isRowClickKeyPressed && handleRowClick && handleRowClick();
+    }, [isRowClickKeyPressed, isNavigated]);
 
     return (
         <>

@@ -11,7 +11,6 @@ export const loadingBodyData = [{ id: 'loading1' }, { id: 'loading2' }, { id: 'l
 export const defaultKeyBindings: KeyBindings = {
     up: 'ArrowUp',
     down: 'ArrowDown',
-    selectRow: ' ',
     expandRow: 'ArrowRight',
     collapseRow: 'ArrowLeft',
     rowClick: 'Enter'
