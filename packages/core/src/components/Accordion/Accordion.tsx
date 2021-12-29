@@ -7,7 +7,7 @@ import Header from './Header';
 import { AccordionProps, StaticProps } from './types';
 
 const Component: FC<AccordionProps> = memo(({ active, defaultActive, onChange, ...restProps }) => {
-    const activeState = useState(defaultActive as boolean);
+    const activeState = useState(defaultActive!);
 
     return (
         <AccordionContext.Provider value={active !== undefined && onChange !== undefined ? [active, onChange] : activeState}>
