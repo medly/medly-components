@@ -19,7 +19,8 @@ const Component: FC<OptionsProps> = memo(props => {
         setIsParentCursorEnabled,
         onOptionClick,
         showCreatableOption,
-        handleCreatableOptionClick
+        handleCreatableOptionClick,
+        keybindings
     } = props;
 
     const selectedValues = useMemo(() => values.map(op => op.value), [values]),
@@ -92,6 +93,7 @@ const Component: FC<OptionsProps> = memo(props => {
                                     setIsHovered={setIsParentCursorEnabled}
                                     onChange={handleGroupClick(op.value)}
                                     fullWidthOptions={true}
+                                    keybindings={keybindings}
                                 />
                             ) : (
                                 <Checkbox
