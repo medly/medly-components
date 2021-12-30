@@ -98,15 +98,14 @@ const Component: FC<CheckboxGroupProps> = memo(
         }, checkboxGroupRef);
 
         useEffect(() => {
-            if (isHovered && options.length && isUpKeyPressed) {
-                setCursor(prevState => (prevState > -1 ? prevState - 1 : options.length - 1));
-            }
+            isHovered && options.length && isUpKeyPressed && setCursor(prevState => (prevState > -1 ? prevState - 1 : options.length - 1));
         }, [isHovered, isUpKeyPressed, options]);
 
         useEffect(() => {
-            if (isHovered && options.length && isDownKeyPressed) {
+            isHovered &&
+                options.length &&
+                isDownKeyPressed &&
                 setCursor(prevState => (prevState < options.length ? prevState + 1 : prevState));
-            }
         }, [isHovered, isDownKeyPressed, options]);
 
         useEffect(() => {
