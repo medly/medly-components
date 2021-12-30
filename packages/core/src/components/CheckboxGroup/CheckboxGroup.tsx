@@ -1,4 +1,4 @@
-import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import { ChangeEvent, FC, FocusEvent, forwardRef, memo, MutableRefObject, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Checkbox from '../Checkbox';
 import { SelectorGroup } from '../Selectors';
@@ -37,6 +37,7 @@ const Component: FC<CheckboxGroupProps> = memo(
             checkboxGroupRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
             isUpKeyPressed = useKeyPress('ArrowUp', false, ref as MutableRefObject<HTMLDivElement>),
             isDownKeyPressed = useKeyPress('ArrowDown', false, ref as MutableRefObject<HTMLDivElement>),
+            isEscKeyPressed = useKeyPress('Escape', true, ref as MutableRefObject<HTMLDivElement>),
             hasError = useMemo(
                 () => !!errorText || !!builtInErrorMessage || parentHasError,
                 [builtInErrorMessage, errorText, parentHasError]
@@ -92,6 +93,10 @@ const Component: FC<CheckboxGroupProps> = memo(
                 onChange(newValues);
             }, [options, values, onChange]);
 
+        useOuterClickNotifier(() => {
+            setCursor(-2);
+        }, checkboxGroupRef);
+
         useEffect(() => {
             if (isHovered && options.length && isUpKeyPressed) {
                 setCursor(prevState => (prevState > -1 ? prevState - 1 : options.length - 1));
@@ -107,6 +112,10 @@ const Component: FC<CheckboxGroupProps> = memo(
         useEffect(() => {
             isHovered && options.length && isSelectionKeyPressed && cursor === -1 && handleSelectAllClick();
         }, [isHovered, isSelectionKeyPressed, options, cursor]);
+
+        useEffect(() => {
+            isEscKeyPressed && setCursor(-2);
+        }, [isEscKeyPressed]);
 
         useEffect(() => {
             if (isHovered && setIsHovered) {

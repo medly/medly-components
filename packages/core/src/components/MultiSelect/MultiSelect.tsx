@@ -49,6 +49,7 @@ const Component: FC<MultiSelectProps> = memo(
             isUpKeyPressed = useKeyPress('ArrowUp', false, wrapperRef),
             isDownKeyPressed = useKeyPress('ArrowDown', false, wrapperRef),
             isSelectKeyPressed = useKeyPress(' ', false, wrapperRef),
+            isEscKeyPressed = useKeyPress('Escape', true, wrapperRef),
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [builtInErrorMessage, errorText]),
             showCreatableOption = useMemo(
                 () =>
@@ -95,6 +96,7 @@ const Component: FC<MultiSelectProps> = memo(
                 [options, onChange]
             ),
             handleOuterClick = useCallback(() => {
+                setIsParentCursorEnabled(true);
                 areOptionsVisible && updateToDefaultOptions();
                 hideOptions();
             }, [areOptionsVisible]),
@@ -171,6 +173,10 @@ const Component: FC<MultiSelectProps> = memo(
             if (isParentCursorEnabled && options.length && isDownKeyPressed)
                 setCursor(prevState => (prevState < options.length - 1 ? prevState + 1 : 0));
         }, [isDownKeyPressed, options, isParentCursorEnabled]);
+
+        useEffect(() => {
+            isEscKeyPressed && handleOuterClick();
+        }, [isEscKeyPressed]);
 
         const ChipEl = () => (
             <InputSuffix
