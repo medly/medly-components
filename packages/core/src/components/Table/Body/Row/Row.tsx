@@ -1,5 +1,4 @@
-import { useKeyPress, useUpdateEffect } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FC, KeyboardEvent } from 'react';
 import { memo, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { TableComponentsCommonPropsContext } from '../../context';
 import { GroupCell } from '../../GroupCell';
@@ -56,8 +55,7 @@ export const Row: FC<RowProps> = memo(props => {
         ),
         handleMouseEnter = useCallback(() => setIsRowHovered(true), []),
         handleMouseLeave = useCallback(() => setIsRowHovered(false), []),
-        ref = useRef<HTMLTableRowElement>(null),
-        isRowClickKeyPressed = useKeyPress(keyBindings.rowClick!, false, ref);
+        ref = useRef<HTMLTableRowElement>(null);
 
     const getCells = useCallback(
         (rowData: any = {}, configs: TableColumnConfig[] = columns, field = '') =>
@@ -113,9 +111,13 @@ export const Row: FC<RowProps> = memo(props => {
         isRowCollapsedFromKeyboard && setExpansionState(false);
     }, [isRowCollapsedFromKeyboard]);
 
-    useUpdateEffect(() => {
-        isNavigated && isRowClickKeyPressed && handleRowClick && handleRowClick();
-    }, [isRowClickKeyPressed, isNavigated]);
+    // TODO: Check why useKeypress is not working in this case
+    const handleRowClickFromKeyboard = useCallback(
+        (e: KeyboardEvent<HTMLTableRowElement>) => {
+            e.key === keyBindings.rowClick! && isNavigated && handleRowClick && handleRowClick();
+        },
+        [isNavigated, handleRowClick]
+    );
 
     return (
         <>
@@ -134,6 +136,7 @@ export const Row: FC<RowProps> = memo(props => {
                 onMouseLeave={handleMouseLeave}
                 withRowSeparators={withRowSeparators}
                 isNavigated={isNavigated}
+                onKeyDown={handleRowClickFromKeyboard}
             >
                 {(isRowSelectable || isRowExpandable) && (
                     <RowActionsCell
