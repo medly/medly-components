@@ -36,13 +36,14 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
     const [storedValue, setStoredValue] = useState<T>(readValue);
 
     const setValue: UseStorageSetValue<T> = value => {
-        if (typeof window == 'undefined') {
+        if (typeof window === 'undefined') {
             console.warn(`Tried setting ${options.storage} key “${key}” even though environment is not a client`);
         }
 
         try {
-            storage.setItem(key, value);
-            isMounted.current && setStoredValue(value);
+            const newValue = value instanceof Function ? value(storedValue) : value;
+            storage.setItem(key, newValue);
+            isMounted.current && setStoredValue(newValue);
             window.dispatchEvent(new Event(`local-storage-${key}`));
         } catch (error) {
             console.warn(`Error setting localStorage key “${key}”:`, error);
@@ -60,7 +61,7 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
         const handleStorageChange = () => isMounted.current && setStoredValue(readValue());
 
         window?.addEventListener(`local-storage-${key}`, handleStorageChange);
-        return () => window.removeEventListener('local-storage', handleStorageChange);
+        return () => window.removeEventListener(`local-storage-${key}`, handleStorageChange);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 

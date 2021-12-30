@@ -22,7 +22,8 @@ module.exports = {
         'storybook-addon-jsx',
         'storybook-addon-designs',
         '@storybook/addon-viewport',
-        '@storybook/addon-actions'
+        '@storybook/addon-actions',
+        '@etchteam/storybook-addon-status'
     ],
     webpack: async config => {
         config.module.rules.push({

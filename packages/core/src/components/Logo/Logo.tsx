@@ -1,10 +1,11 @@
+import { WithStyle } from '@medly-components/utils';
+import type { FC } from 'react';
 import MedlyLogoName from './assets/MedlyLogo.svg';
 import MedlyLogo from './assets/MLogo.svg';
 import { Container } from './Logo.styled';
 import { LogoProps } from './types';
-import type { FC } from 'react';
 
-const Logo: FC<LogoProps> = ({ showName, logo, name, onClick }) => (
+const Logo: FC<LogoProps> & WithStyle = ({ showName, logo, name, onClick }) => (
     <Container onClick={onClick}>
         {logo}
         {showName && name}
@@ -16,5 +17,6 @@ Logo.defaultProps = {
     logo: <MedlyLogo />,
     name: <MedlyLogoName />
 };
+Logo.Style = Container;
 
 export default Logo;

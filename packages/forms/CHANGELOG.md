@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.9](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.8...@medly-components/forms@2.1.9) (2021-12-26)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.8](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.7...@medly-components/forms@2.1.8) (2021-12-21)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.7](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.6...@medly-components/forms@2.1.7) (2021-12-20)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.6](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.5...@medly-components/forms@2.1.6) (2021-12-17)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.5](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.4...@medly-components/forms@2.1.5) (2021-12-14)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.4](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.3...@medly-components/forms@2.1.4) (2021-12-13)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.3](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.2...@medly-components/forms@2.1.3) (2021-12-13)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.2](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.1...@medly-components/forms@2.1.2) (2021-12-09)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [2.1.1](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.0...@medly-components/forms@2.1.1) (2021-12-09)
 
 **Note:** Version bump only for package @medly-components/forms

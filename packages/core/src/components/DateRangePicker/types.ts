@@ -1,4 +1,5 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
+import { ChangeEvent } from 'react';
 import { DisplayFormat } from '../DatePicker/types';
 import { Placement } from '../Popover/types';
 
@@ -27,7 +28,7 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     /** Variants */
     variant?: 'outlined' | 'filled';
     /** Function will called with the input value on blur and invalid event */
-    validator?: (val: DateRangeType, eventType?: string) => string;
+    validator?: (val: DateRangeType, eventType: ChangeEvent<HTMLInputElement>) => string;
     /** Helper Text */
     helperText?: string;
     /** error text */

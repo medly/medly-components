@@ -75,6 +75,9 @@ addParameters({
             },
             ...INITIAL_VIEWPORTS
         }
+    },
+    status: {
+        type: 'stable'
     }
 });
 

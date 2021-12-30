@@ -1,9 +1,10 @@
 import { CheckIcon, MinimizeIcon } from '@medly-components/icons';
 import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
-import { FC, FocusEvent, FormEvent, forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ChangeEvent, FC, FocusEvent, forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Checkbox.styled';
 import { CheckboxProps } from './types';
+
 const Component: FC<CheckboxProps> = memo(
     forwardRef((props, ref) => {
         const {
@@ -35,19 +36,22 @@ const Component: FC<CheckboxProps> = memo(
             isErrorPresent = useMemo(() => !!errorText || hasError || !!builtInErrorMessage, [errorText, hasError, builtInErrorMessage]);
 
         const validate = useCallback(
-                (event: FormEvent<HTMLInputElement>, eventFunc?: any, preventDefault = true) => {
+                (event: ChangeEvent<HTMLInputElement>, eventFunc?: any, preventDefault = true) => {
                     preventDefault && event.preventDefault();
                     const element = event.target as HTMLInputElement,
-                        message = (validator && validator(element.checked)) || element.validationMessage;
+                        message = (validator && validator(element.checked, event)) || element.validationMessage;
                     setErrorMessage(message);
                     eventFunc && eventFunc(event);
                 },
                 [validator]
             ),
             onBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
-            onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
+            onInvalid = useCallback(
+                (event: ChangeEvent<HTMLInputElement>) => validate(event, props.onInvalid),
+                [validate, props.onInvalid]
+            ),
             onChange = useCallback(
-                (event: FormEvent<HTMLInputElement>) => validate(event, props.onChange, false),
+                (event: ChangeEvent<HTMLInputElement>) => validate(event, props.onChange, false),
                 [validate, props.onChange]
             );
 

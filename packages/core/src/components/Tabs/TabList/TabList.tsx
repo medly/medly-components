@@ -13,23 +13,24 @@ const Component: FC<TabListProps> = memo(props => {
         homePress = useKeyPress('Home'),
         endPress = useKeyPress('End'),
         [isFocused, setFocusState] = useState(false),
-        tabIds = useMemo(
+        enabledTabIds = useMemo(
             () =>
                 Children.toArray(props.children)
                     .filter((child: any) => !child.props.disabled)
                     .map((child: any) => child.props.id),
             [props.children]
         ),
+        tabIds = useMemo(() => Children.toArray(props.children).map((child: any) => child.props.id), [props.children]),
         { 0: first, [tabIds.length - 1]: last } = tabIds,
         activeTabIdx = tabIds.indexOf(active),
         totalTabs = Children.toArray(props.children).length,
         { tabSize, variant } = useContext(TabsContext);
 
     useEffect(() => {
-        rightPress && isFocused && (active === last ? onChange(first) : onChange(tabIds[tabIds.indexOf(active) + 1]));
+        rightPress && isFocused && (active === last ? onChange(first) : onChange(enabledTabIds[enabledTabIds.indexOf(active) + 1]));
     }, [rightPress]);
     useEffect(() => {
-        leftPress && isFocused && (active === first ? onChange(last) : onChange(tabIds[tabIds.indexOf(active) - 1]));
+        leftPress && isFocused && (active === first ? onChange(last) : onChange(enabledTabIds[enabledTabIds.indexOf(active) - 1]));
     }, [leftPress]);
     useEffect(() => {
         homePress && isFocused && onChange(first);

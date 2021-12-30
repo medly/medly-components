@@ -10,7 +10,12 @@ const Nav: FC<NavProps> = ({ children }) => {
         <>
             <BGOverlay data-testid="overlay" isOpen={isOpen} onClick={onClose} />
             <Container data-testid="container" isOpen={isOpen}>
-                <CloseIcon size="L" data-testid="closeIcon" onClick={onClose} iconColor={layoutDefaultTheme.header.fontColor} />
+                <CloseIcon
+                    size="L"
+                    data-testid="closeIcon"
+                    onClick={onClose}
+                    iconColor={layoutDefaultTheme.header.navItem.textColor.default}
+                />
                 <Content>{children}</Content>
             </Container>
         </>

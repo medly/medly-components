@@ -3,6 +3,97 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/medly/medly-components/compare/@medly-components/core@4.0.2...@medly-components/core@5.0.0) (2021-12-26)
+
+
+* second arg of validator function will be now a change event in CheckBox, DatePicker, DateRangePicker, TextField (#563) ([be1d395](https://github.com/medly/medly-components/commit/be1d395976cecafa2dd5da81b9da254442dda3cf)), closes [#563](https://github.com/medly/medly-components/issues/563)
+
+
+### BREAKING CHANGES
+
+* second arg of validator function will be now a change event in CheckBox, DatePicker,
+DateRangePicker, TextField
+
+* fix: passing event as second paramter in validator prop in DateRangePicker
+
+affects: @medly-components/core
+
+Co-authored-by: Abhishek Kashyap <abhishek.kashyap@medly.com>
+
+
+
+
+
+## [4.0.2](https://github.com/medly/medly-components/compare/@medly-components/core@4.0.1...@medly-components/core@4.0.2) (2021-12-21)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [4.0.1](https://github.com/medly/medly-components/compare/@medly-components/core@4.0.0...@medly-components/core@4.0.1) (2021-12-20)
+
+
+### Bug Fixes
+
+* fix active tab value for TabList ([#560](https://github.com/medly/medly-components/issues/560)) ([253091b](https://github.com/medly/medly-components/commit/253091bf5a05aed493b8bc757dbd08329a151418))
+
+
+
+
+
+# [4.0.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.7.3...@medly-components/core@4.0.0) (2021-12-17)
+
+
+### Features
+
+* update header component style as per new style ([#559](https://github.com/medly/medly-components/issues/559)) ([18199c8](https://github.com/medly/medly-components/commit/18199c875539ec07d4a0e82e341e2d92fd1aa6ce))
+
+
+### BREAKING CHANGES
+
+* theme structure of header component is changed to accomodate new style
+
+
+
+
+
+## [3.7.3](https://github.com/medly/medly-components/compare/@medly-components/core@3.7.2...@medly-components/core@3.7.3) (2021-12-14)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [3.7.2](https://github.com/medly/medly-components/compare/@medly-components/core@3.7.1...@medly-components/core@3.7.2) (2021-12-13)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [3.7.1](https://github.com/medly/medly-components/compare/@medly-components/core@3.7.0...@medly-components/core@3.7.1) (2021-12-13)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [3.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.6.0...@medly-components/core@3.7.0) (2021-12-09)
+
+
+### Features
+
+* add Box component ([#551](https://github.com/medly/medly-components/issues/551)) ([721ed06](https://github.com/medly/medly-components/commit/721ed06a23baa753de5e62f759a92b31743db748)), closes [#463](https://github.com/medly/medly-components/issues/463) [#463](https://github.com/medly/medly-components/issues/463)
+
+
+
+
+
 # [3.6.0](https://github.com/medly/medly-components/compare/@medly-components/core@3.5.0...@medly-components/core@3.6.0) (2021-12-09)
 
 

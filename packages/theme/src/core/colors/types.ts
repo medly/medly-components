@@ -25,16 +25,18 @@ export interface GreyScale {
 
 export interface ColorPallet {
     black: string;
-    white: string;
-    professionalNavy: string;
-    grey: GreyScale;
-    medlyGreen: Color;
     blue: Color;
-    green: Color;
-    red: Color;
-    periwinkle: Color;
-    yellow: Color;
     blush: Color;
+    classyGreen: string;
+    everGreen: Color;
+    green: Color;
+    grey: GreyScale;
     heartbeat: Color;
+    medlyGreen: Color;
+    periwinkle: Color;
+    professionalNavy: string;
+    red: Color;
+    white: string;
+    yellow: Color;
     [k: string]: string | Color;
 }

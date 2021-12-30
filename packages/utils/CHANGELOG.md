@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.18.4](https://github.com/medly/medly-components/compare/@medly-components/utils@1.18.3...@medly-components/utils@1.18.4) (2021-12-21)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.18.3](https://github.com/medly/medly-components/compare/@medly-components/utils@1.18.2...@medly-components/utils@1.18.3) (2021-12-17)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.18.2](https://github.com/medly/medly-components/compare/@medly-components/utils@1.18.1...@medly-components/utils@1.18.2) (2021-12-14)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.18.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.18.0...@medly-components/utils@1.18.1) (2021-12-13)
+
+
+### Bug Fixes
+
+* useStorage eventlistner issue ([#555](https://github.com/medly/medly-components/issues/555)) ([79d1079](https://github.com/medly/medly-components/commit/79d1079d3625b302247bc479eecc8af7f1505bd7))
+
+
+
+
+
 # [1.18.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.17.10...@medly-components/utils@1.18.0) (2021-12-09)
 
 
