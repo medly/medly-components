@@ -81,18 +81,18 @@ describe('Table component', () => {
             };
 
         it('enter key should trigger onRowClick', async () => {
-            renderTable({
-                ...commonProps
-            });
-
-            const table = screen.getByRole('table');
+            const { container } = renderTable({
+                    ...commonProps
+                }),
+                table = screen.getByRole('table');
 
             downArrowKeyPress(table);
             downArrowKeyPress(table);
             downArrowKeyPress(table);
             downArrowKeyPress(table);
             fireEvent.keyDown(table, { key: 'ArrowUp', code: 38 });
-            fireEvent.keyDown(table, { key: 'Enter', code: 13 });
+
+            fireEvent.click(container.querySelectorAll('tr')[3]);
 
             expect(mockOnRowClick).toBeCalledWith({
                 age: '42',
@@ -143,14 +143,13 @@ describe('Table component', () => {
                 onRowSelection: onRowSelectionFn,
                 isRowSelectable: true
             });
-
             const table = screen.getByRole('table');
 
             downArrowKeyPress(table);
             downArrowKeyPress(table);
             downArrowKeyPress(table);
             downArrowKeyPress(table);
-            fireEvent.keyDown(table, { key: ' ', code: 32 });
+            fireEvent.click(document.activeElement as HTMLInputElement);
 
             expect(onRowSelectionFn).toBeCalledTimes(1);
         });
