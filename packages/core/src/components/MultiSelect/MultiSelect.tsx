@@ -2,7 +2,6 @@ import { useCombinedRefs, useKeyPress, useOuterClickNotifier, useUpdateEffect, W
 import type { FC, FocusEvent } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
-import { defaultKeyBindings } from './constants';
 import { filterOptions, getDefaultSelectedOptions, getInputValue } from './helpers';
 import InputSuffix from './InputSuffix';
 import { Wrapper } from './MultiSelect.styled';
@@ -32,7 +31,6 @@ const Component: FC<MultiSelectProps> = memo(
                 showTooltipForHelperAndErrorText,
                 prefix,
                 isCreatable = false,
-                keybindings,
                 ...restProps
             } = props,
             selectId = useMemo(() => id || label?.toLocaleLowerCase().replace(' ', '') || 'medly-multiSelect', [id, label]);
@@ -48,11 +46,10 @@ const Component: FC<MultiSelectProps> = memo(
             [placeholder, setPlaceholder] = useState(values!.length > 0 ? `${values!.length} options selected` : props.placeholder),
             [cursor, setCursor] = useState(-1),
             [isParentCursorEnabled, setIsParentCursorEnabled] = useState(true),
-            updatedKeybindings = useMemo(() => ({ ...defaultKeyBindings, ...keybindings }), [keybindings]),
-            isUpKeyPressed = useKeyPress(updatedKeybindings.up!, false, wrapperRef),
-            isDownKeyPressed = useKeyPress(updatedKeybindings.down!, false, wrapperRef),
-            isSelectKeyPressed = useKeyPress(updatedKeybindings.select!, false, wrapperRef),
-            isEscKeyPressed = useKeyPress(updatedKeybindings.close!, true, wrapperRef),
+            isUpKeyPressed = useKeyPress('ArrowUp', false, wrapperRef),
+            isDownKeyPressed = useKeyPress('ArrowDown', false, wrapperRef),
+            isSelectKeyPressed = useKeyPress(' ', false, wrapperRef),
+            isEscKeyPressed = useKeyPress('Escape', true, wrapperRef),
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [builtInErrorMessage, errorText]),
             showCreatableOption = useMemo(
                 () =>
@@ -251,7 +248,6 @@ const Component: FC<MultiSelectProps> = memo(
                         setIsParentCursorEnabled={setIsParentCursorEnabled}
                         showCreatableOption={!!showCreatableOption}
                         handleCreatableOptionClick={handleCreatableOptionClick}
-                        keybindings={updatedKeybindings}
                     />
                 )}
             </Wrapper>
@@ -268,7 +264,6 @@ Component.defaultProps = {
     isSearchable: true,
     placeholder: 'Please Select . . .',
     showDecorators: true,
-    isCreatable: false,
-    keybindings: defaultKeyBindings
+    isCreatable: false
 };
 export const MultiSelect: FC<MultiSelectProps> & WithStyle = Object.assign(Component, { Style: Wrapper });

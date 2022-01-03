@@ -1,7 +1,6 @@
 import { useCombinedRefs, useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import { ChangeEvent, FC, FocusEvent, forwardRef, memo, MutableRefObject, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ChangeEvent, FC, FocusEvent, forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Checkbox from '../Checkbox';
-import { defaultKeyBindings } from '../MultiSelect/constants';
 import { SelectorGroup } from '../Selectors';
 import getValuesFromOptions from './getValuesFromOptions';
 import { CheckboxGroupProps } from './types';
@@ -28,19 +27,18 @@ const Component: FC<CheckboxGroupProps> = memo(
             fullWidthOptions,
             isHovered,
             setIsHovered,
-            keybindings,
             ...wrapperProps
         } = props;
 
         const [cursor, setCursor] = useState(-2),
             [builtInErrorMessage, setErrorMessage] = useState(''),
-            isSelectionKeyPressed = useKeyPress(' '),
             checkboxGroupId = useMemo(() => id || label, [id, label]),
             checkboxGroupRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
-            updatedKeybindings = useMemo(() => ({ ...defaultKeyBindings, ...keybindings }), [keybindings]),
-            isUpKeyPressed = useKeyPress(updatedKeybindings.up!, false, ref as MutableRefObject<HTMLDivElement>),
-            isDownKeyPressed = useKeyPress(updatedKeybindings.down!, false, ref as MutableRefObject<HTMLDivElement>),
-            isEscKeyPressed = useKeyPress(updatedKeybindings.close!, true, ref as MutableRefObject<HTMLDivElement>),
+            // TODO: Attach Checkbox ref to useKeyPress
+            isUpKeyPressed = useKeyPress('ArrowUp', false),
+            isDownKeyPressed = useKeyPress('ArrowDown', false),
+            isEscKeyPressed = useKeyPress('Escape', true),
+            isSelectionKeyPressed = useKeyPress(' '),
             hasError = useMemo(
                 () => !!errorText || !!builtInErrorMessage || parentHasError,
                 [builtInErrorMessage, errorText, parentHasError]

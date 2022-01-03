@@ -58,7 +58,8 @@ const Component: FC<CheckboxProps> = memo(
         useEffect(() => {
             isHovered &&
                 inputRef.current?.scrollIntoView({
-                    block: 'nearest'
+                    block: 'nearest',
+                    behavior: 'smooth'
                 });
         }, [isHovered]);
 

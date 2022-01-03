@@ -14,13 +14,6 @@ export interface DefaultSelected {
     label: string;
 }
 
-export type KeyBindings = {
-    up?: string;
-    down?: string;
-    select?: string;
-    close?: string;
-};
-
 export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'size' | 'prefix'> {
     /** Array of selected values */
     values?: any[];
@@ -60,8 +53,6 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     prefix?: FC<any>;
     /** Allow user to create dynamic options on the fly */
     isCreatable?: boolean;
-    /** Keybindings for keyboard navigation */
-    keybindings?: KeyBindings;
 }
 
 export interface SelectWrapperProps extends Omit<MultiSelectProps, 'ref' | 'options'>, WithThemeProp {
