@@ -124,7 +124,6 @@ export const Row: FC<RowProps> = memo(props => {
             <Styled.Row
                 {...restProps}
                 ref={ref}
-                // TODO: Handle the case if id is NaN
                 tabIndex={Number(id)}
                 disabled={isRowClickDisabled}
                 onClick={handleRowClick}

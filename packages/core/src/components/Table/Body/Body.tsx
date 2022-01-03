@@ -47,10 +47,11 @@ const Body: FC<TableBodyProps> = memo(props => {
                     </NoResultRow>
                 ))}
             {data.map((row, index) => {
-                const identifier = (groupBy ? row[groupBy] : row[rowIdentifier]) || index;
+                const identifier = (groupBy ? row[groupBy] : row[rowIdentifier]) || index,
+                    uniqueId = isNaN(Number(identifier)) ? index : identifier;
                 return groupBy ? (
                     <GroupedRow
-                        id={identifier}
+                        id={uniqueId}
                         key={identifier}
                         titleRowData={row}
                         setUniqueIds={setUniqueIds}
@@ -60,7 +61,7 @@ const Body: FC<TableBodyProps> = memo(props => {
                     />
                 ) : (
                     <Row
-                        id={identifier}
+                        id={uniqueId}
                         key={identifier}
                         data={row}
                         selectedRowIds={selectedRowIds}
