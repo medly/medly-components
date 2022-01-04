@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/core",
-    "version": "5.1.0",
+    "version": "6.0.0",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -18,10 +18,10 @@
         "styled-components": "^5.1.0"
     },
     "dependencies": {
-        "@medly-components/icons": "1.12.4",
-        "@medly-components/loaders": "1.6.4",
+        "@medly-components/icons": "1.12.5",
+        "@medly-components/loaders": "1.6.5",
         "@medly-components/theme": "4.0.1",
-        "@medly-components/utils": "1.18.4",
+        "@medly-components/utils": "2.0.0",
         "effector": "^21.8.12",
         "effector-react": "^21.3.2",
         "polished": "^3.6.2",
