@@ -17,22 +17,17 @@ const Body: FC<TableBodyProps> = memo(props => {
         /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
         tableVisibleWidth = tableRef.current?.clientWidth ?? 0,
         minimapDimensionDeps = useMemo(() => [columns], [columns]),
-        isUpKeyPressed = useKeyPress(keyBindings.up!),
-        isDownKeyPressed = useKeyPress(keyBindings.down!),
-        isSelectionKeyPressed = useKeyPress(keyBindings.selectRow!),
-        isExpansionKeyPressed = useKeyPress(keyBindings.expandRow!),
-        isCollapseKeyPressed = useKeyPress(keyBindings.collapseRow!);
+        isUpKeyPressed = useKeyPress(keyBindings.up!, false, tableRef),
+        isDownKeyPressed = useKeyPress(keyBindings.down!, false, tableRef),
+        isExpansionKeyPressed = useKeyPress(keyBindings.expandRow!, false, tableRef),
+        isCollapseKeyPressed = useKeyPress(keyBindings.collapseRow!, false, tableRef);
 
     useEffect(() => {
-        if (data.length && isUpKeyPressed) {
-            setCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
-        }
+        data.length && isUpKeyPressed && setCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
     }, [isUpKeyPressed, data]);
 
     useEffect(() => {
-        if (data.length && isDownKeyPressed) {
-            setCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
-        }
+        data.length && isDownKeyPressed && setCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
     }, [isDownKeyPressed, data]);
 
     return (
@@ -52,10 +47,11 @@ const Body: FC<TableBodyProps> = memo(props => {
                     </NoResultRow>
                 ))}
             {data.map((row, index) => {
-                const identifier = (groupBy ? row[groupBy] : row[rowIdentifier]) || index;
+                const identifier = (groupBy ? row[groupBy] : row[rowIdentifier]) || index,
+                    uniqueId = isNaN(Number(identifier)) ? index : identifier;
                 return groupBy ? (
                     <GroupedRow
-                        id={identifier}
+                        id={uniqueId}
                         key={identifier}
                         titleRowData={row}
                         setUniqueIds={setUniqueIds}
@@ -65,13 +61,12 @@ const Body: FC<TableBodyProps> = memo(props => {
                     />
                 ) : (
                     <Row
-                        id={identifier}
+                        id={uniqueId}
                         key={identifier}
                         data={row}
                         selectedRowIds={selectedRowIds}
                         onRowSelection={onRowSelection}
                         isNavigated={index === cursor}
-                        isRowSelectedFromKeyboard={isSelectionKeyPressed && index === cursor}
                         isRowExpandedFromKeyboard={isExpansionKeyPressed && index === cursor}
                         isRowCollapsedFromKeyboard={isCollapseKeyPressed && index === cursor}
                         {...restProps}

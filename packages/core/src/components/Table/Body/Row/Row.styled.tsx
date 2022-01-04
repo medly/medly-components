@@ -141,6 +141,7 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     position: relative;
     align-items: center;
     min-width: fit-content;
+    outline: none;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
     ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? cardStyle : normalStyle)}
     ${({ isNavigated, showRowWithCardStyle, theme }) =>

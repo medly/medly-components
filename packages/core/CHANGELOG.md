@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@5.0.0...@medly-components/core@5.1.0) (2021-12-29)
+
+
+### Features
+
+* **core:** add props to Accordion component to handle active state f… ([#561](https://github.com/medly/medly-components/issues/561)) ([88d583a](https://github.com/medly/medly-components/commit/88d583a648f73d8b04f9b53ed6ad435d04fc03c9))
+* add labels for storybook components ([#562](https://github.com/medly/medly-components/issues/562)) ([4acabf6](https://github.com/medly/medly-components/commit/4acabf6bb10c4a79035a10a41d7f4fca586413c0))
+
+
+
+
+
+# [5.0.0](https://github.com/medly/medly-components/compare/@medly-components/core@4.0.2...@medly-components/core@5.0.0) (2021-12-26)
+
+
+* second arg of validator function will be now a change event in CheckBox, DatePicker, DateRangePicker, TextField (#563) ([be1d395](https://github.com/medly/medly-components/commit/be1d395976cecafa2dd5da81b9da254442dda3cf)), closes [#563](https://github.com/medly/medly-components/issues/563)
+
+
+### BREAKING CHANGES
+
+* second arg of validator function will be now a change event in CheckBox, DatePicker,
+DateRangePicker, TextField
+
+* fix: passing event as second paramter in validator prop in DateRangePicker
+
+affects: @medly-components/core
+
+Co-authored-by: Abhishek Kashyap <abhishek.kashyap@medly.com>
+
+
+
+
+
 ## [4.0.2](https://github.com/medly/medly-components/compare/@medly-components/core@4.0.1...@medly-components/core@4.0.2) (2021-12-21)
 
 **Note:** Version bump only for package @medly-components/core

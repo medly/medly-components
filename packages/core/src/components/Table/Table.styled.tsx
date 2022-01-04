@@ -33,6 +33,7 @@ export const TableStyled = styled('table')<TableStyledProps>`
     border-spacing: 0;
     margin: 0;
     max-height: ${({ maxHeight }) => maxHeight};
+    outline: none;
 
     *:not(svg) {
         box-sizing: border-box;

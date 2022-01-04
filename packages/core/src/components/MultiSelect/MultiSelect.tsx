@@ -1,4 +1,4 @@
-import { useCombinedRefs, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, useKeyPress, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
 import type { FC, FocusEvent } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
@@ -44,6 +44,12 @@ const Component: FC<MultiSelectProps> = memo(
             [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(defaultOptions, values!)),
             [inputValue, setInputValue] = useState(getInputValue(selectedOptions)),
             [placeholder, setPlaceholder] = useState(values!.length > 0 ? `${values!.length} options selected` : props.placeholder),
+            [cursor, setCursor] = useState(-1),
+            [isParentCursorEnabled, setIsParentCursorEnabled] = useState(true),
+            isUpKeyPressed = useKeyPress('ArrowUp', false, wrapperRef),
+            isDownKeyPressed = useKeyPress('ArrowDown', false, wrapperRef),
+            isSelectKeyPressed = useKeyPress(' ', false, wrapperRef),
+            isEscKeyPressed = useKeyPress('Escape', true, wrapperRef),
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [builtInErrorMessage, errorText]),
             showCreatableOption = useMemo(
                 () =>
@@ -72,13 +78,15 @@ const Component: FC<MultiSelectProps> = memo(
             ),
             handleInputChange = useCallback(
                 ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
-                    setInputValue(value);
-                    const newOptions = filterOptions(options, value);
-                    newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
-                    onInputChange && onInputChange(value);
-                    !areOptionsVisible && setOptionsVisibilityState(true);
+                    if (!isSelectKeyPressed) {
+                        setInputValue(value);
+                        const newOptions = filterOptions(options, value);
+                        newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
+                        onInputChange && onInputChange(value);
+                        !areOptionsVisible && setOptionsVisibilityState(true);
+                    }
                 },
-                [areOptionsVisible, options, updateToDefaultOptions, onInputChange]
+                [areOptionsVisible, options, updateToDefaultOptions, onInputChange, isSelectKeyPressed]
             ),
             handleOptionClick = useCallback(
                 (latestValues: any[]) => {
@@ -88,6 +96,7 @@ const Component: FC<MultiSelectProps> = memo(
                 [options, onChange]
             ),
             handleOuterClick = useCallback(() => {
+                setIsParentCursorEnabled(true);
                 areOptionsVisible && updateToDefaultOptions();
                 hideOptions();
             }, [areOptionsVisible]),
@@ -155,6 +164,24 @@ const Component: FC<MultiSelectProps> = memo(
             handleOuterClick();
         }, wrapperRef);
 
+        useEffect(() => {
+            isParentCursorEnabled &&
+                options.length &&
+                isUpKeyPressed &&
+                setCursor(prevState => (prevState > 0 ? prevState - 1 : options.length - 1));
+        }, [isUpKeyPressed, options, isParentCursorEnabled]);
+
+        useEffect(() => {
+            isParentCursorEnabled &&
+                options.length &&
+                isDownKeyPressed &&
+                setCursor(prevState => (prevState < options.length - 1 ? prevState + 1 : 0));
+        }, [isDownKeyPressed, options, isParentCursorEnabled]);
+
+        useEffect(() => {
+            isEscKeyPressed && handleOuterClick();
+        }, [isEscKeyPressed]);
+
         const ChipEl = () => (
             <InputSuffix
                 id={`${selectId}-count`}
@@ -217,6 +244,8 @@ const Component: FC<MultiSelectProps> = memo(
                         setValues={setSelectedOptions}
                         options={options}
                         onOptionClick={handleOptionClick}
+                        cursor={cursor}
+                        setIsParentCursorEnabled={setIsParentCursorEnabled}
                         showCreatableOption={!!showCreatableOption}
                         handleCreatableOptionClick={handleCreatableOptionClick}
                     />

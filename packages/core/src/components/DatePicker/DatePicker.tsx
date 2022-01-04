@@ -69,7 +69,7 @@ const Component: FC<DatePickerProps> = memo(
                 [disabled]
             ),
             validate = useCallback(
-                (event: React.FocusEvent<HTMLInputElement>, eventFunc?: any) => {
+                (event: React.ChangeEvent<HTMLInputElement>, eventFunc?: any) => {
                     const inputValue = inputRef.current?.value,
                         parsedDate = inputValue && parseToDate(inputValue, displayFormat!),
                         isValidDate = parsedDate?.toString() !== 'Invalid Date',
@@ -78,7 +78,7 @@ const Component: FC<DatePickerProps> = memo(
                             (parsedDate! < minSelectableDate! || parsedDate! > maxSelectableDate!) &&
                             'Please select date from allowed range',
                         invalidDateMessage = inputValue && !isValidDate && 'Please enter a valid date',
-                        validatorMessage = validator && validator(parsedDate || null, event.type),
+                        validatorMessage = validator && validator(parsedDate || null, event),
                         message = validatorMessage || emptyDateMessage || invalidDateRangeMessage || invalidDateMessage || '';
 
                     setErrorMessage(message);
@@ -91,7 +91,7 @@ const Component: FC<DatePickerProps> = memo(
                 [props.onBlur, displayFormat]
             ),
             onInvalid = useCallback(
-                (event: React.FocusEvent<HTMLInputElement>) => validate(event, props.onInvalid),
+                (event: React.ChangeEvent<HTMLInputElement>) => validate(event, props.onInvalid),
                 [props.onInvalid, displayFormat]
             ),
             onFocus = useCallback(
