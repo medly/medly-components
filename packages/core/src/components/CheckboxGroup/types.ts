@@ -20,7 +20,7 @@ export type Option = {
     columns?: number;
 };
 
-export type useCheckboxGroupKeyboardNavigationProps = {
+export type UseKeyboardNavigationProps = {
     cursor: number;
     setCursor: Dispatch<SetStateAction<number>>;
     isHovered?: boolean;

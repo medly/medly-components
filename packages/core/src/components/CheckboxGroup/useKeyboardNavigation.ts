@@ -1,8 +1,8 @@
 import { useKeyPress, useOuterClickNotifier } from '@medly-components/utils';
 import { useEffect } from 'react';
-import { useCheckboxGroupKeyboardNavigationProps } from './types';
+import { UseKeyboardNavigationProps } from './types';
 
-export const useCheckboxGroupKeyboardNavigation = ({
+export const useKeyboardNavigation = ({
     cursor,
     setCursor,
     isHovered,
@@ -10,7 +10,7 @@ export const useCheckboxGroupKeyboardNavigation = ({
     options,
     handleSelectAllClick,
     checkboxGroupRef
-}: useCheckboxGroupKeyboardNavigationProps) => {
+}: UseKeyboardNavigationProps) => {
     // TODO: Attach Checkbox ref to useKeyPress
     const isUpKeyPressed = useKeyPress('ArrowUp', false),
         isDownKeyPressed = useKeyPress('ArrowDown', false),

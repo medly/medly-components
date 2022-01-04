@@ -4,7 +4,7 @@ import Checkbox from '../Checkbox';
 import { SelectorGroup } from '../Selectors';
 import getValuesFromOptions from './getValuesFromOptions';
 import { CheckboxGroupProps } from './types';
-import { useCheckboxGroupKeyboardNavigation } from './useCheckboxGroupKeyboardNavigation';
+import { useKeyboardNavigation } from './useKeyboardNavigation';
 
 const Component: FC<CheckboxGroupProps> = memo(
     forwardRef((props, ref) => {
@@ -86,7 +86,7 @@ const Component: FC<CheckboxGroupProps> = memo(
                 onChange(newValues);
             }, [options, values, onChange]);
 
-        const [isSelectionKeyPressed] = useCheckboxGroupKeyboardNavigation({
+        const [isSelectionKeyPressed] = useKeyboardNavigation({
                 cursor,
                 setCursor,
                 isHovered,
