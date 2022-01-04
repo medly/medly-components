@@ -116,13 +116,14 @@ export const ErrorText = styled(Text)<{ disabled?: boolean }>`
 `;
 
 export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.checkbox }))<
-    CheckboxProps & { isActive?: boolean }
+    CheckboxProps & { isActive?: boolean; isHovered?: boolean }
 >`
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     * {
         cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     }
+    background-color: ${({ theme, isHovered, disabled }) => !disabled && isHovered && theme.colors.grey[50]};
 
     ${getSelectorLabelPositionStyle}
 

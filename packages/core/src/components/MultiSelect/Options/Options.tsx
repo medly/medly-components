@@ -9,7 +9,18 @@ import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
 const Component: FC<OptionsProps> = memo(props => {
-    const { id, inputValue, values, size, options, onOptionClick, showCreatableOption, handleCreatableOptionClick } = props;
+    const {
+        id,
+        inputValue,
+        values,
+        size,
+        options,
+        cursor,
+        setIsParentCursorEnabled,
+        onOptionClick,
+        showCreatableOption,
+        handleCreatableOptionClick
+    } = props;
 
     const selectedValues = useMemo(() => values.map(op => op.value), [values]),
         stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
@@ -18,13 +29,16 @@ const Component: FC<OptionsProps> = memo(props => {
             options.forEach(op => (values.includes(op.value) ? newValues.add(op.value) : newValues.delete(op.value)));
             onOptionClick(Array.from(newValues));
         },
-        handleCheckboxClick = useCallback(
-            (item: any) => (event: React.ChangeEvent<HTMLInputElement>) => {
-                const isChecked = event.target.checked,
-                    newValues = isChecked ? [...selectedValues, item] : selectedValues.filter(vl => vl !== item);
+        handleOptionSelection = useCallback(
+            (item: any) => (isChecked: boolean) => {
+                const newValues = isChecked ? [...selectedValues, item] : selectedValues.filter(vl => vl !== item);
                 onOptionClick(newValues);
             },
             [selectedValues, onOptionClick]
+        ),
+        handleCheckboxClick = useCallback(
+            (item: any) => (event: React.ChangeEvent<HTMLInputElement>) => handleOptionSelection(item)(event.target.checked),
+            [handleOptionSelection]
         ),
         handleClearHandler = useCallback(
             value => {
@@ -74,6 +88,8 @@ const Component: FC<OptionsProps> = memo(props => {
                                     disabled={op.disabled}
                                     label={op.label}
                                     options={op.value}
+                                    isHovered={cursor === index}
+                                    setIsHovered={setIsParentCursorEnabled}
                                     onChange={handleGroupClick(op.value)}
                                     fullWidthOptions={true}
                                 />
@@ -82,7 +98,9 @@ const Component: FC<OptionsProps> = memo(props => {
                                     {...op}
                                     name={op.value}
                                     checked={selectedValues.includes(op.value)}
+                                    isHovered={cursor === index}
                                     onChange={handleCheckboxClick(op.value)}
+                                    onSelectionFromKeyboard={handleOptionSelection(op.value)}
                                 />
                             )}
                         </Fragment>

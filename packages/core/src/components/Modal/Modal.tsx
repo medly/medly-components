@@ -1,6 +1,5 @@
 import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
-import { forwardRef, memo, useCallback, useEffect, useReducer, useRef, useState } from 'react';
+import { FC, forwardRef, memo, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
@@ -16,10 +15,11 @@ const Component: FC<ModalProps> = memo(
     forwardRef((props, ref) => {
         const { open, onCloseModal, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
             id = restProps.id || 'medly-modal',
-            isEscPressed = useKeyPress('Escape'),
             modalRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
+            isEscPressed = useKeyPress('Escape', false, modalRef),
             innerContainerRef = useRef<HTMLDivElement>(null),
             [headerHeight, setHeaderHeight] = useState(0),
+            [activeElement, setActiveElement] = useState<HTMLElement>(),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }),
             [shouldRender, setShouldRender] = useState(open),
             { width: windowWidth } = useWindowSize(),
@@ -50,10 +50,18 @@ const Component: FC<ModalProps> = memo(
             open && isEscPressed && onCloseModal && onCloseModal();
         }, [open, isEscPressed]);
 
+        useLayoutEffect(() => {
+            open && setActiveElement(document.activeElement as HTMLElement);
+        }, [open]);
+
+        useEffect(() => {
+            !shouldRender && activeElement?.focus();
+        }, [shouldRender]);
+
         return shouldRender ? (
             <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
                 <Popup ref={modalRef} id={`${id}-popup`} onAnimationEnd={handleAnimationEnd} {...{ minWidth, minHeight, open }}>
-                    <CloseIcon id={`${id}-close-button`} title={`${id}-close-icon`} onClick={onCloseModal} size="M" variant="solid" />
+                    <CloseIcon id={`${id}-close-button`} title={`${id}-close-icon`} size="M" variant="solid" onClick={onCloseModal} />
                     <InnerContainerStyled
                         id={`${id}-inner-container`}
                         ref={innerContainerRef}

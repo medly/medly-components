@@ -18,9 +18,9 @@ export type RowHoverActionsComponent = FC<{ rowData?: ObjectType; rowId?: any }>
 export type KeyBindings = {
     up?: string;
     down?: string;
-    selectRow?: string;
     expandRow?: string;
     collapseRow?: string;
+    rowClick?: string;
 };
 
 export interface TableColumnConfig {

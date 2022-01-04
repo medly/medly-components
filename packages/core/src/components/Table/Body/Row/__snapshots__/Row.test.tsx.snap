@@ -17,6 +17,7 @@ exports[`Row should render NoResult properly 1`] = `
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+  outline: none;
   cursor: inherit;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -75,6 +76,7 @@ exports[`Row should render NoResult with Card design also 1`] = `
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+  outline: none;
   cursor: inherit;
   border: none;
   border-radius: 0.8rem;
@@ -150,6 +152,7 @@ exports[`Row should render row properly 1`] = `
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+  outline: none;
   cursor: inherit;
 }
 

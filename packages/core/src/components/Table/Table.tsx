@@ -126,6 +126,7 @@ export const Component: FC<TableProps> = memo(
                     {restProps.actions && restProps.actions.length > 0 && selectedRowIds.length > 0 && <ActionBar />}
                     <TableStyled
                         {...restProps}
+                        tabIndex={-1}
                         ref={tableRef}
                         onScroll={handleScroll}
                         isRowClickable={isRowClickable}

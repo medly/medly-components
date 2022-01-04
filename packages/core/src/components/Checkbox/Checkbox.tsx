@@ -1,7 +1,6 @@
 import { CheckIcon, MinimizeIcon } from '@medly-components/icons';
-import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
-import { ChangeEvent, FocusEvent, forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
+import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
+import { ChangeEvent, FC, FocusEvent, forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Checkbox.styled';
 import { CheckboxProps } from './types';
@@ -21,10 +20,13 @@ const Component: FC<CheckboxProps> = memo(
             hasError,
             errorText,
             className,
+            isHovered,
+            onSelectionFromKeyboard,
             ...inputProps
         } = props;
 
         const [builtInErrorMessage, setErrorMessage] = useState(''),
+            isSelectionKeyPressed = useKeyPress(' '),
             inputId = useMemo(() => id || label, [id, label]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             isActive = useMemo(
@@ -53,6 +55,20 @@ const Component: FC<CheckboxProps> = memo(
                 [validate, props.onChange]
             );
 
+        useEffect(() => {
+            isHovered &&
+                inputRef.current?.scrollIntoView({
+                    block: 'nearest',
+                    behavior: 'smooth'
+                });
+        }, [isHovered]);
+
+        useEffect(() => {
+            if (isHovered && isSelectionKeyPressed && onSelectionFromKeyboard) {
+                onSelectionFromKeyboard(!inputRef.current?.checked);
+            }
+        }, [isHovered, isSelectionKeyPressed]);
+
         return (
             <>
                 {(!!errorText || builtInErrorMessage) && (
@@ -63,6 +79,7 @@ const Component: FC<CheckboxProps> = memo(
                     id={`${inputId}-wrapper`}
                     htmlFor={inputId}
                     isActive={isActive}
+                    isHovered={isHovered}
                     hasError={isErrorPresent}
                     disabled={inputProps.disabled}
                     {...{ fullWidth, labelPosition }}

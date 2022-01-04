@@ -6,6 +6,8 @@ export interface OptionsProps extends Omit<HTMLProps<HTMLUListElement>, 'size'> 
     size: 'S' | 'M';
     options: Option[];
     values: any[];
+    cursor?: number;
+    setIsParentCursorEnabled?: Dispatch<SetStateAction<boolean>>;
     onOptionClick: (options: any[]) => void;
     setValues?: Dispatch<SetStateAction<any[]>>;
     inputValue?: string;

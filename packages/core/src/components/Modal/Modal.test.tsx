@@ -59,9 +59,10 @@ describe('Modal component', () => {
     });
 
     it('should call onCloseModal on pressing escape key', () => {
-        const mockOnCloseModal = jest.fn();
-        const { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal });
-        fireEvent.keyDown(container, { key: 'Escape', code: 27 });
+        const mockOnCloseModal = jest.fn(),
+            { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal }),
+            popup = container.querySelector('#medly-modal-popup') as HTMLDivElement;
+        fireEvent.keyDown(popup, { key: 'Escape', code: 27 });
         expect(mockOnCloseModal).toBeCalled();
     });
 
