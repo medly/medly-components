@@ -1,6 +1,6 @@
 import { CheckboxSizes, FontVariants, FontWeights } from '@medly-components/theme';
 import { HTMLProps, Omit } from '@medly-components/utils';
-import { Dispatch, SetStateAction } from 'react';
+import { Dispatch, RefObject, SetStateAction } from 'react';
 
 export type CheckboxGroupWrapperProps = {
     fullWidth?: boolean;
@@ -10,21 +10,33 @@ export type CheckboxGroupWrapperProps = {
     hasHelperOrErrorText?: boolean;
 };
 
+export type Option = {
+    value: any;
+    label: string;
+    showSelectAll?: boolean;
+    disabled?: boolean;
+    errorText?: string;
+    helperText?: string;
+    columns?: number;
+};
+
+export type useCheckboxGroupKeyboardNavigationProps = {
+    cursor: number;
+    setCursor: Dispatch<SetStateAction<number>>;
+    isHovered?: boolean;
+    setIsHovered?: Dispatch<SetStateAction<boolean>>;
+    options: Option[];
+    handleSelectAllClick: () => void;
+    checkboxGroupRef: RefObject<any>;
+};
+
 export interface CheckboxGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange'> {
     /** Array of selected values */
     values?: any[];
     /** This method will be called with checked values */
     onChange: (values: any[]) => void;
     /** Options */
-    options: {
-        value: any;
-        label: string;
-        showSelectAll?: boolean;
-        disabled?: boolean;
-        errorText?: string;
-        helperText?: string;
-        columns?: number;
-    }[];
+    options: Option[];
     /** Label */
     label?: string;
     /** Takes full width of the parent component */
