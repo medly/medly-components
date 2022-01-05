@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/medly/medly-components/compare/@medly-components/theme@4.0.1...@medly-components/theme@5.0.0) (2022-01-05)
+
+
+### Features
+
+* add h6 variant in font variants ([#567](https://github.com/medly/medly-components/issues/567)) ([4d02eea](https://github.com/medly/medly-components/commit/4d02eeab11079f7797fa2840a0f86ba7b9403ff4))
+
+
+### BREAKING CHANGES
+
+* FontVariantTheme type now require h6 variant values also
+
+
+
+
+
 ## [4.0.1](https://github.com/medly/medly-components/compare/@medly-components/theme@4.0.0...@medly-components/theme@4.0.1) (2021-12-21)
 
 

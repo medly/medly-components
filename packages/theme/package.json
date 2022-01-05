@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/theme",
-    "version": "4.0.1",
+    "version": "5.0.0",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
