@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react';
 import { debounce } from '../../helpers';
 
+/**
+ * A hook to get the window size
+ *
+ *  * @returns { height: string; width: string } - An object with height and width.
+ *
+ */
 export const useWindowSize = () => {
     const [windowSize, setWindowSize] = useState({
         width: typeof window !== 'undefined' ? window.innerWidth : 0,

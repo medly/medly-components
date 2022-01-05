@@ -2,6 +2,11 @@ import axios, { AxiosResponse } from 'axios';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Result } from './types';
 
+/**
+ * A hook that provides abstraction over common axios functions
+ *
+ * @returns {Result<Data, Error>} An object with data, response, request, isLoading and error
+ */
 export const useAxios = <Data = any, Error = { message: string; variant: 'error' }>(): Result<Data, Error> => {
     const [data, setData] = useState<Data>(),
         [response, setResponse] = useState<AxiosResponse<Data>>(),
