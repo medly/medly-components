@@ -31,6 +31,12 @@ const variants: FontVariantTheme = {
         lineHeight: '2.0rem',
         letterSpacing: '0.12rem'
     },
+    h6: {
+        fontSize: '1.4rem',
+        fontWeight: 'Medium',
+        lineHeight: '2.2rem',
+        letterSpacing: '0rem'
+    },
     body1: {
         fontSize: '1.6rem',
         fontWeight: 'Regular',
