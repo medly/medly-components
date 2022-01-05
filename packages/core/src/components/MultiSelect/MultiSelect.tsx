@@ -7,6 +7,7 @@ import InputSuffix from './InputSuffix';
 import { Wrapper } from './MultiSelect.styled';
 import Options from './Options';
 import { MultiSelectProps } from './types';
+import { useKeyboardNavigation } from './useKeyboardNavigation';
 
 const Component: FC<MultiSelectProps> = memo(
     forwardRef((props, ref) => {
@@ -46,10 +47,7 @@ const Component: FC<MultiSelectProps> = memo(
             [placeholder, setPlaceholder] = useState(values!.length > 0 ? `${values!.length} options selected` : props.placeholder),
             [cursor, setCursor] = useState(-1),
             [isParentCursorEnabled, setIsParentCursorEnabled] = useState(true),
-            isUpKeyPressed = useKeyPress('ArrowUp', false, wrapperRef),
-            isDownKeyPressed = useKeyPress('ArrowDown', false, wrapperRef),
             isSelectKeyPressed = useKeyPress(' ', false, wrapperRef),
-            isEscKeyPressed = useKeyPress('Escape', true, wrapperRef),
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [builtInErrorMessage, errorText]),
             showCreatableOption = useMemo(
                 () =>
@@ -164,23 +162,7 @@ const Component: FC<MultiSelectProps> = memo(
             handleOuterClick();
         }, wrapperRef);
 
-        useEffect(() => {
-            isParentCursorEnabled &&
-                options.length &&
-                isUpKeyPressed &&
-                setCursor(prevState => (prevState > 0 ? prevState - 1 : options.length - 1));
-        }, [isUpKeyPressed, options, isParentCursorEnabled]);
-
-        useEffect(() => {
-            isParentCursorEnabled &&
-                options.length &&
-                isDownKeyPressed &&
-                setCursor(prevState => (prevState < options.length - 1 ? prevState + 1 : 0));
-        }, [isDownKeyPressed, options, isParentCursorEnabled]);
-
-        useEffect(() => {
-            isEscKeyPressed && handleOuterClick();
-        }, [isEscKeyPressed]);
+        useKeyboardNavigation({ options, isParentCursorEnabled, setCursor, handleOuterClick, ref: wrapperRef });
 
         const ChipEl = () => (
             <InputSuffix
