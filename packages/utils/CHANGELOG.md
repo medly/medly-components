@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/medly/medly-components/compare/@medly-components/utils@2.0.0...@medly-components/utils@2.1.0) (2022-01-05)
+
+
+### Features
+
+* **js-docs:** Add JS docs for hooks ([#564](https://github.com/medly/medly-components/issues/564)) ([1a98baa](https://github.com/medly/medly-components/commit/1a98baa52ade367ed7f64a59d366cee819d97b3c))
+
+
+
+
+
 # [2.0.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.18.4...@medly-components/utils@2.0.0) (2022-01-04)
 
 
