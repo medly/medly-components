@@ -3,6 +3,74 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/medly/medly-components/compare/@medly-components/core@5.1.0...@medly-components/core@6.0.0) (2022-01-04)
+
+
+### Features
+
+* add keyboard navigation for MultiSelect & Table component ([#558](https://github.com/medly/medly-components/issues/558)) ([cc03743](https://github.com/medly/medly-components/commit/cc0374357326a4e98e941b9e0bb588d215651619))
+
+
+### BREAKING CHANGES
+
+* preventDefault arg is now deprecated
+
+* feat: add stopPropogation to useKeyPress
+
+affects: @medly-components/utils
+
+* fix: sync tabIndex and cursor in keyboard navigation
+
+affects: @medly-components/core
+
+* refactor: move rowClickFromKeyboard to row component from body
+
+affects: @medly-components/core, @medly-components/utils
+
+* fix: setActiveElement when modal is in and out of focus
+
+affects: @medly-components/core
+
+* feat: add rowClick on keyPress in row component
+
+affects: @medly-components/core
+
+* fix: handle outer click and esc key press when reopening multiselect
+
+affects: @medly-components/core
+
+* refactor: multiselect and checkboxGroup to use \`&&\` for conditionals
+
+affects: @medly-components/core
+
+* docs: update keybindings docs for table
+
+affects: @medly-components/core
+
+* feat: add support for custom keybindings in multi select
+
+affects: @medly-components/core
+
+* refactor: remove keybindings
+
+affects: @medly-components/core
+
+* refactor: check if tabIndex is NaN
+
+affects: @medly-components/core
+
+* test: update modal test for keypress
+
+affects: @medly-components/core
+
+* test: fix tests for table
+
+affects: @medly-components/core
+
+
+
+
+
 # [5.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@5.0.0...@medly-components/core@5.1.0) (2021-12-29)
 
 

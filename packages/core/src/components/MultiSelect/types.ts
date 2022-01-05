@@ -1,5 +1,5 @@
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { Dispatch, FC, RefObject, SetStateAction } from 'react';
 
 export interface Option {
     value: any;
@@ -13,6 +13,14 @@ export interface DefaultSelected {
     value: string;
     label: string;
 }
+
+export type UseKeyboardNavigationProps = {
+    isParentCursorEnabled: boolean;
+    setCursor: Dispatch<SetStateAction<number>>;
+    options: Option[];
+    handleOuterClick: () => void;
+    ref: RefObject<any>;
+};
 
 export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'size' | 'prefix'> {
     /** Array of selected values */
