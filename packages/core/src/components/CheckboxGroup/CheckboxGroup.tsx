@@ -86,7 +86,7 @@ const Component: FC<CheckboxGroupProps> = memo(
                 onChange(newValues);
             }, [options, values, onChange]);
 
-        const [isSelectionKeyPressed] = useKeyboardNavigation({
+        const { isSelectionKeyPressed } = useKeyboardNavigation({
                 cursor,
                 setCursor,
                 isHovered,
