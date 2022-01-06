@@ -10,22 +10,12 @@ export type CheckboxGroupWrapperProps = {
     hasHelperOrErrorText?: boolean;
 };
 
-export type Option = {
-    value: any;
-    label: string;
-    showSelectAll?: boolean;
-    disabled?: boolean;
-    errorText?: string;
-    helperText?: string;
-    columns?: number;
-};
-
 export type UseKeyboardNavigationProps = {
     cursor: number;
     setCursor: Dispatch<SetStateAction<number>>;
     isHovered?: boolean;
     setIsHovered?: Dispatch<SetStateAction<boolean>>;
-    options: Option[];
+    options: CheckboxGroupProps['options'];
     handleSelectAllClick: () => void;
     checkboxGroupRef: RefObject<any>;
 };
@@ -36,7 +26,15 @@ export interface CheckboxGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'siz
     /** This method will be called with checked values */
     onChange: (values: any[]) => void;
     /** Options */
-    options: Option[];
+    options: {
+        value: any;
+        label: string;
+        showSelectAll?: boolean;
+        disabled?: boolean;
+        errorText?: string;
+        helperText?: string;
+        columns?: number;
+    }[];
     /** Label */
     label?: string;
     /** Takes full width of the parent component */
