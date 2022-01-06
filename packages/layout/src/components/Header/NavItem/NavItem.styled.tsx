@@ -23,7 +23,6 @@ export const NavItem = styled.button<NavItemProps>`
     text-decoration: none;
     font-size: 1.6rem;
     line-height: 2rem;
-    font-weight: 600;
     position: relative;
     height: ${({ theme }) => theme.header.navItem.height.mobile};
     display: grid;
@@ -59,7 +58,6 @@ export const NavItem = styled.button<NavItemProps>`
         background: ${theme.header.backgroundColor};
         grid-column-gap: 0.8rem;
         height: ${theme.header.navItem.height.desktop};
-        letter-spacing: -0.04rem;
         font-weight: ${isActive ? theme.font.weights.Medium : theme.font.weights.Regular};
         padding: 0 1.6rem;
 

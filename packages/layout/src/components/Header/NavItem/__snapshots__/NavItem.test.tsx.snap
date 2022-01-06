@@ -10,7 +10,6 @@ exports[`Header NavItem should render properly when isActive is set to false 1`]
   text-decoration: none;
   font-size: 1.6rem;
   line-height: 2rem;
-  font-weight: 600;
   position: relative;
   height: 48px;
   display: grid;
@@ -66,10 +65,6 @@ exports[`Header NavItem should render properly when isActive is set to false 1`]
     background: #012040;
     grid-column-gap: 0.8rem;
     height: 56px;
-    -webkit-letter-spacing: -0.04rem;
-    -moz-letter-spacing: -0.04rem;
-    -ms-letter-spacing: -0.04rem;
-    letter-spacing: -0.04rem;
     font-weight: 400;
     padding: 0 1.6rem;
   }
@@ -99,7 +94,6 @@ exports[`Header NavItem should render properly when isActive is set to true 1`] 
   text-decoration: none;
   font-size: 1.6rem;
   line-height: 2rem;
-  font-weight: 600;
   position: relative;
   height: 48px;
   display: grid;
@@ -155,10 +149,6 @@ exports[`Header NavItem should render properly when isActive is set to true 1`] 
     background: #012040;
     grid-column-gap: 0.8rem;
     height: 56px;
-    -webkit-letter-spacing: -0.04rem;
-    -moz-letter-spacing: -0.04rem;
-    -ms-letter-spacing: -0.04rem;
-    letter-spacing: -0.04rem;
     font-weight: 600;
     padding: 0 1.6rem;
   }
