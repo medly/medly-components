@@ -48,5 +48,5 @@ export const useKeyboardNavigation = ({
         }
     }, [cursor, setIsHovered, isHovered, isUpKeyPressed, isDownKeyPressed]);
 
-    return [isSelectionKeyPressed];
+    return { isSelectionKeyPressed };
 };
