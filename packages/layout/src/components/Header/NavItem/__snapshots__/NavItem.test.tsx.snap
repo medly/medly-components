@@ -8,7 +8,9 @@ exports[`Header NavItem should render properly when isActive is set to false 1`]
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
   position: relative;
   height: 48px;
   display: grid;
@@ -95,7 +97,9 @@ exports[`Header NavItem should render properly when isActive is set to true 1`] 
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
   position: relative;
   height: 48px;
   display: grid;

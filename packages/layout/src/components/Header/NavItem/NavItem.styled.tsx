@@ -13,6 +13,7 @@ const style = (state: 'default' | 'hovered' | 'pressed' | 'active') => css`
 `;
 
 export type NavItemProps = { isActive?: boolean };
+
 export const NavItem = styled.button<NavItemProps>`
     color: ${({ theme }) => theme.header.navItem.fontColor};
     padding: 0 1.2rem;
@@ -20,7 +21,9 @@ export const NavItem = styled.button<NavItemProps>`
     border: none;
     font-family: inherit;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
     position: relative;
     height: ${({ theme }) => theme.header.navItem.height.mobile};
     display: grid;
