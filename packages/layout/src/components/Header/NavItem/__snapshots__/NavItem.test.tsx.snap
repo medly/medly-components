@@ -64,13 +64,13 @@ exports[`Header NavItem should render properly when isActive is set to false 1`]
   .c0 {
     background: #012040;
     grid-column-gap: 0.8rem;
-    height: 52px;
+    height: 56px;
     font-weight: 600;
     padding: 0 1.6rem;
   }
 
   .c0::after {
-    bottom: calc((52px - 72px) / 2);
+    bottom: calc((56px - 72px) / 2);
     width: calc(100% - 1.6rem * 2);
     left: 1.6rem;
     height: 0.6rem;
@@ -148,13 +148,13 @@ exports[`Header NavItem should render properly when isActive is set to true 1`] 
   .c0 {
     background: #012040;
     grid-column-gap: 0.8rem;
-    height: 52px;
+    height: 56px;
     font-weight: 600;
     padding: 0 1.6rem;
   }
 
   .c0::after {
-    bottom: calc((52px - 72px) / 2);
+    bottom: calc((56px - 72px) / 2);
     width: calc(100% - 1.6rem * 2);
     left: 1.6rem;
     height: 0.6rem;

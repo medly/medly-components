@@ -17,7 +17,7 @@ const header: HeaderTheme = {
         activeIndicatorColor: colors.medlyGreen[500],
         height: {
             mobile: '48px',
-            desktop: '52px'
+            desktop: '56px'
         }
     }
 };
