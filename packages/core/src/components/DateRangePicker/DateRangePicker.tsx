@@ -1,6 +1,5 @@
-import { useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
-import type { FC } from 'react';
-import { memo, useCallback, useMemo, useRef, useState } from 'react';
+import { useKeyPress, useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
+import { FC, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import * as TextFieldStyled from '../TextField/Styled';
 import CustomDateRangeOptions from './CustomDateRangeOptions';
 import DateRangeCalendar from './DateRangeCalendar';
@@ -44,6 +43,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
         [activePopover, setActivePopover] = useState<PopoverTypes>(PopoverTypes.CALENDAR),
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
         focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current?.focus(), []),
+        isTabKeyPressed = useKeyPress('Tab', true),
         wrapperMinWidth = useMemo(
             () => minWidth ?? (customDateRangeOptions?.length ? '37.2rem' : '33.8rem'),
             [customDateRangeOptions, minWidth]
@@ -89,7 +89,13 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
         isActive && onPopupClose && onPopupClose();
         isActive && outerClickValidator.current && outerClickValidator.current(e);
     }, wrapperRef);
+
     useUpdateEffect(() => focusElement(focusedElement), [focusedElement]);
+
+    useEffect(() => {
+        const activeElement = document.activeElement as HTMLInputElement;
+        if (!(activeElement.name === 'START_DATE' || activeElement.name === 'END_DATE')) setActive(false);
+    }, [isTabKeyPressed]);
 
     return (
         <TextFieldStyled.OuterWrapper
