@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/medly/medly-components/compare/@medly-components/layout@3.0.11...@medly-components/layout@3.1.0) (2022-01-17)
+
+
+### Features
+
+* update nav item font weight and nav item active bar sizes in Header component  ([#569](https://github.com/medly/medly-components/issues/569)) ([4ff9a44](https://github.com/medly/medly-components/commit/4ff9a44a2a20ce5c9146122af65ecc2704c7a068))
+
+
+
+
+
+## [3.0.11](https://github.com/medly/medly-components/compare/@medly-components/layout@3.0.10...@medly-components/layout@3.0.11) (2022-01-06)
+
+
+### Bug Fixes
+
+* update font-weight in nav item in header component ([43b2a81](https://github.com/medly/medly-components/commit/43b2a81b7968f932d64cfcdcd88c40a59d77163d))
+
+
+
+
+
 ## [3.0.10](https://github.com/medly/medly-components/compare/@medly-components/layout@3.0.9...@medly-components/layout@3.0.10) (2022-01-06)
 
 
