@@ -25,6 +25,7 @@ const Component: FC<SearchBoxProps> = memo(
             customSearchFilter,
             fullWidth,
             minWidth,
+            maxWidth,
             ...restProps
         } = props;
         const wrapperRef = useRef<any>(null),
@@ -83,10 +84,14 @@ const Component: FC<SearchBoxProps> = memo(
                 },
                 [onOptionSelected]
             ),
-            handleFocus = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
-                updateIsTyping(event.target.value.length > 0);
-                isFocused.current = true;
-            }, []),
+            handleFocus = useCallback(
+                (event: React.FocusEvent<HTMLInputElement>) => {
+                    updateIsTyping(event.target.value.length > 0);
+                    isFocused.current = true;
+                    options.length > 0 && setOptionsVisibilityState(true);
+                },
+                [options]
+            ),
             handleBlur = useCallback(() => {
                 isFocused.current = false;
             }, []),
@@ -121,6 +126,7 @@ const Component: FC<SearchBoxProps> = memo(
                 hasCustomSearchFilter={hasCustomSearchFilter}
                 minWidth={minWidth}
                 fullWidth={fullWidth}
+                maxWidth={maxWidth}
             >
                 <SearchInput
                     placeholder={placeholder}
@@ -144,7 +150,14 @@ const Component: FC<SearchBoxProps> = memo(
                     <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />
                 </SearchIconWrapper>
                 {areOptionsVisible && options && (
-                    <Options size={size!} ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick} />
+                    <Options
+                        size={size!}
+                        ref={optionsRef}
+                        options={options}
+                        variant="filled"
+                        onOptionClick={handleOptionClick}
+                        maxWidth={maxWidth}
+                    />
                 )}
                 {isCustomSearchActive && <CustomSearchFilterWrapper size={size!}>{customSearchFilter}</CustomSearchFilterWrapper>}
             </Styled.SearchBoxWrapper>
@@ -158,6 +171,7 @@ Component.defaultProps = {
     placeholder: 'Search',
     size: 'S',
     minWidth: '25.6rem',
+    maxWidth: '100%',
     fullWidth: false
 };
 export const SearchBox: FC<SearchBoxProps> & WithStyle = Object.assign(Component, { Style: Styled.SearchBoxWrapper });

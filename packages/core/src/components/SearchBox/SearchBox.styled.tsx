@@ -68,6 +68,7 @@ export const SearchBoxWrapper = styled.div<
     padding: ${({ theme, size }) => theme.searchBox.padding[size]};
     background-color: ${({ theme, areOptionsVisible }) => theme.searchBox.bgColor[areOptionsVisible ? 'active' : 'default']};
     min-width: ${({ minWidth }) => minWidth};
+    max-width: ${({ maxWidth }) => maxWidth};
     width: ${({ fullWidth }) => (fullWidth ? '100%' : 'min-content')};
 
     input {

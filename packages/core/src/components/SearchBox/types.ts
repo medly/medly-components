@@ -25,6 +25,8 @@ export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'
     fullWidth?: boolean;
     /** Min width in rem/% (1rem = 10px)*/
     minWidth?: string;
+    /** Max width in px/rem/% (1rem = 10px)*/
+    maxWidth?: string;
     /** Function to be called on clear icon click */
     onClear?: () => void;
     /** Function to be called on search icon click */
