@@ -5,27 +5,29 @@ import Header from './Header';
 import Logo from '@medly-components/core/src/components/Logo';
 import { HomeIcon, PillIcon, LockIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
+import { useState } from 'react';
 
 <Meta title="Layout" component={Header} parameters={{ jest: [] }} />
 
 <Preview mdxSource="">
     <Story name="Header">
         {() => {
+            const [activeTab, setActiveTab] = useState('dashboard');
             const isNotMobile = useMediaQuery(breakpoints(defaultTheme.breakpoints).up('M'));
             return (
                 <div style={{ overflow: 'hidden', height: '400px' }}>
                     <Header>
                         <Logo showName={isNotMobile} />
                         <Header.Nav>
-                            <Header.NavItem isActive>
+                            <Header.NavItem isActive={activeTab === 'dashboard'} onClick={() => setActiveTab('dashboard')}>
                                 <HomeIcon size="S" iconColor={defaultTheme.colors.white} />
                                 My Dashboard
                             </Header.NavItem>
-                            <Header.NavItem>
+                            <Header.NavItem isActive={activeTab === 'prescriptions'} onClick={() => setActiveTab('prescriptions')}>
                                 <PillIcon size="S" iconColor={defaultTheme.colors.white} />
                                 Prescriptions
                             </Header.NavItem>
-                            <Header.NavItem>
+                            <Header.NavItem isActive={activeTab === 'security'} onClick={() => setActiveTab('security')}>
                                 <LockIcon size="S" iconColor={defaultTheme.colors.white} />
                                 Security
                             </Header.NavItem>

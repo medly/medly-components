@@ -55,7 +55,7 @@ exports[`Header NavItem should render properly when isActive is set to false 1`]
   position: absolute;
   display: none;
   background: #3CDBC0;
-  width: 0.4rem;
+  width: 0.6rem;
   left: -1rem;
   height: 100%;
 }
@@ -65,7 +65,7 @@ exports[`Header NavItem should render properly when isActive is set to false 1`]
     background: #012040;
     grid-column-gap: 0.8rem;
     height: 56px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 0 1.6rem;
   }
 
@@ -73,7 +73,7 @@ exports[`Header NavItem should render properly when isActive is set to false 1`]
     bottom: calc((56px - 72px) / 2);
     width: calc(100% - 1.6rem * 2);
     left: 1.6rem;
-    height: 0.4rem;
+    height: 0.6rem;
   }
 }
 
@@ -139,7 +139,7 @@ exports[`Header NavItem should render properly when isActive is set to true 1`] 
   position: absolute;
   display: block;
   background: #3CDBC0;
-  width: 0.4rem;
+  width: 0.6rem;
   left: -1rem;
   height: 100%;
 }
@@ -157,7 +157,7 @@ exports[`Header NavItem should render properly when isActive is set to true 1`] 
     bottom: calc((56px - 72px) / 2);
     width: calc(100% - 1.6rem * 2);
     left: 1.6rem;
-    height: 0.4rem;
+    height: 0.6rem;
   }
 }
 

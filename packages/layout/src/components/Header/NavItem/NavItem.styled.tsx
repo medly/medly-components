@@ -49,23 +49,23 @@ export const NavItem = styled.button<NavItemProps>`
         position: absolute;
         display: ${({ isActive }) => (isActive ? 'block' : 'none')};
         background: ${({ theme }) => theme.header.navItem.activeIndicatorColor};
-        width: 0.4rem;
+        width: 0.6rem;
         left: -1rem;
         height: 100%;
     }
 
-    ${({ theme, isActive }) => media(breakpoints(theme.breakpoints).up('L'))`
+    ${({ theme }) => media(breakpoints(theme.breakpoints).up('L'))`
         background: ${theme.header.backgroundColor};
         grid-column-gap: 0.8rem;
         height: ${theme.header.navItem.height.desktop};
-        font-weight: ${isActive ? theme.font.weights.Medium : theme.font.weights.Regular};
+        font-weight: ${theme.font.weights.Medium};
         padding: 0 1.6rem;
 
         &::after {
             bottom: calc((${theme.header.navItem.height.desktop} - ${theme.header.height.desktop}) / 2);
             width: calc(100% - 1.6rem * 2);
             left: 1.6rem;
-            height: 0.4rem;
+            height: 0.6rem;
         }
     `}
 
