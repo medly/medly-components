@@ -17,7 +17,6 @@ export const Options = styled('ul')<StyledOptionsProps & WithThemeProp>`
     margin: 0;
     padding: 0.8rem;
     width: ${({ isNested }) => (isNested ? 'max-content' : '100%')};
-    min-width: fit-content;
     list-style: none;
     box-sizing: border-box;
     max-width: ${({ maxWidth }) => maxWidth};

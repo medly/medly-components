@@ -76,9 +76,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -232,9 +229,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -385,9 +379,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -538,9 +529,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -694,9 +682,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -847,9 +832,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -1000,9 +982,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -1156,9 +1135,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -1309,9 +1285,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -1462,9 +1435,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -1618,9 +1588,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -1771,9 +1738,6 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -2131,9 +2095,6 @@ exports[`DateRangePicker Custom date range options should render properly with c
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
