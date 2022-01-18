@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.5](https://github.com/medly/medly-components/compare/@medly-components/core@6.0.4...@medly-components/core@6.0.5) (2022-01-18)
+
+
+### Bug Fixes
+
+* searchbox options width issue ([#572](https://github.com/medly/medly-components/issues/572)) ([a7fd403](https://github.com/medly/medly-components/commit/a7fd40372ab0ee7181f6732202955afa02156443))
+
+
+
+
+
 ## [6.0.4](https://github.com/medly/medly-components/compare/@medly-components/core@6.0.3...@medly-components/core@6.0.4) (2022-01-06)
 
 **Note:** Version bump only for package @medly-components/core
