@@ -94,7 +94,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
 
     useEffect(() => {
         const activeElement = document.activeElement as HTMLInputElement;
-        if (!(activeElement.name === 'START_DATE' || activeElement.name === 'END_DATE')) setActive(false);
+        isTabKeyPressed && !(activeElement.name === 'START_DATE' || activeElement.name === 'END_DATE') && setActive(false);
     }, [isTabKeyPressed]);
 
     return (
