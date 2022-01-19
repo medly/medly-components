@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.0.5...@medly-components/core@6.1.0) (2022-01-19)
+
+
+### Features
+
+* close dateRangePicker if both the inputs are out of focus ([#570](https://github.com/medly/medly-components/issues/570)) ([e7b29e4](https://github.com/medly/medly-components/commit/e7b29e4b8e5ddcf076f1483855a49fd7b7ab7a30))
+
+
+
+
+
 ## [6.0.5](https://github.com/medly/medly-components/compare/@medly-components/core@6.0.4...@medly-components/core@6.0.5) (2022-01-18)
 
 
