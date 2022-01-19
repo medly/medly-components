@@ -45,9 +45,7 @@ exports[`SearchBox options should render options when user search option specifi
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+  max-width: 100%;
 }
 
 .c10:hover {
@@ -82,6 +80,12 @@ exports[`SearchBox options should render options when user search option specifi
   fill: #13181D;
 }
 
+.c10 .c11 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .c8 {
   z-index: 4;
   position: absolute;
@@ -91,11 +95,9 @@ exports[`SearchBox options should render options when user search option specifi
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
+  max-width: 100%;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
   border-radius: 0 0 0.4rem 0.4rem;
   overflow: auto;
@@ -267,6 +269,7 @@ exports[`SearchBox options should render options when user search option specifi
   padding: 0 0 0 1.2rem;
   background-color: #ffffff;
   min-width: 25.6rem;
+  max-width: 100%;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
@@ -525,6 +528,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   padding: 0 0 0 1.6rem;
   background-color: #ffffff;
   min-width: 25.6rem;
+  max-width: 100%;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
@@ -765,6 +769,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   padding: 0 0 0 1.2rem;
   background-color: #ffffff;
   min-width: 25.6rem;
+  max-width: 100%;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;

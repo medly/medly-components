@@ -1348,9 +1348,6 @@ exports[`SingleSelect component should take passed max width 1`] = `
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   max-width: 30rem;
@@ -2002,9 +1999,6 @@ exports[`SingleSelect component with filled variant should render options correc
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -2936,9 +2930,6 @@ exports[`SingleSelect component with filled variant should render properly when 
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -3899,9 +3890,6 @@ exports[`SingleSelect component with flat variant should render options correctl
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -4543,9 +4531,6 @@ exports[`SingleSelect component with flat variant should render properly when op
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -5479,9 +5464,6 @@ exports[`SingleSelect component with fusion variant should render options correc
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -6487,9 +6469,6 @@ exports[`SingleSelect component with fusion variant should render properly when 
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -7637,9 +7616,6 @@ exports[`SingleSelect component with outlined variant should render options corr
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
@@ -8613,9 +8589,6 @@ exports[`SingleSelect component with outlined variant should render properly whe
   margin: 0;
   padding: 0.8rem;
   width: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
