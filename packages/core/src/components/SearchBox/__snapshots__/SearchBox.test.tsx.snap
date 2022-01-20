@@ -243,12 +243,6 @@ exports[`SearchBox options should render options when user search option specifi
   margin: 0 0.4rem;
 }
 
-.c13 .c7 li span,
-.c13 .c7 li strong {
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-}
-
 .c13:focus-within .c5 .c3 * {
   fill: #3872D2;
 }
@@ -323,12 +317,6 @@ exports[`SearchBox options should render options when user search option specifi
 .c0 .c7 li {
   width: calc(100% - 0.8rem);
   margin: 0 0.4rem;
-}
-
-.c0 .c7 li span,
-.c0 .c7 li strong {
-  font-size: 1.4rem;
-  line-height: 2.2rem;
 }
 
 .c1 {
@@ -587,12 +575,6 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   margin: 0 0.8rem;
 }
 
-.c0 .sc-1kflsvi-0 li span,
-.c0 .sc-1kflsvi-0 li strong {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-}
-
 .c0:focus-within {
   border-color: #3872D2;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
@@ -826,12 +808,6 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 .c0 .sc-1kflsvi-0 li {
   width: calc(100% - 0.8rem);
   margin: 0 0.4rem;
-}
-
-.c0 .sc-1kflsvi-0 li span,
-.c0 .sc-1kflsvi-0 li strong {
-  font-size: 1.4rem;
-  line-height: 2.2rem;
 }
 
 .c0:focus-within {
