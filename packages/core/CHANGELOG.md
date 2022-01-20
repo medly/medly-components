@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.1.1...@medly-components/core@6.2.0) (2022-01-20)
+
+
+### Features
+
+* call onSearch prop on pressing enter key on SearchBox component ([#576](https://github.com/medly/medly-components/issues/576)) ([e22f468](https://github.com/medly/medly-components/commit/e22f4683bfcbc40bc6d895a0d09cdfc37ad7b13e))
+
+
+
+
+
 ## [6.1.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.1.0...@medly-components/core@6.1.1) (2022-01-20)
 
 
