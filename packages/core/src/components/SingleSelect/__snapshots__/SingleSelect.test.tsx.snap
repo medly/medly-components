@@ -1333,7 +1333,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   fill: #13181D;
 }
 
-.c13 .c14 {
+.c13 > .c14 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;

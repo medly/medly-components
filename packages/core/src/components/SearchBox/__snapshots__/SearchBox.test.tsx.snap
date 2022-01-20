@@ -80,7 +80,7 @@ exports[`SearchBox options should render options when user search option specifi
   fill: #13181D;
 }
 
-.c10 .c11 {
+.c10 > .c11 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
