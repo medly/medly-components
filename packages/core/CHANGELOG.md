@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.1.0...@medly-components/core@6.1.1) (2022-01-20)
+
+
+### Bug Fixes
+
+* fix singleselect options same key issue ([#573](https://github.com/medly/medly-components/issues/573)) ([aab85ba](https://github.com/medly/medly-components/commit/aab85bad7043a40378996f7bded5fdaa18987656))
+
+
+
+
+
 # [6.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.0.5...@medly-components/core@6.1.0) (2022-01-19)
 
 
