@@ -24,12 +24,6 @@ const getMediumOptionStyle = () => {
         li {
             width: calc(100% - 1.6rem);
             margin: 0 0.8rem;
-
-            span,
-            strong {
-                font-size: 1.6rem;
-                line-height: 2.6rem;
-            }
         }
     `;
 };
@@ -40,12 +34,6 @@ const getSmallOptionStyle = () => {
         li {
             width: calc(100% - 0.8rem);
             margin: 0 0.4rem;
-
-            span,
-            strong {
-                font-size: 1.4rem;
-                line-height: 2.2rem;
-            }
         }
     `;
 };

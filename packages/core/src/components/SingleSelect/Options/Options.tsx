@@ -1,15 +1,15 @@
 import { WithStyle } from '@medly-components/utils';
+import type { FC } from 'react';
+import { forwardRef, memo } from 'react';
 import Option from './Option';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
-import type { FC } from 'react';
-import { forwardRef, memo } from 'react';
 const Component: FC<OptionsProps> = memo(
     forwardRef(({ options, onOptionClick, hasError, ...restProps }, ref) => (
         <Styled.Options {...restProps} ref={ref}>
             {options.map(option => (
                 <Option
-                    key={option.value}
+                    key={option.label}
                     {...option}
                     variant={restProps.variant}
                     onClick={onOptionClick}
