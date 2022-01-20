@@ -23,6 +23,7 @@ Simple `Searchbox` component to show search result.
                     onInputChange={onInputChangeHandler}
                     onOptionSelected={action('Selected')}
                     options={options}
+                    onSearch={action('Search')}
                     size={select('Size', size, 'M')}
                     minWidth={text('Min Width', '25.6rem')}
                     maxWidth={text('Max Width', '100%')}

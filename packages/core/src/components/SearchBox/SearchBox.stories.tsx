@@ -1,9 +1,9 @@
 import { defaultTheme, SearchBoxTheme } from '@medly-components/theme';
+import type { FC } from 'react';
 import Button from '../Button';
 import Text from '../Text';
 import TextField from '../TextField';
 import { SearchBoxProps } from './types';
-import type { FC } from 'react';
 
 export const PlaceholderComponent: FC = () => (
     <div>
