@@ -5,7 +5,7 @@ import { OptionStyledProps } from './types';
 
 const maxWidthStyle = css<OptionStyledProps>`
         max-width: ${({ maxWidth }) => maxWidth};
-        ${Text.Style} {
+        & > ${Text.Style} {
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
