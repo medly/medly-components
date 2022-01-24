@@ -1,6 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextField character count should correctly render character count for S size TextField if we pass withCharacterCount and maxlength 1`] = `
+.c8 {
+  overflow: visible;
+  font-size: 2rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c8 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c7 {
   font-size: 1rem;
   line-height: 1rem;
@@ -333,6 +348,19 @@ exports[`TextField character count should correctly render character count for S
           0/20
         </div>
       </div>
+      <svg
+        class="c8"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -340,6 +368,21 @@ exports[`TextField character count should correctly render character count for S
 `;
 
 exports[`TextField character count should correctly render character count for fusion TextField variant if we pass withCharacterCount and maxlength 1`] = `
+.c8 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c8 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c7 {
   font-size: 1rem;
   line-height: 1rem;
@@ -705,6 +748,19 @@ exports[`TextField character count should correctly render character count for f
           0/20
         </div>
       </div>
+      <svg
+        class="c8"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -712,6 +768,21 @@ exports[`TextField character count should correctly render character count for f
 `;
 
 exports[`TextField character count should correctly render character count for multiline TextField if we pass withCharacterCount and maxlength 1`] = `
+.c7 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c7 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c6 {
   font-size: 1rem;
   line-height: 1rem;
@@ -1040,6 +1111,19 @@ exports[`TextField character count should correctly render character count for m
           0/20
         </div>
       </div>
+      <svg
+        class="c7"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -1047,6 +1131,21 @@ exports[`TextField character count should correctly render character count for m
 `;
 
 exports[`TextField character count should correctly render character count if we pass withCharacterCount and maxlength 1`] = `
+.c7 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c7 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c6 {
   font-size: 1rem;
   line-height: 1rem;
@@ -1375,6 +1474,19 @@ exports[`TextField character count should correctly render character count if we
           0/20
         </div>
       </div>
+      <svg
+        class="c7"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -1382,6 +1494,21 @@ exports[`TextField character count should correctly render character count if we
 `;
 
 exports[`TextField character count should correctly render character count when the count value is 80% of the maxLength 1`] = `
+.c7 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c7 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c6 {
   font-size: 1rem;
   line-height: 1rem;
@@ -1710,6 +1837,19 @@ exports[`TextField character count should correctly render character count when 
           8/10
         </div>
       </div>
+      <svg
+        class="c7"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -1717,6 +1857,21 @@ exports[`TextField character count should correctly render character count when 
 `;
 
 exports[`TextField character count should correctly render character count when the count value is 100% of the maxLength 1`] = `
+.c7 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c7 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c6 {
   font-size: 1rem;
   line-height: 1rem;
@@ -2047,6 +2202,19 @@ exports[`TextField character count should correctly render character count when 
           10/10
         </div>
       </div>
+      <svg
+        class="c7"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -2054,6 +2222,21 @@ exports[`TextField character count should correctly render character count when 
 `;
 
 exports[`TextField should not call onClick function on click on helper text 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -2372,6 +2555,19 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
             Name
           </label>
         </div>
+        <svg
+          class="c6"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       
     </div>
@@ -2826,6 +3022,19 @@ exports[`TextField should render properly with M size 1`] = `
           fill="green"
         />
       </svg>
+      <svg
+        class="c2"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     <span
       class="c11 c12"
@@ -3210,6 +3419,19 @@ exports[`TextField should render properly with S size 1`] = `
           fill="green"
         />
       </svg>
+      <svg
+        class="c2"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     <span
       class="c11 c12"
@@ -3222,6 +3444,21 @@ exports[`TextField should render properly with S size 1`] = `
 `;
 
 exports[`TextField should render properly with default props 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -3533,6 +3770,19 @@ exports[`TextField should render properly with default props 1`] = `
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -3540,6 +3790,21 @@ exports[`TextField should render properly with default props 1`] = `
 `;
 
 exports[`TextField with filled variant and with label should render default state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -3851,6 +4116,19 @@ exports[`TextField with filled variant and with label should render default stat
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -3858,6 +4136,21 @@ exports[`TextField with filled variant and with label should render default stat
 `;
 
 exports[`TextField with filled variant and with label should render disabled state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -4149,6 +4442,19 @@ exports[`TextField with filled variant and with label should render disabled sta
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -4156,6 +4462,21 @@ exports[`TextField with filled variant and with label should render disabled sta
 `;
 
 exports[`TextField with filled variant and with label should render focus state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -4467,6 +4788,19 @@ exports[`TextField with filled variant and with label should render focus state 
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -4474,6 +4808,21 @@ exports[`TextField with filled variant and with label should render focus state 
 `;
 
 exports[`TextField with filled variant and without label should render default state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -4779,6 +5128,19 @@ exports[`TextField with filled variant and without label should render default s
           for="medly-textField-input"
         />
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -4786,6 +5148,21 @@ exports[`TextField with filled variant and without label should render default s
 `;
 
 exports[`TextField with filled variant and without label should render disabled state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -5071,6 +5448,19 @@ exports[`TextField with filled variant and without label should render disabled 
           for="medly-textField-input"
         />
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -5078,6 +5468,21 @@ exports[`TextField with filled variant and without label should render disabled 
 `;
 
 exports[`TextField with filled variant and without label should render focus state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -5383,6 +5788,19 @@ exports[`TextField with filled variant and without label should render focus sta
           for="medly-textField-input"
         />
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -5390,7 +5808,22 @@ exports[`TextField with filled variant and without label should render focus sta
 `;
 
 exports[`TextField with filled variant should render error state properly 1`] = `
-.c7 {
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c8 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -5476,7 +5909,7 @@ exports[`TextField with filled variant should render error state properly 1`] = 
   fill: #546A7F;
 }
 
-.c1 ~ .c6 {
+.c1 ~ .c7 {
   color: #546A7F;
 }
 
@@ -5545,10 +5978,10 @@ exports[`TextField with filled variant should render error state properly 1`] = 
   fill: #D73A43;
 }
 
-.c1 ~ .c6,
-.c1:hover ~ .c6,
-.c1:focus-within ~ .c6,
-.c1:focus-within:hover ~ .c6 {
+.c1 ~ .c7,
+.c1:hover ~ .c7,
+.c1:focus-within ~ .c7,
+.c1:focus-within:hover ~ .c7 {
   color: #D73A43;
 }
 
@@ -5743,9 +6176,22 @@ exports[`TextField with filled variant should render error state properly 1`] = 
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     <span
-      class="c6 c7"
+      class="c7 c8"
       id="medly-textField-helper-text"
     >
       Something wen wrong
@@ -5755,7 +6201,22 @@ exports[`TextField with filled variant should render error state properly 1`] = 
 `;
 
 exports[`TextField with filled variant should render error state properly with a value 1`] = `
-.c7 {
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c8 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -5841,7 +6302,7 @@ exports[`TextField with filled variant should render error state properly with a
   fill: #546A7F;
 }
 
-.c1 ~ .c6 {
+.c1 ~ .c7 {
   color: #546A7F;
 }
 
@@ -5910,10 +6371,10 @@ exports[`TextField with filled variant should render error state properly with a
   fill: #D73A43;
 }
 
-.c1 ~ .c6,
-.c1:hover ~ .c6,
-.c1:focus-within ~ .c6,
-.c1:focus-within:hover ~ .c6 {
+.c1 ~ .c7,
+.c1:hover ~ .c7,
+.c1:focus-within ~ .c7,
+.c1:focus-within:hover ~ .c7 {
   color: #D73A43;
 }
 
@@ -6108,9 +6569,22 @@ exports[`TextField with filled variant should render error state properly with a
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     <span
-      class="c6 c7"
+      class="c7 c8"
       id="medly-textField-helper-text"
     >
       Something wen wrong
@@ -6499,6 +6973,19 @@ exports[`TextField with filled variant should render properly with custom border
           fill="green"
         />
       </svg>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -6830,6 +7317,19 @@ exports[`TextField with filled variant should render properly with custom disabl
           fill="green"
         />
       </svg>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -6837,6 +7337,21 @@ exports[`TextField with filled variant should render properly with custom disabl
 `;
 
 exports[`TextField with filled variant should render properly with multiline 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 1.1rem;
   left: 0;
@@ -7144,6 +7659,19 @@ exports[`TextField with filled variant should render properly with multiline 1`]
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -7495,6 +8023,19 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
           Name
         </label>
       </div>
+      <svg
+        class="c2"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -7846,6 +8387,19 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
           fill="green"
         />
       </svg>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -7853,6 +8407,21 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 `;
 
 exports[`TextField with fusion variant and with label should render default state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -8201,6 +8770,19 @@ exports[`TextField with fusion variant and with label should render default stat
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -8208,6 +8790,21 @@ exports[`TextField with fusion variant and with label should render default stat
 `;
 
 exports[`TextField with fusion variant and with label should render disabled state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -8536,6 +9133,19 @@ exports[`TextField with fusion variant and with label should render disabled sta
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -8543,6 +9153,21 @@ exports[`TextField with fusion variant and with label should render disabled sta
 `;
 
 exports[`TextField with fusion variant and with label should render focus state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -8891,6 +9516,19 @@ exports[`TextField with fusion variant and with label should render focus state 
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -8898,6 +9536,21 @@ exports[`TextField with fusion variant and with label should render focus state 
 `;
 
 exports[`TextField with fusion variant and without label should render default state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -9240,6 +9893,19 @@ exports[`TextField with fusion variant and without label should render default s
           for="medly-textField-input"
         />
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -9247,6 +9913,21 @@ exports[`TextField with fusion variant and without label should render default s
 `;
 
 exports[`TextField with fusion variant and without label should render disabled state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -9569,6 +10250,19 @@ exports[`TextField with fusion variant and without label should render disabled 
           for="medly-textField-input"
         />
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -9576,6 +10270,21 @@ exports[`TextField with fusion variant and without label should render disabled 
 `;
 
 exports[`TextField with fusion variant and without label should render focus state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -9918,6 +10627,19 @@ exports[`TextField with fusion variant and without label should render focus sta
           for="medly-textField-input"
         />
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -9925,7 +10647,22 @@ exports[`TextField with fusion variant and without label should render focus sta
 `;
 
 exports[`TextField with fusion variant should render error state properly 1`] = `
-.c7 {
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c8 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.4rem 1.6rem 0;
@@ -10016,7 +10753,7 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
   fill: #546A7F;
 }
 
-.c1 ~ .c6 {
+.c1 ~ .c7 {
   color: #546A7F;
 }
 
@@ -10084,8 +10821,8 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
   fill: #D73A43;
 }
 
-.c1 ~ .c6,
-.c1:hover ~ .c6 {
+.c1 ~ .c7,
+.c1:hover ~ .c7 {
   color: #D73A43;
 }
 
@@ -10304,9 +11041,22 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     <span
-      class="c6 c7"
+      class="c7 c8"
       id="medly-textField-helper-text"
     >
       Something wen wrong
@@ -10316,7 +11066,22 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
 `;
 
 exports[`TextField with fusion variant should render error state properly with a value 1`] = `
-.c7 {
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c8 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.4rem 1.6rem 0;
@@ -10407,7 +11172,7 @@ exports[`TextField with fusion variant should render error state properly with a
   fill: #546A7F;
 }
 
-.c1 ~ .c6 {
+.c1 ~ .c7 {
   color: #546A7F;
 }
 
@@ -10475,8 +11240,8 @@ exports[`TextField with fusion variant should render error state properly with a
   fill: #D73A43;
 }
 
-.c1 ~ .c6,
-.c1:hover ~ .c6 {
+.c1 ~ .c7,
+.c1:hover ~ .c7 {
   color: #D73A43;
 }
 
@@ -10700,9 +11465,22 @@ exports[`TextField with fusion variant should render error state properly with a
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     <span
-      class="c6 c7"
+      class="c7 c8"
       id="medly-textField-helper-text"
     >
       Something wen wrong
@@ -11126,6 +11904,19 @@ exports[`TextField with fusion variant should render properly with custom border
           fill="green"
         />
       </svg>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -11494,6 +12285,19 @@ exports[`TextField with fusion variant should render properly with custom disabl
           fill="green"
         />
       </svg>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -11501,6 +12305,21 @@ exports[`TextField with fusion variant should render properly with custom disabl
 `;
 
 exports[`TextField with fusion variant should render properly with multiline 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 1.1rem;
   left: 0;
@@ -11845,6 +12664,19 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -12233,6 +13065,19 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
           Name
         </label>
       </div>
+      <svg
+        class="c2"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -12621,6 +13466,19 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
           fill="green"
         />
       </svg>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -12628,6 +13486,21 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 `;
 
 exports[`TextField with outlined variant and with label should render default state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -12960,6 +13833,19 @@ exports[`TextField with outlined variant and with label should render default st
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -12967,6 +13853,21 @@ exports[`TextField with outlined variant and with label should render default st
 `;
 
 exports[`TextField with outlined variant and with label should render disabled state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -13275,6 +14176,19 @@ exports[`TextField with outlined variant and with label should render disabled s
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -13282,6 +14196,21 @@ exports[`TextField with outlined variant and with label should render disabled s
 `;
 
 exports[`TextField with outlined variant and with label should render focus state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -13614,6 +14543,19 @@ exports[`TextField with outlined variant and with label should render focus stat
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -13621,6 +14563,21 @@ exports[`TextField with outlined variant and with label should render focus stat
 `;
 
 exports[`TextField with outlined variant and without label should render default state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -13947,6 +14904,19 @@ exports[`TextField with outlined variant and without label should render default
           for="medly-textField-input"
         />
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -13954,6 +14924,21 @@ exports[`TextField with outlined variant and without label should render default
 `;
 
 exports[`TextField with outlined variant and without label should render disabled state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -14256,6 +15241,19 @@ exports[`TextField with outlined variant and without label should render disable
           for="medly-textField-input"
         />
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -14263,6 +15261,21 @@ exports[`TextField with outlined variant and without label should render disable
 `;
 
 exports[`TextField with outlined variant and without label should render focus state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -14589,6 +15602,19 @@ exports[`TextField with outlined variant and without label should render focus s
           for="medly-textField-input"
         />
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -14596,7 +15622,22 @@ exports[`TextField with outlined variant and without label should render focus s
 `;
 
 exports[`TextField with outlined variant should render error state properly 1`] = `
-.c7 {
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c8 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -14682,7 +15723,7 @@ exports[`TextField with outlined variant should render error state properly 1`] 
   fill: #607890;
 }
 
-.c1 ~ .c6 {
+.c1 ~ .c7 {
   color: #546A7F;
 }
 
@@ -14772,10 +15813,10 @@ exports[`TextField with outlined variant should render error state properly 1`] 
   fill: #D73A43;
 }
 
-.c1 ~ .c6,
-.c1:hover ~ .c6,
-.c1:focus-within ~ .c6,
-.c1:focus-within:hover ~ .c6 {
+.c1 ~ .c7,
+.c1:hover ~ .c7,
+.c1:focus-within ~ .c7,
+.c1:focus-within:hover ~ .c7 {
   color: #D73A43;
 }
 
@@ -14970,9 +16011,22 @@ exports[`TextField with outlined variant should render error state properly 1`] 
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     <span
-      class="c6 c7"
+      class="c7 c8"
       id="medly-textField-helper-text"
     >
       Something wen wrong
@@ -14982,7 +16036,22 @@ exports[`TextField with outlined variant should render error state properly 1`] 
 `;
 
 exports[`TextField with outlined variant should render error state properly with a value 1`] = `
-.c7 {
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c8 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -15068,7 +16137,7 @@ exports[`TextField with outlined variant should render error state properly with
   fill: #607890;
 }
 
-.c1 ~ .c6 {
+.c1 ~ .c7 {
   color: #546A7F;
 }
 
@@ -15158,10 +16227,10 @@ exports[`TextField with outlined variant should render error state properly with
   fill: #D73A43;
 }
 
-.c1 ~ .c6,
-.c1:hover ~ .c6,
-.c1:focus-within ~ .c6,
-.c1:focus-within:hover ~ .c6 {
+.c1 ~ .c7,
+.c1:hover ~ .c7,
+.c1:focus-within ~ .c7,
+.c1:focus-within:hover ~ .c7 {
   color: #D73A43;
 }
 
@@ -15356,9 +16425,22 @@ exports[`TextField with outlined variant should render error state properly with
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     <span
-      class="c6 c7"
+      class="c7 c8"
       id="medly-textField-helper-text"
     >
       Something wen wrong
@@ -15764,6 +16846,19 @@ exports[`TextField with outlined variant should render properly with custom bord
           fill="green"
         />
       </svg>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -16112,6 +17207,19 @@ exports[`TextField with outlined variant should render properly with custom disa
           fill="green"
         />
       </svg>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -16119,6 +17227,21 @@ exports[`TextField with outlined variant should render properly with custom disa
 `;
 
 exports[`TextField with outlined variant should render properly with multiline 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 1.1rem;
   left: 0;
@@ -16447,6 +17570,19 @@ exports[`TextField with outlined variant should render properly with multiline 1
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -16819,6 +17955,19 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
           Name
         </label>
       </div>
+      <svg
+        class="c2"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -17191,6 +18340,19 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
           fill="green"
         />
       </svg>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -17198,6 +18360,21 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 `;
 
 exports[`TextField without label should render default state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -17503,6 +18680,19 @@ exports[`TextField without label should render default state properly 1`] = `
           for="medly-textField-input"
         />
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>
@@ -17510,6 +18700,21 @@ exports[`TextField without label should render default state properly 1`] = `
 `;
 
 exports[`TextField without label should render focus state properly 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -17821,6 +19026,19 @@ exports[`TextField without label should render focus state properly 1`] = `
           Name
         </label>
       </div>
+      <svg
+        class="c6"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
     </div>
     
   </div>

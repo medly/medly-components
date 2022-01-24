@@ -1,3 +1,4 @@
+import { ChevronDownIcon } from '@medly-components/icons';
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
 import type { ChangeEvent, FC } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -117,7 +118,7 @@ const Component: FC<TextFieldProps> = memo(
                     minRows={minRows}
                     multiline={multiline}
                 >
-                    {!!Prefix && showDecorators && (
+                    {!!Prefix && (
                         <Styled.Prefix size={size}>
                             <Prefix size={size} />
                         </Styled.Prefix>
@@ -181,6 +182,7 @@ const Component: FC<TextFieldProps> = memo(
                             <Suffix size={size} />
                         </Styled.Suffix>
                     )}
+                    <ChevronDownIcon size={size} />
                 </Styled.InnerWrapper>
                 {(isErrorPresent || helperText) && !props.showTooltipForHelperAndErrorText && (
                     <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size!} variant={props.variant!}>

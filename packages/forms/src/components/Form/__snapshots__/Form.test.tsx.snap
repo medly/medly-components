@@ -182,7 +182,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
 `;
 
 exports[`Form should render properly with initial state 1`] = `
-.c31 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -190,7 +190,7 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: inherit;
 }
 
-.c31 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -212,7 +212,7 @@ exports[`Form should render properly with initial state 1`] = `
   fill: #607890;
 }
 
-.c18 {
+.c20 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -225,7 +225,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-align: initial;
 }
 
-.c21 {
+.c23 {
   margin: 0;
   color: inherit;
   font-size: 1.6rem;
@@ -280,9 +280,9 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c66,
-.c66 .c17,
-.c66 .c30,
-.c66 .c30 * {
+.c66 .c19,
+.c66 .c10,
+.c66 .c10 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -304,7 +304,7 @@ exports[`Form should render properly with initial state 1`] = `
   background: #dfe4e9;
 }
 
-.c66:disabled .c30 * {
+.c66:disabled .c10 * {
   fill: #98A7B7;
 }
 
@@ -313,7 +313,7 @@ exports[`Form should render properly with initial state 1`] = `
   background: #3872D2;
 }
 
-.c66:not(:disabled):not(:hover) .c30 * {
+.c66:not(:disabled):not(:hover) .c10 * {
   fill: #ffffff;
 }
 
@@ -322,7 +322,7 @@ exports[`Form should render properly with initial state 1`] = `
   background: #275093;
 }
 
-.c66:not(:disabled):active .c30 * {
+.c66:not(:disabled):active .c10 * {
   fill: #ffffff;
 }
 
@@ -332,19 +332,19 @@ exports[`Form should render properly with initial state 1`] = `
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c66:not(:disabled):not(:active):hover .c30 * {
+.c66:not(:disabled):not(:active):hover .c10 * {
   fill: #ffffff;
 }
 
-.c66 .c30 + .c17 {
+.c66 .c10 + .c19 {
   margin-left: 0.8rem;
 }
 
-.c66 .c17 + .c30 {
+.c66 .c19 + .c10 {
   margin-left: 0.8rem;
 }
 
-.c20 {
+.c22 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -358,7 +358,7 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: flex-start;
 }
 
-.c20 >:first-child {
+.c22 >:first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -380,7 +380,7 @@ exports[`Form should render properly with initial state 1`] = `
   margin-bottom: 0.9rem;
 }
 
-.c22 {
+.c24 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -389,13 +389,13 @@ exports[`Form should render properly with initial state 1`] = `
   color: inherit;
 }
 
-.c22::after {
+.c24::after {
   content: ' *';
   color: default:inherit;
   disabled: #98A7B7;
 }
 
-.c25 {
+.c27 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -405,12 +405,12 @@ exports[`Form should render properly with initial state 1`] = `
   padding: 0 1.6rem;
 }
 
-.c23 {
+.c25 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
 }
 
-.c29 {
+.c31 {
   border: 0.15rem solid;
   box-sizing: border-box;
   width: 100%;
@@ -432,7 +432,7 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c29 .c30 {
+.c31 .c10 {
   pointer-events: none;
   z-index: 1;
   -webkit-transition: all 200ms ease-in-out;
@@ -445,7 +445,7 @@ exports[`Form should render properly with initial state 1`] = `
   margin-right: 0.05rem;
 }
 
-.c27 {
+.c29 {
   opacity: 0;
   margin: 0;
   top: 0;
@@ -456,36 +456,36 @@ exports[`Form should render properly with initial state 1`] = `
   position: absolute;
 }
 
-.c27:checked ~ .c28 {
+.c29:checked ~ .c30 {
   border-color: #3872D2;
   background-color: #3872D2;
 }
 
-.c27:checked ~ .c28 .c30 {
+.c29:checked ~ .c30 .c10 {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.c27:checked ~ .c28 .c30 * {
+.c29:checked ~ .c30 .c10 * {
   fill: #ffffff;
 }
 
-.c27:not(:checked) ~ .c28 {
+.c29:not(:checked) ~ .c30 {
   background-color: transparent;
   border-color: #13181D;
 }
 
-.c27:not(:disabled):focus ~ .c28 {
+.c29:not(:disabled):focus ~ .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c27:not(:disabled):focus:not(:checked) ~ .c28 {
+.c29:not(:disabled):focus:not(:checked) ~ .c30 {
   border-color: #3872D2;
 }
 
-.c26 {
+.c28 {
   margin: 0.3rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -495,7 +495,7 @@ exports[`Form should render properly with initial state 1`] = `
   position: relative;
 }
 
-.c24 {
+.c26 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -515,17 +515,17 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: row-reverse;
 }
 
-.c24 * {
+.c26 * {
   cursor: pointer;
 }
 
-.c24.c24.c24:hover .c28 {
+.c26.c26.c26:hover .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3061B3;
   background-color: #3061B3;
 }
 
-.c24.c24.c24:active .c28 {
+.c26.c26.c26:active .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #275093;
   background-color: #275093;
@@ -555,12 +555,12 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: pointer;
 }
 
-.c32.c32.c32:hover .c28 {
+.c32.c32.c32:hover .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c32.c32.c32:active .c28 {
+.c32.c32.c32:active .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #3061B3;
 }
@@ -589,13 +589,13 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: pointer;
 }
 
-.c64.c64.c64:hover .c28 {
+.c64.c64.c64:hover .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3061B3;
   background-color: #3061B3;
 }
 
-.c64.c64.c64:active .c28 {
+.c64.c64.c64:active .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #275093;
   background-color: #275093;
@@ -934,7 +934,7 @@ exports[`Form should render properly with initial state 1`] = `
   opacity: 1;
 }
 
-.c13 {
+.c15 {
   color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
@@ -947,7 +947,7 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: default;
 }
 
-.c13::after {
+.c15::after {
   color: red;
   content: ' *';
 }
@@ -1168,11 +1168,11 @@ exports[`Form should render properly with initial state 1`] = `
   color: rgba(0,90,238,.2);
 }
 
-.c46 .c30:first-of-type {
+.c46 .c10:first-of-type {
   margin-right: 0.8rem;
 }
 
-.c46 .c30:nth-of-type(2) {
+.c46 .c10:nth-of-type(2) {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -1182,7 +1182,7 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #546A7F;
 }
 
-.c14 {
+.c16 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -1193,13 +1193,13 @@ exports[`Form should render properly with initial state 1`] = `
   user-select: none;
 }
 
-.c19 {
+.c21 {
   grid-area: description;
   margin: 5px 0 0 2px;
   color: #012040;
 }
 
-.c12 {
+.c14 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
@@ -1210,7 +1210,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c12 .sc-12atfcu-0 {
+.c14 .sc-12atfcu-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1224,12 +1224,12 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: row;
 }
 
-.c16 {
+.c18 {
   width: 1px;
   opacity: 0;
 }
 
-.c15 {
+.c17 {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1256,7 +1256,7 @@ exports[`Form should render properly with initial state 1`] = `
   user-select: none;
 }
 
-.c15:focus {
+.c17:focus {
   border-color: #012040;
   outline: 0;
 }
@@ -1296,11 +1296,11 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c57:disabled,
-.c57:disabled > .c30 {
+.c57:disabled > .c10 {
   cursor: not-allowed;
 }
 
-.c57 .c30 {
+.c57 .c10 {
   font-size: 1.2rem;
   border-radius: 50%;
   cursor: pointer;
@@ -1308,19 +1308,19 @@ exports[`Form should render properly with initial state 1`] = `
   margin-left: 0.6rem;
 }
 
-.c57 .c30 {
+.c57 .c10 {
   background-color: #b0bcc8;
 }
 
-.c57 .c30 * {
+.c57 .c10 * {
   fill: #303C48;
 }
 
-.c57 .c30:hover {
+.c57 .c10:hover {
   background-color: #98A7B7;
 }
 
-.c57 .c30:hover * {
+.c57 .c10:hover * {
   fill: #13181D;
 }
 
@@ -1371,17 +1371,17 @@ exports[`Form should render properly with initial state 1`] = `
   padding-right: 1.6rem;
 }
 
-.c54 .c55 > .c30 {
+.c54 .c55 > .c10 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c54 .c55 > .c30 * {
+.c54 .c55 > .c10 * {
   fill: #546A7F;
 }
 
-.c54:not(:focus-within):hover .c55 > .c30 * {
+.c54:not(:focus-within):hover .c55 > .c10 * {
   fill: #13181D;
 }
 
@@ -1542,21 +1542,21 @@ exports[`Form should render properly with initial state 1`] = `
   min-width: auto;
 }
 
-.c10 {
+.c12 {
   grid-column: 7/-1;
 }
 
-.c10 > * {
+.c12 > * {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
-.c11 {
+.c13 {
   grid-column: 1/-1;
 }
 
-.c11 > * {
+.c13 > * {
   width: 100%;
   margin: 0;
   min-width: auto;
@@ -1654,12 +1654,25 @@ exports[`Form should render properly with initial state 1`] = `
               First Name
             </label>
           </div>
+          <svg
+            class="c10 c11"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
     </div>
     <div
-      class="c10"
+      class="c12"
     >
       <div
         class="c2 c3"
@@ -1689,12 +1702,25 @@ exports[`Form should render properly with initial state 1`] = `
               Last Name
             </label>
           </div>
+          <svg
+            class="c10 c11"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
     </div>
     <div
-      class="c11"
+      class="c13"
     >
       <div
         class="c2 c3"
@@ -1724,12 +1750,25 @@ exports[`Form should render properly with initial state 1`] = `
               Email
             </label>
           </div>
+          <svg
+            class="c10 c11"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
     </div>
     <div
-      class="c11"
+      class="c13"
     >
       <div
         class="c2 c3"
@@ -1759,31 +1798,44 @@ exports[`Form should render properly with initial state 1`] = `
               Website
             </label>
           </div>
+          <svg
+            class="c10 c11"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
     </div>
     <div
-      class="c11"
+      class="c13"
     >
       <div
-        class="c12"
+        class="c14"
         id="resume-field"
       >
         <label
-          class="c13 c14"
+          class="c15 c16"
           required=""
         >
           Resume
         </label>
         <label
-          class="c15"
+          class="c17"
           for="resume"
           id="resume-label"
         >
           Click to choose file
           <input
-            class="c16"
+            class="c18"
             id="resume"
             name="resume"
             required=""
@@ -1791,24 +1843,24 @@ exports[`Form should render properly with initial state 1`] = `
           />
         </label>
         <span
-          class="c17 c18 c19"
+          class="c19 c20 c21"
         >
           File size should be less than 5MB
         </span>
       </div>
     </div>
     <div
-      class="c11"
+      class="c13"
     >
       <div
         aria-describedby="languages-helper-text"
-        class="c20"
+        class="c22"
         id="languages-wrapper"
         name="languages"
         type="checkbox"
       >
         <span
-          class="c17 c21 c22"
+          class="c19 c23 c24"
           id="languages-label"
           required=""
           type="checkbox"
@@ -1816,39 +1868,39 @@ exports[`Form should render properly with initial state 1`] = `
           Languages
         </span>
         <div
-          class="c23"
+          class="c25"
           id="languages-options"
         >
           
           <label
-            class="c24"
+            class="c26"
             for="JAVA-languages"
             id="JAVA-languages-wrapper"
             sizes="[object Object]"
           >
             <span
-              class="c17 c18 c25"
+              class="c19 c20 c27"
               id="JAVA-languages-label"
               type="checkbox"
             >
               JAVA
             </span>
             <div
-              class="c26"
+              class="c28"
             >
               <input
                 checked=""
-                class="c27"
+                class="c29"
                 id="JAVA-languages"
                 name="java"
                 sizes="[object Object]"
                 type="checkbox"
               />
               <div
-                class="c28 c29"
+                class="c30 c31"
               >
                 <svg
-                  class="c30 c31"
+                  class="c10 c11"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -1871,27 +1923,27 @@ exports[`Form should render properly with initial state 1`] = `
             sizes="[object Object]"
           >
             <span
-              class="c17 c18 c25"
+              class="c19 c20 c27"
               id="RUBY-languages-label"
               type="checkbox"
             >
               RUBY
             </span>
             <div
-              class="c26"
+              class="c28"
             >
               <input
-                class="c27"
+                class="c29"
                 id="RUBY-languages"
                 name="ruby"
                 sizes="[object Object]"
                 type="checkbox"
               />
               <div
-                class="c28 c29"
+                class="c30 c31"
               >
                 <svg
-                  class="c30 c31"
+                  class="c10 c11"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -1910,7 +1962,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c11"
+      class="c13"
     >
       <div
         aria-describedby="role-helper-text"
@@ -1919,7 +1971,7 @@ exports[`Form should render properly with initial state 1`] = `
         type="radio"
       >
         <span
-          class="c17 c21 c22"
+          class="c19 c23 c24"
           id="role-label"
           required=""
           type="radio"
@@ -1927,7 +1979,7 @@ exports[`Form should render properly with initial state 1`] = `
           Role
         </span>
         <div
-          class="c23"
+          class="c25"
           id="role-options"
         >
           <label
@@ -1937,7 +1989,7 @@ exports[`Form should render properly with initial state 1`] = `
             sizes="[object Object]"
           >
             <span
-              class="c17 c18 c25"
+              class="c19 c20 c27"
               id="Front End-role-label"
               type="radio"
             >
@@ -1968,7 +2020,7 @@ exports[`Form should render properly with initial state 1`] = `
             sizes="[object Object]"
           >
             <span
-              class="c17 c18 c25"
+              class="c19 c20 c27"
               id="Back End-role-label"
               type="radio"
             >
@@ -1998,7 +2050,7 @@ exports[`Form should render properly with initial state 1`] = `
             sizes="[object Object]"
           >
             <span
-              class="c17 c18 c25"
+              class="c19 c20 c27"
               id="Full Stack-role-label"
               type="radio"
             >
@@ -2025,7 +2077,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c11"
+      class="c13"
     >
       <div
         class="c2 c40"
@@ -2066,7 +2118,7 @@ exports[`Form should render properly with initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c30 c44 c45"
+              class="c10 c44 c45"
               fill="none"
               height="1em"
               id="birthDate-calendar-icon"
@@ -2083,13 +2135,26 @@ exports[`Form should render properly with initial state 1`] = `
                 fill-rule="evenodd"
               />
             </svg>
+            <svg
+              class="c10 c11"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
           </div>
           
         </div>
       </div>
     </div>
     <div
-      class="c11"
+      class="c13"
     >
       <div
         class="c2 c3"
@@ -2103,7 +2168,7 @@ exports[`Form should render properly with initial state 1`] = `
           id="experience-textFields"
         >
           <svg
-            class="c30 c44 c45"
+            class="c10 c44 c45"
             fill="none"
             height="1em"
             id="experience-calendar-icon"
@@ -2183,7 +2248,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c11"
+      class="c13"
     >
       <div
         class="c51"
@@ -2219,7 +2284,20 @@ exports[`Form should render properly with initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c30 c31 c52 c53"
+              class="c10 c11 c52 c53"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
+            <svg
+              class="c10 c11"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -2237,7 +2315,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c11"
+      class="c13"
     >
       <div
         class="c54"
@@ -2282,12 +2360,12 @@ exports[`Form should render properly with initial state 1`] = `
                 id="graduation-count-chip"
               >
                 <span
-                  class="c17 c21"
+                  class="c19 c23"
                 >
                   1
                 </span>
                 <svg
-                  class="c30 c44"
+                  class="c10 c44"
                   fill="none"
                   height="1em"
                   id="graduation-count-chip-clear"
@@ -2303,32 +2381,32 @@ exports[`Form should render properly with initial state 1`] = `
                   />
                 </svg>
               </button>
-              <svg
-                class="c30 c31"
-                fill="none"
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-                  fill="#000"
-                />
-              </svg>
             </div>
+            <svg
+              class="c10 c11"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
           </div>
           
         </div>
       </div>
     </div>
     <h4
-      class="c17 c58 c59"
+      class="c19 c58 c59"
     >
       Marks
     </h4>
     <span
-      class="c17 c18 c60"
+      class="c19 c20 c60"
     >
       Marks Information
     </span>
@@ -2363,6 +2441,19 @@ exports[`Form should render properly with initial state 1`] = `
               Database
             </label>
           </div>
+          <svg
+            class="c10 c11"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
@@ -2398,6 +2489,19 @@ exports[`Form should render properly with initial state 1`] = `
               Algorithms
             </label>
           </div>
+          <svg
+            class="c10 c11"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
@@ -2433,12 +2537,25 @@ exports[`Form should render properly with initial state 1`] = `
               Maths
             </label>
           </div>
+          <svg
+            class="c10 c11"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
     </div>
     <div
-      class="c11"
+      class="c13"
     >
       
       <label
@@ -2448,28 +2565,28 @@ exports[`Form should render properly with initial state 1`] = `
         sizes="[object Object]"
       >
         <span
-          class="c17 c18 c25"
+          class="c19 c20 c27"
           id="agree-label"
           type="checkbox"
         >
           Do you Agree
         </span>
         <div
-          class="c26"
+          class="c28"
         >
           <input
             checked=""
-            class="c27"
+            class="c29"
             id="agree"
             name="agree"
             sizes="[object Object]"
             type="checkbox"
           />
           <div
-            class="c28 c29"
+            class="c30 c31"
           >
             <svg
-              class="c30 c31"
+              class="c10 c11"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -2494,7 +2611,7 @@ exports[`Form should render properly with initial state 1`] = `
         type="submit"
       >
         <span
-          class="c17 c21"
+          class="c19 c23"
         >
           Submit
         </span>
@@ -2505,7 +2622,7 @@ exports[`Form should render properly with initial state 1`] = `
 `;
 
 exports[`Form should render properly without initial state 1`] = `
-.c33 {
+.c14 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -2513,7 +2630,7 @@ exports[`Form should render properly without initial state 1`] = `
   cursor: inherit;
 }
 
-.c33 * {
+.c14 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -2561,7 +2678,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-align: initial;
 }
 
-.c20 {
+.c22 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -2574,7 +2691,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-align: initial;
 }
 
-.c23 {
+.c25 {
   margin: 0;
   color: inherit;
   font-size: 1.6rem;
@@ -2630,8 +2747,8 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c65,
 .c65 .c1,
-.c65 .c32,
-.c65 .c32 * {
+.c65 .c13,
+.c65 .c13 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -2653,7 +2770,7 @@ exports[`Form should render properly without initial state 1`] = `
   background: #dfe4e9;
 }
 
-.c65:disabled .c32 * {
+.c65:disabled .c13 * {
   fill: #98A7B7;
 }
 
@@ -2662,7 +2779,7 @@ exports[`Form should render properly without initial state 1`] = `
   background: #3872D2;
 }
 
-.c65:not(:disabled):not(:hover) .c32 * {
+.c65:not(:disabled):not(:hover) .c13 * {
   fill: #ffffff;
 }
 
@@ -2671,7 +2788,7 @@ exports[`Form should render properly without initial state 1`] = `
   background: #275093;
 }
 
-.c65:not(:disabled):active .c32 * {
+.c65:not(:disabled):active .c13 * {
   fill: #ffffff;
 }
 
@@ -2681,19 +2798,19 @@ exports[`Form should render properly without initial state 1`] = `
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c65:not(:disabled):not(:active):hover .c32 * {
+.c65:not(:disabled):not(:active):hover .c13 * {
   fill: #ffffff;
 }
 
-.c65 .c32 + .c1 {
+.c65 .c13 + .c1 {
   margin-left: 0.8rem;
 }
 
-.c65 .c1 + .c32 {
+.c65 .c1 + .c13 {
   margin-left: 0.8rem;
 }
 
-.c22 {
+.c24 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2707,7 +2824,7 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: flex-start;
 }
 
-.c22 >:first-child {
+.c24 >:first-child {
   margin-bottom: 0.9rem;
 }
 
@@ -2729,7 +2846,7 @@ exports[`Form should render properly without initial state 1`] = `
   margin-bottom: 0.9rem;
 }
 
-.c24 {
+.c26 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2738,13 +2855,13 @@ exports[`Form should render properly without initial state 1`] = `
   color: inherit;
 }
 
-.c24::after {
+.c26::after {
   content: ' *';
   color: default:inherit;
   disabled: #98A7B7;
 }
 
-.c27 {
+.c29 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2754,12 +2871,12 @@ exports[`Form should render properly without initial state 1`] = `
   padding: 0 1.6rem;
 }
 
-.c25 {
+.c27 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
 }
 
-.c31 {
+.c33 {
   border: 0.15rem solid;
   box-sizing: border-box;
   width: 100%;
@@ -2781,7 +2898,7 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
-.c31 .c32 {
+.c33 .c13 {
   pointer-events: none;
   z-index: 1;
   -webkit-transition: all 200ms ease-in-out;
@@ -2794,7 +2911,7 @@ exports[`Form should render properly without initial state 1`] = `
   margin-right: 0.05rem;
 }
 
-.c29 {
+.c31 {
   opacity: 0;
   margin: 0;
   top: 0;
@@ -2805,36 +2922,36 @@ exports[`Form should render properly without initial state 1`] = `
   position: absolute;
 }
 
-.c29:checked ~ .c30 {
+.c31:checked ~ .c32 {
   border-color: #3872D2;
   background-color: #3872D2;
 }
 
-.c29:checked ~ .c30 .c32 {
+.c31:checked ~ .c32 .c13 {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.c29:checked ~ .c30 .c32 * {
+.c31:checked ~ .c32 .c13 * {
   fill: #ffffff;
 }
 
-.c29:not(:checked) ~ .c30 {
+.c31:not(:checked) ~ .c32 {
   background-color: transparent;
   border-color: #13181D;
 }
 
-.c29:not(:disabled):focus ~ .c30 {
+.c31:not(:disabled):focus ~ .c32 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c29:not(:disabled):focus:not(:checked) ~ .c30 {
+.c31:not(:disabled):focus:not(:checked) ~ .c32 {
   border-color: #3872D2;
 }
 
-.c28 {
+.c30 {
   margin: 0.3rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -2844,7 +2961,7 @@ exports[`Form should render properly without initial state 1`] = `
   position: relative;
 }
 
-.c26 {
+.c28 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2864,16 +2981,16 @@ exports[`Form should render properly without initial state 1`] = `
   flex-direction: row-reverse;
 }
 
-.c26 * {
+.c28 * {
   cursor: pointer;
 }
 
-.c26.c26.c26:hover .c30 {
+.c28.c28.c28:hover .c32 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c26.c26.c26:active .c30 {
+.c28.c28.c28:active .c32 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #3061B3;
 }
@@ -2902,12 +3019,12 @@ exports[`Form should render properly without initial state 1`] = `
   cursor: pointer;
 }
 
-.c63.c63.c63:hover .c30 {
+.c63.c63.c63:hover .c32 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c63.c63.c63:active .c30 {
+.c63.c63.c63:active .c32 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #3061B3;
 }
@@ -3245,7 +3362,7 @@ exports[`Form should render properly without initial state 1`] = `
   opacity: 1;
 }
 
-.c16 {
+.c18 {
   color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
@@ -3258,7 +3375,7 @@ exports[`Form should render properly without initial state 1`] = `
   cursor: default;
 }
 
-.c16::after {
+.c18::after {
   color: red;
   content: ' *';
 }
@@ -3479,11 +3596,11 @@ exports[`Form should render properly without initial state 1`] = `
   color: rgba(0,90,238,.2);
 }
 
-.c46 .c32:first-of-type {
+.c46 .c13:first-of-type {
   margin-right: 0.8rem;
 }
 
-.c46 .c32:nth-of-type(2) {
+.c46 .c13:nth-of-type(2) {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -3493,7 +3610,7 @@ exports[`Form should render properly without initial state 1`] = `
   border-color: #546A7F;
 }
 
-.c17 {
+.c19 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -3504,13 +3621,13 @@ exports[`Form should render properly without initial state 1`] = `
   user-select: none;
 }
 
-.c21 {
+.c23 {
   grid-area: description;
   margin: 5px 0 0 2px;
   color: #012040;
 }
 
-.c15 {
+.c17 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
@@ -3521,7 +3638,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c15 .sc-12atfcu-0 {
+.c17 .sc-12atfcu-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3535,12 +3652,12 @@ exports[`Form should render properly without initial state 1`] = `
   flex-direction: row;
 }
 
-.c19 {
+.c21 {
   width: 1px;
   opacity: 0;
 }
 
-.c18 {
+.c20 {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -3567,7 +3684,7 @@ exports[`Form should render properly without initial state 1`] = `
   user-select: none;
 }
 
-.c18:focus {
+.c20:focus {
   border-color: #012040;
   outline: 0;
 }
@@ -3615,17 +3732,17 @@ exports[`Form should render properly without initial state 1`] = `
   padding-right: 1.6rem;
 }
 
-.c54 .c55 > .c32 {
+.c54 .c55 > .c13 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c54 .c55 > .c32 * {
+.c54 .c55 > .c13 * {
   fill: #546A7F;
 }
 
-.c54:not(:focus-within):hover .c55 > .c32 * {
+.c54:not(:focus-within):hover .c55 > .c13 * {
   fill: #13181D;
 }
 
@@ -3766,21 +3883,21 @@ exports[`Form should render properly without initial state 1`] = `
   min-width: auto;
 }
 
-.c13 {
+.c15 {
   grid-column: 7/-1;
 }
 
-.c13 > * {
+.c15 > * {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
-.c14 {
+.c16 {
   grid-column: 1/-1;
 }
 
-.c14 > * {
+.c16 > * {
   width: 100%;
   margin: 0;
   min-width: auto;
@@ -3891,12 +4008,25 @@ exports[`Form should render properly without initial state 1`] = `
               First Name
             </label>
           </div>
+          <svg
+            class="c13 c14"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
     </div>
     <div
-      class="c13"
+      class="c15"
     >
       <div
         class="c5 c6"
@@ -3926,12 +4056,25 @@ exports[`Form should render properly without initial state 1`] = `
               Last Name
             </label>
           </div>
+          <svg
+            class="c13 c14"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
     </div>
     <div
-      class="c14"
+      class="c16"
     >
       <div
         class="c5 c6"
@@ -3961,12 +4104,25 @@ exports[`Form should render properly without initial state 1`] = `
               Email
             </label>
           </div>
+          <svg
+            class="c13 c14"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
     </div>
     <div
-      class="c14"
+      class="c16"
     >
       <div
         class="c5 c6"
@@ -3996,31 +4152,44 @@ exports[`Form should render properly without initial state 1`] = `
               Website
             </label>
           </div>
+          <svg
+            class="c13 c14"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
     </div>
     <div
-      class="c14"
+      class="c16"
     >
       <div
-        class="c15"
+        class="c17"
         id="resume-field"
       >
         <label
-          class="c16 c17"
+          class="c18 c19"
           required=""
         >
           Resume
         </label>
         <label
-          class="c18"
+          class="c20"
           for="resume"
           id="resume-label"
         >
           Click to choose file
           <input
-            class="c19"
+            class="c21"
             id="resume"
             name="resume"
             required=""
@@ -4028,24 +4197,24 @@ exports[`Form should render properly without initial state 1`] = `
           />
         </label>
         <span
-          class="c1 c20 c21"
+          class="c1 c22 c23"
         >
           File size should be less than 5MB
         </span>
       </div>
     </div>
     <div
-      class="c14"
+      class="c16"
     >
       <div
         aria-describedby="languages-helper-text"
-        class="c22"
+        class="c24"
         id="languages-wrapper"
         name="languages"
         type="checkbox"
       >
         <span
-          class="c1 c23 c24"
+          class="c1 c25 c26"
           id="languages-label"
           required=""
           type="checkbox"
@@ -4053,38 +4222,38 @@ exports[`Form should render properly without initial state 1`] = `
           Languages
         </span>
         <div
-          class="c25"
+          class="c27"
           id="languages-options"
         >
           
           <label
-            class="c26"
+            class="c28"
             for="JAVA-languages"
             id="JAVA-languages-wrapper"
             sizes="[object Object]"
           >
             <span
-              class="c1 c20 c27"
+              class="c1 c22 c29"
               id="JAVA-languages-label"
               type="checkbox"
             >
               JAVA
             </span>
             <div
-              class="c28"
+              class="c30"
             >
               <input
-                class="c29"
+                class="c31"
                 id="JAVA-languages"
                 name="java"
                 sizes="[object Object]"
                 type="checkbox"
               />
               <div
-                class="c30 c31"
+                class="c32 c33"
               >
                 <svg
-                  class="c32 c33"
+                  class="c13 c14"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -4101,33 +4270,33 @@ exports[`Form should render properly without initial state 1`] = `
           </label>
           
           <label
-            class="c26"
+            class="c28"
             for="RUBY-languages"
             id="RUBY-languages-wrapper"
             sizes="[object Object]"
           >
             <span
-              class="c1 c20 c27"
+              class="c1 c22 c29"
               id="RUBY-languages-label"
               type="checkbox"
             >
               RUBY
             </span>
             <div
-              class="c28"
+              class="c30"
             >
               <input
-                class="c29"
+                class="c31"
                 id="RUBY-languages"
                 name="ruby"
                 sizes="[object Object]"
                 type="checkbox"
               />
               <div
-                class="c30 c31"
+                class="c32 c33"
               >
                 <svg
-                  class="c32 c33"
+                  class="c13 c14"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -4146,7 +4315,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c14"
+      class="c16"
     >
       <div
         aria-describedby="role-helper-text"
@@ -4155,7 +4324,7 @@ exports[`Form should render properly without initial state 1`] = `
         type="radio"
       >
         <span
-          class="c1 c23 c24"
+          class="c1 c25 c26"
           id="role-label"
           required=""
           type="radio"
@@ -4163,7 +4332,7 @@ exports[`Form should render properly without initial state 1`] = `
           Role
         </span>
         <div
-          class="c25"
+          class="c27"
           id="role-options"
         >
           <label
@@ -4173,7 +4342,7 @@ exports[`Form should render properly without initial state 1`] = `
             sizes="[object Object]"
           >
             <span
-              class="c1 c20 c27"
+              class="c1 c22 c29"
               id="Front End-role-label"
               type="radio"
             >
@@ -4203,7 +4372,7 @@ exports[`Form should render properly without initial state 1`] = `
             sizes="[object Object]"
           >
             <span
-              class="c1 c20 c27"
+              class="c1 c22 c29"
               id="Back End-role-label"
               type="radio"
             >
@@ -4233,7 +4402,7 @@ exports[`Form should render properly without initial state 1`] = `
             sizes="[object Object]"
           >
             <span
-              class="c1 c20 c27"
+              class="c1 c22 c29"
               id="Full Stack-role-label"
               type="radio"
             >
@@ -4260,7 +4429,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c14"
+      class="c16"
     >
       <div
         class="c5 c40"
@@ -4301,7 +4470,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c32 c44 c45"
+              class="c13 c44 c45"
               fill="none"
               height="1em"
               id="birthDate-calendar-icon"
@@ -4318,13 +4487,26 @@ exports[`Form should render properly without initial state 1`] = `
                 fill-rule="evenodd"
               />
             </svg>
+            <svg
+              class="c13 c14"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
           </div>
           
         </div>
       </div>
     </div>
     <div
-      class="c14"
+      class="c16"
     >
       <div
         class="c5 c6"
@@ -4338,7 +4520,7 @@ exports[`Form should render properly without initial state 1`] = `
           id="experience-textFields"
         >
           <svg
-            class="c32 c44 c45"
+            class="c13 c44 c45"
             fill="none"
             height="1em"
             id="experience-calendar-icon"
@@ -4418,7 +4600,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c14"
+      class="c16"
     >
       <div
         class="c51"
@@ -4454,7 +4636,20 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c32 c33 c52 c53"
+              class="c13 c14 c52 c53"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
+            <svg
+              class="c13 c14"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4472,7 +4667,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c14"
+      class="c16"
     >
       <div
         class="c54"
@@ -4511,21 +4706,20 @@ exports[`Form should render properly without initial state 1`] = `
             <div
               class="c55 c56"
               id="graduation-count"
+            />
+            <svg
+              class="c13 c14"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                class="c32 c33"
-                fill="none"
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-                  fill="#000"
-                />
-              </svg>
-            </div>
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
           </div>
           
         </div>
@@ -4537,7 +4731,7 @@ exports[`Form should render properly without initial state 1`] = `
       Marks
     </h4>
     <span
-      class="c1 c20 c59"
+      class="c1 c22 c59"
     >
       Marks Information
     </span>
@@ -4572,6 +4766,19 @@ exports[`Form should render properly without initial state 1`] = `
               Database
             </label>
           </div>
+          <svg
+            class="c13 c14"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
@@ -4607,6 +4814,19 @@ exports[`Form should render properly without initial state 1`] = `
               Algorithms
             </label>
           </div>
+          <svg
+            class="c13 c14"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
@@ -4642,12 +4862,25 @@ exports[`Form should render properly without initial state 1`] = `
               Maths
             </label>
           </div>
+          <svg
+            class="c13 c14"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
         </div>
         
       </div>
     </div>
     <div
-      class="c14"
+      class="c16"
     >
       
       <label
@@ -4657,27 +4890,27 @@ exports[`Form should render properly without initial state 1`] = `
         sizes="[object Object]"
       >
         <span
-          class="c1 c20 c27"
+          class="c1 c22 c29"
           id="agree-label"
           type="checkbox"
         >
           Do you Agree
         </span>
         <div
-          class="c28"
+          class="c30"
         >
           <input
-            class="c29"
+            class="c31"
             id="agree"
             name="agree"
             sizes="[object Object]"
             type="checkbox"
           />
           <div
-            class="c30 c31"
+            class="c32 c33"
           >
             <svg
-              class="c32 c33"
+              class="c13 c14"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4702,7 +4935,7 @@ exports[`Form should render properly without initial state 1`] = `
         type="submit"
       >
         <span
-          class="c1 c23"
+          class="c1 c25"
         >
           Upload
         </span>

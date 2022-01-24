@@ -344,8 +344,7 @@ describe('TextField', () => {
             expect(container).toMatchSnapshot();
         });
 
-        it('should render without suffix/prefix/character-count if we pass showDecorators as false', () => {
-            const prefix = () => <span>prefix</span>;
+        it('should render without suffix/character-count if we pass showDecorators as false', () => {
             const suffix = () => <span>suffix</span>;
             render(
                 <TextField
@@ -354,12 +353,10 @@ describe('TextField', () => {
                     value={'four'}
                     withCharacterCount={true}
                     helperText={'helperText'}
-                    prefix={prefix}
                     suffix={suffix}
                     showDecorators={false}
                 />
             );
-            expect(screen.queryByText('prefix')).not.toBeInTheDocument();
             expect(screen.queryByText('suffix')).not.toBeInTheDocument();
             expect(screen.queryByText('4')).not.toBeInTheDocument();
         });

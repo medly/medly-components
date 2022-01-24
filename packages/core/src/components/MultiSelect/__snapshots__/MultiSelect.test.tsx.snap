@@ -501,20 +501,20 @@ exports[`MultiSelect component should render correctly with all the props given 
               />
             </svg>
           </button>
-          <svg
-            class="c4 c5"
-            fill="none"
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-              fill="#000"
-            />
-          </svg>
         </div>
+        <svg
+          class="c4 c5"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       
     </div>
@@ -908,21 +908,20 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
         <div
           class="c8 c9"
           id="medly-multiSelect-count"
+        />
+        <svg
+          class="c10 c11"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            class="c10 c11"
-            fill="none"
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-              fill="#000"
-            />
-          </svg>
-        </div>
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       
     </div>
@@ -1545,20 +1544,20 @@ exports[`MultiSelect component should render properly with M size 1`] = `
               1
             </span>
           </button>
-          <svg
-            class="c12 c13"
-            fill="none"
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-              fill="#000"
-            />
-          </svg>
         </div>
+        <svg
+          class="c12 c13"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       
     </div>
@@ -2180,20 +2179,20 @@ exports[`MultiSelect component should render properly with S size 1`] = `
               1
             </span>
           </button>
-          <svg
-            class="c12 c13"
-            fill="none"
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-              fill="#000"
-            />
-          </svg>
         </div>
+        <svg
+          class="c12 c13"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       
     </div>

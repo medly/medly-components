@@ -381,6 +381,19 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
             fill="#000"
           />
         </svg>
+        <svg
+          class="c8"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       
     </div>
@@ -760,6 +773,19 @@ exports[`SingleSelect component should render properly when isSearchable is true
         </div>
         <svg
           class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+        <svg
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -1467,6 +1493,19 @@ exports[`SingleSelect component should take passed max width 1`] = `
             fill="#000"
           />
         </svg>
+        <svg
+          class="c8 c9"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       
     </div>
@@ -1885,6 +1924,19 @@ exports[`SingleSelect component with filled variant should render disabled state
         </div>
         <svg
           class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+        <svg
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -2439,6 +2491,19 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
         </div>
         <svg
           class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+        <svg
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -3049,6 +3114,19 @@ exports[`SingleSelect component with filled variant should render properly when 
             fill="#000"
           />
         </svg>
+        <svg
+          class="c8 c9"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       <span
         class="c12 c13"
@@ -3534,6 +3612,19 @@ exports[`SingleSelect component with filled variant should render with label pro
         </div>
         <svg
           class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+        <svg
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -5361,6 +5452,19 @@ exports[`SingleSelect component with fusion variant should render disabled state
             fill="#000"
           />
         </svg>
+        <svg
+          class="c8"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       <span
         class="c11 c12"
@@ -5941,6 +6045,19 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
         </div>
         <svg
           class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+        <svg
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -6588,6 +6705,19 @@ exports[`SingleSelect component with fusion variant should render properly when 
             fill="#000"
           />
         </svg>
+        <svg
+          class="c8 c9"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       <span
         class="c12 c13"
@@ -7121,6 +7251,19 @@ exports[`SingleSelect component with fusion variant should render with label pro
             fill="#000"
           />
         </svg>
+        <svg
+          class="c8"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       <span
         class="c11 c12"
@@ -7502,6 +7645,19 @@ exports[`SingleSelect component with outlined variant should render disabled sta
         </div>
         <svg
           class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+        <svg
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -8077,6 +8233,19 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
         </div>
         <svg
           class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+        <svg
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -8708,6 +8877,19 @@ exports[`SingleSelect component with outlined variant should render properly whe
             fill="#000"
           />
         </svg>
+        <svg
+          class="c8 c9"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
       </div>
       <span
         class="c12 c13"
@@ -9214,6 +9396,19 @@ exports[`SingleSelect component with outlined variant should render with label p
         </div>
         <svg
           class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+        <svg
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
