@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.2.0...@medly-components/core@6.2.1) (2022-01-27)
+
+
+### Bug Fixes
+
+* text component line height issue ([#581](https://github.com/medly/medly-components/issues/581)) ([6591318](https://github.com/medly/medly-components/commit/6591318f663f5d42d7a2cfb0f33d60807532a0cc))
+
+
+
+
+
 # [6.2.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.1.1...@medly-components/core@6.2.0) (2022-01-20)
 
 

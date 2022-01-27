@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.5](https://github.com/medly/medly-components/compare/@medly-components/layout@3.1.4...@medly-components/layout@3.1.5) (2022-01-27)
+
+
+### Bug Fixes
+
+* text component line height issue ([#581](https://github.com/medly/medly-components/issues/581)) ([6591318](https://github.com/medly/medly-components/commit/6591318f663f5d42d7a2cfb0f33d60807532a0cc))
+
+
+
+
+
 ## [3.1.4](https://github.com/medly/medly-components/compare/@medly-components/layout@3.1.3...@medly-components/layout@3.1.4) (2022-01-20)
 
 **Note:** Version bump only for package @medly-components/layout

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.20](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.19...@medly-components/forms@2.1.20) (2022-01-27)
+
+
+### Bug Fixes
+
+* text component line height issue ([#581](https://github.com/medly/medly-components/issues/581)) ([6591318](https://github.com/medly/medly-components/commit/6591318f663f5d42d7a2cfb0f33d60807532a0cc))
+
+
+
+
+
 ## [2.1.19](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.18...@medly-components/forms@2.1.19) (2022-01-20)
 
 **Note:** Version bump only for package @medly-components/forms
