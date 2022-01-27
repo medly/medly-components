@@ -199,6 +199,7 @@ exports[`Pagination component should render correctly with all the default props
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c10 {
@@ -555,6 +556,7 @@ exports[`Pagination component should render correctly with all the props given 1
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c7 {

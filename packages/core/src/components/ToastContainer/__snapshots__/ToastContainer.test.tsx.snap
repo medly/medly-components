@@ -45,6 +45,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -58,6 +59,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -283,6 +285,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -296,6 +299,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -518,6 +522,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -531,6 +536,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -753,6 +759,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -766,6 +773,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -991,6 +999,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -1004,6 +1013,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -1224,6 +1234,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -1237,6 +1248,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -1457,6 +1469,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -1470,6 +1483,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -1695,6 +1709,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -1708,6 +1723,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -1928,6 +1944,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -1941,6 +1958,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -2161,6 +2179,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -2174,6 +2193,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -2399,6 +2419,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -2412,6 +2433,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -2634,6 +2656,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -2647,6 +2670,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {

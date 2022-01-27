@@ -12,6 +12,7 @@ exports[`Cell should not render text if hidden property is given 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -81,6 +82,7 @@ exports[`Cell should render checkbox properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c4 {
@@ -300,6 +302,7 @@ exports[`Cell should render frozen text properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -361,6 +364,7 @@ exports[`Cell should render text properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -414,6 +418,7 @@ exports[`Cell should render tooltip properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {

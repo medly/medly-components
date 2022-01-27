@@ -308,6 +308,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c14 {
@@ -1240,6 +1241,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c10 {
@@ -1875,6 +1877,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c10 {

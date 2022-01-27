@@ -12,6 +12,7 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -87,6 +88,7 @@ exports[`Chip component should render properly with flat variant 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -160,6 +162,7 @@ exports[`Chip component should render properly with outlined variant 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -234,6 +237,7 @@ exports[`Chip component should render properly with solid variant 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {

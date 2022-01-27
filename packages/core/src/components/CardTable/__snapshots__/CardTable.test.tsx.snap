@@ -26,6 +26,7 @@ exports[`CardTable should render properly with grey background 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c10 {
@@ -304,6 +305,7 @@ exports[`CardTable should render properly with white background 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c10 {

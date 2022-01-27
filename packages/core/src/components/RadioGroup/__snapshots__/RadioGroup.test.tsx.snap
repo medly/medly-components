@@ -12,6 +12,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c6 {
@@ -25,6 +26,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -279,6 +281,7 @@ exports[`Radio Group should render properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c6 {
@@ -292,6 +295,7 @@ exports[`Radio Group should render properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {

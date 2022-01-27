@@ -12,6 +12,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c8 {
@@ -500,6 +501,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c8 {
@@ -978,6 +980,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {

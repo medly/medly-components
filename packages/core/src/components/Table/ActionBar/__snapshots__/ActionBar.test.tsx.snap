@@ -27,6 +27,7 @@ exports[`ActionBar component should not render Action bar with passed parameters
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -40,6 +41,7 @@ exports[`ActionBar component should not render Action bar with passed parameters
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c4 {
@@ -341,6 +343,7 @@ exports[`ActionBar component should render correctly with all the default props 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -354,6 +357,7 @@ exports[`ActionBar component should render correctly with all the default props 
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c4 {

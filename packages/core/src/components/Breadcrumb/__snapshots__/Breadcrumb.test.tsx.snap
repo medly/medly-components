@@ -27,6 +27,7 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c6 {
@@ -244,6 +245,7 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c6 {

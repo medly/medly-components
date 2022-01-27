@@ -12,6 +12,7 @@ exports[`Box Component should not render with border if borderColor is not provi
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -67,6 +68,7 @@ exports[`Box Component should not render with border if borderWidth is not provi
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -122,6 +124,7 @@ exports[`Box Component should not render with given shadowColor if shadow size i
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -177,6 +180,7 @@ exports[`Box Component should render properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -240,6 +244,7 @@ exports[`Box Component should render properly when loading 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -376,6 +381,7 @@ exports[`Box Component should render properly with "L" shadow size 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -431,6 +437,7 @@ exports[`Box Component should render properly with "M" shadow size 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -486,6 +493,7 @@ exports[`Box Component should render properly with "S" shadow size 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -541,6 +549,7 @@ exports[`Box Component should render properly with "XL" shadow size 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -604,6 +613,7 @@ exports[`Box Component should render properly with L size and loading state 1`] 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -748,6 +758,7 @@ exports[`Box Component should render properly with M size and loading state 1`] 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -892,6 +903,7 @@ exports[`Box Component should render properly with S size and loading state 1`] 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -1036,6 +1048,7 @@ exports[`Box Component should render properly with XL size and loading state 1`]
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -1172,6 +1185,7 @@ exports[`Box Component should render properly with border 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -1228,6 +1242,7 @@ exports[`Box Component should render properly with given bg and color 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -1283,6 +1298,7 @@ exports[`Box Component should render properly with given height and width 1`] = 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -1342,6 +1358,7 @@ exports[`Box Component should render with given margin 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -1397,6 +1414,7 @@ exports[`Box Component should render with given padding 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -1452,6 +1470,7 @@ exports[`Box Component should render with given shadowColor 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -1507,6 +1526,7 @@ exports[`Box Component should wrap children into Text component when rendering s
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {

@@ -790,6 +790,7 @@ exports[`SingleSelect component should render properly with M size 1`] = `
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -885,6 +886,7 @@ exports[`SingleSelect component should render properly with S size 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -980,6 +982,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -1920,6 +1923,7 @@ exports[`SingleSelect component with filled variant should render options correc
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c5 {
@@ -2469,6 +2473,7 @@ exports[`SingleSelect component with filled variant should render properly when 
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c19 {
@@ -2482,6 +2487,7 @@ exports[`SingleSelect component with filled variant should render properly when 
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c21 {
@@ -2495,6 +2501,7 @@ exports[`SingleSelect component with filled variant should render properly when 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -3569,6 +3576,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c4 {
@@ -3811,6 +3819,7 @@ exports[`SingleSelect component with flat variant should render options correctl
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c5 {
@@ -3971,6 +3980,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c4 {
@@ -4199,6 +4209,7 @@ exports[`SingleSelect component with flat variant should render properly when op
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -4212,6 +4223,7 @@ exports[`SingleSelect component with flat variant should render properly when op
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -4225,6 +4237,7 @@ exports[`SingleSelect component with flat variant should render properly when op
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c8 {
@@ -4710,6 +4723,7 @@ exports[`SingleSelect component with flat variant should render with label prope
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c6 {
@@ -5385,6 +5399,7 @@ exports[`SingleSelect component with fusion variant should render options correc
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c5 {
@@ -5971,6 +5986,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c19 {
@@ -5984,6 +6000,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c21 {
@@ -5997,6 +6014,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -7537,6 +7555,7 @@ exports[`SingleSelect component with outlined variant should render options corr
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c5 {
@@ -8107,6 +8126,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c19 {
@@ -8120,6 +8140,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c21 {
@@ -8133,6 +8154,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {

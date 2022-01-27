@@ -12,6 +12,7 @@ exports[`GroupCell should not render hidden prop is given 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -49,6 +50,7 @@ exports[`GroupCell should render GroupCell with right border if it is a title ce
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -99,6 +101,7 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -159,6 +162,7 @@ exports[`GroupCell should render properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
