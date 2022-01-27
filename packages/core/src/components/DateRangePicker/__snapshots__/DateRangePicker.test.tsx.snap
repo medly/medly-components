@@ -12,6 +12,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -165,6 +166,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -315,6 +317,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -465,6 +468,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -618,6 +622,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -768,6 +773,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -918,6 +924,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -1071,6 +1078,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -1221,6 +1229,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -1371,6 +1380,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -1524,6 +1534,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -1674,6 +1685,7 @@ exports[`DateRangePicker Custom date range options popover placement should rend
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -2031,6 +2043,7 @@ exports[`DateRangePicker Custom date range options should render properly with c
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c17 {
@@ -2497,6 +2510,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -2510,6 +2524,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -2523,6 +2538,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -4300,6 +4316,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -4313,6 +4330,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -4326,6 +4344,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -6100,6 +6119,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -6113,6 +6133,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -6126,6 +6147,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -7900,6 +7922,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -7913,6 +7936,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -7926,6 +7950,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -9702,6 +9727,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -9715,6 +9741,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -9728,6 +9755,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -11501,6 +11529,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -11514,6 +11543,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -11527,6 +11557,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -13300,6 +13331,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -13313,6 +13345,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -13326,6 +13359,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -15102,6 +15136,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -15115,6 +15150,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -15128,6 +15164,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -16901,6 +16938,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -16914,6 +16952,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -16927,6 +16966,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -18700,6 +18740,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -18713,6 +18754,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -18726,6 +18768,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -20502,6 +20545,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -20515,6 +20559,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -20528,6 +20573,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -22301,6 +22347,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c13 {
@@ -22314,6 +22361,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c22 {
@@ -22327,6 +22375,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c3 {
@@ -24307,6 +24356,7 @@ exports[`DateRangePicker should render properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c27 {
@@ -24320,6 +24370,7 @@ exports[`DateRangePicker should render properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c36 {
@@ -24333,6 +24384,7 @@ exports[`DateRangePicker should render properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c18 {
@@ -26592,6 +26644,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c32 {
@@ -26605,6 +26658,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c41 {
@@ -26618,6 +26672,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c26 {

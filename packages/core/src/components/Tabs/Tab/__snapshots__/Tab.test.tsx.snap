@@ -27,6 +27,7 @@ exports[`Tab should render active state properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -284,6 +285,7 @@ exports[`Tab should render disabled state properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -564,6 +566,7 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -850,6 +853,7 @@ exports[`Tab should render properly with L tab size 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -1143,6 +1147,7 @@ exports[`Tab should render properly with L tab size 2`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -1436,6 +1441,7 @@ exports[`Tab should render properly with M tab size 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -1718,6 +1724,7 @@ exports[`Tab should render properly with M tab size 2`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -1997,6 +2004,7 @@ exports[`Tab should render properly with S tab size 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -2276,6 +2284,7 @@ exports[`Tab should render properly with S tab size 2`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -2555,6 +2564,7 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -2834,6 +2844,7 @@ exports[`Tab should render properly with flat tab variant 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -3113,6 +3124,7 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -3387,6 +3399,7 @@ exports[`Tab should render properly with solid tab variant 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {

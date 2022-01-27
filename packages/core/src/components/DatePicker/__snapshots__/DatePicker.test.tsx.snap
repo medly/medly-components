@@ -884,6 +884,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -897,6 +898,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -910,6 +912,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -1922,6 +1925,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -1935,6 +1939,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -1948,6 +1953,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -2957,6 +2963,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -2970,6 +2977,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -2983,6 +2991,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -3992,6 +4001,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -4005,6 +4015,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -4018,6 +4029,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -5029,6 +5041,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -5042,6 +5055,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -5055,6 +5069,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -6063,6 +6078,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -6076,6 +6092,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -6089,6 +6106,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -7097,6 +7115,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -7110,6 +7129,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -7123,6 +7143,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -8134,6 +8155,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -8147,6 +8169,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -8160,6 +8183,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -9168,6 +9192,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -9181,6 +9206,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -9194,6 +9220,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -10202,6 +10229,7 @@ exports[`DatePicker component popover placement should render properly with "top
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -10215,6 +10243,7 @@ exports[`DatePicker component popover placement should render properly with "top
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -10228,6 +10257,7 @@ exports[`DatePicker component popover placement should render properly with "top
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -11239,6 +11269,7 @@ exports[`DatePicker component popover placement should render properly with "top
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -11252,6 +11283,7 @@ exports[`DatePicker component popover placement should render properly with "top
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -11265,6 +11297,7 @@ exports[`DatePicker component popover placement should render properly with "top
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {
@@ -12273,6 +12306,7 @@ exports[`DatePicker component popover placement should render properly with "top
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c13 {
@@ -12286,6 +12320,7 @@ exports[`DatePicker component popover placement should render properly with "top
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c16 {
@@ -12299,6 +12334,7 @@ exports[`DatePicker component popover placement should render properly with "top
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c1 {

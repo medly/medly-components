@@ -25,6 +25,7 @@ exports[`Input component should render correctly when fullWidth & required props
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {
@@ -469,6 +470,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c2 {

@@ -12,6 +12,7 @@ exports[`Link Component should render with component as child 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -59,6 +60,7 @@ exports[`Link Component should render with default props 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {

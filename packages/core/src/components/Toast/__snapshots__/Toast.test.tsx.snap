@@ -45,6 +45,7 @@ exports[`Toast should render action button 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c7 {
@@ -549,6 +550,7 @@ exports[`Toast should render header and message text 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c6 {
@@ -562,6 +564,7 @@ exports[`Toast should render header and message text 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {
@@ -939,6 +942,7 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c0 {

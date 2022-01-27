@@ -12,6 +12,7 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c4 .c0 {
@@ -89,6 +90,7 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c5 .c0 {
@@ -222,6 +224,7 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c5 .c0 {

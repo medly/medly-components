@@ -38,6 +38,7 @@ export const TextStyled = styled('span')<TextProps>`
 
     ${props => props.uppercase && uppercase()};
     ${props => props.lineThrough && lineThrough()};
+    display: ${({ as }) => (as === 'strong' || as === 'span' || as === 'a') && 'inline-block'};
 `;
 
 TextStyled.defaultProps = {

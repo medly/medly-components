@@ -13,6 +13,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   line-height: 2.2rem;
   text-align: initial;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .c17 {
@@ -26,6 +27,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c27 {
@@ -39,6 +41,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: center;
+  display: inline-block;
 }
 
 .c30 {
@@ -65,6 +68,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {
@@ -1667,6 +1671,7 @@ exports[`Table component should render properly 1`] = `
   line-height: 2.2rem;
   text-align: initial;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .c17 {
@@ -1680,6 +1685,7 @@ exports[`Table component should render properly 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c9 {

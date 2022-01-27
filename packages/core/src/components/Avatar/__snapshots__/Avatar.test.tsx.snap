@@ -13,6 +13,7 @@ exports[`Avatar component should render avatar without hover and pressed states 
   line-height: 2.2rem;
   text-align: initial;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .c0 {
@@ -140,6 +141,7 @@ exports[`Avatar component should render with all the props given 1`] = `
   line-height: 2.2rem;
   text-align: initial;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .c0 {
@@ -220,6 +222,7 @@ exports[`Avatar component should render with default hover and pressed states 1`
   line-height: 2.2rem;
   text-align: initial;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .c0 {
@@ -300,6 +303,7 @@ exports[`Avatar component should render with default theme 1`] = `
   line-height: 2.2rem;
   text-align: initial;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .c0 {
@@ -363,6 +367,7 @@ exports[`Avatar component should render with not-allowed cursor when it is disab
   line-height: 2.2rem;
   text-align: initial;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .c0 {

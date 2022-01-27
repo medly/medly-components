@@ -27,6 +27,7 @@ exports[`SearchBox options should render options when user search option specifi
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
+  display: inline-block;
 }
 
 .c10 {
