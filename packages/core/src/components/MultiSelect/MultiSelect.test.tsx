@@ -203,10 +203,10 @@ describe('MultiSelect component', () => {
     });
 
     it('should maintain focus even on blur of input', async () => {
-        render(<MultiSelect options={options} />);
+        render(<MultiSelect label="dummy" options={options} />);
         const input = screen.getByRole('textbox');
         fireEvent.change(input, { target: { value: 'Dummy' } });
-        fireEvent.click(document.getElementById('Dummy1-wrapper') as HTMLDivElement);
+        fireEvent.click(document.getElementById('dummy-options-wrapper') as HTMLDivElement);
         expect(input).toHaveFocus();
     });
 

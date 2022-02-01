@@ -83,6 +83,7 @@ const Component: FC<OptionsProps> = memo(props => {
                         <Fragment key={index}>
                             {Array.isArray(op.value) ? (
                                 <CheckboxGroup
+                                    id={`${id}-${op.label.replace(' ', '-')}-group`}
                                     values={selectedValues.filter(vl => op.value.map((nestedOp: Option) => nestedOp.value).includes(vl))}
                                     showSelectAll
                                     disabled={op.disabled}
@@ -97,6 +98,7 @@ const Component: FC<OptionsProps> = memo(props => {
                                 <Checkbox
                                     {...op}
                                     name={op.value}
+                                    id={`${id}-${op.label.replace(' ', '-')}-checkbox`}
                                     checked={selectedValues.includes(op.value)}
                                     isHovered={cursor === index}
                                     onChange={handleCheckboxClick(op.value)}
