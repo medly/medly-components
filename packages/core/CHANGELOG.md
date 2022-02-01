@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.2.1...@medly-components/core@6.2.2) (2022-02-01)
+
+
+### Bug Fixes
+
+* options id issue of multiselect component ([#582](https://github.com/medly/medly-components/issues/582)) ([c5e5ab0](https://github.com/medly/medly-components/commit/c5e5ab0300e00ba6149e50b7d1b7ecf12d6b5ed4))
+
+
+
+
+
 ## [6.2.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.2.0...@medly-components/core@6.2.1) (2022-01-27)
 
 
