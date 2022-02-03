@@ -117,8 +117,10 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     itemsPerPage?: number;
     /** Default active page */
     defaultActivePage?: number;
-    /** No Result Row*/
+    /** Component to be displayed when there is no data */
     noResultRow?: React.ReactElement<any>;
+    /** Text to be displayed when there is no data */
+    noResultRowText?: string;
     /** Value of the default expanded Row's identifier */
     defaultExpandedRowIdentifier?: unknown;
     /** Row hover actions component */

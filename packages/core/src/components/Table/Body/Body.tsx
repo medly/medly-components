@@ -10,8 +10,19 @@ import { NoResultCell, NoResultRow } from './Row/Row.styled';
 import { TableBodyProps } from './types';
 
 const Body: FC<TableBodyProps> = memo(props => {
-    const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap, columns, size, keyBindings } =
-            useContext(TableComponentsCommonPropsContext),
+    const {
+            data,
+            groupBy,
+            rowIdentifier,
+            showRowWithCardStyle,
+            noResultRow,
+            noResultRowText,
+            tableRef,
+            withMinimap,
+            columns,
+            size,
+            keyBindings
+        } = useContext(TableComponentsCommonPropsContext),
         { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props,
         [cursor, setCursor] = useState(-1),
         /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
@@ -42,7 +53,7 @@ const Body: FC<TableBodyProps> = memo(props => {
                         withMinimap={withMinimap}
                     >
                         <NoResultCell width={tableVisibleWidth} tableSize={size}>
-                            No result
+                            {noResultRowText || 'No result'}
                         </NoResultCell>
                     </NoResultRow>
                 ))}
