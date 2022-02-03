@@ -25,6 +25,14 @@ describe('Table component', () => {
         expect(screen.getByText('NO RESULT CUSTOM COMPONENT')).toBeInTheDocument();
     });
 
+    it('should render no result row text', () => {
+        renderTable({
+            data: [],
+            noResultRowText: 'No Result Row Text'
+        });
+        expect(screen.getByText('No Result Row Text')).toBeInTheDocument();
+    });
+
     describe('pagination', () => {
         const mockOnPageChange = jest.fn(),
             commonProps = {
