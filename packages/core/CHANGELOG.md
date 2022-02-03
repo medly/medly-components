@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.2.2...@medly-components/core@6.3.0) (2022-02-03)
+
+
+### Features
+
+* **core:** add noResutRowText prop in table ([#584](https://github.com/medly/medly-components/issues/584)) ([9df2644](https://github.com/medly/medly-components/commit/9df264491d3f5d8ef7589712b51ed745da6e5df8))
+
+
+
+
+
 ## [6.2.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.2.1...@medly-components/core@6.2.2) (2022-02-01)
 
 
