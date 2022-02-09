@@ -1,16 +1,16 @@
 import { CheckIcon, ClearIcon, ErrorIcon, NotificationsIcon, WarningAmberIcon } from '@medly-components/icons';
-import { WithStyle } from '@medly-components/utils';
-import { memo, forwardRef, useCallback } from 'react';
+import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
+import type { FC } from 'react';
+import { forwardRef, memo, useCallback } from 'react';
 import Button from '../Button';
 import Text from '../Text';
 import { removeToast } from '../ToastContainer/ToastStore';
 import * as Styled from './Toast.styled';
 import { ToastComponentProps } from './types';
-import type { FC } from 'react';
 
 const Component: FC<ToastComponentProps> = memo(
     forwardRef((props, ref) => {
-        const { id, variant, header, icon: Icon, message, action, ...restProps } = props;
+        const { id, variant, header, icon: Icon, message, action, hideCloseIcon, ...restProps } = props;
 
         const handleClose = useCallback(() => removeToast(id), [id]);
 
@@ -29,8 +29,8 @@ const Component: FC<ToastComponentProps> = memo(
                     )}
                 </Styled.IconWrapper>
                 <Styled.ContentWrapper>
-                    {header && <Text textWeight="Medium">{header}</Text>}
-                    {message && <Text>{message}</Text>}
+                    {header && (isValidStringOrNumber(header) ? <Text textWeight="Medium">{header}</Text> : header)}
+                    {message && (isValidStringOrNumber(message) ? <Text>{message}</Text> : message)}
                 </Styled.ContentWrapper>
                 <Styled.ActionWrapper>
                     {action && (
@@ -38,7 +38,7 @@ const Component: FC<ToastComponentProps> = memo(
                             {action.label}
                         </Button>
                     )}
-                    <ClearIcon size="XS" variant="solid" onClick={handleClose} />
+                    {!hideCloseIcon && <ClearIcon title={`${id}-toast-close-icon`} size="XS" variant="solid" onClick={handleClose} />}
                 </Styled.ActionWrapper>
             </Styled.Toast>
         );
