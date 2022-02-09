@@ -38,7 +38,7 @@ const Component: FC<ToastComponentProps> = memo(
                             {action.label}
                         </Button>
                     )}
-                    {!hideCloseIcon && <ClearIcon title={`${id}-toast-close-icon`} size="XS" variant="solid" onClick={handleClose} />}
+                    {!hideCloseIcon && <ClearIcon title="toast-close-icon" size="XS" variant="solid" onClick={handleClose} />}
                 </Styled.ActionWrapper>
             </Styled.Toast>
         );

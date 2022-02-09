@@ -27,7 +27,7 @@ describe('Toast', () => {
 
     it('should not render close icon if hideCloseIcon is set to true', () => {
         render(<Toast id={1} variant="success" icon={HomeIcon} hideCloseIcon />);
-        expect(screen.queryByTitle(`${1}-toast-close-icon`)).not.toBeInTheDocument();
+        expect(screen.queryByTitle(`toast-close-icon`)).not.toBeInTheDocument();
     });
 
     it('should render custom message component', () => {
