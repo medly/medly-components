@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.3.0...@medly-components/core@6.4.0) (2022-02-09)
+
+
+### Features
+
+* add functionality to add custom header and message component in… ([#585](https://github.com/medly/medly-components/issues/585)) ([70384c6](https://github.com/medly/medly-components/commit/70384c611510005d5e0c9a28406a1fc406930177))
+
+
+
+
+
 # [6.3.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.2.2...@medly-components/core@6.3.0) (2022-02-03)
 
 
