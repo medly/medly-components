@@ -8,8 +8,7 @@ import { defaultTheme } from '@medly-components/theme';
 
 # Box
 
-A simple box component with customizable properties.
-
+The Box component serves as a wrapper component for most  CSS utility needs. It has customizable properties. By default it renders a `div`.
 You can play with the props in the **Canvas** tab.
 
 <Preview withToolbar>
@@ -34,14 +33,14 @@ You can play with the props in the **Canvas** tab.
     </Story>
 </Preview>
 
-### Padding and Margin
+## Padding and margin
 
-Padding can be defined with `px` and `py`.
+Define padding with `px` and `py`.
 
 -   `px` - padding along x-axis.
 -   `py` - padding along y-axis.
 
-Margin can be defined with `mx` and `my`.
+Define margin with `mx` and `my`.
 
 -   `mx` - margin along x-axis.
 -   `my` - margin along y-axis.
@@ -57,9 +56,9 @@ Margin can be defined with `mx` and `my`.
     </Box>
 </Preview>
 
-### Color and Background Color
+## Color and background color
 
-Color and Background color can be provided to box component as `color` and `bg` respectively.
+Provide a color and background color to a box component. Use `color` and `bg` respectively.
 
 <Preview>
     <Box color="white" bg="black" mx={2}>
@@ -70,9 +69,9 @@ Color and Background color can be provided to box component as `color` and `bg` 
     </Box>
 </Preview>
 
-### Height and Width
+## Height and width
 
-`height` and `width` can be defined as any CSS unit ( rem | px | percent | ... ).
+Define the `height` and `width` as any CSS (rem | px | percent) unit.
 
 <Preview>
     <Box color="white" bg="black" mx={2} height="20rem" width="40rem">
@@ -83,11 +82,11 @@ Color and Background color can be provided to box component as `color` and `bg` 
     </Box>
 </Preview>
 
-### Border
+## Border
 
-Border can be added using `borderWidth` and `borderColor`. Border Radius can also be added using `borderRadius`.
+Add a border using `borderWidth` and `borderColor`. Additionally, to include a border radius use `borderRadius`.
 
-> **Note**: Border will be added only when both `borderWidth` and `borderColor` are provided.
+> **Note**: Add a border only when both `borderWidth` and `borderColor` are provided.
 
 > Value for borderWidth and borderRadius are defined as a `number` and then converted into `rem` using `(value * 0.25rem)`
 
@@ -100,11 +99,11 @@ Border can be added using `borderWidth` and `borderColor`. Border Radius can als
     </Box>
 </Preview>
 
-### Font Variant
+## Font variant
 
-It defines the font size that will be used for font inside the box component.
+It defines the font size to use inside the box component.
 
-> **Note** Font Variant is only applied if child is text
+> **Note** The font-variant is only applied if the child is a text value.
 
 <Preview>
     <Box mx={2} fontVariant="h1" borderColor={defaultTheme.colors.grey[500]} borderWidth={1}>
@@ -115,11 +114,11 @@ It defines the font size that will be used for font inside the box component.
     </Box>
 </Preview>
 
-### Shadow
+## Shadow
 
-There are four available `shadowSize` sizes: `S` | `M` | `L` | `XL`
+Four `shadowSize` sizes are available: `S` | `M` | `L` | `XL`
 
-Customize shadow using `shadowColor`.
+To customize shadow use: `shadowColor`
 
 <Preview>
     <Box mx={2} shadowSize="S">
@@ -136,6 +135,8 @@ Customize shadow using `shadowColor`.
     </Box>
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Box} />
