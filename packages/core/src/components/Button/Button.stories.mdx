@@ -12,7 +12,7 @@ import { action } from '@storybook/addon-actions';
 
 # Button
 
-A simple button component with different designs and colors.
+The button component triggers actions that users can take. 
 
 You can play with the props in the **Canvas** tab.
 
@@ -33,11 +33,11 @@ You can play with the props in the **Canvas** tab.
     </Story>
 </Preview>
 
-### Sizes
+## Sizes
 
-There are four available button sizes: `XS` | `S` | `M` | `L`
+Four button sizes are available: `XS` | `S` | `M` | `L`
 
-##### Extra Small Buttons
+### Extra small buttons
 
 <Preview>
     <Button size="XS">Extra Small Size</Button>
@@ -49,7 +49,7 @@ There are four available button sizes: `XS` | `S` | `M` | `L`
     </Button>
 </Preview>
 
-##### Small Buttons
+### Small buttons
 
 <Preview>
     <Button size="S">Small Size</Button>
@@ -61,7 +61,7 @@ There are four available button sizes: `XS` | `S` | `M` | `L`
     </Button>
 </Preview>
 
-##### Medium Buttons
+### Medium buttons
 
 <Preview>
     <Button size="M">Medium Size</Button>
@@ -73,7 +73,7 @@ There are four available button sizes: `XS` | `S` | `M` | `L`
     </Button>
 </Preview>
 
-##### Large Buttons
+### Large buttons
 
 <Preview>
     <Button size="L">Large Size</Button>
@@ -85,7 +85,7 @@ There are four available button sizes: `XS` | `S` | `M` | `L`
     </Button>
 </Preview>
 
-### Variants
+## Variants
 
 Use the variant prop to change the button style.
 
@@ -95,9 +95,9 @@ Use the variant prop to change the button style.
     <Button variant="flat">Flat Button</Button>
 </Preview>
 
-### Disabled
+## Disable
 
-Use the Disable variant prop to disable styles of all the variants.
+Use the disable variant prop to disable all the variant styles.
 
 <Preview>
     <Button disabled variant="solid">
@@ -111,9 +111,9 @@ Use the Disable variant prop to disable styles of all the variants.
     </Button>
 </Preview>
 
-### With Icon
+## With Icon
 
-You can also use icons as content in the button as shown below.
+Use icons as content in the button as shown below:
 
 ```tsx
 import { SendIcon } from '@medly-components/icons';
@@ -140,9 +140,9 @@ import { Button } from '@medly-components/icons';
     </Button>
 </Preview>
 
-### Custom Colors
+## Custom colors
 
-To use custom colors for the `button` component, provide the custom `theme`. You can use the `updateNestedValue` function available in `@medly-components/utils` to update the nested values in the `defaultTheme` object. Check out the `Theme` section to find out the mandatory properties in different variants.
+To use custom colors for the `button` component, provide the custom `theme`. You can use the `updateNestedValue` function available in `@medly-components/utils` to update the nested values in the `defaultTheme` object. Check the `Theme` section to find the mandatory properties in different variants.
 
 ```tsx
 import { updateNestedValue } from '@medly-components/utils';
@@ -191,10 +191,14 @@ import { ThemeProvider } from 'styled-components';
     </ThemeProvider>
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Button} />
 
-### Theme
+## Theme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={ThemeInterface} />
