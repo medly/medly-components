@@ -11,15 +11,11 @@ import { action } from '@storybook/addon-actions';
 
 # Chip
 
-Chip represents complex entities in small blocks, such as a contact or a location.
+The chip components are compact entities that are used for items that need to be labeled, categorized, or organized.
 
-Use it to:
--   Tag by property
--   Categorize the selected items from the dropdown list
--   Highlight an item status for quick recognition
+## Basic chip
 
-
-### Basic Chip
+Use the basic chip prop as mentioned below:
 
 <Preview withToolbar>
     <Story name="Chip" decorators={[withKnobs]}>
@@ -34,9 +30,9 @@ Use it to:
     </Story>
 </Preview>
 
-### Variants
+## Variants
 
-Changes the style of the button.
+Use the variant prop to change the button style.
 
 <Preview>
     <Chip label="Solid Chip" onDelete={action('Delete Clicked')} variant="solid" color={defaultTheme.chip.defaultColor} />
@@ -44,9 +40,9 @@ Changes the style of the button.
     <Chip label="Flat Chip" onDelete={action('Delete Clicked')} variant="flat" color={defaultTheme.chip.defaultColor} />
 </Preview>
 
-### Disabled
+## Disabled
 
-Disables the style for all the variants.
+Use the disabled variant prop to disable all the variant styles.
 
 <Preview>
     <Chip disabled label="Solid Chip" variant="solid" color={defaultTheme.chip.defaultColor} />
@@ -54,7 +50,7 @@ Disables the style for all the variants.
     <Chip disabled label="Flat Chip" variant="flat" color={defaultTheme.chip.defaultColor} />
 </Preview>
 
-### Delete Icon
+## Delete icon
 
 Use the `onDelete` prop to feature a delete 'x' icon on the chip.
 
@@ -62,9 +58,9 @@ Use the `onDelete` prop to feature a delete 'x' icon on the chip.
     <Chip label="Chip without delete icon" onClick={action('Clicked')} color={defaultTheme.chip.defaultColor} />
 </Preview>
 
-### Custom Colors
+## Custom colors
 
-To use custom colors, provide the `custom` theme to the `chip` component. Use the `updateNestedValue` function available in `@medly-components/utils` to update the nested values in the `defaultTheme` object. Check out the `ChipTheme` section to find out the customizable properties.
+To use custom colors for the `chip` component, provide the `custom` theme. Use the `updateNestedValue` function available in `@medly-components/utils` to update the nested values in the `defaultTheme` object. Check the `ChipTheme` section to find the customizable properties.
 
 ```tsx
 import { updateNestedValue } from '@medly-components/utils';
@@ -93,10 +89,14 @@ import { Chip } from './Chip.tsx';
     </ThemeProvider>
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Chip} />
 
-### ChipTheme
+## ChipTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={stories.ThemeInterface} />
