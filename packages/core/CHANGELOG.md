@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.0...@medly-components/core@6.4.1) (2022-02-22)
+
+
+### Bug Fixes
+
+* solid tabs padding issue ([a578357](https://github.com/medly/medly-components/commit/a578357fe3878755dd86436eec152064ee70d309))
+
+
+
+
+
 # [6.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.3.0...@medly-components/core@6.4.0) (2022-02-09)
 
 
