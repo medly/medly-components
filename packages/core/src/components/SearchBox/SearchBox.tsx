@@ -38,7 +38,7 @@ const Component: FC<SearchBoxProps> = memo(
             [options, setOptions] = useState<Option[]>(defaultOptions || []),
             [isCustomSearchActive, setIsCustomSearchActive] = useState(false),
             [showCloseIcon, setShowCloseIcon] = useState(false),
-            isEnterKeyPress = useKeyPress('Enter', true, wrapperRef);
+            isEnterKeyPress = useKeyPress('Enter', true, optionsRef);
 
         useEffect(() => {
             if (props.options) {
