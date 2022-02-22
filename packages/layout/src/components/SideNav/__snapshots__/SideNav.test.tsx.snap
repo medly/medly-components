@@ -42,7 +42,6 @@ exports[`SideNav should render properly with shadow 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
-  display: inline-block;
 }
 
 .c12 {
@@ -552,7 +551,6 @@ exports[`SideNav should render properly without shadow 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
-  display: inline-block;
 }
 
 .c12 {

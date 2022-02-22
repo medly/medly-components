@@ -12,7 +12,6 @@ exports[`Form should not render any field if component type is not matched 1`] =
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
-  display: inline-block;
 }
 
 .c3 {
@@ -224,7 +223,6 @@ exports[`Form should render properly with initial state 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
-  display: inline-block;
 }
 
 .c21 {
@@ -238,7 +236,6 @@ exports[`Form should render properly with initial state 1`] = `
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
-  display: inline-block;
 }
 
 .c58 {
@@ -2562,7 +2559,6 @@ exports[`Form should render properly without initial state 1`] = `
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
-  display: inline-block;
 }
 
 .c20 {
@@ -2576,7 +2572,6 @@ exports[`Form should render properly without initial state 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
-  display: inline-block;
 }
 
 .c23 {
@@ -2590,7 +2585,6 @@ exports[`Form should render properly without initial state 1`] = `
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
-  display: inline-block;
 }
 
 .c57 {
