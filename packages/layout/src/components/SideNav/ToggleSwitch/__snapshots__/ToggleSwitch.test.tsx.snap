@@ -27,7 +27,6 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
-  display: inline-block;
 }
 
 .c1 {
@@ -221,7 +220,6 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
-  display: inline-block;
 }
 
 .c1 {
@@ -415,7 +413,6 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
-  display: inline-block;
 }
 
 .c1 {
