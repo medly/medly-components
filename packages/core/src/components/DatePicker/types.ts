@@ -41,9 +41,9 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     fullWidth?: boolean;
     /** Min width of the component */
     minWidth?: string;
-    /** Minimum selectable date */
+    /** Min selectable date */
     minSelectableDate?: Date;
-    /** Maximum selectable date */
+    /** Max selectable date */
     maxSelectableDate?: Date;
     /** Helper text */
     helperText?: string;

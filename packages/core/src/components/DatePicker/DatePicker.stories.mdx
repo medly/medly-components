@@ -18,18 +18,21 @@ import { placements } from '../Popover/Popover.stories.tsx';
     }}
 />
 
-# DatePicker component
+# DatePicker Component
 
-The datepicker component allows you to select a date through input text or calendar date selection. 
+The DatePicker allows you to select a date through input text or using a calendar dialog. 
 
-It is a controlled react component and must have the following handle state:
+Handle the state as follows:
 
 ```tsx
 const [date, setDate] = useState<Date | null>(null);
 return <DatePicker label="Select Date" value={date} onChange={setDate} />;
 ```
 
-To open the calendar, click on the calendar icon inside the DatePicker component. To close the calendar, select any date or click outside of the DatePicker component. You can also manually enter the date.
+To use the calendar below, follow the steps given:
+1. Select the calendar icon inside the DatePicker component to open the calendar.
+2. Select any date or click outside the DatePicker component to close the calendar.
+3. The provision to enter the date manually is applicable.
 
 <Preview withToolbar>
     <Story name="DatePicker">
@@ -57,9 +60,9 @@ To open the calendar, click on the calendar icon inside the DatePicker component
     </Story>
 </Preview>
 
-### Validations
+## Validations
 
-1. Validations happen on both invalid and blur events.
+1. Validations occur on invalid and blur events.
 
 ```tsx
 const FormWithDatePicker: React.FC = () => {
@@ -80,7 +83,7 @@ const FormWithDatePicker: React.FC = () => {
     <FormWithDatePicker />
 </Preview>
 
-2. Validations happen only on blur events if we enter an incorrect value and focus out of the DatePicker component.
+2. Validations occur on blur events if we enter an incorrect value and focus out of the DatePicker component.
 
 ```tsx
 const DatePicker: React.FC = () => {
@@ -92,10 +95,14 @@ const DatePicker: React.FC = () => {
     <DatePicker id="without-required" value={null} onChange={() => {}} label="Select Date" />
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={DatePicker} />
 
-### DatePickerTheme
+## DatePickerTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={ThemeInterface} />

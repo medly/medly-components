@@ -6,7 +6,7 @@ import * as stories from './Drawer.stories';
 
 # Drawer
 
-Drawer consists of three sections Header, Content and Footer. All of these you can directly use from Drawer component only like below ...
+A Drawer component provides access to locations in your application. It is anchored to the left or right edge of the screen. It consists of a Header, Content, and Footer. 
 
 ```typescript
 <Drawer open={drawerState} onClose={changeDrawerState}>
@@ -20,20 +20,26 @@ Drawer consists of three sections Header, Content and Footer. All of these you c
 </Drawer>
 ```
 
-Shadow will appear on the Header & Actions section if you scroll the content.
+Shadow appears on the Header and Actions section if you scroll through the content.
 
-### Examples
+## Example
+
+Use the example given below: 
 
 <Preview withToolbar>
     <Story name="Drawer">{stories.Basic()}</Story>
 </Preview>
 
-> Note: Check the detailed code at this [link](https://github.com/medly/medly-components/blob/master/packages/core/src/components/Drawer/Drawer.stories.tsx)
+> Note: To view a complete description of the code click [here](https://github.com/medly/medly-components/blob/master/packages/core/src/components/Drawer/Drawer.stories.tsx)
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Drawer} />
 
-### Drawer Footer Props
+## Drawer Footer Props
+
+The drawer footer prop is given in the table below:
 
 <Props of={Drawer.Footer} />
