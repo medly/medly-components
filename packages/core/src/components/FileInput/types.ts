@@ -24,7 +24,7 @@ export interface FileInputProps extends Omit<HTMLProps<HTMLInputElement>, 'type'
     fullWidth?: boolean;
     /** Disable Input */
     disabled?: boolean;
-    /** To be used when it is required in any form */
+    /** To use as per requirement in any form */
     required?: boolean;
     /** Input label */
     label?: string;
