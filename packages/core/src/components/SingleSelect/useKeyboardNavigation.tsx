@@ -54,7 +54,7 @@ export const useKeyboardNavigation = (props: Props) => {
                     ? hoveredOption
                     : options.find(op => op.hovered) || options.find(op => op.selected) || { value: '', label: '' },
                 nextValueGetter = downPress ? getNextOption : getPrevOption;
-            areOptionsVisible ? hoverOption(nextValueGetter(hovered, nested || options)) : showOptions();
+            options.length && areOptionsVisible ? hoverOption(nextValueGetter(hovered, nested || options)) : showOptions();
         }
     }, [downPress, upPress, areOptionsVisible]);
 
