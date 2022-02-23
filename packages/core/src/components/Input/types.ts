@@ -2,7 +2,7 @@ import { HTMLProps } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
 export interface InputProps extends HTMLProps<HTMLInputElement> {
-    /** Label Position */
+    /** Label position */
     labelPosition?: LabelPositions;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
@@ -10,9 +10,9 @@ export interface InputProps extends HTMLProps<HTMLInputElement> {
     prefix?: string;
     /** Suffix */
     suffix?: string;
-    /** Disable Input */
+    /** Disable input */
     disabled?: boolean;
-    /** To be used when it is required in any form */
+    /** Use to make the input field mandatory while filling the form */
     required?: boolean;
     /** Input label */
     label?: string;

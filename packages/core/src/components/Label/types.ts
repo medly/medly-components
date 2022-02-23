@@ -16,14 +16,14 @@ export interface LabelCommonProps extends HTMLProps<HTMLLabelElement> {
      * @default false
      */
     required?: boolean;
-    /** Label Color */
+    /** Label color */
     labelColor?: string;
 }
 
 export interface LabelProps extends LabelCommonProps {
-    /** Label Variant */
+    /** Label variant */
     labelVariant?: FontVariants;
-    /** Label Weight */
+    /** Label weight */
     labelWeight?: FontWeights;
 }
 
