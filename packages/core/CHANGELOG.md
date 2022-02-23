@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.2...@medly-components/core@6.4.3) (2022-02-23)
+
+
+### Bug Fixes
+
+* search component breaks after right arrow key press ([#593](https://github.com/medly/medly-components/issues/593)) ([18e42c6](https://github.com/medly/medly-components/commit/18e42c69051afbe2bcdd82cbcf9e4e8f966cfaef)), closes [#590](https://github.com/medly/medly-components/issues/590)
+
+
+
+
+
 ## [6.4.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.1...@medly-components/core@6.4.2) (2022-02-23)
 
 
