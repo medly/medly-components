@@ -6,9 +6,8 @@ import * as stories from './Modal.stories';
 
 # Modal
 
-Basic modal component. You can play with the component in the canvas tab.
-
-Modal consists of three sections Header, Content and Actions. All of these you can directly use from Modal component only like bellow . . .
+The `Modal` components are separate windows within an application that are mostly overlaid on the primary window. The contents behind a modal dialog are inert, meaning you cannot interact with the content behind the dialog. It is a common user interface pattern that provides information or requires confirmation.
+It consists of a Header, Content, and Actions. You can play with the component in the canvas tab.
 
 ```tsx
 import { Modal } from '@medly-components/core';
@@ -41,28 +40,30 @@ DummyComponent.displayName = 'DummyComponent';
 
 ## Shadow Effect
 
-Shadow will apear on the Header & Actions section if you scroll the content.
+The shadow effect apears on the Header & Actions section if you scroll through the content.
 
 ### Keyboard Support
 
-It also supports keyboard navigation when it is in focus
-
-| Key | Function        |
-| --- | --------------- |
-| Esc | Close the modal |
+The Modal component supports keyboard navigation when in focus. You can use the Esc key to close the modal.
 
 <Preview withToolbar>
     <Story name="Modal">{stories.Basic()}</Story>
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Modal} />
 
-### Modal Action Props
+## Modal Action Props
+
+The Modal action prop is given in the table below:
 
 <Props of={stories.ModalActionProps} />
 
-### ModalTheme
+## ModalTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={stories.ThemeInterface} />
