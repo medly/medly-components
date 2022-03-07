@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.4](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.3...@medly-components/core@6.4.4) (2022-03-07)
+
+
+### Bug Fixes
+
+* date picker validation message issue ([63bf280](https://github.com/medly/medly-components/commit/63bf280748f19a100e337efe2cce0a7af492579d))
+
+
+
+
+
 ## [6.4.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.2...@medly-components/core@6.4.3) (2022-02-23)
 
 
