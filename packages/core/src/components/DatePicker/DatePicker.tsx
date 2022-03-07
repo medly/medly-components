@@ -51,9 +51,11 @@ const Component: FC<DatePickerProps> = memo(
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const inputValue = event.target.value,
-                        parsedDate = parseToDate(inputValue, displayFormat!);
+                        parsedDate = parseToDate(inputValue, displayFormat!),
+                        isValidDate = parsedDate?.toString() !== 'Invalid Date';
                     setTextValue(inputValue);
                     onChange(parsedDate.toString() !== 'Invalid Date' ? parsedDate : null);
+                    isValidDate && validate(event);
                 },
                 [displayFormat, onChange]
             ),
