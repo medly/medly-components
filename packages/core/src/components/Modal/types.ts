@@ -13,7 +13,7 @@ export interface ModalProps extends HTMLProps<HTMLDivElement> {
     minWidth?: string;
     /** Min height in px/rem/% (1rem = 10px) */
     minHeight?: string;
-    /** Set it true to close the modal when clicking outside the popup */
+    /** Set it true to close the modal when clicked outside the modal */
     shouldCloseOnOutsideClick?: boolean;
 }
 
