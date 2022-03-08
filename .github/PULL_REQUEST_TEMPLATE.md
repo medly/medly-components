@@ -27,7 +27,6 @@
 
 
 ## Fixes #<issue_number>
-(Replace This Text: Please enter the issue number.)
 
 
 ## What is the current behaviour?
