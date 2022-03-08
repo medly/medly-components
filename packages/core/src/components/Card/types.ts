@@ -11,7 +11,7 @@ export interface CardProps extends HTMLProps<HTMLDivElement> {
     to?: string;
     /** Card design */
     variant?: 'solid' | 'flat';
-    /** Use the card as a flex container of a normal block */
+    /** Use the card as a flex container or a normal block */
     display?: 'block' | 'flex';
     /** Direction of the children */
     flowDirection?: 'vertical' | 'horizontal';
