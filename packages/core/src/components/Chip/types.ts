@@ -7,7 +7,7 @@ export interface StyledProps extends ButtonProps {
     variant?: 'solid' | 'flat' | 'outlined';
     /** Button colors */
     color?: string;
-    /** Use to render any component as Chip */ 
+    /** Use to render any component as Chip */
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     /** Use for rendering like Link */
     to?: string;
