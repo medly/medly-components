@@ -20,9 +20,9 @@ export type BoxProps = Omit<HTMLProps<HTMLDivElement>, 'size'> & { theme?: Theme
     width?: string;
     /** To specify the height of the component */
     height?: string;
-    /** To specify the border color the borderWidth is required */
+    /** To specify the border color, the borderWidth is required */
     borderColor?: string;
-    /** To specify the border width the borderColor is required */
+    /** To specify the border width the borderColor, is required */
     borderWidth?: number;
     /** To change the border-radius */
     borderRadius?: number;
