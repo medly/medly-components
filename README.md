@@ -16,7 +16,7 @@ Themable React components with various configurations to match your needs.
 
 To view a detailed description of the components in storybook click [here](https://medly.github.io/medly-components).
 
-## Table of contents
+## Table of Contents
 
 - 🚀 [Getting started](#getting-started)
 - 📦 [Packages](#packages)
@@ -32,7 +32,7 @@ To view a detailed description of the components in storybook click [here](https
 - 👨‍💻 [Contributing](#CONTRIBUTING)
 - 📝 [NPM scripts](#npm-scripts)
 
-## Getting started
+## Getting Started
 
 ```properties
 npx create-react-app medly-components-demo --template typescript
@@ -121,7 +121,7 @@ This project exists thanks to all the people who contribute.
   <img src="https://contrib.rocks/image?repo=medly/medly-components" />
 </a>
 
-## Built with
+## Built With
 
 🔥 [react](https://github.com/facebook/react)
 
@@ -135,9 +135,9 @@ This project exists thanks to all the people who contribute.
 
 🐐 [react-testing-library](https://github.com/kentcdodds/react-testing-library)
 
-## NPM scripts
+## NPM Scripts
 
-Please find the below a list of commands to help run your project: 
+Please find below a list of commands to execute various tasks: 
 
 - `yarn build` to build components
 - `yarn commit` to commit with conventional-commit approach
