@@ -1,6 +1,6 @@
 # Contributing Guide 
 
-This page contains guidelines for contributing to the this project. Please review these guidelines before submitting any pull requests.
+This page contains guidelines for contributing to this project. Please review these guidelines before submitting any pull requests.
 
 This repo uses yarn workspaces, you must install `yarn` as the package manager.
 
@@ -8,7 +8,7 @@ This repo uses yarn workspaces, you must install `yarn` as the package manager.
 
 ## Project setup
 
-To enable a project setup in this repo, perform the following steps:
+Perform the following steps to setup the project:
 
 1. Fork and clone the repo.
 2. Run `yarn` to install dependencies.
@@ -24,8 +24,7 @@ To enable a project setup in this repo, perform the following steps:
 > git fetch upstream
 > git branch --set-upstream-to=upstream/master master
 > ```
->
-> Good practices to follow once you run the command:
+> 
 > - This command adds the original repository as a **remote** called **upstream**
 > - Fetch the git information from that remote and set your local 'master' branch to use the upstream master branch whenever you run 'git pull'
 > - Make all your pull requests branches based on this 'master' branch
@@ -55,7 +54,7 @@ Please find in the table below the different props naming rules:
 
 ## Development workflow
 
-After setting the project, run yarn to fetch all the dependencies. On doing so, run the following commands:
+After setting the project, run yarn to fetch all the dependencies. Then you can run the following commands:
 
 - `yarn clean` to delete `node_modules` and remove all linking across packages. Once done, you must run `yarn` & `yarn build` to build the packages again.
 - `yarn storybook` to run storybook for local developments.
