@@ -83,7 +83,7 @@ The Core package consists of almost all the basic React components like Avatar, 
 
 ### [Forms](https://github.com/medly/medly-components/tree/master/packages/forms)
 
-The Form package lets you create dynamic forms using simple json.
+The Form package lets you create dynamic forms using simple JSON.
 
 ### [Icons](https://github.com/medly/medly-components/tree/master/packages/icons)
 
