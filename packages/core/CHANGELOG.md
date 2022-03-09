@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.4...@medly-components/core@6.5.0) (2022-03-09)
+
+
+### Features
+
+* add defaultMonth and defaultYear in DatePicker component ([7743963](https://github.com/medly/medly-components/commit/7743963b3124a341318de0189283c7f6bf901372))
+
+
+
+
+
 ## [6.4.4](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.3...@medly-components/core@6.4.4) (2022-03-07)
 
 
