@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC, useCallback, useRef, useState } from 'react';
+import { FC, memo, useCallback, useRef, useState } from 'react';
 import NavGroup from './NavGroup';
 import NavItem from './NavItem';
 import NavList from './NavList';
@@ -9,7 +9,7 @@ import ToggleSwitch from './ToggleSwitch';
 import { SideNavProps, SideNavStaticProps } from './types';
 
 export const Component: FC<SideNavProps> = memo(props => {
-    const { id, active, children, defaultActive, onChange, hideShadow, defaultOpen } = props;
+    const { id, active, children, defaultActive, onChange, hideShadow, defaultOpen, className } = props;
 
     const ref = useRef(null),
         [isHovered, setHoveredState] = useState(false),
@@ -33,7 +33,15 @@ export const Component: FC<SideNavProps> = memo(props => {
 
     return (
         <SideNavContext.Provider value={{ isHovered, isExpanded, activeItem: active || activeItem, activeItemChangeHandler }}>
-            <Styled.Aside ref={ref} position="left" id={id} isExpanded={isExpanded} isHovered={isHovered} hideShadow={hideShadow}>
+            <Styled.Aside
+                ref={ref}
+                position="left"
+                id={id}
+                isExpanded={isExpanded}
+                isHovered={isHovered}
+                hideShadow={hideShadow}
+                className={className}
+            >
                 <Styled.Nav
                     isHovered={isHovered}
                     hideShadow={hideShadow}
