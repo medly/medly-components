@@ -57,6 +57,10 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     showTooltipForHelperAndErrorText?: boolean;
     /** Display calendar icon left or right */
     calendarIconPosition?: 'left' | 'right';
+    /** Default month to show on calendar */
+    defaultMonth?: number;
+    /** Default year to show on calendar */
+    defaultYear?: number;
 }
 
 export interface StyleProps extends Pick<DatePickerProps, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {

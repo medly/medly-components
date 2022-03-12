@@ -31,14 +31,13 @@ const Component: FC<SearchBoxProps> = memo(
         const wrapperRef = useRef<any>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             isFocused = useRef(false),
-            enterPress = useKeyPress('Enter'),
             optionsRef = useRef<HTMLUListElement>(null),
             [isTyping, updateIsTyping] = useState(false),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [options, setOptions] = useState<Option[]>(defaultOptions || []),
             [isCustomSearchActive, setIsCustomSearchActive] = useState(false),
             [showCloseIcon, setShowCloseIcon] = useState(false),
-            isEnterKeyPress = useKeyPress('Enter', true, wrapperRef);
+            isEnterKeyPress = useKeyPress('Enter', true, optionsRef);
 
         useEffect(() => {
             if (props.options) {
@@ -113,16 +112,14 @@ const Component: FC<SearchBoxProps> = memo(
         }, wrapperRef);
 
         useEffect(() => {
-            enterPress && isFocused.current && !areOptionsVisible && onSearch && onSearch(inputRef.current?.value || '');
-        }, [enterPress, areOptionsVisible]);
-
-        useEffect(() => {
             if (isEnterKeyPress && isFocused.current) {
-                onSearch && onSearch(inputRef.current?.value || '');
-                if (inputRef.current) {
-                    inputRef.current.value = '';
+                const currentSelectedOption = options.find(option => option.hovered === true);
+                if (inputRef.current && currentSelectedOption) {
+                    inputRef.current.value = currentSelectedOption.label;
+                    onOptionSelected && onOptionSelected(currentSelectedOption);
                     inputRef.current.blur();
                 }
+                onSearch && onSearch(inputRef.current?.value || '');
                 setOptionsVisibilityState(false);
                 setShowCloseIcon(false);
                 updateIsTyping(false);
