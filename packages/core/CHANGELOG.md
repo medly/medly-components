@@ -3,6 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.5.1...@medly-components/core@6.5.2) (2022-03-12)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [6.5.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.5.0...@medly-components/core@6.5.1) (2022-03-11)
+
+
+### Bug Fixes
+
+* use id in toggle ([#599](https://github.com/medly/medly-components/issues/599)) ([279a9a7](https://github.com/medly/medly-components/commit/279a9a7ae0f32e63e24b8db0b058073e33e993d7))
+
+
+
+
+
+# [6.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.4...@medly-components/core@6.5.0) (2022-03-09)
+
+
+### Features
+
+* add defaultMonth and defaultYear in DatePicker component ([7743963](https://github.com/medly/medly-components/commit/7743963b3124a341318de0189283c7f6bf901372))
+
+
+
+
+
+## [6.4.4](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.3...@medly-components/core@6.4.4) (2022-03-07)
+
+
+### Bug Fixes
+
+* date picker validation message issue ([63bf280](https://github.com/medly/medly-components/commit/63bf280748f19a100e337efe2cce0a7af492579d))
+
+
+
+
+
+## [6.4.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.2...@medly-components/core@6.4.3) (2022-02-23)
+
+
+### Bug Fixes
+
+* search component breaks after right arrow key press ([#593](https://github.com/medly/medly-components/issues/593)) ([18e42c6](https://github.com/medly/medly-components/commit/18e42c69051afbe2bcdd82cbcf9e4e8f966cfaef)), closes [#590](https://github.com/medly/medly-components/issues/590)
+
+
+
+
+
+## [6.4.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.1...@medly-components/core@6.4.2) (2022-02-23)
+
+
+### Bug Fixes
+
+* onSearch method not getting called on enter keypress  ([#592](https://github.com/medly/medly-components/issues/592)) ([d75ed5d](https://github.com/medly/medly-components/commit/d75ed5da84dd19cd2beaf7246c953cefba14779c)), closes [#591](https://github.com/medly/medly-components/issues/591)
+
+
+
+
+
 ## [6.4.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.4.0...@medly-components/core@6.4.1) (2022-02-22)
 
 
