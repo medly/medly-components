@@ -10,19 +10,19 @@ export interface RadioGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'size' 
     onChange?: (value: any) => void;
     /** Options */
     options: { value: any; label: string; disabled?: boolean }[];
-    /** Function will called with the input value on Blur event */
+    /** Function will be called with the input value on Blur event */
     validator?: (val: any) => string;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Radio group label */
     label?: string;
-    /** To be used when it is required in any form */
+    /** Use when required in any form */
     required?: boolean;
     /** Radio size */
     size?: RadioSizes;
-    /** To be used to disable radio selection */
+    /** Use to disable radio selection */
     disabled?: boolean;
-    /** Label Variant */
+    /** Label variant */
     labelVariant?: FontVariants;
     /** Label weight */
     labelWeight?: FontWeights;
