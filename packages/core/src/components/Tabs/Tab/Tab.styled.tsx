@@ -86,7 +86,7 @@ const disabledStyle = css<StyledTabProps>`
 `;
 
 const getSolidTabWidth = ({ totalTabs, theme, tabSize }: StyledTabProps) => {
-    const paddingBetweenTabs = `calc(${totalTabs - 1} * ${theme.tabs.solid.tabList.padding[tabSize]} / ${totalTabs}})`;
+    const paddingBetweenTabs = `calc(${totalTabs - 1} * ${theme.tabs.solid.tabList.padding[tabSize]} / ${totalTabs})`;
     return `calc(${100 / totalTabs}% - ${paddingBetweenTabs})`;
 };
 

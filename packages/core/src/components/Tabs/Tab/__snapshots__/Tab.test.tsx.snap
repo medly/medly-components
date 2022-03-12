@@ -3465,7 +3465,7 @@ exports[`Tab should render properly with solid tab variant 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: calc(NaN% - calc(NaN * .4rem / undefined}));
+  width: calc(NaN% - calc(NaN * .4rem / undefined));
   border: none;
   background-color: transparent;
   padding: 0.8rem 0;

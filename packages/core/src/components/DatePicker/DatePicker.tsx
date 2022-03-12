@@ -29,6 +29,8 @@ const Component: FC<DatePickerProps> = memo(
                 maxSelectableDate,
                 showCalendarIcon,
                 calendarIconPosition,
+                defaultMonth,
+                defaultYear,
                 ...restProps
             } = props,
             id = props.id || props.label?.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
@@ -51,9 +53,11 @@ const Component: FC<DatePickerProps> = memo(
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const inputValue = event.target.value,
-                        parsedDate = parseToDate(inputValue, displayFormat!);
+                        parsedDate = parseToDate(inputValue, displayFormat!),
+                        isValidDate = parsedDate?.toString() !== 'Invalid Date';
                     setTextValue(inputValue);
                     onChange(parsedDate.toString() !== 'Invalid Date' ? parsedDate : null);
+                    isValidDate && validate(event);
                 },
                 [displayFormat, onChange]
             ),
@@ -167,6 +171,8 @@ const Component: FC<DatePickerProps> = memo(
                         date={date}
                         isErrorPresent={isErrorPresent}
                         onChange={onDateChange}
+                        defaultMonth={defaultMonth}
+                        defaultYear={defaultYear}
                         minSelectableDate={minSelectableDate!}
                         maxSelectableDate={maxSelectableDate!}
                     />

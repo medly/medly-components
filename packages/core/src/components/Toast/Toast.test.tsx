@@ -1,5 +1,6 @@
 import { HomeIcon } from '@medly-components/icons';
 import { fireEvent, render, screen } from '@test-utils';
+import Text from '../Text';
 import { Toast } from './Toast';
 import { ToastProps } from './types';
 
@@ -22,6 +23,21 @@ describe('Toast', () => {
     it('should render custom icons', () => {
         const { container } = render(<Toast id={1} variant="success" icon={HomeIcon} />);
         expect(container).toMatchSnapshot();
+    });
+
+    it('should not render close icon if hideCloseIcon is set to true', () => {
+        render(<Toast id={1} variant="success" icon={HomeIcon} hideCloseIcon />);
+        expect(screen.queryByTitle(`toast-close-icon`)).not.toBeInTheDocument();
+    });
+
+    it('should render custom message component', () => {
+        render(<Toast id={1} variant="success" icon={HomeIcon} hideCloseIcon message={<Text>Dummy Message</Text>} />);
+        expect(screen.getByText(`Dummy Message`)).toBeInTheDocument();
+    });
+
+    it('should render custom header component', () => {
+        render(<Toast id={1} variant="success" icon={HomeIcon} hideCloseIcon header={<Text>Dummy Header</Text>} />);
+        expect(screen.getByText(`Dummy Header`)).toBeInTheDocument();
     });
 
     it('should render action button', () => {

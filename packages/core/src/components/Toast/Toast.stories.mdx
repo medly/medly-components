@@ -4,6 +4,7 @@ import { variants, ThemeInterface, Div } from './Toast.stories';
 import { withKnobs, select, text, boolean } from '@storybook/addon-knobs';
 import { PersonAddIcon } from '@medly-components/icons';
 import { action } from '@storybook/addon-actions';
+import Text from '../Text';
 
 <Meta
     title="Core"
@@ -36,6 +37,38 @@ You have to add `<ToastContainer/>` in your app at root level and then just use 
 
 <Props of={ThemeInterface} />
 
+### Custom header and message component
+
+You can pass custom header and message components.
+
+```tsx
+<Toast
+    id="1"
+    variant="success"
+    header={<Text textVariant="h4">Lorem Ipsum is simply dummy text.</Text>}
+    message={<Text textVariant="body2">Lorem Ipsum is simply dummy text.</Text>}
+></Toast>;
+
+OR;
+
+addToast({
+    variant: 'success',
+    header={<Text textVariant="h4">Lorem Ipsum is simply dummy text.</Text>},
+    message={<Text textVariant="body2">Lorem Ipsum is simply dummy text.</Text>}
+});
+```
+
+<Preview withToolbar>
+    <Div>
+        <Toast
+            id="1"
+            variant="success"
+            header={<Text textVariant="h4">Lorem Ipsum is simply dummy text.</Text>}
+            message={<Text textVariant="body2">Lorem Ipsum is simply dummy text.</Text>}
+        ></Toast>
+    </Div>
+</Preview>
+
 ### Props
 
 <Props of={Toast} />
@@ -55,6 +88,7 @@ Yuo can play with this toast in canvas tab.
             message={text('Message', 'Lorem Ipsum is simply dummy text.')}
             action={{ label: 'Take Action', onClick: action('Submitted') }}
             fullWidth={boolean('Full Width', false)}
+            hideCloseIcon={boolean('Hide close icon', false)}
         ></Toast>
     </Story>
 </Preview>
