@@ -16,7 +16,7 @@ import {
 
 # Popover
 
-A simple popover component which will show a popup on hovering/clicking on the content. The basic structure would be like below:
+The `Popover` component is a non-modal dialog that displays contextual information. The basic structure is given below:
 
 ```tsx
 <Popover interactionType="hover">
@@ -26,6 +26,10 @@ A simple popover component which will show a popup on hovering/clicking on the c
     </Popover.Popup>
 </Popover>
 ```
+
+## With Arrow
+
+To use the arrow popup, you must use the `withArrow` prop. The arrow makes the popover appear like a tooltip and can adjust to various positions. You can also change the background color using `bgColor` prop.
 
 <Preview withToolbar>
     <Story name="Popover" decorators={[withKnobs]}>
@@ -46,11 +50,11 @@ A simple popover component which will show a popup on hovering/clicking on the c
     </Story>
 </Preview>
 
-### With Arrow
 
-The popup can be used with/without an arrow using the `withArrow` prop. The arrow makes the popover appear like a tooltip and can be adjusted to various positions. You can also change the background color using `bgColor` prop.
+## Without Arrow
 
-### Without Arrow
+To use a popover without the `withArrow` prop you can use the default popover given below.
+
 <Preview>
     <DummyWrapper>
         <Popover>
@@ -62,7 +66,9 @@ The popup can be used with/without an arrow using the `withArrow` prop. The arro
     </DummyWrapper>
 </Preview>
 
-### Placements
+## Placements
+
+The placement of the popover in different positions is given below.
 
 <Preview>
     <PlacementPreviewWrapper>
@@ -82,19 +88,21 @@ The popup can be used with/without an arrow using the `withArrow` prop. The arro
     </PlacementPreviewWrapper>
 </Preview>
 
-#### Note
 
-> You can also override the style of `Popover.Style` & `Popover.Popup.Style`
+> **Note** You can override the style for: `Popover.Style` and `Popover.Popup.Style` 
 
-### Accessing current state
+## Context
 
-We have also exposed `Popover.Context`, so that you can find out the latest open state. Popover context can be used like below:
+The `Popover.Context` is exposed to find the latest active state. 
+Use the Popover Context as mentioned below:
 
 ```tsx
 const [isOpen, setOpenState] = useContext(Popover.Context);
 ```
 
-Type of Popover Context is:
+## Type
+
+Popover Context type:
 
 ```tsx
 import * as React from 'react';
@@ -104,10 +112,14 @@ export type PopoverContextType = [
 ];
 ```
 
-### Popover Props
+## Popover Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Popover} />
 
-### Popover.Popup Props
+## Popover.Popup Props
+
+This component offers the following popup props mentioned in the table below:
 
 <Props of={Popover.Popup} />

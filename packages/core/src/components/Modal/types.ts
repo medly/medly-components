@@ -1,8 +1,8 @@
 import { HTMLProps, WithStyle } from '@medly-components/utils';
+import type { Dispatch, FC, RefObject } from 'react';
 import { ModalActionUserProps } from './Actions/types';
 import { ModalPopupProps } from './Popup/types';
 import { ScrollActionTypes } from './scrollStateReducer/types';
-import type { FC, Dispatch, RefObject } from 'react';
 
 export interface ModalProps extends HTMLProps<HTMLDivElement> {
     /** Shows modal only when this prop is true */
@@ -13,7 +13,7 @@ export interface ModalProps extends HTMLProps<HTMLDivElement> {
     minWidth?: string;
     /** Min height in px/rem/% (1rem = 10px) */
     minHeight?: string;
-    /** Set it true to close the modal on click outside of popup */
+    /** Set it true to close the modal when clicked outside the modal */
     shouldCloseOnOutsideClick?: boolean;
 }
 
