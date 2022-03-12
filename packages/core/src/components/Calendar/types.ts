@@ -6,6 +6,8 @@ export interface CalendarProps extends Omit<HTMLProps<HTMLDivElement>, 'onChange
     minSelectableDate: Date;
     maxSelectableDate: Date;
     isErrorPresent?: boolean;
+    defaultMonth?: number;
+    defaultYear?: number;
 }
 
 export interface DateProps extends HTMLProps<HTMLButtonElement>, WithThemeProp {

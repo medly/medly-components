@@ -60,6 +60,23 @@ describe('Calendar Component', () => {
         expect(yearInDOM).toEqual(year.toString());
     });
 
+    it('should render default year and month in dropdown if provided', async () => {
+        const { container } = render(
+            <Calendar
+                id="test-calendar"
+                date={null}
+                onChange={jest.fn()}
+                defaultMonth={2}
+                defaultYear={2005}
+                minSelectableDate={new Date(1901, 0, 1)}
+                maxSelectableDate={new Date(2022, 2, 1)}
+            />
+        );
+        const { month: monthInDOM, year: yearInDOM } = getDateValues(container);
+        expect(monthInDOM).toEqual(`${SHORT_CALENDAR_MONTHS[2]}`);
+        expect(yearInDOM).toEqual('2005');
+    });
+
     it('should call onChange with expected date', () => {
         const mockOnChange = jest.fn(),
             dateToSelect = new Date(2021, 1, 1);

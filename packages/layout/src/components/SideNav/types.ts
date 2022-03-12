@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import * as React from 'react';
 import { Theme } from '@medly-components/theme';
 import { WithStyle, WithThemeProp } from '@medly-components/utils';
+import * as React from 'react';
+import { FC } from 'react';
 import { StyledComponent } from 'styled-components';
 import { NavGroupProps } from './NavGroup/types';
 import { NavItemProps } from './NavItem/types';
@@ -26,6 +26,8 @@ export interface SideNavProps {
     hideShadow?: boolean;
     /** Set it true to open the sidenav on first render */
     defaultOpen?: boolean;
+    /** ClassName to be be passed to aside html tag */
+    className?: string;
 }
 
 export interface SideNavStaticProps {
