@@ -17,7 +17,7 @@ export interface RadioProps extends InputProps {
     label?: string;
     /** Label position */
     labelPosition?: LabelPositions;
-    /** Label Variant */
+    /** Label variant */
     labelVariant?: FontVariants;
     /** Label weight */
     labelWeight?: FontWeights;

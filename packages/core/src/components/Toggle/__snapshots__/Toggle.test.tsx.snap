@@ -100,7 +100,7 @@ exports[`Checkbox component should render correctly with all the default props 1
 <div>
   <div
     class="c0"
-    id="-checkbox"
+    id="medly-toggle-checkbox"
   >
     
     <div
@@ -242,11 +242,11 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 <div>
   <div
     class="c0"
-    id="Female-checkbox"
+    id="gender-toggle"
   >
     <label
       class="c1 c2"
-      for="Female"
+      for="gender-toggle"
     >
       Female
     </label>

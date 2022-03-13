@@ -29,6 +29,8 @@ const Component: FC<DatePickerProps> = memo(
                 maxSelectableDate,
                 showCalendarIcon,
                 calendarIconPosition,
+                defaultMonth,
+                defaultYear,
                 ...restProps
             } = props,
             id = props.id || props.label?.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
@@ -169,6 +171,8 @@ const Component: FC<DatePickerProps> = memo(
                         date={date}
                         isErrorPresent={isErrorPresent}
                         onChange={onDateChange}
+                        defaultMonth={defaultMonth}
+                        defaultYear={defaultYear}
                         minSelectableDate={minSelectableDate!}
                         maxSelectableDate={maxSelectableDate!}
                     />

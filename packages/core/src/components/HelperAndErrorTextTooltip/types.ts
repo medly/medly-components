@@ -1,8 +1,8 @@
 export interface HelperTextTooltipProps {
     /** Id prefix */
     id: string;
-    /** Helper Text */
+    /** Helper text */
     helperText?: string;
-    /** Error Text */
+    /** Error text */
     errorText?: string;
 }
