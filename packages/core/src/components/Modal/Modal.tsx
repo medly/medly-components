@@ -9,7 +9,6 @@ import { InnerContainerStyled, ModalBackgroundStyled } from './Modal.styled';
 import Popup from './Popup';
 import { reducer } from './scrollStateReducer/scrollStateReducer';
 import { ModalProps, ModalStaticProps } from './types';
-import { useScrollState } from './useScrollState';
 
 const Component: FC<ModalProps> = memo(
     forwardRef((props, ref) => {
@@ -23,8 +22,7 @@ const Component: FC<ModalProps> = memo(
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }),
             [shouldRender, setShouldRender] = useState(open),
             { width: windowWidth } = useWindowSize(),
-            isSmallScreen = windowWidth < 768,
-            handleScroll = useScrollState({ ref: innerContainerRef, scrollState, dispatch });
+            isSmallScreen = windowWidth < 768;
 
         const handleBackgroundClick = useCallback(() => {
                 shouldCloseOnOutsideClick && onCloseModal && onCloseModal();
@@ -65,7 +63,6 @@ const Component: FC<ModalProps> = memo(
                     <InnerContainerStyled
                         id={`${id}-inner-container`}
                         ref={innerContainerRef}
-                        onScroll={handleScroll}
                         headerHeight={headerHeight}
                     >
                         <ModalContext.Provider value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen }}>

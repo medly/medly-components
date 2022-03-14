@@ -43,6 +43,7 @@ exports[`Drawer component should render properly with left positioned 1`] = `
 .c6 {
   padding: 0 2.4rem;
   min-height: 4.2rem;
+  box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -210,6 +211,7 @@ exports[`Drawer component should render properly with right positioned 1`] = `
 .c6 {
   padding: 0 2.4rem;
   min-height: 4.2rem;
+  box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
