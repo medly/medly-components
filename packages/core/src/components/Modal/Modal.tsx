@@ -60,11 +60,7 @@ const Component: FC<ModalProps> = memo(
             <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
                 <Popup ref={modalRef} id={`${id}-popup`} onAnimationEnd={handleAnimationEnd} {...{ minWidth, minHeight, open }}>
                     <CloseIcon id={`${id}-close-button`} title={`${id}-close-icon`} size="M" variant="solid" onClick={onCloseModal} />
-                    <InnerContainerStyled
-                        id={`${id}-inner-container`}
-                        ref={innerContainerRef}
-                        headerHeight={headerHeight}
-                    >
+                    <InnerContainerStyled id={`${id}-inner-container`} ref={innerContainerRef} headerHeight={headerHeight}>
                         <ModalContext.Provider value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen }}>
                             {children}
                         </ModalContext.Provider>
