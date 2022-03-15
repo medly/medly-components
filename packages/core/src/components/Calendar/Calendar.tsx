@@ -21,9 +21,9 @@ const Component: FC<CalendarProps> = memo(
             { month: maxMonth, year: maxYear } = getMonthAndYearFromDate(maxSelectableDate);
 
         const handleDateChange = useCallback(
-                (newDate: Date) => () => {
+                (newDate: Date) => (e: React.MouseEvent<HTMLButtonElement>) => {
                     setCalenderVisibility(false);
-                    onChange(newDate);
+                    onChange(newDate, e);
                 },
                 [onChange]
             ),
