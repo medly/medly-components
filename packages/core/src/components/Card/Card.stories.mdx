@@ -11,8 +11,8 @@ import { variants, display, itemsPosition, flowDirection, ThemeInterface } from 
 
 # Card
 
-
-A simple card component with a lot of customization. The hover effect works only when you pass the `onClick` prop. You can play with the props in the **Canvas** tab. 
+A `Card` component is a content container for images, text, and actions in the context of a single subject. The hover effect works only when you pass the 'onClick' prop.
+You can play with the props in the **Canvas** tab. 
 
 <Preview withToolbar>
     <Story name="Card" decorators={[withKnobs]}>
@@ -44,9 +44,11 @@ A simple card component with a lot of customization. The hover effect works only
     </Story>
 </Preview>
 
-> **Note**: Shadow on hovering appears only when you pass the `onClick` prop to it.
+> **Note**: Shadow on hovering appears when you pass the `onClick` prop to it.
 
-### Variants
+## Variants
+
+Use the variant prop to change the card style.
 
 <Preview>
     <Card variant="solid">
@@ -57,9 +59,9 @@ A simple card component with a lot of customization. The hover effect works only
     </Card>
 </Preview>
 
-### Children direction
+## Children direction
 
-To customize the card component in many ways, use `display='flex'`.
+To customize the card component in multiple ways, use `display='flex'`.
 
 <Preview>
     <Card display="flex" flowDirection="horizontal" alignItems="center">
@@ -72,10 +74,14 @@ To customize the card component in many ways, use `display='flex'`.
     </Card>
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Card} />
 
-### CardTheme
+## CardTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={ThemeInterface} />

@@ -18,7 +18,7 @@ import { boolean, select, text } from '@storybook/addon-knobs';
 
 # Checkbox
 
-It is a simple box for making a binary choice. It is a controlled react component and must have the following handle state:
+The `Checkbox` component allows you to select one or more options from a set and turn an option on or off. It is a controlled react component and must have the following handle state:
 
 ```tsx
 const [isChecked, setChecked] = useState(false),
@@ -55,9 +55,9 @@ return <Checkbox label="Lorem Ipsum" checked={isChecked} onChange={onChangeHandl
     </Story>
 </Preview>
 
-### Validations
+## Validations
 
-1. This component calls the validator prop function with the latest value on blur, invalid, and change events. If you do not pass the validator function, it shows the default HTML5 error validation message if present.
+1. This component calls the validator prop function with the latest value on blur, invalid, and change events. If you do not pass the validator function, it displays the default HTML5 error validation message if present.
 
 ```tsx
 export const FormWithCheckbox: React.FC = props => {
@@ -90,10 +90,14 @@ validator={val => (!val ? 'Please accept the terms & conditions to continue.' : 
     />
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Checkbox} />
 
-### CheckboxTheme
+## CheckboxTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={ThemeInterface} />

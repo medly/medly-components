@@ -39,7 +39,7 @@ export interface CheckboxGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'siz
     label?: string;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
-    /** Makes the whole option row area clickable */
+    /** Makes the entire option row clickable */
     fullWidthOptions?: boolean;
     /** Disable all the checkboxes */
     disabled?: boolean;
@@ -59,12 +59,12 @@ export interface CheckboxGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'siz
     helperText?: string;
     /** Use this prop to render option in multiple columns */
     columns?: number;
-    /** Function will called with the input value on blur and change event */
+    /** Function to be called with the input value on blur and change event */
     validator?: (values: any[]) => string;
-    /** This will be handled internally */
+    /** To be handled internally */
     parentHasError?: boolean;
-    /** This will be handled internally for keyboard navigation */
+    /** To be handled internally for keyboard navigation */
     isHovered?: boolean;
-    /** This will be handled internally for keyboard navigation */
+    /** To be handled internally for keyboard navigation */
     setIsHovered?: Dispatch<SetStateAction<boolean>>;
 }
