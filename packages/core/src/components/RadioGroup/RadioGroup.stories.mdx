@@ -18,7 +18,8 @@ import { useState } from 'react';
 
 # RadioGroup
 
-Set of radio button to let users to choose from multiple options. It's a controlled react component. So you have to have the handle state like below.
+The `RadioGroup` is a wrapper used to group two or more Radio components. It is a controlled react component. It provides an easier API and proper keyboard accessibility to the group.
+Handle the state as mentioned below.
 
 ```tsx
 const [value, setValue] = useState('female');
@@ -64,9 +65,9 @@ return (
     </Story>
 </Preview>
 
-### Validations
+## Validations
 
-1. For now, RadioGroup by default can only show error message on form submit when you pass required prop.
+1. For now, by default, the RadioGroup component can only display the error message on the form submit when you pass the required prop.
 
 ```tsx
 () => {
@@ -95,7 +96,7 @@ return (
     <FormWithRadioGroup />
 </Preview>
 
-2. If you pass validator function then it will be called with latest selected value, so that if you want you can return the desired error message.
+2. If you pass the validator function, it will be called with the latest selected value. If needed, you can return the desired error message.
 
 ```tsx
 validator={val => (!val ? 'Please select any one company' : '')}
@@ -112,10 +113,13 @@ validator={val => (!val ? 'Please select any one company' : '')}
     />
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={RadioGroup} />
 
-### Theme
+## Theme
 
-Radio theme will be used for radio group.
+This component offers the same theme as Radio. To view the same click [here](http://www.medlycomponents.com/?path=/docs/core--radio#radiotheme)
+

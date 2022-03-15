@@ -6,9 +6,9 @@ import * as stories from './DialogBox.stories';
 
 # DialogBox
 
-Basic DialogBox component. You can play with the component in the canvas tab.
+`DialogBox` are windows that appear in front of app content to give critical information, request a decision, or involve multiple tasks.  It consists of a Header, Content, and Action.
 
-DialogBox consists of three sections Header, Content and Actions. All of these you can directly use from DialogBox component only like bellow . . .
+You can play with the component in the canvas tab.
 
 ```typescript
 <DialogBox open={openState} onCloseDialogBox={changeDialogBoxState(false)}>
@@ -22,25 +22,32 @@ DialogBox consists of three sections Header, Content and Actions. All of these y
 </DialogBox>
 ```
 
-Shadow will appear on the Header & Actions section if you scroll the content.
-To close the dialog-box you can perform below actions:
+Shadow appears on the Header and Actions section if you scroll through the content.
 
-1. Click on the cross icon
-2. Press `Esc` key
-3. If you have provided `shouldCloseOnOutsideClick` this prop then dialog-box will close on clicking outside of dialog-box
+To close the dialog box, you can either:
+
+1. Click the cross icon.
+2. Press `Esc` key.
+3. If the `shouldCloseOnOutsideClick` prop is provided, then the dialog box will close on clicking outside the dialog box.
 
 <Preview withToolbar>
     <Story name="DialogBox">{stories.Basic()}</Story>
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={DialogBox} />
 
-### DialogBox Action Props
+## DialogBox Action Props
+
+The DialogBox action prop is given in the table below:
 
 <Props of={stories.DialogBoxActionProps} />
 
-### DialogBoxTheme
+## DialogBoxTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={stories.ThemeInterface} />

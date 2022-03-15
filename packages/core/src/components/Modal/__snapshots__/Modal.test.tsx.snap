@@ -95,6 +95,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   display: flex;
   z-index: 10;
   padding: 2.4rem 1.6rem 0;
+  box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6);
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;

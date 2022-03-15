@@ -101,8 +101,8 @@ describe('Modal component', () => {
         const { container } = modalRenderer({ open: true });
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
-        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 300 });
-        fireEvent.scroll(container.querySelector('#medly-modal-content') as HTMLDivElement, { target: { scrollY: 300 } });
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 800 });
+        fireEvent.scroll(container.querySelector('#medly-modal-content') as HTMLDivElement, { target: { scrollY: 800 } });
         expect(container.querySelector('#medly-modal-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
         expect(container.querySelector('#medly-modal-actions')).not.toHaveStyle(
             `box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`
