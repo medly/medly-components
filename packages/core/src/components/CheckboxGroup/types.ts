@@ -65,6 +65,6 @@ export interface CheckboxGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'siz
     parentHasError?: boolean;
     /** To be handled internally for keyboard navigation */
     isHovered?: boolean;
-    /** To be handled internally for keyboard navigation */ 
+    /** To be handled internally for keyboard navigation */
     setIsHovered?: Dispatch<SetStateAction<boolean>>;
 }
