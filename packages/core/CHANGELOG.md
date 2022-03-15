@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.4](https://github.com/medly/medly-components/compare/@medly-components/core@6.5.3...@medly-components/core@6.5.4) (2022-03-15)
+
+
+### Bug Fixes
+
+* shadow issue on modal component ([#600](https://github.com/medly/medly-components/issues/600)) ([2923638](https://github.com/medly/medly-components/commit/2923638e0788eb25a8b107087d345e38d84551e5))
+
+
+
+
+
 ## [6.5.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.5.2...@medly-components/core@6.5.3) (2022-03-12)
 
 **Note:** Version bump only for package @medly-components/core
