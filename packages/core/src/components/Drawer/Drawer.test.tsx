@@ -98,8 +98,8 @@ describe('Drawer component', () => {
 
     it('should hide shadow of footer on scroll to bottom', () => {
         const { container } = render(<DummyComponent open />);
-        scrollTo(800, 500, 300);
-        fireEvent.scroll(container.querySelector('#medly-drawer-content') as HTMLDivElement, { target: { scrollY: 300 } });
+        scrollTo(800, 500, 800);
+        fireEvent.scroll(container.querySelector('#medly-drawer-content') as HTMLDivElement, { target: { scrollY: 800 } });
         expect(container.querySelector('#medly-drawer-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
         expect(container.querySelector('#medly-drawer-footer')).not.toHaveStyle(
             `box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`
