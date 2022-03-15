@@ -95,7 +95,7 @@ describe('Calendar Component', () => {
         fireEvent.click(screen.getByRole('button', { name: '2020' }));
         fireEvent.click(screen.getByText('2021'));
         fireEvent.click(screen.getByTitle(dateToSelect.toDateString()));
-        expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
+        expect(mockOnChange.mock.calls[0][0]).toEqual(dateToSelect);
     });
 
     it('should render previous month on clicking left arrow when current month is other than Jan', () => {
