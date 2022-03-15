@@ -77,7 +77,7 @@ export const FormWithCheckbox: React.FC = props => {
     <FormWithCheckbox />
 </Preview>
 
-2. If you pass the validator function, it calls the latest selected value and enables returning the desired error message if required.
+2. If you pass the validator function, it is called with the latest selected value and enables returning the desired error message if required.
 
 ```tsx
 validator={val => (!val ? 'Please accept the terms & conditions to continue.' : '')}
