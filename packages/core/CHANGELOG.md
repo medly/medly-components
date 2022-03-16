@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.0...@medly-components/core@6.6.1) (2022-03-16)
+
+
+### Bug Fixes
+
+* calling validator function with previous date in DatePicker component ([8622576](https://github.com/medly/medly-components/commit/86225762a1b5b4ee58f298d91fe39e3c2669cbff))
+
+
+
+
+
 # [6.6.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.5.5...@medly-components/core@6.6.0) (2022-03-15)
 
 
