@@ -73,7 +73,7 @@ const Component: FC<DatePickerProps> = memo(
                 [disabled]
             ),
             validate = useCallback(
-                (event: React.ChangeEvent<HTMLInputElement> | React.MouseEvent<HTMLButtonElement>, eventFunc?: any) => {
+                (event: React.ChangeEvent<HTMLInputElement>, eventFunc?: any) => {
                     const inputValue = inputRef.current?.value,
                         parsedDate = inputValue && parseToDate(inputValue, displayFormat!),
                         isValidDate = parsedDate?.toString() !== 'Invalid Date',
@@ -111,7 +111,7 @@ const Component: FC<DatePickerProps> = memo(
                     toggleCalendar(false);
                     setErrorMessage('');
                     setActive(false);
-                    validate(e);
+                    setErrorMessage((validator && validator(dt, e)) || '');
                 },
                 [onChange]
             ),
