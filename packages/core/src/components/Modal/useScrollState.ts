@@ -14,7 +14,6 @@ export const useScrollState = ({ ref, scrollState, dispatch }: UseScrollStatePro
         const element = e.target as HTMLElement,
             isScrolledToTop = element.scrollTop === 0,
             isScrolledToBottom = Math.floor(element.scrollTop + element.getBoundingClientRect().height) === element.scrollHeight;
-
         scrollState.scrolledToTop !== isScrolledToTop && dispatch({ type: 'scrolledToTop', value: isScrolledToTop });
         scrollState.scrolledToBottom !== isScrolledToBottom && dispatch({ type: 'scrolledToBottom', value: isScrolledToBottom });
         dispatch({ type: 'scrollPosition', value: element.scrollTop });
