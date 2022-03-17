@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen } from '@test-utils';
+import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import { placements } from '../Popover/Popover.stories';
 import { DatePicker } from './DatePicker';
 import { DatePickerProps } from './types';
@@ -69,6 +69,47 @@ describe('DatePicker component', () => {
             );
             fireEvent.click(screen.getByTitle('dob-calendar-icon'));
             expect(container.querySelector('#dob-calendar')).toBeNull();
+        });
+
+        it('should call onChange with expected date on selecting date from calendar', async () => {
+            const mockOnChange = jest.fn(),
+                dateToSelect = new Date(2021, 1, 1);
+            render(
+                <DatePicker
+                    id="dob"
+                    value={new Date(2020, 11, 25)}
+                    displayFormat="MM/dd/yyyy"
+                    onChange={mockOnChange}
+                    minSelectableDate={new Date(2020, 0, 1)}
+                    maxSelectableDate={new Date(2022, 2, 1)}
+                />
+            );
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
+            fireEvent.click(screen.getByRole('button', { name: 'Dec' }));
+            fireEvent.click(screen.getByText('Feb'));
+            fireEvent.click(screen.getByRole('button', { name: '2020' }));
+            fireEvent.click(screen.getByText('2021'));
+            fireEvent.click(screen.getByTitle(dateToSelect.toDateString()));
+            await waitFor(() => expect(mockOnChange).toBeCalledWith(dateToSelect));
+        });
+
+        it('should render error message if validator prop is given', async () => {
+            render(
+                <DatePicker
+                    id="dob"
+                    value={new Date(2020, 11, 25)}
+                    displayFormat="MM/dd/yyyy"
+                    onChange={jest.fn()}
+                    validator={() => 'Invalid date'}
+                />
+            );
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
+            fireEvent.click(screen.getByRole('button', { name: 'Dec' }));
+            fireEvent.click(screen.getByText('Feb'));
+            fireEvent.click(screen.getByRole('button', { name: '2020' }));
+            fireEvent.click(screen.getByText('2021'));
+            fireEvent.click(screen.getByTitle(new Date(2021, 1, 1).toDateString()));
+            expect(await screen.findByText('Invalid date')).toBeInTheDocument();
         });
 
         it('should hide calendar on click outside of the component', async () => {

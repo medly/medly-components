@@ -2,7 +2,7 @@ import { HTMLProps } from '@medly-components/utils';
 import type { FC, ReactNode } from 'react';
 
 export type BreadcrumbProps = Omit<HTMLProps<HTMLOListElement>, 'type'> & {
-    /** Separator to be used between links */
+    /** You can pass any separator which you can use between the links */
     separator?: string | ReactNode;
 };
 

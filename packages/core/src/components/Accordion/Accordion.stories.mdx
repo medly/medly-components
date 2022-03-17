@@ -11,7 +11,8 @@ import { useState } from 'react';
 
 # Accordion
 
-Simple accordion component with two children components `Accordion.Header` and `Accordion.Content`, which are just wrapper components. You can pass any component as children to `Accordion.Header` and `Accordion.Content`.
+An `Accordion` is a vertically stacked set of interactive headings, which contain a title or content snippet representing a section of content. It hides a lot of content and rolls it up.
+It consists of two children components: `Accordion.Header` and `Accordion.Content`, which are just wrapper components. You can pass any component as children to `Accordion.Header` and `Accordion.Content`.
 
 <Preview withToolbar>
     <Story name="Accordion">
@@ -30,17 +31,17 @@ Simple accordion component with two children components `Accordion.Header` and `
     </Story>
 </Preview>
 
-### Handling active state from outside
+## Handle the active state from outside
 
-User can provide `active` and `onChange` props to handle active state from outside.
+You can provide the `active` and `onChange` props to handle the active state from outside.
 
 <Preview>
     <AccordionWithActiveStateFromOutside />
 </Preview>
 
-### With default active state
+## Default active state
 
-You can pass `defaultActive` prop to initialize the active state.
+You can pass the `defaultActive` prop to initialize the active state.
 
 <Preview withToolbar>
     <Accordion defaultActive={true}>
@@ -57,13 +58,19 @@ You can pass `defaultActive` prop to initialize the active state.
     </Accordion>
 </Preview>
 
-We have also exposed `Accordion.Context` to enable finding the latest active state. Accordion context can be used as follows:
+
+## Context
+
+The `Accordion.Context` is exposed to find the latest active state. 
+Use the Accordion Context as mentioned below:
 
 ```tsx
 const [isActive, setActiveState] = useContext(Accordion.Context);
 ```
 
-Type of Accordion Context:
+## Type 
+
+Accordion Context has the following types:
 
 ```tsx
 export type AccordionContextType = [
@@ -72,6 +79,8 @@ export type AccordionContextType = [
 ];
 ```
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Accordion} />

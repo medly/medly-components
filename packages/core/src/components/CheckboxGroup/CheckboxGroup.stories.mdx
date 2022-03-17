@@ -18,7 +18,8 @@ import { useState } from 'react';
 
 # CheckboxGroup
 
-Set of checkbox components that enable users to choose from multiple options. It is a controlled react component. So, handle the state as follows:
+The `CheckboxGroup` component enables you to select a batch of options falling under a group. Each checkbox operates individually, so you can toggle each response “on” and off”.  
+Handle the state as follows:
 
 ```tsx
 const [values, setValues] = useState(['hyundai']);
@@ -70,11 +71,11 @@ return (
     </Story>
 </Preview>
 
-### Validations
+## Validations
 
-1. For now `CheckboxGroup` calls the `validator` prop function with the latest values on `blur` and `change` event. If you havn't passed the validator function then it will show default error message if you pass `required` prop.
+1. At present, the `CheckboxGroup` calls the `validator` prop function with the latest values on `blur` and `change` event. If you haven't passed the validator function, but passed the `required` prop, then the system displays the default error message.
 
-> **Note**: Right now validation message will not apear on `submit` event. We are working on it.
+> **Note**: Currently, the validation message is not available on `submit` event. 
 
 ```tsx
 export const FormWithCheckboxGroup: React.FC = props => {
@@ -106,7 +107,7 @@ export const FormWithCheckboxGroup: React.FC = props => {
     <FormWithCheckboxGroup />
 </Preview>
 
-2. Passing the validator function calls it with the latest selected value and enables returning the desired error message if required.
+2. Passing the validator function calls with the latest selected value enables returning the desired error message if required.
 
 ```tsx
 validator={val => (!val.length == 0 ? 'Please select at least on company.' : '')}
@@ -123,10 +124,12 @@ validator={val => (!val.length == 0 ? 'Please select at least on company.' : '')
     />
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={CheckboxGroup} />
 
-### Theme
+## Theme
 
-Checkbox theme will be used for CheckboxGroup.
+This component offers the same theme as Checkbox. To view the same click [here](http://www.medlycomponents.com/?path=/docs/core--checkbox#checkboxtheme).

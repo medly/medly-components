@@ -24,7 +24,7 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     /** Input variants for DatePicker */
     variant?: 'outlined' | 'filled' | 'fusion';
     /** Function to be called on a blur and invalid event with either a date or null */
-    validator?: (val: Date | null, eventType: ChangeEvent<HTMLInputElement>) => string;
+    validator?: (val: Date | null, eventType: ChangeEvent<HTMLInputElement> | React.MouseEvent<HTMLButtonElement>) => string;
     /** Input Size */
     size?: 'S' | 'M';
     /** Date display format */
@@ -41,9 +41,9 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     fullWidth?: boolean;
     /** Min width of the component */
     minWidth?: string;
-    /** Minimum selectable date */
+    /** Min selectable date */
     minSelectableDate?: Date;
-    /** Maximum selectable date */
+    /** Max selectable date */
     maxSelectableDate?: Date;
     /** Helper text */
     helperText?: string;

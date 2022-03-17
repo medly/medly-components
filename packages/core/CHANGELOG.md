@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.0...@medly-components/core@6.6.1) (2022-03-16)
+
+
+### Bug Fixes
+
+* calling validator function with previous date in DatePicker component ([8622576](https://github.com/medly/medly-components/commit/86225762a1b5b4ee58f298d91fe39e3c2669cbff))
+
+
+
+
+
+# [6.6.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.5.5...@medly-components/core@6.6.0) (2022-03-15)
+
+
+### Features
+
+* call validate on calendar date click ([#602](https://github.com/medly/medly-components/issues/602)) ([8c99722](https://github.com/medly/medly-components/commit/8c997221336c3fc034557b30ed8d7dcbd031023a))
+
+
+
+
+
+## [6.5.5](https://github.com/medly/medly-components/compare/@medly-components/core@6.5.4...@medly-components/core@6.5.5) (2022-03-15)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [6.5.4](https://github.com/medly/medly-components/compare/@medly-components/core@6.5.3...@medly-components/core@6.5.4) (2022-03-15)
+
+
+### Bug Fixes
+
+* shadow issue on modal component ([#600](https://github.com/medly/medly-components/issues/600)) ([2923638](https://github.com/medly/medly-components/commit/2923638e0788eb25a8b107087d345e38d84551e5))
+
+
+
+
+
 ## [6.5.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.5.2...@medly-components/core@6.5.3) (2022-03-12)
 
 **Note:** Version bump only for package @medly-components/core

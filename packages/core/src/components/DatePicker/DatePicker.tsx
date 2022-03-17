@@ -106,11 +106,12 @@ const Component: FC<DatePickerProps> = memo(
                 [props.onFocus]
             ),
             onDateChange = useCallback(
-                (dt: Date) => {
+                (dt: Date, e: React.MouseEvent<HTMLButtonElement>) => {
                     onChange(dt);
                     toggleCalendar(false);
                     setErrorMessage('');
                     setActive(false);
+                    setErrorMessage((validator && validator(dt, e)) || '');
                 },
                 [onChange]
             ),
