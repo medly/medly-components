@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.37](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.36...@medly-components/forms@2.1.37) (2022-03-21)
+
+
+### Bug Fixes
+
+* **forms:** clear number input ([#604](https://github.com/medly/medly-components/issues/604)) ([f14698d](https://github.com/medly/medly-components/commit/f14698de9f273cc3b8adb17caa72453ecaa33809)), closes [#603](https://github.com/medly/medly-components/issues/603)
+
+
+
+
+
 ## [2.1.36](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.35...@medly-components/forms@2.1.36) (2022-03-19)
 
 **Note:** Version bump only for package @medly-components/forms
