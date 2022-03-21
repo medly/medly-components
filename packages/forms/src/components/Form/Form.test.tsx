@@ -320,5 +320,35 @@ describe('Form', () => {
                 }
             });
         });
+
+        it('should allow user to clear number input', () => {
+            render(
+                <Form
+                    name="Test form"
+                    fieldSchema={testSchema}
+                    header="Dummy Form"
+                    helperText="Dummy Description"
+                    onSubmit={jest.fn()}
+                    minWidth="300px"
+                    fullWidth
+                    gridGap="1.2rem"
+                    actionLabel="Upload"
+                />
+            );
+            const mathsInput = screen.getByLabelText('Maths');
+            expect(mathsInput).toBeInTheDocument();
+            fireEvent.change(mathsInput, {
+                target: {
+                    value: 23451
+                }
+            });
+            expect(mathsInput).toHaveValue(23451);
+            fireEvent.change(mathsInput, {
+                target: {
+                    value: ''
+                }
+            });
+            expect(mathsInput).toHaveValue(null);
+        });
     });
 });
