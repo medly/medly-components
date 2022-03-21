@@ -10,12 +10,12 @@ interface CommonProps extends HTMLProps<HTMLElement> {
     lineThrough?: boolean;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
-    /** To be used to render Text as any component*/
+    /** You can use it to render Text as any component*/
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
 }
 
 export interface TextProps extends CommonProps {
-    /** Text Variant */
+    /** Text variant */
     textVariant?: FontVariants;
     /** Text weight */
     textWeight?: FontWeights;

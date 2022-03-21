@@ -6,15 +6,15 @@ import { Basic, VerticalAlign } from './Text.stories';
 
 # Text
 
-Use this to design your content efficiently.
+The `Text` component is displays text efficiently. It supports nesting, styling, and touch handling. 
 
 <Preview>
     <Story name="Text">{Basic()}</Story>
 </Preview>
 
-### Text with different Variants
+## Text with different Variants
 
-Use font variant to decide the font style(`font-size`,`font-weight`,`line-height`,`letter-spacing`) and `html tag` also. If you have used `textWeight` prop as `Strong`|`ExtraStrong`, then both `body1` and `body2` variant will use `strong` html tag.
+You can use the font variant to decide the font style (`font-size`,`font-weight`,`line-height`,`letter-spacing`) as well as the `html tag`. If you use the `textWeight` prop as `Strong`|`ExtraStrong`, then both varaints `body1` and `body2` will use the `strong` html tag.
 
 | Variant | Html Tag |
 | ------- | -------- |
@@ -38,7 +38,9 @@ Use font variant to decide the font style(`font-size`,`font-weight`,`line-height
     </VerticalAlign>
 </Preview>
 
-### Text with different fontWeight
+## Text with different fontWeight
+
+You can use the different font weights to define the thinness or thickness of a font like mentioned below.
 
 <Preview>
     <VerticalAlign>
@@ -50,6 +52,8 @@ Use font variant to decide the font style(`font-size`,`font-weight`,`line-height
     </VerticalAlign>
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Text} />

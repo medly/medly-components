@@ -6,9 +6,9 @@ import * as stories from './Stepper.stories';
 
 # Stepper
 
-### Basic Stepper
+The basic `Stepper` component displays progress through a sequence of numbered steps, which you can use to navigate as well.
+You can use `Stepper.Step` to add steps in this component like mentioned below.
 
-Use `Stepper.Step` to add step in `Stepper` component. Like bellow . . .
 
 ```typescript
 <Stepper activeStep={0} size="S" onStepClick={setActiveStep}>
@@ -21,10 +21,14 @@ Use `Stepper.Step` to add step in `Stepper` component. Like bellow . . .
     <Story name="Stepper">{stories.Basic()}</Story>
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Stepper} />
 
-### StepperTheme
+## StepperTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={stories.ThemeInterface} />
