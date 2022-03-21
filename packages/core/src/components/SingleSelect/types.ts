@@ -57,7 +57,7 @@ export interface SingleSelectProps extends InputProps {
     helperText?: string;
     /** Error Text */
     errorText?: string;
-    /** Function will called with the input value on Blur event*/
+    /** Function to be called with the input value on Blur event*/
     validator?: (val: any) => string;
     /** Show Helper text and error text in a tooltip (popover) */
     showTooltipForHelperAndErrorText?: boolean;
