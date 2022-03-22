@@ -5,13 +5,13 @@ import { ButtonProps } from '../Button/types';
 export type ToastVariants = 'success' | 'error' | 'info' | 'warning';
 
 export type ToastProps = {
-    /** Id of the Toast */
+    /** Toast ID */
     id: number;
     /** Toast purpose */
     variant: ToastVariants;
     /** Icon to be shown in the toast */
     icon?: FC<any>;
-    /** Toast Header */
+    /** Toast header */
     header?: string | React.ReactElement<any>;
     /** Toast message */
     message?: string | React.ReactElement<any>;
