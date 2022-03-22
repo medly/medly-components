@@ -20,7 +20,8 @@ import { PersonAddIcon } from '@medly-components/icons';
 
 # ToastContainer
 
-Raise a toast notification by triggering an action. You have to add `<ToastContainer/>` in your app at root level and then just use `addToast` function to raise the toast.
+Use the `Toast` container to raise a toast notification by calling a function. The toast closes itself when the close button is clicked, or by default, it expires after 5 seconds.
+You have to add `<ToastContainer/>` in your app at the root level and to raise a toast use the the `addToast` function.
 
 ```tsx
 import { ToastContainer, addToast } from '@medly-components/core';
@@ -82,17 +83,19 @@ export const App: React.FC = () => {
     </Story>
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={ToastContainer} />
 
 ## addToast
 
-Whenever you want to raise a toast, you can just call this function with the `variant` and `message` props. The other available parameters to customize your toast can be found under the Params title.
+This function can be called with the `variant` and `message` props whenever you want to raise a toast.
 
 ## removeAllToasts
 
-Call this function to remove all the Toasts from the DOM.
+Call this function to remove all the toasts from the DOM.
 
 ```tsx
 import { ToastContainer, removeAllToasts } from '@medly-components/core';
@@ -107,13 +110,15 @@ export const App: React.FC = () => {
 };
 ```
 
-#### Params
+## Params
+
+The available parameters to customize your toast is mentioned in the table below:
 
 <Props of={AddToast} />
 
-#### Custom Icon & Actions
+## Custom Icon & Actions
 
-You can pass custom icon and action config to addToast function like below.
+You can pass a custom icon and action config to addToast function like below.
 
 ```tsx
 addToast({
