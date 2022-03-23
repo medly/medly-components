@@ -5,19 +5,19 @@ export type Variants = 'solid' | 'flat';
 export type FlowDirection = 'vertical' | 'horizontal';
 
 export interface CardProps extends HTMLProps<HTMLDivElement> {
-    /** To be used to render component as any HTML tag */
+    /** Use to render component as any HTML tag */
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
-    /** To be used if rendering like Link */
+    /** Use for rendering like Link */
     to?: string;
     /** Card design */
     variant?: 'solid' | 'flat';
-    /** Use card as flex container of normal block */
+    /** Use the card as a flex container or a normal block */
     display?: 'block' | 'flex';
     /** Direction of the children */
     flowDirection?: 'vertical' | 'horizontal';
-    /** Separator between each children */
+    /** A separator between each child */
     separator?: boolean;
-    /** To be used to define width/height of cards inside cards */
+    /** Use to define the width or height of cards inside the cards */
     flex?: number;
     /** Enable padding */
     withoutPadding?: boolean;

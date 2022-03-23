@@ -22,12 +22,12 @@ export interface CheckboxProps extends InputProps {
     indeterminate?: boolean;
     /** Error Text */
     errorText?: string;
-    /** Function will be called with the input value on blur, change and invalid event */
+    /** Function will be called with the input value on blur, change, and invalid event. */
     validator?: (checked: boolean, event: ChangeEvent<HTMLInputElement>) => string;
-    /** This will be used internally by the Checkbox group */
+    /** To use internally by the Checkbox group */
     hasError?: boolean;
-    /** This will be used internally by the Checkbox group for keyboard navigation */
+    /** To use internally by the Checkbox group for keyboard navigation */
     isHovered?: boolean;
-    /** This will be used internally by the Checkbox group for keyboard navigation */
+    /** To use internally by the Checkbox group for keyboard navigation */
     onSelectionFromKeyboard?: (isChecked: boolean) => void;
 }

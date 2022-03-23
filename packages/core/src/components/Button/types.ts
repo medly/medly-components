@@ -2,9 +2,9 @@ import { ButtonSizes, Theme } from '@medly-components/theme';
 import { HTMLProps } from '@medly-components/utils';
 
 export type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, 'size'> & { theme?: Theme } & {
-    /** To be used to render any component as Button */
+    /** Use to render any component as Button */
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
-    /** To be used if rendering like Link */
+    /** Use for rendering like Link */
     to?: string;
     /** Button sizes */
     size?: ButtonSizes;
@@ -14,12 +14,12 @@ export type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, 'size'> & { theme?:
     variant?: 'solid' | 'flat' | 'outlined';
     /** Button edges */
     edges?: 'square' | 'rounded' | 'circle';
-    /** To be used to disable button */
+    /** Use to disable button */
     disabled?: boolean;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Set it true to show loading state */
     isLoading?: boolean;
-    /** toggle flat button underline, this property will only works on flat variant  */
+    /** Toggle flat button underline: this property will work only on flat variant  */
     hideUnderline?: boolean;
 };
