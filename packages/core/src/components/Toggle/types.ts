@@ -24,6 +24,6 @@ export interface ToggleProps extends InputProps {
     labelColor?: string;
     /** Label weight */
     labelWeight?: FontWeights;
-    /** To be used if required in any form for example user needs to check 'I Agree' */
+    /** Use if required in any form for example user needs to check 'I Agree' */
     required?: boolean;
 }
