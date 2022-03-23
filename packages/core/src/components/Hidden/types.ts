@@ -3,9 +3,9 @@ import { BreakpointsTheme } from '@medly-components/theme';
 type Breakpoint = keyof BreakpointsTheme;
 
 export interface HiddenProps {
-    /** Will hide the children at and above of the breakpoint */
+    /** Will hide the children at and above the breakpoint */
     up?: Breakpoint;
-    /** Will hide the children at and down of the breakpoint */
+    /** Will hide the children at and down the breakpoint */
     down?: Breakpoint;
     /** Will hide the children between start and end of the breakpoint */
     between?: { start: Breakpoint; end: Breakpoint };
