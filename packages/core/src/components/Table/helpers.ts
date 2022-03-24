@@ -79,16 +79,24 @@ export const getGridTemplateColumns = (configs: TableColumnConfig[]) => {
     return size;
 };
 
-export const changeSize = (width: number, dottedField: string, columnConfigs: TableColumnConfig[]) => {
+export const changeSize = (
+    width: number,
+    dottedField: string,
+    columnConfigs: TableColumnConfig[],
+    isRowExpandable = false,
+    isRowSelectable = false
+) => {
     const newColumnConfigs = [...columnConfigs],
         [currField, nextField] = dottedField.split(/\.(.+)/),
         index = columnConfigs.findIndex(config => config.field === currField),
         widthRegex = new RegExp(/(minmax\()(.*)(,.*\))/); //NOSONAR
 
-    if (index >= 0) {
+    // should not expand first column if row is expandable or selectable
+    if (index >= 0 && !((isRowExpandable || isRowSelectable) && index === 0)) {
+        console.log('inside condition', isRowExpandable, isRowSelectable, index);
         const config = { ...newColumnConfigs[index] };
         if (config.children && nextField) {
-            config.children = changeSize(width, nextField, config.children);
+            config.children = changeSize(width, nextField, config.children, isRowExpandable);
         } else if (width < 84) {
             config.size = `minmax(84px, ${config.fraction || 1}fr)`;
         } else if (width > 900) {
