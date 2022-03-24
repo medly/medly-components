@@ -53,13 +53,13 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     helperText?: string;
     /** Error Text */
     errorText?: string;
-    /** Function will called with the input value on Blur event */
+    /** Function to be called with the input value on Blur event */
     validator?: (val: any[]) => string;
-    /** Show Helper text and error text in a tooltip (popover) */
+    /** Show helper text and error text in a tooltip (popover) */
     showTooltipForHelperAndErrorText?: boolean;
     /** Leading icon or text */
     prefix?: FC<any>;
-    /** Allow user to create dynamic options on the fly */
+    /** Allows you to create dynamic options on the fly */
     isCreatable?: boolean;
 }
 
