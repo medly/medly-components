@@ -93,7 +93,6 @@ export const changeSize = (
 
     // should not expand first column if row is expandable or selectable
     if (index >= 0 && !((isRowExpandable || isRowSelectable) && index === 0)) {
-        console.log('inside condition', isRowExpandable, isRowSelectable, index);
         const config = { ...newColumnConfigs[index] };
         if (config.children && nextField) {
             config.children = changeSize(width, nextField, config.children, isRowExpandable);
