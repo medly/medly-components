@@ -20,13 +20,14 @@ const getPadding = ({ scrollState, headerHeight }: StyledProps) => {
     `;
 };
 
-export const Content = styled('div')`
+export const Content = styled('div')<StyledProps>`
     flex: 1;
     box-sizing: border-box;
     ${getPadding}
+    ${({ overflowVisible }) => overflowVisible && `overflow: visible;`};
 
     @media (min-width: 768px) {
-        overflow: auto;
+        ${({ overflowVisible }) => (overflowVisible ? `overflow: visible;` : `overflow: auto;`)};
 
         &::-webkit-scrollbar {
             width: 0.5rem;

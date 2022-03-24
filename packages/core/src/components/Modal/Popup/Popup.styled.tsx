@@ -40,7 +40,6 @@ const mobileModalSlideIn = keyframes`
 
 export const Popup = styled('div')<ModalPopupProps>`
     background: ${({ theme }) => theme.modal.backgroundColor};
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -49,6 +48,7 @@ export const Popup = styled('div')<ModalPopupProps>`
     box-sizing: border-box;
     border-top-left-radius: 1.6rem;
     border-top-right-radius: 1.6rem;
+    ${({ overflowVisible }) => !overflowVisible && `overflow: hidden;`};
 
     @media (max-width: 767px) {
         width: 100%;

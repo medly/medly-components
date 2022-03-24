@@ -12,7 +12,7 @@ import { ModalProps, ModalStaticProps } from './types';
 
 const Component: FC<ModalProps> = memo(
     forwardRef((props, ref) => {
-        const { open, onCloseModal, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
+        const { open, onCloseModal, overflowVisible, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
             id = restProps.id || 'medly-modal',
             modalRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
             isEscPressed = useKeyPress('Escape', false, modalRef),
@@ -58,9 +58,19 @@ const Component: FC<ModalProps> = memo(
 
         return shouldRender ? (
             <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
-                <Popup ref={modalRef} id={`${id}-popup`} onAnimationEnd={handleAnimationEnd} {...{ minWidth, minHeight, open }}>
+                <Popup
+                    ref={modalRef}
+                    id={`${id}-popup`}
+                    onAnimationEnd={handleAnimationEnd}
+                    {...{ minWidth, minHeight, open, overflowVisible }}
+                >
                     <CloseIcon id={`${id}-close-button`} title={`${id}-close-icon`} size="M" variant="solid" onClick={onCloseModal} />
-                    <InnerContainerStyled id={`${id}-inner-container`} ref={innerContainerRef} headerHeight={headerHeight}>
+                    <InnerContainerStyled
+                        id={`${id}-inner-container`}
+                        ref={innerContainerRef}
+                        headerHeight={headerHeight}
+                        overflowVisible={overflowVisible}
+                    >
                         <ModalContext.Provider value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen }}>
                             {children}
                         </ModalContext.Provider>

@@ -42,8 +42,10 @@ export const ModalBackgroundStyled = styled.div<ModalBackgroundProps>`
 export const InnerContainerStyled = styled.div<InnerContainerProps>`
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    overflow-x: hidden;
+    ${({ overflowVisible }) =>
+        !overflowVisible &&
+        `overflow-y: auto;
+            overflow-x: hidden;`};
 
     &::-webkit-scrollbar {
         width: 0.5rem;
@@ -58,7 +60,7 @@ export const InnerContainerStyled = styled.div<InnerContainerProps>`
     }
 
     @media (min-width: 768px) {
-        overflow: hidden;
+        ${({ overflowVisible }) => !overflowVisible && `overflow: hidden;`};
         flex: 1;
 
         &::-webkit-scrollbar-track {

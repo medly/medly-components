@@ -4,4 +4,5 @@ export interface ModalPopupProps extends HTMLProps<HTMLDivElement> {
     minWidth?: string;
     minHeight?: string;
     open?: boolean;
+    overflowVisible?: boolean;
 }
