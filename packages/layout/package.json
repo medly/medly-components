@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/layout",
-    "version": "3.1.24",
+    "version": "3.1.25",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -18,7 +18,7 @@
         "styled-components": "^5.1.0"
     },
     "dependencies": {
-        "@medly-components/core": "6.6.4",
+        "@medly-components/core": "6.6.5",
         "@medly-components/icons": "1.12.7",
         "@medly-components/theme": "5.0.0",
         "@medly-components/utils": "2.1.1"
