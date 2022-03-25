@@ -54,6 +54,7 @@ export interface ModalContextType {
     dispatch: Dispatch<ScrollActionTypes>;
     id: string;
     isSmallScreen: boolean;
+    overflowVisible?: boolean;
 }
 
 export interface ScrollState {
