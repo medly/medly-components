@@ -240,7 +240,6 @@ exports[`Modal component should render properly when it is open 1`] = `
 
 .c1 {
   background: #ffffff;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -254,6 +253,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   box-sizing: border-box;
   border-top-left-radius: 1.6rem;
   border-top-right-radius: 1.6rem;
+  overflow: hidden;
 }
 
 @media (max-width:768px) {
