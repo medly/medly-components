@@ -71,7 +71,9 @@ const Component: FC<ModalProps> = memo(
                         headerHeight={headerHeight}
                         overflowVisible={overflowVisible}
                     >
-                        <ModalContext.Provider value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen }}>
+                        <ModalContext.Provider
+                            value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen, overflowVisible }}
+                        >
                             {children}
                         </ModalContext.Provider>
                     </InnerContainerStyled>

@@ -43,7 +43,7 @@ export const Basic = () => {
     return (
         <ModalStoryWrapper expand={modalState}>
             <Button onClick={openModal}>Click to Open</Button>
-            <Modal open={modalState} onCloseModal={closeModal}>
+            <Modal open={modalState} onCloseModal={closeModal} overflowVisible>
                 <Modal.Header>Add User</Modal.Header>
                 <Modal.Content>
                     <Form>
