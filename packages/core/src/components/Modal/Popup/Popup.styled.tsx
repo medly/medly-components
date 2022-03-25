@@ -48,7 +48,7 @@ export const Popup = styled('div')<ModalPopupProps>`
     box-sizing: border-box;
     border-top-left-radius: 1.6rem;
     border-top-right-radius: 1.6rem;
-    ${({ overflowVisible }) => !overflowVisible && `overflow: hidden;`};
+    overflow: ${({ overflowVisible }) => !overflowVisible && `hidden`};
 
     @media (max-width: 767px) {
         width: 100%;
