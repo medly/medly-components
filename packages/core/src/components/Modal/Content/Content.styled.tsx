@@ -27,7 +27,7 @@ export const Content = styled('div')<StyledProps>`
     ${getPadding}
 
     @media (min-width: 768px) {
-        overflow: ${({ overflowVisible }) => overflowVisible ? `visible` : `auto`};
+        overflow: ${({ overflowVisible }) => (overflowVisible ? `visible` : `auto`)};
 
         &::-webkit-scrollbar {
             width: 0.5rem;
