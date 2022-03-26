@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.6](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.5...@medly-components/core@6.6.6) (2022-03-26)
+
+
+### Bug Fixes
+
+* **core:** expandable and selectable column width change issue ([#619](https://github.com/medly/medly-components/issues/619)) ([12e67c4](https://github.com/medly/medly-components/commit/12e67c4ba06dc0a4c6275971f8982ac45fa2d8fa)), closes [#615](https://github.com/medly/medly-components/issues/615) [#615](https://github.com/medly/medly-components/issues/615)
+
+
+
+
+
 ## [6.6.5](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.4...@medly-components/core@6.6.5) (2022-03-25)
 
 **Note:** Version bump only for package @medly-components/core
