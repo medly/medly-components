@@ -115,7 +115,7 @@ export const Dummy: React.FC = () => {
 
 ## Row Accordion
 
-To show Row Accordion you must pass two props `isRowExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area. 
+To show Row Accordion, you must pass two props: `isRowExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area. 
 Type: `expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>`; we are passing row data, id, and disabled state to the component.
 
 You can write your component like below:
@@ -159,7 +159,7 @@ Rows can be shown with Card style when you set `showRowWithCardStyle` as true, a
 
 ## Row Grouping
 
-To show the Row Grouping, you have to set `groupBy` prop with key name you want to group your data. And your `data` should be in the below format:
+To show the Row Grouping, you have to set `groupBy` prop with key name you want to group your data. And your `data` must be in the below format:
 
 ```tsx
 type Data = [{ [your_groupBy_keyname]: string | number; count: number; secondaryContent?: string | number }];
@@ -214,7 +214,7 @@ For example, in the above scenario if you expand row with `doctor` title then `g
 
 ## Row Selection
 
-To add a Row Selection feature to your table you have to complete the following two steps:
+To add a Row Selection feature to your table you must complete the following two steps:
 
 1. You have to add a state to your React components to save the selected rows. This will persist your selected data between renders. You have to pass this state variable to the `selectedRowIds` prop.
 
@@ -421,11 +421,11 @@ To enable Infinite Scroll you must pass `withInfiniteScroll` prop. This will all
 
 ## Minimap
 
-To display Minimap you must pass `withMinimap` as `true` and it will be visible when there is a horizontal scroll available in the table.
+To show Minimap you must pass `withMinimap` as `true` and it will be visible when there is a horizontal scroll available in the table.
 
 ### Pagination
 
-To display Pagination you must pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. The `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`
+To show Pagination you must pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. The `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`
 
 ### Custom Column Cell Component
 
