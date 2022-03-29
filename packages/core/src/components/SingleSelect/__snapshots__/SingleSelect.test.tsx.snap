@@ -1476,7 +1476,6 @@ exports[`SingleSelect component should take passed max width 1`] = `
     <ul
       class="c12"
       id="medly-singleSelect-options"
-      readonly=""
     >
       <li
         class="c13"
@@ -2015,7 +2014,6 @@ exports[`SingleSelect component with filled variant should render options correc
 <ul
   class="c0"
   id="medly-singleSelect-options"
-  readonly=""
 >
   <li
     class="c1"
@@ -3069,7 +3067,6 @@ exports[`SingleSelect component with filled variant should render properly when 
     <ul
       class="c14"
       id="label-options"
-      readonly=""
     >
       <li
         class="c15"
@@ -3913,7 +3910,6 @@ exports[`SingleSelect component with flat variant should render options correctl
 <ul
   class="c0"
   id="medly-singleSelect-options"
-  readonly=""
 >
   <li
     class="c1"
@@ -4641,7 +4637,6 @@ exports[`SingleSelect component with flat variant should render properly when op
     <ul
       class="c11"
       id="label-options"
-      readonly=""
     >
       <li
         class="c12"
@@ -5495,7 +5490,6 @@ exports[`SingleSelect component with fusion variant should render options correc
 <ul
   class="c0"
   id="medly-singleSelect-options"
-  readonly=""
 >
   <li
     class="c1"
@@ -6623,7 +6617,6 @@ exports[`SingleSelect component with fusion variant should render properly when 
     <ul
       class="c14"
       id="label-options"
-      readonly=""
     >
       <li
         class="c15"
@@ -7653,7 +7646,6 @@ exports[`SingleSelect component with outlined variant should render options corr
 <ul
   class="c0"
   id="medly-singleSelect-options"
-  readonly=""
 >
   <li
     class="c1"
@@ -8749,7 +8741,6 @@ exports[`SingleSelect component with outlined variant should render properly whe
     <ul
       class="c14"
       id="label-options"
-      readonly=""
     >
       <li
         class="c15"
