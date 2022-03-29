@@ -123,14 +123,6 @@ const Component: FC<SingleSelectProps> = memo(
                 },
                 [onFocus]
             ),
-            handleBlur = useCallback(
-                (event: React.FocusEvent<HTMLInputElement>) => {
-                    isFocused.current = false;
-                    onBlur && onBlur(event);
-                    setTimeout(() => !isFocused.current && hideOptions(), 250);
-                },
-                [onBlur]
-            ),
             inputValidator = useCallback(() => '', []),
             handleKeyPress = useCallback((event: React.KeyboardEvent) => !isSearchable && event.preventDefault(), [isSearchable]);
 
@@ -150,7 +142,8 @@ const Component: FC<SingleSelectProps> = memo(
             setOptions,
             handleOptionClick,
             showOptions,
-            optionsRef
+            optionsRef,
+            hideOptions
         });
 
         useOuterClickNotifier(() => {
@@ -165,7 +158,7 @@ const Component: FC<SingleSelectProps> = memo(
             helperText: inputProps.helperText,
             errorText: inputProps.errorText || builtInErrorMessage,
             onFocus: handleFocus,
-            onBlur: handleBlur,
+            onBlur,
             onKeyPress: handleKeyPress,
             disabled,
             showDecorators,
