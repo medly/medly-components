@@ -1,4 +1,5 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
+import userEvent from '@testing-library/user-event';
 import { useState } from 'react';
 import Text from '../Text';
 import { SingleSelect } from './SingleSelect';
@@ -382,6 +383,17 @@ describe('SingleSelect component', () => {
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('Dummy6');
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy6');
+            });
+
+            it('should hide options on pressing tab key', async () => {
+                const mockOnBlur = jest.fn();
+                const { container } = render(<SingleSelect value="Dummy1" options={options} onBlur={mockOnBlur} />);
+                const inputEl = screen.getByRole('textbox') as HTMLInputElement;
+                fireEvent.focus(inputEl);
+                fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 }); // Show options
+                await screen.findByRole('list');
+                userEvent.tab();
+                await waitFor(() => expect(screen.queryByRole('list')).not.toBeInTheDocument());
             });
         });
 
