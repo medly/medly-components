@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.7](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.6...@medly-components/core@6.6.7) (2022-03-29)
+
+
+### Bug Fixes
+
+* single select calling onBlur even on scrollbar click ([#622](https://github.com/medly/medly-components/issues/622)) ([7756f89](https://github.com/medly/medly-components/commit/7756f89c9e4ef1f6e9dce752b6fe82a7b55a0c7e))
+
+
+
+
+
 ## [6.6.6](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.5...@medly-components/core@6.6.6) (2022-03-26)
 
 
