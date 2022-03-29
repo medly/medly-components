@@ -30,7 +30,7 @@ import { groupedData, getGroupedData } from './groupedData';
 
 # Table
 
-Simple `Table` component to show set of data.
+A simple `Table` component displays a set of data in a systematic and orderly format. It is customizable.
 
 ```tsx
 import { Table } from '@medly-components/core';
@@ -115,7 +115,8 @@ export const Dummy: React.FC = () => {
 
 ## Row Accordion
 
-To show row acordion you have to pass two props `isRowExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area. Type of `expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>`; We are passing row data, id & disabled state to the component.
+To show Row Accordion you must pass two props `isRowExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area. 
+Type: `expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>`; we are passing row data, id, and disabled state to the component.
 
 You can write your component like below:
 
@@ -126,7 +127,7 @@ export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowDa
 
 ## Row as Card style
 
-Rows can be shown with card style when you set `showRowWithCardStyle` as true, and the size of the table will automatically be set as 'L'.
+Rows can be shown with Card style when you set `showRowWithCardStyle` as true, and the size of the table will automatically set itself to 'L'.
 
 <Preview withToolbar>
     <Story name="Table with row as Card style">
@@ -158,15 +159,16 @@ Rows can be shown with card style when you set `showRowWithCardStyle` as true, a
 
 ## Row Grouping
 
-To show the row grouping you have to set `groupBy` prop with key name you want to group your data. And your `data` should be in the format
+To show the Row Grouping, you have to set `groupBy` prop with key name you want to group your data. And your `data` should be in the below format:
 
 ```tsx
 type Data = [{ [your_groupBy_keyname]: string | number; count: number; secondaryContent?: string | number }];
 ```
 
-For Example if your data is `[{name: "A", role: "doctor"}, {name: "B", role: "engineer"}]` and if you want to group by role then you have to set `groupBy` prop to `role` and your `data` should be `[{role: 'doctor', count: 1}, {role: 'engineer', 1}]`
+For example, if your data is `[{name: "A", role: "doctor"}, {name: "B", role: "engineer"}]` and if you want to group by role then you have to set `groupBy` prop to `role` and your `data` must be `[{role: 'doctor', count: 1}, {role: 'engineer', 1}]`
 
-And once the user expands any row `getGroupedData` function will be called with the group title. For example in above scenario if users expands row with `doctor` title then `getGroupedData("doctor")` will be called and you have to return a promise with grouped data according to column config.
+And once you expand any row `getGroupedData` function it will be called with the group title. 
+For example, in the above scenario if you expand row with `doctor` title then `getGroupedData("doctor")` will be called and you have to return a promise with grouped data according to column config.
 
 -   To expand any row by default you can pass `defaultExpandedRowIdentifier` and `rowIdentifier` prop values.
 
@@ -212,11 +214,11 @@ And once the user expands any row `getGroupedData` function will be called with 
 
 ## Row Selection
 
-For adding a row selection feature to your table you have to complete the following two steps:
+To add a Row Selection feature to your table you have to complete the following two steps:
 
 1. You have to add a state to your React components to save the selected rows. This will persist your selected data between renders. You have to pass this state variable to the `selectedRowIds` prop.
 
-2. You have to pass a callback function to the `onRowSelection` prop and the table component will call this function with the updated row id. For the unique ids you have to provide `rowIdentifier` prop.
+2. You have to pass a callback function to the `onRowSelection` prop and the table component will call this function with the updated row id. For the unique ids, you have to provide `rowIdentifier` prop.
 
 ```tsx
 import { TableColumnConfig } from '@medly-components/core';
@@ -251,7 +253,7 @@ export const TableComponent: React.FC = () => {
 
 ## Row Hover Actions
 
-To show row hover actions you have to pass `rowHoverActions` in below format. This component will render when the row is hovered and it will be passed the `rowId` and `rowData` of the row currently being hovered.
+To show Row Hover Actions, you have to pass `rowHoverActions` in the below format. This component will render when the row has hovered and it will pass the `rowId` and `rowData` of the row currently being hovered.
 
 ```tsx
 import { RowHoverActionsType } from '@medly-components/core'
@@ -311,8 +313,8 @@ export const RowHoverActions: RowHoverActionsType = ({ rowId, rowData }) => {
 
 ### No Result Row
 
-You can replace `No Result` Row with your Custom Component. You need to pass the Mounted Component Prop to Table component, and it will render that component on UI.
-To show Custom Component, you need pass props in below format.
+You can replace `No Result` row with your Custom component. You need to pass the Mounted component prop to Table component, and it will render that component on UI.
+To show Custom component, you need to pass props in the below format.
 
 ```tsx
 <Table
@@ -330,8 +332,9 @@ To show Custom Component, you need pass props in below format.
 
 ## Keyboard navigation
 
-You can navigate rows in table using `Up Arrow` and `Down Arrow` key. To select a row you can use `Space` key (default browser value) whereas you can expand a row using the `Right Arrow` key and collapse a row using the `Left Arrow` key.
-These are the default values, you can also override the default key values (except the select `Space` key) by passing the keyBindings object to the `keyBindings` prop. Be sure to match the key values to the HTML spec. You can view the key values [here](https://keycode.info/).
+To navigate the rows in a table, use the `Up Arrow` and `Down Arrow` keys. To select a row, use the `Space` key. To expand a row use the `Right Arrow` key, and to collapse a row use the `Left Arrow` key. 
+These are the default browser key values that you can override (except the select `Space` key) by passing the keyBindings object to the `keyBindings` prop. Also, you must match the key values to the HTML spec. 
+You can view the key values [here](https://keycode.info/).
 
 ```tsx
 <Table
@@ -348,7 +351,7 @@ These are the default values, you can also override the default key values (exce
 
 ## Actions
 
-To show action bar you have to pass `actions` in below format
+To show action bar you must pass `actions` in the below format
 
 ```tsx
 export const Actions = [
@@ -365,11 +368,11 @@ export const Actions = [
 <Table data={tableData} columns={columns} actions={Actions} />;
 ```
 
-## Infinite scroll
+## Infinite Scroll
 
-To enable infinite scroll you have to pass `withInfiniteScroll` prop. This will allow you to automatically load more content whenever user scrolls more than 70%.
+To enable Infinite Scroll you must pass `withInfiniteScroll` prop. This will allow you to automatically load more content whenever you scroll more than 70%.
 
-**Note:** `withInfiniteScroll` automatically disables `withPagination` flag.
+**Note:** `withInfiniteScroll` automatically disables the `withPagination` flag.
 
 <Preview withToolbar>
     <Story name="Table with infinite scroll">
@@ -418,15 +421,17 @@ To enable infinite scroll you have to pass `withInfiniteScroll` prop. This will 
 
 ## Minimap
 
-To show minimap you have to pass `withMinimap` as `true` and it will be visible when there is an horizontal scroll available in the table
+To display Minimap you must pass `withMinimap` as `true` and it will be visible when there is a horizontal scroll available in the table.
 
 ### Pagination
 
-To show pagination you have to pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`
+To display Pagination you must pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. The `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`
 
 ### Custom Column Cell Component
 
-You can pass a Custom Component to the `columns` prop of the Table. This will render that Custom Component inside the table inplace of the respective column on the UI. To use your Custom Component to be rendered as a column cell, you need pass props in below format.
+You can pass a Custom component to the `columns` prop of the table. This will render that Custom component inside the table inplace of the respective column on the UI. 
+
+For your Custom component to be rendered as a column cell, you need to pass props in the below format:
 
 ```tsx
 import { TableColumnConfig } from '@medly-components/core';
@@ -443,10 +448,9 @@ const CustomComponent: TableColumnConfig['component'] = React.memo(({ data, rowD
 <Table data={tableData} columns={columns} />;
 ```
 
-### Props
+## Props
 
-There are only two required props `data` & `columns`. It would be really great if you provide `rowIdentifier`. `rowIdentifier` is used as key name in data to be used as unique id for rows.
-
+There are only two required props `data` & `columns`. If possible, provide the `rowIdentifier`. A `rowIdentifier` is used as key name in data to identify rows.
 <Props of={Table} />
 
 ### Table Prop Types
@@ -459,12 +463,14 @@ import { TableColumnConfig } from '@medly-components/core';
 const columns: TableColumnConfig[] = [{}, {}];
 ```
 
-#### Column config type
+### Column config type
 
-You can checkout the sample column config in the `JSX` section.
+You can check the sample column config in the `JSX` section.
 
 <Props of={ColumnConfigInterface} />
 
-#### TableTheme
+## TableTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={ThemeInterface} />

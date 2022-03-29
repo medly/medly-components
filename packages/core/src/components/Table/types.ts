@@ -34,7 +34,7 @@ export interface TableColumnConfig {
     align?: 'left' | 'right' | 'center';
     /** Set it true to freeze the column based on freezePosition */
     frozen?: boolean;
-    /** Set freeze position. Requires frozen prop to be true */
+    /** Set freeze position. Requires frozen prop to be true. */
     freezePosition?: FreezePosition;
     /** Set it true to show sort icons */
     sortable?: boolean;
@@ -83,7 +83,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     rowSelectionDisableKey?: string;
     /** Key name to disable row click */
     rowClickDisableKey?: string;
-    /** Set it true to shows checkboxes to select rows */
+    /** Set it true to show checkboxes to select rows */
     isRowSelectable?: boolean;
     /** Set it true to expand rows to show extra info */
     isRowExpandable?: boolean;
@@ -93,9 +93,9 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     onRowSelection?: Dispatch<SetStateAction<(string | number)[]>>;
     /** Function to be called on row click */
     onRowClick?: (rowData: ObjectType) => void;
-    /** Default Sort Field*/
+    /** Default sort field*/
     defaultSortField?: string;
-    /** Default Sort Order*/
+    /** Default sort order*/
     defaultSortOrder?: SortOrder;
     /** Function to be called on click of sort icon */
     onSort?: ({ activePage, sortField, sortOrder }: TableState) => void;
@@ -107,7 +107,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     getGroupedData?: (title: string) => Promise<Record<string, unknown>[]>;
     /** Actions bar items */
     actions?: Array<JSX.Element>;
-    /** Enable Pagination */
+    /** Enable pagination */
     withPagination?: boolean;
     /** Total items to be paginated */
     totalItems?: number;
