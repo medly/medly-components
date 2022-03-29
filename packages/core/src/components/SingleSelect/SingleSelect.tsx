@@ -207,7 +207,6 @@ const Component: FC<SingleSelectProps> = memo(
                         onOptionClick={handleOptionClick}
                         maxWidth={maxWidth}
                         includesNestedOptions={includesNestedOptions}
-                        readOnly
                     />
                 )}
             </Styled.Wrapper>
