@@ -20,7 +20,7 @@ import { DashboardIcon, DeleteIcon, EditIcon } from '@medly-components/icons';
 
 # Tabs
 
-Displays specific content based on selected tab
+The `Tab` component allows you to switch between components present in the different tabs of your page. You can use it to organize your content into logical groups.
 
 Use `Tabs.Tab` to add tab in `Tabs` component.
 
@@ -38,7 +38,7 @@ Use `Tabs.Tab` to add tab in `Tabs` component.
 </Tabs>
 ```
 
-### Without Icon
+## Without Icon
 
 <Preview withToolbar>
     <Story name="WithoutIcon">
@@ -66,9 +66,9 @@ Use `Tabs.Tab` to add tab in `Tabs` component.
     </Story>
 </Preview>
 
-### WithIcon
+## With Icon
 
-We can also provide `icon` prop.
+We provide the `icon` prop as well.
 
 <Preview withToolbar>
     <Story name="WithIcon">
@@ -95,7 +95,7 @@ We can also provide `icon` prop.
     </Story>
 </Preview>
 
-### Count and HelperText
+## Count and HelperText
 
 `count` and `helperText` are optional props of `Tabs.Tab` component. See `Show code` section.
 
@@ -129,9 +129,11 @@ We can also provide `icon` prop.
     </Tabs>
 </Preview>
 
-### Tabs Variants
+## Tabs variants
 
-#### 1) Flat
+Three Tab variants are available viz; flat, outlined, and solid.
+
+## 1. Flat
 
 <Preview withToolbar>
     <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="L" variant="flat">
@@ -147,7 +149,7 @@ We can also provide `icon` prop.
     </Tabs>
 </Preview>
 
-#### 2) Outlined
+## 2. Outlined
 
 <Preview withToolbar>
     <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="L" variant="outlined">
@@ -163,7 +165,7 @@ We can also provide `icon` prop.
     </Tabs>
 </Preview>
 
-#### 3) Solid
+## 3. Solid
 
 <Preview withToolbar>
     <Tabs defaultActive="tab11" aria-label="Closed style tabs" tabSize="L" variant="solid">
@@ -179,11 +181,11 @@ We can also provide `icon` prop.
     </Tabs>
 </Preview>
 
-### Tab Sizes
+### Tab sizes
 
-There are three szes available `S` | `M` | `L`.
+Three Tab szes are available: `S` | `M` | `L`.
 
-#### 1) `S` size
+## 1. `S` 
 
 <Preview withToolbar>
     <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="S">
@@ -199,7 +201,7 @@ There are three szes available `S` | `M` | `L`.
     </Tabs>
 </Preview>
 
-#### 1) `M` size
+## 2. `M` 
 
 <Preview withToolbar>
     <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="M">
@@ -215,7 +217,7 @@ There are three szes available `S` | `M` | `L`.
     </Tabs>
 </Preview>
 
-#### 1) `L` size
+## 3. `L` 
 
 <Preview withToolbar>
     <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="L">
@@ -231,15 +233,16 @@ There are three szes available `S` | `M` | `L`.
     </Tabs>
 </Preview>
 
-### Usage
+## Usage
 
-1. **Uncontrolled**: When using uncontrolled `Tabs` component you do not need to provide any prop. By default first tab is active if you haven't provide `defaultActive` prop.
+1. **Uncontrolled**: When using the uncontrolled `Tabs` component you do not need to provide any prop. By default, the first tab is active if you haven't provided the `defaultActive` prop.
 
-2. **Controlled**: When using controlled `Tabs` component you have to provide `active` and `onChange` prop.
+2. **Controlled**: When using the controlled `Tabs` component you have to provide the `active` and `onChange` prop.
 
-### Keyboard Support
 
-It also supports keyboard navigation when it is in focus
+## Keyboard support
+
+This component supports keyboard navigation when in focus.
 
 | Key         | Function                                      |
 | ----------- | --------------------------------------------- |
@@ -248,16 +251,20 @@ It also supports keyboard navigation when it is in focus
 | Home        | Moves focus to the first tab and activates it |
 | End         | Moves focus to the last tab and activates it  |
 
-### Props
+## Props
 
-#### 1) Tabs Props
+This component offers the `tabs` and `tab`  props mentioned in the table below:
+
+## 1. Tabs Props
 
 <Props of={Tabs} />
 
-#### 1) Tab Props
+## 2. Tab Props
 
 <Props of={Tab} />
 
-### TabsTheme
+## TabsTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={ThemeInterface} />
