@@ -5,9 +5,31 @@ import Filter9PlusIconSvg from '../../assets/Image/filter_9_plus_24px_rounded.sv
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
 const Component: FC<SvgIconProps> = memo(props => {
-    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    const {
+        size,
+        withHoverEffect,
+        color,
+        margin,
+        iconColor: $iconColor,
+        bgColor: $bgColor,
+        hoverIconColor: $hoverIconColor,
+        hoverBgColor: $hoverBgColor,
+        ...restProps
+    } = props;
     return (
-        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+        <SvgIcon
+            {...{
+                size,
+                withHoverEffect,
+                color,
+                margin,
+                $iconColor,
+                $bgColor,
+                $hoverIconColor,
+                $hoverBgColor,
+                ...restProps
+            }}
+        >
             <Filter9PlusIconSvg {...restProps} width="1em" height="1em" />
         </SvgIcon>
     );
