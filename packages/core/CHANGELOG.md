@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.9](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.8...@medly-components/core@6.6.9) (2022-04-08)
+
+
+### Bug Fixes
+
+* svg props showing warning in console ([#629](https://github.com/medly/medly-components/issues/629)) ([69fad89](https://github.com/medly/medly-components/commit/69fad899e06c9e70fbb9b40afb83450454be0b80))
+
+
+
+
+
 ## [6.6.8](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.7...@medly-components/core@6.6.8) (2022-03-31)
 
 
