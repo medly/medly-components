@@ -1,5 +1,5 @@
 import { CheckIcon, MinimizeIcon } from '@medly-components/icons';
-import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
+import { isValidStringOrNumber, useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
 import { ChangeEvent, FC, FocusEvent, forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Checkbox.styled';
@@ -84,20 +84,23 @@ const Component: FC<CheckboxProps> = memo(
                     disabled={inputProps.disabled}
                     {...{ fullWidth, labelPosition }}
                 >
-                    {label && (
-                        <SelectorLabel
-                            id={`${inputId}-label`}
-                            type="checkbox"
-                            disabled={inputProps.disabled}
-                            hasError={isErrorPresent}
-                            labelPosition={labelPosition}
-                            textVariant={labelVariant}
-                            textWeight={labelWeight}
-                            required={inputProps.required}
-                        >
-                            {label}
-                        </SelectorLabel>
-                    )}
+                    {label &&
+                        (isValidStringOrNumber(label) ? (
+                            <SelectorLabel
+                                id={`${inputId}-label`}
+                                type="checkbox"
+                                disabled={inputProps.disabled}
+                                hasError={isErrorPresent}
+                                labelPosition={labelPosition}
+                                textVariant={labelVariant}
+                                textWeight={labelWeight}
+                                required={inputProps.required}
+                            >
+                                {label}
+                            </SelectorLabel>
+                        ) : (
+                            label
+                        ))}
                     <Styled.CheckboxWrapper size={size!}>
                         <Styled.HiddenCheckbox
                             ref={inputRef}
