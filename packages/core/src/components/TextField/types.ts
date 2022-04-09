@@ -3,11 +3,11 @@ import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import type { ChangeEvent, FC } from 'react';
 
 export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'> {
-    /** Input Variants */
+    /** Input variants */
     variant?: 'outlined' | 'filled' | 'fusion';
-    /** Input Size */
+    /** Input size */
     size?: 'S' | 'M';
-    /** Function will called with the input value on blur and invalid event */
+    /** Function will be called with the input value on blur and invalid event */
     validator?: (val: any, eventType: ChangeEvent<HTMLInputElement>) => string;
     /** Mask format eg. DD / MM / YYYY */
     mask?: string;
@@ -19,7 +19,7 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     prefix?: FC<any>;
     /** Trailing icon */
     suffix?: FC<any>;
-    /** Disable Input */
+    /** Disable input */
     disabled?: boolean;
     /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered. */
     showDecorators?: boolean;
@@ -27,21 +27,21 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     required?: boolean;
     /** Input label */
     label?: string;
-    /** Helper Text */
+    /** Helper text */
     helperText?: string;
-    /** Error Text */
+    /** Error text */
     errorText?: string;
     /** Min width in px/rem/% (1rem = 10px)*/
     minWidth?: string;
     /** Max width in px/rem/% (1rem = 10px)*/
     maxWidth?: string;
-    /** To use a text area, set multiline to true. When false, this component will be a text field */
+    /** To use a text area, set multiline to true. When false, this component will be a text field. */
     multiline?: boolean;
-    /** Use minRows when multiline is true; minRows is the number of rows in text area */
+    /** Use minRows when multiline is true; minRows is the number of rows in text area. */
     minRows?: number;
-    /** Set to true to display the character count of the current input value. This requires maxLength prop as well. */
+    /** Set it to true to display the character count of the current input value. This requires maxLength prop as well. */
     withCharacterCount?: boolean;
-    /** Show Helper text and error text in a tooltip (popover) */
+    /** Show Helper text and Error text in a tooltip (popover) */
     showTooltipForHelperAndErrorText?: boolean;
 }
 

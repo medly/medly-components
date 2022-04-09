@@ -10,7 +10,7 @@ import { useState, useCallback } from 'react';
 
 # TextField
 
-Basic TextField component with lot of customization
+You can use the basic `TextField` component to get user input. It is often used in conjunction with other form elements.
 
 <Preview withToolbar>
     <Story name="TextField" decorators={[withKnobs]}>
@@ -43,24 +43,24 @@ Basic TextField component with lot of customization
     </Story>
 </Preview>
 
-#### Multiline
+## Multiline
 
-To use a text area element instead of an input element, you must provide the `multiline` and `minRows` prop. Rows should be set to the number of rows you want the text area to default to.
+To use a text area element instead of an input element, you must provide the `multiline` and `minRows` prop. The rows must be set to the number of rows you want to appear by default in the text area.
 
 <Preview withToolbar>
     <TextField id="textarea" type="Name" variant="filled" multiline minRows={3} placeholder="Add Notes" />
     <TextField id="textarea" type="Name" variant="outlined" multiline minRows={3} placeholder="Add Notes" />
 </Preview>
 
-#### Masking (beta-version)
+## Masking (beta-version)
 
-To add the masking feature you need to provide `mask` prop. For now this feature only supports numbers so user is only allowed to type numbers.
+To add the masking feature, you need to provide the `mask` prop. The feature currently supports only numeric input, so at the moment, you can only type numbers.
 
 <Preview withToolbar>
     <TextField id="date" type="Name" variant="filled" label="Date" mask="DD / MM / YYYY" />
 </Preview>
 
-##### Variants
+### Variants
 
 <Preview withToolbar>
     <TextField id="outline" type="Name" variant="outlined" label="Address" defaultValue="Demo" helperText="Outlined" />
@@ -68,7 +68,7 @@ To add the masking feature you need to provide `mask` prop. For now this feature
     <TextField id="fusion" type="Name" variant="fusion" label="Address" defaultValue="Demo" helperText="Rounded Outlined" />
 </Preview>
 
-##### Error State
+### Error state
 
 <Preview withToolbar>
     <TextField id="outline" type="Name" variant="outlined" label="Address" defaultValue="Demo" errorText="Something wrong" />
@@ -76,7 +76,7 @@ To add the masking feature you need to provide `mask` prop. For now this feature
     <TextField id="fusion" type="Name" variant="fusion" label="Address" defaultValue="Demo" errorText="Something wrong" />
 </Preview>
 
-##### Error State with Helper Tooltip
+### Error state with Helper Tooltip
 
 <Preview withToolbar>
     <TextField id="outline" type="Name" variant="outlined" label="Address" defaultValue="Demo" errorText="Something wrong" showTooltipForHelperAndErrorText />
@@ -85,7 +85,7 @@ To add the masking feature you need to provide `mask` prop. For now this feature
 </Preview>
 
 
-##### Character Count
+### Character count
 
 To display character count, you must provide the `withCharacterCount` prop and a `maxLength` prop.
 
@@ -93,9 +93,9 @@ To display character count, you must provide the `withCharacterCount` prop and a
     <TextField id="outline" type="Name" variant="outlined" label="Address" defaultValue="Demo" withCharacterCount maxLength={10} />
 </Preview>
 
-##### With Prefix and suffix
+### With Prefix and Suffix
 
-To use the label color pass the className name prop to your prefix/suffix element or you can directly use our icons.
+To use the label color, pass the className name prop to your prefix and suffix element, or you can directly use our icons.
 
 <Preview withToolbar>
     <TextField id="outline-prefix-icon" type="Name" variant="outlined" label="Address" prefix={AddCircleOutlineIcon} />
@@ -134,7 +134,7 @@ To use the label color pass the className name prop to your prefix/suffix elemen
     <TextField id="filled-suffix-text" type="Name" variant="filled" label="Email" suffix={props => <Text {...props}>.com</Text>} />
 </Preview>
 
-If you dont want to apply the label color on your prefix and suffix just pass your element like this `() => <CheckCircleIcon/>`
+If you don't want to apply the label color on your prefix and suffix, just pass your element like this `() => <CheckCircleIcon/>`
 
 <Preview withToolbar>
     <TextField id="outline-suffix" type="Name" variant="outlined" label="Address" suffix={() => <CheckCircleIcon />} />
@@ -144,7 +144,7 @@ If you dont want to apply the label color on your prefix and suffix just pass yo
 
 ### Form Validation
 
-You can give validator function to check the value and return the error messages. If your validator return empty string then HTML5 default error message will be rendered if any. We can create a generic react hook like below to handle onchange event.
+You can give a validator function to check the value and return the error messages. The HTML5 default error message will be displayed if your validator returns an empty string. We can create a generic react hook-like below to handle the onchange event.
 
 <Preview>
     <Custom />
@@ -167,7 +167,7 @@ export const useTextInput = (initialState = ''): Result => {
 };
 ```
 
-And you can use the above react hook in the form like below.
+Additionally, you can use the above react hook in the form that is mentioned below.
 
 ```tsx
 const emailValidation = (value: string) => {
@@ -188,10 +188,14 @@ export const Custom: React.FC = () => {
 };
 ```
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={TextField} />
 
-### TextFieldTheme
+## TextFieldTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={ThemeInterface} />
