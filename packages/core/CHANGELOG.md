@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.9...@medly-components/core@6.7.0) (2022-04-09)
+
+
+### Features
+
+* add custom label component to checkbox ([#630](https://github.com/medly/medly-components/issues/630)) ([2981fe1](https://github.com/medly/medly-components/commit/2981fe12a4aeadad7f48fafe6b16c9266f7ecad5))
+
+
+
+
+
 ## [6.6.9](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.8...@medly-components/core@6.6.9) (2022-04-08)
 
 
