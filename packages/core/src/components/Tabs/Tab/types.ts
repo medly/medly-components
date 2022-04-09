@@ -1,8 +1,8 @@
 import { SvgIconProps } from '@medly-components/icons';
 import { TabsTheme } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
-import { TabBackground, TabSize, Variant } from '../types';
 import type { FC } from 'react';
+import { TabBackground, TabSize, Variant } from '../types';
 
 export type StyledTabProps = HTMLProps<HTMLButtonElement> &
     WithThemeProp &
@@ -16,7 +16,7 @@ export type StyledTabProps = HTMLProps<HTMLButtonElement> &
     };
 
 export interface TabProps extends HTMLProps<HTMLButtonElement> {
-    /** To be used to render tab as any html tag */
+    /** Use it to render tab as any html tag */
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     /** Id of tab */
     id: any;
@@ -24,15 +24,15 @@ export interface TabProps extends HTMLProps<HTMLButtonElement> {
     label: string;
     /** Helper text for the tab */
     helperText?: string;
-    /** To Display count in tab */
+    /** To display count in the tab */
     count?: number;
-    /** To be used to hide the tab (cannot be used with the `solid` Tabs variant) */
+    /** Use it to hide the tab (cannot be used with the `solid` Tabs variant) */
     hide?: boolean;
     /** Icon to be shown */
     icon?: FC<SvgIconProps>;
-    /** Disabled State */
+    /** Disabled state */
     disabled?: boolean;
-    /** This will be handled internally */
+    /** To be handled internally */
     active?: boolean;
     /** Provide the fraction of the of the total width of the parent (cannot be used with the `solid` Tabs variant) */
     fraction?: number;
