@@ -125,6 +125,40 @@ import { TableProps } from '@medly-components/core';
 export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowData }) => <Text> Hello {`${rowData.name}`}</Text>;
 ```
 
+<Preview withToolbar>
+    <Story name="Expandable Table">
+        {() => {
+            const [tableData, setTableData] = useState(data),
+                handleFilterData = useCallback(
+                    ({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)),
+                    [tableData]
+                );
+            return (
+                <DummyWrapper>
+                    <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
+                    <Table
+                        data={tableData}
+                        columns={columns}
+                        onRowClick={action('Row Clicked')}
+                        isLoading={boolean('Loading', false)}
+                        isRowExpandable={boolean('Is row expandable', true)}
+                        size={select('Size', ['XS', 'S', 'M', 'L'], 'M')}
+                        expandedRowComponent={ExpandedRowComponent}
+                        actions={Actions}
+                        withMinimap={boolean('Enable minimap', true)}
+                        withPagination={boolean('Enable pagination', true)}
+                        totalItems={10}
+                        itemsPerPage={10}
+                        onPageChange={action('Page Changed')}
+                        onScrolledToBottom={action('Scrolled to bottom')}
+                        withRowSeparators={boolean('Enable row separators', true)}
+                    />
+                </DummyWrapper>
+            );
+        }}
+    </Story>
+</Preview>
+
 ## Row as Card style
 
 Rows can be shown with Card style when you set `showRowWithCardStyle` as true, and the size of the table will automatically set itself to 'L'.

@@ -12,7 +12,8 @@ export const defaultValues: ModalContextType = {
     },
     dispatch: (): void => {},
     id: 'default-id',
-    isSmallScreen: false
+    isSmallScreen: false,
+    overflowVisible: false
 };
 
 export const ModalContext = createContext<ModalContextType>(defaultValues);
