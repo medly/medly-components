@@ -5,7 +5,11 @@ import { DummyCompanyName } from './Logo.stories.tsx';
 
 <Meta title="core" component={Logo} parameters={{ jest: [] }} />
 
-Barebones component to show a logo and company name
+# Logo
+
+The `Logo` component allows customers to recognize your brand.
+
+## With logo and name
 
 <Preview>
     <Story name="Logo">
@@ -13,18 +17,20 @@ Barebones component to show a logo and company name
     </Story>
 </Preview>
 
-#### Without name
+## Without name
 
 <Preview>
     <Logo showName={false} />
 </Preview>
 
-#### Custom logo and name
+## Custom logo and name
 
 <Preview>
     <Logo logo={<ThermostatIcon />} name={<DummyCompanyName />} />
 </Preview>
 
-#### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Logo} />
