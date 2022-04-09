@@ -20,7 +20,7 @@ import Text from '../Text';
 
 # Toast
 
-Basic toast component with four different variants.
+The `Toast` component is a popup window that display a message to a user. You can use the toast component to give feedback to users after an action takes place. It can be a success message, error message, warning message, and custom or info message. 
 
 <Preview withToolbar>
     <Div>
@@ -31,15 +31,15 @@ Basic toast component with four different variants.
     </Div>
 </Preview>
 
-### How to use
+## How to use
 
-You have to add `<ToastContainer/>` in your app at root level and then just use `addToast` function to raise the toast. For more info check `ToastContainer` docs.
+You have to add `<ToastContainer/>` in your app at the root level and to raise the toast use the `addToast` function. For more info check `ToastContainer` docs.
 
 <Props of={ThemeInterface} />
 
-### Custom header and message component
+## Custom Header and Message component
 
-You can pass custom header and message components.
+You can pass the custom header and message components.
 
 ```tsx
 <Toast
@@ -69,11 +69,15 @@ addToast({
     </Div>
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Toast} />
 
-### ToastTheme
+## ToastTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={ThemeInterface} />
 
