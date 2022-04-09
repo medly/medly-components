@@ -55,6 +55,20 @@ return <Checkbox label="Lorem Ipsum" checked={isChecked} onChange={onChangeHandl
     </Story>
 </Preview>
 
+## Custom label
+
+You can also use a custom label instead of the default one.
+
+```tsx
+const CustomLabel = () => <code>Custom Label</code>;
+export const FormWithCheckbox: React.FC = props => {
+    const [checked, setChecked] = useState<boolean>(),
+        onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => setChecked(e.target.checked);
+
+    return <Checkbox required label={<CustomLabel />} checked={checked} onChange={onChangeHandler} />;
+};
+```
+
 ## Validations
 
 1. This component calls the validator prop function with the latest value on blur, invalid, and change events. If you do not pass the validator function, it displays the default HTML5 error validation message if present.

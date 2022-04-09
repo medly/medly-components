@@ -5,9 +5,9 @@ import { LabelPositions } from '../Label/types';
 
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type' | 'sizes'>;
 
-export interface CheckboxProps extends InputProps {
+export interface CheckboxProps extends Omit<InputProps, 'label'> {
     /** Checkbox label */
-    label?: string;
+    label?: string | React.ReactElement<any>;
     /** Checkbox size */
     size?: CheckboxSizes;
     /** Full width of the parent component */

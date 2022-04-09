@@ -20,12 +20,20 @@ describe('Checkbox component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(verticalLabelPositions)('should render properly with fullWidth and %p labelPosition', labelPosition => {
+    test.each(verticalLabelPositions)('should render correctly with fullWidth and %p labelPosition', labelPosition => {
         const { container } = render(<Checkbox id="dummy" fullWidth label="Dummy" labelPosition={labelPosition} />);
         expect(container.querySelector('#dummy-wrapper')).toHaveStyle(`
             display: flex;
             padding: 0.8rem 0
         `);
+    });
+
+    it('should render correctly with custom label', () => {
+        const mockOnChange = jest.fn(),
+            CustomComponent = () => <span>Custom label</span>;
+        render(<Checkbox onChange={mockOnChange} label={<CustomComponent />} />);
+        userEvent.click(screen.getByRole('checkbox'));
+        expect(screen.getByText('Custom label')).toBeInTheDocument();
     });
 
     it('should call onChange handler on click on checkbox', () => {
