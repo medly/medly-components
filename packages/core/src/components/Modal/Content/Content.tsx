@@ -6,11 +6,18 @@ import * as Styled from './Content.styled';
 import type { FC } from 'react';
 
 const Component: FC = memo(props => {
-    const { id, dispatch, scrollState, headerHeight } = useContext(ModalContext),
+    const { id, dispatch, scrollState, headerHeight, overflowVisible } = useContext(ModalContext),
         contentRef = useRef<HTMLDivElement>(null),
         handleScroll = useScrollState({ ref: contentRef, scrollState, dispatch });
 
-    return <Styled.Content ref={contentRef} onScroll={handleScroll} {...{ headerHeight, scrollState, id: `${id}-content` }} {...props} />;
+    return (
+        <Styled.Content
+            ref={contentRef}
+            onScroll={handleScroll}
+            {...{ headerHeight, scrollState, id: `${id}-content`, overflowVisible }}
+            {...props}
+        />
+    );
 });
 Component.displayName = 'Content';
 export const Content: FC & WithStyle = Object.assign(Component, { Style: Styled.Content });
