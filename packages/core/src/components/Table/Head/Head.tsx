@@ -1,3 +1,4 @@
+import type { FC } from 'react';
 import { memo, useCallback, useContext, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
 import { TableComponentsCommonPropsContext, TableStateContext } from '../context';
@@ -8,7 +9,6 @@ import { THead } from './Head.styled';
 import HeadCell from './HeadCell';
 import HeadRow from './HeadRow';
 import { TableHeadProps } from './types';
-import type { FC } from 'react';
 
 const Head: FC<TableHeadProps> = memo(props => {
     const {
@@ -39,7 +39,10 @@ const Head: FC<TableHeadProps> = memo(props => {
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         handleSelectAllClick = useCallback(() => onSelectAllClick && onSelectAllClick(-1), [onSelectAllClick]),
-        handleWidthChange = useCallback((width: number, field: string) => setColumns(cl => changeSize(width, field, cl)), []),
+        handleWidthChange = useCallback(
+            (width: number, field: string) => field !== 'row-actions' && setColumns(cl => changeSize(width, field, cl)),
+            []
+        ),
         handleSortChange = useCallback(
             (field: string, order: SortOrder) => {
                 setTableState(val => {
