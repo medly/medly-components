@@ -68,7 +68,7 @@ export const useForm = (initialState: Record<string, unknown>): UseFormResult =>
     const handleNumberChange: Handlers['handleNumberChange'] = useCallback(
         memoize(name => event => {
             const { value } = event.target as HTMLInputElement;
-            setValues(val => ({ ...val, [name]: Number(value) }));
+            setValues(val => ({ ...val, [name]: value !== '' ? Number(value) : undefined }));
         }),
         []
     );

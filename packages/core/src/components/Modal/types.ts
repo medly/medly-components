@@ -9,6 +9,8 @@ export interface ModalProps extends HTMLProps<HTMLDivElement> {
     open?: boolean;
     /** Function to be called on closing modal */
     onCloseModal?: () => void;
+    /** Set it true to allow modal overflow to be visible */
+    overflowVisible?: boolean;
     /** Min width in px/rem/% (1rem = 10px) */
     minWidth?: string;
     /** Min height in px/rem/% (1rem = 10px) */
@@ -22,16 +24,21 @@ export interface ModalBackgroundProps {
     isSmallScreen: boolean;
 }
 
+interface ContentProps {
+    overflowVisible?: boolean;
+}
+
 export interface ModalStaticProps {
     Popup: FC<ModalPopupProps> & WithStyle;
     Header: FC & WithStyle;
-    Content: FC & WithStyle;
+    Content: FC<ContentProps> & WithStyle;
     Actions: FC<ModalActionUserProps> & WithStyle;
 }
 
 export interface InnerContainerProps {
     /** height of the header component */
     headerHeight: number;
+    overflowVisible?: boolean;
 }
 
 export interface UseScrollStateProps {
@@ -47,6 +54,7 @@ export interface ModalContextType {
     dispatch: Dispatch<ScrollActionTypes>;
     id: string;
     isSmallScreen: boolean;
+    overflowVisible?: boolean;
 }
 
 export interface ScrollState {

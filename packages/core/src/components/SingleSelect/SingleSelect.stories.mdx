@@ -10,7 +10,7 @@ import { variants, options, sizes, ThemeInterface, OptionProps } from './SingleS
 
 # SingleSelect
 
-Basic single select component.
+The `SingleSelect` component allows you to pick a value from a list of options. You can ideally use it when the list of options is more than five otherwise consider using `RadioGroup`.
 
 <Preview withToolbar>
     <Story name="SingleSelect">
@@ -41,11 +41,11 @@ Basic single select component.
     </Story>
 </Preview>
 
-#### Variants
+## Variants
 
-There are three variants available `filled`, `outlined` & `flat`.
+Three variants are available `filled`, `outlined` & `flat`.
 
-> **Note**: `flat` variant does not support `size`, `required` and `isSearchable` props. Also, its not advised to use `helperText` and `errorText` props in `flat` variant.
+> **Note**: The `flat` variant does not support the following props; `size`, `required` and `isSearchable`. Also, its not advisable to use `helperText` and `errorText` props in `flat` variant.    
 
 <Preview>
     <PreviewContent>
@@ -90,9 +90,9 @@ There are three variants available `filled`, `outlined` & `flat`.
     </PreviewContent>
 </Preview>
 
-#### Error validation
+## Error validation
 
-As mentioned in the `TextField` component, either you can pass `errorText` or `validator` prop to show the custom message. If you haven't pass any of these prop then default html5 error validation message will appear.
+As mentioned in the `TextField` component, you can pass either  `errorText` or `validator` prop to show the custom message. If you have not passed any of these props, the default html5 error validation message appears.
 
 <Preview>
     <PreviewContent>
@@ -138,7 +138,7 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
     </PreviewContent>
 </Preview>
 
-#### Error validation with Helper Tooltip
+### Error validation with Helper Tooltip
 <Preview>
     <PreviewContent>
         {() => {
@@ -172,9 +172,9 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
     </PreviewContent>
 </Preview>
 
-##### With Icons
+### With Icons
 
-You can provide a prefix icon, which will always take the label color.
+You can provide a prefix icon, which always takes the label color.
 
 <Preview>
     <PreviewContent>
@@ -207,7 +207,7 @@ You can provide a prefix icon, which will always take the label color.
     </PreviewContent>
 </Preview>
 
-You can also provide a suffix icon, which also takes the label color.
+Additionally, you can also provide a suffix icon, which also takes the label color.
 
 <Preview>
     <PreviewContent>
@@ -241,9 +241,9 @@ You can also provide a suffix icon, which also takes the label color.
     </PreviewContent>
 </Preview>
 
-### Keyboard Support
+## Keyboard support
 
-It also supports keyboard navigation when it is in focus
+This component supports keyboard navigation when in focus.
 
 | Key         | Function                              |
 | ----------- | ------------------------------------- |
@@ -253,9 +253,9 @@ It also supports keyboard navigation when it is in focus
 | Left Arrow  | Moves focus out of the nested options |
 | Enter       | Select the focused option             |
 
-##### Nested Options
+### Nested Options
 
-If you want to use nested options then set `includesNestedOptions` prop to true and pass nested array of `{label:'' , value:''}` in option list like below.
+If you want to use nested options, then set `includesNestedOptions` prop to true and pass nested array of `{label:'' , value:''}` in the options list like below.
 
 ```tsx
 const options = [
@@ -271,15 +271,19 @@ const options = [
 ];
 ```
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={SingleSelect} />
 
-### Option Props
+## Option Props
+
+This component offers the following option props mentioned in the table below:
 
 <Props of={OptionProps} />
 
-### SelectTheme
+## SelectTheme
 
 This theme is shared between single select and multi select.
 
