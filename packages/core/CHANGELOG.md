@@ -3,6 +3,66 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.9](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.8...@medly-components/core@6.6.9) (2022-04-08)
+
+
+### Bug Fixes
+
+* svg props showing warning in console ([#629](https://github.com/medly/medly-components/issues/629)) ([69fad89](https://github.com/medly/medly-components/commit/69fad899e06c9e70fbb9b40afb83450454be0b80))
+
+
+
+
+
+## [6.6.8](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.7...@medly-components/core@6.6.8) (2022-03-31)
+
+
+### Bug Fixes
+
+* single select inside modal not closing ([#625](https://github.com/medly/medly-components/issues/625)) ([d0d9785](https://github.com/medly/medly-components/commit/d0d97850ed5354af11ed6b060bd5d85d6289a4d9))
+
+
+
+
+
+## [6.6.7](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.6...@medly-components/core@6.6.7) (2022-03-29)
+
+
+### Bug Fixes
+
+* single select calling onBlur even on scrollbar click ([#622](https://github.com/medly/medly-components/issues/622)) ([7756f89](https://github.com/medly/medly-components/commit/7756f89c9e4ef1f6e9dce752b6fe82a7b55a0c7e))
+
+
+
+
+
+## [6.6.6](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.5...@medly-components/core@6.6.6) (2022-03-26)
+
+
+### Bug Fixes
+
+* **core:** expandable and selectable column width change issue ([#619](https://github.com/medly/medly-components/issues/619)) ([12e67c4](https://github.com/medly/medly-components/commit/12e67c4ba06dc0a4c6275971f8982ac45fa2d8fa)), closes [#615](https://github.com/medly/medly-components/issues/615) [#615](https://github.com/medly/medly-components/issues/615)
+
+
+
+
+
+## [6.6.5](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.4...@medly-components/core@6.6.5) (2022-03-25)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [6.6.4](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.3...@medly-components/core@6.6.4) (2022-03-25)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
 ## [6.6.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.2...@medly-components/core@6.6.3) (2022-03-21)
 
 **Note:** Version bump only for package @medly-components/core
