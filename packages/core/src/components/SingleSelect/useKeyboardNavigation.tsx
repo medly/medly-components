@@ -12,6 +12,7 @@ type Props = {
     handleOptionClick: (op: Option) => void;
     showOptions: () => void;
     optionsRef: React.RefObject<HTMLUListElement>;
+    hideOptions?: () => void;
 };
 export const useKeyboardNavigation = (props: Props) => {
     const {
@@ -22,7 +23,8 @@ export const useKeyboardNavigation = (props: Props) => {
         areOptionsVisible,
         handleOptionClick,
         showOptions,
-        optionsRef
+        optionsRef,
+        hideOptions
     } = props;
 
     const downPress = useKeyPress('ArrowDown'),
@@ -30,6 +32,7 @@ export const useKeyboardNavigation = (props: Props) => {
         rightPress = useKeyPress('ArrowRight'),
         upPress = useKeyPress('ArrowUp'),
         enterPress = useKeyPress('Enter'),
+        tabPress = useKeyPress('Tab'),
         nestedOptions = useRef<Array<Option>>([]),
         [hoveredOption, setHoveredOption] = useState(selectedOption);
 
@@ -73,6 +76,13 @@ export const useKeyboardNavigation = (props: Props) => {
             nestedOptions.current.length > 0 &&
             hoverOption(nestedOptions.current.pop()!);
     }, [leftPress, areOptionsVisible]);
+
+    useEffect(() => {
+        if (isFocused.current && tabPress && optionsRef.current) {
+            isFocused.current = false;
+            setTimeout(() => !isFocused.current && hideOptions && hideOptions(), 250);
+        }
+    }, [tabPress]);
 
     useEffect(() => {
         if (isFocused.current && enterPress && optionsRef.current) {
