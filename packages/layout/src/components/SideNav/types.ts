@@ -28,6 +28,10 @@ export interface SideNavProps {
     defaultOpen?: boolean;
     /** ClassName to be be passed to aside html tag */
     className?: string;
+    /** Text to be displayed when side nav is collapsed */
+    collapsedToggleText?: string;
+    /** Text to be displayed when side nav is expanded */
+    expandedToggleText?: string;
 }
 
 export interface SideNavStaticProps {
