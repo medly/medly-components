@@ -186,9 +186,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
       </svg>
       <span
         class="c4 c5"
-      >
-        Hide Menu
-      </span>
+      />
     </li>
   </ul>
 </div>
@@ -380,9 +378,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
       </svg>
       <span
         class="c4 c5"
-      >
-        Hide Menu
-      </span>
+      />
     </li>
   </ul>
 </div>
@@ -574,9 +570,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
       </svg>
       <span
         class="c4 c5"
-      >
-        Open Menu
-      </span>
+      />
     </li>
   </ul>
 </div>
