@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.7.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.7.0...@medly-components/core@6.7.1) (2022-04-14)
+
+
+### Bug Fixes
+
+* **core:** persists X in SearchBox after pressing enter ([#633](https://github.com/medly/medly-components/issues/633)) ([c97c8f1](https://github.com/medly/medly-components/commit/c97c8f1d3c8cf05729000d79e5d9314c0513d231))
+
+
+
+
+
 # [6.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.9...@medly-components/core@6.7.0) (2022-04-09)
 
 
