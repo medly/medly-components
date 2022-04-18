@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.8.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.8.0...@medly-components/core@6.8.1) (2022-04-18)
+
+
+### Bug Fixes
+
+* add key prop for pagination popup ([#635](https://github.com/medly/medly-components/issues/635)) ([f0606d5](https://github.com/medly/medly-components/commit/f0606d5bdcadc2fcc2be6d4b5a0c420ba07c6249))
+
+
+
+
+
 # [6.8.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.7.1...@medly-components/core@6.8.0) (2022-04-18)
 
 
