@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.8.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.7.1...@medly-components/core@6.8.0) (2022-04-18)
+
+
+### Features
+
+* add custom message support in centerAlignLoader ([#634](https://github.com/medly/medly-components/issues/634)) ([0556a9f](https://github.com/medly/medly-components/commit/0556a9fac56a81d5cfc91fe0ecb0fb63c2fe2ef5))
+
+
+
+
+
 ## [6.7.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.7.0...@medly-components/core@6.7.1) (2022-04-14)
 
 
