@@ -4,13 +4,13 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # useMediaQuery
 
-This hook is very usefull to check whether current screen satisfy the passed media query.
+The `useMediaQuery` hook checks if the current screen satisfies the passed media query.
 
 ```tsx
 const matches = useMediaQuery('@media (min-width: 768px) and (max-width: 1240px)');
 ```
 
-you can use `breakpoints` function to get the desired media query like below
+You can use the `breakpoints` function to get the desired media query like below:
 
 ```tsx
 import { breakpoints, ThemeContext, useMediaQuery } from '@medly-components/utils';
@@ -24,4 +24,4 @@ export const DummyComponent: React.FC = React.memo(() => {
 });
 ```
 
-> Note: If you are using typed styled-components then import `ThemeContext` from the exported styled file in your project.
+> Note: If you use typed styled-components, import `ThemeContext` from the exported styled file in your project.

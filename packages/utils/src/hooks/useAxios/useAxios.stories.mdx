@@ -5,16 +5,16 @@ import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
 
 # useAxios
 
-This react hook can be used to call the api in any react component which exposed `isLoading`, `data` & `error` state so that you don't have to create all of these again and again in your components.
+You can use the `useAxios` to call the API in any react component that exposed, `isLoading`, `data` and  `error` state so that you don't have to create it multiple times in your components.
+
 
 ```tsx
 const { data, error, request, isLoading } = useAxios<DataType, ErrorType>();
 ```
 
-### Result
+## Result
 
-`useAxios` hooks returns below object.
-
+The `useAxios` hooks returns the below object:
 ```tsx
 export type Result<Data = any, Error = any> = {
     data: Data; // Data in the success response
@@ -31,9 +31,9 @@ export type Result<Data = any, Error = any> = {
 };
 ```
 
-### Global axios config
+## Global Axios config
 
-You can set global config for axios like below. Read more about this over [here](https://github.com/axios/axios#global-axios-defaults)
+You can set the global config for Axios like given below. To know more about Axios click [here](https://github.com/axios/axios#global-axios-defaults).
 
 ```tsx
 import axios from 'axios';
@@ -75,6 +75,6 @@ const Demo: React.SFC = React.memo(() => {
 });
 ```
 
-### Unit Testing
+## Unit testing
 
-You can checkout few example of how to write unit tests around it over [here](https://github.com/medly/medly-components/blob/master/packages/utils/src/hooks/useAxios/useAxios.test.tsx).
+You can check out a few examples of how to write unit tests around it over [here](https://github.com/medly/medly-components/blob/master/packages/utils/src/hooks/useAxios/useAxios.test.tsx).
