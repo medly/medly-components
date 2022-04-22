@@ -8,9 +8,9 @@ import { VerticalAlign } from './Typography.stories';
 
 # Typography
 
-Use this to design your content efficiently. By default we use `Open Sans` font but you can change in the font theme.
+Use 'Typography' to design your content efficiently. We use the 'Open Sans' typeface by default, however, you can alter the font theme.
 
-### How to use
+## How to use?
 
 You have to include styled component global style using `CssBaseline` component like below. `CssBaseline` component will add all the font faces and default font style. Then you can use `Text` component with various configuration to match desired output and html tag.
 
@@ -21,11 +21,11 @@ You have to include styled component global style using `CssBaseline` component 
 </ThemeProvider>
 ```
 
-### Font Variants
+## Font Variants
 
-Use font variant to decide the font style(`font-size`,`font-weight`,`line-height`,`letter-spacing`) and `html tag` also. If you have used `textWeight` prop as `Strong`|`ExtraStrong`, then both `body1` and `body2` variant will use `strong` html tag.
+Use font variant to decide the font style: (`font-size`,`font-weight`,`line-height`,`letter-spacing`) and `html tag` as well. If you have used `textWeight` prop as `Strong`|`ExtraStrong`, then both `body1` and `body2` variant will use the `strong` HTML tag.
 
-| Variant | Html Tag |
+| Variant | HTML Tag |
 | ------- | -------- |
 | h1      | h1       |
 | h2      | h2       |
@@ -53,13 +53,13 @@ Use font variant to decide the font style(`font-size`,`font-weight`,`line-height
     </VerticalAlign>
 </Preview>
 
-#### Font Variants Theme
+### Font Variants Theme
 
-Default font style for each variant.
+The default, font style for each variant is given below:
 
 <Props of={stories.FontVariantsThemeInterface} />
 
-### Font Weights
+## Font Weights
 
 <Preview withToolbar>
     <VerticalAlign>
@@ -71,20 +71,20 @@ Default font style for each variant.
     </VerticalAlign>
 </Preview>
 
-#### Font Weights Theme
+### Font Weights Theme
 
-Default font style for each variant.
+The default, font style for each variant is given below:
 
 <Props of={stories.FontWeightThemeInterface} />
 
-### FontTheme
+## FontTheme
 
-Below are the types of the font theme. If you wish to change any theme just provide your theme in `ThemeProvider` with `font` key in it.
+ If you want to change the theme, simply supply your theme in `ThemeProvider` with the `font` key . The different font theme types is given below:
 
 <Props of={stories.FontThemeInterface} />
 
 ### FontFaceTheme
 
-Below are the types of the font faces. Provide all the font faces in array which you want to use.
+Provide an array with all of the font faces you want to utilise. The different font faces types is given below:
 
 <Props of={stories.FontFaceThemeInterface} />
