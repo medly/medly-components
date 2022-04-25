@@ -52,7 +52,8 @@ exports[`Center Aligned Loader should render properly with all props given 1`] =
   box-sizing: border-box;
   background-color: #ffffff;
   height: 14.4rem;
-  width: 14.4rem;
+  min-width: 14.4rem;
+  padding: 0 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -135,6 +136,132 @@ exports[`Center Aligned Loader should render properly with all props given 1`] =
         class="c3 c4"
       >
         Loading...
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Center Aligned Loader should render properly with custom loading message 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c0 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1001;
+  position: relative;
+}
+
+.c0 > * {
+  -webkit-animation: hHgZmL 300ms ease-in-out;
+  animation: hHgZmL 300ms ease-in-out;
+}
+
+.c1 {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  height: 14.4rem;
+  min-width: 14.4rem;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-shadow: 0 0.4rem 1.6rem rgba(96,120,144,0.2);
+  border-radius: 1rem;
+}
+
+.c1 .c2 {
+  margin-top: 1.4rem;
+  color: #546A7F;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="sc-qPLKk NhgoW"
+        fill="none"
+        height="51"
+        viewBox="0 0 51 51"
+        width="51"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="25.5"
+          cy="25.5"
+          r="24"
+          stroke="url(#lg)"
+          stroke-width="3"
+        >
+          <animatetransform
+            attributeName="transform"
+            attributeType="XML"
+            dur="900ms"
+            from="0 25.5 25.5"
+            repeatCount="indefinite"
+            to="360 25.5 25.5"
+            type="rotate"
+          />
+        </circle>
+        <defs>
+          <lineargradient
+            id="lg"
+          >
+            <stop
+              offset="70%"
+              stop-color="#EFF2F4"
+            />
+            <stop
+              offset="95%"
+              stop-color="#546A7F"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <span
+        class="c2 c3"
+      >
+        custom loading message
       </span>
     </div>
   </div>

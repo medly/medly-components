@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.3](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.2...@medly-components/layout@3.2.3) (2022-04-18)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [3.2.2](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.1...@medly-components/layout@3.2.2) (2022-04-18)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [3.2.1](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.0...@medly-components/layout@3.2.1) (2022-04-14)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+# [3.2.0](https://github.com/medly/medly-components/compare/@medly-components/layout@3.1.30...@medly-components/layout@3.2.0) (2022-04-14)
+
+
+### Features
+
+* **layout:** add custom expand & collapse text ([#632](https://github.com/medly/medly-components/issues/632)) ([68e358e](https://github.com/medly/medly-components/commit/68e358ecf4980ae6617ccc1ed7b3f748c31a8a02))
+
+
+
+
+
 ## [3.1.30](https://github.com/medly/medly-components/compare/@medly-components/layout@3.1.29...@medly-components/layout@3.1.30) (2022-04-09)
 
 **Note:** Version bump only for package @medly-components/layout

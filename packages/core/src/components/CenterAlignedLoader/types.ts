@@ -4,6 +4,8 @@ import type { ReactNode } from 'react';
 export interface CenterAlignedProps extends HTMLProps<HTMLDivElement> {
     /** Set it true to show the box with text and loader */
     withLoadingBox?: boolean;
+    /** Set it to a message to show custom loading text and loader */
+    loadingMessage?: string;
     /** Set it true to show overlay */
     withOverlay?: boolean;
     /** Use it to set the position of a wrapper component */

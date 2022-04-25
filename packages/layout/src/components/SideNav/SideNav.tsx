@@ -9,7 +9,8 @@ import ToggleSwitch from './ToggleSwitch';
 import { SideNavProps, SideNavStaticProps } from './types';
 
 export const Component: FC<SideNavProps> = memo(props => {
-    const { id, active, children, defaultActive, onChange, hideShadow, defaultOpen, className } = props;
+    const { id, active, children, defaultActive, onChange, hideShadow, defaultOpen, className, collapsedToggleText, expandedToggleText } =
+        props;
 
     const ref = useRef(null),
         [isHovered, setHoveredState] = useState(false),
@@ -50,7 +51,12 @@ export const Component: FC<SideNavProps> = memo(props => {
                     onMouseLeave={closeSidenav}
                 >
                     {children}
-                    <ToggleSwitch id={`${id}-toggle`} isActive={isExpanded} onClick={isExpanded ? collapseSidenav : expandSidenav} />
+                    <ToggleSwitch
+                        id={`${id}-toggle`}
+                        isActive={isExpanded}
+                        onClick={isExpanded ? collapseSidenav : expandSidenav}
+                        {...{ expandedToggleText, collapsedToggleText }}
+                    />
                 </Styled.Nav>
             </Styled.Aside>
         </SideNavContext.Provider>

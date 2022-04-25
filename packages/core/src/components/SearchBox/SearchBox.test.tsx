@@ -95,6 +95,27 @@ describe('SearchBox', () => {
             fireEvent.change(inputEl, { target: { value: '' } });
             expect(screen.queryByTitle('close icon')).not.toBeInTheDocument();
         });
+
+        describe('when submitting a search with text', () => {
+            it('should show the close icon after pressing enter', () => {
+                const { container, inputEl } = renderComponent(props);
+                fireEvent.change(inputEl, { target: { value: 'Brooklyn' } });
+                const closeIcon = screen.getByTitle('close icon');
+                expect(closeIcon).toBeInTheDocument();
+                fireEvent.keyDown(container, { key: 'Enter', code: 13 });
+                expect(inputEl.value).toHaveLength(8);
+                expect(screen.queryByTitle('close icon')).toBeInTheDocument();
+            });
+            it('should show the close icon after clicking the search icon', () => {
+                const { inputEl } = renderComponent(props);
+                fireEvent.change(inputEl, { target: { value: 'Brooklyn' } });
+                const closeIcon = screen.getByTitle('close icon');
+                expect(closeIcon).toBeInTheDocument();
+                fireEvent.click(screen.getByTitle('search icon'));
+                expect(inputEl.value).toHaveLength(8);
+                expect(screen.queryByTitle('close icon')).toBeInTheDocument();
+            });
+        });
     });
 
     describe('expand icon', () => {

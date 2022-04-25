@@ -2,25 +2,39 @@ import { CenterAlignedLoader } from './CenterAlignedLoader.tsx';
 import { Text } from '@medly-components/core';
 import { ConcentricCircleLoader } from '@medly-components/loaders';
 import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
-import { withKnobs, color, boolean, select } from '@storybook/addon-knobs';
+import { withKnobs, color, boolean, select, text } from '@storybook/addon-knobs';
 import { RelativeDiv } from './CenterAlignedLoader.stories.tsx';
 
 <Meta title="Core" component={CenterAlignedLoader} parameters={{ jest: ['CenterAlignedLoader.test.tsx'] }} />
 
 # CenterAlignedLoader
 
-`CenterAlignedLoader` displays a loading state while the main component mounts or the data loads. This component takes the width and height of the parent and then renders the loader in the center. 
+`CenterAlignedLoader` displays a loading state while the main component mounts or the data loads. This component takes the width and height of the parent and then renders the loader in the center.
 Check out all the available loaders in [Medly Components](https://medly.github.io/medly-components/?path=/story/loaders--loaders).
 
 <Preview withToolbar>
     <Story name="CenterAlignedLoader" decorators={[withKnobs]}>
-        <CenterAlignedLoader withLoadingBox={boolean('With loading box', true)} withOverlay={boolean('With overlay', true)} />
+        <CenterAlignedLoader
+            withLoadingBox={boolean('With loading box', true)}
+            loadingMessage={text('Loading message', '')}
+            withOverlay={boolean('With overlay', true)}
+        />
     </Story>
+</Preview>
+
+## Example with custom loading message
+
+To pass custom loading message, use:
+
+`<CenterAlignedLoader withLoadingBox loadingMessage="Custom message" />`
+
+<Preview withToolbar>
+    <CenterAlignedLoader withLoadingBox loadingMessage="Custom message" />
 </Preview>
 
 ## Example with different loader
 
-To pass any React component as a loader, use: 
+To pass any React component as a loader, use:
 
 `<CenterAlignedLoader withLoadingBox loader={<ConcentricCircleLoader size="XS" />} />`
 
@@ -30,7 +44,7 @@ To pass any React component as a loader, use:
 
 ## Example with absolute position
 
-To display a loader on top of another component, set the loader position to `absolute` and the parent position to `relative`. 
+To display a loader on top of another component, set the loader position to `absolute` and the parent position to `relative`.
 
 <Preview withToolbar>
     <RelativeDiv>

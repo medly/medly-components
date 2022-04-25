@@ -21,17 +21,17 @@ export type DateRangeType = { startDate: Date | null; endDate: Date | null };
 export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height' | 'value' | 'onChange'> & {
     /** Selected date range */
     value: DateRangeType;
-    /** Function to be called on change of the dates */
+    /** Function to be called on changing the dates */
     onChange: (value: DateRangeType) => void;
     /** Function to be called when calendar popup closes */
     onPopupClose?: () => void;
     /** Variants */
     variant?: 'outlined' | 'filled';
-    /** Function will called with the input value on blur and invalid event */
+    /** Function to be called with the input value on blur and invalid event */
     validator?: (val: DateRangeType, eventType: ChangeEvent<HTMLInputElement>) => string;
-    /** Helper Text */
+    /** Helper text */
     helperText?: string;
-    /** error text */
+    /** Error text */
     errorText?: string;
     /** Size */
     size?: 'S' | 'M';
@@ -45,15 +45,15 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     popoverPlacement?: Placement;
     /** Min width in px/rem/% (1rem = 10px)*/
     minWidth?: string;
-    /** Minimum selectable Date */
+    /** Min selectable date */
     minSelectableDate?: Date;
-    /** Maximum selectable Date */
+    /** Max selectable date */
     maxSelectableDate?: Date;
     /** Date display format */
     displayFormat?: DisplayFormat;
-    /** Start Date Label */
+    /** Start date label */
     startDateLabel?: string;
-    /** End date Label */
+    /** End date label */
     endDateLabel?: string;
     /** Set it true to show single month in calendar popup */
     withSingleMonth?: boolean;

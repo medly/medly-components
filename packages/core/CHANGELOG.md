@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.8.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.8.0...@medly-components/core@6.8.1) (2022-04-18)
+
+
+### Bug Fixes
+
+* add key prop for pagination popup ([#635](https://github.com/medly/medly-components/issues/635)) ([f0606d5](https://github.com/medly/medly-components/commit/f0606d5bdcadc2fcc2be6d4b5a0c420ba07c6249))
+
+
+
+
+
+# [6.8.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.7.1...@medly-components/core@6.8.0) (2022-04-18)
+
+
+### Features
+
+* add custom message support in centerAlignLoader ([#634](https://github.com/medly/medly-components/issues/634)) ([0556a9f](https://github.com/medly/medly-components/commit/0556a9fac56a81d5cfc91fe0ecb0fb63c2fe2ef5))
+
+
+
+
+
+## [6.7.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.7.0...@medly-components/core@6.7.1) (2022-04-14)
+
+
+### Bug Fixes
+
+* **core:** persists X in SearchBox after pressing enter ([#633](https://github.com/medly/medly-components/issues/633)) ([c97c8f1](https://github.com/medly/medly-components/commit/c97c8f1d3c8cf05729000d79e5d9314c0513d231))
+
+
+
+
+
 # [6.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.6.9...@medly-components/core@6.7.0) (2022-04-09)
 
 
