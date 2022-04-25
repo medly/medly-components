@@ -16,7 +16,7 @@ const applyMasking = (value: string, mask: string): string => {
             numberIndex = remainingMask.match(alphaNumericRegex)?.index;
 
         newValue = value.slice(0, -1) + remainingMask.substr(0, numberIndex) + value.slice(-1);
-    } else if (specialCharsRegex.test(mask[length])) {
+    } else if (specialCharsRegex.test(mask.charAt(length))) {
         // if user deletes the last special character
         newValue = value;
     } else {
