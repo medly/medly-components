@@ -37,6 +37,7 @@ You can use the basic `TextField` component to get user input. It is often used 
                     minRows={number('Rows', 3)}
                     withCharacterCount={boolean('Character Count', false)}
                     maxLength={number('Max Length', null)}
+                    mask="(XXX) XXX-XXXX"
                 />
             );
         }}
@@ -79,11 +80,34 @@ To add the masking feature, you need to provide the `mask` prop. The feature cur
 ### Error state with Helper Tooltip
 
 <Preview withToolbar>
-    <TextField id="outline" type="Name" variant="outlined" label="Address" defaultValue="Demo" errorText="Something wrong" showTooltipForHelperAndErrorText />
-    <TextField id="filled" type="Name" variant="filled" label="Address" defaultValue="Demo" errorText="Something wrong" showTooltipForHelperAndErrorText />
-    <TextField id="fusion" type="Name" variant="fusion" label="Address" defaultValue="Demo" errorText="Something wrong" showTooltipForHelperAndErrorText />
+    <TextField
+        id="outline"
+        type="Name"
+        variant="outlined"
+        label="Address"
+        defaultValue="Demo"
+        errorText="Something wrong"
+        showTooltipForHelperAndErrorText
+    />
+    <TextField
+        id="filled"
+        type="Name"
+        variant="filled"
+        label="Address"
+        defaultValue="Demo"
+        errorText="Something wrong"
+        showTooltipForHelperAndErrorText
+    />
+    <TextField
+        id="fusion"
+        type="Name"
+        variant="fusion"
+        label="Address"
+        defaultValue="Demo"
+        errorText="Something wrong"
+        showTooltipForHelperAndErrorText
+    />
 </Preview>
-
 
 ### Character count
 
