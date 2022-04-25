@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.9.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.8.1...@medly-components/core@6.9.0) (2022-04-25)
+
+
+### Features
+
+* add masking on copy pasted text in textfield component ([#649](https://github.com/medly/medly-components/issues/649)) ([ca23676](https://github.com/medly/medly-components/commit/ca2367694e7d4d7cdd07b110eb5c405930329f09))
+
+
+
+
+
 ## [6.8.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.8.0...@medly-components/core@6.8.1) (2022-04-18)
 
 
