@@ -4,12 +4,11 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # GetComponentProps
 
-Constructs a type with the props extracted from a React component type.
+The `GetcomponentProps` constructs a type with the props extracted from a React component type.
 
-#### Example
+### Example
 
-This utility type can be used as a convenient way of casting dynamically-formed
-structures into a type that makes it compatible with the props of some component.
+You can use this utility type as a convenient way of casting dynamically-formed structures into a type that makes it compatible with the props of some component.
 
 ```tsx
 const multiSelect = <MultiSelect
@@ -19,8 +18,7 @@ const multiSelect = <MultiSelect
     } as GetComponentProps<typeof MultiSelect>)}
 />;
 ```
-It is also useful for building composite prop types in situations where a new
-component shares a great degree of commonality with an existing one.
+You can use it to build composite prop types in situations where a new component shares a great degree of commonality with an existing one.
 
 ```tsx
 type SparklyButtonProps = GetComponentProps<typeof Button> & {
