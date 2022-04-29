@@ -9,6 +9,10 @@ import { useState } from 'react';
 
 <Meta title="Layout" component={Header} parameters={{ jest: [] }} />
 
+# Header
+
+The `Header` component an important element of a website’s design. It’s the first impression of the website. It provides useful links to other areas of the website that the user may want to visit.
+
 <Preview mdxSource="">
     <Story name="Header">
         {() => {
@@ -43,7 +47,7 @@ import { useState } from 'react';
     </Story>
 </Preview>
 
-Here is a basic navigation setup. The Logo/Icons shown in the illustration can be easily customized as needed.
+Given below is a basic navigation setup. The Logo/Icons shown in the illustration can be easily customized as needed.
 
 ```tsx
 import Header from '@medly-components/layout/Header';
@@ -114,16 +118,21 @@ import { defaultTheme } from '@medly-components/theme';
     </div>
 </Preview>
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={Header} />
 
-### Static Props
+## Static Props
 
-You can use all of below Components like `Header.<name>`
+You can use all of the below Components like: `Header.<name>`.
+This component offers the following static props mentioned in the table below:
 
 <Props of={stories.StaticProps} />
 
-### HeaderTheme
+## HeaderTheme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={stories.Theme} />
