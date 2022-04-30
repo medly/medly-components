@@ -124,33 +124,6 @@ describe('DatePicker component', () => {
             fireEvent.click(screen.getByText('Click Here'));
             expect(container.querySelector('#dob-calendar')).toBeNull();
         });
-
-        it('should show error message on outer click if the datepicker is previously active', async () => {
-            const mockOnBlur = jest.fn(),
-                { container } = render(
-                    <>
-                        <p>Click Here</p>
-                        <DatePicker id="dob" required value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} onBlur={mockOnBlur} />
-                    </>
-                );
-            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
-            expect(container.querySelector('#dob-calendar')).toBeVisible();
-            fireEvent.click(screen.getByText('Click Here'));
-            const message = await screen.findByText('Please fill in this field');
-            expect(message).toBeInTheDocument();
-            expect(mockOnBlur).toBeCalled();
-        });
-
-        it('should not show error message on outer click if the datepicker is was not previously active', async () => {
-            render(
-                <>
-                    <p>Click Here</p>
-                    <DatePicker id="dob" required value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
-                </>
-            );
-            fireEvent.click(screen.getByText('Click Here'));
-            expect(screen.queryByText('Please fill in this field')).not.toBeInTheDocument();
-        });
     });
 
     describe('calendar icon', () => {
@@ -205,24 +178,6 @@ describe('DatePicker component', () => {
             expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
         });
 
-        it('should render error if typed date is out of range', async () => {
-            const mockOnChange = jest.fn();
-            render(
-                <DatePicker
-                    id="dob"
-                    value={null}
-                    displayFormat="MM/dd/yyyy"
-                    onChange={mockOnChange}
-                    minSelectableDate={new Date(2021, 0, 2)}
-                />
-            );
-            const inputEl = screen.getByRole('textbox');
-            fireEvent.change(screen.getByRole('textbox'), { target: { value: '01 / 02 / 2020' } });
-            fireEvent.blur(inputEl);
-            const message = await screen.findByText('Please select date from allowed range');
-            expect(message).toBeInTheDocument();
-        });
-
         it('should call onChange with null if typed date is invalid', async () => {
             const mockOnChange = jest.fn();
             render(<DatePicker id="dob" value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
@@ -264,6 +219,68 @@ describe('DatePicker component', () => {
             const { inputEl } = renderComponent(true, validator);
             fireEvent.invalid(inputEl);
             expect(await screen.findByText('Please enter dob')).toBeInTheDocument();
+        });
+
+        it('should render error if typed date is out of range', async () => {
+            const mockOnChange = jest.fn();
+            render(
+                <DatePicker
+                    id="dob"
+                    value={null}
+                    displayFormat="MM/dd/yyyy"
+                    onChange={mockOnChange}
+                    minSelectableDate={new Date(2021, 0, 2)}
+                />
+            );
+            const inputEl = screen.getByRole('textbox');
+            fireEvent.change(screen.getByRole('textbox'), { target: { value: '01 / 02 / 2020' } });
+            fireEvent.blur(inputEl);
+            expect(await screen.findByText('Please select date from allowed range')).toBeInTheDocument();
+        });
+
+        it('should not render error if typed date is out of range when date range error is disabled', async () => {
+            const mockOnChange = jest.fn();
+            render(
+                <DatePicker
+                    id="dob"
+                    value={null}
+                    displayFormat="MM/dd/yyyy"
+                    onChange={mockOnChange}
+                    minSelectableDate={new Date(2021, 0, 2)}
+                    disableInvalidRange
+                />
+            );
+            const inputEl = screen.getByRole('textbox');
+            fireEvent.change(screen.getByRole('textbox'), { target: { value: '01 / 02 / 2020' } });
+            fireEvent.blur(inputEl);
+            expect(screen.queryByText('Please select date from allowed range')).not.toBeInTheDocument();
+        });
+
+        it('should show error message on outer click if the date-picker is previously active', async () => {
+            const mockOnBlur = jest.fn(),
+                { container } = render(
+                    <>
+                        <p>Click Here</p>
+                        <DatePicker id="dob" required value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} onBlur={mockOnBlur} />
+                    </>
+                );
+            fireEvent.click(screen.getByTitle('dob-calendar-icon'));
+            expect(container.querySelector('#dob-calendar')).toBeVisible();
+            fireEvent.click(screen.getByText('Click Here'));
+            const message = await screen.findByText('Please fill in this field');
+            expect(message).toBeInTheDocument();
+            expect(mockOnBlur).toBeCalled();
+        });
+
+        it('should not show error message on outer click if the date-picker is was not previously active', async () => {
+            render(
+                <>
+                    <p>Click Here</p>
+                    <DatePicker id="dob" required value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
+                </>
+            );
+            fireEvent.click(screen.getByText('Click Here'));
+            expect(screen.queryByText('Please fill in this field')).not.toBeInTheDocument();
         });
     });
 

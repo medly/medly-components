@@ -31,6 +31,7 @@ const Component: FC<DatePickerProps> = memo(
                 calendarIconPosition,
                 defaultMonth,
                 defaultYear,
+                disableInvalidRange,
                 ...restProps
             } = props,
             id = props.id || props.label?.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
@@ -79,6 +80,7 @@ const Component: FC<DatePickerProps> = memo(
                         isValidDate = parsedDate?.toString() !== 'Invalid Date',
                         emptyDateMessage = props.required && !inputValue && 'Please fill in this field',
                         invalidDateRangeMessage =
+                            !disableInvalidRange &&
                             (parsedDate! < minSelectableDate! || parsedDate! > maxSelectableDate!) &&
                             'Please select date from allowed range',
                         invalidDateMessage = inputValue && !isValidDate && 'Please enter a valid date',
@@ -196,7 +198,8 @@ Component.defaultProps = {
     popoverPlacement: 'bottom-start',
     showCalendarIcon: true,
     showDecorators: true,
-    calendarIconPosition: 'right'
+    calendarIconPosition: 'right',
+    disableInvalidRange: false
 };
 Component.displayName = 'DatePicker';
 export const DatePicker: FC<DatePickerProps> & WithStyle = Object.assign(Component, { Style: Wrapper });

@@ -61,6 +61,8 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     defaultMonth?: number;
     /** Default year to show on calendar */
     defaultYear?: number;
+    /** Disable invalid date range message */
+    disableInvalidRange?: boolean;
 }
 
 export interface StyleProps extends Pick<DatePickerProps, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
