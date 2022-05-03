@@ -86,6 +86,8 @@ export const RadioWrapper = styled('div')<WrapperProps>`
     height: ${getRadioSize};
     position: relative;
     border-radius: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
 `;
 
 export const RadioWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.radio }))<WrapperProps>`

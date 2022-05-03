@@ -100,6 +100,13 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c0 {
@@ -236,6 +243,13 @@ exports[`Radio component should render correctly with checked false and checked 
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c0 {
@@ -370,6 +384,13 @@ exports[`Radio component should render correctly with checked false and disabled
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c0 {
@@ -496,6 +517,13 @@ exports[`Radio component should render correctly with checked false and hasError
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c0 {
@@ -630,6 +658,13 @@ exports[`Radio component should render correctly with checked true and checked s
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c0 {
@@ -755,6 +790,13 @@ exports[`Radio component should render correctly with checked true and disabled 
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c0 {
@@ -882,6 +924,13 @@ exports[`Radio component should render correctly with checked true and hasError 
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c0 {
@@ -1031,6 +1080,13 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c0 {
@@ -1195,6 +1251,13 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c0 {
@@ -1359,6 +1422,13 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c0 {
