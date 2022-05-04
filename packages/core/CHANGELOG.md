@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.9.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.0...@medly-components/core@6.9.1) (2022-05-04)
+
+
+### Bug Fixes
+
+* **core:** make nested table field resizeable ([#654](https://github.com/medly/medly-components/issues/654)) ([d2c16b5](https://github.com/medly/medly-components/commit/d2c16b5d284ebcf7b23871c28d519fca3ab9c9e1))
+
+
+
+
+
 # [6.9.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.8.1...@medly-components/core@6.9.0) (2022-04-25)
 
 
