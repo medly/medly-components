@@ -1463,6 +1463,13 @@ exports[`Form should render properly with initial state 1`] = `
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c34 {
@@ -3710,6 +3717,13 @@ exports[`Form should render properly without initial state 1`] = `
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c35 {
