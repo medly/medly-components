@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.51](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.50...@medly-components/forms@2.1.51) (2022-05-05)
+
+
+### Bug Fixes
+
+* **core:** add flex-shrink=0 on radio button ([#655](https://github.com/medly/medly-components/issues/655)) ([25670c7](https://github.com/medly/medly-components/commit/25670c7d7fc3eeeda537aa69f8966002a2f006c1))
+
+
+
+
+
 ## [2.1.50](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.49...@medly-components/forms@2.1.50) (2022-05-04)
 
 **Note:** Version bump only for package @medly-components/forms
