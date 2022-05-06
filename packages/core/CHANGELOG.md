@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.9.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.2...@medly-components/core@6.9.3) (2022-05-06)
+
+
+### Bug Fixes
+
+* **core:** fix single select issue for async options ([#657](https://github.com/medly/medly-components/issues/657)) ([3c1dd85](https://github.com/medly/medly-components/commit/3c1dd855365b3f8f4a32345448c913df7fdde524))
+
+
+
+
+
 ## [6.9.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.1...@medly-components/core@6.9.2) (2022-05-05)
 
 
