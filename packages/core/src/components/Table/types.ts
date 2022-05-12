@@ -83,6 +83,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     rowSelectionDisableKey?: string;
     /** Key name to disable row click */
     rowClickDisableKey?: string;
+    /** Key name to identify the row expansion */
+    defaultRowExpandKey?: string;
     /** Set it true to show checkboxes to select rows */
     isRowSelectable?: boolean;
     /** Set it true to expand rows to show extra info */
