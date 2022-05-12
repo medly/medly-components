@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.10.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.3...@medly-components/core@6.10.0) (2022-05-12)
+
+
+### Features
+
+* **core:** add prop to expand row by default ([#659](https://github.com/medly/medly-components/issues/659)) ([ccf9728](https://github.com/medly/medly-components/commit/ccf972807be0a66176001fca16b8f52d146d666b)), closes [#658](https://github.com/medly/medly-components/issues/658)
+
+
+
+
+
 ## [6.9.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.2...@medly-components/core@6.9.3) (2022-05-06)
 
 
