@@ -1,7 +1,7 @@
 import type { Context, Dispatch, FC, SetStateAction } from 'react';
 
 export type StaticProps = {
-    Header: FC;
+    Header: FC<HeaderProps>;
     Content: FC;
     Context: Context<AccordionContextType>;
 };
@@ -15,4 +15,9 @@ export type AccordionProps = {
     defaultActive?: boolean;
     active?: boolean;
     onChange?: Dispatch<SetStateAction<boolean>>;
+    iconColor?: string;
+};
+
+export type HeaderProps = {
+    iconColor?: string;
 };
