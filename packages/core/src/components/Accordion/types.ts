@@ -2,7 +2,7 @@ import { WithStyle } from '@medly-components/utils';
 import type { Context, Dispatch, FC, SetStateAction } from 'react';
 
 export type StaticProps = {
-    Header: FC & WithStyle;
+    Header: FC<HeaderProps> & WithStyle;
     Content: FC & WithStyle;
     Context: Context<AccordionContextType>;
 };
@@ -16,4 +16,9 @@ export type AccordionProps = {
     defaultActive?: boolean;
     active?: boolean;
     onChange?: Dispatch<SetStateAction<boolean>>;
+    iconColor?: string;
+};
+
+export type HeaderProps = {
+    iconColor?: string;
 };
