@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.11.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.10.0...@medly-components/core@6.11.0) (2022-05-16)
+
+
+### Features
+
+* **core:** adds iconColor prop to Accordion.Header ([#660](https://github.com/medly/medly-components/issues/660)) ([1a588ec](https://github.com/medly/medly-components/commit/1a588ec4d4ab62bcda9f0d265e43e8209390a847))
+
+
+
+
+
 # [6.10.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.3...@medly-components/core@6.10.0) (2022-05-12)
 
 
