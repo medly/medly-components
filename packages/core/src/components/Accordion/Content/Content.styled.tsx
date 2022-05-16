@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled('div')<{ isActive: boolean }>`
     overflow: hidden;
     transition: all 200ms ${({ isActive }) => (isActive ? 'ease-in' : 'ease-out')};
-    max-height: ${({ isActive }) => (isActive ? '100vh' : 0)};
+    max-height: ${({ isActive }) => !isActive && 0};
     opacity: ${({ isActive }) => (isActive ? 1 : 0)};
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
