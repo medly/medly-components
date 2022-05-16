@@ -34,14 +34,14 @@ describe('Accordion component', () => {
     it('should render content when header is clicked', async () => {
         renderAccordion({});
         fireEvent.click(screen.getByText(/List Of Components/));
-        expect(screen.getByRole('region')).toHaveStyle(`opacity: 1; max-height: 100vh`);
+        expect(screen.getByRole('region')).toHaveStyle(`opacity: 1`);
         fireEvent.click(screen.getByText(/List Of Components/));
         expect(screen.getByRole('region')).toHaveStyle(`opacity: 0; max-height: 0`);
     });
 
     it('should show content when defaultActive is true', () => {
         renderAccordion({ defaultActive: true });
-        expect(screen.getByRole('region')).toHaveStyle(`opacity: 1; max-height: 100vh`);
+        expect(screen.getByRole('region')).toHaveStyle(`opacity: 1`);
     });
 
     it('should change external state when header is clicked', () => {
@@ -49,6 +49,6 @@ describe('Accordion component', () => {
         expect(screen.getByRole('region')).toHaveStyle(`opacity: 0; max-height: 0`);
         fireEvent.click(screen.getByText(/List Of Components/));
         expect(container.querySelector('#active')).toBeInTheDocument();
-        expect(screen.getByRole('region')).toHaveStyle(`opacity: 1; max-height: 100vh`);
+        expect(screen.getByRole('region')).toHaveStyle(`opacity: 1`);
     });
 });

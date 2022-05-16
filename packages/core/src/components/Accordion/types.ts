@@ -1,8 +1,9 @@
+import { WithStyle } from '@medly-components/utils';
 import type { Context, Dispatch, FC, SetStateAction } from 'react';
 
 export type StaticProps = {
-    Header: FC;
-    Content: FC;
+    Header: FC & WithStyle;
+    Content: FC & WithStyle;
     Context: Context<AccordionContextType>;
 };
 
