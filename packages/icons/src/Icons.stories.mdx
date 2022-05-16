@@ -1477,9 +1477,9 @@ import ToggleOnIcon from './icons/Toggle/ToggleOnIcon';
 
 # Icons
 
-A collection of icons exported as React components (SVG icons).
+The `Icon` component is a collection of SVG icons exported as React components.
 
-### How to use
+## How to use?
 
 ```tsx
 import { AddIcon } from '@medly-components/icons';
@@ -1487,14 +1487,14 @@ import { AddIcon } from '@medly-components/icons';
 <AddIcon />;
 ```
 
-### Variants
+## Variants
 
-There are two variants available for all the icons `solid` | `flat`.
+Two variants are available for all the icons: `solid` | `flat`.
 
--   `solid` variant will reserve the space around the icon to show the background color. Also you can use the `withHoverEffect` prop to show the hover effect also.
--   `flat` (default variant) will show the icon without the hover effect and space around it.
+-   The `solid` variant will reserve the space around the icon to show the background color. You must use the `withHoverEffect` prop to show the hover effect.
+-   The `flat` (default variant) will show the icon without the hover effect and space around it.
 
-`pointer` cursor will only appear when you pass the `onClick` prop.
+The `pointer` cursor appears when you pass the `onClick` prop.
 
 <Preview>
     <Wrapper>
@@ -1512,13 +1512,15 @@ There are two variants available for all the icons `solid` | `flat`.
     </Wrapper>
 </Preview>
 
-### Props
+## Props
 
-None of the props is required but still you can style all the icons according to your requirement using below props.
+While none of the props are necessary, you can still style all the icons according to your requirement using the following props mentioned in the table below:
 
 <Props of={IconProps} />
 
-### Theme
+## Theme
+
+This component offers the following themes mentioned in the table below:
 
 <Props of={ThemeInterface} />
 

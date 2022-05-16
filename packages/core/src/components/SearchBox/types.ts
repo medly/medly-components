@@ -15,9 +15,9 @@ export type WrapperProps = {
 };
 
 export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'> {
-    /** Size for search box, can be 'S' | 'M' */
+    /** Size for search box can be 'S' | 'M' */
     size?: Size;
-    /** Option for search results, in form of label and value */
+    /** Option for search results in form of label and value */
     options?: Option[];
     /** React component for additional filtering */
     customSearchFilter?: ReactElement<any>;

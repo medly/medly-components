@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.53](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.52...@medly-components/forms@2.1.53) (2022-05-12)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.52](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.51...@medly-components/forms@2.1.52) (2022-05-06)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.51](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.50...@medly-components/forms@2.1.51) (2022-05-05)
+
+
+### Bug Fixes
+
+* **core:** add flex-shrink=0 on radio button ([#655](https://github.com/medly/medly-components/issues/655)) ([25670c7](https://github.com/medly/medly-components/commit/25670c7d7fc3eeeda537aa69f8966002a2f006c1))
+
+
+
+
+
+## [2.1.50](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.49...@medly-components/forms@2.1.50) (2022-05-04)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.49](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.48...@medly-components/forms@2.1.49) (2022-04-25)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.48](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.47...@medly-components/forms@2.1.48) (2022-04-18)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.1.47](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.46...@medly-components/forms@2.1.47) (2022-04-18)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [2.1.46](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.45...@medly-components/forms@2.1.46) (2022-04-14)
 
 **Note:** Version bump only for package @medly-components/forms

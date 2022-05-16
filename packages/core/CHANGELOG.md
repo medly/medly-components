@@ -3,6 +3,83 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.10.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.3...@medly-components/core@6.10.0) (2022-05-12)
+
+
+### Features
+
+* **core:** add prop to expand row by default ([#659](https://github.com/medly/medly-components/issues/659)) ([ccf9728](https://github.com/medly/medly-components/commit/ccf972807be0a66176001fca16b8f52d146d666b)), closes [#658](https://github.com/medly/medly-components/issues/658)
+
+
+
+
+
+## [6.9.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.2...@medly-components/core@6.9.3) (2022-05-06)
+
+
+### Bug Fixes
+
+* **core:** fix single select issue for async options ([#657](https://github.com/medly/medly-components/issues/657)) ([3c1dd85](https://github.com/medly/medly-components/commit/3c1dd855365b3f8f4a32345448c913df7fdde524))
+
+
+
+
+
+## [6.9.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.1...@medly-components/core@6.9.2) (2022-05-05)
+
+
+### Bug Fixes
+
+* **core:** add flex-shrink=0 on radio button ([#655](https://github.com/medly/medly-components/issues/655)) ([25670c7](https://github.com/medly/medly-components/commit/25670c7d7fc3eeeda537aa69f8966002a2f006c1))
+
+
+
+
+
+## [6.9.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.0...@medly-components/core@6.9.1) (2022-05-04)
+
+
+### Bug Fixes
+
+* **core:** make nested table field resizeable ([#654](https://github.com/medly/medly-components/issues/654)) ([d2c16b5](https://github.com/medly/medly-components/commit/d2c16b5d284ebcf7b23871c28d519fca3ab9c9e1))
+
+
+
+
+
+# [6.9.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.8.1...@medly-components/core@6.9.0) (2022-04-25)
+
+
+### Features
+
+* add masking on copy pasted text in textfield component ([#649](https://github.com/medly/medly-components/issues/649)) ([ca23676](https://github.com/medly/medly-components/commit/ca2367694e7d4d7cdd07b110eb5c405930329f09))
+
+
+
+
+
+## [6.8.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.8.0...@medly-components/core@6.8.1) (2022-04-18)
+
+
+### Bug Fixes
+
+* add key prop for pagination popup ([#635](https://github.com/medly/medly-components/issues/635)) ([f0606d5](https://github.com/medly/medly-components/commit/f0606d5bdcadc2fcc2be6d4b5a0c420ba07c6249))
+
+
+
+
+
+# [6.8.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.7.1...@medly-components/core@6.8.0) (2022-04-18)
+
+
+### Features
+
+* add custom message support in centerAlignLoader ([#634](https://github.com/medly/medly-components/issues/634)) ([0556a9f](https://github.com/medly/medly-components/commit/0556a9fac56a81d5cfc91fe0ecb0fb63c2fe2ef5))
+
+
+
+
+
 ## [6.7.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.7.0...@medly-components/core@6.7.1) (2022-04-14)
 
 

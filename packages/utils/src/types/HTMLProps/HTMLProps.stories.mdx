@@ -4,9 +4,9 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # HTMLProps
 
-This utility constructs a prop type with the props extracted from an HTML element type. It can be used as a convenient way of extending HTML elements while preserving HTML props.
+The `HTMLProps` utility constructs a prop type with the props extracted from an HTML element type. You can use it conveniently to extend HTML elements while preserving HTML props.
 
-#### Example
+### Example
 
 ```ts
 import { HTMLProps } from '@medly-components/utils';
@@ -16,4 +16,5 @@ export interface MyProps extends HTMLProps<HTMLLIElement> {
 }
 ```
 
-**Note**: It is common while composing HTML elements in React to face this error: `Property 'ref' of foo is not assignable to target property.`. This utility resolves that issue as well.
+**Note**: It is common while composing HTML elements in React to face this error: `Property 'ref' of foo is not assignable to target property.`. 
+The `HTMLProps` utility resolves this issue as well.

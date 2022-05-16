@@ -33,7 +33,8 @@ export const LoadingBox = styled('div')`
     box-sizing: border-box;
     background-color: ${({ theme }) => theme.colors.white};
     height: 14.4rem;
-    width: 14.4rem;
+    min-width: 14.4rem;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: center;

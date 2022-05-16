@@ -5,7 +5,12 @@ import testData from './docs/data';
 import { Table } from './Table';
 import { TableProps } from './types';
 
-const renderTable = (props?: Partial<TableProps>) => render(<Table data={testData} columns={testColumns} {...props} />);
+const renderTable = (props?: Partial<TableProps>) => render(<Table data={testData} columns={testColumns} {...props} />),
+    ExpandedRowComponent: TableProps['expandedRowComponent'] = () => <Text>Hello from Accordion</Text>,
+    downArrowKeyPress = (container: HTMLElement) => {
+        fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
+        fireEvent.keyUp(container, { key: 'ArrowDown', code: 40 });
+    };
 
 describe('Table component', () => {
     it('should render properly', () => {
@@ -75,13 +80,6 @@ describe('Table component', () => {
     });
 
     describe('keyboard navigation', () => {
-        const downArrowKeyPress = (container: HTMLElement) => {
-            fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
-            fireEvent.keyUp(container, { key: 'ArrowDown', code: 40 });
-        };
-
-        const ExpandedRowComponent: TableProps['expandedRowComponent'] = () => <Text>Hello from Accordion</Text>;
-
         const mockOnRowClick = jest.fn(),
             commonProps = {
                 isRowSelectable: true,
@@ -160,6 +158,32 @@ describe('Table component', () => {
             fireEvent.click(document.activeElement as HTMLInputElement);
 
             expect(onRowSelectionFn).toBeCalledTimes(1);
+        });
+    });
+
+    describe('accordion', () => {
+        it('should render table with accordion', () => {
+            renderTable({
+                isRowExpandable: true,
+                expandedRowComponent: ExpandedRowComponent
+            });
+
+            const table = screen.getByRole('table');
+
+            downArrowKeyPress(table);
+            fireEvent.keyDown(table, { key: 'ArrowRight', code: 39 });
+
+            expect(screen.getByText('Hello from Accordion')).toBeInTheDocument();
+        });
+
+        it('should render table with default expanded row', () => {
+            renderTable({
+                isRowExpandable: true,
+                defaultRowExpandKey: 'expanded',
+                expandedRowComponent: ExpandedRowComponent,
+                data: [{ ...testData[0], expanded: true }, ...testData.slice(1)]
+            });
+            expect(screen.getByText('Hello from Accordion')).toBeInTheDocument();
         });
     });
 });

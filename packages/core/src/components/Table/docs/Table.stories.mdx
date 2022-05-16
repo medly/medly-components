@@ -115,8 +115,10 @@ export const Dummy: React.FC = () => {
 
 ## Row Accordion
 
-To show Row Accordion, you must pass two props: `isRowExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area. 
+To show Row Accordion, you must pass two props: `isRowExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area.
 Type: `expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>`; we are passing row data, id, and disabled state to the component.
+
+If you want a row to be expanded by default, you can pass `rowDefaultExpandKey` with a key which will be picked from the `data` object and the value should be `boolean` only.
 
 You can write your component like below:
 
@@ -137,7 +139,7 @@ export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowDa
                 <DummyWrapper>
                     <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
                     <Table
-                        data={tableData}
+                        data={[{ ...tableData[0], expanded: true }, ...tableData.slice(1)]}
                         columns={columns}
                         onRowClick={action('Row Clicked')}
                         isLoading={boolean('Loading', false)}
@@ -152,6 +154,7 @@ export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowDa
                         onPageChange={action('Page Changed')}
                         onScrolledToBottom={action('Scrolled to bottom')}
                         withRowSeparators={boolean('Enable row separators', true)}
+                        defaultRowExpandKey="expanded"
                     />
                 </DummyWrapper>
             );
@@ -201,7 +204,7 @@ type Data = [{ [your_groupBy_keyname]: string | number; count: number; secondary
 
 For example, if your data is `[{name: "A", role: "doctor"}, {name: "B", role: "engineer"}]` and if you want to group by role then you have to set `groupBy` prop to `role` and your `data` must be `[{role: 'doctor', count: 1}, {role: 'engineer', 1}]`
 
-And once you expand any row `getGroupedData` function it will be called with the group title. 
+And once you expand any row `getGroupedData` function it will be called with the group title.
 For example, in the above scenario if you expand row with `doctor` title then `getGroupedData("doctor")` will be called and you have to return a promise with grouped data according to column config.
 
 -   To expand any row by default you can pass `defaultExpandedRowIdentifier` and `rowIdentifier` prop values.
@@ -366,8 +369,8 @@ To show Custom component, you need to pass props in the below format.
 
 ## Keyboard navigation
 
-To navigate the rows in a table, use the `Up Arrow` and `Down Arrow` keys. To select a row, use the `Space` key. To expand a row use the `Right Arrow` key, and to collapse a row use the `Left Arrow` key. 
-These are the default browser key values that you can override (except the select `Space` key) by passing the keyBindings object to the `keyBindings` prop. Also, you must match the key values to the HTML spec. 
+To navigate the rows in a table, use the `Up Arrow` and `Down Arrow` keys. To select a row, use the `Space` key. To expand a row use the `Right Arrow` key, and to collapse a row use the `Left Arrow` key.
+These are the default browser key values that you can override (except the select `Space` key) by passing the keyBindings object to the `keyBindings` prop. Also, you must match the key values to the HTML spec.
 You can view the key values [here](https://keycode.info/).
 
 ```tsx
@@ -463,7 +466,7 @@ To show Pagination you must pass `withPagination` as `true` and pass `totalItems
 
 ### Custom Column Cell Component
 
-You can pass a Custom component to the `columns` prop of the table. This will render that Custom component inside the table inplace of the respective column on the UI. 
+You can pass a Custom component to the `columns` prop of the table. This will render that Custom component inside the table inplace of the respective column on the UI.
 
 For your Custom component to be rendered as a column cell, you need to pass props in the below format:
 
@@ -485,6 +488,7 @@ const CustomComponent: TableColumnConfig['component'] = React.memo(({ data, rowD
 ## Props
 
 There are only two required props `data` & `columns`. If possible, provide the `rowIdentifier`. A `rowIdentifier` is used as key name in data to identify rows.
+
 <Props of={Table} />
 
 ### Table Prop Types

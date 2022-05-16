@@ -1,13 +1,13 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import { memo, forwardRef, useMemo } from 'react';
+import type { FC } from 'react';
+import { forwardRef, memo, useMemo } from 'react';
 import Popover from '../Popover';
 import Text from '../Text';
 import { paginator } from './helper';
 import { ListWrapper, PageNavButton, PageNumberButton } from './Pagination.styled';
 import PaginationPopup from './PaginationPopup';
 import { PaginationProps } from './types';
-import type { FC } from 'react';
 
 const Component: FC<PaginationProps> = memo(
     forwardRef((props, ref) => {
@@ -23,7 +23,7 @@ const Component: FC<PaginationProps> = memo(
         for (let i = 0; i < linkItems.length; i++) {
             if (linkItems[i] === '...')
                 links.push(
-                    <Popover interactionType="click">
+                    <Popover interactionType="click" key={i}>
                         <PaginationPopup
                             prevPageNumber={linkItems[i - 1] as number}
                             nextPageNumber={linkItems[i + 1] as number}

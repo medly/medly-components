@@ -10,7 +10,7 @@ import { action } from '@storybook/addon-actions';
 
 # SearchBox
 
-Simple `Searchbox` component to show search result.
+A `SearchBox` or search bar component is a text field which takes your input and shows you a dynamic result.
 
 <Preview withToolbar>
     <Story name="default">
@@ -34,7 +34,7 @@ Simple `Searchbox` component to show search result.
     </Story>
 </Preview>
 
-If you want to show some kind of form for customize search filter you can pass react component to `customSearchFilter` prop.
+To customize your search filter, you must pass react component to the `customSearchFilter` prop.
 
 <Preview withToolbar>
     <Story name="withCustomSearchFilter">
@@ -57,16 +57,18 @@ If you want to show some kind of form for customize search filter you can pass r
     </Story>
 </Preview>
 
-### Sizes
+## Sizes
+
+Two sizes are available: S | M | 
 
 <Preview>
     <SearchBox size="S" placeholder="Small search text box" />
     <SearchBox size="M" placeholder="Medium search text box" />
 </Preview>
 
-### Keyboard Support
+## Keyboard Support
 
-It also supports keyboard navigation when it is in focus
+This component supports keyboard navigation when in focus
 
 | Key        | Function                           |
 | ---------- | ---------------------------------- |
@@ -74,11 +76,13 @@ It also supports keyboard navigation when it is in focus
 | Up Arrow   | Moves focus to the previous option |
 | Enter      | Select the focused option          |
 
-### Props
+## Props
+
+This component offers the following props mentioned in the table below:
 
 <Props of={SearchBox} />
 
-### SearchBoxTheme
+## SearchBoxTheme
 
 Followint is the searchBoxTheme and searchResult style comes from SingleSelectTheme
 
