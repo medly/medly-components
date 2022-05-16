@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.11.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.11.0...@medly-components/core@6.11.1) (2022-05-16)
+
+
+### Bug Fixes
+
+* accordion content height issue ([#661](https://github.com/medly/medly-components/issues/661)) ([670d0f3](https://github.com/medly/medly-components/commit/670d0f369640ec92fd71bc8b9b214d9b115ce017))
+
+
+
+
+
 # [6.11.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.10.0...@medly-components/core@6.11.0) (2022-05-16)
 
 
