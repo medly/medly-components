@@ -8,6 +8,7 @@ export const BGOverlay = styled.div<{ isOpen: boolean }>`
     left: 0;
     width: 100vw;
     height: 100vh;
+    height: fill-available;
     background: ${({ theme }) => theme.colors.black};
     opacity: ${({ isOpen }) => (isOpen ? 0.5 : 0)};
     z-index: ${({ isOpen }) => (isOpen ? 1000 : -100)};
@@ -21,6 +22,7 @@ export const BGOverlay = styled.div<{ isOpen: boolean }>`
 export const Container = styled.div<{ isOpen: boolean }>`
     position: absolute;
     height: 100vh;
+    height: fill-available;
     width: 320px;
     top: 0;
     left: ${props => (props.isOpen ? 0 : '-320px')};

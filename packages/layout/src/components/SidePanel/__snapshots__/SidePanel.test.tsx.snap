@@ -3,6 +3,9 @@
 exports[`SidePanel component should render with left positioned by default 1`] = `
 .c0 {
   height: 100vh;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
   background-color: #dfe4e9;
   width: 0;
   position: fixed;
@@ -23,6 +26,9 @@ exports[`SidePanel component should render with left positioned by default 1`] =
 exports[`SidePanel component should render with right positioned when position prop given as right 1`] = `
 .c0 {
   height: 100vh;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
   background-color: #dfe4e9;
   width: 0;
   position: fixed;
