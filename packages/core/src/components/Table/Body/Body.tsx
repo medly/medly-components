@@ -43,14 +43,14 @@ const Body: FC<TableBodyProps> = memo(props => {
 
     useEffect(() => {
         !customCursor && data.length && isUpKeyPressed && setCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
-    }, [isUpKeyPressed, data]);
+    }, [isUpKeyPressed, data, customCursor]);
 
     useEffect(() => {
         !customCursor &&
             data.length &&
             isDownKeyPressed &&
             setCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
-    }, [isDownKeyPressed, data]);
+    }, [isDownKeyPressed, data, customCursor]);
 
     const cursor = customCursor ?? cursorState;
 

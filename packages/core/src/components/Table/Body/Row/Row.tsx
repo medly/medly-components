@@ -115,7 +115,7 @@ export const Row: FC<RowProps> = memo(props => {
 
     useEffect(() => {
         if (isNavigated) onRowNavigated && onRowNavigated(data);
-    }, [isNavigated]);
+    }, [isNavigated, onRowNavigated]);
 
     // TODO: Check why useKeypress is not working in this case
     const handleRowClickFromKeyboard = useCallback(
