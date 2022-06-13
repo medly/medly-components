@@ -22,6 +22,7 @@ export const Row: FC<RowProps> = memo(props => {
             showShadowAfterFrozenElement,
             selectedRowIds,
             onRowSelection,
+            onRowNavigated,
             ...restProps
         } = props,
         {
@@ -111,6 +112,10 @@ export const Row: FC<RowProps> = memo(props => {
     useEffect(() => {
         isRowCollapsedFromKeyboard && setExpansionState(false);
     }, [isRowCollapsedFromKeyboard]);
+
+    useEffect(() => {
+        if (isNavigated) onRowNavigated && onRowNavigated(data);
+    }, [isNavigated]);
 
     // TODO: Check why useKeypress is not working in this case
     const handleRowClickFromKeyboard = useCallback(
