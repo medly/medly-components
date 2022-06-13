@@ -107,7 +107,7 @@ exports[`Checkbox component should render correctly with all the default props 1
 }
 
 .c2:checked + .c3 .sc-1oxfop0-2 {
-  color: white;
+  color: #ffffff;
   opacity: 0;
   right: calc((-24px) + 3px);
 }
@@ -274,7 +274,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 }
 
 .c4:checked + .c5 .sc-1oxfop0-2 {
-  color: white;
+  color: #ffffff;
   opacity: 0;
   right: calc((-28px) + 3px);
 }
