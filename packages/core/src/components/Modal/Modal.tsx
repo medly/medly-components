@@ -40,7 +40,7 @@ const Component: FC<ModalProps> = memo(
         const handleCloseModal = useCallback(() => {
                 if (modalRef.current) manager.remove(modalRef.current);
                 onCloseModal && onCloseModal();
-            }, [onCloseModal]),
+            }, [onCloseModal, manager]),
             handleBackgroundClick = useCallback(() => {
                 shouldCloseOnOutsideClick && handleCloseModal();
             }, [shouldCloseOnOutsideClick, onCloseModal]),
@@ -63,7 +63,7 @@ const Component: FC<ModalProps> = memo(
 
         useEffect(() => {
             !disableEscapeKeyDown && open && isEscPressed && modalRef.current && manager.isTopModal(modalRef.current) && handleCloseModal();
-        }, [open, isEscPressed]);
+        }, [open, isEscPressed, disableEscapeKeyDown, handleCloseModal, manager]);
 
         useLayoutEffect(() => {
             open && setActiveElement(document.activeElement as HTMLElement);
@@ -72,7 +72,7 @@ const Component: FC<ModalProps> = memo(
         useEffect(() => {
             !shouldRender && activeElement?.focus();
             if (shouldRender && modalRef.current) manager.add(modalRef.current);
-        }, [shouldRender]);
+        }, [shouldRender, manager]);
 
         return shouldRender ? (
             <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
