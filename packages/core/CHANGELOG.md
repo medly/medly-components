@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.13.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.12.0...@medly-components/core@6.13.0) (2022-06-14)
+
+
+### Features
+
+* add controlled cursor and onRowNavigated for Table ([#670](https://github.com/medly/medly-components/issues/670)) ([2b94795](https://github.com/medly/medly-components/commit/2b9479586f9b178d75fefae78af6a56eeeb60d3f))
+
+
+
+
+
 # [6.12.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.11.2...@medly-components/core@6.12.0) (2022-06-02)
 
 
