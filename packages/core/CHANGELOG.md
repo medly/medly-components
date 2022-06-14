@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.13.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.13.0...@medly-components/core@6.13.1) (2022-06-14)
+
+
+### Bug Fixes
+
+* escape key closes all modal instead of top modal ([#671](https://github.com/medly/medly-components/issues/671)) ([7285ec2](https://github.com/medly/medly-components/commit/7285ec248c3b90e91a4f48e1bd132f1d2abe0c92))
+
+
+
+
+
 # [6.13.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.12.0...@medly-components/core@6.13.0) (2022-06-14)
 
 
