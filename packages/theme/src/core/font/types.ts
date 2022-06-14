@@ -26,6 +26,8 @@ export interface FontFaceItem {
     fontWeight: number;
     fontStyle: string;
     fontDisplay?: string;
+    ascentOverride?: string;
+    descentOverride?: string;
 }
 
 export interface FontTheme {

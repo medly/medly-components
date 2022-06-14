@@ -23,8 +23,16 @@ const Body: FC<TableBodyProps> = memo(props => {
             size,
             keyBindings
         } = useContext(TableComponentsCommonPropsContext),
-        { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props,
-        [cursor, setCursor] = useState(-1),
+        {
+            selectedRowIds,
+            onRowSelection,
+            onGroupedRowSelection,
+            setUniqueIds,
+            rowCursor: customCursor,
+            onRowNavigated,
+            ...restProps
+        } = props,
+        [cursorState, setCursor] = useState(-1),
         /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
         tableVisibleWidth = tableRef.current?.clientWidth ?? 0,
         minimapDimensionDeps = useMemo(() => [columns], [columns]),
@@ -34,12 +42,17 @@ const Body: FC<TableBodyProps> = memo(props => {
         isCollapseKeyPressed = useKeyPress(keyBindings.collapseRow!, false, tableRef);
 
     useEffect(() => {
-        data.length && isUpKeyPressed && setCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
-    }, [isUpKeyPressed, data]);
+        !customCursor && data.length && isUpKeyPressed && setCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
+    }, [isUpKeyPressed, data, customCursor]);
 
     useEffect(() => {
-        data.length && isDownKeyPressed && setCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
-    }, [isDownKeyPressed, data]);
+        !customCursor &&
+            data.length &&
+            isDownKeyPressed &&
+            setCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
+    }, [isDownKeyPressed, data, customCursor]);
+
+    const cursor = customCursor ?? cursorState;
 
     return (
         <TBody>
@@ -75,6 +88,7 @@ const Body: FC<TableBodyProps> = memo(props => {
                         id={uniqueId}
                         key={identifier}
                         data={row}
+                        onRowNavigated={onRowNavigated}
                         selectedRowIds={selectedRowIds}
                         onRowSelection={onRowSelection}
                         isNavigated={index === cursor}

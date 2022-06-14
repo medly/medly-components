@@ -36,6 +36,8 @@ export const Component: FC<TableProps> = memo(
                 withInfiniteScroll,
                 onPageChange,
                 maxHeight,
+                rowCursor,
+                onRowNavigated,
                 keyBindings,
                 ...restProps
             } = props,
@@ -148,6 +150,8 @@ export const Component: FC<TableProps> = memo(
                         />
                         <Body
                             {...{
+                                rowCursor,
+                                onRowNavigated,
                                 setUniqueIds,
                                 setSelectAllDisableState,
                                 selectedRowIds: isGroupedTable ? selectedGroupIds : selectedRowIds,

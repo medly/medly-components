@@ -159,6 +159,39 @@ describe('Table component', () => {
 
             expect(onRowSelectionFn).toBeCalledTimes(1);
         });
+
+        it('should call onRowNavigated for the navigated row', () => {
+            const mockOnRowNavigated = jest.fn();
+            const { rerender } = render(<Table data={testData} columns={testColumns} rowCursor={1} onRowNavigated={mockOnRowNavigated} />);
+
+            expect(mockOnRowNavigated).toBeCalledWith({
+                age: '1',
+                color: 'green',
+                id: 2,
+                isPassed: true,
+                marks: {
+                    maths: 4,
+                    science: 7
+                },
+                name: 'Mary May',
+                rating: 4
+            });
+
+            rerender(<Table data={testData} columns={testColumns} rowCursor={2} onRowNavigated={mockOnRowNavigated} />);
+
+            expect(mockOnRowNavigated).toBeCalledWith({
+                age: '42',
+                color: 'green',
+                id: 3,
+                isPassed: true,
+                marks: {
+                    maths: 4,
+                    science: 7
+                },
+                name: 'Christine Lobowski',
+                rating: 4
+            });
+        });
     });
 
     describe('accordion', () => {

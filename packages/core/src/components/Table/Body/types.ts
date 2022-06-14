@@ -1,4 +1,6 @@
 export interface TableBodyProps {
+    rowCursor?: number | string;
+    onRowNavigated?: (data: { [key: string]: any }) => void;
     setUniqueIds: React.Dispatch<React.SetStateAction<any[]>>;
     selectedRowIds: Array<number | string>;
     onRowSelection: (id: number | string) => void;

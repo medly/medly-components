@@ -139,6 +139,10 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     maxHeight?: string;
     /** Set keyBindings for keyboard navigation */
     keyBindings?: KeyBindings;
+    /** Keyboard navigated row's cursor location */
+    rowCursor?: number | string;
+    /** Function to be called when row is navigated using keyboard */
+    onRowNavigated?: (rowData: ObjectType) => void;
 }
 
 export interface StaticProps {
