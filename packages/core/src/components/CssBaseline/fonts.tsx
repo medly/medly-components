@@ -9,6 +9,8 @@ const formatFontFace = (fontFace: FontFaceItem, fontFamily: string) => `
         font-weight: ${fontFace.fontWeight};
         font-style: ${fontFace.fontStyle};
         font-display: ${fontFace.fontDisplay};
+        ${fontFace.ascentOverride && `ascent-override: ${fontFace.ascentOverride};`}
+        ${fontFace.descentOverride && `descent-override: ${fontFace.descentOverride};`}
     }`;
 
 const formatFontFamily = (fontFamilyDetails: FontFaceTheme) => {

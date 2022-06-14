@@ -386,6 +386,103 @@ You can view the key values [here](https://keycode.info/).
 />
 ```
 
+#### Custom keyboard navigation and controlled cursor
+
+You can implement your own controlled navigation by passing the `rowCursor` prop. You can then handle the behaviour of the cursor by passing a custom function.
+
+If you want to call a custom function everytime a row is being navigated, you can pass it to `onRowNavigated`.
+
+```tsx
+import { TableColumnConfig } from '@medly-components/core';
+
+export const TableComponent: React.FC = () => {
+    const [customCursor, setCustomCursor] = useState(1),
+        handleKeyboardNavigation = useCallback(
+            e => {
+                if (e.key === 'ArrowUp') setCustomCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
+                else if (e.key === 'ArrowDown') setCustomCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
+            },
+            [setCustomCursor]
+        ),
+        handleRowNavigated = useCallback(data => console.log(`The data for navigated row is: ${data}`)),
+        tableData = [
+            { id: 1, firstName: 'Mary', lastName: 'May', age: '19' },
+            { id: 2, firstName: 'Jacob', lastName: 'Thornton', age: '22' },
+            { id: 3, firstName: 'Chris', lastName: 'Evans', age: '44' }
+        ],
+        columns: TableColumnConfig[] = [
+            { title: 'First', field: 'firstName' },
+            { title: 'Last', field: 'lastName' }
+        ];
+
+    return (
+        <Table
+            rowCursor={customCursor}
+            onKeyDown={handleKeyboardNavigation}
+            onRowNavigated={handleRowNavigated}
+            data={tableData}
+            columns={columns}
+            isLoading={false}
+            size={'M'}
+        />
+    );
+};
+```
+
+<Preview withToolbar>
+    <Story name="Table with controlled keyboard navigation">
+        {() => {
+            const [selectedRowIds, setSelectedRowIds] = useState([]),
+                [customCursor, setCustomCursor] = useState(1),
+                [tableData, setTableData] = useState(data),
+                handleFilterData = useCallback(
+                    ({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)),
+                    [tableData]
+                ),
+                handleKeyboardNavigation = useCallback(
+                    e => {
+                        if (e.key === 'ArrowUp') setCustomCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
+                        else if (e.key === 'ArrowDown')
+                            setCustomCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
+                    },
+                    [setCustomCursor]
+                );
+            return (
+                <DummyWrapper>
+                    <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
+                    <Table
+                        rowCursor={customCursor}
+                        data={tableData}
+                        columns={columns}
+                        onSort={handleFilterData}
+                        onKeyDown={handleKeyboardNavigation}
+                        selectedRowIds={selectedRowIds}
+                        onRowSelection={setSelectedRowIds}
+                        onRowClick={action('Row Clicked')}
+                        onRowNavigated={action('Row Navigated')}
+                        isLoading={boolean('Loading', false)}
+                        isRowSelectable={boolean('Is row selectable', true)}
+                        isRowExpandable={boolean('Is row expandable', true)}
+                        rowSelectionDisableKey="disabled"
+                        rowClickDisableKey="disabled"
+                        size={select('Size', ['XS', 'S', 'M', 'L'], 'M')}
+                        showRowWithCardStyle={boolean('Show Row With Card Style', false)}
+                        expandedRowComponent={ExpandedRowComponent}
+                        actions={Actions}
+                        withMinimap={boolean('Enable minimap', false)}
+                        withPagination={boolean('Enable pagination', true)}
+                        totalItems={10}
+                        itemsPerPage={10}
+                        onPageChange={action('Page Changed')}
+                        onScrolledToBottom={action('Scrolled to bottom')}
+                        withRowSeparators={boolean('Enable row separators', true)}
+                    />
+                </DummyWrapper>
+            );
+        }}
+    </Story>
+</Preview>
+
 ## Actions
 
 To show action bar you must pass `actions` in the below format
