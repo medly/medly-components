@@ -88,10 +88,7 @@ export const Dummy: React.FC = () => {
                         columns={columns}
                         onSort={handleFilterData}
                         selectedRowIds={selectedRowIds}
-                        onRowSelection={val => {
-                            setSelectedRowIds(val);
-                            console.log(val);
-                        }}
+                        onRowSelection={setSelectedRowIds}
                         onRowClick={action('Row Clicked')}
                         isLoading={boolean('Loading', false)}
                         isRowSelectable={boolean('Is row selectable', true)}
