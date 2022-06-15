@@ -120,7 +120,7 @@ export const Row: FC<RowProps> = memo(props => {
     // TODO: Check why useKeypress is not working in this case
     const handleRowClickFromKeyboard = useCallback(
         (e: KeyboardEvent<HTMLTableRowElement>) => {
-            e.key === keyBindings.rowClick! && isNavigated && handleRowClick && handleRowClick();
+            e.key === keyBindings.clickRow! && isNavigated && handleRowClick && handleRowClick();
         },
         [isNavigated, handleRowClick]
     );
