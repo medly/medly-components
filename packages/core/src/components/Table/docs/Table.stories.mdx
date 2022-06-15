@@ -370,7 +370,7 @@ To show Custom component, you need to pass props in the below format.
 ## Keyboard navigation
 
 To navigate the rows in a table, use the `Up Arrow` and `Down Arrow` keys. To select a row, use the `Space` key. To expand a row use the `Right Arrow` key, and to collapse a row use the `Left Arrow` key.
-These are the default browser key values that you can override (except the select `Space` key) by passing the keyBindings object to the `keyBindings` prop. Also, you must match the key values to the HTML spec.
+These are the default browser key values that you can override by passing the keyBindings object to the `keyBindings` prop. Also, you must match the key values to the HTML spec.
 You can view the key values [here](https://keycode.info/).
 
 ```tsx
@@ -381,7 +381,9 @@ You can view the key values [here](https://keycode.info/).
         up: 'ArrowUp', // Up arrow key
         down: 'ArrowDown', // Down arrow key
         expandRow: 'ArrowRight', // Right arrow key
-        collapseRow: 'ArrowLeft' // Left arrow key
+        collapseRow: 'ArrowLeft', // Left arrow key
+        clickRow: 'Enter', // Enter key
+        selectRow: ' ' // Space bar
     }}
 />
 ```

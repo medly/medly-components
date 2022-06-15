@@ -17,6 +17,8 @@ export interface ModalProps extends HTMLProps<HTMLDivElement> {
     minHeight?: string;
     /** Set it true to close the modal when clicked outside the modal */
     shouldCloseOnOutsideClick?: boolean;
+    /** Set it true to disable closing of modal on Escape key press */
+    disableEscapeKeyDown?: boolean;
 }
 
 export interface ModalBackgroundProps {
