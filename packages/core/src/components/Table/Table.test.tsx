@@ -48,7 +48,7 @@ describe('Table component', () => {
                 onPageChange: mockOnPageChange
             };
 
-        it('should call onPageChange prop on click on any page', async () => {
+        it('should call onPageChange prop on click on any page', () => {
             const { container } = renderTable({ ...commonProps, defaultActivePage: 1 });
             expect(container).toMatchSnapshot();
             fireEvent.click(screen.getByText('30'));
@@ -86,7 +86,7 @@ describe('Table component', () => {
                 onRowClick: mockOnRowClick
             };
 
-        it('enter key should trigger onRowClick', async () => {
+        it('enter key should trigger onRowClick', () => {
             const { container } = renderTable({
                     ...commonProps
                 }),
@@ -111,7 +111,7 @@ describe('Table component', () => {
             });
         });
 
-        it('right arrow key should open the collapsible row', async () => {
+        it('right arrow key should open the collapsible row', () => {
             renderTable({
                 ...commonProps,
                 isRowExpandable: true,
@@ -126,7 +126,7 @@ describe('Table component', () => {
             expect(screen.getByText('Hello from Accordion')).toBeInTheDocument();
         });
 
-        it('left arrow key should close the collapsible row', async () => {
+        it('left arrow key should close the collapsible row', () => {
             renderTable({
                 ...commonProps,
                 isRowExpandable: true,
@@ -142,20 +142,38 @@ describe('Table component', () => {
             expect(screen.queryByText('Hello from Accordion')).not.toBeInTheDocument();
         });
 
-        it('space key should select the row', async () => {
+        it('space key should select the row', () => {
             const onRowSelectionFn = jest.fn();
             renderTable({
                 ...commonProps,
-                onRowSelection: onRowSelectionFn,
-                isRowSelectable: true
+                isRowSelectable: true,
+                onRowSelection: onRowSelectionFn
+            });
+
+            const table = screen.getByRole('table');
+            const tableRow = table.querySelectorAll('tr');
+            const checkbox = tableRow[1].querySelector('input[type="checkbox"]');
+
+            fireEvent.keyDown(checkbox!, { key: ' ', code: 32 });
+
+            expect(onRowSelectionFn).toBeCalledTimes(1);
+        });
+
+        it('custom selection key should select the row when passed as keybinding', () => {
+            const onRowSelectionFn = jest.fn();
+            renderTable({
+                ...commonProps,
+                isRowSelectable: true,
+                keyBindings: {
+                    selectRow: 'x'
+                },
+                onRowSelection: onRowSelectionFn
             });
             const table = screen.getByRole('table');
+            const tableRow = table.querySelectorAll('tr');
+            const checkbox = tableRow[2].querySelector('input[type="checkbox"]');
 
-            downArrowKeyPress(table);
-            downArrowKeyPress(table);
-            downArrowKeyPress(table);
-            downArrowKeyPress(table);
-            fireEvent.click(document.activeElement as HTMLInputElement);
+            fireEvent.keyDown(checkbox!, { key: 'x', code: 88 });
 
             expect(onRowSelectionFn).toBeCalledTimes(1);
         });
