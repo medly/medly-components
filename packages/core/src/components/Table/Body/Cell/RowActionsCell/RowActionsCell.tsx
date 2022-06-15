@@ -1,8 +1,8 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
-import { memo, useCallback } from 'react';
+import { FC, KeyboardEvent, memo, useCallback, useContext } from 'react';
 import Checkbox from '../../../../Checkbox';
+import { TableComponentsCommonPropsContext } from '../../../context';
 import { LoadingDiv } from '../Styled';
 import { RowActionsCellStyled } from './RowActionsCell.styled';
 import { RowActionProps } from './types';
@@ -10,20 +10,29 @@ import { RowActionProps } from './types';
 const Component: FC<RowActionProps> = memo(props => {
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
     const {
-        isLoading,
-        isRowExpanded,
-        isRowExpandable,
-        isRowSelectable,
-        isRowSelected,
-        isRowIndeterminate,
-        isRowSelectionDisabled,
-        onRowSelection,
-        onRowExpansionIconClick,
-        tableSize,
-        isGroupedTable,
-        showShadowAtRight,
-        isNavigated
-    } = props;
+            isLoading,
+            isRowExpanded,
+            isRowExpandable,
+            isRowSelectable,
+            isRowSelected,
+            isRowIndeterminate,
+            isRowSelectionDisabled,
+            onRowSelection,
+            onRowExpansionIconClick,
+            tableSize,
+            isGroupedTable,
+            showShadowAtRight,
+            isNavigated
+        } = props,
+        { keyBindings } = useContext(TableComponentsCommonPropsContext);
+
+    const handleKeyDown = useCallback(
+        (e: KeyboardEvent<HTMLInputElement>) => {
+            e.preventDefault();
+            if (e.key === keyBindings.selectRow) onRowSelection && onRowSelection(e);
+        },
+        [keyBindings.selectRow, onRowSelection]
+    );
 
     return (
         <RowActionsCellStyled
@@ -51,6 +60,7 @@ const Component: FC<RowActionProps> = memo(props => {
                             checked={isRowSelected}
                             onChange={onRowSelection}
                             onClick={stopPropagation}
+                            onKeyDown={handleKeyDown}
                         />
                     )}
                 </>
