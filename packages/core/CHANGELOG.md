@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.14.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.13.1...@medly-components/core@6.14.0) (2022-06-15)
+
+
+### Features
+
+* add support for keybinding to select row in Table component ([#673](https://github.com/medly/medly-components/issues/673)) ([3f6b8e1](https://github.com/medly/medly-components/commit/3f6b8e1431bc56ddb58fcf63a57534b9d906e151))
+
+
+
+
+
 ## [6.13.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.13.0...@medly-components/core@6.13.1) (2022-06-14)
 
 
