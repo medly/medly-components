@@ -1,0 +1,649 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row should render tbody properly with default props 1`] = `
+.c0 {
+  display: block;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.c4 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c5 {
+  display: grid;
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.c2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  padding: 0.8rem 1.6rem;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c2 .c3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.c6 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  padding: 0.8rem 1.6rem;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c6 .c3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: grid;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  outline: none;
+  cursor: inherit;
+}
+
+.c1.c1:hover {
+  z-index: 2;
+}
+
+.c1:nth-child(odd),
+.c1:nth-child(odd) > * {
+  background-color: #F7F8F9;
+  color: #13181D;
+}
+
+.c1:nth-child(even),
+.c1:nth-child(even) > * {
+  background-color: #ffffff;
+  color: #13181D;
+}
+
+.c7 {
+  display: grid;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  outline: none;
+  cursor: inherit;
+}
+
+.c7.c7:hover {
+  z-index: 2;
+}
+
+.c7:nth-child(odd),
+.c7:nth-child(odd) > * {
+  background-color: #D7E3F6;
+  color: #13181D;
+}
+
+.c7:nth-child(even),
+.c7:nth-child(even) > * {
+  background-color: #D7E3F6;
+  color: #13181D;
+}
+
+<div>
+  <tbody
+    class="c0"
+  >
+    <tr
+      class="c1"
+      style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
+      tabindex="0"
+    >
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Albus Percival Wulfric Brian Dumbledore"
+        >
+          Albus Percival Wulfric Brian Dumbledore
+        </span>
+      </td>
+      <td
+        class="c5"
+        style="grid-template-columns: undefined undefined;"
+      >
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="6"
+          >
+            6
+          </span>
+        </div>
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="4"
+          >
+            4
+          </span>
+        </div>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="12"
+        >
+          12
+        </span>
+      </td>
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Yes"
+        >
+          Yes
+        </span>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="5"
+        >
+          5
+        </span>
+      </td>
+    </tr>
+    <tr
+      class="c7"
+      style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
+      tabindex="1"
+    >
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Mary May"
+        >
+          Mary May
+        </span>
+      </td>
+      <td
+        class="c5"
+        style="grid-template-columns: undefined undefined;"
+      >
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="4"
+          >
+            4
+          </span>
+        </div>
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="7"
+          >
+            7
+          </span>
+        </div>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="1"
+        >
+          1
+        </span>
+      </td>
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Yes"
+        >
+          Yes
+        </span>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="4"
+        >
+          4
+        </span>
+      </td>
+    </tr>
+    <tr
+      class="c1"
+      style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
+      tabindex="2"
+    >
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Christine Lobowski"
+        >
+          Christine Lobowski
+        </span>
+      </td>
+      <td
+        class="c5"
+        style="grid-template-columns: undefined undefined;"
+      >
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="4"
+          >
+            4
+          </span>
+        </div>
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="7"
+          >
+            7
+          </span>
+        </div>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="42"
+        >
+          42
+        </span>
+      </td>
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Yes"
+        >
+          Yes
+        </span>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="4"
+        >
+          4
+        </span>
+      </td>
+    </tr>
+    <tr
+      class="c1"
+      style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
+      tabindex="3"
+    >
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Brendon Philips"
+        >
+          Brendon Philips
+        </span>
+      </td>
+      <td
+        class="c5"
+        style="grid-template-columns: undefined undefined;"
+      >
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="10"
+          >
+            10
+          </span>
+        </div>
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="2"
+          >
+            2
+          </span>
+        </div>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="125"
+        >
+          125
+        </span>
+      </td>
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Yes"
+        >
+          Yes
+        </span>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="4.5"
+        >
+          4.5
+        </span>
+      </td>
+    </tr>
+    <tr
+      class="c1"
+      style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
+      tabindex="4"
+    >
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Margret Marmajuke"
+        >
+          Margret Marmajuke
+        </span>
+      </td>
+      <td
+        class="c5"
+        style="grid-template-columns: undefined undefined;"
+      >
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="7"
+          >
+            7
+          </span>
+        </div>
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="5"
+          >
+            5
+          </span>
+        </div>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="16"
+        >
+          16
+        </span>
+      </td>
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Yes"
+        >
+          Yes
+        </span>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="4"
+        >
+          4
+        </span>
+      </td>
+    </tr>
+    <tr
+      class="c1"
+      style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
+      tabindex="5"
+    >
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Van Ng"
+        >
+          Van Ng
+        </span>
+      </td>
+      <td
+        class="c5"
+        style="grid-template-columns: undefined undefined;"
+      >
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="9"
+          >
+            9
+          </span>
+        </div>
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="2"
+          >
+            2
+          </span>
+        </div>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="37"
+        >
+          37
+        </span>
+      </td>
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="No"
+        >
+          No
+        </span>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="4"
+        >
+          4
+        </span>
+      </td>
+    </tr>
+    <tr
+      class="c1"
+      style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
+      tabindex="6"
+    >
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="Duc Ng"
+        >
+          Duc Ng
+        </span>
+      </td>
+      <td
+        class="c5"
+        style="grid-template-columns: undefined undefined;"
+      >
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="10"
+          >
+            10
+          </span>
+        </div>
+        <div
+          class="c6"
+        >
+          <span
+            class="c3 c4"
+            title="3"
+          >
+            3
+          </span>
+        </div>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="37"
+        >
+          37
+        </span>
+      </td>
+      <td
+        class="c2"
+      >
+        <span
+          class="c3 c4"
+          title="No"
+        >
+          No
+        </span>
+      </td>
+      <td
+        class="c6"
+      >
+        <span
+          class="c3 c4"
+          title="4"
+        >
+          4
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</div>
+`;
