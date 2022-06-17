@@ -56,20 +56,17 @@ const Body: FC<TableBodyProps> = memo(props => {
 
     return (
         <TBody>
-            {data.length === 0 &&
-                (noResultRow ? (
-                    noResultRow
-                ) : (
-                    <NoResultRow
-                        showRowWithCardStyle={showRowWithCardStyle}
-                        gridTemplateColumns={getGridTemplateColumns(columns)}
-                        withMinimap={withMinimap}
-                    >
-                        <NoResultCell width={tableVisibleWidth} tableSize={size}>
-                            {noResultRowText || 'No result'}
-                        </NoResultCell>
-                    </NoResultRow>
-                ))}
+            {data.length === 0 && (
+                <NoResultRow
+                    showRowWithCardStyle={showRowWithCardStyle}
+                    gridTemplateColumns={getGridTemplateColumns(columns)}
+                    withMinimap={withMinimap}
+                >
+                    <NoResultCell width={tableVisibleWidth} tableSize={size}>
+                        {noResultRow ? noResultRow : noResultRowText || 'No result'}
+                    </NoResultCell>
+                </NoResultRow>
+            )}
             {data.map((row, index) => {
                 const identifier = (groupBy ? row[groupBy] : row[rowIdentifier]) || index,
                     uniqueId = isNaN(Number(identifier)) ? index : identifier;
