@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.14.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.14.0...@medly-components/core@6.14.1) (2022-06-21)
+
+
+### Bug Fixes
+
+* Table component noResultRow prop vertical scroll issue ([#674](https://github.com/medly/medly-components/issues/674)) ([4c1b816](https://github.com/medly/medly-components/commit/4c1b816862094875156769c3f8249c45e2f47bf0))
+
+
+
+
+
 # [6.14.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.13.1...@medly-components/core@6.14.0) (2022-06-15)
 
 
