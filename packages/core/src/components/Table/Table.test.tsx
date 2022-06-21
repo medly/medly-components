@@ -21,11 +21,7 @@ describe('Table component', () => {
     it('should render no result row', () => {
         renderTable({
             data: [],
-            noResultRow: (
-                <tr>
-                    <div>NO RESULT CUSTOM COMPONENT</div>
-                </tr>
-            )
+            noResultRow: <div>NO RESULT CUSTOM COMPONENT</div>
         });
         expect(screen.getByText('NO RESULT CUSTOM COMPONENT')).toBeInTheDocument();
     });

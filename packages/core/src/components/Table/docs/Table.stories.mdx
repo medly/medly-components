@@ -354,15 +354,7 @@ You can replace `No Result` row with your Custom component. You need to pass the
 To show Custom component, you need to pass props in the below format.
 
 ```tsx
-<Table
-    data="Data Object"
-    columns="Columns Object"
-    noResultRow={
-        <tr>
-            <div>NO RESULT CUSTOM COMPONENT</div>
-        </tr>
-    }
-/>
+<Table data="Data Object" columns="Columns Object" noResultRow={<div>NO RESULT CUSTOM COMPONENT</div>} />
 ```
 
 **Note:** It is advisable to wrap your component in `<tr>` tag to avoid warnings.
