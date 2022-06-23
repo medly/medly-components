@@ -10,6 +10,7 @@ import ModalManager from './ModalManager';
 import Popup from './Popup';
 import { reducer } from './scrollStateReducer/scrollStateReducer';
 import { ModalProps, ModalStaticProps } from './types';
+import { useScrollState } from './useScrollState';
 
 const manager = new ModalManager();
 
@@ -74,6 +75,9 @@ const Component: FC<ModalProps> = memo(
             if (shouldRender && modalRef.current) manager.add(modalRef.current);
         }, [shouldRender, manager]);
 
+        const contentRef = useRef<HTMLDivElement>(null);
+        const handleScroll = useScrollState({ ref: contentRef, scrollState, dispatch });
+
         return shouldRender ? (
             <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
                 <Popup
@@ -88,6 +92,7 @@ const Component: FC<ModalProps> = memo(
                         ref={innerContainerRef}
                         headerHeight={headerHeight}
                         overflowVisible={overflowVisible}
+                        onScroll={handleScroll}
                     >
                         <ModalContext.Provider
                             value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen, overflowVisible }}

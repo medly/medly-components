@@ -1,3 +1,4 @@
+import { breakpoints, media } from '@medly-components/utils';
 import styled, { keyframes } from 'styled-components';
 import { ModalPopupProps } from './types';
 
@@ -50,29 +51,27 @@ export const Popup = styled('div')<ModalPopupProps>`
     border-top-right-radius: 1.6rem;
     overflow: ${({ overflowVisible }) => !overflowVisible && `hidden`};
 
-    @media (max-width: 767px) {
+    ${({ theme, open }) => media(breakpoints(theme.breakpoints).down('S'))`
         width: 100%;
         height: calc(100% - 2.4rem);
-        animation: ${({ open }) => (open ? mobileModalSlideIn : mobileModalSlideOut)} 0.4s cubic-bezier(0, 0, 0.33, 1);
-    }
+        animation: ${open ? mobileModalSlideIn : mobileModalSlideOut} 0.4s cubic-bezier(0, 0, 0.33, 1);
+    `}
 
-    @media (min-width: 768px) and (max-width: 1439px) {
-        padding: ${({ theme }) => `${theme.spacing.L1} ${theme.spacing.M2}`};
-        border-radius: ${({ theme }) => theme.modal.borderRadius};
+    ${({ theme, minWidth }) => media(breakpoints(theme.breakpoints).between('M', 'L'))`
+        border-radius: ${theme.modal.borderRadius};
         max-width: 72%;
-        min-width: ${({ minWidth }) => minWidth || '42%'};
+        min-width: ${minWidth || '42%'};
         max-height: 80%;
-    }
+    `}
 
-    @media (min-width: 1440px) {
-        padding: ${({ theme }) => `${theme.spacing.L1} ${theme.spacing.M2}`};
-        border-radius: ${({ theme }) => theme.modal.borderRadius};
-        min-width: ${({ minWidth }) => minWidth || `60.5rem`};
+    ${({ theme, minWidth }) => media(breakpoints(theme.breakpoints).up('XL'))`
+        border-radius: ${theme.modal.borderRadius};
+        min-width: ${minWidth || `60.5rem`};
         max-width: 103.6rem;
         max-height: 80%;
-    }
+    `}
 
-    @media (min-width: 768px) {
-        animation: ${({ open }) => (open ? desktopModalSlideIn : desktopModalSlideOut)} 0.2s cubic-bezier(0, 0, 0.33, 1);
-    }
+    ${({ theme, open }) => media(breakpoints(theme.breakpoints).up('M'))`
+        animation: ${open ? desktopModalSlideIn : desktopModalSlideOut} 0.2s cubic-bezier(0, 0, 0.33, 1);
+    `}
 `;
