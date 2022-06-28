@@ -28,6 +28,7 @@ const Component: FC<SearchBoxProps> = memo(
             minWidth,
             maxWidth,
             isLoading,
+            loader: customLoader,
             ...restProps
         } = props;
         const wrapperRef = useRef<any>(null),
@@ -161,7 +162,11 @@ const Component: FC<SearchBoxProps> = memo(
                 )}
                 <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size!}>
                     {isLoading ? (
-                        <CircleLoader data-testid="circle-loader" size="XXS" />
+                        customLoader ? (
+                            customLoader
+                        ) : (
+                            <CircleLoader data-testid="circle-loader" size="XXS" />
+                        )
                     ) : (
                         <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />
                     )}
