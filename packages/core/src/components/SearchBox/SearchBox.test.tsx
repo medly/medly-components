@@ -141,6 +141,12 @@ describe('SearchBox', () => {
             render(<SearchBox isLoading />);
             expect(screen.queryByTitle('search icon')).not.toBeInTheDocument();
         });
+
+        it('should show custom loader when passed', () => {
+            const CustomLoader = () => <span>Loading</span>;
+            render(<SearchBox loader={<CustomLoader />} isLoading />);
+            expect(screen.getByText('Loading')).toBeInTheDocument();
+        });
     });
 
     describe('options', () => {
