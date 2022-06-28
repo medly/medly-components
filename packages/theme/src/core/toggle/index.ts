@@ -13,7 +13,8 @@ const toggle: ToggleTheme = {
     outlineColor: colors.professionalNavy,
     checkedBgColor: colors.professionalNavy,
     bgColor: colors.grey[200],
-    disabledBgColor: colors.grey[300]
+    disabledBgColor: colors.grey[300],
+    iconColor: colors.white
 };
 
 export default toggle;
