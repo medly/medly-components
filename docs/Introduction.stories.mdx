@@ -10,6 +10,8 @@ import { action } from '@storybook/addon-actions';
 
 # Medly Components
 
+![Medly Components](http://medlycomponents.com/medly-components.png)
+
 [![Lint, Build, Test](https://github.com/medly/medly-components/workflows/Lint,%20Build,%20Test/badge.svg)](https://github.com/medly/medly-components/actions?query=workflow%3A%22Lint%2C+Build%2C+Test%22)
 [![react version](https://img.shields.io/badge/react-%5E16.8.6-blue)](https://www.npmjs.org/package/react)
 [![styled-components version](https://img.shields.io/badge/styled--components-%5E4.2.0-blue)](https://www.npmjs.com/package/styled-components)
@@ -18,19 +20,18 @@ import { action } from '@storybook/addon-actions';
 [![GitHub](https://img.shields.io/github/license/medly/medly-components)](https://github.com/medly/medly-components/blob/master/LICENSE)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
-![Medly Components](http://medlycomponents.com/medly-components.png)
 
-Themable react components with various configuration to match your need.
+Themable react components with various configuration to match your needs.
 
 ## Table of Contents
 
 -   🚀 [Getting Started](#getting-started)
 -   📦 [Packages](#packages)
     -   🧩 [Core](#core)
-    -   ℹ [Icons](#icons)
-    -   🌀 [Loaders](#loaders)
-    -   ⧉ [Layout](#layout)
     -   📝 [Forms](#forms)
+    -   ℹ [Icons](#icons)
+    -   ⧉ [Layout](#layout)
+    -   🌀 [Loaders](#loaders)
     -   🏞 [Theme](#theme)
     -   🛠 [Utils](#utils)
 
@@ -77,11 +78,11 @@ If you are using a static property of any component like `Modal.Header`, you mus
 
 ## Packages
 
-Library consists of the following five packages:
+The component library consists of the following packages:
 
 ### [Core](https://github.com/medly/medly-components/tree/master/packages/core)
 
-The Core package consits of almost all basic react components like Avatar, Button, Input, List, Modal, etc.
+The Core package consists of almost all the basic React components like Avatar, Button, Input, List, Modal, etc.
 
 **Example**:
 
@@ -93,27 +94,11 @@ The Core package consits of almost all basic react components like Avatar, Butto
     </List>
 </Preview>
 
-### [Icons](https://github.com/medly/medly-components/tree/master/packages/icons)
-
-The Icons package consists of most commonly used svg icons exposed as react components.
-
-**Example**:
-
-<Preview>
-    <EditIcon size="M" />
-</Preview>
-
-### [Loaders](https://github.com/medly/medly-components/tree/master/packages/loaders)
-
-The Loaders package consists of some simple svg loaders exposed as react components.
-
-<Preview>
-    <ConcentricCircleLoader size="M" />
-</Preview>
-
 ### [Forms](https://github.com/medly/medly-components/tree/master/packages/forms)
 
-Use the Forms package to create dynamic forms using simple json.
+The Form package lets you create dynamic forms using simple JSON.
+
+**Example**:
 
 <Preview>
     <Form
@@ -123,9 +108,19 @@ Use the Forms package to create dynamic forms using simple json.
     />
 </Preview>
 
-### [Layout](https://github.com/medly/medly-components/tree/master/packages/layout)
-Use the Layout package to create page layouts using side panels and navigation items, which are exposed as react components.
+### [Icons](https://github.com/medly/medly-components/tree/master/packages/icons)
 
+The Icon package consists of the most commonly used SVG icons exposed as React components.
+
+**Example**:
+
+<Preview>
+    <EditIcon size="M" />
+</Preview>
+
+### [Layout](https://github.com/medly/medly-components/tree/master/packages/layout)
+
+The Layout package consists of components that help in creating a page layout using side panels and navigation items, which are exposed as React components.
 
 **Example**:
 
@@ -142,10 +137,21 @@ Use the Layout package to create page layouts using side panels and navigation i
 </SideNav>
 ```
 
+### [Loaders](https://github.com/medly/medly-components/tree/master/packages/loaders)
+
+The Loaders package consists of a few simple SVG loaders exposed as React components.
+
+**Example**:
+
+<Preview>
+    <ConcentricCircleLoader size="M" />
+</Preview>
+
+
 ### [Theme](https://github.com/medly/medly-components/tree/master/packages/theme)
 
-Style components across websites using the Theme package. Theme can either be applied to a particular type of component (Example: Making all icons solid) or to the entire website (Example: Changing the color theme of all type of components across the website).
+The Theme package defines the overall look, feel, and style of your website. Each component can be defined individually. For example, all icons of a website can be made solid, the color of all the components can be made orange, etc.
 
 ### [Utils](https://github.com/medly/medly-components/tree/master/packages/utils)
 
-The Utils package consists of the most commonly used functionalities and components. Eg [String Helper](https://github.com/medly/medly-components/tree/master/packages/utils/src/stringHelpers.ts) has functions to convert a string to camelCase, case insensitive string comparison, etc.
+The Utils package consists of the most commonly used functionalities and components. E.g. [String Helper](https://github.com/medly/medly-components/tree/master/packages/utils/src/stringHelpers.ts) has functions to convert a string to camelCase, case insensitive string comparison, etc.
