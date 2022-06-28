@@ -161,7 +161,7 @@ const Component: FC<SearchBoxProps> = memo(
                 )}
                 <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size!}>
                     {isLoading ? (
-                        <CircleLoader size="XXS" />
+                        <CircleLoader data-testid="circle-loader" size="XXS" />
                     ) : (
                         <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />
                     )}
