@@ -21,6 +21,8 @@ export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'
     options?: Option[];
     /** React component for additional filtering */
     customSearchFilter?: ReactElement<any>;
+    /** Show loader while the flag is true */
+    isLoading?: boolean;
     /** Does the component take up all available width */
     fullWidth?: boolean;
     /** Min width in rem/% (1rem = 10px)*/
