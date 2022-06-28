@@ -1,18 +1,31 @@
 import { defaultTheme } from '@medly-components/theme';
 import { WithThemeProp } from '@medly-components/utils';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import FieldWithLabel from '../FieldWithLabel';
 import { ToggleProps, ToggleWrapperProps } from './types';
 
 const getHeight = ({ theme, size }: ToggleProps & WithThemeProp) =>
     size ? theme.toggle.sizes[size] : theme.toggle.sizes[theme?.toggle.defaultSize];
+
 const getWidth = (props: ToggleProps & WithThemeProp) => `calc(${getHeight(props)} * 2)`;
+
+const IconStyle = css`
+    color: ${({ theme }) => theme.toggle.iconColor};
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    svg {
+        height: ${props => `calc(${getHeight(props)} - 1rem) `};
+        path {
+            fill: ${({ theme }) => theme.toggle.iconColor};
+        }
+    }
+`;
 
 export const Wrapper = styled(FieldWithLabel.Field)<ToggleWrapperProps>`
     position: relative;
     width: ${getWidth};
     height: ${getHeight};
-    border-radius: 15px;
+    border-radius: 1.5rem;
     background-color: ${({ theme }) => theme.toggle.bgColor};
 
     &:focus-within {
@@ -22,7 +35,7 @@ export const Wrapper = styled(FieldWithLabel.Field)<ToggleWrapperProps>`
     & > * {
         width: 100%;
         height: 100%;
-        border-radius: 15px;
+        border-radius: 1.5rem;
     }
 `;
 
@@ -39,41 +52,25 @@ export const Switch = styled('div')<ToggleWrapperProps>`
 `;
 
 export const OffIcon = styled('div')<ToggleWrapperProps>`
-    color: ${({ theme }) => theme.toggle.iconColor};
-    transition: 0.2s ease-in-out;
-    position: absolute;
+    ${IconStyle}
     right: 0;
-    svg {
-        height: ${props => `calc(${getHeight(props)} - 10px) `};
-        path {
-            fill: ${({ theme }) => theme.toggle.iconColor};
-        }
-    }
 `;
 
 export const OnIcon = styled('div')<ToggleWrapperProps>`
-    color: ${({ theme }) => theme.toggle.iconColor};
-    transition: 0.2s ease-in-out;
+    ${IconStyle}
     opacity: 0;
-    position: absolute;
-    left: ${props => `calc((-${getHeight(props)}) + 3px) `};
-    svg {
-        height: ${props => `calc(${getHeight(props)} - 10px) `};
-        path {
-            fill: ${({ theme }) => theme.toggle.iconColor};
-        }
-    }
+    left: ${props => `calc((-${getHeight(props)}) + 0.3rem) `};
 `;
 
 export const Circle = styled('div')<ToggleWrapperProps>`
     z-index: 1;
     position: absolute;
-    height: ${props => `calc(${getHeight(props)} - 6px) `};
-    width: ${props => `calc(${getHeight(props)} - 6px) `};
-    margin: 3px;
+    height: ${props => `calc(${getHeight(props)} - 0.6rem) `};
+    width: ${props => `calc(${getHeight(props)} - 0.6rem) `};
+    margin: 0.3rem;
     border-radius: 50%;
     background: ${({ theme }) => theme.colors.white};
-    box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0.1rem 0.3rem 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
     transition: 0.2s;
 `;
 
@@ -103,13 +100,13 @@ export const Checkbox = styled('input').attrs({ type: 'checkbox' })<ToggleProps>
         background: ${({ theme }) => theme.toggle.checkedBgColor};
 
         ${Circle} {
-            margin-left: ${props => `calc((${getHeight(props)}) + 3px) `};
+            margin-left: ${props => `calc((${getHeight(props)}) + 0.3rem) `};
         }
 
         ${OffIcon} {
             color: ${({ theme }) => theme.toggle.iconColor};
             opacity: 0;
-            right: ${props => `calc((-${getHeight(props)}) + 3px) `};
+            right: ${props => `calc((-${getHeight(props)}) + 0.3rem) `};
         }
 
         ${OnIcon} {
