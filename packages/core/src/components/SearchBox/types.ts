@@ -1,6 +1,6 @@
 import { Size } from '@medly-components/theme';
 import { HTMLProps } from '@medly-components/utils';
-import { ReactElement } from 'react';
+import { ReactElement, ReactNode } from 'react';
 
 export type Option = {
     label: string;
@@ -23,6 +23,8 @@ export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'
     customSearchFilter?: ReactElement<any>;
     /** Show loader while the flag is true */
     isLoading?: boolean;
+    /** Pass any React component as a loader */
+    loader?: ReactNode;
     /** Does the component take up all available width */
     fullWidth?: boolean;
     /** Min width in rem/% (1rem = 10px)*/
