@@ -37,7 +37,8 @@ exports[`Checkbox component should render correctly with all the default props 1
   position: relative;
   width: calc(24px * 2);
   height: 24px;
-  border-radius: 15px;
+  border-radius: 1.5rem;
+  background-color: #dfe4e9;
 }
 
 .c1:focus-within {
@@ -47,26 +48,34 @@ exports[`Checkbox component should render correctly with all the default props 1
 .c1 > * {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 1.5rem;
 }
 
 .c4 {
-  z-index: 1;
-  position: absolute;
-  background-color: #dfe4e9;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
 }
 
-.c4::after {
-  content: '';
-  margin: 3px;
-  display: block;
+.c6 {
+  z-index: 1;
+  position: absolute;
+  height: calc(24px - 0.6rem);
+  width: calc(24px - 0.6rem);
+  margin: 0.3rem;
   border-radius: 50%;
   background: #ffffff;
-  box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.2);
+  box-shadow: 0.1rem 0.3rem 0.3rem 0.1rem rgba(0,0,0,0.2);
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  width: calc(24px - 6px);
-  height: calc(24px - 6px);
 }
 
 .c2 {
@@ -93,8 +102,20 @@ exports[`Checkbox component should render correctly with all the default props 1
   background: #012040;
 }
 
-.c2:checked + .c3::after {
-  margin-left: calc(calc(24px * 2) - (24px) + 3px);
+.c2:checked + .c3 .c5 {
+  margin-left: calc((24px) + 0.3rem);
+}
+
+.c2:checked + .c3 .sc-1oxfop0-2 {
+  color: #ffffff;
+  opacity: 0;
+  right: calc((-24px) + 0.3rem);
+}
+
+.c2:checked + .c3 .sc-1oxfop0-3 {
+  opacity: 1;
+  position: absolute;
+  left: 0;
 }
 
 <div>
@@ -114,7 +135,11 @@ exports[`Checkbox component should render correctly with all the default props 1
       />
       <div
         class="c3 c4"
-      />
+      >
+        <div
+          class="c5 c6"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -179,7 +204,8 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   position: relative;
   width: calc(28px * 2);
   height: 28px;
-  border-radius: 15px;
+  border-radius: 1.5rem;
+  background-color: #dfe4e9;
 }
 
 .c3:focus-within {
@@ -189,26 +215,34 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 .c3 > * {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 1.5rem;
 }
 
 .c6 {
-  z-index: 1;
-  position: absolute;
-  background-color: #dfe4e9;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
 }
 
-.c6::after {
-  content: '';
-  margin: 3px;
-  display: block;
+.c8 {
+  z-index: 1;
+  position: absolute;
+  height: calc(28px - 0.6rem);
+  width: calc(28px - 0.6rem);
+  margin: 0.3rem;
   border-radius: 50%;
   background: #ffffff;
-  box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.2);
+  box-shadow: 0.1rem 0.3rem 0.3rem 0.1rem rgba(0,0,0,0.2);
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  width: calc(28px - 6px);
-  height: calc(28px - 6px);
 }
 
 .c4 {
@@ -235,8 +269,20 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   background: #012040;
 }
 
-.c4:checked + .c5::after {
-  margin-left: calc(calc(28px * 2) - (28px) + 3px);
+.c4:checked + .c5 .c7 {
+  margin-left: calc((28px) + 0.3rem);
+}
+
+.c4:checked + .c5 .sc-1oxfop0-2 {
+  color: #ffffff;
+  opacity: 0;
+  right: calc((-28px) + 0.3rem);
+}
+
+.c4:checked + .c5 .sc-1oxfop0-3 {
+  opacity: 1;
+  position: absolute;
+  left: 0;
 }
 
 <div>
@@ -263,7 +309,11 @@ exports[`Checkbox component should render correctly with all the props given 1`]
       />
       <div
         class="c5 c6"
-      />
+      >
+        <div
+          class="c7 c8"
+        />
+      </div>
     </div>
   </div>
 </div>

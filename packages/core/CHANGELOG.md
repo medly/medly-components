@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.15.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.14.1...@medly-components/core@6.15.0) (2022-06-28)
+
+
+### Features
+
+* add icon support in toggle button ([#667](https://github.com/medly/medly-components/issues/667)) ([0b16cc7](https://github.com/medly/medly-components/commit/0b16cc7c208f23862af5114451c7d8e8c881c3fa)), closes [#579](https://github.com/medly/medly-components/issues/579)
+* add isLoading and custom loader support in search box ([#678](https://github.com/medly/medly-components/issues/678)) ([d9c032a](https://github.com/medly/medly-components/commit/d9c032a3d2fc257954ca8dcd4e1e42902b1e1baa))
+
+
+
+
+
 ## [6.14.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.14.0...@medly-components/core@6.14.1) (2022-06-21)
 
 

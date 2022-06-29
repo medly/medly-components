@@ -1,5 +1,6 @@
 import { FontVariants, FontWeights, ToggleSizes } from '@medly-components/theme';
 import { HTMLProps, Omit } from '@medly-components/utils';
+import { ReactElement } from 'react';
 import { LabelPositions } from '../Label/types';
 
 type DivProps = Omit<HTMLProps<HTMLInputElement>, 'size'>;
@@ -26,4 +27,8 @@ export interface ToggleProps extends InputProps {
     labelWeight?: FontWeights;
     /** Use if required in any form for example user needs to check 'I Agree' */
     required?: boolean;
+    /** Icon to show when toggle is in OFF state */
+    iconRight?: ReactElement;
+    /** Icon to show when toggle is in ON state */
+    iconLeft?: ReactElement;
 }

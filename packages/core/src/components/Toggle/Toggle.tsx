@@ -1,14 +1,26 @@
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
-import { forwardRef, memo, useCallback, useMemo } from 'react';
+import { cloneElement, FC, forwardRef, memo, useCallback, useMemo } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './Toggle.styled';
 import { ToggleProps } from './types';
 
 const Component: FC<ToggleProps> = memo(
     forwardRef((props, ref) => {
-        const { id, size, label, required, labelPosition, labelVariant, labelWeight, labelColor, fullWidth, onChange, ...restProps } =
-            props;
+        const {
+            id,
+            size,
+            label,
+            required,
+            labelPosition,
+            labelVariant,
+            labelWeight,
+            labelColor,
+            fullWidth,
+            onChange,
+            iconLeft,
+            iconRight,
+            ...restProps
+        } = props;
 
         const changeHandler = useCallback(
                 (e: any) => {
@@ -31,11 +43,13 @@ const Component: FC<ToggleProps> = memo(
                     </FieldWithLabel.Label>
                 )}
                 <Styled.Wrapper size={size} disabled={restProps.disabled}>
-                    {
-                        // @ts-ignore
-                        <Styled.Checkbox ref={ref} id={label} size={size} required={required} onChange={changeHandler} {...restProps} />
-                    }
-                    <Styled.Circle size={size} />
+                    {/* @ts-ignore */}
+                    <Styled.Checkbox ref={ref} id={label} size={size} required={required} onChange={changeHandler} {...restProps} />
+                    <Styled.Switch>
+                        {iconLeft && <Styled.OnIcon size={size}>{cloneElement(iconLeft, { size })}</Styled.OnIcon>}
+                        <Styled.Circle size={size} />
+                        {iconRight && <Styled.OffIcon size={size}>{cloneElement(iconRight, { size })}</Styled.OffIcon>}
+                    </Styled.Switch>
                 </Styled.Wrapper>
             </FieldWithLabel>
         );

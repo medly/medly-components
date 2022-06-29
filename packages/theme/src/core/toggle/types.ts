@@ -7,4 +7,5 @@ export interface ToggleTheme {
     bgColor: string;
     outlineColor: string;
     disabledBgColor: string;
+    iconColor: string;
 }
