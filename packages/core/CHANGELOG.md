@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.15.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.15.1...@medly-components/core@6.15.2) (2022-06-29)
+
+
+### Bug Fixes
+
+* **core:** fix table security issue ([#681](https://github.com/medly/medly-components/issues/681)) ([e7240a6](https://github.com/medly/medly-components/commit/e7240a656182585c4fcdd4086ea315cbe0b44a52))
+
+
+
+
+
 ## [6.15.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.15.0...@medly-components/core@6.15.1) (2022-06-29)
 
 
