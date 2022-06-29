@@ -29,9 +29,6 @@ const Component: FC<FileInputProps> = memo(
                 (event: any) => {
                     disabled && event.preventDefault();
                     onFocus && onFocus(event);
-                    if (inputRef.current) {
-                        inputRef.current.value = '';
-                    }
                 },
                 [disabled, onFocus]
             ),
