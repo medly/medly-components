@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.15.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.15.0...@medly-components/core@6.15.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* **core:** removed manual fileinput value change using ref on label click ([#679](https://github.com/medly/medly-components/issues/679)) ([ca1f9ee](https://github.com/medly/medly-components/commit/ca1f9ee6dd578fe88ff88ce21d9f1cbbf8ca69ce))
+
+
+
+
+
 # [6.15.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.14.1...@medly-components/core@6.15.0) (2022-06-28)
 
 
