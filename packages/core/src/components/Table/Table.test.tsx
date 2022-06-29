@@ -34,6 +34,27 @@ describe('Table component', () => {
         expect(screen.getByText('No Result Row Text')).toBeInTheDocument();
     });
 
+    it('should render HiddenDiv containing HTML tags as plain text', () => {
+        const xssPayload = [
+            {
+                id: 8,
+                name: 'Albus Dumbledore',
+                age: '12',
+                color: 'red,green',
+                rating: '<img src=x onerror=confirm`1`>',
+                isPassed: true,
+                marks: {
+                    maths: 6,
+                    science: 4
+                }
+            }
+        ];
+        const { container } = renderTable({
+            data: xssPayload
+        });
+        expect(container).toMatchSnapshot();
+    });
+
     describe('pagination', () => {
         const mockOnPageChange = jest.fn(),
             commonProps = {
