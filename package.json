@@ -36,6 +36,7 @@
         "clean": "lerna clean && rimraf node_modules",
         "commit": "git-cz",
         "init:commitizen": "commitizen init cz-lerna-changelog --yarn --dev --exact --force",
+        "unlink:packages": "lerna exec -- yarn unlink",
         "link:packages": "lerna link && lerna exec -- yarn link",
         "lint:css": "stylelint 'packages/**/src/**/*.tsx'",
         "lint:ts": "eslint 'packages/**/src/**/*.{ts,tsx}'",
