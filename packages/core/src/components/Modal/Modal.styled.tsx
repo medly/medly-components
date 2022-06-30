@@ -1,3 +1,4 @@
+import { breakpoints, media } from '@medly-components/utils';
 import { rgba } from 'polished';
 import styled from 'styled-components';
 import { InnerContainerProps, ModalBackgroundProps } from './types';
@@ -42,6 +43,7 @@ export const ModalBackgroundStyled = styled.div<ModalBackgroundProps>`
 export const InnerContainerStyled = styled.div<InnerContainerProps>`
     display: flex;
     flex-direction: column;
+    flex: 1;
     overflow-y: ${({ overflowVisible }) => !overflowVisible && 'auto'};
     overflow-x: ${({ overflowVisible }) => !overflowVisible && 'hidden'};
 
@@ -57,12 +59,11 @@ export const InnerContainerStyled = styled.div<InnerContainerProps>`
         background-color: ${({ theme }) => theme.modal.scrollbarThumbColor};
     }
 
-    @media (min-width: 768px) {
-        overflow: ${({ overflowVisible }) => !overflowVisible && 'hidden'};
-        flex: 1;
+    ${({ theme, overflowVisible }) => media(breakpoints(theme.breakpoints).up('M'))`
+        overflow: ${!overflowVisible ? 'hidden' : ''};
 
         &::-webkit-scrollbar-track {
             margin-top: 0;
         }
-    }
+    `}
 `;

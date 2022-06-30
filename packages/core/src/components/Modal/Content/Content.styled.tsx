@@ -1,3 +1,4 @@
+import { breakpoints, media } from '@medly-components/utils';
 import styled, { css } from 'styled-components';
 import { getRemFromPx } from '../helpers';
 import { StyledProps } from './types';
@@ -8,15 +9,23 @@ const getPadding = ({ scrollState, headerHeight }: StyledProps) => {
     const scrollPositionRem = getRemFromPx(scrollPosition);
     const headerHeightRem = getRemFromPx(headerHeight);
 
+    const isWithinThreshold = 6.6 - scrollPositionRem > 2.1;
+
     // As the header/content area is scrolled, the top padding of the header component decreases from 6.6rem to 2.1rem.
     // When the top padding of the header component hits 2.1rem, the header becomes fixed. In order to keep the content
     // component positioned correctly, we add top padding to the content component equal to height of the (now fixed) header.
     return css`
-        padding: ${({ theme }) => `0 ${theme.spacing.S4}`};
+        padding: ${({ theme }) => `${theme.spacing.S2} ${theme.spacing.M2} ${theme.spacing.M1}`};
 
-        @media (max-width: 768px) {
-            padding-top: ${6.6 - scrollPositionRem > 2.1 ? '0' : `${headerHeightRem}rem `};
-        }
+        ${({ theme }) => media(breakpoints(theme.breakpoints).down('S'))`
+            padding: ${isWithinThreshold ? `${theme.spacing.S2}` : `${4.5 + headerHeightRem}rem`} ${theme.spacing.S4} ${theme.spacing.M1};
+        `}
+
+        ${({ theme }) => `
+            @media (min-width: ${theme.breakpoints.M.min}px) and (max-height: 700px) {
+                padding-bottom: ${theme.spacing.S1};
+            }
+        `}
     `;
 };
 
