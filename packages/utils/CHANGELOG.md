@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/medly/medly-components/compare/@medly-components/utils@2.1.3...@medly-components/utils@2.2.0) (2022-06-30)
+
+
+### Features
+
+* **core:** update modal styling and behavior ([#676](https://github.com/medly/medly-components/issues/676)) ([9dbc17d](https://github.com/medly/medly-components/commit/9dbc17d55e13ef5d7608807594a12f62ced3443a))
+
+
+
+
+
 ## [2.1.3](https://github.com/medly/medly-components/compare/@medly-components/utils@2.1.2...@medly-components/utils@2.1.3) (2022-06-28)
 
 **Note:** Version bump only for package @medly-components/utils
