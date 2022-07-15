@@ -44,7 +44,7 @@ const Component: FC<ModalProps> = memo(
             }, [onCloseModal, manager]),
             handleBackgroundClick = useCallback(() => {
                 shouldCloseOnOutsideClick && handleCloseModal();
-            }, [shouldCloseOnOutsideClick, onCloseModal]),
+            }, [shouldCloseOnOutsideClick, handleCloseModal]),
             handleAnimationEnd = useCallback(() => {
                 if (!open) {
                     setShouldRender(false);
