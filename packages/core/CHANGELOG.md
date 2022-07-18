@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.16.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.16.0...@medly-components/core@6.16.1) (2022-07-18)
+
+
+### Bug Fixes
+
+* should not close modal on clicking on modal  ([#683](https://github.com/medly/medly-components/issues/683)) ([42ab863](https://github.com/medly/medly-components/commit/42ab863daaf71ebcd1a3490ae40350cb8254e22d)), closes [#682](https://github.com/medly/medly-components/issues/682)
+
+
+
+
+
 # [6.16.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.15.2...@medly-components/core@6.16.0) (2022-06-30)
 
 
