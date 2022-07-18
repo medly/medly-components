@@ -48,7 +48,11 @@ const Component: FC<DatePickerProps> = memo(
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
         useEffect(() => {
-            date && setTextValue(format(date, displayFormat!).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
+            if (date === null) {
+                setTextValue('');
+            } else if (date) {
+                setTextValue(format(date, displayFormat!).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
+            }
         }, [date, displayFormat]);
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
