@@ -88,6 +88,14 @@ describe('Modal component', () => {
         expect(mockOnCloseModal).toBeCalled();
     });
 
+    it('should not call onCloseModal on click on modal', () => {
+        const mockOnCloseModal = jest.fn();
+        const { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true });
+        fireEvent.click(container.querySelector('#medly-modal-popup') as HTMLDivElement);
+        expect(mockOnCloseModal).not.toBeCalled();
+        expect(container.querySelector('#medly-modal-popup')).toBeInTheDocument();
+    });
+
     it('should be able to render any JSX element in header', () => {
         const mockOnCloseModal = jest.fn();
         const { container } = render(
