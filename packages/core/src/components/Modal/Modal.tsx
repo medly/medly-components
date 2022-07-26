@@ -43,7 +43,8 @@ const Component: FC<ModalProps> = memo(
                 onCloseModal && onCloseModal();
             }, [onCloseModal, manager]),
             handleBackgroundClick = useCallback(
-                (event: MouseEvent) => event.currentTarget === event.target && shouldCloseOnOutsideClick && handleCloseModal(),
+                (event: React.MouseEvent<HTMLDivElement>) =>
+                    event.currentTarget === event.target && shouldCloseOnOutsideClick && handleCloseModal(),
                 [shouldCloseOnOutsideClick, handleCloseModal]
             ),
             handleAnimationEnd = useCallback(() => {
