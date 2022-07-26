@@ -42,9 +42,10 @@ const Component: FC<ModalProps> = memo(
                 if (modalRef.current) manager.remove(modalRef.current);
                 onCloseModal && onCloseModal();
             }, [onCloseModal, manager]),
-            handleBackgroundClick = useCallback(() => {
-                shouldCloseOnOutsideClick && handleCloseModal();
-            }, [shouldCloseOnOutsideClick, handleCloseModal]),
+            handleBackgroundClick = useCallback(
+                (event: MouseEvent) => event.currentTarget === event.target && shouldCloseOnOutsideClick && handleCloseModal(),
+                [shouldCloseOnOutsideClick, handleCloseModal]
+            ),
             handleAnimationEnd = useCallback(() => {
                 if (!open) {
                     setShouldRender(false);
