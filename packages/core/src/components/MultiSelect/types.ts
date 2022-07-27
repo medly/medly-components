@@ -1,5 +1,5 @@
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
-import type { Dispatch, FC, RefObject, SetStateAction } from 'react';
+import type { Dispatch, FC, ReactNode, RefObject, SetStateAction } from 'react';
 
 export interface Option {
     value: any;
@@ -61,8 +61,10 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     prefix?: FC<any>;
     /** Allows you to create dynamic options on the fly */
     isCreatable?: boolean;
-    /** Shows all options when search value does not match any option. Default value is `true` */
+    /** Shows all options when search value does not match any option */
     showAllOptionsOnNoResult?: boolean;
+    /** React component to be shown when no result is found. This requires showAllOptionsOnNoResult to be set as false */
+    noResultComponent?: ReactNode;
 }
 
 export interface SelectWrapperProps extends Omit<MultiSelectProps, 'ref' | 'options'>, WithThemeProp {

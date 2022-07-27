@@ -1,5 +1,5 @@
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
-import { Dispatch, SetStateAction } from 'react';
+import { Dispatch, ReactNode, SetStateAction } from 'react';
 import { Option } from '../types';
 
 export interface OptionsProps extends Omit<HTMLProps<HTMLUListElement>, 'size'> {
@@ -13,6 +13,7 @@ export interface OptionsProps extends Omit<HTMLProps<HTMLUListElement>, 'size'> 
     inputValue?: string;
     showCreatableOption?: boolean;
     handleCreatableOptionClick?: (op: Option) => void;
+    noResultComponent?: ReactNode;
 }
 
 export interface OptionStyledProps extends HTMLProps<HTMLLIElement>, WithThemeProp {
