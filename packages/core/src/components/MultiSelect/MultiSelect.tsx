@@ -32,7 +32,7 @@ const Component: FC<MultiSelectProps> = memo(
                 showTooltipForHelperAndErrorText,
                 prefix,
                 isCreatable = false,
-                showAllOptionsOnNoResult = true,
+                hideOptionsOnNoResult = false,
                 noResultComponent,
                 ...restProps
             } = props,
@@ -81,7 +81,7 @@ const Component: FC<MultiSelectProps> = memo(
                     if (!isSelectKeyPressed) {
                         setInputValue(value);
                         const newOptions = filterOptions(defaultOptions, value);
-                        (newOptions.length || !showAllOptionsOnNoResult) && value ? setOptions(newOptions) : updateToDefaultOptions();
+                        (newOptions.length || hideOptionsOnNoResult) && value ? setOptions(newOptions) : updateToDefaultOptions();
                         onInputChange && onInputChange(value);
                         !areOptionsVisible && setOptionsVisibilityState(true);
                     }
@@ -166,6 +166,8 @@ const Component: FC<MultiSelectProps> = memo(
 
         useKeyboardNavigation({ options, isParentCursorEnabled, setCursor, handleOuterClick, ref: wrapperRef });
 
+        const NoResultComponentRenderer = noResultComponent && !options.length && hideOptionsOnNoResult ? noResultComponent : <></>;
+
         const ChipEl = () => (
             <InputSuffix
                 id={`${selectId}-count`}
@@ -232,7 +234,7 @@ const Component: FC<MultiSelectProps> = memo(
                         setIsParentCursorEnabled={setIsParentCursorEnabled}
                         showCreatableOption={!!showCreatableOption}
                         handleCreatableOptionClick={handleCreatableOptionClick}
-                        noResultComponent={noResultComponent && !options.length && !showAllOptionsOnNoResult ? noResultComponent : <></>}
+                        noResultComponent={NoResultComponentRenderer}
                     />
                 )}
             </Wrapper>

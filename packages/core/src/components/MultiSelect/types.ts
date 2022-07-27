@@ -62,8 +62,8 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     /** Allows you to create dynamic options on the fly */
     isCreatable?: boolean;
     /** Shows all options when search value does not match any option */
-    showAllOptionsOnNoResult?: boolean;
-    /** React component to be shown when no result is found. This requires showAllOptionsOnNoResult to be set as false */
+    hideOptionsOnNoResult?: boolean;
+    /** React component to be shown when no result is found. This requires hideOptionsOnNoResult to be set as false */
     noResultComponent?: ReactNode;
 }
 

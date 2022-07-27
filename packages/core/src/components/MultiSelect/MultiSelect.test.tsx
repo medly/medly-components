@@ -194,26 +194,26 @@ describe('MultiSelect component', () => {
         expect(screen.queryByRole('list')).toBeVisible();
     });
 
-    it('should not show options if they do not match and showAllOptionsOnNoResult is false', () => {
-        render(<MultiSelect options={options} showAllOptionsOnNoResult={false} />);
+    it('should not show options if they do not match and hideOptionsOnNoResult is true', () => {
+        render(<MultiSelect options={options} hideOptionsOnNoResult={true} />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
         expect(screen.queryByText('Dummy2')).not.toBeInTheDocument();
     });
 
-    it('should show all options if search query does not match and showAllOptionsOnNoResult is true', () => {
-        render(<MultiSelect options={options} showAllOptionsOnNoResult={true} />);
+    it('should show all options if search query does not match and hideOptionsOnNoResult is false', () => {
+        render(<MultiSelect options={options} hideOptionsOnNoResult={false} />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
         expect(screen.getByText('Dummy2')).toBeInTheDocument();
     });
 
-    it('should show no result component if no results are found and showAllOptionsOnNoResult is false', () => {
-        render(<MultiSelect options={options} showAllOptionsOnNoResult={false} noResultComponent={<p>No Result Component</p>} />);
+    it('should show no result component if no results are found and hideOptionsOnNoResult is true', () => {
+        render(<MultiSelect options={options} hideOptionsOnNoResult={true} noResultComponent={<p>No Result Component</p>} />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
         expect(screen.getByText('No Result Component')).toBeInTheDocument();
     });
 
-    it('should not show no result component if no results are found and showAllOptionsOnNoResult is true', () => {
-        render(<MultiSelect options={options} showAllOptionsOnNoResult={true} noResultComponent={<p>No Result Component</p>} />);
+    it('should not show no result component if no results are found and hideOptionsOnNoResult is false', () => {
+        render(<MultiSelect options={options} hideOptionsOnNoResult={false} noResultComponent={<p>No Result Component</p>} />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
         expect(screen.queryByText('No Result Component')).not.toBeInTheDocument();
     });
