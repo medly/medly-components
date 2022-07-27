@@ -61,6 +61,8 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     prefix?: FC<any>;
     /** Allows you to create dynamic options on the fly */
     isCreatable?: boolean;
+    /** Shows all options when search value does not match any option. Default value is `true` */
+    showAllOptionsOnNoResult?: boolean;
 }
 
 export interface SelectWrapperProps extends Omit<MultiSelectProps, 'ref' | 'options'>, WithThemeProp {
