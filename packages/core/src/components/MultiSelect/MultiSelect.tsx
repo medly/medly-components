@@ -32,6 +32,7 @@ const Component: FC<MultiSelectProps> = memo(
                 showTooltipForHelperAndErrorText,
                 prefix,
                 isCreatable = false,
+                showAllOptionsOnNoResult = true,
                 ...restProps
             } = props,
             selectId = useMemo(() => id || label?.toLocaleLowerCase().replace(' ', '') || 'medly-multiSelect', [id, label]);
@@ -78,8 +79,8 @@ const Component: FC<MultiSelectProps> = memo(
                 ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
                     if (!isSelectKeyPressed) {
                         setInputValue(value);
-                        const newOptions = filterOptions(options, value);
-                        newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
+                        const newOptions = filterOptions(defaultOptions, value);
+                        (newOptions.length || !showAllOptionsOnNoResult) && value ? setOptions(newOptions) : updateToDefaultOptions();
                         onInputChange && onInputChange(value);
                         !areOptionsVisible && setOptionsVisibilityState(true);
                     }
