@@ -78,7 +78,8 @@ const Component: FC<DialogBoxProps> = memo(
 Component.defaultProps = {
     id: 'medly-dialog-box',
     open: false,
-    shouldCloseOnOutsideClick: false
+    shouldCloseOnOutsideClick: false,
+    showCloseIcon: false
 };
 Component.displayName = 'DialogBox';
 export const DialogBox: FC<DialogBoxProps> & WithStyle & DialogBoxStaticProps = Object.assign(Component, {
