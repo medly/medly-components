@@ -27,6 +27,8 @@ describe('MultiSelect component', () => {
         fireEvent.keyUp(container, { key: 'ArrowUp', code: 38 });
     };
 
+    const NoResultComponent = () => <p>No Result Component</p>;
+
     it('should render correctly with default props', () => {
         const mockOnChange = jest.fn(),
             { container } = render(<MultiSelect value={['Dummy1', 'Dummy2']} options={options} onChange={mockOnChange} />);
@@ -207,13 +209,13 @@ describe('MultiSelect component', () => {
     });
 
     it('should show no result component if no results are found and hideOptionsOnNoResult is true', () => {
-        render(<MultiSelect options={options} hideOptionsOnNoResult={true} noResultComponent={<p>No Result Component</p>} />);
+        render(<MultiSelect options={options} hideOptionsOnNoResult={true} noResultComponent={<NoResultComponent />} />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
         expect(screen.getByText('No Result Component')).toBeInTheDocument();
     });
 
     it('should not show no result component if no results are found and hideOptionsOnNoResult is false', () => {
-        render(<MultiSelect options={options} hideOptionsOnNoResult={false} noResultComponent={<p>No Result Component</p>} />);
+        render(<MultiSelect options={options} hideOptionsOnNoResult={false} noResultComponent={<NoResultComponent />} />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
         expect(screen.queryByText('No Result Component')).not.toBeInTheDocument();
     });
