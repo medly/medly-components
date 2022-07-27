@@ -166,7 +166,7 @@ const Component: FC<MultiSelectProps> = memo(
 
         useKeyboardNavigation({ options, isParentCursorEnabled, setCursor, handleOuterClick, ref: wrapperRef });
 
-        const NoResultComponentRenderer = noResultComponent && !options.length && hideOptionsOnNoResult ? noResultComponent : <></>;
+        const noResultComponentRenderer = noResultComponent && !options.length && hideOptionsOnNoResult ? noResultComponent : <></>;
 
         const ChipEl = () => (
             <InputSuffix
@@ -234,7 +234,7 @@ const Component: FC<MultiSelectProps> = memo(
                         setIsParentCursorEnabled={setIsParentCursorEnabled}
                         showCreatableOption={!!showCreatableOption}
                         handleCreatableOptionClick={handleCreatableOptionClick}
-                        noResultComponent={NoResultComponentRenderer}
+                        noResultComponent={noResultComponentRenderer}
                     />
                 )}
             </Wrapper>
