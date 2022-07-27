@@ -33,6 +33,7 @@ const Component: FC<MultiSelectProps> = memo(
                 prefix,
                 isCreatable = false,
                 showAllOptionsOnNoResult = true,
+                noResultComponent,
                 ...restProps
             } = props,
             selectId = useMemo(() => id || label?.toLocaleLowerCase().replace(' ', '') || 'medly-multiSelect', [id, label]);
@@ -231,6 +232,7 @@ const Component: FC<MultiSelectProps> = memo(
                         setIsParentCursorEnabled={setIsParentCursorEnabled}
                         showCreatableOption={!!showCreatableOption}
                         handleCreatableOptionClick={handleCreatableOptionClick}
+                        noResultComponent={noResultComponent && !options.length && !showAllOptionsOnNoResult ? noResultComponent : <></>}
                     />
                 )}
             </Wrapper>

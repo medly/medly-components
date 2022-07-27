@@ -19,7 +19,8 @@ const Component: FC<OptionsProps> = memo(props => {
         setIsParentCursorEnabled,
         onOptionClick,
         showCreatableOption,
-        handleCreatableOptionClick
+        handleCreatableOptionClick,
+        noResultComponent
     } = props;
 
     const selectedValues = useMemo(() => values.map(op => op.value), [values]),
@@ -107,6 +108,7 @@ const Component: FC<OptionsProps> = memo(props => {
                             )}
                         </Fragment>
                     ))}
+                    {noResultComponent}
                 </Styled.Options>
             )}
         </Styled.OptionsWrapper>
