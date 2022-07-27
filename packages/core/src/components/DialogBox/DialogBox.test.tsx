@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import { DialogBox } from './DialogBox';
 import { DialogBoxProps } from './types';
 
@@ -68,5 +68,12 @@ describe('DialogBox component', () => {
             </DialogBox>
         );
         expect(container.querySelector('p')).toBeInTheDocument();
+    });
+
+    it('should call onCloseModal on click on close icon', () => {
+        const mockOnCloseModal = jest.fn();
+        dialogBoxRenderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true, showCloseIcon: true });
+        fireEvent.click(screen.getByTestId('medly-dialog-box-close-button') as HTMLElement);
+        expect(mockOnCloseModal).toBeCalled();
     });
 });

@@ -356,6 +356,7 @@ exports[`DialogBox component should render properly with close icon when it is o
     >
       <svg
         class="c2 c3"
+        data-testid="medly-dialog-box-close-button"
         fill="none"
         height="1em"
         id="medly-dialog-box-close-button"

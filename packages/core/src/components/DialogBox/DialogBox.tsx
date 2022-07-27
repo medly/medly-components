@@ -65,6 +65,7 @@ const Component: FC<DialogBoxProps> = memo(
                             title={`${id}-close-icon`}
                             size="M"
                             variant="solid"
+                            data-testid={`${id}-close-button`}
                             onClick={handleCloseModal}
                         />
                     )}
