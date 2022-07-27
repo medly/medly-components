@@ -95,7 +95,40 @@ The `MultiSelect` component allows you to select multiple items from a drop-down
     </Story>
 </Preview>
 
-## 4. MultiSelect component with creatable options
+## 4. MultiSelect component with custom no result found component
+
+You can pass a custom React component to be shown when no results are found in multi select search. For this you'll need to pass `showAllOptionsOnNoResult` prop as false and pass your component to `noResultComponent` prop.
+
+<Preview withToolbar>
+    <Story name="WithNoResultFound">
+        {() => {
+            const [values, setValues] = useState(['lorem pharmacy', 'a pharmacy']);
+            return (
+                <MultiSelect
+                    options={options}
+                    values={values}
+                    onChange={setValues}
+                    size={select('Size', sizes, 'M')}
+                    disabled={boolean('Disabled', false)}
+                    fullWidth={boolean('Full Width', false)}
+                    required={boolean('Required', false)}
+                    label={text('Label', 'Pharmacy')}
+                    placeholder="Search Pharmacy"
+                    minWidth={text('Min Width', '20rem')}
+                    isSearchable={boolean('Is Searchable', true)}
+                    helperText={text('Helper Text', 'We will show reports based on Pharmacy')}
+                    errorText={text('Error Text', '')}
+                    variant={select('Variant', variants, 'filled')}
+                    prefix={StarIcon}
+                    showAllOptionsOnNoResult={false}
+                    noResultComponent={<p style={{ textAlign: 'center' }}>No Result found</p>}
+                />
+            );
+        }}
+    </Story>
+</Preview>
+
+## 5. MultiSelect component with creatable options
 
 This feature allows you to create new options apart from the existing ones. The `isCreatable` flag must be set to true.
 
