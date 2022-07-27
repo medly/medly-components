@@ -194,6 +194,18 @@ describe('MultiSelect component', () => {
         expect(screen.queryByRole('list')).toBeVisible();
     });
 
+    it('should not show options if they do not match and showAllOptionsOnNoResult is false', () => {
+        render(<MultiSelect options={options} showAllOptionsOnNoResult={false} />);
+        fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
+        expect(screen.queryByText('Dummy2')).not.toBeInTheDocument();
+    });
+
+    it('should show all options if search query does not match and showAllOptionsOnNoResult is true', () => {
+        render(<MultiSelect options={options} showAllOptionsOnNoResult={true} />);
+        fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
+        expect(screen.getByText('Dummy2')).toBeInTheDocument();
+    });
+
     it('should not show options if options are hidden', () => {
         render(<MultiSelect id="multiSelect" options={options} disabled={false} />);
         const wrapper = document.getElementById('multiSelect-wrapper') as HTMLDivElement;
