@@ -1,5 +1,5 @@
 import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
-import { FC, forwardRef, memo, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react';
+import { FC, forwardRef, memo, MouseEvent, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
@@ -43,7 +43,7 @@ const Component: FC<ModalProps> = memo(
                 onCloseModal && onCloseModal();
             }, [onCloseModal, manager]),
             handleBackgroundClick = useCallback(
-                (event: React.MouseEvent<HTMLDivElement>) =>
+                (event: MouseEvent<HTMLDivElement>) =>
                     event.currentTarget === event.target && shouldCloseOnOutsideClick && handleCloseModal(),
                 [shouldCloseOnOutsideClick, handleCloseModal]
             ),
