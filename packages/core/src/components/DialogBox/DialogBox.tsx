@@ -8,10 +8,21 @@ import Header from './Header';
 import Popup from './Popup';
 import { DialogBoxProps, DialogBoxStaticProps } from './types';
 import type { FC } from 'react';
+import CloseIcon from '../Modal/CloseIcon';
 
 const Component: FC<DialogBoxProps> = memo(
     forwardRef((props, ref) => {
-        const { id, open, onCloseModal, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
+        const {
+                id,
+                open,
+                onCloseModal,
+                children,
+                minWidth,
+                shouldCloseOnOutsideClick,
+                minHeight,
+                showCloseIcon = false,
+                ...restProps
+            } = props,
             isEscPressed = useKeyPress('Escape'),
             dialogBoxRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
             [shouldRender, setShouldRender] = useState(open);
@@ -41,9 +52,22 @@ const Component: FC<DialogBoxProps> = memo(
             open && isEscPressed && onCloseModal && onCloseModal();
         }, [open, isEscPressed]);
 
+        const handleCloseModal = useCallback(() => {
+            onCloseModal && onCloseModal();
+        }, [onCloseModal]);
+
         return shouldRender ? (
             <DialogBoxBackgroundStyled {...{ ...restProps, id, open }} onClick={handleBackgroundClick}>
                 <Popup ref={dialogBoxRef} id={`${id}-popup`} onAnimationEnd={handleAnimationEnd} {...{ minWidth, minHeight, open }}>
+                    {showCloseIcon && (
+                        <CloseIcon
+                            id={`${id}-close-button`}
+                            title={`${id}-close-icon`}
+                            size="M"
+                            variant="solid"
+                            onClick={handleCloseModal}
+                        />
+                    )}
                     <DialogBoxContext.Provider value={{ id: id! }}>{children}</DialogBoxContext.Provider>
                 </Popup>
             </DialogBoxBackgroundStyled>

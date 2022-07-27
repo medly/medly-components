@@ -7,10 +7,11 @@ const dialogBoxRenderer = ({
     onCloseModal = jest.fn(),
     minWidth,
     minHeight,
-    shouldCloseOnOutsideClick = false
+    shouldCloseOnOutsideClick = false,
+    showCloseIcon = false
 }: DialogBoxProps) =>
     render(
-        <DialogBox {...{ open, onCloseModal, minHeight, minWidth, shouldCloseOnOutsideClick }}>
+        <DialogBox {...{ open, onCloseModal, minHeight, minWidth, shouldCloseOnOutsideClick, showCloseIcon }}>
             <DialogBox.Header>
                 <p>Demo Header</p>
             </DialogBox.Header>
@@ -28,6 +29,11 @@ const dialogBoxRenderer = ({
 describe('DialogBox component', () => {
     it('should render properly when it is open', () => {
         const { container } = dialogBoxRenderer({ open: true, minWidth: '200px', minHeight: '200px' });
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly with close icon when it is open', () => {
+        const { container } = dialogBoxRenderer({ open: true, minWidth: '200px', minHeight: '200px', showCloseIcon: true });
         expect(container).toMatchSnapshot();
     });
 
