@@ -12,11 +12,12 @@ const getPosition = ({ scrollState }: Props) => {
 
     return css`
         position: ${isWithinThreshold ? 'relative' : 'fixed'};
-        padding: ${({ theme }) => `${isWithinThreshold ? theme.spacing.L2 : theme.spacing.S4} ${theme.spacing.S4} ${theme.spacing.S4}`};
+        padding: ${({ theme }) =>
+            `${isWithinThreshold ? theme.spacing.L2 : theme.spacing.S4} ${theme.spacing.L2} ${theme.spacing.S4} ${theme.spacing.S4}`};
 
         ${({ theme }) => media(breakpoints(theme.breakpoints).up('M'))`
             position: relative;
-            padding: ${theme.spacing.M2} ${theme.spacing.M2} ${theme.spacing.S4};
+            padding: ${theme.spacing.M2} ${theme.spacing.L2} ${theme.spacing.S4} ${theme.spacing.M2};
         `}
 
         ${({ theme }) => `
@@ -48,8 +49,8 @@ export const Header = styled('div')<Props>`
     box-sizing: border-box;
     background-color: ${({ theme }) => theme.modal.backgroundColor};
     width: 100%;
-    border-top-left-radius: 1.6rem;
-    border-top-right-radius: 1.6rem;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
     z-index: 10;
     color: ${({ theme }) => theme.modal.headerColor};
     ${getPosition}

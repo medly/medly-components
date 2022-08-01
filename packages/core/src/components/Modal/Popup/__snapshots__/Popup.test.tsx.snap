@@ -14,8 +14,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   min-height: 200px;
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
   box-sizing: border-box;
-  border-top-left-radius: 1.6rem;
-  border-top-right-radius: 1.6rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
   overflow: hidden;
 }
 
@@ -74,8 +74,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   min-height: 200px;
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
   box-sizing: border-box;
-  border-top-left-radius: 1.6rem;
-  border-top-right-radius: 1.6rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
   overflow: hidden;
 }
 

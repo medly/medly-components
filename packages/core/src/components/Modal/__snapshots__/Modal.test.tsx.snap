@@ -180,12 +180,12 @@ exports[`Modal component should render properly when it is open 1`] = `
   box-sizing: border-box;
   background-color: #ffffff;
   width: 100%;
-  border-top-left-radius: 1.6rem;
-  border-top-right-radius: 1.6rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
   z-index: 10;
   color: #13181D;
   position: relative;
-  padding: 5.6rem 1.6rem 1.6rem;
+  padding: 5.6rem 5.6rem 1.6rem 1.6rem;
 }
 
 .c0 {
@@ -254,8 +254,8 @@ exports[`Modal component should render properly when it is open 1`] = `
   min-height: 200px;
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
   box-sizing: border-box;
-  border-top-left-radius: 1.6rem;
-  border-top-right-radius: 1.6rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
   overflow: hidden;
 }
 
@@ -305,7 +305,7 @@ exports[`Modal component should render properly when it is open 1`] = `
 @media (min-width:768px) {
   .c5 {
     position: relative;
-    padding: 3.2rem 3.2rem 1.6rem;
+    padding: 3.2rem 5.6rem 1.6rem 3.2rem;
   }
 }
 
