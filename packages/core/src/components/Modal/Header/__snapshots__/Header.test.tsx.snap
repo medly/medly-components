@@ -18,19 +18,19 @@ exports[`Modal component header should render properly at small screen size 1`] 
   box-sizing: border-box;
   background-color: #ffffff;
   width: 100%;
-  border-top-left-radius: 1.6rem;
-  border-top-right-radius: 1.6rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
   z-index: 10;
   color: #13181D;
   position: fixed;
-  padding: 1.6rem 1.6rem 1.6rem;
+  padding: 1.6rem 5.6rem 1.6rem 1.6rem;
   box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6);
 }
 
 @media (min-width:768px) {
   .c0 {
     position: relative;
-    padding: 3.2rem 3.2rem 1.6rem;
+    padding: 3.2rem 5.6rem 1.6rem 3.2rem;
   }
 }
 

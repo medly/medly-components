@@ -77,8 +77,7 @@ const Component: FC<ModalProps> = memo(
             if (shouldRender && modalRef.current) manager.add(modalRef.current);
         }, [shouldRender, manager]);
 
-        const contentRef = useRef<HTMLDivElement>(null);
-        const handleScroll = useScrollState({ ref: contentRef, scrollState, dispatch });
+        const handleScroll = useScrollState({ ref: innerContainerRef, scrollState, dispatch });
 
         return shouldRender ? (
             <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>

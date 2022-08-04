@@ -47,8 +47,8 @@ export const Popup = styled('div')<ModalPopupProps>`
     min-height: ${({ minHeight }) => minHeight || '25.6rem'};
     box-shadow: 0 0.4rem 3.2 ${({ theme }) => theme.modal.shadowColor};
     box-sizing: border-box;
-    border-top-left-radius: 1.6rem;
-    border-top-right-radius: 1.6rem;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
     overflow: ${({ overflowVisible }) => !overflowVisible && `hidden`};
 
     ${({ theme, open }) => media(breakpoints(theme.breakpoints).down('S'))`

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.18.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.17.1...@medly-components/core@6.18.0) (2022-08-02)
+
+
+### Features
+
+* **core:** updated core modal border radius and padding ([#692](https://github.com/medly/medly-components/issues/692)) ([1940b94](https://github.com/medly/medly-components/commit/1940b94020c19cd3da78185292894d5f55bd13d2))
+
+
+
+
+
+## [6.17.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.17.0...@medly-components/core@6.17.1) (2022-07-29)
+
+
+### Bug Fixes
+
+* **core:** datePicker is not reseting the field value when the value prop is null. ([#685](https://github.com/medly/medly-components/issues/685)) ([055d199](https://github.com/medly/medly-components/commit/055d199e6be5245337090a66f048948577bd8395))
+
+
+
+
+
 # [6.17.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.16.2...@medly-components/core@6.17.0) (2022-07-27)
 
 
