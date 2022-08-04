@@ -97,7 +97,7 @@ The `MultiSelect` component allows you to select multiple items from a drop-down
 
 ## 4. MultiSelect component with custom no result found component
 
-You can pass a custom React component to be shown when no results are found in multi select search. For this you'll need to pass `hideOptionsOnNoResult` prop as true and pass your component to `noResultComponent` prop.
+You can pass a custom React component to be shown when no results are found in multi select search. For this you'll need to pass your custom component to `noResultComponent` prop.
 
 <Preview withToolbar>
     <Story name="WithNoResultFound">
@@ -121,7 +121,6 @@ You can pass a custom React component to be shown when no results are found in m
                     variant={select('Variant', variants, 'filled')}
                     prefix={StarIcon}
                     noResultComponent={<p style={{ textAlign: 'center' }}>No Result found</p>}
-                    hideOptionsOnNoResult
                 />
             );
         }}

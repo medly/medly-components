@@ -32,7 +32,6 @@ const Component: FC<MultiSelectProps> = memo(
                 showTooltipForHelperAndErrorText,
                 prefix,
                 isCreatable = false,
-                hideOptionsOnNoResult = false,
                 noResultComponent,
                 ...restProps
             } = props,
@@ -81,7 +80,7 @@ const Component: FC<MultiSelectProps> = memo(
                     if (!isSelectKeyPressed) {
                         setInputValue(value);
                         const newOptions = filterOptions(defaultOptions, value);
-                        (newOptions.length || hideOptionsOnNoResult) && value ? setOptions(newOptions) : updateToDefaultOptions();
+                        (newOptions.length || noResultComponent) && value ? setOptions(newOptions) : updateToDefaultOptions();
                         onInputChange && onInputChange(value);
                         !areOptionsVisible && setOptionsVisibilityState(true);
                     }
@@ -166,7 +165,7 @@ const Component: FC<MultiSelectProps> = memo(
 
         useKeyboardNavigation({ options, isParentCursorEnabled, setCursor, handleOuterClick, ref: wrapperRef });
 
-        const noResultComponentRenderer = noResultComponent && !options.length && hideOptionsOnNoResult ? noResultComponent : <></>;
+        const noResultComponentRenderer = noResultComponent && !options.length && noResultComponent ? noResultComponent : <></>;
 
         const ChipEl = () => (
             <InputSuffix

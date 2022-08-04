@@ -196,28 +196,22 @@ describe('MultiSelect component', () => {
         expect(screen.queryByRole('list')).toBeVisible();
     });
 
-    it('should not show options if they do not match and hideOptionsOnNoResult is true', () => {
-        render(<MultiSelect options={options} hideOptionsOnNoResult={true} />);
+    it('should not show options if they do not match and noResultComponent is passed', () => {
+        render(<MultiSelect options={options} noResultComponent={<></>} />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
         expect(screen.queryByText('Dummy2')).not.toBeInTheDocument();
     });
 
-    it('should show all options if search query does not match and hideOptionsOnNoResult is false', () => {
-        render(<MultiSelect options={options} hideOptionsOnNoResult={false} />);
+    it('should show all options if search query does not match and noResultComponent is null', () => {
+        render(<MultiSelect options={options} noResultComponent={null} />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
         expect(screen.getByText('Dummy2')).toBeInTheDocument();
     });
 
-    it('should show no result component if no results are found and hideOptionsOnNoResult is true', () => {
-        render(<MultiSelect options={options} hideOptionsOnNoResult={true} noResultComponent={<NoResultComponent />} />);
+    it('should show no result component if no results are found', () => {
+        render(<MultiSelect options={options} noResultComponent={<NoResultComponent />} />);
         fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
         expect(screen.getByText('No Result Component')).toBeInTheDocument();
-    });
-
-    it('should not show no result component if no results are found and hideOptionsOnNoResult is false', () => {
-        render(<MultiSelect options={options} hideOptionsOnNoResult={false} noResultComponent={<NoResultComponent />} />);
-        fireEvent.change(screen.getByRole('textbox'), { target: { value: 'ValueThatDoesNotExist' } });
-        expect(screen.queryByText('No Result Component')).not.toBeInTheDocument();
     });
 
     it('should not show options if options are hidden', () => {
