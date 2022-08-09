@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.19.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.18.0...@medly-components/core@6.19.0) (2022-08-09)
+
+
+### Features
+
+* **core:** add showAllOptionsOnNoResult and noResultComponent in multi select ([#691](https://github.com/medly/medly-components/issues/691)) ([12906ae](https://github.com/medly/medly-components/commit/12906ae4c7af00667848ac0abec3638408456329))
+
+
+
+
+
 # [6.18.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.17.1...@medly-components/core@6.18.0) (2022-08-02)
 
 
