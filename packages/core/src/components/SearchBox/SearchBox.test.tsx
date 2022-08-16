@@ -66,6 +66,12 @@ describe('SearchBox', () => {
             onInputChange: jest.fn()
         };
 
+        it('should render close icon when user provides initial value', () => {
+            const { inputEl } = renderComponent({ ...props, value: 'ABC' });
+            expect(inputEl.value).toHaveLength(3);
+            expect(screen.getByTitle('close icon')).toBeInTheDocument();
+        });
+
         it('should render close icon when user starts typing', () => {
             const { inputEl } = renderComponent(props);
             fireEvent.change(inputEl, { target: { value: 'R' } });

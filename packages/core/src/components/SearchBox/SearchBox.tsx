@@ -124,9 +124,9 @@ const Component: FC<SearchBoxProps> = memo(
                 }
                 onSearch && onSearch(inputRef.current?.value || '');
                 setOptionsVisibilityState(false);
-                setShowCloseIcon(inputRef.current?.value.length !== 0);
                 updateIsTyping(false);
             }
+            setShowCloseIcon(inputRef.current?.value.length !== 0);
         }, [isEnterKeyPress]);
 
         const hasCustomSearchFilter = !!customSearchFilter;
