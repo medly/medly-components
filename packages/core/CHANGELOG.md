@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.19.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.19.0...@medly-components/core@6.19.1) (2022-08-16)
+
+
+### Bug Fixes
+
+* **core:** fix close icon bug, when initial value is provided. ([#693](https://github.com/medly/medly-components/issues/693)) ([f41f88c](https://github.com/medly/medly-components/commit/f41f88c5aad614be74724a5ed6179231d8ee3b35))
+
+
+
+
+
 # [6.19.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.18.0...@medly-components/core@6.19.0) (2022-08-09)
 
 
