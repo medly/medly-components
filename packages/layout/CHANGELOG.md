@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.28](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.27...@medly-components/layout@3.2.28) (2022-08-18)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [3.2.27](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.26...@medly-components/layout@3.2.27) (2022-08-16)
 
 **Note:** Version bump only for package @medly-components/layout
