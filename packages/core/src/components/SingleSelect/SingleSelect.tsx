@@ -53,7 +53,7 @@ const Component: FC<SingleSelectProps> = memo(
         const validate = useCallback(
             () =>
                 setErrorMessage(
-                    (validator && validator(inputRef.current?.value)) ||
+                    (validator && validator(inputRef.current?.value || value)) ||
                         (inputProps.required && !value && 'Please select one option.') ||
                         ''
                 ),
