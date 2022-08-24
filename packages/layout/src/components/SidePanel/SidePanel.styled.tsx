@@ -12,7 +12,6 @@ const rightPositioned = () => css`
 
 export const SidePanelStyled = styled('aside')<SidePanelStyledProps>`
     height: 100vh;
-    height: fill-available;
     background-color: ${({ theme }) => theme.sidePanel.bgColor};
     width: 0;
     position: fixed;

@@ -30,9 +30,6 @@ exports[`Drawer component should render properly with left positioned 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100vh;
-  height: -webkit-fill-available;
-  height: -moz-available;
-  height: fill-available;
   background-color: #ffffff;
   width: 40rem;
   position: fixed;
@@ -200,9 +197,6 @@ exports[`Drawer component should render properly with right positioned 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100vh;
-  height: -webkit-fill-available;
-  height: -moz-available;
-  height: fill-available;
   background-color: #ffffff;
   width: 40rem;
   position: fixed;

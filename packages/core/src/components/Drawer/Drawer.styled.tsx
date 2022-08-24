@@ -34,7 +34,6 @@ export const DrawerStyled = styled('aside')<DrawerStyledProps>`
     display: flex;
     flex-direction: column;
     height: 100vh;
-    height: fill-available;
     background-color: ${({ theme }) => theme.colors.white};
     width: ${props => props.width};
     position: fixed;
