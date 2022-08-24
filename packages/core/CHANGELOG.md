@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.19.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.19.2...@medly-components/core@6.19.3) (2022-08-24)
+
+
+### Reverts
+
+* sidenav and drawer height issue on mobile devices ([#696](https://github.com/medly/medly-components/issues/696)) ([14f1eea](https://github.com/medly/medly-components/commit/14f1eeaaa6680804dc4924bf89ceff5a25bb3682))
+
+
+
+
+
 ## [6.19.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.19.1...@medly-components/core@6.19.2) (2022-08-18)
 
 
