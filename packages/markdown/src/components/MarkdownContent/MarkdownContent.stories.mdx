@@ -18,7 +18,7 @@ import {
 
 # MarkdownContent
 
-You can use this component to render `MarkdownContent`.
+You can use this component to render markdown content.
 
 ## Example
 
@@ -45,7 +45,7 @@ export const Component: FC = () => <MarkdownContent content={'# DummyHeading'} /
 }
 ```
 
-> **Note**: Mock the `@medly-components/markdown` if you're using jest for testing. We have difficulty developing tests because `react-markdown` is a pure ESM module and Jest ships with experimental support for ECMAScript Module. We're on the lookout for a suitable solution. You can read more about it [here](https://jestjs.io/docs/ecmascript-modules).
+> **Note**: If you're using jest for testing, you'll need to mock the `@medly-components/markdown`. Since `react-markdown` is a pure ESM module and Jest ships with experimental support for ECMAScript Module, we are facing issues with writing tests. We are looking for proper solution. You can read more about it [here](https://jestjs.io/docs/ecmascript-modules).
 
 ```jsx
 const DummyComponent: React.FC<{ content: string }> = ({ content }) => <>{content}</>;
@@ -64,7 +64,7 @@ This component offers the following props mentioned in the table below:
 
 ## Syntax Guide
 
-The markdown syntx guide contains various features to format your content.
+The markdown contains various ways to format your content.
 
 ### Features
 
