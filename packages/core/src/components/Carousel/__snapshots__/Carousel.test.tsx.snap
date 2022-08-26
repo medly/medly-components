@@ -1,0 +1,353 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel should render properly with the children of same width 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+}
+
+.c2::-webkit-scrollbar {
+  display: none;
+}
+
+.c1 {
+  position: absolute;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+  left: -5.6rem;
+  top: 50%;
+  visibility: hidden;
+}
+
+.c3 {
+  position: absolute;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+  right: -5.6rem;
+  top: 50%;
+  visibility: hidden;
+}
+
+@media (min-width:0px) {
+  .c2 > * {
+    min-width: calc(100% / 2.75);
+  }
+}
+
+@media (min-width:768px) {
+  .c2 > * {
+    min-width: calc(100% / 3.75);
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 > * {
+    min-width: calc(100% / 6);
+  }
+}
+
+@media (min-width:1280px) {
+  .c2 > * {
+    min-width: calc(100% / 6);
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    display: block;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    left: 0.6rem;
+  }
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (max-width:767px) {
+
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    display: block;
+  }
+}
+
+@media (max-width:767px) {
+  .c3 {
+    right: 0.6rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <svg
+      class="c1"
+      data-testid="carousel-left-arrow-icon"
+      disabled=""
+      fill="#303C48"
+      height="32"
+      viewBox="0 0 256 256"
+      width="32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        fill="none"
+        height="256"
+        width="256"
+      />
+      <polyline
+        fill="none"
+        points="160 208 80 128 160 48"
+        stroke="#303C48"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </svg>
+    <ul
+      class="c2"
+      data-testid="carousel-scroll"
+    >
+      <span>
+        Hello Dummy
+      </span>
+      <span>
+        Hello Dummy
+      </span>
+    </ul>
+    <svg
+      class="c3"
+      data-testid="carousel-right-arrow-icon"
+      disabled=""
+      fill="#303C48"
+      height="32"
+      viewBox="0 0 256 256"
+      width="32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        fill="none"
+        height="256"
+        width="256"
+      />
+      <polyline
+        fill="none"
+        points="96 48 176 128 96 208"
+        stroke="#303C48"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Carousel should render properly with the children of variable width 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+}
+
+.c2::-webkit-scrollbar {
+  display: none;
+}
+
+.c1 {
+  position: absolute;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+  left: -5.6rem;
+  top: 50%;
+  visibility: hidden;
+}
+
+.c3 {
+  position: absolute;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+  right: -5.6rem;
+  top: 50%;
+  visibility: hidden;
+}
+
+@media (min-width:0px) {
+  .c2 > * {
+    min-width: calc(100% / 2.75);
+  }
+}
+
+@media (min-width:768px) {
+  .c2 > * {
+    min-width: calc(100% / 3.75);
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 > * {
+    min-width: calc(100% / 6);
+  }
+}
+
+@media (min-width:1280px) {
+  .c2 > * {
+    min-width: calc(100% / 6);
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    display: block;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    left: 0.6rem;
+  }
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (max-width:767px) {
+
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    display: block;
+  }
+}
+
+@media (max-width:767px) {
+  .c3 {
+    right: 0.6rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <svg
+      class="c1"
+      data-testid="carousel-left-arrow-icon"
+      disabled=""
+      fill="#303C48"
+      height="32"
+      viewBox="0 0 256 256"
+      width="32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        fill="none"
+        height="256"
+        width="256"
+      />
+      <polyline
+        fill="none"
+        points="160 208 80 128 160 48"
+        stroke="#303C48"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </svg>
+    <ul
+      class="c2"
+      data-testid="carousel-scroll"
+    >
+      <span>
+        Hello Dummy Text
+      </span>
+      <span>
+        Hello Dummy
+      </span>
+    </ul>
+    <svg
+      class="c3"
+      data-testid="carousel-right-arrow-icon"
+      disabled=""
+      fill="#303C48"
+      height="32"
+      viewBox="0 0 256 256"
+      width="32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        fill="none"
+        height="256"
+        width="256"
+      />
+      <polyline
+        fill="none"
+        points="96 48 176 128 96 208"
+        stroke="#303C48"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </svg>
+  </div>
+</div>
+`;

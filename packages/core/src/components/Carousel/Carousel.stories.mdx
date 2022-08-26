@@ -1,0 +1,21 @@
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs } from '@storybook/addon-knobs';
+import { defaultTheme } from '@medly-components/theme';
+import { Carousel } from './Carousel.tsx';
+import { useState } from 'react';
+
+<Meta title="Core" component={Carousel} parameters={{ jest: ['Carousel.test.tsx'] }} />
+
+# Carousel
+
+<Preview withToolbar>
+    <Story name="Accordion">
+        <Carousel></Carousel>
+    </Story>
+</Preview>
+
+## Props
+
+This component offers the following props mentioned in the table below:
+
+<Props of={Carousel} />
