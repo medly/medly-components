@@ -18,7 +18,7 @@ import {
 
 # MarkdownContent
 
-A component to render markdown content
+You can use this component to render markdown content.
 
 ## Example
 
@@ -29,7 +29,7 @@ import { FC } from 'react';
 export const Component: FC = () => <MarkdownContent content={'# DummyHeading'} />;
 ```
 
-> Note: If you're using Webpack 5, you'll need to add the following webpack config and need to add the following dependencies: `yarn add util assert buffer process`.
+> **Note**: If you're using Webpack 5, you'll need to add the Webpack config and the following dependency: `yarn add util assert buffer process`.
 
 ```json
 {
@@ -45,7 +45,7 @@ export const Component: FC = () => <MarkdownContent content={'# DummyHeading'} /
 }
 ```
 
-> Note: If you're using jest for testing, you'll need to mock the `@medly-components/markdown`. Since `react-markdown` is a pure ESM module and Jest ships with experimental support for ECMAScript Module, we are facing issues with writing tests. We are looking for proper solution. You can read more about it [here](https://jestjs.io/docs/ecmascript-modules)
+> **Note**: If you're using jest for testing, you'll need to mock the `@medly-components/markdown`. Since `react-markdown` is a pure ESM module and Jest ships with experimental support for ECMAScript Module, we are facing issues with writing tests. We are looking for proper solution. You can read more about it [here](https://jestjs.io/docs/ecmascript-modules).
 
 ```jsx
 const DummyComponent: React.FC<{ content: string }> = ({ content }) => <>{content}</>;
@@ -58,11 +58,13 @@ jest.mock('@medly-components/markdown', () => ({
 
 ## Props
 
+This component offers the following props mentioned in the table below:
+
 <Props of={MarkdownContent} />
 
 ## Syntax Guide
 
-The markdown contains various ways to format your content
+The markdown contains various ways to format your content.
 
 ### Features
 
@@ -93,7 +95,7 @@ The markdown contains various ways to format your content
 ###### h6 Heading
 ```
 
-The above markdown content will get rendered as followed
+The above markdown content will get rendered as follows:
 
 <Preview withToolbar>
     <MarkdownContent content={headings} />
@@ -113,7 +115,7 @@ _This is italic text_
 ~~Strikethrough~~
 ```
 
-The above markdown content will get rendered as followed
+The above markdown content will get rendered as follows:
 
 <Preview withToolbar>
     <MarkdownContent content={emphasis} />
@@ -128,7 +130,7 @@ The above markdown content will get rendered as followed
 > > > ...or with spaces between arrows.
 ```
 
-The above markdown content will get rendered as followed
+The above markdown content will get rendered as follows:
 
 <Preview withToolbar>
     <MarkdownContent content={blockquotes} />
@@ -162,7 +164,7 @@ Start numbering with offset:
 1. bar
 ```
 
-The above markdown content will get rendered as followed
+The above markdown content will get rendered as follows:
 
 <Preview withToolbar>
     <MarkdownContent content={lists} />
@@ -197,7 +199,7 @@ console.log(foo(5));
 \`\`\`
 ```
 
-The above markdown content will get rendered as followed
+The above markdown content will get rendered as follows:
 
 <Preview withToolbar>
     <MarkdownContent content={code} />
@@ -221,7 +223,7 @@ Right aligned columns
 |    ext |                                      extension to be used for dest files. |
 ```
 
-The above markdown content will get rendered as followed
+The above markdown content will get rendered as follows:
 
 <Preview withToolbar>
     <MarkdownContent content={tables} />
@@ -237,7 +239,7 @@ The above markdown content will get rendered as followed
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 ```
 
-The above markdown content will get rendered as followed
+The above markdown content will get rendered as follows:
 
 <Preview withToolbar>
     <MarkdownContent content={links} />
@@ -262,7 +264,7 @@ With a reference later in the document defining the URL location:
     <MarkdownContent content={images} />
 </Preview>
 
-The above markdown content will get rendered as followed
+The above markdown content will get rendered as follows:
 
 ### Youtube
 
@@ -270,7 +272,7 @@ The above markdown content will get rendered as followed
 :youtube[https://www.youtube.com/watch?v=fl52_XdT-Kg&ab_channel=MedlyPharmacy]
 ```
 
-The above markdown content will get rendered as followed
+The above markdown content will get rendered as follows:
 
 <Preview withToolbar>
     <MarkdownContent content={youtube} />
@@ -292,13 +294,13 @@ Duplicated footnote reference[^second].
 [^second]: Footnote text.
 ```
 
-The above markdown content will get rendered as followed
+The above markdown content will get rendered as follows:
 
 <Preview withToolbar>
     <MarkdownContent content={footnotes} />
 </Preview>
 
-### Basic Content component
+### Basic content component
 
 <Preview withToolbar>
     <Story name="MarkdownContent">
