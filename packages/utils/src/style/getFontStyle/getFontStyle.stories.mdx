@@ -4,14 +4,11 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # getFontStyle
 
-A styled component helper that generates font-related styles based on the
-passed theme. Also accepts a specific font variant or font weight to influence
-the generated output.
+The `getFontStyle` is a  styled component helper that generates font-related styles based on the passed theme. It accepts a specific font-variant or font-weight to influence the generated output.
 
-#### Example
+### Example
 
-The simplest usage without supplying any arguments should fall back to using
-configured defaults for font-related styles.
+The simple usage without any arguments must fall back on using configured defaults for font-related styles.
 
 ```
 const plainParagraph = styled('p')`
@@ -19,7 +16,7 @@ const plainParagraph = styled('p')`
 `;
 ```
 
-Any specified font variant or font weight should take precedence in applying.
+Any specified font-variant or font-weight must take precedence in applying.
 
 ```
 const seriousParagraph = styled('p')`
