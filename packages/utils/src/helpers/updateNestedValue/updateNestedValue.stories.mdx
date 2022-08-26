@@ -4,21 +4,19 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # updateNestedValue
 
-This helper returns a new object that copies the structure of an input object
-while replacing a nested object value with another.
+The `updateNestedValue` function returns a new object that copies the structure of an input object while replacing a nested object value with another.
 
-Any existing non-primitive nested values (except objects) will retain their
-original references in the returned value (i.e. no deep copy performed).
+Any existing, non-primitive nested values (except objects) will retain their original references in the returned value (i.e. no deep copy performed).
 
 All properties referenced in the nested object path for replacement are expected to exist.
 
-#### Parameters
+### Parameters
 
-- `obj` is the nested object to operate on
-- `key` is a period-delimited path to a nested property (e.g. `a.b.c`)
-- `value` is an object to replace the value at the nested property path denoted by `key`
+- The `obj` is the nested object to operate.
+- The `key` is a period-delimited path to a nested property (e.g. `a.b.c`).
+- The `value` is an object to replace the value at the nested property path denoted by `key`.
 
-#### Example
+### Example
 
 One practical use within the context of components is to override thematic style values.
 
@@ -35,10 +33,8 @@ One practical use within the context of components is to override thematic style
 </ThemeProvider>;
 ```
 
-Keep in mind that the replacement does not preserve any property values that may
-have existed previously. It might be useful to consider the spread operator in
-forming the replacement value when only a subset of property values is of interest
-to be updated.
+**Note**: Keep in mind that the replacement does not preserve any property values that may have existed previously. 
+It might be useful to consider the spread operator in forming the replacement value when only a subset of property values is of interest to be updated.
 
 ```ts
 const updatedTheme = updateNestedValue(defaultTheme, 'button.flat.textColor', {
