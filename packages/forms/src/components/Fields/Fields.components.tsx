@@ -103,7 +103,10 @@ export const Fields: FC<FieldsProps> = memo(props => {
                                 case 'file':
                                     return (
                                         <FileInput
-                                            {...({ ...commonProps, files: value } as FileInputProps)}
+                                            {...({
+                                                ...commonProps,
+                                                files: value && value.length > 0 ? value : undefined
+                                            } as FileInputProps)}
                                             onChange={handlers.handleFileChange(name, (componentProps as FileInputProps).maxSize)}
                                         />
                                     );

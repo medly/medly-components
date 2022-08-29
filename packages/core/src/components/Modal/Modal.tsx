@@ -1,18 +1,32 @@
 import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
-import { FC, forwardRef, memo, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react';
+import { FC, forwardRef, memo, MouseEvent, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
 import Header from './Header';
 import { ModalContext } from './Modal.context';
 import { InnerContainerStyled, ModalBackgroundStyled } from './Modal.styled';
+import ModalManager from './ModalManager';
 import Popup from './Popup';
 import { reducer } from './scrollStateReducer/scrollStateReducer';
 import { ModalProps, ModalStaticProps } from './types';
+import { useScrollState } from './useScrollState';
+
+const manager = new ModalManager();
 
 const Component: FC<ModalProps> = memo(
     forwardRef((props, ref) => {
-        const { open, onCloseModal, overflowVisible, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
+        const {
+                open,
+                onCloseModal,
+                overflowVisible,
+                children,
+                minWidth,
+                shouldCloseOnOutsideClick,
+                minHeight,
+                disableEscapeKeyDown,
+                ...restProps
+            } = props,
             id = restProps.id || 'medly-modal',
             modalRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
             isEscPressed = useKeyPress('Escape', false, modalRef),
@@ -24,9 +38,15 @@ const Component: FC<ModalProps> = memo(
             { width: windowWidth } = useWindowSize(),
             isSmallScreen = windowWidth < 768;
 
-        const handleBackgroundClick = useCallback(() => {
-                shouldCloseOnOutsideClick && onCloseModal && onCloseModal();
-            }, [shouldCloseOnOutsideClick, onCloseModal]),
+        const handleCloseModal = useCallback(() => {
+                if (modalRef.current) manager.remove(modalRef.current);
+                onCloseModal && onCloseModal();
+            }, [onCloseModal, manager]),
+            handleBackgroundClick = useCallback(
+                (event: MouseEvent<HTMLDivElement>) =>
+                    event.currentTarget === event.target && shouldCloseOnOutsideClick && handleCloseModal(),
+                [shouldCloseOnOutsideClick, handleCloseModal]
+            ),
             handleAnimationEnd = useCallback(() => {
                 if (!open) {
                     setShouldRender(false);
@@ -45,8 +65,8 @@ const Component: FC<ModalProps> = memo(
         }, [open]);
 
         useEffect(() => {
-            open && isEscPressed && onCloseModal && onCloseModal();
-        }, [open, isEscPressed]);
+            !disableEscapeKeyDown && open && isEscPressed && modalRef.current && manager.isTopModal(modalRef.current) && handleCloseModal();
+        }, [open, isEscPressed, disableEscapeKeyDown, handleCloseModal, manager]);
 
         useLayoutEffect(() => {
             open && setActiveElement(document.activeElement as HTMLElement);
@@ -54,7 +74,10 @@ const Component: FC<ModalProps> = memo(
 
         useEffect(() => {
             !shouldRender && activeElement?.focus();
-        }, [shouldRender]);
+            if (shouldRender && modalRef.current) manager.add(modalRef.current);
+        }, [shouldRender, manager]);
+
+        const handleScroll = useScrollState({ ref: innerContainerRef, scrollState, dispatch });
 
         return shouldRender ? (
             <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
@@ -64,12 +87,13 @@ const Component: FC<ModalProps> = memo(
                     onAnimationEnd={handleAnimationEnd}
                     {...{ minWidth, minHeight, open, overflowVisible }}
                 >
-                    <CloseIcon id={`${id}-close-button`} title={`${id}-close-icon`} size="M" variant="solid" onClick={onCloseModal} />
+                    <CloseIcon id={`${id}-close-button`} title={`${id}-close-icon`} size="M" variant="solid" onClick={handleCloseModal} />
                     <InnerContainerStyled
                         id={`${id}-inner-container`}
                         ref={innerContainerRef}
                         headerHeight={headerHeight}
                         overflowVisible={overflowVisible}
+                        onScroll={handleScroll}
                     >
                         <ModalContext.Provider
                             value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen, overflowVisible }}
@@ -85,7 +109,8 @@ const Component: FC<ModalProps> = memo(
 
 Component.defaultProps = {
     open: false,
-    shouldCloseOnOutsideClick: false
+    shouldCloseOnOutsideClick: false,
+    disableEscapeKeyDown: false
 };
 Component.displayName = 'Modal';
 export const Modal: FC<ModalProps> & WithStyle & ModalStaticProps = Object.assign(Component, {

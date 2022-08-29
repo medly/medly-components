@@ -5,7 +5,12 @@ import testData from './docs/data';
 import { Table } from './Table';
 import { TableProps } from './types';
 
-const renderTable = (props?: Partial<TableProps>) => render(<Table data={testData} columns={testColumns} {...props} />);
+const renderTable = (props?: Partial<TableProps>) => render(<Table data={testData} columns={testColumns} {...props} />),
+    ExpandedRowComponent: TableProps['expandedRowComponent'] = () => <Text>Hello from Accordion</Text>,
+    downArrowKeyPress = (container: HTMLElement) => {
+        fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
+        fireEvent.keyUp(container, { key: 'ArrowDown', code: 40 });
+    };
 
 describe('Table component', () => {
     it('should render properly', () => {
@@ -16,11 +21,7 @@ describe('Table component', () => {
     it('should render no result row', () => {
         renderTable({
             data: [],
-            noResultRow: (
-                <tr>
-                    <div>NO RESULT CUSTOM COMPONENT</div>
-                </tr>
-            )
+            noResultRow: <div>NO RESULT CUSTOM COMPONENT</div>
         });
         expect(screen.getByText('NO RESULT CUSTOM COMPONENT')).toBeInTheDocument();
     });
@@ -33,6 +34,27 @@ describe('Table component', () => {
         expect(screen.getByText('No Result Row Text')).toBeInTheDocument();
     });
 
+    it('should render HiddenDiv containing HTML tags as plain text', () => {
+        const xssPayload = [
+            {
+                id: 8,
+                name: 'Albus Dumbledore',
+                age: '12',
+                color: 'red,green',
+                rating: '<img src=x onerror=confirm`1`>',
+                isPassed: true,
+                marks: {
+                    maths: 6,
+                    science: 4
+                }
+            }
+        ];
+        const { container } = renderTable({
+            data: xssPayload
+        });
+        expect(container).toMatchSnapshot();
+    });
+
     describe('pagination', () => {
         const mockOnPageChange = jest.fn(),
             commonProps = {
@@ -43,7 +65,7 @@ describe('Table component', () => {
                 onPageChange: mockOnPageChange
             };
 
-        it('should call onPageChange prop on click on any page', async () => {
+        it('should call onPageChange prop on click on any page', () => {
             const { container } = renderTable({ ...commonProps, defaultActivePage: 1 });
             expect(container).toMatchSnapshot();
             fireEvent.click(screen.getByText('30'));
@@ -75,20 +97,13 @@ describe('Table component', () => {
     });
 
     describe('keyboard navigation', () => {
-        const downArrowKeyPress = (container: HTMLElement) => {
-            fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
-            fireEvent.keyUp(container, { key: 'ArrowDown', code: 40 });
-        };
-
-        const ExpandedRowComponent: TableProps['expandedRowComponent'] = () => <Text>Hello from Accordion</Text>;
-
         const mockOnRowClick = jest.fn(),
             commonProps = {
                 isRowSelectable: true,
                 onRowClick: mockOnRowClick
             };
 
-        it('enter key should trigger onRowClick', async () => {
+        it('enter key should trigger onRowClick', () => {
             const { container } = renderTable({
                     ...commonProps
                 }),
@@ -113,7 +128,7 @@ describe('Table component', () => {
             });
         });
 
-        it('right arrow key should open the collapsible row', async () => {
+        it('right arrow key should open the collapsible row', () => {
             renderTable({
                 ...commonProps,
                 isRowExpandable: true,
@@ -128,7 +143,7 @@ describe('Table component', () => {
             expect(screen.getByText('Hello from Accordion')).toBeInTheDocument();
         });
 
-        it('left arrow key should close the collapsible row', async () => {
+        it('left arrow key should close the collapsible row', () => {
             renderTable({
                 ...commonProps,
                 isRowExpandable: true,
@@ -144,22 +159,99 @@ describe('Table component', () => {
             expect(screen.queryByText('Hello from Accordion')).not.toBeInTheDocument();
         });
 
-        it('space key should select the row', async () => {
+        it('space key should select the row', () => {
             const onRowSelectionFn = jest.fn();
             renderTable({
                 ...commonProps,
-                onRowSelection: onRowSelectionFn,
-                isRowSelectable: true
+                isRowSelectable: true,
+                onRowSelection: onRowSelectionFn
             });
+
+            const table = screen.getByRole('table');
+            const tableRow = table.querySelectorAll('tr');
+            const checkbox = tableRow[1].querySelector('input[type="checkbox"]');
+
+            fireEvent.keyDown(checkbox!, { key: ' ', code: 32 });
+
+            expect(onRowSelectionFn).toBeCalledTimes(1);
+        });
+
+        it('custom selection key should select the row when passed as keybinding', () => {
+            const onRowSelectionFn = jest.fn();
+            renderTable({
+                ...commonProps,
+                isRowSelectable: true,
+                keyBindings: {
+                    selectRow: 'x'
+                },
+                onRowSelection: onRowSelectionFn
+            });
+            const table = screen.getByRole('table');
+            const tableRow = table.querySelectorAll('tr');
+            const checkbox = tableRow[2].querySelector('input[type="checkbox"]');
+
+            fireEvent.keyDown(checkbox!, { key: 'x', code: 88 });
+
+            expect(onRowSelectionFn).toBeCalledTimes(1);
+        });
+
+        it('should call onRowNavigated for the navigated row', () => {
+            const mockOnRowNavigated = jest.fn();
+            const { rerender } = render(<Table data={testData} columns={testColumns} rowCursor={1} onRowNavigated={mockOnRowNavigated} />);
+
+            expect(mockOnRowNavigated).toBeCalledWith({
+                age: '1',
+                color: 'green',
+                id: 2,
+                isPassed: true,
+                marks: {
+                    maths: 4,
+                    science: 7
+                },
+                name: 'Mary May',
+                rating: 4
+            });
+
+            rerender(<Table data={testData} columns={testColumns} rowCursor={2} onRowNavigated={mockOnRowNavigated} />);
+
+            expect(mockOnRowNavigated).toBeCalledWith({
+                age: '42',
+                color: 'green',
+                id: 3,
+                isPassed: true,
+                marks: {
+                    maths: 4,
+                    science: 7
+                },
+                name: 'Christine Lobowski',
+                rating: 4
+            });
+        });
+    });
+
+    describe('accordion', () => {
+        it('should render table with accordion', () => {
+            renderTable({
+                isRowExpandable: true,
+                expandedRowComponent: ExpandedRowComponent
+            });
+
             const table = screen.getByRole('table');
 
             downArrowKeyPress(table);
-            downArrowKeyPress(table);
-            downArrowKeyPress(table);
-            downArrowKeyPress(table);
-            fireEvent.click(document.activeElement as HTMLInputElement);
+            fireEvent.keyDown(table, { key: 'ArrowRight', code: 39 });
 
-            expect(onRowSelectionFn).toBeCalledTimes(1);
+            expect(screen.getByText('Hello from Accordion')).toBeInTheDocument();
+        });
+
+        it('should render table with default expanded row', () => {
+            renderTable({
+                isRowExpandable: true,
+                defaultRowExpandKey: 'expanded',
+                expandedRowComponent: ExpandedRowComponent,
+                data: [{ ...testData[0], expanded: true }, ...testData.slice(1)]
+            });
+            expect(screen.getByText('Hello from Accordion')).toBeInTheDocument();
         });
     });
 });

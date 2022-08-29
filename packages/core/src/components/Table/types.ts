@@ -20,7 +20,8 @@ export type KeyBindings = {
     down?: string;
     expandRow?: string;
     collapseRow?: string;
-    rowClick?: string;
+    clickRow?: string;
+    selectRow?: string;
 };
 
 export interface TableColumnConfig {
@@ -83,6 +84,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     rowSelectionDisableKey?: string;
     /** Key name to disable row click */
     rowClickDisableKey?: string;
+    /** Key name to identify the row expansion */
+    defaultRowExpandKey?: string;
     /** Set it true to show checkboxes to select rows */
     isRowSelectable?: boolean;
     /** Set it true to expand rows to show extra info */
@@ -137,6 +140,10 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     maxHeight?: string;
     /** Set keyBindings for keyboard navigation */
     keyBindings?: KeyBindings;
+    /** Keyboard navigated row's cursor location */
+    rowCursor?: number | string;
+    /** Function to be called when row is navigated using keyboard */
+    onRowNavigated?: (rowData: ObjectType) => void;
 }
 
 export interface StaticProps {

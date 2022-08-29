@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/medly/medly-components/compare/@medly-components/theme@5.1.0...@medly-components/theme@5.2.0) (2022-06-28)
+
+
+### Features
+
+* add icon support in toggle button ([#667](https://github.com/medly/medly-components/issues/667)) ([0b16cc7](https://github.com/medly/medly-components/commit/0b16cc7c208f23862af5114451c7d8e8c881c3fa)), closes [#579](https://github.com/medly/medly-components/issues/579)
+
+
+
+
+
+# [5.1.0](https://github.com/medly/medly-components/compare/@medly-components/theme@5.0.0...@medly-components/theme@5.1.0) (2022-06-02)
+
+
+### Features
+
+* **theme:** allow [@font-face](https://github.com/font-face) ascent and descent overrides ([#666](https://github.com/medly/medly-components/issues/666)) ([13c59bc](https://github.com/medly/medly-components/commit/13c59bc72ced964692779487e3998c756176480d))
+
+
+
+
+
 # [5.0.0](https://github.com/medly/medly-components/compare/@medly-components/theme@4.0.1...@medly-components/theme@5.0.0) (2022-01-05)
 
 

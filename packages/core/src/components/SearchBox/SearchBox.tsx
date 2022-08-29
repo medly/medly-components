@@ -1,4 +1,5 @@
 import { CloseIcon, ExpandIcon, SearchIcon } from '@medly-components/icons';
+import { CircleLoader } from '@medly-components/loaders';
 import { useCombinedRefs, useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import type { FC } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useRef, useState } from 'react';
@@ -26,6 +27,8 @@ const Component: FC<SearchBoxProps> = memo(
             fullWidth,
             minWidth,
             maxWidth,
+            isLoading,
+            loader: customLoader,
             ...restProps
         } = props;
         const wrapperRef = useRef<any>(null),
@@ -36,7 +39,7 @@ const Component: FC<SearchBoxProps> = memo(
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [options, setOptions] = useState<Option[]>(defaultOptions || []),
             [isCustomSearchActive, setIsCustomSearchActive] = useState(false),
-            [showCloseIcon, setShowCloseIcon] = useState(false),
+            [showCloseIcon, setShowCloseIcon] = useState(!!restProps?.value?.toString().length),
             isEnterKeyPress = useKeyPress('Enter', true, optionsRef);
 
         useEffect(() => {
@@ -158,7 +161,15 @@ const Component: FC<SearchBoxProps> = memo(
                     </ExpandIconWrapper>
                 )}
                 <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size!}>
-                    <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />
+                    {isLoading ? (
+                        customLoader ? (
+                            customLoader
+                        ) : (
+                            <CircleLoader data-testid="circle-loader" size="XXS" />
+                        )
+                    ) : (
+                        <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />
+                    )}
                 </SearchIconWrapper>
                 {areOptionsVisible && options && (
                     <Options

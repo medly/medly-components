@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
+import type { FC } from 'react';
 import { memo, useContext, useEffect, useMemo, useRef } from 'react';
 import { ThemeContext } from 'styled-components';
 import Text from '../../../Text';
 import { Cell as StyledCell, CustomComponentWrapper, LoadingDiv } from './Styled';
 import { TableCellProps } from './types';
-import type { FC } from 'react';
 
 const Component: FC<TableCellProps> = memo(props => {
     const customComponentWrapperRef = useRef<HTMLDivElement>(null),
@@ -31,7 +31,7 @@ const Component: FC<TableCellProps> = memo(props => {
             if (CustomComponent && customComponentWrapperRef.current) {
                 currentSize = customComponentWrapperRef.current.clientWidth;
             } else if (hiddenDivRef.current) {
-                hiddenDivRef.current.innerHTML = data;
+                hiddenDivRef.current.textContent = data;
                 currentSize = hiddenDivRef.current.clientWidth;
             }
             currentSize > 0 && addColumnMaxSize(dottedFieldName, currentSize + (tableSize === 'L' ? 48 : 32));

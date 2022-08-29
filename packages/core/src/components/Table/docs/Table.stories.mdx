@@ -115,8 +115,10 @@ export const Dummy: React.FC = () => {
 
 ## Row Accordion
 
-To show Row Accordion, you must pass two props: `isRowExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area. 
+To show Row Accordion, you must pass two props: `isRowExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area.
 Type: `expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>`; we are passing row data, id, and disabled state to the component.
+
+If you want a row to be expanded by default, you can pass `rowDefaultExpandKey` with a key which will be picked from the `data` object and the value should be `boolean` only.
 
 You can write your component like below:
 
@@ -137,7 +139,7 @@ export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowDa
                 <DummyWrapper>
                     <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
                     <Table
-                        data={tableData}
+                        data={[{ ...tableData[0], expanded: true }, ...tableData.slice(1)]}
                         columns={columns}
                         onRowClick={action('Row Clicked')}
                         isLoading={boolean('Loading', false)}
@@ -152,6 +154,7 @@ export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowDa
                         onPageChange={action('Page Changed')}
                         onScrolledToBottom={action('Scrolled to bottom')}
                         withRowSeparators={boolean('Enable row separators', true)}
+                        defaultRowExpandKey="expanded"
                     />
                 </DummyWrapper>
             );
@@ -201,7 +204,7 @@ type Data = [{ [your_groupBy_keyname]: string | number; count: number; secondary
 
 For example, if your data is `[{name: "A", role: "doctor"}, {name: "B", role: "engineer"}]` and if you want to group by role then you have to set `groupBy` prop to `role` and your `data` must be `[{role: 'doctor', count: 1}, {role: 'engineer', 1}]`
 
-And once you expand any row `getGroupedData` function it will be called with the group title. 
+And once you expand any row `getGroupedData` function it will be called with the group title.
 For example, in the above scenario if you expand row with `doctor` title then `getGroupedData("doctor")` will be called and you have to return a promise with grouped data according to column config.
 
 -   To expand any row by default you can pass `defaultExpandedRowIdentifier` and `rowIdentifier` prop values.
@@ -351,23 +354,15 @@ You can replace `No Result` row with your Custom component. You need to pass the
 To show Custom component, you need to pass props in the below format.
 
 ```tsx
-<Table
-    data="Data Object"
-    columns="Columns Object"
-    noResultRow={
-        <tr>
-            <div>NO RESULT CUSTOM COMPONENT</div>
-        </tr>
-    }
-/>
+<Table data="Data Object" columns="Columns Object" noResultRow={<div>NO RESULT CUSTOM COMPONENT</div>} />
 ```
 
 **Note:** It is advisable to wrap your component in `<tr>` tag to avoid warnings.
 
 ## Keyboard navigation
 
-To navigate the rows in a table, use the `Up Arrow` and `Down Arrow` keys. To select a row, use the `Space` key. To expand a row use the `Right Arrow` key, and to collapse a row use the `Left Arrow` key. 
-These are the default browser key values that you can override (except the select `Space` key) by passing the keyBindings object to the `keyBindings` prop. Also, you must match the key values to the HTML spec. 
+To navigate the rows in a table, use the `Up Arrow` and `Down Arrow` keys. To select a row, use the `Space` key. To expand a row use the `Right Arrow` key, and to collapse a row use the `Left Arrow` key.
+These are the default browser key values that you can override by passing the keyBindings object to the `keyBindings` prop. Also, you must match the key values to the HTML spec.
 You can view the key values [here](https://keycode.info/).
 
 ```tsx
@@ -378,10 +373,109 @@ You can view the key values [here](https://keycode.info/).
         up: 'ArrowUp', // Up arrow key
         down: 'ArrowDown', // Down arrow key
         expandRow: 'ArrowRight', // Right arrow key
-        collapseRow: 'ArrowLeft' // Left arrow key
+        collapseRow: 'ArrowLeft', // Left arrow key
+        clickRow: 'Enter', // Enter key
+        selectRow: ' ' // Space bar
     }}
 />
 ```
+
+#### Custom keyboard navigation and controlled cursor
+
+You can implement your own controlled navigation by passing the `rowCursor` prop. You can then handle the behaviour of the cursor by passing a custom function.
+
+If you want to call a custom function everytime a row is being navigated, you can pass it to `onRowNavigated`.
+
+```tsx
+import { TableColumnConfig } from '@medly-components/core';
+
+export const TableComponent: React.FC = () => {
+    const [customCursor, setCustomCursor] = useState(1),
+        handleKeyboardNavigation = useCallback(
+            e => {
+                if (e.key === 'ArrowUp') setCustomCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
+                else if (e.key === 'ArrowDown') setCustomCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
+            },
+            [setCustomCursor]
+        ),
+        handleRowNavigated = useCallback(data => console.log(`The data for navigated row is: ${data}`)),
+        tableData = [
+            { id: 1, firstName: 'Mary', lastName: 'May', age: '19' },
+            { id: 2, firstName: 'Jacob', lastName: 'Thornton', age: '22' },
+            { id: 3, firstName: 'Chris', lastName: 'Evans', age: '44' }
+        ],
+        columns: TableColumnConfig[] = [
+            { title: 'First', field: 'firstName' },
+            { title: 'Last', field: 'lastName' }
+        ];
+
+    return (
+        <Table
+            rowCursor={customCursor}
+            onKeyDown={handleKeyboardNavigation}
+            onRowNavigated={handleRowNavigated}
+            data={tableData}
+            columns={columns}
+            isLoading={false}
+            size={'M'}
+        />
+    );
+};
+```
+
+<Preview withToolbar>
+    <Story name="Table with controlled keyboard navigation">
+        {() => {
+            const [selectedRowIds, setSelectedRowIds] = useState([]),
+                [customCursor, setCustomCursor] = useState(1),
+                [tableData, setTableData] = useState(data),
+                handleFilterData = useCallback(
+                    ({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)),
+                    [tableData]
+                ),
+                handleKeyboardNavigation = useCallback(
+                    e => {
+                        if (e.key === 'ArrowUp') setCustomCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
+                        else if (e.key === 'ArrowDown')
+                            setCustomCursor(prevState => (prevState < data.length - 1 ? prevState + 1 : prevState));
+                    },
+                    [setCustomCursor]
+                );
+            return (
+                <DummyWrapper>
+                    <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
+                    <Table
+                        rowCursor={customCursor}
+                        data={tableData}
+                        columns={columns}
+                        onSort={handleFilterData}
+                        onKeyDown={handleKeyboardNavigation}
+                        selectedRowIds={selectedRowIds}
+                        onRowSelection={setSelectedRowIds}
+                        onRowClick={action('Row Clicked')}
+                        onRowNavigated={action('Row Navigated')}
+                        isLoading={boolean('Loading', false)}
+                        isRowSelectable={boolean('Is row selectable', true)}
+                        isRowExpandable={boolean('Is row expandable', true)}
+                        rowSelectionDisableKey="disabled"
+                        rowClickDisableKey="disabled"
+                        size={select('Size', ['XS', 'S', 'M', 'L'], 'M')}
+                        showRowWithCardStyle={boolean('Show Row With Card Style', false)}
+                        expandedRowComponent={ExpandedRowComponent}
+                        actions={Actions}
+                        withMinimap={boolean('Enable minimap', false)}
+                        withPagination={boolean('Enable pagination', true)}
+                        totalItems={10}
+                        itemsPerPage={10}
+                        onPageChange={action('Page Changed')}
+                        onScrolledToBottom={action('Scrolled to bottom')}
+                        withRowSeparators={boolean('Enable row separators', true)}
+                    />
+                </DummyWrapper>
+            );
+        }}
+    </Story>
+</Preview>
 
 ## Actions
 
@@ -463,7 +557,7 @@ To show Pagination you must pass `withPagination` as `true` and pass `totalItems
 
 ### Custom Column Cell Component
 
-You can pass a Custom component to the `columns` prop of the table. This will render that Custom component inside the table inplace of the respective column on the UI. 
+You can pass a Custom component to the `columns` prop of the table. This will render that Custom component inside the table inplace of the respective column on the UI.
 
 For your Custom component to be rendered as a column cell, you need to pass props in the below format:
 
@@ -485,6 +579,7 @@ const CustomComponent: TableColumnConfig['component'] = React.memo(({ data, rowD
 ## Props
 
 There are only two required props `data` & `columns`. If possible, provide the `rowIdentifier`. A `rowIdentifier` is used as key name in data to identify rows.
+
 <Props of={Table} />
 
 ### Table Prop Types

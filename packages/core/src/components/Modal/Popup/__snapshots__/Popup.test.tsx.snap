@@ -14,8 +14,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   min-height: 200px;
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
   box-sizing: border-box;
-  border-top-left-radius: 1.6rem;
-  border-top-right-radius: 1.6rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
   overflow: hidden;
 }
 
@@ -28,9 +28,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   }
 }
 
-@media (min-width:768px) and (max-width:1439px) {
+@media (min-width:768px) and (max-width:1279px) {
   .c0 {
-    padding: 4.8rem 3.2rem;
     border-radius: 1.2rem;
     max-width: 72%;
     min-width: 200px;
@@ -38,9 +37,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   }
 }
 
-@media (min-width:1440px) {
+@media (min-width:1280px) {
   .c0 {
-    padding: 4.8rem 3.2rem;
     border-radius: 1.2rem;
     min-width: 200px;
     max-width: 103.6rem;
@@ -76,8 +74,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   min-height: 200px;
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
   box-sizing: border-box;
-  border-top-left-radius: 1.6rem;
-  border-top-right-radius: 1.6rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
   overflow: hidden;
 }
 
@@ -90,9 +88,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   }
 }
 
-@media (min-width:768px) and (max-width:1439px) {
+@media (min-width:768px) and (max-width:1279px) {
   .c0 {
-    padding: 4.8rem 3.2rem;
     border-radius: 1.2rem;
     max-width: 72%;
     min-width: 200px;
@@ -100,9 +97,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   }
 }
 
-@media (min-width:1440px) {
+@media (min-width:1280px) {
   .c0 {
-    padding: 4.8rem 3.2rem;
     border-radius: 1.2rem;
     min-width: 200px;
     max-width: 103.6rem;

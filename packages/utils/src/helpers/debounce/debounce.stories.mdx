@@ -4,18 +4,18 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # debounce
 
-`debounce` is a simple yet really helpful function to implement debouncing.
+The `debounce` is a simple and helpful function to implement debouncing.
 It returns a debounced function that batches a burst of events and invokes the function `func` only once, after `wait` milliseconds have elapsed since the last time the debounced function was invoked.
 
-#### Parameters
+### Parameters
 
 `func` - The function to debounce
 
 `wait` - The delay time in milliseconds
 
-#### Example
+### Example
 
-You should use it, when you need to debounce a function.
+You must use it when you need to debounce a function.
 
 ```tsx
 import { debounce } from '@medly-components/utils';
@@ -36,4 +36,4 @@ export const DebouncedClick = () => {
 };
 ```
 
-The code snippet above ensures `onClick` is invoked only once after 500 milliseconds of debounced calls.
+**Note**: The code snippet above ensures `onClick` is invoked only once after 500 milliseconds of debounced calls.

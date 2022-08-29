@@ -32,6 +32,7 @@ const Component: FC<MultiSelectProps> = memo(
                 showTooltipForHelperAndErrorText,
                 prefix,
                 isCreatable = false,
+                noResultComponent,
                 ...restProps
             } = props,
             selectId = useMemo(() => id || label?.toLocaleLowerCase().replace(' ', '') || 'medly-multiSelect', [id, label]);
@@ -78,8 +79,8 @@ const Component: FC<MultiSelectProps> = memo(
                 ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
                     if (!isSelectKeyPressed) {
                         setInputValue(value);
-                        const newOptions = filterOptions(options, value);
-                        newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
+                        const newOptions = filterOptions(defaultOptions, value);
+                        (newOptions.length || noResultComponent) && value ? setOptions(newOptions) : updateToDefaultOptions();
                         onInputChange && onInputChange(value);
                         !areOptionsVisible && setOptionsVisibilityState(true);
                     }
@@ -164,6 +165,8 @@ const Component: FC<MultiSelectProps> = memo(
 
         useKeyboardNavigation({ options, isParentCursorEnabled, setCursor, handleOuterClick, ref: wrapperRef });
 
+        const noResultComponentRenderer = noResultComponent && !options.length && noResultComponent ? noResultComponent : <></>;
+
         const ChipEl = () => (
             <InputSuffix
                 id={`${selectId}-count`}
@@ -230,6 +233,7 @@ const Component: FC<MultiSelectProps> = memo(
                         setIsParentCursorEnabled={setIsParentCursorEnabled}
                         showCreatableOption={!!showCreatableOption}
                         handleCreatableOptionClick={handleCreatableOptionClick}
+                        noResultComponent={noResultComponentRenderer}
                     />
                 )}
             </Wrapper>

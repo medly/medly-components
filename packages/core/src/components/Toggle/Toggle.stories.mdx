@@ -3,12 +3,13 @@ import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Toggle.stories';
 import { boolean, select } from '@storybook/addon-knobs';
 import { sizes, labelPositions, ThemeInterface } from './Toggle.stories';
+import { LockOpenIcon, LockOutlineIcon } from '@medly-components/icons';
 
-<Meta title="Core" component={Toggle} parameters={{ jest: ['Toggle.test.tsx'] }}/>
+<Meta title="Core" component={Toggle} parameters={{ jest: ['Toggle.test.tsx'] }} />
 
 # Toggle
 
-The `Toggle` component is a control that you must use to switch quickly between two possible states. It is commonly used for “on/off” switches. 
+The `Toggle` component is a control that you must use to switch quickly between two possible states. It is commonly used for “on/off” switches.
 You can use it as an alternative for the `Checkbox` component. It semantically uses the inputs checkbox variant.
 
 <Preview withToolbar>
@@ -19,7 +20,25 @@ You can use it as an alternative for the `Checkbox` component. It semantically u
             fullWidth={boolean('Full Width', false)}
             disabled={boolean('Disabled', false)}
             labelPosition={select('Label Position', labelPositions, 'right')}
-       />
+        />
+    </Story>
+</Preview>
+
+## With Icon
+
+You can add icon to the toggle component by passing the `iconLeft` and `iconRight` prop
+
+<Preview withToolbar>
+    <Story name="Toggle with icon">
+        <Toggle
+            size={select('Size', sizes, 'S')}
+            label="Switch mode"
+            fullWidth={boolean('Full Width', false)}
+            disabled={boolean('Disabled', false)}
+            labelPosition={select('Label Position', labelPositions, 'right')}
+            iconLeft={<LockOutlineIcon />}
+            iconRight={<LockOpenIcon />}
+        />
     </Story>
 </Preview>
 

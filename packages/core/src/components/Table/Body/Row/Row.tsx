@@ -12,8 +12,7 @@ import * as Styled from './Row.styled';
 import { RowProps } from './types';
 
 export const Row: FC<RowProps> = memo(props => {
-    const [isExpanded, setExpansionState] = useState(false),
-        [isRowHovered, setIsRowHovered] = useState(false),
+    const [isRowHovered, setIsRowHovered] = useState(false),
         {
             id,
             data,
@@ -23,6 +22,7 @@ export const Row: FC<RowProps> = memo(props => {
             showShadowAfterFrozenElement,
             selectedRowIds,
             onRowSelection,
+            onRowNavigated,
             ...restProps
         } = props,
         {
@@ -34,6 +34,7 @@ export const Row: FC<RowProps> = memo(props => {
             addColumnMaxSize,
             rowClickDisableKey,
             rowSelectionDisableKey,
+            defaultRowExpandKey,
             isRowSelectable,
             isRowExpandable,
             isGroupedTable,
@@ -44,7 +45,8 @@ export const Row: FC<RowProps> = memo(props => {
             rowHoverActions: RowHoverActions
         } = useContext(TableComponentsCommonPropsContext);
 
-    const isRowSelected = useMemo(() => !isLoading && selectedRowIds.includes(id), [id, isLoading, selectedRowIds]),
+    const [isExpanded, setExpansionState] = useState<boolean>(defaultRowExpandKey && data[defaultRowExpandKey]),
+        isRowSelected = useMemo(() => !isLoading && selectedRowIds.includes(id), [id, isLoading, selectedRowIds]),
         isRowClickDisabled = useMemo(() => rowClickDisableKey && data[rowClickDisableKey], [data, rowClickDisableKey]),
         isRowSelectionDisabled = useMemo(() => rowSelectionDisableKey && data[rowSelectionDisableKey], [data, rowSelectionDisableKey]),
         handleRowSelection = useCallback(() => onRowSelection(id), [id, onRowSelection]),
@@ -111,10 +113,14 @@ export const Row: FC<RowProps> = memo(props => {
         isRowCollapsedFromKeyboard && setExpansionState(false);
     }, [isRowCollapsedFromKeyboard]);
 
+    useEffect(() => {
+        if (isNavigated) onRowNavigated && onRowNavigated(data);
+    }, [isNavigated, onRowNavigated]);
+
     // TODO: Check why useKeypress is not working in this case
     const handleRowClickFromKeyboard = useCallback(
         (e: KeyboardEvent<HTMLTableRowElement>) => {
-            e.key === keyBindings.rowClick! && isNavigated && handleRowClick && handleRowClick();
+            e.key === keyBindings.clickRow! && isNavigated && handleRowClick && handleRowClick();
         },
         [isNavigated, handleRowClick]
     );

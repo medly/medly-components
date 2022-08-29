@@ -53,7 +53,7 @@ const Component: FC<SingleSelectProps> = memo(
         const validate = useCallback(
             () =>
                 setErrorMessage(
-                    (validator && validator(inputRef.current?.value)) ||
+                    (validator && validator(inputRef.current?.value || value)) ||
                         (inputProps.required && !value && 'Please select one option.') ||
                         ''
                 ),
@@ -87,17 +87,11 @@ const Component: FC<SingleSelectProps> = memo(
                 },
                 [areOptionsVisible, defaultOptions, selectedOption, updateToDefaultOptions]
             ),
-            selectOption = useCallback(
-                (option: Option) => {
-                    setSelectedOption(option);
-                    setOptions(getUpdatedOptions(options, option));
-                },
-                [options]
-            ),
             handleOptionClick = useCallback(
                 (option: Option) => {
                     if (!option.disabled && !Array.isArray(option.value)) {
-                        selectOption(option);
+                        setSelectedOption(option);
+                        setOptions(getUpdatedOptions(options, option));
                         setInputValue(option.label);
                         hideOptions();
                         onChange && onChange(option.value);
@@ -106,7 +100,7 @@ const Component: FC<SingleSelectProps> = memo(
                         inputRef.current?.focus();
                     }
                 },
-                [inputRef.current, onChange]
+                [inputRef.current, options, onChange]
             ),
             handleOuterClick = useCallback(() => {
                 if (areOptionsVisible) {

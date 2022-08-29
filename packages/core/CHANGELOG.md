@@ -3,6 +3,293 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.19.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.19.2...@medly-components/core@6.19.3) (2022-08-24)
+
+
+### Reverts
+
+* sidenav and drawer height issue on mobile devices ([#696](https://github.com/medly/medly-components/issues/696)) ([14f1eea](https://github.com/medly/medly-components/commit/14f1eeaaa6680804dc4924bf89ceff5a25bb3682))
+
+
+
+
+
+## [6.19.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.19.1...@medly-components/core@6.19.2) (2022-08-18)
+
+
+### Bug Fixes
+
+* Resolve single select field validation issue ([#695](https://github.com/medly/medly-components/issues/695)) ([01a42e8](https://github.com/medly/medly-components/commit/01a42e8d171d2a1ea6f7d295c89762679d14ffc6))
+
+
+
+
+
+## [6.19.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.19.0...@medly-components/core@6.19.1) (2022-08-16)
+
+
+### Bug Fixes
+
+* **core:** fix close icon bug, when initial value is provided. ([#693](https://github.com/medly/medly-components/issues/693)) ([f41f88c](https://github.com/medly/medly-components/commit/f41f88c5aad614be74724a5ed6179231d8ee3b35))
+
+
+
+
+
+# [6.19.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.18.0...@medly-components/core@6.19.0) (2022-08-09)
+
+
+### Features
+
+* **core:** add showAllOptionsOnNoResult and noResultComponent in multi select ([#691](https://github.com/medly/medly-components/issues/691)) ([12906ae](https://github.com/medly/medly-components/commit/12906ae4c7af00667848ac0abec3638408456329))
+
+
+
+
+
+# [6.18.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.17.1...@medly-components/core@6.18.0) (2022-08-02)
+
+
+### Features
+
+* **core:** updated core modal border radius and padding ([#692](https://github.com/medly/medly-components/issues/692)) ([1940b94](https://github.com/medly/medly-components/commit/1940b94020c19cd3da78185292894d5f55bd13d2))
+
+
+
+
+
+## [6.17.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.17.0...@medly-components/core@6.17.1) (2022-07-29)
+
+
+### Bug Fixes
+
+* **core:** datePicker is not reseting the field value when the value prop is null. ([#685](https://github.com/medly/medly-components/issues/685)) ([055d199](https://github.com/medly/medly-components/commit/055d199e6be5245337090a66f048948577bd8395))
+
+
+
+
+
+# [6.17.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.16.2...@medly-components/core@6.17.0) (2022-07-27)
+
+
+### Features
+
+* **core:** Add close icon props in DialogBox Component ([#690](https://github.com/medly/medly-components/issues/690)) ([866ae2f](https://github.com/medly/medly-components/commit/866ae2f74d90e67acb44971c77f204636d8b9b7e))
+
+
+
+
+
+## [6.16.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.16.1...@medly-components/core@6.16.2) (2022-07-27)
+
+
+### Bug Fixes
+
+* modal close issue on click on outside of modal ([#689](https://github.com/medly/medly-components/issues/689)) ([cab6cad](https://github.com/medly/medly-components/commit/cab6cad82ec799b48f81feca15bd21025a07ffb3)), closes [#688](https://github.com/medly/medly-components/issues/688)
+
+
+
+
+
+## [6.16.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.16.0...@medly-components/core@6.16.1) (2022-07-18)
+
+
+### Bug Fixes
+
+* should not close modal on clicking on modal  ([#683](https://github.com/medly/medly-components/issues/683)) ([42ab863](https://github.com/medly/medly-components/commit/42ab863daaf71ebcd1a3490ae40350cb8254e22d)), closes [#682](https://github.com/medly/medly-components/issues/682)
+
+
+
+
+
+# [6.16.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.15.2...@medly-components/core@6.16.0) (2022-06-30)
+
+
+### Features
+
+* **core:** update modal styling and behavior ([#676](https://github.com/medly/medly-components/issues/676)) ([9dbc17d](https://github.com/medly/medly-components/commit/9dbc17d55e13ef5d7608807594a12f62ced3443a))
+
+
+
+
+
+## [6.15.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.15.1...@medly-components/core@6.15.2) (2022-06-29)
+
+
+### Bug Fixes
+
+* **core:** fix table security issue ([#681](https://github.com/medly/medly-components/issues/681)) ([e7240a6](https://github.com/medly/medly-components/commit/e7240a656182585c4fcdd4086ea315cbe0b44a52))
+
+
+
+
+
+## [6.15.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.15.0...@medly-components/core@6.15.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* **core:** removed manual fileinput value change using ref on label click ([#679](https://github.com/medly/medly-components/issues/679)) ([ca1f9ee](https://github.com/medly/medly-components/commit/ca1f9ee6dd578fe88ff88ce21d9f1cbbf8ca69ce))
+
+
+
+
+
+# [6.15.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.14.1...@medly-components/core@6.15.0) (2022-06-28)
+
+
+### Features
+
+* add icon support in toggle button ([#667](https://github.com/medly/medly-components/issues/667)) ([0b16cc7](https://github.com/medly/medly-components/commit/0b16cc7c208f23862af5114451c7d8e8c881c3fa)), closes [#579](https://github.com/medly/medly-components/issues/579)
+* add isLoading and custom loader support in search box ([#678](https://github.com/medly/medly-components/issues/678)) ([d9c032a](https://github.com/medly/medly-components/commit/d9c032a3d2fc257954ca8dcd4e1e42902b1e1baa))
+
+
+
+
+
+## [6.14.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.14.0...@medly-components/core@6.14.1) (2022-06-21)
+
+
+### Bug Fixes
+
+* Table component noResultRow prop vertical scroll issue ([#674](https://github.com/medly/medly-components/issues/674)) ([4c1b816](https://github.com/medly/medly-components/commit/4c1b816862094875156769c3f8249c45e2f47bf0))
+
+
+
+
+
+# [6.14.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.13.1...@medly-components/core@6.14.0) (2022-06-15)
+
+
+### Features
+
+* add support for keybinding to select row in Table component ([#673](https://github.com/medly/medly-components/issues/673)) ([3f6b8e1](https://github.com/medly/medly-components/commit/3f6b8e1431bc56ddb58fcf63a57534b9d906e151))
+
+
+
+
+
+## [6.13.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.13.0...@medly-components/core@6.13.1) (2022-06-14)
+
+
+### Bug Fixes
+
+* escape key closes all modal instead of top modal ([#671](https://github.com/medly/medly-components/issues/671)) ([7285ec2](https://github.com/medly/medly-components/commit/7285ec248c3b90e91a4f48e1bd132f1d2abe0c92))
+
+
+
+
+
+# [6.13.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.12.0...@medly-components/core@6.13.0) (2022-06-14)
+
+
+### Features
+
+* add controlled cursor and onRowNavigated for Table ([#670](https://github.com/medly/medly-components/issues/670)) ([2b94795](https://github.com/medly/medly-components/commit/2b9479586f9b178d75fefae78af6a56eeeb60d3f))
+
+
+
+
+
+# [6.12.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.11.2...@medly-components/core@6.12.0) (2022-06-02)
+
+
+### Features
+
+* **theme:** allow [@font-face](https://github.com/font-face) ascent and descent overrides ([#666](https://github.com/medly/medly-components/issues/666)) ([13c59bc](https://github.com/medly/medly-components/commit/13c59bc72ced964692779487e3998c756176480d))
+
+
+
+
+
+## [6.11.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.11.1...@medly-components/core@6.11.2) (2022-05-17)
+
+
+### Bug Fixes
+
+* sidenav and drawer height issue on mobile devices ([eea5e62](https://github.com/medly/medly-components/commit/eea5e621534f1eb88cca2e1eb0ab66e447a9e40d))
+
+
+
+
+
+## [6.11.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.11.0...@medly-components/core@6.11.1) (2022-05-16)
+
+
+### Bug Fixes
+
+* accordion content height issue ([#661](https://github.com/medly/medly-components/issues/661)) ([670d0f3](https://github.com/medly/medly-components/commit/670d0f369640ec92fd71bc8b9b214d9b115ce017))
+
+
+
+
+
+# [6.11.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.10.0...@medly-components/core@6.11.0) (2022-05-16)
+
+
+### Features
+
+* **core:** adds iconColor prop to Accordion.Header ([#660](https://github.com/medly/medly-components/issues/660)) ([1a588ec](https://github.com/medly/medly-components/commit/1a588ec4d4ab62bcda9f0d265e43e8209390a847))
+
+
+
+
+
+# [6.10.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.3...@medly-components/core@6.10.0) (2022-05-12)
+
+
+### Features
+
+* **core:** add prop to expand row by default ([#659](https://github.com/medly/medly-components/issues/659)) ([ccf9728](https://github.com/medly/medly-components/commit/ccf972807be0a66176001fca16b8f52d146d666b)), closes [#658](https://github.com/medly/medly-components/issues/658)
+
+
+
+
+
+## [6.9.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.2...@medly-components/core@6.9.3) (2022-05-06)
+
+
+### Bug Fixes
+
+* **core:** fix single select issue for async options ([#657](https://github.com/medly/medly-components/issues/657)) ([3c1dd85](https://github.com/medly/medly-components/commit/3c1dd855365b3f8f4a32345448c913df7fdde524))
+
+
+
+
+
+## [6.9.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.1...@medly-components/core@6.9.2) (2022-05-05)
+
+
+### Bug Fixes
+
+* **core:** add flex-shrink=0 on radio button ([#655](https://github.com/medly/medly-components/issues/655)) ([25670c7](https://github.com/medly/medly-components/commit/25670c7d7fc3eeeda537aa69f8966002a2f006c1))
+
+
+
+
+
+## [6.9.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.9.0...@medly-components/core@6.9.1) (2022-05-04)
+
+
+### Bug Fixes
+
+* **core:** make nested table field resizeable ([#654](https://github.com/medly/medly-components/issues/654)) ([d2c16b5](https://github.com/medly/medly-components/commit/d2c16b5d284ebcf7b23871c28d519fca3ab9c9e1))
+
+
+
+
+
+# [6.9.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.8.1...@medly-components/core@6.9.0) (2022-04-25)
+
+
+### Features
+
+* add masking on copy pasted text in textfield component ([#649](https://github.com/medly/medly-components/issues/649)) ([ca23676](https://github.com/medly/medly-components/commit/ca2367694e7d4d7cdd07b110eb5c405930329f09))
+
+
+
+
+
 ## [6.8.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.8.0...@medly-components/core@6.8.1) (2022-04-18)
 
 

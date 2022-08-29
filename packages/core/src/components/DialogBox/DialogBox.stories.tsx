@@ -23,7 +23,7 @@ export const Basic = () => {
     return (
         <>
             <Button onClick={changeModalState}>Click to Open</Button>
-            <DialogBox open={modalState} onCloseModal={changeModalState} shouldCloseOnOutsideClick={true}>
+            <DialogBox open={modalState} onCloseModal={changeModalState} shouldCloseOnOutsideClick={true} showCloseIcon={true}>
                 <DialogBox.Header>Are you sure?</DialogBox.Header>
                 <DialogBox.Content>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna

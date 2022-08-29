@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { optionsArray, size, ThemeInterface, PlaceholderComponent } from './SearchBox.stories.tsx';
+import { DotsLoader } from '@medly-components/loaders';
 import * as stories from './SearchBox.stories';
 import { text, select, boolean } from '@storybook/addon-knobs';
 import { SearchBox } from './SearchBox';
@@ -28,6 +29,7 @@ A `SearchBox` or search bar component is a text field which takes your input and
                     minWidth={text('Min Width', '25.6rem')}
                     maxWidth={text('Max Width', '100%')}
                     fullWidth={boolean('Full Width', false)}
+                    isLoading={boolean('isLoading', false)}
                 />
             );
         }}
@@ -51,15 +53,40 @@ To customize your search filter, you must pass react component to the `customSea
                     minWidth={text('Min Width', '25.6rem')}
                     customSearchFilter={<PlaceholderComponent />}
                     fullWidth={boolean('Full Width', true)}
+                    isLoading={boolean('isLoading', false)}
                 />
             );
         }}
     </Story>
 </Preview>
 
+## Loading state
+
+You can pass boolean value to `isLoading` prop to show loader.
+
+#### Default loader
+
+By default circle loader is shown.
+
+<Preview>
+    <Story name="withLoader">
+        <SearchBox size="M" placeholder="Search" isLoading />
+    </Story>
+</Preview>
+
+#### Custom loader
+
+You can also pass custom React component to `loader` prop to show custom loader.
+
+<Preview>
+    <Story name="withCustomLoader">
+        <SearchBox size="M" placeholder="Search" loader={<DotsLoader />} isLoading />
+    </Story>
+</Preview>
+
 ## Sizes
 
-Two sizes are available: S | M | 
+Two sizes are available: S | M |
 
 <Preview>
     <SearchBox size="S" placeholder="Small search text box" />

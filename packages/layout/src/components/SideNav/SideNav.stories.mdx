@@ -11,11 +11,11 @@ import * as stories from './SideNav.stories';
 
 # SideNav
 
-Sidenav layout component could be pretty handy to show menu items.
+The `SideNav` layout component may be useful for displaying menu items.
 
-#### How to use
+## How to use?
 
-You can create you Sidenav component like below
+You can utilise the `SideNav` component like given below:
 
 ```tsx
 import { Text } from '@medly-components/core';
@@ -50,7 +50,7 @@ export const SideNav: React.FC = React.memo(() => {
 SideNav.displayName = 'IBDSideNav';
 ```
 
-Then you can structure your webpage like below
+Structure your webpage like given below:
 
 ```tsx
 import { styled } from '@styled';
@@ -78,7 +78,7 @@ export const PageLayoutStyled = styled('div')`
 `;
 ```
 
-Then in your App.tsx you can use SideNav like below
+In the App.tsx you can use the `SideNav` like given below:
 
 ```tsx
 <PageLayout>
@@ -88,9 +88,10 @@ Then in your App.tsx you can use SideNav like below
 </PageLayout>
 ```
 
+## SideNav Header
+
 <Story name="SideNav">{stories.Basic()}</Story>
 
-### Sidenav Header
 
 <Preview>
     <SideNavContext.Provider value={{ activeItem: 'dummy', isHovered: true, isExpanded: true, activeItemChangeHandler: () => null }}>
@@ -98,13 +99,13 @@ Then in your App.tsx you can use SideNav like below
     </SideNavContext.Provider>
 </Preview>
 
-> Note: You have to design your header component and use it as first child in Sidenav. You can use `Sidenav.Context` to find out below properties:
+>**Note**: You must design your header component and use it as the first child in `SideNav`. You can use `SideNav.Context` to find out the below properties:
 
 <Props of={stories.SidenavContextTheme} />
 
-### Grouping
+## Grouping
 
-For grouping you just have to use `SideNav.Group` and provide title to it.
+To group items, simply use `SideNav.Group` and give it a title.
 
 ```tsx
 <MedlySideNav>
@@ -124,24 +125,31 @@ For grouping you just have to use `SideNav.Group` and provide title to it.
 </MedlySideNav>
 ```
 
-### Custom expand & collapse text
+## Custom Expand and Collapse Text
 
-You can pass `expandedToggleText` & `collapsedToggleText` to show custom text for expanding and collapsing the sidenav respectively
+You must pass `expandedToggleText` and `collapsedToggleText` to display custom text for expanding and collapsing the `SideNav` respectively.
 
 ### SideNav Props
+
+This component offers the following SideNav props mentioned in the table below:
 
 <Props of={SideNav} />
 
 ### SideNav Static Props
 
 You can use all of below Components like `SideNav.<name>`
+This component offers the following SideNav static props mentioned in the table below:
 
 <Props of={stories.StaticProps} />
 
 ### NavItem Props
 
+This component offers the following NavItems props mentioned in the table below:
+
 <Props of={NavItem} />
 
 ### SideNavTheme
+
+This component offers the following SideNavTheme props mentioned in the table below:
 
 <Props of={stories.Theme} />

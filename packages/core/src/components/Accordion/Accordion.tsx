@@ -1,3 +1,4 @@
+import { WithStyle } from '@medly-components/utils';
 import type { FC } from 'react';
 import { memo, useState } from 'react';
 import { Section } from './Accordion.styled';
@@ -21,8 +22,9 @@ Component.defaultProps = {
 };
 Component.displayName = 'Accordion';
 
-export const Accordion: FC<AccordionProps> & StaticProps = Object.assign(Component, {
+export const Accordion: FC<AccordionProps> & StaticProps & WithStyle = Object.assign(Component, {
     Header,
     Content,
-    Context: AccordionContext
+    Context: AccordionContext,
+    Style: Section
 });

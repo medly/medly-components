@@ -66,6 +66,12 @@ describe('SearchBox', () => {
             onInputChange: jest.fn()
         };
 
+        it('should render close icon when user provides initial value', () => {
+            const { inputEl } = renderComponent({ ...props, value: 'ABC' });
+            expect(inputEl.value).toHaveLength(3);
+            expect(screen.getByTitle('close icon')).toBeInTheDocument();
+        });
+
         it('should render close icon when user starts typing', () => {
             const { inputEl } = renderComponent(props);
             fireEvent.change(inputEl, { target: { value: 'R' } });
@@ -104,8 +110,9 @@ describe('SearchBox', () => {
                 expect(closeIcon).toBeInTheDocument();
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(inputEl.value).toHaveLength(8);
-                expect(screen.queryByTitle('close icon')).toBeInTheDocument();
+                expect(screen.getByTitle('close icon')).toBeInTheDocument();
             });
+
             it('should show the close icon after clicking the search icon', () => {
                 const { inputEl } = renderComponent(props);
                 fireEvent.change(inputEl, { target: { value: 'Brooklyn' } });
@@ -113,7 +120,7 @@ describe('SearchBox', () => {
                 expect(closeIcon).toBeInTheDocument();
                 fireEvent.click(screen.getByTitle('search icon'));
                 expect(inputEl.value).toHaveLength(8);
-                expect(screen.queryByTitle('close icon')).toBeInTheDocument();
+                expect(screen.getByTitle('close icon')).toBeInTheDocument();
             });
         });
     });
@@ -127,6 +134,24 @@ describe('SearchBox', () => {
         it('should render expand icon when showExpandIcon prop is true', () => {
             renderComponent(props);
             expect(screen.getByTitle('expand icon')).toBeInTheDocument();
+        });
+    });
+
+    describe('loading state', () => {
+        it('should show loader when isLoading is true', () => {
+            render(<SearchBox isLoading />);
+            expect(screen.getByTestId('circle-loader')).toBeInTheDocument();
+        });
+
+        it('should not show search icon when isLoading is true', () => {
+            render(<SearchBox isLoading />);
+            expect(screen.queryByTitle('search icon')).not.toBeInTheDocument();
+        });
+
+        it('should show custom loader when passed', () => {
+            const CustomLoader = () => <span>Loading</span>;
+            render(<SearchBox loader={<CustomLoader />} isLoading />);
+            expect(screen.getByText('Loading')).toBeInTheDocument();
         });
     });
 

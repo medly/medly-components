@@ -1658,6 +1658,767 @@ exports[`Table component pagination should call onPageChange prop on click on an
 </div>
 `;
 
+exports[`Table component should render HiddenDiv containing HTML tags as plain text 1`] = `
+.c7 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.c17 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c9 {
+  overflow: visible;
+  font-size: 2rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c9 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c14 {
+  display: block;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.c0 {
+  position: absolute;
+  left: -1000px;
+  opacity: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c1 {
+  overflow: auto;
+  display: block;
+  border: 1px solid #C7D0D8;
+  padding: 0;
+  border-radius: 0.8rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0;
+  outline: none;
+}
+
+.c1 *:not(svg) {
+  box-sizing: border-box;
+}
+
+.c1::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #b0bcc8;
+}
+
+.c1::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.c1::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.c1::-webkit-scrollbar-track:horizontal {
+  background-color: transparent;
+  border-top: 0.1rem solid #C7D0D8;
+}
+
+.c1::-webkit-scrollbar-track:vertical {
+  background-color: transparent;
+  border-left: 0.1rem solid #C7D0D8;
+}
+
+.c11 {
+  display: grid;
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.c11::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  background-color: #C7D0D8;
+  height: calc(100% - 3.2rem);
+  width: 1px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c18 {
+  display: grid;
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.c12 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  padding: 0.9rem 1.6rem 1rem;
+  grid-column: -1/1;
+  text-overflow: initial;
+  overflow: auto;
+  white-space: normal;
+  color: #435465;
+}
+
+.c12::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  background-color: #C7D0D8;
+  height: 1px;
+  width: calc(100% - 3.2rem);
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c16 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  padding: 1.2rem 1.6rem;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c16 .c6 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.c19 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  padding: 1.2rem 1.6rem;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c19 .c6 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.c15 {
+  display: grid;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  outline: none;
+  cursor: inherit;
+}
+
+.c15.c15:hover {
+  z-index: 2;
+}
+
+.c15:nth-child(odd),
+.c15:nth-child(odd) > * {
+  background-color: #F7F8F9;
+  color: #13181D;
+}
+
+.c15:nth-child(even),
+.c15:nth-child(even) > * {
+  background-color: #ffffff;
+  color: #13181D;
+}
+
+.c15:not(:last-child) {
+  border-bottom: 0.1rem solid #C7D0D8;
+}
+
+.c2 {
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.c4 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  opacity: 1;
+  position: relative;
+  padding: 0.8rem;
+}
+
+.c4 .c6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c4:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  background-color: #C7D0D8;
+  height: calc(100% - 3.2rem);
+  width: 1px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c4 .aaeo7e-4 {
+  padding: 0;
+}
+
+.c10 {
+  margin: 0;
+  padding: 0;
+  width: 0.3rem;
+  height: 100%;
+  top: 0;
+  right: 0;
+  cursor: ew-resize;
+  position: absolute;
+}
+
+.c5 {
+  border: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2rem;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 0.9rem 0.8rem;
+  outline: unset;
+  font-family: inherit;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #435465;
+}
+
+.c5 .c8 * {
+  fill: #435465;
+}
+
+.c5.c5.c5 {
+  box-sizing: content-box;
+}
+
+.c5:hover {
+  background-color: #F7F8F9;
+  color: #303C48;
+}
+
+.c5:hover .c8 * {
+  fill: #303C48;
+}
+
+.c5:active {
+  background-color: #eff2f4;
+  color: #13181D;
+}
+
+.c5:active .c8 * {
+  fill: #13181D;
+}
+
+.c5 .c6 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1;
+}
+
+.c5 .c8 {
+  margin-left: 0.4rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c13 {
+  border: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2rem;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0.9rem 0.8rem;
+  outline: unset;
+  font-family: inherit;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #435465;
+}
+
+.c13 .c8 * {
+  fill: #435465;
+}
+
+.c13.c13.c13 {
+  box-sizing: content-box;
+}
+
+.c13:hover {
+  background-color: #F7F8F9;
+  color: #303C48;
+}
+
+.c13:hover .c8 * {
+  fill: #303C48;
+}
+
+.c13:active {
+  background-color: #eff2f4;
+  color: #13181D;
+}
+
+.c13:active .c8 * {
+  fill: #13181D;
+}
+
+.c13 .c6 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1;
+}
+
+.c13 .c8 {
+  margin-left: 0.4rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c3 {
+  display: grid;
+  -webkit-align-items: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3 > * {
+  background-color: #ffffff;
+  border-bottom: 1px solid #C7D0D8;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    &lt;img src=x onerror=confirm\`1\`&gt;
+  </div>
+  <table
+    class="c1"
+    tabindex="-1"
+  >
+    <thead
+      class="c2"
+    >
+      <tr
+        class="c3"
+        style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
+      >
+        <th
+          class="c4"
+        >
+          <button
+            class="c5"
+          >
+            <span
+              class="c6 c7"
+            >
+              Name
+            </span>
+            <svg
+              class="c8 c9"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                fill="#435465"
+              />
+            </svg>
+          </button>
+          <span
+            class="c10"
+          />
+        </th>
+        <th
+          class="c11"
+          style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+        >
+          <span
+            class="c6 c12"
+          >
+            Marks
+          </span>
+          <div
+            class="c4"
+          >
+            <button
+              class="c13"
+            >
+              <span
+                class="c6 c7"
+              >
+                Maths
+              </span>
+              <svg
+                class="c8 c9"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                  fill="#435465"
+                />
+              </svg>
+            </button>
+            <span
+              class="c10"
+            />
+          </div>
+          <div
+            class="c4"
+          >
+            <button
+              class="c13"
+            >
+              <span
+                class="c6 c7"
+              >
+                Science
+              </span>
+              <svg
+                class="c8 c9"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                  fill="#435465"
+                />
+              </svg>
+            </button>
+            <span
+              class="c10"
+            />
+          </div>
+        </th>
+        <th
+          class="c4"
+        >
+          <button
+            class="c13"
+          >
+            <span
+              class="c6 c7"
+            >
+              Age
+            </span>
+            <svg
+              class="c8 c9"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                fill="#435465"
+              />
+            </svg>
+          </button>
+          <span
+            class="c10"
+          />
+        </th>
+        <th
+          class="c4"
+        >
+          <button
+            class="c5"
+          >
+            <span
+              class="c6 c7"
+            >
+              Passed
+            </span>
+            <svg
+              class="c8 c9"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                fill="#435465"
+              />
+            </svg>
+          </button>
+          <span
+            class="c10"
+          />
+        </th>
+        <th
+          class="c4"
+        >
+          <button
+            class="c13"
+          >
+            <span
+              class="c6 c7"
+            >
+              Rating
+            </span>
+            <svg
+              class="c8 c9"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.229 6.935a1 1 0 0 1 1.543 0l2.208 2.679a1 1 0 0 1-.77 1.636H9.79a1 1 0 0 1-.77-1.636l2.209-2.679zM12.771 17.065a1 1 0 0 1-1.543 0L9.02 14.386a1 1 0 0 1 .772-1.636h4.418a1 1 0 0 1 .771 1.636l-2.209 2.679z"
+                fill="#435465"
+              />
+            </svg>
+          </button>
+          <span
+            class="c10"
+          />
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="c14"
+    >
+      <tr
+        class="c15"
+        style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
+        tabindex="8"
+      >
+        <td
+          class="c16"
+        >
+          <span
+            class="c6 c17"
+            title="Albus Dumbledore"
+          >
+            Albus Dumbledore
+          </span>
+        </td>
+        <td
+          class="c18"
+          style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+        >
+          <div
+            class="c19"
+          >
+            <span
+              class="c6 c17"
+              title="6"
+            >
+              6
+            </span>
+          </div>
+          <div
+            class="c19"
+          >
+            <span
+              class="c6 c17"
+              title="4"
+            >
+              4
+            </span>
+          </div>
+        </td>
+        <td
+          class="c19"
+        >
+          <span
+            class="c6 c17"
+            title="12"
+          >
+            12
+          </span>
+        </td>
+        <td
+          class="c16"
+        >
+          <span
+            class="c6 c17"
+            title="Yes"
+          >
+            Yes
+          </span>
+        </td>
+        <td
+          class="c19"
+        >
+          <span
+            class="c6 c17"
+            title="<img src=x onerror=confirm\`1\`>"
+          >
+            &lt;img src=x onerror=confirm\`1\`&gt;
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Table component should render properly 1`] = `
 .c7 {
   margin: 0;

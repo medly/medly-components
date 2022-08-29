@@ -14,6 +14,8 @@ export interface DialogBoxProps extends HTMLProps<HTMLDivElement> {
     minHeight?: string;
     /** Set it true to close the modal on click outside of popup */
     shouldCloseOnOutsideClick?: boolean;
+    /** Set it true to show the close(X) icon on top right corner */
+    showCloseIcon?: boolean;
 }
 
 export interface DialogBoxBackgroundProps {

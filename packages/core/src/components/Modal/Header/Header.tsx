@@ -1,17 +1,17 @@
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import { Children, memo, useContext, useEffect, useRef } from 'react';
+import type { FC } from 'react';
+import { Children, memo, useContext, useLayoutEffect, useRef } from 'react';
 import Text from '../../Text';
 import { ModalContext } from '../Modal.context';
 import * as Styled from './Header.styled';
-import type { FC } from 'react';
 
 const Component: FC = memo(({ children }) => {
-    const { id, setHeaderHeight, isSmallScreen, scrollState } = useContext(ModalContext);
+    const { id, headerHeight, setHeaderHeight, isSmallScreen, scrollState } = useContext(ModalContext);
     const headerRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        headerRef.current && setHeaderHeight(headerRef.current.offsetHeight);
-    }, [headerRef.current, isSmallScreen]);
+    useLayoutEffect(() => {
+        headerRef.current && headerHeight !== headerRef.current.offsetHeight && setHeaderHeight(headerRef.current.offsetHeight);
+    }, [headerRef.current, headerRef.current?.offsetHeight, isSmallScreen, scrollState.scrollPosition]);
 
     return (
         <Styled.Header id={`${id}-header`} ref={headerRef} scrollState={scrollState}>
