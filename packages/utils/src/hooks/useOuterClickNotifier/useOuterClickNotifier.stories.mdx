@@ -4,22 +4,22 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 # useOuterClickNotifier
 
-This hook triggers the provided function on certain events affecting the ref passed in.
+The `useOuterClickNotifier` hook triggers the provided function on certain events affecting the `ref` passed.
 
 More specifically, the function triggers when:
 
-- A click occurs anywhere outside the ref target
-- Whenever the <kbd>ESC</kbd> key is pressed
+- A click occurs anywhere outside the ref target.
+- Whenever you press the <kbd>ESC</kbd> key.
 
-#### Parameters
+## Parameters
 
-- `onOuterClick` is a function to be triggered
-- `innerRef` is a ref to some element
+- The `onOuterClick` is a function to be triggered.
+- The `innerRef` is a ref to some element.
 
-#### Example
+### Example
 
-The following demonstrates a simple use of this hook to clear the contents of
-a text input after a user finishes typing in it and meets the trigger conditions
+The following example demonstrates a simple use of this hook to clear the contents of
+a text input after you finish typing in it and meet the trigger conditions
 outlined above.
 
 ```tsx

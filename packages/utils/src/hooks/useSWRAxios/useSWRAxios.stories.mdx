@@ -5,25 +5,25 @@ import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
 
 # useSWRAxios
 
-This react hook can be used to call the api using `swr` and `axios`. `swr` helps to cache the data. With SWR, components will get a stream of data updates constantly and automatically. And the UI will be always fast and reactive. Chekout more about `swr` over [here](https://swr.vercel.app/)
-
+You can use the `useSWRAxios` hook to call the API using `swr` and `axios`. The `swr` helps to cache the data. Components will get a stream of data updates constantly and automatically with SWR, and the UI will always be fast and reactive. 
+For more information about SWR click [here](https://swr.vercel.app/).
 ```tsx
 const { data, isValidating, error } = useSWRAxios<DataType, ErrorType>(string | AxiosRequestConfig, SWRConfig);
 ```
 
-The first param could be either url or AxiosRequestConfig.
+The first param could be either URL or AxiosRequestConfig.
 
-> **Note**: Use this hook to increase user experience as this basically cache the response so that if you move back and forth between pages the data will preloaded while revalidating in the background.
+> **Note**: Use this hook to increase user experience as this cache the response so that if you move back and forth between pages, the data will be preloaded while revalidating in the background.
 
-### Configuration
+## Configuration
 
 -   [Axios](https://github.com/axios/axios#request-config)
 
 -   [SWR](https://swr.vercel.app/docs/options#options)
 
-### Global configuration
+## Global configuration
 
--   You can set global config for **axios** like below. Read more about this over [here.](https://github.com/axios/axios#global-axios-defaults)
+1. You can set global config for **Axios** like given below. Read more about this over [here.](https://github.com/axios/axios#global-axios-defaults)
 
 ```tsx
 import axios from 'axios';
@@ -31,7 +31,7 @@ import axios from 'axios';
 axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 ```
 
--   You can set global config for **swr** like below. Read more about this over [here.](https://swr.vercel.app/docs/global-configuration)
+2. You can set global config for **swr** like given below. Read more about this over [here.](https://swr.vercel.app/docs/global-configuration)
 
 ```tsx
 <SWRConfig value={options}>
@@ -41,7 +41,7 @@ axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 
 ### Result
 
-**useAxios** returns all the fields from `SWRResponse` plus below additional fields.
+**useAxios** returns all the fields from `SWRResponse` plus the below additional fields.
 
 ```tsx
 export type Return<Data = unknown, Error = unknown> = Omit<SWRResponse<AxiosResponse<Data>, AxiosError<Error>>, 'data' | 'error'> & {
@@ -51,7 +51,7 @@ export type Return<Data = unknown, Error = unknown> = Omit<SWRResponse<AxiosResp
 };
 ```
 
-If you check `SWRResponse`, we will also get `mutate` function which you can utilise to fetch the data again on any event. This is called bound mutate function. And if you want to call this api from some other component, you can use mutate function from the library with url of the api and the data will be updated wherever `useSWRAxios` is used in the app with the same url.
+If you check `SWRResponse`, we will also get `mutate` function which you can utilise to fetch the data again on any event. This is called bound mutate function. If you want to call this API from some other component, you can use `mutate` function from the library with the URL of the API and the data will be updated wherever `useSWRAxios` is used in the app with the same URL.
 
 ```tsx
 import { mutate } from 'swr';
@@ -87,8 +87,8 @@ const Demo: React.SFC = React.memo(() => {
 });
 ```
 
-### Unit Testing
+### Unit testing
 
-You can checkout few example of how to write unit tests around it over [here](https://github.com/medly/medly-components/blob/master/packages/utils/src/hooks/useSWRAxios/useSWRAxios.test.tsx).
+You can check out a few examples of how to write unit tests around it over [here](https://github.com/medly/medly-components/blob/master/packages/utils/src/hooks/useSWRAxios/useSWRAxios.test.tsx).
 
-> Note: Add `dedupingInterval: 0` for testing purpose. You can create a custom `render` method also like [this](https://github.com/medly/medly-components/blob/master/packages/utils/src/test-utils.tsx).
+> Note: Add `dedupingInterval: 0` for testing purpose. To create a custom `render` method click [here](https://github.com/medly/medly-components/blob/master/packages/utils/src/test-utils.tsx).
