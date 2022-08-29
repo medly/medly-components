@@ -5,8 +5,7 @@ import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
 
 # useAxios
 
-You can use the `useAxios` to call the API in any react component that exposed, `isLoading`, `data` and  `error` state so that you don't have to create it multiple times in your components.
-
+This react hook can be used to call the api in any react component which exposed `isLoading`, `data` & `error` state so that you don't have to create all of these again and again in your components.
 
 ```tsx
 const { data, error, request, isLoading } = useAxios<DataType, ErrorType>();
@@ -15,6 +14,7 @@ const { data, error, request, isLoading } = useAxios<DataType, ErrorType>();
 ## Result
 
 The `useAxios` hooks returns the below object:
+
 ```tsx
 export type Result<Data = any, Error = any> = {
     data: Data; // Data in the success response
@@ -33,7 +33,7 @@ export type Result<Data = any, Error = any> = {
 
 ## Global Axios config
 
-You can set the global config for Axios like given below. To know more about Axios click [here](https://github.com/axios/axios#global-axios-defaults).
+You can set the global config for Axios like given below. To know more about this click [here](https://github.com/axios/axios#global-axios-defaults).
 
 ```tsx
 import axios from 'axios';
