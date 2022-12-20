@@ -33,7 +33,7 @@
         "build:markdown": "cross-env BABEL_ENV=production lerna exec --scope @medly-components/markdown -- rollup -c=../../rollup.config.js",
         "build": "cross-env BABEL_ENV=production lerna exec -- rollup -c=../../rollup.config.js",
         "chromatic": "chromatic -d .out -t 9e7b69d929cd --auto-accept-changes",
-        "clean": "lerna clean && rimraf node_modules",
+        "clean": "lerna clean --yes && rimraf node_modules",
         "commit": "git-cz",
         "init:commitizen": "commitizen init cz-lerna-changelog --yarn --dev --exact --force",
         "unlink:packages": "lerna exec -- yarn unlink",

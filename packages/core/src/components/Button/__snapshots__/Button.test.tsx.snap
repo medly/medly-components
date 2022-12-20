@@ -1117,6 +1117,7 @@ exports[`Button component should render properly with L size and loading state 1
       <circle
         cx="12"
         cy="12"
+        fill-opacity="0"
         r="11"
         stroke="url(#circleColor)"
         stroke-width="2"
@@ -1305,6 +1306,7 @@ exports[`Button component should render properly with S size and loading state 1
       <circle
         cx="12"
         cy="12"
+        fill-opacity="0"
         r="11"
         stroke="url(#circleColor)"
         stroke-width="2"
@@ -2436,6 +2438,7 @@ exports[`Button component with "flat" variant should render properly when it is 
       <circle
         cx="12"
         cy="12"
+        fill-opacity="0"
         r="11"
         stroke="url(#circleColor)"
         stroke-width="2"
@@ -3615,6 +3618,7 @@ exports[`Button component with "outlined" variant should render properly when it
       <circle
         cx="12"
         cy="12"
+        fill-opacity="0"
         r="11"
         stroke="url(#circleColor)"
         stroke-width="2"
@@ -4688,6 +4692,7 @@ exports[`Button component with "solid" variant should render properly when it is
       <circle
         cx="12"
         cy="12"
+        fill-opacity="0"
         r="11"
         stroke="url(#circleColor)"
         stroke-width="2"

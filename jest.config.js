@@ -24,7 +24,8 @@ module.exports = {
         displayName: name,
         setupFilesAfterEnv: ['<rootDir>/jest.setupAfterEnv.js'],
         moduleNameMapper: {
-            '^@test-utils': '<rootDir>/packages/utils/src/test-utils'
+            '^@test-utils': '<rootDir>/packages/utils/src/test-utils',
+            '^@medly-components/(.*)$': '<rootDir>/packages/$1/src/index'
         },
         testMatch: [`<rootDir>/packages/${name}/src/**/*.(spec|test).(ts|tsx)`]
     }))
