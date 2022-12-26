@@ -2220,12 +2220,12 @@ exports[`DateRangePicker Custom date range options should render properly with c
 }
 
 .c1 .c21,
-.c1 .dynlvq-0 {
+.c1 .sc-dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .c21 *,
-.c1 .dynlvq-0 * {
+.c1 .sc-dynlvq-0 * {
   fill: #546A7F;
 }
 
@@ -2273,15 +2273,15 @@ exports[`DateRangePicker Custom date range options should render properly with c
 
 .c1:focus-within .c21,
 .c1:focus-within:hover .c21,
-.c1:focus-within .dynlvq-0,
-.c1:focus-within:hover .dynlvq-0 {
+.c1:focus-within .sc-dynlvq-0,
+.c1:focus-within:hover .sc-dynlvq-0 {
   color: #3872D2;
 }
 
 .c1:focus-within .c21 *,
 .c1:focus-within:hover .c21 *,
-.c1:focus-within .dynlvq-0 *,
-.c1:focus-within:hover .dynlvq-0 * {
+.c1:focus-within .sc-dynlvq-0 *,
+.c1:focus-within:hover .sc-dynlvq-0 * {
   fill: #3872D2;
 }
 
@@ -3055,7 +3055,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -4858,7 +4858,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -6661,7 +6661,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -8466,7 +8466,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -10268,7 +10268,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -12070,7 +12070,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -13875,7 +13875,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -15677,7 +15677,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -17479,7 +17479,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -19284,7 +19284,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -21086,7 +21086,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -22888,7 +22888,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 <div
-  class="zv8j3p-0 c0"
+  class="sc-zv8j3p-0 c0"
   id="contract-calendar"
 >
   <div
@@ -24972,12 +24972,12 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c1 .c40,
-.c1 .dynlvq-0 {
+.c1 .sc-dynlvq-0 {
   color: #546A7F;
 }
 
 .c1 .c40 *,
-.c1 .dynlvq-0 * {
+.c1 .sc-dynlvq-0 * {
   fill: #546A7F;
 }
 
@@ -25025,15 +25025,15 @@ exports[`DateRangePicker should render properly 1`] = `
 
 .c1:focus-within .c40,
 .c1:focus-within:hover .c40,
-.c1:focus-within .dynlvq-0,
-.c1:focus-within:hover .dynlvq-0 {
+.c1:focus-within .sc-dynlvq-0,
+.c1:focus-within:hover .sc-dynlvq-0 {
   color: #3872D2;
 }
 
 .c1:focus-within .c40 *,
 .c1:focus-within:hover .c40 *,
-.c1:focus-within .dynlvq-0 *,
-.c1:focus-within:hover .dynlvq-0 * {
+.c1:focus-within .sc-dynlvq-0 *,
+.c1:focus-within:hover .sc-dynlvq-0 * {
   fill: #3872D2;
 }
 
@@ -25156,7 +25156,7 @@ exports[`DateRangePicker should render properly 1`] = `
       id="contract-helper-text"
     />
     <div
-      class="zv8j3p-0 c15"
+      class="sc-zv8j3p-0 c15"
       id="contract-calendar"
     >
       <div
@@ -26867,7 +26867,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   cursor: pointer;
 }
 
-.c19 .c0 .dynlvq-0 {
+.c19 .c0 .sc-dynlvq-0 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -27417,12 +27417,12 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c2 .c45,
-.c2 .dynlvq-0 {
+.c2 .sc-dynlvq-0 {
   color: #546A7F;
 }
 
 .c2 .c45 *,
-.c2 .dynlvq-0 * {
+.c2 .sc-dynlvq-0 * {
   fill: #546A7F;
 }
 
@@ -27470,15 +27470,15 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 
 .c2:focus-within .c45,
 .c2:focus-within:hover .c45,
-.c2:focus-within .dynlvq-0,
-.c2:focus-within:hover .dynlvq-0 {
+.c2:focus-within .sc-dynlvq-0,
+.c2:focus-within:hover .sc-dynlvq-0 {
   color: #3872D2;
 }
 
 .c2:focus-within .c45 *,
 .c2:focus-within:hover .c45 *,
-.c2:focus-within .dynlvq-0 *,
-.c2:focus-within:hover .dynlvq-0 * {
+.c2:focus-within .sc-dynlvq-0 *,
+.c2:focus-within:hover .sc-dynlvq-0 * {
   fill: #3872D2;
 }
 
@@ -27601,7 +27601,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
       id="contract-helper-text"
     />
     <div
-      class="zv8j3p-0 c16"
+      class="sc-zv8j3p-0 c16"
       id="contract-calendar"
     >
       <div

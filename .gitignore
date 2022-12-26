@@ -4,5 +4,6 @@ coverage/
 packages/**/dist
 .DS_Store
 .out/
+.env
 .idea
 .jest-test-results.json

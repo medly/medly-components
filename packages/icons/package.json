@@ -13,8 +13,15 @@
     },
     "license": "MIT",
     "scripts": {
+        "build": "cross-env BABEL_ENV=production rollup -c=../../rollup.config.js",
         "create-icons": "ts-node ./src/createIcons.ts",
-        "precreate-icons": "rimraf ./src/icons && rimraf ./src/index.ts && rimraf ./src/icons.stories.mdx"
+        "lint:css": "stylelint 'src/**/*.tsx'",
+        "lint:fix": "run-p -c 'lint:css --fix' 'lint:ts --fix'",
+        "lint:ts": "eslint 'src/**/*.{ts,tsx}'",
+        "lint": "run-p -c lint:css lint:ts",
+        "prebuild": "rimraf dist && tsc",
+        "precreate-icons": "rimraf ./src/icons && rimraf ./src/index.ts && rimraf ./src/icons.stories.mdx",
+        "watch": "yarn run build -w"
     },
     "peerDependencies": {
         "react": "16.x || 17.x",

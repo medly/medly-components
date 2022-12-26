@@ -29,7 +29,12 @@ module.exports = {
         config.module.rules.push({
             test: /\.(ts|tsx)$/,
             include: [packages, docs],
-            loader: 'babel-loader',
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    cacheDirectory: true
+                }
+            },
             exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /dist/, /icons\/src\/assets/]
         });
         config.module.rules.push({

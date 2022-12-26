@@ -16,6 +16,7 @@
     },
     "npmClient": "yarn",
     "packages": ["packages/*"],
+    "useNx": true,
     "useWorkspaces": true,
     "version": "independent"
 }

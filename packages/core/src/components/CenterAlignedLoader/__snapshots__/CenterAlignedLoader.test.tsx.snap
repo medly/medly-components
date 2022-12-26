@@ -229,7 +229,6 @@ exports[`Center Aligned Loader should render properly with custom loading messag
         <circle
           cx="25.5"
           cy="25.5"
-          fill-opacity=".4"
           r="24"
           stroke="url(#lg)"
           stroke-width="3"
@@ -309,7 +308,6 @@ exports[`Center Aligned Loader should render properly with default props 1`] = `
       <circle
         cx="25.5"
         cy="25.5"
-        fill-opacity=".4"
         r="24"
         stroke="url(#lg)"
         stroke-width="3"

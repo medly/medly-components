@@ -1,5 +1,4 @@
 module.exports = {
-    collectCoverage: true,
     collectCoverageFrom: [
         '<rootDir>/packages/**/src/**/*.(ts|tsx)',
         '!<rootDir>/packages/**/src/**/*.stories.(ts|tsx|mdx)',
@@ -24,9 +23,12 @@ module.exports = {
         displayName: name,
         setupFilesAfterEnv: ['<rootDir>/jest.setupAfterEnv.js'],
         moduleNameMapper: {
-            '^@test-utils': '<rootDir>/packages/utils/src/test-utils',
+            '^@test-utils': '<rootDir>/test-utils',
             '^@medly-components/(.*)$': '<rootDir>/packages/$1/src/index'
         },
-        testMatch: [`<rootDir>/packages/${name}/src/**/*.(spec|test).(ts|tsx)`]
+        testMatch: [`<rootDir>/packages/${name}/src/**/*.(spec|test).(ts|tsx)`],
+        transform: {
+            '\\.[jt]sx?$': ['babel-jest', { configFile: '<rootDir>/../../babel.config.js' }]
+        }
     }))
 };
