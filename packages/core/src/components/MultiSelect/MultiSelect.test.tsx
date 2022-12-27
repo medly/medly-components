@@ -56,7 +56,7 @@ describe('MultiSelect component', () => {
     test.each(sizes)('should render properly with %s size', async size => {
         const { container } = render(
             <MultiSelect
-                values={['disabled']}
+                values={['Dummy1']}
                 options={[...options, { value: 'disabled', label: 'Disabled', disabled: true }]}
                 variant="filled"
                 size={size}
@@ -64,7 +64,7 @@ describe('MultiSelect component', () => {
             />
         );
         fireEvent.click(screen.getByRole('textbox'));
-        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        expect(screen.getByRole('list')).toBeVisible();
         expect(container).toMatchSnapshot();
     });
 
