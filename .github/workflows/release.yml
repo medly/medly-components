@@ -24,9 +24,10 @@ jobs:
                   git config --global user.email 'oss@medly.com'
 
             - name: Setup Node.js
-              uses: actions/setup-node@v2
+              uses: actions/setup-node@v3
               with:
                   node-version: '16.x'
+                  cache: 'yarn'
                   registry-url: 'https://registry.npmjs.org'
                   scope: '@medly-components'
 
