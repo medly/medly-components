@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.1](https://github.com/medly/medly-components/compare/@medly-components/theme@5.2.0...@medly-components/theme@5.2.1) (2022-12-30)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
 # [5.2.0](https://github.com/medly/medly-components/compare/@medly-components/theme@5.1.0...@medly-components/theme@5.2.0) (2022-06-28)
 
 
