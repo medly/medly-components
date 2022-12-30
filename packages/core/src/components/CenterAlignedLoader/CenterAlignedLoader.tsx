@@ -26,5 +26,11 @@ const Component: FC<CenterAlignedLoaderProps> = memo(({ loader, withLoadingBox, 
     );
 });
 Component.displayName = 'CenterAlignedLoader';
-Component.defaultProps = { loader: <Loader />, withLoadingBox: false, loadingMessage: '', withOverlay: false, position: 'relative' };
+Component.defaultProps = {
+    loader: <Loader title="circle-loader" />,
+    withLoadingBox: false,
+    loadingMessage: '',
+    withOverlay: false,
+    position: 'relative'
+};
 export const CenterAlignedLoader: FC<CenterAlignedLoaderProps> & WithStyle = Object.assign(Component, { Style: CenterAligned });

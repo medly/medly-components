@@ -4,27 +4,27 @@ import { CenterAlignedLoader } from './CenterAlignedLoader';
 
 describe('Center Aligned Loader', () => {
     it('should render properly with default props', () => {
-        const { container } = render(<CenterAlignedLoader />);
-        expect(container).toMatchSnapshot();
+        render(<CenterAlignedLoader />);
+        expect(screen.getByTitle('circle-loader')).toBeInTheDocument();
     });
 
     it('should render properly with all props given', () => {
-        const { container } = render(
+        render(
             <CenterAlignedLoader
                 withLoadingBox
                 withOverlay
                 position="absolute"
                 loadingMessage=""
-                loader={<ConcentricCircleLoader size="XS" />}
+                loader={<ConcentricCircleLoader size="XS" title="concentric-circle-loader" />}
             />
         );
-        expect(container).toMatchSnapshot();
+        expect(screen.getByTitle('concentric-circle-loader')).toBeInTheDocument();
         expect(screen.getByText('Loading...')).toBeInTheDocument();
     });
 
     it('should render properly with custom loading message', () => {
-        const { container } = render(<CenterAlignedLoader withLoadingBox loadingMessage="custom loading message" />);
-        expect(container).toMatchSnapshot();
+        render(<CenterAlignedLoader withLoadingBox loadingMessage="custom loading message" />);
+        expect(screen.getByTitle('circle-loader')).toBeInTheDocument();
         expect(screen.getByText('custom loading message')).toBeInTheDocument();
     });
 });

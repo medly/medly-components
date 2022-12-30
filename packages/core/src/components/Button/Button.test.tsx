@@ -1,7 +1,7 @@
 import { AddIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { updateNestedValue } from '@medly-components/utils';
-import { render } from '@test-utils';
+import { render, screen } from '@test-utils';
 import { ThemeProvider } from 'styled-components';
 import { Button } from './Button';
 import { ButtonProps } from './types';
@@ -25,12 +25,12 @@ describe('Button component', () => {
         });
 
         test('should render properly when it is loading', () => {
-            const { container } = render(
+            render(
                 <Button isLoading variant={variant}>
                     Button
                 </Button>
             );
-            expect(container).toMatchSnapshot();
+            expect(screen.getByTitle('button-loader')).toBeInTheDocument();
         });
 
         const options: ButtonProps['size'][] = ['XS', 'S', 'M', 'L'];
@@ -48,12 +48,12 @@ describe('Button component', () => {
     const options: ButtonProps['size'][] = ['S', 'L'];
 
     test.each(options)('should render properly with %s size and loading state', size => {
-        const { container } = render(
+        render(
             <Button size={size} isLoading>
                 Button
             </Button>
         );
-        expect(container).toMatchSnapshot();
+        expect(screen.getByTitle('button-loader')).toBeInTheDocument();
     });
 
     const edgeOptions: Required<ButtonProps>['edges'][] = ['square', 'rounded', 'circle'];

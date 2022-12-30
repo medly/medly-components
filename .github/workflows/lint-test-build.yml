@@ -1,4 +1,4 @@
-name: Lint, Build, Test
+name: Lint, Test, Build
 
 on:
     pull_request:
@@ -6,25 +6,26 @@ on:
             - 'master'
 
 jobs:
-    lint-build-test:
+    lint-test-build:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
               uses: actions/checkout@v2
 
             - name: Setup Node.js
-              uses: actions/setup-node@v1
+              uses: actions/setup-node@v3
               with:
-                  node-version: '14.x'
+                  node-version: '16'
+                  cache: 'yarn'
 
             - name: Install dependencies
               run: yarn
 
-            - name: Linting
+            - name: Lint
               run: yarn lint
 
-            - name: Build packages
-              run: yarn build
+            - name: Test
+              run: yarn test:coverage
 
-            - name: Run tests
-              run: yarn test
+            - name: Build
+              run: yarn build

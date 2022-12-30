@@ -1,13 +1,13 @@
 import { WithStyle } from '@medly-components/utils';
+import type { FC } from 'react';
 import { memo } from 'react';
 import { BtnLoaderStyled } from './Loader.styled';
 import Loader from './Loader.svg';
 import { BtnLoaderProps } from './types';
-import type { FC } from 'react';
 
 const Component: FC<BtnLoaderProps> = memo(props => (
     <BtnLoaderStyled {...props}>
-        <Loader />
+        <Loader title="button-loader" />
     </BtnLoaderStyled>
 ));
 

@@ -1,6 +1,6 @@
+import { render, screen } from '@test-utils';
 import { fireEvent } from '@testing-library/react';
 import { ChangeEvent, FC } from 'react';
-import { render, screen } from '../../test-utils';
 import { useStorage } from './useStorage';
 
 const FirstComponent: FC = () => {

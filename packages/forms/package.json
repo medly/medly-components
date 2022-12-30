@@ -12,6 +12,17 @@
         "access": "public"
     },
     "license": "MIT",
+    "scripts": {
+        "build": "cross-env BABEL_ENV=production rollup -c=../../rollup.config.js",
+        "lint:css": "stylelint 'src/**/*.tsx'",
+        "lint:fix": "run-p -c 'lint:css --fix' 'lint:ts --fix'",
+        "lint:ts": "eslint 'src/**/*.{ts,tsx}'",
+        "lint": "run-p -c lint:css lint:ts",
+        "prebuild": "rimraf dist && tsc",
+        "test:watch": "yarn test --watch",
+        "test": "tsc && jest --selectProjects forms --config ../../jest.config.js ",
+        "watch": "yarn run build -w"
+    },
     "peerDependencies": {
         "react": "16.x || 17.x",
         "react-dom": "16.x || 17.x",
@@ -21,6 +32,7 @@
         "@medly-components/core": "6.19.3",
         "@medly-components/theme": "5.2.0",
         "@medly-components/utils": "2.2.0",
+        "date-fns": "^2.16.1",
         "fast-memoize": "^2.5.2"
     }
 }

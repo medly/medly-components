@@ -29,19 +29,19 @@ describe('Pagination component', () => {
 
     it('should call onClick handler with correct page number when any page link is clicked', () => {
         const { mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(screen.getByRole('button', { name: '4' }));
+        fireEvent.click(screen.getByText('4'));
         expect(mockOnPageClick).toBeCalledWith(4);
     });
 
     it('should call onClick handler with first page when first page is clicked', () => {
         const { mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(screen.getByRole('button', { name: '1' }));
+        fireEvent.click(screen.getByText('1'));
         expect(mockOnPageClick).toBeCalledWith(1);
     });
 
     it('should call onClick handler with last page when last page is clicked', () => {
         const { mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(screen.getByRole('button', { name: '15' }));
+        fireEvent.click(screen.getByText('15'));
         expect(mockOnPageClick).toBeCalledWith(15);
     });
 
@@ -59,14 +59,14 @@ describe('Pagination component', () => {
 
     it('should call onClick handler with expected page when selected from ellipsis popover', () => {
         const { mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(screen.getByRole('button', { name: '...' }));
-        fireEvent.click(screen.getByRole('button', { name: '7' }));
+        fireEvent.click(screen.getByText('...'));
+        fireEvent.click(screen.getByText('7'));
         expect(mockOnPageClick).toBeCalledWith(7);
     });
 
     it('should not call onClick handler when clicked on active page', () => {
         const { mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
-        fireEvent.click(screen.getByRole('button', { name: '3' }));
+        fireEvent.click(screen.getByText('3'));
         expect(mockOnPageClick).not.toBeCalled();
     });
 });

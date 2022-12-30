@@ -11,5 +11,12 @@
     "publishConfig": {
         "access": "public"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "scripts": {
+        "build": "cross-env BABEL_ENV=production rollup -c=../../rollup.config.js",
+        "lint:fix": "yarn lint:ts --fix",
+        "lint": "eslint 'src/**/*.{ts,tsx}'",
+        "prebuild": "rimraf dist && tsc",
+        "watch": "yarn run build -w"
+    }
 }

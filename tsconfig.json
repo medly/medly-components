@@ -2,12 +2,11 @@
     "extends": "@medly/typescript-config-react",
     "compilerOptions": {
         "baseUrl": "./",
-        "jsx": "react-jsx",
         "paths": {
             "@medly-components/*": ["packages/*/src"],
-            "@test-utils": ["packages/utils/src/test-utils"]
+            "@test-utils": ["test-utils"]
         }
     },
-    "include": ["./packages", "./docs", "./types"],
+    "include": ["./packages", "./docs", "./types", "test-utils.tsx"],
     "exclude": ["node_modules", "packages/**/dist", ".storybook"]
 }
