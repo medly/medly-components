@@ -4,11 +4,21 @@ import * as stories from './Breadcrumb.stories';
 import { action } from '@storybook/addon-actions';
 import Text from '../Text';
 
-<Meta title="Core" component={Breadcrumb} />
+<Meta
+    title="Core"
+    component={Breadcrumb}
+    parameters={{
+        jest: ['Breadcrumb.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library---B2B-%2F-Internal?node-id=10182%3A9510&t=YrDOrJ1xBbs3GUTh-1'
+        }
+    }}
+/>
 
 # Breadcrumb
 
-A `Breadcrumb` is a list of links that help you visualize the location of the page within an application or website by showing the hierarchical structure.  
+A `Breadcrumb` is a list of links that help you visualize the location of the page within an application or website by showing the hierarchical structure.
 
 <Preview withToolbar>
     <Story name="Breadcrumb">
@@ -22,7 +32,7 @@ A `Breadcrumb` is a list of links that help you visualize the location of the pa
     </Story>
 </Preview>
 
-To perform on click action on any item, pass the `onClick` prop, and to disable any item, pass the `disabled` prop. 
+To perform on click action on any item, pass the `onClick` prop, and to disable any item, pass the `disabled` prop.
 Additionally, to use the back button, call `<Breadcrumb.Back />`.
 
 <Preview withToolbar>

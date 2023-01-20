@@ -4,6 +4,7 @@ import { BreadcrumbItemStyled } from '../Item/Item.styled';
 
 export const BreadcrumbBackStyled = styled(BreadcrumbItemStyled)`
     & > ${SvgIcon} {
+        margin-right: 0.4rem;
         * {
             fill: ${({ theme }) => theme.breadcrumb.textColor.default};
         }
