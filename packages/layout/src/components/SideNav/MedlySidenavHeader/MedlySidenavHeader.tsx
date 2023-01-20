@@ -1,15 +1,15 @@
 import { Logo } from '@medly-components/core';
 import { WithStyle } from '@medly-components/utils';
-import { memo, FC, useContext } from 'react';
+import { FC, memo, useContext } from 'react';
 import SideNavContext from '../SideNav.context';
 import * as Styled from './MedlySidenavHeader.styled';
 import { Props } from './types';
 
-const Component: FC<Props> = memo(({ companyLogo: CompanyLogo, companyName: CompanyName }) => {
+const Component: FC<Props> = memo(({ companyLogo, companyName }) => {
     const { isHovered, isExpanded } = useContext(SideNavContext);
     return (
         <Styled.SidenavHeader as="div" isHovered={isHovered} isExpanded={isExpanded}>
-            <Logo name={CompanyName && <CompanyName />} logo={CompanyLogo && <CompanyLogo />} />
+            <Logo name={companyName} logo={companyLogo} />
         </Styled.SidenavHeader>
     );
 });

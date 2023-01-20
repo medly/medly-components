@@ -35,7 +35,7 @@ describe('Medly sidenav header', () => {
             <SidenavContext.Provider
                 value={{ activeItem: 'dummy', isHovered: true, isExpanded: true, activeItemChangeHandler: () => null }}
             >
-                <MedlySidenavHeader companyLogo={DummyLogo} companyName={DummyName} />
+                <MedlySidenavHeader companyLogo={<DummyLogo />} companyName={<DummyName />} />
             </SidenavContext.Provider>
         );
         expect(screen.getByText('My Logo')).toBeInTheDocument();

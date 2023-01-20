@@ -1,8 +1,8 @@
-import { SvgIconProps } from '@medly-components/icons';
+import { LogoProps } from '@medly-components/core';
 
 export interface Props {
-    companyLogo?: React.FunctionComponent<SvgIconProps>;
-    companyName?: React.FunctionComponent<SvgIconProps>;
+    companyLogo?: LogoProps['logo'];
+    companyName?: LogoProps['name'];
 }
 
 export interface HeaderStyledProps {
