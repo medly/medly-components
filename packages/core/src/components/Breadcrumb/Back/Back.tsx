@@ -1,17 +1,20 @@
 import { ChevronLeftIcon } from '@medly-components/icons';
-import { HTMLProps } from '@medly-components/utils';
-import { memo, forwardRef } from 'react';
+import { HTMLProps, WithStyle } from '@medly-components/utils';
+import type { FC } from 'react';
+import { forwardRef, memo } from 'react';
 import Text from '../../Text';
 import { BreadcrumbBackStyled } from './Back.styled';
-import type { FC } from 'react';
 
-export const BreadcrumbBack: FC<HTMLProps<HTMLLIElement>> = memo(
+export const Component: FC<HTMLProps<HTMLLIElement>> = memo(
     forwardRef((props, ref) => (
         <BreadcrumbBackStyled ref={ref} {...props}>
-            <ChevronLeftIcon size="S" />
+            <ChevronLeftIcon />
             <Text>Back</Text>
         </BreadcrumbBackStyled>
     ))
 );
+Component.displayName = 'BreadcrumbBack';
 
-BreadcrumbBack.displayName = 'BreadcrumbBack';
+export const BreadcrumbBack: typeof Component & WithStyle = Object.assign(Component, {
+    Style: BreadcrumbBackStyled
+});
