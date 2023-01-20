@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.20.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.19.4...@medly-components/core@6.20.0) (2023-01-20)
+
+
+### Features
+
+* add Style property to Breadcrumb Back component ([#702](https://github.com/medly/medly-components/issues/702)) ([a13af1c](https://github.com/medly/medly-components/commit/a13af1c8eb374ab7802187a7c15fceb281a0289f))
+
+
+
+
+
 ## [6.19.4](https://github.com/medly/medly-components/compare/@medly-components/core@6.19.3...@medly-components/core@6.19.4) (2022-12-30)
 
 **Note:** Version bump only for package @medly-components/core
