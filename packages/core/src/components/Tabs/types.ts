@@ -29,6 +29,8 @@ export interface TabsProps extends HTMLProps<HTMLDivElement> {
     hidePanel?: boolean;
     /** Tabs design */
     variant?: Variant;
+    /** Set it true to render tab list in full width */
+    fullWidth?: boolean;
 }
 
 export interface StaticProps {

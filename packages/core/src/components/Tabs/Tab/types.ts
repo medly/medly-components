@@ -38,4 +38,6 @@ export interface TabProps extends HTMLProps<HTMLButtonElement> {
     fraction?: number;
     /** Disabled label text (only visible for the `solid` Tabs variant) */
     disabledLabel?: string;
+    /** This prop will be past down by Tabs component so that TabList can be rendered with full width  */
+    fullWidth?: string;
 }

@@ -5,7 +5,7 @@ export const TabPanel = styled('div')<StyledProps>`
     &:focus {
         outline: none;
     }
-    padding: 10px;
+    padding: 1rem;
     height: 100%;
     width: 100%;
     display: ${({ isActive }) => (!isActive ? 'none' : 'block')};

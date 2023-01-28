@@ -7,7 +7,7 @@ import * as Styled from './TabList.styled';
 import { TabListProps } from './types';
 
 const Component: FC<TabListProps> = memo(props => {
-    const { active, onChange, ...restProps } = props,
+    const { active, onChange, fullWidth, ...restProps } = props,
         leftPress = useKeyPress('ArrowLeft'),
         rightPress = useKeyPress('ArrowRight'),
         homePress = useKeyPress('Home'),
@@ -58,6 +58,7 @@ const Component: FC<TabListProps> = memo(props => {
                             onClick={handleChange(id)}
                             totalTabs={totalTabs}
                             variant={variant}
+                            fullWidth={fullWidth}
                             {...child.props}
                         />
                     );

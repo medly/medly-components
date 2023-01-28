@@ -3826,7 +3826,7 @@
     tslib "^2.2.0"
     typescript "4.2.4"
 
-"@medly/stylelint-config@^0.2.0":
+"@medly/stylelint-config@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@medly/stylelint-config/-/stylelint-config-0.2.0.tgz#5f1e8ce2cdc0a4577d723d79bb467bae7c3460cf"
   integrity sha512-QtBweDNoDRUkyRiWS7MNxgF8AffBvqK2kSDmQR0lycUzRbBB9PjpiH134avYC20+6fAeTAW/QEE23PFRsMRmpQ==
