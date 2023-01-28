@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.21.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.20.0...@medly-components/core@6.21.0) (2023-01-28)
+
+
+### Features
+
+* add fullWidth feature in Tabs component ([#704](https://github.com/medly/medly-components/issues/704)) ([61bdd31](https://github.com/medly/medly-components/commit/61bdd319b9bbaa834067fcb9d2f2048e419f11e4))
+
+
+
+
+
 # [6.20.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.19.4...@medly-components/core@6.20.0) (2023-01-20)
 
 
