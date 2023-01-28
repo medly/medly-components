@@ -53,6 +53,9 @@ exports[`TabList should render properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  -webkit-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
@@ -187,6 +190,9 @@ exports[`TabList should render properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  -webkit-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
@@ -362,6 +368,22 @@ exports[`TabList should render properly 1`] = `
   justify-content: flex-start;
   overflow-x: auto;
   background-color: transparent;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+@media (max-width:767px) {
+  .c7 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
 }
 
 <div>

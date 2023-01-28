@@ -107,7 +107,7 @@
         "@medly/eslint-config-react": "^0.3.1",
         "@medly/prettier-config": "^0.1.1",
         "@medly/rollup-config": "^0.8.2",
-        "@medly/stylelint-config": "^0.2.0",
+        "@medly/stylelint-config": "0.2.0",
         "@medly/typescript-config-react": "^1.4.0",
         "@nrwl/nx-cloud": "^15.0.2",
         "@storybook/addon-actions": "5.3.18",

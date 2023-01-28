@@ -10,7 +10,19 @@ import { StaticProps, TabsProps } from './types';
 
 const Component: FC<TabsProps> = memo(
     forwardRef((props, ref) => {
-        const { hidePanel, defaultActive, active, onChange, children, tabSize, tabBackground, forceRender, variant, ...restProps } = props,
+        const {
+                hidePanel,
+                defaultActive,
+                active,
+                onChange,
+                children,
+                tabSize,
+                tabBackground,
+                forceRender,
+                variant,
+                fullWidth,
+                ...restProps
+            } = props,
             tabsId = props.id || 'medly-tabs',
             tabIds = useMemo(
                 () =>
@@ -41,7 +53,7 @@ const Component: FC<TabsProps> = memo(
         return (
             <Styled.Tabs id={tabsId} ref={ref} {...restProps}>
                 <TabsContext.Provider value={tabsContext}>
-                    <TabList id={`${tabsId}-list`} active={activeTab} onChange={handleTabChange}>
+                    <TabList id={`${tabsId}-list`} active={activeTab} onChange={handleTabChange} fullWidth={fullWidth}>
                         {children}
                     </TabList>
                     {!hidePanel && (

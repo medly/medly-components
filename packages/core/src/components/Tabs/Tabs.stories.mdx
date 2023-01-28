@@ -47,10 +47,11 @@ Use `Tabs.Tab` to add tab in `Tabs` component.
             <Tabs
                 defaultActive="tab1"
                 aria-label="Basic Tabs"
-                tabSize={select('Tab Size', sizes, 'S')}
-                tabBackground={select('Tab Background', tabBg, 'WHITE')}
                 forceRender={boolean('Force Render', false)}
+                fullWidth={boolean('Full Width', false)}
+                tabSize={select('Tab Size', sizes, 'S')}
                 variant={select('Variant', ['flat', 'outlined', 'solid'], 'flat')}
+                tabBackground={select('Tab Background', tabBg, 'WHITE')}
             >
                 <Tabs.Tab id="tab1" label="Add" helperText="Details" count={0}>
                     Content for the add panel
@@ -77,9 +78,11 @@ We provide the `icon` prop as well.
             <Tabs
                 defaultActive="tab1"
                 aria-label="WithIcon Tabs"
+                forceRender={boolean('Force Render', false)}
+                fullWidth={boolean('Full Width', false)}
                 tabSize={select('Tab Size', sizes, 'S')}
                 tabBackground={select('Tab Background', tabBg, 'WHITE')}
-                forceRender={boolean('Force Render', false)}
+                variant={select('Variant', ['flat', 'outlined', 'solid'], 'flat')}
             >
                 <Tabs.Tab id="tab1" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
                     Content for the add panel
@@ -185,7 +188,7 @@ Three Tab variants are available viz; flat, outlined, and solid.
 
 Three Tab szes are available: `S` | `M` | `L`.
 
-## 1. `S` 
+## 1. `S`
 
 <Preview withToolbar>
     <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="S">
@@ -201,7 +204,7 @@ Three Tab szes are available: `S` | `M` | `L`.
     </Tabs>
 </Preview>
 
-## 2. `M` 
+## 2. `M`
 
 <Preview withToolbar>
     <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="M">
@@ -217,7 +220,7 @@ Three Tab szes are available: `S` | `M` | `L`.
     </Tabs>
 </Preview>
 
-## 3. `L` 
+## 3. `L`
 
 <Preview withToolbar>
     <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="L">
@@ -239,7 +242,6 @@ Three Tab szes are available: `S` | `M` | `L`.
 
 2. **Controlled**: When using the controlled `Tabs` component you must provide the `active` and `onChange` prop.
 
-
 ## Keyboard support
 
 This component supports keyboard navigation when in focus.
@@ -253,7 +255,7 @@ This component supports keyboard navigation when in focus.
 
 ## Props
 
-This component offers the `tabs` and `tab`  props mentioned in the table below:
+This component offers the `tabs` and `tab` props mentioned in the table below:
 
 ## 1. Tabs Props
 

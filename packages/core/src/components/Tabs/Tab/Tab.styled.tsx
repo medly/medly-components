@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, getFontStyle } from '@medly-components/utils';
+import { breakpoints, centerAligned, getFontStyle, media } from '@medly-components/utils';
 import styled, { css } from 'styled-components';
 import Text from '../../Text';
 import { TabSize } from '../types';
@@ -120,6 +120,10 @@ const flatOutlinedStyle = css<StyledTabProps>`
         background-color: ${({ borderColor, active }) => (active ? borderColor.active : 'transparent')};
         border-radius: ${({ variant }) => variant === 'flat' && '0.5rem 0.5rem 0 0'};
     }
+
+    ${({ theme, fraction }) => media(breakpoints(theme.breakpoints).down('S'))`
+        flex: ${fraction || 1}
+    `}
 `;
 
 const flatBackgroundStyle = css`
@@ -142,7 +146,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     border-style: solid;
     box-sizing: border-box;
     font-family: inherit;
-    flex: ${({ fraction, variant }) => variant !== 'solid' && fraction};
+    flex: ${({ fraction, fullWidth, variant }) => variant !== 'solid' && (fraction || (fullWidth ? '1' : 'initial'))};
     border-color: ${({ borderColor, variant }) => (variant === 'flat' || variant === 'outlined') && borderColor[variant]};
     border-width: ${({ variant }) => (variant === 'outlined' ? `0.1rem 0.1rem 0.1rem 0` : `0 0 0.1rem 0`)};
     transition: all 100ms ease-out;

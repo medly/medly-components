@@ -62,6 +62,9 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  -webkit-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
@@ -196,6 +199,9 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  -webkit-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
@@ -374,7 +380,7 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
 }
 
 .c10 {
-  padding: 10px;
+  padding: 1rem;
   height: 100%;
   width: 100%;
   display: block;
@@ -382,6 +388,22 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
 
 .c10:focus {
   outline: none;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+@media (max-width:767px) {
+  .c9 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
 }
 
 <div>
@@ -489,6 +511,318 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
 </div>
 `;
 
+exports[`Tabs should render properly with fullWidth 1`] = `
+.c4 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c6 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c1 {
+  padding: 1.6rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+  border-style: solid;
+  box-sizing: border-box;
+  font-family: inherit;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-color: #b0bcc8;
+  border-width: 0 0 0.1rem 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: #EBF1FA;
+  background-color: #ffffff;
+  background-color: transparent;
+}
+
+.c1 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: #ffffff;
+}
+
+.c1:disabled::after {
+  background-color: transparent;
+}
+
+.c1:disabled .c5 {
+  color: #b0bcc8;
+}
+
+.c1:disabled .sc-1kcg570-3 {
+  color: #b0bcc8;
+}
+
+.c1:disabled .sc-1kcg570-0 {
+  background-color: #b0bcc8;
+}
+
+.c1:disabled .sc-1pf3x8a-0 {
+  font-size: 2.4rem;
+  padding: 0;
+  background-color: transparent;
+}
+
+.c1:disabled .sc-1pf3x8a-0 * {
+  fill: #b0bcc8;
+}
+
+.c1:not(:disabled):hover {
+  cursor: pointer;
+}
+
+.c1 .sc-1pf3x8a-0 {
+  margin-right: 1.6rem;
+}
+
+.c1 .c5 {
+  color: #3872D2;
+}
+
+.c1 .sc-1kcg570-3 {
+  color: #607890;
+}
+
+.c1 .sc-1kcg570-0 {
+  background-color: #3872D2;
+}
+
+.c1 .sc-1pf3x8a-0 {
+  font-size: 2.4rem;
+  padding: 0;
+  background-color: transparent;
+}
+
+.c1 .sc-1pf3x8a-0 * {
+  fill: #3872D2;
+}
+
+.c1 .sc-1pf3x8a-0 * {
+  fill: #3872D2;
+}
+
+.c1:first-child {
+  border-top-left-radius: 0.8rem;
+}
+
+.c1:last-child {
+  border-top-right-radius: 0.8rem;
+}
+
+.c1::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0.4rem;
+  bottom: -0.1rem;
+  left: 0;
+  width: 100%;
+  background-color: #3872D2;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c1:disabled {
+  background-color: transparent;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow-x: auto;
+  background-color: transparent;
+}
+
+.c7 {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.c7:focus {
+  outline: none;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+<div>
+  <div
+    class=""
+    id="medly-tabs"
+  >
+    <div
+      class="c0"
+      id="medly-tabs-list"
+    >
+      <button
+        aria-controls="panel-tab2"
+        aria-selected="true"
+        class="c1"
+        id="tab2"
+        label="[object Object]"
+        role="tab"
+        tabindex="0"
+        type="button"
+      >
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            <span
+              class="c4 c5 c6"
+              id="tab2-label"
+            >
+              Delete
+            </span>
+          </div>
+        </div>
+      </button>
+      <button
+        aria-controls="panel-tab2"
+        aria-selected="true"
+        class="c1"
+        id="tab2"
+        label="[object Object]"
+        role="tab"
+        tabindex="0"
+        type="button"
+      >
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            <span
+              class="c4 c5 c6"
+              id="tab2-label"
+            >
+              Delete
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div
+      aria-labelledby="tab2"
+      class="c7"
+      id="medly-tabs-panel-tab2"
+      role="tabpanel"
+      tabindex="0"
+    >
+      Content for the delete panel
+    </div>
+    <div
+      aria-labelledby="tab2"
+      class="c7"
+      id="medly-tabs-panel-tab2"
+      role="tabpanel"
+      tabindex="0"
+    >
+      Content for the delete panel
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Tabs should render properly with outlined tab variant 1`] = `
 .c4 {
   margin: 0;
@@ -551,6 +885,9 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  -webkit-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
   border-color: #C7D0D8;
   border-width: 0.1rem 0.1rem 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
@@ -680,6 +1017,9 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  -webkit-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
   border-color: #C7D0D8;
   border-width: 0.1rem 0.1rem 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
@@ -853,7 +1193,7 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
 }
 
 .c10 {
-  padding: 10px;
+  padding: 1rem;
   height: 100%;
   width: 100%;
   display: block;
@@ -861,6 +1201,22 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
 
 .c10:focus {
   outline: none;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+@media (max-width:767px) {
+  .c9 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
 }
 
 <div>
@@ -1377,7 +1733,7 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
 }
 
 .c12 {
-  padding: 10px;
+  padding: 1rem;
   height: 100%;
   width: 100%;
   display: block;

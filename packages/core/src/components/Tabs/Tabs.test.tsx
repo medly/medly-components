@@ -48,6 +48,20 @@ describe('Tabs', () => {
         expect(container).toBeEmptyDOMElement();
     });
 
+    it('should render properly with fullWidth', () => {
+        const { container } = render(
+            <Tabs fullWidth>
+                <Tab id="tab2" label="Delete">
+                    Content for the delete panel
+                </Tab>
+                <Tab id="tab2" label="Delete">
+                    Content for the delete panel
+                </Tab>
+            </Tabs>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
     it('should not render anything if there is no children', () => {
         const { container } = render(<Tabs />);
         expect(container).toBeEmptyDOMElement();
