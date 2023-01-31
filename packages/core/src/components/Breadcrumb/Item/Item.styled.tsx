@@ -6,6 +6,7 @@ export const BreadcrumbItemStyled = styled('li').attrs(({ theme: { breadcrumb } 
     height: 100%;
     display: flex;
     align-items: center;
+    text-decoration: none;
     pointer-events: ${({ disabled }) => disabled && 'none'};
     cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick && 'pointer')};
 

@@ -40,6 +40,8 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c6 .c4 {
@@ -72,6 +74,8 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -105,6 +109,8 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c1 .c4 {
@@ -277,6 +283,8 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c7 .c4 {
@@ -309,6 +317,8 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -342,6 +352,8 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c1 .c4 {
