@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.23.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.22.0...@medly-components/core@6.23.0) (2023-02-01)
+
+
+### Features
+
+* add to prop to Breadcrumb Back component ([35b32e4](https://github.com/medly/medly-components/commit/35b32e47226f97ccfba3458429ecdf32625c573c))
+
+
+
+
+
 # [6.22.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.21.0...@medly-components/core@6.22.0) (2023-02-01)
 
 
