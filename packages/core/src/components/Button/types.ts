@@ -5,7 +5,7 @@ export type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, 'size'> & { theme?:
     /** Use to render any component as Button */
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     /** Use for rendering like Link */
-    to?: string;
+    to?: string | number;
     /** Button sizes */
     size?: ButtonSizes;
     /** Button type */
