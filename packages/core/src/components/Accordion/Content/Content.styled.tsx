@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled('div')<{ isActive: boolean }>`
-    overflow: hidden;
+    overflow: ${({ isActive }) => !isActive && 'hidden'};
     transition: all 200ms ${({ isActive }) => (isActive ? 'ease-in' : 'ease-out')};
     max-height: ${({ isActive }) => !isActive && 0};
     opacity: ${({ isActive }) => (isActive ? 1 : 0)};
