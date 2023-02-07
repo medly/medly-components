@@ -13,9 +13,15 @@ export type AccordionContextType = [
 ];
 
 export type AccordionProps = {
+    /** Use to render any component as Button */
+    as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+    /** Set it true to open the accordion by default */
     defaultActive?: boolean;
+    /** If you want to handle the active state then pass it along with onChange */
     active?: boolean;
+    /** If you want to handle the active state then pass it along with active */
     onChange?: Dispatch<SetStateAction<boolean>>;
+    /** Set it to change the color of the icon */
     iconColor?: string;
 };
 
