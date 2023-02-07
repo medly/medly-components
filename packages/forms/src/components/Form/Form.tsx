@@ -1,14 +1,14 @@
 import { Text } from '@medly-components/core';
 import { WithStyle } from '@medly-components/utils';
-import { FC, forwardRef, memo, useEffect, useMemo } from 'react';
+import { forwardRef, memo, useEffect, useMemo } from 'react';
 import { createObjectFromDottedKeys } from '../../helpers';
 import useForm from '../../hooks/useForm';
 import Actions from '../Actions';
 import Fields from '../Fields';
 import * as Styled from './Form.styled';
-import { FormProps } from './types';
+import { FormComponentType } from './types';
 
-const Component: FC<FormProps> = memo(
+const Component: FormComponentType = memo(
     forwardRef(
         (
             {
@@ -91,4 +91,4 @@ Component.defaultProps = {
     isLoading: false
 };
 
-export const Form: FC<FormProps> & WithStyle = Object.assign(Component, { Style: Styled.Form });
+export const Form: FormComponentType & WithStyle = Object.assign(Component, { Style: Styled.Form });
