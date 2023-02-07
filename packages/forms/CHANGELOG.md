@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.81...@medly-components/forms@2.2.0) (2023-02-07)
+
+
+### Features
+
+* make form component generic ([#708](https://github.com/medly/medly-components/issues/708)) ([449d255](https://github.com/medly/medly-components/commit/449d2556ae76eb4ec87ff2d491fcd81bc0e27fbc))
+
+
+
+
+
 ## [2.1.81](https://github.com/medly/medly-components/compare/@medly-components/forms@2.1.80...@medly-components/forms@2.1.81) (2023-02-02)
 
 **Note:** Version bump only for package @medly-components/forms
