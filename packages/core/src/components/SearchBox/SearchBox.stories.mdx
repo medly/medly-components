@@ -17,11 +17,11 @@ A `SearchBox` or search bar component is a text field which takes your input and
     <Story name="default">
         {() => {
             const [options, setOptions] = useState([]),
-                onInputChangeHandler = value => value.length > 2 && setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
+                onChangeHandler = value => value.length > 2 && setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
             return (
                 <SearchBox
                     placeholder="Search"
-                    onInputChange={onInputChangeHandler}
+                    onChange={onChangeHandler}
                     onOptionSelected={action('Selected')}
                     options={options}
                     onSearch={action('Search')}
@@ -42,11 +42,11 @@ To customize your search filter, you must pass react component to the `customSea
     <Story name="withCustomSearchFilter">
         {() => {
             const [options, setOptions] = useState([]),
-                onInputChangeHandler = value => value.length > 2 && setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
+                onChangeHandler = value => value.length > 2 && setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
             return (
                 <SearchBox
                     placeholder="Search"
-                    onInputChange={onInputChangeHandler}
+                    onChange={onChangeHandler}
                     onOptionSelected={action('Selected')}
                     options={options}
                     size={select('Size', size, 'M')}
