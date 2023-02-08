@@ -18,7 +18,7 @@ const Component: FC<SearchBoxProps> = memo(
             options: defaultOptions,
             size,
             placeholder,
-            onInputChange,
+            onChange,
             onOptionSelected,
             onClear,
             onSearch,
@@ -74,7 +74,7 @@ const Component: FC<SearchBoxProps> = memo(
                 const { value } = event.target;
                 updateIsTyping(value.length !== 0);
                 setShowCloseIcon(value.length !== 0);
-                onInputChange && onInputChange(value);
+                onChange && onChange(value);
             }, []),
             handleOptionClick = useCallback(
                 (option: Option) => {

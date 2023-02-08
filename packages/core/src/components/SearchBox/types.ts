@@ -14,7 +14,7 @@ export type WrapperProps = {
     areOptionsVisible?: boolean;
 };
 
-export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'> {
+export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size' | 'onChange'> {
     /** Size for search box can be 'S' | 'M' */
     size?: Size;
     /** Option for search results in form of label and value */
@@ -38,7 +38,7 @@ export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'
     /** Function to be called on  selecting the option */
     onOptionSelected?: (value: Option) => void;
     /** Function to be called on input value changes */
-    onInputChange?: (value: string) => void;
+    onChange?: (value: string) => void;
 }
 
 export type StyledSearchBoxProps = SearchBoxProps & {
