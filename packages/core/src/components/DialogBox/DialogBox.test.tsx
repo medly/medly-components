@@ -4,14 +4,14 @@ import { DialogBoxProps } from './types';
 
 const dialogBoxRenderer = ({
     open = false,
-    onCloseModal = jest.fn(),
+    onClose = jest.fn(),
     minWidth,
     minHeight,
     shouldCloseOnOutsideClick = false,
     showCloseIcon = false
 }: DialogBoxProps) =>
     render(
-        <DialogBox {...{ open, onCloseModal, minHeight, minWidth, shouldCloseOnOutsideClick, showCloseIcon }}>
+        <DialogBox {...{ open, onClose, minHeight, minWidth, shouldCloseOnOutsideClick, showCloseIcon }}>
             <DialogBox.Header>
                 <p>Demo Header</p>
             </DialogBox.Header>
@@ -22,7 +22,7 @@ const dialogBoxRenderer = ({
                 popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                 publishing software like Aldus PageMaker including versions of Lorem Ipsum
             </DialogBox.Content>
-            <DialogBox.Actions>Demo Actions</DialogBox.Actions>
+            <DialogBox.Footer>Demo Footer</DialogBox.Footer>
         </DialogBox>
     );
 
@@ -42,38 +42,38 @@ describe('DialogBox component', () => {
         expect(container).toBeEmptyDOMElement();
     });
 
-    it('should call onCloseModal on pressing escape key', () => {
-        const mockOnCloseModal = jest.fn();
-        const { container } = dialogBoxRenderer({ open: true, onCloseModal: mockOnCloseModal });
+    it('should call onClose on pressing escape key', () => {
+        const mockOnClose = jest.fn();
+        const { container } = dialogBoxRenderer({ open: true, onClose: mockOnClose });
         fireEvent.keyDown(container, { key: 'Escape', code: 27 });
-        expect(mockOnCloseModal).toBeCalled();
+        expect(mockOnClose).toBeCalled();
     });
 
-    it('should call onCloseModal on click on overlay background', () => {
-        const mockOnCloseModal = jest.fn();
-        const { container } = dialogBoxRenderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true });
+    it('should call onClose on click on overlay background', () => {
+        const mockOnClose = jest.fn();
+        const { container } = dialogBoxRenderer({ open: true, onClose: mockOnClose, shouldCloseOnOutsideClick: true });
         fireEvent.click(container.querySelector('#medly-dialog-box') as HTMLDivElement);
-        expect(mockOnCloseModal).toBeCalled();
+        expect(mockOnClose).toBeCalled();
     });
 
     it('should be able to render any JSX element in header', () => {
-        const mockOnCloseModal = jest.fn();
+        const mockOnClose = jest.fn();
         const { container } = render(
-            <DialogBox open onCloseModal={mockOnCloseModal}>
+            <DialogBox open onClose={mockOnClose}>
                 <DialogBox.Header>Demo Header</DialogBox.Header>
                 <DialogBox.Content>Demo Content</DialogBox.Content>
-                <DialogBox.Actions>
+                <DialogBox.Footer>
                     <p>Demo Header</p>
-                </DialogBox.Actions>
+                </DialogBox.Footer>
             </DialogBox>
         );
         expect(container.querySelector('p')).toBeInTheDocument();
     });
 
-    it('should call onCloseModal on click on close icon', () => {
-        const mockOnCloseModal = jest.fn();
-        dialogBoxRenderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true, showCloseIcon: true });
+    it('should call onClose on click on close icon', () => {
+        const mockOnClose = jest.fn();
+        dialogBoxRenderer({ open: true, onClose: mockOnClose, shouldCloseOnOutsideClick: true, showCloseIcon: true });
         fireEvent.click(screen.getByTestId('medly-dialog-box-close-button') as HTMLElement);
-        expect(mockOnCloseModal).toBeCalled();
+        expect(mockOnClose).toBeCalled();
     });
 });

@@ -7,7 +7,7 @@ import * as stories from './Modal.stories';
 # Modal
 
 The `Modal` components is a separate windows within an application that is overlaid on the primary window. The contents behind a modal dialog are inert, meaning you cannot interact with the content behind the dialog. It is a common user interface pattern that provides information or requires confirmation.
-It consists of a Header, Content, and Actions. You can play with the component in the canvas tab.
+It consists of a Header, Content, and Footer. You can play with the component in the canvas tab.
 
 ```tsx
 import { Modal } from '@medly-components/core';
@@ -22,14 +22,14 @@ export const DummyComponent: React.FC = React.memo(() => {
     return (
         <>
             <Button onClick={openModal}>Open Modal</Button>
-            <Modal open={state} onCloseModal={closeModal}>
+            <Modal open={state} onClose={closeModal}>
                 <Modal.Header>Add User</Modal.Header>
                 <Modal.Content>
                     <Input id="name-input" type="text" fullWidth label="Name" placeholder="Enter your Name" />
                 </Modal.Content>
-                <Modal.Actions>
+                <Modal.Footer>
                     <Button variant="outlined">Add User</Button>
-                </Modal.Actions>
+                </Modal.Footer>
             </Modal>
         </>
     );
@@ -40,7 +40,7 @@ DummyComponent.displayName = 'DummyComponent';
 
 ## Shadow Effect
 
-The shadow effect apears on the Header & Actions section if you scroll through the content.
+The shadow effect apears on the Header & Footer section if you scroll through the content.
 
 ### Keyboard Support
 

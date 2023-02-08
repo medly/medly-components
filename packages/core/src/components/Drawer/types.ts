@@ -1,13 +1,18 @@
 import { HTMLProps, WithStyle } from '@medly-components/utils';
+import type { Dispatch, FC } from 'react';
 import { ScrollActionTypes } from '../Modal/scrollStateReducer/types';
 import { DrawerFooterProps } from './Footer/types';
-import type { FC, Dispatch } from 'react';
 
 export interface DrawerProps extends HTMLProps<HTMLDivElement> {
+    /** Shows drawer only when this prop is true */
     open?: boolean;
+    /** Position of the drawer*/
     position?: 'left' | 'right';
+    /** Function to be called on closing drawer */
     onClose: () => void;
+    /** Width of the drawer */
     width?: string;
+    /** set it true to show it with the overlay */
     withOverlay?: boolean;
 }
 

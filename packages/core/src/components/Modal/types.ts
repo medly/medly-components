@@ -1,6 +1,6 @@
 import { HTMLProps, WithStyle } from '@medly-components/utils';
 import type { Dispatch, FC, RefObject } from 'react';
-import { ModalActionUserProps } from './Actions/types';
+import { ModalFooterProps } from './Footer/types';
 import { ModalPopupProps } from './Popup/types';
 import { ScrollActionTypes } from './scrollStateReducer/types';
 
@@ -8,7 +8,7 @@ export interface ModalProps extends HTMLProps<HTMLDivElement> {
     /** Shows modal only when this prop is true */
     open?: boolean;
     /** Function to be called on closing modal */
-    onCloseModal?: () => void;
+    onClose?: () => void;
     /** Set it true to allow modal overflow to be visible */
     overflowVisible?: boolean;
     /** Min width in px/rem/% (1rem = 10px) */
@@ -34,7 +34,7 @@ export interface ModalStaticProps {
     Popup: FC<ModalPopupProps> & WithStyle;
     Header: FC & WithStyle;
     Content: FC<ContentProps> & WithStyle;
-    Actions: FC<ModalActionUserProps> & WithStyle;
+    Footer: FC<ModalFooterProps> & WithStyle;
 }
 
 export interface InnerContainerProps {

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { DialogBoxActionUserProps } from './types';
+import { DialogBoxFooterProps } from './types';
 
-export const Actions = styled('div')<DialogBoxActionUserProps>`
+export const Footer = styled('div')<DialogBoxFooterProps>`
     display: flex;
     z-index: 10;
     margin-top: 3rem;
@@ -28,6 +28,6 @@ export const Actions = styled('div')<DialogBoxActionUserProps>`
         }
     }
 `;
-Actions.defaultProps = {
+Footer.defaultProps = {
     alignItems: 'right'
 };

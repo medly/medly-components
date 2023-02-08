@@ -38,7 +38,7 @@ export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'
     /** Function to be called on  selecting the option */
     onOptionSelected?: (value: Option) => void;
     /** Function to be called on input value changes */
-    onInputChange?: (value: string) => void;
+    onChange?: (value: string) => void;
 }
 
 export type StyledSearchBoxProps = SearchBoxProps & {

@@ -1,8 +1,8 @@
 import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
 import { FC, forwardRef, memo, MouseEvent, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react';
-import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
+import Footer from './Footer';
 import Header from './Header';
 import { ModalContext } from './Modal.context';
 import { InnerContainerStyled, ModalBackgroundStyled } from './Modal.styled';
@@ -18,7 +18,7 @@ const Component: FC<ModalProps> = memo(
     forwardRef((props, ref) => {
         const {
                 open,
-                onCloseModal,
+                onClose,
                 overflowVisible,
                 children,
                 minWidth,
@@ -40,8 +40,8 @@ const Component: FC<ModalProps> = memo(
 
         const handleCloseModal = useCallback(() => {
                 if (modalRef.current) manager.remove(modalRef.current);
-                onCloseModal && onCloseModal();
-            }, [onCloseModal, manager]),
+                onClose && onClose();
+            }, [onClose, manager]),
             handleBackgroundClick = useCallback(
                 (event: MouseEvent<HTMLDivElement>) =>
                     event.currentTarget === event.target && shouldCloseOnOutsideClick && handleCloseModal(),
@@ -118,5 +118,5 @@ export const Modal: FC<ModalProps> & WithStyle & ModalStaticProps = Object.assig
     Header,
     Popup,
     Content,
-    Actions
+    Footer
 });

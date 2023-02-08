@@ -88,27 +88,6 @@ exports[`Modal component background at small screen size should render properly 
 `;
 
 exports[`Modal component should render properly when it is open 1`] = `
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 10;
-  padding: 1.6rem 3.2rem 3.2rem;
-  box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c7 > * + * {
-  margin-left: 1.6rem;
-}
-
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
@@ -174,6 +153,27 @@ exports[`Modal component should render properly when it is open 1`] = `
   flex: 1;
   box-sizing: border-box;
   padding: 0.8rem 3.2rem 2.4rem;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  padding: 1.6rem 3.2rem 3.2rem;
+  box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6);
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c7 > * + * {
+  margin-left: 1.6rem;
 }
 
 .c5 {
@@ -260,18 +260,6 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 @media (max-width:767px) {
-  .c7 {
-    padding: 1.6rem;
-  }
-}
-
-@media (min-width:768px) and (max-height:700px) {
-  .c7 {
-    padding: 1.6rem 3.2rem;
-  }
-}
-
-@media (max-width:767px) {
   .c6 {
     padding: 0.8rem 1.6rem 2.4rem;
   }
@@ -299,6 +287,18 @@ exports[`Modal component should render properly when it is open 1`] = `
   .c6::-webkit-scrollbar-thumb {
     border-radius: 1rem;
     background-color: #b0bcc8;
+  }
+}
+
+@media (max-width:767px) {
+  .c7 {
+    padding: 1.6rem;
+  }
+}
+
+@media (min-width:768px) and (max-height:700px) {
+  .c7 {
+    padding: 1.6rem 3.2rem;
   }
 }
 
@@ -425,7 +425,7 @@ exports[`Modal component should render properly when it is open 1`] = `
           class="c7"
           id="medly-modal-actions"
         >
-          Demo Actions
+          Demo Footer
         </div>
       </div>
     </div>

@@ -5,14 +5,14 @@ import { ModalBackgroundProps, ModalProps } from './types';
 
 const modalRenderer = ({
     open = false,
-    onCloseModal = jest.fn(),
+    onClose = jest.fn(),
     minWidth,
     minHeight,
     shouldCloseOnOutsideClick = false,
     disableEscapeKeyDown = false
 }: ModalProps) =>
     render(
-        <Modal {...{ open, onCloseModal, minHeight, minWidth, shouldCloseOnOutsideClick, disableEscapeKeyDown }}>
+        <Modal {...{ open, onClose, minHeight, minWidth, shouldCloseOnOutsideClick, disableEscapeKeyDown }}>
             <Modal.Header>
                 <p>Demo Header</p>
             </Modal.Header>
@@ -23,7 +23,7 @@ const modalRenderer = ({
                 popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                 publishing software like Aldus PageMaker including versions of Lorem Ipsum
             </Modal.Content>
-            <Modal.Actions>Demo Actions</Modal.Actions>
+            <Modal.Footer>Demo Footer</Modal.Footer>
         </Modal>
     );
 
@@ -58,53 +58,53 @@ describe('Modal component', () => {
         expect(document.body).toHaveStyle({ overflow: 'unset' });
     });
 
-    it('should call onCloseModal on click on close icon', () => {
-        const mockOnCloseModal = jest.fn();
-        modalRenderer({ open: true, onCloseModal: mockOnCloseModal });
+    it('should call onClose on click on close icon', () => {
+        const mockOnClose = jest.fn();
+        modalRenderer({ open: true, onClose: mockOnClose });
         fireEvent.click(screen.getByTitle('medly-modal-close-icon'));
-        expect(mockOnCloseModal).toBeCalled();
+        expect(mockOnClose).toBeCalled();
     });
 
-    it('should not call onCloseModal on pressing escape key when disableEscapeKeyDown prop is passed', () => {
-        const mockOnCloseModal = jest.fn(),
-            { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal, disableEscapeKeyDown: true }),
+    it('should not call onClose on pressing escape key when disableEscapeKeyDown prop is passed', () => {
+        const mockOnClose = jest.fn(),
+            { container } = modalRenderer({ open: true, onClose: mockOnClose, disableEscapeKeyDown: true }),
             popup = container.querySelector('#medly-modal-popup') as HTMLDivElement;
         fireEvent.keyDown(popup, { key: 'Escape', code: 27 });
-        expect(mockOnCloseModal).not.toBeCalled();
+        expect(mockOnClose).not.toBeCalled();
     });
 
-    it('should call onCloseModal on pressing escape key', () => {
-        const mockOnCloseModal = jest.fn(),
-            { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal }),
+    it('should call onClose on pressing escape key', () => {
+        const mockOnClose = jest.fn(),
+            { container } = modalRenderer({ open: true, onClose: mockOnClose }),
             popup = container.querySelector('#medly-modal-popup') as HTMLDivElement;
         fireEvent.keyDown(popup, { key: 'Escape', code: 27 });
-        expect(mockOnCloseModal).toBeCalled();
+        expect(mockOnClose).toBeCalled();
     });
 
-    it('should call onCloseModal on click on overlay background', () => {
-        const mockOnCloseModal = jest.fn();
-        const { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true });
+    it('should call onClose on click on overlay background', () => {
+        const mockOnClose = jest.fn();
+        const { container } = modalRenderer({ open: true, onClose: mockOnClose, shouldCloseOnOutsideClick: true });
         fireEvent.click(container.querySelector('#medly-modal') as HTMLDivElement);
-        expect(mockOnCloseModal).toBeCalled();
+        expect(mockOnClose).toBeCalled();
     });
 
-    it('should not call onCloseModal on click on modal', () => {
-        const mockOnCloseModal = jest.fn();
-        const { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true });
+    it('should not call onClose on click on modal', () => {
+        const mockOnClose = jest.fn();
+        const { container } = modalRenderer({ open: true, onClose: mockOnClose, shouldCloseOnOutsideClick: true });
         fireEvent.click(container.querySelector('#medly-modal-popup') as HTMLDivElement);
-        expect(mockOnCloseModal).not.toBeCalled();
+        expect(mockOnClose).not.toBeCalled();
         expect(container.querySelector('#medly-modal-popup')).toBeInTheDocument();
     });
 
     it('should be able to render any JSX element in header', () => {
-        const mockOnCloseModal = jest.fn();
+        const mockOnClose = jest.fn();
         const { container } = render(
-            <Modal open onCloseModal={mockOnCloseModal}>
+            <Modal open onClose={mockOnClose}>
                 <Modal.Header>Demo Header</Modal.Header>
                 <Modal.Content>Demo Content</Modal.Content>
-                <Modal.Actions>
+                <Modal.Footer>
                     <p>Demo Header</p>
-                </Modal.Actions>
+                </Modal.Footer>
             </Modal>
         );
         expect(container.querySelector('p')).toBeInTheDocument();

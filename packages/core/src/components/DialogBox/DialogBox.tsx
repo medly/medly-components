@@ -1,35 +1,25 @@
 import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
-import { memo, forwardRef, useRef, useCallback, useEffect, useState } from 'react';
-import Actions from './Actions';
+import type { FC } from 'react';
+import { forwardRef, memo, useCallback, useEffect, useRef, useState } from 'react';
+import CloseIcon from '../Modal/CloseIcon';
 import Content from './Content';
 import { DialogBoxContext } from './DialogBox.context';
 import { DialogBoxBackgroundStyled } from './DialogBox.styled';
+import Footer from './Footer';
 import Header from './Header';
 import Popup from './Popup';
 import { DialogBoxProps, DialogBoxStaticProps } from './types';
-import type { FC } from 'react';
-import CloseIcon from '../Modal/CloseIcon';
 
 const Component: FC<DialogBoxProps> = memo(
     forwardRef((props, ref) => {
-        const {
-                id,
-                open,
-                onCloseModal,
-                children,
-                minWidth,
-                shouldCloseOnOutsideClick,
-                minHeight,
-                showCloseIcon = false,
-                ...restProps
-            } = props,
+        const { id, open, onClose, children, minWidth, shouldCloseOnOutsideClick, minHeight, showCloseIcon = false, ...restProps } = props,
             isEscPressed = useKeyPress('Escape'),
             dialogBoxRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
             [shouldRender, setShouldRender] = useState(open);
 
         const handleBackgroundClick = useCallback(() => {
-            shouldCloseOnOutsideClick && onCloseModal && onCloseModal();
-        }, [shouldCloseOnOutsideClick, onCloseModal]);
+            shouldCloseOnOutsideClick && onClose && onClose();
+        }, [shouldCloseOnOutsideClick, onClose]);
 
         useEffect(() => {
             if (open) {
@@ -49,12 +39,12 @@ const Component: FC<DialogBoxProps> = memo(
         }, [open]);
 
         useEffect(() => {
-            open && isEscPressed && onCloseModal && onCloseModal();
+            open && isEscPressed && onClose && onClose();
         }, [open, isEscPressed]);
 
         const handleCloseModal = useCallback(() => {
-            onCloseModal && onCloseModal();
-        }, [onCloseModal]);
+            onClose && onClose();
+        }, [onClose]);
 
         return shouldRender ? (
             <DialogBoxBackgroundStyled {...{ ...restProps, id, open }} onClick={handleBackgroundClick}>
@@ -88,5 +78,5 @@ export const DialogBox: FC<DialogBoxProps> & WithStyle & DialogBoxStaticProps = 
     Header,
     Popup,
     Content,
-    Actions
+    Footer
 });
