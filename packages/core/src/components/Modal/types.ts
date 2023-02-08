@@ -8,7 +8,7 @@ export interface ModalProps extends HTMLProps<HTMLDivElement> {
     /** Shows modal only when this prop is true */
     open?: boolean;
     /** Function to be called on closing modal */
-    onCloseModal?: () => void;
+    onClose?: () => void;
     /** Set it true to allow modal overflow to be visible */
     overflowVisible?: boolean;
     /** Min width in px/rem/% (1rem = 10px) */

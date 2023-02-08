@@ -18,7 +18,7 @@ const Component: FC<ModalProps> = memo(
     forwardRef((props, ref) => {
         const {
                 open,
-                onCloseModal,
+                onClose,
                 overflowVisible,
                 children,
                 minWidth,
@@ -40,8 +40,8 @@ const Component: FC<ModalProps> = memo(
 
         const handleCloseModal = useCallback(() => {
                 if (modalRef.current) manager.remove(modalRef.current);
-                onCloseModal && onCloseModal();
-            }, [onCloseModal, manager]),
+                onClose && onClose();
+            }, [onClose, manager]),
             handleBackgroundClick = useCallback(
                 (event: MouseEvent<HTMLDivElement>) =>
                     event.currentTarget === event.target && shouldCloseOnOutsideClick && handleCloseModal(),

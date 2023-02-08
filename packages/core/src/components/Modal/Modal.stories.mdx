@@ -22,7 +22,7 @@ export const DummyComponent: React.FC = React.memo(() => {
     return (
         <>
             <Button onClick={openModal}>Open Modal</Button>
-            <Modal open={state} onCloseModal={closeModal}>
+            <Modal open={state} onClose={closeModal}>
                 <Modal.Header>Add User</Modal.Header>
                 <Modal.Content>
                     <Input id="name-input" type="text" fullWidth label="Name" placeholder="Enter your Name" />
