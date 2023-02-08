@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.24.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.23.1...@medly-components/core@6.24.0) (2023-02-08)
+
+
+### Features
+
+* add as prop for Accordion component ([81f220f](https://github.com/medly/medly-components/commit/81f220f71a1a39c94de0e2fa6f2eb5efea2a55d2))
+
+
+
+
+
 ## [6.23.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.23.0...@medly-components/core@6.23.1) (2023-02-02)
 
 
