@@ -23,7 +23,7 @@ const modalRenderer = ({
                 popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                 publishing software like Aldus PageMaker including versions of Lorem Ipsum
             </Modal.Content>
-            <Modal.Actions>Demo Actions</Modal.Actions>
+            <Modal.Footer>Demo Footer</Modal.Footer>
         </Modal>
     );
 
@@ -102,9 +102,9 @@ describe('Modal component', () => {
             <Modal open onClose={mockOnClose}>
                 <Modal.Header>Demo Header</Modal.Header>
                 <Modal.Content>Demo Content</Modal.Content>
-                <Modal.Actions>
+                <Modal.Footer>
                     <p>Demo Header</p>
-                </Modal.Actions>
+                </Modal.Footer>
             </Modal>
         );
         expect(container.querySelector('p')).toBeInTheDocument();

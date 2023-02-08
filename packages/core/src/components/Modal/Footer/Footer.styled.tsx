@@ -3,7 +3,7 @@ import { rgba } from 'polished';
 import styled from 'styled-components';
 import { StyledProps } from './types';
 
-export const Actions = styled('div')<StyledProps>`
+export const Footer = styled('div')<StyledProps>`
     display: flex;
     z-index: 10;
     padding: ${({ theme }) => `${theme.spacing.S4} ${theme.spacing.M2} ${theme.spacing.M2}`};
@@ -26,6 +26,6 @@ export const Actions = styled('div')<StyledProps>`
         }
     `}
 `;
-Actions.defaultProps = {
+Footer.defaultProps = {
     alignItems: 'right'
 };

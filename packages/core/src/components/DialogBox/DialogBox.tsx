@@ -2,10 +2,10 @@ import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils
 import type { FC } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useRef, useState } from 'react';
 import CloseIcon from '../Modal/CloseIcon';
-import Actions from './Actions';
 import Content from './Content';
 import { DialogBoxContext } from './DialogBox.context';
 import { DialogBoxBackgroundStyled } from './DialogBox.styled';
+import Footer from './Footer';
 import Header from './Header';
 import Popup from './Popup';
 import { DialogBoxProps, DialogBoxStaticProps } from './types';
@@ -78,5 +78,5 @@ export const DialogBox: FC<DialogBoxProps> & WithStyle & DialogBoxStaticProps = 
     Header,
     Popup,
     Content,
-    Actions
+    Footer
 });

@@ -22,7 +22,7 @@ const dialogBoxRenderer = ({
                 popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                 publishing software like Aldus PageMaker including versions of Lorem Ipsum
             </DialogBox.Content>
-            <DialogBox.Actions>Demo Actions</DialogBox.Actions>
+            <DialogBox.Footer>Demo Footer</DialogBox.Footer>
         </DialogBox>
     );
 
@@ -62,9 +62,9 @@ describe('DialogBox component', () => {
             <DialogBox open onClose={mockOnClose}>
                 <DialogBox.Header>Demo Header</DialogBox.Header>
                 <DialogBox.Content>Demo Content</DialogBox.Content>
-                <DialogBox.Actions>
+                <DialogBox.Footer>
                     <p>Demo Header</p>
-                </DialogBox.Actions>
+                </DialogBox.Footer>
             </DialogBox>
         );
         expect(container.querySelector('p')).toBeInTheDocument();

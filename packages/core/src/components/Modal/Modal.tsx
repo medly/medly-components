@@ -1,8 +1,8 @@
 import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
 import { FC, forwardRef, memo, MouseEvent, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react';
-import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
+import Footer from './Footer';
 import Header from './Header';
 import { ModalContext } from './Modal.context';
 import { InnerContainerStyled, ModalBackgroundStyled } from './Modal.styled';
@@ -118,5 +118,5 @@ export const Modal: FC<ModalProps> & WithStyle & ModalStaticProps = Object.assig
     Header,
     Popup,
     Content,
-    Actions
+    Footer
 });

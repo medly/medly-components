@@ -1,6 +1,6 @@
 import { HTMLProps, WithStyle } from '@medly-components/utils';
 import type { Dispatch, FC, RefObject } from 'react';
-import { ModalActionUserProps } from './Actions/types';
+import { ModalFooterProps } from './Footer/types';
 import { ModalPopupProps } from './Popup/types';
 import { ScrollActionTypes } from './scrollStateReducer/types';
 
@@ -34,7 +34,7 @@ export interface ModalStaticProps {
     Popup: FC<ModalPopupProps> & WithStyle;
     Header: FC & WithStyle;
     Content: FC<ContentProps> & WithStyle;
-    Actions: FC<ModalActionUserProps> & WithStyle;
+    Footer: FC<ModalFooterProps> & WithStyle;
 }
 
 export interface InnerContainerProps {

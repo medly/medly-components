@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Button from '../Button';
 import Input from '../Input';
 import SingleSelect from '../SingleSelect';
-import { ModalActionUserProps } from './Actions/types';
+import { ModalFooterProps } from './Footer/types';
 import { Modal } from './Modal';
 
 const options = [
@@ -19,7 +19,7 @@ ThemeInterface.defaultProps = {
     ...defaultTheme.modal
 };
 
-export const ModalActionProps: FC<ModalActionUserProps> = () => null;
+export const ModalActionProps: FC<ModalFooterProps> = () => null;
 ModalActionProps.defaultProps = {
     alignItems: 'right'
 };
@@ -84,9 +84,9 @@ export const Basic = () => {
                         />
                     </Form>
                 </Modal.Content>
-                <Modal.Actions>
+                <Modal.Footer>
                     <Button variant="outlined">Add User</Button>
-                </Modal.Actions>
+                </Modal.Footer>
             </Modal>
         </ModalStoryWrapper>
     );
