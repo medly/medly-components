@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.25.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.24.0...@medly-components/core@6.25.0) (2023-02-09)
+
+
+### Features
+
+* pass restProps to modal actions component ([c0e7744](https://github.com/medly/medly-components/commit/c0e77446760bc6ec8f081361077608649676d26f))
+
+
+
+
+
 # [6.24.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.23.1...@medly-components/core@6.24.0) (2023-02-08)
 
 
