@@ -33,6 +33,7 @@ const Component: FC<MultiSelectProps> = memo(
                 prefix,
                 isCreatable = false,
                 noResultComponent,
+                placeholder: initialPlaceholder,
                 ...restProps
             } = props,
             selectId = useMemo(() => id || label?.toLocaleLowerCase().replace(' ', '') || 'medly-multiSelect', [id, label]);
@@ -45,7 +46,7 @@ const Component: FC<MultiSelectProps> = memo(
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(defaultOptions, values!)),
             [inputValue, setInputValue] = useState(getInputValue(selectedOptions)),
-            [placeholder, setPlaceholder] = useState(values!.length > 0 ? `${values!.length} options selected` : props.placeholder),
+            [placeholder, setPlaceholder] = useState(values!.length > 0 ? `${values!.length} options selected` : initialPlaceholder),
             [cursor, setCursor] = useState(-1),
             [isParentCursorEnabled, setIsParentCursorEnabled] = useState(true),
             isSelectKeyPressed = useKeyPress(' ', false, wrapperRef),
@@ -147,7 +148,7 @@ const Component: FC<MultiSelectProps> = memo(
         useEffect(() => {
             if (areOptionsVisible) {
                 inputRef.current && inputRef.current.focus();
-                setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
+                setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : initialPlaceholder);
             } else {
                 setInputValue(getInputValue(selectedOptions));
                 setOptions(defaultOptions);

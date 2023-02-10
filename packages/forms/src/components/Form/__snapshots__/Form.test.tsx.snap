@@ -2253,7 +2253,6 @@ exports[`Form should render properly with initial state 1`] = `
         class="c54"
         id="graduation-wrapper"
         name="graduation"
-        placeholder="Please Select . . ."
       >
         <div
           class="c2 c41"
@@ -4498,7 +4497,6 @@ exports[`Form should render properly without initial state 1`] = `
         class="c54"
         id="graduation-wrapper"
         name="graduation"
-        placeholder="Please Select . . ."
       >
         <div
           class="c5 c41"
