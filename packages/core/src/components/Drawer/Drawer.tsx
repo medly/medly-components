@@ -1,4 +1,5 @@
 import { useKeyPress, WithStyle } from '@medly-components/utils';
+import type { FC, MouseEvent } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useReducer, useState } from 'react';
 import { reducer } from '../Modal/scrollStateReducer';
 import Content from './Content';
@@ -7,7 +8,6 @@ import { DrawerBackground, DrawerStyled } from './Drawer.styled';
 import Footer from './Footer';
 import Header from './Header';
 import { DrawerProps, DrawerStaticProps } from './types';
-import type { FC } from 'react';
 
 const Component: FC<DrawerProps> = memo(
     forwardRef(({ id, onClose, open, width, children, withOverlay, position, ...props }, ref) => {
@@ -15,7 +15,10 @@ const Component: FC<DrawerProps> = memo(
             [shouldRender, setRenderState] = useState(open),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 });
 
-        const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
+        const handleBackgroundClick = useCallback(
+                (event: MouseEvent<HTMLDivElement>) => event.currentTarget === event.target && onClose && onClose(),
+                [onClose]
+            ),
             handleAnimationEnd = useCallback(() => !open && setRenderState(false), [open]);
 
         useEffect(() => {
@@ -27,15 +30,15 @@ const Component: FC<DrawerProps> = memo(
         }, [open]);
 
         return shouldRender ? (
-            <DrawerBackground onClick={onClose} ref={ref} open={open} {...props} id={`${id}-overlay`} withOverlay={withOverlay}>
-                <DrawerStyled
-                    id={id!}
-                    position={position!}
-                    onClick={stopPropagation}
-                    width={width!}
-                    open={open}
-                    onAnimationEnd={handleAnimationEnd}
-                >
+            <DrawerBackground
+                ref={ref}
+                open={open}
+                {...props}
+                id={`${id}-overlay`}
+                withOverlay={withOverlay}
+                onClick={handleBackgroundClick}
+            >
+                <DrawerStyled id={id!} position={position!} width={width!} open={open} onAnimationEnd={handleAnimationEnd}>
                     <DrawerContext.Provider value={{ id: id!, scrollState, dispatch, onClose }}>{children}</DrawerContext.Provider>
                 </DrawerStyled>
             </DrawerBackground>
