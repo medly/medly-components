@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.25.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.25.0...@medly-components/core@6.25.1) (2023-02-10)
+
+
+### Bug Fixes
+
+* fix closing any popup like calendar in drawer component ([#710](https://github.com/medly/medly-components/issues/710)) ([676a1d0](https://github.com/medly/medly-components/commit/676a1d0f269367b23fdb39b008cd4dfd2368c4d6))
+
+
+
+
+
 # [6.25.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.24.0...@medly-components/core@6.25.0) (2023-02-09)
 
 
