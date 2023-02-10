@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.4](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.3...@medly-components/forms@2.2.4) (2023-02-10)
+
+
+### Bug Fixes
+
+* stop passing placeholder to wrapper component in multiselect component ([#711](https://github.com/medly/medly-components/issues/711)) ([04577f5](https://github.com/medly/medly-components/commit/04577f579b4a8fe14ab41aeab5f072dd81c90e09))
+
+
+
+
+
 ## [2.2.3](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.2...@medly-components/forms@2.2.3) (2023-02-10)
 
 **Note:** Version bump only for package @medly-components/forms
