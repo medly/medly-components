@@ -427,7 +427,6 @@ exports[`MultiSelect component should render correctly with all the props given 
     class="c0"
     disabled=""
     id="pharmacy-wrapper"
-    placeholder="Please Select"
   >
     <div
       class="c1 c2"
@@ -879,7 +878,6 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   <div
     class="c0"
     id="medly-multiSelect-wrapper"
-    placeholder="Please Select . . ."
     value="Dummy1,Dummy2"
   >
     <div
@@ -1895,7 +1893,6 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   <div
     class="c0"
     id="pharmacy-wrapper"
-    placeholder="Please Select . . ."
   >
     <div
       class="c1 c2"
@@ -3270,7 +3267,6 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   <div
     class="c0"
     id="pharmacy-wrapper"
-    placeholder="Please Select . . ."
   >
     <div
       class="c1 c2"
