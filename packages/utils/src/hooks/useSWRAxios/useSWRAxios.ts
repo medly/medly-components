@@ -14,7 +14,7 @@ const defaultSWRConfig = { revalidateOnMount: true, errorRetryCount: 5 };
  */
 export const useSWRAxios = <Data = unknown, Error = unknown>(
     config: string | AxiosConfig,
-    { initialData, ...swrConfig }: SWRConfig<Data, Error> = {}
+    { fallbackData, ...swrConfig }: SWRConfig<Data, Error> = {}
 ): Return<Data, Error> => {
     const axiosConfig = typeof config === 'string' ? { url: config } : config;
     const {
@@ -24,12 +24,12 @@ export const useSWRAxios = <Data = unknown, Error = unknown>(
     } = useSWR<AxiosResponse<Data>, AxiosError<Error>>(axiosConfig.url, () => axios(axiosConfig), {
         ...defaultSWRConfig,
         ...swrConfig,
-        initialData: initialData && {
+        fallbackData: fallbackData && {
             status: 200,
             statusText: 'InitialData',
             config: axiosConfig,
             headers: {},
-            data: initialData
+            data: fallbackData
         }
     });
 
