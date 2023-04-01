@@ -14,7 +14,7 @@ const WithTheme: FC = props => (
 );
 
 const WithSWR: FC = props => (
-    <SWRConfig value={{ dedupingInterval: 0 }}>
+    <SWRConfig value={{ provider: () => new Map() }}>
         <>{props.children}</>
     </SWRConfig>
 );

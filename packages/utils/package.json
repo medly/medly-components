@@ -32,6 +32,6 @@
     "dependencies": {
         "@medly-components/theme": "5.2.1",
         "date-fns": "^2.16.1",
-        "swr": "^0.5.4"
+        "swr": "^2.1.1"
     }
 }

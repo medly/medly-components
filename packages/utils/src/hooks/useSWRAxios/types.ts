@@ -9,6 +9,6 @@ export type Return<Data = unknown, Error = unknown> = Omit<SWRResponse<AxiosResp
     error?: AxiosResponse<Error>;
 };
 
-export type SWRConfig<Data = unknown, Error = unknown> = Omit<SWRConfiguration<AxiosResponse<Data>, AxiosError<Error>>, 'initialData'> & {
-    initialData?: Data;
+export type SWRConfig<Data = unknown, Error = unknown> = Omit<SWRConfiguration<AxiosResponse<Data>, AxiosError<Error>>, 'fallbackData'> & {
+    fallbackData?: Data;
 };
