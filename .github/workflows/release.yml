@@ -12,6 +12,7 @@ jobs:
             - name: Checkout repo
               uses: actions/checkout@v3
               with:
+                  fetch-depth: 0
                   token: ${{ secrets.ADMIN_TOKEN }}
 
             - name: Derive appropriate SHAs for base and head for `nx affected` commands
