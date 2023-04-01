@@ -16,6 +16,8 @@ jobs:
 
             - name: Derive appropriate SHAs for base and head for `nx affected` commands
               uses: nrwl/nx-set-shas@v3
+              with:
+                  main-branch-name: 'master'
 
             #needed for lerna / semantic release to correctly version
             - name: Fetch all tags
