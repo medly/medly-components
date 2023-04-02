@@ -1,5 +1,5 @@
 import axios, { AxiosError, AxiosResponse } from 'axios';
-import useSWR from 'swr';
+import useSWR, { SWRConfiguration } from 'swr';
 import { AxiosConfig, Return, SWRConfig } from './types';
 
 const defaultSWRConfig = { revalidateOnMount: true, errorRetryCount: 5 };
@@ -12,10 +12,10 @@ const defaultSWRConfig = { revalidateOnMount: true, errorRetryCount: 5 };
  *
  * @returns {Return<Data, Error>} An object with data, response, request, isLoading and error
  */
-export const useSWRAxios = <Data = unknown, Error = unknown>(
+export const useSWRAxios = <Data = unknown, Error = unknown, Config extends SWRConfiguration<Data, Error> = SWRConfiguration<Data, Error>>(
     config: string | AxiosConfig,
     { fallbackData, ...swrConfig }: SWRConfig<Data, Error> = {}
-): Return<Data, Error> => {
+): Return<Data, Error, Config> => {
     const axiosConfig = typeof config === 'string' ? { url: config } : config;
     const {
         data: axiosSuccessResponse,
@@ -34,9 +34,10 @@ export const useSWRAxios = <Data = unknown, Error = unknown>(
     });
 
     return {
+        // @ts-ignore
         data: axiosSuccessResponse?.data,
-        response: axiosSuccessResponse,
-        error: axiosErrorResponse?.response,
+        response: axiosSuccessResponse || axiosErrorResponse?.response,
+        error: axiosErrorResponse?.response?.data,
         ...swrResponse
     };
 };
