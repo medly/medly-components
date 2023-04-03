@@ -5,8 +5,9 @@ import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
 
 # useSWRAxios
 
-You can use the `useSWRAxios` hook to call the API using `swr` and `axios`. The `swr` helps to cache the data. Components will get a stream of data updates constantly and automatically with SWR, and the UI will always be fast and reactive. 
+You can use the `useSWRAxios` hook to call the API using `swr` and `axios`. The `swr` helps to cache the data. Components will get a stream of data updates constantly and automatically with SWR, and the UI will always be fast and reactive.
 For more information about SWR click [here](https://swr.vercel.app/).
+
 ```tsx
 const { data, isValidating, error } = useSWRAxios<DataType, ErrorType>(string | AxiosRequestConfig, SWRConfig);
 ```
@@ -41,14 +42,10 @@ axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 
 ### Result
 
-**useAxios** returns all the fields from `SWRResponse` plus the below additional fields.
+**useAxios** returns all the fields from `SWRResponse`. The error type is `AxiosError` which we have done to expose status code and all other config.
 
 ```tsx
-export type Return<Data = unknown, Error = unknown> = Omit<SWRResponse<AxiosResponse<Data>, AxiosError<Error>>, 'data' | 'error'> & {
-    data: Data;
-    response: AxiosResponse<Data>;
-    error: AxiosResponse<Error>;
-};
+SWRResponse<Data, AxiosError<Error>>
 ```
 
 If you check `SWRResponse`, we will also get `mutate` function which you can utilise to fetch the data again on any event. This is called bound mutate function. If you want to call this API from some other component, you can use `mutate` function from the library with the URL of the API and the data will be updated wherever `useSWRAxios` is used in the app with the same URL.
@@ -91,4 +88,4 @@ const Demo: React.SFC = React.memo(() => {
 
 You can check out a few examples of how to write unit tests around it over [here](https://github.com/medly/medly-components/blob/master/packages/utils/src/hooks/useSWRAxios/useSWRAxios.test.tsx).
 
-> Note: Add `dedupingInterval: 0` for testing purpose. To create a custom `render` method click [here](https://github.com/medly/medly-components/blob/master/packages/utils/src/test-utils.tsx).
+> Note: Add `value={{ provider: () => new Map() }}` to SWRConfig to clear cache between each test, checkout [here](https://github.com/medly/medly-components/blob/master/packages/utils/src/test-utils.tsx).

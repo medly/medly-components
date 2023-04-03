@@ -9,7 +9,7 @@ const DummyComp = ({ fallbackData, passUrlOnly = false }: SWRConfiguration & { p
     return (
         <>
             <p>{data}</p>
-            {error && <p>{error?.message}</p>}
+            {error && <p>{error?.data?.message}</p>}
         </>
     );
 };
