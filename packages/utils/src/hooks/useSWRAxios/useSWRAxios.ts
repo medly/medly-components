@@ -13,12 +13,16 @@ const defaultSWRConfig = { revalidateOnMount: true, errorRetryCount: 5 };
  *
  * @returns {Return<Data, AxiosResponse<Error>>} An object with data, response, request, isLoading and error
  */
-export const useSWRAxios = <Data = unknown, Error = unknown>(
+export const useSWRAxios = <
+    Data = unknown,
+    Error = unknown,
+    Config extends SWRConfiguration<Data, AxiosResponse<Error>> = SWRConfiguration<Data, AxiosResponse<Error>>
+>(
     requestConfig: string | AxiosConfig,
-    swrConfig: SWRConfiguration<Data, AxiosResponse<Error>> = {}
+    swrConfig: Config = {} as Config
 ) => {
     const axiosConfig = typeof requestConfig === 'string' ? { url: requestConfig } : requestConfig;
-    const swrResponse = useSWR<Data, AxiosResponse<Error>>(
+    const swrResponse = useSWR<Data, AxiosResponse<Error>, Config>(
         axiosConfig.url,
         () =>
             axios(axiosConfig)
