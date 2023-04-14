@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.26.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.25.5...@medly-components/core@6.26.0) (2023-04-14)
+
+
+### Features
+
+* add an option to hide input in datepicker component ([#717](https://github.com/medly/medly-components/issues/717)) ([074a2d9](https://github.com/medly/medly-components/commit/074a2d9e9d90db6ff41e12108606ff622a6e8130))
+
+
+
+
+
 ## [6.25.5](https://github.com/medly/medly-components/compare/@medly-components/core@6.25.4...@medly-components/core@6.25.5) (2023-04-03)
 
 **Note:** Version bump only for package @medly-components/core
