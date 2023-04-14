@@ -61,9 +61,11 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     defaultMonth?: number;
     /** Default year to show on calendar */
     defaultYear?: number;
+    /** Hide Input */
+    hideInput?: boolean;
 }
 
-export interface StyleProps extends Pick<DatePickerProps, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
+export interface StyleProps extends Pick<DatePickerProps, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size' | 'hideInput'> {
     isErrorPresent?: boolean;
     isActive?: boolean;
     placement: Placement;
