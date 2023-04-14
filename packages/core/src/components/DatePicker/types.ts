@@ -61,7 +61,7 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     defaultMonth?: number;
     /** Default year to show on calendar */
     defaultYear?: number;
-    /** Hide Input */
+    /** Set it true to hide the input */
     hideInput?: boolean;
 }
 
