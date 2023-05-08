@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.26.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.26.0...@medly-components/core@6.26.1) (2023-05-08)
+
+
+### Bug Fixes
+
+* **core:** fixed single select outside click focus issue ([#719](https://github.com/medly/medly-components/issues/719)) ([cc88247](https://github.com/medly/medly-components/commit/cc88247cb42bf98d001f6906f00424d424e9f43c))
+
+
+
+
+
 # [6.26.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.25.5...@medly-components/core@6.26.0) (2023-04-14)
 
 
