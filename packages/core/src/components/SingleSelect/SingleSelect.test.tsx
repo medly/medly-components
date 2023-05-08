@@ -396,7 +396,7 @@ describe('SingleSelect component', () => {
                 await waitFor(() => expect(screen.queryByRole('list')).not.toBeInTheDocument());
             });
 
-            it('should remove the focus of field on click outside of the container', () => {
+            it('should not open option on outside click and pressing ArrowDown key', () => {
                 render(
                     <div>
                         <p>Outer Element</p>
@@ -487,7 +487,7 @@ describe('SingleSelect component', () => {
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy3');
             });
 
-            it('should remove the focus of field on click outside of the container', () => {
+            it('should not open options on outside click and pressing ArrowUp key', () => {
                 render(
                     <div>
                         <p>Outer Element</p>
