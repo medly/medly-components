@@ -53,9 +53,7 @@ const Component: FC<SingleSelectProps> = memo(
         const validate = useCallback(
             () =>
                 setErrorMessage(
-                    (validator && validator(inputRef.current?.value || value)) ||
-                        (inputProps.required && !value && 'Please select one option.') ||
-                        ''
+                    validator?.(inputRef.current?.value || value) || (inputProps.required && !value && 'Please select one option.') || ''
                 ),
             [inputProps.required, validator, value]
         );
@@ -67,7 +65,7 @@ const Component: FC<SingleSelectProps> = memo(
             }, [isSearchable, inputValue]),
             hideOptions = useCallback(() => {
                 setOptionsVisibilityState(false);
-                inputRef.current && inputRef.current.blur();
+                inputRef.current?.blur();
             }, []),
             toggleOptions = useCallback(
                 () => !disabled && (areOptionsVisible ? hideOptions() : showOptions()),
@@ -94,7 +92,7 @@ const Component: FC<SingleSelectProps> = memo(
                         setOptions(getUpdatedOptions(options, option));
                         setInputValue(option.label);
                         hideOptions();
-                        onChange && onChange(option.value);
+                        onChange?.(option.value);
                         setErrorMessage('');
                     } else {
                         inputRef.current?.focus();
@@ -103,8 +101,8 @@ const Component: FC<SingleSelectProps> = memo(
                 [inputRef.current, options, onChange]
             ),
             handleOuterClick = useCallback(() => {
+                isFocused.current = false;
                 if (areOptionsVisible) {
-                    isFocused.current = false;
                     hideOptions();
                     validate();
                     updateToDefaultOptions();
@@ -114,7 +112,7 @@ const Component: FC<SingleSelectProps> = memo(
             handleFocus = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>) => {
                     isFocused.current = true;
-                    onFocus && onFocus(event);
+                    onFocus?.(event);
                 },
                 [onFocus]
             ),

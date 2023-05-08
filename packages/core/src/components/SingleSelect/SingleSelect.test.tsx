@@ -395,6 +395,22 @@ describe('SingleSelect component', () => {
                 userEvent.tab();
                 await waitFor(() => expect(screen.queryByRole('list')).not.toBeInTheDocument());
             });
+
+            it('should not open option on outside click and pressing ArrowDown key', () => {
+                render(
+                    <div>
+                        <p>Outer Element</p>
+                        <SingleSelect options={options} />
+                    </div>
+                );
+                const inputEl = screen.getByRole('textbox') as HTMLInputElement;
+                fireEvent.focus(inputEl);
+                fireEvent.keyDown(inputEl, { key: 'ArrowDown', code: 40 }); // Show options
+                expect(screen.getByRole('list')).toBeInTheDocument();
+                fireEvent.click(screen.getByText('Outer Element')); // removes the focus
+                fireEvent.keyDown(inputEl, { key: 'ArrowDown', code: 40 }); // will not shows the options
+                expect(screen.queryByRole('list')).not.toBeInTheDocument();
+            });
         });
 
         describe('up arrow', () => {
@@ -469,6 +485,22 @@ describe('SingleSelect component', () => {
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(screen.getByRole('textbox')).toHaveValue('Dummy3');
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy3');
+            });
+
+            it('should not open options on outside click and pressing ArrowUp key', () => {
+                render(
+                    <div>
+                        <p>Outer Element</p>
+                        <SingleSelect options={options} />
+                    </div>
+                );
+                const inputEl = screen.getByRole('textbox') as HTMLInputElement;
+                fireEvent.focus(inputEl);
+                fireEvent.keyDown(inputEl, { key: 'ArrowUp', code: 40 }); // Show options
+                expect(screen.getByRole('list')).toBeInTheDocument();
+                fireEvent.click(screen.getByText('Outer Element')); // removes the focus
+                fireEvent.keyDown(inputEl, { key: 'ArrowUp', code: 40 }); // will not shows the options
+                expect(screen.queryByRole('list')).not.toBeInTheDocument();
             });
         });
 
