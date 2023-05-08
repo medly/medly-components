@@ -103,8 +103,8 @@ const Component: FC<SingleSelectProps> = memo(
                 [inputRef.current, options, onChange]
             ),
             handleOuterClick = useCallback(() => {
+                isFocused.current = false;
                 if (areOptionsVisible) {
-                    isFocused.current = false;
                     hideOptions();
                     validate();
                     updateToDefaultOptions();
