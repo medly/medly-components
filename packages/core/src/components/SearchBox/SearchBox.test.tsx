@@ -216,8 +216,9 @@ describe('SearchBox', () => {
         });
 
         describe('with option selected', () => {
-            const onOptionSelectedMock = jest.fn();
-            const withOptionCB = { ...props, onOptionSelected: onOptionSelectedMock };
+            const onOptionSelectedMock = jest.fn(),
+                onSearch = jest.fn(),
+                withOptionCB = { ...props, onOptionSelected: onOptionSelectedMock, onSearch };
 
             it('should call on OptionSelected when option is clicked', () => {
                 const { inputEl } = renderComponent(withOptionCB);
@@ -231,6 +232,15 @@ describe('SearchBox', () => {
                 fireEvent.focus(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
+                expect(inputEl).toHaveValue('Dummy 1');
+            });
+
+            it('should not call onSearch on option selection using enter', () => {
+                const { container, inputEl } = renderComponent(withOptionCB);
+                fireEvent.focus(inputEl);
+                fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
+                fireEvent.keyDown(container, { key: 'Enter', code: 13 });
+                expect(onSearch).not.toBeCalled();
                 expect(inputEl).toHaveValue('Dummy 1');
             });
         });
