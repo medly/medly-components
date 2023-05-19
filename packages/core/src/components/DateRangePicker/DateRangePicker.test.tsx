@@ -566,4 +566,18 @@ describe('DateRangePicker', () => {
             await waitFor(() => expect(container.querySelector(customDateRangeOptionsPopoverSelector)).toHaveStyle(`top: ${position}`));
         });
     });
+
+    describe('input element', () => {
+        afterEach(cleanup);
+
+        it('should render properly with default input attributes being passed to input elements', () => {
+            renderComponent({
+                autoComplete: 'off'
+            });
+            const inputs = screen.getAllByPlaceholderText('MM / DD / YYYY');
+            inputs.forEach(input => {
+                expect(input).toHaveAttribute('autoComplete', 'off');
+            });
+        });
+    });
 });
