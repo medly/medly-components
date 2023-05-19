@@ -131,6 +131,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
                 onCustomRangeIconClick={onCustomRangeIconClick}
                 showChevronIcon={customDateRangeOptions!.length > 0}
                 outerClickValidator={outerClickValidator}
+                {...restProps}
             />
             {isActive &&
                 (activePopover === PopoverTypes.CALENDAR ? (
