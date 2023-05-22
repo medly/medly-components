@@ -33,7 +33,7 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
             activePopover,
             onCustomRangeIconClick,
             outerClickValidator,
-            ...restProps
+            autoComplete
         } = props,
         {
             mask,
@@ -63,7 +63,7 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
             onChange: handleTextChange,
             errorText: errorText || builtInErrorMessage,
             pattern: datePickerPattern[displayFormat],
-            ...restProps
+            autoComplete
         },
         iconProps = {
             variant,

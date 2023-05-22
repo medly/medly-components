@@ -33,6 +33,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
         showTooltipForHelperAndErrorText,
         customDateRangeOptions,
         onPopupClose,
+        autoComplete,
         ...restProps
     } = props;
     const startDateRef = useRef<HTMLInputElement>(null),
@@ -131,7 +132,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
                 onCustomRangeIconClick={onCustomRangeIconClick}
                 showChevronIcon={customDateRangeOptions!.length > 0}
                 outerClickValidator={outerClickValidator}
-                {...restProps}
+                autoComplete={autoComplete}
             />
             {isActive &&
                 (activePopover === PopoverTypes.CALENDAR ? (
