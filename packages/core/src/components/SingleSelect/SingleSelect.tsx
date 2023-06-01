@@ -116,6 +116,13 @@ const Component: FC<SingleSelectProps> = memo(
                 },
                 [onFocus]
             ),
+            handleBlur = useCallback(
+                (event: React.FocusEvent<HTMLInputElement>) => {
+                    isFocused.current = false;
+                    onBlur?.(event);
+                },
+                [onBlur]
+            ),
             inputValidator = useCallback(() => '', []),
             handleKeyPress = useCallback((event: React.KeyboardEvent) => !isSearchable && event.preventDefault(), [isSearchable]);
 
@@ -151,7 +158,7 @@ const Component: FC<SingleSelectProps> = memo(
             helperText: inputProps.helperText,
             errorText: inputProps.errorText || builtInErrorMessage,
             onFocus: handleFocus,
-            onBlur,
+            onBlur: handleBlur,
             onKeyPress: handleKeyPress,
             disabled,
             showDecorators,
