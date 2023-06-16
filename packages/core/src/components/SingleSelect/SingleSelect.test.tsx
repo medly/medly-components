@@ -411,6 +411,15 @@ describe('SingleSelect component', () => {
                 fireEvent.keyDown(inputEl, { key: 'ArrowDown', code: 40 }); // will not shows the options
                 expect(screen.queryByRole('list')).not.toBeInTheDocument();
             });
+
+            it('should not show options on blur event', async () => {
+                render(<SingleSelect options={options} />);
+                const inputEl = screen.getByRole('textbox') as HTMLInputElement;
+                fireEvent.focus(inputEl);
+                fireEvent.blur(inputEl);
+                fireEvent.keyDown(inputEl, { key: 'ArrowDown', code: 40 }); // will not shows the options
+                expect(screen.queryByRole('list')).not.toBeInTheDocument();
+            });
         });
 
         describe('up arrow', () => {
