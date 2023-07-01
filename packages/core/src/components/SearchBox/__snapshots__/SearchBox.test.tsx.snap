@@ -374,6 +374,7 @@ exports[`SearchBox options should render options when user search option specifi
     <input
       class="c1"
       placeholder="search"
+      value=""
     />
     <span
       class="c2"
@@ -652,6 +653,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
     <input
       class="c1"
       placeholder="Search"
+      value=""
     />
     <span
       class="c2 c3"
@@ -887,6 +889,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
     <input
       class="c1"
       placeholder="Search"
+      value=""
     />
     <span
       class="c2 c3"
