@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.27.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.27.0...@medly-components/core@6.27.1) (2023-07-01)
+
+
+### Bug Fixes
+
+* **core:** searchBox: clear/close icon not hiding when we manually clear the state value. ([#731](https://github.com/medly/medly-components/issues/731)) ([94a0227](https://github.com/medly/medly-components/commit/94a02279cb2cdd34face51ce0ebc0382b39025c0)), closes [#730](https://github.com/medly/medly-components/issues/730)
+
+
+
+
+
 # [6.27.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.26.2...@medly-components/core@6.27.0) (2023-06-16)
 
 
