@@ -7,9 +7,9 @@ import { OptionsProps } from './types';
 const Component: FC<OptionsProps> = memo(
     forwardRef(({ options, onOptionClick, hasError, ...restProps }, ref) => (
         <Styled.Options {...restProps} ref={ref}>
-            {options.map((option, index) => (
+            {options.map(option => (
                 <Option
-                    key={`${option.value}${index}`}
+                    key={option.value}
                     {...option}
                     variant={restProps.variant}
                     onClick={onOptionClick}
