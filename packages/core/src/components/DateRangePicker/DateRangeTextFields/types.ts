@@ -26,4 +26,5 @@ export type Props = {
     showTooltipForHelperAndErrorText?: boolean;
     onCustomRangeIconClick: () => void;
     outerClickValidator: RefObject<(e: MouseEvent) => void>;
+    autoComplete?: string;
 };

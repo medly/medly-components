@@ -21,6 +21,13 @@ describe('DatePicker component', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should render properly when hideInput prop is passed', () => {
+        const { container } = render(
+            <DatePicker hideInput label="Start Date" value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
+        );
+        expect(container).toMatchSnapshot();
+    });
+
     it('should render properly when value is of string type', () => {
         const { container } = render(
                 <DatePicker

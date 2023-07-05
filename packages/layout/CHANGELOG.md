@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.48](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.47...@medly-components/layout@3.2.48) (2023-07-01)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [3.2.47](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.46...@medly-components/layout@3.2.47) (2023-06-16)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [3.2.46](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.45...@medly-components/layout@3.2.46) (2023-05-08)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [3.2.45](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.44...@medly-components/layout@3.2.45) (2023-05-08)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [3.2.44](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.43...@medly-components/layout@3.2.44) (2023-04-14)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [3.2.43](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.42...@medly-components/layout@3.2.43) (2023-04-03)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [3.2.42](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.41...@medly-components/layout@3.2.42) (2023-04-02)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [3.2.41](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.40...@medly-components/layout@3.2.41) (2023-04-01)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [3.2.40](https://github.com/medly/medly-components/compare/@medly-components/layout@3.2.39...@medly-components/layout@3.2.40) (2023-02-10)
 
 **Note:** Version bump only for package @medly-components/layout

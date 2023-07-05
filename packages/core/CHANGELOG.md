@@ -3,6 +3,88 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.27.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.27.0...@medly-components/core@6.27.1) (2023-07-01)
+
+
+### Bug Fixes
+
+* **core:** searchBox: clear/close icon not hiding when we manually clear the state value. ([#731](https://github.com/medly/medly-components/issues/731)) ([94a0227](https://github.com/medly/medly-components/commit/94a02279cb2cdd34face51ce0ebc0382b39025c0)), closes [#730](https://github.com/medly/medly-components/issues/730)
+
+
+
+
+
+# [6.27.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.26.2...@medly-components/core@6.27.0) (2023-06-16)
+
+
+### Bug Fixes
+
+* **core:** on blur event not removing focus properly able to open drop down using arrow keys. ([#729](https://github.com/medly/medly-components/issues/729)) ([3146bec](https://github.com/medly/medly-components/commit/3146becf79fdfef7d4d5a7286d7df682935a5144)), closes [#728](https://github.com/medly/medly-components/issues/728)
+* **core:** pass HTML autoComplete attribute to input elements in DateRangePicker ([#724](https://github.com/medly/medly-components/issues/724)) ([1fc4deb](https://github.com/medly/medly-components/commit/1fc4debdddee40684d29d56a30f8722e25a3bbfa)), closes [#723](https://github.com/medly/medly-components/issues/723) [#723](https://github.com/medly/medly-components/issues/723)
+
+
+### Features
+
+* **core:** fixed SearchBox onSearch trigger issue on option selection using up-down arrow ([#726](https://github.com/medly/medly-components/issues/726)) ([b0e382c](https://github.com/medly/medly-components/commit/b0e382c1173aade6976087ae8b0e5e2596ae9534)), closes [#725](https://github.com/medly/medly-components/issues/725)
+
+
+
+
+
+## [6.26.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.26.1...@medly-components/core@6.26.2) (2023-05-08)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [6.26.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.26.0...@medly-components/core@6.26.1) (2023-05-08)
+
+
+### Bug Fixes
+
+* **core:** fixed single select outside click focus issue ([#719](https://github.com/medly/medly-components/issues/719)) ([cc88247](https://github.com/medly/medly-components/commit/cc88247cb42bf98d001f6906f00424d424e9f43c))
+
+
+
+
+
+# [6.26.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.25.5...@medly-components/core@6.26.0) (2023-04-14)
+
+
+### Features
+
+* add an option to hide input in datepicker component ([#717](https://github.com/medly/medly-components/issues/717)) ([074a2d9](https://github.com/medly/medly-components/commit/074a2d9e9d90db6ff41e12108606ff622a6e8130))
+
+
+
+
+
+## [6.25.5](https://github.com/medly/medly-components/compare/@medly-components/core@6.25.4...@medly-components/core@6.25.5) (2023-04-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [6.25.4](https://github.com/medly/medly-components/compare/@medly-components/core@6.25.3...@medly-components/core@6.25.4) (2023-04-02)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [6.25.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.25.2...@medly-components/core@6.25.3) (2023-04-01)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
 ## [6.25.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.25.1...@medly-components/core@6.25.2) (2023-02-10)
 
 

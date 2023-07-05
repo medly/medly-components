@@ -1,6 +1,6 @@
 import { CloseIcon, ExpandIcon, SearchIcon } from '@medly-components/icons';
 import { CircleLoader } from '@medly-components/loaders';
-import { useCombinedRefs, useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import { WithStyle, useCombinedRefs, useKeyPress, useOuterClickNotifier } from '@medly-components/utils';
 import type { FC } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useRef, useState } from 'react';
 import Options from '../SingleSelect/Options';
@@ -29,6 +29,7 @@ const Component: FC<SearchBoxProps> = memo(
             maxWidth,
             isLoading,
             loader: customLoader,
+            value,
             ...restProps
         } = props;
         const wrapperRef = useRef<any>(null),
@@ -39,7 +40,7 @@ const Component: FC<SearchBoxProps> = memo(
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [options, setOptions] = useState<Option[]>(defaultOptions || []),
             [isCustomSearchActive, setIsCustomSearchActive] = useState(false),
-            [showCloseIcon, setShowCloseIcon] = useState(!!restProps?.value?.toString().length),
+            [showCloseIcon, setShowCloseIcon] = useState(!!value?.toString().length),
             isEnterKeyPress = useKeyPress('Enter', true, optionsRef);
 
         useEffect(() => {
@@ -68,13 +69,13 @@ const Component: FC<SearchBoxProps> = memo(
                 setOptionsVisibilityState(false);
                 setShowCloseIcon(false);
                 updateIsTyping(false);
-                onClear && onClear();
+                onClear?.();
             }, []),
             handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
                 const { value } = event.target;
                 updateIsTyping(value.length !== 0);
                 setShowCloseIcon(value.length !== 0);
-                onInputChange && onInputChange(value);
+                onInputChange?.(value);
             }, []),
             handleOptionClick = useCallback(
                 (option: Option) => {
@@ -83,7 +84,7 @@ const Component: FC<SearchBoxProps> = memo(
                         inputRef.current.focus();
                     }
                     setOptionsVisibilityState(false);
-                    onOptionSelected && onOptionSelected(option);
+                    onOptionSelected?.(option);
                 },
                 [onOptionSelected]
             ),
@@ -98,7 +99,7 @@ const Component: FC<SearchBoxProps> = memo(
             handleBlur = useCallback(() => {
                 isFocused.current = false;
             }, []),
-            handleSearchIconClick = useCallback(() => onSearch && onSearch(inputRef.current?.value || ''), [onSearch]);
+            handleSearchIconClick = useCallback(() => onSearch?.(inputRef.current?.value || ''), [onSearch]);
 
         useKeyboardNavigation({
             isFocused,
@@ -119,15 +120,19 @@ const Component: FC<SearchBoxProps> = memo(
                 const currentSelectedOption = options.find(option => option.hovered === true);
                 if (inputRef.current && currentSelectedOption) {
                     inputRef.current.value = currentSelectedOption.label;
-                    onOptionSelected && onOptionSelected(currentSelectedOption);
+                    onOptionSelected?.(currentSelectedOption);
                     inputRef.current.blur();
                 }
-                onSearch && onSearch(inputRef.current?.value || '');
+                !currentSelectedOption && onSearch?.(inputRef.current?.value || '');
                 setOptionsVisibilityState(false);
                 setShowCloseIcon(inputRef.current?.value.length !== 0);
                 updateIsTyping(false);
             }
         }, [isEnterKeyPress]);
+
+        useEffect(() => {
+            setShowCloseIcon(!!value?.toString().length);
+        }, [value]);
 
         const hasCustomSearchFilter = !!customSearchFilter;
 
@@ -148,6 +153,7 @@ const Component: FC<SearchBoxProps> = memo(
                     ref={inputRef}
                     onFocus={handleFocus}
                     onBlur={handleBlur}
+                    value={value}
                     {...restProps}
                 />
                 {showCloseIcon && (

@@ -1,10 +1,10 @@
 import { mockAxios, renderWithSWR, screen } from '@test-utils';
-import { cache, SWRConfiguration } from 'swr';
+import { SWRConfiguration } from 'swr';
 import { useSWRAxios } from './useSWRAxios';
 
-const DummyComp = ({ initialData, passUrlOnly = false }: SWRConfiguration & { passUrlOnly?: boolean }) => {
+const DummyComp = ({ fallbackData, passUrlOnly = false }: SWRConfiguration & { passUrlOnly?: boolean }) => {
     const { data, error } = useSWRAxios<string, { message: string }>(passUrlOnly ? '/api/applications' : { url: '/api/applications' }, {
-        initialData
+        fallbackData
     });
     return (
         <>
@@ -16,7 +16,6 @@ const DummyComp = ({ initialData, passUrlOnly = false }: SWRConfiguration & { pa
 
 describe('useSWRAxios', () => {
     afterEach(() => {
-        cache.clear();
         mockAxios.reset();
     });
 
@@ -36,7 +35,7 @@ describe('useSWRAxios', () => {
 
     it('should return initial data if passed as props', async () => {
         mockAxios.onGet('/api/applications').replyOnce(200);
-        renderWithSWR(<DummyComp initialData="Dummy initial data" />);
+        renderWithSWR(<DummyComp fallbackData="Dummy initial data" />);
         const message = await screen.findByText('Dummy initial data');
         expect(message).toBeInTheDocument();
     });
