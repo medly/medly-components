@@ -6,7 +6,7 @@ on:
             - master
 
 jobs:
-    release:
+    storybook:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
