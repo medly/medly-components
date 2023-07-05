@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/medly/medly-components/compare/@medly-components/utils@3.1.0...@medly-components/utils@3.1.1) (2023-04-03)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+# [3.1.0](https://github.com/medly/medly-components/compare/@medly-components/utils@3.0.0...@medly-components/utils@3.1.0) (2023-04-02)
+
+
+### Features
+
+* update useSWRAxios return type ([#715](https://github.com/medly/medly-components/issues/715)) ([890d8d4](https://github.com/medly/medly-components/commit/890d8d4299f6b5418a5d18a8ca22e1d1a866b9bb))
+
+
+
+
+
 # [3.0.0](https://github.com/medly/medly-components/compare/@medly-components/utils@2.2.1...@medly-components/utils@3.0.0) (2023-04-01)
 
 

@@ -31,6 +31,7 @@ const Component: FC<DatePickerProps> = memo(
                 calendarIconPosition,
                 defaultMonth,
                 defaultYear,
+                hideInput,
                 ...restProps
             } = props,
             id = props.id || props.label?.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
@@ -150,6 +151,7 @@ const Component: FC<DatePickerProps> = memo(
                 className={className}
                 variant={restProps.variant!}
                 placement={popoverPlacement!}
+                hideInput={hideInput}
             >
                 <TextField
                     errorText={errorText || builtInErrorMessage}

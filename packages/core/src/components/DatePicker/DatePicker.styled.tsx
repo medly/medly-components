@@ -3,7 +3,7 @@ import { InjectClassName, Omit, WithThemeProp } from '@medly-components/utils';
 import styled, { css } from 'styled-components';
 import Calendar from '../Calendar';
 import { getPosition } from '../Popover/Popup/styled/Popup.styled';
-import { InnerWrapper, OuterWrapper } from '../TextField/Styled';
+import { InnerWrapper, InputWrapper, OuterWrapper } from '../TextField/Styled';
 import { StyleProps } from './types';
 
 type State = 'default' | 'active' | 'error' | 'disabled';
@@ -36,6 +36,21 @@ export const DateIconWrapper = styled(InjectClassName)<Omit<StyleProps, 'placeme
     ${props => props.disabled && getStyleForIcon(props, 'disabled')};
 `;
 
+const hiddenInputStyle = css<StyleProps>`
+    margin: 0;
+    min-width: 0;
+    & > ${OuterWrapper} {
+        min-width: 0;
+        ${InnerWrapper} {
+            width: fit-content;
+            padding: ${({ size }) => (size === 'S' ? '0 0.4rem' : '0 0.8rem')};
+            & > ${InputWrapper} {
+                display: none;
+            }
+        }
+    }
+`;
+
 export const Wrapper = styled(OuterWrapper)<StyleProps>`
     & > ${OuterWrapper} {
         margin: 0;
@@ -48,7 +63,10 @@ export const Wrapper = styled(OuterWrapper)<StyleProps>`
         z-index: 4;
         position: absolute;
         ${getPosition}
-        top: ${({ size, placement }) =>
-            (placement === 'bottom' || placement === 'bottom-start' || placement === 'bottom-end') && (size === 'S' ? '4rem' : '5.6rem')};
+        top: ${({ size, placement, theme }) =>
+            (placement === 'bottom' || placement === 'bottom-start' || placement === 'bottom-end') &&
+            (size === 'S' ? theme.textField.height.S : theme.textField.height.M)};
     }
+
+    ${({ hideInput }) => hideInput && hiddenInputStyle};
 `;

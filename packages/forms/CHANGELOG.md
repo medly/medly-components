@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.12](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.11...@medly-components/forms@2.2.12) (2023-07-01)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.2.11](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.10...@medly-components/forms@2.2.11) (2023-06-16)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.2.10](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.9...@medly-components/forms@2.2.10) (2023-05-08)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.2.9](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.8...@medly-components/forms@2.2.9) (2023-05-08)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.2.8](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.7...@medly-components/forms@2.2.8) (2023-04-14)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.2.7](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.6...@medly-components/forms@2.2.7) (2023-04-03)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [2.2.6](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.5...@medly-components/forms@2.2.6) (2023-04-02)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [2.2.5](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.4...@medly-components/forms@2.2.5) (2023-04-01)
 
 **Note:** Version bump only for package @medly-components/forms
