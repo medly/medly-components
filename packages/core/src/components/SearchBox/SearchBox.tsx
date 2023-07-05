@@ -29,6 +29,7 @@ const Component: FC<SearchBoxProps> = memo(
             maxWidth,
             isLoading,
             loader: customLoader,
+            value,
             ...restProps
         } = props;
         const wrapperRef = useRef<any>(null),
@@ -39,7 +40,7 @@ const Component: FC<SearchBoxProps> = memo(
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [options, setOptions] = useState<Option[]>(defaultOptions || []),
             [isCustomSearchActive, setIsCustomSearchActive] = useState(false),
-            [showCloseIcon, setShowCloseIcon] = useState(!!restProps?.value?.toString().length),
+            [showCloseIcon, setShowCloseIcon] = useState(!!value?.toString().length),
             isEnterKeyPress = useKeyPress('Enter', true, optionsRef);
 
         useEffect(() => {
@@ -129,6 +130,10 @@ const Component: FC<SearchBoxProps> = memo(
             }
         }, [isEnterKeyPress]);
 
+        useEffect(() => {
+            setShowCloseIcon(!!value?.toString().length);
+        }, [value]);
+
         const hasCustomSearchFilter = !!customSearchFilter;
 
         return (
@@ -148,6 +153,7 @@ const Component: FC<SearchBoxProps> = memo(
                     ref={inputRef}
                     onFocus={handleFocus}
                     onBlur={handleBlur}
+                    value={value}
                     {...restProps}
                 />
                 {showCloseIcon && (
