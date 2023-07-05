@@ -10,7 +10,14 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+
+            - name: Derive appropriate SHAs for base and head for `nx affected` commands
+              uses: nrwl/nx-set-shas@v3
+              with:
+                  main-branch-name: 'master'
 
             - name: Setup Node.js
               uses: actions/setup-node@v3
@@ -22,10 +29,10 @@ jobs:
               run: yarn
 
             - name: Lint
-              run: yarn lint
+              run: yarn lint --since=origin/master
 
             - name: Test
-              run: yarn test:coverage
+              run: yarn test --since=origin/master
 
             - name: Build
-              run: yarn build
+              run: yarn build --since=origin/master
