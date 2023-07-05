@@ -9,7 +9,7 @@ const Component: FC<OptionsProps> = memo(
         <Styled.Options {...restProps} ref={ref}>
             {options.map(option => (
                 <Option
-                    key={option.label}
+                    key={option.value}
                     {...option}
                     variant={restProps.variant}
                     onClick={onOptionClick}
