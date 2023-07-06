@@ -1,8 +1,8 @@
 import { WithStyle } from '@medly-components/utils';
+import type { FC } from 'react';
 import { forwardRef, memo, useMemo } from 'react';
 import { TextStyled } from './Text.styled';
 import { TextProps } from './types';
-import type { FC } from 'react';
 
 const Component: FC<TextProps> = memo(
     forwardRef(({ as, textVariant, textWeight, textAlign, children, ...restProps }, ref) => {
@@ -35,7 +35,7 @@ Component.defaultProps = {
     uppercase: false,
     fullWidth: false,
     textColor: 'inherit',
-    textAlign: 'initial'
+    textAlign: 'left'
 };
 Component.displayName = 'Text';
 export const Text: FC<TextProps> & WithStyle = Object.assign(Component, { Style: TextStyled });
