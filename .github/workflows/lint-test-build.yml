@@ -6,8 +6,8 @@ on:
             - 'master'
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
 
 jobs:
     lint-test-build:
@@ -33,10 +33,10 @@ jobs:
               run: yarn
 
             - name: Lint
-              run: yarn lint --since=origin/master
+              run: yarn nx affected -t lint --parallel
 
             - name: Test
-              run: yarn test --since=origin/master
+              run: yarn nx affected -t test --parallel
 
             - name: Build
-              run: yarn build --since=origin/master
+              run: yarn nx affected -t build
