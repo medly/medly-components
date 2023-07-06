@@ -33,10 +33,10 @@ jobs:
               run: yarn
 
             - name: Lint
-              run: yarn nx affected -t lint --parallel
+              run: yarn lint --since=origin/master
 
             - name: Test
-              run: yarn nx affected -t test --parallel
+              run: yarn test --since=origin/master
 
             - name: Build
-              run: yarn nx affected -t build
+              run: yarn build --since=origin/master
