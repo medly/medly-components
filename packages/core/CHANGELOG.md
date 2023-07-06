@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.27.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.27.1...@medly-components/core@6.27.2) (2023-07-06)
+
+
+### Bug Fixes
+
+* **core:** singleSelect - search filter not working well due to duplicate key issue. ([#733](https://github.com/medly/medly-components/issues/733)) ([3c37a28](https://github.com/medly/medly-components/commit/3c37a28917129c81c9a122e28827a85da1fafa41)), closes [#732](https://github.com/medly/medly-components/issues/732)
+
+
+
+
+
 ## [6.27.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.27.0...@medly-components/core@6.27.1) (2023-07-01)
 
 
