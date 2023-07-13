@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.27.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.27.2...@medly-components/core@6.27.3) (2023-07-13)
+
+
+### Bug Fixes
+
+* update CenterAlignedLoader overlay color ([9c30d51](https://github.com/medly/medly-components/commit/9c30d51700ae1620f6a5e42e4960c1cf4ed513df))
+
+
+
+
+
 ## [6.27.2](https://github.com/medly/medly-components/compare/@medly-components/core@6.27.1...@medly-components/core@6.27.2) (2023-07-06)
 
 
