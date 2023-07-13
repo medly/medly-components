@@ -23,7 +23,7 @@ export const CenterAligned = styled('div')<CenterAlignedProps>`
     align-items: center;
     z-index: 1001;
     position: ${({ position }) => position};
-    background-color: ${({ withOverlay, theme }) => withOverlay && rgba(theme.colors.white, 0.75)};
+    background-color: ${({ withOverlay }) => withOverlay && rgba(67, 84, 101, 0.25)};
     & > * {
         animation: ${fadesIn} 300ms ${({ withLoadingBox }) => (withLoadingBox ? 'ease-in-out' : 'ease-in')};
     }
