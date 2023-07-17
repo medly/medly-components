@@ -1,5 +1,5 @@
 {
-    "name": "medly-components",
+    "name": "scalereal-medly-components",
     "private": true,
     "workspaces": [
         "packages/*"
@@ -14,12 +14,12 @@
     "author": "Medly",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/medly/medly-components/issues"
+        "url": "https://github.com/scalereal/medly-components/issues"
     },
-    "homepage": "https://github.com/medly/medly-components#readme",
+    "homepage": "https://github.com/scalereal/medly-components#readme",
     "repository": {
         "type": "git",
-        "url": "git://github.com/medly/medly-components.git"
+        "url": "git://github.com/scalereal/medly-components.git"
     },
     "description": "🚀 Simple themable component library using react, styled-components & typescript",
     "scripts": {
@@ -81,11 +81,6 @@
             "@typescript-eslint/no-non-null-assertion": 0,
             "react-hooks/exhaustive-deps": 0
         }
-    },
-    "storybook-deployer": {
-        "gitUsername": "gmukul01",
-        "gitEmail": "mukulbansal01@gmail.com",
-        "commitMessage": "docs: Deploy latest documentation"
     },
     "config": {
         "commitizen": {
