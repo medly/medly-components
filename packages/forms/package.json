@@ -1,5 +1,5 @@
 {
-    "name": "@medly-components/forms",
+    "name": "@scalereal-medly-components/forms",
     "version": "2.2.14",
     "sideEffects": false,
     "main": "dist/cjs/index.js",

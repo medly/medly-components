@@ -1,5 +1,5 @@
 {
-    "name": "@medly-components/theme",
+    "name": "@scalereal-medly-components/theme",
     "version": "5.2.1",
     "sideEffects": false,
     "main": "dist/cjs/index.js",

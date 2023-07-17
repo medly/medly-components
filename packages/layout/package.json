@@ -1,5 +1,5 @@
 {
-    "name": "@medly-components/layout",
+    "name": "@scalereal-medly-components/layout",
     "version": "3.2.50",
     "sideEffects": false,
     "main": "dist/cjs/index.js",

@@ -1,5 +1,5 @@
 {
-    "name": "@medly-components/markdown",
+    "name": "@scalereal-medly-components/markdown",
     "version": "0.4.28",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
