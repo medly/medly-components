@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.28.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.27.3...@medly-components/core@6.28.0) (2023-08-05)
+
+
+### Features
+
+* update defaultActive in useEffect in Accordion to open it smoothly ([821c51e](https://github.com/medly/medly-components/commit/821c51e4c6739ffeefcf74212a00b55df6bcdfa2))
+
+
+
+
+
 ## [6.27.3](https://github.com/medly/medly-components/compare/@medly-components/core@6.27.2...@medly-components/core@6.27.3) (2023-07-13)
 
 
