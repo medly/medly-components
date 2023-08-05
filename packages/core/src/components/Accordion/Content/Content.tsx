@@ -1,10 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import { useContext, memo } from 'react';
+import type { FC } from 'react';
+import { memo, useContext } from 'react';
 import { AccordionContext } from '../AccordionContext';
 import { Wrapper } from './Content.styled';
-import type { FC } from 'react';
+import { AccordionContentProps } from './types';
 
-const Component: FC = memo(props => {
+const Component: FC<AccordionContentProps> = memo(props => {
     const [isActive] = useContext(AccordionContext);
 
     return <Wrapper role="region" isActive={isActive} {...props} />;

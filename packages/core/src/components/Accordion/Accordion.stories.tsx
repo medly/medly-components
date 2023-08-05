@@ -1,5 +1,7 @@
-import { Accordion, Button, Text } from '@medly-components/core';
 import { useState } from 'react';
+import Button from '../Button';
+import Text from '../Text';
+import { Accordion } from './Accordion';
 
 export const AccordionWithActiveStateFromOutside = () => {
     const [active, setActive] = useState(false);
