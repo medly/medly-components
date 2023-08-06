@@ -1,9 +1,9 @@
-import { WithStyle } from '@medly-components/utils';
+import { HTMLProps, WithStyle } from '@medly-components/utils';
 import type { Context, Dispatch, FC, SetStateAction } from 'react';
 
 export type StaticProps = {
     Header: FC<HeaderProps> & WithStyle;
-    Content: FC & WithStyle;
+    Content: FC<ContentProps> & WithStyle;
     Context: Context<AccordionContextType>;
 };
 
@@ -27,4 +27,9 @@ export type AccordionProps = {
 
 export type HeaderProps = {
     iconColor?: string;
+};
+
+export type ContentProps = HTMLProps<HTMLDivElement> & {
+    /** Use to render any component as Accordion content */
+    as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
 };
