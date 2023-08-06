@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.28.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.28.0...@medly-components/core@6.28.1) (2023-08-06)
+
+
+### Bug Fixes
+
+* add accordion content type in static props also ([c2f5625](https://github.com/medly/medly-components/commit/c2f562569244cd9ed9cf9ad211992d344a832cec))
+
+
+
+
+
 # [6.28.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.27.3...@medly-components/core@6.28.0) (2023-08-05)
 
 
