@@ -1,9 +1,9 @@
 import { DatePickerTheme, defaultTheme } from '@medly-components/theme';
+import type { FC, FormEvent } from 'react';
 import { useState } from 'react';
 import Button from '../Button';
 import { DatePicker } from './DatePicker';
 import { DatePickerProps as Props } from './types';
-import type { FC, FormEvent } from 'react';
 
 export const variants: Required<Props>['variant'][] = ['outlined', 'filled', 'fusion'];
 export const sizes: Required<Props>['size'][] = ['S', 'M'];

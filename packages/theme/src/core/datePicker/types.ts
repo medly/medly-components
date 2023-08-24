@@ -21,4 +21,5 @@ export interface DatePickerTheme {
     filled: DatePickerVariant;
     outlined: DatePickerVariant;
     fusion: DatePickerVariant;
+    flat: DatePickerVariant;
 }

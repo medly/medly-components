@@ -41,6 +41,9 @@ const datePicker: DatePickerTheme = {
     outlined: {
         icon: iconStyles
     },
+    flat: {
+        icon: iconStyles
+    },
     filled: {
         icon: {
             ...iconStyles,

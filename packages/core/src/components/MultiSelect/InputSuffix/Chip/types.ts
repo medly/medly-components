@@ -1,4 +1,5 @@
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { TextFieldVariants } from '../../../TextField/types';
 
 type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, 'type' | 'label'>;
 
@@ -6,7 +7,7 @@ export interface Props extends Omit<ButtonProps, 'size'> {
     size: 'S' | 'M';
     label: number | string;
     hideClearIcon?: boolean;
-    variant: 'outlined' | 'filled' | 'fusion';
+    variant: TextFieldVariants;
     state?: 'default' | 'active' | 'error' | 'disabled';
     onClear: (label?: number | string) => void;
 }

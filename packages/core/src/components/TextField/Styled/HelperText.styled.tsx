@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { TextFieldVariants } from '../types';
 
 export const HelperText = styled('span')<{
     size: 'S' | 'M';
-    variant: 'fusion' | 'outlined' | 'filled';
+    variant: TextFieldVariants;
 }>`
     font-size: 1.2rem;
     line-height: 1.6rem;

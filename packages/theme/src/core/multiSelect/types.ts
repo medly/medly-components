@@ -34,6 +34,7 @@ export interface MultiSelectTheme {
     filled: MultiSelectVariant;
     fusion: MultiSelectVariant;
     outlined: MultiSelectVariant;
+    flat: MultiSelectVariant;
     options: {
         textVariant: {
             S: FontVariants;

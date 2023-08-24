@@ -1,6 +1,7 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
 import { ChangeEvent } from 'react';
 import { Placement } from '../Popover/types';
+import { TextFieldVariants } from '../TextField/types';
 
 export type DisplayFormat =
     | 'dd/MM/yyyy'
@@ -22,7 +23,7 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     /** Function to be called on changing the date */
     onChange: (date: Date | null) => void;
     /** Input variants for DatePicker */
-    variant?: 'outlined' | 'filled' | 'fusion';
+    variant?: TextFieldVariants;
     /** Function to be called on a blur and invalid event with either a date or null */
     validator?: (val: Date | null, eventType: ChangeEvent<HTMLInputElement> | React.MouseEvent<HTMLButtonElement>) => string;
     /** Input Size */

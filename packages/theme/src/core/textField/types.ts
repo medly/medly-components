@@ -133,4 +133,47 @@ export interface TextFieldTheme {
             activeTextColor: string;
         };
     };
+    flat: {
+        default: {
+            bgColor: string;
+            borderColor: string;
+            borderRadius: string;
+            borderWidth: string;
+            helperTextColor: string;
+            iconColor: string;
+            labelColor: string;
+            textColor: string;
+        };
+        hover: {
+            borderColor: string;
+            shadowColor: string;
+            borderWidth: string;
+        };
+        disabled: {
+            bgColor: string;
+            labelColor: string;
+            textColor: string;
+            borderColor: string;
+            cursor: string;
+        };
+        active: {
+            bgColor: string;
+            borderColor: string;
+            borderRadius: string;
+            borderWidth: string;
+            labelColor: string;
+            placeholderColor: string;
+            shadowColor: string;
+        };
+        error: {
+            bgColor: string;
+            caretColor: string;
+            placeholderColor: string;
+            cursorColor: string;
+            borderColor: string;
+            labelColor: string;
+            helperTextColor: string;
+            shadowColor: string;
+        };
+    };
 }

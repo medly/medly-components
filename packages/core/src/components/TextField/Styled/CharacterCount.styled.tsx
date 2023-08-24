@@ -1,5 +1,6 @@
 import { WithThemeProp } from '@medly-components/utils';
 import styled from 'styled-components';
+import { TextFieldVariants } from '../types';
 
 const getMarginTop = ({ size, multiline }: { multiline?: boolean; size: 'S' | 'M' }) => {
     if (multiline) return '.1rem';
@@ -18,7 +19,7 @@ const getTextColor = ({
     characterCount,
     theme,
     variant
-}: { maxLength: number; characterCount: number; variant: 'fusion' | 'outlined' | 'filled' } & WithThemeProp) => {
+}: { maxLength: number; characterCount: number; variant: TextFieldVariants } & WithThemeProp) => {
     const characterCountPercentage = (characterCount / maxLength) * 100;
 
     if (characterCountPercentage === 100) {
@@ -34,7 +35,7 @@ const getTextColor = ({
 
 const getTransform =
     (translateXValue: string) =>
-    ({ variant }: { variant: 'fusion' | 'outlined' | 'filled' }): string => {
+    ({ variant }: { variant: TextFieldVariants }): string => {
         // If variant is fusion, we preserve the -167% translateY value which is applied on focus
         return variant === 'fusion' ? `transform: translate(${translateXValue}, -167%)` : `transform: translateX(${translateXValue})`;
     };
@@ -44,7 +45,7 @@ export const CharacterCount = styled.div<{
     characterCount: number;
     multiline?: boolean;
     size: 'S' | 'M';
-    variant: 'fusion' | 'outlined' | 'filled';
+    variant: TextFieldVariants;
     showTooltipForHelperAndErrorText: boolean;
 }>`
     @keyframes wiggle {

@@ -7852,6 +7852,4027 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 </div>
 `;
 
+exports[`TextField with flat variant and with label should render default state properly 1`] = `
+.c5 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #546A7F;
+}
+
+.c1:focus-within,
+.c1:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c1:focus-within::after,
+.c1:focus-within:hover::after {
+  border-color: #3872D2;
+  border-radius: 0.4rem;
+}
+
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0,
+.c1:focus-within:hover .sc-1ubn8hn-0,
+.c1:focus-within .sc-dynlvq-0,
+.c1:focus-within:hover .sc-dynlvq-0 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0 *,
+.c1:focus-within:hover .sc-1ubn8hn-0 *,
+.c1:focus-within .sc-dynlvq-0 *,
+.c1:focus-within:hover .sc-dynlvq-0 * {
+  fill: #3872D2;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1:focus-within input::-webkit-input-placeholder,
+.c1:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::-moz-placeholder,
+.c1:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input:-ms-input-placeholder,
+.c1:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::placeholder,
+.c1:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value=""
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        >
+          Name
+        </label>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant and with label should render disabled state properly 1`] = `
+.c5 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  cursor: not-allowed;
+  background-color: #ffffff;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #546A7F;
+}
+
+.c1::after,
+.c1:hover::after {
+  border-width: 0.1rem;
+  border-color: #C7D0D8;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 .c4 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1i29ttz-0 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #b0bcc8;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #b0bcc8;
+}
+
+.c1 * {
+  cursor: not-allowed;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+      disabled=""
+    >
+      <div
+        class="c2"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          disabled=""
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value=""
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        >
+          Name
+        </label>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant and with label should render focus state properly 1`] = `
+.c5 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #546A7F;
+}
+
+.c1:focus-within,
+.c1:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c1:focus-within::after,
+.c1:focus-within:hover::after {
+  border-color: #3872D2;
+  border-radius: 0.4rem;
+}
+
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0,
+.c1:focus-within:hover .sc-1ubn8hn-0,
+.c1:focus-within .sc-dynlvq-0,
+.c1:focus-within:hover .sc-dynlvq-0 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0 *,
+.c1:focus-within:hover .sc-1ubn8hn-0 *,
+.c1:focus-within .sc-dynlvq-0 *,
+.c1:focus-within:hover .sc-dynlvq-0 * {
+  fill: #3872D2;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1:focus-within input::-webkit-input-placeholder,
+.c1:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::-moz-placeholder,
+.c1:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input:-ms-input-placeholder,
+.c1:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::placeholder,
+.c1:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value=""
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        >
+          Name
+        </label>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant and without label should render default state properly 1`] = `
+.c5 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #546A7F;
+}
+
+.c1:focus-within,
+.c1:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c1:focus-within::after,
+.c1:focus-within:hover::after {
+  border-color: #3872D2;
+  border-radius: 0.4rem;
+}
+
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0,
+.c1:focus-within:hover .sc-1ubn8hn-0,
+.c1:focus-within .sc-dynlvq-0,
+.c1:focus-within:hover .sc-dynlvq-0 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0 *,
+.c1:focus-within:hover .sc-1ubn8hn-0 *,
+.c1:focus-within .sc-dynlvq-0 *,
+.c1:focus-within:hover .sc-dynlvq-0 * {
+  fill: #3872D2;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1:focus-within input::-webkit-input-placeholder,
+.c1:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::-moz-placeholder,
+.c1:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input:-ms-input-placeholder,
+.c1:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::placeholder,
+.c1:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value=""
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        />
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant and without label should render disabled state properly 1`] = `
+.c5 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  cursor: not-allowed;
+  background-color: #ffffff;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #546A7F;
+}
+
+.c1::after,
+.c1:hover::after {
+  border-width: 0.1rem;
+  border-color: #C7D0D8;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 .c4 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1i29ttz-0 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #b0bcc8;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #b0bcc8;
+}
+
+.c1 * {
+  cursor: not-allowed;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+      disabled=""
+    >
+      <div
+        class="c2"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          disabled=""
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value=""
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        />
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant and without label should render focus state properly 1`] = `
+.c5 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #546A7F;
+}
+
+.c1:focus-within,
+.c1:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c1:focus-within::after,
+.c1:focus-within:hover::after {
+  border-color: #3872D2;
+  border-radius: 0.4rem;
+}
+
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0,
+.c1:focus-within:hover .sc-1ubn8hn-0,
+.c1:focus-within .sc-dynlvq-0,
+.c1:focus-within:hover .sc-dynlvq-0 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0 *,
+.c1:focus-within:hover .sc-1ubn8hn-0 *,
+.c1:focus-within .sc-dynlvq-0 *,
+.c1:focus-within:hover .sc-dynlvq-0 * {
+  fill: #3872D2;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1:focus-within input::-webkit-input-placeholder,
+.c1:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::-moz-placeholder,
+.c1:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input:-ms-input-placeholder,
+.c1:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::placeholder,
+.c1:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value=""
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        />
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant should render error state properly 1`] = `
+.c7 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c5 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #607890;
+}
+
+.c1 ~ .c6 {
+  color: #546A7F;
+}
+
+.c1,
+.c1:hover,
+.c1:focus-within,
+.c1:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c1::after,
+.c1:hover::after,
+.c1:focus-within::after,
+.c1:focus-within:hover::after {
+  border-color: #D73A43;
+}
+
+.c1 .c4,
+.c1:hover .c4,
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
+  color: #D73A43;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1:hover .sc-1ubn8hn-0,
+.c1:focus-within .sc-1ubn8hn-0,
+.c1:focus-within:hover .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0,
+.c1:hover .sc-dynlvq-0,
+.c1:focus-within .sc-dynlvq-0,
+.c1:focus-within:hover .sc-dynlvq-0 {
+  color: #D73A43;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1:hover .sc-1ubn8hn-0 *,
+.c1:focus-within .sc-1ubn8hn-0 *,
+.c1:focus-within:hover .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 *,
+.c1:hover .sc-dynlvq-0 *,
+.c1:focus-within .sc-dynlvq-0 *,
+.c1:focus-within:hover .sc-dynlvq-0 * {
+  fill: #D73A43;
+}
+
+.c1 ~ .c6,
+.c1:hover ~ .c6,
+.c1:focus-within ~ .c6,
+.c1:focus-within:hover ~ .c6 {
+  color: #D73A43;
+}
+
+.c1 input,
+.c1:hover input,
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+  caret-color: #D73A43;
+}
+
+.c1 input::-webkit-input-placeholder,
+.c1:hover input::-webkit-input-placeholder,
+.c1:focus-within input::-webkit-input-placeholder,
+.c1:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder,
+.c1:hover input::-moz-placeholder,
+.c1:focus-within input::-moz-placeholder,
+.c1:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder,
+.c1:hover input:-ms-input-placeholder,
+.c1:focus-within input:-ms-input-placeholder,
+.c1:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder,
+.c1:hover input::placeholder,
+.c1:focus-within input::placeholder,
+.c1:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value=""
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        >
+          Name
+        </label>
+      </div>
+    </div>
+    <span
+      class="c6 c7"
+      id="medly-textField-helper-text"
+    >
+      Something wen wrong
+    </span>
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant should render error state properly with a value 1`] = `
+.c7 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c5 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #607890;
+}
+
+.c1 ~ .c6 {
+  color: #546A7F;
+}
+
+.c1,
+.c1:hover,
+.c1:focus-within,
+.c1:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c1::after,
+.c1:hover::after,
+.c1:focus-within::after,
+.c1:focus-within:hover::after {
+  border-color: #D73A43;
+}
+
+.c1 .c4,
+.c1:hover .c4,
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
+  color: #D73A43;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1:hover .sc-1ubn8hn-0,
+.c1:focus-within .sc-1ubn8hn-0,
+.c1:focus-within:hover .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0,
+.c1:hover .sc-dynlvq-0,
+.c1:focus-within .sc-dynlvq-0,
+.c1:focus-within:hover .sc-dynlvq-0 {
+  color: #D73A43;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1:hover .sc-1ubn8hn-0 *,
+.c1:focus-within .sc-1ubn8hn-0 *,
+.c1:focus-within:hover .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 *,
+.c1:hover .sc-dynlvq-0 *,
+.c1:focus-within .sc-dynlvq-0 *,
+.c1:focus-within:hover .sc-dynlvq-0 * {
+  fill: #D73A43;
+}
+
+.c1 ~ .c6,
+.c1:hover ~ .c6,
+.c1:focus-within ~ .c6,
+.c1:focus-within:hover ~ .c6 {
+  color: #D73A43;
+}
+
+.c1 input,
+.c1:hover input,
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+  caret-color: #D73A43;
+}
+
+.c1 input::-webkit-input-placeholder,
+.c1:hover input::-webkit-input-placeholder,
+.c1:focus-within input::-webkit-input-placeholder,
+.c1:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder,
+.c1:hover input::-moz-placeholder,
+.c1:focus-within input::-moz-placeholder,
+.c1:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder,
+.c1:hover input:-ms-input-placeholder,
+.c1:focus-within input:-ms-input-placeholder,
+.c1:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder,
+.c1:hover input::placeholder,
+.c1:focus-within input::placeholder,
+.c1:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value="Example value"
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        >
+          Name
+        </label>
+      </div>
+    </div>
+    <span
+      class="c6 c7"
+      id="medly-textField-helper-text"
+    >
+      Something wen wrong
+    </span>
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant should render error text properly 1`] = `
+.c1 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 ~ .c0 {
+  color: #546A7F;
+}
+
+.c2 ~ .c0,
+.c2:hover ~ .c0,
+.c2:focus-within ~ .c0,
+.c2:focus-within:hover ~ .c0 {
+  color: #D73A43;
+}
+
+<span
+  class="c0 c1"
+  id="medly-textField-helper-text"
+>
+  Some text
+</span>
+`;
+
+exports[`TextField with flat variant should render helper text properly 1`] = `
+.c1 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 ~ .c0 {
+  color: #546A7F;
+}
+
+<span
+  class="c0 c1"
+  id="medly-textField-helper-text"
+>
+  Some text
+</span>
+`;
+
+exports[`TextField with flat variant should render properly with custom border styles (themed) 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c5 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c8 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  cursor: not-allowed;
+  background-color: #ffffff;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .c7 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .c7 * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #546A7F;
+}
+
+.c1::after,
+.c1:hover::after {
+  border-width: 0.1rem;
+  border-color: #C7D0D8;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 .c4 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1i29ttz-0 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .c7 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .c7 * {
+  fill: #b0bcc8;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #b0bcc8;
+}
+
+.c1 * {
+  cursor: not-allowed;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+      disabled=""
+    >
+      <div
+        class="c2"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          disabled=""
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value=""
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        >
+          Name
+        </label>
+      </div>
+      <svg
+        class="c6 c7 c8"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+          fill="green"
+        />
+      </svg>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant should render properly with custom disabled cursor (themed) 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c5 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c8 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  cursor: not-allowed;
+  background-color: #ffffff;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .c7 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .c7 * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #546A7F;
+}
+
+.c1::after,
+.c1:hover::after {
+  border-width: 0.1rem;
+  border-color: #C7D0D8;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 .c4 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1i29ttz-0 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .c7 {
+  color: #b0bcc8;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .c7 * {
+  fill: #b0bcc8;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #b0bcc8;
+}
+
+.c1 * {
+  cursor: not-allowed;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+      disabled=""
+    >
+      <div
+        class="c2"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          disabled=""
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value=""
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        >
+          Name
+        </label>
+      </div>
+      <svg
+        class="c6 c7 c8"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+          fill="green"
+        />
+      </svg>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant should render properly with multiline 1`] = `
+.c5 {
+  top: 1.1rem;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.800000000000001rem;
+  padding: 1.1rem 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .sc-dynlvq-0 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #546A7F;
+}
+
+.c1:focus-within,
+.c1:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c1:focus-within::after,
+.c1:focus-within:hover::after {
+  border-color: #3872D2;
+  border-radius: 0.4rem;
+}
+
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0,
+.c1:focus-within:hover .sc-1ubn8hn-0,
+.c1:focus-within .sc-dynlvq-0,
+.c1:focus-within:hover .sc-dynlvq-0 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0 *,
+.c1:focus-within:hover .sc-1ubn8hn-0 *,
+.c1:focus-within .sc-dynlvq-0 *,
+.c1:focus-within:hover .sc-dynlvq-0 * {
+  fill: #3872D2;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1:focus-within input::-webkit-input-placeholder,
+.c1:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::-moz-placeholder,
+.c1:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input:-ms-input-placeholder,
+.c1:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::placeholder,
+.c1:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 1.6rem 0 0 0;
+  padding: 0;
+  height: 90%;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-50%) scale(0.75);
+  -ms-transform: translateY(-50%) scale(0.75);
+  transform: translateY(-50%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <textarea
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        >
+          Name
+        </label>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant should render properly with prefix 1`] = `
+.c2 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c2 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c8 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c4 {
+  pointer-events: none;
+  margin-right: 1.6rem;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+}
+
+.c1 .c7 {
+  color: #607890;
+}
+
+.c1 .c3,
+.c1 .sc-dynlvq-0 {
+  color: #607890;
+}
+
+.c1 .c3 *,
+.c1 .sc-dynlvq-0 * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #546A7F;
+}
+
+.c1:focus-within,
+.c1:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c1:focus-within::after,
+.c1:focus-within:hover::after {
+  border-color: #3872D2;
+  border-radius: 0.4rem;
+}
+
+.c1:focus-within .c7,
+.c1:focus-within:hover .c7 {
+  color: #3872D2;
+}
+
+.c1:focus-within .c3,
+.c1:focus-within:hover .c3,
+.c1:focus-within .sc-dynlvq-0,
+.c1:focus-within:hover .sc-dynlvq-0 {
+  color: #3872D2;
+}
+
+.c1:focus-within .c3 *,
+.c1:focus-within:hover .c3 *,
+.c1:focus-within .sc-dynlvq-0 *,
+.c1:focus-within:hover .sc-dynlvq-0 * {
+  fill: #3872D2;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1:focus-within input::-webkit-input-placeholder,
+.c1:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::-moz-placeholder,
+.c1:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input:-ms-input-placeholder,
+.c1:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::placeholder,
+.c1:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c6 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 0.6rem;
+}
+
+.c6,
+.c6 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c6.c6.c6:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c6.c6.c6:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c6.c6.c6:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c6.c6.c6:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c6.c6.c6:focus::placeholder {
+  opacity: 1;
+}
+
+.c6:disabled {
+  color: #435465;
+}
+
+.c6:disabled ~ .c7,
+.c6:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c6::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c6::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c6:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c6::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c6:not(:placeholder-shown) ~ .c7,
+.c6:focus ~ .c7 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c6:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3 c4"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+          fill="green"
+        />
+      </svg>
+      <div
+        class="c5"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c6"
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value=""
+        />
+        <label
+          class="c7 c8"
+          for="medly-textField-input"
+        >
+          Name
+        </label>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with flat variant should render properly with suffix 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c5 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c8 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+}
+
+.c1 .c4 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0,
+.c1 .c7 {
+  color: #607890;
+}
+
+.c1 .sc-1ubn8hn-0 *,
+.c1 .c7 * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-avlt8d-0 {
+  color: #546A7F;
+}
+
+.c1:focus-within,
+.c1:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c1:focus-within::after,
+.c1:focus-within:hover::after {
+  border-color: #3872D2;
+  border-radius: 0.4rem;
+}
+
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0,
+.c1:focus-within:hover .sc-1ubn8hn-0,
+.c1:focus-within .c7,
+.c1:focus-within:hover .c7 {
+  color: #3872D2;
+}
+
+.c1:focus-within .sc-1ubn8hn-0 *,
+.c1:focus-within:hover .sc-1ubn8hn-0 *,
+.c1:focus-within .c7 *,
+.c1:focus-within:hover .c7 * {
+  fill: #3872D2;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1:focus-within input::-webkit-input-placeholder,
+.c1:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::-moz-placeholder,
+.c1:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input:-ms-input-placeholder,
+.c1:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus-within input::placeholder,
+.c1:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-1r5xr2a-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3.c3.c3:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c3.c3.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c3.c3.c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3:disabled {
+  color: #435465;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1r5xr2a-0 {
+  cursor: not-allowed;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-textField-input-wrapper"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          aria-describedby="medly-textField-helper-text"
+          class="c3"
+          id="medly-textField-input"
+          placeholder=" "
+          type="text"
+          value=""
+        />
+        <label
+          class="c4 c5"
+          for="medly-textField-input"
+        >
+          Name
+        </label>
+      </div>
+      <svg
+        class="c6 c7 c8"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+          fill="green"
+        />
+      </svg>
+    </div>
+    
+  </div>
+</div>
+`;
+
 exports[`TextField with fusion variant and with label should render default state properly 1`] = `
 .c5 {
   top: 50%;

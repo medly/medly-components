@@ -1,5 +1,6 @@
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import type { Dispatch, FC, ReactNode, RefObject, SetStateAction } from 'react';
+import { TextFieldVariants } from '../TextField/types';
 
 export interface Option {
     value: any;
@@ -30,7 +31,7 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     /** Options */
     options: Option[];
     /** Variants */
-    variant?: 'outlined' | 'filled' | 'fusion';
+    variant?: TextFieldVariants;
     /** Sizes */
     size?: 'S' | 'M';
     /** Label */

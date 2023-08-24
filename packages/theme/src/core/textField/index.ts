@@ -141,6 +141,49 @@ const textField: TextFieldTheme = {
             defaultTextColor: colors.red[500],
             activeTextColor: colors.black
         }
+    },
+    flat: {
+        default: {
+            bgColor: colors.white,
+            borderColor: colors.grey[500],
+            borderRadius: defaultOutlined.borderRadius,
+            borderWidth: defaultOutlined.borderWidth,
+            helperTextColor: colors.grey[700],
+            iconColor: colors.grey[600],
+            labelColor: colors.grey[600],
+            textColor: colors.black
+        },
+        hover: {
+            borderColor: colors.grey[600],
+            borderWidth: defaultOutlined.borderWidth,
+            shadowColor: colors.grey[600]
+        },
+        disabled: {
+            labelColor: colors.grey[400],
+            textColor: colors.grey[800],
+            borderColor: colors.grey[300],
+            bgColor: colors.white,
+            cursor: 'not-allowed'
+        },
+        active: {
+            bgColor: colors.white,
+            borderColor: colors.blue[500],
+            borderRadius: defaultOutlined.borderRadius,
+            borderWidth: defaultOutlined.borderWidth,
+            labelColor: colors.blue[500],
+            placeholderColor: colors.grey[300],
+            shadowColor: colors.blue[500]
+        },
+        error: {
+            bgColor: colors.white,
+            caretColor: colors.red[500],
+            placeholderColor: colors.grey[300],
+            cursorColor: colors.red[500],
+            borderColor: colors.red[500],
+            labelColor: colors.red[500],
+            helperTextColor: colors.red[500],
+            shadowColor: colors.red[500]
+        }
     }
 };
 

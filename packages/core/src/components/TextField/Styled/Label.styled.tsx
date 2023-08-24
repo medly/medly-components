@@ -1,7 +1,8 @@
 import { getFontStyle } from '@medly-components/utils';
 import styled, { css } from 'styled-components';
+import { TextFieldVariants } from '../types';
 
-const getStyle = (variant: 'outlined' | 'filled' | 'fusion', required?: boolean) => {
+const getStyle = (variant: TextFieldVariants, required?: boolean) => {
     if (required && variant !== 'fusion') {
         return css`
             ::after {
@@ -19,7 +20,7 @@ const getStyle = (variant: 'outlined' | 'filled' | 'fusion', required?: boolean)
 
 export const Label = styled('label')<{
     required?: boolean;
-    variant: 'outlined' | 'filled' | 'fusion';
+    variant: TextFieldVariants;
     size: 'S' | 'M';
     multiline?: boolean;
     inputWidth: number;

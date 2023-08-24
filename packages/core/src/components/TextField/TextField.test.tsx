@@ -192,7 +192,7 @@ describe('TextField', () => {
         });
     });
 
-    describe.each(['outlined', 'filled', 'fusion'])('with %s variant', value => {
+    describe.each(['outlined', 'filled', 'fusion', 'flat'])('with %s variant', value => {
         const variant = value as TextFieldProps['variant'];
 
         describe.each(['with label', 'without label'])('and %s', (labelCnd: string) => {

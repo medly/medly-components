@@ -1,12 +1,12 @@
 import { defaultTheme, TextFieldTheme } from '@medly-components/theme';
+import type { FC } from 'react';
 import { useCallback, useState } from 'react';
 import styled from 'styled-components';
 import Button from '../Button';
 import { TextField } from './TextField';
 import { TextFieldProps as Props } from './types';
-import type { FC } from 'react';
 
-export const variants: Props['variant'][] = ['filled', 'outlined', 'fusion'];
+export const variants: Props['variant'][] = ['filled', 'outlined', 'fusion', 'flat'];
 export const sizes: Props['size'][] = ['S', 'M'];
 
 export const ThemeInterface: FC<TextFieldTheme> = () => null;

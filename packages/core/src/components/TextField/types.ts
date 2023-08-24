@@ -2,9 +2,11 @@ import { TextFieldTheme } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import type { ChangeEvent, FC } from 'react';
 
+export type TextFieldVariants = 'filled' | 'outlined' | 'fusion' | 'flat';
+
 export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'> {
     /** Input variants */
-    variant?: 'outlined' | 'filled' | 'fusion';
+    variant?: TextFieldVariants;
     /** Input size */
     size?: 'S' | 'M';
     /** Function will be called with the input value on blur and invalid event */
@@ -49,14 +51,13 @@ export interface StyledProps extends TextFieldProps {
     isPrefixPresent?: boolean;
     isSuffixPresent?: boolean;
     isLabelPresent?: boolean;
-    multiline?: boolean;
     inputSize: 'S' | 'M';
-    variant: 'filled' | 'outlined' | 'fusion';
+    variant: TextFieldVariants;
     inputWidth?: number;
 }
 
 export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'height'> {
-    variant: 'outlined' | 'filled' | 'fusion';
+    variant: TextFieldVariants;
     disabled?: boolean;
     showDecorators?: boolean;
     size: 'S' | 'M';

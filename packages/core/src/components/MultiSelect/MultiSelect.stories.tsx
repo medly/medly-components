@@ -1,8 +1,8 @@
 import { defaultTheme, MultiSelectTheme } from '@medly-components/theme';
-import { MultiSelectProps } from './types';
 import type { FC } from 'react';
+import { MultiSelectProps } from './types';
 
-export const variants: Required<MultiSelectProps>['variant'][] = ['outlined', 'filled', 'fusion'];
+export const variants: Required<MultiSelectProps>['variant'][] = ['outlined', 'filled', 'fusion', 'flat'];
 export const sizes: Required<MultiSelectProps>['size'][] = ['S', 'M'];
 
 export const options = [

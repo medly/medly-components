@@ -122,7 +122,7 @@ const Component: FC<TextFieldProps> = memo(
                             <Prefix size={size} />
                         </Styled.Prefix>
                     )}
-                    <Styled.InputWrapper multiline={multiline} size={size!} variant={props.variant!}>
+                    <Styled.InputWrapper multiline={multiline} size={size!}>
                         <Styled.Input
                             ref={inputRef}
                             value={value}
