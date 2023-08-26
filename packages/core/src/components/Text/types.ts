@@ -12,6 +12,8 @@ interface CommonProps extends HTMLProps<HTMLElement> {
     fullWidth?: boolean;
     /** You can use it to render Text as any component*/
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+    /** Use for rendering like Link */
+    to?: string | number;
 }
 
 export interface TextProps extends CommonProps {
