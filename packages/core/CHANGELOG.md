@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.29.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.28.1...@medly-components/core@6.29.0) (2023-08-26)
+
+
+### Features
+
+* add to prop type in text component ([d15a4a9](https://github.com/medly/medly-components/commit/d15a4a9d2fd0e7ee3e8e8591f33dec20e696ed0d))
+
+
+
+
+
 ## [6.28.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.28.0...@medly-components/core@6.28.1) (2023-08-06)
 
 
