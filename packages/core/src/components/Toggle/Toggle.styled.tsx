@@ -7,7 +7,7 @@ import { ToggleProps, ToggleWrapperProps } from './types';
 const getHeight = ({ theme, size }: ToggleProps & WithThemeProp) =>
     size ? theme.toggle.sizes[size] : theme.toggle.sizes[theme?.toggle.defaultSize];
 
-const getWidth = (props: ToggleProps & WithThemeProp) => `calc(${getHeight(props)} * 2)`;
+const getWidth = (props: ToggleProps & WithThemeProp) => `calc(${getHeight(props)} * 1.75)`;
 
 const IconStyle = css`
     color: ${({ theme }) => theme.toggle.iconColor};
@@ -59,15 +59,15 @@ export const OffIcon = styled('div')<ToggleWrapperProps>`
 export const OnIcon = styled('div')<ToggleWrapperProps>`
     ${IconStyle}
     opacity: 0;
-    left: ${props => `calc((-${getHeight(props)}) + 0.3rem) `};
+    transform: translateX(${props => `calc(${getHeight(props)} * 0.75) `});
 `;
 
 export const Circle = styled('div')<ToggleWrapperProps>`
     z-index: 1;
     position: absolute;
-    height: ${props => `calc(${getHeight(props)} - 0.6rem) `};
-    width: ${props => `calc(${getHeight(props)} - 0.6rem) `};
-    margin: 0.3rem;
+    height: ${props => `calc(${getHeight(props)} - 0.8rem) `};
+    width: ${props => `calc(${getHeight(props)} - 0.8rem) `};
+    margin: 0.4rem;
     border-radius: 50%;
     background: ${({ theme }) => theme.colors.white};
     box-shadow: 0.1rem 0.3rem 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
@@ -100,19 +100,19 @@ export const Checkbox = styled('input').attrs({ type: 'checkbox' })<ToggleProps>
         background: ${({ theme }) => theme.toggle.checkedBgColor};
 
         ${Circle} {
-            margin-left: ${props => `calc((${getHeight(props)}) + 0.3rem) `};
+            transform: translateX(${props => `calc(${getHeight(props)} * 0.75) `});
         }
 
         ${OffIcon} {
-            color: ${({ theme }) => theme.toggle.iconColor};
             opacity: 0;
-            right: ${props => `calc((-${getHeight(props)}) + 0.3rem) `};
+            color: ${({ theme }) => theme.toggle.iconColor};
+            transform: translateX(${props => `calc(-${getHeight(props)} * 0.75) `});
         }
 
         ${OnIcon} {
             opacity: 1;
             position: absolute;
-            left: 0;
+            transform: translateX(0);
         }
     }
 `;

@@ -44,7 +44,7 @@ const Component: FC<ToggleProps> = memo(
                 )}
                 <Styled.Wrapper size={size} disabled={restProps.disabled}>
                     {/* @ts-ignore */}
-                    <Styled.Checkbox ref={ref} id={label} size={size} required={required} onChange={changeHandler} {...restProps} />
+                    <Styled.Checkbox ref={ref} id={toggleId} size={size} required={required} onChange={changeHandler} {...restProps} />
                     <Styled.Switch>
                         {iconLeft && <Styled.OnIcon size={size}>{cloneElement(iconLeft, { size })}</Styled.OnIcon>}
                         <Styled.Circle size={size} />

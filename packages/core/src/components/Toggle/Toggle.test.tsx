@@ -2,7 +2,7 @@ import { LockOpenIcon, LockOutlineIcon } from '@medly-components/icons';
 import { fireEvent, render, screen } from '@test-utils';
 import { Toggle } from './Toggle';
 
-describe('Checkbox component', () => {
+describe('Toggle component', () => {
     it('should render correctly with all the default props', () => {
         const { container } = render(<Toggle name="gender" />);
         expect(container).toMatchSnapshot();

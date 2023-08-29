@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkbox component should render correctly with all the default props 1`] = `
+exports[`Toggle component should render correctly with all the default props 1`] = `
 .c0 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
@@ -35,7 +35,7 @@ exports[`Checkbox component should render correctly with all the default props 1
   flex-wrap: wrap;
   margin-left: 0px;
   position: relative;
-  width: calc(24px * 2);
+  width: calc(24px * 1.75);
   height: 24px;
   border-radius: 1.5rem;
   background-color: #dfe4e9;
@@ -68,9 +68,9 @@ exports[`Checkbox component should render correctly with all the default props 1
 .c6 {
   z-index: 1;
   position: absolute;
-  height: calc(24px - 0.6rem);
-  width: calc(24px - 0.6rem);
-  margin: 0.3rem;
+  height: calc(24px - 0.8rem);
+  width: calc(24px - 0.8rem);
+  margin: 0.4rem;
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0.1rem 0.3rem 0.3rem 0.1rem rgba(0,0,0,0.2);
@@ -103,19 +103,25 @@ exports[`Checkbox component should render correctly with all the default props 1
 }
 
 .c2:checked + .c3 .c5 {
-  margin-left: calc((24px) + 0.3rem);
+  -webkit-transform: translateX(calc(24px * 0.75) );
+  -ms-transform: translateX(calc(24px * 0.75) );
+  transform: translateX(calc(24px * 0.75) );
 }
 
 .c2:checked + .c3 .sc-1oxfop0-2 {
-  color: #ffffff;
   opacity: 0;
-  right: calc((-24px) + 0.3rem);
+  color: #ffffff;
+  -webkit-transform: translateX(calc(-24px * 0.75) );
+  -ms-transform: translateX(calc(-24px * 0.75) );
+  transform: translateX(calc(-24px * 0.75) );
 }
 
 .c2:checked + .c3 .sc-1oxfop0-3 {
   opacity: 1;
   position: absolute;
-  left: 0;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 
 <div>
@@ -129,7 +135,7 @@ exports[`Checkbox component should render correctly with all the default props 1
     >
       <input
         class="c2"
-        id=""
+        id="medly-toggle-checkbox"
         name="gender"
         type="checkbox"
       />
@@ -145,7 +151,7 @@ exports[`Checkbox component should render correctly with all the default props 1
 </div>
 `;
 
-exports[`Checkbox component should render correctly with all the props given 1`] = `
+exports[`Toggle component should render correctly with all the props given 1`] = `
 .c1 {
   color: #13181D;
   font-size: 1.4rem;
@@ -202,7 +208,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   flex-wrap: wrap;
   margin-left: 0px;
   position: relative;
-  width: calc(28px * 2);
+  width: calc(28px * 1.75);
   height: 28px;
   border-radius: 1.5rem;
   background-color: #dfe4e9;
@@ -235,9 +241,9 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 .c8 {
   z-index: 1;
   position: absolute;
-  height: calc(28px - 0.6rem);
-  width: calc(28px - 0.6rem);
-  margin: 0.3rem;
+  height: calc(28px - 0.8rem);
+  width: calc(28px - 0.8rem);
+  margin: 0.4rem;
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0.1rem 0.3rem 0.3rem 0.1rem rgba(0,0,0,0.2);
@@ -270,19 +276,25 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 }
 
 .c4:checked + .c5 .c7 {
-  margin-left: calc((28px) + 0.3rem);
+  -webkit-transform: translateX(calc(28px * 0.75) );
+  -ms-transform: translateX(calc(28px * 0.75) );
+  transform: translateX(calc(28px * 0.75) );
 }
 
 .c4:checked + .c5 .sc-1oxfop0-2 {
-  color: #ffffff;
   opacity: 0;
-  right: calc((-28px) + 0.3rem);
+  color: #ffffff;
+  -webkit-transform: translateX(calc(-28px * 0.75) );
+  -ms-transform: translateX(calc(-28px * 0.75) );
+  transform: translateX(calc(-28px * 0.75) );
 }
 
 .c4:checked + .c5 .sc-1oxfop0-3 {
   opacity: 1;
   position: absolute;
-  left: 0;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 
 <div>
@@ -303,7 +315,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
       <input
         class="c4"
         disabled=""
-        id="Female"
+        id="gender-toggle"
         name="gender"
         type="checkbox"
       />
