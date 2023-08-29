@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.30.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.29.0...@medly-components/core@6.30.0) (2023-08-29)
+
+
+### Features
+
+* update toggle component design ([dfbe712](https://github.com/medly/medly-components/commit/dfbe71277ae36cb9ee90fb03e24c1c88e0da9185))
+
+
+
+
+
 # [6.29.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.28.1...@medly-components/core@6.29.0) (2023-08-26)
 
 
