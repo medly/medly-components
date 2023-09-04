@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.31.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.30.0...@medly-components/core@6.31.0) (2023-09-04)
+
+
+### Features
+
+* export Calendar and DateRangeCalendar from core package ([3d360f9](https://github.com/medly/medly-components/commit/3d360f972b13a2340cfce1b019c079aaf9a40cc7))
+
+
+
+
+
 # [6.30.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.29.0...@medly-components/core@6.30.0) (2023-08-29)
 
 
