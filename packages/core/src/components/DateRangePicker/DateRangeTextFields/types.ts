@@ -1,5 +1,5 @@
-import type { ChangeEvent, Dispatch, RefObject, SetStateAction } from 'react';
-import { DateRangeProps, DateRangeType, PopoverTypes } from '../types';
+import type { ChangeEvent, RefObject } from 'react';
+import { DateRangeProps, DateRangeType, FOCUS_ELEMENT, PopoverTypes } from '../types';
 
 export type Props = {
     id: string;
@@ -19,7 +19,7 @@ export type Props = {
     onDateChange: Required<DateRangeProps>['onChange'];
     displayFormat: Required<DateRangeProps>['displayFormat'];
     onCalendarIconClick: (val: boolean) => void;
-    setFocusedElement: Dispatch<SetStateAction<'START_DATE' | 'END_DATE'>>;
+    setFocusedElement: (element: FOCUS_ELEMENT) => void;
     startDateRef: RefObject<HTMLInputElement>;
     endDateRef: RefObject<HTMLInputElement>;
     validator?: (val: DateRangeType, eventType: ChangeEvent<HTMLInputElement>) => string;

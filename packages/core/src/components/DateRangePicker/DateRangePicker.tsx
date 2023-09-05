@@ -1,11 +1,11 @@
-import { useKeyPress, useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
+import { useKeyPress, useOuterClickNotifier } from '@medly-components/utils';
 import { FC, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import * as TextFieldStyled from '../TextField/Styled';
 import CustomDateRangeOptions from './CustomDateRangeOptions';
 import DateRangeCalendar from './DateRangeCalendar';
 import DateRangeTextFields from './DateRangeTextFields';
 import { dateRangeHelpers } from './helpers/dateRangeHelpers';
-import { DateRangeProps, DateRangeSelectionEnum, PopoverTypes } from './types';
+import { DateRangeProps, DateRangeSelectionEnum, FOCUS_ELEMENT, PopoverTypes } from './types';
 
 export const DateRangePicker: FC<DateRangeProps> = memo(props => {
     const {
@@ -42,7 +42,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
         outerClickValidator = useRef<(e: MouseEvent) => void>(null),
         [isActive, setActive] = useState(false),
         [activePopover, setActivePopover] = useState<PopoverTypes>(PopoverTypes.CALENDAR),
-        [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
+        [focusedElement, setFocusedElement] = useState<FOCUS_ELEMENT>('START_DATE'),
         focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current?.focus(), []),
         isTabKeyPressed = useKeyPress('Tab', true, wrapperRef),
         wrapperMinWidth = useMemo(
@@ -63,10 +63,14 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
             setActivePopover(PopoverTypes.CALENDAR);
             setActive(valueToSet);
         }, []),
+        onFocusChange = useCallback((element: FOCUS_ELEMENT) => {
+            focusElement(element);
+            setFocusedElement(element);
+        }, []),
         onOptionClick = useCallback(
             (option: any) => {
                 if (option.value === DateRangeSelectionEnum.CUSTOM) {
-                    focusElement('START_DATE');
+                    onFocusChange('START_DATE');
                     setActivePopover(PopoverTypes.CALENDAR);
                     setActive(true);
                 } else {
@@ -82,16 +86,13 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
                     setActive(false);
                 }
             },
-            [onChange, focusElement]
+            [onChange]
         );
-
     useOuterClickNotifier((e: MouseEvent) => {
         setActive(false);
         isActive && onPopupClose && onPopupClose();
         isActive && outerClickValidator.current && outerClickValidator.current(e);
     }, wrapperRef);
-
-    useUpdateEffect(() => focusElement(focusedElement), [focusedElement]);
 
     useEffect(() => {
         const activeElement = document.activeElement as HTMLInputElement;
@@ -125,7 +126,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
                 onDateChange={onChange}
                 displayFormat={displayFormat!}
                 onCalendarIconClick={onCalendarIconClick}
-                setFocusedElement={setFocusedElement}
+                setFocusedElement={onFocusChange}
                 startDateRef={startDateRef}
                 endDateRef={endDateRef}
                 showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
@@ -141,12 +142,10 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
                         size={size!}
                         placement={popoverPlacement!}
                         selectedDates={value}
-                        setActive={onCalendarIconClick}
                         withSingleMonth={withSingleMonth}
-                        focusElement={focusElement}
                         onDateSelection={onChange}
                         focusedElement={focusedElement}
-                        setFocusedElement={setFocusedElement}
+                        onFocusChange={onFocusChange}
                         minSelectableDate={minSelectableDate!}
                         maxSelectableDate={maxSelectableDate!}
                     />

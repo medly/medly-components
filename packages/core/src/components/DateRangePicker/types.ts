@@ -11,6 +11,8 @@ export enum DateRangeSelectionEnum {
     QUARTER = 'QUARTER'
 }
 
+export type FOCUS_ELEMENT = 'START_DATE' | 'END_DATE';
+
 export enum PopoverTypes {
     CALENDAR = 'CALENDAR',
     CUSTOM_RANGE_OPTIONS = 'CUSTOM_RANGE_OPTIONS'

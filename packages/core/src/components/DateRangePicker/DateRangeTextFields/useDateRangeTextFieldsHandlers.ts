@@ -3,6 +3,7 @@ import { ChangeEvent, FormEvent, useCallback, useEffect, useMemo, useState } fro
 import { isValidDate } from '../../Calendar/helper';
 import getMaskedValue from '../../TextField/getMaskedValue';
 import { getFormattedDate } from '../helpers';
+import { FOCUS_ELEMENT } from '../types';
 import { Props } from './types';
 
 export const useDateRangeTextFieldsHandlers = (props: Props) => {
@@ -42,7 +43,7 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         ),
         onTextFieldFocus = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
             onCalendarIconClick(true);
-            setFocusedElement(event.target.name as `START_DATE` | `END_DATE`);
+            setFocusedElement(event.target.name as FOCUS_ELEMENT);
             event.target.setSelectionRange(event.target.value.length, event.target.value.length);
         }, []),
         handleTextChange = useCallback(

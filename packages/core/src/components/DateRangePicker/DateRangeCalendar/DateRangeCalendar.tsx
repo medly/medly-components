@@ -1,28 +1,27 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
+import type { FC } from 'react';
 import { memo, useCallback, useEffect, useMemo, useState } from 'react';
 import * as DatePickerStyled from '../../Calendar/Calendar.styled';
-import { getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear } from '../../Calendar/helper';
 import MonthAndYearSelection from '../../Calendar/MonthAndYearSelection';
+import { getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear } from '../../Calendar/helper';
 import * as Styled from './DateRangeCalendar.styled';
 import Month from './Month';
 import { CalendarAnimationTypes, Props } from './types';
-import type { FC } from 'react';
 
 const Component: FC<Props> = memo(props => {
     const {
             id,
             size,
-            setActive,
             placement,
             selectedDates,
             focusedElement,
-            focusElement,
-            setFocusedElement,
+            onFocusChange,
             onDateSelection,
             minSelectableDate,
             maxSelectableDate,
-            withSingleMonth
+            withSingleMonth,
+            ...restProps
         } = props,
         { startDate, endDate } = selectedDates;
 
@@ -40,22 +39,19 @@ const Component: FC<Props> = memo(props => {
                     } else {
                         onDateSelection({ ...selectedDates, startDate: date });
                     }
-                    setFocusedElement('END_DATE');
+                    onFocusChange?.('END_DATE');
                 } else {
                     if (selectedDates.startDate && date <= selectedDates.startDate) {
                         onDateSelection({ startDate: date, endDate: selectedDates.startDate });
                     } else {
                         onDateSelection({ ...selectedDates, endDate: date });
                     }
-                    setFocusedElement('START_DATE');
+                    onFocusChange?.('START_DATE');
                 }
             },
             [selectedDates, focusedElement]
         ),
-        handleCalendarClick = useCallback(() => {
-            focusElement(focusedElement);
-            setActive(true);
-        }, [focusedElement]),
+        handleCalendarClick = useCallback(() => focusedElement && onFocusChange?.(focusedElement), [focusedElement]),
         handleMonthAndYearChange = useCallback(
             (val: { month: number; year: number }) => {
                 handleCalendarClick();
@@ -78,10 +74,10 @@ const Component: FC<Props> = memo(props => {
     const commonProps = {
         startDate,
         endDate,
-        minSelectableDate,
-        maxSelectableDate,
         hoveredDate,
         setHoveredDate,
+        minSelectableDate: minSelectableDate!,
+        maxSelectableDate: maxSelectableDate!,
         onChange: handleDateSelection
     };
 
@@ -101,7 +97,14 @@ const Component: FC<Props> = memo(props => {
     }, [selectedDates.startDate, selectedDates.endDate]);
 
     return (
-        <Styled.DateRangeCalendar id={id} size={size} placement={placement} onClick={handleCalendarClick} withSingleMonth={withSingleMonth}>
+        <Styled.DateRangeCalendar
+            id={id}
+            size={size!}
+            placement={placement!}
+            onClick={handleCalendarClick}
+            withSingleMonth={withSingleMonth}
+            {...restProps}
+        >
             <Styled.Header>
                 {withSingleMonth && (
                     <MonthAndYearSelection
@@ -109,8 +112,8 @@ const Component: FC<Props> = memo(props => {
                         month={month}
                         year={year}
                         onChange={handleMonthAndYearChange}
-                        minSelectableDate={minSelectableDate}
-                        maxSelectableDate={maxSelectableDate}
+                        minSelectableDate={minSelectableDate!}
+                        maxSelectableDate={maxSelectableDate!}
                     />
                 )}
                 <DatePickerStyled.MonthNavigation id={`${id}-navigation-backward`} onClick={handlePrevIconClick}>
@@ -132,5 +135,12 @@ const Component: FC<Props> = memo(props => {
         </Styled.DateRangeCalendar>
     );
 });
+Component.defaultProps = {
+    id: 'medly-date-range-calendar',
+    size: 'M',
+    placement: 'bottom-start',
+    minSelectableDate: new Date(1901, 0, 1),
+    maxSelectableDate: new Date(2100, 11, 1)
+};
 Component.displayName = 'DateRangeCalendar';
 export const DateRangeCalendar: FC<Props> & WithStyle = Object.assign(Component, { Style: Styled.DateRangeCalendar });
