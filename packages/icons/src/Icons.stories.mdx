@@ -541,6 +541,7 @@ import DownloadDoneIcon from './icons/File/DownloadDoneIcon';
 import FolderIcon from './icons/File/FolderIcon';
 import FolderOpenIcon from './icons/File/FolderOpenIcon';
 import FolderSharedIcon from './icons/File/FolderSharedIcon';
+import NoFileIcon from './icons/File/NoFileIcon';
 import PrintIcon from './icons/File/PrintIcon';
 import UploadIcon from './icons/File/UploadIcon';
 import Administratio338LineIcon from './icons/GSDD/Administratio338LineIcon';
@@ -1477,9 +1478,9 @@ import ToggleOnIcon from './icons/Toggle/ToggleOnIcon';
 
 # Icons
 
-The `Icon` component is a collection of SVG icons exported as React components.
+A collection of icons exported as React components (SVG icons).
 
-## How to use?
+### How to use
 
 ```tsx
 import { AddIcon } from '@medly-components/icons';
@@ -1487,14 +1488,14 @@ import { AddIcon } from '@medly-components/icons';
 <AddIcon />;
 ```
 
-## Variants
+### Variants
 
-Two variants are available for all the icons: `solid` | `flat`.
+There are two variants available for all the icons `solid` | `flat`.
 
--   The `solid` variant will reserve the space around the icon to show the background color. You must use the `withHoverEffect` prop to show the hover effect.
--   The `flat` (default variant) will show the icon without the hover effect and space around it.
+-   `solid` variant will reserve the space around the icon to show the background color. Also you can use the `withHoverEffect` prop to show the hover effect also.
+-   `flat` (default variant) will show the icon without the hover effect and space around it.
 
-The `pointer` cursor appears when you pass the `onClick` prop.
+`pointer` cursor will only appear when you pass the `onClick` prop.
 
 <Preview>
     <Wrapper>
@@ -1512,15 +1513,13 @@ The `pointer` cursor appears when you pass the `onClick` prop.
     </Wrapper>
 </Preview>
 
-## Props
+### Props
 
-While none of the props are necessary, you can still style all the icons according to your requirement using the following props mentioned in the table below:
+None of the props is required but still you can style all the icons according to your requirement using below props.
 
 <Props of={IconProps} />
 
-## Theme
-
-This component offers the following themes mentioned in the table below:
+### Theme
 
 <Props of={ThemeInterface} />
 
@@ -6943,6 +6942,16 @@ This component offers the following themes mentioned in the table below:
                     hoverBgColor={color('Hover background color', defaultTheme.icon.colors.hovered.bgColor)}
             />
             <FolderSharedIcon 
+                    size={select('Size', sizes, 'M')}
+                    variant={select('Variant', variants, 'flat')}
+                    disabled={boolean('Disabled', false)}
+                    withHoverEffect={boolean('With hover efect', false)}
+                    iconColor={color('Icon Color', defaultTheme.icon.colors.default.iconColor)}
+                    bgColor={color('Background Color', defaultTheme.icon.colors.default.bgColor)}
+                    hoverIconColor={color('Hover icon color', defaultTheme.icon.colors.hovered.iconColor)}
+                    hoverBgColor={color('Hover background color', defaultTheme.icon.colors.hovered.bgColor)}
+            />
+            <NoFileIcon 
                     size={select('Size', sizes, 'M')}
                     variant={select('Variant', variants, 'flat')}
                     disabled={boolean('Disabled', false)}

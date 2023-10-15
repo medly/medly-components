@@ -534,6 +534,7 @@ export { default as DownloadDoneIcon } from './icons/File/DownloadDoneIcon';
 export { default as FolderIcon } from './icons/File/FolderIcon';
 export { default as FolderOpenIcon } from './icons/File/FolderOpenIcon';
 export { default as FolderSharedIcon } from './icons/File/FolderSharedIcon';
+export { default as NoFileIcon } from './icons/File/NoFileIcon';
 export { default as PrintIcon } from './icons/File/PrintIcon';
 export { default as UploadIcon } from './icons/File/UploadIcon';
 export { default as Administratio338LineIcon } from './icons/GSDD/Administratio338LineIcon';
