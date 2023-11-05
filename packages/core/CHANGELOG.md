@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.33.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.32.1...@medly-components/core@6.33.0) (2023-11-05)
+
+
+### Features
+
+* allow to pass children in calendar component ([f60f632](https://github.com/medly/medly-components/commit/f60f632c7122039e791f1f12a7d8edabc211f07f))
+
+
+
+
+
 ## [6.32.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.32.0...@medly-components/core@6.32.1) (2023-10-15)
 
 **Note:** Version bump only for package @medly-components/core
