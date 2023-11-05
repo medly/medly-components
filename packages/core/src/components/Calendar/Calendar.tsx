@@ -6,10 +6,10 @@ import { memo, useCallback, useContext, useEffect, useMemo, useState } from 'rea
 import { PopoverContext } from '../Popover/Popover.context';
 import Text from '../Text';
 import * as Styled from './Calendar.styled';
-import { getCalendarDates, getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear, isSameDay, isSameMonth } from './helper';
 import MonthAndYearSelection from './MonthAndYearSelection';
-import { CalendarProps } from './types';
 import WeekDays from './WeekDays';
+import { getCalendarDates, getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear, isSameDay, isSameMonth } from './helper';
+import { CalendarProps } from './types';
 
 const Component: FC<CalendarProps> = memo(
     ({ date, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, defaultMonth = 0, defaultYear, ...restProps }) => {
@@ -96,6 +96,7 @@ const Component: FC<CalendarProps> = memo(
                         );
                     })}
                 </Styled.CalendarGrid>
+                {restProps.children}
             </Styled.Calendar>
         );
     }
