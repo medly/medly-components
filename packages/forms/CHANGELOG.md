@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.23](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.22...@medly-components/forms@2.2.23) (2023-11-13)
+
+
+### Bug Fixes
+
+* fix keyboaed visibility issue for non searchable singleselect ([cc471e6](https://github.com/medly/medly-components/commit/cc471e67bb3adb96ff6bb8c8137c53d6f8b2766d))
+
+
+
+
+
 ## [2.2.22](https://github.com/medly/medly-components/compare/@medly-components/forms@2.2.21...@medly-components/forms@2.2.22) (2023-11-05)
 
 **Note:** Version bump only for package @medly-components/forms
