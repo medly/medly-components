@@ -193,7 +193,7 @@ const Component: FC<SingleSelectProps> = memo(
                         {...commonProps}
                         minWidth={minWidth}
                         maxWidth={maxWidth}
-                        readOnly={!inputProps.required && !isSearchable}
+                        inputMode={!isSearchable ? 'none' : inputProps?.inputMode}
                     />
                 )}
                 {!disabled && areOptionsVisible && (

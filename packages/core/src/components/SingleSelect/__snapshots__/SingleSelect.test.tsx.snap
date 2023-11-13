@@ -358,8 +358,8 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
             autocomplete="off"
             class="c5"
             id="medly-singleSelect-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value=""
           />
@@ -1447,8 +1447,8 @@ exports[`SingleSelect component should take passed max width 1`] = `
             autocomplete="off"
             class="c5"
             id="medly-singleSelect-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value=""
           />
@@ -1876,8 +1876,8 @@ exports[`SingleSelect component with filled variant should render disabled state
             class="c5"
             disabled=""
             id="medly-singleSelect-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -2431,8 +2431,8 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
             autocomplete="off"
             class="c5"
             id="medly-singleSelect-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -3031,8 +3031,8 @@ exports[`SingleSelect component with filled variant should render properly when 
             autocomplete="off"
             class="c5"
             id="label-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -3527,8 +3527,8 @@ exports[`SingleSelect component with filled variant should render with label pro
             autocomplete="off"
             class="c5"
             id="label-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -5352,8 +5352,8 @@ exports[`SingleSelect component with fusion variant should render disabled state
             class="c5"
             disabled=""
             id="medly-singleSelect-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -5944,8 +5944,8 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
             autocomplete="off"
             class="c5"
             id="medly-singleSelect-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -6581,8 +6581,8 @@ exports[`SingleSelect component with fusion variant should render properly when 
             autocomplete="off"
             class="c5"
             id="label-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -7114,8 +7114,8 @@ exports[`SingleSelect component with fusion variant should render with label pro
             autocomplete="off"
             class="c5"
             id="label-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -7508,8 +7508,8 @@ exports[`SingleSelect component with outlined variant should render disabled sta
             class="c5"
             disabled=""
             id="medly-singleSelect-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -8084,8 +8084,8 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
             autocomplete="off"
             class="c5"
             id="medly-singleSelect-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -8705,8 +8705,8 @@ exports[`SingleSelect component with outlined variant should render properly whe
             autocomplete="off"
             class="c5"
             id="label-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
@@ -9222,8 +9222,8 @@ exports[`SingleSelect component with outlined variant should render with label p
             autocomplete="off"
             class="c5"
             id="label-input"
+            inputmode="none"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value="Dummy1"
           />
