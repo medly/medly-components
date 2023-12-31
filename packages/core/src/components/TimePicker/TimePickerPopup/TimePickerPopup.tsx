@@ -53,7 +53,9 @@ export const Component: FC<TimePickerPopupProps> = ({ value, onChange, popoverPl
     const handleSubmit = () => {
         const hour = Math.round((hourRef.current?.scrollTop || 0) / (hourRef.current?.clientHeight || 1));
         const minutes = Math.round((minutesRef.current?.scrollTop || 0) / (minutesRef.current?.clientHeight || 1));
-        onChange(`${selectedPeriod === 'AM' ? `0${hour}`.slice(-2) : `0${hour + 12}`.slice(-2)}:${`0${minutes}`.slice(-2)}`);
+        const hourString = `0${selectedPeriod === 'AM' ? hour : hour + 12}`.slice(-2);
+        const minutesString = `0${minutes}`.slice(-2);
+        onChange(`${hourString}:${minutesString}`);
         setPopupState(false);
     };
 
