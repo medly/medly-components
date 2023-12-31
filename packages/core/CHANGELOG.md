@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.34.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.34.0...@medly-components/core@6.34.1) (2023-12-31)
+
+
+### Bug Fixes
+
+* export TimePicker component and add support in form also ([5515987](https://github.com/medly/medly-components/commit/55159875db8c3bb4f617730b54730fbb6c584977))
+
+
+
+
+
 # [6.34.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.33.1...@medly-components/core@6.34.0) (2023-12-31)
 
 
