@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.34.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.33.1...@medly-components/core@6.34.0) (2023-12-31)
+
+
+### Features
+
+* add new TimePicker component ([#738](https://github.com/medly/medly-components/issues/738)) ([51744cd](https://github.com/medly/medly-components/commit/51744cde4e73e28ad97cb34138f35e5f01462325))
+
+
+
+
+
 ## [6.33.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.33.0...@medly-components/core@6.33.1) (2023-11-13)
 
 
