@@ -1,0 +1,51 @@
+import { TimePicker } from './TimePicker';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { boolean, select, text } from '@storybook/addon-knobs';
+import { placements } from '../Popover/Popover.stories.tsx';
+import { variants } from './TimePicker.stories';
+import { useState } from 'react';
+
+<Meta
+    title="Core"
+    component={TimePicker}
+    parameters={{
+        jest: ['TimePicker.test.tsx']
+    }}
+/>
+
+# TimePicker Component
+
+The `TimePicker` is a controlled component that allows you to select a time through input text or using a dialog. This component is built on top of the `TextField` component. It accepts all the props of `TextField` component. This component will return the time in **24-hour format**.
+
+This component will use the native dialog on the mobile devices.
+
+## Usage
+
+```tsx
+import { TimePicker } from '@medly-components/core';
+
+const Component = () => {
+    const [time, setTime] = useState('');
+    return <TimePicker label="Time" value={time} onChange={setTime} />;
+};
+```
+
+<Preview withToolbar>
+    <Story name="TimePicker">
+        {() => {
+            const [time, setTime] = useState('');
+            return (
+                <TimePicker
+                    id="dob"
+                    value={time}
+                    onChange={setTime}
+                    disabled={boolean('Disabled', false)}
+                    label={text('Label', 'Time')}
+                    required={boolean('Required', false)}
+                    variant={select('variant', variants, 'outlined')}
+                    popoverPlacement={select('Popover placement', placements, 'bottom-start')}
+                />
+            );
+        }}
+    </Story>
+</Preview>

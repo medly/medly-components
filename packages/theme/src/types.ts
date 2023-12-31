@@ -32,6 +32,7 @@ export interface CoreTheme {
     toggle: CoreThemes.ToggleTheme;
     tabs: CoreThemes.TabsTheme;
     textField: CoreThemes.TextFieldTheme;
+    timePicker: CoreThemes.TimePickerTheme;
     toast: CoreThemes.ToastTheme;
     pagination: CoreThemes.PaginationTheme;
     helperAndErrorTextTooltip: CoreThemes.HelperAndErrorTextTooltipTheme;
