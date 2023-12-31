@@ -7,7 +7,9 @@ import {
     MultiSelect,
     RadioGroup,
     SingleSelect,
-    TextField
+    TextField,
+    TimePicker,
+    TimePickerProps
 } from '@medly-components/core';
 import { GetComponentProps } from '@medly-components/utils';
 import { FC, Fragment, memo } from 'react';
@@ -74,7 +76,6 @@ export const Fields: FC<FieldsProps> = memo(props => {
                                 case 'email':
                                 case 'url':
                                 case 'tel':
-                                case 'time':
                                 case 'month':
                                 case 'week':
                                 case 'range':
@@ -98,6 +99,16 @@ export const Fields: FC<FieldsProps> = memo(props => {
                                                 value: value ?? '',
                                                 onChange: handlers.handleNumberChange(name)
                                             } as TextFieldProps)}
+                                        />
+                                    );
+                                case 'time':
+                                    return (
+                                        <TimePicker
+                                            {...({
+                                                ...commonProps,
+                                                value: value ?? '',
+                                                onChange: (value: string) => handlers.handleChange(name, value)
+                                            } as TimePickerProps)}
                                         />
                                     );
                                 case 'file':

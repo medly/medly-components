@@ -9,4 +9,6 @@ export interface TimePickerProps extends Omit<TextFieldProps, 'value' | 'onChang
     onChange: (time: string) => void;
     /** Popover placement */
     popoverPlacement?: Placement;
+    /** Distance from Textfield */
+    popoverDistance?: string;
 }

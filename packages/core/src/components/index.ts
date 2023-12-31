@@ -37,6 +37,7 @@ export { default as Table } from './Table';
 export { default as Tabs } from './Tabs';
 export { default as Text } from './Text';
 export { default as TextField } from './TextField';
+export { default as TimePicker } from './TimePicker';
 export { default as Toast } from './Toast';
 export { default as ToastContainer } from './ToastContainer';
 export { addToast, removeAllToasts } from './ToastContainer/ToastStore';

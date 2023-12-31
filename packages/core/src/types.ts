@@ -40,6 +40,7 @@ export type { TabProps } from './components/Tabs/Tab/types';
 export type { TabsProps } from './components/Tabs/types';
 export type { TextProps } from './components/Text/types';
 export type { TextFieldProps } from './components/TextField/types';
+export type { TimePickerProps } from './components/TimePicker/types';
 export type { ToastProps, ToastVariants } from './components/Toast/types';
 export type { ToastContainerProps } from './components/ToastContainer/types';
 export type { ToggleProps } from './components/Toggle/types';

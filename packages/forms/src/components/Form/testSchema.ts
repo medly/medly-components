@@ -55,7 +55,14 @@ export const testSchema: FormFieldSchema = {
         required: true,
         displayFormat: 'dd/MM/yyyy',
         label: 'Birth Date',
-        placeholder: 'Birth Date'
+        placeholder: 'Birth Date',
+        gridColumn: '1/7'
+    },
+    birthTime: {
+        type: 'time',
+        required: true,
+        label: 'Birth Time',
+        gridColumn: '7/-1'
     },
     experience: {
         type: 'date-range',
@@ -85,7 +92,6 @@ export const testSchema: FormFieldSchema = {
         type: 'nested',
         header: 'Marks',
         helperText: 'Marks Information',
-        labelPosition: 'left',
         fields: {
             database: {
                 type: 'number',

@@ -22,7 +22,7 @@ import { Period, TimePickerPopupProps } from './types';
 
 const PERIOD: Period[] = ['AM', 'PM'];
 
-export const Component: FC<TimePickerPopupProps> = ({ value, onChange, popoverPlacement }) => {
+export const Component: FC<TimePickerPopupProps> = ({ value, onChange, popoverDistance, popoverPlacement }) => {
     const hourRef = useRef<HTMLUListElement>(null);
     const minutesRef = useRef<HTMLUListElement>(null);
     const periodRef = useRef<HTMLUListElement>(null);
@@ -77,7 +77,7 @@ export const Component: FC<TimePickerPopupProps> = ({ value, onChange, popoverPl
     }, [selectedPeriod]);
 
     return (
-        <Popup placement={popoverPlacement}>
+        <Popup distance={popoverDistance} placement={popoverPlacement}>
             <TimePickerCard>
                 <TimeLabels>
                     <Text>Hour</Text>

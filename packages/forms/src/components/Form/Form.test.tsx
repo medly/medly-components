@@ -10,6 +10,7 @@ const initialState = {
         languages: ['java'],
         role: 'front-end',
         birthDate: '01/01/2019',
+        birthTime: '22:00',
         experience: {
             startDate: '01/01/2019',
             endDate: '01/02/2019'
@@ -155,6 +156,7 @@ describe('Form', () => {
                     languages: ['java'],
                     role: 'front-end',
                     birthDate: '02/01/2020',
+                    birthTime: '23:00',
                     experience: {
                         startDate: '02/01/2019',
                         endDate: '03/02/2019'
@@ -200,6 +202,10 @@ describe('Form', () => {
             // DatePicker
             fireEvent.change(screen.getByRole('textbox', { name: 'Birth Date' }), {
                 target: { value: '02/01/2020' }
+            });
+            // TimePicker
+            fireEvent.change(screen.getByLabelText('Birth Time'), {
+                target: { value: formData.birthTime }
             });
             // DateRangePicker
             fireEvent.change(screen.getByRole('textbox', { name: 'From' }), {
