@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.33.1](https://github.com/medly/medly-components/compare/@medly-components/core@6.33.0...@medly-components/core@6.33.1) (2023-11-13)
+
+
+### Bug Fixes
+
+* fix keyboaed visibility issue for non searchable singleselect ([cc471e6](https://github.com/medly/medly-components/commit/cc471e67bb3adb96ff6bb8c8137c53d6f8b2766d))
+
+
+
+
+
 # [6.33.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.32.1...@medly-components/core@6.33.0) (2023-11-05)
 
 
