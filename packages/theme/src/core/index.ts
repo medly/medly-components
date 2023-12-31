@@ -29,6 +29,7 @@ import stepper from './stepper';
 import table from './table';
 import tabs from './tabs';
 import textField from './textField';
+import timePicker from './timePicker';
 import toast from './toast';
 import toggle from './toggle';
 
@@ -63,6 +64,7 @@ export const coreDefaultTheme = {
     textField,
     toast,
     toggle,
+    timePicker,
     pagination,
     dialogBox,
     helperAndErrorTextTooltip

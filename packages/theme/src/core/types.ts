@@ -28,5 +28,6 @@ export * from './stepper/types';
 export * from './table/types';
 export * from './tabs/types';
 export * from './textField/types';
+export * from './timePicker/types';
 export * from './toast/types';
 export * from './toggle/types';
