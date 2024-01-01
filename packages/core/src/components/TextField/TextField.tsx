@@ -132,7 +132,13 @@ const Component: FC<TextFieldProps> = memo(
                     multiline={multiline}
                 >
                     {!!Prefix && showDecorators && (
-                        <Styled.IconWrapper size={size} variant={props.variant} isActive={isActive} isErrorPresent={isErrorPresent}>
+                        <Styled.IconWrapper
+                            size={size!}
+                            disabled={disabled}
+                            variant={props.variant!}
+                            isActive={isActive}
+                            isErrorPresent={isErrorPresent}
+                        >
                             <Prefix size={size} />
                         </Styled.IconWrapper>
                     )}
@@ -191,7 +197,13 @@ const Component: FC<TextFieldProps> = memo(
                         </Styled.HelperAndErrorTextTooltipWrapper>
                     )}
                     {!!Suffix && showDecorators && (
-                        <Styled.IconWrapper size={size} variant={props.variant} isActive={isActive} isErrorPresent={isErrorPresent}>
+                        <Styled.IconWrapper
+                            size={size!}
+                            disabled={disabled}
+                            variant={props.variant!}
+                            isActive={isActive}
+                            isErrorPresent={isErrorPresent}
+                        >
                             <Suffix size={size} />
                         </Styled.IconWrapper>
                     )}
