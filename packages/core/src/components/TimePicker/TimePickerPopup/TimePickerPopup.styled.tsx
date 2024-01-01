@@ -18,6 +18,11 @@ export const TimeLabels = styled('div')`
         flex: 1;
         user-select: none;
         text-align: center;
+        font-size: ${({ theme }) => theme.timePicker.label.fontSize};
+        font-weight: ${({ theme }) => theme.timePicker.label.fontWeight};
+        line-height: ${({ theme }) => theme.timePicker.label.lineHeight};
+        letter-spacing: ${({ theme }) => theme.timePicker.label.LetterSpacing};
+        color: ${({ theme }) => theme.timePicker.label.color};
     }
 
     & > *:nth-child(2) {

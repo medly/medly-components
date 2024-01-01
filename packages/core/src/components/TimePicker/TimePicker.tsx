@@ -1,8 +1,9 @@
+import { AccessTimeIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import type { FC } from 'react';
 import { forwardRef, memo } from 'react';
 import TextField from '../TextField';
-import { TimeIcon, TimePickerWrapper } from './TimePicker.styled';
+import { TimePickerWrapper } from './TimePicker.styled';
 import TimePickerPopup from './TimePickerPopup';
 import { TimePickerProps } from './types';
 
@@ -20,7 +21,7 @@ const Component: FC<TimePickerProps> = memo(
                 <TextField
                     fullWidth
                     type="time"
-                    suffix={TimeIcon}
+                    suffix={AccessTimeIcon}
                     id={id}
                     ref={ref}
                     disabled={disabled}
@@ -43,6 +44,7 @@ const Component: FC<TimePickerProps> = memo(
 Component.defaultProps = {
     size: 'M',
     label: 'Time',
+    variant: 'filled',
     disabled: false,
     required: false,
     fullWidth: false,

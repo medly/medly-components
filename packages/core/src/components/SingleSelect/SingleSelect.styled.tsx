@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import TextField from '../TextField';
-import { Suffix } from '../TextField/Styled';
+import { IconWrapper } from '../TextField/Styled';
 import { SelectWrapperProps } from './types';
 
 export const Wrapper = styled('div')<SelectWrapperProps>`
@@ -30,12 +30,12 @@ export const Wrapper = styled('div')<SelectWrapperProps>`
                 cursor: ${({ disabled, isSearchable }) => !disabled && isSearchable && 'text'};
             }
         }
-        ${Suffix} {
+        ${IconWrapper} {
             transition: transform 200ms ease-out;
             transform: ${({ areOptionsVisible }) => (areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)')};
         }
         &:not(:focus-within):hover {
-            ${Suffix} {
+            ${IconWrapper} {
                 * {
                     fill: ${({ theme, variant, disabled, isErrorPresent }) =>
                         !disabled && !isErrorPresent && variant !== 'flat' && theme.textField[variant].default.textColor};

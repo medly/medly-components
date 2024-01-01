@@ -81,16 +81,6 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   color: #546A7F;
 }
 
-.c4 .c13,
-.c4 .sc-dynlvq-0 {
-  color: #546A7F;
-}
-
-.c4 .c13 *,
-.c4 .sc-dynlvq-0 * {
-  fill: #546A7F;
-}
-
 .c4 ~ .sc-avlt8d-0 {
   color: #546A7F;
 }
@@ -131,20 +121,6 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 .c4:focus-within .c11,
 .c4:focus-within:hover .c11 {
   color: #3872D2;
-}
-
-.c4:focus-within .c13,
-.c4:focus-within:hover .c13,
-.c4:focus-within .sc-dynlvq-0,
-.c4:focus-within:hover .sc-dynlvq-0 {
-  color: #3872D2;
-}
-
-.c4:focus-within .c13 *,
-.c4:focus-within:hover .c13 *,
-.c4:focus-within .sc-dynlvq-0 *,
-.c4:focus-within:hover .sc-dynlvq-0 * {
-  fill: #3872D2;
 }
 
 .c4:focus-within input,
@@ -502,16 +478,6 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   color: #546A7F;
 }
 
-.c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
-  color: #546A7F;
-}
-
-.c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
-  fill: #546A7F;
-}
-
 .c4 ~ .sc-avlt8d-0 {
   color: #546A7F;
 }
@@ -552,20 +518,6 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
 .c4:focus-within .c9,
 .c4:focus-within:hover .c9 {
   color: #3872D2;
-}
-
-.c4:focus-within .sc-1ubn8hn-0,
-.c4:focus-within:hover .sc-1ubn8hn-0,
-.c4:focus-within .sc-dynlvq-0,
-.c4:focus-within:hover .sc-dynlvq-0 {
-  color: #3872D2;
-}
-
-.c4:focus-within .sc-1ubn8hn-0 *,
-.c4:focus-within:hover .sc-1ubn8hn-0 *,
-.c4:focus-within .sc-dynlvq-0 *,
-.c4:focus-within:hover .sc-dynlvq-0 * {
-  fill: #3872D2;
 }
 
 .c4:focus-within input,
@@ -13382,16 +13334,6 @@ exports[`DatePicker component should render properly when hideInput prop is pass
   color: #546A7F;
 }
 
-.c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
-  color: #546A7F;
-}
-
-.c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
-  fill: #546A7F;
-}
-
 .c4 ~ .sc-avlt8d-0 {
   color: #546A7F;
 }
@@ -13432,20 +13374,6 @@ exports[`DatePicker component should render properly when hideInput prop is pass
 .c4:focus-within .c10,
 .c4:focus-within:hover .c10 {
   color: #3872D2;
-}
-
-.c4:focus-within .sc-1ubn8hn-0,
-.c4:focus-within:hover .sc-1ubn8hn-0,
-.c4:focus-within .sc-dynlvq-0,
-.c4:focus-within:hover .sc-dynlvq-0 {
-  color: #3872D2;
-}
-
-.c4:focus-within .sc-1ubn8hn-0 *,
-.c4:focus-within:hover .sc-1ubn8hn-0 *,
-.c4:focus-within .sc-dynlvq-0 *,
-.c4:focus-within:hover .sc-dynlvq-0 * {
-  fill: #3872D2;
 }
 
 .c4:focus-within input,
@@ -13825,16 +13753,6 @@ exports[`DatePicker component should render properly when value is of date type 
   color: #546A7F;
 }
 
-.c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
-  color: #546A7F;
-}
-
-.c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
-  fill: #546A7F;
-}
-
 .c4 ~ .sc-avlt8d-0 {
   color: #546A7F;
 }
@@ -13872,16 +13790,6 @@ exports[`DatePicker component should render properly when value is of date type 
 
 .c4 .sc-1i29ttz-0 {
   color: #b0bcc8;
-}
-
-.c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
-  color: #b0bcc8;
-}
-
-.c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
-  fill: #b0bcc8;
 }
 
 .c4 ~ .sc-avlt8d-0 {
@@ -14225,16 +14133,6 @@ exports[`DatePicker component should render properly when value is of string typ
   color: #546A7F;
 }
 
-.c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
-  color: #546A7F;
-}
-
-.c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
-  fill: #546A7F;
-}
-
 .c4 ~ .sc-avlt8d-0 {
   color: #546A7F;
 }
@@ -14272,16 +14170,6 @@ exports[`DatePicker component should render properly when value is of string typ
 
 .c4 .sc-1i29ttz-0 {
   color: #b0bcc8;
-}
-
-.c4 .sc-1ubn8hn-0,
-.c4 .sc-dynlvq-0 {
-  color: #b0bcc8;
-}
-
-.c4 .sc-1ubn8hn-0 *,
-.c4 .sc-dynlvq-0 * {
-  fill: #b0bcc8;
 }
 
 .c4 ~ .sc-avlt8d-0 {
