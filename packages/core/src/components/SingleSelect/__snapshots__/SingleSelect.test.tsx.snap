@@ -1532,8 +1532,8 @@ exports[`SingleSelect component with filled variant should render disabled state
   fill: #546A7F;
 }
 
-.c10:hover * {
-  fill: #546A7F;
+.c10 * {
+  fill: #b0bcc8;
 }
 
 .c7 {
@@ -4919,8 +4919,8 @@ exports[`SingleSelect component with fusion variant should render disabled state
   fill: #b0bcc8;
 }
 
-.c10:hover * {
-  fill: #607890;
+.c10 * {
+  fill: #b0bcc8;
 }
 
 .c7 {
@@ -7043,8 +7043,8 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   fill: #607890;
 }
 
-.c10:hover * {
-  fill: #607890;
+.c10 * {
+  fill: #b0bcc8;
 }
 
 .c7 {

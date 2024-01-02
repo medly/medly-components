@@ -5765,8 +5765,8 @@ exports[`TextField with filled variant should render properly with custom border
   fill: #546A7F;
 }
 
-.c7:hover * {
-  fill: #546A7F;
+.c7 * {
+  fill: #b0bcc8;
 }
 
 .c5 {
@@ -6084,8 +6084,8 @@ exports[`TextField with filled variant should render properly with custom disabl
   fill: #546A7F;
 }
 
-.c7:hover * {
-  fill: #546A7F;
+.c7 * {
+  fill: #b0bcc8;
 }
 
 .c5 {
@@ -10091,8 +10091,8 @@ exports[`TextField with fusion variant should render properly with custom border
   fill: #b0bcc8;
 }
 
-.c7:hover * {
-  fill: #607890;
+.c7 * {
+  fill: #b0bcc8;
 }
 
 .c5 {
@@ -10447,8 +10447,8 @@ exports[`TextField with fusion variant should render properly with custom disabl
   fill: #b0bcc8;
 }
 
-.c7:hover * {
-  fill: #607890;
+.c7 * {
+  fill: #b0bcc8;
 }
 
 .c5 {
@@ -14469,8 +14469,8 @@ exports[`TextField with outlined variant should render properly with custom bord
   fill: #607890;
 }
 
-.c7:hover * {
-  fill: #607890;
+.c7 * {
+  fill: #b0bcc8;
 }
 
 .c5 {
@@ -14805,8 +14805,8 @@ exports[`TextField with outlined variant should render properly with custom disa
   fill: #607890;
 }
 
-.c7:hover * {
-  fill: #607890;
+.c7 * {
+  fill: #b0bcc8;
 }
 
 .c5 {

@@ -40,8 +40,8 @@ exports[`MultiSelect component should render correctly with all the props given 
   fill: #546A7F;
 }
 
-.c6:hover * {
-  fill: #546A7F;
+.c6 * {
+  fill: #b0bcc8;
 }
 
 .c10 {
