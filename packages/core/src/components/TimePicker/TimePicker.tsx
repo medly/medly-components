@@ -1,34 +1,24 @@
-import { AccessTimeIcon } from '@medly-components/icons';
-import { WithStyle } from '@medly-components/utils';
+import { WithStyle, useCombinedRefs } from '@medly-components/utils';
 import type { FC } from 'react';
-import { forwardRef, memo } from 'react';
-import TextField from '../TextField';
+import { forwardRef, memo, useRef } from 'react';
 import { TimePickerWrapper } from './TimePicker.styled';
 import TimePickerPopup from './TimePickerPopup';
+import TimePickerTextField from './TimePickerTextField';
 import { TimePickerProps } from './types';
 
 const Component: FC<TimePickerProps> = memo(
     forwardRef((props, ref) => {
+        const isMobile = navigator?.userAgent?.indexOf('Mobi') > -1;
+        const inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null));
+        const id = props.id || props.label?.toLowerCase().replace(/\s/g, '') || 'medly-timepicker';
         const { value, onChange, disabled, className, fullWidth, minWidth, maxWidth, popoverDistance, popoverPlacement, ...restProps } =
             props;
-        const id = props.id || props.label?.toLowerCase().replace(/\s/g, '') || 'medly-timepicker';
-        const isMobile = navigator?.userAgent?.indexOf('Mobi') > -1;
 
         const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => onChange(e.target.value);
 
         return (
             <TimePickerWrapper className={className} fullWidth={fullWidth} minWidth={minWidth} maxWidth={maxWidth} interactionType="click">
-                <TextField
-                    fullWidth
-                    type="time"
-                    suffix={AccessTimeIcon}
-                    id={id}
-                    ref={ref}
-                    disabled={disabled}
-                    onChange={handleChange}
-                    value={value}
-                    {...restProps}
-                />
+                <TimePickerTextField id={id} ref={inputRef} disabled={disabled} onChange={handleChange} value={value} {...restProps} />
                 {!disabled && !isMobile && (
                     <TimePickerPopup
                         value={value}
