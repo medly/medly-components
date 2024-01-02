@@ -14,7 +14,7 @@ const Component: FC<TextFieldProps> = memo(
         const {
                 id,
                 value,
-                size,
+                size = 'M',
                 label,
                 minWidth,
                 maxWidth,
@@ -133,7 +133,7 @@ const Component: FC<TextFieldProps> = memo(
                 >
                     {!!Prefix && showDecorators && (
                         <Styled.IconWrapper
-                            size={size!}
+                            size={size}
                             disabled={disabled}
                             variant={props.variant!}
                             isActive={isActive}
@@ -189,7 +189,7 @@ const Component: FC<TextFieldProps> = memo(
                     </Styled.InputWrapper>
                     {props.showTooltipForHelperAndErrorText && (
                         <Styled.HelperAndErrorTextTooltipWrapper
-                            size={size!}
+                            size={size}
                             displayCharacterCount={displayCharacterCount}
                             isSuffixPresent={isSuffixPresent}
                         >
@@ -198,7 +198,7 @@ const Component: FC<TextFieldProps> = memo(
                     )}
                     {!!Suffix && showDecorators && (
                         <Styled.IconWrapper
-                            size={size!}
+                            size={size}
                             disabled={disabled}
                             variant={props.variant!}
                             isActive={isActive}
