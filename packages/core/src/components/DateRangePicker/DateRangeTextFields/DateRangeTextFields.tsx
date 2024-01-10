@@ -109,7 +109,7 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
                 areCustomOptionsVisible={!!isActive && activePopover === PopoverTypes.CUSTOM_RANGE_OPTIONS}
             >
                 {showDecorators && (
-                    <TextFieldStyled.IconWrapper
+                    <TextFieldStyled.Prefix
                         size={size}
                         variant={variant}
                         isActive={isActive}
@@ -117,7 +117,7 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
                         disabled={disabled}
                     >
                         <Prefix />
-                    </TextFieldStyled.IconWrapper>
+                    </TextFieldStyled.Prefix>
                 )}
                 <DateRangeTextField
                     ref={startDateRef}
@@ -143,7 +143,7 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
                     <HelperAndErrorTextTooltip id={id} errorText={errorText || builtInErrorMessage} helperText={helperText} />
                 )}
                 {showChevronIcon && (
-                    <TextFieldStyled.IconWrapper
+                    <TextFieldStyled.Suffix
                         size={size}
                         variant={variant}
                         isActive={isActive}
@@ -151,7 +151,7 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
                         disabled={disabled}
                     >
                         <Suffix />
-                    </TextFieldStyled.IconWrapper>
+                    </TextFieldStyled.Suffix>
                 )}
             </Wrapper>
             {showDecorators && !showTooltipForHelperAndErrorText && (

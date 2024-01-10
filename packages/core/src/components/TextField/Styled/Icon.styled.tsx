@@ -24,9 +24,16 @@ const getStyleForIcon = ({ theme, variant, disabled }: IconProps & WithThemeProp
 
 export const IconWrapper = styled(InjectClassName)<IconProps>`
     pointer-events: none;
-    margin-left: ${({ size }) => (size === 'S' ? '1.2rem' : '1.6rem')};
     ${props => getStyleForIcon(props, 'default')};
     ${props => props.isActive && getStyleForIcon(props, 'active')};
     ${props => props.isErrorPresent && getStyleForIcon(props, 'error')};
     ${props => props.disabled && getStyleForIcon(props, 'disabled')};
+`;
+
+export const Prefix = styled(IconWrapper)<IconProps>`
+    margin-right: ${({ size }) => (size === 'S' ? '1.2rem' : '1.6rem')};
+`;
+
+export const Suffix = styled(IconWrapper)<IconProps>`
+    margin-left: ${({ size }) => (size === 'S' ? '1.2rem' : '1.6rem')};
 `;

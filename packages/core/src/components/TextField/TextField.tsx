@@ -132,7 +132,7 @@ const Component: FC<TextFieldProps> = memo(
                     multiline={multiline}
                 >
                     {!!Prefix && showDecorators && (
-                        <Styled.IconWrapper
+                        <Styled.Prefix
                             size={size}
                             disabled={disabled}
                             variant={props.variant!}
@@ -140,7 +140,7 @@ const Component: FC<TextFieldProps> = memo(
                             isErrorPresent={isErrorPresent}
                         >
                             <Prefix size={size} />
-                        </Styled.IconWrapper>
+                        </Styled.Prefix>
                     )}
                     <Styled.InputWrapper multiline={multiline} size={size!} variant={props.variant!}>
                         <Styled.Input
@@ -197,7 +197,7 @@ const Component: FC<TextFieldProps> = memo(
                         </Styled.HelperAndErrorTextTooltipWrapper>
                     )}
                     {!!Suffix && showDecorators && (
-                        <Styled.IconWrapper
+                        <Styled.Suffix
                             size={size}
                             disabled={disabled}
                             variant={props.variant!}
@@ -205,7 +205,7 @@ const Component: FC<TextFieldProps> = memo(
                             isErrorPresent={isErrorPresent}
                         >
                             <Suffix size={size} />
-                        </Styled.IconWrapper>
+                        </Styled.Suffix>
                     )}
                 </Styled.InnerWrapper>
                 {(isErrorPresent || helperText) && !props.showTooltipForHelperAndErrorText && (
