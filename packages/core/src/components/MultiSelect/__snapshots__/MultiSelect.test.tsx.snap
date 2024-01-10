@@ -33,7 +33,7 @@ exports[`MultiSelect component should render correctly with all the props given 
 
 .c6 {
   pointer-events: none;
-  margin-left: 1.6rem;
+  margin-right: 1.6rem;
 }
 
 .c6 * {
@@ -425,7 +425,7 @@ exports[`MultiSelect component should render correctly with all the props given 
         disabled=""
       >
         <svg
-          class="c4 c5 c6"
+          class="c4 c5 sc-1668uuz-0 c6"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"

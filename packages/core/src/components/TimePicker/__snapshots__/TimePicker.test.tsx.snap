@@ -873,7 +873,7 @@ exports[`TimePicker should render properly 1`] = `
           </label>
         </div>
         <svg
-          class="c9 c10 c11"
+          class="c9 c10 sc-1668uuz-0 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"

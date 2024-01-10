@@ -353,7 +353,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8 sc-1668uuz-0 c9 c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -727,7 +727,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8 sc-1668uuz-0 c9 c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -1418,7 +1418,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
           />
         </div>
         <svg
-          class="c8 c9 c10 c11"
+          class="c8 c9 sc-1668uuz-0 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -1835,7 +1835,7 @@ exports[`SingleSelect component with filled variant should render disabled state
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8 sc-1668uuz-0 c9 c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -2374,7 +2374,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8 sc-1668uuz-0 c9 c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -2968,7 +2968,7 @@ exports[`SingleSelect component with filled variant should render properly when 
           </label>
         </div>
         <svg
-          class="c8 c9 c10 c11"
+          class="c8 c9 sc-1668uuz-0 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -3448,7 +3448,7 @@ exports[`SingleSelect component with filled variant should render with label pro
           </label>
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8 sc-1668uuz-0 c9 c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -3658,7 +3658,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   pointer-events: none;
 }
 
-.c0 .sc-17d4s39-0 .sc-1668uuz-0 {
+.c0 .sc-17d4s39-0 .sc-1668uuz-2 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -4057,7 +4057,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   cursor: pointer;
 }
 
-.c0 .sc-17d4s39-0 .sc-1668uuz-0 {
+.c0 .sc-17d4s39-0 .sc-1668uuz-2 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -4487,7 +4487,7 @@ exports[`SingleSelect component with flat variant should render properly when op
   cursor: pointer;
 }
 
-.c0 .sc-17d4s39-0 .sc-1668uuz-0 {
+.c0 .sc-17d4s39-0 .sc-1668uuz-2 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -4824,7 +4824,7 @@ exports[`SingleSelect component with flat variant should render with label prope
   cursor: pointer;
 }
 
-.c0 .sc-17d4s39-0 .sc-1668uuz-0 {
+.c0 .sc-17d4s39-0 .sc-1668uuz-2 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -5259,7 +5259,7 @@ exports[`SingleSelect component with fusion variant should render disabled state
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8 sc-1668uuz-0 c9 c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -5835,7 +5835,7 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8 sc-1668uuz-0 c9 c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -6466,7 +6466,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
           </label>
         </div>
         <svg
-          class="c8 c9 c10 c11"
+          class="c8 c9 sc-1668uuz-0 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -6983,7 +6983,7 @@ exports[`SingleSelect component with fusion variant should render with label pro
           </label>
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8 sc-1668uuz-0 c9 c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -7363,7 +7363,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8 sc-1668uuz-0 c9 c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -7923,7 +7923,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8 sc-1668uuz-0 c9 c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -8538,7 +8538,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
           </label>
         </div>
         <svg
-          class="c8 c9 c10 c11"
+          class="c8 c9 sc-1668uuz-0 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -9039,7 +9039,7 @@ exports[`SingleSelect component with outlined variant should render with label p
           </label>
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8 sc-1668uuz-0 c9 c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"

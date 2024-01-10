@@ -2300,7 +2300,7 @@ exports[`TextField should render properly with M size 1`] = `
   fill: #607890;
 }
 
-.c9 {
+.c10 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -2313,7 +2313,7 @@ exports[`TextField should render properly with M size 1`] = `
 
 .c3 {
   pointer-events: none;
-  margin-left: 1.6rem;
+  margin-right: 1.6rem;
 }
 
 .c3 * {
@@ -2321,6 +2321,19 @@ exports[`TextField should render properly with M size 1`] = `
 }
 
 .c3:hover * {
+  fill: #546A7F;
+}
+
+.c8 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c8 * {
+  fill: #546A7F;
+}
+
+.c8:hover * {
   fill: #546A7F;
 }
 
@@ -2389,7 +2402,7 @@ exports[`TextField should render properly with M size 1`] = `
   color: #546A7F;
 }
 
-.c1 ~ .c8 {
+.c1 ~ .c9 {
   color: #546A7F;
 }
 
@@ -2594,7 +2607,7 @@ exports[`TextField should render properly with M size 1`] = `
       class="c1"
     >
       <svg
-        class="c2 c3"
+        class="c2 sc-1668uuz-0 c3"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -2625,7 +2638,7 @@ exports[`TextField should render properly with M size 1`] = `
         </label>
       </div>
       <svg
-        class="c2 c3"
+        class="c2 sc-1668uuz-0 c8"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -2639,7 +2652,7 @@ exports[`TextField should render properly with M size 1`] = `
       </svg>
     </div>
     <span
-      class="c8 c9"
+      class="c9 c10"
       id="medly-textField-helper-text"
     >
       helper text
@@ -2664,7 +2677,7 @@ exports[`TextField should render properly with S size 1`] = `
   fill: #607890;
 }
 
-.c9 {
+.c10 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.2rem 0;
@@ -2677,7 +2690,7 @@ exports[`TextField should render properly with S size 1`] = `
 
 .c3 {
   pointer-events: none;
-  margin-left: 1.2rem;
+  margin-right: 1.2rem;
 }
 
 .c3 * {
@@ -2685,6 +2698,19 @@ exports[`TextField should render properly with S size 1`] = `
 }
 
 .c3:hover * {
+  fill: #546A7F;
+}
+
+.c8 {
+  pointer-events: none;
+  margin-left: 1.2rem;
+}
+
+.c8 * {
+  fill: #546A7F;
+}
+
+.c8:hover * {
   fill: #546A7F;
 }
 
@@ -2753,7 +2779,7 @@ exports[`TextField should render properly with S size 1`] = `
   color: #546A7F;
 }
 
-.c1 ~ .c8 {
+.c1 ~ .c9 {
   color: #546A7F;
 }
 
@@ -2957,7 +2983,7 @@ exports[`TextField should render properly with S size 1`] = `
       class="c1"
     >
       <svg
-        class="c2 c3"
+        class="c2 sc-1668uuz-0 c3"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -2988,7 +3014,7 @@ exports[`TextField should render properly with S size 1`] = `
         </label>
       </div>
       <svg
-        class="c2 c3"
+        class="c2 sc-1668uuz-0 c8"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -3002,7 +3028,7 @@ exports[`TextField should render properly with S size 1`] = `
       </svg>
     </div>
     <span
-      class="c8 c9"
+      class="c9 c10"
       id="medly-textField-helper-text"
     >
       helper text
@@ -6041,7 +6067,7 @@ exports[`TextField with filled variant should render properly with custom border
         </label>
       </div>
       <svg
-        class="c6 c7"
+        class="c6 sc-1668uuz-0 c7"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -6360,7 +6386,7 @@ exports[`TextField with filled variant should render properly with custom disabl
         </label>
       </div>
       <svg
-        class="c6 c7"
+        class="c6 sc-1668uuz-0 c7"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -6686,7 +6712,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 
 .c3 {
   pointer-events: none;
-  margin-left: 1.6rem;
+  margin-right: 1.6rem;
 }
 
 .c3 * {
@@ -6967,7 +6993,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
       class="c1"
     >
       <svg
-        class="c2 c3"
+        class="c2 sc-1668uuz-0 c3"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -7320,7 +7346,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
         </label>
       </div>
       <svg
-        class="c6 c7"
+        class="c6 sc-1668uuz-0 c7"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -10404,7 +10430,7 @@ exports[`TextField with fusion variant should render properly with custom border
         </label>
       </div>
       <svg
-        class="c6 c7"
+        class="c6 sc-1668uuz-0 c7"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -10760,7 +10786,7 @@ exports[`TextField with fusion variant should render properly with custom disabl
         </label>
       </div>
       <svg
-        class="c6 c7"
+        class="c6 sc-1668uuz-0 c7"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -11123,7 +11149,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 
 .c3 {
   pointer-events: none;
-  margin-left: 1.6rem;
+  margin-right: 1.6rem;
 }
 
 .c3 * {
@@ -11441,7 +11467,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
       class="c1"
     >
       <svg
-        class="c2 c3"
+        class="c2 sc-1668uuz-0 c3"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -11831,7 +11857,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
         </label>
       </div>
       <svg
-        class="c6 c7"
+        class="c6 sc-1668uuz-0 c7"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -14762,7 +14788,7 @@ exports[`TextField with outlined variant should render properly with custom bord
         </label>
       </div>
       <svg
-        class="c6 c7"
+        class="c6 sc-1668uuz-0 c7"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -15098,7 +15124,7 @@ exports[`TextField with outlined variant should render properly with custom disa
         </label>
       </div>
       <svg
-        class="c6 c7"
+        class="c6 sc-1668uuz-0 c7"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -15445,7 +15471,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 .c3 {
   pointer-events: none;
-  margin-left: 1.6rem;
+  margin-right: 1.6rem;
 }
 
 .c3 * {
@@ -15747,7 +15773,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
       class="c1"
     >
       <svg
-        class="c2 c3"
+        class="c2 sc-1668uuz-0 c3"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -16121,7 +16147,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
         </label>
       </div>
       <svg
-        class="c6 c7"
+        class="c6 sc-1668uuz-0 c7"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"

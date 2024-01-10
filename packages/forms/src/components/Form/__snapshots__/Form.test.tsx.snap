@@ -2137,7 +2137,7 @@ exports[`Form should render properly with initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c30 c31 c49 c50"
+              class="c30 c31 sc-1668uuz-0 c49 c50"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -2289,7 +2289,7 @@ exports[`Form should render properly with initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c30 c31 c49 c50"
+              class="c30 c31 sc-1668uuz-0 c49 c50"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4441,7 +4441,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c32 c33 c49 c50"
+              class="c32 c33 sc-1668uuz-0 c49 c50"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4593,7 +4593,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c32 c33 c49 c50"
+              class="c32 c33 sc-1668uuz-0 c49 c50"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
