@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/medly/medly-components/compare/@medly-components/theme@5.3.0...@medly-components/theme@6.0.0) (2024-01-10)
+
+
+### Code Refactoring
+
+* add icon colors in textfield theme ([#739](https://github.com/medly/medly-components/issues/739)) ([8f6d370](https://github.com/medly/medly-components/commit/8f6d3707ed212af2623001a0c7aee3f54d1f6e71))
+
+
+### BREAKING CHANGES
+
+* textfield theme needs to be updated to include the icon theme
+
+* fix: static code analysis errors
+
+affects: @medly-components/core
+
+* fix: textfield focus issue in TimePicker component
+
+affects: @medly-components/core
+
+* feat: bump theme, core & forms package to major version
+
+affects: @medly-components/core, @medly-components/theme
+
+* feat: bump theme, core & forms package to major version
+
+affects: @medly-components/core, @medly-components/theme
+
+* fix: static code analysis error
+
+affects: @medly-components/core
+
+* fix: failing snalshots
+
+affects: @medly-components/core
+
+* feat: update git workflow
+
+* fix: version issue
+
+affects: @medly-components/core, @medly-components/forms, @medly-components/theme
+
+* feat: add PRefix and Suffix icon component in TextField
+
+affects: @medly-components/core
+
+* fix: failing snapshots
+
+affects: @medly-components/core, @medly-components/forms
+
+
+
+
+
 # [5.3.0](https://github.com/medly/medly-components/compare/@medly-components/theme@5.2.1...@medly-components/theme@5.3.0) (2023-12-31)
 
 
