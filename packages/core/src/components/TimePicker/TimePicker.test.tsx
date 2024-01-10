@@ -30,7 +30,7 @@ describe('TimePicker', () => {
     it('should give the expected time on selecting time from dialog', () => {
         const mockOnChange = jest.fn();
         render(<TimePicker label="Time" value="" onChange={mockOnChange} />);
-        fireEvent.click(screen.getByTitle('time-icon'));
+        fireEvent.click(screen.getByLabelText('Time'));
         fireEvent.click(screen.getByTitle('hour-arrow-down'));
         fireEvent.click(screen.getByTitle('minutes-arrow-down'));
         fireEvent.click(screen.getByText('PM'));
@@ -41,7 +41,7 @@ describe('TimePicker', () => {
     it('should reset the values on clicking on cancel button', () => {
         const mockOnChange = jest.fn();
         render(<TimePicker label="Time" value="" onChange={mockOnChange} />);
-        fireEvent.click(screen.getByTitle('time-icon'));
+        fireEvent.click(screen.getByLabelText('Time'));
         fireEvent.click(screen.getByTitle('hour-arrow-down'));
         fireEvent.click(screen.getByTitle('minutes-arrow-down'));
         fireEvent.click(screen.getByText('PM'));
@@ -53,7 +53,7 @@ describe('TimePicker', () => {
     it('should not render dialog for mobile devices', () => {
         Object.defineProperty(global?.navigator, 'userAgent', { configurable: true, value: { indexOf: () => 1 } });
         render(<TimePicker label="Time" value="" onChange={jest.fn()} />);
-        fireEvent.click(screen.getByTitle('time-icon'));
+        fireEvent.click(screen.getByLabelText('Time'));
         expect(screen.queryByText('hour-arrow-down')).not.toBeInTheDocument();
     });
 });

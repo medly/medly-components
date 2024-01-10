@@ -16,7 +16,7 @@ exports[`TimePicker should render properly 1`] = `
   fill: #607890;
 }
 
-.c21 {
+.c19 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -24,7 +24,7 @@ exports[`TimePicker should render properly 1`] = `
   cursor: pointer;
 }
 
-.c21 * {
+.c19 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -39,12 +39,33 @@ exports[`TimePicker should render properly 1`] = `
   display: inline-flex;
 }
 
-.c14 {
+.c12 {
   z-index: 4;
   position: absolute;
   background-color: white;
   top: calc(100% + 0px);
   left: 0%;
+}
+
+.c11 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c11 * {
+  fill: #546A7F;
+}
+
+.c11:hover * {
+  fill: #546A7F;
+}
+
+.c11 * {
+  fill: #3872D2;
+}
+
+.c11:hover * {
+  fill: #546A7F;
 }
 
 .c8 {
@@ -85,11 +106,6 @@ exports[`TimePicker should render properly 1`] = `
   text-overflow: ellipsis;
 }
 
-.c13 {
-  pointer-events: none;
-  margin-left: 1.6rem;
-}
-
 .c4 {
   position: relative;
   display: -webkit-box;
@@ -115,16 +131,6 @@ exports[`TimePicker should render properly 1`] = `
 
 .c4 .c7 {
   color: #546A7F;
-}
-
-.c4 .sc-1ubn8hn-0,
-.c4 .c12 {
-  color: #546A7F;
-}
-
-.c4 .sc-1ubn8hn-0 *,
-.c4 .c12 * {
-  fill: #546A7F;
 }
 
 .c4 ~ .sc-avlt8d-0 {
@@ -167,20 +173,6 @@ exports[`TimePicker should render properly 1`] = `
 .c4:focus-within .c7,
 .c4:focus-within:hover .c7 {
   color: #3872D2;
-}
-
-.c4:focus-within .sc-1ubn8hn-0,
-.c4:focus-within:hover .sc-1ubn8hn-0,
-.c4:focus-within .c12,
-.c4:focus-within:hover .c12 {
-  color: #3872D2;
-}
-
-.c4:focus-within .sc-1ubn8hn-0 *,
-.c4:focus-within:hover .sc-1ubn8hn-0 *,
-.c4:focus-within .c12 *,
-.c4:focus-within:hover .c12 * {
-  fill: #3872D2;
 }
 
 .c4:focus-within input,
@@ -356,11 +348,7 @@ exports[`TimePicker should render properly 1`] = `
   display: none;
 }
 
-.c11 {
-  cursor: pointer;
-}
-
-.c18 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -374,7 +362,7 @@ exports[`TimePicker should render properly 1`] = `
   display: inline-block;
 }
 
-.c30 {
+.c28 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -388,7 +376,7 @@ exports[`TimePicker should render properly 1`] = `
   display: inline-block;
 }
 
-.c29 {
+.c27 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -417,27 +405,27 @@ exports[`TimePicker should render properly 1`] = `
   align-items: center;
 }
 
-.c29,
-.c29 .c17,
-.c29 .c9,
-.c29 .c9 * {
+.c27,
+.c27 .c15,
+.c27 .c9,
+.c27 .c9 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c29:hover {
+.c27:hover {
   cursor: pointer;
 }
 
-.c29:focus {
+.c27:focus {
   outline: none;
 }
 
-.c29:disabled {
+.c27:disabled {
   cursor: not-allowed;
 }
 
-.c29::after {
+.c27::after {
   content: '';
   display: block;
   position: absolute;
@@ -453,71 +441,71 @@ exports[`TimePicker should render properly 1`] = `
   transform: translate(-50%);
 }
 
-.c29:disabled {
+.c27:disabled {
   color: #98A7B7;
 }
 
-.c29:disabled::after {
+.c27:disabled::after {
   background-color: #98A7B7;
 }
 
-.c29:disabled .c9 * {
+.c27:disabled .c9 * {
   fill: #98A7B7;
 }
 
-.c29:not(:disabled):not(:hover) {
+.c27:not(:disabled):not(:hover) {
   color: #3872D2;
 }
 
-.c29:not(:disabled):not(:hover)::after {
+.c27:not(:disabled):not(:hover)::after {
   background-color: #3872D2;
 }
 
-.c29:not(:disabled):not(:hover) .c9 * {
+.c27:not(:disabled):not(:hover) .c9 * {
   fill: #3872D2;
 }
 
-.c29:not(:disabled):active {
+.c27:not(:disabled):active {
   color: #275093;
 }
 
-.c29:not(:disabled):active::after {
+.c27:not(:disabled):active::after {
   background-color: #275093;
 }
 
-.c29:not(:disabled):active .c9 * {
+.c27:not(:disabled):active .c9 * {
   fill: #275093;
 }
 
-.c29:not(:disabled):active::after {
+.c27:not(:disabled):active::after {
   width: calc(100% - 4.8rem);
 }
 
-.c29:not(:disabled):not(:active):hover {
+.c27:not(:disabled):not(:active):hover {
   color: #3061B3;
 }
 
-.c29:not(:disabled):not(:active):hover::after {
+.c27:not(:disabled):not(:active):hover::after {
   background-color: #3061B3;
 }
 
-.c29:not(:disabled):not(:active):hover .c9 * {
+.c27:not(:disabled):not(:active):hover .c9 * {
   fill: #3061B3;
 }
 
-.c29:not(:disabled):not(:active):hover::after {
+.c27:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
-.c29 .c9 + .c17 {
+.c27 .c9 + .c15 {
   margin-left: 0.8rem;
 }
 
-.c29 .c17 + .c9 {
+.c27 .c15 + .c9 {
   margin-left: 0.8rem;
 }
 
-.c31 {
+.c29 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -545,72 +533,72 @@ exports[`TimePicker should render properly 1`] = `
   align-items: center;
 }
 
-.c31,
-.c31 .c17,
-.c31 .c9,
-.c31 .c9 * {
+.c29,
+.c29 .c15,
+.c29 .c9,
+.c29 .c9 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c31:hover {
+.c29:hover {
   cursor: pointer;
 }
 
-.c31:focus {
+.c29:focus {
   outline: none;
 }
 
-.c31:disabled {
+.c29:disabled {
   cursor: not-allowed;
 }
 
-.c31:disabled {
+.c29:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c31:disabled .c9 * {
+.c29:disabled .c9 * {
   fill: #98A7B7;
 }
 
-.c31:not(:disabled):not(:hover) {
+.c29:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c31:not(:disabled):not(:hover) .c9 * {
+.c29:not(:disabled):not(:hover) .c9 * {
   fill: #ffffff;
 }
 
-.c31:not(:disabled):active {
+.c29:not(:disabled):active {
   color: #ffffff;
   background: #275093;
 }
 
-.c31:not(:disabled):active .c9 * {
+.c29:not(:disabled):active .c9 * {
   fill: #ffffff;
 }
 
-.c31:not(:disabled):not(:active):hover {
+.c29:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #3061B3;
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c31:not(:disabled):not(:active):hover .c9 * {
+.c29:not(:disabled):not(:active):hover .c9 * {
   fill: #ffffff;
 }
 
-.c31 .c9 + .c17 {
+.c29 .c9 + .c15 {
   margin-left: 0.8rem;
 }
 
-.c31 .c17 + .c9 {
+.c29 .c15 + .c9 {
   margin-left: 0.8rem;
 }
 
-.c15 {
+.c13 {
   padding: 1.2rem;
   background: #ffffff;
   box-shadow: 0 0.2rem 0.8rem #b0bcc8;
@@ -623,7 +611,7 @@ exports[`TimePicker should render properly 1`] = `
   height: max-content;
 }
 
-.c16 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -633,7 +621,7 @@ exports[`TimePicker should render properly 1`] = `
   flex-direction: row;
 }
 
-.c16 > * {
+.c14 > * {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -642,15 +630,19 @@ exports[`TimePicker should render properly 1`] = `
   -ms-user-select: none;
   user-select: none;
   text-align: center;
+  font-size: 1.4rem;
+  font-weight: Regular;
+  line-height: 2.2rem;
+  color: #546A7F;
 }
 
-.c16 > *:nth-child(2) {
+.c14 > *:nth-child(2) {
   -webkit-flex: 0.5;
   -ms-flex: 0.5;
   flex: 0.5;
 }
 
-.c19 {
+.c17 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -671,14 +663,14 @@ exports[`TimePicker should render properly 1`] = `
   position: relative;
 }
 
-.c19 > * {
+.c17 > * {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c19::before,
-.c19::after {
+.c17::before,
+.c17::after {
   content: '';
   position: absolute;
   left: -1.2rem;
@@ -687,15 +679,15 @@ exports[`TimePicker should render properly 1`] = `
   background-color: #C7D0D8;
 }
 
-.c19::before {
+.c17::before {
   top: 3.2rem;
 }
 
-.c19::after {
+.c17::after {
   bottom: 3.2rem;
 }
 
-.c20 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -714,7 +706,7 @@ exports[`TimePicker should render properly 1`] = `
   justify-content: center;
 }
 
-.c22 {
+.c20 {
   padding: 0;
   margin: 0;
   height: 2.6rem;
@@ -745,11 +737,11 @@ exports[`TimePicker should render properly 1`] = `
   list-style: none;
 }
 
-.c22::-webkit-scrollbar {
+.c20::-webkit-scrollbar {
   display: none;
 }
 
-.c22 > li {
+.c20 > li {
   -webkit-scroll-snap-align: center;
   -moz-scroll-snap-align: center;
   -ms-scroll-snap-align: center;
@@ -760,12 +752,12 @@ exports[`TimePicker should render properly 1`] = `
   color: #13181D;
 }
 
-.c24 {
+.c22 {
   position: relative;
   max-height: 2.4rem;
 }
 
-.c25 {
+.c23 {
   padding: 0;
   margin: 0;
   gap: 2.4rem;
@@ -794,7 +786,7 @@ exports[`TimePicker should render properly 1`] = `
   transition: transform 200ms ease;
 }
 
-.c26 {
+.c24 {
   font-size: 1.4rem;
   font-weight: Regular;
   line-height: 2.2rem;
@@ -804,7 +796,7 @@ exports[`TimePicker should render properly 1`] = `
   transition: all 200ms ease;
 }
 
-.c27 {
+.c25 {
   font-size: 1.6rem;
   font-weight: Medium;
   line-height: 2.6rem;
@@ -814,7 +806,7 @@ exports[`TimePicker should render properly 1`] = `
   transition: all 200ms ease;
 }
 
-.c23 {
+.c21 {
   -webkit-flex: 0.5;
   -ms-flex: 0.5;
   flex: 0.5;
@@ -832,7 +824,7 @@ exports[`TimePicker should render properly 1`] = `
   user-select: none;
 }
 
-.c28 {
+.c26 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -881,10 +873,9 @@ exports[`TimePicker should render properly 1`] = `
           </label>
         </div>
         <svg
-          class="c9 c10 c11 c12 c13"
+          class="c9 c10 sc-1668uuz-0 c11"
           fill="none"
           height="1em"
-          title="time-icon"
           viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
@@ -901,36 +892,36 @@ exports[`TimePicker should render properly 1`] = `
       
     </div>
     <div
-      class="c14"
+      class="c12"
       id="medly-popover-popup"
     >
       <div
-        class="c15"
+        class="c13"
       >
         <div
-          class="c16"
+          class="c14"
         >
           <span
-            class="c17 c18"
+            class="c15 c16"
           >
             Hour
           </span>
           <span />
           <span
-            class="c17 c18"
+            class="c15 c16"
           >
             Minutes
           </span>
           <span />
         </div>
         <div
-          class="c19"
+          class="c17"
         >
           <div
-            class="c20"
+            class="c18"
           >
             <svg
-              class="c9 c21"
+              class="c9 c19"
               fill="none"
               height="1em"
               title="hour-arrow-up"
@@ -945,7 +936,7 @@ exports[`TimePicker should render properly 1`] = `
               />
             </svg>
             <ul
-              class="c22"
+              class="c20"
             >
               <li>
                 00
@@ -985,7 +976,7 @@ exports[`TimePicker should render properly 1`] = `
               </li>
             </ul>
             <svg
-              class="c9 c21"
+              class="c9 c19"
               fill="none"
               height="1em"
               title="hour-arrow-down"
@@ -1001,15 +992,15 @@ exports[`TimePicker should render properly 1`] = `
             </svg>
           </div>
           <span
-            class="c17 c18 c23"
+            class="c15 c16 c21"
           >
             :
           </span>
           <div
-            class="c20"
+            class="c18"
           >
             <svg
-              class="c9 c21"
+              class="c9 c19"
               fill="none"
               height="1em"
               title="minutes-arrow-up"
@@ -1024,7 +1015,7 @@ exports[`TimePicker should render properly 1`] = `
               />
             </svg>
             <ul
-              class="c22"
+              class="c20"
             >
               <li>
                 00
@@ -1208,7 +1199,7 @@ exports[`TimePicker should render properly 1`] = `
               </li>
             </ul>
             <svg
-              class="c9 c21"
+              class="c9 c19"
               fill="none"
               height="1em"
               title="minutes-arrow-down"
@@ -1224,19 +1215,19 @@ exports[`TimePicker should render properly 1`] = `
             </svg>
           </div>
           <div
-            class="c24"
+            class="c22"
           >
             <ul
-              class="c25"
+              class="c23"
               style="transform: translateY(calc(-2.2rem - 2.4rem));"
             >
               <li
-                class="c26"
+                class="c24"
               >
                 AM
               </li>
               <li
-                class="c27"
+                class="c25"
               >
                 PM
               </li>
@@ -1244,24 +1235,24 @@ exports[`TimePicker should render properly 1`] = `
           </div>
         </div>
         <div
-          class="c28"
+          class="c26"
         >
           <button
-            class="c29"
+            class="c27"
             type="button"
           >
             <span
-              class="c17 c30"
+              class="c15 c28"
             >
               Cancel
             </span>
           </button>
           <button
-            class="c31"
+            class="c29"
             type="button"
           >
             <span
-              class="c17 c30"
+              class="c15 c28"
             >
               Apply
             </span>

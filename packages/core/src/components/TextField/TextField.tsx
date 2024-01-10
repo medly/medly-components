@@ -1,5 +1,5 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import type { ChangeEvent, FC } from 'react';
+import type { ChangeEvent, FC, FocusEvent } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { HelperAndErrorTextTooltip } from '../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import getMaskedValue from './getMaskedValue';
@@ -14,7 +14,7 @@ const Component: FC<TextFieldProps> = memo(
         const {
                 id,
                 value,
-                size,
+                size = 'M',
                 label,
                 minWidth,
                 maxWidth,
@@ -45,6 +45,7 @@ const Component: FC<TextFieldProps> = memo(
                 [withCharacterCount, showDecorators, props.maxLength]
             ),
             [isTextPresent, setIsTextPresent] = useState(!!value || !!restProps.defaultValue),
+            [isActive, setIsActive] = useState(false),
             [maskLabel, setMaskLabel] = useState(mask),
             [inputWidth, setInputWidth] = useState(0),
             [characterCountValue, setCharacterCountValue] = useState(
@@ -66,7 +67,20 @@ const Component: FC<TextFieldProps> = memo(
 
         const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
             handleWrapperClick = useCallback(() => !disabled && inputRef.current?.focus(), [inputRef, disabled]),
-            onBlur = useCallback((event: ChangeEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
+            onBlur = useCallback(
+                (event: ChangeEvent<HTMLInputElement>) => {
+                    setIsActive(false);
+                    validate(event, props.onBlur);
+                },
+                [validate, props.onBlur]
+            ),
+            onFocus = useCallback(
+                (event: FocusEvent<HTMLInputElement>) => {
+                    setIsActive(true);
+                    props.onFocus?.(event);
+                },
+                [props.onFocus]
+            ),
             onInvalid = useCallback(
                 (event: ChangeEvent<HTMLInputElement>) => validate(event, props.onInvalid),
                 [validate, props.onInvalid]
@@ -118,7 +132,13 @@ const Component: FC<TextFieldProps> = memo(
                     multiline={multiline}
                 >
                     {!!Prefix && showDecorators && (
-                        <Styled.Prefix size={size}>
+                        <Styled.Prefix
+                            size={size}
+                            disabled={disabled}
+                            variant={props.variant!}
+                            isActive={isActive}
+                            isErrorPresent={isErrorPresent}
+                        >
                             <Prefix size={size} />
                         </Styled.Prefix>
                     )}
@@ -139,7 +159,7 @@ const Component: FC<TextFieldProps> = memo(
                             variant={props.variant!}
                             as={multiline ? 'textarea' : 'input'}
                             multiline={multiline}
-                            {...{ ...restProps, onBlur, onInvalid, onChange }}
+                            {...{ ...restProps, onBlur, onFocus, onInvalid, onChange }}
                         />
                         {maskLabel && (
                             <Styled.MaskPlaceholder size={size} isLabelPresent={isLabelPresent} variant={props.variant}>
@@ -169,7 +189,7 @@ const Component: FC<TextFieldProps> = memo(
                     </Styled.InputWrapper>
                     {props.showTooltipForHelperAndErrorText && (
                         <Styled.HelperAndErrorTextTooltipWrapper
-                            size={size!}
+                            size={size}
                             displayCharacterCount={displayCharacterCount}
                             isSuffixPresent={isSuffixPresent}
                         >
@@ -177,7 +197,13 @@ const Component: FC<TextFieldProps> = memo(
                         </Styled.HelperAndErrorTextTooltipWrapper>
                     )}
                     {!!Suffix && showDecorators && (
-                        <Styled.Suffix size={size}>
+                        <Styled.Suffix
+                            size={size}
+                            disabled={disabled}
+                            variant={props.variant!}
+                            isActive={isActive}
+                            isErrorPresent={isErrorPresent}
+                        >
                             <Suffix size={size} />
                         </Styled.Suffix>
                     )}

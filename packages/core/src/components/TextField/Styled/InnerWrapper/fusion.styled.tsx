@@ -2,8 +2,6 @@ import { css } from 'styled-components';
 import { InnerWrapperModifiedProps } from '../../types';
 import { HelperText } from '../HelperText.styled';
 import { Label } from '../Label.styled';
-import { Prefix } from '../Prefix.styled';
-import { Suffix } from '../Suffix.styled';
 
 export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperModifiedProps) => {
     const { bgColor } = fusion[isTextPresent ? 'active' : 'default'];
@@ -57,12 +55,6 @@ export const fusionErrorStyle = ({ theme: { textField }, isTextPresent }: InnerW
         background-color: ${textField.fusion.error.bgColor};
         ${Label} {
             color: ${textField.fusion.error.labelColor};
-        }
-        ${Prefix}, ${Suffix} {
-            color: ${textField.fusion.error.labelColor};
-            * {
-                fill: ${textField.fusion.error.labelColor};
-            }
         }
         & ~ ${HelperText} {
             color: ${textField.fusion.error.helperTextColor};

@@ -26,6 +26,7 @@ export interface TextFieldTheme {
             borderColor: string;
             shadowColor: string;
             borderWidth: string;
+            iconColor: string;
         };
         disabled: {
             bgColor: string;
@@ -33,6 +34,7 @@ export interface TextFieldTheme {
             textColor: string;
             borderColor: string;
             cursor: string;
+            iconColor: string;
         };
         active: {
             bgColor: string;
@@ -42,6 +44,7 @@ export interface TextFieldTheme {
             labelColor: string;
             placeholderColor: string;
             shadowColor: string;
+            iconColor: string;
         };
         error: {
             bgColor: string;
@@ -52,6 +55,7 @@ export interface TextFieldTheme {
             labelColor: string;
             helperTextColor: string;
             shadowColor: string;
+            iconColor: string;
         };
     };
     /** Filled variant theme */
@@ -59,13 +63,14 @@ export interface TextFieldTheme {
         default: {
             borderColor: string;
             bgColor: string;
-            iconColor: string;
             textColor: string;
             labelColor: string;
             helperTextColor: string;
+            iconColor: string;
         };
         hover: {
             borderColor: string;
+            iconColor: string;
         };
         disabled: {
             bgColor: string;
@@ -73,12 +78,14 @@ export interface TextFieldTheme {
             textColor: string;
             borderColor: string;
             cursor: string;
+            iconColor: string;
         };
         active: {
             bgColor: string;
             borderColor: string;
             labelColor: string;
             placeholderColor: string;
+            iconColor: string;
         };
         error: {
             placeholderColor: string;
@@ -88,6 +95,7 @@ export interface TextFieldTheme {
             borderColor: string;
             labelColor: string;
             helperTextColor: string;
+            iconColor: string;
         };
     };
     /** fusion variant theme */
@@ -100,11 +108,13 @@ export interface TextFieldTheme {
             helperTextColor: string;
             labelColor: string;
             textColor: string;
+            iconColor: string;
         };
         hover: {
             bgColor: string;
             borderColor: string;
             borderWidth: string;
+            iconColor: string;
         };
         disabled: {
             bgColor: string;
@@ -112,6 +122,7 @@ export interface TextFieldTheme {
             textColor: string;
             borderColor: string;
             cursor: string;
+            iconColor: string;
         };
         active: {
             bgColor: string;
@@ -120,6 +131,7 @@ export interface TextFieldTheme {
             borderWidth: string;
             labelColor: string;
             placeholderColor: string;
+            iconColor: string;
         };
         error: {
             placeholderColor: string;
@@ -131,6 +143,7 @@ export interface TextFieldTheme {
             helperTextColor: string;
             defaultTextColor: string;
             activeTextColor: string;
+            iconColor: string;
         };
     };
 }

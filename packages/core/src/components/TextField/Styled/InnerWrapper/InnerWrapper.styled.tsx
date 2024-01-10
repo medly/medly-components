@@ -3,8 +3,6 @@ import { InnerWrapperModifiedProps, InnerWrapperProps } from '../../types';
 import { CharacterCount } from '../CharacterCount.styled';
 import { HelperText } from '../HelperText.styled';
 import { Label } from '../Label.styled';
-import { Prefix } from '../Prefix.styled';
-import { Suffix } from '../Suffix.styled';
 import { filledStyle } from './filled.styled';
 import { fusionErrorStyle, fusionStyle } from './fusion.styled';
 import { outlinedStyle } from './outlined.styled';
@@ -26,12 +24,6 @@ const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedPr
     ${CharacterCount} {
         color: ${textField[variant].disabled.labelColor};
     }
-    ${Prefix}, ${Suffix} {
-        color: ${textField[variant].disabled.labelColor};
-        * {
-            fill: ${textField[variant].disabled.labelColor};
-        }
-    }
     & ~ ${HelperText} {
         color: ${textField[variant].disabled.labelColor};
     }
@@ -51,12 +43,6 @@ const activeStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedProp
 
         ${Label} {
             color: ${textField[variant].active.labelColor};
-        }
-        ${Prefix}, ${Suffix} {
-            color: ${textField[variant].active.labelColor};
-            * {
-                fill: ${textField[variant].active.labelColor};
-            }
         }
         input {
             box-shadow: 0 0 0 100000px ${textField[variant].active.bgColor} inset;
@@ -81,12 +67,6 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedProps
                   }
                   ${Label} {
                       color: ${textField[variant].error.labelColor};
-                  }
-                  ${Prefix}, ${Suffix} {
-                      color: ${textField[variant].error.labelColor};
-                      * {
-                          fill: ${textField[variant].error.labelColor};
-                      }
                   }
                   & ~ ${HelperText} {
                       color: ${textField[variant].error.helperTextColor};
@@ -149,13 +129,6 @@ export const InnerWrapper = styled('div').attrs<InnerWrapperProps, InnerWrapperM
 
     ${Label} {
         color: ${props => props[props.variant].default.labelColor};
-    }
-
-    ${Prefix}, ${Suffix} {
-        color: ${props => props[props.variant].default.labelColor};
-        * {
-            fill: ${props => props[props.variant].default.labelColor};
-        }
     }
 
     & ~ ${HelperText} {

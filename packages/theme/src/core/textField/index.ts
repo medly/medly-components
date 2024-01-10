@@ -36,14 +36,16 @@ const textField: TextFieldTheme = {
         hover: {
             borderColor: colors.grey[600],
             borderWidth: defaultOutlined.borderWidth,
-            shadowColor: colors.grey[600]
+            shadowColor: colors.grey[600],
+            iconColor: colors.grey[600]
         },
         disabled: {
             labelColor: colors.grey[400],
             textColor: colors.grey[800],
             borderColor: colors.grey[300],
             bgColor: colors.white,
-            cursor: 'not-allowed'
+            cursor: 'not-allowed',
+            iconColor: colors.grey[400]
         },
         active: {
             bgColor: colors.white,
@@ -52,7 +54,8 @@ const textField: TextFieldTheme = {
             borderWidth: defaultOutlined.borderWidth,
             labelColor: colors.blue[500],
             placeholderColor: colors.grey[300],
-            shadowColor: colors.blue[500]
+            shadowColor: colors.blue[500],
+            iconColor: colors.blue[500]
         },
         error: {
             bgColor: colors.white,
@@ -62,7 +65,8 @@ const textField: TextFieldTheme = {
             borderColor: colors.red[500],
             labelColor: colors.red[500],
             helperTextColor: colors.red[500],
-            shadowColor: colors.red[500]
+            shadowColor: colors.red[500],
+            iconColor: colors.red[500]
         }
     },
     filled: {
@@ -75,20 +79,23 @@ const textField: TextFieldTheme = {
             helperTextColor: colors.grey[700]
         },
         hover: {
-            borderColor: colors.grey[700]
+            borderColor: colors.grey[700],
+            iconColor: colors.grey[700]
         },
         disabled: {
             bgColor: colors.grey[50],
             labelColor: colors.grey[400],
             textColor: colors.grey[800],
             borderColor: colors.grey[300],
-            cursor: 'not-allowed'
+            cursor: 'not-allowed',
+            iconColor: colors.grey[400]
         },
         active: {
             placeholderColor: 'rgba(0, 90, 238, .2)',
             bgColor: colors.blue[100],
             borderColor: colors.blue[500],
-            labelColor: colors.blue[500]
+            labelColor: colors.blue[500],
+            iconColor: colors.blue[500]
         },
         error: {
             caretColor: colors.red[500],
@@ -97,7 +104,8 @@ const textField: TextFieldTheme = {
             cursorColor: colors.red[500],
             borderColor: colors.red[500],
             labelColor: colors.red[500],
-            helperTextColor: colors.red[500]
+            helperTextColor: colors.red[500],
+            iconColor: colors.red[500]
         }
     },
     fusion: {
@@ -108,19 +116,22 @@ const textField: TextFieldTheme = {
             borderWidth: defaultFusion.borderWidth,
             helperTextColor: colors.grey[700],
             labelColor: colors.grey[700],
-            textColor: colors.black
+            textColor: colors.black,
+            iconColor: colors.grey[400]
         },
         hover: {
             bgColor: colors.grey[50],
             borderColor: colors.grey[600],
-            borderWidth: defaultFusion.borderWidth
+            borderWidth: defaultFusion.borderWidth,
+            iconColor: colors.grey[600]
         },
         disabled: {
             bgColor: colors.white,
             labelColor: colors.grey[400],
             textColor: colors.grey[700],
             borderColor: colors.grey[300],
-            cursor: 'not-allowed'
+            cursor: 'not-allowed',
+            iconColor: colors.grey[400]
         },
         active: {
             bgColor: colors.white,
@@ -128,7 +139,8 @@ const textField: TextFieldTheme = {
             borderRadius: defaultFusion.borderRadius,
             borderWidth: defaultFusion.borderWidth,
             labelColor: colors.blue[500],
-            placeholderColor: colors.grey[300]
+            placeholderColor: colors.grey[300],
+            iconColor: colors.blue[500]
         },
         error: {
             caretColor: colors.black,
@@ -139,7 +151,8 @@ const textField: TextFieldTheme = {
             labelColor: colors.red[500],
             helperTextColor: colors.red[500],
             defaultTextColor: colors.red[500],
-            activeTextColor: colors.black
+            activeTextColor: colors.black,
+            iconColor: colors.red[500]
         }
     }
 };
