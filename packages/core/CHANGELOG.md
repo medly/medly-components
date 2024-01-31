@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.0.0...@medly-components/core@7.0.1) (2024-01-31)
+
+
+### Bug Fixes
+
+* shadow issue on modal actions ([b608b74](https://github.com/medly/medly-components/commit/b608b744ac0ce50b91b74807e5dce0321f733809))
+
+
+
+
+
 # [7.0.0](https://github.com/medly/medly-components/compare/@medly-components/core@6.34.1...@medly-components/core@7.0.0) (2024-01-10)
 
 
