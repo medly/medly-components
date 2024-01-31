@@ -10,7 +10,7 @@ export const useScrollState = ({ ref, scrollState, dispatch }: UseScrollStatePro
                 type: 'scrolledToBottom',
                 value: Math.abs(Math.floor(element.getBoundingClientRect().height) - element.scrollHeight) <= 1
             });
-    }, [ref.current, ref.current?.scrollHeight]);
+    }, []);
 
     const handleScroll = (e: UIEvent<HTMLDivElement>) => {
         // e.stopPropagation(); /* Allowing event to propagate for table minimap table scroll handle */
