@@ -2,10 +2,17 @@ import { mockAxios, renderWithSWR, screen } from '@test-utils';
 import { SWRConfiguration } from 'swr';
 import { useSWRAxios } from './useSWRAxios';
 
-const DummyComp = ({ fallbackData, passUrlOnly = false }: SWRConfiguration & { passUrlOnly?: boolean }) => {
-    const { data, error } = useSWRAxios<string, { message: string }>(passUrlOnly ? '/api/applications' : { url: '/api/applications' }, {
-        fallbackData
-    });
+const DummyComp = ({
+    fallbackData,
+    passUrlOnly = false,
+    passNull = false
+}: SWRConfiguration & { passUrlOnly?: boolean; passNull?: boolean }) => {
+    const { data, error } = useSWRAxios<string, { message: string }>(
+        passNull ? null : passUrlOnly ? '/api/applications' : { url: '/api/applications' },
+        {
+            fallbackData
+        }
+    );
     return (
         <>
             <p>{data}</p>
@@ -31,6 +38,13 @@ describe('useSWRAxios', () => {
         renderWithSWR(<DummyComp passUrlOnly />);
         const message = await screen.findByText('Hello');
         expect(message).toBeInTheDocument();
+    });
+
+    it('should not call the api if url passed as null', async () => {
+        mockAxios.onGet('/api/applications').replyOnce(200, 'Hello');
+        renderWithSWR(<DummyComp passNull />);
+        expect(mockAxios.history.get.length).toBe(0);
+        expect(screen.queryByText('Hello')).not.toBeInTheDocument();
     });
 
     it('should return initial data if passed as props', async () => {
