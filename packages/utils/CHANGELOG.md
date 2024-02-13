@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/medly/medly-components/compare/@medly-components/utils@3.1.3...@medly-components/utils@3.2.0) (2024-02-13)
+
+
+### Features
+
+* use null to pause the api call in useSWRAxios hook ([d2461a2](https://github.com/medly/medly-components/commit/d2461a20c956f4b304ef098d468f4252db33607f))
+
+
+
+
+
 ## [3.1.3](https://github.com/medly/medly-components/compare/@medly-components/utils@3.1.2...@medly-components/utils@3.1.3) (2024-01-10)
 
 **Note:** Version bump only for package @medly-components/utils
