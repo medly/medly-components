@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.3](https://github.com/medly/medly-components/compare/@medly-components/core@7.0.2...@medly-components/core@7.0.3) (2024-03-03)
+
+
+### Bug Fixes
+
+* error rendering issue in TimePicker component ([2ca576f](https://github.com/medly/medly-components/commit/2ca576fc590074900f7ff5936967b64e7c1179b3))
+
+
+
+
+
 ## [7.0.2](https://github.com/medly/medly-components/compare/@medly-components/core@7.0.1...@medly-components/core@7.0.2) (2024-02-13)
 
 **Note:** Version bump only for package @medly-components/core
