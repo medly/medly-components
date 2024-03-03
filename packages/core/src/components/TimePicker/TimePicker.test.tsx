@@ -56,4 +56,19 @@ describe('TimePicker', () => {
         fireEvent.click(screen.getByLabelText('Time'));
         expect(screen.queryByText('hour-arrow-down')).not.toBeInTheDocument();
     });
+
+    it('should render error message if required', async () => {
+        render(<TimePicker required label="Time" value="" onChange={jest.fn()} />);
+        fireEvent.click(screen.getByLabelText('Time'));
+        fireEvent.click(screen.getByText('Cancel'));
+        expect(await screen.findByText('Constraints not satisfied')).toBeInTheDocument();
+    });
+
+    it('should render error message returned from validator', async () => {
+        const validator = (val: string) => (!val ? 'Please enter time' : '');
+        render(<TimePicker required label="Time" value="" onChange={jest.fn()} validator={validator} />);
+        fireEvent.click(screen.getByLabelText('Time'));
+        fireEvent.click(screen.getByText('Cancel'));
+        expect(await screen.findByText('Please enter time')).toBeInTheDocument();
+    });
 });
