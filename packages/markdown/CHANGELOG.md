@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.32](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.4.31...@medly-components/markdown@0.4.32) (2024-03-17)
+
+**Note:** Version bump only for package @medly-components/markdown
+
+
+
+
+
 ## [0.4.31](https://github.com/medly/medly-components/compare/@medly-components/markdown@0.4.30...@medly-components/markdown@0.4.31) (2024-02-13)
 
 **Note:** Version bump only for package @medly-components/markdown

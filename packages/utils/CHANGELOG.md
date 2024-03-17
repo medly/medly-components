@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.1](https://github.com/medly/medly-components/compare/@medly-components/utils@3.2.0...@medly-components/utils@3.2.1) (2024-03-17)
+
+
+### Bug Fixes
+
+* add isMounted in useWindowSize ([68466d5](https://github.com/medly/medly-components/commit/68466d56cbff7aedad01a53fee524f10260e739e))
+
+
+
+
+
 # [3.2.0](https://github.com/medly/medly-components/compare/@medly-components/utils@3.1.3...@medly-components/utils@3.2.0) (2024-02-13)
 
 
