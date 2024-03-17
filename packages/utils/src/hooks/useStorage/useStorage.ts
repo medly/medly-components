@@ -1,7 +1,8 @@
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { COOKIE_STORAGE } from '../../helpers/cookieStorage';
 import { LOCAL_STORAGE } from '../../helpers/localStorage';
 import { SESSION_STORAGE } from '../../helpers/sessionStorage';
+import { useIsMounted } from '../useIsMounted';
 import { StorageConfig } from './Storage.context';
 import { UseStorageOptions, UseStorageSetValue } from './types';
 
@@ -24,7 +25,7 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
         options = currOptions ?? contextOption,
         storage = storageObj[options.storage || 'localStorage'],
         { initialValue } = options,
-        isMounted = useRef<boolean>(true);
+        isMounted = useIsMounted();
 
     const readValue = (): T => {
         if (typeof window === 'undefined') {
@@ -57,13 +58,6 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
             console.warn(`Error setting localStorage key “${key}”:`, error);
         }
     };
-
-    useEffect(
-        () => () => {
-            isMounted.current = false;
-        },
-        []
-    );
 
     useEffect(() => {
         const handleStorageChange = () => isMounted.current && setStoredValue(readValue());
