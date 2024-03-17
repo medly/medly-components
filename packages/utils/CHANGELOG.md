@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.2](https://github.com/medly/medly-components/compare/@medly-components/utils@3.2.1...@medly-components/utils@3.2.2) (2024-03-17)
+
+
+### Bug Fixes
+
+* export useIsMpounted from @medly-components/utils package ([b618a75](https://github.com/medly/medly-components/commit/b618a750a75c531c0fcec53f86d168c402579cda))
+
+
+
+
+
 ## [3.2.1](https://github.com/medly/medly-components/compare/@medly-components/utils@3.2.0...@medly-components/utils@3.2.1) (2024-03-17)
 
 
