@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.6](https://github.com/medly/medly-components/compare/@medly-components/core@7.0.5...@medly-components/core@7.0.6) (2024-04-27)
+
+
+### Bug Fixes
+
+* make consistant date display format ([3155628](https://github.com/medly/medly-components/commit/3155628cdb15ca1edaec7abd349d818334ac2648))
+
+
+
+
+
 ## [7.0.5](https://github.com/medly/medly-components/compare/@medly-components/core@7.0.4...@medly-components/core@7.0.5) (2024-03-17)
 
 **Note:** Version bump only for package @medly-components/core
