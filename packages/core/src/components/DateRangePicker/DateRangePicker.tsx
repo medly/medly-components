@@ -170,7 +170,7 @@ DateRangePicker.defaultProps = {
     variant: 'filled',
     startDateLabel: 'From',
     endDateLabel: 'To',
-    displayFormat: 'MM-dd-yyyy',
+    displayFormat: 'MM/dd/yyyy',
     popoverPlacement: 'bottom-start',
     withSingleMonth: false,
     minSelectableDate: new Date(1901, 0, 1),
