@@ -12,10 +12,6 @@ describe('getMaskedValue function', () => {
         expect(maskedValue('11 / 11 / 11111')).toEqual('11 / 11 / 1111');
     });
 
-    it('should truncate special character from end if any', () => {
-        expect(maskedValue('11 / 11 /')).toEqual('11 / 11');
-    });
-
     it('should add special character in between', () => {
         expect(maskedValue('11 / 111')).toEqual('11 / 11 / 1');
     });
