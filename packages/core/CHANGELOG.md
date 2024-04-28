@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.0.7...@medly-components/core@7.1.0) (2024-04-28)
+
+
+### Features
+
+* make single selct unselectable ([9abfba0](https://github.com/medly/medly-components/commit/9abfba0cd4de8a76ea3f3c44cfc22ba4b85b66d4))
+
+
+
+
+
 ## [7.0.7](https://github.com/medly/medly-components/compare/@medly-components/core@7.0.6...@medly-components/core@7.0.7) (2024-04-28)
 
 
