@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.7](https://github.com/medly/medly-components/compare/@medly-components/core@7.0.6...@medly-components/core@7.0.7) (2024-04-28)
+
+
+### Bug Fixes
+
+* update textfield masking auto add special character logic ([38bc390](https://github.com/medly/medly-components/commit/38bc390e1983fa3cfdc8dd7341848a57ad8d6e58))
+
+
+
+
+
 ## [7.0.6](https://github.com/medly/medly-components/compare/@medly-components/core@7.0.5...@medly-components/core@7.0.6) (2024-04-27)
 
 
