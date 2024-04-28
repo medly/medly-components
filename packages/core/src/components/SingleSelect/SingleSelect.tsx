@@ -30,6 +30,7 @@ const Component: FC<SingleSelectProps> = memo(
                 validator,
                 isSearchable,
                 suffix,
+                isUnselectable,
                 ...inputProps
             } = props,
             selectId = useMemo(() => id || inputProps.label?.toLocaleLowerCase() || 'medly-singleSelect', [id, inputProps.label]),
@@ -92,13 +93,13 @@ const Component: FC<SingleSelectProps> = memo(
                         setOptions(getUpdatedOptions(options, option));
                         setInputValue(option.label);
                         hideOptions();
-                        onChange?.(option.value);
+                        isUnselectable && value === option.value ? onChange?.('') : onChange?.(option.value);
                         setErrorMessage('');
                     } else {
                         inputRef.current?.focus();
                     }
                 },
-                [inputRef.current, options, onChange]
+                [inputRef.current, value, options, onChange]
             ),
             handleOuterClick = useCallback(() => {
                 isFocused.current = false;
@@ -226,6 +227,7 @@ Component.defaultProps = {
     isSearchable: false,
     includesNestedOptions: false,
     placeholder: 'Please Select . . .',
-    showDecorators: true
+    showDecorators: true,
+    isUnselectable: false
 };
 export const SingleSelect: FC<SingleSelectProps> & WithStyle = Object.assign(Component, { Style: Styled.Wrapper });

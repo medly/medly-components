@@ -210,6 +210,15 @@ describe('SingleSelect component', () => {
         expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
     });
 
+    it('should un select option on click on it again if isUnselectable passed', () => {
+        const mockOnChange = jest.fn();
+        render(<SingleSelect value="Dummy1" isUnselectable options={options} onChange={mockOnChange} />);
+
+        fireEvent.click(screen.getByRole('textbox'));
+        fireEvent.click(screen.getByText('Dummy1'));
+        expect(mockOnChange).toHaveBeenCalledWith('');
+    });
+
     it('should call onChange with input value if input value matches any option label', () => {
         const mockOnChange = jest.fn();
         render(<SingleSelect options={options} onChange={mockOnChange} />);

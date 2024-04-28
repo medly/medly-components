@@ -35,6 +35,8 @@ export interface SingleSelectProps extends InputProps {
     size?: 'S' | 'M';
     /** Set it it true to enable search functionality */
     isSearchable?: boolean;
+    /** Set it true to make it unselectable */
+    isUnselectable?: boolean;
     /** Min width in px/rem/% (1rem = 10px)*/
     minWidth?: string;
     /** Max width in px/rem/% (1rem = 10px)*/
