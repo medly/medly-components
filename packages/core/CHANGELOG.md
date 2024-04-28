@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.1.0...@medly-components/core@7.1.1) (2024-04-28)
+
+
+### Bug Fixes
+
+* isUnselectable prop issue in form component ([deedabe](https://github.com/medly/medly-components/commit/deedabe1dfd077c20d9732e3feb1734f6ebedc20))
+
+
+
+
+
 # [7.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.0.7...@medly-components/core@7.1.0) (2024-04-28)
 
 
