@@ -99,7 +99,7 @@ const Component: FC<SingleSelectProps> = memo(
                         inputRef.current?.focus();
                     }
                 },
-                [inputRef.current, value, options, onChange]
+                [inputRef.current, isUnselectable, value, options, onChange]
             ),
             handleOuterClick = useCallback(() => {
                 isFocused.current = false;

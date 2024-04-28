@@ -13,7 +13,7 @@ const applyMasking = (value: string, mask: string, selectionStart: number): stri
     } else if (
         specialCharsRegex.test(mask.charAt(selectionStart)) &&
         !specialCharsRegex.test(mask.charAt(selectionStart + 1)) &&
-        mask.slice(0, selectionStart).replace(/[^a-zA-Z0-9]+$/, '').length === length
+        mask.slice(0, selectionStart).replace(/[^a-zA-Z0-9]+$/, '').length === length //NOSONAR
     ) {
         // if user deletes the last special character
         newValue = value;
