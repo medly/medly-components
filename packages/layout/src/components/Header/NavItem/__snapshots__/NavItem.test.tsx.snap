@@ -2,11 +2,11 @@
 
 exports[`Header NavItem should render properly when isActive is set to false 1`] = `
 .c0 {
+  color: #ffffff;
   padding: 0 1.2rem;
   border-radius: 0.4rem;
   border: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 1.6rem;
   line-height: 2rem;
@@ -15,14 +15,10 @@ exports[`Header NavItem should render properly when isActive is set to false 1`]
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 1.8rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: left;
   grid-auto-columns: max-content;
   cursor: pointer;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   color: #ffffff;
   background: transparent;
@@ -32,21 +28,21 @@ exports[`Header NavItem should render properly when isActive is set to false 1`]
   fill: #ffffff;
 }
 
-.c0:hover {
+.c0 :hover {
   color: #ffffff;
   background: #1F6465;
 }
 
-.c0:hover svg * {
+.c0 :hover svg * {
   fill: #ffffff;
 }
 
-.c0:active {
+.c0 :active {
   color: #ffffff;
   background: #1A5556;
 }
 
-.c0:active svg * {
+.c0 :active svg * {
   fill: #ffffff;
 }
 
@@ -60,7 +56,11 @@ exports[`Header NavItem should render properly when isActive is set to false 1`]
   height: 100%;
 }
 
-@media (min-width:1024px) {
+.c0:active {
+  background-color: transparent;
+}
+
+@media (min-width: 1024px) {
   .c0 {
     background: #012040;
     grid-column-gap: 0.8rem;
@@ -86,11 +86,11 @@ exports[`Header NavItem should render properly when isActive is set to false 1`]
 
 exports[`Header NavItem should render properly when isActive is set to true 1`] = `
 .c0 {
+  color: #ffffff;
   padding: 0 1.2rem;
   border-radius: 0.4rem;
   border: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 1.6rem;
   line-height: 2rem;
@@ -99,14 +99,10 @@ exports[`Header NavItem should render properly when isActive is set to true 1`] 
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 1.8rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: left;
   grid-auto-columns: max-content;
   cursor: pointer;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   color: #3CDBC0;
   background: transparent;
@@ -116,21 +112,21 @@ exports[`Header NavItem should render properly when isActive is set to true 1`] 
   fill: #3CDBC0;
 }
 
-.c0:hover {
+.c0 :hover {
   color: #ffffff;
   background: #1F6465;
 }
 
-.c0:hover svg * {
+.c0 :hover svg * {
   fill: #ffffff;
 }
 
-.c0:active {
+.c0 :active {
   color: #ffffff;
   background: #1A5556;
 }
 
-.c0:active svg * {
+.c0 :active svg * {
   fill: #ffffff;
 }
 
@@ -144,7 +140,11 @@ exports[`Header NavItem should render properly when isActive is set to true 1`] 
   height: 100%;
 }
 
-@media (min-width:1024px) {
+.c0:active {
+  background-color: transparent;
+}
+
+@media (min-width: 1024px) {
   .c0 {
     background: #012040;
     grid-column-gap: 0.8rem;

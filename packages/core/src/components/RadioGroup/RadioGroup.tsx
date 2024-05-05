@@ -1,10 +1,10 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import type { ChangeEvent, FC, FocusEvent, FormEvent } from 'react';
+import type { ChangeEvent, FCC, FocusEvent, FormEvent } from 'react';
 import { forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
 import Radio from '../Radio';
 import { SelectorGroup } from '../Selectors';
 import { RadioGroupProps } from './types';
-const Component: FC<RadioGroupProps> = memo(
+const Component: FCC<RadioGroupProps> = memo(
     forwardRef((props, ref) => {
         const {
             id,
@@ -114,4 +114,4 @@ Component.defaultProps = {
     labelWeight: 'Medium',
     labelVariant: 'body1'
 };
-export const RadioGroup: FC<RadioGroupProps> & WithStyle = Object.assign(Component, { Style: SelectorGroup.Wrapper });
+export const RadioGroup: FCC<RadioGroupProps> & WithStyle = Object.assign(Component, { Style: SelectorGroup.Wrapper });

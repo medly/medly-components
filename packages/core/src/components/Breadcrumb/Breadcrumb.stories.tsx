@@ -1,7 +1,7 @@
 import { BreadcrumbTheme, defaultTheme } from '@medly-components/theme';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 
-export const ThemeInterface: FC<BreadcrumbTheme> = () => null;
+export const ThemeInterface: FCC<BreadcrumbTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.breadcrumb
 };

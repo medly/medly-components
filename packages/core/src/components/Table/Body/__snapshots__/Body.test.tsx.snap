@@ -3,8 +3,6 @@
 exports[`Row should render tbody properly with default props 1`] = `
 .c0 {
   display: block;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -13,9 +11,6 @@ exports[`Row should render tbody properly with default props 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -34,20 +29,11 @@ exports[`Row should render tbody properly with default props 1`] = `
 .c2 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 0.8rem 1.6rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -60,20 +46,11 @@ exports[`Row should render tbody properly with default props 1`] = `
 .c6 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 0.8rem 1.6rem;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
@@ -86,12 +63,7 @@ exports[`Row should render tbody properly with default props 1`] = `
 .c1 {
   display: grid;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   outline: none;
   cursor: inherit;
@@ -102,13 +74,13 @@ exports[`Row should render tbody properly with default props 1`] = `
 }
 
 .c1:nth-child(odd),
-.c1:nth-child(odd) > * {
+.c1:nth-child(odd)>* {
   background-color: #F7F8F9;
   color: #13181D;
 }
 
 .c1:nth-child(even),
-.c1:nth-child(even) > * {
+.c1:nth-child(even)>* {
   background-color: #ffffff;
   color: #13181D;
 }
@@ -116,12 +88,7 @@ exports[`Row should render tbody properly with default props 1`] = `
 .c7 {
   display: grid;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   outline: none;
   cursor: inherit;
@@ -132,13 +99,13 @@ exports[`Row should render tbody properly with default props 1`] = `
 }
 
 .c7:nth-child(odd),
-.c7:nth-child(odd) > * {
+.c7:nth-child(odd)>* {
   background-color: #D7E3F6;
   color: #13181D;
 }
 
 .c7:nth-child(even),
-.c7:nth-child(even) > * {
+.c7:nth-child(even)>* {
   background-color: #D7E3F6;
   color: #13181D;
 }
@@ -149,14 +116,19 @@ exports[`Row should render tbody properly with default props 1`] = `
   >
     <tr
       class="c1"
+      gridtemplatecolumns=" undefined minmax(0px, 0fr) undefined undefined undefined"
       style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
       tabindex="0"
     >
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Albus Percival Wulfric Brian Dumbledore"
         >
           Albus Percival Wulfric Brian Dumbledore
@@ -164,23 +136,34 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c5"
+        gridtemplatecolumns=" undefined undefined"
         style="grid-template-columns: undefined undefined;"
       >
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="6"
           >
             6
           </span>
         </div>
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
@@ -188,10 +171,15 @@ exports[`Row should render tbody properly with default props 1`] = `
         </div>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="12"
         >
           12
@@ -199,19 +187,28 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Yes"
         >
           Yes
         </span>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="5"
         >
           5
@@ -220,14 +217,19 @@ exports[`Row should render tbody properly with default props 1`] = `
     </tr>
     <tr
       class="c7"
+      gridtemplatecolumns=" undefined minmax(0px, 0fr) undefined undefined undefined"
       style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
       tabindex="1"
     >
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Mary May"
         >
           Mary May
@@ -235,23 +237,34 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c5"
+        gridtemplatecolumns=" undefined undefined"
         style="grid-template-columns: undefined undefined;"
       >
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
           </span>
         </div>
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="7"
           >
             7
@@ -259,10 +272,15 @@ exports[`Row should render tbody properly with default props 1`] = `
         </div>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="1"
         >
           1
@@ -270,19 +288,28 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Yes"
         >
           Yes
         </span>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="4"
         >
           4
@@ -291,14 +318,19 @@ exports[`Row should render tbody properly with default props 1`] = `
     </tr>
     <tr
       class="c1"
+      gridtemplatecolumns=" undefined minmax(0px, 0fr) undefined undefined undefined"
       style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
       tabindex="2"
     >
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Christine Lobowski"
         >
           Christine Lobowski
@@ -306,23 +338,34 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c5"
+        gridtemplatecolumns=" undefined undefined"
         style="grid-template-columns: undefined undefined;"
       >
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
           </span>
         </div>
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="7"
           >
             7
@@ -330,10 +373,15 @@ exports[`Row should render tbody properly with default props 1`] = `
         </div>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="42"
         >
           42
@@ -341,19 +389,28 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Yes"
         >
           Yes
         </span>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="4"
         >
           4
@@ -362,14 +419,19 @@ exports[`Row should render tbody properly with default props 1`] = `
     </tr>
     <tr
       class="c1"
+      gridtemplatecolumns=" undefined minmax(0px, 0fr) undefined undefined undefined"
       style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
       tabindex="3"
     >
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Brendon Philips"
         >
           Brendon Philips
@@ -377,23 +439,34 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c5"
+        gridtemplatecolumns=" undefined undefined"
         style="grid-template-columns: undefined undefined;"
       >
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="10"
           >
             10
           </span>
         </div>
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="2"
           >
             2
@@ -401,10 +474,15 @@ exports[`Row should render tbody properly with default props 1`] = `
         </div>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="125"
         >
           125
@@ -412,19 +490,28 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Yes"
         >
           Yes
         </span>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="4.5"
         >
           4.5
@@ -433,14 +520,19 @@ exports[`Row should render tbody properly with default props 1`] = `
     </tr>
     <tr
       class="c1"
+      gridtemplatecolumns=" undefined minmax(0px, 0fr) undefined undefined undefined"
       style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
       tabindex="4"
     >
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Margret Marmajuke"
         >
           Margret Marmajuke
@@ -448,23 +540,34 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c5"
+        gridtemplatecolumns=" undefined undefined"
         style="grid-template-columns: undefined undefined;"
       >
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="7"
           >
             7
           </span>
         </div>
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="5"
           >
             5
@@ -472,10 +575,15 @@ exports[`Row should render tbody properly with default props 1`] = `
         </div>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="16"
         >
           16
@@ -483,19 +591,28 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Yes"
         >
           Yes
         </span>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="4"
         >
           4
@@ -504,14 +621,19 @@ exports[`Row should render tbody properly with default props 1`] = `
     </tr>
     <tr
       class="c1"
+      gridtemplatecolumns=" undefined minmax(0px, 0fr) undefined undefined undefined"
       style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
       tabindex="5"
     >
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Van Ng"
         >
           Van Ng
@@ -519,23 +641,34 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c5"
+        gridtemplatecolumns=" undefined undefined"
         style="grid-template-columns: undefined undefined;"
       >
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="9"
           >
             9
           </span>
         </div>
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="2"
           >
             2
@@ -543,10 +676,15 @@ exports[`Row should render tbody properly with default props 1`] = `
         </div>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="37"
         >
           37
@@ -554,19 +692,28 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="No"
         >
           No
         </span>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="4"
         >
           4
@@ -575,14 +722,19 @@ exports[`Row should render tbody properly with default props 1`] = `
     </tr>
     <tr
       class="c1"
+      gridtemplatecolumns=" undefined minmax(0px, 0fr) undefined undefined undefined"
       style="grid-template-columns: undefined minmax(0px, 0fr) undefined undefined undefined;"
       tabindex="6"
     >
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="Duc Ng"
         >
           Duc Ng
@@ -590,23 +742,34 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c5"
+        gridtemplatecolumns=" undefined undefined"
         style="grid-template-columns: undefined undefined;"
       >
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="10"
           >
             10
           </span>
         </div>
         <div
+          align="right"
           class="c6"
+          tablesize="S"
         >
           <span
             class="c3 c4"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="3"
           >
             3
@@ -614,10 +777,15 @@ exports[`Row should render tbody properly with default props 1`] = `
         </div>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="37"
         >
           37
@@ -625,19 +793,28 @@ exports[`Row should render tbody properly with default props 1`] = `
       </td>
       <td
         class="c2"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="No"
         >
           No
         </span>
       </td>
       <td
+        align="right"
         class="c6"
+        tablesize="S"
       >
         <span
           class="c3 c4"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
           title="4"
         >
           4

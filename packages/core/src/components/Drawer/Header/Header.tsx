@@ -1,11 +1,11 @@
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import { useContext, memo, Children } from 'react';
+import type { FCC } from 'react';
+import { Children, memo, useContext } from 'react';
 import Text from '../../Text';
 import { DrawerContext } from '../Drawer.context';
 import { CloseIconStyled, HeaderStyled } from './Header.styled';
-import type { FC } from 'react';
 
-const Component: FC = memo(({ children, ...restProps }) => {
+const Component: FCC = memo(({ children, ...restProps }) => {
     const { id, scrollState, onClose } = useContext(DrawerContext);
     return (
         <HeaderStyled showShadow={!scrollState.scrolledToTop} {...restProps} id={`${id}-header`}>
@@ -18,4 +18,4 @@ const Component: FC = memo(({ children, ...restProps }) => {
 });
 
 Component.displayName = 'DrawerHeader';
-export const Header: FC & WithStyle = Object.assign(Component, { Style: HeaderStyled });
+export const Header: FCC & WithStyle = Object.assign(Component, { Style: HeaderStyled });

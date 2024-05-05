@@ -1,5 +1,5 @@
 import { useCombinedRefs, useKeyPress, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
-import type { FC, FocusEvent } from 'react';
+import type { FCC, FocusEvent } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
 import { filterOptions, getDefaultSelectedOptions, getInputValue } from './helpers';
@@ -9,7 +9,7 @@ import Options from './Options';
 import { MultiSelectProps } from './types';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-const Component: FC<MultiSelectProps> = memo(
+const Component: FCC<MultiSelectProps> = memo(
     forwardRef((props, ref) => {
         const {
                 id,
@@ -253,4 +253,4 @@ Component.defaultProps = {
     showDecorators: true,
     isCreatable: false
 };
-export const MultiSelect: FC<MultiSelectProps> & WithStyle = Object.assign(Component, { Style: Wrapper });
+export const MultiSelect: FCC<MultiSelectProps> & WithStyle = Object.assign(Component, { Style: Wrapper });

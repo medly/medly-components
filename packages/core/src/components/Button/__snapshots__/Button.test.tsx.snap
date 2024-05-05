@@ -6,9 +6,6 @@ exports[`Button component should render flat variant properly when hideUnderline
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -18,38 +15,16 @@ exports[`Button component should render flat variant properly when hideUnderline
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -72,11 +47,8 @@ exports[`Button component should render flat variant properly when hideUnderline
   bottom: 1.05rem;
   left: 50%;
   height: 0.15rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.15rem;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -88,10 +60,6 @@ exports[`Button component should render flat variant properly when hideUnderline
   background-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
 }
@@ -100,20 +68,12 @@ exports[`Button component should render flat variant properly when hideUnderline
   background-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
 }
 
 .c0:not(:disabled):active::after {
   background-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -128,29 +88,30 @@ exports[`Button component should render flat variant properly when hideUnderline
   background-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
 .c0:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="flat"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Some text
     </span>
@@ -164,9 +125,6 @@ exports[`Button component should render flat variant properly when hideUnderline
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -176,38 +134,16 @@ exports[`Button component should render flat variant properly when hideUnderline
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -230,11 +166,8 @@ exports[`Button component should render flat variant properly when hideUnderline
   bottom: 1.05rem;
   left: 50%;
   height: 0.15rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.15rem;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -246,10 +179,6 @@ exports[`Button component should render flat variant properly when hideUnderline
   background-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
 }
@@ -258,20 +187,12 @@ exports[`Button component should render flat variant properly when hideUnderline
   background-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
 }
 
 .c0:not(:disabled):active::after {
   background-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -286,29 +207,30 @@ exports[`Button component should render flat variant properly when hideUnderline
   background-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
 .c0:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="flat"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Some text
     </span>
@@ -322,9 +244,6 @@ exports[`Button component should render properly as outlined when theme has hove
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -334,38 +253,16 @@ exports[`Button component should render properly as outlined when theme has hove
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -391,7 +288,6 @@ exports[`Button component should render properly as outlined when theme has hove
   bottom: 0;
   left: 0;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.8rem;
   border-style: solid;
@@ -407,10 +303,6 @@ exports[`Button component should render properly as outlined when theme has hove
   border-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
   background-color: transparent;
@@ -419,10 +311,6 @@ exports[`Button component should render properly as outlined when theme has hove
 .c0:not(:disabled):not(:hover)::after {
   border-width: 0.1rem;
   border-color: #3872D2;
-}
-
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
 }
 
 .c0:not(:disabled):active {
@@ -435,10 +323,6 @@ exports[`Button component should render properly as outlined when theme has hove
   border-color: #275093;
 }
 
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
-}
-
 .c0:not(:disabled):not(:active):hover {
   color: #3061B3;
   background-color: transparent;
@@ -449,25 +333,26 @@ exports[`Button component should render properly as outlined when theme has hove
   border-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="outlined"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Outlined Button
     </span>
@@ -481,9 +366,6 @@ exports[`Button component should render properly as solid when theme has hover s
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -493,37 +375,15 @@ exports[`Button component should render properly as solid when theme has hover s
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -543,17 +403,9 @@ exports[`Button component should render properly as solid when theme has hover s
   background: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
-}
-
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c0:not(:disabled):active {
@@ -561,34 +413,31 @@ exports[`Button component should render properly as solid when theme has hover s
   background: #275093;
 }
 
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c0:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Solid Button
     </span>
@@ -602,9 +451,6 @@ exports[`Button component should render properly with "circle" edges 1`] = `
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -614,37 +460,15 @@ exports[`Button component should render properly with "circle" edges 1`] = `
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1.6rem;
   border-radius: 50%;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -664,26 +488,14 @@ exports[`Button component should render properly with "circle" edges 1`] = `
   background: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c0:not(:disabled):active {
   color: #ffffff;
   background: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -692,25 +504,26 @@ exports[`Button component should render properly with "circle" edges 1`] = `
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="circle"
     type="button"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Flat Button
     </span>
@@ -724,9 +537,6 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -736,37 +546,15 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 100rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -786,26 +574,14 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
   background: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c0:not(:disabled):active {
   color: #ffffff;
   background: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -814,25 +590,26 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="rounded"
     type="button"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Flat Button
     </span>
@@ -846,9 +623,6 @@ exports[`Button component should render properly with "square" edges 1`] = `
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -858,37 +632,15 @@ exports[`Button component should render properly with "square" edges 1`] = `
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -908,26 +660,14 @@ exports[`Button component should render properly with "square" edges 1`] = `
   background: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c0:not(:disabled):active {
   color: #ffffff;
   background: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -936,25 +676,26 @@ exports[`Button component should render properly with "square" edges 1`] = `
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Flat Button
     </span>
@@ -966,14 +707,12 @@ exports[`Button component should render properly with any icon at the beginning 
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -983,9 +722,6 @@ exports[`Button component should render properly with any icon at the beginning 
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -995,28 +731,14 @@ exports[`Button component should render properly with any icon at the beginning 
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1024,7 +746,6 @@ exports[`Button component should render properly with any icon at the beginning 
 .c0 .c3,
 .c0 .c1,
 .c0 .c1 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -1077,18 +798,20 @@ exports[`Button component should render properly with any icon at the beginning 
   fill: #ffffff;
 }
 
-.c0 .c1 + .c3 {
+.c0 .c1+.c3 {
   margin-left: 0.8rem;
 }
 
-.c0 .c3 + .c1 {
+.c0 .c3+.c1 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="solid"
   >
     <svg
       class="c1 c2"
@@ -1106,6 +829,9 @@ exports[`Button component should render properly with any icon at the beginning 
     </svg>
     <span
       class="c3 c4"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Solid Button
     </span>
@@ -1117,14 +843,12 @@ exports[`Button component should render properly with any icon at the end of the
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1134,9 +858,6 @@ exports[`Button component should render properly with any icon at the end of the
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -1146,28 +867,14 @@ exports[`Button component should render properly with any icon at the end of the
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1175,7 +882,6 @@ exports[`Button component should render properly with any icon at the end of the
 .c0 .c3,
 .c0 .c1,
 .c0 .c1 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -1228,18 +934,20 @@ exports[`Button component should render properly with any icon at the end of the
   fill: #ffffff;
 }
 
-.c0 .c1 + .c3 {
+.c0 .c1+.c3 {
   margin-left: 0.8rem;
 }
 
-.c0 .c3 + .c1 {
+.c0 .c3+.c1 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="solid"
   >
     <svg
       class="c1 c2"
@@ -1257,6 +965,9 @@ exports[`Button component should render properly with any icon at the end of the
     </svg>
     <span
       class="c3 c4"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Solid Button
     </span>
@@ -1270,9 +981,6 @@ exports[`Button component should render properly with outlined and theme doesn't
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -1282,38 +990,16 @@ exports[`Button component should render properly with outlined and theme doesn't
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -1339,7 +1025,6 @@ exports[`Button component should render properly with outlined and theme doesn't
   bottom: 0;
   left: 0;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.8rem;
   border-style: solid;
@@ -1355,10 +1040,6 @@ exports[`Button component should render properly with outlined and theme doesn't
   border-color: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #dfe4e9;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #D73A43;
   background-color: transparent;
@@ -1369,10 +1050,6 @@ exports[`Button component should render properly with outlined and theme doesn't
   border-color: #D73A43;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #D73A43;
-}
-
 .c0:not(:disabled):active {
   color: #97292F;
   background-color: transparent;
@@ -1381,10 +1058,6 @@ exports[`Button component should render properly with outlined and theme doesn't
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
   border-color: #97292F;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #97292F;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -1398,25 +1071,26 @@ exports[`Button component should render properly with outlined and theme doesn't
   border-color: #B73139;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #B73139;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="outlined"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Red Button
     </span>
@@ -1430,9 +1104,6 @@ exports[`Button component should wrap children into Text component when renderin
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -1442,37 +1113,15 @@ exports[`Button component should wrap children into Text component when renderin
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -1492,26 +1141,14 @@ exports[`Button component should wrap children into Text component when renderin
   background: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c0:not(:disabled):active {
   color: #ffffff;
   background: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -1520,25 +1157,26 @@ exports[`Button component should wrap children into Text component when renderin
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Some text
     </span>
@@ -1558,9 +1196,6 @@ exports[`Button component with "flat" variant should render properly 1`] = `
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -1570,38 +1205,16 @@ exports[`Button component with "flat" variant should render properly 1`] = `
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -1624,11 +1237,8 @@ exports[`Button component with "flat" variant should render properly 1`] = `
   bottom: 1.05rem;
   left: 50%;
   height: 0.15rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.15rem;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -1640,10 +1250,6 @@ exports[`Button component with "flat" variant should render properly 1`] = `
   background-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
 }
@@ -1652,20 +1258,12 @@ exports[`Button component with "flat" variant should render properly 1`] = `
   background-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
 }
 
 .c0:not(:disabled):active::after {
   background-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -1680,29 +1278,30 @@ exports[`Button component with "flat" variant should render properly 1`] = `
   background-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
 .c0:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="flat"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -1716,9 +1315,6 @@ exports[`Button component with "flat" variant should render properly when it is 
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -1728,38 +1324,16 @@ exports[`Button component with "flat" variant should render properly when it is 
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -1782,11 +1356,8 @@ exports[`Button component with "flat" variant should render properly when it is 
   bottom: 1.05rem;
   left: 50%;
   height: 0.15rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.15rem;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -1798,10 +1369,6 @@ exports[`Button component with "flat" variant should render properly when it is 
   background-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
 }
@@ -1810,20 +1377,12 @@ exports[`Button component with "flat" variant should render properly when it is 
   background-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
 }
 
 .c0:not(:disabled):active::after {
   background-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -1838,19 +1397,15 @@ exports[`Button component with "flat" variant should render properly when it is 
   background-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
 .c0:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
@@ -1858,10 +1413,15 @@ exports[`Button component with "flat" variant should render properly when it is 
   <button
     class="c0"
     disabled=""
+    edges="square"
     type="button"
+    variant="flat"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -1875,9 +1435,6 @@ exports[`Button component with "flat" variant should render properly with "L" si
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -1887,38 +1444,16 @@ exports[`Button component with "flat" variant should render properly with "L" si
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1.2rem 2.4rem 1.4rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -1941,11 +1476,8 @@ exports[`Button component with "flat" variant should render properly with "L" si
   bottom: 0.85rem;
   left: 50%;
   height: 0.15rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.15rem;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -1957,10 +1489,6 @@ exports[`Button component with "flat" variant should render properly with "L" si
   background-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
 }
@@ -1969,20 +1497,12 @@ exports[`Button component with "flat" variant should render properly with "L" si
   background-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
 }
 
 .c0:not(:disabled):active::after {
   background-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -1997,29 +1517,30 @@ exports[`Button component with "flat" variant should render properly with "L" si
   background-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
 .c0:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="flat"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -2033,9 +1554,6 @@ exports[`Button component with "flat" variant should render properly with "M" si
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -2045,38 +1563,16 @@ exports[`Button component with "flat" variant should render properly with "M" si
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -2099,11 +1595,8 @@ exports[`Button component with "flat" variant should render properly with "M" si
   bottom: 1.05rem;
   left: 50%;
   height: 0.15rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.15rem;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -2115,10 +1608,6 @@ exports[`Button component with "flat" variant should render properly with "M" si
   background-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
 }
@@ -2127,20 +1616,12 @@ exports[`Button component with "flat" variant should render properly with "M" si
   background-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
 }
 
 .c0:not(:disabled):active::after {
   background-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -2155,29 +1636,30 @@ exports[`Button component with "flat" variant should render properly with "M" si
   background-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
 .c0:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="flat"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -2191,9 +1673,6 @@ exports[`Button component with "flat" variant should render properly with "S" si
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2203,38 +1682,16 @@ exports[`Button component with "flat" variant should render properly with "S" si
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -2257,11 +1714,8 @@ exports[`Button component with "flat" variant should render properly with "S" si
   bottom: 0.85rem;
   left: 50%;
   height: 0.15rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.15rem;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -2273,10 +1727,6 @@ exports[`Button component with "flat" variant should render properly with "S" si
   background-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
 }
@@ -2285,20 +1735,12 @@ exports[`Button component with "flat" variant should render properly with "S" si
   background-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
 }
 
 .c0:not(:disabled):active::after {
   background-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -2313,29 +1755,30 @@ exports[`Button component with "flat" variant should render properly with "S" si
   background-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
 .c0:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="flat"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button2"
     >
       Button
     </span>
@@ -2349,9 +1792,6 @@ exports[`Button component with "flat" variant should render properly with "XS" s
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2361,38 +1801,16 @@ exports[`Button component with "flat" variant should render properly with "XS" s
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 0.4rem 1.6rem 0.6rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -2415,11 +1833,8 @@ exports[`Button component with "flat" variant should render properly with "XS" s
   bottom: 0.85rem;
   left: 50%;
   height: 0.15rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.15rem;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -2431,10 +1846,6 @@ exports[`Button component with "flat" variant should render properly with "XS" s
   background-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
 }
@@ -2443,20 +1854,12 @@ exports[`Button component with "flat" variant should render properly with "XS" s
   background-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
 }
 
 .c0:not(:disabled):active::after {
   background-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):active::after {
@@ -2471,29 +1874,30 @@ exports[`Button component with "flat" variant should render properly with "XS" s
   background-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
 .c0:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="flat"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button2"
     >
       Button
     </span>
@@ -2507,9 +1911,6 @@ exports[`Button component with "outlined" variant should render properly 1`] = `
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -2519,38 +1920,16 @@ exports[`Button component with "outlined" variant should render properly 1`] = `
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -2576,7 +1955,6 @@ exports[`Button component with "outlined" variant should render properly 1`] = `
   bottom: 0;
   left: 0;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.8rem;
   border-style: solid;
@@ -2592,10 +1970,6 @@ exports[`Button component with "outlined" variant should render properly 1`] = `
   border-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
   background-color: transparent;
@@ -2606,10 +1980,6 @@ exports[`Button component with "outlined" variant should render properly 1`] = `
   border-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
   background-color: #EBF1FA;
@@ -2618,10 +1988,6 @@ exports[`Button component with "outlined" variant should render properly 1`] = `
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
   border-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -2635,25 +2001,26 @@ exports[`Button component with "outlined" variant should render properly 1`] = `
   border-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="outlined"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -2667,9 +2034,6 @@ exports[`Button component with "outlined" variant should render properly when it
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -2679,38 +2043,16 @@ exports[`Button component with "outlined" variant should render properly when it
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -2736,7 +2078,6 @@ exports[`Button component with "outlined" variant should render properly when it
   bottom: 0;
   left: 0;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.8rem;
   border-style: solid;
@@ -2752,10 +2093,6 @@ exports[`Button component with "outlined" variant should render properly when it
   border-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
   background-color: transparent;
@@ -2766,10 +2103,6 @@ exports[`Button component with "outlined" variant should render properly when it
   border-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
   background-color: #EBF1FA;
@@ -2778,10 +2111,6 @@ exports[`Button component with "outlined" variant should render properly when it
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
   border-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -2795,15 +2124,11 @@ exports[`Button component with "outlined" variant should render properly when it
   border-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
@@ -2811,10 +2136,15 @@ exports[`Button component with "outlined" variant should render properly when it
   <button
     class="c0"
     disabled=""
+    edges="square"
     type="button"
+    variant="outlined"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -2828,9 +2158,6 @@ exports[`Button component with "outlined" variant should render properly with "L
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -2840,38 +2167,16 @@ exports[`Button component with "outlined" variant should render properly with "L
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1.2rem 2.4rem 1.4rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -2897,7 +2202,6 @@ exports[`Button component with "outlined" variant should render properly with "L
   bottom: 0;
   left: 0;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.8rem;
   border-style: solid;
@@ -2913,10 +2217,6 @@ exports[`Button component with "outlined" variant should render properly with "L
   border-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
   background-color: transparent;
@@ -2927,10 +2227,6 @@ exports[`Button component with "outlined" variant should render properly with "L
   border-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
   background-color: #EBF1FA;
@@ -2939,10 +2235,6 @@ exports[`Button component with "outlined" variant should render properly with "L
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
   border-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -2956,25 +2248,26 @@ exports[`Button component with "outlined" variant should render properly with "L
   border-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="outlined"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -2988,9 +2281,6 @@ exports[`Button component with "outlined" variant should render properly with "M
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -3000,38 +2290,16 @@ exports[`Button component with "outlined" variant should render properly with "M
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -3057,7 +2325,6 @@ exports[`Button component with "outlined" variant should render properly with "M
   bottom: 0;
   left: 0;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.8rem;
   border-style: solid;
@@ -3073,10 +2340,6 @@ exports[`Button component with "outlined" variant should render properly with "M
   border-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
   background-color: transparent;
@@ -3087,10 +2350,6 @@ exports[`Button component with "outlined" variant should render properly with "M
   border-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
   background-color: #EBF1FA;
@@ -3099,10 +2358,6 @@ exports[`Button component with "outlined" variant should render properly with "M
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
   border-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -3116,25 +2371,26 @@ exports[`Button component with "outlined" variant should render properly with "M
   border-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="outlined"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -3148,9 +2404,6 @@ exports[`Button component with "outlined" variant should render properly with "S
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -3160,38 +2413,16 @@ exports[`Button component with "outlined" variant should render properly with "S
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -3217,7 +2448,6 @@ exports[`Button component with "outlined" variant should render properly with "S
   bottom: 0;
   left: 0;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.8rem;
   border-style: solid;
@@ -3233,10 +2463,6 @@ exports[`Button component with "outlined" variant should render properly with "S
   border-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
   background-color: transparent;
@@ -3247,10 +2473,6 @@ exports[`Button component with "outlined" variant should render properly with "S
   border-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
   background-color: #EBF1FA;
@@ -3259,10 +2481,6 @@ exports[`Button component with "outlined" variant should render properly with "S
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
   border-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -3276,25 +2494,26 @@ exports[`Button component with "outlined" variant should render properly with "S
   border-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="outlined"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button2"
     >
       Button
     </span>
@@ -3308,9 +2527,6 @@ exports[`Button component with "outlined" variant should render properly with "X
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -3320,38 +2536,16 @@ exports[`Button component with "outlined" variant should render properly with "X
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 0.4rem 1.6rem 0.6rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -3377,7 +2571,6 @@ exports[`Button component with "outlined" variant should render properly with "X
   bottom: 0;
   left: 0;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.8rem;
   border-style: solid;
@@ -3393,10 +2586,6 @@ exports[`Button component with "outlined" variant should render properly with "X
   border-color: #98A7B7;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #3872D2;
   background-color: transparent;
@@ -3407,10 +2596,6 @@ exports[`Button component with "outlined" variant should render properly with "X
   border-color: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #3872D2;
-}
-
 .c0:not(:disabled):active {
   color: #275093;
   background-color: #EBF1FA;
@@ -3419,10 +2604,6 @@ exports[`Button component with "outlined" variant should render properly with "X
 .c0:not(:disabled):active::after {
   border-width: 0.2rem;
   border-color: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #275093;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -3436,25 +2617,26 @@ exports[`Button component with "outlined" variant should render properly with "X
   border-color: #3061B3;
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #3061B3;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="outlined"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button2"
     >
       Button
     </span>
@@ -3468,9 +2650,6 @@ exports[`Button component with "solid" variant should render properly 1`] = `
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -3480,37 +2659,15 @@ exports[`Button component with "solid" variant should render properly 1`] = `
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -3530,26 +2687,14 @@ exports[`Button component with "solid" variant should render properly 1`] = `
   background: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c0:not(:disabled):active {
   color: #ffffff;
   background: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -3558,25 +2703,26 @@ exports[`Button component with "solid" variant should render properly 1`] = `
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -3590,9 +2736,6 @@ exports[`Button component with "solid" variant should render properly when it is
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -3602,37 +2745,15 @@ exports[`Button component with "solid" variant should render properly when it is
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -3652,26 +2773,14 @@ exports[`Button component with "solid" variant should render properly when it is
   background: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c0:not(:disabled):active {
   color: #ffffff;
   background: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -3680,15 +2789,11 @@ exports[`Button component with "solid" variant should render properly when it is
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
@@ -3696,10 +2801,15 @@ exports[`Button component with "solid" variant should render properly when it is
   <button
     class="c0"
     disabled=""
+    edges="square"
     type="button"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -3713,9 +2823,6 @@ exports[`Button component with "solid" variant should render properly with "L" s
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -3725,37 +2832,15 @@ exports[`Button component with "solid" variant should render properly with "L" s
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1.2rem 2.4rem 1.4rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -3775,26 +2860,14 @@ exports[`Button component with "solid" variant should render properly with "L" s
   background: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c0:not(:disabled):active {
   color: #ffffff;
   background: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -3803,25 +2876,26 @@ exports[`Button component with "solid" variant should render properly with "L" s
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -3835,9 +2909,6 @@ exports[`Button component with "solid" variant should render properly with "M" s
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -3847,37 +2918,15 @@ exports[`Button component with "solid" variant should render properly with "M" s
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -3897,26 +2946,14 @@ exports[`Button component with "solid" variant should render properly with "M" s
   background: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c0:not(:disabled):active {
   color: #ffffff;
   background: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -3925,25 +2962,26 @@ exports[`Button component with "solid" variant should render properly with "M" s
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button1"
     >
       Button
     </span>
@@ -3957,9 +2995,6 @@ exports[`Button component with "solid" variant should render properly with "S" s
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -3969,37 +3004,15 @@ exports[`Button component with "solid" variant should render properly with "S" s
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -4019,26 +3032,14 @@ exports[`Button component with "solid" variant should render properly with "S" s
   background: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c0:not(:disabled):active {
   color: #ffffff;
   background: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -4047,25 +3048,26 @@ exports[`Button component with "solid" variant should render properly with "S" s
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button2"
     >
       Button
     </span>
@@ -4079,9 +3081,6 @@ exports[`Button component with "solid" variant should render properly with "XS" 
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -4091,37 +3090,15 @@ exports[`Button component with "solid" variant should render properly with "XS" 
 .c0 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 0.4rem 1.6rem 0.6rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:hover {
@@ -4141,26 +3118,14 @@ exports[`Button component with "solid" variant should render properly with "XS" 
   background: #dfe4e9;
 }
 
-.c0:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c0:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c0:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c0:not(:disabled):active {
   color: #ffffff;
   background: #275093;
-}
-
-.c0:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c0:not(:disabled):not(:active):hover {
@@ -4169,25 +3134,26 @@ exports[`Button component with "solid" variant should render properly with "XS" 
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c0:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .sc-1pf3x8a-0 + .c1 {
+.c0 .sc-1pf3x8a-0+.c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
+    edges="square"
     type="button"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="button2"
     >
       Button
     </span>

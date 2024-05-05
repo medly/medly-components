@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HiddenCss should hide the children at or above breakpoint 1`] = `
-@media (min-width:0px) {
+@media (min-width: 0px) {
   .c0 {
     display: none;
   }
@@ -17,7 +17,7 @@ exports[`HiddenCss should hide the children at or above breakpoint 1`] = `
 `;
 
 exports[`HiddenCss should hide the children at or down breakpoint 1`] = `
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
     display: none;
   }
@@ -33,7 +33,7 @@ exports[`HiddenCss should hide the children at or down breakpoint 1`] = `
 `;
 
 exports[`HiddenCss should hide the children at specific breakpoint 1`] = `
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .c0 {
     display: none;
   }
@@ -49,7 +49,7 @@ exports[`HiddenCss should hide the children at specific breakpoint 1`] = `
 `;
 
 exports[`HiddenCss should hide the children at the specified list of breakpoint 1`] = `
-@media (min-width:768px) and (max-width:1023px),(min-width:1280px) and (max-width:2400px) {
+@media (min-width: 768px) and (max-width: 1023px),(min-width: 1280px) and (max-width: 2400px) {
   .c0 {
     display: none;
   }
@@ -65,7 +65,7 @@ exports[`HiddenCss should hide the children at the specified list of breakpoint 
 `;
 
 exports[`HiddenCss should hide the children between start and end of breakpoint 1`] = `
-@media (min-width:0px) and (max-width:1279px) {
+@media (min-width: 0px) and (max-width: 1279px) {
   .c0 {
     display: none;
   }

@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { memo } from 'react';
-import Dietary346LineIconSvg from '../../assets/GSDD/Dietary_346_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
+import Dietary346LineIconSvg from '../../assets/GSDD/Dietary_346_Line.svg';
 
-const Component: FC<SvgIconProps> = memo(props => {
+const Component: FCC<SvgIconProps> = memo(props => {
     const { size, variant, iconColor, bgColor, hoverBgColor, hoverIconColor, withHoverEffect, margin, fillOpacity, ...restProps } = props;
     return (
         <SvgIcon
@@ -16,6 +16,6 @@ const Component: FC<SvgIconProps> = memo(props => {
 });
 Component.displayName = 'Dietary346LineIcon';
 
-const Dietary346LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
+const Dietary346LineIcon: FCC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
 export default Dietary346LineIcon;

@@ -9,21 +9,20 @@ exports[`CardTable Row should render properly with dark theme 1`] = `
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
-  -webkit-transition: box-shadow 100ms ease-out;
   transition: box-shadow 100ms ease-out;
   border: 0.1rem solid #ffffff;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
 }
 
 .c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
+  box-shadow: 0 0.4rem 0.8rem rgba(176, 188, 200, 0.6);
 }
 
-.c0:nth-child(odd) {
+.c0 :nth-child(odd) {
   background: #ffffff;
 }
 
-.c0:nth-child(even) {
+.c0 :nth-child(even) {
   background: #ffffff;
 }
 
@@ -32,6 +31,7 @@ exports[`CardTable Row should render properly with dark theme 1`] = `
     <tbody>
       <tr
         class="c0"
+        gridtemplatecolumns="1fr"
       >
         <td>
           Demo
@@ -51,21 +51,20 @@ exports[`CardTable Row should render properly with light theme 1`] = `
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
-  -webkit-transition: box-shadow 100ms ease-out;
   transition: box-shadow 100ms ease-out;
   border: 0.1rem solid #dfe4e9;
   box-shadow: none;
 }
 
 .c0:hover {
-  box-shadow: 0px 0.2rem 0.4rem rgba(176,188,200,0.6);
+  box-shadow: 0px 0.2rem 0.4rem rgba(176, 188, 200, 0.6);
 }
 
-.c0:nth-child(odd) {
+.c0 :nth-child(odd) {
   background: #F7F8F9;
 }
 
-.c0:nth-child(even) {
+.c0 :nth-child(even) {
   background: #ffffff;
 }
 
@@ -74,6 +73,7 @@ exports[`CardTable Row should render properly with light theme 1`] = `
     <tbody>
       <tr
         class="c0"
+        gridtemplatecolumns="1fr"
       >
         <td>
           Demo
@@ -93,21 +93,20 @@ exports[`CardTable Row should render with grey background if row is disabled 1`]
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
-  -webkit-transition: box-shadow 100ms ease-out;
   transition: box-shadow 100ms ease-out;
   border: 0.1rem solid #ffffff;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
 }
 
 .c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
+  box-shadow: 0 0.4rem 0.8rem rgba(176, 188, 200, 0.6);
 }
 
-.c0:nth-child(odd) {
+.c0 :nth-child(odd) {
   background: #eff2f4;
 }
 
-.c0:nth-child(even) {
+.c0 :nth-child(even) {
   background: #eff2f4;
 }
 
@@ -116,6 +115,7 @@ exports[`CardTable Row should render with grey background if row is disabled 1`]
     <tbody>
       <tr
         class="c0"
+        gridtemplatecolumns="1fr"
       >
         <td>
           Demo

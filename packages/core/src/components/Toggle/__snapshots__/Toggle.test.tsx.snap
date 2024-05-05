@@ -1,215 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Toggle component should render correctly with all the default props 1`] = `
+.c2 {
+  grid-area: field;
+  flex-wrap: wrap;
+  margin-left: 0px;
+}
+
 .c0 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  grid-template-columns: max-content minmax(max-content,25%);
+  grid-template-columns: max-content minmax(max-content, 25%);
   grid-template-areas: 'field label' 'description random';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
-.c0 .sc-12atfcu-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
+.c0 .c1 {
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c1 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
-  position: relative;
-  width: calc(24px * 1.75);
-  height: 24px;
-  border-radius: 1.5rem;
-  background-color: #dfe4e9;
-}
-
-.c1:focus-within {
-  box-shadow: 0 0 0 1pt #012040;
-}
-
-.c1 > * {
-  width: 100%;
-  height: 100%;
-  border-radius: 1.5rem;
-}
-
-.c4 {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c6 {
-  z-index: 1;
-  position: absolute;
-  height: calc(24px - 0.8rem);
-  width: calc(24px - 0.8rem);
-  margin: 0.4rem;
-  border-radius: 50%;
-  background: #ffffff;
-  box-shadow: 0.1rem 0.3rem 0.3rem 0.1rem rgba(0,0,0,0.2);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.c2 {
-  opacity: 0;
-  z-index: 2;
-  margin: 0;
-  position: absolute;
-  cursor: pointer;
-}
-
-.c2:focus {
-  outline: none;
-}
-
-.c2:disabled {
-  cursor: not-allowed;
-}
-
-.c2:disabled + .c3 {
-  background: #C7D0D8;
-}
-
-.c2:checked + .c3 {
-  background: #012040;
-}
-
-.c2:checked + .c3 .c5 {
-  -webkit-transform: translateX(calc(24px * 0.75) );
-  -ms-transform: translateX(calc(24px * 0.75) );
-  transform: translateX(calc(24px * 0.75) );
-}
-
-.c2:checked + .c3 .sc-1oxfop0-2 {
-  opacity: 0;
-  color: #ffffff;
-  -webkit-transform: translateX(calc(-24px * 0.75) );
-  -ms-transform: translateX(calc(-24px * 0.75) );
-  transform: translateX(calc(-24px * 0.75) );
-}
-
-.c2:checked + .c3 .sc-1oxfop0-3 {
-  opacity: 1;
-  position: absolute;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-}
-
-<div>
-  <div
-    class="c0"
-    id="medly-toggle-checkbox"
-  >
-    
-    <div
-      class="sc-12atfcu-0 c1"
-    >
-      <input
-        class="c2"
-        id="medly-toggle-checkbox"
-        name="gender"
-        type="checkbox"
-      />
-      <div
-        class="c3 c4"
-      >
-        <div
-          class="c5 c6"
-        />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Toggle component should render correctly with all the props given 1`] = `
-.c1 {
-  color: #13181D;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0px 0px 0.8rem;
-  cursor: not-allowed;
-}
-
-.c2 {
-  grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c0 {
-  margin: 0.8rem 0;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: max-content minmax(max-content,25%);
-  grid-template-areas: 'field label' 'description random';
-}
-
-.c0 .sc-12atfcu-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
 .c3 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
   position: relative;
-  width: calc(28px * 1.75);
-  height: 28px;
+  width: calc(24px * 1.75);
+  height: 24px;
   border-radius: 1.5rem;
   background-color: #dfe4e9;
 }
@@ -218,7 +35,7 @@ exports[`Toggle component should render correctly with all the props given 1`] =
   box-shadow: 0 0 0 1pt #012040;
 }
 
-.c3 > * {
+.c3>* {
   width: 100%;
   height: 100%;
   border-radius: 1.5rem;
@@ -228,26 +45,19 @@ exports[`Toggle component should render correctly with all the props given 1`] =
   position: relative;
   width: 100%;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
   align-items: flex-end;
 }
 
 .c8 {
   z-index: 1;
   position: absolute;
-  height: calc(28px - 0.8rem);
-  width: calc(28px - 0.8rem);
+  height: calc(24px - 0.8rem);
+  width: calc(24px - 0.8rem);
   margin: 0.4rem;
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0.1rem 0.3rem 0.3rem 0.1rem rgba(0,0,0,0.2);
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -267,55 +77,30 @@ exports[`Toggle component should render correctly with all the props given 1`] =
   cursor: not-allowed;
 }
 
-.c4:disabled + .c5 {
+.c4:disabled+.c5 {
   background: #C7D0D8;
 }
 
-.c4:checked + .c5 {
+.c4:checked+.c5 {
   background: #012040;
 }
 
-.c4:checked + .c5 .c7 {
-  -webkit-transform: translateX(calc(28px * 0.75) );
-  -ms-transform: translateX(calc(28px * 0.75) );
-  transform: translateX(calc(28px * 0.75) );
-}
-
-.c4:checked + .c5 .sc-1oxfop0-2 {
-  opacity: 0;
-  color: #ffffff;
-  -webkit-transform: translateX(calc(-28px * 0.75) );
-  -ms-transform: translateX(calc(-28px * 0.75) );
-  transform: translateX(calc(-28px * 0.75) );
-}
-
-.c4:checked + .c5 .sc-1oxfop0-3 {
-  opacity: 1;
-  position: absolute;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
+.c4:checked+.c5 .c7 {
+  transform: translateX(calc(24px * 0.75) );
 }
 
 <div>
   <div
     class="c0"
-    id="gender-toggle"
+    id="medly-toggle-checkbox"
+    labelposition="right"
   >
-    <label
-      class="c1 c2"
-      for="gender-toggle"
-    >
-      Female
-    </label>
     <div
-      class="sc-12atfcu-0 c3"
-      disabled=""
+      class="c1 c2 c3"
     >
       <input
         class="c4"
-        disabled=""
-        id="gender-toggle"
+        id="medly-toggle-checkbox"
         name="gender"
         type="checkbox"
       />
@@ -324,6 +109,145 @@ exports[`Toggle component should render correctly with all the props given 1`] =
       >
         <div
           class="c7 c8"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Toggle component should render correctly with all the props given 1`] = `
+.c1 {
+  color: #13181D;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0px 0px 0.8rem;
+  cursor: not-allowed;
+}
+
+.c4 {
+  grid-area: field;
+  flex-wrap: wrap;
+  margin-left: 0px;
+}
+
+.c2 {
+  grid-area: label;
+  align-self: center;
+  user-select: none;
+}
+
+.c0 {
+  margin: 0.8rem 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: max-content minmax(max-content, 25%);
+  grid-template-areas: 'field label' 'description random';
+}
+
+.c0 .c3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.c5 {
+  position: relative;
+  width: calc(28px * 1.75);
+  height: 28px;
+  border-radius: 1.5rem;
+  background-color: #dfe4e9;
+}
+
+.c5:focus-within {
+  box-shadow: 0 0 0 1pt #012040;
+}
+
+.c5>* {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+.c8 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.c10 {
+  z-index: 1;
+  position: absolute;
+  height: calc(28px - 0.8rem);
+  width: calc(28px - 0.8rem);
+  margin: 0.4rem;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0.1rem 0.3rem 0.3rem 0.1rem rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+
+.c6 {
+  opacity: 0;
+  z-index: 2;
+  margin: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6:disabled {
+  cursor: not-allowed;
+}
+
+.c6:disabled+.c7 {
+  background: #C7D0D8;
+}
+
+.c6:checked+.c7 {
+  background: #012040;
+}
+
+.c6:checked+.c7 .c9 {
+  transform: translateX(calc(28px * 0.75) );
+}
+
+<div>
+  <div
+    class="c0"
+    id="gender-toggle"
+    labelposition="right"
+  >
+    <label
+      class="c1 c2"
+      for="gender-toggle"
+      labelposition="right"
+    >
+      Female
+    </label>
+    <div
+      class="c3 c4 c5"
+      disabled=""
+    >
+      <input
+        class="c6"
+        disabled=""
+        id="gender-toggle"
+        name="gender"
+        type="checkbox"
+      />
+      <div
+        class="c7 c8"
+      >
+        <div
+          class="c9 c10"
         />
       </div>
     </div>

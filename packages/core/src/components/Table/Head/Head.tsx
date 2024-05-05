@@ -1,8 +1,8 @@
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { memo, useCallback, useContext, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
-import { TableComponentsCommonPropsContext, TableStateContext } from '../context';
 import { GroupCell, GroupCellTitle } from '../GroupCell';
+import { TableComponentsCommonPropsContext, TableStateContext } from '../context';
 import { changeSize, getGridTemplateColumns } from '../helpers';
 import { SortOrder, TableColumnConfig } from '../types';
 import { THead } from './Head.styled';
@@ -10,7 +10,7 @@ import HeadCell from './HeadCell';
 import HeadRow from './HeadRow';
 import { TableHeadProps } from './types';
 
-const Head: FC<TableHeadProps> = memo(props => {
+const Head: FCC<TableHeadProps> = memo(props => {
     const {
             columns,
             isLoading,

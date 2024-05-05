@@ -132,7 +132,7 @@ const normalStyle = css<StyledProps>`
     ${({ withRowSeparators }) => withRowSeparators && rowSeparatorStyle}
 `;
 
-export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
+export const Row = styled('tr').attrs<GridTemplateProps>(({ gridTemplateColumns }: GridTemplateProps) => ({
     style: {
         gridTemplateColumns
     }

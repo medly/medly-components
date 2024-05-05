@@ -11,7 +11,7 @@ const hoverStyle = ({ hoverBgColor, hoverIconColor }: SvgIconProps) => css`
     }
 `;
 
-const solidStyle = ({ size, disabled, bgColor, withHoverEffect }: SvgIconProps) => css`
+const solidStyle = ({ size, disabled, bgColor, withHoverEffect }: SvgIconProps) => css<SvgIconProps>`
     padding: ${({ theme }) => theme.icon.sizes[size!].padding};
     border-radius: ${({ theme }) => theme.icon.borderRadius};
     background-color: ${({ theme }) => (disabled ? theme.icon.colors.disabled.bgColor : bgColor || theme.icon.colors.default.bgColor)};
@@ -19,16 +19,7 @@ const solidStyle = ({ size, disabled, bgColor, withHoverEffect }: SvgIconProps) 
     ${!disabled && withHoverEffect && hoverStyle}
 `;
 
-export const SvgIconStyled = styled(InjectClassName).attrs(
-    ({
-        theme: {
-            icon: { colors, sizes }
-        }
-    }) => ({
-        colors,
-        sizes
-    })
-)<SvgIconProps>`
+export const SvgIconStyled = styled(InjectClassName)<SvgIconProps>`
     overflow: visible;
     font-size: ${({ theme, size }) => theme.icon.sizes[size!].iconSize};
     transition: all 100ms linear;
@@ -37,7 +28,8 @@ export const SvgIconStyled = styled(InjectClassName).attrs(
     * {
         fill-opacity: ${({ fillOpacity }) => fillOpacity};
         transition: all 100ms linear;
-        fill: ${({ disabled, colors, iconColor }) => (disabled ? colors.disabled.iconColor : iconColor || colors.default.iconColor)};
+        fill: ${({ disabled, theme, iconColor }) =>
+            disabled ? theme.icon.colors.disabled.iconColor : iconColor || theme.icon.colors.default.iconColor};
     }
 
     ${({ variant }) => variant === 'solid' && solidStyle}

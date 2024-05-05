@@ -6,9 +6,6 @@ exports[`Text Component should render span element by default 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -18,6 +15,8 @@ exports[`Text Component should render span element by default 1`] = `
 <div>
   <span
     class="c0"
+    textalign="initial"
+    textcolor="inherit"
   />
 </div>
 `;
@@ -28,9 +27,6 @@ exports[`Text Component should render strong html tag for textWeight ExtraStrong
   color: inherit;
   font-size: 1.4rem;
   font-weight: 800;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -40,6 +36,9 @@ exports[`Text Component should render strong html tag for textWeight ExtraStrong
 <div>
   <strong
     class="c0"
+    textalign="initial"
+    textcolor="inherit"
+    textweight="ExtraStrong"
   />
 </div>
 `;
@@ -50,9 +49,6 @@ exports[`Text Component should render strong html tag for textWeight Strong 1`] 
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -62,6 +58,9 @@ exports[`Text Component should render strong html tag for textWeight Strong 1`] 
 <div>
   <strong
     class="c0"
+    textalign="initial"
+    textcolor="inherit"
+    textweight="Strong"
   />
 </div>
 `;
@@ -72,16 +71,12 @@ exports[`Text Component should render with all the props 1`] = `
   color: pink;
   font-size: 1.4rem;
   font-weight: 300;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: block;
   margin: 0.8rem 0;
   text-transform: uppercase;
-  -webkit-text-decoration: line-through;
   text-decoration: line-through;
   display: inline-block;
 }
@@ -89,6 +84,10 @@ exports[`Text Component should render with all the props 1`] = `
 <div>
   <span
     class="c0"
+    textalign="initial"
+    textcolor="pink"
+    textvariant="body2"
+    textweight="Light"
   />
 </div>
 `;

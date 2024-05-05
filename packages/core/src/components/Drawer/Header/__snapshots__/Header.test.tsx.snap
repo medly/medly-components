@@ -4,7 +4,6 @@ exports[`Drawer Header Test should render component if its passed 1`] = `
 .c1 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -14,7 +13,6 @@ exports[`Drawer Header Test should render component if its passed 1`] = `
 
 .c1 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -88,9 +86,6 @@ exports[`Drawer Header Test should render text if string is passed 1`] = `
   color: inherit;
   font-size: 2.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: -0.04rem;
-  -moz-letter-spacing: -0.04rem;
-  -ms-letter-spacing: -0.04rem;
   letter-spacing: -0.04rem;
   line-height: 3.2rem;
   text-align: initial;
@@ -99,7 +94,6 @@ exports[`Drawer Header Test should render text if string is passed 1`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -109,7 +103,6 @@ exports[`Drawer Header Test should render text if string is passed 1`] = `
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -156,6 +149,9 @@ exports[`Drawer Header Test should render text if string is passed 1`] = `
   >
     <h3
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="h3"
     >
       Demo Header
     </h3>

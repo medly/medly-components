@@ -3,38 +3,38 @@ import { defaultTheme, SpacingTheme } from '@medly-components/theme';
 import styled, { css } from 'styled-components';
 import { ListProps } from './types';
 
-const horizontal = (spacings: SpacingTheme) => css`
+const horizontal = (spacing: SpacingTheme) => css`
     li {
-        margin: 0 ${spacings.S1};
+        margin: 0 ${spacing.S1};
         &:last-child {
-            margin-right: ${spacings.S2};
+            margin-right: ${spacing.S2};
         }
         &:first-child {
-            margin-left: ${spacings.S2};
+            margin-left: ${spacing.S2};
         }
     }
 `;
 
-const vertical = (spacings: SpacingTheme) => css`
+const vertical = (spacing: SpacingTheme) => css`
     li {
-        margin: ${spacings.S1} 0;
+        margin: ${spacing.S1} 0;
         &:last-child {
-            margin-bottom: ${spacings.S2};
+            margin-bottom: ${spacing.S2};
         }
         &:first-child {
-            margin-top: ${spacings.S2};
+            margin-top: ${spacing.S2};
         }
     }
 `;
 
-export const ListStyled = styled('ul').attrs(({ theme: { spacing: spacings } }) => ({ spacings }))<ListProps>`
+export const ListStyled = styled('ul')<ListProps>`
     padding: 0;
     margin: 0;
     display: flex;
     list-style: none;
     flex-direction: ${({ variant }) => (variant === 'horizontal' ? 'row' : 'column')};
-    ${({ spacings, variant }) => variant === 'horizontal' && horizontal(spacings)};
-    ${({ spacings, variant }) => variant === 'vertical' && vertical(spacings)};
+    ${({ theme, variant }) => variant === 'horizontal' && horizontal(theme.spacing)};
+    ${({ theme, variant }) => variant === 'vertical' && vertical(theme.spacing)};
 `;
 
 ListStyled.defaultProps = {

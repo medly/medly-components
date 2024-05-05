@@ -1,11 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, forwardRef, Children, cloneElement } from 'react';
+import type { FCC } from 'react';
+import { Children, cloneElement, forwardRef, memo } from 'react';
 import Step from './Step/Step';
 import { StepperStyled } from './Stepper.styled';
 import { StepperProps, StepperStaticProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<StepperProps> = memo(
+const Component: FCC<StepperProps> = memo(
     forwardRef((props, ref) => {
         const { size, activeStep, children, onStepClick, ...restProps } = props;
         return (
@@ -28,7 +28,7 @@ Component.defaultProps = {
     activeStep: 0
 };
 Component.displayName = 'Stepper';
-export const Stepper: FC<StepperProps> & WithStyle & StepperStaticProps = Object.assign(Component, {
+export const Stepper: FCC<StepperProps> & WithStyle & StepperStaticProps = Object.assign(Component, {
     Style: StepperStyled,
     Step
 });

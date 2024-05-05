@@ -4,14 +4,12 @@ exports[`Tab should render active state properly 1`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -21,9 +19,6 @@ exports[`Tab should render active state properly 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -42,9 +37,6 @@ exports[`Tab should render active state properly 1`] = `
 .c7 {
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -52,37 +44,19 @@ exports[`Tab should render active state properly 1`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #EBF1FA;
   background-color: #ffffff;
@@ -90,7 +64,6 @@ exports[`Tab should render active state properly 1`] = `
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -108,10 +81,6 @@ exports[`Tab should render active state properly 1`] = `
 }
 
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -139,10 +108,6 @@ exports[`Tab should render active state properly 1`] = `
 
 .c0 .c6 {
   color: #3872D2;
-}
-
-.c0 .sc-1kcg570-3 {
-  color: #607890;
 }
 
 .c0 .c8 {
@@ -188,33 +153,18 @@ exports[`Tab should render active state properly 1`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -225,10 +175,12 @@ exports[`Tab should render active state properly 1`] = `
     aria-selected="true"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="0"
+    tabsize="S"
     type="button"
+    variant="flat"
   >
     <svg
       class="c1 c2"
@@ -253,12 +205,16 @@ exports[`Tab should render active state properly 1`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="S"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="S"
         >
           2
         </span>
@@ -272,14 +228,12 @@ exports[`Tab should render disabled state properly 1`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -289,9 +243,6 @@ exports[`Tab should render disabled state properly 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -310,9 +261,6 @@ exports[`Tab should render disabled state properly 1`] = `
 .c7 {
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -320,44 +268,25 @@ exports[`Tab should render disabled state properly 1`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   background-color: transparent;
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -375,10 +304,6 @@ exports[`Tab should render disabled state properly 1`] = `
 }
 
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -408,10 +333,6 @@ exports[`Tab should render disabled state properly 1`] = `
   color: #607890;
 }
 
-.c0 .sc-1kcg570-3 {
-  color: #607890;
-}
-
 .c0 .c8 {
   background-color: #607890;
 }
@@ -432,10 +353,6 @@ exports[`Tab should render disabled state properly 1`] = `
 }
 
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -478,33 +395,18 @@ exports[`Tab should render disabled state properly 1`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -516,10 +418,12 @@ exports[`Tab should render disabled state properly 1`] = `
     class="c0"
     disabled=""
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="-1"
+    tabsize="S"
     type="button"
+    variant="flat"
   >
     <svg
       class="c1 c2"
@@ -544,12 +448,16 @@ exports[`Tab should render disabled state properly 1`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="S"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="S"
         >
           2
         </span>
@@ -563,14 +471,12 @@ exports[`Tab should render properly with GREY tab background 1`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -580,9 +486,6 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -601,9 +504,6 @@ exports[`Tab should render properly with GREY tab background 1`] = `
 .c7 {
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -611,44 +511,25 @@ exports[`Tab should render properly with GREY tab background 1`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   background-color: transparent;
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -666,10 +547,6 @@ exports[`Tab should render properly with GREY tab background 1`] = `
 }
 
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -703,10 +580,6 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   color: #607890;
 }
 
-.c0 .sc-1kcg570-3 {
-  color: #607890;
-}
-
 .c0 .c8 {
   background-color: #607890;
 }
@@ -727,10 +600,6 @@ exports[`Tab should render properly with GREY tab background 1`] = `
 }
 
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -773,33 +642,18 @@ exports[`Tab should render properly with GREY tab background 1`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -810,10 +664,12 @@ exports[`Tab should render properly with GREY tab background 1`] = `
     aria-selected="false"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="GREY"
     tabindex="-1"
+    tabsize="S"
     type="button"
+    variant="flat"
   >
     <svg
       class="c1 c2"
@@ -838,12 +694,16 @@ exports[`Tab should render properly with GREY tab background 1`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="S"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="S"
         >
           2
         </span>
@@ -857,7 +717,6 @@ exports[`Tab should render properly with L tab size 1`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
   padding: 0.8rem;
@@ -867,7 +726,6 @@ exports[`Tab should render properly with L tab size 1`] = `
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -877,9 +735,6 @@ exports[`Tab should render properly with L tab size 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -898,9 +753,6 @@ exports[`Tab should render properly with L tab size 1`] = `
 .c7 {
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -913,44 +765,25 @@ exports[`Tab should render properly with L tab size 1`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   background-color: transparent;
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -1071,33 +904,18 @@ exports[`Tab should render properly with L tab size 1`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -1108,10 +926,12 @@ exports[`Tab should render properly with L tab size 1`] = `
     aria-selected="false"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="-1"
+    tabsize="L"
     type="button"
+    variant="flat"
   >
     <svg
       class="c1 c2"
@@ -1136,12 +956,16 @@ exports[`Tab should render properly with L tab size 1`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="L"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="L"
         >
           2
         </span>
@@ -1149,6 +973,9 @@ exports[`Tab should render properly with L tab size 1`] = `
       <span
         class="c5 c10 c11"
         id="dummy-helperText"
+        textalign="initial"
+        textcolor="inherit"
+        textvariant="body2"
       >
         Details for tab1
       </span>
@@ -1161,7 +988,6 @@ exports[`Tab should render properly with L tab size 2`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
   padding: 0.8rem;
@@ -1171,7 +997,6 @@ exports[`Tab should render properly with L tab size 2`] = `
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1181,9 +1006,6 @@ exports[`Tab should render properly with L tab size 2`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1202,9 +1024,6 @@ exports[`Tab should render properly with L tab size 2`] = `
 .c7 {
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -1217,44 +1036,25 @@ exports[`Tab should render properly with L tab size 2`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   background-color: transparent;
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -1375,33 +1175,18 @@ exports[`Tab should render properly with L tab size 2`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -1412,10 +1197,12 @@ exports[`Tab should render properly with L tab size 2`] = `
     aria-selected="false"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="-1"
+    tabsize="L"
     type="button"
+    variant="flat"
   >
     <svg
       class="c1 c2"
@@ -1440,12 +1227,16 @@ exports[`Tab should render properly with L tab size 2`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="L"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="L"
         >
           2
         </span>
@@ -1453,6 +1244,9 @@ exports[`Tab should render properly with L tab size 2`] = `
       <span
         class="c5 c10 c11"
         id="dummy-helperText"
+        textalign="initial"
+        textcolor="inherit"
+        textvariant="body2"
       >
         Details for tab1
       </span>
@@ -1465,7 +1259,6 @@ exports[`Tab should render properly with M tab size 1`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
   padding: 0.8rem;
@@ -1475,7 +1268,6 @@ exports[`Tab should render properly with M tab size 1`] = `
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1485,9 +1277,6 @@ exports[`Tab should render properly with M tab size 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1506,9 +1295,6 @@ exports[`Tab should render properly with M tab size 1`] = `
 .c7 {
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -1516,44 +1302,25 @@ exports[`Tab should render properly with M tab size 1`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   background-color: transparent;
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -1571,10 +1338,6 @@ exports[`Tab should render properly with M tab size 1`] = `
 }
 
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -1604,10 +1367,6 @@ exports[`Tab should render properly with M tab size 1`] = `
   color: #607890;
 }
 
-.c0 .sc-1kcg570-3 {
-  color: #607890;
-}
-
 .c0 .c8 {
   background-color: #607890;
 }
@@ -1628,10 +1387,6 @@ exports[`Tab should render properly with M tab size 1`] = `
 }
 
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -1674,33 +1429,18 @@ exports[`Tab should render properly with M tab size 1`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -1711,10 +1451,12 @@ exports[`Tab should render properly with M tab size 1`] = `
     aria-selected="false"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="-1"
+    tabsize="M"
     type="button"
+    variant="flat"
   >
     <svg
       class="c1 c2"
@@ -1739,12 +1481,16 @@ exports[`Tab should render properly with M tab size 1`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="M"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="M"
         >
           2
         </span>
@@ -1758,7 +1504,6 @@ exports[`Tab should render properly with M tab size 2`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
   padding: 0.8rem;
@@ -1768,7 +1513,6 @@ exports[`Tab should render properly with M tab size 2`] = `
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1778,9 +1522,6 @@ exports[`Tab should render properly with M tab size 2`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1799,9 +1540,6 @@ exports[`Tab should render properly with M tab size 2`] = `
 .c7 {
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -1809,44 +1547,25 @@ exports[`Tab should render properly with M tab size 2`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   background-color: transparent;
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -1864,10 +1583,6 @@ exports[`Tab should render properly with M tab size 2`] = `
 }
 
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -1897,10 +1612,6 @@ exports[`Tab should render properly with M tab size 2`] = `
   color: #607890;
 }
 
-.c0 .sc-1kcg570-3 {
-  color: #607890;
-}
-
 .c0 .c8 {
   background-color: #607890;
 }
@@ -1921,10 +1632,6 @@ exports[`Tab should render properly with M tab size 2`] = `
 }
 
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -1967,33 +1674,18 @@ exports[`Tab should render properly with M tab size 2`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -2004,10 +1696,12 @@ exports[`Tab should render properly with M tab size 2`] = `
     aria-selected="false"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="-1"
+    tabsize="M"
     type="button"
+    variant="flat"
   >
     <svg
       class="c1 c2"
@@ -2032,12 +1726,16 @@ exports[`Tab should render properly with M tab size 2`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="M"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="M"
         >
           2
         </span>
@@ -2051,14 +1749,12 @@ exports[`Tab should render properly with S tab size 1`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2068,9 +1764,6 @@ exports[`Tab should render properly with S tab size 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2089,9 +1782,6 @@ exports[`Tab should render properly with S tab size 1`] = `
 .c7 {
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -2099,44 +1789,25 @@ exports[`Tab should render properly with S tab size 1`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   background-color: transparent;
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -2154,10 +1825,6 @@ exports[`Tab should render properly with S tab size 1`] = `
 }
 
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -2187,10 +1854,6 @@ exports[`Tab should render properly with S tab size 1`] = `
   color: #607890;
 }
 
-.c0 .sc-1kcg570-3 {
-  color: #607890;
-}
-
 .c0 .c8 {
   background-color: #607890;
 }
@@ -2211,10 +1874,6 @@ exports[`Tab should render properly with S tab size 1`] = `
 }
 
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -2257,33 +1916,18 @@ exports[`Tab should render properly with S tab size 1`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -2294,10 +1938,12 @@ exports[`Tab should render properly with S tab size 1`] = `
     aria-selected="false"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="-1"
+    tabsize="S"
     type="button"
+    variant="flat"
   >
     <svg
       class="c1 c2"
@@ -2322,12 +1968,16 @@ exports[`Tab should render properly with S tab size 1`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="S"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="S"
         >
           2
         </span>
@@ -2341,14 +1991,12 @@ exports[`Tab should render properly with S tab size 2`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2358,9 +2006,6 @@ exports[`Tab should render properly with S tab size 2`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2379,9 +2024,6 @@ exports[`Tab should render properly with S tab size 2`] = `
 .c7 {
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -2389,44 +2031,25 @@ exports[`Tab should render properly with S tab size 2`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   background-color: transparent;
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -2444,10 +2067,6 @@ exports[`Tab should render properly with S tab size 2`] = `
 }
 
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -2477,10 +2096,6 @@ exports[`Tab should render properly with S tab size 2`] = `
   color: #607890;
 }
 
-.c0 .sc-1kcg570-3 {
-  color: #607890;
-}
-
 .c0 .c8 {
   background-color: #607890;
 }
@@ -2501,10 +2116,6 @@ exports[`Tab should render properly with S tab size 2`] = `
 }
 
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -2547,33 +2158,18 @@ exports[`Tab should render properly with S tab size 2`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -2584,10 +2180,12 @@ exports[`Tab should render properly with S tab size 2`] = `
     aria-selected="false"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="-1"
+    tabsize="S"
     type="button"
+    variant="flat"
   >
     <svg
       class="c1 c2"
@@ -2612,12 +2210,16 @@ exports[`Tab should render properly with S tab size 2`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="S"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="S"
         >
           2
         </span>
@@ -2631,14 +2233,12 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2648,9 +2248,6 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2669,9 +2266,6 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
 .c7 {
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -2679,44 +2273,25 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   background-color: transparent;
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -2734,10 +2309,6 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
 }
 
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -2767,10 +2338,6 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   color: #607890;
 }
 
-.c0 .sc-1kcg570-3 {
-  color: #607890;
-}
-
 .c0 .c8 {
   background-color: #607890;
 }
@@ -2791,10 +2358,6 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
 }
 
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -2837,33 +2400,18 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -2874,10 +2422,12 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
     aria-selected="false"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="-1"
+    tabsize="S"
     type="button"
+    variant="flat"
   >
     <svg
       class="c1 c2"
@@ -2902,12 +2452,16 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="S"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="S"
         >
           2
         </span>
@@ -2921,14 +2475,12 @@ exports[`Tab should render properly with flat tab variant 1`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2938,9 +2490,6 @@ exports[`Tab should render properly with flat tab variant 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2959,9 +2508,6 @@ exports[`Tab should render properly with flat tab variant 1`] = `
 .c7 {
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -2969,44 +2515,25 @@ exports[`Tab should render properly with flat tab variant 1`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   background-color: transparent;
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -3024,10 +2551,6 @@ exports[`Tab should render properly with flat tab variant 1`] = `
 }
 
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -3057,10 +2580,6 @@ exports[`Tab should render properly with flat tab variant 1`] = `
   color: #607890;
 }
 
-.c0 .sc-1kcg570-3 {
-  color: #607890;
-}
-
 .c0 .c8 {
   background-color: #607890;
 }
@@ -3081,10 +2600,6 @@ exports[`Tab should render properly with flat tab variant 1`] = `
 }
 
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -3127,33 +2642,18 @@ exports[`Tab should render properly with flat tab variant 1`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -3164,10 +2664,12 @@ exports[`Tab should render properly with flat tab variant 1`] = `
     aria-selected="false"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="-1"
+    tabsize="S"
     type="button"
+    variant="flat"
   >
     <svg
       class="c1 c2"
@@ -3192,12 +2694,16 @@ exports[`Tab should render properly with flat tab variant 1`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="S"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="S"
         >
           2
         </span>
@@ -3211,14 +2717,12 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -3228,9 +2732,6 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -3249,9 +2750,6 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
 .c7 {
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -3259,43 +2757,24 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  -webkit-flex: initial;
-  -ms-flex: initial;
   flex: initial;
   border-color: #C7D0D8;
   border-width: 0.1rem 0.1rem 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -3313,10 +2792,6 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
 }
 
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-1kcg570-3 {
   color: #b0bcc8;
 }
 
@@ -3346,10 +2821,6 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
   color: #607890;
 }
 
-.c0 .sc-1kcg570-3 {
-  color: #607890;
-}
-
 .c0 .c8 {
   background-color: #607890;
 }
@@ -3370,10 +2841,6 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
 }
 
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-1kcg570-3 {
   color: #435465;
 }
 
@@ -3412,33 +2879,18 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c0 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -3449,10 +2901,12 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
     aria-selected="false"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="-1"
+    tabsize="S"
     type="button"
+    variant="outlined"
   >
     <svg
       class="c1 c2"
@@ -3477,12 +2931,16 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="S"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="S"
         >
           2
         </span>
@@ -3496,14 +2954,12 @@ exports[`Tab should render properly with solid tab variant 1`] = `
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -3513,9 +2969,6 @@ exports[`Tab should render properly with solid tab variant 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -3534,9 +2987,6 @@ exports[`Tab should render properly with solid tab variant 1`] = `
 .c7 {
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -3544,46 +2994,21 @@ exports[`Tab should render properly with solid tab variant 1`] = `
 
 .c0 {
   padding: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
   border-width: 0 0 0.1rem 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: calc(NaN% - calc(NaN * .4rem / undefined));
   border: none;
@@ -3593,7 +3018,6 @@ exports[`Tab should render properly with solid tab variant 1`] = `
 }
 
 .c0 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -3613,11 +3037,6 @@ exports[`Tab should render properly with solid tab variant 1`] = `
 .c0:disabled .c6 {
   color: #b0bcc8;
   line-height: 1.6rem;
-}
-
-.c0:disabled .sc-1kcg570-3 {
-  color: #b0bcc8;
-  text-align: center;
 }
 
 .c0:disabled .c8 {
@@ -3646,11 +3065,6 @@ exports[`Tab should render properly with solid tab variant 1`] = `
   color: #607890;
 }
 
-.c0 .sc-1kcg570-3 {
-  color: #607890;
-  text-align: center;
-}
-
 .c0 .c8 {
   background-color: #607890;
 }
@@ -3674,11 +3088,6 @@ exports[`Tab should render properly with solid tab variant 1`] = `
   color: #435465;
 }
 
-.c0:not(:disabled):hover .sc-1kcg570-3 {
-  color: #435465;
-  text-align: center;
-}
-
 .c0:not(:disabled):hover .c8 {
   background-color: #435465;
 }
@@ -3694,26 +3103,13 @@ exports[`Tab should render properly with solid tab variant 1`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -3723,10 +3119,12 @@ exports[`Tab should render properly with solid tab variant 1`] = `
     aria-selected="false"
     class="c0"
     id="dummy"
-    label="[object Object]"
     role="tab"
+    tabbackground="WHITE"
     tabindex="-1"
+    tabsize="S"
     type="button"
+    variant="solid"
   >
     <svg
       class="c1 c2"
@@ -3751,12 +3149,16 @@ exports[`Tab should render properly with solid tab variant 1`] = `
         <span
           class="c5 c6 c7"
           id="dummy-label"
+          tabsize="S"
+          textalign="initial"
+          textcolor="inherit"
         >
           Add
         </span>
         <span
           class="c8 c9"
           id="dummy-label"
+          tabsize="S"
         >
           2
         </span>

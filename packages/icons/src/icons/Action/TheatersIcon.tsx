@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { memo } from 'react';
-import TheatersIconSvg from '../../assets/Action/theaters_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
+import TheatersIconSvg from '../../assets/Action/theaters_24px_rounded.svg';
 
-const Component: FC<SvgIconProps> = memo(props => {
+const Component: FCC<SvgIconProps> = memo(props => {
     const { size, variant, iconColor, bgColor, hoverBgColor, hoverIconColor, withHoverEffect, margin, fillOpacity, ...restProps } = props;
     return (
         <SvgIcon
@@ -16,6 +16,6 @@ const Component: FC<SvgIconProps> = memo(props => {
 });
 Component.displayName = 'TheatersIcon';
 
-const TheatersIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
+const TheatersIcon: FCC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
 export default TheatersIcon;

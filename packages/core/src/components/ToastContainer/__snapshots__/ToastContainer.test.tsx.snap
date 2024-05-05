@@ -4,14 +4,12 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -19,7 +17,6 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -29,7 +26,6 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -39,9 +35,6 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -53,9 +46,6 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -63,17 +53,9 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -82,9 +64,6 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -98,15 +77,8 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -114,24 +86,13 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -145,24 +106,17 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
   z-index: 1001;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -181,12 +135,16 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 <div>
   <div
     class="c0"
+    position="bottom"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -207,11 +165,16 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>
@@ -244,14 +207,12 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -259,7 +220,6 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -269,7 +229,6 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -279,9 +238,6 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -293,9 +249,6 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -303,17 +256,9 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -322,9 +267,6 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -338,15 +280,8 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -354,24 +289,13 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -385,12 +309,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
@@ -399,7 +318,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   right: 0;
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -418,12 +337,16 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 <div>
   <div
     class="c0"
+    position="bottom-end"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -444,11 +367,16 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>
@@ -481,14 +409,12 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -496,7 +422,6 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -506,7 +431,6 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -516,9 +440,6 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -530,9 +451,6 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -540,17 +458,9 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -559,9 +469,6 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -575,15 +482,8 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -591,24 +491,13 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -622,12 +511,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
@@ -636,7 +520,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   left: 0;
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -655,12 +539,16 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 <div>
   <div
     class="c0"
+    position="bottom-start"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -681,11 +569,16 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>
@@ -718,14 +611,12 @@ exports[`ToastContainer should render properly with position left 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -733,7 +624,6 @@ exports[`ToastContainer should render properly with position left 1`] = `
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -743,7 +633,6 @@ exports[`ToastContainer should render properly with position left 1`] = `
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -753,9 +642,6 @@ exports[`ToastContainer should render properly with position left 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -767,9 +653,6 @@ exports[`ToastContainer should render properly with position left 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -777,17 +660,9 @@ exports[`ToastContainer should render properly with position left 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -796,9 +671,6 @@ exports[`ToastContainer should render properly with position left 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -812,15 +684,8 @@ exports[`ToastContainer should render properly with position left 1`] = `
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -828,24 +693,13 @@ exports[`ToastContainer should render properly with position left 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -859,24 +713,17 @@ exports[`ToastContainer should render properly with position left 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
   z-index: 1001;
   left: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -895,12 +742,16 @@ exports[`ToastContainer should render properly with position left 1`] = `
 <div>
   <div
     class="c0"
+    position="left"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -921,11 +772,16 @@ exports[`ToastContainer should render properly with position left 1`] = `
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>
@@ -958,14 +814,12 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -973,7 +827,6 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -983,7 +836,6 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -993,9 +845,6 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1007,9 +856,6 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1017,17 +863,9 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -1036,9 +874,6 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -1052,15 +887,8 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -1068,24 +896,13 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -1099,19 +916,14 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
   z-index: 1001;
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -1130,12 +942,16 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 <div>
   <div
     class="c0"
+    position="left-end"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -1156,11 +972,16 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>
@@ -1193,14 +1014,12 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1208,7 +1027,6 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -1218,7 +1036,6 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1228,9 +1045,6 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1242,9 +1056,6 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1252,17 +1063,9 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -1271,9 +1074,6 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -1287,15 +1087,8 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -1303,24 +1096,13 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -1334,19 +1116,14 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
   z-index: 1001;
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -1365,12 +1142,16 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 <div>
   <div
     class="c0"
+    position="left-start"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -1391,11 +1172,16 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>
@@ -1428,14 +1214,12 @@ exports[`ToastContainer should render properly with position right 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1443,7 +1227,6 @@ exports[`ToastContainer should render properly with position right 1`] = `
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -1453,7 +1236,6 @@ exports[`ToastContainer should render properly with position right 1`] = `
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1463,9 +1245,6 @@ exports[`ToastContainer should render properly with position right 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1477,9 +1256,6 @@ exports[`ToastContainer should render properly with position right 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1487,17 +1263,9 @@ exports[`ToastContainer should render properly with position right 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -1506,9 +1274,6 @@ exports[`ToastContainer should render properly with position right 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -1522,15 +1287,8 @@ exports[`ToastContainer should render properly with position right 1`] = `
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -1538,24 +1296,13 @@ exports[`ToastContainer should render properly with position right 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -1569,24 +1316,17 @@ exports[`ToastContainer should render properly with position right 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
   z-index: 1001;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -1605,12 +1345,16 @@ exports[`ToastContainer should render properly with position right 1`] = `
 <div>
   <div
     class="c0"
+    position="right"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -1631,11 +1375,16 @@ exports[`ToastContainer should render properly with position right 1`] = `
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>
@@ -1668,14 +1417,12 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1683,7 +1430,6 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -1693,7 +1439,6 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1703,9 +1448,6 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1717,9 +1459,6 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1727,17 +1466,9 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -1746,9 +1477,6 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -1762,15 +1490,8 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -1778,24 +1499,13 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -1809,19 +1519,14 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
   z-index: 1001;
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -1840,12 +1545,16 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 <div>
   <div
     class="c0"
+    position="right-end"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -1866,11 +1575,16 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>
@@ -1903,14 +1617,12 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1918,7 +1630,6 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -1928,7 +1639,6 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1938,9 +1648,6 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1952,9 +1659,6 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1962,17 +1666,9 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -1981,9 +1677,6 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -1997,15 +1690,8 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -2013,24 +1699,13 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -2044,19 +1719,14 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
   z-index: 1001;
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -2075,12 +1745,16 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 <div>
   <div
     class="c0"
+    position="right-start"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -2101,11 +1775,16 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>
@@ -2138,14 +1817,12 @@ exports[`ToastContainer should render properly with position top 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2153,7 +1830,6 @@ exports[`ToastContainer should render properly with position top 1`] = `
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -2163,7 +1839,6 @@ exports[`ToastContainer should render properly with position top 1`] = `
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2173,9 +1848,6 @@ exports[`ToastContainer should render properly with position top 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2187,9 +1859,6 @@ exports[`ToastContainer should render properly with position top 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2197,17 +1866,9 @@ exports[`ToastContainer should render properly with position top 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -2216,9 +1877,6 @@ exports[`ToastContainer should render properly with position top 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -2232,15 +1890,8 @@ exports[`ToastContainer should render properly with position top 1`] = `
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -2248,24 +1899,13 @@ exports[`ToastContainer should render properly with position top 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -2279,24 +1919,17 @@ exports[`ToastContainer should render properly with position top 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
   z-index: 1001;
   top: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -2315,12 +1948,16 @@ exports[`ToastContainer should render properly with position top 1`] = `
 <div>
   <div
     class="c0"
+    position="top"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -2341,11 +1978,16 @@ exports[`ToastContainer should render properly with position top 1`] = `
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>
@@ -2378,14 +2020,12 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2393,7 +2033,6 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -2403,7 +2042,6 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2413,9 +2051,6 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2427,9 +2062,6 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2437,17 +2069,9 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -2456,9 +2080,6 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -2472,15 +2093,8 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -2488,24 +2102,13 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -2519,12 +2122,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
@@ -2533,7 +2131,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   right: 0;
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -2552,12 +2150,16 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 <div>
   <div
     class="c0"
+    position="top-end"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -2578,11 +2180,16 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>
@@ -2615,14 +2222,12 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2630,7 +2235,6 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 .c9 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -2640,7 +2244,6 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2650,9 +2253,6 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2664,9 +2264,6 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2674,17 +2271,9 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -2693,9 +2282,6 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -2709,15 +2295,8 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 }
 
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -2725,24 +2304,13 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c8 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c8 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -2756,12 +2324,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem;
   position: fixed;
@@ -2770,7 +2333,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   left: 0;
 }
 
-.c0 > * + * {
+.c0>*+* {
   margin-top: 2rem;
 }
 
@@ -2789,12 +2352,16 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 <div>
   <div
     class="c0"
+    position="top-start"
   >
     <div
       class="c1"
+      timer="2000"
+      variant="success"
     >
       <div
         class="c2"
+        variant="success"
       >
         <svg
           class="c3 c4"
@@ -2815,11 +2382,16 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
       >
         <span
           class="c6"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Medium"
         >
           Heading 1
         </span>
         <span
           class="c7"
+          textalign="initial"
+          textcolor="inherit"
         >
           Info message
         </span>

@@ -1,7 +1,7 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import { endOfDay } from 'date-fns';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { memo, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { PopoverContext } from '../Popover/Popover.context';
 import Text from '../Text';
@@ -11,7 +11,7 @@ import WeekDays from './WeekDays';
 import { getCalendarDates, getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear, isSameDay, isSameMonth } from './helper';
 import { CalendarProps } from './types';
 
-const Component: FC<CalendarProps> = memo(
+const Component: FCC<CalendarProps> = memo(
     ({ date, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, defaultMonth = 0, defaultYear, ...restProps }) => {
         const today = new Date(),
             defaultDate = defaultYear ? new Date(defaultYear, defaultMonth, 1) : null,
@@ -103,6 +103,6 @@ const Component: FC<CalendarProps> = memo(
 );
 Component.displayName = 'Calendar';
 Component.defaultProps = { date: null, minSelectableDate: new Date(1901, 0, 1), maxSelectableDate: new Date(2100, 11, 1) };
-export const Calendar: FC<CalendarProps> & WithStyle = Object.assign(Component, {
+export const Calendar: FCC<CalendarProps> & WithStyle = Object.assign(Component, {
     Style: Styled.Calendar
 });

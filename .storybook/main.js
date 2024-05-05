@@ -58,13 +58,6 @@ module.exports = {
                 }
             }
         });
-        config.module.rules.push({
-            test: /\.tsx$/,
-            include: [packages],
-            exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /dist/, /icons/],
-            loader: 'stylelint-custom-processor-loader'
-        });
-
         const fileLoaderRule = config.module.rules.find(rule => rule.test.test('.svg'));
         if (fileLoaderRule) fileLoaderRule.exclude = pathToInlineSvg;
 

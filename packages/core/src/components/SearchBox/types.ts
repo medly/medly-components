@@ -43,4 +43,7 @@ export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'
 
 export type StyledSearchBoxProps = SearchBoxProps & {
     size: Size;
+    areOptionsVisible?: boolean;
+    hasCustomSearchFilter?: boolean;
+    fullWidth?: boolean;
 };

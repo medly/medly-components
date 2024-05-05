@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
+import type { FCC } from 'react';
 import { forwardRef, memo, useMemo } from 'react';
 import { TextStyled } from './Text.styled';
 import { TextProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<TextProps> = memo(
+const Component: FCC<TextProps> = memo(
     forwardRef(({ as, textVariant, textWeight, textAlign, children, ...restProps }, ref) => {
         const componentType = useMemo(() => {
             let type: keyof JSX.IntrinsicElements | React.ComponentType<any> = (textVariant as keyof JSX.IntrinsicElements) || 'span';
@@ -38,4 +38,4 @@ Component.defaultProps = {
     textAlign: 'initial'
 };
 Component.displayName = 'Text';
-export const Text: FC<TextProps> & WithStyle = Object.assign(Component, { Style: TextStyled });
+export const Text: FCC<TextProps> & WithStyle = Object.assign(Component, { Style: TextStyled });

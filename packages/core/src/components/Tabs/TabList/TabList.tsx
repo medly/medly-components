@@ -1,12 +1,12 @@
 import { useKeyPress, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { Children, memo, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import Tab from '../Tab';
 import { TabsContext } from '../Tabs.context';
 import * as Styled from './TabList.styled';
 import { TabListProps } from './types';
 
-const Component: FC<TabListProps> = memo(props => {
+const Component: FCC<TabListProps> = memo(props => {
     const { active, onChange, fullWidth, ...restProps } = props,
         leftPress = useKeyPress('ArrowLeft'),
         rightPress = useKeyPress('ArrowRight'),
@@ -68,4 +68,4 @@ const Component: FC<TabListProps> = memo(props => {
     );
 });
 Component.displayName = 'TabList';
-export const TabList: FC<TabListProps> & WithStyle = Object.assign(Component, { Style: Styled.TabList });
+export const TabList: FCC<TabListProps> & WithStyle = Object.assign(Component, { Style: Styled.TabList });

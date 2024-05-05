@@ -1,5 +1,7 @@
 import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
-import { memo, forwardRef, useRef, useCallback, useEffect, useState } from 'react';
+import type { FCC } from 'react';
+import { forwardRef, memo, useCallback, useEffect, useRef, useState } from 'react';
+import CloseIcon from '../Modal/CloseIcon';
 import Actions from './Actions';
 import Content from './Content';
 import { DialogBoxContext } from './DialogBox.context';
@@ -7,10 +9,8 @@ import { DialogBoxBackgroundStyled } from './DialogBox.styled';
 import Header from './Header';
 import Popup from './Popup';
 import { DialogBoxProps, DialogBoxStaticProps } from './types';
-import type { FC } from 'react';
-import CloseIcon from '../Modal/CloseIcon';
 
-const Component: FC<DialogBoxProps> = memo(
+const Component: FCC<DialogBoxProps> = memo(
     forwardRef((props, ref) => {
         const {
                 id,
@@ -83,7 +83,7 @@ Component.defaultProps = {
     showCloseIcon: false
 };
 Component.displayName = 'DialogBox';
-export const DialogBox: FC<DialogBoxProps> & WithStyle & DialogBoxStaticProps = Object.assign(Component, {
+export const DialogBox: FCC<DialogBoxProps> & WithStyle & DialogBoxStaticProps = Object.assign(Component, {
     Style: DialogBoxBackgroundStyled,
     Header,
     Popup,

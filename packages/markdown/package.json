@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/markdown",
-    "version": "0.4.33",
+    "version": "1.0.0",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -22,12 +22,12 @@
         "watch": "yarn run build -w"
     },
     "peerDependencies": {
-        "react": "16.x || 17.x",
-        "react-dom": "16.x || 17.x",
-        "styled-components": "^5.1.0"
+        "react": "18.x",
+        "react-dom": "18.x",
+        "styled-components": "^6.1.9"
     },
     "dependencies": {
-        "@medly-components/utils": "3.2.2",
+        "@medly-components/utils": "4.0.0",
         "react-markdown": "^7.0.1",
         "react-syntax-highlighter": "^15.4.4",
         "remark-directive": "^2.0.0",

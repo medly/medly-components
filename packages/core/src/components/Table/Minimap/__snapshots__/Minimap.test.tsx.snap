@@ -2,14 +2,12 @@
 
 exports[`Minimap component should align slider controller with proper left offset when user scrolls over the table 1`] = `
 .c0 {
-  position: -webkit-sticky;
   position: sticky;
   display: inline;
   z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
-  -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
 
@@ -39,12 +37,7 @@ exports[`Minimap component should align slider controller with proper left offse
 
 .c3 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   width: 110px;
 }
@@ -55,7 +48,7 @@ exports[`Minimap component should align slider controller with proper left offse
   background: #dfe4e9;
 }
 
-.c5 + .c4 {
+.c4+.c4 {
   margin-left: 0.234rem;
 }
 
@@ -69,11 +62,11 @@ exports[`Minimap component should align slider controller with proper left offse
   border: 2px solid #3872D2;
 }
 
-.c6:hover {
+.c6 :hover {
   border: 2px solid #3872D2;
 }
 
-.c6:active {
+.c6 :active {
   border: 2px solid #3872D2;
 }
 
@@ -84,40 +77,53 @@ exports[`Minimap component should align slider controller with proper left offse
     <td
       class="c1"
       id="minimap"
+      sliderwidth="126"
     >
       <div
         class="c2"
+        padding="8"
+        rangewidth="110"
       >
         <div
           class="c3"
+          contentwidth="110"
         >
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
         </div>
         <div
           class="c6"
+          controllerwidth="40"
           id="sliderController"
           style="left: 0.7px;"
         />
@@ -129,14 +135,12 @@ exports[`Minimap component should align slider controller with proper left offse
 
 exports[`Minimap component should not align slider controller when user performs mousedown on slider controller and performs mousemove on window 1`] = `
 .c0 {
-  position: -webkit-sticky;
   position: sticky;
   display: inline;
   z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
-  -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
 
@@ -166,12 +170,7 @@ exports[`Minimap component should not align slider controller when user performs
 
 .c3 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   width: 110px;
 }
@@ -182,7 +181,7 @@ exports[`Minimap component should not align slider controller when user performs
   background: #dfe4e9;
 }
 
-.c5 + .c4 {
+.c4+.c4 {
   margin-left: 0.234rem;
 }
 
@@ -196,11 +195,11 @@ exports[`Minimap component should not align slider controller when user performs
   border: 2px solid #3872D2;
 }
 
-.c6:hover {
+.c6 :hover {
   border: 2px solid #3872D2;
 }
 
-.c6:active {
+.c6 :active {
   border: 2px solid #3872D2;
 }
 
@@ -211,40 +210,53 @@ exports[`Minimap component should not align slider controller when user performs
     <td
       class="c1"
       id="minimap"
+      sliderwidth="126"
     >
       <div
         class="c2"
+        padding="8"
+        rangewidth="110"
       >
         <div
           class="c3"
+          contentwidth="110"
         >
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
         </div>
         <div
           class="c6"
+          controllerwidth="40"
           id="sliderController"
           style="left: 0px;"
         />
@@ -256,14 +268,12 @@ exports[`Minimap component should not align slider controller when user performs
 
 exports[`Minimap component should position minimap at the right hand side bottom of the table on window resize 1`] = `
 .c0 {
-  position: -webkit-sticky;
   position: sticky;
   display: inline;
   z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
-  -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
 
@@ -293,12 +303,7 @@ exports[`Minimap component should position minimap at the right hand side bottom
 
 .c3 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   width: 110px;
 }
@@ -309,7 +314,7 @@ exports[`Minimap component should position minimap at the right hand side bottom
   background: #dfe4e9;
 }
 
-.c5 + .c4 {
+.c4+.c4 {
   margin-left: 0.234rem;
 }
 
@@ -323,11 +328,11 @@ exports[`Minimap component should position minimap at the right hand side bottom
   border: 2px solid #3872D2;
 }
 
-.c6:hover {
+.c6 :hover {
   border: 2px solid #3872D2;
 }
 
-.c6:active {
+.c6 :active {
   border: 2px solid #3872D2;
 }
 
@@ -338,40 +343,53 @@ exports[`Minimap component should position minimap at the right hand side bottom
     <td
       class="c1"
       id="minimap"
+      sliderwidth="126"
     >
       <div
         class="c2"
+        padding="8"
+        rangewidth="110"
       >
         <div
           class="c3"
+          contentwidth="110"
         >
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
         </div>
         <div
           class="c6"
+          controllerwidth="40"
           id="sliderController"
         />
       </div>
@@ -382,14 +400,12 @@ exports[`Minimap component should position minimap at the right hand side bottom
 
 exports[`Minimap component should position minimap at the right hand side bottom of the table on window scroll 1`] = `
 .c0 {
-  position: -webkit-sticky;
   position: sticky;
   display: inline;
   z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
-  -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
 
@@ -419,12 +435,7 @@ exports[`Minimap component should position minimap at the right hand side bottom
 
 .c3 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   width: 110px;
 }
@@ -435,7 +446,7 @@ exports[`Minimap component should position minimap at the right hand side bottom
   background: #dfe4e9;
 }
 
-.c5 + .c4 {
+.c4+.c4 {
   margin-left: 0.234rem;
 }
 
@@ -449,11 +460,11 @@ exports[`Minimap component should position minimap at the right hand side bottom
   border: 2px solid #3872D2;
 }
 
-.c6:hover {
+.c6 :hover {
   border: 2px solid #3872D2;
 }
 
-.c6:active {
+.c6 :active {
   border: 2px solid #3872D2;
 }
 
@@ -464,40 +475,53 @@ exports[`Minimap component should position minimap at the right hand side bottom
     <td
       class="c1"
       id="minimap"
+      sliderwidth="126"
     >
       <div
         class="c2"
+        padding="8"
+        rangewidth="110"
       >
         <div
           class="c3"
+          contentwidth="110"
         >
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
         </div>
         <div
           class="c6"
+          controllerwidth="40"
           id="sliderController"
         />
       </div>
@@ -508,14 +532,12 @@ exports[`Minimap component should position minimap at the right hand side bottom
 
 exports[`Minimap component should position slider controller at the correct position when dragged inside slider content 1`] = `
 .c0 {
-  position: -webkit-sticky;
   position: sticky;
   display: inline;
   z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
-  -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
 
@@ -545,12 +567,7 @@ exports[`Minimap component should position slider controller at the correct posi
 
 .c3 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   width: 110px;
 }
@@ -561,7 +578,7 @@ exports[`Minimap component should position slider controller at the correct posi
   background: #dfe4e9;
 }
 
-.c5 + .c4 {
+.c4+.c4 {
   margin-left: 0.234rem;
 }
 
@@ -575,11 +592,11 @@ exports[`Minimap component should position slider controller at the correct posi
   border: 2px solid #3872D2;
 }
 
-.c6:hover {
+.c6 :hover {
   border: 2px solid #3872D2;
 }
 
-.c6:active {
+.c6 :active {
   border: 2px solid #3872D2;
 }
 
@@ -590,40 +607,53 @@ exports[`Minimap component should position slider controller at the correct posi
     <td
       class="c1"
       id="minimap"
+      sliderwidth="126"
     >
       <div
         class="c2"
+        padding="8"
+        rangewidth="110"
       >
         <div
           class="c3"
+          contentwidth="110"
         >
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
         </div>
         <div
           class="c6"
+          controllerwidth="40"
           id="sliderController"
           style="left: 20px;"
         />
@@ -635,14 +665,12 @@ exports[`Minimap component should position slider controller at the correct posi
 
 exports[`Minimap component should position slider controller at the extreme end of the slider content when dragged out of it 1`] = `
 .c0 {
-  position: -webkit-sticky;
   position: sticky;
   display: inline;
   z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
-  -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
 
@@ -672,12 +700,7 @@ exports[`Minimap component should position slider controller at the extreme end 
 
 .c3 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   width: 110px;
 }
@@ -688,7 +711,7 @@ exports[`Minimap component should position slider controller at the extreme end 
   background: #dfe4e9;
 }
 
-.c5 + .c4 {
+.c4+.c4 {
   margin-left: 0.234rem;
 }
 
@@ -702,11 +725,11 @@ exports[`Minimap component should position slider controller at the extreme end 
   border: 2px solid #3872D2;
 }
 
-.c6:hover {
+.c6 :hover {
   border: 2px solid #3872D2;
 }
 
-.c6:active {
+.c6 :active {
   border: 2px solid #3872D2;
 }
 
@@ -717,40 +740,53 @@ exports[`Minimap component should position slider controller at the extreme end 
     <td
       class="c1"
       id="minimap"
+      sliderwidth="126"
     >
       <div
         class="c2"
+        padding="8"
+        rangewidth="110"
       >
         <div
           class="c3"
+          contentwidth="110"
         >
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
         </div>
         <div
           class="c6"
+          controllerwidth="40"
           id="sliderController"
           style="left: 70px;"
         />
@@ -762,14 +798,12 @@ exports[`Minimap component should position slider controller at the extreme end 
 
 exports[`Minimap component should position slider controller when performed drag operation on it 1`] = `
 .c0 {
-  position: -webkit-sticky;
   position: sticky;
   display: inline;
   z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
-  -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
 
@@ -799,12 +833,7 @@ exports[`Minimap component should position slider controller when performed drag
 
 .c3 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   width: 110px;
 }
@@ -815,7 +844,7 @@ exports[`Minimap component should position slider controller when performed drag
   background: #dfe4e9;
 }
 
-.c5 + .c4 {
+.c4+.c4 {
   margin-left: 0.234rem;
 }
 
@@ -829,11 +858,11 @@ exports[`Minimap component should position slider controller when performed drag
   border: 2px solid #3872D2;
 }
 
-.c6:hover {
+.c6 :hover {
   border: 2px solid #3872D2;
 }
 
-.c6:active {
+.c6 :active {
   border: 2px solid #3872D2;
 }
 
@@ -844,40 +873,53 @@ exports[`Minimap component should position slider controller when performed drag
     <td
       class="c1"
       id="minimap"
+      sliderwidth="126"
     >
       <div
         class="c2"
+        padding="8"
+        rangewidth="110"
       >
         <div
           class="c3"
+          contentwidth="110"
         >
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
         </div>
         <div
           class="c6"
+          controllerwidth="40"
           id="sliderController"
           style="left: 0px;"
         />
@@ -889,14 +931,12 @@ exports[`Minimap component should position slider controller when performed drag
 
 exports[`Minimap component should render properly 1`] = `
 .c0 {
-  position: -webkit-sticky;
   position: sticky;
   display: inline;
   z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
-  -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
 
@@ -926,12 +966,7 @@ exports[`Minimap component should render properly 1`] = `
 
 .c3 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   width: 110px;
 }
@@ -942,7 +977,7 @@ exports[`Minimap component should render properly 1`] = `
   background: #dfe4e9;
 }
 
-.c5 + .c4 {
+.c4+.c4 {
   margin-left: 0.234rem;
 }
 
@@ -956,11 +991,11 @@ exports[`Minimap component should render properly 1`] = `
   border: 2px solid #3872D2;
 }
 
-.c6:hover {
+.c6 :hover {
   border: 2px solid #3872D2;
 }
 
-.c6:active {
+.c6 :active {
   border: 2px solid #3872D2;
 }
 
@@ -971,40 +1006,53 @@ exports[`Minimap component should render properly 1`] = `
     <td
       class="c1"
       id="minimap"
+      sliderwidth="126"
     >
       <div
         class="c2"
+        padding="8"
+        rangewidth="110"
       >
         <div
           class="c3"
+          contentwidth="110"
         >
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
         </div>
         <div
           class="c6"
+          controllerwidth="40"
           id="sliderController"
         />
       </div>
@@ -1015,14 +1063,12 @@ exports[`Minimap component should render properly 1`] = `
 
 exports[`Minimap component should stop slider controller positioning when we move cursor out of the window 1`] = `
 .c0 {
-  position: -webkit-sticky;
   position: sticky;
   display: inline;
   z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
-  -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
 
@@ -1052,12 +1098,7 @@ exports[`Minimap component should stop slider controller positioning when we mov
 
 .c3 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   width: 110px;
 }
@@ -1068,7 +1109,7 @@ exports[`Minimap component should stop slider controller positioning when we mov
   background: #dfe4e9;
 }
 
-.c5 + .c4 {
+.c4+.c4 {
   margin-left: 0.234rem;
 }
 
@@ -1082,11 +1123,11 @@ exports[`Minimap component should stop slider controller positioning when we mov
   border: 2px solid #3872D2;
 }
 
-.c6:hover {
+.c6 :hover {
   border: 2px solid #3872D2;
 }
 
-.c6:active {
+.c6 :active {
   border: 2px solid #3872D2;
 }
 
@@ -1097,40 +1138,53 @@ exports[`Minimap component should stop slider controller positioning when we mov
     <td
       class="c1"
       id="minimap"
+      sliderwidth="126"
     >
       <div
         class="c2"
+        padding="8"
+        rangewidth="110"
       >
         <div
           class="c3"
+          contentwidth="110"
         >
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
           <div
             class="c4 c5"
+            controllerwidth="40"
           />
         </div>
         <div
           class="c6"
+          controllerwidth="40"
           id="sliderController"
         />
       </div>

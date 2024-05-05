@@ -1,8 +1,8 @@
-import { css, Keyframes } from 'styled-components';
+import { css, CSSKeyframes } from 'styled-components';
 
 export const media =
     (mediaQuery: string) =>
-    (first: TemplateStringsArray, ...interpolations: Array<string | number | Keyframes>) => {
+    (first: TemplateStringsArray, ...interpolations: Array<string | number | CSSKeyframes>) => {
         return css`
             ${mediaQuery} {
                 ${css(first, ...interpolations)}

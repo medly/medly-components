@@ -1,11 +1,11 @@
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import { memo, forwardRef, Children } from 'react';
+import type { FCC } from 'react';
+import { Children, forwardRef, memo } from 'react';
 import Text from '../Text';
 import { LinkStyled } from './Link.styled';
 import { LinkProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<LinkProps> = memo(
+const Component: FCC<LinkProps> = memo(
     forwardRef(({ href, ...props }, ref) => {
         return (
             <LinkStyled href={href} {...props} ref={ref}>
@@ -18,4 +18,4 @@ const Component: FC<LinkProps> = memo(
 );
 
 Component.displayName = 'Link';
-export const Link: FC<LinkProps> & WithStyle = Object.assign(Component, { Style: LinkStyled });
+export const Link: FCC<LinkProps> & WithStyle = Object.assign(Component, { Style: LinkStyled });

@@ -4,9 +4,6 @@ exports[`getFontStyle should apply default styles 1`] = `
 .c0 {
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -23,9 +20,6 @@ exports[`getFontStyle should apply styles for a specific font variant and font w
 .c0 {
   font-size: 4.8rem;
   font-weight: 800;
-  -webkit-letter-spacing: -0.04rem;
-  -moz-letter-spacing: -0.04rem;
-  -ms-letter-spacing: -0.04rem;
   letter-spacing: -0.04rem;
   line-height: 5.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -42,9 +36,6 @@ exports[`getFontStyle should apply styles for a specific font weight 1`] = `
 .c0 {
   font-size: 1.4rem;
   font-weight: 800;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -61,9 +52,6 @@ exports[`getFontStyle should apply styles for specific font variant 1`] = `
 .c0 {
   font-size: 4.8rem;
   font-weight: 600;
-  -webkit-letter-spacing: -0.04rem;
-  -moz-letter-spacing: -0.04rem;
-  -ms-letter-spacing: -0.04rem;
   letter-spacing: -0.04rem;
   line-height: 5.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;

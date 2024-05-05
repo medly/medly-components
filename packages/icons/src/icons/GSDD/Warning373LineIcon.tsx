@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { memo } from 'react';
-import Warning373LineIconSvg from '../../assets/GSDD/Warning_373_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
+import Warning373LineIconSvg from '../../assets/GSDD/Warning_373_Line.svg';
 
-const Component: FC<SvgIconProps> = memo(props => {
+const Component: FCC<SvgIconProps> = memo(props => {
     const { size, variant, iconColor, bgColor, hoverBgColor, hoverIconColor, withHoverEffect, margin, fillOpacity, ...restProps } = props;
     return (
         <SvgIcon
@@ -16,6 +16,6 @@ const Component: FC<SvgIconProps> = memo(props => {
 });
 Component.displayName = 'Warning373LineIcon';
 
-const Warning373LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
+const Warning373LineIcon: FCC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
 export default Warning373LineIcon;

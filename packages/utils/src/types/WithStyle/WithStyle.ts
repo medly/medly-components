@@ -1,5 +1,5 @@
-import { AnyStyledComponent } from 'styled-components';
+import { IStyledComponent } from 'styled-components';
 
 export interface WithStyle {
-    Style: AnyStyledComponent;
+    Style: IStyledComponent<'web'>;
 }

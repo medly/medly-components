@@ -1,12 +1,12 @@
 import { ClearIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
+import type { FCC } from 'react';
 import { memo, useCallback } from 'react';
 import Text from '../../../Text';
 import * as Styled from './Chip.styled';
 import { Props } from './types';
-import type { FC } from 'react';
 
-const Component: FC<Props> = memo(({ id, label, onClear, state, ...restProps }) => {
+const Component: FCC<Props> = memo(({ id, label, onClear, state, ...restProps }) => {
     const onClickHandler = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         onClearHandler = useCallback(
             (e: React.MouseEvent<SVGElement>) => {
@@ -28,4 +28,4 @@ const Component: FC<Props> = memo(({ id, label, onClear, state, ...restProps }) 
 
 Component.displayName = 'Chip';
 Component.defaultProps = { state: 'default', variant: 'outlined' };
-export const Chip: FC<Props> & WithStyle = Object.assign(Component, { Style: Styled.Chip });
+export const Chip: FCC<Props> & WithStyle = Object.assign(Component, { Style: Styled.Chip });

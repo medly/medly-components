@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, forwardRef } from 'react';
+import type { FCC } from 'react';
+import { forwardRef, memo } from 'react';
 import { LabelStyled } from './Label.styled';
 import { LabelProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<LabelProps> = memo(
+const Component: FCC<LabelProps> = memo(
     forwardRef((props, ref) => (
         <LabelStyled ref={ref} labelPosition={props.labelPosition!} {...props}>
             {props.children}
@@ -17,4 +17,4 @@ Component.defaultProps = {
     required: false
 };
 Component.displayName = 'Label';
-export const Label: FC<LabelProps> & WithStyle = Object.assign(Component, { Style: LabelStyled });
+export const Label: FCC<LabelProps> & WithStyle = Object.assign(Component, { Style: LabelStyled });

@@ -1,11 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import { useContext, useRef, memo } from 'react';
+import type { FCC } from 'react';
+import { memo, useContext, useRef } from 'react';
 import { ModalContext } from '../Modal.context';
 import { useScrollState } from '../useScrollState';
 import * as Styled from './Content.styled';
-import type { FC } from 'react';
 
-const Component: FC = memo(props => {
+const Component: FCC = memo(props => {
     const { id, dispatch, scrollState, headerHeight, overflowVisible } = useContext(ModalContext),
         contentRef = useRef<HTMLDivElement>(null),
         handleScroll = useScrollState({ ref: contentRef, scrollState, dispatch });
@@ -20,4 +20,4 @@ const Component: FC = memo(props => {
     );
 });
 Component.displayName = 'Content';
-export const Content: FC & WithStyle = Object.assign(Component, { Style: Styled.Content });
+export const Content: FCC & WithStyle = Object.assign(Component, { Style: Styled.Content });

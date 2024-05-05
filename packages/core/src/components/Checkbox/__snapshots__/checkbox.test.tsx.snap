@@ -4,14 +4,12 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -21,9 +19,6 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -31,9 +26,6 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
 }
 
 .c2 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   cursor: inherit;
   color: inherit;
@@ -46,29 +38,16 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -86,39 +65,35 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #3872D2;
   background-color: #3872D2;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   background-color: transparent;
   border-color: #13181D;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c4:not(:disabled):focus:not(:checked) ~ .c5 {
+.c4:not(:disabled):focus:not(:checked)~.c5 {
   border-color: #3872D2;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -126,18 +101,10 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
 }
 
 .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
 }
 
@@ -156,16 +123,18 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
 }
 
 <div>
-  
   <label
     class="c0"
     for="Dummy"
     id="Dummy-wrapper"
-    sizes="[object Object]"
+    labelposition="bottom"
   >
     <span
       class="c1 c2"
       id="Dummy-label"
+      labelposition="bottom"
+      textalign="initial"
+      textcolor="inherit"
       type="checkbox"
     >
       Dummy
@@ -176,7 +145,6 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
       <input
         class="c4"
         id="Dummy"
-        sizes="[object Object]"
         type="checkbox"
       />
       <div
@@ -205,14 +173,12 @@ exports[`Checkbox component should render correctly with checked false and activ
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -222,9 +188,6 @@ exports[`Checkbox component should render correctly with checked false and activ
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -237,29 +200,16 @@ exports[`Checkbox component should render correctly with checked false and activ
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -277,39 +227,35 @@ exports[`Checkbox component should render correctly with checked false and activ
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #D73A43;
   background-color: #D73A43;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   background-color: transparent;
   border-color: #D73A43;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.35);
   border-color: #D73A43;
 }
 
-.c4:not(:disabled):focus:not(:checked) ~ .c5 {
+.c4:not(:disabled):focus:not(:checked)~.c5 {
   border-color: #D73A43;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -325,22 +271,11 @@ exports[`Checkbox component should render correctly with checked false and activ
 }
 
 .c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -361,6 +296,8 @@ exports[`Checkbox component should render correctly with checked false and activ
 <div>
   <span
     class="c0 c1"
+    textalign="initial"
+    textcolor="inherit"
   >
     Something went wrong
   </span>
@@ -368,16 +305,14 @@ exports[`Checkbox component should render correctly with checked false and activ
     class="c2"
     for=""
     id="-wrapper"
-    sizes="[object Object]"
+    labelposition="right"
   >
-    
     <div
       class="c3"
     >
       <input
         class="c4"
         id=""
-        sizes="[object Object]"
         type="checkbox"
       />
       <div
@@ -406,14 +341,12 @@ exports[`Checkbox component should render correctly with checked false and disab
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -423,9 +356,6 @@ exports[`Checkbox component should render correctly with checked false and disab
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -438,29 +368,16 @@ exports[`Checkbox component should render correctly with checked false and disab
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -478,39 +395,35 @@ exports[`Checkbox component should render correctly with checked false and disab
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #dfe4e9;
   background-color: #dfe4e9;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #98A7B7;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   background-color: transparent;
   border-color: #98A7B7;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.35);
   border-color: #D73A43;
 }
 
-.c4:not(:disabled):focus:not(:checked) ~ .c5 {
+.c4:not(:disabled):focus:not(:checked)~.c5 {
   border-color: #D73A43;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -526,22 +439,11 @@ exports[`Checkbox component should render correctly with checked false and disab
 }
 
 .c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: not-allowed;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -553,6 +455,8 @@ exports[`Checkbox component should render correctly with checked false and disab
   <span
     class="c0 c1"
     disabled=""
+    textalign="initial"
+    textcolor="inherit"
   >
     Something went wrong
   </span>
@@ -561,9 +465,8 @@ exports[`Checkbox component should render correctly with checked false and disab
     disabled=""
     for=""
     id="-wrapper"
-    sizes="[object Object]"
+    labelposition="right"
   >
-    
     <div
       class="c3"
     >
@@ -571,7 +474,6 @@ exports[`Checkbox component should render correctly with checked false and disab
         class="c4"
         disabled=""
         id=""
-        sizes="[object Object]"
         type="checkbox"
       />
       <div
@@ -600,14 +502,12 @@ exports[`Checkbox component should render correctly with checked false and hasEr
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -617,9 +517,6 @@ exports[`Checkbox component should render correctly with checked false and hasEr
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -632,29 +529,16 @@ exports[`Checkbox component should render correctly with checked false and hasEr
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -672,39 +556,35 @@ exports[`Checkbox component should render correctly with checked false and hasEr
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #D73A43;
   background-color: #D73A43;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   background-color: transparent;
   border-color: #D73A43;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.35);
   border-color: #D73A43;
 }
 
-.c4:not(:disabled):focus:not(:checked) ~ .c5 {
+.c4:not(:disabled):focus:not(:checked)~.c5 {
   border-color: #D73A43;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -720,22 +600,11 @@ exports[`Checkbox component should render correctly with checked false and hasEr
 }
 
 .c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -756,6 +625,8 @@ exports[`Checkbox component should render correctly with checked false and hasEr
 <div>
   <span
     class="c0 c1"
+    textalign="initial"
+    textcolor="inherit"
   >
     Something went wrong
   </span>
@@ -763,16 +634,14 @@ exports[`Checkbox component should render correctly with checked false and hasEr
     class="c2"
     for=""
     id="-wrapper"
-    sizes="[object Object]"
+    labelposition="right"
   >
-    
     <div
       class="c3"
     >
       <input
         class="c4"
         id=""
-        sizes="[object Object]"
         type="checkbox"
       />
       <div
@@ -801,14 +670,12 @@ exports[`Checkbox component should render correctly with checked false and indet
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -818,9 +685,6 @@ exports[`Checkbox component should render correctly with checked false and indet
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -833,29 +697,16 @@ exports[`Checkbox component should render correctly with checked false and indet
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -873,45 +724,39 @@ exports[`Checkbox component should render correctly with checked false and indet
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #D73A43;
   background-color: #D73A43;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   border-color: #D73A43;
   background-color: #D73A43;
 }
 
-.c4:not(:checked) ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:not(:checked)~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:not(:checked) ~ .c5 .c7 * {
+.c4:not(:checked)~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.35);
   border-color: #D73A43;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -927,22 +772,11 @@ exports[`Checkbox component should render correctly with checked false and indet
 }
 
 .c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -965,6 +799,8 @@ exports[`Checkbox component should render correctly with checked false and indet
 <div>
   <span
     class="c0 c1"
+    textalign="initial"
+    textcolor="inherit"
   >
     Something went wrong
   </span>
@@ -972,16 +808,14 @@ exports[`Checkbox component should render correctly with checked false and indet
     class="c2"
     for=""
     id="-wrapper"
-    sizes="[object Object]"
+    labelposition="right"
   >
-    
     <div
       class="c3"
     >
       <input
         class="c4"
         id=""
-        sizes="[object Object]"
         type="checkbox"
       />
       <div
@@ -1011,14 +845,12 @@ exports[`Checkbox component should render correctly with checked true and active
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1028,9 +860,6 @@ exports[`Checkbox component should render correctly with checked true and active
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1043,29 +872,16 @@ exports[`Checkbox component should render correctly with checked true and active
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -1083,39 +899,35 @@ exports[`Checkbox component should render correctly with checked true and active
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #D73A43;
   background-color: #D73A43;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   background-color: transparent;
   border-color: #D73A43;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.35);
   border-color: #D73A43;
 }
 
-.c4:not(:disabled):focus:not(:checked) ~ .c5 {
+.c4:not(:disabled):focus:not(:checked)~.c5 {
   border-color: #D73A43;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -1131,22 +943,11 @@ exports[`Checkbox component should render correctly with checked true and active
 }
 
 .c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -1169,6 +970,8 @@ exports[`Checkbox component should render correctly with checked true and active
 <div>
   <span
     class="c0 c1"
+    textalign="initial"
+    textcolor="inherit"
   >
     Something went wrong
   </span>
@@ -1176,9 +979,8 @@ exports[`Checkbox component should render correctly with checked true and active
     class="c2"
     for=""
     id="-wrapper"
-    sizes="[object Object]"
+    labelposition="right"
   >
-    
     <div
       class="c3"
     >
@@ -1186,7 +988,6 @@ exports[`Checkbox component should render correctly with checked true and active
         checked=""
         class="c4"
         id=""
-        sizes="[object Object]"
         type="checkbox"
       />
       <div
@@ -1215,14 +1016,12 @@ exports[`Checkbox component should render correctly with checked true and disabl
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1232,9 +1031,6 @@ exports[`Checkbox component should render correctly with checked true and disabl
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1247,29 +1043,16 @@ exports[`Checkbox component should render correctly with checked true and disabl
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -1287,39 +1070,35 @@ exports[`Checkbox component should render correctly with checked true and disabl
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #dfe4e9;
   background-color: #dfe4e9;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #98A7B7;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   background-color: transparent;
   border-color: #98A7B7;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.35);
   border-color: #D73A43;
 }
 
-.c4:not(:disabled):focus:not(:checked) ~ .c5 {
+.c4:not(:disabled):focus:not(:checked)~.c5 {
   border-color: #D73A43;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -1335,22 +1114,11 @@ exports[`Checkbox component should render correctly with checked true and disabl
 }
 
 .c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: not-allowed;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -1362,6 +1130,8 @@ exports[`Checkbox component should render correctly with checked true and disabl
   <span
     class="c0 c1"
     disabled=""
+    textalign="initial"
+    textcolor="inherit"
   >
     Something went wrong
   </span>
@@ -1370,9 +1140,8 @@ exports[`Checkbox component should render correctly with checked true and disabl
     disabled=""
     for=""
     id="-wrapper"
-    sizes="[object Object]"
+    labelposition="right"
   >
-    
     <div
       class="c3"
     >
@@ -1381,7 +1150,6 @@ exports[`Checkbox component should render correctly with checked true and disabl
         class="c4"
         disabled=""
         id=""
-        sizes="[object Object]"
         type="checkbox"
       />
       <div
@@ -1410,14 +1178,12 @@ exports[`Checkbox component should render correctly with checked true and hasErr
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1427,9 +1193,6 @@ exports[`Checkbox component should render correctly with checked true and hasErr
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1442,29 +1205,16 @@ exports[`Checkbox component should render correctly with checked true and hasErr
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -1482,39 +1232,35 @@ exports[`Checkbox component should render correctly with checked true and hasErr
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #D73A43;
   background-color: #D73A43;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   background-color: transparent;
   border-color: #D73A43;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.35);
   border-color: #D73A43;
 }
 
-.c4:not(:disabled):focus:not(:checked) ~ .c5 {
+.c4:not(:disabled):focus:not(:checked)~.c5 {
   border-color: #D73A43;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -1530,22 +1276,11 @@ exports[`Checkbox component should render correctly with checked true and hasErr
 }
 
 .c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -1568,6 +1303,8 @@ exports[`Checkbox component should render correctly with checked true and hasErr
 <div>
   <span
     class="c0 c1"
+    textalign="initial"
+    textcolor="inherit"
   >
     Something went wrong
   </span>
@@ -1575,9 +1312,8 @@ exports[`Checkbox component should render correctly with checked true and hasErr
     class="c2"
     for=""
     id="-wrapper"
-    sizes="[object Object]"
+    labelposition="right"
   >
-    
     <div
       class="c3"
     >
@@ -1585,7 +1321,6 @@ exports[`Checkbox component should render correctly with checked true and hasErr
         checked=""
         class="c4"
         id=""
-        sizes="[object Object]"
         type="checkbox"
       />
       <div
@@ -1614,14 +1349,12 @@ exports[`Checkbox component should render correctly with checked true and indete
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1631,9 +1364,6 @@ exports[`Checkbox component should render correctly with checked true and indete
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1646,29 +1376,16 @@ exports[`Checkbox component should render correctly with checked true and indete
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -1686,45 +1403,39 @@ exports[`Checkbox component should render correctly with checked true and indete
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #D73A43;
   background-color: #D73A43;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   border-color: #D73A43;
   background-color: #D73A43;
 }
 
-.c4:not(:checked) ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:not(:checked)~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:not(:checked) ~ .c5 .c7 * {
+.c4:not(:checked)~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(215,58,67,0.35);
   border-color: #D73A43;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -1740,22 +1451,11 @@ exports[`Checkbox component should render correctly with checked true and indete
 }
 
 .c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -1778,6 +1478,8 @@ exports[`Checkbox component should render correctly with checked true and indete
 <div>
   <span
     class="c0 c1"
+    textalign="initial"
+    textcolor="inherit"
   >
     Something went wrong
   </span>
@@ -1785,9 +1487,8 @@ exports[`Checkbox component should render correctly with checked true and indete
     class="c2"
     for=""
     id="-wrapper"
-    sizes="[object Object]"
+    labelposition="right"
   >
-    
     <div
       class="c3"
     >
@@ -1795,7 +1496,6 @@ exports[`Checkbox component should render correctly with checked true and indete
         checked=""
         class="c4"
         id=""
-        sizes="[object Object]"
         type="checkbox"
       />
       <div
@@ -1825,14 +1525,12 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1842,9 +1540,6 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1852,9 +1547,6 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 }
 
 .c2 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   cursor: inherit;
   color: inherit;
@@ -1867,29 +1559,16 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -1907,39 +1586,35 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #3872D2;
   background-color: #3872D2;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   background-color: transparent;
   border-color: #13181D;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c4:not(:disabled):focus:not(:checked) ~ .c5 {
+.c4:not(:disabled):focus:not(:checked)~.c5 {
   border-color: #3872D2;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -1947,22 +1622,11 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 }
 
 .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -1981,16 +1645,18 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 }
 
 <div>
-  
   <label
     class="c0"
     for="Dummy"
     id="Dummy-wrapper"
-    sizes="[object Object]"
+    labelposition="left"
   >
     <span
       class="c1 c2"
       id="Dummy-label"
+      labelposition="left"
+      textalign="initial"
+      textcolor="inherit"
       type="checkbox"
     >
       Dummy
@@ -2001,7 +1667,6 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
       <input
         class="c4"
         id="Dummy"
-        sizes="[object Object]"
         type="checkbox"
       />
       <div
@@ -2030,14 +1695,12 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2047,9 +1710,6 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2057,9 +1717,6 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
 }
 
 .c2 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   cursor: inherit;
   color: inherit;
@@ -2072,29 +1729,16 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -2112,39 +1756,35 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #3872D2;
   background-color: #3872D2;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   background-color: transparent;
   border-color: #13181D;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c4:not(:disabled):focus:not(:checked) ~ .c5 {
+.c4:not(:disabled):focus:not(:checked)~.c5 {
   border-color: #3872D2;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -2152,22 +1792,11 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
 }
 
 .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -2186,16 +1815,18 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
 }
 
 <div>
-  
   <label
     class="c0"
     for="Dummy"
     id="Dummy-wrapper"
-    sizes="[object Object]"
+    labelposition="right"
   >
     <span
       class="c1 c2"
       id="Dummy-label"
+      labelposition="right"
+      textalign="initial"
+      textcolor="inherit"
       type="checkbox"
     >
       Dummy
@@ -2206,7 +1837,6 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
       <input
         class="c4"
         id="Dummy"
-        sizes="[object Object]"
         type="checkbox"
       />
       <div
@@ -2235,14 +1865,12 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2252,9 +1880,6 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2262,9 +1887,6 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
 }
 
 .c2 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   cursor: inherit;
   color: inherit;
@@ -2277,29 +1899,16 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c6 .c7 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -2317,39 +1926,35 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
   position: absolute;
 }
 
-.c4:checked ~ .c5 {
+.c4:checked~.c5 {
   border-color: #3872D2;
   background-color: #3872D2;
 }
 
-.c4:checked ~ .c5 .c7 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c4:checked~.c5 .c7 {
   transform: scale(1);
 }
 
-.c4:checked ~ .c5 .c7 * {
+.c4:checked~.c5 .c7 * {
   fill: #ffffff;
 }
 
-.c4:not(:checked) ~ .c5 {
+.c4:not(:checked)~.c5 {
   background-color: transparent;
   border-color: #13181D;
 }
 
-.c4:not(:disabled):focus ~ .c5 {
+.c4:not(:disabled):focus~.c5 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c4:not(:disabled):focus:not(:checked) ~ .c5 {
+.c4:not(:disabled):focus:not(:checked)~.c5 {
   border-color: #3872D2;
 }
 
 .c3 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -2357,18 +1962,10 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
 }
 
 .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -2387,16 +1984,18 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
 }
 
 <div>
-  
   <label
     class="c0"
     for="Dummy"
     id="Dummy-wrapper"
-    sizes="[object Object]"
+    labelposition="top"
   >
     <span
       class="c1 c2"
       id="Dummy-label"
+      labelposition="top"
+      textalign="initial"
+      textcolor="inherit"
       type="checkbox"
     >
       Dummy
@@ -2407,7 +2006,6 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
       <input
         class="c4"
         id="Dummy"
-        sizes="[object Object]"
         type="checkbox"
       />
       <div

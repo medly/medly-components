@@ -1,6 +1,6 @@
 import { ExpandLessIcon, ExpandMoreIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import { FC, RefObject, useContext, useEffect, useRef, useState } from 'react';
+import { FCC, RefObject, useContext, useEffect, useRef, useState } from 'react';
 import { ThemeContext } from 'styled-components';
 import Button from '../../Button';
 import Popover from '../../Popover';
@@ -22,7 +22,7 @@ import { Period, TimePickerPopupProps } from './types';
 
 const PERIOD: Period[] = ['AM', 'PM'];
 
-export const Component: FC<TimePickerPopupProps> = ({ value, onChange, popoverDistance, popoverPlacement }) => {
+export const Component: FCC<TimePickerPopupProps> = ({ value, onChange, popoverDistance, popoverPlacement }) => {
     const hourRef = useRef<HTMLUListElement>(null);
     const minutesRef = useRef<HTMLUListElement>(null);
     const periodRef = useRef<HTMLUListElement>(null);
@@ -39,7 +39,7 @@ export const Component: FC<TimePickerPopupProps> = ({ value, onChange, popoverDi
     const scrollPeriod = (period: Period) => {
         if (periodRef.current) {
             periodRef.current.style.transform =
-                period === 'AM' ? 'translateY(0)' : `translateY(calc(-${theme.timePicker.nonSelectedOption.lineHeight} - 2.4rem))`;
+                period === 'AM' ? 'translateY(0)' : `translateY(calc(-${theme?.timePicker.nonSelectedOption.lineHeight} - 2.4rem))`;
         }
     };
 
@@ -135,4 +135,4 @@ Component.displayName = 'TimePickerPopup';
 Component.defaultProps = {
     popoverPlacement: 'bottom-start'
 };
-export const TimePickerPopup: FC<TimePickerPopupProps> & WithStyle = Object.assign(Component, { Style: TimePickerCard });
+export const TimePickerPopup: FCC<TimePickerPopupProps> & WithStyle = Object.assign(Component, { Style: TimePickerCard });

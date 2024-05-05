@@ -1,9 +1,9 @@
 import { render, screen } from '@test-utils';
 import { fireEvent } from '@testing-library/react';
-import { ChangeEvent, FC } from 'react';
+import { ChangeEvent, FCC } from 'react';
 import { useStorage } from './useStorage';
 
-const FirstComponent: FC = () => {
+const FirstComponent: FCC = () => {
         const [state, setState] = useStorage<string>('gender', { initialValue: 'male' }),
             handleChange = (e: ChangeEvent<HTMLInputElement>) => setState(`${e.target.value}`);
         return (
@@ -13,11 +13,11 @@ const FirstComponent: FC = () => {
             </>
         );
     },
-    SecondComponent: FC = () => {
+    SecondComponent: FCC = () => {
         const [state] = useStorage<string>('gender');
         return <span>{state}</span>;
     },
-    WrapperComponent: FC = () => (
+    WrapperComponent: FCC = () => (
         <>
             <FirstComponent />
             <SecondComponent />

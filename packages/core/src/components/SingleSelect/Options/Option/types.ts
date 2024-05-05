@@ -9,7 +9,8 @@ export interface OptionStyledProps extends HTMLProps<HTMLLIElement>, WithThemePr
     maxWidth?: string;
 }
 
-export interface OptionProps extends Option, Omit<HTMLProps<HTMLLIElement>, 'onClick' | 'value' | 'label' | 'size'>, WithThemeProp {
+export interface OptionProps extends Option, Omit<HTMLProps<HTMLLIElement>, 'onClick' | 'value' | 'label' | 'size'> {
+    value: any;
     size: 'S' | 'M';
     variant: 'outlined' | 'filled' | 'flat' | 'fusion';
     onClick: (op: Option) => void;

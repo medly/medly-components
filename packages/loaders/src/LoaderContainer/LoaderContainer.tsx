@@ -1,7 +1,7 @@
-import { Children, FC, memo } from 'react';
+import { Children, FCC, memo } from 'react';
 import * as Styled from './LoaderContainer.styled';
 
-export const LoaderContainer: FC = memo(props => {
+export const LoaderContainer: FCC = memo(props => {
     return (
         <Styled.List>
             {Children.map(props.children, (child: any) => (

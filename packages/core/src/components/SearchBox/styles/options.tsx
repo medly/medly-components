@@ -38,11 +38,7 @@ const getSmallOptionStyle = () => {
     `;
 };
 
-export const getOptionsStyles = ({
-    theme,
-    size,
-    areOptionsVisible
-}: StyledSearchBoxProps & WithThemeProp & { areOptionsVisible?: boolean }) => css`
+export const getOptionsStyles = ({ theme, size, areOptionsVisible }: StyledSearchBoxProps & WithThemeProp) => css<StyledSearchBoxProps>`
     box-shadow: none;
     border: none;
     padding: 0;

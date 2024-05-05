@@ -1,14 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Box Component should not render with border if borderColor is not provided 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -18,22 +15,11 @@ exports[`Box Component should not render with border if borderColor is not provi
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
   box-shadow: none;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:focus {
@@ -42,13 +28,21 @@ exports[`Box Component should not render with border if borderColor is not provi
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
+    borderwidth="1"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -57,14 +51,11 @@ exports[`Box Component should not render with border if borderColor is not provi
 `;
 
 exports[`Box Component should not render with border if borderWidth is not provided 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -74,22 +65,11 @@ exports[`Box Component should not render with border if borderWidth is not provi
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
   box-shadow: none;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:focus {
@@ -98,13 +78,21 @@ exports[`Box Component should not render with border if borderWidth is not provi
 
 <div>
   <div
+    bg="white"
+    bordercolor="tomato"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -113,14 +101,11 @@ exports[`Box Component should not render with border if borderWidth is not provi
 `;
 
 exports[`Box Component should not render with given shadowColor if shadow size is not present 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -130,22 +115,11 @@ exports[`Box Component should not render with given shadowColor if shadow size i
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
   box-shadow: none;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:focus {
@@ -154,13 +128,21 @@ exports[`Box Component should not render with given shadowColor if shadow size i
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
+    shadowcolor="tomato"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -169,14 +151,11 @@ exports[`Box Component should not render with given shadowColor if shadow size i
 `;
 
 exports[`Box Component should render properly 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -186,22 +165,11 @@ exports[`Box Component should render properly 1`] = `
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
   box-shadow: none;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:focus {
@@ -210,13 +178,20 @@ exports[`Box Component should render properly 1`] = `
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -225,58 +200,42 @@ exports[`Box Component should render properly 1`] = `
 `;
 
 exports[`Box Component should render properly when loading 1`] = `
-.c4 {
+.c3 {
   font-size: 48px;
 }
 
-.c4 * {
+.c3 * {
   fill: black;
 }
 
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c3 {
+.c2 {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   z-index: 1001;
   position: relative;
 }
 
-.c3 > * {
-  -webkit-animation: hHgZmL 300ms ease-in;
+.c2>* {
   animation: hHgZmL 300ms ease-in;
 }
 
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
@@ -284,15 +243,7 @@ exports[`Box Component should render properly when loading 1`] = `
   box-shadow: none;
 }
 
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
-}
-
-.c0 > *:not(:last-child) {
+.c0>*:not(:last-child) {
   opacity: 0;
   display: none;
 }
@@ -303,21 +254,29 @@ exports[`Box Component should render properly when loading 1`] = `
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
     <div
-      class="c3"
+      class="c2"
+      position="relative"
     >
       <svg
-        class="c4"
+        class="c3"
         color="black"
         height="1em"
         viewBox="0 0 100 100"
@@ -370,14 +329,11 @@ exports[`Box Component should render properly when loading 1`] = `
 `;
 
 exports[`Box Component should render properly with "L" shadow size 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -387,22 +343,11 @@ exports[`Box Component should render properly with "L" shadow size 1`] = `
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0rem 0.8rem 0.9rem rgba(0,0,0,0.2);
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
+  box-shadow: 0rem 0.8rem 0.9rem rgba(0, 0, 0, 0.2);
 }
 
 .c0:focus {
@@ -411,13 +356,21 @@ exports[`Box Component should render properly with "L" shadow size 1`] = `
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
+    shadowsize="L"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -426,14 +379,11 @@ exports[`Box Component should render properly with "L" shadow size 1`] = `
 `;
 
 exports[`Box Component should render properly with "M" shadow size 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -443,22 +393,11 @@ exports[`Box Component should render properly with "M" shadow size 1`] = `
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0rem 0.4rem 0.6rem rgba(0,0,0,0.2);
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
+  box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
 }
 
 .c0:focus {
@@ -467,13 +406,21 @@ exports[`Box Component should render properly with "M" shadow size 1`] = `
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
+    shadowsize="M"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -482,14 +429,11 @@ exports[`Box Component should render properly with "M" shadow size 1`] = `
 `;
 
 exports[`Box Component should render properly with "S" shadow size 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -499,22 +443,11 @@ exports[`Box Component should render properly with "S" shadow size 1`] = `
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0rem 0.1rem 0.3rem rgba(0,0,0,0.2);
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
+  box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
 }
 
 .c0:focus {
@@ -523,13 +456,21 @@ exports[`Box Component should render properly with "S" shadow size 1`] = `
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
+    shadowsize="S"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -538,14 +479,11 @@ exports[`Box Component should render properly with "S" shadow size 1`] = `
 `;
 
 exports[`Box Component should render properly with "XL" shadow size 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -555,22 +493,11 @@ exports[`Box Component should render properly with "XL" shadow size 1`] = `
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0rem 1.2rem 1.2rem rgba(0,0,0,0.2);
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
+  box-shadow: 0rem 1.2rem 1.2rem rgba(0, 0, 0, 0.2);
 }
 
 .c0:focus {
@@ -579,13 +506,21 @@ exports[`Box Component should render properly with "XL" shadow size 1`] = `
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
+    shadowsize="XL"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -594,74 +529,50 @@ exports[`Box Component should render properly with "XL" shadow size 1`] = `
 `;
 
 exports[`Box Component should render properly with L size and loading state 1`] = `
-.c4 {
+.c3 {
   font-size: 48px;
 }
 
-.c4 * {
+.c3 * {
   fill: black;
 }
 
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c3 {
+.c2 {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   z-index: 1001;
   position: relative;
 }
 
-.c3 > * {
-  -webkit-animation: hHgZmL 300ms ease-in;
+.c2>* {
   animation: hHgZmL 300ms ease-in;
 }
 
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0rem 0.8rem 0.9rem rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.8rem 0.9rem rgba(0, 0, 0, 0.2);
 }
 
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
-}
-
-.c0 > *:not(:last-child) {
+.c0>*:not(:last-child) {
   opacity: 0;
   display: none;
 }
@@ -672,21 +583,30 @@ exports[`Box Component should render properly with L size and loading state 1`] 
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
+    shadowsize="L"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
     <div
-      class="c3"
+      class="c2"
+      position="relative"
     >
       <svg
-        class="c4"
+        class="c3"
         color="black"
         height="1em"
         viewBox="0 0 100 100"
@@ -739,74 +659,50 @@ exports[`Box Component should render properly with L size and loading state 1`] 
 `;
 
 exports[`Box Component should render properly with M size and loading state 1`] = `
-.c4 {
+.c3 {
   font-size: 48px;
 }
 
-.c4 * {
+.c3 * {
   fill: black;
 }
 
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c3 {
+.c2 {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   z-index: 1001;
   position: relative;
 }
 
-.c3 > * {
-  -webkit-animation: hHgZmL 300ms ease-in;
+.c2>* {
   animation: hHgZmL 300ms ease-in;
 }
 
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0rem 0.4rem 0.6rem rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
 }
 
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
-}
-
-.c0 > *:not(:last-child) {
+.c0>*:not(:last-child) {
   opacity: 0;
   display: none;
 }
@@ -817,21 +713,30 @@ exports[`Box Component should render properly with M size and loading state 1`] 
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
+    shadowsize="M"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
     <div
-      class="c3"
+      class="c2"
+      position="relative"
     >
       <svg
-        class="c4"
+        class="c3"
         color="black"
         height="1em"
         viewBox="0 0 100 100"
@@ -884,74 +789,50 @@ exports[`Box Component should render properly with M size and loading state 1`] 
 `;
 
 exports[`Box Component should render properly with S size and loading state 1`] = `
-.c4 {
+.c3 {
   font-size: 48px;
 }
 
-.c4 * {
+.c3 * {
   fill: black;
 }
 
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c3 {
+.c2 {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   z-index: 1001;
   position: relative;
 }
 
-.c3 > * {
-  -webkit-animation: hHgZmL 300ms ease-in;
+.c2>* {
   animation: hHgZmL 300ms ease-in;
 }
 
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0rem 0.1rem 0.3rem rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
 }
 
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
-}
-
-.c0 > *:not(:last-child) {
+.c0>*:not(:last-child) {
   opacity: 0;
   display: none;
 }
@@ -962,21 +843,30 @@ exports[`Box Component should render properly with S size and loading state 1`] 
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
+    shadowsize="S"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
     <div
-      class="c3"
+      class="c2"
+      position="relative"
     >
       <svg
-        class="c4"
+        class="c3"
         color="black"
         height="1em"
         viewBox="0 0 100 100"
@@ -1029,74 +919,50 @@ exports[`Box Component should render properly with S size and loading state 1`] 
 `;
 
 exports[`Box Component should render properly with XL size and loading state 1`] = `
-.c4 {
+.c3 {
   font-size: 48px;
 }
 
-.c4 * {
+.c3 * {
   fill: black;
 }
 
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c3 {
+.c2 {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   z-index: 1001;
   position: relative;
 }
 
-.c3 > * {
-  -webkit-animation: hHgZmL 300ms ease-in;
+.c2>* {
   animation: hHgZmL 300ms ease-in;
 }
 
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
-  box-shadow: 0rem 1.2rem 1.2rem rgba(0,0,0,0.2);
+  box-shadow: 0rem 1.2rem 1.2rem rgba(0, 0, 0, 0.2);
 }
 
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
-}
-
-.c0 > *:not(:last-child) {
+.c0>*:not(:last-child) {
   opacity: 0;
   display: none;
 }
@@ -1107,21 +973,30 @@ exports[`Box Component should render properly with XL size and loading state 1`]
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
+    shadowsize="XL"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
     <div
-      class="c3"
+      class="c2"
+      position="relative"
     >
       <svg
-        class="c4"
+        class="c3"
         color="black"
         height="1em"
         viewBox="0 0 100 100"
@@ -1174,14 +1049,11 @@ exports[`Box Component should render properly with XL size and loading state 1`]
 `;
 
 exports[`Box Component should render properly with border 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1191,9 +1063,6 @@ exports[`Box Component should render properly with border 1`] = `
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
@@ -1202,27 +1071,28 @@ exports[`Box Component should render properly with border 1`] = `
   box-shadow: none;
 }
 
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
 .c0:focus {
   outline: none;
 }
 
 <div>
   <div
+    bg="white"
+    bordercolor="tomato"
+    borderradius="2"
+    borderwidth="1"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -1231,14 +1101,11 @@ exports[`Box Component should render properly with border 1`] = `
 `;
 
 exports[`Box Component should render properly with given bg and color 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1248,22 +1115,11 @@ exports[`Box Component should render properly with given bg and color 1`] = `
 .c0 {
   color: white;
   background-color: black;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
   box-shadow: none;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:focus {
@@ -1272,13 +1128,20 @@ exports[`Box Component should render properly with given bg and color 1`] = `
 
 <div>
   <div
+    bg="black"
+    borderradius="2"
     class="c0"
     color="white"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -1287,14 +1150,11 @@ exports[`Box Component should render properly with given bg and color 1`] = `
 `;
 
 exports[`Box Component should render properly with given height and width 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1306,22 +1166,11 @@ exports[`Box Component should render properly with given height and width 1`] = 
   color: black;
   height: 100%;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
   box-shadow: none;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:focus {
@@ -1330,15 +1179,22 @@ exports[`Box Component should render properly with given height and width 1`] = 
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
     height="100%"
+    px="4"
+    py="4"
     width="100%"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -1347,14 +1203,11 @@ exports[`Box Component should render properly with given height and width 1`] = 
 `;
 
 exports[`Box Component should render with given margin 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1364,22 +1217,11 @@ exports[`Box Component should render with given margin 1`] = `
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: calc(4 * 0.25rem) calc(2 * 0.25rem);
   box-shadow: none;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:focus {
@@ -1388,13 +1230,22 @@ exports[`Box Component should render with given margin 1`] = `
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    mx="2"
+    my="4"
+    px="4"
+    py="4"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -1403,14 +1254,11 @@ exports[`Box Component should render with given margin 1`] = `
 `;
 
 exports[`Box Component should render with given padding 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1420,22 +1268,11 @@ exports[`Box Component should render with given padding 1`] = `
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(2 * 0.25rem);
   margin: 0 0;
   box-shadow: none;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:focus {
@@ -1444,13 +1281,20 @@ exports[`Box Component should render with given padding 1`] = `
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="2"
+    py="4"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -1459,14 +1303,11 @@ exports[`Box Component should render with given padding 1`] = `
 `;
 
 exports[`Box Component should render with given shadowColor 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1476,22 +1317,11 @@ exports[`Box Component should render with given shadowColor 1`] = `
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
   box-shadow: 0rem 0.4rem 0.6rem tomato;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:focus {
@@ -1500,13 +1330,22 @@ exports[`Box Component should render with given shadowColor 1`] = `
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
+    shadowcolor="tomato"
+    shadowsize="M"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Box
     </span>
@@ -1515,14 +1354,11 @@ exports[`Box Component should render with given shadowColor 1`] = `
 `;
 
 exports[`Box Component should wrap children into Text component when rendering string or number 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1532,22 +1368,11 @@ exports[`Box Component should wrap children into Text component when rendering s
 .c0 {
   color: black;
   background-color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   border-radius: calc(2 * 0.25rem);
   padding: calc(4 * 0.25rem) calc(4 * 0.25rem);
   margin: 0 0;
   box-shadow: none;
-}
-
-.c0,
-.c0 .c1,
-.c0 .sc-1pf3x8a-0,
-.c0 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c0:focus {
@@ -1556,13 +1381,20 @@ exports[`Box Component should wrap children into Text component when rendering s
 
 <div>
   <div
+    bg="white"
+    borderradius="2"
     class="c0"
     color="black"
     display="flex"
     font-variant="body2"
+    px="4"
+    py="4"
   >
     <span
-      class="c1 c2"
+      class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Some text
     </span>

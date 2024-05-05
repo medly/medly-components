@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/forms",
-    "version": "3.0.8",
+    "version": "4.0.0",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -24,14 +24,14 @@
         "watch": "yarn run build -w"
     },
     "peerDependencies": {
-        "react": "16.x || 17.x",
-        "react-dom": "16.x || 17.x",
-        "styled-components": "^5.1.0"
+        "react": "18.x",
+        "react-dom": "18.x",
+        "styled-components": "^6.1.9"
     },
     "dependencies": {
-        "@medly-components/core": "7.1.0",
+        "@medly-components/core": "8.0.0",
         "@medly-components/theme": "6.0.0",
-        "@medly-components/utils": "3.2.2",
+        "@medly-components/utils": "4.0.0",
         "date-fns": "^2.16.1",
         "fast-memoize": "^2.5.2"
     }

@@ -1,12 +1,12 @@
 import { useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import type { FCC } from 'react';
 import { memo, useCallback, useRef, useState } from 'react';
 import { PopoverContext } from './Popover.context';
 import { Wrapper } from './Popover.styled';
 import Popup from './Popup';
 import { PopoverProps, StaticProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<PopoverProps> = memo(({ interactionType, ...restProps }) => {
+const Component: FCC<PopoverProps> = memo(({ interactionType, ...restProps }) => {
     const openState = useState(false),
         [, setOpenState] = openState,
         wrapperRef = useRef(null);
@@ -35,7 +35,7 @@ Component.defaultProps = {
     id: 'medly-popover-wrapper',
     interactionType: 'hover'
 };
-export const Popover: FC<PopoverProps> & WithStyle & StaticProps = Object.assign(Component, {
+export const Popover: FCC<PopoverProps> & WithStyle & StaticProps = Object.assign(Component, {
     Popup,
     Style: Wrapper,
     Context: PopoverContext

@@ -15,7 +15,7 @@ export const useAxios = <Data = any, Error = { message: string; variant: 'error'
         [isLoading, setLoadingState] = useState(false),
         isMounted = useIsMounted();
 
-    const request = useCallback(async ({ onSuccess, onError, ...config }) => {
+    const request = useCallback(async ({ onSuccess, onError, ...config }: Parameters<Result<Data, Error>['request']>[0]) => {
         setLoadingState(true);
         return axios({
             method: 'get',

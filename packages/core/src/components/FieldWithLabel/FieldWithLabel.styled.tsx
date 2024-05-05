@@ -1,5 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
-import styled, { AnyStyledComponent, css } from 'styled-components';
+import styled, { css } from 'styled-components';
 import Label from '../Label';
 import Text from '../Text';
 import { FieldStyledProps, FieldWithLabelStyledProps } from './types';
@@ -23,7 +23,7 @@ export const DescriptionStyled = styled(Text)`
     color: ${({ theme, textColor }) => (textColor ? textColor : theme.input.descriptionColor)};
 `;
 
-export const FieldWithLabelStyled: AnyStyledComponent = styled('div')<FieldWithLabelStyledProps>`
+export const FieldWithLabelStyled = styled('div')<FieldWithLabelStyledProps>`
     margin: ${({ theme, fullWidth }) =>
         fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};
     display: ${({ fullWidth }) => (fullWidth ? 'grid' : 'inline-grid')};

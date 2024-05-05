@@ -1,32 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Row should render NoResult properly 1`] = `
-.c1 {
-  text-align: center;
-  padding: 0.8rem 1.6rem;
-  width: 200px;
-}
-
 .c0 {
   display: grid;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   outline: none;
   cursor: inherit;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c0.c0:hover {
@@ -34,23 +15,35 @@ exports[`Row should render NoResult properly 1`] = `
 }
 
 .c0:nth-child(odd),
-.c0:nth-child(odd) > * {
+.c0:nth-child(odd)>* {
   background-color: #F7F8F9;
   color: #13181D;
 }
 
 .c0:nth-child(even),
-.c0:nth-child(even) > * {
+.c0:nth-child(even)>* {
   background-color: #ffffff;
   color: #13181D;
 }
 
+.c2 {
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  width: 200px;
+}
+
+.c1 {
+  justify-content: center;
+  align-items: center;
+}
+
 <div>
   <tr
-    class="sc-1yxujaa-0 c0"
+    class="c0 c1"
   >
     <td
-      class="c1"
+      class="c2"
+      tablesize="S"
       width="200"
     >
       Dummy
@@ -60,21 +53,10 @@ exports[`Row should render NoResult properly 1`] = `
 `;
 
 exports[`Row should render NoResult with Card design also 1`] = `
-.c1 {
-  text-align: center;
-  padding: 0.8rem 1.6rem;
-  width: 200px;
-}
-
 .c0 {
   display: grid;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   outline: none;
   cursor: inherit;
@@ -83,38 +65,29 @@ exports[`Row should render NoResult with Card design also 1`] = `
   margin-left: 0.8rem;
   margin-right: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(96,120,144,0.2);
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c0,
-.c0 > * {
+.c0>* {
   background-color: #ffffff;
   color: #13181D;
 }
 
-.c0.c0.c0 > *:first-child,
-.c0.c0.c0 > *:first-child::before {
-  -webkit-transition: border-radius 200ms ease-in;
+.c0.c0.c0>*:first-child,
+.c0.c0.c0>*:first-child::before {
   transition: border-radius 200ms ease-in;
   border-radius: 0.8rem 0 0 0.8rem;
 }
 
-.c0.c0.c0 > *:first-child::before {
+.c0.c0.c0>*:first-child::before {
   width: 0.8rem;
 }
 
-.c0.c0.c0 > *:last-child {
+.c0.c0.c0>*:last-child {
   border-radius: 0 0.8rem 0.8rem 0;
 }
 
-.c0.c0.c0 > *:nth-last-child(2)::before {
+.c0.c0.c0>*:nth-last-child(2)::before {
   width: 0.8rem;
   border-radius: 0 0 0 0.8rem;
 }
@@ -127,12 +100,24 @@ exports[`Row should render NoResult with Card design also 1`] = `
   margin-bottom: 0.8rem;
 }
 
+.c2 {
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  width: 200px;
+}
+
+.c1 {
+  justify-content: center;
+  align-items: center;
+}
+
 <div>
   <tr
-    class="sc-1yxujaa-0 c0"
+    class="c0 c1"
   >
     <td
-      class="c1"
+      class="c2"
+      tablesize="S"
       width="200"
     >
       Dummy
@@ -145,12 +130,7 @@ exports[`Row should render row properly 1`] = `
 .c0 {
   display: grid;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   outline: none;
   cursor: inherit;
@@ -161,13 +141,13 @@ exports[`Row should render row properly 1`] = `
 }
 
 .c0:nth-child(odd),
-.c0:nth-child(odd) > * {
+.c0:nth-child(odd)>* {
   background-color: #F7F8F9;
   color: #13181D;
 }
 
 .c0:nth-child(even),
-.c0:nth-child(even) > * {
+.c0:nth-child(even)>* {
   background-color: #ffffff;
   color: #13181D;
 }

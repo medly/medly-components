@@ -1,10 +1,10 @@
-import { useMemo, memo } from 'react';
+import type { FCC } from 'react';
+import { memo, useMemo } from 'react';
 import Text from '../../../Text';
 import * as Style from './Cell.styled';
 import { Props } from './types';
-import type { FC } from 'react';
 
-export const Cell: FC<Props> = memo(props => {
+export const Cell: FCC<Props> = memo(props => {
     const { data, rowId, column, isRowClickDisabled, rowData } = props,
         { component: Component, align, wrapText } = column;
 

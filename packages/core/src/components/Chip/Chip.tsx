@@ -1,12 +1,12 @@
 import { ClearIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import { useCallback, forwardRef, memo } from 'react';
+import type { FCC, MouseEvent } from 'react';
+import { forwardRef, memo, useCallback } from 'react';
 import Text from '../Text';
 import * as Styled from './Chip.styled';
 import { ChipProps } from './types';
-import type { FC, MouseEvent } from 'react';
 
-const Component: FC<ChipProps> = memo(
+const Component: FCC<ChipProps> = memo(
     forwardRef((props, ref) => {
         const { label, onDelete, ...restProps } = props;
 
@@ -31,4 +31,4 @@ Component.defaultProps = {
     variant: 'solid'
 };
 Component.displayName = 'Chip';
-export const Chip: FC<ChipProps> & WithStyle = Object.assign(Component, { Style: Styled.Chip });
+export const Chip: FCC<ChipProps> & WithStyle = Object.assign(Component, { Style: Styled.Chip });

@@ -2,18 +2,18 @@ import { defaultTheme } from '@medly-components/theme';
 import { render, RenderOptions, RenderResult } from '@testing-library/react';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import type { FC, ReactElement } from 'react';
+import type { FCC, ReactElement } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { SWRConfig } from 'swr';
 export const mockAxios = new MockAdapter(axios);
 
-const WithTheme: FC = props => (
+const WithTheme: FCC = props => (
     <ThemeProvider theme={defaultTheme}>
         <>{props.children}</>
     </ThemeProvider>
 );
 
-const WithSWR: FC = props => (
+const WithSWR: FCC = props => (
     <SWRConfig value={{ provider: () => new Map() }}>
         <>{props.children}</>
     </SWRConfig>

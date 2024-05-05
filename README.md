@@ -24,7 +24,7 @@ To view a detailed description of the components in storybook click [here](https
   - 📝 [Forms](#forms)
   - ℹ [Icons](#icons)
   - ⧉ [Layout](#layout)
-  - 🌀 [Loaders](#loaders)  
+  - 🌀 [Loaders](#loaders)
   - 📄 [Markdown](#markdown)
   - 🏞 [Theme](#theme)
   - 🛠 [Utils](#utils)
@@ -66,7 +66,7 @@ Replace the `App.tsx` content with the following:
 import React from 'react';
 import { Button } from '@medly-components/core';
 
-const App: React.FC = () => <Button variant="solid">Click me!</Button>;
+const App = () => <Button variant="solid">Click me!</Button>;
 
 export default App;
 ```
@@ -137,7 +137,7 @@ This project exists thanks to all the people who contribute.
 
 ## NPM Scripts
 
-Please find below a list of commands to execute various tasks: 
+Please find below a list of commands to execute various tasks:
 
 - `yarn build` to build components
 - `yarn commit` to commit with conventional-commit approach

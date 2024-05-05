@@ -1,5 +1,5 @@
 import { useKeyPress, WithStyle } from '@medly-components/utils';
-import type { FC, MouseEvent } from 'react';
+import type { FCC, MouseEvent } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useReducer, useState } from 'react';
 import { reducer } from '../Modal/scrollStateReducer';
 import Content from './Content';
@@ -9,7 +9,7 @@ import Footer from './Footer';
 import Header from './Header';
 import { DrawerProps, DrawerStaticProps } from './types';
 
-const Component: FC<DrawerProps> = memo(
+const Component: FCC<DrawerProps> = memo(
     forwardRef(({ id, onClose, open, width, children, withOverlay, position, ...props }, ref) => {
         const isEscPressed = useKeyPress('Escape'),
             [shouldRender, setRenderState] = useState(open),
@@ -54,7 +54,7 @@ Component.defaultProps = {
     width: '40rem',
     withOverlay: true
 };
-export const Drawer: FC<DrawerProps> & WithStyle & DrawerStaticProps = Object.assign(Component, {
+export const Drawer: FCC<DrawerProps> & WithStyle & DrawerStaticProps = Object.assign(Component, {
     Style: DrawerBackground,
     Content,
     Footer,

@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { forwardRef, memo } from 'react';
 import Option from './Option';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
-const Component: FC<OptionsProps> = memo(
+const Component: FCC<OptionsProps> = memo(
     forwardRef(({ options, onOptionClick, hasError, ...restProps }, ref) => (
         <Styled.Options {...restProps} ref={ref}>
             {options.map(option => (
@@ -26,5 +26,5 @@ Component.defaultProps = {
     isNested: false
 };
 Component.displayName = 'Options';
-const Options: FC<OptionsProps> & WithStyle = Object.assign(Component, { Style: Styled.Options });
+const Options: FCC<OptionsProps> & WithStyle = Object.assign(Component, { Style: Styled.Options });
 export default Options;

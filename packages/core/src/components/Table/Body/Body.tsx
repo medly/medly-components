@@ -1,15 +1,15 @@
 import { useKeyPress } from '@medly-components/utils';
-import { FC, memo, useContext, useEffect, useMemo, useState } from 'react';
+import { FCC, memo, useContext, useEffect, useMemo, useState } from 'react';
+import Minimap from '../Minimap';
 import { TableComponentsCommonPropsContext } from '../context';
 import { getGridTemplateColumns } from '../helpers';
-import Minimap from '../Minimap';
 import { TBody } from './Body.styled';
 import GroupedRow from './GroupedRow';
 import Row from './Row';
 import { NoResultCell, NoResultRow } from './Row/Row.styled';
 import { TableBodyProps } from './types';
 
-const Body: FC<TableBodyProps> = memo(props => {
+const Body: FCC<TableBodyProps> = memo(props => {
     const {
             data,
             groupBy,

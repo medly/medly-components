@@ -4,14 +4,12 @@ exports[`Toast should render action button 1`] = `
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c3 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -19,7 +17,6 @@ exports[`Toast should render action button 1`] = `
 .c10 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -29,7 +26,6 @@ exports[`Toast should render action button 1`] = `
 
 .c10 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -39,9 +35,6 @@ exports[`Toast should render action button 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -51,29 +44,15 @@ exports[`Toast should render action button 1`] = `
 .c7 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -81,7 +60,6 @@ exports[`Toast should render action button 1`] = `
 .c7 .c8,
 .c7 .c2,
 .c7 .c2 * {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -105,11 +83,8 @@ exports[`Toast should render action button 1`] = `
   bottom: 0.85rem;
   left: 50%;
   height: 0.15rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.15rem;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -169,26 +144,18 @@ exports[`Toast should render action button 1`] = `
   width: calc(100% - 4.8rem);
 }
 
-.c7 .c2 + .c8 {
+.c7 .c2+.c8 {
   margin-left: 0.8rem;
 }
 
-.c7 .c8 + .c2 {
+.c7 .c8+.c2 {
   margin-left: 0.8rem;
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -197,9 +164,6 @@ exports[`Toast should render action button 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -213,15 +177,8 @@ exports[`Toast should render action button 1`] = `
 }
 
 .c4 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -229,13 +186,7 @@ exports[`Toast should render action button 1`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
@@ -246,7 +197,6 @@ exports[`Toast should render action button 1`] = `
 }
 
 .c5 .c2 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -274,9 +224,11 @@ exports[`Toast should render action button 1`] = `
 <div>
   <div
     class="c0"
+    variant="success"
   >
     <div
       class="c1"
+      variant="success"
     >
       <svg
         class="c2 c3"
@@ -300,11 +252,16 @@ exports[`Toast should render action button 1`] = `
     >
       <button
         class="c6 c7"
+        edges="square"
         label="Action 1"
         type="button"
+        variant="flat"
       >
         <span
           class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="button2"
         >
           Action 1
         </span>
@@ -333,14 +290,12 @@ exports[`Toast should render custom icons 1`] = `
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c3 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -348,7 +303,6 @@ exports[`Toast should render custom icons 1`] = `
 .c6 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -358,23 +312,14 @@ exports[`Toast should render custom icons 1`] = `
 
 .c6 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -383,9 +328,6 @@ exports[`Toast should render custom icons 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -399,15 +341,8 @@ exports[`Toast should render custom icons 1`] = `
 }
 
 .c4 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -415,24 +350,13 @@ exports[`Toast should render custom icons 1`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c5 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c5 .c2 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -460,9 +384,11 @@ exports[`Toast should render custom icons 1`] = `
 <div>
   <div
     class="c0"
+    variant="success"
   >
     <div
       class="c1"
+      variant="success"
     >
       <svg
         class="c2 c3"
@@ -509,14 +435,12 @@ exports[`Toast should render header and message text 1`] = `
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c3 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -524,7 +448,6 @@ exports[`Toast should render header and message text 1`] = `
 .c8 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -534,7 +457,6 @@ exports[`Toast should render header and message text 1`] = `
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -544,9 +466,6 @@ exports[`Toast should render header and message text 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -558,9 +477,6 @@ exports[`Toast should render header and message text 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -568,17 +484,9 @@ exports[`Toast should render header and message text 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -587,9 +495,6 @@ exports[`Toast should render header and message text 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -603,15 +508,8 @@ exports[`Toast should render header and message text 1`] = `
 }
 
 .c4 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -619,24 +517,13 @@ exports[`Toast should render header and message text 1`] = `
 }
 
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c7 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c7 .c2 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -664,9 +551,11 @@ exports[`Toast should render header and message text 1`] = `
 <div>
   <div
     class="c0"
+    variant="success"
   >
     <div
       class="c1"
+      variant="success"
     >
       <svg
         class="c2 c3"
@@ -687,11 +576,16 @@ exports[`Toast should render header and message text 1`] = `
     >
       <span
         class="c5"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Medium"
       >
         Heading 1
       </span>
       <span
         class="c6"
+        textalign="initial"
+        textcolor="inherit"
       >
         Info message
       </span>
@@ -723,14 +617,12 @@ exports[`Toast should render properly with error variant 1`] = `
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c3 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -738,7 +630,6 @@ exports[`Toast should render properly with error variant 1`] = `
 .c6 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -748,23 +639,14 @@ exports[`Toast should render properly with error variant 1`] = `
 
 .c6 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -773,9 +655,6 @@ exports[`Toast should render properly with error variant 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #FBEBEC;
 }
@@ -789,15 +668,8 @@ exports[`Toast should render properly with error variant 1`] = `
 }
 
 .c4 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -805,24 +677,13 @@ exports[`Toast should render properly with error variant 1`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c5 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c5 .c2 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -850,9 +711,11 @@ exports[`Toast should render properly with error variant 1`] = `
 <div>
   <div
     class="c0"
+    variant="error"
   >
     <div
       class="c1"
+      variant="error"
     >
       <svg
         class="c2 c3"
@@ -901,14 +764,12 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c3 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -916,7 +777,6 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
 .c7 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -926,7 +786,6 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
 
 .c7 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -936,9 +795,6 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -946,17 +802,9 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -965,9 +813,6 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -981,15 +826,8 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
 }
 
 .c4 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -997,24 +835,13 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
 }
 
 .c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c6 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c6 .c2 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -1042,9 +869,11 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
 <div>
   <div
     class="c0"
+    variant="success"
   >
     <div
       class="c1"
+      variant="success"
     >
       <svg
         class="c2 c3"
@@ -1065,6 +894,8 @@ exports[`Toast should render properly with fullWidth prop 1`] = `
     >
       <span
         class="c5"
+        textalign="initial"
+        textcolor="inherit"
       >
         Info message
       </span>
@@ -1096,14 +927,12 @@ exports[`Toast should render properly with info variant 1`] = `
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c3 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1111,7 +940,6 @@ exports[`Toast should render properly with info variant 1`] = `
 .c6 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -1121,23 +949,14 @@ exports[`Toast should render properly with info variant 1`] = `
 
 .c6 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -1146,9 +965,6 @@ exports[`Toast should render properly with info variant 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #EBF1FA;
 }
@@ -1162,15 +978,8 @@ exports[`Toast should render properly with info variant 1`] = `
 }
 
 .c4 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -1178,24 +987,13 @@ exports[`Toast should render properly with info variant 1`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c5 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c5 .c2 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -1223,9 +1021,11 @@ exports[`Toast should render properly with info variant 1`] = `
 <div>
   <div
     class="c0"
+    variant="info"
   >
     <div
       class="c1"
+      variant="info"
     >
       <svg
         class="c2 c3"
@@ -1274,14 +1074,12 @@ exports[`Toast should render properly with success variant 1`] = `
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c3 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1289,7 +1087,6 @@ exports[`Toast should render properly with success variant 1`] = `
 .c6 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -1299,23 +1096,14 @@ exports[`Toast should render properly with success variant 1`] = `
 
 .c6 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -1324,9 +1112,6 @@ exports[`Toast should render properly with success variant 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #E8F3ED;
 }
@@ -1340,15 +1125,8 @@ exports[`Toast should render properly with success variant 1`] = `
 }
 
 .c4 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -1356,24 +1134,13 @@ exports[`Toast should render properly with success variant 1`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c5 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c5 .c2 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -1401,9 +1168,11 @@ exports[`Toast should render properly with success variant 1`] = `
 <div>
   <div
     class="c0"
+    variant="success"
   >
     <div
       class="c1"
+      variant="success"
     >
       <svg
         class="c2 c3"
@@ -1449,14 +1218,12 @@ exports[`Toast should render properly with warning variant 1`] = `
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c3 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1464,7 +1231,6 @@ exports[`Toast should render properly with warning variant 1`] = `
 .c6 {
   overflow: visible;
   font-size: 1.6rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -1474,23 +1240,14 @@ exports[`Toast should render properly with warning variant 1`] = `
 
 .c6 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
@@ -1499,9 +1256,6 @@ exports[`Toast should render properly with warning variant 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #FEF7DC;
 }
@@ -1515,15 +1269,8 @@ exports[`Toast should render properly with warning variant 1`] = `
 }
 
 .c4 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.3rem 1.6rem;
@@ -1531,24 +1278,13 @@ exports[`Toast should render properly with warning variant 1`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
   background-color: #ffffff;
   padding: 0.8rem 0.8rem 0 0;
 }
 
-.c5 .sc-1k2druj-0 {
-  padding-top: 0.5rem;
-}
-
 .c5 .c2 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
 }
@@ -1576,9 +1312,11 @@ exports[`Toast should render properly with warning variant 1`] = `
 <div>
   <div
     class="c0"
+    variant="warning"
   >
     <div
       class="c1"
+      variant="warning"
     >
       <svg
         class="c2 c3"

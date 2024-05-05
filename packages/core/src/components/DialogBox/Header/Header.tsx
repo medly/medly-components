@@ -1,11 +1,11 @@
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import { useContext, memo, Children } from 'react';
+import type { FCC } from 'react';
+import { Children, memo, useContext } from 'react';
 import Text from '../../Text';
 import { DialogBoxContext } from '../DialogBox.context';
 import * as Styled from './Header.styled';
-import type { FC } from 'react';
 
-const Component: FC = memo(({ children }) => {
+const Component: FCC = memo(({ children }) => {
     const { id } = useContext(DialogBoxContext);
 
     return (
@@ -17,4 +17,4 @@ const Component: FC = memo(({ children }) => {
     );
 });
 Component.displayName = 'Header';
-export const Header: FC & WithStyle = Object.assign(Component, { Style: Styled.Header });
+export const Header: FCC & WithStyle = Object.assign(Component, { Style: Styled.Header });

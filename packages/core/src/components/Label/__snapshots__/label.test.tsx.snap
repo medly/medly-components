@@ -5,16 +5,13 @@ exports[`Label component should render correctly with all the props given 1`] = 
   color: pink;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   margin: 0px 0px 0.8rem 0px;
   cursor: pointer;
 }
 
-.c0::after {
+.c0 ::after {
   color: red;
   content: ' *';
 }
@@ -22,6 +19,9 @@ exports[`Label component should render correctly with all the props given 1`] = 
 <div>
   <label
     class="c0"
+    labelcolor="pink"
+    labelposition="top"
+    labelvariant="body2"
     required=""
   >
     Demo Label
@@ -34,9 +34,6 @@ exports[`Label component should render correctly with default props 1`] = `
   color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   margin: 0px 0.8rem 0px 0px;
@@ -46,6 +43,7 @@ exports[`Label component should render correctly with default props 1`] = `
 <div>
   <label
     class="c0"
+    labelposition="left"
   >
     Label
   </label>

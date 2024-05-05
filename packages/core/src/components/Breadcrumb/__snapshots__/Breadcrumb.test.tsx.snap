@@ -1,169 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Breadcrumb component should render properly with "/" separator 1`] = `
-.c3 {
+.c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c3 * {
+.c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c6 {
+.c1 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c6 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.c1 .c5 {
   user-select: none;
   color: #3872D2;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c6:hover .c4 {
+.c1:hover .c5 {
   color: #3061B3;
 }
 
 .c7 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.c7 .c5 {
   user-select: none;
   color: #3872D2;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c7:hover .c4 {
+.c7:hover .c5 {
   color: #3061B3;
 }
 
-.c1 {
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c1 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #3872D2;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
-.c1:hover .c4 {
-  color: #3061B3;
-}
-
-.c1 > .c2 {
+.c2>.c3 {
   margin-right: 0.4rem;
 }
 
-.c1 > .c2 * {
+.c2>.c3 * {
   fill: #3872D2;
 }
 
 .c0 {
   height: 2.4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.c0 > *:nth-child(even) {
+.c0>*:nth-child(even) {
   margin: 0 0.4rem;
 }
 
-.c0 > .c2 * {
+.c0>.c3 * {
   fill: #3872D2;
 }
 
@@ -172,10 +99,10 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
     class="c0"
   >
     <li
-      class="c1"
+      class="c1 c2"
     >
       <svg
-        class="c2 c3"
+        class="c3 c4"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -189,29 +116,37 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
         />
       </svg>
       <span
-        class="c4 c5"
+        class="c5 c6"
+        textalign="initial"
+        textcolor="inherit"
       >
         Back
       </span>
     </li>
     <span
       aria-hidden="true"
-      class="c4 c5"
+      class="c5 c6"
+      textalign="initial"
+      textcolor="inherit"
     >
       /
     </span>
     <li
-      class="c6"
+      class="c1"
     >
       <span
-        class="c4 c5"
+        class="c5 c6"
+        textalign="initial"
+        textcolor="inherit"
       >
         Covered Entities
       </span>
     </li>
     <span
       aria-hidden="true"
-      class="c4 c5"
+      class="c5 c6"
+      textalign="initial"
+      textcolor="inherit"
     >
       /
     </span>
@@ -219,7 +154,9 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
       class="c7"
     >
       <span
-        class="c4 c5"
+        class="c5 c6"
+        textalign="initial"
+        textcolor="inherit"
       >
         Add New Entities
       </span>
@@ -229,184 +166,109 @@ exports[`Breadcrumb component should render properly with "/" separator 1`] = `
 `;
 
 exports[`Breadcrumb component should render properly with {"$typeof": Symbol(react.element), "_owner": null, "_store": [Object], "key": "dummy", "props": [Object], "ref": null, "type": [Object]} separator 1`] = `
-.c3 {
+.c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c3 * {
+.c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c7 {
+  overflow: visible;
+  font-size: 2rem;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c7 * {
+  fill-opacity: 1;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c6 {
-  overflow: visible;
-  font-size: 2rem;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  cursor: inherit;
-}
-
-.c6 * {
-  fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  fill: #607890;
-}
-
-.c5 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c7 {
+.c1 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.c1 .c5 {
   user-select: none;
   color: #3872D2;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c7:hover .c4 {
+.c1:hover .c5 {
   color: #3061B3;
 }
 
 .c8 {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c8 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.c8 .c5 {
   user-select: none;
   color: #3872D2;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c8:hover .c4 {
+.c8:hover .c5 {
   color: #3061B3;
 }
 
-.c1 {
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c1 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #3872D2;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
-.c1:hover .c4 {
-  color: #3061B3;
-}
-
-.c1 > .c2 {
+.c2>.c3 {
   margin-right: 0.4rem;
 }
 
-.c1 > .c2 * {
+.c2>.c3 * {
   fill: #3872D2;
 }
 
 .c0 {
   height: 2.4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.c0 > *:nth-child(even) {
+.c0>*:nth-child(even) {
   margin: 0 0.4rem;
 }
 
-.c0 > .c2 * {
+.c0>.c3 * {
   fill: #3872D2;
 }
 
@@ -415,10 +277,10 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
     class="c0"
   >
     <li
-      class="c1"
+      class="c1 c2"
     >
       <svg
-        class="c2 c3"
+        class="c3 c4"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -432,13 +294,15 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
         />
       </svg>
       <span
-        class="c4 c5"
+        class="c5 c6"
+        textalign="initial"
+        textcolor="inherit"
       >
         Back
       </span>
     </li>
     <svg
-      class="c2 c6"
+      class="c3 c7"
       fill="none"
       height="1em"
       viewBox="0 0 24 24"
@@ -452,16 +316,18 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
       />
     </svg>
     <li
-      class="c7"
+      class="c1"
     >
       <span
-        class="c4 c5"
+        class="c5 c6"
+        textalign="initial"
+        textcolor="inherit"
       >
         Covered Entities
       </span>
     </li>
     <svg
-      class="c2 c6"
+      class="c3 c7"
       fill="none"
       height="1em"
       viewBox="0 0 24 24"
@@ -478,7 +344,9 @@ exports[`Breadcrumb component should render properly with {"$typeof": Symbol(rea
       class="c8"
     >
       <span
-        class="c4 c5"
+        class="c5 c6"
+        textalign="initial"
+        textcolor="inherit"
       >
         Add New Entities
       </span>

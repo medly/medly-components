@@ -55,9 +55,7 @@ const searchBoxWithExpandStyle = () => css`
     }
 `;
 
-export const SearchBoxWrapper = styled.div<
-    StyledSearchBoxProps & { areOptionsVisible?: boolean; hasCustomSearchFilter?: boolean; fullWidth?: boolean }
->`
+export const SearchBoxWrapper = styled.div<StyledSearchBoxProps>`
     display: flex;
     flex-direction: row;
     outline: none;

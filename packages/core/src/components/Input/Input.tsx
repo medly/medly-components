@@ -1,11 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, forwardRef } from 'react';
+import type { FCC } from 'react';
+import { forwardRef, memo } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './Input.styled';
 import { InputProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<InputProps> = memo(
+const Component: FCC<InputProps> = memo(
     forwardRef((props, ref) => {
         const { description, label, labelPosition, fullWidth, required, descriptionColor, prefix, suffix, ...restProps } = props,
             id = props.id || 'medly-input';
@@ -37,4 +37,4 @@ Component.defaultProps = {
     labelPosition: 'top',
     description: ''
 };
-export const Input: FC<InputProps> & WithStyle = Object.assign(Component, { Style: Styled.Input });
+export const Input: FCC<InputProps> & WithStyle = Object.assign(Component, { Style: Styled.Input });

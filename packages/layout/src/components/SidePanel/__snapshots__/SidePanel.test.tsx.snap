@@ -8,7 +8,6 @@ exports[`SidePanel component should render with left positioned by default 1`] =
   position: fixed;
   z-index: 10;
   top: 0;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   left: 0;
 }
@@ -16,6 +15,7 @@ exports[`SidePanel component should render with left positioned by default 1`] =
 <div>
   <aside
     class="c0"
+    position="left"
   />
 </div>
 `;
@@ -28,7 +28,6 @@ exports[`SidePanel component should render with right positioned when position p
   position: fixed;
   z-index: 10;
   top: 0;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   right: 0;
 }
@@ -36,6 +35,7 @@ exports[`SidePanel component should render with right positioned when position p
 <div>
   <aside
     class="c0"
+    position="right"
   />
 </div>
 `;

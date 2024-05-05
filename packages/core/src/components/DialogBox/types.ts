@@ -1,7 +1,7 @@
 import { HTMLProps, WithStyle } from '@medly-components/utils';
+import type { FCC } from 'react';
 import { DialogBoxActionUserProps } from './Actions/types';
 import { DialogBoxPopupProps } from './Popup/types';
-import type { FC } from 'react';
 
 export interface DialogBoxProps extends HTMLProps<HTMLDivElement> {
     /** Shows modal only when this prop is true */
@@ -23,10 +23,10 @@ export interface DialogBoxBackgroundProps {
 }
 
 export interface DialogBoxStaticProps {
-    Popup: FC<DialogBoxPopupProps> & WithStyle;
-    Header: FC & WithStyle;
-    Content: FC & WithStyle;
-    Actions: FC<DialogBoxActionUserProps> & WithStyle;
+    Popup: FCC<DialogBoxPopupProps> & WithStyle;
+    Header: FCC & WithStyle;
+    Content: FCC & WithStyle;
+    Actions: FCC<DialogBoxActionUserProps> & WithStyle;
 }
 export interface DialogBoxContextType {
     id: string;

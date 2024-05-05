@@ -15,7 +15,7 @@ const style = (state: 'default' | 'hovered' | 'pressed' | 'active') => css`
 export type NavItemProps = { isActive?: boolean };
 
 export const NavItem = styled.button<NavItemProps>`
-    color: ${({ theme }) => theme.header.navItem.fontColor};
+    color: ${({ theme }) => theme.header.navItem.textColor.default};
     padding: 0 1.2rem;
     border-radius: 0.4rem;
     border: none;
@@ -70,6 +70,6 @@ export const NavItem = styled.button<NavItemProps>`
     `}
 
     &:active {
-        background-color: ${({ theme }) => theme.header.navItem.activeColor};
+        background-color: ${({ theme }) => theme.header.navItem.bgColor.active};
     }
 `;

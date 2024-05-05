@@ -1,3 +1,3 @@
-import type { FC } from 'react';
+import type { FCC } from 'react';
 
-export const DummyCompanyName: FC = () => <span>Cool company</span>;
+export const DummyCompanyName: FCC = () => <span>Cool company</span>;

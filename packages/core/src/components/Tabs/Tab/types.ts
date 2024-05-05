@@ -1,19 +1,21 @@
 import { SvgIconProps } from '@medly-components/icons';
 import { TabsTheme } from '@medly-components/theme';
-import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import type { WithThemeProp } from '@medly-components/utils';
+import { HTMLProps } from '@medly-components/utils';
 import type { FC } from 'react';
 import { TabBackground, TabSize, Variant } from '../types';
 
-export type StyledTabProps = HTMLProps<HTMLButtonElement> &
-    WithThemeProp &
-    TabsTheme & {
-        active?: boolean;
-        fraction?: number;
-        tabSize: TabSize;
-        tabBackground: TabBackground;
-        variant: Variant;
-        totalTabs: number;
-    };
+export type StyledTabProps = HTMLProps<HTMLButtonElement> & {
+    fullWidth?: boolean;
+    active?: boolean;
+    fraction?: number;
+    tabSize: TabSize;
+    tabBackground: TabBackground;
+    variant: Variant;
+    totalTabs: number;
+};
+
+export type StyledMergedTabProps = StyledTabProps & WithThemeProp & TabsTheme;
 
 export interface TabProps extends HTMLProps<HTMLButtonElement> {
     /** Use it to render tab as any html tag */

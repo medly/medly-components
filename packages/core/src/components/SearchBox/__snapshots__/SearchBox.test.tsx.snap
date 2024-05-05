@@ -4,14 +4,12 @@ exports[`SearchBox options should render options when user search option specifi
 .c4 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -21,9 +19,6 @@ exports[`SearchBox options should render options when user search option specifi
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -36,13 +31,7 @@ exports[`SearchBox options should render options when user search option specifi
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
@@ -53,7 +42,7 @@ exports[`SearchBox options should render options when user search option specifi
   background-color: #F7F8F9;
 }
 
-.c10:hover > .c11 {
+.c10:hover>.c11 {
   color: #13181D;
 }
 
@@ -61,27 +50,22 @@ exports[`SearchBox options should render options when user search option specifi
   background-color: #eff2f4;
 }
 
-.c10 > .c11 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c10>.c11 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c10 > .c3 {
+.c10>.c3 {
   margin-left: 1.6rem;
 }
 
-.c10 > .c3 * {
+.c10>.c3 * {
   fill: #13181D;
 }
 
-.c10 > .c11 {
+.c10>.c11 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -109,17 +93,8 @@ exports[`SearchBox options should render options when user search option specifi
   width: 4rem;
   min-width: 4rem;
   height: auto;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   border-right: 0.1rem solid #dfe4e9;
   margin: 0.6rem 0;
@@ -175,17 +150,8 @@ exports[`SearchBox options should render options when user search option specifi
   width: 4rem;
   min-width: 4rem;
   height: auto;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -249,12 +215,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   outline: none;
   box-sizing: border-box;
@@ -265,11 +226,9 @@ exports[`SearchBox options should render options when user search option specifi
   background-color: #ffffff;
   min-width: 25.6rem;
   max-width: 100%;
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
   border-radius: .8rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18, 106, 250, 0.2);
   border-color: #3872D2;
   border-width: 0.2rem;
 }
@@ -277,9 +236,6 @@ exports[`SearchBox options should render options when user search option specifi
 .c0 input {
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -296,7 +252,7 @@ exports[`SearchBox options should render options when user search option specifi
   overflow-y: auto;
   background-color: #ffffff;
   border-radius: 0.8rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(96,120,144,0.35);
+  box-shadow: 0 0.2rem 0.8rem rgba(96, 120, 144, 0.35);
   padding: 0.4rem 0;
   max-height: 21rem;
   border-radius: 0.8rem;
@@ -327,40 +283,13 @@ exports[`SearchBox options should render options when user search option specifi
   outline: none;
   border: 0 none;
   min-width: 12.9rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   font-family: inherit;
   font-weight: 600;
 }
 
-.c1::-webkit-input-placeholder {
-  color: #607890;
-}
-
-.c1::-moz-placeholder {
-  color: #607890;
-}
-
-.c1:-ms-input-placeholder {
-  color: #607890;
-}
-
 .c1::placeholder {
   color: #607890;
-}
-
-.c1:focus::-webkit-input-placeholder {
-  color: #C7D0D8;
-}
-
-.c1:focus::-moz-placeholder {
-  color: #C7D0D8;
-}
-
-.c1:focus:-ms-input-placeholder {
-  color: #C7D0D8;
 }
 
 .c1:focus::placeholder {
@@ -370,11 +299,12 @@ exports[`SearchBox options should render options when user search option specifi
 <div>
   <div
     class="c0"
+    maxwidth="100%"
+    minwidth="25.6rem"
   >
     <input
       class="c1"
       placeholder="search"
-      value=""
     />
     <span
       class="c2"
@@ -421,13 +351,21 @@ exports[`SearchBox options should render options when user search option specifi
     </span>
     <ul
       class="c7 c8"
+      maxwidth="100%"
+      variant="filled"
     >
       <li
         class="c9 c10"
         id="Dummy-1"
+        maxwidth="100%"
+        variant="filled"
       >
         <span
           class="c11 c12"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
+          textweight="Regular"
         >
           Dummy 1
         </span>
@@ -435,9 +373,15 @@ exports[`SearchBox options should render options when user search option specifi
       <li
         class="c9 c10"
         id="Dummy-2"
+        maxwidth="100%"
+        variant="filled"
       >
         <span
           class="c11 c12"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body2"
+          textweight="Regular"
         >
           Dummy 2
         </span>
@@ -451,14 +395,12 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 .c5 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
 }
 
 .c5 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -467,17 +409,8 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   width: 4.8rem;
   min-width: 4.8rem;
   height: auto;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -503,12 +436,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   outline: none;
   box-sizing: border-box;
@@ -519,21 +447,15 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   background-color: #ffffff;
   min-width: 25.6rem;
   max-width: 100%;
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
   border-radius: .8rem;
   border-color: #98A7B7;
-  -webkit-transition: border-color 100ms,box-shadow 100ms;
   transition: border-color 100ms,box-shadow 100ms;
 }
 
 .c0 input {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -543,43 +465,9 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   background-color: #ffffff;
 }
 
-.c0 .sc-1kflsvi-0 {
-  box-shadow: none;
-  border: none;
-  padding: 0;
-  box-sizing: content-box;
-  left: -1.5px;
-  width: calc(100% + 0.3rem);
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: #ffffff;
-  border: none;
-  padding-bottom: 0;
-  max-height: 21rem;
-  border-radius: 0.8rem;
-  top: 4.7rem;
-}
-
-.c0 .sc-1kflsvi-0 svg {
-  display: none;
-}
-
-.c0 .sc-1kflsvi-0 strong {
-  font-weight: normal;
-}
-
-.c0 .sc-1kflsvi-0 .sc-1yc1o3f-0:hover {
-  background-color: #F7F8F9;
-}
-
-.c0 .sc-1kflsvi-0 li {
-  width: calc(100% - 1.6rem);
-  margin: 0 0.8rem;
-}
-
 .c0:focus-within {
   border-color: #3872D2;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18, 106, 250, 0.2);
   border-width: .2rem;
 }
 
@@ -589,13 +477,13 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 
 .c0:hover {
   border-color: #607890;
-  box-shadow: 0 0.2rem 0.8rem rgba(96,120,144,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(96, 120, 144, 0.2);
   border-width: 1.5px;
 }
 
 .c0:focus-within:hover {
   border-color: #3872D2;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18, 106, 250, 0.2);
   border-width: .2rem;
 }
 
@@ -606,40 +494,13 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   outline: none;
   border: 0 none;
   min-width: 12.9rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   font-family: inherit;
   font-weight: 600;
 }
 
-.c1::-webkit-input-placeholder {
-  color: #607890;
-}
-
-.c1::-moz-placeholder {
-  color: #607890;
-}
-
-.c1:-ms-input-placeholder {
-  color: #607890;
-}
-
 .c1::placeholder {
   color: #607890;
-}
-
-.c1:focus::-webkit-input-placeholder {
-  color: #C7D0D8;
-}
-
-.c1:focus::-moz-placeholder {
-  color: #C7D0D8;
-}
-
-.c1:focus:-ms-input-placeholder {
-  color: #C7D0D8;
 }
 
 .c1:focus::placeholder {
@@ -649,11 +510,12 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 <div>
   <div
     class="c0"
+    maxwidth="100%"
+    minwidth="25.6rem"
   >
     <input
       class="c1"
       placeholder="Search"
-      value=""
     />
     <span
       class="c2 c3"
@@ -687,14 +549,12 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 .c5 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
 }
 
 .c5 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -703,17 +563,8 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   width: 4rem;
   min-width: 4rem;
   height: auto;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -739,12 +590,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   outline: none;
   box-sizing: border-box;
@@ -755,21 +601,15 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   background-color: #ffffff;
   min-width: 25.6rem;
   max-width: 100%;
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
   border-radius: .8rem;
   border-color: #98A7B7;
-  -webkit-transition: border-color 100ms,box-shadow 100ms;
   transition: border-color 100ms,box-shadow 100ms;
 }
 
 .c0 input {
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -779,43 +619,9 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   background-color: #ffffff;
 }
 
-.c0 .sc-1kflsvi-0 {
-  box-shadow: none;
-  border: none;
-  padding: 0;
-  box-sizing: content-box;
-  left: -1.5px;
-  width: calc(100% + 0.3rem);
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: #ffffff;
-  border: none;
-  padding-bottom: 0;
-  max-height: 21rem;
-  border-radius: 0.8rem;
-  top: 3.9rem;
-}
-
-.c0 .sc-1kflsvi-0 svg {
-  display: none;
-}
-
-.c0 .sc-1kflsvi-0 strong {
-  font-weight: normal;
-}
-
-.c0 .sc-1kflsvi-0 .sc-1yc1o3f-0:hover {
-  background-color: #F7F8F9;
-}
-
-.c0 .sc-1kflsvi-0 li {
-  width: calc(100% - 0.8rem);
-  margin: 0 0.4rem;
-}
-
 .c0:focus-within {
   border-color: #3872D2;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18, 106, 250, 0.2);
   border-width: .2rem;
 }
 
@@ -825,13 +631,13 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 
 .c0:hover {
   border-color: #607890;
-  box-shadow: 0 0.2rem 0.8rem rgba(96,120,144,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(96, 120, 144, 0.2);
   border-width: 1.5px;
 }
 
 .c0:focus-within:hover {
   border-color: #3872D2;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18, 106, 250, 0.2);
   border-width: .2rem;
 }
 
@@ -842,40 +648,13 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   outline: none;
   border: 0 none;
   min-width: 12.9rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   font-family: inherit;
   font-weight: 600;
 }
 
-.c1::-webkit-input-placeholder {
-  color: #607890;
-}
-
-.c1::-moz-placeholder {
-  color: #607890;
-}
-
-.c1:-ms-input-placeholder {
-  color: #607890;
-}
-
 .c1::placeholder {
   color: #607890;
-}
-
-.c1:focus::-webkit-input-placeholder {
-  color: #C7D0D8;
-}
-
-.c1:focus::-moz-placeholder {
-  color: #C7D0D8;
-}
-
-.c1:focus:-ms-input-placeholder {
-  color: #C7D0D8;
 }
 
 .c1:focus::placeholder {
@@ -885,11 +664,12 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 <div>
   <div
     class="c0"
+    maxwidth="100%"
+    minwidth="25.6rem"
   >
     <input
       class="c1"
       placeholder="Search"
-      value=""
     />
     <span
       class="c2 c3"

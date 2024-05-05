@@ -1,9 +1,11 @@
+import type { WithThemeProp } from '@medly-components/utils';
 import { css } from 'styled-components';
-import { InnerWrapperModifiedProps } from '../../types';
+import type { InnerWrapperProps } from '../../types';
 import { HelperText } from '../HelperText.styled';
 import { Label } from '../Label.styled';
 
-export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperModifiedProps) => {
+export const fusionStyle = ({ theme, disabled, isTextPresent }: InnerWrapperProps & WithThemeProp) => {
+    const { fusion } = theme.textField;
     const { bgColor } = fusion[isTextPresent ? 'active' : 'default'];
     return css`
         background-color: ${bgColor};
@@ -48,7 +50,7 @@ export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperMod
     `;
 };
 
-export const fusionErrorStyle = ({ theme: { textField }, isTextPresent }: InnerWrapperModifiedProps) => css`
+export const fusionErrorStyle = ({ theme: { textField }, isTextPresent }: InnerWrapperProps & WithThemeProp) => css`
     &,
     &:hover {
         color: ${textField.fusion.error.defaultTextColor};

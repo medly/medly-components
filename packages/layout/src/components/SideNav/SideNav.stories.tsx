@@ -1,21 +1,21 @@
 import { Text } from '@medly-components/core';
 import { DashboardIcon, DateRangeIcon, FolderOpenIcon, InsertChartIcon, SettingsIcon } from '@medly-components/icons';
-import { defaultTheme, SideNavTheme } from '@medly-components/theme';
+import { SideNavTheme, defaultTheme } from '@medly-components/theme';
 import { action } from '@storybook/addon-actions';
 import { boolean } from '@storybook/addon-knobs';
-import { FC } from 'react';
+import { FCC } from 'react';
 import Header from './MedlySidenavHeader';
 import { SideNav } from './SideNav';
 import { Context } from './SideNav.context';
 import { SideNavStaticProps } from './types';
 
-export const Theme: FC<SideNavTheme> = () => null;
+export const Theme: FCC<SideNavTheme> = () => null;
 Theme.defaultProps = {
     ...defaultTheme.sideNav
 };
 
-export const StaticProps: FC<SideNavStaticProps> = () => null;
-export const SidenavContextTheme: FC<Context> = () => null;
+export const StaticProps: FCC<SideNavStaticProps> = () => null;
+export const SidenavContextTheme: FCC<Context> = () => null;
 
 export const Basic = () => (
     <SideNav

@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import { cloneElement, FC, forwardRef, memo, useCallback, useMemo } from 'react';
+import { cloneElement, FCC, forwardRef, memo, useCallback, useMemo } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './Toggle.styled';
 import { ToggleProps } from './types';
 
-const Component: FC<ToggleProps> = memo(
+const Component: FCC<ToggleProps> = memo(
     forwardRef((props, ref) => {
         const {
             id,
@@ -62,4 +62,4 @@ Component.defaultProps = {
     required: false,
     labelPosition: 'right'
 };
-export const Toggle: FC<ToggleProps> & WithStyle = Object.assign(Component, { Style: FieldWithLabel.Style });
+export const Toggle: FCC<ToggleProps> & WithStyle = Object.assign(Component, { Style: FieldWithLabel.Style });

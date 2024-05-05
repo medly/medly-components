@@ -58,21 +58,13 @@ const getTextStyle = ({ theme, ...props }: StyledProps & WithThemeProp) => {
     `;
 };
 
-export const AvatarStyled = styled('div').attrs(
-    ({
-        theme: {
-            avatar: { defaults }
-        }
-    }: StyledProps & WithThemeProp) => ({
-        defaults
-    })
-)<StyledProps>`
+export const AvatarStyled = styled('div')<StyledProps>`
     display: inline-block;
     text-align: center;
     min-width: max-content;
     width: ${getAvatarSize};
     height: ${getAvatarSize};
-    border-radius: ${({ defaults }) => defaults.borderRadius};
+    border-radius: ${({ theme }) => theme.avatar.defaults.borderRadius};
     overflow: hidden;
     cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
 
@@ -82,9 +74,9 @@ export const AvatarStyled = styled('div').attrs(
         width: ${getAvatarSize};
         height: ${getAvatarSize};
         object-fit: cover;
-        border: 0.1rem solid ${({ defaults }) => defaults.borderColor};
+        border: 0.1rem solid ${({ theme }) => theme.avatar.defaults.borderColor};
         box-sizing: border-box;
-        border-radius: ${({ defaults }) => defaults.borderRadius};
+        border-radius: ${({ theme }) => theme.avatar.defaults.borderRadius};
     }
 
     ${props => props.onClick && hoverStyle};

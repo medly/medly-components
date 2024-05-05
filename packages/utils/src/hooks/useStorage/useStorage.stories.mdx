@@ -1,4 +1,4 @@
-import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+import { Meta, Preview, Props } from '@storybook/addon-docs/blocks';
 
 <Meta title="Utils/hooks/useStorage" />
 
@@ -48,9 +48,10 @@ type UseStorageOptions<T> = { storage?: 'localStorage' | 'sessionStorage' | 'coo
 You can pass the option in specific usage or you can set global config like below:
 
 ```tsx
+import React, { PropsWithChildren } from 'react';
 import { StorageConfig } from '@medly-components/utils';
 
-const Dummy: React.FC = props => {
+const Dummy: React.FC<PropsWithChildren> = props => {
     return <StorageConfig.Provider value={{ storage: 'sessionStorage' }}>{props.children}</StorageConfig.Provider>;
 };
 ```

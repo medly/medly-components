@@ -6,9 +6,6 @@ exports[`Form should not render any field if component type is not matched 1`] =
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -18,37 +15,15 @@ exports[`Form should not render any field if component type is not matched 1`] =
 .c3 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 100rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-.c3,
-.c3 .c4,
-.c3 .sc-1pf3x8a-0,
-.c3 .sc-1pf3x8a-0 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c3:hover {
@@ -68,26 +43,14 @@ exports[`Form should not render any field if component type is not matched 1`] =
   background: #dfe4e9;
 }
 
-.c3:disabled .sc-1pf3x8a-0 * {
-  fill: #98A7B7;
-}
-
 .c3:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c3:not(:disabled):not(:hover) .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
 .c3:not(:disabled):active {
   color: #ffffff;
   background: #275093;
-}
-
-.c3:not(:disabled):active .sc-1pf3x8a-0 * {
-  fill: #ffffff;
 }
 
 .c3:not(:disabled):not(:active):hover {
@@ -96,35 +59,23 @@ exports[`Form should not render any field if component type is not matched 1`] =
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c3:not(:disabled):not(:active):hover .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c3 .sc-1pf3x8a-0 + .c4 {
+.c3 .sc-1pf3x8a-0+.c4 {
   margin-left: 0.8rem;
 }
 
-.c3 .c4 + .sc-1pf3x8a-0 {
+.c3 .c4+.sc-1pf3x8a-0 {
   margin-left: 0.8rem;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   grid-column: 1/-1;
   margin-top: 1.6rem;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.c2 > * + * {
+.c2>*+* {
   margin-left: 1.6rem;
 }
 
@@ -132,7 +83,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
   grid-column: 1/-1;
 }
 
-.c1 > * {
+.c1>* {
   width: 100%;
   margin: 0;
   min-width: auto;
@@ -145,12 +96,12 @@ exports[`Form should not render any field if component type is not matched 1`] =
   display: inline-grid;
 }
 
-.c0 > h2 {
+.c0>h2 {
   grid-column: 1/-1;
   margin-bottom: 0.8rem;
 }
 
-.c0 > span {
+.c0>span {
   grid-column: 1/-1;
   margin-bottom: 1rem;
 }
@@ -162,17 +113,24 @@ exports[`Form should not render any field if component type is not matched 1`] =
   >
     <div
       class="c1"
+      gridcolumn="1/-1"
     />
     <div
       class="c2"
+      flexdirection="row"
     >
       <button
         class="c3"
+        edges="rounded"
         form="medly-dynamic-form"
         type="submit"
+        variant="solid"
       >
         <span
           class="c4 c5"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="button1"
         >
           Submit
         </span>
@@ -186,14 +144,12 @@ exports[`Form should render properly with initial state 1`] = `
 .c31 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c31 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -201,14 +157,12 @@ exports[`Form should render properly with initial state 1`] = `
 .c44 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
 }
 
 .c44 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -218,9 +172,6 @@ exports[`Form should render properly with initial state 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -232,143 +183,115 @@ exports[`Form should render properly with initial state 1`] = `
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c61 {
+.c62 {
   margin: 0;
   color: inherit;
   font-size: 1.8rem;
   font-weight: 700;
-  -webkit-letter-spacing: -0.02rem;
-  -moz-letter-spacing: -0.02rem;
-  -ms-letter-spacing: -0.02rem;
   letter-spacing: -0.02rem;
   line-height: 2.4rem;
   text-align: initial;
 }
 
-.c69 {
+.c70 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 100rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-.c69,
-.c69 .c17,
-.c69 .c30,
-.c69 .c30 * {
-  -webkit-transition: all 100ms ease-out;
+.c70,
+.c70 .c17,
+.c70 .c30,
+.c70 .c30 * {
   transition: all 100ms ease-out;
 }
 
-.c69:hover {
+.c70:hover {
   cursor: pointer;
 }
 
-.c69:focus {
+.c70:focus {
   outline: none;
 }
 
-.c69:disabled {
+.c70:disabled {
   cursor: not-allowed;
 }
 
-.c69:disabled {
+.c70:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c69:disabled .c30 * {
+.c70:disabled .c30 * {
   fill: #98A7B7;
 }
 
-.c69:not(:disabled):not(:hover) {
+.c70:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c69:not(:disabled):not(:hover) .c30 * {
+.c70:not(:disabled):not(:hover) .c30 * {
   fill: #ffffff;
 }
 
-.c69:not(:disabled):active {
+.c70:not(:disabled):active {
   color: #ffffff;
   background: #275093;
 }
 
-.c69:not(:disabled):active .c30 * {
+.c70:not(:disabled):active .c30 * {
   fill: #ffffff;
 }
 
-.c69:not(:disabled):not(:active):hover {
+.c70:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #3061B3;
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c69:not(:disabled):not(:active):hover .c30 * {
+.c70:not(:disabled):not(:active):hover .c30 * {
   fill: #ffffff;
 }
 
-.c69 .c30 + .c17 {
+.c70 .c30+.c17 {
   margin-left: 0.8rem;
 }
 
-.c69 .c17 + .c30 {
+.c70 .c17+.c30 {
   margin-left: 0.8rem;
 }
 
 .c46 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c55 {
+.c56 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c50 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c50 * {
@@ -379,65 +302,47 @@ exports[`Form should render properly with initial state 1`] = `
   fill: #546A7F;
 }
 
+.c51 {
+  margin-left: 1.6rem;
+}
+
 .c9 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.c9::after {
+.c9 ::after {
   content: ' *';
 }
 
 .c5 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -448,7 +353,7 @@ exports[`Form should render properly with initial state 1`] = `
   color: #546A7F;
 }
 
-.c5 ~ .c54 {
+.c5~.c55 {
   color: #546A7F;
 }
 
@@ -461,7 +366,6 @@ exports[`Form should render properly with initial state 1`] = `
   left: 0;
   box-sizing: border-box;
   border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -495,39 +399,16 @@ exports[`Form should render properly with initial state 1`] = `
   box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
-.c5:focus-within input::-webkit-input-placeholder,
-.c5:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c5:focus-within input::-moz-placeholder,
-.c5:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c5:focus-within input:-ms-input-placeholder,
-.c5:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
 .c5:focus-within input::placeholder,
 .c5:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
+  color: rgba(0, 90, 238, .2);
 }
 
 .c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
@@ -537,26 +418,16 @@ exports[`Form should render properly with initial state 1`] = `
   left: 0;
   opacity: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   pointer-events: none;
-  color: rgba(0,90,238,.2);
+  color: rgba(0, 90, 238, .2);
   bottom: 0.7rem;
 }
 
 .c3 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
   min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -564,12 +435,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c41 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: auto;
@@ -578,12 +444,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c48 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -596,26 +457,20 @@ exports[`Form should render properly with initial state 1`] = `
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 0.7rem;
 }
 
 .c7,
-.c7 ~ .c42 {
+.c7~.c42 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -626,18 +481,6 @@ exports[`Form should render properly with initial state 1`] = `
   box-shadow: unset;
 }
 
-.c7.c7.c7:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c7.c7.c7:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c7.c7.c7:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c7.c7.c7:focus::placeholder {
   opacity: 1;
 }
@@ -646,43 +489,22 @@ exports[`Form should render properly with initial state 1`] = `
   color: #435465;
 }
 
-.c7:disabled ~ .c8,
-.c7:disabled ~ .c42 {
+.c7:disabled~.c8,
+.c7:disabled~.c42 {
   cursor: not-allowed;
 }
 
-.c7::-webkit-input-placeholder {
+.c7 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c7::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c7:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c7::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c7:not(:placeholder-shown) ~ .c8,
-.c7:focus ~ .c8 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c7:not(:placeholder-shown)~.c8,
+.c7:focus~.c8 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c7:not(:placeholder-shown) ~ .c42 {
+.c7:not(:placeholder-shown)~.c42 {
   opacity: 1;
 }
 
@@ -690,113 +512,81 @@ exports[`Form should render properly with initial state 1`] = `
   color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
-.c13::after {
+.c13 ::after {
   color: red;
   content: ' *';
 }
 
-.c56 {
+.c57 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c56 .c2 {
+.c57 .c2 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c56 .c2 label {
+.c57 .c2 label {
   pointer-events: none;
 }
 
-.c56 .c2 div,
-.c56 .c2 input,
-.c56 .c2 label {
+.c57 .c2 div,
+.c57 .c2 input,
+.c57 .c2 label {
   cursor: pointer;
 }
 
-.c56 .c2 .c49 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
+.c57 .c2 .c49 {
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c56 .c2:not(:focus-within):hover .c49 * {
+.c57 .c2:not(:focus-within):hover .c49 * {
   fill: #13181D;
 }
 
 .c20 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
 }
 
-.c20 >:first-child {
+.c20>:first-child {
   margin-bottom: 0.9rem;
 }
 
 .c33 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
 }
 
-.c33 >:first-child {
+.c33>:first-child {
   margin-bottom: 0.9rem;
 }
 
 .c22 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   cursor: inherit;
   color: inherit;
 }
 
-.c22::after {
+.c22 ::after {
   content: ' *';
   color: default:inherit;
   disabled: #98A7B7;
 }
 
 .c25 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   cursor: inherit;
   color: inherit;
@@ -805,7 +595,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c23 {
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .c29 {
@@ -814,29 +604,16 @@ exports[`Form should render properly with initial state 1`] = `
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c29 .c30 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -854,39 +631,35 @@ exports[`Form should render properly with initial state 1`] = `
   position: absolute;
 }
 
-.c27:checked ~ .c28 {
+.c27:checked~.c28 {
   border-color: #3872D2;
   background-color: #3872D2;
 }
 
-.c27:checked ~ .c28 .c30 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c27:checked~.c28 .c30 {
   transform: scale(1);
 }
 
-.c27:checked ~ .c28 .c30 * {
+.c27:checked~.c28 .c30 * {
   fill: #ffffff;
 }
 
-.c27:not(:checked) ~ .c28 {
+.c27:not(:checked)~.c28 {
   background-color: transparent;
   border-color: #13181D;
 }
 
-.c27:not(:disabled):focus ~ .c28 {
+.c27:not(:disabled):focus~.c28 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c27:not(:disabled):focus:not(:checked) ~ .c28 {
+.c27:not(:disabled):focus:not(:checked)~.c28 {
   border-color: #3872D2;
 }
 
 .c26 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -894,22 +667,11 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c24 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -930,22 +692,11 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c32 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -963,37 +714,26 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #3061B3;
 }
 
-.c67 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
+.c68 {
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.c67 * {
+.c68 * {
   cursor: pointer;
 }
 
-.c67.c67.c67:hover .c28 {
+.c68.c68.c68:hover .c28 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3061B3;
   background-color: #3061B3;
 }
 
-.c67.c67.c67:active .c28 {
+.c68.c68.c68:active .c28 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #275093;
   background-color: #275093;
@@ -1017,164 +757,41 @@ exports[`Form should render properly with initial state 1`] = `
   fill: #303C48;
 }
 
-.c40 {
-  position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  min-width: auto;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c40 > .c2 {
+.c40>.c2 {
   margin: 0;
 }
 
-.c40 > .c2 > .c4 {
+.c40>.c2>.c4 {
   padding-right: 0.8rem;
 }
 
-.c40 .sc-zv8j3p-0 {
-  z-index: 4;
-  position: absolute;
-  top: calc(100% + 0px);
-  left: 0%;
-  top: 5.6rem;
-}
-
-.c53 {
-  border-right: 0.1rem solid rgba(84,106,127,0.2);
+.c54 {
+  border-right: 0.1rem solid rgba(84, 106, 127, 0.2);
   height: 3.2rem;
   margin-right: 1.6rem;
   border-radius: 0.1rem;
-  -webkit-transition: border-color 100ms ease-out;
   transition: border-color 100ms ease-out;
 }
 
-.c51 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  box-sizing: border-box;
-  height: 5.6rem;
-  padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  cursor: text;
-  border-radius: 0.4rem 0.4rem 0 0;
-  background-color: #eff2f4;
+.c52 {
   padding: 0 1.6rem 0 0.8rem;
 }
 
-.c51 .c8 {
-  color: #546A7F;
-}
-
-.c51 ~ .c54 {
-  color: #546A7F;
-}
-
-.c51::after {
-  content: '';
-  width: 100%;
-  height: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  box-sizing: border-box;
-  border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c51:hover::after,
-.c51:focus-within::after {
-  border-width: 0.2rem;
-}
-
-.c51 input {
-  box-shadow: 0 0 0 100000px #eff2f4 inset;
-}
-
-.c51:focus-within,
-.c51:focus-within:hover {
-  background-color: #EBF1FA;
-}
-
-.c51:focus-within::after,
-.c51:focus-within:hover::after {
-  border-color: #3872D2;
-  border-radius: 0;
-}
-
-.c51:focus-within .c8,
-.c51:focus-within:hover .c8 {
-  color: #3872D2;
-}
-
-.c51:focus-within input,
-.c51:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #EBF1FA inset;
-}
-
-.c51:focus-within input::-webkit-input-placeholder,
-.c51:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c51:focus-within input::-moz-placeholder,
-.c51:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c51:focus-within input:-ms-input-placeholder,
-.c51:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c51:focus-within input::placeholder,
-.c51:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c51 .c30:first-of-type {
+.c52 .c30:first-of-type {
   margin-right: 0.8rem;
 }
 
-.c51 .c30:nth-of-type(2) {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
+.c52 .c30:nth-of-type(2) {
   transition: transform 200ms ease-out;
 }
 
-.c51:hover .c52 {
+.c52:hover .c53 {
   border-color: #546A7F;
 }
 
 .c14 {
   grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1187,26 +804,9 @@ exports[`Form should render properly with initial state 1`] = `
 .c12 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
+  grid-template-columns: minmax(max-content, 25%) minmax(auto, 80%);
   grid-template-areas: 'label field' 'random description';
-}
-
-.c12 .sc-12atfcu-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
 .c16 {
@@ -1217,9 +817,6 @@ exports[`Form should render properly with initial state 1`] = `
 .c15 {
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -1235,9 +832,6 @@ exports[`Form should render properly with initial state 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1246,13 +840,8 @@ exports[`Form should render properly with initial state 1`] = `
   outline: 0;
 }
 
-.c60 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.c61 {
   user-select: none;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
   max-width: max-content;
   cursor: default;
   border: 1px solid;
@@ -1262,30 +851,21 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #607890;
   background-color: #dfe4e9;
   padding: 0.2rem 0.5rem 0.2rem 0.9rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-.c60:focus {
+.c61:focus {
   outline: none;
 }
 
-.c60:disabled,
-.c60:disabled > .c30 {
+.c61:disabled,
+.c61:disabled>.c30 {
   cursor: not-allowed;
 }
 
-.c60 .c30 {
+.c61 .c30 {
   font-size: 1.2rem;
   border-radius: 50%;
   cursor: pointer;
@@ -1293,86 +873,74 @@ exports[`Form should render properly with initial state 1`] = `
   margin-left: 0.6rem;
 }
 
-.c60 .c30 {
+.c61 .c30 {
   background-color: #b0bcc8;
 }
 
-.c60 .c30 * {
+.c61 .c30 * {
   fill: #303C48;
 }
 
-.c60 .c30:hover {
+.c61 .c30:hover {
   background-color: #98A7B7;
 }
 
-.c60 .c30:hover * {
+.c61 .c30:hover * {
   fill: #13181D;
 }
 
-.c60:hover {
+.c61:hover {
   border-color: #435465;
 }
 
-.c59 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.c60 {
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-.c57 {
+.c58 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c57 .c2 {
+.c58 .c2 {
   margin: 0;
 }
 
-.c57 .c2 label {
+.c58 .c2 label {
   pointer-events: none;
 }
 
-.c57 .c2 div,
-.c57 .c2 input,
-.c57 .c2 label {
+.c58 .c2 div,
+.c58 .c2 input,
+.c58 .c2 label {
   cursor: pointer;
 }
 
-.c57 .c2:focus-within input {
+.c58 .c2:focus-within input {
   cursor: text;
 }
 
-.c57 .c2 input {
+.c58 .c2 input {
   padding-right: 1.6rem;
 }
 
-.c57 .c58 > .c30 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
+.c58 .c59>.c30 {
   transform: rotate(0deg);
 }
 
-.c57 .c58 > .c30 * {
+.c58 .c59>.c30 * {
   fill: #546A7F;
 }
 
-.c57:not(:focus-within):hover .c58 > .c30 * {
+.c58:not(:focus-within):hover .c59>.c30 * {
   fill: #13181D;
 }
 
 .c38 {
   position: relative;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   box-sizing: border-box;
   border: 0.15rem solid;
@@ -1388,12 +956,8 @@ exports[`Form should render properly with initial state 1`] = `
   left: 50%;
   width: 67%;
   height: 67%;
-  -webkit-transform: translate(-50%,-50%) scale(0);
-  -ms-transform: translate(-50%,-50%) scale(0);
   transform: translate(-50%,-50%) scale(0);
   border-radius: 100%;
-  -webkit-transition: -webkit-transform 100ms ease-out;
-  -webkit-transition: transform 100ms ease-out;
   transition: transform 100ms ease-out;
 }
 
@@ -1405,37 +969,35 @@ exports[`Form should render properly with initial state 1`] = `
   margin: 0;
 }
 
-.c36 ~ .c37 {
+.c36~.c37 {
   border-color: #13181D;
 }
 
-.c36 ~ .c37::after {
+.c36~.c37::after {
   background-color: #13181D;
 }
 
-.c36:checked ~ .c37::after {
-  -webkit-transform: translate(-50%,-50%) scale(1);
-  -ms-transform: translate(-50%,-50%) scale(1);
+.c36:checked~.c37::after {
   transform: translate(-50%,-50%) scale(1);
 }
 
-.c36:disabled ~ .c37 {
+.c36:disabled~.c37 {
   border-color: #98A7B7;
 }
 
-.c36:disabled ~ .c37::after {
+.c36:disabled~.c37::after {
   background-color: #98A7B7;
 }
 
-.c36:not(:disabled):checked ~ .c37 {
+.c36:not(:disabled):checked~.c37 {
   border-color: #3872D2;
 }
 
-.c36:not(:disabled):checked ~ .c37::after {
+.c36:not(:disabled):checked~.c37::after {
   background-color: #3872D2;
 }
 
-.c36:not(:disabled):focus ~ .c37 {
+.c36:not(:disabled):focus~.c37 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
@@ -1445,52 +1007,25 @@ exports[`Form should render properly with initial state 1`] = `
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
   flex-grow: 0;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .c34 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
 .c39 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -1505,18 +1040,13 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c47 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
   min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c47 > .c2 {
+.c47>.c2 {
   margin: 0;
 }
 
@@ -1525,23 +1055,15 @@ exports[`Form should render properly with initial state 1`] = `
   display: none;
 }
 
-.c68 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.c69 {
   display: flex;
   grid-column: 1/-1;
   margin-top: 1.6rem;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.c68 > * + * {
+.c69>*+* {
   margin-left: 1.6rem;
 }
 
@@ -1549,7 +1071,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-column: 1/7;
 }
 
-.c1 > * {
+.c1>* {
   width: 100%;
   margin: 0;
   min-width: auto;
@@ -1559,7 +1081,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-column: 7/-1;
 }
 
-.c10 > * {
+.c10>* {
   width: 100%;
   margin: 0;
   min-width: auto;
@@ -1569,48 +1091,48 @@ exports[`Form should render properly with initial state 1`] = `
   grid-column: 1/-1;
 }
 
-.c11 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c64 {
-  grid-column: 1/5;
-}
-
-.c64 > * {
+.c11>* {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
 .c65 {
-  grid-column: 5/9;
+  grid-column: 1/5;
 }
 
-.c65 > * {
+.c65>* {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
 .c66 {
-  grid-column: 9/-1;
+  grid-column: 5/9;
 }
 
-.c66 > * {
+.c66>* {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
-.c62 {
+.c67 {
+  grid-column: 9/-1;
+}
+
+.c67>* {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c63 {
   grid-column: 1/-1;
   margin-top: 2.6rem;
 }
 
-.c63 {
+.c64 {
   margin-bottom: 1rem;
 }
 
@@ -1621,12 +1143,12 @@ exports[`Form should render properly with initial state 1`] = `
   display: inline-grid;
 }
 
-.c0 > h2 {
+.c0>h2 {
   grid-column: 1/-1;
   margin-bottom: 0.8rem;
 }
 
-.c0 > span {
+.c0>span {
   grid-column: 1/-1;
   margin-bottom: 1rem;
 }
@@ -1638,153 +1160,192 @@ exports[`Form should render properly with initial state 1`] = `
   >
     <div
       class="c1"
+      gridcolumn="1/7"
     >
       <div
         class="c2 c3"
         id="firstName-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c4 c5"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c6"
+            variant="filled"
           >
             <input
               aria-describedby="firstName-helper-text"
               class="c7"
+              errortext=""
               id="firstName-input"
+              inputsize="M"
               name="firstName"
               placeholder=" "
               required=""
               type="text"
               value="first name"
+              variant="filled"
             />
             <label
               class="c8 c9"
               for="firstName-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               First Name
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
       class="c10"
+      gridcolumn="7/-1"
     >
       <div
         class="c2 c3"
         id="lastName-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c4 c5"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c6"
+            variant="filled"
           >
             <input
               aria-describedby="lastName-helper-text"
               class="c7"
+              errortext=""
               id="lastName-input"
+              inputsize="M"
               name="lastName"
               placeholder=" "
               required=""
               type="text"
               value="last name"
+              variant="filled"
             />
             <label
               class="c8 c9"
               for="lastName-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Last Name
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
       class="c11"
+      gridcolumn="1/-1"
     >
       <div
         class="c2 c3"
         id="email-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c4 c5"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c6"
+            variant="filled"
           >
             <input
               aria-describedby="email-helper-text"
               class="c7"
+              errortext=""
               id="email-input"
+              inputsize="M"
               name="email"
               placeholder=" "
               required=""
               type="email"
               value="email@email.com"
+              variant="filled"
             />
             <label
               class="c8 c9"
               for="email-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Email
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
       class="c11"
+      gridcolumn="1/-1"
     >
       <div
         class="c2 c3"
         id="website-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c4 c5"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c6"
+            variant="filled"
           >
             <input
               aria-describedby="website-helper-text"
               class="c7"
+              errortext=""
               id="website-input"
+              inputsize="M"
               name="website"
               placeholder=" "
               required=""
               type="url"
               value=""
+              variant="filled"
             />
             <label
               class="c8 c9"
               for="website-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Website
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
       class="c11"
+      gridcolumn="1/-1"
     >
       <div
         class="c12"
         id="resume-field"
+        labelposition="left"
       >
         <label
           class="c13 c14"
+          labelposition="left"
           required=""
         >
           Resume
@@ -1797,7 +1358,10 @@ exports[`Form should render properly with initial state 1`] = `
           Click to choose file
           <input
             class="c16"
+            files=""
             id="resume"
+            maxsize="5000000"
+            minwidth="auto"
             name="resume"
             required=""
             type="file"
@@ -1805,6 +1369,8 @@ exports[`Form should render properly with initial state 1`] = `
         </label>
         <span
           class="c17 c18 c19"
+          textalign="initial"
+          textcolor="inherit"
         >
           File size should be less than 5MB
         </span>
@@ -1812,11 +1378,13 @@ exports[`Form should render properly with initial state 1`] = `
     </div>
     <div
       class="c11"
+      gridcolumn="1/-1"
     >
       <div
         aria-describedby="languages-helper-text"
         class="c20"
         id="languages-wrapper"
+        minwidth="auto"
         name="languages"
         type="checkbox"
       >
@@ -1824,24 +1392,31 @@ exports[`Form should render properly with initial state 1`] = `
           class="c17 c21 c22"
           id="languages-label"
           required=""
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Medium"
           type="checkbox"
         >
           Languages
         </span>
         <div
           class="c23"
+          columns="1"
           id="languages-options"
         >
-          
           <label
             class="c24"
             for="JAVA-languages"
             id="JAVA-languages-wrapper"
-            sizes="[object Object]"
+            labelposition="right"
           >
             <span
               class="c17 c18 c25"
               id="JAVA-languages-label"
+              labelposition="right"
+              textalign="initial"
+              textcolor="inherit"
               type="checkbox"
             >
               JAVA
@@ -1854,7 +1429,6 @@ exports[`Form should render properly with initial state 1`] = `
                 class="c27"
                 id="JAVA-languages"
                 name="java"
-                sizes="[object Object]"
                 type="checkbox"
               />
               <div
@@ -1876,16 +1450,18 @@ exports[`Form should render properly with initial state 1`] = `
               </div>
             </div>
           </label>
-          
           <label
             class="c32"
             for="RUBY-languages"
             id="RUBY-languages-wrapper"
-            sizes="[object Object]"
+            labelposition="right"
           >
             <span
               class="c17 c18 c25"
               id="RUBY-languages-label"
+              labelposition="right"
+              textalign="initial"
+              textcolor="inherit"
               type="checkbox"
             >
               RUBY
@@ -1897,7 +1473,6 @@ exports[`Form should render properly with initial state 1`] = `
                 class="c27"
                 id="RUBY-languages"
                 name="ruby"
-                sizes="[object Object]"
                 type="checkbox"
               />
               <div
@@ -1924,34 +1499,44 @@ exports[`Form should render properly with initial state 1`] = `
     </div>
     <div
       class="c11"
+      gridcolumn="1/-1"
     >
       <div
         aria-describedby="role-helper-text"
         class="c33"
         id="role-wrapper"
+        minwidth="auto"
         type="radio"
       >
         <span
           class="c17 c21 c22"
           id="role-label"
           required=""
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Medium"
           type="radio"
         >
           Role
         </span>
         <div
           class="c23"
+          columns="1"
           id="role-options"
         >
           <label
             class="c34"
             for="Front End-role"
             id="Front End-role-wrapper"
-            sizes="[object Object]"
+            labelposition="right"
           >
             <span
               class="c17 c18 c25"
               id="Front End-role-label"
+              labelposition="right"
+              textalign="initial"
+              textcolor="inherit"
               type="radio"
             >
               Front End
@@ -1965,7 +1550,6 @@ exports[`Form should render properly with initial state 1`] = `
                 id="Front End-role"
                 name="role"
                 required=""
-                sizes="[object Object]"
                 type="radio"
                 value="front-end"
               />
@@ -1978,11 +1562,14 @@ exports[`Form should render properly with initial state 1`] = `
             class="c39"
             for="Back End-role"
             id="Back End-role-wrapper"
-            sizes="[object Object]"
+            labelposition="right"
           >
             <span
               class="c17 c18 c25"
               id="Back End-role-label"
+              labelposition="right"
+              textalign="initial"
+              textcolor="inherit"
               type="radio"
             >
               Back End
@@ -1995,7 +1582,6 @@ exports[`Form should render properly with initial state 1`] = `
                 id="Back End-role"
                 name="role"
                 required=""
-                sizes="[object Object]"
                 type="radio"
                 value="back-end"
               />
@@ -2008,11 +1594,14 @@ exports[`Form should render properly with initial state 1`] = `
             class="c39"
             for="Full Stack-role"
             id="Full Stack-role-wrapper"
-            sizes="[object Object]"
+            labelposition="right"
           >
             <span
               class="c17 c18 c25"
               id="Full Stack-role-label"
+              labelposition="right"
+              textalign="initial"
+              textcolor="inherit"
               type="radio"
             >
               Full Stack
@@ -2025,7 +1614,6 @@ exports[`Form should render properly with initial state 1`] = `
                 id="Full Stack-role"
                 name="role"
                 required=""
-                sizes="[object Object]"
                 type="radio"
                 value="full-stack"
               />
@@ -2039,41 +1627,55 @@ exports[`Form should render properly with initial state 1`] = `
     </div>
     <div
       class="c1"
+      gridcolumn="1/7"
     >
       <div
-        class="c2 c40"
+        class="c2 c3 c40"
         id="birthDate-datepicker-wrapper"
+        minwidth="auto"
+        placement="bottom-start"
+        variant="filled"
       >
         <div
           class="c2 c41"
           id="birthDate-input-wrapper"
+          minwidth="auto"
         >
           <div
             class="c4 c5"
+            minrows="1"
+            variant="filled"
           >
             <div
               class="c6"
+              variant="filled"
             >
               <input
                 aria-describedby="birthDate-helper-text"
                 class="c7"
+                errortext=""
                 id="birthDate-input"
+                inputsize="M"
                 name="birthDate"
                 pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
                 placeholder="DD / MM / YYYY"
                 required=""
                 type="text"
                 value="01 / 01 / 2019"
+                variant="filled"
               />
               <span
                 class="c42 c43"
+                variant="filled"
               >
                 01 / 01 / 2019
               </span>
               <label
                 class="c8 c9"
                 for="birthDate-input"
+                inputwidth="0"
                 required=""
+                variant="filled"
               >
                 Birth Date
               </label>
@@ -2097,47 +1699,57 @@ exports[`Form should render properly with initial state 1`] = `
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
     <div
       class="c10"
+      gridcolumn="7/-1"
     >
       <div
         class="c46 c47"
         id="medly-popover-wrapper"
+        minwidth="auto"
       >
         <div
           class="c2 c48"
           id="birthTime-input-wrapper"
+          minwidth="20rem"
         >
           <div
             class="c4 c5"
+            minrows="1"
+            variant="filled"
           >
             <div
               class="c6"
+              variant="filled"
             >
               <input
                 aria-describedby="birthTime-helper-text"
                 class="c7"
+                errortext=""
                 id="birthTime-input"
+                inputsize="M"
                 name="birthTime"
                 placeholder=" "
                 required=""
                 type="time"
                 value="22:00"
+                variant="filled"
               />
               <label
                 class="c8 c9"
                 for="birthTime-input"
+                inputwidth="0"
                 required=""
+                variant="filled"
               >
                 Birth Time
               </label>
             </div>
             <svg
-              class="c30 c31 sc-1668uuz-0 c49 c50"
+              class="c30 c31 c49 c50 c51"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -2153,23 +1765,25 @@ exports[`Form should render properly with initial state 1`] = `
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
     <div
       class="c11"
+      gridcolumn="1/-1"
     >
       <div
         class="c2 c3"
         id="experience-wrapper"
         label="Experience"
+        minwidth="auto"
         name="experience"
         type="date-range"
       >
         <div
-          class="c4 c51"
+          class="c4 c5 c52"
           id="experience-textFields"
+          variant="filled"
         >
           <svg
             class="c30 c44 c45"
@@ -2192,104 +1806,132 @@ exports[`Form should render properly with initial state 1`] = `
           <div
             class="c6"
             id="experience-startDate-input-wrapper"
+            variant="filled"
           >
             <input
               class="c7"
+              errortext=""
               id="experience-startDate-input"
+              inputsize="M"
               name="START_DATE"
               pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
               placeholder="DD / MM / YYYY"
               required=""
               value="01 / 01 / 2019"
+              variant="filled"
             />
             <span
               class="c42 c43"
+              variant="filled"
             >
               01 / 01 / 2019
             </span>
             <label
               class="c8 c9"
               for="experience-startDate-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               From
             </label>
           </div>
           <i
-            class="c52 c53"
+            class="c53 c54"
+            variant="filled"
           />
           <div
             class="c6"
             id="experience-endDate-input-wrapper"
+            variant="filled"
           >
             <input
               class="c7"
+              errortext=""
               id="experience-endDate-input"
+              inputsize="M"
               name="END_DATE"
               pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
               placeholder="DD / MM / YYYY"
               required=""
               value="01 / 02 / 2019"
+              variant="filled"
             />
             <span
               class="c42 c43"
+              variant="filled"
             >
               01 / 02 / 2019
             </span>
             <label
               class="c8 c9"
               for="experience-endDate-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               To
             </label>
           </div>
         </div>
         <span
-          class="c54 c55"
+          class="c55 c56"
           id="experience-helper-text"
+          variant="filled"
         />
       </div>
     </div>
     <div
       class="c11"
+      gridcolumn="1/-1"
     >
       <div
-        class="c56"
+        class="c57"
         id="country-wrapper"
+        minwidth="auto"
+        variant="filled"
       >
         <div
           class="c2 c41"
           id="country-input-wrapper"
+          minwidth="auto"
         >
           <div
             class="c4 c5"
+            minrows="1"
+            variant="filled"
           >
             <div
               class="c6"
+              variant="filled"
             >
               <input
                 aria-describedby="country-helper-text"
                 autocomplete="off"
                 class="c7"
+                errortext=""
                 id="country-input"
                 inputmode="none"
+                inputsize="M"
                 name="country"
                 placeholder="Please Select . . ."
                 required=""
                 type="text"
                 value="India"
+                variant="filled"
               />
               <label
                 class="c8 c9"
                 for="country-input"
+                inputwidth="0"
                 required=""
+                variant="filled"
               >
                 Country
               </label>
             </div>
             <svg
-              class="c30 c31 sc-1668uuz-0 c49 c50"
+              class="c30 c31 c49 c50 c51"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -2302,56 +1944,73 @@ exports[`Form should render properly with initial state 1`] = `
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
     <div
       class="c11"
+      gridcolumn="1/-1"
     >
       <div
-        class="c57"
+        class="c58"
         id="graduation-wrapper"
+        minwidth="auto"
         name="graduation"
+        variant="filled"
       >
         <div
           class="c2 c41"
           id="graduation-input-wrapper"
+          minwidth="auto"
         >
           <div
             class="c4 c5"
+            minrows="1"
+            variant="filled"
           >
             <div
               class="c6"
+              variant="filled"
             >
               <input
                 aria-describedby="graduation-helper-text"
                 autocomplete="off"
                 class="c7"
+                errortext=""
                 id="graduation-input"
+                inputsize="M"
                 placeholder="1 options selected"
                 required=""
                 type="text"
                 value="BTech"
+                variant="filled"
               />
               <label
                 class="c8 c9"
                 for="graduation-input"
+                inputwidth="0"
                 required=""
+                variant="filled"
               >
                 Graduation
               </label>
             </div>
             <div
-              class="c58 c59"
+              class="c59 c60"
               id="graduation-count"
             >
               <button
-                class="c60"
+                class="c61"
                 id="graduation-count-chip"
+                state="default"
+                variant="filled"
               >
                 <span
                   class="c17 c21"
+                  textalign="initial"
+                  textcolor="inherit"
+                  textvariant="body1"
+                  textweight="Medium"
                 >
                   1
                 </span>
@@ -2387,138 +2046,173 @@ exports[`Form should render properly with initial state 1`] = `
               </svg>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
     <h4
-      class="c17 c61 c62"
+      class="c17 c62 c63"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="h4"
     >
       Marks
     </h4>
     <span
-      class="c17 c18 c63"
+      class="c17 c18 c64"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Marks Information
     </span>
     <div
-      class="c64"
+      class="c65"
+      gridcolumn="1/5"
     >
       <div
         class="c2 c3"
         id="marks.database-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c4 c5"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c6"
+            variant="filled"
           >
             <input
               aria-describedby="marks.database-helper-text"
               class="c7"
+              errortext=""
               id="marks.database-input"
+              inputsize="M"
               name="marks.database"
               placeholder="Database"
               required=""
               type="number"
               value="10"
+              variant="filled"
             />
             <label
               class="c8 c9"
               for="marks.database-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Database
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
-      class="c65"
+      class="c66"
+      gridcolumn="5/9"
     >
       <div
         class="c2 c3"
         id="marks.algorithms-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c4 c5"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c6"
+            variant="filled"
           >
             <input
               aria-describedby="marks.algorithms-helper-text"
               class="c7"
+              errortext=""
               id="marks.algorithms-input"
+              inputsize="M"
               name="marks.algorithms"
               placeholder="Algorithms"
               required=""
               type="number"
               value="10"
+              variant="filled"
             />
             <label
               class="c8 c9"
               for="marks.algorithms-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Algorithms
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
-      class="c66"
+      class="c67"
+      gridcolumn="9/-1"
     >
       <div
         class="c2 c3"
         id="marks.maths-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c4 c5"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c6"
+            variant="filled"
           >
             <input
               aria-describedby="marks.maths-helper-text"
               class="c7"
+              errortext=""
               id="marks.maths-input"
+              inputsize="M"
               name="marks.maths"
               placeholder="Maths"
               required=""
               type="number"
               value="10"
+              variant="filled"
             />
             <label
               class="c8 c9"
               for="marks.maths-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Maths
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
       class="c11"
+      gridcolumn="1/-1"
     >
-      
       <label
-        class="c67"
+        class="c68"
         for="agree"
         id="agree-wrapper"
-        sizes="[object Object]"
+        labelposition="left"
       >
         <span
           class="c17 c18 c25"
           id="agree-label"
+          labelposition="left"
+          textalign="initial"
+          textcolor="inherit"
           type="checkbox"
         >
           Do you Agree
@@ -2530,8 +2224,8 @@ exports[`Form should render properly with initial state 1`] = `
             checked=""
             class="c27"
             id="agree"
+            minwidth="auto"
             name="agree"
-            sizes="[object Object]"
             type="checkbox"
           />
           <div
@@ -2555,15 +2249,21 @@ exports[`Form should render properly with initial state 1`] = `
       </label>
     </div>
     <div
-      class="c68"
+      class="c69"
+      flexdirection="row"
     >
       <button
-        class="c69"
+        class="c70"
+        edges="rounded"
         form="medly-dynamic-form"
         type="submit"
+        variant="solid"
       >
         <span
           class="c17 c21"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="button1"
         >
           Submit
         </span>
@@ -2577,14 +2277,12 @@ exports[`Form should render properly without initial state 1`] = `
 .c33 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c33 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2592,14 +2290,12 @@ exports[`Form should render properly without initial state 1`] = `
 .c44 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
 }
 
 .c44 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -2609,9 +2305,6 @@ exports[`Form should render properly without initial state 1`] = `
   color: inherit;
   font-size: 3.2rem;
   font-weight: 600;
-  -webkit-letter-spacing: -0.04rem;
-  -moz-letter-spacing: -0.04rem;
-  -ms-letter-spacing: -0.04rem;
   letter-spacing: -0.04rem;
   line-height: 4.0rem;
   text-align: initial;
@@ -2622,9 +2315,6 @@ exports[`Form should render properly without initial state 1`] = `
   color: inherit;
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -2636,9 +2326,6 @@ exports[`Form should render properly without initial state 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2650,143 +2337,115 @@ exports[`Form should render properly without initial state 1`] = `
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c60 {
+.c61 {
   margin: 0;
   color: inherit;
   font-size: 1.8rem;
   font-weight: 700;
-  -webkit-letter-spacing: -0.02rem;
-  -moz-letter-spacing: -0.02rem;
-  -ms-letter-spacing: -0.02rem;
   letter-spacing: -0.02rem;
   line-height: 2.4rem;
   text-align: initial;
 }
 
-.c68 {
+.c69 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem;
   border-radius: 100rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-.c68,
-.c68 .c1,
-.c68 .c32,
-.c68 .c32 * {
-  -webkit-transition: all 100ms ease-out;
+.c69,
+.c69 .c1,
+.c69 .c32,
+.c69 .c32 * {
   transition: all 100ms ease-out;
 }
 
-.c68:hover {
+.c69:hover {
   cursor: pointer;
 }
 
-.c68:focus {
+.c69:focus {
   outline: none;
 }
 
-.c68:disabled {
+.c69:disabled {
   cursor: not-allowed;
 }
 
-.c68:disabled {
+.c69:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c68:disabled .c32 * {
+.c69:disabled .c32 * {
   fill: #98A7B7;
 }
 
-.c68:not(:disabled):not(:hover) {
+.c69:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c68:not(:disabled):not(:hover) .c32 * {
+.c69:not(:disabled):not(:hover) .c32 * {
   fill: #ffffff;
 }
 
-.c68:not(:disabled):active {
+.c69:not(:disabled):active {
   color: #ffffff;
   background: #275093;
 }
 
-.c68:not(:disabled):active .c32 * {
+.c69:not(:disabled):active .c32 * {
   fill: #ffffff;
 }
 
-.c68:not(:disabled):not(:active):hover {
+.c69:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #3061B3;
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c68:not(:disabled):not(:active):hover .c32 * {
+.c69:not(:disabled):not(:active):hover .c32 * {
   fill: #ffffff;
 }
 
-.c68 .c32 + .c1 {
+.c69 .c32+.c1 {
   margin-left: 0.8rem;
 }
 
-.c68 .c1 + .c32 {
+.c69 .c1+.c32 {
   margin-left: 0.8rem;
 }
 
 .c46 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c55 {
+.c56 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c50 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c50 * {
@@ -2797,65 +2456,47 @@ exports[`Form should render properly without initial state 1`] = `
   fill: #546A7F;
 }
 
+.c51 {
+  margin-left: 1.6rem;
+}
+
 .c12 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.c12::after {
+.c12 ::after {
   content: ' *';
 }
 
 .c8 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -2866,7 +2507,7 @@ exports[`Form should render properly without initial state 1`] = `
   color: #546A7F;
 }
 
-.c8 ~ .c54 {
+.c8~.c55 {
   color: #546A7F;
 }
 
@@ -2879,7 +2520,6 @@ exports[`Form should render properly without initial state 1`] = `
   left: 0;
   box-sizing: border-box;
   border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -2913,39 +2553,16 @@ exports[`Form should render properly without initial state 1`] = `
   box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
-.c8:focus-within input::-webkit-input-placeholder,
-.c8:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c8:focus-within input::-moz-placeholder,
-.c8:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c8:focus-within input:-ms-input-placeholder,
-.c8:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
 .c8:focus-within input::placeholder,
 .c8:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
+  color: rgba(0, 90, 238, .2);
 }
 
 .c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
@@ -2955,26 +2572,16 @@ exports[`Form should render properly without initial state 1`] = `
   left: 0;
   opacity: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   pointer-events: none;
-  color: rgba(0,90,238,.2);
+  color: rgba(0, 90, 238, .2);
   bottom: 0.7rem;
 }
 
 .c6 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
   min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -2982,12 +2589,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c41 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: auto;
@@ -2996,12 +2598,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c48 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -3014,26 +2611,20 @@ exports[`Form should render properly without initial state 1`] = `
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 0.7rem;
 }
 
 .c10,
-.c10 ~ .c42 {
+.c10~.c42 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -3044,18 +2635,6 @@ exports[`Form should render properly without initial state 1`] = `
   box-shadow: unset;
 }
 
-.c10.c10.c10:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c10.c10.c10:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c10.c10.c10:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c10.c10.c10:focus::placeholder {
   opacity: 1;
 }
@@ -3064,43 +2643,22 @@ exports[`Form should render properly without initial state 1`] = `
   color: #435465;
 }
 
-.c10:disabled ~ .c11,
-.c10:disabled ~ .c42 {
+.c10:disabled~.c11,
+.c10:disabled~.c42 {
   cursor: not-allowed;
 }
 
-.c10::-webkit-input-placeholder {
+.c10 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c10::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c10:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c10::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c10:not(:placeholder-shown) ~ .c11,
-.c10:focus ~ .c11 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c10:not(:placeholder-shown)~.c11,
+.c10:focus~.c11 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c10:not(:placeholder-shown) ~ .c42 {
+.c10:not(:placeholder-shown)~.c42 {
   opacity: 1;
 }
 
@@ -3108,113 +2666,81 @@ exports[`Form should render properly without initial state 1`] = `
   color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
-.c16::after {
+.c16 ::after {
   color: red;
   content: ' *';
 }
 
-.c56 {
+.c57 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c56 .c5 {
+.c57 .c5 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c56 .c5 label {
+.c57 .c5 label {
   pointer-events: none;
 }
 
-.c56 .c5 div,
-.c56 .c5 input,
-.c56 .c5 label {
+.c57 .c5 div,
+.c57 .c5 input,
+.c57 .c5 label {
   cursor: pointer;
 }
 
-.c56 .c5 .c49 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
+.c57 .c5 .c49 {
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c56 .c5:not(:focus-within):hover .c49 * {
+.c57 .c5:not(:focus-within):hover .c49 * {
   fill: #13181D;
 }
 
 .c22 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
 }
 
-.c22 >:first-child {
+.c22>:first-child {
   margin-bottom: 0.9rem;
 }
 
 .c34 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
 }
 
-.c34 >:first-child {
+.c34>:first-child {
   margin-bottom: 0.9rem;
 }
 
 .c24 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   cursor: inherit;
   color: inherit;
 }
 
-.c24::after {
+.c24 ::after {
   content: ' *';
   color: default:inherit;
   disabled: #98A7B7;
 }
 
 .c27 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   cursor: inherit;
   color: inherit;
@@ -3223,7 +2749,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c25 {
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .c31 {
@@ -3232,29 +2758,16 @@ exports[`Form should render properly without initial state 1`] = `
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c31 .c32 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -3272,39 +2785,35 @@ exports[`Form should render properly without initial state 1`] = `
   position: absolute;
 }
 
-.c29:checked ~ .c30 {
+.c29:checked~.c30 {
   border-color: #3872D2;
   background-color: #3872D2;
 }
 
-.c29:checked ~ .c30 .c32 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c29:checked~.c30 .c32 {
   transform: scale(1);
 }
 
-.c29:checked ~ .c30 .c32 * {
+.c29:checked~.c30 .c32 * {
   fill: #ffffff;
 }
 
-.c29:not(:checked) ~ .c30 {
+.c29:not(:checked)~.c30 {
   background-color: transparent;
   border-color: #13181D;
 }
 
-.c29:not(:disabled):focus ~ .c30 {
+.c29:not(:disabled):focus~.c30 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c29:not(:disabled):focus:not(:checked) ~ .c30 {
+.c29:not(:disabled):focus:not(:checked)~.c30 {
   border-color: #3872D2;
 }
 
 .c28 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -3312,22 +2821,11 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c26 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -3345,36 +2843,25 @@ exports[`Form should render properly without initial state 1`] = `
   border-color: #3061B3;
 }
 
-.c66 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
+.c67 {
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.c66 * {
+.c67 * {
   cursor: pointer;
 }
 
-.c66.c66.c66:hover .c30 {
+.c67.c67.c67:hover .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c66.c66.c66:active .c30 {
+.c67.c67.c67:active .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #3061B3;
 }
@@ -3397,164 +2884,41 @@ exports[`Form should render properly without initial state 1`] = `
   fill: #303C48;
 }
 
-.c40 {
-  position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  min-width: auto;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c40 > .c5 {
+.c40>.c5 {
   margin: 0;
 }
 
-.c40 > .c5 > .c7 {
+.c40>.c5>.c7 {
   padding-right: 0.8rem;
 }
 
-.c40 .sc-zv8j3p-0 {
-  z-index: 4;
-  position: absolute;
-  top: calc(100% + 0px);
-  left: 0%;
-  top: 5.6rem;
-}
-
-.c53 {
-  border-right: 0.1rem solid rgba(84,106,127,0.2);
+.c54 {
+  border-right: 0.1rem solid rgba(84, 106, 127, 0.2);
   height: 3.2rem;
   margin-right: 1.6rem;
   border-radius: 0.1rem;
-  -webkit-transition: border-color 100ms ease-out;
   transition: border-color 100ms ease-out;
 }
 
-.c51 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  box-sizing: border-box;
-  height: 5.6rem;
-  padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  cursor: text;
-  border-radius: 0.4rem 0.4rem 0 0;
-  background-color: #eff2f4;
+.c52 {
   padding: 0 1.6rem 0 0.8rem;
 }
 
-.c51 .c11 {
-  color: #546A7F;
-}
-
-.c51 ~ .c54 {
-  color: #546A7F;
-}
-
-.c51::after {
-  content: '';
-  width: 100%;
-  height: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  box-sizing: border-box;
-  border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c51:hover::after,
-.c51:focus-within::after {
-  border-width: 0.2rem;
-}
-
-.c51 input {
-  box-shadow: 0 0 0 100000px #eff2f4 inset;
-}
-
-.c51:focus-within,
-.c51:focus-within:hover {
-  background-color: #EBF1FA;
-}
-
-.c51:focus-within::after,
-.c51:focus-within:hover::after {
-  border-color: #3872D2;
-  border-radius: 0;
-}
-
-.c51:focus-within .c11,
-.c51:focus-within:hover .c11 {
-  color: #3872D2;
-}
-
-.c51:focus-within input,
-.c51:focus-within:hover input {
-  box-shadow: 0 0 0 100000px #EBF1FA inset;
-}
-
-.c51:focus-within input::-webkit-input-placeholder,
-.c51:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c51:focus-within input::-moz-placeholder,
-.c51:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c51:focus-within input:-ms-input-placeholder,
-.c51:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c51:focus-within input::placeholder,
-.c51:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c51 .c32:first-of-type {
+.c52 .c32:first-of-type {
   margin-right: 0.8rem;
 }
 
-.c51 .c32:nth-of-type(2) {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
+.c52 .c32:nth-of-type(2) {
   transition: transform 200ms ease-out;
 }
 
-.c51:hover .c52 {
+.c52:hover .c53 {
   border-color: #546A7F;
 }
 
 .c17 {
   grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -3567,26 +2931,9 @@ exports[`Form should render properly without initial state 1`] = `
 .c15 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
+  grid-template-columns: minmax(max-content, 25%) minmax(auto, 80%);
   grid-template-areas: 'label field' 'random description';
-}
-
-.c15 .sc-12atfcu-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
 .c19 {
@@ -3597,9 +2944,6 @@ exports[`Form should render properly without initial state 1`] = `
 .c18 {
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -3615,9 +2959,6 @@ exports[`Form should render properly without initial state 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -3626,66 +2967,54 @@ exports[`Form should render properly without initial state 1`] = `
   outline: 0;
 }
 
-.c59 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.c60 {
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-.c57 {
+.c58 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c57 .c5 {
+.c58 .c5 {
   margin: 0;
 }
 
-.c57 .c5 label {
+.c58 .c5 label {
   pointer-events: none;
 }
 
-.c57 .c5 div,
-.c57 .c5 input,
-.c57 .c5 label {
+.c58 .c5 div,
+.c58 .c5 input,
+.c58 .c5 label {
   cursor: pointer;
 }
 
-.c57 .c5:focus-within input {
+.c58 .c5:focus-within input {
   cursor: text;
 }
 
-.c57 .c5 input {
+.c58 .c5 input {
   padding-right: 1.6rem;
 }
 
-.c57 .c58 > .c32 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
+.c58 .c59>.c32 {
   transform: rotate(0deg);
 }
 
-.c57 .c58 > .c32 * {
+.c58 .c59>.c32 * {
   fill: #546A7F;
 }
 
-.c57:not(:focus-within):hover .c58 > .c32 * {
+.c58:not(:focus-within):hover .c59>.c32 * {
   fill: #13181D;
 }
 
 .c39 {
   position: relative;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   box-sizing: border-box;
   border: 0.15rem solid;
@@ -3701,12 +3030,8 @@ exports[`Form should render properly without initial state 1`] = `
   left: 50%;
   width: 67%;
   height: 67%;
-  -webkit-transform: translate(-50%,-50%) scale(0);
-  -ms-transform: translate(-50%,-50%) scale(0);
   transform: translate(-50%,-50%) scale(0);
   border-radius: 100%;
-  -webkit-transition: -webkit-transform 100ms ease-out;
-  -webkit-transition: transform 100ms ease-out;
   transition: transform 100ms ease-out;
 }
 
@@ -3718,37 +3043,35 @@ exports[`Form should render properly without initial state 1`] = `
   margin: 0;
 }
 
-.c37 ~ .c38 {
+.c37~.c38 {
   border-color: #13181D;
 }
 
-.c37 ~ .c38::after {
+.c37~.c38::after {
   background-color: #13181D;
 }
 
-.c37:checked ~ .c38::after {
-  -webkit-transform: translate(-50%,-50%) scale(1);
-  -ms-transform: translate(-50%,-50%) scale(1);
+.c37:checked~.c38::after {
   transform: translate(-50%,-50%) scale(1);
 }
 
-.c37:disabled ~ .c38 {
+.c37:disabled~.c38 {
   border-color: #98A7B7;
 }
 
-.c37:disabled ~ .c38::after {
+.c37:disabled~.c38::after {
   background-color: #98A7B7;
 }
 
-.c37:not(:disabled):checked ~ .c38 {
+.c37:not(:disabled):checked~.c38 {
   border-color: #3872D2;
 }
 
-.c37:not(:disabled):checked ~ .c38::after {
+.c37:not(:disabled):checked~.c38::after {
   background-color: #3872D2;
 }
 
-.c37:not(:disabled):focus ~ .c38 {
+.c37:not(:disabled):focus~.c38 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
 }
 
@@ -3758,32 +3081,16 @@ exports[`Form should render properly without initial state 1`] = `
   height: 1.8rem;
   position: relative;
   border-radius: 100%;
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
   flex-grow: 0;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .c35 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -3798,18 +3105,13 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c47 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
   min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c47 > .c5 {
+.c47>.c5 {
   margin: 0;
 }
 
@@ -3818,23 +3120,15 @@ exports[`Form should render properly without initial state 1`] = `
   display: none;
 }
 
-.c67 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.c68 {
   display: flex;
   grid-column: 1/-1;
   margin-top: 1.6rem;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.c67 > * + * {
+.c68>*+* {
   margin-left: 1.6rem;
 }
 
@@ -3842,7 +3136,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-column: 1/7;
 }
 
-.c4 > * {
+.c4>* {
   width: 100%;
   margin: 0;
   min-width: auto;
@@ -3852,7 +3146,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-column: 7/-1;
 }
 
-.c13 > * {
+.c13>* {
   width: 100%;
   margin: 0;
   min-width: auto;
@@ -3862,48 +3156,48 @@ exports[`Form should render properly without initial state 1`] = `
   grid-column: 1/-1;
 }
 
-.c14 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c63 {
-  grid-column: 1/5;
-}
-
-.c63 > * {
+.c14>* {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
 .c64 {
-  grid-column: 5/9;
+  grid-column: 1/5;
 }
 
-.c64 > * {
+.c64>* {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
 .c65 {
-  grid-column: 9/-1;
+  grid-column: 5/9;
 }
 
-.c65 > * {
+.c65>* {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
-.c61 {
+.c66 {
+  grid-column: 9/-1;
+}
+
+.c66>* {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c62 {
   grid-column: 1/-1;
   margin-top: 2.6rem;
 }
 
-.c62 {
+.c63 {
   margin-bottom: 1rem;
 }
 
@@ -3916,12 +3210,12 @@ exports[`Form should render properly without initial state 1`] = `
   display: grid;
 }
 
-.c0 > h2 {
+.c0>h2 {
   grid-column: 1/-1;
   margin-bottom: 0.8rem;
 }
 
-.c0 > span {
+.c0>span {
   grid-column: 1/-1;
   margin-bottom: 1rem;
 }
@@ -3929,168 +3223,215 @@ exports[`Form should render properly without initial state 1`] = `
 <div>
   <form
     class="c0"
+    gridgap="1.2rem"
     id="medly-dynamic-form"
+    minwidth="300px"
     name="Test form"
   >
     <h2
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="h2"
     >
       Dummy Form
     </h2>
     <span
       class="c1 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
     >
       Dummy Description
     </span>
     <div
       class="c4"
+      gridcolumn="1/7"
     >
       <div
         class="c5 c6"
         id="firstName-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c7 c8"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c9"
+            variant="filled"
           >
             <input
               aria-describedby="firstName-helper-text"
               class="c10"
+              errortext=""
               id="firstName-input"
+              inputsize="M"
               name="firstName"
               placeholder=" "
               required=""
               type="text"
               value=""
+              variant="filled"
             />
             <label
               class="c11 c12"
               for="firstName-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               First Name
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
       class="c13"
+      gridcolumn="7/-1"
     >
       <div
         class="c5 c6"
         id="lastName-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c7 c8"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c9"
+            variant="filled"
           >
             <input
               aria-describedby="lastName-helper-text"
               class="c10"
+              errortext=""
               id="lastName-input"
+              inputsize="M"
               name="lastName"
               placeholder=" "
               required=""
               type="text"
               value=""
+              variant="filled"
             />
             <label
               class="c11 c12"
               for="lastName-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Last Name
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
       class="c14"
+      gridcolumn="1/-1"
     >
       <div
         class="c5 c6"
         id="email-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c7 c8"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c9"
+            variant="filled"
           >
             <input
               aria-describedby="email-helper-text"
               class="c10"
+              errortext=""
               id="email-input"
+              inputsize="M"
               name="email"
               placeholder=" "
               required=""
               type="email"
               value=""
+              variant="filled"
             />
             <label
               class="c11 c12"
               for="email-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Email
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
       class="c14"
+      gridcolumn="1/-1"
     >
       <div
         class="c5 c6"
         id="website-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c7 c8"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c9"
+            variant="filled"
           >
             <input
               aria-describedby="website-helper-text"
               class="c10"
+              errortext=""
               id="website-input"
+              inputsize="M"
               name="website"
               placeholder=" "
               required=""
               type="url"
               value=""
+              variant="filled"
             />
             <label
               class="c11 c12"
               for="website-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Website
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
       class="c14"
+      gridcolumn="1/-1"
     >
       <div
         class="c15"
         id="resume-field"
+        labelposition="left"
       >
         <label
           class="c16 c17"
+          labelposition="left"
           required=""
         >
           Resume
@@ -4103,7 +3444,10 @@ exports[`Form should render properly without initial state 1`] = `
           Click to choose file
           <input
             class="c19"
+            files=""
             id="resume"
+            maxsize="5000000"
+            minwidth="auto"
             name="resume"
             required=""
             type="file"
@@ -4111,6 +3455,8 @@ exports[`Form should render properly without initial state 1`] = `
         </label>
         <span
           class="c1 c20 c21"
+          textalign="initial"
+          textcolor="inherit"
         >
           File size should be less than 5MB
         </span>
@@ -4118,11 +3464,13 @@ exports[`Form should render properly without initial state 1`] = `
     </div>
     <div
       class="c14"
+      gridcolumn="1/-1"
     >
       <div
         aria-describedby="languages-helper-text"
         class="c22"
         id="languages-wrapper"
+        minwidth="auto"
         name="languages"
         type="checkbox"
       >
@@ -4130,24 +3478,31 @@ exports[`Form should render properly without initial state 1`] = `
           class="c1 c23 c24"
           id="languages-label"
           required=""
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Medium"
           type="checkbox"
         >
           Languages
         </span>
         <div
           class="c25"
+          columns="1"
           id="languages-options"
         >
-          
           <label
             class="c26"
             for="JAVA-languages"
             id="JAVA-languages-wrapper"
-            sizes="[object Object]"
+            labelposition="right"
           >
             <span
               class="c1 c20 c27"
               id="JAVA-languages-label"
+              labelposition="right"
+              textalign="initial"
+              textcolor="inherit"
               type="checkbox"
             >
               JAVA
@@ -4159,7 +3514,6 @@ exports[`Form should render properly without initial state 1`] = `
                 class="c29"
                 id="JAVA-languages"
                 name="java"
-                sizes="[object Object]"
                 type="checkbox"
               />
               <div
@@ -4181,16 +3535,18 @@ exports[`Form should render properly without initial state 1`] = `
               </div>
             </div>
           </label>
-          
           <label
             class="c26"
             for="RUBY-languages"
             id="RUBY-languages-wrapper"
-            sizes="[object Object]"
+            labelposition="right"
           >
             <span
               class="c1 c20 c27"
               id="RUBY-languages-label"
+              labelposition="right"
+              textalign="initial"
+              textcolor="inherit"
               type="checkbox"
             >
               RUBY
@@ -4202,7 +3558,6 @@ exports[`Form should render properly without initial state 1`] = `
                 class="c29"
                 id="RUBY-languages"
                 name="ruby"
-                sizes="[object Object]"
                 type="checkbox"
               />
               <div
@@ -4229,34 +3584,44 @@ exports[`Form should render properly without initial state 1`] = `
     </div>
     <div
       class="c14"
+      gridcolumn="1/-1"
     >
       <div
         aria-describedby="role-helper-text"
         class="c34"
         id="role-wrapper"
+        minwidth="auto"
         type="radio"
       >
         <span
           class="c1 c23 c24"
           id="role-label"
           required=""
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Medium"
           type="radio"
         >
           Role
         </span>
         <div
           class="c25"
+          columns="1"
           id="role-options"
         >
           <label
             class="c35"
             for="Front End-role"
             id="Front End-role-wrapper"
-            sizes="[object Object]"
+            labelposition="right"
           >
             <span
               class="c1 c20 c27"
               id="Front End-role-label"
+              labelposition="right"
+              textalign="initial"
+              textcolor="inherit"
               type="radio"
             >
               Front End
@@ -4269,7 +3634,6 @@ exports[`Form should render properly without initial state 1`] = `
                 id="Front End-role"
                 name="role"
                 required=""
-                sizes="[object Object]"
                 type="radio"
                 value="front-end"
               />
@@ -4282,11 +3646,14 @@ exports[`Form should render properly without initial state 1`] = `
             class="c35"
             for="Back End-role"
             id="Back End-role-wrapper"
-            sizes="[object Object]"
+            labelposition="right"
           >
             <span
               class="c1 c20 c27"
               id="Back End-role-label"
+              labelposition="right"
+              textalign="initial"
+              textcolor="inherit"
               type="radio"
             >
               Back End
@@ -4299,7 +3666,6 @@ exports[`Form should render properly without initial state 1`] = `
                 id="Back End-role"
                 name="role"
                 required=""
-                sizes="[object Object]"
                 type="radio"
                 value="back-end"
               />
@@ -4312,11 +3678,14 @@ exports[`Form should render properly without initial state 1`] = `
             class="c35"
             for="Full Stack-role"
             id="Full Stack-role-wrapper"
-            sizes="[object Object]"
+            labelposition="right"
           >
             <span
               class="c1 c20 c27"
               id="Full Stack-role-label"
+              labelposition="right"
+              textalign="initial"
+              textcolor="inherit"
               type="radio"
             >
               Full Stack
@@ -4329,7 +3698,6 @@ exports[`Form should render properly without initial state 1`] = `
                 id="Full Stack-role"
                 name="role"
                 required=""
-                sizes="[object Object]"
                 type="radio"
                 value="full-stack"
               />
@@ -4343,41 +3711,55 @@ exports[`Form should render properly without initial state 1`] = `
     </div>
     <div
       class="c4"
+      gridcolumn="1/7"
     >
       <div
-        class="c5 c40"
+        class="c5 c6 c40"
         id="birthDate-datepicker-wrapper"
+        minwidth="auto"
+        placement="bottom-start"
+        variant="filled"
       >
         <div
           class="c5 c41"
           id="birthDate-input-wrapper"
+          minwidth="auto"
         >
           <div
             class="c7 c8"
+            minrows="1"
+            variant="filled"
           >
             <div
               class="c9"
+              variant="filled"
             >
               <input
                 aria-describedby="birthDate-helper-text"
                 class="c10"
+                errortext=""
                 id="birthDate-input"
+                inputsize="M"
                 name="birthDate"
                 pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
                 placeholder="DD / MM / YYYY"
                 required=""
                 type="text"
                 value=""
+                variant="filled"
               />
               <span
                 class="c42 c43"
+                variant="filled"
               >
                 DD / MM / YYYY
               </span>
               <label
                 class="c11 c12"
                 for="birthDate-input"
+                inputwidth="0"
                 required=""
+                variant="filled"
               >
                 Birth Date
               </label>
@@ -4401,47 +3783,57 @@ exports[`Form should render properly without initial state 1`] = `
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
     <div
       class="c13"
+      gridcolumn="7/-1"
     >
       <div
         class="c46 c47"
         id="medly-popover-wrapper"
+        minwidth="auto"
       >
         <div
           class="c5 c48"
           id="birthTime-input-wrapper"
+          minwidth="20rem"
         >
           <div
             class="c7 c8"
+            minrows="1"
+            variant="filled"
           >
             <div
               class="c9"
+              variant="filled"
             >
               <input
                 aria-describedby="birthTime-helper-text"
                 class="c10"
+                errortext=""
                 id="birthTime-input"
+                inputsize="M"
                 name="birthTime"
                 placeholder=" "
                 required=""
                 type="time"
                 value=""
+                variant="filled"
               />
               <label
                 class="c11 c12"
                 for="birthTime-input"
+                inputwidth="0"
                 required=""
+                variant="filled"
               >
                 Birth Time
               </label>
             </div>
             <svg
-              class="c32 c33 sc-1668uuz-0 c49 c50"
+              class="c32 c33 c49 c50 c51"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4457,23 +3849,25 @@ exports[`Form should render properly without initial state 1`] = `
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
     <div
       class="c14"
+      gridcolumn="1/-1"
     >
       <div
         class="c5 c6"
         id="experience-wrapper"
         label="Experience"
+        minwidth="auto"
         name="experience"
         type="date-range"
       >
         <div
-          class="c7 c51"
+          class="c7 c8 c52"
           id="experience-textFields"
+          variant="filled"
         >
           <svg
             class="c32 c44 c45"
@@ -4496,104 +3890,132 @@ exports[`Form should render properly without initial state 1`] = `
           <div
             class="c9"
             id="experience-startDate-input-wrapper"
+            variant="filled"
           >
             <input
               class="c10"
+              errortext=""
               id="experience-startDate-input"
+              inputsize="M"
               name="START_DATE"
               pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
               placeholder="DD / MM / YYYY"
               required=""
               value=""
+              variant="filled"
             />
             <span
               class="c42 c43"
+              variant="filled"
             >
               DD / MM / YYYY
             </span>
             <label
               class="c11 c12"
               for="experience-startDate-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               From
             </label>
           </div>
           <i
-            class="c52 c53"
+            class="c53 c54"
+            variant="filled"
           />
           <div
             class="c9"
             id="experience-endDate-input-wrapper"
+            variant="filled"
           >
             <input
               class="c10"
+              errortext=""
               id="experience-endDate-input"
+              inputsize="M"
               name="END_DATE"
               pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
               placeholder="DD / MM / YYYY"
               required=""
               value=""
+              variant="filled"
             />
             <span
               class="c42 c43"
+              variant="filled"
             >
               DD / MM / YYYY
             </span>
             <label
               class="c11 c12"
               for="experience-endDate-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               To
             </label>
           </div>
         </div>
         <span
-          class="c54 c55"
+          class="c55 c56"
           id="experience-helper-text"
+          variant="filled"
         />
       </div>
     </div>
     <div
       class="c14"
+      gridcolumn="1/-1"
     >
       <div
-        class="c56"
+        class="c57"
         id="country-wrapper"
+        minwidth="auto"
+        variant="filled"
       >
         <div
           class="c5 c41"
           id="country-input-wrapper"
+          minwidth="auto"
         >
           <div
             class="c7 c8"
+            minrows="1"
+            variant="filled"
           >
             <div
               class="c9"
+              variant="filled"
             >
               <input
                 aria-describedby="country-helper-text"
                 autocomplete="off"
                 class="c10"
+                errortext=""
                 id="country-input"
                 inputmode="none"
+                inputsize="M"
                 name="country"
                 placeholder="Please Select . . ."
                 required=""
                 type="text"
                 value=""
+                variant="filled"
               />
               <label
                 class="c11 c12"
                 for="country-input"
+                inputwidth="0"
                 required=""
+                variant="filled"
               >
                 Country
               </label>
             </div>
             <svg
-              class="c32 c33 sc-1668uuz-0 c49 c50"
+              class="c32 c33 c49 c50 c51"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4606,48 +4028,59 @@ exports[`Form should render properly without initial state 1`] = `
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
     <div
       class="c14"
+      gridcolumn="1/-1"
     >
       <div
-        class="c57"
+        class="c58"
         id="graduation-wrapper"
+        minwidth="auto"
         name="graduation"
+        variant="filled"
       >
         <div
           class="c5 c41"
           id="graduation-input-wrapper"
+          minwidth="auto"
         >
           <div
             class="c7 c8"
+            minrows="1"
+            variant="filled"
           >
             <div
               class="c9"
+              variant="filled"
             >
               <input
                 aria-describedby="graduation-helper-text"
                 autocomplete="off"
                 class="c10"
+                errortext=""
                 id="graduation-input"
+                inputsize="M"
                 placeholder="Please Select . . ."
                 required=""
                 type="text"
                 value=""
+                variant="filled"
               />
               <label
                 class="c11 c12"
                 for="graduation-input"
+                inputwidth="0"
                 required=""
+                variant="filled"
               >
                 Graduation
               </label>
             </div>
             <div
-              class="c58 c59"
+              class="c59 c60"
               id="graduation-count"
             >
               <svg
@@ -4665,138 +4098,173 @@ exports[`Form should render properly without initial state 1`] = `
               </svg>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
     <h4
-      class="c1 c60 c61"
+      class="c1 c61 c62"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="h4"
     >
       Marks
     </h4>
     <span
-      class="c1 c20 c62"
+      class="c1 c20 c63"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
     >
       Marks Information
     </span>
     <div
-      class="c63"
+      class="c64"
+      gridcolumn="1/5"
     >
       <div
         class="c5 c6"
         id="marks.database-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c7 c8"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c9"
+            variant="filled"
           >
             <input
               aria-describedby="marks.database-helper-text"
               class="c10"
+              errortext=""
               id="marks.database-input"
+              inputsize="M"
               name="marks.database"
               placeholder="Database"
               required=""
               type="number"
               value=""
+              variant="filled"
             />
             <label
               class="c11 c12"
               for="marks.database-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Database
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
-      class="c64"
+      class="c65"
+      gridcolumn="5/9"
     >
       <div
         class="c5 c6"
         id="marks.algorithms-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c7 c8"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c9"
+            variant="filled"
           >
             <input
               aria-describedby="marks.algorithms-helper-text"
               class="c10"
+              errortext=""
               id="marks.algorithms-input"
+              inputsize="M"
               name="marks.algorithms"
               placeholder="Algorithms"
               required=""
               type="number"
               value=""
+              variant="filled"
             />
             <label
               class="c11 c12"
               for="marks.algorithms-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Algorithms
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
-      class="c65"
+      class="c66"
+      gridcolumn="9/-1"
     >
       <div
         class="c5 c6"
         id="marks.maths-input-wrapper"
+        minwidth="auto"
       >
         <div
           class="c7 c8"
+          minrows="1"
+          variant="filled"
         >
           <div
             class="c9"
+            variant="filled"
           >
             <input
               aria-describedby="marks.maths-helper-text"
               class="c10"
+              errortext=""
               id="marks.maths-input"
+              inputsize="M"
               name="marks.maths"
               placeholder="Maths"
               required=""
               type="number"
               value=""
+              variant="filled"
             />
             <label
               class="c11 c12"
               for="marks.maths-input"
+              inputwidth="0"
               required=""
+              variant="filled"
             >
               Maths
             </label>
           </div>
         </div>
-        
       </div>
     </div>
     <div
       class="c14"
+      gridcolumn="1/-1"
     >
-      
       <label
-        class="c66"
+        class="c67"
         for="agree"
         id="agree-wrapper"
-        sizes="[object Object]"
+        labelposition="left"
       >
         <span
           class="c1 c20 c27"
           id="agree-label"
+          labelposition="left"
+          textalign="initial"
+          textcolor="inherit"
           type="checkbox"
         >
           Do you Agree
@@ -4807,8 +4275,8 @@ exports[`Form should render properly without initial state 1`] = `
           <input
             class="c29"
             id="agree"
+            minwidth="auto"
             name="agree"
-            sizes="[object Object]"
             type="checkbox"
           />
           <div
@@ -4832,15 +4300,21 @@ exports[`Form should render properly without initial state 1`] = `
       </label>
     </div>
     <div
-      class="c67"
+      class="c68"
+      flexdirection="row"
     >
       <button
-        class="c68"
+        class="c69"
+        edges="rounded"
         form="medly-dynamic-form"
         type="submit"
+        variant="solid"
       >
         <span
           class="c1 c23"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="button1"
         >
           Upload
         </span>

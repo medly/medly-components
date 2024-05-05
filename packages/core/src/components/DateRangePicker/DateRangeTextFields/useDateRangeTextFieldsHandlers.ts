@@ -32,7 +32,7 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
 
     const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
         onIconClick = useCallback(
-            event => {
+            (event: React.MouseEvent) => {
                 event.stopPropagation();
                 if (!disabled) {
                     onCalendarIconClick(true);

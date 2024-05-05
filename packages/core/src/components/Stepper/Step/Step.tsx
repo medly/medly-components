@@ -1,11 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
+import type { FCC } from 'react';
+import { memo } from 'react';
 import Text from '../../Text';
 import { StepProps } from '../types';
 import { StepCounterStyled, StepStyled } from './Step.styled';
-import type { FC } from 'react';
-import { memo } from 'react';
 
-const Component: FC<StepProps> = memo(props => {
+const Component: FCC<StepProps> = memo(props => {
     const { step, children, onClick, ...restProps } = props;
 
     return (
@@ -21,5 +21,5 @@ const Component: FC<StepProps> = memo(props => {
 });
 
 Component.displayName = 'Step';
-const Step: FC<StepProps> & WithStyle = Object.assign(Component, { Style: StepStyled });
+const Step: FCC<StepProps> & WithStyle = Object.assign(Component, { Style: StepStyled });
 export default Step;

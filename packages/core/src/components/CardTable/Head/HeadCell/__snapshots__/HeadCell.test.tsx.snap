@@ -6,9 +6,6 @@ exports[`Card Table HeadCell should be able to "center" align 1`] = `
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -17,31 +14,16 @@ exports[`Card Table HeadCell should be able to "center" align 1`] = `
 
 .c2 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c0 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -55,7 +37,6 @@ exports[`Card Table HeadCell should be able to "center" align 1`] = `
   left: 0;
   background-color: transparent;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -68,31 +49,11 @@ exports[`Card Table HeadCell should be able to "center" align 1`] = `
   color: #5687D9;
 }
 
-.c0 .c1:hover .sc-1pf3x8a-0 * {
-  fill: #5687D9;
-}
-
 .c0 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #435465;
-}
-
-.c0 .sc-1pf3x8a-0 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  width: 2.4rem;
-  cursor: pointer;
-  padding-left: 0.4rem;
-}
-
-.c0 .sc-1pf3x8a-0 * {
-  fill: #435465;
 }
 
 <div>
@@ -100,6 +61,7 @@ exports[`Card Table HeadCell should be able to "center" align 1`] = `
     <thead>
       <tr>
         <th
+          align="center"
           class="c0"
         >
           <span
@@ -107,6 +69,9 @@ exports[`Card Table HeadCell should be able to "center" align 1`] = `
           >
             <h5
               class="c3 c4"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Column 1
             </h5>
@@ -124,9 +89,6 @@ exports[`Card Table HeadCell should be able to "left" align 1`] = `
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -135,31 +97,16 @@ exports[`Card Table HeadCell should be able to "left" align 1`] = `
 
 .c2 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c0 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -173,7 +120,6 @@ exports[`Card Table HeadCell should be able to "left" align 1`] = `
   left: 0;
   background-color: transparent;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -186,31 +132,11 @@ exports[`Card Table HeadCell should be able to "left" align 1`] = `
   color: #5687D9;
 }
 
-.c0 .c1:hover .sc-1pf3x8a-0 * {
-  fill: #5687D9;
-}
-
 .c0 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #435465;
-}
-
-.c0 .sc-1pf3x8a-0 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  width: 2.4rem;
-  cursor: pointer;
-  padding-left: 0.4rem;
-}
-
-.c0 .sc-1pf3x8a-0 * {
-  fill: #435465;
 }
 
 <div>
@@ -218,6 +144,7 @@ exports[`Card Table HeadCell should be able to "left" align 1`] = `
     <thead>
       <tr>
         <th
+          align="left"
           class="c0"
         >
           <span
@@ -225,6 +152,9 @@ exports[`Card Table HeadCell should be able to "left" align 1`] = `
           >
             <h5
               class="c3 c4"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Column 1
             </h5>
@@ -242,9 +172,6 @@ exports[`Card Table HeadCell should be able to "right" align 1`] = `
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -253,31 +180,16 @@ exports[`Card Table HeadCell should be able to "right" align 1`] = `
 
 .c2 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c0 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
@@ -291,7 +203,6 @@ exports[`Card Table HeadCell should be able to "right" align 1`] = `
   left: 0;
   background-color: transparent;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -304,31 +215,11 @@ exports[`Card Table HeadCell should be able to "right" align 1`] = `
   color: #5687D9;
 }
 
-.c0 .c1:hover .sc-1pf3x8a-0 * {
-  fill: #5687D9;
-}
-
 .c0 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #435465;
-}
-
-.c0 .sc-1pf3x8a-0 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  width: 2.4rem;
-  cursor: pointer;
-  padding-left: 0.4rem;
-}
-
-.c0 .sc-1pf3x8a-0 * {
-  fill: #435465;
 }
 
 <div>
@@ -336,6 +227,7 @@ exports[`Card Table HeadCell should be able to "right" align 1`] = `
     <thead>
       <tr>
         <th
+          align="right"
           class="c0"
         >
           <span
@@ -343,6 +235,9 @@ exports[`Card Table HeadCell should be able to "right" align 1`] = `
           >
             <h5
               class="c3 c4"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Column 1
             </h5>
@@ -358,14 +253,12 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
 .c6 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c6 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -375,9 +268,6 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -386,31 +276,16 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
 
 .c2 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c0 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -424,7 +299,6 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
   left: 0;
   background-color: #3872D2;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -442,18 +316,13 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
 }
 
 .c0 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #3872D2;
 }
 
 .c0 .c5 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
@@ -469,6 +338,7 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
     <thead>
       <tr>
         <th
+          align="left"
           class="c0"
         >
           <span
@@ -476,6 +346,9 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
           >
             <h5
               class="c3 c4"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Demo
             </h5>
@@ -504,14 +377,12 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
 .c6 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c6 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -521,9 +392,6 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -532,31 +400,16 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
 
 .c2 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c0 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -570,7 +423,6 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
   left: 0;
   background-color: #3872D2;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -588,18 +440,13 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
 }
 
 .c0 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #3872D2;
 }
 
 .c0 .c5 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
@@ -615,6 +462,7 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
     <thead>
       <tr>
         <th
+          align="left"
           class="c0"
         >
           <span
@@ -622,6 +470,9 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
           >
             <h5
               class="c3 c4"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Demo
             </h5>
@@ -652,9 +503,6 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -663,31 +511,16 @@ exports[`Card Table HeadCell should render properly with dark background and dro
 
 .c2 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c0 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -701,7 +534,6 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   left: 0;
   background-color: transparent;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -714,31 +546,11 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   color: #5687D9;
 }
 
-.c0 .c1:hover .sc-1pf3x8a-0 * {
-  fill: #5687D9;
-}
-
 .c0 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #435465;
-}
-
-.c0 .sc-1pf3x8a-0 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  width: 2.4rem;
-  cursor: pointer;
-  padding-left: 0.4rem;
-}
-
-.c0 .sc-1pf3x8a-0 * {
-  fill: #435465;
 }
 
 <div>
@@ -746,6 +558,7 @@ exports[`Card Table HeadCell should render properly with dark background and dro
     <thead>
       <tr>
         <th
+          align="left"
           class="c0"
         >
           <span
@@ -753,6 +566,9 @@ exports[`Card Table HeadCell should render properly with dark background and dro
           >
             <h5
               class="c3 c4"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Demo
             </h5>
@@ -768,14 +584,12 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
 .c6 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c6 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -785,9 +599,6 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -796,31 +607,16 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
 
 .c2 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c0 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -834,7 +630,6 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
   left: 0;
   background-color: transparent;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -852,18 +647,13 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
 }
 
 .c0 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #607890;
 }
 
 .c0 .c5 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
@@ -879,6 +669,7 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
     <thead>
       <tr>
         <th
+          align="left"
           class="c0"
         >
           <span
@@ -886,6 +677,9 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
           >
             <h5
               class="c3 c4"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Demo
             </h5>
@@ -914,14 +708,12 @@ exports[`Card Table HeadCell should render properly with light background and dr
 .c6 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c6 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -931,9 +723,6 @@ exports[`Card Table HeadCell should render properly with light background and dr
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -942,31 +731,16 @@ exports[`Card Table HeadCell should render properly with light background and dr
 
 .c2 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c0 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -980,7 +754,6 @@ exports[`Card Table HeadCell should render properly with light background and dr
   left: 0;
   background-color: transparent;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -998,18 +771,13 @@ exports[`Card Table HeadCell should render properly with light background and dr
 }
 
 .c0 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #607890;
 }
 
 .c0 .c5 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
@@ -1025,6 +793,7 @@ exports[`Card Table HeadCell should render properly with light background and dr
     <thead>
       <tr>
         <th
+          align="left"
           class="c0"
         >
           <span
@@ -1032,6 +801,9 @@ exports[`Card Table HeadCell should render properly with light background and dr
           >
             <h5
               class="c3 c4"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Demo
             </h5>

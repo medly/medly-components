@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { GridTemplateProps } from '../../types';
 import { HeadRowProps } from './types';
 
-export const HeadRow = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
+export const HeadRow = styled('tr').attrs<GridTemplateProps>(({ gridTemplateColumns }) => ({
     style: {
         gridTemplateColumns
     }

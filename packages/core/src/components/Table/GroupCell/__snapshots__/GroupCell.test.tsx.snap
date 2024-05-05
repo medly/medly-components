@@ -6,9 +6,6 @@ exports[`GroupCell should not render hidden prop is given 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -31,6 +28,8 @@ exports[`GroupCell should not render hidden prop is given 1`] = `
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy
     </span>
@@ -44,9 +43,6 @@ exports[`GroupCell should render GroupCell with right border if it is a title ce
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -71,8 +67,6 @@ exports[`GroupCell should render GroupCell with right border if it is a title ce
   width: 1px;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -82,6 +76,8 @@ exports[`GroupCell should render GroupCell with right border if it is a title ce
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy
     </span>
@@ -90,29 +86,18 @@ exports[`GroupCell should render GroupCell with right border if it is a title ce
 `;
 
 exports[`GroupCell should render GroupCellTitle properly 1`] = `
-.c1 {
+.c0 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c0 {
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
+.c1 {
   position: relative;
   text-align: center;
   padding: 0.9rem 1.6rem 1rem;
@@ -123,7 +108,7 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
   color: #435465;
 }
 
-.c0::after {
+.c1::after {
   content: '';
   position: absolute;
   pointer-events: none;
@@ -132,17 +117,19 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
   width: calc(100% - 3.2rem);
   left: 50%;
   bottom: 0;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 <div>
   <span
-    class="c0"
+    class="c0 c1"
+    textalign="initial"
+    textcolor="inherit"
   >
     <span
-      class="c1"
+      class="c0"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy
     </span>
@@ -156,9 +143,6 @@ exports[`GroupCell should render properly 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -180,6 +164,8 @@ exports[`GroupCell should render properly 1`] = `
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy
     </span>

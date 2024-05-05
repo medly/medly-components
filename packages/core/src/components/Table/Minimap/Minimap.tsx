@@ -1,18 +1,18 @@
 import { debounce, WithStyle } from '@medly-components/utils';
+import type { FCC } from 'react';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import ResizeObserver from 'resize-observer-polyfill';
 import {
-    Minimap as StyledMinimap,
     MinimapContainer,
     SliderContent,
     SliderContentWrapper,
     SliderController,
-    SliderRange
+    SliderRange,
+    Minimap as StyledMinimap
 } from './Minimap.styled';
 import { MinimapProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<MinimapProps> = memo(
+const Component: FCC<MinimapProps> = memo(
     ({ minimapWidth, controllerWidth, sliderContentPadding, tableRef, minimapDimensionDeps, ...restProps }) => {
         const sliderControllerRef = useRef<HTMLDivElement>(null),
             sliderRangeRef = useRef<HTMLDivElement>(null),
@@ -167,4 +167,4 @@ Component.defaultProps = {
     sliderContentPadding: 8,
     minimapDimensionDeps: []
 };
-export const Minimap: FC<MinimapProps> & WithStyle = Object.assign(Component, { Style: MinimapContainer });
+export const Minimap: FCC<MinimapProps> & WithStyle = Object.assign(Component, { Style: MinimapContainer });
