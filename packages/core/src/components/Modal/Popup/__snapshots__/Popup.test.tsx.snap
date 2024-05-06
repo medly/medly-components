@@ -3,16 +3,11 @@
 exports[`Modal Popup component at small screen size should render properly when it is closed 1`] = `
 .c0 {
   background: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
   min-height: 200px;
-  box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
+  box-shadow: 0 0.4rem 3.2 rgba(67, 84, 101, 0.5);
   box-sizing: border-box;
   border-top-left-radius: 1.2rem;
   border-top-right-radius: 1.2rem;
@@ -23,12 +18,11 @@ exports[`Modal Popup component at small screen size should render properly when 
   .c0 {
     width: 100%;
     height: calc(100% - 2.4rem);
-    -webkit-animation: buZueW 0.4s cubic-bezier(0,0,0.33,1);
     animation: buZueW 0.4s cubic-bezier(0,0,0.33,1);
   }
 }
 
-@media (min-width:768px) and (max-width:1279px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .c0 {
     border-radius: 1.2rem;
     max-width: 72%;
@@ -37,7 +31,7 @@ exports[`Modal Popup component at small screen size should render properly when 
   }
 }
 
-@media (min-width:1280px) {
+@media (min-width: 1280px) {
   .c0 {
     border-radius: 1.2rem;
     min-width: 200px;
@@ -46,9 +40,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   }
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
   .c0 {
-    -webkit-animation: dfPvjS 0.2s cubic-bezier(0,0,0.33,1);
     animation: dfPvjS 0.2s cubic-bezier(0,0,0.33,1);
   }
 }
@@ -56,6 +49,8 @@ exports[`Modal Popup component at small screen size should render properly when 
 <div>
   <div
     class="c0"
+    minheight="200px"
+    minwidth="200px"
   />
 </div>
 `;
@@ -63,16 +58,11 @@ exports[`Modal Popup component at small screen size should render properly when 
 exports[`Modal Popup component at small screen size should render properly when it is open 1`] = `
 .c0 {
   background: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
   min-height: 200px;
-  box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
+  box-shadow: 0 0.4rem 3.2 rgba(67, 84, 101, 0.5);
   box-sizing: border-box;
   border-top-left-radius: 1.2rem;
   border-top-right-radius: 1.2rem;
@@ -83,12 +73,11 @@ exports[`Modal Popup component at small screen size should render properly when 
   .c0 {
     width: 100%;
     height: calc(100% - 2.4rem);
-    -webkit-animation: cQwfQi 0.4s cubic-bezier(0,0,0.33,1);
     animation: cQwfQi 0.4s cubic-bezier(0,0,0.33,1);
   }
 }
 
-@media (min-width:768px) and (max-width:1279px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .c0 {
     border-radius: 1.2rem;
     max-width: 72%;
@@ -97,7 +86,7 @@ exports[`Modal Popup component at small screen size should render properly when 
   }
 }
 
-@media (min-width:1280px) {
+@media (min-width: 1280px) {
   .c0 {
     border-radius: 1.2rem;
     min-width: 200px;
@@ -106,9 +95,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   }
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
   .c0 {
-    -webkit-animation: hvOvm 0.2s cubic-bezier(0,0,0.33,1);
     animation: hvOvm 0.2s cubic-bezier(0,0,0.33,1);
   }
 }
@@ -116,6 +104,8 @@ exports[`Modal Popup component at small screen size should render properly when 
 <div>
   <div
     class="c0"
+    minheight="200px"
+    minwidth="200px"
     open=""
   />
 </div>

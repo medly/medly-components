@@ -1,5 +1,5 @@
 import { defaultTheme, ModalTheme } from '@medly-components/theme';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { useCallback, useState } from 'react';
 import styled from 'styled-components';
 import Button from '../Button';
@@ -14,12 +14,12 @@ const options = [
     { value: '2', label: 'Covered Entity' }
 ];
 
-export const ThemeInterface: FC<ModalTheme> = () => null;
+export const ThemeInterface: FCC<ModalTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.modal
 };
 
-export const ModalActionProps: FC<ModalActionUserProps> = () => null;
+export const ModalActionProps: FCC<ModalActionUserProps> = () => null;
 ModalActionProps.defaultProps = {
     alignItems: 'right'
 };

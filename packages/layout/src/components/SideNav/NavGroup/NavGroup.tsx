@@ -1,12 +1,12 @@
 import { Text } from '@medly-components/core';
 import { WithStyle } from '@medly-components/utils';
-import { FC, useContext } from 'react';
+import { FCC, useContext } from 'react';
 import NavList from '../NavList';
 import SideNavContext from '../SideNav.context';
 import { NavGroupStyled } from './NavGroup.styled';
 import { NavGroupProps } from './types';
 
-export const NavGroup: FC<NavGroupProps> & WithStyle = props => {
+export const NavGroup: FCC<NavGroupProps> & WithStyle = props => {
     const { isHovered, isExpanded } = useContext(SideNavContext),
         { title, children, ...restProps } = props;
 

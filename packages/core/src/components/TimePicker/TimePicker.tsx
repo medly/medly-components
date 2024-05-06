@@ -1,12 +1,12 @@
 import { WithStyle, useCombinedRefs } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { forwardRef, memo, useRef } from 'react';
 import { TimePickerWrapper } from './TimePicker.styled';
 import TimePickerPopup from './TimePickerPopup';
 import TimePickerTextField from './TimePickerTextField';
 import { TimePickerProps } from './types';
 
-const Component: FC<TimePickerProps> = memo(
+const Component: FCC<TimePickerProps> = memo(
     forwardRef((props, ref) => {
         const isMobile = navigator?.userAgent?.indexOf('Mobi') > -1;
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null));
@@ -42,4 +42,4 @@ Component.defaultProps = {
     showDecorators: true
 };
 Component.displayName = 'TimePicker';
-export const TimePicker: FC<TimePickerProps> & WithStyle = Object.assign(Component, { Style: TimePickerWrapper });
+export const TimePicker: FCC<TimePickerProps> & WithStyle = Object.assign(Component, { Style: TimePickerWrapper });

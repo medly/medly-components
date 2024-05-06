@@ -1,13 +1,13 @@
 import { ConcentricCircleLoader } from '@medly-components/loaders';
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { Children, forwardRef, memo } from 'react';
 import CenterAlignedLoader from '../CenterAlignedLoader';
 import Text from '../Text';
 import { BoxStyled } from './Box.styled';
 import { BoxProps } from './types';
 
-const Component: FC<BoxProps> = memo(
+const Component: FCC<BoxProps> = memo(
     forwardRef((props, ref) => (
         <BoxStyled ref={ref} {...props}>
             {Children.map(props.children, c => {
@@ -27,6 +27,6 @@ Component.defaultProps = {
     fontVariant: 'body2'
 };
 Component.displayName = 'Box';
-export const Box: FC<BoxProps> & WithStyle = Object.assign(Component, {
+export const Box: FCC<BoxProps> & WithStyle = Object.assign(Component, {
     Style: BoxStyled
 });

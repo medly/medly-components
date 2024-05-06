@@ -8,14 +8,14 @@ export const Input = styled('input').attrs({ type: 'file' })<StyledInputProps>`
     opacity: 0;
 `;
 
-export const Label = styled('label').attrs(({ theme: { input, font } }) => ({ input, font }))<StyledLabelProps>`
+export const Label = styled('label')<StyledLabelProps>`
     ${getFontStyle}
     padding: ${({ theme }) => theme.spacing.S2};
-    color: ${props => props.input.color};
+    color: ${({ theme }) => theme.input.color};
     background-clip: padding-box;
-    background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};
+    background-color: ${({ disabled, theme }) => (disabled ? theme.input.disabledBgcolor : theme.input.bgColor)};
     box-sizing: border-box;
-    border: 1px solid ${props => props.input.borderColor};
+    border: 1px solid ${({ theme }) => theme.input.borderColor};
     border-radius: 5px;
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     text-align: center;
@@ -25,7 +25,7 @@ export const Label = styled('label').attrs(({ theme: { input, font } }) => ({ in
     user-select: none;
 
     &:focus {
-        border-color: ${props => props.input.focusedBorderColor};
+        border-color: ${({ theme }) => theme.input.focusedBorderColor};
         outline: 0;
     }
 

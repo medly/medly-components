@@ -1,11 +1,11 @@
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { Children, memo, useContext, useLayoutEffect, useRef } from 'react';
 import Text from '../../Text';
 import { ModalContext } from '../Modal.context';
 import * as Styled from './Header.styled';
 
-const Component: FC = memo(({ children }) => {
+const Component: FCC = memo(({ children }) => {
     const { id, headerHeight, setHeaderHeight, isSmallScreen, scrollState } = useContext(ModalContext);
     const headerRef = useRef<HTMLDivElement>(null);
 
@@ -22,4 +22,4 @@ const Component: FC = memo(({ children }) => {
     );
 });
 Component.displayName = 'Header';
-export const Header: FC & WithStyle = Object.assign(Component, { Style: Styled.Header });
+export const Header: FCC & WithStyle = Object.assign(Component, { Style: Styled.Header });

@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { memo } from 'react';
-import SideEffect1886448LineIconSvg from '../../assets/GSDD/SideEffect_1886_448_Line.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
+import SideEffect1886448LineIconSvg from '../../assets/GSDD/SideEffect_1886_448_Line.svg';
 
-const Component: FC<SvgIconProps> = memo(props => {
+const Component: FCC<SvgIconProps> = memo(props => {
     const { size, variant, iconColor, bgColor, hoverBgColor, hoverIconColor, withHoverEffect, margin, fillOpacity, ...restProps } = props;
     return (
         <SvgIcon
@@ -16,6 +16,6 @@ const Component: FC<SvgIconProps> = memo(props => {
 });
 Component.displayName = 'SideEffect1886448LineIcon';
 
-const SideEffect1886448LineIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
+const SideEffect1886448LineIcon: FCC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
 export default SideEffect1886448LineIcon;

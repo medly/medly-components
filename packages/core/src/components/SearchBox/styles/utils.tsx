@@ -12,7 +12,7 @@ export const getBorderAndBoxShadow = (color: string, boxShadow: string, size = '
     `;
 };
 
-export const getIconWrapperStyle = css`
+export const getIconWrapperStyle = css<StyledSearchBoxProps>`
     width: ${getSearchBoxSize};
     min-width: ${getSearchBoxSize};
     height: auto;

@@ -15,42 +15,42 @@ const maxWidthStyle = css<OptionStyledProps>`
         min-width: fit-content;
     `;
 
-export const OptionStyled = styled('li').attrs(({ theme: { singleSelect } }) => ({ ...singleSelect.option }))<OptionStyledProps>`
+export const OptionStyled = styled('li')<OptionStyledProps>`
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     padding: 0 0.8rem;
     border-radius: 0.4rem;
     box-sizing: border-box;
-    min-height: ${({ variant, minHeight }) => minHeight[variant]};
+    min-height: ${({ variant, theme }) => theme.singleSelect.option.minHeight[variant]};
     display: flex;
     align-items: center;
     position: relative;
-    background-color: ${({ disabled, selected, hovered, hasError, bgColor }) =>
-        bgColor[!disabled && selected ? (hasError ? 'error' : 'selected') : hovered ? 'hovered' : 'default']};
+    background-color: ${({ disabled, selected, hovered, hasError, theme }) =>
+        theme.singleSelect.option.bgColor[!disabled && selected ? (hasError ? 'error' : 'selected') : hovered ? 'hovered' : 'default']};
 
     &:hover {
-        background-color: ${({ disabled, selected, bgColor }) => !disabled && !selected && bgColor.hovered};
+        background-color: ${({ disabled, selected, theme }) => !disabled && !selected && theme.singleSelect.option.bgColor.hovered};
         & > ${Text.Style} {
-            color: ${({ textColor }) => textColor.hovered};
+            color: ${({ theme }) => theme.singleSelect.option.textColor.hovered};
         }
     }
 
     &:active {
-        background-color: ${({ disabled, selected, bgColor }) => !disabled && !selected && bgColor.pressed};
+        background-color: ${({ disabled, selected, theme }) => !disabled && !selected && theme.singleSelect.option.bgColor.pressed};
     }
 
     & > ${Text.Style} {
         flex: 1;
         user-select: none;
         white-space: nowrap;
-        color: ${({ disabled, selected, hasError, textColor }) =>
-            textColor[disabled ? 'disabled' : selected ? (hasError ? 'error' : 'selected') : 'default']};
+        color: ${({ disabled, selected, hasError, theme }) =>
+            theme.singleSelect.option.textColor[disabled ? 'disabled' : selected ? (hasError ? 'error' : 'selected') : 'default']};
     }
 
     & > ${SvgIcon} {
         margin-left: 1.6rem;
         * {
-            fill: ${({ disabled, selected, hasError, textColor }) =>
-                textColor[disabled ? 'disabled' : selected ? (hasError ? 'error' : 'selected') : 'default']};
+            fill: ${({ disabled, selected, hasError, theme }) =>
+                theme.singleSelect.option.textColor[disabled ? 'disabled' : selected ? (hasError ? 'error' : 'selected') : 'default']};
         }
     }
 

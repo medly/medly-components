@@ -1,11 +1,11 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { forwardRef, memo, useCallback, useMemo, useRef } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './FileInput.styled';
 import { FileInputProps } from './types';
 
-const Component: FC<FileInputProps> = memo(
+const Component: FCC<FileInputProps> = memo(
     forwardRef((props, ref) => {
         const {
                 files,
@@ -74,6 +74,6 @@ Component.defaultProps = {
     labelPosition: 'top',
     description: ''
 };
-export const FileInput: FC<FileInputProps> & WithStyle = Object.assign(Component, {
+export const FileInput: FCC<FileInputProps> & WithStyle = Object.assign(Component, {
     Style: Styled.Input
 });

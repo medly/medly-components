@@ -1,11 +1,11 @@
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import { memo, forwardRef } from 'react';
+import type { FCC } from 'react';
+import { forwardRef, memo } from 'react';
 import Text from '../../Text';
 import { BreadcrumbItemStyled } from './Item.styled';
 import { BreadcrumbItemProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<BreadcrumbItemProps> = memo(
+const Component: FCC<BreadcrumbItemProps> = memo(
     forwardRef(({ children, ...restProps }, ref) => {
         return (
             <BreadcrumbItemStyled ref={ref} {...restProps}>
@@ -16,4 +16,4 @@ const Component: FC<BreadcrumbItemProps> = memo(
 );
 
 Component.displayName = 'BreadcrumbItem';
-export const BreadcrumbItem: FC<BreadcrumbItemProps> & WithStyle = Object.assign(Component, { Style: BreadcrumbItemStyled });
+export const BreadcrumbItem: FCC<BreadcrumbItemProps> & WithStyle = Object.assign(Component, { Style: BreadcrumbItemStyled });

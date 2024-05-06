@@ -1,5 +1,5 @@
 import { defaultTheme, SingleSelectTheme } from '@medly-components/theme';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { Option, SingleSelectProps } from './types';
 
 export const variants: Required<SingleSelectProps>['variant'][] = ['outlined', 'filled', 'flat', 'fusion'];
@@ -27,9 +27,9 @@ export const options = [
     { value: 'Dummy6 option', label: 'Dummy6 option' }
 ];
 
-export const ThemeInterface: FC<SingleSelectTheme> = () => null;
+export const ThemeInterface: FCC<SingleSelectTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.singleSelect
 };
 
-export const OptionProps: FC<Option> = () => null;
+export const OptionProps: FCC<Option> = () => null;

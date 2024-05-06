@@ -10,14 +10,12 @@ exports[`Card Table Head should render properly with dark background 1`] = `
 .c7 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c7 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -27,9 +25,6 @@ exports[`Card Table Head should render properly with dark background 1`] = `
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -38,31 +33,16 @@ exports[`Card Table Head should render properly with dark background 1`] = `
 
 .c3 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c1 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -76,7 +56,6 @@ exports[`Card Table Head should render properly with dark background 1`] = `
   left: 0;
   background-color: transparent;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -94,18 +73,13 @@ exports[`Card Table Head should render properly with dark background 1`] = `
 }
 
 .c1 .c4 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #435465;
 }
 
 .c1 .c6 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
@@ -121,8 +95,10 @@ exports[`Card Table Head should render properly with dark background 1`] = `
     <thead>
       <tr
         class="c0"
+        gridtemplatecolumns="1fr 1fr "
       >
         <th
+          align="left"
           class="c1"
         >
           <span
@@ -130,6 +106,9 @@ exports[`Card Table Head should render properly with dark background 1`] = `
           >
             <h5
               class="c4 c5"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Patient Info
             </h5>
@@ -149,6 +128,7 @@ exports[`Card Table Head should render properly with dark background 1`] = `
           </span>
         </th>
         <th
+          align="left"
           class="c1"
         >
           <span
@@ -156,6 +136,9 @@ exports[`Card Table Head should render properly with dark background 1`] = `
           >
             <h5
               class="c4 c5"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               RxInfo
             </h5>
@@ -190,14 +173,12 @@ exports[`Card Table Head should render properly with light background 1`] = `
 .c7 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c7 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -207,9 +188,6 @@ exports[`Card Table Head should render properly with light background 1`] = `
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -218,31 +196,16 @@ exports[`Card Table Head should render properly with light background 1`] = `
 
 .c3 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c1 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -256,7 +219,6 @@ exports[`Card Table Head should render properly with light background 1`] = `
   left: 0;
   background-color: transparent;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -274,18 +236,13 @@ exports[`Card Table Head should render properly with light background 1`] = `
 }
 
 .c1 .c4 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #607890;
 }
 
 .c1 .c6 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
@@ -301,8 +258,10 @@ exports[`Card Table Head should render properly with light background 1`] = `
     <thead>
       <tr
         class="c0"
+        gridtemplatecolumns="1fr 1fr "
       >
         <th
+          align="left"
           class="c1"
         >
           <span
@@ -310,6 +269,9 @@ exports[`Card Table Head should render properly with light background 1`] = `
           >
             <h5
               class="c4 c5"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Patient Info
             </h5>
@@ -329,6 +291,7 @@ exports[`Card Table Head should render properly with light background 1`] = `
           </span>
         </th>
         <th
+          align="left"
           class="c1"
         >
           <span
@@ -336,6 +299,9 @@ exports[`Card Table Head should render properly with light background 1`] = `
           >
             <h5
               class="c4 c5"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               RxInfo
             </h5>

@@ -1,13 +1,12 @@
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
-import { memo, useEffect, useState } from 'react';
+import { FCC, memo, useEffect, useState } from 'react';
 import { Section } from './Accordion.styled';
 import { AccordionContext } from './AccordionContext';
 import Content from './Content';
 import Header from './Header';
 import { AccordionProps, StaticProps } from './types';
 
-const Component: FC<AccordionProps> = memo(({ active, defaultActive, onChange, ...restProps }) => {
+const Component: FCC<AccordionProps> = memo(({ active, defaultActive, onChange, ...restProps }) => {
     const activeState = useState(false);
 
     useEffect(() => {
@@ -26,7 +25,7 @@ Component.defaultProps = {
 };
 Component.displayName = 'Accordion';
 
-export const Accordion: FC<AccordionProps> & StaticProps & WithStyle = Object.assign(Component, {
+export const Accordion: FCC<AccordionProps> & StaticProps & WithStyle = Object.assign(Component, {
     Header,
     Content,
     Context: AccordionContext,

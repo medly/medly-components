@@ -6,9 +6,6 @@ exports[`Table component pagination should call onPageChange prop on click on an
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -16,55 +13,54 @@ exports[`Table component pagination should call onPageChange prop on click on an
   display: inline-block;
 }
 
-.c17 {
+.c12 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-align: initial;
+  text-transform: uppercase;
+}
+
+.c18 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c27 {
+.c29 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: center;
   display: inline-block;
 }
 
-.c30 {
+.c32 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: center;
 }
 
-.c31 {
+.c33 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -74,45 +70,36 @@ exports[`Table component pagination should call onPageChange prop on click on an
 .c9 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c25 {
+.c27 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c25 * {
+.c27 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c29 {
+.c31 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c14 {
+.c15 {
   display: block;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -122,9 +109,6 @@ exports[`Table component pagination should call onPageChange prop on click on an
   opacity: 0;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -188,12 +172,10 @@ exports[`Table component pagination should call onPageChange prop on click on an
   width: 1px;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-.c18 {
+.c19 {
   display: grid;
   position: relative;
   opacity: 1;
@@ -202,16 +184,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   padding: 0;
 }
 
-.c12 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  text-transform: uppercase;
+.c13 {
   position: relative;
   text-align: center;
   padding: 0.9rem 1.6rem 1rem;
@@ -222,7 +195,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   color: #435465;
 }
 
-.c12::after {
+.c13::after {
   content: '';
   position: absolute;
   pointer-events: none;
@@ -231,215 +204,127 @@ exports[`Table component pagination should call onPageChange prop on click on an
   width: calc(100% - 3.2rem);
   left: 50%;
   bottom: 0;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-.c16 {
+.c17 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 1.2rem 1.6rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c16 .c6 {
+.c17 .c6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.c19 {
+.c20 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 1.2rem 1.6rem;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.c19 .c6 {
+.c20 .c6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.c15 {
+.c16 {
   display: grid;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   outline: none;
   cursor: inherit;
 }
 
-.c15.c15:hover {
+.c16.c16:hover {
   z-index: 2;
 }
 
-.c15:nth-child(odd),
-.c15:nth-child(odd) > * {
+.c16:nth-child(odd),
+.c16:nth-child(odd)>* {
   background-color: #F7F8F9;
   color: #13181D;
 }
 
-.c15:nth-child(even),
-.c15:nth-child(even) > * {
+.c16:nth-child(even),
+.c16:nth-child(even)>* {
   background-color: #ffffff;
   color: #13181D;
 }
 
-.c15:not(:last-child) {
+.c16:not(:last-child) {
   border-bottom: 0.1rem solid #C7D0D8;
 }
 
-.c22 {
+.c23 {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.c22 li {
+.c23 li {
   margin: 0 0.4rem;
 }
 
-.c22 li:last-child {
+.c23 li:last-child {
   margin-right: 0.8rem;
 }
 
-.c22 li:first-child {
+.c23 li:first-child {
   margin-left: 0.8rem;
 }
 
-.c23 > li {
+.c24>li {
   margin: 0;
 }
 
-.c26 {
+.c25 {
   margin: 0.4rem;
   height: 3.2rem;
   width: 3.2rem;
   display: block;
   border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border: none;
   padding: 0;
   text-align: center;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   color: #435465;
   background: #ffffff;
-  color: #3872D2;
-  background: #EBF1FA;
-  border-radius: 50%;
 }
 
-.c26:hover {
+.c25:hover {
   cursor: pointer;
 }
 
-.c26:focus {
+.c25:focus {
   outline: none;
 }
 
-.c26:disabled {
+.c25:disabled {
   cursor: not-allowed;
-}
-
-.c26:active {
-  font-weight: 700;
-  color: #13181D;
-  background: #eff2f4;
-}
-
-.c26 .c6 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-weight: 700;
 }
 
 .c28 {
-  margin: 0.4rem;
-  height: 3.2rem;
-  width: 3.2rem;
-  display: block;
+  color: #3872D2;
+  background: #EBF1FA;
   border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: none;
-  padding: 0;
-  text-align: center;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  color: #435465;
-  background: #ffffff;
-  color: #435465;
-  background: #ffffff;
-  border-radius: 50%;
-}
-
-.c28:hover {
-  cursor: pointer;
-}
-
-.c28:focus {
-  outline: none;
-}
-
-.c28:disabled {
-  cursor: not-allowed;
-}
-
-.c28:hover {
-  color: #303C48;
-  background: #F7F8F9;
 }
 
 .c28:active {
@@ -451,90 +336,78 @@ exports[`Table component pagination should call onPageChange prop on click on an
 .c28 .c6 {
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.c30 {
+  color: #435465;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.c30:hover {
+  color: #303C48;
+  background: #F7F8F9;
+}
+
+.c30:active {
+  font-weight: 700;
+  color: #13181D;
+  background: #eff2f4;
+}
+
+.c30 .c6 {
+  font-size: 1.2rem;
+  font-weight: 700;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 600;
 }
 
-.c24 {
-  margin: 0.4rem;
-  height: 3.2rem;
-  width: 3.2rem;
-  display: block;
-  border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: none;
-  padding: 0;
-  text-align: center;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  color: #435465;
-  background: #ffffff;
+.c26 {
   background: #ffffff;
 }
 
-.c24:hover {
-  cursor: pointer;
-}
-
-.c24:focus {
-  outline: none;
-}
-
-.c24:disabled {
-  cursor: not-allowed;
-}
-
-.c24 > .c8,
-.c24 .c8 {
+.c26>.c8,
+.c26 .c8 {
   padding: 0.4rem;
 }
 
-.c24 .c8 * {
+.c26 .c8 * {
   fill: #435465;
 }
 
-.c24:disabled {
+.c26:disabled {
   background: #ffffff;
 }
 
-.c24:disabled .c8 * {
+.c26:disabled .c8 * {
   fill: #C7D0D8;
 }
 
-.c24:not(:disabled):hover {
+.c26:not(:disabled):hover {
   background: #F7F8F9;
 }
 
-.c24:not(:disabled):hover .c8 * {
+.c26:not(:disabled):hover .c8 * {
   fill: #303C48;
 }
 
-.c24:not(:disabled):active {
+.c26:not(:disabled):active {
   background: #eff2f4;
 }
 
-.c24:not(:disabled):active .c8 * {
+.c26:not(:disabled):active .c8 * {
   fill: #13181D;
 }
 
-.c20 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.c21 {
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   bottom: 0;
@@ -544,65 +417,39 @@ exports[`Table component pagination should call onPageChange prop on click on an
   border-top: 0.1rem solid #C7D0D8;
 }
 
-.c21 {
+.c22 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   padding: 0 1.6rem 0 0.8rem;
 }
 
-.c21 td {
+.c22 td {
   padding: 0;
 }
 
-.c21 td > .c6 {
+.c22 td>.c6 {
   font-size: 1.2rem;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
 }
 
 .c2 {
   display: block;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 3;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
 .c4 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
   align-items: flex-end;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   opacity: 1;
   position: relative;
@@ -612,9 +459,6 @@ exports[`Table component pagination should call onPageChange prop on click on an
 .c4 .c6 {
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -629,13 +473,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   width: 1px;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-.c4 .sc-aaeo7e-4 {
-  padding: 0;
 }
 
 .c10 {
@@ -651,19 +489,10 @@ exports[`Table component pagination should call onPageChange prop on click on an
 
 .c5 {
   border: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-height: 2rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   padding: 0.9rem 0.8rem;
   outline: unset;
@@ -710,26 +539,15 @@ exports[`Table component pagination should call onPageChange prop on click on an
 
 .c5 .c8 {
   margin-left: 0.4rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c13 {
+.c14 {
   border: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-height: 2rem;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 0.9rem 0.8rem;
   outline: unset;
@@ -740,33 +558,33 @@ exports[`Table component pagination should call onPageChange prop on click on an
   color: #435465;
 }
 
-.c13 .c8 * {
+.c14 .c8 * {
   fill: #435465;
 }
 
-.c13.c13.c13 {
+.c14.c14.c14 {
   box-sizing: content-box;
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #F7F8F9;
   color: #303C48;
 }
 
-.c13:hover .c8 * {
+.c14:hover .c8 * {
   fill: #303C48;
 }
 
-.c13:active {
+.c14:active {
   background-color: #eff2f4;
   color: #13181D;
 }
 
-.c13:active .c8 * {
+.c14:active .c8 * {
   fill: #13181D;
 }
 
-.c13 .c6 {
+.c14 .c6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -774,26 +592,18 @@ exports[`Table component pagination should call onPageChange prop on click on an
   line-height: 1;
 }
 
-.c13 .c8 {
+.c14 .c8 {
   margin-left: 0.4rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .c3 {
   display: grid;
-  -webkit-align-items: end;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
   align-items: end;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
-.c3 > * {
+.c3>* {
   background-color: #ffffff;
   border-bottom: 1px solid #C7D0D8;
 }
@@ -805,24 +615,36 @@ exports[`Table component pagination should call onPageChange prop on click on an
     4
   </div>
   <table
+    actions=""
     class="c1"
+    columns="[object Object],[object Object],[object Object],[object Object],[object Object]"
+    defaultactivepage="1"
+    defaultsortorder="desc"
+    itemsperpage="10"
+    rowclickdisablekey=""
     tabindex="-1"
+    totalitems="300"
   >
     <thead
       class="c2"
     >
       <tr
         class="c3"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
       >
         <th
           class="c4"
+          tablesize="M"
         >
           <button
             class="c5"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Name
             </span>
@@ -846,21 +668,32 @@ exports[`Table component pagination should call onPageChange prop on click on an
         </th>
         <th
           class="c11"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+          tablesize="M"
         >
-          <span
-            class="c6 c12"
+          <h5
+            class="c6 c12 c13"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="h5"
+            textweight="Strong"
           >
             Marks
-          </span>
+          </h5>
           <div
             class="c4"
+            tablesize="M"
           >
             <button
-              class="c13"
+              align="right"
+              class="c14"
+              tablesize="M"
             >
               <span
                 class="c6 c7"
+                textalign="initial"
+                textcolor="inherit"
               >
                 Maths
               </span>
@@ -884,12 +717,17 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
           <div
             class="c4"
+            tablesize="M"
           >
             <button
-              class="c13"
+              align="right"
+              class="c14"
+              tablesize="M"
             >
               <span
                 class="c6 c7"
+                textalign="initial"
+                textcolor="inherit"
               >
                 Science
               </span>
@@ -914,12 +752,17 @@ exports[`Table component pagination should call onPageChange prop on click on an
         </th>
         <th
           class="c4"
+          tablesize="M"
         >
           <button
-            class="c13"
+            align="right"
+            class="c14"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Age
             </span>
@@ -943,12 +786,16 @@ exports[`Table component pagination should call onPageChange prop on click on an
         </th>
         <th
           class="c4"
+          tablesize="M"
         >
           <button
             class="c5"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Passed
             </span>
@@ -972,12 +819,17 @@ exports[`Table component pagination should call onPageChange prop on click on an
         </th>
         <th
           class="c4"
+          tablesize="M"
         >
           <button
-            class="c13"
+            align="right"
+            class="c14"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Rating
             </span>
@@ -1002,42 +854,58 @@ exports[`Table component pagination should call onPageChange prop on click on an
       </tr>
     </thead>
     <tbody
-      class="c14"
+      class="c15"
     >
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="1"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Albus Percival Wulfric Brian Dumbledore"
           >
             Albus Percival Wulfric Brian Dumbledore
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="6"
             >
               6
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="4"
             >
               4
@@ -1045,30 +913,44 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="12"
           >
             12
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Yes"
           >
             Yes
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="5"
           >
             5
@@ -1076,39 +958,55 @@ exports[`Table component pagination should call onPageChange prop on click on an
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="2"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Mary May"
           >
             Mary May
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="4"
             >
               4
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="7"
             >
               7
@@ -1116,30 +1014,44 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="1"
           >
             1
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Yes"
           >
             Yes
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
@@ -1147,39 +1059,55 @@ exports[`Table component pagination should call onPageChange prop on click on an
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="3"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Christine Lobowski"
           >
             Christine Lobowski
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="4"
             >
               4
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="7"
             >
               7
@@ -1187,30 +1115,44 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="42"
           >
             42
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Yes"
           >
             Yes
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
@@ -1218,39 +1160,55 @@ exports[`Table component pagination should call onPageChange prop on click on an
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="4"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Brendon Philips"
           >
             Brendon Philips
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="10"
             >
               10
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="2"
             >
               2
@@ -1258,30 +1216,44 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="125"
           >
             125
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Yes"
           >
             Yes
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4.5"
           >
             4.5
@@ -1289,39 +1261,55 @@ exports[`Table component pagination should call onPageChange prop on click on an
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="5"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Margret Marmajuke"
           >
             Margret Marmajuke
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="7"
             >
               7
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="5"
             >
               5
@@ -1329,30 +1317,44 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="16"
           >
             16
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Yes"
           >
             Yes
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
@@ -1360,39 +1362,55 @@ exports[`Table component pagination should call onPageChange prop on click on an
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="6"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Van Ng"
           >
             Van Ng
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="9"
             >
               9
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="2"
             >
               2
@@ -1400,30 +1418,44 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="37"
           >
             37
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="No"
           >
             No
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
@@ -1431,39 +1463,55 @@ exports[`Table component pagination should call onPageChange prop on click on an
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="7"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Duc Ng"
           >
             Duc Ng
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="10"
             >
               10
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="3"
             >
               3
@@ -1471,30 +1519,44 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="37"
           >
             37
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="No"
           >
             No
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
@@ -1503,24 +1565,27 @@ exports[`Table component pagination should call onPageChange prop on click on an
       </tr>
     </tbody>
     <tfoot
-      class="c20"
+      class="c21"
+      tablesize="M"
     >
       <tr
-        class="c21"
+        class="c22"
       >
         <td>
           <ul
-            class="c22 c23 "
+            class="c23 c24 "
             data-testid="foot-pagination"
+            tablesize="M"
+            variant="horizontal"
           >
             <li>
               <button
-                class="sc-1dmgj8o-1 c24"
+                class="c25 c26"
                 disabled=""
                 type="button"
               >
                 <svg
-                  class="c8 c25"
+                  class="c8 c27"
                   fill="none"
                   height="1em"
                   title="prev"
@@ -1538,11 +1603,13 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-1dmgj8o-1 c26"
+                class="c25 c28"
                 type="button"
               >
                 <span
-                  class="c6 c27"
+                  class="c6 c29"
+                  textalign="center"
+                  textcolor="inherit"
                 >
                   1
                 </span>
@@ -1550,11 +1617,13 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-1dmgj8o-1 c28"
+                class="c25 c30"
                 type="button"
               >
                 <span
-                  class="c6 c27"
+                  class="c6 c29"
+                  textalign="center"
+                  textcolor="inherit"
                 >
                   2
                 </span>
@@ -1562,11 +1631,13 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-1dmgj8o-1 c28"
+                class="c25 c30"
                 type="button"
               >
                 <span
-                  class="c6 c27"
+                  class="c6 c29"
+                  textalign="center"
+                  textcolor="inherit"
                 >
                   3
                 </span>
@@ -1574,15 +1645,19 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <div
-                class="c29"
+                class="c31"
                 id="medly-popover-wrapper"
               >
                 <button
-                  class="sc-1dmgj8o-1 c28"
+                  class="c25 c30"
                   type="button"
                 >
                   <h5
-                    class="c6 c30"
+                    class="c6 c32"
+                    textalign="center"
+                    textcolor="inherit"
+                    textvariant="h5"
+                    textweight="Medium"
                   >
                     ...
                   </h5>
@@ -1591,11 +1666,13 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-1dmgj8o-1 c28"
+                class="c25 c30"
                 type="button"
               >
                 <span
-                  class="c6 c27"
+                  class="c6 c29"
+                  textalign="center"
+                  textcolor="inherit"
                 >
                   30
                 </span>
@@ -1603,11 +1680,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-1dmgj8o-1 c24"
+                class="c25 c26"
                 type="button"
               >
                 <svg
-                  class="c8 c25"
+                  class="c8 c27"
                   fill="none"
                   height="1em"
                   title="next"
@@ -1627,27 +1704,39 @@ exports[`Table component pagination should call onPageChange prop on click on an
         </td>
         <td>
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
           >
             Viewing
           </span>
           <strong
-            class="c6 c31"
+            class="c6 c33"
+            textalign="initial"
+            textcolor="inherit"
+            textweight="Strong"
           >
              1 - 10 
           </strong>
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
           >
             of
           </span>
           <strong
-            class="c6 c31"
+            class="c6 c33"
+            textalign="initial"
+            textcolor="inherit"
+            textweight="Strong"
           >
              300 
           </strong>
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
           >
             Results
           </span>
@@ -1664,9 +1753,6 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1674,14 +1760,22 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
   display: inline-block;
 }
 
-.c17 {
+.c12 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-align: initial;
+  text-transform: uppercase;
+}
+
+.c18 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1691,22 +1785,18 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
 .c9 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c14 {
+.c15 {
   display: block;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -1716,9 +1806,6 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
   opacity: 0;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -1782,12 +1869,10 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
   width: 1px;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-.c18 {
+.c19 {
   display: grid;
   position: relative;
   opacity: 1;
@@ -1796,16 +1881,7 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
   padding: 0;
 }
 
-.c12 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  text-transform: uppercase;
+.c13 {
   position: relative;
   text-align: center;
   padding: 0.9rem 1.6rem 1rem;
@@ -1816,7 +1892,7 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
   color: #435465;
 }
 
-.c12::after {
+.c13::after {
   content: '';
   position: absolute;
   pointer-events: none;
@@ -1825,123 +1901,86 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
   width: calc(100% - 3.2rem);
   left: 50%;
   bottom: 0;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-.c16 {
+.c17 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 1.2rem 1.6rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c16 .c6 {
+.c17 .c6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.c19 {
+.c20 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 1.2rem 1.6rem;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.c19 .c6 {
+.c20 .c6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.c15 {
+.c16 {
   display: grid;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   outline: none;
   cursor: inherit;
 }
 
-.c15.c15:hover {
+.c16.c16:hover {
   z-index: 2;
 }
 
-.c15:nth-child(odd),
-.c15:nth-child(odd) > * {
+.c16:nth-child(odd),
+.c16:nth-child(odd)>* {
   background-color: #F7F8F9;
   color: #13181D;
 }
 
-.c15:nth-child(even),
-.c15:nth-child(even) > * {
+.c16:nth-child(even),
+.c16:nth-child(even)>* {
   background-color: #ffffff;
   color: #13181D;
 }
 
-.c15:not(:last-child) {
+.c16:not(:last-child) {
   border-bottom: 0.1rem solid #C7D0D8;
 }
 
 .c2 {
   display: block;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 3;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
 .c4 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
   align-items: flex-end;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   opacity: 1;
   position: relative;
@@ -1951,9 +1990,6 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
 .c4 .c6 {
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -1968,13 +2004,7 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
   width: 1px;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-.c4 .sc-aaeo7e-4 {
-  padding: 0;
 }
 
 .c10 {
@@ -1990,19 +2020,10 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
 
 .c5 {
   border: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-height: 2rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   padding: 0.9rem 0.8rem;
   outline: unset;
@@ -2049,26 +2070,15 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
 
 .c5 .c8 {
   margin-left: 0.4rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c13 {
+.c14 {
   border: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-height: 2rem;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 0.9rem 0.8rem;
   outline: unset;
@@ -2079,33 +2089,33 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
   color: #435465;
 }
 
-.c13 .c8 * {
+.c14 .c8 * {
   fill: #435465;
 }
 
-.c13.c13.c13 {
+.c14.c14.c14 {
   box-sizing: content-box;
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #F7F8F9;
   color: #303C48;
 }
 
-.c13:hover .c8 * {
+.c14:hover .c8 * {
   fill: #303C48;
 }
 
-.c13:active {
+.c14:active {
   background-color: #eff2f4;
   color: #13181D;
 }
 
-.c13:active .c8 * {
+.c14:active .c8 * {
   fill: #13181D;
 }
 
-.c13 .c6 {
+.c14 .c6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -2113,26 +2123,18 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
   line-height: 1;
 }
 
-.c13 .c8 {
+.c14 .c8 {
   margin-left: 0.4rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .c3 {
   display: grid;
-  -webkit-align-items: end;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
   align-items: end;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
-.c3 > * {
+.c3>* {
   background-color: #ffffff;
   border-bottom: 1px solid #C7D0D8;
 }
@@ -2144,24 +2146,36 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
     &lt;img src=x onerror=confirm\`1\`&gt;
   </div>
   <table
+    actions=""
     class="c1"
+    columns="[object Object],[object Object],[object Object],[object Object],[object Object]"
+    defaultactivepage="1"
+    defaultsortorder="desc"
+    itemsperpage="20"
+    rowclickdisablekey=""
     tabindex="-1"
+    totalitems="0"
   >
     <thead
       class="c2"
     >
       <tr
         class="c3"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
       >
         <th
           class="c4"
+          tablesize="M"
         >
           <button
             class="c5"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Name
             </span>
@@ -2185,21 +2199,32 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
         </th>
         <th
           class="c11"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+          tablesize="M"
         >
-          <span
-            class="c6 c12"
+          <h5
+            class="c6 c12 c13"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="h5"
+            textweight="Strong"
           >
             Marks
-          </span>
+          </h5>
           <div
             class="c4"
+            tablesize="M"
           >
             <button
-              class="c13"
+              align="right"
+              class="c14"
+              tablesize="M"
             >
               <span
                 class="c6 c7"
+                textalign="initial"
+                textcolor="inherit"
               >
                 Maths
               </span>
@@ -2223,12 +2248,17 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
           </div>
           <div
             class="c4"
+            tablesize="M"
           >
             <button
-              class="c13"
+              align="right"
+              class="c14"
+              tablesize="M"
             >
               <span
                 class="c6 c7"
+                textalign="initial"
+                textcolor="inherit"
               >
                 Science
               </span>
@@ -2253,12 +2283,17 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
         </th>
         <th
           class="c4"
+          tablesize="M"
         >
           <button
-            class="c13"
+            align="right"
+            class="c14"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Age
             </span>
@@ -2282,12 +2317,16 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
         </th>
         <th
           class="c4"
+          tablesize="M"
         >
           <button
             class="c5"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Passed
             </span>
@@ -2311,12 +2350,17 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
         </th>
         <th
           class="c4"
+          tablesize="M"
         >
           <button
-            class="c13"
+            align="right"
+            class="c14"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Rating
             </span>
@@ -2341,42 +2385,58 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
       </tr>
     </thead>
     <tbody
-      class="c14"
+      class="c15"
     >
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="8"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Albus Dumbledore"
           >
             Albus Dumbledore
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="6"
             >
               6
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="4"
             >
               4
@@ -2384,30 +2444,44 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="12"
           >
             12
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Yes"
           >
             Yes
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="<img src=x onerror=confirm\`1\`>"
           >
             &lt;img src=x onerror=confirm\`1\`&gt;
@@ -2425,9 +2499,6 @@ exports[`Table component should render properly 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2435,14 +2506,22 @@ exports[`Table component should render properly 1`] = `
   display: inline-block;
 }
 
-.c17 {
+.c12 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-align: initial;
+  text-transform: uppercase;
+}
+
+.c18 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2452,22 +2531,18 @@ exports[`Table component should render properly 1`] = `
 .c9 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c14 {
+.c15 {
   display: block;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -2477,9 +2552,6 @@ exports[`Table component should render properly 1`] = `
   opacity: 0;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -2543,12 +2615,10 @@ exports[`Table component should render properly 1`] = `
   width: 1px;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-.c18 {
+.c19 {
   display: grid;
   position: relative;
   opacity: 1;
@@ -2557,16 +2627,7 @@ exports[`Table component should render properly 1`] = `
   padding: 0;
 }
 
-.c12 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  text-transform: uppercase;
+.c13 {
   position: relative;
   text-align: center;
   padding: 0.9rem 1.6rem 1rem;
@@ -2577,7 +2638,7 @@ exports[`Table component should render properly 1`] = `
   color: #435465;
 }
 
-.c12::after {
+.c13::after {
   content: '';
   position: absolute;
   pointer-events: none;
@@ -2586,123 +2647,86 @@ exports[`Table component should render properly 1`] = `
   width: calc(100% - 3.2rem);
   left: 50%;
   bottom: 0;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-.c16 {
+.c17 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 1.2rem 1.6rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c16 .c6 {
+.c17 .c6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.c19 {
+.c20 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 1.2rem 1.6rem;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.c19 .c6 {
+.c20 .c6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.c15 {
+.c16 {
   display: grid;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   outline: none;
   cursor: inherit;
 }
 
-.c15.c15:hover {
+.c16.c16:hover {
   z-index: 2;
 }
 
-.c15:nth-child(odd),
-.c15:nth-child(odd) > * {
+.c16:nth-child(odd),
+.c16:nth-child(odd)>* {
   background-color: #F7F8F9;
   color: #13181D;
 }
 
-.c15:nth-child(even),
-.c15:nth-child(even) > * {
+.c16:nth-child(even),
+.c16:nth-child(even)>* {
   background-color: #ffffff;
   color: #13181D;
 }
 
-.c15:not(:last-child) {
+.c16:not(:last-child) {
   border-bottom: 0.1rem solid #C7D0D8;
 }
 
 .c2 {
   display: block;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 3;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
 .c4 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
   align-items: flex-end;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   opacity: 1;
   position: relative;
@@ -2712,9 +2736,6 @@ exports[`Table component should render properly 1`] = `
 .c4 .c6 {
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -2729,13 +2750,7 @@ exports[`Table component should render properly 1`] = `
   width: 1px;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-.c4 .sc-aaeo7e-4 {
-  padding: 0;
 }
 
 .c10 {
@@ -2751,19 +2766,10 @@ exports[`Table component should render properly 1`] = `
 
 .c5 {
   border: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-height: 2rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   padding: 0.9rem 0.8rem;
   outline: unset;
@@ -2810,26 +2816,15 @@ exports[`Table component should render properly 1`] = `
 
 .c5 .c8 {
   margin-left: 0.4rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c13 {
+.c14 {
   border: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-height: 2rem;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 0.9rem 0.8rem;
   outline: unset;
@@ -2840,33 +2835,33 @@ exports[`Table component should render properly 1`] = `
   color: #435465;
 }
 
-.c13 .c8 * {
+.c14 .c8 * {
   fill: #435465;
 }
 
-.c13.c13.c13 {
+.c14.c14.c14 {
   box-sizing: content-box;
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #F7F8F9;
   color: #303C48;
 }
 
-.c13:hover .c8 * {
+.c14:hover .c8 * {
   fill: #303C48;
 }
 
-.c13:active {
+.c14:active {
   background-color: #eff2f4;
   color: #13181D;
 }
 
-.c13:active .c8 * {
+.c14:active .c8 * {
   fill: #13181D;
 }
 
-.c13 .c6 {
+.c14 .c6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -2874,26 +2869,18 @@ exports[`Table component should render properly 1`] = `
   line-height: 1;
 }
 
-.c13 .c8 {
+.c14 .c8 {
   margin-left: 0.4rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .c3 {
   display: grid;
-  -webkit-align-items: end;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
   align-items: end;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
-.c3 > * {
+.c3>* {
   background-color: #ffffff;
   border-bottom: 1px solid #C7D0D8;
 }
@@ -2905,24 +2892,36 @@ exports[`Table component should render properly 1`] = `
     4
   </div>
   <table
+    actions=""
     class="c1"
+    columns="[object Object],[object Object],[object Object],[object Object],[object Object]"
+    defaultactivepage="1"
+    defaultsortorder="desc"
+    itemsperpage="20"
+    rowclickdisablekey=""
     tabindex="-1"
+    totalitems="0"
   >
     <thead
       class="c2"
     >
       <tr
         class="c3"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
       >
         <th
           class="c4"
+          tablesize="M"
         >
           <button
             class="c5"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Name
             </span>
@@ -2946,21 +2945,32 @@ exports[`Table component should render properly 1`] = `
         </th>
         <th
           class="c11"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
+          tablesize="M"
         >
-          <span
-            class="c6 c12"
+          <h5
+            class="c6 c12 c13"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="h5"
+            textweight="Strong"
           >
             Marks
-          </span>
+          </h5>
           <div
             class="c4"
+            tablesize="M"
           >
             <button
-              class="c13"
+              align="right"
+              class="c14"
+              tablesize="M"
             >
               <span
                 class="c6 c7"
+                textalign="initial"
+                textcolor="inherit"
               >
                 Maths
               </span>
@@ -2984,12 +2994,17 @@ exports[`Table component should render properly 1`] = `
           </div>
           <div
             class="c4"
+            tablesize="M"
           >
             <button
-              class="c13"
+              align="right"
+              class="c14"
+              tablesize="M"
             >
               <span
                 class="c6 c7"
+                textalign="initial"
+                textcolor="inherit"
               >
                 Science
               </span>
@@ -3014,12 +3029,17 @@ exports[`Table component should render properly 1`] = `
         </th>
         <th
           class="c4"
+          tablesize="M"
         >
           <button
-            class="c13"
+            align="right"
+            class="c14"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Age
             </span>
@@ -3043,12 +3063,16 @@ exports[`Table component should render properly 1`] = `
         </th>
         <th
           class="c4"
+          tablesize="M"
         >
           <button
             class="c5"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Passed
             </span>
@@ -3072,12 +3096,17 @@ exports[`Table component should render properly 1`] = `
         </th>
         <th
           class="c4"
+          tablesize="M"
         >
           <button
-            class="c13"
+            align="right"
+            class="c14"
+            tablesize="M"
           >
             <span
               class="c6 c7"
+              textalign="initial"
+              textcolor="inherit"
             >
               Rating
             </span>
@@ -3102,42 +3131,58 @@ exports[`Table component should render properly 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c14"
+      class="c15"
     >
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="1"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Albus Percival Wulfric Brian Dumbledore"
           >
             Albus Percival Wulfric Brian Dumbledore
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="6"
             >
               6
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="4"
             >
               4
@@ -3145,30 +3190,44 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="12"
           >
             12
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Yes"
           >
             Yes
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="5"
           >
             5
@@ -3176,39 +3235,55 @@ exports[`Table component should render properly 1`] = `
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="2"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Mary May"
           >
             Mary May
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="4"
             >
               4
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="7"
             >
               7
@@ -3216,30 +3291,44 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="1"
           >
             1
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Yes"
           >
             Yes
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
@@ -3247,39 +3336,55 @@ exports[`Table component should render properly 1`] = `
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="3"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Christine Lobowski"
           >
             Christine Lobowski
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="4"
             >
               4
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="7"
             >
               7
@@ -3287,30 +3392,44 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="42"
           >
             42
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Yes"
           >
             Yes
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
@@ -3318,39 +3437,55 @@ exports[`Table component should render properly 1`] = `
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="4"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Brendon Philips"
           >
             Brendon Philips
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="10"
             >
               10
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="2"
             >
               2
@@ -3358,30 +3493,44 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="125"
           >
             125
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Yes"
           >
             Yes
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4.5"
           >
             4.5
@@ -3389,39 +3538,55 @@ exports[`Table component should render properly 1`] = `
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="5"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Margret Marmajuke"
           >
             Margret Marmajuke
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="7"
             >
               7
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="5"
             >
               5
@@ -3429,30 +3594,44 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="16"
           >
             16
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Yes"
           >
             Yes
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
@@ -3460,39 +3639,55 @@ exports[`Table component should render properly 1`] = `
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="6"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Van Ng"
           >
             Van Ng
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="9"
             >
               9
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="2"
             >
               2
@@ -3500,30 +3695,44 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="37"
           >
             37
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="No"
           >
             No
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4
@@ -3531,39 +3740,55 @@ exports[`Table component should render properly 1`] = `
         </td>
       </tr>
       <tr
-        class="c15"
+        class="c16"
+        gridtemplatecolumns=" minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
         tabindex="7"
       >
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="Duc Ng"
           >
             Duc Ng
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
+          gridtemplatecolumns=" minmax(100px, 1fr) minmax(100px, 1fr)"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="10"
             >
               10
             </span>
           </div>
           <div
-            class="c19"
+            align="right"
+            class="c20"
+            tablesize="M"
           >
             <span
-              class="c6 c17"
+              class="c6 c18"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="body2"
               title="3"
             >
               3
@@ -3571,30 +3796,44 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="37"
           >
             37
           </span>
         </td>
         <td
-          class="c16"
+          class="c17"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="No"
           >
             No
           </span>
         </td>
         <td
-          class="c19"
+          align="right"
+          class="c20"
+          tablesize="M"
         >
           <span
-            class="c6 c17"
+            class="c6 c18"
+            textalign="initial"
+            textcolor="inherit"
+            textvariant="body2"
             title="4"
           >
             4

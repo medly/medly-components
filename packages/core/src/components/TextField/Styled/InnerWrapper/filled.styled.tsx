@@ -1,7 +1,9 @@
+import type { WithThemeProp } from '@medly-components/utils';
 import { css } from 'styled-components';
-import { InnerWrapperModifiedProps } from '../../types';
+import type { InnerWrapperProps } from '../../types';
 
-export const filledStyle = ({ theme, filled, disabled }: InnerWrapperModifiedProps) => {
+export const filledStyle = ({ theme, disabled }: InnerWrapperProps & WithThemeProp) => {
+    const { filled } = theme.textField;
     return css`
         border-radius: ${theme.spacing.S1} ${theme.spacing.S1} 0 0;
         background-color: ${filled.default.bgColor};

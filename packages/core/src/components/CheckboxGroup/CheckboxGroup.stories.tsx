@@ -1,12 +1,12 @@
+import type { FCC, FormEvent } from 'react';
 import { useState } from 'react';
 import Button from '../Button';
 import { CheckboxGroup } from './CheckboxGroup';
 import { CheckboxGroupProps } from './types';
-import type { FC, FormEvent } from 'react';
 
 export const sizes: Required<CheckboxGroupProps>['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
-export const FormWithCheckboxGroup: FC<CheckboxGroupProps> = props => {
+export const FormWithCheckboxGroup: FCC<CheckboxGroupProps> = props => {
     const [bikes, setBikes] = useState<string[]>([]),
         handleSubmit = (e: FormEvent) => e.preventDefault();
     return (

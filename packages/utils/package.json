@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/utils",
-    "version": "3.2.2",
+    "version": "4.0.0",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -25,9 +25,9 @@
     },
     "peerDependencies": {
         "axios": ">=0.21.1",
-        "react": "16.x || 17.x",
-        "react-dom": "16.x || 17.x",
-        "styled-components": "^5.1.0"
+        "react": "18.x",
+        "react-dom": "18.x",
+        "styled-components": "^6.1.9"
     },
     "dependencies": {
         "@medly-components/theme": "6.0.0",

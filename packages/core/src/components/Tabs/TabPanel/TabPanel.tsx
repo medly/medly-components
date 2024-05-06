@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
+import type { FCC } from 'react';
+import { Children, memo } from 'react';
 import * as Styled from './TabPanel.styled';
 import { TabPanelProps } from './types';
-import type { FC } from 'react';
-import { Children, memo } from 'react';
 
-const Component: FC<TabPanelProps> = memo(props => {
+const Component: FCC<TabPanelProps> = memo(props => {
     const { active, children, forceRender, className } = props;
 
     return (
@@ -33,4 +33,4 @@ const Component: FC<TabPanelProps> = memo(props => {
     );
 });
 Component.displayName = 'TabPanel';
-export const TabPanel: FC<TabPanelProps> & WithStyle = Object.assign(Component, { Style: Styled.TabPanel });
+export const TabPanel: FCC<TabPanelProps> & WithStyle = Object.assign(Component, { Style: Styled.TabPanel });

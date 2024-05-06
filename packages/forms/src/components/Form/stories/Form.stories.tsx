@@ -1,12 +1,12 @@
 import { FormFieldSchema } from '@medly-components/forms';
 import { action } from '@storybook/addon-actions';
-import { FC, useState } from 'react';
+import { FCC, useState } from 'react';
 import { FormActionSchema } from '../../Actions/types';
 import { CommonFieldProps, FormCustomComponent, FormFieldProperties, NestedProps } from '../../Fields/types';
 import { Form } from '../../index';
 import { AddPhoneNumber } from './AddPhoneNumber';
 
-export const CommonProps: FC<
+export const CommonProps: FCC<
     {
         /** Type of field */
         type:
@@ -34,9 +34,9 @@ export const CommonProps: FC<
     } & CommonFieldProps
 > = () => null;
 
-export const NestedFieldProps: FC<NestedProps> = () => null;
+export const NestedFieldProps: FCC<NestedProps> = () => null;
 
-export const ActionSchema: FC<FormActionSchema> = () => null;
+export const ActionSchema: FCC<FormActionSchema> = () => null;
 ActionSchema.defaultProps = {
     alignItems: 'right',
     flexDirection: 'row'

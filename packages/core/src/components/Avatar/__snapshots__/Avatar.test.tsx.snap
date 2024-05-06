@@ -6,9 +6,6 @@ exports[`Avatar component should render avatar without hover and pressed states 
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -19,8 +16,6 @@ exports[`Avatar component should render avatar without hover and pressed states 
 .c0 {
   display: inline-block;
   text-align: center;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
   min-width: max-content;
   width: 4rem;
   height: 4rem;
@@ -29,9 +24,6 @@ exports[`Avatar component should render avatar without hover and pressed states 
   cursor: inherit;
   color: #1E864E;
   background: #E8F3ED;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -53,10 +45,21 @@ exports[`Avatar component should render avatar without hover and pressed states 
 
 <div>
   <div
+    bgcolor="#E8F3ED"
     class="c0"
+    hoverbgcolor="#409869"
+    hoverimgshadowcolor="rgba(96, 120, 144, 0.35)"
+    hovertextcolor="#ffffff"
+    hovertextshadowcolor="rgba(0, 128, 0, 0.35)"
+    pressedbgcolor="rgba(96, 120, 144, 0.65)"
+    pressedtextcolor="rgba(0, 128, 0, 0.65)"
+    textcolor="#1E864E"
   >
     <strong
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textweight="Strong"
     >
       M
     </strong>
@@ -68,8 +71,6 @@ exports[`Avatar component should render image avatar properly 1`] = `
 .c0 {
   display: inline-block;
   text-align: center;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
   min-width: max-content;
   width: 4.8rem;
   height: 4.8rem;
@@ -78,17 +79,7 @@ exports[`Avatar component should render image avatar properly 1`] = `
   cursor: pointer;
   color: #3872D2;
   background: #EBF1FA;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-}
-
-.c0 .sc-1ntgl3l-0 {
-  line-height: 4.8rem;
-  font-size: 2rem;
-  font-weight: 400;
-  font-family: Open Sans;
 }
 
 .c0 img {
@@ -102,19 +93,11 @@ exports[`Avatar component should render image avatar properly 1`] = `
 
 .c0:hover {
   background: #3872D2;
-  box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
-}
-
-.c0:hover .sc-1ntgl3l-0 {
-  color: #ffffff;
+  box-shadow: 0 0.4rem 0.8rem rgba(96, 120, 144, 0.35);
 }
 
 .c0:active {
   background: #3061B3;
-}
-
-.c0:active .sc-1ntgl3l-0 {
-  color: #ffffff;
 }
 
 <div>
@@ -134,9 +117,6 @@ exports[`Avatar component should render with all the props given 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -147,8 +127,6 @@ exports[`Avatar component should render with all the props given 1`] = `
 .c0 {
   display: inline-block;
   text-align: center;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
   min-width: max-content;
   width: 4rem;
   height: 4rem;
@@ -157,9 +135,6 @@ exports[`Avatar component should render with all the props given 1`] = `
   cursor: pointer;
   color: #1E864E;
   background: #E8F3ED;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -181,7 +156,7 @@ exports[`Avatar component should render with all the props given 1`] = `
 
 .c0:hover {
   background: #409869;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,128,0,0.35);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 128, 0, 0.35);
 }
 
 .c0:hover .c1 {
@@ -189,19 +164,30 @@ exports[`Avatar component should render with all the props given 1`] = `
 }
 
 .c0:active {
-  background: rgba(96,120,144,0.65);
+  background: rgba(96, 120, 144, 0.65);
 }
 
 .c0:active .c1 {
-  color: rgba(0,128,0,0.65);
+  color: rgba(0, 128, 0, 0.65);
 }
 
 <div>
   <div
+    bgcolor="#E8F3ED"
     class="c0"
+    hoverbgcolor="#409869"
+    hoverimgshadowcolor="rgba(96, 120, 144, 0.35)"
+    hovertextcolor="#ffffff"
+    hovertextshadowcolor="rgba(0, 128, 0, 0.35)"
+    pressedbgcolor="rgba(96, 120, 144, 0.65)"
+    pressedtextcolor="rgba(0, 128, 0, 0.65)"
+    textcolor="#1E864E"
   >
     <strong
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textweight="Strong"
     >
       M
     </strong>
@@ -215,9 +201,6 @@ exports[`Avatar component should render with default hover and pressed states 1`
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -228,8 +211,6 @@ exports[`Avatar component should render with default hover and pressed states 1`
 .c0 {
   display: inline-block;
   text-align: center;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
   min-width: max-content;
   width: 4rem;
   height: 4rem;
@@ -238,9 +219,6 @@ exports[`Avatar component should render with default hover and pressed states 1`
   cursor: pointer;
   color: #1E864E;
   background: #E8F3ED;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -262,7 +240,7 @@ exports[`Avatar component should render with default hover and pressed states 1`
 
 .c0:hover {
   background: #3872D2;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 90, 238, 0.35);
 }
 
 .c0:hover .c1 {
@@ -279,10 +257,15 @@ exports[`Avatar component should render with default hover and pressed states 1`
 
 <div>
   <div
+    bgcolor="#E8F3ED"
     class="c0"
+    textcolor="#1E864E"
   >
     <strong
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textweight="Strong"
     >
       M
     </strong>
@@ -296,9 +279,6 @@ exports[`Avatar component should render with default theme 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -309,8 +289,6 @@ exports[`Avatar component should render with default theme 1`] = `
 .c0 {
   display: inline-block;
   text-align: center;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
   min-width: max-content;
   width: 4rem;
   height: 4rem;
@@ -319,9 +297,6 @@ exports[`Avatar component should render with default theme 1`] = `
   cursor: inherit;
   color: #3872D2;
   background: #EBF1FA;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -347,6 +322,9 @@ exports[`Avatar component should render with default theme 1`] = `
   >
     <strong
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textweight="Strong"
     >
       M
     </strong>
@@ -360,9 +338,6 @@ exports[`Avatar component should render with not-allowed cursor when it is disab
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -373,8 +348,6 @@ exports[`Avatar component should render with not-allowed cursor when it is disab
 .c0 {
   display: inline-block;
   text-align: center;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
   min-width: max-content;
   width: 4rem;
   height: 4rem;
@@ -383,9 +356,6 @@ exports[`Avatar component should render with not-allowed cursor when it is disab
   cursor: not-allowed;
   color: #3872D2;
   background: #EBF1FA;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -412,6 +382,9 @@ exports[`Avatar component should render with not-allowed cursor when it is disab
   >
     <strong
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textweight="Strong"
     >
       M
     </strong>

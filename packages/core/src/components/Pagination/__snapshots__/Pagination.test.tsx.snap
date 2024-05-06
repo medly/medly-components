@@ -1,17 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination component should render correctly when total items is 0 1`] = `
-.c4 {
+.c5 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c4 * {
+.c5 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -19,13 +17,8 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 .c0 {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -41,7 +34,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   margin-left: 0.8rem;
 }
 
-.c1 > li {
+.c1>li {
   margin: 0;
 }
 
@@ -51,17 +44,12 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   width: 3.2rem;
   display: block;
   border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border: none;
   padding: 0;
   text-align: center;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   color: #435465;
-  background: #ffffff;
   background: #ffffff;
 }
 
@@ -77,51 +65,56 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   cursor: not-allowed;
 }
 
-.c2 > .c3,
-.c2 .c3 {
-  padding: 0.4rem;
-}
-
-.c2 .c3 * {
-  fill: #435465;
-}
-
-.c2:disabled {
+.c3 {
   background: #ffffff;
 }
 
-.c2:disabled .c3 * {
+.c3>.c4,
+.c3 .c4 {
+  padding: 0.4rem;
+}
+
+.c3 .c4 * {
+  fill: #435465;
+}
+
+.c3:disabled {
+  background: #ffffff;
+}
+
+.c3:disabled .c4 * {
   fill: #C7D0D8;
 }
 
-.c2:not(:disabled):hover {
+.c3:not(:disabled):hover {
   background: #F7F8F9;
 }
 
-.c2:not(:disabled):hover .c3 * {
+.c3:not(:disabled):hover .c4 * {
   fill: #303C48;
 }
 
-.c2:not(:disabled):active {
+.c3:not(:disabled):active {
   background: #eff2f4;
 }
 
-.c2:not(:disabled):active .c3 * {
+.c3:not(:disabled):active .c4 * {
   fill: #13181D;
 }
 
 <div>
   <ul
     class="c0 c1"
+    variant="horizontal"
   >
     <li>
       <button
-        class="sc-1dmgj8o-1 c2"
+        class="c2 c3"
         disabled=""
         type="button"
       >
         <svg
-          class="c3 c4"
+          class="c4 c5"
           fill="none"
           height="1em"
           title="prev"
@@ -139,12 +132,12 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
     </li>
     <li>
       <button
-        class="sc-1dmgj8o-1 c2"
+        class="c2 c3"
         disabled=""
         type="button"
       >
         <svg
-          class="c3 c4"
+          class="c4 c5"
           fill="none"
           height="1em"
           title="next"
@@ -165,51 +158,40 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 `;
 
 exports[`Pagination component should render correctly with all the default props 1`] = `
-.c4 {
+.c5 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c4 * {
+.c5 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c9 {
+.c10 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c7 {
+.c8 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: center;
   display: inline-block;
 }
 
-.c10 {
+.c11 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: center;
@@ -218,13 +200,8 @@ exports[`Pagination component should render correctly with all the default props
 .c0 {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -240,117 +217,8 @@ exports[`Pagination component should render correctly with all the default props
   margin-left: 0.8rem;
 }
 
-.c1 > li {
+.c1>li {
   margin: 0;
-}
-
-.c5 {
-  margin: 0.4rem;
-  height: 3.2rem;
-  width: 3.2rem;
-  display: block;
-  border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: none;
-  padding: 0;
-  text-align: center;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  color: #435465;
-  background: #ffffff;
-  color: #3872D2;
-  background: #EBF1FA;
-  border-radius: 50%;
-}
-
-.c5:hover {
-  cursor: pointer;
-}
-
-.c5:focus {
-  outline: none;
-}
-
-.c5:disabled {
-  cursor: not-allowed;
-}
-
-.c5:active {
-  font-weight: 700;
-  color: #13181D;
-  background: #eff2f4;
-}
-
-.c5 .c6 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-}
-
-.c8 {
-  margin: 0.4rem;
-  height: 3.2rem;
-  width: 3.2rem;
-  display: block;
-  border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: none;
-  padding: 0;
-  text-align: center;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  color: #435465;
-  background: #ffffff;
-  color: #435465;
-  background: #ffffff;
-  border-radius: 50%;
-}
-
-.c8:hover {
-  cursor: pointer;
-}
-
-.c8:focus {
-  outline: none;
-}
-
-.c8:disabled {
-  cursor: not-allowed;
-}
-
-.c8:hover {
-  color: #303C48;
-  background: #F7F8F9;
-}
-
-.c8:active {
-  font-weight: 700;
-  color: #13181D;
-  background: #eff2f4;
-}
-
-.c8 .c6 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-weight: 600;
 }
 
 .c2 {
@@ -359,17 +227,12 @@ exports[`Pagination component should render correctly with all the default props
   width: 3.2rem;
   display: block;
   border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border: none;
   padding: 0;
   text-align: center;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   color: #435465;
-  background: #ffffff;
   background: #ffffff;
 }
 
@@ -385,51 +248,103 @@ exports[`Pagination component should render correctly with all the default props
   cursor: not-allowed;
 }
 
-.c2 > .c3,
-.c2 .c3 {
-  padding: 0.4rem;
+.c6 {
+  color: #3872D2;
+  background: #EBF1FA;
+  border-radius: 50%;
 }
 
-.c2 .c3 * {
-  fill: #435465;
-}
-
-.c2:disabled {
-  background: #ffffff;
-}
-
-.c2:disabled .c3 * {
-  fill: #C7D0D8;
-}
-
-.c2:not(:disabled):hover {
-  background: #F7F8F9;
-}
-
-.c2:not(:disabled):hover .c3 * {
-  fill: #303C48;
-}
-
-.c2:not(:disabled):active {
+.c6:active {
+  font-weight: 700;
+  color: #13181D;
   background: #eff2f4;
 }
 
-.c2:not(:disabled):active .c3 * {
+.c6 .c7 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.c9 {
+  color: #435465;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.c9:hover {
+  color: #303C48;
+  background: #F7F8F9;
+}
+
+.c9:active {
+  font-weight: 700;
+  color: #13181D;
+  background: #eff2f4;
+}
+
+.c9 .c7 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+}
+
+.c3 {
+  background: #ffffff;
+}
+
+.c3>.c4,
+.c3 .c4 {
+  padding: 0.4rem;
+}
+
+.c3 .c4 * {
+  fill: #435465;
+}
+
+.c3:disabled {
+  background: #ffffff;
+}
+
+.c3:disabled .c4 * {
+  fill: #C7D0D8;
+}
+
+.c3:not(:disabled):hover {
+  background: #F7F8F9;
+}
+
+.c3:not(:disabled):hover .c4 * {
+  fill: #303C48;
+}
+
+.c3:not(:disabled):active {
+  background: #eff2f4;
+}
+
+.c3:not(:disabled):active .c4 * {
   fill: #13181D;
 }
 
 <div>
   <ul
     class="c0 c1"
+    variant="horizontal"
   >
     <li>
       <button
-        class="sc-1dmgj8o-1 c2"
+        class="c2 c3"
         disabled=""
         type="button"
       >
         <svg
-          class="c3 c4"
+          class="c4 c5"
           fill="none"
           height="1em"
           title="prev"
@@ -447,11 +362,13 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-1dmgj8o-1 c5"
+        class="c2 c6"
         type="button"
       >
         <span
-          class="c6 c7"
+          class="c7 c8"
+          textalign="center"
+          textcolor="inherit"
         >
           1
         </span>
@@ -459,11 +376,13 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-1dmgj8o-1 c8"
+        class="c2 c9"
         type="button"
       >
         <span
-          class="c6 c7"
+          class="c7 c8"
+          textalign="center"
+          textcolor="inherit"
         >
           2
         </span>
@@ -471,11 +390,13 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-1dmgj8o-1 c8"
+        class="c2 c9"
         type="button"
       >
         <span
-          class="c6 c7"
+          class="c7 c8"
+          textalign="center"
+          textcolor="inherit"
         >
           3
         </span>
@@ -483,15 +404,19 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <div
-        class="c9"
+        class="c10"
         id="medly-popover-wrapper"
       >
         <button
-          class="sc-1dmgj8o-1 c8"
+          class="c2 c9"
           type="button"
         >
           <h5
-            class="c6 c10"
+            class="c7 c11"
+            textalign="center"
+            textcolor="inherit"
+            textvariant="h5"
+            textweight="Medium"
           >
             ...
           </h5>
@@ -500,11 +425,13 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-1dmgj8o-1 c8"
+        class="c2 c9"
         type="button"
       >
         <span
-          class="c6 c7"
+          class="c7 c8"
+          textalign="center"
+          textcolor="inherit"
         >
           8
         </span>
@@ -512,11 +439,11 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-1dmgj8o-1 c2"
+        class="c2 c3"
         type="button"
       >
         <svg
-          class="c3 c4"
+          class="c4 c5"
           fill="none"
           height="1em"
           title="next"
@@ -537,36 +464,27 @@ exports[`Pagination component should render correctly with all the default props
 `;
 
 exports[`Pagination component should render correctly with all the props given 1`] = `
-.c6 {
+.c7 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: center;
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: center;
@@ -575,13 +493,8 @@ exports[`Pagination component should render correctly with all the props given 1
 .c0 {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -597,7 +510,7 @@ exports[`Pagination component should render correctly with all the props given 1
   margin-left: 0.8rem;
 }
 
-.c1 > li {
+.c1>li {
   margin: 0;
 }
 
@@ -607,20 +520,13 @@ exports[`Pagination component should render correctly with all the props given 1
   width: 3.2rem;
   display: block;
   border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border: none;
   padding: 0;
   text-align: center;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   color: #435465;
   background: #ffffff;
-  color: #3872D2;
-  background: #EBF1FA;
-  border-radius: 50%;
 }
 
 .c2:hover {
@@ -635,75 +541,47 @@ exports[`Pagination component should render correctly with all the props given 1
   cursor: not-allowed;
 }
 
-.c2:active {
+.c3 {
+  color: #3872D2;
+  background: #EBF1FA;
+  border-radius: 50%;
+}
+
+.c3:active {
   font-weight: 700;
   color: #13181D;
   background: #eff2f4;
 }
 
-.c2 .c3 {
+.c3 .c4 {
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 700;
 }
 
-.c5 {
-  margin: 0.4rem;
-  height: 3.2rem;
-  width: 3.2rem;
-  display: block;
-  border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: none;
-  padding: 0;
-  text-align: center;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  color: #435465;
-  background: #ffffff;
+.c6 {
   color: #435465;
   background: #ffffff;
   border-radius: 50%;
 }
 
-.c5:hover {
-  cursor: pointer;
-}
-
-.c5:focus {
-  outline: none;
-}
-
-.c5:disabled {
-  cursor: not-allowed;
-}
-
-.c5:hover {
+.c6:hover {
   color: #303C48;
   background: #F7F8F9;
 }
 
-.c5:active {
+.c6:active {
   font-weight: 700;
   color: #13181D;
   background: #eff2f4;
 }
 
-.c5 .c3 {
+.c6 .c4 {
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -713,14 +591,17 @@ exports[`Pagination component should render correctly with all the props given 1
 <div>
   <ul
     class="c0 c1"
+    variant="horizontal"
   >
     <li>
       <button
-        class="sc-1dmgj8o-1 c2"
+        class="c2 c3"
         type="button"
       >
         <span
-          class="c3 c4"
+          class="c4 c5"
+          textalign="center"
+          textcolor="inherit"
         >
           1
         </span>
@@ -728,11 +609,13 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <button
-        class="sc-1dmgj8o-1 c5"
+        class="c2 c6"
         type="button"
       >
         <span
-          class="c3 c4"
+          class="c4 c5"
+          textalign="center"
+          textcolor="inherit"
         >
           2
         </span>
@@ -740,11 +623,13 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <button
-        class="sc-1dmgj8o-1 c5"
+        class="c2 c6"
         type="button"
       >
         <span
-          class="c3 c4"
+          class="c4 c5"
+          textalign="center"
+          textcolor="inherit"
         >
           3
         </span>
@@ -752,15 +637,19 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <div
-        class="c6"
+        class="c7"
         id="medly-popover-wrapper"
       >
         <button
-          class="sc-1dmgj8o-1 c5"
+          class="c2 c6"
           type="button"
         >
           <h5
-            class="c3 c7"
+            class="c4 c8"
+            textalign="center"
+            textcolor="inherit"
+            textvariant="h5"
+            textweight="Medium"
           >
             ...
           </h5>
@@ -769,11 +658,13 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <button
-        class="sc-1dmgj8o-1 c5"
+        class="c2 c6"
         type="button"
       >
         <span
-          class="c3 c4"
+          class="c4 c5"
+          textalign="center"
+          textcolor="inherit"
         >
           15
         </span>

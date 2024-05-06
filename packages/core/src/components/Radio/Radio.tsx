@@ -1,11 +1,11 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import { memo, forwardRef, useRef, useMemo } from 'react';
+import type { FCC } from 'react';
+import { forwardRef, memo, useMemo, useRef } from 'react';
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Radio.styled';
 import { RadioProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<RadioProps> = memo(
+const Component: FCC<RadioProps> = memo(
     forwardRef((props, ref) => {
         const { id, size, label, labelPosition, fullWidth, hasError, labelVariant, labelWeight, className, ...inputProps } = props,
             inputId = useMemo(() => id || label, [id, label]),
@@ -44,4 +44,4 @@ const Component: FC<RadioProps> = memo(
 
 Component.displayName = 'Radio';
 Component.defaultProps = { label: '', labelPosition: 'right' };
-export const Radio: FC<RadioProps> & WithStyle = Object.assign(Component, { Style: Styled.RadioWithLabelWrapper });
+export const Radio: FCC<RadioProps> & WithStyle = Object.assign(Component, { Style: Styled.RadioWithLabelWrapper });

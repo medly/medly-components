@@ -1,8 +1,10 @@
+import type { WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
 import { css } from 'styled-components';
-import { InnerWrapperModifiedProps } from '../../types';
+import type { InnerWrapperProps } from '../../types';
 
-export const outlinedStyle = ({ outlined, disabled, isErrorPresent }: InnerWrapperModifiedProps) => {
+export const outlinedStyle = ({ theme, disabled, isErrorPresent }: InnerWrapperProps & WithThemeProp) => {
+    const { outlined } = theme.textField;
     return css`
         border-radius: ${outlined.default.borderRadius};
         background-color: ${outlined.default.bgColor};

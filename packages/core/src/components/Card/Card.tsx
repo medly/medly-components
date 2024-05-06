@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, forwardRef } from 'react';
+import type { FCC } from 'react';
+import { forwardRef, memo } from 'react';
 import * as Styled from './Card.styled';
 import { CardProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<CardProps> = memo(forwardRef((props, ref) => <Styled.Card ref={ref} {...props} />));
+const Component: FCC<CardProps> = memo(forwardRef((props, ref) => <Styled.Card ref={ref} {...props} />));
 Component.defaultProps = {
     display: 'block',
     variant: 'solid',
@@ -17,4 +17,4 @@ Component.defaultProps = {
     fullHeight: false
 };
 Component.displayName = 'Card';
-export const Card: FC<CardProps> & WithStyle = Object.assign(Component, { Style: Styled.Card });
+export const Card: FCC<CardProps> & WithStyle = Object.assign(Component, { Style: Styled.Card });

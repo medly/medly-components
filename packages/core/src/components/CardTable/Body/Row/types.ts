@@ -1,6 +1,4 @@
-import { WithThemeProp } from '@medly-components/utils';
-
-export interface Props extends WithThemeProp {
+export interface Props {
     onClick?: () => void;
     isRowClickDisabled?: boolean;
     withWhiteBackground?: boolean;

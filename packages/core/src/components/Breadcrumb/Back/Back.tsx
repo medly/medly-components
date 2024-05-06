@@ -1,11 +1,11 @@
 import { ChevronLeftIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import { FC, forwardRef, memo } from 'react';
+import { FCC, forwardRef, memo } from 'react';
 import Text from '../../Text';
 import { BreadcrumbBackStyled } from './Back.styled';
 import { BreadcrumbBackProps } from './types';
 
-export const Component: FC<BreadcrumbBackProps> = memo(
+export const Component: FCC<BreadcrumbBackProps> = memo(
     forwardRef((props, ref) => (
         <BreadcrumbBackStyled ref={ref} {...props}>
             <ChevronLeftIcon />

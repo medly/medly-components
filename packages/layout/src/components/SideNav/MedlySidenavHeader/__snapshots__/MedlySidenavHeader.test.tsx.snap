@@ -5,13 +5,7 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
   display: inline-grid;
   grid-auto-flow: column;
   grid-column-gap: 0.8rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   padding: 0;
   border: unset;
@@ -25,18 +19,11 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
   min-height: 7.2rem;
   padding: 0 1.9rem;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c0 svg:last-child {
-  -webkit-transition: opacity 200ms;
   transition: opacity 200ms;
   opacity: 1;
 }
@@ -160,13 +147,7 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
   display: inline-grid;
   grid-auto-flow: column;
   grid-column-gap: 0.8rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   padding: 0;
   border: unset;
@@ -180,18 +161,11 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
   min-height: 7.2rem;
   padding: 0 1.9rem;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c0 svg:last-child {
-  -webkit-transition: opacity 200ms;
   transition: opacity 200ms;
   opacity: 0;
 }

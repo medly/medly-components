@@ -5,16 +5,13 @@ exports[`FileInput component should render properly with all props 1`] = `
   color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   margin: 0px 0px 0.8rem 0px;
   cursor: default;
 }
 
-.c1::after {
+.c1 ::after {
   color: red;
   content: ' *';
 }
@@ -24,9 +21,6 @@ exports[`FileInput component should render properly with all props 1`] = `
   color: grey;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -35,12 +29,7 @@ exports[`FileInput component should render properly with all props 1`] = `
 
 .c2 {
   grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -53,25 +42,8 @@ exports[`FileInput component should render properly with all props 1`] = `
 .c0 {
   margin: 0.8rem 0;
   display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   grid-template-areas: 'label' 'field' 'description';
-}
-
-.c0 .sc-12atfcu-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .c4 {
@@ -82,9 +54,6 @@ exports[`FileInput component should render properly with all props 1`] = `
 .c3 {
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -100,9 +69,6 @@ exports[`FileInput component should render properly with all props 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   width: calc(100% - 0px);
 }
@@ -116,9 +82,11 @@ exports[`FileInput component should render properly with all props 1`] = `
   <div
     class="c0"
     id="medly-file-input-field"
+    labelposition="top"
   >
     <label
       class="c1 c2"
+      labelposition="top"
       required=""
     >
       Email Address
@@ -132,6 +100,7 @@ exports[`FileInput component should render properly with all props 1`] = `
       foo.txt, bar.txt
       <input
         class="c4"
+        files="[object File],[object File]"
         id="medly-file-input"
         required=""
         type="file"
@@ -139,6 +108,8 @@ exports[`FileInput component should render properly with all props 1`] = `
     </label>
     <span
       class="c5 c6"
+      textalign="initial"
+      textcolor="grey"
     >
       We will never share your email with anyone
     </span>
@@ -150,27 +121,10 @@ exports[`FileInput component should render properly with default props 1`] = `
 .c0 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
-}
-
-.c0 .sc-12atfcu-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .c2 {
@@ -181,9 +135,6 @@ exports[`FileInput component should render properly with default props 1`] = `
 .c1 {
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -199,9 +150,6 @@ exports[`FileInput component should render properly with default props 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -214,8 +162,8 @@ exports[`FileInput component should render properly with default props 1`] = `
   <div
     class="c0"
     id="medly-file-input-field"
+    labelposition="top"
   >
-    
     <label
       class="c1"
       for="medly-file-input"
@@ -224,11 +172,11 @@ exports[`FileInput component should render properly with default props 1`] = `
       Click to choose file
       <input
         class="c2"
+        files=""
         id="medly-file-input"
         type="file"
       />
     </label>
-    
   </div>
 </div>
 `;

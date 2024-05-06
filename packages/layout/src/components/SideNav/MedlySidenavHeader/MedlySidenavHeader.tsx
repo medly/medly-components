@@ -1,11 +1,11 @@
 import { Logo } from '@medly-components/core';
 import { WithStyle } from '@medly-components/utils';
-import { FC, memo, useContext } from 'react';
+import { FCC, memo, useContext } from 'react';
 import SideNavContext from '../SideNav.context';
 import * as Styled from './MedlySidenavHeader.styled';
 import { Props } from './types';
 
-const Component: FC<Props> = memo(({ companyLogo, companyName }) => {
+const Component: FCC<Props> = memo(({ companyLogo, companyName }) => {
     const { isHovered, isExpanded } = useContext(SideNavContext);
     return (
         <Styled.SidenavHeader as="div" isHovered={isHovered} isExpanded={isExpanded}>
@@ -16,4 +16,4 @@ const Component: FC<Props> = memo(({ companyLogo, companyName }) => {
 
 Component.displayName = 'SidenavHeader';
 
-export const MedlySidenavHeader: FC<Props> & WithStyle = Object.assign(Component, { Style: Styled.SidenavHeader });
+export const MedlySidenavHeader: FCC<Props> & WithStyle = Object.assign(Component, { Style: Styled.SidenavHeader });

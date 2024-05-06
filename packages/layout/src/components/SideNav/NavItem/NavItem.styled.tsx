@@ -5,37 +5,39 @@ import { getFontStyle } from '@medly-components/utils';
 import styled, { css } from 'styled-components';
 import { NavItemStyledProps } from './types';
 
-const getStyle = ({ navItem, state }: NavItemStyledProps & { state: 'default' | 'hovered' | 'pressed' | 'active' }) => css`
-    background-color: ${navItem.bgColor[state]};
+const getStyle = ({ state }: NavItemStyledProps & { state: 'default' | 'hovered' | 'pressed' | 'active' }) => css`
+    background-color: ${({ theme }) => theme.sideNav.navItem.bgColor[state]};
     ${SvgIcon} {
         * {
-            fill: ${navItem.icon.color[state]};
+            fill: ${({ theme }) => theme.sideNav.navItem.icon.color[state]};
         }
     }
     ${Text.Style} {
-        color: ${navItem.text.color[state]};
+        color: ${({ theme }) => theme.sideNav.navItem.text.color[state]};
     }
 `;
-export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ ...sideNav }))<NavItemStyledProps>`
+export const NavItemStyled = styled('li')<NavItemStyledProps>`
     text-decoration: none;
     box-sizing: border-box;
     display: grid;
     margin: 0 1.2rem;
-    border-radius: ${({ navItem }) => navItem.borderRadius};
+    border-radius: ${({ theme }) => theme.sideNav.navItem.borderRadius};
     box-shadow: ${({ theme, isActive }) => isActive && `0 0 2.4rem ${theme.colors.grey[100]}`};
-    grid-template-columns: ${({ openSize, closeSize }) => `calc(${closeSize} - 1.2rem) calc(${openSize} - ${closeSize} - 1.2rem) `};
+    grid-template-columns: ${({ theme }) =>
+        `calc(${theme.sideNav.closeSize} - 1.2rem) calc(${theme.sideNav.openSize} - ${theme.sideNav.closeSize} - 1.2rem) `};
     justify-items: flex-start;
     align-items: center;
     user-select: none;
-    min-height: ${({ navItem }) => navItem.minHeight};
+    min-height: ${({ theme }) => theme.sideNav.navItem.minHeight};
     transition: all 100ms ease-out;
     cursor: pointer;
 
     ${SvgIcon} {
         overflow: visible;
-        border-radius: ${({ navItem }) => navItem.borderRadius};
-        padding: ${({ navItem, theme }) => `calc((${navItem.minHeight} - ${theme.icon.sizes[navItem.icon.size].iconSize}) / 2) `};
-        font-size: ${({ theme, navItem }) => theme.icon.sizes[navItem.icon.size].iconSize};
+        border-radius: ${({ theme }) => theme.sideNav.navItem.borderRadius};
+        padding: ${({ theme }) =>
+            `calc((${theme.sideNav.navItem.minHeight} - ${theme.icon.sizes[theme.sideNav.navItem.icon.size].iconSize}) / 2) `};
+        font-size: ${({ theme }) => theme.icon.sizes[theme.sideNav.navItem.icon.size].iconSize};
     }
 
     ${Text.Style} {

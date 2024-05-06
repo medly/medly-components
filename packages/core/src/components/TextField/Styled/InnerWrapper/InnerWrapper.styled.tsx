@@ -1,5 +1,6 @@
+import type { WithThemeProp } from '@medly-components/utils';
 import styled, { css } from 'styled-components';
-import { InnerWrapperModifiedProps, InnerWrapperProps } from '../../types';
+import { InnerWrapperProps } from '../../types';
 import { CharacterCount } from '../CharacterCount.styled';
 import { HelperText } from '../HelperText.styled';
 import { Label } from '../Label.styled';
@@ -7,7 +8,7 @@ import { filledStyle } from './filled.styled';
 import { fusionErrorStyle, fusionStyle } from './fusion.styled';
 import { outlinedStyle } from './outlined.styled';
 
-const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedProps) => css`
+const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps & WithThemeProp) => css`
     cursor: ${textField[variant].disabled.cursor};
     background-color: ${textField[variant].disabled.bgColor};
     &::after,
@@ -32,7 +33,7 @@ const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedPr
     }
 `;
 
-const activeStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedProps) => css`
+const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps & WithThemeProp) => css`
     &:focus-within,
     &:focus-within:hover {
         background-color: ${textField[variant].active.bgColor};
@@ -53,7 +54,7 @@ const activeStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedProp
     }
 `;
 
-const errorStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedProps) =>
+const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps & WithThemeProp) =>
     variant === 'fusion'
         ? fusionErrorStyle
         : css`
@@ -81,7 +82,7 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperModifiedProps
               }
           `;
 
-const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperModifiedProps) => {
+const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperProps & WithThemeProp) => {
     const baseHeight = theme.textField.height[size];
     const baseHeightNumber = parseFloat(baseHeight.replace(/[^\d.-]/g, ''));
 
@@ -112,11 +113,7 @@ const getPadding = ({ size, multiline }: InnerWrapperProps) => {
     }
 };
 
-export const InnerWrapper = styled('div').attrs<InnerWrapperProps, InnerWrapperModifiedProps>(props => ({
-    ...props.theme.textField,
-    ...props,
-    height: undefined
-}))`
+export const InnerWrapper = styled('div')<InnerWrapperProps>`
     position: relative;
     display: flex;
     align-items: center;
@@ -128,11 +125,11 @@ export const InnerWrapper = styled('div').attrs<InnerWrapperProps, InnerWrapperM
     cursor: text;
 
     ${Label} {
-        color: ${props => props[props.variant].default.labelColor};
+        color: ${({ variant, theme }) => theme.textField[variant].default.labelColor};
     }
 
     & ~ ${HelperText} {
-        color: ${props => props[props.variant].default.helperTextColor};
+        color: ${({ variant, theme }) => theme.textField[variant].default.helperTextColor};
     }
 
     ${({ variant }) => variant === 'filled' && filledStyle}

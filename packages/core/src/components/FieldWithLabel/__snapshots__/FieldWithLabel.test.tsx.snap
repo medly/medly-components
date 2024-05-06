@@ -6,9 +6,6 @@ exports[`FieldWithLabel component should render properly when lable is not prese
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -17,8 +14,6 @@ exports[`FieldWithLabel component should render properly when lable is not prese
 
 .c2 {
   grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 17px;
 }
@@ -32,33 +27,23 @@ exports[`FieldWithLabel component should render properly when lable is not prese
 .c0 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
+  grid-template-columns: minmax(max-content, 25%) minmax(auto, 80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c0 .c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
 <div>
   <div
     class="c0"
+    labelposition="left"
   >
     <div
       class="c1 c2"
@@ -67,6 +52,8 @@ exports[`FieldWithLabel component should render properly when lable is not prese
     </div>
     <span
       class="c3 c4"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Description
     </span>
@@ -79,9 +66,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   margin: 0px 0.8rem 0px 0px;
@@ -93,9 +77,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -104,20 +85,13 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 
 .c4 {
   grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
 }
 
 .c2 {
   grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -130,34 +104,26 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-width: 300px;
   grid-template-areas: 'field' 'description' 'label';
 }
 
 .c0 .c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
 }
 
 <div>
   <div
     class="c0"
+    labelposition="bottom"
+    minwidth="300"
   >
     <label
       class="c1 c2"
+      labelposition="left"
     >
       Dummy Label
     </label>
@@ -168,6 +134,8 @@ exports[`FieldWithLabel component should render properly with props labelPositio
     </div>
     <span
       class="c5 c6"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Description
     </span>
@@ -180,9 +148,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   margin: 0px 0.8rem 0px 0px;
@@ -194,9 +159,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -205,20 +167,13 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 
 .c4 {
   grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
 }
 
 .c2 {
   grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -231,35 +186,27 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 0.8rem 0;
   display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-width: 300px;
-  grid-template-columns: minmax(max-content,25%) max-content;
+  grid-template-columns: minmax(max-content, 25%) max-content;
   grid-template-areas: 'label field' 'random description';
 }
 
 .c0 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
 <div>
   <div
     class="c0"
+    labelposition="left"
+    minwidth="300"
   >
     <label
       class="c1 c2"
+      labelposition="left"
     >
       Dummy Label
     </label>
@@ -270,6 +217,8 @@ exports[`FieldWithLabel component should render properly with props labelPositio
     </div>
     <span
       class="c5 c6"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Description
     </span>
@@ -282,9 +231,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   margin: 0px 0.8rem 0px 0px;
@@ -296,9 +242,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -307,20 +250,13 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 
 .c4 {
   grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
 }
 
 .c2 {
   grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -333,35 +269,27 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 0.8rem 0;
   display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-width: 300px;
-  grid-template-columns: minmax(max-content,80%) minmax(max-content,25%);
+  grid-template-columns: minmax(max-content, 80%) minmax(max-content, 25%);
   grid-template-areas: 'field label' 'description random';
 }
 
 .c0 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
 <div>
   <div
     class="c0"
+    labelposition="right"
+    minwidth="300"
   >
     <label
       class="c1 c2"
+      labelposition="left"
     >
       Dummy Label
     </label>
@@ -372,6 +300,8 @@ exports[`FieldWithLabel component should render properly with props labelPositio
     </div>
     <span
       class="c5 c6"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Description
     </span>
@@ -384,9 +314,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   margin: 0px 0.8rem 0px 0px;
@@ -398,9 +325,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -409,20 +333,13 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 
 .c4 {
   grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
 }
 
 .c2 {
   grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -435,34 +352,26 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-width: 300px;
   grid-template-areas: 'label' 'field' 'description';
 }
 
 .c0 .c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 <div>
   <div
     class="c0"
+    labelposition="top"
+    minwidth="300"
   >
     <label
       class="c1 c2"
+      labelposition="left"
     >
       Dummy Label
     </label>
@@ -473,6 +382,8 @@ exports[`FieldWithLabel component should render properly with props labelPositio
     </div>
     <span
       class="c5 c6"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Description
     </span>

@@ -74,6 +74,7 @@ export const testSchema: FormFieldSchema = {
         required: true,
         type: 'single-select',
         label: 'Country',
+        isUnselectable: true,
         options: [
             { value: 'india', label: 'India' },
             { value: 'usa', label: 'USA' }

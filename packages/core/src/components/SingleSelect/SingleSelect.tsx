@@ -1,6 +1,6 @@
 import { ChevronDownIcon } from '@medly-components/icons';
 import { useCombinedRefs, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
 import FlatVariant from './FlatVariant';
@@ -10,7 +10,7 @@ import * as Styled from './SingleSelect.styled';
 import { Option, SingleSelectProps } from './types';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-const Component: FC<SingleSelectProps> = memo(
+const Component: FCC<SingleSelectProps> = memo(
     forwardRef((props, ref) => {
         const {
                 id,
@@ -230,4 +230,4 @@ Component.defaultProps = {
     showDecorators: true,
     isUnselectable: false
 };
-export const SingleSelect: FC<SingleSelectProps> & WithStyle = Object.assign(Component, { Style: Styled.Wrapper });
+export const SingleSelect: FCC<SingleSelectProps> & WithStyle = Object.assign(Component, { Style: Styled.Wrapper });

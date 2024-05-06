@@ -19,7 +19,7 @@ export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: GroupCell
     padding: 0;
 `;
 
-export const GroupCellTitle = styled(Text.Style)`
+export const GroupCellTitle = styled(Text)`
     position: relative;
     text-align: center;
     padding: 0.9rem 1.6rem 1rem;

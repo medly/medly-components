@@ -1,7 +1,7 @@
 import { DateRangeIcon } from '@medly-components/icons';
 import { parseToDate, useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import { format } from 'date-fns';
-import type { FC } from 'react';
+import type { FCC, MouseEvent } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Calendar from '../Calendar';
 import TextField from '../TextField';
@@ -9,7 +9,7 @@ import { DateIconWrapper, Wrapper } from './DatePicker.styled';
 import datePickerPattern from './datePickerPattern';
 import { DatePickerProps } from './types';
 
-const Component: FC<DatePickerProps> = memo(
+const Component: FCC<DatePickerProps> = memo(
     forwardRef((props, ref) => {
         const {
                 value,
@@ -67,7 +67,7 @@ const Component: FC<DatePickerProps> = memo(
                 [displayFormat, onChange]
             ),
             onIconClick = useCallback(
-                event => {
+                (event: MouseEvent<SVGElement>) => {
                     event.stopPropagation();
                     if (!disabled) {
                         toggleCalendar(val => !val);
@@ -205,4 +205,4 @@ Component.defaultProps = {
     calendarIconPosition: 'right'
 };
 Component.displayName = 'DatePicker';
-export const DatePicker: FC<DatePickerProps> & WithStyle = Object.assign(Component, { Style: Wrapper });
+export const DatePicker: FCC<DatePickerProps> & WithStyle = Object.assign(Component, { Style: Wrapper });

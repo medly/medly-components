@@ -4,13 +4,8 @@ exports[`List component should render horizontal list 1`] = `
 .c0 {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -29,6 +24,7 @@ exports[`List component should render horizontal list 1`] = `
 <div>
   <ul
     class="c0"
+    variant="horizontal"
   >
     <li>
       <p>
@@ -48,13 +44,8 @@ exports[`List component should render vertical list 1`] = `
 .c0 {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -73,6 +64,7 @@ exports[`List component should render vertical list 1`] = `
 <div>
   <ul
     class="c0"
+    variant="vertical"
   >
     <li>
       <p>

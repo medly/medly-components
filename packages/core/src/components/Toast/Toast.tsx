@@ -1,6 +1,6 @@
 import { CheckIcon, ClearIcon, ErrorIcon, NotificationsIcon, WarningAmberIcon } from '@medly-components/icons';
-import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import { WithStyle, isValidStringOrNumber } from '@medly-components/utils';
+import type { FCC } from 'react';
 import { forwardRef, memo, useCallback } from 'react';
 import Button from '../Button';
 import Text from '../Text';
@@ -8,7 +8,7 @@ import { removeToast } from '../ToastContainer/ToastStore';
 import * as Styled from './Toast.styled';
 import { ToastComponentProps } from './types';
 
-const Component: FC<ToastComponentProps> = memo(
+const Component: FCC<ToastComponentProps> = memo(
     forwardRef((props, ref) => {
         const { id, variant, header, icon: Icon, message, action, hideCloseIcon, ...restProps } = props;
 
@@ -45,4 +45,4 @@ const Component: FC<ToastComponentProps> = memo(
     })
 );
 Component.displayName = 'Toast';
-export const Toast: FC<ToastComponentProps> & WithStyle = Object.assign(Component, { Style: Styled.Toast });
+export const Toast: FCC<ToastComponentProps> & WithStyle = Object.assign(Component, { Style: Styled.Toast });

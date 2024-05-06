@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FCC } from 'react';
 import { Toast } from './ToastStore';
 import { ToastContainerProps } from './types';
 
@@ -13,7 +13,7 @@ export const positions: ToastContainerProps['position'][] = [
     'bottom-end'
 ];
 
-export const AddToast: FC<Toast> = () => null;
+export const AddToast: FCC<Toast> = () => null;
 AddToast.defaultProps = {
     timer: 5000
 };

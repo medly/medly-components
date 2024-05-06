@@ -1,5 +1,5 @@
 import { TextFieldTheme } from '@medly-components/theme';
-import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit } from '@medly-components/utils';
 import type { ChangeEvent, FC } from 'react';
 
 export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'> {
@@ -68,4 +68,4 @@ export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size
     isActive?: boolean;
 }
 
-export type InnerWrapperModifiedProps = InnerWrapperProps & WithThemeProp & Omit<TextFieldTheme, 'height'>;
+export type InnerWrapperModifiedProps = InnerWrapperProps & Omit<TextFieldTheme, 'height'>;

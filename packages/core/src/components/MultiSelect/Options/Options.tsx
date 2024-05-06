@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import { FC, Fragment, memo, useCallback, useMemo } from 'react';
+import { FCC, Fragment, memo, useCallback, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
 import OptionComponent from '../../SingleSelect/Options/Option';
@@ -8,7 +8,7 @@ import Chip from './Chip';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
-const Component: FC<OptionsProps> = memo(props => {
+const Component: FCC<OptionsProps> = memo(props => {
     const {
         id,
         inputValue,
@@ -42,7 +42,7 @@ const Component: FC<OptionsProps> = memo(props => {
             [handleOptionSelection]
         ),
         handleClearHandler = useCallback(
-            value => {
+            (value: any) => {
                 const newValues = selectedValues.filter(vl => vl !== value);
                 onOptionClick(newValues);
             },
@@ -115,6 +115,6 @@ const Component: FC<OptionsProps> = memo(props => {
     );
 });
 Component.displayName = 'Options';
-const Options: FC<OptionsProps> & WithStyle = Object.assign(Component, { Style: Styled.Options });
+const Options: FCC<OptionsProps> & WithStyle = Object.assign(Component, { Style: Styled.Options });
 
 export default Options;

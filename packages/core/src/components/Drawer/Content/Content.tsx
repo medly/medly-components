@@ -1,11 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
+import type { FCC } from 'react';
 import { memo, useContext, useRef } from 'react';
 import { useScrollState } from '../../Modal/useScrollState';
 import { DrawerContext } from '../Drawer.context';
 import { ContentStyled } from './Content.styled';
-import type { FC } from 'react';
 
-const Component: FC = memo(props => {
+const Component: FCC = memo(props => {
     const contentRef = useRef<HTMLDivElement>(null),
         { id, dispatch, scrollState } = useContext(DrawerContext),
         handleScroll = useScrollState({ ref: contentRef, scrollState, dispatch });
@@ -14,4 +14,4 @@ const Component: FC = memo(props => {
 });
 
 Component.displayName = 'DrawerContent';
-export const Content: FC & WithStyle = Object.assign(Component, { Style: ContentStyled });
+export const Content: FCC & WithStyle = Object.assign(Component, { Style: ContentStyled });

@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import { FC, memo, useCallback, useRef, useState } from 'react';
+import { FCC, memo, useCallback, useRef, useState } from 'react';
 import NavGroup from './NavGroup';
 import NavItem from './NavItem';
 import NavList from './NavList';
@@ -8,7 +8,7 @@ import * as Styled from './SideNav.styled';
 import ToggleSwitch from './ToggleSwitch';
 import { SideNavProps, SideNavStaticProps } from './types';
 
-export const Component: FC<SideNavProps> = memo(props => {
+export const Component: FCC<SideNavProps> = memo(props => {
     const { id, active, children, defaultActive, onChange, hideShadow, defaultOpen, className, collapsedToggleText, expandedToggleText } =
         props;
 
@@ -69,7 +69,7 @@ Component.defaultProps = {
     hideShadow: false
 };
 
-export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = Object.assign(Component, {
+export const SideNav: FCC<SideNavProps> & WithStyle & SideNavStaticProps = Object.assign(Component, {
     List: NavList,
     Nav: NavItem,
     Group: NavGroup,

@@ -1,5 +1,5 @@
 import { useUpdateEffect, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC, MouseEvent } from 'react';
 import { memo, useCallback, useMemo } from 'react';
 import SingleSelect from '../../SingleSelect';
 import { Option } from '../../SingleSelect/types';
@@ -8,12 +8,12 @@ import { getMonthAndYearFromDate } from '../helper';
 import { Wrapper } from './MonthAndYearSelection.styled';
 import { MonthAndYearSelectionProps } from './types';
 
-const Component: FC<MonthAndYearSelectionProps> = memo(
+const Component: FCC<MonthAndYearSelectionProps> = memo(
     ({ id, month, year, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, ...restProps }) => {
         const { month: minMonth, year: minYear } = getMonthAndYearFromDate(minSelectableDate),
             { month: maxMonth, year: maxYear } = getMonthAndYearFromDate(maxSelectableDate);
 
-        const stopPropagation = useCallback(e => e.stopPropagation(), []),
+        const stopPropagation = useCallback((e: MouseEvent<HTMLDivElement>) => e.stopPropagation(), []),
             handleMonthChange = useCallback((value: number) => onChange({ year, month: value }), [year, onChange]),
             handleYearChange = useCallback((value: number) => onChange({ month, year: value }), [month, onChange]);
 
@@ -69,6 +69,6 @@ const Component: FC<MonthAndYearSelectionProps> = memo(
     }
 );
 Component.displayName = 'MonthAndYearSelection';
-export const MonthAndYearSelection: FC<MonthAndYearSelectionProps> & WithStyle = Object.assign(Component, {
+export const MonthAndYearSelection: FCC<MonthAndYearSelectionProps> & WithStyle = Object.assign(Component, {
     Style: Wrapper
 });

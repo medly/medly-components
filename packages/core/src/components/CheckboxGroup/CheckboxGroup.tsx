@@ -1,12 +1,12 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import { ChangeEvent, FC, FocusEvent, forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
+import { ChangeEvent, FCC, FocusEvent, forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
 import Checkbox from '../Checkbox';
 import { SelectorGroup } from '../Selectors';
 import getValuesFromOptions from './getValuesFromOptions';
 import { CheckboxGroupProps } from './types';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-const Component: FC<CheckboxGroupProps> = memo(
+const Component: FCC<CheckboxGroupProps> = memo(
     forwardRef((props, ref) => {
         const {
             id,
@@ -44,7 +44,7 @@ const Component: FC<CheckboxGroupProps> = memo(
             areAllValuesSelected = useMemo(() => allChildValues.every(val => values?.includes(val)), [options, values]);
 
         const validate = useCallback(
-                selectedValues => {
+                (selectedValues: any[]) => {
                     const message =
                         (validator && validator(selectedValues)) ||
                         (required && selectedValues.length === 0 && 'Please select at least one option.') ||
@@ -56,7 +56,7 @@ const Component: FC<CheckboxGroupProps> = memo(
             onBlur = useCallback(
                 (event: FocusEvent<HTMLDivElement>) => {
                     const { currentTarget } = event;
-                    setTimeout(() => !currentTarget.contains(document.activeElement) && validate(values), 0);
+                    setTimeout(() => !currentTarget.contains(document.activeElement) && values && validate(values), 0);
                     props.onBlur && props.onBlur(event);
                 },
                 [validate, values, props.onBlur]
@@ -189,4 +189,4 @@ const Component: FC<CheckboxGroupProps> = memo(
 
 Component.displayName = 'CheckboxGroup';
 Component.defaultProps = { values: [], columns: 1, fullWidthOptions: false, labelVariant: 'body1', labelWeight: 'Medium' };
-export const CheckboxGroup: FC<CheckboxGroupProps> & WithStyle = Object.assign(Component, { Style: SelectorGroup.Wrapper });
+export const CheckboxGroup: FCC<CheckboxGroupProps> & WithStyle = Object.assign(Component, { Style: SelectorGroup.Wrapper });

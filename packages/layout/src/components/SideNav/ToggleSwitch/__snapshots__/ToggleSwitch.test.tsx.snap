@@ -1,37 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavItem should call onClick when we click on it 1`] = `
-.c3 {
+.c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c3 * {
+.c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c1 {
-  -webkit-text-decoration: none;
+.c2 {
   text-decoration: none;
   box-sizing: border-box;
   display: grid;
@@ -39,105 +33,74 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   border-radius: 0.4rem;
   grid-template-columns: calc(7.2rem - 1.2rem) calc(25.6rem - 7.2rem - 1.2rem);
   justify-items: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   min-height: 4.8rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: pointer;
   background-color: transparent;
 }
 
-.c1 .c2 {
+.c2 .c3 {
   overflow: visible;
   border-radius: 0.4rem;
   padding: calc((4.8rem - 2rem) / 2);
   font-size: 2rem;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c1 .c2 * {
+.c2 .c3 * {
   fill: #607890;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   color: #607890;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #eff2f4;
 }
 
-.c1:hover .c2 * {
+.c2:hover .c3 * {
   fill: #303C48;
 }
 
-.c1:hover .c4 {
+.c2:hover .c5 {
   color: #303C48;
 }
 
-.c1:active {
+.c2:active {
   background-color: #dfe4e9;
 }
 
-.c1:active .c2 * {
+.c2:active .c3 * {
   fill: #13181D;
 }
 
-.c1:active .c4 {
+.c2:active .c5 {
   color: #13181D;
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   padding: 0;
   margin: 0;
   list-style-type: none;
   overflow-x: hidden;
   overflow-y: auto;
-  min-height: 7.2rem;
-  -webkit-flex: unset;
-  -ms-flex: unset;
-  flex: unset;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-self: end;
-  -ms-flex-item-align: end;
-  align-self: end;
-  position: relative;
-  width: 100%;
-  margin-top: 2rem;
 }
 
 .c0::-webkit-scrollbar {
@@ -150,7 +113,18 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   background-color: #98A7B7;
 }
 
-.c0::before {
+.c1 {
+  min-height: 7.2rem;
+  flex: unset;
+  display: flex;
+  align-items: center;
+  align-self: end;
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.c1::before {
   content: '';
   width: calc(100% - 4.0rem);
   margin: 0 auto;
@@ -164,13 +138,13 @@ exports[`NavItem should call onClick when we click on it 1`] = `
 
 <div>
   <ul
-    class="sc-78sry4-0 c0"
+    class="c0 c1"
   >
     <li
-      class="c1"
+      class="c2"
     >
       <svg
-        class="c2 c3"
+        class="c3 c4"
         fill="none"
         height="1em"
         id="dummy-hide"
@@ -185,7 +159,9 @@ exports[`NavItem should call onClick when we click on it 1`] = `
         />
       </svg>
       <span
-        class="c4 c5"
+        class="c5 c6"
+        textalign="initial"
+        textcolor="inherit"
       />
     </li>
   </ul>
@@ -193,37 +169,31 @@ exports[`NavItem should call onClick when we click on it 1`] = `
 `;
 
 exports[`NavItem should render properly when it is showing hide option 1`] = `
-.c3 {
+.c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c3 * {
+.c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c1 {
-  -webkit-text-decoration: none;
+.c2 {
   text-decoration: none;
   box-sizing: border-box;
   display: grid;
@@ -231,105 +201,74 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   border-radius: 0.4rem;
   grid-template-columns: calc(7.2rem - 1.2rem) calc(25.6rem - 7.2rem - 1.2rem);
   justify-items: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   min-height: 4.8rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: pointer;
   background-color: transparent;
 }
 
-.c1 .c2 {
+.c2 .c3 {
   overflow: visible;
   border-radius: 0.4rem;
   padding: calc((4.8rem - 2rem) / 2);
   font-size: 2rem;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c1 .c2 * {
+.c2 .c3 * {
   fill: #607890;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   color: #607890;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #eff2f4;
 }
 
-.c1:hover .c2 * {
+.c2:hover .c3 * {
   fill: #303C48;
 }
 
-.c1:hover .c4 {
+.c2:hover .c5 {
   color: #303C48;
 }
 
-.c1:active {
+.c2:active {
   background-color: #dfe4e9;
 }
 
-.c1:active .c2 * {
+.c2:active .c3 * {
   fill: #13181D;
 }
 
-.c1:active .c4 {
+.c2:active .c5 {
   color: #13181D;
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   padding: 0;
   margin: 0;
   list-style-type: none;
   overflow-x: hidden;
   overflow-y: auto;
-  min-height: 7.2rem;
-  -webkit-flex: unset;
-  -ms-flex: unset;
-  flex: unset;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-self: end;
-  -ms-flex-item-align: end;
-  align-self: end;
-  position: relative;
-  width: 100%;
-  margin-top: 2rem;
 }
 
 .c0::-webkit-scrollbar {
@@ -342,7 +281,18 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   background-color: #98A7B7;
 }
 
-.c0::before {
+.c1 {
+  min-height: 7.2rem;
+  flex: unset;
+  display: flex;
+  align-items: center;
+  align-self: end;
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.c1::before {
   content: '';
   width: calc(100% - 4.0rem);
   margin: 0 auto;
@@ -356,13 +306,13 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
 
 <div>
   <ul
-    class="sc-78sry4-0 c0"
+    class="c0 c1"
   >
     <li
-      class="c1"
+      class="c2"
     >
       <svg
-        class="c2 c3"
+        class="c3 c4"
         fill="none"
         height="1em"
         id="dummy-hide"
@@ -377,7 +327,9 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
         />
       </svg>
       <span
-        class="c4 c5"
+        class="c5 c6"
+        textalign="initial"
+        textcolor="inherit"
       />
     </li>
   </ul>
@@ -385,37 +337,31 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
 `;
 
 exports[`NavItem should render properly when it is showing open option 1`] = `
-.c3 {
+.c4 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c3 * {
+.c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c1 {
-  -webkit-text-decoration: none;
+.c2 {
   text-decoration: none;
   box-sizing: border-box;
   display: grid;
@@ -423,105 +369,74 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   border-radius: 0.4rem;
   grid-template-columns: calc(7.2rem - 1.2rem) calc(25.6rem - 7.2rem - 1.2rem);
   justify-items: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   min-height: 4.8rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: pointer;
   background-color: transparent;
 }
 
-.c1 .c2 {
+.c2 .c3 {
   overflow: visible;
   border-radius: 0.4rem;
   padding: calc((4.8rem - 2rem) / 2);
   font-size: 2rem;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c1 .c2 * {
+.c2 .c3 * {
   fill: #607890;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   color: #607890;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #eff2f4;
 }
 
-.c1:hover .c2 * {
+.c2:hover .c3 * {
   fill: #303C48;
 }
 
-.c1:hover .c4 {
+.c2:hover .c5 {
   color: #303C48;
 }
 
-.c1:active {
+.c2:active {
   background-color: #dfe4e9;
 }
 
-.c1:active .c2 * {
+.c2:active .c3 * {
   fill: #13181D;
 }
 
-.c1:active .c4 {
+.c2:active .c5 {
   color: #13181D;
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   padding: 0;
   margin: 0;
   list-style-type: none;
   overflow-x: hidden;
   overflow-y: auto;
-  min-height: 7.2rem;
-  -webkit-flex: unset;
-  -ms-flex: unset;
-  flex: unset;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-self: end;
-  -ms-flex-item-align: end;
-  align-self: end;
-  position: relative;
-  width: 100%;
-  margin-top: 2rem;
 }
 
 .c0::-webkit-scrollbar {
@@ -534,7 +449,18 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   background-color: #98A7B7;
 }
 
-.c0::before {
+.c1 {
+  min-height: 7.2rem;
+  flex: unset;
+  display: flex;
+  align-items: center;
+  align-self: end;
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.c1::before {
   content: '';
   width: calc(100% - 4.0rem);
   margin: 0 auto;
@@ -548,13 +474,13 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
 
 <div>
   <ul
-    class="sc-78sry4-0 c0"
+    class="c0 c1"
   >
     <li
-      class="c1"
+      class="c2"
     >
       <svg
-        class="c2 c3"
+        class="c3 c4"
         fill="none"
         height="1em"
         id="dummy-expand"
@@ -569,7 +495,9 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
         />
       </svg>
       <span
-        class="c4 c5"
+        class="c5 c6"
+        textalign="initial"
+        textcolor="inherit"
       />
     </li>
   </ul>

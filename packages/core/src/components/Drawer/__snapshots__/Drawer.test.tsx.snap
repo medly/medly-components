@@ -2,8 +2,6 @@
 
 exports[`Drawer component should render properly with left positioned 1`] = `
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   box-sizing: border-box;
   overflow: auto;
@@ -17,54 +15,38 @@ exports[`Drawer component should render properly with left positioned 1`] = `
   height: 100%;
   z-index: 10;
   position: fixed;
-  -webkit-animation: drawerFadeIn 0.4s cubic-bezier(0,0,0.33,1) forwards;
-  animation: drawerFadeIn 0.4s cubic-bezier(0,0,0.33,1) forwards;
+  animation: drawerFadeIn 0.4s cubic-bezier(0, 0, 0.33, 1) forwards;
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   height: 100vh;
   background-color: #ffffff;
   width: 40rem;
   position: fixed;
   top: 0;
-  box-shadow: 0 4px 32px 0 rgb(67,84,101,50%);
+  box-shadow: 0 4px 32px 0 rgb(67, 84, 101, 50%);
   box-sizing: border-box;
-  -webkit-animation: drawerSlideIn 0.4s cubic-bezier(0,0,0.33,1) forwards;
-  animation: drawerSlideIn 0.4s cubic-bezier(0,0,0.33,1) forwards;
+  animation: drawerSlideIn 0.4s cubic-bezier(0, 0, 0.33, 1) forwards;
 }
 
 .c6 {
   padding: 0 2.4rem;
   min-height: 4.2rem;
   box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.c6 > * + * {
+.c6>*+* {
   margin-left: 1.6rem;
 }
 
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -74,7 +56,6 @@ exports[`Drawer component should render properly with left positioned 1`] = `
 
 .c3 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -124,6 +105,7 @@ exports[`Drawer component should render properly with left positioned 1`] = `
       class="c1"
       id="medly-drawer"
       open=""
+      position="left"
       width="40rem"
     >
       <div
@@ -157,6 +139,7 @@ exports[`Drawer component should render properly with left positioned 1`] = `
         CONTENT
       </div>
       <div
+        alignitems="right"
         class="c6"
         id="medly-drawer-footer"
       >
@@ -169,8 +152,6 @@ exports[`Drawer component should render properly with left positioned 1`] = `
 
 exports[`Drawer component should render properly with right positioned 1`] = `
 .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   box-sizing: border-box;
   overflow: auto;
@@ -184,54 +165,38 @@ exports[`Drawer component should render properly with right positioned 1`] = `
   height: 100%;
   z-index: 10;
   position: fixed;
-  -webkit-animation: drawerFadeIn 0.4s cubic-bezier(0,0,0.33,1) forwards;
-  animation: drawerFadeIn 0.4s cubic-bezier(0,0,0.33,1) forwards;
+  animation: drawerFadeIn 0.4s cubic-bezier(0, 0, 0.33, 1) forwards;
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   height: 100vh;
   background-color: #ffffff;
   width: 40rem;
   position: fixed;
   top: 0;
-  box-shadow: 0 4px 32px 0 rgb(67,84,101,50%);
+  box-shadow: 0 4px 32px 0 rgb(67, 84, 101, 50%);
   box-sizing: border-box;
-  -webkit-animation: drawerSlideIn 0.4s cubic-bezier(0,0,0.33,1) forwards;
-  animation: drawerSlideIn 0.4s cubic-bezier(0,0,0.33,1) forwards;
+  animation: drawerSlideIn 0.4s cubic-bezier(0, 0, 0.33, 1) forwards;
 }
 
 .c6 {
   padding: 0 2.4rem;
   min-height: 4.2rem;
   box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.c6 > * + * {
+.c6>*+* {
   margin-left: 1.6rem;
 }
 
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -241,7 +206,6 @@ exports[`Drawer component should render properly with right positioned 1`] = `
 
 .c3 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -291,6 +255,7 @@ exports[`Drawer component should render properly with right positioned 1`] = `
       class="c1"
       id="medly-drawer"
       open=""
+      position="right"
       width="40rem"
     >
       <div
@@ -324,6 +289,7 @@ exports[`Drawer component should render properly with right positioned 1`] = `
         CONTENT
       </div>
       <div
+        alignitems="right"
         class="c6"
         id="medly-drawer-footer"
       >

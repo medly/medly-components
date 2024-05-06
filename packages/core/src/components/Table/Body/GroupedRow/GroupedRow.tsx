@@ -1,4 +1,5 @@
 import { useUpdateEffect } from '@medly-components/utils';
+import type { FCC } from 'react';
 import { memo, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { loadingBodyData } from '../../constants';
 import { TableComponentsCommonPropsContext } from '../../context';
@@ -7,9 +8,8 @@ import useRowSelector from '../../useRowSelector';
 import ContentRow from './ContentRow';
 import TitleRow from './TitleRow';
 import { GroupedRowProps } from './types';
-import type { FC } from 'react';
 
-export const GroupedRow: FC<GroupedRowProps> = memo(props => {
+export const GroupedRow: FCC<GroupedRowProps> = memo(props => {
     const tableProps = useContext(TableComponentsCommonPropsContext),
         {
             columns,

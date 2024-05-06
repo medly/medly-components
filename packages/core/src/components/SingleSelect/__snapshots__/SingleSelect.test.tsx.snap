@@ -4,21 +4,18 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c10 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c10 * {
@@ -29,38 +26,29 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   fill: #546A7F;
 }
 
+.c11 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -69,21 +57,12 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -94,7 +73,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   color: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3~.sc-avlt8d-0 {
   color: #546A7F;
 }
 
@@ -107,7 +86,6 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   left: 0;
   box-sizing: border-box;
   border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -141,51 +119,23 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
+  color: rgba(0, 90, 238, .2);
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -198,7 +148,6 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
@@ -208,12 +157,9 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -224,18 +170,6 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -244,51 +178,27 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   color: #435465;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -310,11 +220,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 }
 
 .c0 .c1 .c9 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -326,34 +232,45 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   <div
     class="c0"
     id="medly-singleSelect-wrapper"
+    minwidth="20rem"
+    variant="filled"
   >
     <div
       class="c1 c2"
       id="medly-singleSelect-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="filled"
       >
         <div
           class="c4"
+          variant="filled"
         >
           <input
             aria-describedby="medly-singleSelect-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="medly-singleSelect-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value=""
+            variant="filled"
           />
           <label
             class="c6 c7"
             for="medly-singleSelect-input"
+            inputwidth="0"
+            variant="filled"
           />
         </div>
         <svg
-          class="c8 sc-1668uuz-0 c9 c10"
+          class="c8 c9 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -366,7 +283,6 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
           />
         </svg>
       </div>
-      
     </div>
   </div>
 </div>
@@ -376,21 +292,18 @@ exports[`SingleSelect component should render properly when isSearchable is true
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c10 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c10 * {
@@ -401,38 +314,29 @@ exports[`SingleSelect component should render properly when isSearchable is true
   fill: #546A7F;
 }
 
+.c11 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -441,21 +345,12 @@ exports[`SingleSelect component should render properly when isSearchable is true
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -466,7 +361,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
   color: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3~.sc-avlt8d-0 {
   color: #546A7F;
 }
 
@@ -479,7 +374,6 @@ exports[`SingleSelect component should render properly when isSearchable is true
   left: 0;
   box-sizing: border-box;
   border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -513,51 +407,23 @@ exports[`SingleSelect component should render properly when isSearchable is true
   box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
+  color: rgba(0, 90, 238, .2);
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -570,7 +436,6 @@ exports[`SingleSelect component should render properly when isSearchable is true
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
@@ -580,12 +445,9 @@ exports[`SingleSelect component should render properly when isSearchable is true
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -596,18 +458,6 @@ exports[`SingleSelect component should render properly when isSearchable is true
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -616,51 +466,27 @@ exports[`SingleSelect component should render properly when isSearchable is true
   color: #435465;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -685,11 +511,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
 }
 
 .c0 .c1 .c9 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -701,33 +523,44 @@ exports[`SingleSelect component should render properly when isSearchable is true
   <div
     class="c0"
     id="medly-singleSelect-wrapper"
+    minwidth="20rem"
+    variant="filled"
   >
     <div
       class="c1 c2"
       id="medly-singleSelect-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="filled"
       >
         <div
           class="c4"
+          variant="filled"
         >
           <input
             aria-describedby="medly-singleSelect-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="medly-singleSelect-input"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value=""
+            variant="filled"
           />
           <label
             class="c6 c7"
             for="medly-singleSelect-input"
+            inputwidth="0"
+            variant="filled"
           />
         </div>
         <svg
-          class="c8 sc-1668uuz-0 c9 c10"
+          class="c8 c9 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -740,7 +573,6 @@ exports[`SingleSelect component should render properly when isSearchable is true
           />
         </svg>
       </div>
-      
     </div>
   </div>
 </div>
@@ -752,9 +584,6 @@ exports[`SingleSelect component should render properly with M size 1`] = `
   color: inherit;
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -767,18 +596,10 @@ exports[`SingleSelect component should render properly with M size 1`] = `
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -786,7 +607,7 @@ exports[`SingleSelect component should render properly with M size 1`] = `
   background-color: #F7F8F9;
 }
 
-.c0:hover > .c1 {
+.c0:hover>.c1 {
   color: #13181D;
 }
 
@@ -794,37 +615,27 @@ exports[`SingleSelect component should render properly with M size 1`] = `
   background-color: #eff2f4;
 }
 
-.c0 > .c1 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c0>.c1 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c0 > .c3 {
+.c0>.c3 {
   margin-left: 1.6rem;
 }
 
-.c0 > .c3 * {
+.c0>.c3 * {
   fill: #13181D;
 }
 
-.c4:hover > .c1 {
+.c4:hover>.c1 {
   color: #13181D;
 }
 
-.c4 > .c1 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c4>.c1 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #3872D2;
@@ -833,9 +644,14 @@ exports[`SingleSelect component should render properly with M size 1`] = `
 <li
   class="c0"
   id="All"
+  variant="filled"
 >
   <span
     class="c1 c2"
+    textalign="initial"
+    textcolor="inherit"
+    textvariant="body1"
+    textweight="Regular"
   >
     All
   </span>
@@ -848,9 +664,6 @@ exports[`SingleSelect component should render properly with S size 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -863,18 +676,10 @@ exports[`SingleSelect component should render properly with S size 1`] = `
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -882,7 +687,7 @@ exports[`SingleSelect component should render properly with S size 1`] = `
   background-color: #F7F8F9;
 }
 
-.c0:hover > .c1 {
+.c0:hover>.c1 {
   color: #13181D;
 }
 
@@ -890,37 +695,27 @@ exports[`SingleSelect component should render properly with S size 1`] = `
   background-color: #eff2f4;
 }
 
-.c0 > .c1 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c0>.c1 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c0 > .c3 {
+.c0>.c3 {
   margin-left: 1.6rem;
 }
 
-.c0 > .c3 * {
+.c0>.c3 * {
   fill: #13181D;
 }
 
-.c4:hover > .c1 {
+.c4:hover>.c1 {
   color: #13181D;
 }
 
-.c4 > .c1 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c4>.c1 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #3872D2;
@@ -929,9 +724,14 @@ exports[`SingleSelect component should render properly with S size 1`] = `
 <li
   class="c0"
   id="All"
+  variant="filled"
 >
   <span
     class="c1 c2"
+    textalign="initial"
+    textcolor="inherit"
+    textvariant="body2"
+    textweight="Regular"
   >
     All
   </span>
@@ -939,14 +739,11 @@ exports[`SingleSelect component should render properly with S size 1`] = `
 `;
 
 exports[`SingleSelect component should take passed max width 1`] = `
-.c15 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -956,21 +753,18 @@ exports[`SingleSelect component should take passed max width 1`] = `
 .c9 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c11 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c11 * {
@@ -989,38 +783,29 @@ exports[`SingleSelect component should take passed max width 1`] = `
   fill: #546A7F;
 }
 
+.c12 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -1029,21 +814,12 @@ exports[`SingleSelect component should take passed max width 1`] = `
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -1054,7 +830,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   color: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3~.sc-avlt8d-0 {
   color: #546A7F;
 }
 
@@ -1067,7 +843,6 @@ exports[`SingleSelect component should take passed max width 1`] = `
   left: 0;
   box-sizing: border-box;
   border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -1101,51 +876,23 @@ exports[`SingleSelect component should take passed max width 1`] = `
   box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
+  color: rgba(0, 90, 238, .2);
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -1159,7 +906,6 @@ exports[`SingleSelect component should take passed max width 1`] = `
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
@@ -1169,12 +915,9 @@ exports[`SingleSelect component should take passed max width 1`] = `
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -1185,18 +928,6 @@ exports[`SingleSelect component should take passed max width 1`] = `
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -1205,104 +936,72 @@ exports[`SingleSelect component should take passed max width 1`] = `
   color: #435465;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
-.c13 {
+.c14 {
   cursor: pointer;
   padding: 0 0.8rem;
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
   max-width: 30rem;
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #F7F8F9;
 }
 
-.c13:hover > .c14 {
+.c14:hover>.c15 {
   color: #13181D;
 }
 
-.c13:active {
+.c14:active {
   background-color: #eff2f4;
 }
 
-.c13 > .c14 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c14>.c15 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c13 > .c8 {
+.c14>.c8 {
   margin-left: 1.6rem;
 }
 
-.c13 > .c8 * {
+.c14>.c8 * {
   fill: #13181D;
 }
 
-.c13 > .c14 {
+.c14>.c15 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.c12 {
+.c13 {
   z-index: 4;
   position: absolute;
   background: #ffffff;
@@ -1320,39 +1019,32 @@ exports[`SingleSelect component should take passed max width 1`] = `
   max-height: 20rem;
 }
 
-.c16 .c1 {
+.c17 .c1 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c16 .c1 label {
+.c17 .c1 label {
   pointer-events: none;
 }
 
-.c16 .c1 div,
-.c16 .c1 input,
-.c16 .c1 label {
+.c17 .c1 div,
+.c17 .c1 input,
+.c17 .c1 label {
   cursor: pointer;
 }
 
-.c16 .c1 .c10 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
+.c17 .c1 .c10 {
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c16 .c1:not(:focus-within):hover .c10 * {
+.c17 .c1:not(:focus-within):hover .c10 * {
   fill: #13181D;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   max-width: 30rem;
@@ -1375,11 +1067,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
 }
 
 .c0 .c1 .c10 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -1391,34 +1079,47 @@ exports[`SingleSelect component should take passed max width 1`] = `
   <div
     class="c0"
     id="medly-singleSelect-wrapper"
+    maxwidth="30rem"
+    minwidth="20rem"
+    variant="filled"
   >
     <div
       class="c1 c2"
       id="medly-singleSelect-input-wrapper"
+      maxwidth="30rem"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="filled"
       >
         <div
           class="c4"
+          variant="filled"
         >
           <input
             aria-describedby="medly-singleSelect-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="medly-singleSelect-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value=""
+            variant="filled"
           />
           <label
             class="c6 c7"
             for="medly-singleSelect-input"
+            inputwidth="0"
+            variant="filled"
           />
         </div>
         <svg
-          class="c8 c9 sc-1668uuz-0 c10 c11"
+          class="c8 c9 c10 c11 c12"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -1431,38 +1132,57 @@ exports[`SingleSelect component should take passed max width 1`] = `
           />
         </svg>
       </div>
-      
     </div>
     <ul
-      class="c12"
+      class="c13"
       id="medly-singleSelect-options"
+      maxwidth="30rem"
+      variant="filled"
     >
       <li
-        class="c13"
+        class="c14"
         id="All"
+        maxwidth="30rem"
+        variant="filled"
       >
         <span
-          class="c14 c15"
+          class="c15 c16"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           All
         </span>
       </li>
       <li
-        class="c13"
+        class="c14"
         id="Dummy1"
+        maxwidth="30rem"
+        variant="filled"
       >
         <span
-          class="c14 c15"
+          class="c15 c16"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           Dummy1
         </span>
       </li>
       <li
-        class="c13"
+        class="c14"
         id="Dummy2"
+        maxwidth="30rem"
+        variant="filled"
       >
         <span
-          class="c14 c15"
+          class="c15 c16"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           Dummy2
         </span>
@@ -1482,11 +1202,17 @@ exports[`SingleSelect component should take passed max width 1`] = `
         </svg>
       </li>
       <li
-        class="c13"
+        class="c14"
         id="Dummy3"
+        maxwidth="30rem"
+        variant="filled"
       >
         <span
-          class="c14 c15"
+          class="c15 c16"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           Dummy3
         </span>
@@ -1500,32 +1226,26 @@ exports[`SingleSelect component with filled variant should render disabled state
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c13 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c10 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c10 * {
@@ -1536,38 +1256,29 @@ exports[`SingleSelect component with filled variant should render disabled state
   fill: #b0bcc8;
 }
 
+.c11 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -1576,21 +1287,12 @@ exports[`SingleSelect component with filled variant should render disabled state
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -1603,7 +1305,7 @@ exports[`SingleSelect component with filled variant should render disabled state
   color: #546A7F;
 }
 
-.c3 ~ .c11 {
+.c3~.c12 {
   color: #546A7F;
 }
 
@@ -1616,7 +1318,6 @@ exports[`SingleSelect component with filled variant should render disabled state
   left: 0;
   box-sizing: border-box;
   border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -1638,11 +1339,7 @@ exports[`SingleSelect component with filled variant should render disabled state
   color: #b0bcc8;
 }
 
-.c3 .sc-1i29ttz-0 {
-  color: #b0bcc8;
-}
-
-.c3 ~ .c11 {
+.c3~.c12 {
   color: #b0bcc8;
 }
 
@@ -1651,30 +1348,17 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -1687,7 +1371,6 @@ exports[`SingleSelect component with filled variant should render disabled state
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
@@ -1697,12 +1380,9 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -1713,18 +1393,6 @@ exports[`SingleSelect component with filled variant should render disabled state
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -1733,51 +1401,27 @@ exports[`SingleSelect component with filled variant should render disabled state
   color: #435465;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -1793,11 +1437,7 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c0 .c1 .c9 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -1806,36 +1446,47 @@ exports[`SingleSelect component with filled variant should render disabled state
     class="c0"
     disabled=""
     id="medly-singleSelect-wrapper"
+    minwidth="20rem"
+    variant="filled"
   >
     <div
       class="c1 c2"
       id="medly-singleSelect-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
         disabled=""
+        minrows="1"
+        variant="filled"
       >
         <div
           class="c4"
+          variant="filled"
         >
           <input
             aria-describedby="medly-singleSelect-helper-text"
             autocomplete="off"
             class="c5"
             disabled=""
+            errortext=""
             id="medly-singleSelect-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="filled"
           />
           <label
             class="c6 c7"
             for="medly-singleSelect-input"
+            inputwidth="0"
+            variant="filled"
           />
         </div>
         <svg
-          class="c8 sc-1668uuz-0 c9 c10"
+          class="c8 c9 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -1849,8 +1500,9 @@ exports[`SingleSelect component with filled variant should render disabled state
         </svg>
       </div>
       <span
-        class="c11 c12"
+        class="c12 c13"
         id="medly-singleSelect-helper-text"
+        variant="filled"
       >
         Helper Text
       </span>
@@ -1865,9 +1517,6 @@ exports[`SingleSelect component with filled variant should render options correc
   color: inherit;
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -1877,14 +1526,12 @@ exports[`SingleSelect component with filled variant should render options correc
 .c5 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c5 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1895,18 +1542,10 @@ exports[`SingleSelect component with filled variant should render options correc
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -1914,7 +1553,7 @@ exports[`SingleSelect component with filled variant should render options correc
   background-color: #F7F8F9;
 }
 
-.c1:hover > .c2 {
+.c1:hover>.c2 {
   color: #13181D;
 }
 
@@ -1922,23 +1561,18 @@ exports[`SingleSelect component with filled variant should render options correc
   background-color: #eff2f4;
 }
 
-.c1 > .c2 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c1>.c2 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c1 > .c4 {
+.c1>.c4 {
   margin-left: 1.6rem;
 }
 
-.c1 > .c4 * {
+.c1>.c4 * {
   fill: #13181D;
 }
 
@@ -1962,13 +1596,19 @@ exports[`SingleSelect component with filled variant should render options correc
 <ul
   class="c0"
   id="medly-singleSelect-options"
+  variant="filled"
 >
   <li
     class="c1"
     id="All"
+    variant="filled"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       All
     </span>
@@ -1976,9 +1616,14 @@ exports[`SingleSelect component with filled variant should render options correc
   <li
     class="c1"
     id="Dummy1"
+    variant="filled"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       Dummy1
     </span>
@@ -1986,9 +1631,14 @@ exports[`SingleSelect component with filled variant should render options correc
   <li
     class="c1"
     id="Dummy2"
+    variant="filled"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       Dummy2
     </span>
@@ -2010,9 +1660,14 @@ exports[`SingleSelect component with filled variant should render options correc
   <li
     class="c1"
     id="Dummy3"
+    variant="filled"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       Dummy3
     </span>
@@ -2024,21 +1679,18 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c10 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c10 * {
@@ -2049,38 +1701,29 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   fill: #546A7F;
 }
 
+.c11 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -2089,21 +1732,12 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -2114,7 +1748,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   color: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3~.sc-avlt8d-0 {
   color: #546A7F;
 }
 
@@ -2127,7 +1761,6 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   left: 0;
   box-sizing: border-box;
   border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -2161,51 +1794,23 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
+  color: rgba(0, 90, 238, .2);
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -2218,7 +1823,6 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
@@ -2228,12 +1832,9 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -2244,18 +1845,6 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -2264,51 +1853,27 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   color: #435465;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   min-width: 20rem;
   width: 100%;
@@ -2331,11 +1896,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 }
 
 .c0 .c1 .c9 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -2347,34 +1908,45 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   <div
     class="c0"
     id="medly-singleSelect-wrapper"
+    minwidth="20rem"
+    variant="filled"
   >
     <div
       class="c1 c2"
       id="medly-singleSelect-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="filled"
       >
         <div
           class="c4"
+          variant="filled"
         >
           <input
             aria-describedby="medly-singleSelect-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="medly-singleSelect-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="filled"
           />
           <label
             class="c6 c7"
             for="medly-singleSelect-input"
+            inputwidth="0"
+            variant="filled"
           />
         </div>
         <svg
-          class="c8 sc-1668uuz-0 c9 c10"
+          class="c8 c9 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -2387,49 +1959,39 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
           />
         </svg>
       </div>
-      
     </div>
   </div>
 </div>
 `;
 
 exports[`SingleSelect component with filled variant should render properly when option is custom component 1`] = `
-.c17 {
+.c18 {
   margin: 0;
   color: inherit;
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c19 {
+.c20 {
   margin: 0;
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c21 {
+.c22 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -2439,32 +2001,26 @@ exports[`SingleSelect component with filled variant should render properly when 
 .c9 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c13 {
+.c14 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c11 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c11 * {
@@ -2483,38 +2039,29 @@ exports[`SingleSelect component with filled variant should render properly when 
   fill: #546A7F;
 }
 
+.c12 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -2523,21 +2070,12 @@ exports[`SingleSelect component with filled variant should render properly when 
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -2548,7 +2086,7 @@ exports[`SingleSelect component with filled variant should render properly when 
   color: #546A7F;
 }
 
-.c3 ~ .c12 {
+.c3~.c13 {
   color: #546A7F;
 }
 
@@ -2561,7 +2099,6 @@ exports[`SingleSelect component with filled variant should render properly when 
   left: 0;
   box-sizing: border-box;
   border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -2595,51 +2132,23 @@ exports[`SingleSelect component with filled variant should render properly when 
   box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
+  color: rgba(0, 90, 238, .2);
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -2652,26 +2161,20 @@ exports[`SingleSelect component with filled variant should render properly when 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 0.7rem;
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -2682,18 +2185,6 @@ exports[`SingleSelect component with filled variant should render properly when 
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -2702,157 +2193,104 @@ exports[`SingleSelect component with filled variant should render properly when 
   color: #435465;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
-.c15 {
+.c16 {
   cursor: pointer;
   padding: 0 0.8rem;
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
-.c15:hover {
+.c16:hover {
   background-color: #F7F8F9;
 }
 
-.c15:hover > .c16 {
+.c16:hover>.c17 {
   color: #13181D;
 }
 
-.c15:active {
+.c16:active {
   background-color: #eff2f4;
 }
 
-.c15 > .c16 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c16>.c17 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c15 > .c8 {
+.c16>.c8 {
   margin-left: 1.6rem;
 }
 
-.c15 > .c8 * {
+.c16>.c8 * {
   fill: #13181D;
 }
 
-.c18 {
+.c19 {
   cursor: pointer;
   padding: 0 0.8rem;
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #EBF1FA;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
-.c18:hover > .c16 {
+.c19:hover>.c17 {
   color: #13181D;
 }
 
-.c18 > .c16 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c19>.c17 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #3872D2;
 }
 
-.c18 > .c8 {
+.c19>.c8 {
   margin-left: 1.6rem;
 }
 
-.c18 > .c8 * {
+.c19>.c8 * {
   fill: #3872D2;
 }
 
-.c20 {
+.c21 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: start;
-  -ms-flex-pack: start;
   justify-content: start;
 }
 
-.c14 {
+.c15 {
   z-index: 4;
   position: absolute;
   background: #ffffff;
@@ -2869,39 +2307,32 @@ exports[`SingleSelect component with filled variant should render properly when 
   max-height: 20rem;
 }
 
-.c22 .c1 {
+.c23 .c1 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c22 .c1 label {
+.c23 .c1 label {
   pointer-events: none;
 }
 
-.c22 .c1 div,
-.c22 .c1 input,
-.c22 .c1 label {
+.c23 .c1 div,
+.c23 .c1 input,
+.c23 .c1 label {
   cursor: pointer;
 }
 
-.c22 .c1 .c10 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
+.c23 .c1 .c10 {
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c22 .c1:not(:focus-within):hover .c10 * {
+.c23 .c1:not(:focus-within):hover .c10 * {
   fill: #13181D;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -2923,11 +2354,7 @@ exports[`SingleSelect component with filled variant should render properly when 
 }
 
 .c0 .c1 .c10 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -2939,36 +2366,47 @@ exports[`SingleSelect component with filled variant should render properly when 
   <div
     class="c0"
     id="label-wrapper"
+    minwidth="20rem"
+    variant="filled"
   >
     <div
       class="c1 c2"
       id="label-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="filled"
       >
         <div
           class="c4"
+          variant="filled"
         >
           <input
             aria-describedby="label-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="label-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="filled"
           />
           <label
             class="c6 c7"
             for="label-input"
+            inputwidth="0"
+            variant="filled"
           >
             Label
           </label>
         </div>
         <svg
-          class="c8 c9 sc-1668uuz-0 c10 c11"
+          class="c8 c9 c10 c11 c12"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -2982,32 +2420,44 @@ exports[`SingleSelect component with filled variant should render properly when 
         </svg>
       </div>
       <span
-        class="c12 c13"
+        class="c13 c14"
         id="label-helper-text"
+        variant="filled"
       >
         Helper Text
       </span>
     </div>
     <ul
-      class="c14"
+      class="c15"
       id="label-options"
+      variant="filled"
     >
       <li
-        class="c15"
+        class="c16"
         id="All"
+        variant="filled"
       >
         <span
-          class="c16 c17"
+          class="c17 c18"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           All
         </span>
       </li>
       <li
-        class="c18"
+        class="c19"
         id="Dummy1"
+        variant="filled"
       >
         <span
-          class="c16 c19"
+          class="c17 c20"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Medium"
         >
           Dummy1
         </span>
@@ -3026,11 +2476,16 @@ exports[`SingleSelect component with filled variant should render properly when 
         </svg>
       </li>
       <li
-        class="c15"
+        class="c16"
         id="Dummy2"
+        variant="filled"
       >
         <span
-          class="c16 c17"
+          class="c17 c18"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           Dummy2
         </span>
@@ -3050,24 +2505,32 @@ exports[`SingleSelect component with filled variant should render properly when 
         </svg>
       </li>
       <li
-        class="c15"
+        class="c16"
         id="Dummy3"
+        variant="filled"
       >
         <span
-          class="c16 c17"
+          class="c17 c18"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           Dummy3
         </span>
       </li>
       <li
-        class="c15"
+        class="c16"
         id="Custom-component"
+        variant="filled"
       >
         <div
-          class="c20"
+          class="c21"
         >
           <span
-            class="c16 c21"
+            class="c17 c22"
+            textalign="initial"
+            textcolor="inherit"
           >
             Component
           </span>
@@ -3082,32 +2545,26 @@ exports[`SingleSelect component with filled variant should render with label pro
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c13 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c10 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c10 * {
@@ -3118,38 +2575,29 @@ exports[`SingleSelect component with filled variant should render with label pro
   fill: #546A7F;
 }
 
+.c11 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -3158,21 +2606,12 @@ exports[`SingleSelect component with filled variant should render with label pro
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -3183,7 +2622,7 @@ exports[`SingleSelect component with filled variant should render with label pro
   color: #546A7F;
 }
 
-.c3 ~ .c11 {
+.c3~.c12 {
   color: #546A7F;
 }
 
@@ -3196,7 +2635,6 @@ exports[`SingleSelect component with filled variant should render with label pro
   left: 0;
   box-sizing: border-box;
   border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -3230,51 +2668,23 @@ exports[`SingleSelect component with filled variant should render with label pro
   box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
+  color: rgba(0, 90, 238, .2);
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -3287,26 +2697,20 @@ exports[`SingleSelect component with filled variant should render with label pro
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 0.7rem;
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -3317,18 +2721,6 @@ exports[`SingleSelect component with filled variant should render with label pro
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -3337,51 +2729,27 @@ exports[`SingleSelect component with filled variant should render with label pro
   color: #435465;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -3403,11 +2771,7 @@ exports[`SingleSelect component with filled variant should render with label pro
 }
 
 .c0 .c1 .c9 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -3419,36 +2783,47 @@ exports[`SingleSelect component with filled variant should render with label pro
   <div
     class="c0"
     id="label-wrapper"
+    minwidth="20rem"
+    variant="filled"
   >
     <div
       class="c1 c2"
       id="label-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="filled"
       >
         <div
           class="c4"
+          variant="filled"
         >
           <input
             aria-describedby="label-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="label-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="filled"
           />
           <label
             class="c6 c7"
             for="label-input"
+            inputwidth="0"
+            variant="filled"
           >
             Label
           </label>
         </div>
         <svg
-          class="c8 sc-1668uuz-0 c9 c10"
+          class="c8 c9 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -3462,8 +2837,9 @@ exports[`SingleSelect component with filled variant should render with label pro
         </svg>
       </div>
       <span
-        class="c11 c12"
+        class="c12 c13"
         id="label-helper-text"
+        variant="filled"
       >
         Helper Text
       </span>
@@ -3478,9 +2854,6 @@ exports[`SingleSelect component with flat variant should render disabled state p
   color: inherit;
   font-size: 1.2rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
@@ -3490,26 +2863,19 @@ exports[`SingleSelect component with flat variant should render disabled state p
 .c4 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
 }
@@ -3520,59 +2886,33 @@ exports[`SingleSelect component with flat variant should render disabled state p
   line-height: 1.6rem;
   margin: 0.5rem 0.8rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c5 {
   pointer-events: none;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
 .c2 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
   height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   width: '100%';
   border-radius: 0.8rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 .c2,
 .c2 * {
   cursor: pointer;
-}
-
-.c2,
-.c2 .sc-975cgx-0 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c2:focus {
@@ -3593,10 +2933,6 @@ exports[`SingleSelect component with flat variant should render disabled state p
   fill: #b0bcc8;
 }
 
-.c2:disabled .sc-975cgx-0 {
-  color: #b0bcc8;
-}
-
 .c2:not(:disabled):not(:hover) {
   color: #3872D2;
   background: #ffffff;
@@ -3606,10 +2942,6 @@ exports[`SingleSelect component with flat variant should render disabled state p
   fill: #3872D2;
 }
 
-.c2:not(:disabled):not(:hover) .sc-975cgx-0 {
-  color: #303C48;
-}
-
 .c2:not(:disabled):active {
   color: #275093;
   background: #eff2f4;
@@ -3617,10 +2949,6 @@ exports[`SingleSelect component with flat variant should render disabled state p
 
 .c2:not(:disabled):active * {
   fill: #275093;
-}
-
-.c2:not(:disabled):active .sc-975cgx-0 {
-  color: #13181D;
 }
 
 .c2:not(:disabled):not(:active):hover {
@@ -3633,38 +2961,11 @@ exports[`SingleSelect component with flat variant should render disabled state p
   fill: #3061B3;
 }
 
-.c2:not(:disabled):not(:active):hover .sc-975cgx-0 {
-  color: #303C48;
-}
-
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c0 .sc-17d4s39-0 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c0 .sc-17d4s39-0 label {
-  pointer-events: none;
-}
-
-.c0 .sc-17d4s39-0 .sc-1668uuz-2 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div>
@@ -3672,6 +2973,8 @@ exports[`SingleSelect component with flat variant should render disabled state p
     class="c0"
     disabled=""
     id="medly-singleSelect-wrapper"
+    minwidth="fit-content"
+    variant="flat"
   >
     <div
       class="c1"
@@ -3680,12 +2983,16 @@ exports[`SingleSelect component with flat variant should render disabled state p
       <button
         class="c2"
         disabled=""
+        errortext=""
         id="medly-singleSelect-button"
         type="button"
       >
-        
         <span
           class="c3"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body3"
+          textweight="Medium"
         >
           Dummy1
         </span>
@@ -3721,9 +3028,6 @@ exports[`SingleSelect component with flat variant should render options correctl
   color: inherit;
   font-size: 1.2rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
@@ -3733,14 +3037,12 @@ exports[`SingleSelect component with flat variant should render options correctl
 .c5 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c5 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -3751,18 +3053,10 @@ exports[`SingleSelect component with flat variant should render options correctl
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 3.2rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -3770,7 +3064,7 @@ exports[`SingleSelect component with flat variant should render options correctl
   background-color: #F7F8F9;
 }
 
-.c1:hover > .c2 {
+.c1:hover>.c2 {
   color: #13181D;
 }
 
@@ -3778,23 +3072,18 @@ exports[`SingleSelect component with flat variant should render options correctl
   background-color: #eff2f4;
 }
 
-.c1 > .c2 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c1>.c2 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c1 > .c4 {
+.c1>.c4 {
   margin-left: 1.6rem;
 }
 
-.c1 > .c4 * {
+.c1>.c4 * {
   fill: #13181D;
 }
 
@@ -3818,13 +3107,19 @@ exports[`SingleSelect component with flat variant should render options correctl
 <ul
   class="c0"
   id="medly-singleSelect-options"
+  variant="flat"
 >
   <li
     class="c1"
     id="All"
+    variant="flat"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body3"
+      textweight="Regular"
     >
       All
     </span>
@@ -3832,9 +3127,14 @@ exports[`SingleSelect component with flat variant should render options correctl
   <li
     class="c1"
     id="Dummy1"
+    variant="flat"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body3"
+      textweight="Regular"
     >
       Dummy1
     </span>
@@ -3842,9 +3142,14 @@ exports[`SingleSelect component with flat variant should render options correctl
   <li
     class="c1"
     id="Dummy2"
+    variant="flat"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body3"
+      textweight="Regular"
     >
       Dummy2
     </span>
@@ -3866,9 +3171,14 @@ exports[`SingleSelect component with flat variant should render options correctl
   <li
     class="c1"
     id="Dummy3"
+    variant="flat"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body3"
+      textweight="Regular"
     >
       Dummy3
     </span>
@@ -3882,9 +3192,6 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   color: inherit;
   font-size: 1.2rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
@@ -3894,77 +3201,47 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
 .c4 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c4 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
 }
 
 .c5 {
   pointer-events: none;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
 .c2 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
   height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   width: '100%';
   border-radius: 0.8rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 .c2,
 .c2 * {
   cursor: pointer;
-}
-
-.c2,
-.c2 .sc-975cgx-0 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c2:focus {
@@ -3985,10 +3262,6 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   fill: #b0bcc8;
 }
 
-.c2:disabled .sc-975cgx-0 {
-  color: #b0bcc8;
-}
-
 .c2:not(:disabled):not(:hover) {
   color: #3872D2;
   background: #ffffff;
@@ -3998,10 +3271,6 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   fill: #3872D2;
 }
 
-.c2:not(:disabled):not(:hover) .sc-975cgx-0 {
-  color: #303C48;
-}
-
 .c2:not(:disabled):active {
   color: #275093;
   background: #eff2f4;
@@ -4009,10 +3278,6 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
 
 .c2:not(:disabled):active * {
   fill: #275093;
-}
-
-.c2:not(:disabled):active .sc-975cgx-0 {
-  color: #13181D;
 }
 
 .c2:not(:disabled):not(:active):hover {
@@ -4025,51 +3290,20 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   fill: #3061B3;
 }
 
-.c2:not(:disabled):not(:active):hover .sc-975cgx-0 {
-  color: #303C48;
-}
-
 .c0 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   width: 100%;
   margin: 0.8rem 0;
-}
-
-.c0 .sc-17d4s39-0 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c0 .sc-17d4s39-0 label {
-  pointer-events: none;
-}
-
-.c0 .sc-17d4s39-0 div,
-.c0 .sc-17d4s39-0 input,
-.c0 .sc-17d4s39-0 label {
-  cursor: pointer;
-}
-
-.c0 .sc-17d4s39-0 .sc-1668uuz-2 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div>
   <div
     class="c0"
     id="medly-singleSelect-wrapper"
+    minwidth="fit-content"
+    variant="flat"
   >
     <div
       class="c1"
@@ -4077,12 +3311,16 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
     >
       <button
         class="c2"
+        errortext=""
         id="medly-singleSelect-button"
         type="button"
       >
-        
         <span
           class="c3"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body3"
+          textweight="Medium"
         >
           Dummy1
         </span>
@@ -4111,9 +3349,6 @@ exports[`SingleSelect component with flat variant should render properly when op
   color: inherit;
   font-size: 1.2rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
@@ -4125,9 +3360,6 @@ exports[`SingleSelect component with flat variant should render properly when op
   color: inherit;
   font-size: 1.2rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
@@ -4139,9 +3371,6 @@ exports[`SingleSelect component with flat variant should render properly when op
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -4151,14 +3380,12 @@ exports[`SingleSelect component with flat variant should render properly when op
 .c8 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -4167,9 +3394,6 @@ exports[`SingleSelect component with flat variant should render properly when op
   color: #13181D;
   font-size: 1.2rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
   margin: 0px 0.8rem 0px 0px;
@@ -4177,13 +3401,8 @@ exports[`SingleSelect component with flat variant should render properly when op
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
 }
@@ -4194,25 +3413,17 @@ exports[`SingleSelect component with flat variant should render properly when op
   line-height: 1.6rem;
   margin: 0.5rem 0.8rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c9 {
   pointer-events: none;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .c17,
 .c17 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -4235,28 +3446,15 @@ exports[`SingleSelect component with flat variant should render properly when op
 .c2 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
   height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   width: '100%';
   border-radius: 0.8rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -4267,7 +3465,6 @@ exports[`SingleSelect component with flat variant should render properly when op
 
 .c2,
 .c2 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -4339,18 +3536,10 @@ exports[`SingleSelect component with flat variant should render properly when op
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 3.2rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -4358,7 +3547,7 @@ exports[`SingleSelect component with flat variant should render properly when op
   background-color: #F7F8F9;
 }
 
-.c12:hover > .c5 {
+.c12:hover>.c5 {
   color: #13181D;
 }
 
@@ -4366,23 +3555,18 @@ exports[`SingleSelect component with flat variant should render properly when op
   background-color: #eff2f4;
 }
 
-.c12 > .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c12>.c5 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c12 > .c7 {
+.c12>.c7 {
   margin-left: 1.6rem;
 }
 
-.c12 > .c7 * {
+.c12>.c7 * {
   fill: #13181D;
 }
 
@@ -4392,54 +3576,35 @@ exports[`SingleSelect component with flat variant should render properly when op
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 3.2rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #EBF1FA;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
-.c14:hover > .c5 {
+.c14:hover>.c5 {
   color: #13181D;
 }
 
-.c14 > .c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c14>.c5 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #3872D2;
 }
 
-.c14 > .c7 {
+.c14>.c7 {
   margin-left: 1.6rem;
 }
 
-.c14 > .c7 * {
+.c14>.c7 * {
   fill: #3872D2;
 }
 
 .c15 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: start;
-  -ms-flex-pack: start;
   justify-content: start;
 }
 
@@ -4462,44 +3627,17 @@ exports[`SingleSelect component with flat variant should render properly when op
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c0 .sc-17d4s39-0 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c0 .sc-17d4s39-0 label {
-  pointer-events: none;
-}
-
-.c0 .sc-17d4s39-0 div,
-.c0 .sc-17d4s39-0 input,
-.c0 .sc-17d4s39-0 label {
-  cursor: pointer;
-}
-
-.c0 .sc-17d4s39-0 .sc-1668uuz-2 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
 }
 
 <div>
   <div
     class="c0"
     id="label-wrapper"
+    minwidth="fit-content"
+    variant="flat"
   >
     <div
       class="c1"
@@ -4507,17 +3645,24 @@ exports[`SingleSelect component with flat variant should render properly when op
     >
       <button
         class="c2"
+        errortext=""
         id="label-button"
         type="button"
       >
         <label
           class="c3 c4"
+          labelposition="left"
+          labelvariant="body3"
         >
           Label
           :
         </label>
         <span
           class="c5 c6"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body3"
+          textweight="Medium"
         >
           Dummy1
         </span>
@@ -4545,13 +3690,19 @@ exports[`SingleSelect component with flat variant should render properly when op
     <ul
       class="c11"
       id="label-options"
+      variant="flat"
     >
       <li
         class="c12"
         id="All"
+        variant="flat"
       >
         <span
           class="c5 c13"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body3"
+          textweight="Regular"
         >
           All
         </span>
@@ -4559,9 +3710,14 @@ exports[`SingleSelect component with flat variant should render properly when op
       <li
         class="c14"
         id="Dummy1"
+        variant="flat"
       >
         <span
           class="c5 c6"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body3"
+          textweight="Medium"
         >
           Dummy1
         </span>
@@ -4569,9 +3725,14 @@ exports[`SingleSelect component with flat variant should render properly when op
       <li
         class="c12"
         id="Dummy2"
+        variant="flat"
       >
         <span
           class="c5 c13"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body3"
+          textweight="Regular"
         >
           Dummy2
         </span>
@@ -4593,9 +3754,14 @@ exports[`SingleSelect component with flat variant should render properly when op
       <li
         class="c12"
         id="Dummy3"
+        variant="flat"
       >
         <span
           class="c5 c13"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body3"
+          textweight="Regular"
         >
           Dummy3
         </span>
@@ -4603,12 +3769,15 @@ exports[`SingleSelect component with flat variant should render properly when op
       <li
         class="c12"
         id="Custom-component"
+        variant="flat"
       >
         <div
           class="c15"
         >
           <span
             class="c5 c16"
+            textalign="initial"
+            textcolor="inherit"
           >
             Component
           </span>
@@ -4625,9 +3794,6 @@ exports[`SingleSelect component with flat variant should render with label prope
   color: inherit;
   font-size: 1.2rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
@@ -4637,14 +3803,12 @@ exports[`SingleSelect component with flat variant should render with label prope
 .c6 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c6 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -4653,9 +3817,6 @@ exports[`SingleSelect component with flat variant should render with label prope
   color: #13181D;
   font-size: 1.2rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
   margin: 0px 0.8rem 0px 0px;
@@ -4663,13 +3824,8 @@ exports[`SingleSelect component with flat variant should render with label prope
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
 }
@@ -4680,47 +3836,27 @@ exports[`SingleSelect component with flat variant should render with label prope
   line-height: 1.6rem;
   margin: 0.5rem 0.8rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c7 {
   pointer-events: none;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
 .c2 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
   height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   width: '100%';
   border-radius: 0.8rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -4731,7 +3867,6 @@ exports[`SingleSelect component with flat variant should render with label prope
 
 .c2,
 .c2 .c3 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -4799,44 +3934,17 @@ exports[`SingleSelect component with flat variant should render with label prope
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c0 .sc-17d4s39-0 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c0 .sc-17d4s39-0 label {
-  pointer-events: none;
-}
-
-.c0 .sc-17d4s39-0 div,
-.c0 .sc-17d4s39-0 input,
-.c0 .sc-17d4s39-0 label {
-  cursor: pointer;
-}
-
-.c0 .sc-17d4s39-0 .sc-1668uuz-2 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 <div>
   <div
     class="c0"
     id="label-wrapper"
+    minwidth="fit-content"
+    variant="flat"
   >
     <div
       class="c1"
@@ -4844,17 +3952,24 @@ exports[`SingleSelect component with flat variant should render with label prope
     >
       <button
         class="c2"
+        errortext=""
         id="label-button"
         type="button"
       >
         <label
           class="c3 c4"
+          labelposition="left"
+          labelvariant="body3"
         >
           Label
           :
         </label>
         <span
           class="c5"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body3"
+          textweight="Medium"
         >
           Dummy1
         </span>
@@ -4887,101 +4002,77 @@ exports[`SingleSelect component with fusion variant should render disabled state
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c13 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.4rem 1.6rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c10 {
   pointer-events: none;
+}
+
+.c10 * {
+  fill: #b0bcc8;
+}
+
+.c10 * {
+  fill: #b0bcc8;
+}
+
+.c11 {
   margin-left: 1.6rem;
-}
-
-.c10 * {
-  fill: #b0bcc8;
-}
-
-.c10 * {
-  fill: #b0bcc8;
 }
 
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.c7::after {
+.c7 ::after {
   content: ' (optional)';
 }
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
@@ -4995,7 +4086,7 @@ exports[`SingleSelect component with fusion variant should render disabled state
   color: #546A7F;
 }
 
-.c3 ~ .c11 {
+.c3~.c12 {
   color: #546A7F;
 }
 
@@ -5011,7 +4102,6 @@ exports[`SingleSelect component with fusion variant should render disabled state
   left: 0;
   pointer-events: none;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
   border-width: 0.15rem;
@@ -5047,11 +4137,7 @@ exports[`SingleSelect component with fusion variant should render disabled state
   color: #b0bcc8;
 }
 
-.c3 .sc-1i29ttz-0 {
-  color: #b0bcc8;
-}
-
-.c3 ~ .c11 {
+.c3~.c12 {
   color: #b0bcc8;
 }
 
@@ -5060,30 +4146,17 @@ exports[`SingleSelect component with fusion variant should render disabled state
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -5096,7 +4169,6 @@ exports[`SingleSelect component with fusion variant should render disabled state
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
@@ -5106,12 +4178,9 @@ exports[`SingleSelect component with fusion variant should render disabled state
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -5122,18 +4191,6 @@ exports[`SingleSelect component with fusion variant should render disabled state
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -5142,66 +4199,40 @@ exports[`SingleSelect component with fusion variant should render disabled state
   color: #546A7F;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   background-color: white;
   padding: 0 0.5rem;
-  -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
-  -ms-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1i29ttz-0,
-.c5:focus ~ .sc-1i29ttz-0 {
+.c5:not(:placeholder-shown)~.sc-1i29ttz-0,
+.c5:focus~.sc-1i29ttz-0 {
   background-color: white;
   padding: 0 0.5rem;
-  -webkit-transform: translateY(-167%);
-  -ms-transform: translateY(-167%);
   transform: translateY(-167%);
 }
 
-.c5:focus ~ .c6 {
+.c5:focus~.c6 {
   font-weight: 600;
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -5217,11 +4248,7 @@ exports[`SingleSelect component with fusion variant should render disabled state
 }
 
 .c0 .c1 .c9 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -5230,36 +4257,47 @@ exports[`SingleSelect component with fusion variant should render disabled state
     class="c0"
     disabled=""
     id="medly-singleSelect-wrapper"
+    minwidth="20rem"
+    variant="fusion"
   >
     <div
       class="c1 c2"
       id="medly-singleSelect-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
         disabled=""
+        minrows="1"
+        variant="fusion"
       >
         <div
           class="c4"
+          variant="fusion"
         >
           <input
             aria-describedby="medly-singleSelect-helper-text"
             autocomplete="off"
             class="c5"
             disabled=""
+            errortext=""
             id="medly-singleSelect-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="fusion"
           />
           <label
             class="c6 c7"
             for="medly-singleSelect-input"
+            inputwidth="0"
+            variant="fusion"
           />
         </div>
         <svg
-          class="c8 sc-1668uuz-0 c9 c10"
+          class="c8 c9 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -5273,8 +4311,9 @@ exports[`SingleSelect component with fusion variant should render disabled state
         </svg>
       </div>
       <span
-        class="c11 c12"
+        class="c12 c13"
         id="medly-singleSelect-helper-text"
+        variant="fusion"
       >
         Helper Text
       </span>
@@ -5289,9 +4328,6 @@ exports[`SingleSelect component with fusion variant should render options correc
   color: inherit;
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -5301,14 +4337,12 @@ exports[`SingleSelect component with fusion variant should render options correc
 .c5 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c5 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -5319,18 +4353,10 @@ exports[`SingleSelect component with fusion variant should render options correc
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -5338,7 +4364,7 @@ exports[`SingleSelect component with fusion variant should render options correc
   background-color: #F7F8F9;
 }
 
-.c1:hover > .c2 {
+.c1:hover>.c2 {
   color: #13181D;
 }
 
@@ -5346,23 +4372,18 @@ exports[`SingleSelect component with fusion variant should render options correc
   background-color: #eff2f4;
 }
 
-.c1 > .c2 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c1>.c2 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c1 > .c4 {
+.c1>.c4 {
   margin-left: 1.6rem;
 }
 
-.c1 > .c4 * {
+.c1>.c4 * {
   fill: #13181D;
 }
 
@@ -5386,13 +4407,19 @@ exports[`SingleSelect component with fusion variant should render options correc
 <ul
   class="c0"
   id="medly-singleSelect-options"
+  variant="fusion"
 >
   <li
     class="c1"
     id="All"
+    variant="fusion"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       All
     </span>
@@ -5400,9 +4427,14 @@ exports[`SingleSelect component with fusion variant should render options correc
   <li
     class="c1"
     id="Dummy1"
+    variant="fusion"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       Dummy1
     </span>
@@ -5410,9 +4442,14 @@ exports[`SingleSelect component with fusion variant should render options correc
   <li
     class="c1"
     id="Dummy2"
+    variant="fusion"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       Dummy2
     </span>
@@ -5434,9 +4471,14 @@ exports[`SingleSelect component with fusion variant should render options correc
   <li
     class="c1"
     id="Dummy3"
+    variant="fusion"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       Dummy3
     </span>
@@ -5448,21 +4490,18 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c10 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c10 * {
@@ -5473,65 +4512,47 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   fill: #607890;
 }
 
+.c11 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.c7::after {
+.c7 ::after {
   content: ' (optional)';
 }
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
@@ -5543,7 +4564,7 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   color: #546A7F;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3~.sc-avlt8d-0 {
   color: #546A7F;
 }
 
@@ -5559,7 +4580,6 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   left: 0;
   pointer-events: none;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
   border-width: 0.15rem;
@@ -5607,51 +4627,23 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: #C7D0D8;
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
   color: #C7D0D8;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -5664,7 +4656,6 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
@@ -5674,12 +4665,9 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -5690,18 +4678,6 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -5710,66 +4686,40 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   color: #546A7F;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   background-color: white;
   padding: 0 0.5rem;
-  -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
-  -ms-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1i29ttz-0,
-.c5:focus ~ .sc-1i29ttz-0 {
+.c5:not(:placeholder-shown)~.sc-1i29ttz-0,
+.c5:focus~.sc-1i29ttz-0 {
   background-color: white;
   padding: 0 0.5rem;
-  -webkit-transform: translateY(-167%);
-  -ms-transform: translateY(-167%);
   transform: translateY(-167%);
 }
 
-.c5:focus ~ .c6 {
+.c5:focus~.c6 {
   font-weight: 600;
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   min-width: 20rem;
   width: 100%;
@@ -5792,11 +4742,7 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
 }
 
 .c0 .c1 .c9 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -5808,34 +4754,45 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   <div
     class="c0"
     id="medly-singleSelect-wrapper"
+    minwidth="20rem"
+    variant="fusion"
   >
     <div
       class="c1 c2"
       id="medly-singleSelect-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="fusion"
       >
         <div
           class="c4"
+          variant="fusion"
         >
           <input
             aria-describedby="medly-singleSelect-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="medly-singleSelect-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="fusion"
           />
           <label
             class="c6 c7"
             for="medly-singleSelect-input"
+            inputwidth="0"
+            variant="fusion"
           />
         </div>
         <svg
-          class="c8 sc-1668uuz-0 c9 c10"
+          class="c8 c9 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -5848,49 +4805,39 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
           />
         </svg>
       </div>
-      
     </div>
   </div>
 </div>
 `;
 
 exports[`SingleSelect component with fusion variant should render properly when option is custom component 1`] = `
-.c17 {
+.c18 {
   margin: 0;
   color: inherit;
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c19 {
+.c20 {
   margin: 0;
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c21 {
+.c22 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -5900,32 +4847,26 @@ exports[`SingleSelect component with fusion variant should render properly when 
 .c9 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c13 {
+.c14 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.4rem 1.6rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c11 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c11 * {
@@ -5944,65 +4885,47 @@ exports[`SingleSelect component with fusion variant should render properly when 
   fill: #607890;
 }
 
+.c12 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.c7::after {
+.c7 ::after {
   content: ' (optional)';
 }
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
@@ -6014,7 +4937,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
   color: #546A7F;
 }
 
-.c3 ~ .c12 {
+.c3~.c13 {
   color: #546A7F;
 }
 
@@ -6030,7 +4953,6 @@ exports[`SingleSelect component with fusion variant should render properly when 
   left: 0;
   pointer-events: none;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
   border-width: 0.15rem;
@@ -6078,51 +5000,23 @@ exports[`SingleSelect component with fusion variant should render properly when 
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: #C7D0D8;
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
   color: #C7D0D8;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -6135,26 +5029,20 @@ exports[`SingleSelect component with fusion variant should render properly when 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 1.3rem;
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -6165,18 +5053,6 @@ exports[`SingleSelect component with fusion variant should render properly when 
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -6185,172 +5061,117 @@ exports[`SingleSelect component with fusion variant should render properly when 
   color: #546A7F;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   background-color: white;
   padding: 0 0.5rem;
-  -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
-  -ms-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1i29ttz-0,
-.c5:focus ~ .sc-1i29ttz-0 {
+.c5:not(:placeholder-shown)~.sc-1i29ttz-0,
+.c5:focus~.sc-1i29ttz-0 {
   background-color: white;
   padding: 0 0.5rem;
-  -webkit-transform: translateY(-167%);
-  -ms-transform: translateY(-167%);
   transform: translateY(-167%);
 }
 
-.c5:focus ~ .c6 {
+.c5:focus~.c6 {
   font-weight: 600;
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
-.c15 {
+.c16 {
   cursor: pointer;
   padding: 0 0.8rem;
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
-.c15:hover {
+.c16:hover {
   background-color: #F7F8F9;
 }
 
-.c15:hover > .c16 {
+.c16:hover>.c17 {
   color: #13181D;
 }
 
-.c15:active {
+.c16:active {
   background-color: #eff2f4;
 }
 
-.c15 > .c16 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c16>.c17 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c15 > .c8 {
+.c16>.c8 {
   margin-left: 1.6rem;
 }
 
-.c15 > .c8 * {
+.c16>.c8 * {
   fill: #13181D;
 }
 
-.c18 {
+.c19 {
   cursor: pointer;
   padding: 0 0.8rem;
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #EBF1FA;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
-.c18:hover > .c16 {
+.c19:hover>.c17 {
   color: #13181D;
 }
 
-.c18 > .c16 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c19>.c17 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #3872D2;
 }
 
-.c18 > .c8 {
+.c19>.c8 {
   margin-left: 1.6rem;
 }
 
-.c18 > .c8 * {
+.c19>.c8 * {
   fill: #3872D2;
 }
 
-.c20 {
+.c21 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: start;
-  -ms-flex-pack: start;
   justify-content: start;
 }
 
-.c14 {
+.c15 {
   z-index: 4;
   position: absolute;
   background: #ffffff;
@@ -6367,39 +5188,32 @@ exports[`SingleSelect component with fusion variant should render properly when 
   max-height: 20rem;
 }
 
-.c22 .c1 {
+.c23 .c1 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c22 .c1 label {
+.c23 .c1 label {
   pointer-events: none;
 }
 
-.c22 .c1 div,
-.c22 .c1 input,
-.c22 .c1 label {
+.c23 .c1 div,
+.c23 .c1 input,
+.c23 .c1 label {
   cursor: pointer;
 }
 
-.c22 .c1 .c10 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
+.c23 .c1 .c10 {
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c22 .c1:not(:focus-within):hover .c10 * {
+.c23 .c1:not(:focus-within):hover .c10 * {
   fill: #13181D;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -6421,11 +5235,7 @@ exports[`SingleSelect component with fusion variant should render properly when 
 }
 
 .c0 .c1 .c10 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -6437,36 +5247,47 @@ exports[`SingleSelect component with fusion variant should render properly when 
   <div
     class="c0"
     id="label-wrapper"
+    minwidth="20rem"
+    variant="fusion"
   >
     <div
       class="c1 c2"
       id="label-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="fusion"
       >
         <div
           class="c4"
+          variant="fusion"
         >
           <input
             aria-describedby="label-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="label-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="fusion"
           />
           <label
             class="c6 c7"
             for="label-input"
+            inputwidth="0"
+            variant="fusion"
           >
             Label
           </label>
         </div>
         <svg
-          class="c8 c9 sc-1668uuz-0 c10 c11"
+          class="c8 c9 c10 c11 c12"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -6480,32 +5301,44 @@ exports[`SingleSelect component with fusion variant should render properly when 
         </svg>
       </div>
       <span
-        class="c12 c13"
+        class="c13 c14"
         id="label-helper-text"
+        variant="fusion"
       >
         Helper Text
       </span>
     </div>
     <ul
-      class="c14"
+      class="c15"
       id="label-options"
+      variant="fusion"
     >
       <li
-        class="c15"
+        class="c16"
         id="All"
+        variant="fusion"
       >
         <span
-          class="c16 c17"
+          class="c17 c18"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           All
         </span>
       </li>
       <li
-        class="c18"
+        class="c19"
         id="Dummy1"
+        variant="fusion"
       >
         <span
-          class="c16 c19"
+          class="c17 c20"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Medium"
         >
           Dummy1
         </span>
@@ -6524,11 +5357,16 @@ exports[`SingleSelect component with fusion variant should render properly when 
         </svg>
       </li>
       <li
-        class="c15"
+        class="c16"
         id="Dummy2"
+        variant="fusion"
       >
         <span
-          class="c16 c17"
+          class="c17 c18"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           Dummy2
         </span>
@@ -6548,24 +5386,32 @@ exports[`SingleSelect component with fusion variant should render properly when 
         </svg>
       </li>
       <li
-        class="c15"
+        class="c16"
         id="Dummy3"
+        variant="fusion"
       >
         <span
-          class="c16 c17"
+          class="c17 c18"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           Dummy3
         </span>
       </li>
       <li
-        class="c15"
+        class="c16"
         id="Custom-component"
+        variant="fusion"
       >
         <div
-          class="c20"
+          class="c21"
         >
           <span
-            class="c16 c21"
+            class="c17 c22"
+            textalign="initial"
+            textcolor="inherit"
           >
             Component
           </span>
@@ -6580,32 +5426,26 @@ exports[`SingleSelect component with fusion variant should render with label pro
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c13 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.4rem 1.6rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c10 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c10 * {
@@ -6616,65 +5456,47 @@ exports[`SingleSelect component with fusion variant should render with label pro
   fill: #607890;
 }
 
+.c11 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.c7::after {
+.c7 ::after {
   content: ' (optional)';
 }
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   background-color: #ffffff;
@@ -6686,7 +5508,7 @@ exports[`SingleSelect component with fusion variant should render with label pro
   color: #546A7F;
 }
 
-.c3 ~ .c11 {
+.c3~.c12 {
   color: #546A7F;
 }
 
@@ -6702,7 +5524,6 @@ exports[`SingleSelect component with fusion variant should render with label pro
   left: 0;
   pointer-events: none;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
   border-width: 0.15rem;
@@ -6750,51 +5571,23 @@ exports[`SingleSelect component with fusion variant should render with label pro
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: #C7D0D8;
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
   color: #C7D0D8;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -6807,26 +5600,20 @@ exports[`SingleSelect component with fusion variant should render with label pro
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 1.3rem;
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -6837,18 +5624,6 @@ exports[`SingleSelect component with fusion variant should render with label pro
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -6857,66 +5632,40 @@ exports[`SingleSelect component with fusion variant should render with label pro
   color: #546A7F;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   background-color: white;
   padding: 0 0.5rem;
-  -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
-  -ms-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1i29ttz-0,
-.c5:focus ~ .sc-1i29ttz-0 {
+.c5:not(:placeholder-shown)~.sc-1i29ttz-0,
+.c5:focus~.sc-1i29ttz-0 {
   background-color: white;
   padding: 0 0.5rem;
-  -webkit-transform: translateY(-167%);
-  -ms-transform: translateY(-167%);
   transform: translateY(-167%);
 }
 
-.c5:focus ~ .c6 {
+.c5:focus~.c6 {
   font-weight: 600;
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -6938,11 +5687,7 @@ exports[`SingleSelect component with fusion variant should render with label pro
 }
 
 .c0 .c1 .c9 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -6954,36 +5699,47 @@ exports[`SingleSelect component with fusion variant should render with label pro
   <div
     class="c0"
     id="label-wrapper"
+    minwidth="20rem"
+    variant="fusion"
   >
     <div
       class="c1 c2"
       id="label-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="fusion"
       >
         <div
           class="c4"
+          variant="fusion"
         >
           <input
             aria-describedby="label-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="label-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="fusion"
           />
           <label
             class="c6 c7"
             for="label-input"
+            inputwidth="0"
+            variant="fusion"
           >
             Label
           </label>
         </div>
         <svg
-          class="c8 sc-1668uuz-0 c9 c10"
+          class="c8 c9 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -6997,8 +5753,9 @@ exports[`SingleSelect component with fusion variant should render with label pro
         </svg>
       </div>
       <span
-        class="c11 c12"
+        class="c12 c13"
         id="label-helper-text"
+        variant="fusion"
       >
         Helper Text
       </span>
@@ -7011,32 +5768,26 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c13 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c10 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c10 * {
@@ -7047,38 +5798,29 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   fill: #b0bcc8;
 }
 
+.c11 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -7087,21 +5829,12 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
@@ -7114,7 +5847,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   color: #607890;
 }
 
-.c3 ~ .c11 {
+.c3~.c12 {
   color: #546A7F;
 }
 
@@ -7134,7 +5867,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   left: 0;
   pointer-events: none;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
   border-width: 0.4rem;
@@ -7166,11 +5898,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   color: #b0bcc8;
 }
 
-.c3 .sc-1i29ttz-0 {
-  color: #b0bcc8;
-}
-
-.c3 ~ .c11 {
+.c3~.c12 {
   color: #b0bcc8;
 }
 
@@ -7179,30 +5907,17 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -7215,7 +5930,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
@@ -7225,12 +5939,9 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -7241,18 +5952,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -7261,51 +5960,27 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   color: #435465;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -7321,11 +5996,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c0 .c1 .c9 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -7334,36 +6005,47 @@ exports[`SingleSelect component with outlined variant should render disabled sta
     class="c0"
     disabled=""
     id="medly-singleSelect-wrapper"
+    minwidth="20rem"
+    variant="outlined"
   >
     <div
       class="c1 c2"
       id="medly-singleSelect-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
         disabled=""
+        minrows="1"
+        variant="outlined"
       >
         <div
           class="c4"
+          variant="outlined"
         >
           <input
             aria-describedby="medly-singleSelect-helper-text"
             autocomplete="off"
             class="c5"
             disabled=""
+            errortext=""
             id="medly-singleSelect-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="outlined"
           />
           <label
             class="c6 c7"
             for="medly-singleSelect-input"
+            inputwidth="0"
+            variant="outlined"
           />
         </div>
         <svg
-          class="c8 sc-1668uuz-0 c9 c10"
+          class="c8 c9 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -7377,8 +6059,9 @@ exports[`SingleSelect component with outlined variant should render disabled sta
         </svg>
       </div>
       <span
-        class="c11 c12"
+        class="c12 c13"
         id="medly-singleSelect-helper-text"
+        variant="outlined"
       >
         Helper Text
       </span>
@@ -7393,9 +6076,6 @@ exports[`SingleSelect component with outlined variant should render options corr
   color: inherit;
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
@@ -7405,14 +6085,12 @@ exports[`SingleSelect component with outlined variant should render options corr
 .c5 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c5 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -7423,18 +6101,10 @@ exports[`SingleSelect component with outlined variant should render options corr
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -7442,7 +6112,7 @@ exports[`SingleSelect component with outlined variant should render options corr
   background-color: #F7F8F9;
 }
 
-.c1:hover > .c2 {
+.c1:hover>.c2 {
   color: #13181D;
 }
 
@@ -7450,23 +6120,18 @@ exports[`SingleSelect component with outlined variant should render options corr
   background-color: #eff2f4;
 }
 
-.c1 > .c2 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c1>.c2 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c1 > .c4 {
+.c1>.c4 {
   margin-left: 1.6rem;
 }
 
-.c1 > .c4 * {
+.c1>.c4 * {
   fill: #13181D;
 }
 
@@ -7490,13 +6155,19 @@ exports[`SingleSelect component with outlined variant should render options corr
 <ul
   class="c0"
   id="medly-singleSelect-options"
+  variant="outlined"
 >
   <li
     class="c1"
     id="All"
+    variant="outlined"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       All
     </span>
@@ -7504,9 +6175,14 @@ exports[`SingleSelect component with outlined variant should render options corr
   <li
     class="c1"
     id="Dummy1"
+    variant="outlined"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       Dummy1
     </span>
@@ -7514,9 +6190,14 @@ exports[`SingleSelect component with outlined variant should render options corr
   <li
     class="c1"
     id="Dummy2"
+    variant="outlined"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       Dummy2
     </span>
@@ -7538,9 +6219,14 @@ exports[`SingleSelect component with outlined variant should render options corr
   <li
     class="c1"
     id="Dummy3"
+    variant="outlined"
   >
     <span
       class="c2 c3"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body1"
+      textweight="Regular"
     >
       Dummy3
     </span>
@@ -7552,21 +6238,18 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c10 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c10 * {
@@ -7577,38 +6260,29 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   fill: #607890;
 }
 
+.c11 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -7617,21 +6291,12 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
@@ -7642,7 +6307,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   color: #607890;
 }
 
-.c3 ~ .sc-avlt8d-0 {
+.c3~.sc-avlt8d-0 {
   color: #546A7F;
 }
 
@@ -7662,7 +6327,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   left: 0;
   pointer-events: none;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
   border-width: 0.4rem;
@@ -7710,51 +6374,23 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: #C7D0D8;
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
   color: #C7D0D8;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -7767,7 +6403,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
@@ -7777,12 +6412,9 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -7793,18 +6425,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -7813,51 +6433,27 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   color: #435465;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   min-width: 20rem;
   width: 100%;
@@ -7880,11 +6476,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c0 .c1 .c9 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -7896,34 +6488,45 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   <div
     class="c0"
     id="medly-singleSelect-wrapper"
+    minwidth="20rem"
+    variant="outlined"
   >
     <div
       class="c1 c2"
       id="medly-singleSelect-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="outlined"
       >
         <div
           class="c4"
+          variant="outlined"
         >
           <input
             aria-describedby="medly-singleSelect-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="medly-singleSelect-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="outlined"
           />
           <label
             class="c6 c7"
             for="medly-singleSelect-input"
+            inputwidth="0"
+            variant="outlined"
           />
         </div>
         <svg
-          class="c8 sc-1668uuz-0 c9 c10"
+          class="c8 c9 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -7936,49 +6539,39 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
           />
         </svg>
       </div>
-      
     </div>
   </div>
 </div>
 `;
 
 exports[`SingleSelect component with outlined variant should render properly when option is custom component 1`] = `
-.c17 {
+.c18 {
   margin: 0;
   color: inherit;
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c19 {
+.c20 {
   margin: 0;
   color: inherit;
   font-size: 1.6rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c21 {
+.c22 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -7988,32 +6581,26 @@ exports[`SingleSelect component with outlined variant should render properly whe
 .c9 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c9 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c13 {
+.c14 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c11 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c11 * {
@@ -8032,38 +6619,29 @@ exports[`SingleSelect component with outlined variant should render properly whe
   fill: #607890;
 }
 
+.c12 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -8072,21 +6650,12 @@ exports[`SingleSelect component with outlined variant should render properly whe
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
@@ -8097,7 +6666,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
   color: #607890;
 }
 
-.c3 ~ .c12 {
+.c3~.c13 {
   color: #546A7F;
 }
 
@@ -8117,7 +6686,6 @@ exports[`SingleSelect component with outlined variant should render properly whe
   left: 0;
   pointer-events: none;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
   border-width: 0.4rem;
@@ -8165,51 +6733,23 @@ exports[`SingleSelect component with outlined variant should render properly whe
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: #C7D0D8;
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
   color: #C7D0D8;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -8222,26 +6762,20 @@ exports[`SingleSelect component with outlined variant should render properly whe
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 0.6rem;
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -8252,18 +6786,6 @@ exports[`SingleSelect component with outlined variant should render properly whe
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -8272,157 +6794,104 @@ exports[`SingleSelect component with outlined variant should render properly whe
   color: #435465;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
-.c15 {
+.c16 {
   cursor: pointer;
   padding: 0 0.8rem;
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
-.c15:hover {
+.c16:hover {
   background-color: #F7F8F9;
 }
 
-.c15:hover > .c16 {
+.c16:hover>.c17 {
   color: #13181D;
 }
 
-.c15:active {
+.c16:active {
   background-color: #eff2f4;
 }
 
-.c15 > .c16 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c16>.c17 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #13181D;
 }
 
-.c15 > .c8 {
+.c16>.c8 {
   margin-left: 1.6rem;
 }
 
-.c15 > .c8 * {
+.c16>.c8 * {
   fill: #13181D;
 }
 
-.c18 {
+.c19 {
   cursor: pointer;
   padding: 0 0.8rem;
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #EBF1FA;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
-.c18:hover > .c16 {
+.c19:hover>.c17 {
   color: #13181D;
 }
 
-.c18 > .c16 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c19>.c17 {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   color: #3872D2;
 }
 
-.c18 > .c8 {
+.c19>.c8 {
   margin-left: 1.6rem;
 }
 
-.c18 > .c8 * {
+.c19>.c8 * {
   fill: #3872D2;
 }
 
-.c20 {
+.c21 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: start;
-  -ms-flex-pack: start;
   justify-content: start;
 }
 
-.c14 {
+.c15 {
   z-index: 4;
   position: absolute;
   background: #ffffff;
@@ -8439,39 +6908,32 @@ exports[`SingleSelect component with outlined variant should render properly whe
   max-height: 20rem;
 }
 
-.c22 .c1 {
+.c23 .c1 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c22 .c1 label {
+.c23 .c1 label {
   pointer-events: none;
 }
 
-.c22 .c1 div,
-.c22 .c1 input,
-.c22 .c1 label {
+.c23 .c1 div,
+.c23 .c1 input,
+.c23 .c1 label {
   cursor: pointer;
 }
 
-.c22 .c1 .c10 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
+.c23 .c1 .c10 {
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c22 .c1:not(:focus-within):hover .c10 * {
+.c23 .c1:not(:focus-within):hover .c10 * {
   fill: #13181D;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -8493,11 +6955,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
 }
 
 .c0 .c1 .c10 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -8509,36 +6967,47 @@ exports[`SingleSelect component with outlined variant should render properly whe
   <div
     class="c0"
     id="label-wrapper"
+    minwidth="20rem"
+    variant="outlined"
   >
     <div
       class="c1 c2"
       id="label-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="outlined"
       >
         <div
           class="c4"
+          variant="outlined"
         >
           <input
             aria-describedby="label-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="label-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="outlined"
           />
           <label
             class="c6 c7"
             for="label-input"
+            inputwidth="0"
+            variant="outlined"
           >
             Label
           </label>
         </div>
         <svg
-          class="c8 c9 sc-1668uuz-0 c10 c11"
+          class="c8 c9 c10 c11 c12"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -8552,32 +7021,44 @@ exports[`SingleSelect component with outlined variant should render properly whe
         </svg>
       </div>
       <span
-        class="c12 c13"
+        class="c13 c14"
         id="label-helper-text"
+        variant="outlined"
       >
         Helper Text
       </span>
     </div>
     <ul
-      class="c14"
+      class="c15"
       id="label-options"
+      variant="outlined"
     >
       <li
-        class="c15"
+        class="c16"
         id="All"
+        variant="outlined"
       >
         <span
-          class="c16 c17"
+          class="c17 c18"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           All
         </span>
       </li>
       <li
-        class="c18"
+        class="c19"
         id="Dummy1"
+        variant="outlined"
       >
         <span
-          class="c16 c19"
+          class="c17 c20"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Medium"
         >
           Dummy1
         </span>
@@ -8596,11 +7077,16 @@ exports[`SingleSelect component with outlined variant should render properly whe
         </svg>
       </li>
       <li
-        class="c15"
+        class="c16"
         id="Dummy2"
+        variant="outlined"
       >
         <span
-          class="c16 c17"
+          class="c17 c18"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           Dummy2
         </span>
@@ -8620,24 +7106,32 @@ exports[`SingleSelect component with outlined variant should render properly whe
         </svg>
       </li>
       <li
-        class="c15"
+        class="c16"
         id="Dummy3"
+        variant="outlined"
       >
         <span
-          class="c16 c17"
+          class="c17 c18"
+          textalign="initial"
+          textcolor="inherit"
+          textvariant="body1"
+          textweight="Regular"
         >
           Dummy3
         </span>
       </li>
       <li
-        class="c15"
+        class="c16"
         id="Custom-component"
+        variant="outlined"
       >
         <div
-          class="c20"
+          class="c21"
         >
           <span
-            class="c16 c21"
+            class="c17 c22"
+            textalign="initial"
+            textcolor="inherit"
           >
             Component
           </span>
@@ -8652,32 +7146,26 @@ exports[`SingleSelect component with outlined variant should render with label p
 .c8 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c13 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .c10 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c10 * {
@@ -8688,38 +7176,29 @@ exports[`SingleSelect component with outlined variant should render with label p
   fill: #607890;
 }
 
+.c11 {
+  margin-left: 1.6rem;
+}
+
 .c7 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -8728,21 +7207,12 @@ exports[`SingleSelect component with outlined variant should render with label p
 
 .c3 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
@@ -8753,7 +7223,7 @@ exports[`SingleSelect component with outlined variant should render with label p
   color: #607890;
 }
 
-.c3 ~ .c11 {
+.c3~.c12 {
   color: #546A7F;
 }
 
@@ -8773,7 +7243,6 @@ exports[`SingleSelect component with outlined variant should render with label p
   left: 0;
   pointer-events: none;
   background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.4rem;
   border-width: 0.4rem;
@@ -8821,51 +7290,23 @@ exports[`SingleSelect component with outlined variant should render with label p
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3:focus-within input::-webkit-input-placeholder,
-.c3:focus-within:hover input::-webkit-input-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input::-moz-placeholder,
-.c3:focus-within:hover input::-moz-placeholder {
-  color: #C7D0D8;
-}
-
-.c3:focus-within input:-ms-input-placeholder,
-.c3:focus-within:hover input:-ms-input-placeholder {
-  color: #C7D0D8;
-}
-
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
   color: #C7D0D8;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c2 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -8878,26 +7319,20 @@ exports[`SingleSelect component with outlined variant should render with label p
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 0.6rem;
 }
 
 .c5,
-.c5 ~ .sc-1r5xr2a-0 {
+.c5~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -8908,18 +7343,6 @@ exports[`SingleSelect component with outlined variant should render with label p
   box-shadow: unset;
 }
 
-.c5.c5.c5:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5.c5.c5:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
@@ -8928,51 +7351,27 @@ exports[`SingleSelect component with outlined variant should render with label p
   color: #435465;
 }
 
-.c5:disabled ~ .c6,
-.c5:disabled ~ .sc-1r5xr2a-0 {
+.c5:disabled~.c6,
+.c5:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c5::-webkit-input-placeholder {
+.c5 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c5::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c5:not(:placeholder-shown) ~ .c6,
-.c5:focus ~ .c6 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c5:not(:placeholder-shown)~.c6,
+.c5:focus~.c6 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c5:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
@@ -8994,11 +7393,7 @@ exports[`SingleSelect component with outlined variant should render with label p
 }
 
 .c0 .c1 .c9 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -9010,36 +7405,47 @@ exports[`SingleSelect component with outlined variant should render with label p
   <div
     class="c0"
     id="label-wrapper"
+    minwidth="20rem"
+    variant="outlined"
   >
     <div
       class="c1 c2"
       id="label-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c3"
+        minrows="1"
+        variant="outlined"
       >
         <div
           class="c4"
+          variant="outlined"
         >
           <input
             aria-describedby="label-helper-text"
             autocomplete="off"
             class="c5"
+            errortext=""
             id="label-input"
             inputmode="none"
+            inputsize="M"
             placeholder="Please Select . . ."
             type="text"
             value="Dummy1"
+            variant="outlined"
           />
           <label
             class="c6 c7"
             for="label-input"
+            inputwidth="0"
+            variant="outlined"
           >
             Label
           </label>
         </div>
         <svg
-          class="c8 sc-1668uuz-0 c9 c10"
+          class="c8 c9 c10 c11"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -9053,8 +7459,9 @@ exports[`SingleSelect component with outlined variant should render with label p
         </svg>
       </div>
       <span
-        class="c11 c12"
+        class="c12 c13"
         id="label-helper-text"
+        variant="outlined"
       >
         Helper Text
       </span>

@@ -1,9 +1,8 @@
-import { Theme } from '@medly-components/theme';
 import { HTMLProps } from '@medly-components/utils';
-import { StyledComponent } from 'styled-components';
-import Label from '../Label';
-import { LabelPositions } from '../Label/types';
-import Text from '../Text';
+import type { ReactNode } from 'react';
+import { IStyledComponent } from 'styled-components';
+import type { LabelPositions, LabelProps } from '../Label/types';
+import type { TextProps } from '../Text/types';
 
 export interface FieldWithLabelProps extends HTMLProps<HTMLDivElement> {
     /** Label Position */
@@ -25,7 +24,7 @@ export interface FieldStyledProps {
 }
 
 export interface StaticProps {
-    Field: StyledComponent<'div', Theme, FieldStyledProps>;
-    Label: StyledComponent<typeof Label, Theme>;
-    Description: StyledComponent<typeof Text, Theme>;
+    Field: IStyledComponent<'web', FieldStyledProps & { children: ReactNode }>;
+    Label: IStyledComponent<'web', LabelProps>;
+    Description: IStyledComponent<'web', TextProps>;
 }

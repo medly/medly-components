@@ -6,9 +6,6 @@ exports[`Cell should not render text if hidden property is given 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -18,20 +15,11 @@ exports[`Cell should not render text if hidden property is given 1`] = `
 .c0 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 0;
   padding: 0;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -45,9 +33,12 @@ exports[`Cell should not render text if hidden property is given 1`] = `
   <td
     class="c0"
     hidden=""
+    tablesize="M"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy
     </span>
@@ -59,14 +50,12 @@ exports[`Cell should render checkbox properly 1`] = `
 .c10 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c10 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -76,9 +65,6 @@ exports[`Cell should render checkbox properly 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -86,9 +72,6 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   cursor: inherit;
   color: inherit;
@@ -101,29 +84,16 @@ exports[`Cell should render checkbox properly 1`] = `
   width: 100%;
   height: 100%;
   border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c8 .c9 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   width: 100%;
   height: 100%;
@@ -141,39 +111,35 @@ exports[`Cell should render checkbox properly 1`] = `
   position: absolute;
 }
 
-.c6:checked ~ .c7 {
+.c6:checked~.c7 {
   border-color: #3872D2;
   background-color: #3872D2;
 }
 
-.c6:checked ~ .c7 .c9 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+.c6:checked~.c7 .c9 {
   transform: scale(1);
 }
 
-.c6:checked ~ .c7 .c9 * {
+.c6:checked~.c7 .c9 * {
   fill: #ffffff;
 }
 
-.c6:not(:checked) ~ .c7 {
+.c6:not(:checked)~.c7 {
   background-color: transparent;
   border-color: #13181D;
 }
 
-.c6:not(:disabled):focus ~ .c7 {
+.c6:not(:disabled):focus~.c7 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
   border-color: #3872D2;
 }
 
-.c6:not(:disabled):focus:not(:checked) ~ .c7 {
+.c6:not(:disabled):focus:not(:checked)~.c7 {
   border-color: #3872D2;
 }
 
 .c5 {
   margin: 0.3rem;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -181,22 +147,11 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
   padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -217,20 +172,11 @@ exports[`Cell should render checkbox properly 1`] = `
 .c0 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 1.2rem 1.6rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -243,17 +189,20 @@ exports[`Cell should render checkbox properly 1`] = `
 <div>
   <td
     class="c0"
+    tablesize="M"
   >
-    
     <label
       class="c1"
       for="Dummy"
       id="Dummy-wrapper"
-      sizes="[object Object]"
+      labelposition="right"
     >
       <span
         class="c2 c3 c4"
         id="Dummy-label"
+        labelposition="right"
+        textalign="initial"
+        textcolor="inherit"
         type="checkbox"
       >
         Dummy
@@ -264,7 +213,6 @@ exports[`Cell should render checkbox properly 1`] = `
         <input
           class="c6"
           id="Dummy"
-          sizes="[object Object]"
           type="checkbox"
         />
         <div
@@ -296,9 +244,6 @@ exports[`Cell should render frozen text properly 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -308,22 +253,12 @@ exports[`Cell should render frozen text properly 1`] = `
 .c0 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 1.2rem 1.6rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   z-index: 1;
@@ -342,9 +277,12 @@ exports[`Cell should render frozen text properly 1`] = `
 <div>
   <td
     class="c0"
+    tablesize="M"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy
     </span>
@@ -358,9 +296,6 @@ exports[`Cell should render text properly 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -370,20 +305,11 @@ exports[`Cell should render text properly 1`] = `
 .c0 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 1.2rem 1.6rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -396,9 +322,12 @@ exports[`Cell should render text properly 1`] = `
 <div>
   <td
     class="c0"
+    tablesize="M"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy
     </span>
@@ -412,9 +341,6 @@ exports[`Cell should render tooltip properly 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -424,20 +350,11 @@ exports[`Cell should render tooltip properly 1`] = `
 .c0 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   opacity: 1;
   padding: 1.2rem 1.6rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -450,9 +367,13 @@ exports[`Cell should render tooltip properly 1`] = `
 <div>
   <td
     class="c0"
+    tablesize="M"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
       title="hello"
     >
       hello

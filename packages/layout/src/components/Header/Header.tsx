@@ -1,13 +1,13 @@
 import { layoutDefaultTheme } from '@medly-components/theme';
 import { WithStyle } from '@medly-components/utils';
-import { FC, useState } from 'react';
+import { FCC, useState } from 'react';
 import HeaderContext from './Header.context';
 import { Container, Content, HamburgerIcon } from './Header.styled';
 import Nav from './Nav';
 import NavItem from './NavItem';
 import { HeaderProps, HeaderStaticProps } from './types';
 
-const Header: FC<HeaderProps> & HeaderStaticProps & WithStyle = ({ children, withNav, ...resProps }) => {
+const Header: FCC<HeaderProps> & HeaderStaticProps & WithStyle = ({ children, withNav, ...resProps }) => {
     const [isOpen, toggleIsOpen] = useState(false);
     return (
         <Container {...resProps}>

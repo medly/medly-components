@@ -1,10 +1,28 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Props } from './types';
 
-export const Row = styled('tr').attrs(({ withWhiteBackground, theme: { cardTable } }: Props) => ({
-    bgTheme: withWhiteBackground ? 'lightBackground' : 'darkBackground',
-    cardTable
-}))<Props & { bgTheme: 'lightBackground' | 'darkBackground' }>`
+const getStyle = ({ withWhiteBackground, isRowClickDisabled }: Props) => {
+    const bgTheme = withWhiteBackground ? 'lightBackground' : 'darkBackground';
+    return css`
+        border: 0.1rem solid ${({ theme }) => theme.cardTable[bgTheme].borderColor};
+        box-shadow: ${({ theme }) => theme.cardTable[bgTheme].boxShadow};
+
+        &:hover {
+            box-shadow: ${({ theme }) => theme.cardTable[bgTheme].hoverBoxShadow};
+        }
+
+        :nth-child(odd) {
+            background: ${({ theme }) =>
+                !isRowClickDisabled ? theme.cardTable[bgTheme].oddRowBgColor : theme.cardTable.disabledRowBgColor};
+        }
+        :nth-child(even) {
+            background: ${({ theme }) =>
+                !isRowClickDisabled ? theme.cardTable[bgTheme].evenRowBgColor : theme.cardTable.disabledRowBgColor};
+        }
+    `;
+};
+
+export const Row = styled('tr')<Props>`
     display: grid;
     grid-template-columns: ${({ gridTemplateColumns }) => gridTemplateColumns};
     cursor: ${({ onClick, isRowClickDisabled }) => (onClick && !isRowClickDisabled ? 'pointer' : 'inherit')};
@@ -13,21 +31,7 @@ export const Row = styled('tr').attrs(({ withWhiteBackground, theme: { cardTable
     margin-bottom: 0.8rem;
     background-color: white;
     transition: box-shadow 100ms ease-out;
-    border: 0.1rem solid ${({ bgTheme, cardTable }) => cardTable[bgTheme].borderColor};
-    box-shadow: ${({ bgTheme, cardTable }) => cardTable[bgTheme].boxShadow};
-
-    &:hover {
-        box-shadow: ${({ bgTheme, cardTable }) => cardTable[bgTheme].hoverBoxShadow};
-    }
-
-    :nth-child(odd) {
-        background: ${({ bgTheme, cardTable, isRowClickDisabled }) =>
-            !isRowClickDisabled ? cardTable[bgTheme].oddRowBgColor : cardTable.disabledRowBgColor};
-    }
-    :nth-child(even) {
-        background: ${({ bgTheme, cardTable, isRowClickDisabled }) =>
-            !isRowClickDisabled ? cardTable[bgTheme].evenRowBgColor : cardTable.disabledRowBgColor};
-    }
+    ${getStyle}
 `;
 
 export const NoResult = styled(Row)`

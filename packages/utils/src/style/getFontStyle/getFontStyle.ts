@@ -1,4 +1,5 @@
-import { FontVariants, FontWeights, Theme } from '@medly-components/theme';
+import type { Theme } from '@medly-components/theme';
+import { FontVariants, FontWeights } from '@medly-components/theme';
 import { css } from 'styled-components';
 
 export const getFontStyle = ({

@@ -6,9 +6,6 @@ exports[`CardTable Body should render card table body properly 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -18,20 +15,9 @@ exports[`CardTable Body should render card table body properly 1`] = `
 .c1 {
   padding: 0;
   padding: 1.5rem 2.4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   overflow: hidden;
 }
@@ -50,21 +36,20 @@ exports[`CardTable Body should render card table body properly 1`] = `
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
-  -webkit-transition: box-shadow 100ms ease-out;
   transition: box-shadow 100ms ease-out;
   border: 0.1rem solid #ffffff;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
 }
 
 .c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
+  box-shadow: 0 0.4rem 0.8rem rgba(176, 188, 200, 0.6);
 }
 
-.c0:nth-child(odd) {
+.c0 :nth-child(odd) {
   background: #ffffff;
 }
 
-.c0:nth-child(even) {
+.c0 :nth-child(even) {
   background: #ffffff;
 }
 
@@ -73,22 +58,29 @@ exports[`CardTable Body should render card table body properly 1`] = `
     <tbody>
       <tr
         class="c0"
+        gridtemplatecolumns="1fr 1fr "
       >
         <td
+          align="left"
           class="c1"
         >
           <span
             class="c2 c3"
+            textalign="initial"
+            textcolor="inherit"
             title="Oli Bob"
           >
             Oli Bob
           </span>
         </td>
         <td
+          align="left"
           class="c1"
         >
           <span
             class="c2 c3"
+            textalign="initial"
+            textcolor="inherit"
             title="Metaformin"
           >
             Metaformin
@@ -101,14 +93,11 @@ exports[`CardTable Body should render card table body properly 1`] = `
 `;
 
 exports[`CardTable Body should render no result row when there is no data 1`] = `
-.c1 {
+.c2 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -123,43 +112,41 @@ exports[`CardTable Body should render no result row when there is no data 1`] = 
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
-  -webkit-transition: box-shadow 100ms ease-out;
   transition: box-shadow 100ms ease-out;
   border: 0.1rem solid #ffffff;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+}
+
+.c0:hover {
+  box-shadow: 0 0.4rem 0.8rem rgba(176, 188, 200, 0.6);
+}
+
+.c0 :nth-child(odd) {
+  background: #ffffff;
+}
+
+.c0 :nth-child(even) {
+  background: #ffffff;
+}
+
+.c1 {
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 1.5rem 0;
 }
 
-.c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
-}
-
-.c0:nth-child(odd) {
-  background: #ffffff;
-}
-
-.c0:nth-child(even) {
-  background: #ffffff;
-}
-
 <div>
   <tr
-    class="sc-1fyt1yf-0 c0"
+    class="c0 c1"
+    gridtemplatecolumns="1fr 1fr "
   >
     <strong
-      class="c1"
+      class="c2"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="body2"
+      textweight="Strong"
     >
       No Result
     </strong>

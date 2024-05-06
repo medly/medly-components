@@ -1,11 +1,11 @@
 import { CheckIcon, MinimizeIcon } from '@medly-components/icons';
-import { isValidStringOrNumber, useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
-import { ChangeEvent, FC, FocusEvent, forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { WithStyle, isValidStringOrNumber, useCombinedRefs, useKeyPress } from '@medly-components/utils';
+import { ChangeEvent, FCC, FocusEvent, forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Checkbox.styled';
 import { CheckboxProps } from './types';
 
-const Component: FC<CheckboxProps> = memo(
+const Component: FCC<CheckboxProps> = memo(
     forwardRef((props, ref) => {
         const {
             id,
@@ -27,7 +27,10 @@ const Component: FC<CheckboxProps> = memo(
 
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             isSelectionKeyPressed = useKeyPress(' '),
-            inputId = useMemo(() => id || label, [id, label]),
+            inputId = useMemo(() => {
+                const _id = id || label;
+                return typeof _id === 'string' ? _id : '';
+            }, [id, label]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             isActive = useMemo(
                 () => inputProps.checked || inputProps.defaultChecked || indeterminate,
@@ -119,4 +122,4 @@ const Component: FC<CheckboxProps> = memo(
 
 Component.displayName = 'Checkbox';
 Component.defaultProps = { size: 'S', label: '', labelPosition: 'right' };
-export const Checkbox: FC<CheckboxProps> & WithStyle = Object.assign(Component, { Style: Styled.CheckboxWithLabelWrapper });
+export const Checkbox: FCC<CheckboxProps> & WithStyle = Object.assign(Component, { Style: Styled.CheckboxWithLabelWrapper });

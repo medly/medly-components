@@ -6,9 +6,6 @@ exports[`Card component should render correctly with all the default props 1`] =
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -18,25 +15,14 @@ exports[`Card component should render correctly with all the default props 1`] =
 .c0 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -66,11 +52,17 @@ exports[`Card component should render correctly with all the default props 1`] =
 
 <div>
   <div
+    alignitems="center"
     class="c0"
     display="block"
+    flex="1"
+    flowdirection="vertical"
+    variant="solid"
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Text
     </span>
@@ -84,9 +76,6 @@ exports[`Card component should render properly when flow direction is horizontal
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -96,145 +85,90 @@ exports[`Card component should render properly when flow direction is horizontal
 .c0 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
-.c0 > div + div {
+.c0 >div+div {
   border-left: 1px solid #98A7B7;
 }
 
 .c1 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c1 > div + div {
+.c1 >div+div {
   border-left: 1px solid #98A7B7;
 }
 
 .c3 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.c3 > div + div {
+.c3 >div+div {
   border-left: 1px solid #98A7B7;
 }
 
 .c4 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
-.c4 > div + div {
+.c4 >div+div {
   border-left: 1px solid #98A7B7;
 }
 
 .c5 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
   align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
-.c5 > div + div {
+.c5 >div+div {
   border-left: 1px solid #98A7B7;
 }
 
@@ -360,55 +294,89 @@ exports[`Card component should render properly when flow direction is horizontal
 
 <div>
   <div
+    alignitems="center"
     class="c0"
     display="block"
+    flex="1"
+    flowdirection="horizontal"
+    variant="solid"
   >
     <div
+      alignitems="left"
       class="c1"
       display="block"
+      flex="1"
+      flowdirection="horizontal"
+      variant="solid"
     >
       <span
         class="c2"
+        textalign="initial"
+        textcolor="inherit"
       >
         Dummy Text
       </span>
     </div>
     <div
+      alignitems="right"
       class="c3"
       display="block"
+      flex="1"
+      flowdirection="horizontal"
+      variant="solid"
     >
       <span
         class="c2"
+        textalign="initial"
+        textcolor="inherit"
       >
         Dummy Text
       </span>
     </div>
     <div
+      alignitems="top"
       class="c4"
       display="block"
+      flex="1"
+      flowdirection="horizontal"
+      variant="solid"
     >
       <span
         class="c2"
+        textalign="initial"
+        textcolor="inherit"
       >
         Dummy Text
       </span>
     </div>
     <div
+      alignitems="bottom"
       class="c5"
       display="block"
+      flex="1"
+      flowdirection="horizontal"
+      variant="solid"
     >
       <span
         class="c2"
+        textalign="initial"
+        textcolor="inherit"
       >
         Dummy Text
       </span>
     </div>
     <div
+      alignitems="center"
       class="c0"
       display="block"
+      flex="1"
+      flowdirection="horizontal"
+      variant="solid"
     >
       <span
         class="c2"
+        textalign="initial"
+        textcolor="inherit"
       >
         Dummy Text
       </span>
@@ -423,9 +391,6 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -435,27 +400,16 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
 .c0 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: block;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -485,11 +439,17 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
 
 <div>
   <div
+    alignitems="center"
     class="c0"
     display="block"
+    flex="1"
+    flowdirection="vertical"
+    variant="solid"
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Text
     </span>
@@ -503,9 +463,6 @@ exports[`Card component should render properly when it is clickable 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -515,25 +472,14 @@ exports[`Card component should render properly when it is clickable 1`] = `
 .c0 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -572,11 +518,17 @@ exports[`Card component should render properly when it is clickable 1`] = `
 
 <div>
   <div
+    alignitems="center"
     class="c0"
     display="block"
+    flex="1"
+    flowdirection="vertical"
+    variant="solid"
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Text
     </span>
@@ -590,9 +542,6 @@ exports[`Card component should render properly when separator is set true flow d
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -602,137 +551,82 @@ exports[`Card component should render properly when separator is set true flow d
 .c0 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
 }
 
-.c0 > div + div {
+.c0 >div+div {
   border-top: 1px solid #98A7B7;
 }
 
 .c1 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0;
   margin: 0;
   border: none;
   box-shadow: none;
   background-color: transparent;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
 }
 
 .c3 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 6;
-  -ms-flex: 6;
   flex: 6;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0;
   margin: 0;
   border: none;
   box-shadow: none;
   background-color: transparent;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
   align-items: flex-end;
 }
 
 .c4 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 6;
-  -ms-flex: 6;
   flex: 6;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0;
   margin: 0;
   border: none;
   box-shadow: none;
   background-color: transparent;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c5 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 6;
-  -ms-flex: 6;
   flex: 6;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0;
   margin: 0;
   border: none;
   box-shadow: none;
   background-color: transparent;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -834,45 +728,73 @@ exports[`Card component should render properly when separator is set true flow d
 
 <div>
   <div
+    alignitems="left"
     class="c0"
     display="block"
+    flex="1"
+    flowdirection="vertical"
+    variant="solid"
   >
     <div
+      alignitems="left"
       class="c1"
       display="block"
+      flex="1"
+      flowdirection="vertical"
+      variant="flat"
     >
       <span
         class="c2"
+        textalign="initial"
+        textcolor="inherit"
       >
         Marks
       </span>
     </div>
     <div
+      alignitems="right"
       class="c3"
       display="block"
+      flex="6"
+      flowdirection="vertical"
+      variant="flat"
     >
       <span
         class="c2"
+        textalign="initial"
+        textcolor="inherit"
       >
         Dummy Text
       </span>
     </div>
     <div
+      alignitems="top"
       class="c4"
       display="block"
+      flex="6"
+      flowdirection="vertical"
+      variant="flat"
     >
       <span
         class="c2"
+        textalign="initial"
+        textcolor="inherit"
       >
         Dummy Text
       </span>
     </div>
     <div
+      alignitems="bottom"
       class="c5"
       display="block"
+      flex="6"
+      flowdirection="vertical"
+      variant="flat"
     >
       <span
         class="c2"
+        textalign="initial"
+        textcolor="inherit"
       >
         Dummy Text
       </span>
@@ -887,9 +809,6 @@ exports[`Card component should render properly with "flat" variant 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -899,27 +818,16 @@ exports[`Card component should render properly with "flat" variant 1`] = `
 .c0 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0;
   margin: 0;
   border: none;
   box-shadow: none;
   background-color: transparent;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -949,11 +857,17 @@ exports[`Card component should render properly with "flat" variant 1`] = `
 
 <div>
   <div
+    alignitems="center"
     class="c0"
     display="block"
+    flex="1"
+    flowdirection="vertical"
+    variant="flat"
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Text
     </span>
@@ -967,9 +881,6 @@ exports[`Card component should render properly with "solid" variant 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -979,25 +890,14 @@ exports[`Card component should render properly with "solid" variant 1`] = `
 .c0 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1027,11 +927,17 @@ exports[`Card component should render properly with "solid" variant 1`] = `
 
 <div>
   <div
+    alignitems="center"
     class="c0"
     display="block"
+    flex="1"
+    flowdirection="vertical"
+    variant="solid"
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Text
     </span>
@@ -1045,9 +951,6 @@ exports[`Card component should render properly with display "block" 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1057,25 +960,14 @@ exports[`Card component should render properly with display "block" 1`] = `
 .c0 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   display: inline-block;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1105,11 +997,17 @@ exports[`Card component should render properly with display "block" 1`] = `
 
 <div>
   <div
+    alignitems="center"
     class="c0"
     display="block"
+    flex="1"
+    flowdirection="vertical"
+    variant="solid"
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Text
     </span>
@@ -1123,9 +1021,6 @@ exports[`Card component should render properly with display "flex" 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1135,28 +1030,14 @@ exports[`Card component should render properly with display "flex" 1`] = `
 .c0 {
   overflow: auto;
   box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1186,11 +1067,17 @@ exports[`Card component should render properly with display "flex" 1`] = `
 
 <div>
   <div
+    alignitems="center"
     class="c0"
     display="flex"
+    flex="1"
+    flowdirection="vertical"
+    variant="solid"
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       Dummy Text
     </span>

@@ -2,18 +2,12 @@
 
 exports[`Accordion component should render properly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .c4 {
   overflow: hidden;
-  -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
   max-height: 0;
   opacity: 0;
@@ -24,14 +18,12 @@ exports[`Accordion component should render properly 1`] = `
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c3 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -40,12 +32,8 @@ exports[`Accordion component should render properly 1`] = `
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
   outline: none;
   border: 0;
@@ -55,7 +43,6 @@ exports[`Accordion component should render properly 1`] = `
   border-top-right-radius: 0.8rem;
   border-bottom-left-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
-  -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
 
@@ -63,11 +50,7 @@ exports[`Accordion component should render properly 1`] = `
   position: absolute;
   right: 2rem;
   top: 50%;
-  -webkit-transform: translateY(-50%) rotate(0deg);
-  -ms-transform: translateY(-50%) rotate(0deg);
   transform: translateY(-50%) rotate(0deg);
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
 }
 

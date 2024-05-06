@@ -4,14 +4,12 @@ exports[`Calendar Component should render given date 1`] = `
 .c7 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c7 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -19,14 +17,12 @@ exports[`Calendar Component should render given date 1`] = `
 .c10 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c10 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -36,9 +32,6 @@ exports[`Calendar Component should render given date 1`] = `
   color: inherit;
   font-size: 1.2rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
@@ -50,9 +43,6 @@ exports[`Calendar Component should render given date 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -64,9 +54,6 @@ exports[`Calendar Component should render given date 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -78,11 +65,7 @@ exports[`Calendar Component should render given date 1`] = `
   background: #ffffff;
   box-shadow: 0 0.2rem 0.8rem #b0bcc8;
   border-radius: 0.4rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
 }
 
@@ -94,19 +77,9 @@ exports[`Calendar Component should render given date 1`] = `
   outline: none;
   cursor: pointer;
   color: #435465;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -124,17 +97,8 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c1 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -147,12 +111,8 @@ exports[`Calendar Component should render given date 1`] = `
 .c14 {
   background-color: transparent;
   border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border-radius: 50%;
   padding: 0;
@@ -160,17 +120,8 @@ exports[`Calendar Component should render given date 1`] = `
   box-sizing: border-box;
   height: 3.2rem;
   color: #b0bcc8;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -190,29 +141,16 @@ exports[`Calendar Component should render given date 1`] = `
 .c16 {
   background-color: transparent;
   border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border-radius: 50%;
   padding: 0;
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -242,29 +180,16 @@ exports[`Calendar Component should render given date 1`] = `
 .c17 {
   background-color: transparent;
   border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border-radius: 50%;
   padding: 0;
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -282,64 +207,36 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
 }
 
 .c8 {
   pointer-events: none;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
 .c5 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
   height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   width: '100%';
   border-radius: 0.8rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 .c5,
 .c5 * {
   cursor: pointer;
-}
-
-.c5,
-.c5 .sc-975cgx-0 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c5:focus {
@@ -360,10 +257,6 @@ exports[`Calendar Component should render given date 1`] = `
   fill: #b0bcc8;
 }
 
-.c5:disabled .sc-975cgx-0 {
-  color: #b0bcc8;
-}
-
 .c5:not(:disabled):not(:hover) {
   color: #3872D2;
   background: #ffffff;
@@ -373,10 +266,6 @@ exports[`Calendar Component should render given date 1`] = `
   fill: #3872D2;
 }
 
-.c5:not(:disabled):not(:hover) .sc-975cgx-0 {
-  color: #303C48;
-}
-
 .c5:not(:disabled):active {
   color: #275093;
   background: #eff2f4;
@@ -384,10 +273,6 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c5:not(:disabled):active * {
   fill: #275093;
-}
-
-.c5:not(:disabled):active .sc-975cgx-0 {
-  color: #13181D;
 }
 
 .c5:not(:disabled):not(:active):hover {
@@ -400,59 +285,17 @@ exports[`Calendar Component should render given date 1`] = `
   fill: #3061B3;
 }
 
-.c5:not(:disabled):not(:active):hover .sc-975cgx-0 {
-  color: #303C48;
-}
-
 .c3 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c3 .sc-17d4s39-0 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c3 .sc-17d4s39-0 label {
-  pointer-events: none;
-}
-
-.c3 .sc-17d4s39-0 div,
-.c3 .sc-17d4s39-0 input,
-.c3 .sc-17d4s39-0 label {
-  cursor: pointer;
-}
-
-.c3 .sc-17d4s39-0 .sc-1668uuz-2 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   margin: 0.5rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
   justify-content: space-around;
 }
 
@@ -461,20 +304,7 @@ exports[`Calendar Component should render given date 1`] = `
   overflow: auto;
 }
 
-.c2 .sc-17d4s39-0 {
-  min-width: unset;
-  max-width: 9.5rem;
-}
-
-.c2 .sc-17d4s39-0 > div {
-  height: 3.5rem;
-  padding: 0 0 0 1rem;
-}
-
 .c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   text-align: center;
   padding: 0.8rem 1rem;
@@ -495,6 +325,8 @@ exports[`Calendar Component should render given date 1`] = `
         <div
           class="c3"
           id="test-calendar-month-selector-wrapper"
+          minwidth="fit-content"
+          variant="flat"
         >
           <div
             class="c4"
@@ -502,12 +334,16 @@ exports[`Calendar Component should render given date 1`] = `
           >
             <button
               class="c5"
+              errortext=""
               id="test-calendar-month-selector-button"
               type="button"
             >
-              
               <span
                 class="c6"
+                textalign="initial"
+                textcolor="inherit"
+                textvariant="body3"
+                textweight="Medium"
               >
                 Jan
               </span>
@@ -530,6 +366,8 @@ exports[`Calendar Component should render given date 1`] = `
         <div
           class="c3"
           id="test-calendar-year-selector-wrapper"
+          minwidth="fit-content"
+          variant="flat"
         >
           <div
             class="c4"
@@ -537,12 +375,16 @@ exports[`Calendar Component should render given date 1`] = `
           >
             <button
               class="c5"
+              errortext=""
               id="test-calendar-year-selector-button"
               type="button"
             >
-              
               <span
                 class="c6"
+                textalign="initial"
+                textcolor="inherit"
+                textvariant="body3"
+                textweight="Medium"
               >
                 2020
               </span>
@@ -609,36 +451,57 @@ exports[`Calendar Component should render given date 1`] = `
     >
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         S
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         M
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         T
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         W
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         T
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         F
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         S
       </strong>
@@ -649,6 +512,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           29
         </span>
@@ -660,6 +525,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           30
         </span>
@@ -671,6 +538,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           31
         </span>
@@ -682,6 +551,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           1
         </span>
@@ -693,6 +564,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           2
         </span>
@@ -704,6 +577,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           3
         </span>
@@ -715,6 +590,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           4
         </span>
@@ -726,6 +603,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           5
         </span>
@@ -737,6 +616,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           6
         </span>
@@ -748,6 +629,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           7
         </span>
@@ -759,6 +642,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           8
         </span>
@@ -770,6 +655,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           9
         </span>
@@ -781,6 +668,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           10
         </span>
@@ -792,6 +681,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           11
         </span>
@@ -803,6 +694,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           12
         </span>
@@ -814,6 +707,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           13
         </span>
@@ -825,6 +720,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           14
         </span>
@@ -836,6 +733,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           15
         </span>
@@ -847,6 +746,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           16
         </span>
@@ -858,6 +759,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           17
         </span>
@@ -869,6 +772,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           18
         </span>
@@ -880,6 +785,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           19
         </span>
@@ -891,6 +798,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           20
         </span>
@@ -902,6 +811,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           21
         </span>
@@ -913,6 +824,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           22
         </span>
@@ -924,6 +837,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           23
         </span>
@@ -935,6 +850,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           24
         </span>
@@ -946,6 +863,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           25
         </span>
@@ -957,6 +876,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           26
         </span>
@@ -968,6 +889,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           27
         </span>
@@ -979,6 +902,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           28
         </span>
@@ -990,6 +915,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           29
         </span>
@@ -1001,6 +928,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           30
         </span>
@@ -1012,6 +941,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           31
         </span>
@@ -1023,6 +954,8 @@ exports[`Calendar Component should render given date 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           1
         </span>
@@ -1036,14 +969,12 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 .c7 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c7 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1051,14 +982,12 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 .c10 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c10 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -1068,9 +997,6 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   color: inherit;
   font-size: 1.2rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
   text-align: initial;
@@ -1082,9 +1008,6 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1096,9 +1019,6 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -1110,11 +1030,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   background: #ffffff;
   box-shadow: 0 0.2rem 0.8rem #b0bcc8;
   border-radius: 0.4rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
 }
 
@@ -1126,19 +1042,9 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   outline: none;
   cursor: pointer;
   color: #435465;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1156,17 +1062,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 
 .c1 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1179,12 +1076,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 .c14 {
   background-color: transparent;
   border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border-radius: 50%;
   padding: 0;
@@ -1192,17 +1085,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   box-sizing: border-box;
   height: 3.2rem;
   color: #b0bcc8;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1222,29 +1106,16 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 .c16 {
   background-color: transparent;
   border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border-radius: 50%;
   padding: 0;
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1274,29 +1145,16 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 .c17 {
   background-color: transparent;
   border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border-radius: 50%;
   padding: 0;
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1314,64 +1172,36 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
 }
 
 .c8 {
   pointer-events: none;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
 .c5 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
   height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   width: '100%';
   border-radius: 0.8rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 .c5,
 .c5 * {
   cursor: pointer;
-}
-
-.c5,
-.c5 .sc-975cgx-0 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c5:focus {
@@ -1392,10 +1222,6 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   fill: #b0bcc8;
 }
 
-.c5:disabled .sc-975cgx-0 {
-  color: #b0bcc8;
-}
-
 .c5:not(:disabled):not(:hover) {
   color: #D73A43;
   background: #ffffff;
@@ -1405,10 +1231,6 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   fill: #D73A43;
 }
 
-.c5:not(:disabled):not(:hover) .sc-975cgx-0 {
-  color: #303C48;
-}
-
 .c5:not(:disabled):active {
   color: #D73A43;
   background: #eff2f4;
@@ -1416,10 +1238,6 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 
 .c5:not(:disabled):active * {
   fill: #D73A43;
-}
-
-.c5:not(:disabled):active .sc-975cgx-0 {
-  color: #13181D;
 }
 
 .c5:not(:disabled):not(:active):hover {
@@ -1432,59 +1250,17 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   fill: #D73A43;
 }
 
-.c5:not(:disabled):not(:active):hover .sc-975cgx-0 {
-  color: #303C48;
-}
-
 .c3 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c3 .sc-17d4s39-0 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c3 .sc-17d4s39-0 label {
-  pointer-events: none;
-}
-
-.c3 .sc-17d4s39-0 div,
-.c3 .sc-17d4s39-0 input,
-.c3 .sc-17d4s39-0 label {
-  cursor: pointer;
-}
-
-.c3 .sc-17d4s39-0 .sc-1668uuz-2 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   margin: 0.5rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
   justify-content: space-around;
 }
 
@@ -1493,20 +1269,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   overflow: auto;
 }
 
-.c2 .sc-17d4s39-0 {
-  min-width: unset;
-  max-width: 9.5rem;
-}
-
-.c2 .sc-17d4s39-0 > div {
-  height: 3.5rem;
-  padding: 0 0 0 1rem;
-}
-
 .c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   text-align: center;
   padding: 0.8rem 1rem;
@@ -1527,6 +1290,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         <div
           class="c3"
           id="test-calendar-month-selector-wrapper"
+          minwidth="fit-content"
+          variant="flat"
         >
           <div
             class="c4"
@@ -1534,12 +1299,16 @@ exports[`Calendar Component should render properly with with error state 1`] = `
           >
             <button
               class="c5"
+              errortext=" "
               id="test-calendar-month-selector-button"
               type="button"
             >
-              
               <span
                 class="c6"
+                textalign="initial"
+                textcolor="inherit"
+                textvariant="body3"
+                textweight="Medium"
               >
                 Jan
               </span>
@@ -1557,12 +1326,13 @@ exports[`Calendar Component should render properly with with error state 1`] = `
                 />
               </svg>
             </button>
-            
           </div>
         </div>
         <div
           class="c3"
           id="test-calendar-year-selector-wrapper"
+          minwidth="fit-content"
+          variant="flat"
         >
           <div
             class="c4"
@@ -1570,12 +1340,16 @@ exports[`Calendar Component should render properly with with error state 1`] = `
           >
             <button
               class="c5"
+              errortext=" "
               id="test-calendar-year-selector-button"
               type="button"
             >
-              
               <span
                 class="c6"
+                textalign="initial"
+                textcolor="inherit"
+                textvariant="body3"
+                textweight="Medium"
               >
                 2020
               </span>
@@ -1593,7 +1367,6 @@ exports[`Calendar Component should render properly with with error state 1`] = `
                 />
               </svg>
             </button>
-            
           </div>
         </div>
       </div>
@@ -1643,36 +1416,57 @@ exports[`Calendar Component should render properly with with error state 1`] = `
     >
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         S
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         M
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         T
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         W
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         T
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         F
       </strong>
       <strong
         class="c12 c13"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         S
       </strong>
@@ -1683,6 +1477,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           29
         </span>
@@ -1694,6 +1490,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           30
         </span>
@@ -1705,6 +1503,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           31
         </span>
@@ -1716,6 +1516,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           1
         </span>
@@ -1727,6 +1529,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           2
         </span>
@@ -1738,6 +1542,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           3
         </span>
@@ -1749,6 +1555,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           4
         </span>
@@ -1760,6 +1568,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           5
         </span>
@@ -1771,6 +1581,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           6
         </span>
@@ -1782,6 +1594,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           7
         </span>
@@ -1793,6 +1607,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           8
         </span>
@@ -1804,6 +1620,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           9
         </span>
@@ -1815,6 +1633,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           10
         </span>
@@ -1826,6 +1646,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           11
         </span>
@@ -1837,6 +1659,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           12
         </span>
@@ -1848,6 +1672,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           13
         </span>
@@ -1859,6 +1685,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           14
         </span>
@@ -1870,6 +1698,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           15
         </span>
@@ -1881,6 +1711,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           16
         </span>
@@ -1892,6 +1724,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           17
         </span>
@@ -1903,6 +1737,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           18
         </span>
@@ -1914,6 +1750,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           19
         </span>
@@ -1925,6 +1763,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           20
         </span>
@@ -1936,6 +1776,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           21
         </span>
@@ -1947,6 +1789,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           22
         </span>
@@ -1958,6 +1802,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           23
         </span>
@@ -1969,6 +1815,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           24
         </span>
@@ -1980,6 +1828,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           25
         </span>
@@ -1991,6 +1841,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           26
         </span>
@@ -2002,6 +1854,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           27
         </span>
@@ -2013,6 +1867,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           28
         </span>
@@ -2024,6 +1880,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           29
         </span>
@@ -2035,6 +1893,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           30
         </span>
@@ -2046,6 +1906,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           31
         </span>
@@ -2057,6 +1919,8 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       >
         <span
           class="c15"
+          textalign="initial"
+          textcolor="inherit"
         >
           1
         </span>

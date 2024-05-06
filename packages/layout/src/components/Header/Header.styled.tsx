@@ -23,7 +23,7 @@ export const Content = styled.div`
     margin: 0 auto;
     position: relative;
     max-width: ${({ theme }) => theme.header.maxContentWidth};
-    color: ${({ theme }) => theme.header.fontColor};
+    color: ${({ theme }) => theme.header.navItem.textColor.default};
     padding: 0 1.6rem;
 
     ${Logo.Style} {

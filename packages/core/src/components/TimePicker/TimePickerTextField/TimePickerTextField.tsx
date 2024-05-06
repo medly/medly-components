@@ -1,12 +1,12 @@
 import { AccessTimeIcon } from '@medly-components/icons';
 import { WithStyle, useCombinedRefs } from '@medly-components/utils';
-import type { ChangeEvent, FC, FocusEvent } from 'react';
+import type { ChangeEvent, FCC, FocusEvent } from 'react';
 import { forwardRef, memo, useCallback, useContext, useEffect, useRef } from 'react';
 import { PopoverContext } from '../../Popover/Popover.context';
 import TextField from '../../TextField';
 import { TimePickerTextFieldProps } from './types';
 
-const Component: FC<TimePickerTextFieldProps> = memo(
+const Component: FCC<TimePickerTextFieldProps> = memo(
     forwardRef((props, ref) => {
         const [isDialogOpen] = useContext(PopoverContext);
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null));
@@ -40,4 +40,4 @@ const Component: FC<TimePickerTextFieldProps> = memo(
     })
 );
 Component.displayName = 'TimePickerTextField';
-export const TimePickerTextField: FC<TimePickerTextFieldProps> & WithStyle = Object.assign(Component, { Style: TextField.Style });
+export const TimePickerTextField: FCC<TimePickerTextFieldProps> & WithStyle = Object.assign(Component, { Style: TextField.Style });

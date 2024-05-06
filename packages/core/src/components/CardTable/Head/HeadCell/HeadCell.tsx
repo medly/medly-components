@@ -1,12 +1,12 @@
 import { ChevronDownIcon, ChevronUpIcon, DropdownIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
+import type { FCC } from 'react';
 import { memo, useCallback, useEffect, useMemo, useState } from 'react';
 import Text from '../../../Text';
 import * as Styled from './HeadCell.styled';
 import { Props } from './types';
-import type { FC } from 'react';
 
-export const Component: FC<Props> = memo(({ defaultSortOrder, sortField, onSortChange, withWhiteBackground, column }) => {
+export const Component: FCC<Props> = memo(({ defaultSortOrder, sortField, onSortChange, withWhiteBackground, column }) => {
     const { field, sortable, title, align } = column,
         [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>(defaultSortOrder!);
 
@@ -48,4 +48,4 @@ Component.defaultProps = {
 };
 Component.displayName = 'HeadCell';
 
-export const HeadCell: FC<Props> & WithStyle = Object.assign(Component, { Style: Styled.HeadCell });
+export const HeadCell: FCC<Props> & WithStyle = Object.assign(Component, { Style: Styled.HeadCell });

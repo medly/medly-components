@@ -1,11 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
+import type { FCC } from 'react';
 import { forwardRef, memo, useCallback, useContext } from 'react';
 import { PopoverContext } from '../Popover.context';
 import { PopupStyled } from './styled/Popup.styled';
 import { PopoverPopupProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<PopoverPopupProps> = memo(
+const Component: FCC<PopoverPopupProps> = memo(
     forwardRef((props, ref) => {
         const [isOpen] = useContext(PopoverContext),
             stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
@@ -23,4 +23,4 @@ Component.defaultProps = {
     fullWidth: false,
     fullHeight: false
 };
-export const Popup: FC<PopoverPopupProps> & WithStyle = Object.assign(Component, { Style: PopupStyled });
+export const Popup: FCC<PopoverPopupProps> & WithStyle = Object.assign(Component, { Style: PopupStyled });

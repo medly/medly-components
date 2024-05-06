@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import { memo, forwardRef, Children } from 'react';
+import type { FCC } from 'react';
+import { Children, forwardRef, memo } from 'react';
 import { ListStyled } from './List.styled';
 import { ListProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<ListProps> = memo(
+const Component: FCC<ListProps> = memo(
     forwardRef((props, ref) => (
         <ListStyled ref={ref} {...props}>
             {Children.map(props.children, (c, i) => {
@@ -18,4 +18,4 @@ Component.displayName = 'List';
 Component.defaultProps = {
     variant: 'vertical'
 };
-export const List: FC<ListProps> & WithStyle = Object.assign(Component, { Style: ListStyled });
+export const List: FCC<ListProps> & WithStyle = Object.assign(Component, { Style: ListStyled });

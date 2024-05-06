@@ -1,5 +1,5 @@
 import { useCombinedRefs, useUpdateEffect, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import ActionBar from './ActionBar';
 import Body from './Body';
@@ -16,7 +16,7 @@ import useGroupedRowSelector from './useGroupedRowSelector';
 import useRowSelector from './useRowSelector';
 import { useScrollState } from './useScrollState';
 
-export const Component: FC<TableProps> = memo(
+export const Component: FCC<TableProps> = memo(
     forwardRef((props, ref) => {
         const {
                 data,
@@ -188,7 +188,7 @@ Component.defaultProps = {
 };
 
 Component.displayName = 'Table';
-export const Table: FC<TableProps> & WithStyle & StaticProps = Object.assign(Component, {
+export const Table: FCC<TableProps> & WithStyle & StaticProps = Object.assign(Component, {
     Style: TableStyled,
     ColumnConfiguration
 });

@@ -1,11 +1,11 @@
 import { ArrowDropDownIcon, ArrowDropUpIcon, DropdownIcon } from '@medly-components/icons';
-import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import { Children, FC, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { WithStyle, isValidStringOrNumber } from '@medly-components/utils';
+import { Children, FCC, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Text from '../../../Text';
 import { HeadCellButton, HeadCellStyled, ResizeHandler } from './HeadCell.styled';
 import { HeadCellProps } from './types';
 
-const Component: FC<HeadCellProps> = memo(props => {
+const Component: FCC<HeadCellProps> = memo(props => {
     let pageX: number;
     const {
         align,
@@ -127,5 +127,5 @@ const Component: FC<HeadCellProps> = memo(props => {
 });
 
 Component.displayName = 'HeadCell';
-const HeadCell: FC<HeadCellProps> & WithStyle = Object.assign(Component, { Style: HeadCellStyled });
+const HeadCell: FCC<HeadCellProps> & WithStyle = Object.assign(Component, { Style: HeadCellStyled });
 export default HeadCell;

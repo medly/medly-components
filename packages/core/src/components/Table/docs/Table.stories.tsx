@@ -1,19 +1,19 @@
 import { DeleteIcon, RemoveCircleIcon } from '@medly-components/icons';
-import { defaultTheme, TableTheme } from '@medly-components/theme';
-import type { FC } from 'react';
+import { TableTheme, defaultTheme } from '@medly-components/theme';
+import type { FCC } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import Button from '../../Button';
 import Text from '../../Text';
 import { RowHoverActionsType, TableColumnConfig, TableProps } from '../types';
 
-export const ThemeInterface: FC<TableTheme> = () => null;
+export const ThemeInterface: FCC<TableTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.table
 };
 
 export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowData }) => <Text> Hello {`${rowData?.name}`}</Text>;
 
-export const ColumnConfigInterface: FC<TableColumnConfig> = () => null;
+export const ColumnConfigInterface: FCC<TableColumnConfig> = () => null;
 
 export const DarkBackground = createGlobalStyle<{ showRowWithCardStyle?: boolean }>`
 #root, #story--core-tabs--basic, #story--tabs--with-grey-background {

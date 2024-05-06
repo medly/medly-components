@@ -6,9 +6,6 @@ exports[`DialogBox component header should render properly at small screen size 
   color: inherit;
   font-size: 1.8rem;
   font-weight: 700;
-  -webkit-letter-spacing: -0.02rem;
-  -moz-letter-spacing: -0.02rem;
-  -ms-letter-spacing: -0.02rem;
   letter-spacing: -0.02rem;
   line-height: 2.4rem;
   text-align: initial;
@@ -28,6 +25,9 @@ exports[`DialogBox component header should render properly at small screen size 
   >
     <h4
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
+      textvariant="h4"
     >
       test
     </h4>

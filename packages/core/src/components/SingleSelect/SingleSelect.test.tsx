@@ -1,5 +1,4 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
-import userEvent from '@testing-library/user-event';
 import { useState } from 'react';
 import Text from '../Text';
 import { SingleSelect } from './SingleSelect';
@@ -401,7 +400,7 @@ describe('SingleSelect component', () => {
                 fireEvent.focus(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 }); // Show options
                 await screen.findByRole('list');
-                userEvent.tab();
+                fireEvent.keyDown(container, { key: 'Tab', code: 9 }); // Show options
                 await waitFor(() => expect(screen.queryByRole('list')).not.toBeInTheDocument());
             });
 

@@ -21,7 +21,7 @@ export const TimeLabels = styled('div')`
         font-size: ${({ theme }) => theme.timePicker.label.fontSize};
         font-weight: ${({ theme }) => theme.timePicker.label.fontWeight};
         line-height: ${({ theme }) => theme.timePicker.label.lineHeight};
-        letter-spacing: ${({ theme }) => theme.timePicker.label.LetterSpacing};
+        letter-spacing: ${({ theme }) => theme.timePicker.label.letterSpacing};
         color: ${({ theme }) => theme.timePicker.label.color};
     }
 
@@ -90,7 +90,7 @@ export const TimeUList = styled.ul`
         font-size: ${({ theme }) => theme.timePicker.selectedOption.fontSize};
         font-weight: ${({ theme }) => theme.timePicker.selectedOption.fontWeight};
         line-height: ${({ theme }) => theme.timePicker.selectedOption.lineHeight};
-        letter-spacing: ${({ theme }) => theme.timePicker.selectedOption.LetterSpacing};
+        letter-spacing: ${({ theme }) => theme.timePicker.selectedOption.letterSpacing};
         color: ${({ theme }) => theme.timePicker.selectedOption.color};
     }
 `;
@@ -117,7 +117,7 @@ export const PeriodListItem = styled('li')<{ isSelected: boolean }>`
     font-size: ${({ isSelected, theme }) => theme.timePicker[isSelected ? 'selectedOption' : 'nonSelectedOption'].fontSize};
     font-weight: ${({ isSelected, theme }) => theme.timePicker[isSelected ? 'selectedOption' : 'nonSelectedOption'].fontWeight};
     line-height: ${({ isSelected, theme }) => theme.timePicker[isSelected ? 'selectedOption' : 'nonSelectedOption'].lineHeight};
-    letter-spacing: ${({ isSelected, theme }) => theme.timePicker[isSelected ? 'selectedOption' : 'nonSelectedOption'].LetterSpacing};
+    letter-spacing: ${({ isSelected, theme }) => theme.timePicker[isSelected ? 'selectedOption' : 'nonSelectedOption'].letterSpacing};
     color: ${({ isSelected, theme }) => theme.timePicker[isSelected ? 'selectedOption' : 'nonSelectedOption'].color};
     cursor: pointer;
     transition: all 200ms ease;

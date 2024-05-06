@@ -1,7 +1,7 @@
-import type { FC, KeyboardEvent } from 'react';
+import type { FCC, KeyboardEvent } from 'react';
 import { memo, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
-import { TableComponentsCommonPropsContext } from '../../context';
 import { GroupCell } from '../../GroupCell';
+import { TableComponentsCommonPropsContext } from '../../context';
 import { getGridTemplateColumns, getNestedValue } from '../../helpers';
 import { TableColumnConfig } from '../../types';
 import Cell from '../Cell';
@@ -11,7 +11,7 @@ import RowHoverActionsCell from '../Cell/RowHoverActionsCell';
 import * as Styled from './Row.styled';
 import { RowProps } from './types';
 
-export const Row: FC<RowProps> = memo(props => {
+export const Row: FCC<RowProps> = memo(props => {
     const [isRowHovered, setIsRowHovered] = useState(false),
         {
             id,

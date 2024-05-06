@@ -1,18 +1,18 @@
 import { CardTableTheme, defaultTheme } from '@medly-components/theme';
+import type { FCC } from 'react';
 import { useCallback, useState } from 'react';
 import { CardTable } from '../CardTable';
 import { ColumnConfig, SortOrder } from '../types';
+import { DarkBackground } from './GlobalStyle.styled';
 import columns from './columns';
 import data from './data';
 import { filterData } from './filterData';
-import { DarkBackground } from './GlobalStyle.styled';
-import type { FC } from 'react';
 
-export const Theme: FC<CardTableTheme> = () => null;
+export const Theme: FCC<CardTableTheme> = () => null;
 Theme.defaultProps = {
     ...defaultTheme.cardTable
 };
-export const ColumnConfigInterface: FC<ColumnConfig> = () => null;
+export const ColumnConfigInterface: FCC<ColumnConfig> = () => null;
 ColumnConfigInterface.defaultProps = {
     fraction: 1,
     align: 'left'

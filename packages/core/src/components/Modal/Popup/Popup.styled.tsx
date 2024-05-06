@@ -51,11 +51,15 @@ export const Popup = styled('div')<ModalPopupProps>`
     border-top-right-radius: 1.2rem;
     overflow: ${({ overflowVisible }) => !overflowVisible && `hidden`};
 
-    ${({ theme, open }) => media(breakpoints(theme.breakpoints).down('S'))`
+    @media (max-width: ${({ theme }) => theme.breakpoints.S.max}px) {
         width: 100%;
         height: calc(100% - 2.4rem);
-        animation: ${open ? mobileModalSlideIn : mobileModalSlideOut} 0.4s cubic-bezier(0, 0, 0.33, 1);
-    `}
+        animation: ${({ open }) => (open ? mobileModalSlideIn : mobileModalSlideOut)} 0.4s cubic-bezier(0, 0, 0.33, 1);
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.M.min}px) {
+        animation: ${({ open }) => (open ? desktopModalSlideIn : desktopModalSlideOut)} 0.2s cubic-bezier(0, 0, 0.33, 1);
+    }
 
     ${({ theme, minWidth }) => media(breakpoints(theme.breakpoints).between('M', 'L'))`
         border-radius: ${theme.modal.borderRadius};
@@ -69,9 +73,5 @@ export const Popup = styled('div')<ModalPopupProps>`
         min-width: ${minWidth || `60.5rem`};
         max-width: 103.6rem;
         max-height: 80%;
-    `}
-
-    ${({ theme, open }) => media(breakpoints(theme.breakpoints).up('M'))`
-        animation: ${open ? desktopModalSlideIn : desktopModalSlideOut} 0.2s cubic-bezier(0, 0, 0.33, 1);
     `}
 `;

@@ -1,13 +1,13 @@
 import { ChipTheme, defaultTheme } from '@medly-components/theme';
 import { action } from '@storybook/addon-actions';
 import { boolean, color, select, text } from '@storybook/addon-knobs';
+import type { FCC } from 'react';
 import { Chip } from './Chip';
 import { ChipProps } from './types';
-import type { FC } from 'react';
 
 export const variant: Required<ChipProps>['variant'][] = ['solid', 'flat', 'outlined'];
 
-export const ThemeInterface: FC<ChipTheme> = () => null;
+export const ThemeInterface: FCC<ChipTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.chip
 };

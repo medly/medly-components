@@ -1,9 +1,9 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
+import type { FCC } from 'react';
 import { useCallback, useState } from 'react';
 import Drawer from './';
-import type { FC } from 'react';
 
-const DummyComponent: FC<{
+const DummyComponent: FCC<{
     open?: boolean;
     position?: 'left' | 'right';
     alignFooterItems?: 'left' | 'center' | 'right';

@@ -6,9 +6,6 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -20,14 +17,10 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -42,14 +35,10 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -67,12 +56,14 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   color: #13181D;
 }
 
-.c2 > .c3:first-of-type > .sc-1ae15qc-0:first-of-type > .c0 {
+.c2>.c3:first-of-type>.sc-1ae15qc-0:first-of-type>.c0 {
   margin-top: 0.6rem;
 }
 
 <span
   class="c0 c1"
+  textalign="initial"
+  textcolor="inherit"
 >
   Home
 </span>
@@ -84,9 +75,6 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -98,14 +86,10 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -120,14 +104,10 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -150,14 +130,10 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -172,14 +148,10 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -197,16 +169,18 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   color: #13181D;
 }
 
-.c2 > .c4:first-of-type > .sc-1ae15qc-0:first-of-type > .c0 {
+.c2>.c4:first-of-type>.sc-1ae15qc-0:first-of-type>.c0 {
   margin-top: 0.6rem;
 }
 
-.c3 > .c4:first-of-type > .sc-1ae15qc-0:first-of-type > .c0 {
+.c3>.c4:first-of-type>.sc-1ae15qc-0:first-of-type>.c0 {
   margin-top: 0.6rem;
 }
 
 <span
   class="c0 c1"
+  textalign="initial"
+  textcolor="inherit"
 >
   Search
 </span>
@@ -218,9 +192,6 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -232,14 +203,10 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -254,14 +221,10 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -284,14 +247,10 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
   font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -306,14 +265,10 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   white-space: nowrap;
   justify-self: left;
   overflow: hidden;
-  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -331,16 +286,18 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   color: #13181D;
 }
 
-.c2 > .c4:first-of-type > .sc-1ae15qc-0:first-of-type > .c0 {
+.c2>.c4:first-of-type>.sc-1ae15qc-0:first-of-type>.c0 {
   margin-top: 0.6rem;
 }
 
-.c3 > .c4:first-of-type > .sc-1ae15qc-0:first-of-type > .c0 {
+.c3>.c4:first-of-type>.sc-1ae15qc-0:first-of-type>.c0 {
   margin-top: 0.6rem;
 }
 
 <span
   class="c0 c1"
+  textalign="initial"
+  textcolor="inherit"
 >
   Search
 </span>

@@ -6,9 +6,6 @@ exports[`Link Component should render with component as child 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -18,7 +15,6 @@ exports[`Link Component should render with component as child 1`] = `
 .c0 {
   color: #012040;
   background-color: transparent;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -28,7 +24,6 @@ exports[`Link Component should render with component as child 1`] = `
 
 .c0:hover {
   color: #012040;
-  -webkit-text-decoration: underline;
   text-decoration: underline;
   outline-width: 0;
   cursor: pointer;
@@ -41,6 +36,8 @@ exports[`Link Component should render with component as child 1`] = `
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       help me Mr Kite man
     </span>
@@ -54,9 +51,6 @@ exports[`Link Component should render with default props 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -66,7 +60,6 @@ exports[`Link Component should render with default props 1`] = `
 .c0 {
   color: #012040;
   background-color: transparent;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -76,7 +69,6 @@ exports[`Link Component should render with default props 1`] = `
 
 .c0:hover {
   color: #012040;
-  -webkit-text-decoration: underline;
   text-decoration: underline;
   outline-width: 0;
   cursor: pointer;
@@ -89,6 +81,8 @@ exports[`Link Component should render with default props 1`] = `
   >
     <span
       class="c1"
+      textalign="initial"
+      textcolor="inherit"
     >
       Test
     </span>

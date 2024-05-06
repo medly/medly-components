@@ -1,6 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
-import { CheckboxSizes, CheckboxTheme } from '@medly-components/theme';
-import { centerAligned, WithThemeProp } from '@medly-components/utils';
+import { CheckboxSizes } from '@medly-components/theme';
+import { WithThemeProp, centerAligned } from '@medly-components/utils';
 import { rgba } from 'polished';
 import styled, { css } from 'styled-components';
 import { getSelectorLabelPositionStyle } from '../Selectors';
@@ -10,40 +10,42 @@ import { CheckboxProps } from './types';
 const getCheckboxSize = ({ theme, size }: { size?: CheckboxSizes } & WithThemeProp) =>
     theme.checkbox.sizes[size || theme.checkbox.defaultSize];
 
-const activeStyle = ({ iconColor, hasError, disabled, bgColor }: CheckboxProps & CheckboxTheme) => {
+const activeStyle = ({ hasError, disabled, theme }: CheckboxProps & WithThemeProp) => {
     const checkboxState = disabled ? 'disabled' : hasError ? 'error' : 'active';
 
     return css`
-        border-color: ${bgColor[checkboxState]};
-        background-color: ${bgColor[checkboxState]};
+        border-color: ${theme.checkbox.bgColor[checkboxState]};
+        background-color: ${theme.checkbox.bgColor[checkboxState]};
         ${SvgIcon} {
             transform: scale(1);
             * {
-                fill: ${iconColor[checkboxState]};
+                fill: ${theme.checkbox.iconColor[checkboxState]};
             }
         }
     `;
 };
 
-const nonActiveStyle = ({ borderColor, hasError, disabled }: CheckboxProps & CheckboxTheme) => {
+const nonActiveStyle = ({ theme, hasError, disabled }: CheckboxProps & WithThemeProp) => {
     const checkboxState = disabled ? 'disabled' : hasError ? 'error' : 'default';
 
     return css`
         background-color: transparent;
-        border-color: ${borderColor[checkboxState]};
+        border-color: ${theme.checkbox.borderColor[checkboxState]};
     `;
 };
 
 const getEventStyle =
     (event: 'hovered' | 'pressed' | 'focused') =>
-    ({ isActive, hasError, borderColor, theme, bgColor }: CheckboxTheme & CheckboxProps & { isActive?: boolean } & WithThemeProp) => {
+    ({ isActive, hasError, theme }: CheckboxProps & { isActive?: boolean } & WithThemeProp) => {
         const state = hasError ? 'error' : 'active';
         const borderColorEventValue = event === 'pressed' ? 'pressed' : state;
         const { blurRadius, spreadRadius } = theme.checkbox.boxShadow;
         return css`
-            box-shadow: 0 0 ${blurRadius} ${spreadRadius} ${rgba(borderColor[state], event === 'pressed' ? 0.5 : 0.35)};
-            border-color: ${event !== 'focused' && isActive ? bgColor[event][state] : borderColor[borderColorEventValue]};
-            background-color: ${isActive && event !== 'focused' && bgColor[event][state]};
+            box-shadow: 0 0 ${blurRadius} ${spreadRadius} ${rgba(theme.checkbox.borderColor[state], event === 'pressed' ? 0.5 : 0.35)};
+            border-color: ${event !== 'focused' && isActive
+                ? theme.checkbox.bgColor[event][state]
+                : theme.checkbox.borderColor[borderColorEventValue]};
+            background-color: ${isActive && event !== 'focused' && theme.checkbox.bgColor[event][state]};
         `;
     };
 
@@ -68,7 +70,7 @@ export const StyledCheckbox = styled.div`
     }
 `;
 
-export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkbox', ...theme.checkbox }))<CheckboxProps>`
+export const HiddenCheckbox = styled.input.attrs({ type: 'checkbox' })<CheckboxProps>`
     opacity: 0;
     margin: 0;
     top: 0;
@@ -93,7 +95,8 @@ export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkb
             }
 
             &:not(:checked) ~ ${StyledCheckbox} {
-                border-color: ${({ hasError, borderColor, indeterminate }) => !indeterminate && borderColor[hasError ? 'error' : 'active']};
+                border-color: ${({ hasError, theme, indeterminate }) =>
+                    !indeterminate && theme.checkbox.borderColor[hasError ? 'error' : 'active']};
             }
         }
     }
@@ -115,9 +118,7 @@ export const ErrorText = styled(Text)<{ disabled?: boolean }>`
     margin-bottom: 0.5rem;
 `;
 
-export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.checkbox }))<
-    CheckboxProps & { isActive?: boolean; isHovered?: boolean }
->`
+export const CheckboxWithLabelWrapper = styled('label')<CheckboxProps & { isActive?: boolean; isHovered?: boolean }>`
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     * {

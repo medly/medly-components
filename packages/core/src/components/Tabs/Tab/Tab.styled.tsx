@@ -1,4 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
+import type { WithThemeProp } from '@medly-components/utils';
 import { breakpoints, centerAligned, getFontStyle, media } from '@medly-components/utils';
 import styled, { css } from 'styled-components';
 import Text from '../../Text';
@@ -32,52 +33,47 @@ export const HelperText = styled(Text)`
 
 const getStyle = ({
     styleType,
-    labelColor,
-    iconBgColor,
-    iconColor,
-    bgColor,
+    theme,
     tabSize,
-    countBgColor,
-    helperTextColor,
     variant
-}: StyledTabProps & { styleType: 'active' | 'default' | 'hovered' | 'disabled' }) => css`
-    background-color: ${bgColor[styleType]};
+}: StyledTabProps & WithThemeProp & { styleType: 'active' | 'default' | 'hovered' | 'disabled' }) => css`
+    background-color: ${theme.tabs.bgColor[styleType]};
     ${Label} {
-        color: ${labelColor[styleType]};
+        color: ${theme.tabs.labelColor[styleType]};
         line-height: ${variant === 'solid' && styleType === 'disabled' && '1.6rem'};
     }
     ${HelperText} {
-        color: ${helperTextColor[styleType]};
+        color: ${theme.tabs.helperTextColor[styleType]};
         text-align: ${variant === 'solid' && 'center'};
     }
     ${Count} {
-        background-color: ${countBgColor[styleType]};
+        background-color: ${theme.tabs.countBgColor[styleType]};
     }
     ${SvgIcon} {
         font-size: ${tabSize === 'M' ? '2.0rem' : '2.4rem'};
         padding: ${tabSize === 'M' ? '0.6rem' : tabSize === 'L' ? '0.8rem' : '0'};
-        background-color: ${tabSize === 'S' ? 'transparent' : iconBgColor[styleType]};
+        background-color: ${tabSize === 'S' ? 'transparent' : theme.tabs.iconBgColor[styleType]};
         * {
-            fill: ${iconColor[styleType]};
+            fill: ${theme.tabs.iconColor[styleType]};
         }
     }
 `;
 
-const activeStyle = ({ variant, tabBackground, iconColor, theme, bgColor, tabSize }: StyledTabProps) => css<StyledTabProps>`
+const activeStyle = ({ variant, tabBackground, theme, tabSize }: StyledTabProps & WithThemeProp) => css<StyledTabProps>`
     ${props => getStyle({ ...props, styleType: 'active' })}
-    background-color: ${variant === 'outlined' && tabBackground === 'WHITE' ? bgColor.active : bgColor.default};
+    background-color: ${variant === 'outlined' && tabBackground === 'WHITE' ? theme.tabs.bgColor.active : theme.tabs.bgColor.default};
     ${SvgIcon} {
         * {
-            fill: ${tabSize === 'S' ? iconColor.active : theme.colors.white};
+            fill: ${tabSize === 'S' ? theme.tabs.iconColor.active : theme.colors.white};
         }
     }
 `;
 
-const nonActiveStyle = ({ tabBackground, bgColor }: StyledTabProps) => css<StyledTabProps>`
+const nonActiveStyle = ({ tabBackground, theme }: StyledTabProps & WithThemeProp) => css<StyledTabProps>`
     ${props => getStyle({ ...props, styleType: 'default' })}
     &:not(:disabled):hover {
         ${props => getStyle({ ...props, styleType: 'hovered' })}
-        background-color: ${tabBackground === 'GREY' ? bgColor.default : bgColor.hovered};
+        background-color: ${tabBackground === 'GREY' ? theme.tabs.bgColor.default : theme.tabs.bgColor.hovered};
     }
 `;
 
@@ -85,7 +81,7 @@ const disabledStyle = css<StyledTabProps>`
     ${props => getStyle({ ...props, styleType: 'disabled' })}
 `;
 
-const getSolidTabWidth = ({ totalTabs, theme, tabSize }: StyledTabProps) => {
+const getSolidTabWidth = ({ totalTabs, theme, tabSize }: StyledTabProps & WithThemeProp) => {
     const paddingBetweenTabs = `calc(${totalTabs - 1} * ${theme.tabs.solid.tabList.padding[tabSize]} / ${totalTabs})`;
     return `calc(${100 / totalTabs}% - ${paddingBetweenTabs})`;
 };
@@ -117,7 +113,7 @@ const flatOutlinedStyle = css<StyledTabProps>`
         bottom: -0.1rem;
         left: ${({ variant }) => (variant === 'outlined' ? '-0.1rem' : '0')};
         width: ${({ variant }) => (variant === 'outlined' ? 'calc(100% + 0.2rem)' : '100%')};
-        background-color: ${({ borderColor, active }) => (active ? borderColor.active : 'transparent')};
+        background-color: ${({ active, theme }) => (active ? theme.tabs.borderColor.active : 'transparent')};
         border-radius: ${({ variant }) => variant === 'flat' && '0.5rem 0.5rem 0 0'};
     }
 
@@ -134,7 +130,7 @@ const flatBackgroundStyle = css`
     }
 `;
 
-export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs }))<StyledTabProps>`
+export const TabWrapper = styled('button')<StyledTabProps>`
     padding: 1.6rem;
     user-select: none;
     text-decoration: none;
@@ -147,7 +143,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     box-sizing: border-box;
     font-family: inherit;
     flex: ${({ fraction, fullWidth, variant }) => variant !== 'solid' && (fraction || (fullWidth ? '1' : 'initial'))};
-    border-color: ${({ borderColor, variant }) => (variant === 'flat' || variant === 'outlined') && borderColor[variant]};
+    border-color: ${({ theme, variant }) => (variant === 'flat' || variant === 'outlined') && theme.tabs.borderColor[variant]};
     border-width: ${({ variant }) => (variant === 'outlined' ? `0.1rem 0.1rem 0.1rem 0` : `0 0 0.1rem 0`)};
     transition: all 100ms ease-out;
     * {
@@ -169,7 +165,8 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     &:not(:disabled):hover {
         cursor: pointer;
         &::after {
-            background-color: ${({ borderColor, active, tabBackground }) => !active && tabBackground === 'GREY' && borderColor.hovered};
+            background-color: ${({ theme, active, tabBackground }) =>
+                !active && tabBackground === 'GREY' && theme.tabs.borderColor.hovered};
         }
     }
 

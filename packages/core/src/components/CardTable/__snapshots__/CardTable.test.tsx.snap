@@ -6,9 +6,6 @@ exports[`CardTable should render properly with grey background 1`] = `
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -20,9 +17,6 @@ exports[`CardTable should render properly with grey background 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -32,20 +26,9 @@ exports[`CardTable should render properly with grey background 1`] = `
 .c10 {
   padding: 0;
   padding: 1.5rem 2.4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   overflow: hidden;
 }
@@ -64,21 +47,20 @@ exports[`CardTable should render properly with grey background 1`] = `
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
-  -webkit-transition: box-shadow 100ms ease-out;
   transition: box-shadow 100ms ease-out;
   border: 0.1rem solid #ffffff;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
 }
 
 .c9:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
+  box-shadow: 0 0.4rem 0.8rem rgba(176, 188, 200, 0.6);
 }
 
-.c9:nth-child(odd) {
+.c9 :nth-child(odd) {
   background: #ffffff;
 }
 
-.c9:nth-child(even) {
+.c9 :nth-child(even) {
   background: #ffffff;
 }
 
@@ -95,45 +77,28 @@ exports[`CardTable should render properly with grey background 1`] = `
 .c8 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c4 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c2 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -147,7 +112,6 @@ exports[`CardTable should render properly with grey background 1`] = `
   left: 0;
   background-color: transparent;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -165,18 +129,13 @@ exports[`CardTable should render properly with grey background 1`] = `
 }
 
 .c2 .c5 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #435465;
 }
 
 .c2 .c7 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
@@ -194,8 +153,10 @@ exports[`CardTable should render properly with grey background 1`] = `
     <thead>
       <tr
         class="c1"
+        gridtemplatecolumns="1fr 1fr "
       >
         <th
+          align="left"
           class="c2"
         >
           <span
@@ -203,6 +164,9 @@ exports[`CardTable should render properly with grey background 1`] = `
           >
             <h5
               class="c5 c6"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Patient Info
             </h5>
@@ -222,6 +186,7 @@ exports[`CardTable should render properly with grey background 1`] = `
           </span>
         </th>
         <th
+          align="left"
           class="c2"
         >
           <span
@@ -229,6 +194,9 @@ exports[`CardTable should render properly with grey background 1`] = `
           >
             <h5
               class="c5 c6"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               RxInfo
             </h5>
@@ -252,22 +220,29 @@ exports[`CardTable should render properly with grey background 1`] = `
     <tbody>
       <tr
         class="c9"
+        gridtemplatecolumns="1fr 1fr "
       >
         <td
+          align="left"
           class="c10"
         >
           <span
             class="c5 c11"
+            textalign="initial"
+            textcolor="inherit"
             title="Oli Bob"
           >
             Oli Bob
           </span>
         </td>
         <td
+          align="left"
           class="c10"
         >
           <span
             class="c5 c11"
+            textalign="initial"
+            textcolor="inherit"
             title="Metaformin"
           >
             Metaformin
@@ -285,9 +260,6 @@ exports[`CardTable should render properly with white background 1`] = `
   color: inherit;
   font-size: 1.2rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
   text-align: initial;
@@ -299,9 +271,6 @@ exports[`CardTable should render properly with white background 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -311,20 +280,9 @@ exports[`CardTable should render properly with white background 1`] = `
 .c10 {
   padding: 0;
   padding: 1.5rem 2.4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   overflow: hidden;
 }
@@ -343,21 +301,20 @@ exports[`CardTable should render properly with white background 1`] = `
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
-  -webkit-transition: box-shadow 100ms ease-out;
   transition: box-shadow 100ms ease-out;
   border: 0.1rem solid #dfe4e9;
   box-shadow: none;
 }
 
 .c9:hover {
-  box-shadow: 0px 0.2rem 0.4rem rgba(176,188,200,0.6);
+  box-shadow: 0px 0.2rem 0.4rem rgba(176, 188, 200, 0.6);
 }
 
-.c9:nth-child(odd) {
+.c9 :nth-child(odd) {
   background: #F7F8F9;
 }
 
-.c9:nth-child(even) {
+.c9 :nth-child(even) {
   background: #ffffff;
 }
 
@@ -374,45 +331,28 @@ exports[`CardTable should render properly with white background 1`] = `
 .c8 {
   overflow: visible;
   font-size: 2rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c4 {
   padding: 1rem 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .c2 {
   padding: 0 0.8rem;
   margin: 1.4rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -426,7 +366,6 @@ exports[`CardTable should render properly with white background 1`] = `
   left: 0;
   background-color: transparent;
   height: 0.2rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -444,18 +383,13 @@ exports[`CardTable should render properly with white background 1`] = `
 }
 
 .c2 .c5 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: inline;
   color: #607890;
 }
 
 .c2 .c7 {
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
@@ -473,8 +407,10 @@ exports[`CardTable should render properly with white background 1`] = `
     <thead>
       <tr
         class="c1"
+        gridtemplatecolumns="1fr 1fr "
       >
         <th
+          align="left"
           class="c2"
         >
           <span
@@ -482,6 +418,9 @@ exports[`CardTable should render properly with white background 1`] = `
           >
             <h5
               class="c5 c6"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               Patient Info
             </h5>
@@ -501,6 +440,7 @@ exports[`CardTable should render properly with white background 1`] = `
           </span>
         </th>
         <th
+          align="left"
           class="c2"
         >
           <span
@@ -508,6 +448,9 @@ exports[`CardTable should render properly with white background 1`] = `
           >
             <h5
               class="c5 c6"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="h5"
             >
               RxInfo
             </h5>
@@ -531,22 +474,29 @@ exports[`CardTable should render properly with white background 1`] = `
     <tbody>
       <tr
         class="c9"
+        gridtemplatecolumns="1fr 1fr "
       >
         <td
+          align="left"
           class="c10"
         >
           <span
             class="c5 c11"
+            textalign="initial"
+            textcolor="inherit"
             title="Oli Bob"
           >
             Oli Bob
           </span>
         </td>
         <td
+          align="left"
           class="c10"
         >
           <span
             class="c5 c11"
+            textalign="initial"
+            textcolor="inherit"
             title="Metaformin"
           >
             Metaformin

@@ -1,11 +1,11 @@
+import type { FCC } from 'react';
 import { memo, useCallback, useContext } from 'react';
 import { TableComponentsCommonPropsContext } from '../../../context';
 import Row from '../../Row';
 import { BlankCell, ContentRowStyled, DataCell } from './ContentRow.styled';
 import { ContentRowProps } from './types';
-import type { FC } from 'react';
 
-export const ContentRow: FC<ContentRowProps> = memo(props => {
+export const ContentRow: FCC<ContentRowProps> = memo(props => {
     const { data, ...restProps } = props,
         { rowIdentifier, size } = useContext(TableComponentsCommonPropsContext);
 

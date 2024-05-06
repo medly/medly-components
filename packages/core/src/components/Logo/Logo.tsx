@@ -1,11 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
-import MedlyLogoName from './assets/MedlyLogo.svg';
-import MedlyLogo from './assets/MLogo.svg';
+import type { FCC } from 'react';
 import { Container } from './Logo.styled';
+import MedlyLogo from './assets/MLogo.svg';
+import MedlyLogoName from './assets/MedlyLogo.svg';
 import { LogoProps } from './types';
 
-const Logo: FC<LogoProps> & WithStyle = ({ showName, logo, name, onClick }) => (
+const Logo: FCC<LogoProps> & WithStyle = ({ showName, logo, name, onClick }) => (
     <Container onClick={onClick}>
         {logo}
         {showName && name}

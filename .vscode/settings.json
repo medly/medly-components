@@ -2,9 +2,9 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-        "source.organizeImports": true,
-        "source.fixAll.stylelint": true
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit",
+        "source.fixAll.stylelint": "explicit"
     },
     "eslint.validate": ["html", "javascript", "javascriptreact", "typescript", "typescriptreact"],
     "cSpell.words": ["Medly"],

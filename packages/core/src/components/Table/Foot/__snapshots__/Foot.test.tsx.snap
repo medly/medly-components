@@ -1,45 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Table Foot should render correctly with L size 1`] = `
-.c8 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-  display: inline-block;
-}
-
 .c9 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
+  font-weight: 400;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c6 {
+.c10 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c7 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c6 * {
+.c7 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -47,13 +39,8 @@ exports[`Table Foot should render correctly with L size 1`] = `
 .c2 {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -69,7 +56,7 @@ exports[`Table Foot should render correctly with L size 1`] = `
   margin-left: 0.8rem;
 }
 
-.c3 > li {
+.c3>li {
   margin: 0;
 }
 
@@ -79,17 +66,12 @@ exports[`Table Foot should render correctly with L size 1`] = `
   width: 3.2rem;
   display: block;
   border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border: none;
   padding: 0;
   text-align: center;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   color: #435465;
-  background: #ffffff;
   background: #ffffff;
 }
 
@@ -105,49 +87,46 @@ exports[`Table Foot should render correctly with L size 1`] = `
   cursor: not-allowed;
 }
 
-.c4 > .c5,
-.c4 .c5 {
-  padding: 0.4rem;
-}
-
-.c4 .c5 * {
-  fill: #435465;
-}
-
-.c4:disabled {
+.c5 {
   background: #ffffff;
 }
 
-.c4:disabled .c5 * {
+.c5>.c6,
+.c5 .c6 {
+  padding: 0.4rem;
+}
+
+.c5 .c6 * {
+  fill: #435465;
+}
+
+.c5:disabled {
+  background: #ffffff;
+}
+
+.c5:disabled .c6 * {
   fill: #C7D0D8;
 }
 
-.c4:not(:disabled):hover {
+.c5:not(:disabled):hover {
   background: #F7F8F9;
 }
 
-.c4:not(:disabled):hover .c5 * {
+.c5:not(:disabled):hover .c6 * {
   fill: #303C48;
 }
 
-.c4:not(:disabled):active {
+.c5:not(:disabled):active {
   background: #eff2f4;
 }
 
-.c4:not(:disabled):active .c5 * {
+.c5:not(:disabled):active .c6 * {
   fill: #13181D;
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   bottom: 0;
@@ -159,20 +138,9 @@ exports[`Table Foot should render correctly with L size 1`] = `
 
 .c1 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   padding: 0 1.6rem 0 0.8rem;
 }
@@ -181,11 +149,8 @@ exports[`Table Foot should render correctly with L size 1`] = `
   padding: 0;
 }
 
-.c1 td > .c7 {
+.c1 td>.c8 {
   font-size: 1.2rem;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
 }
@@ -201,15 +166,17 @@ exports[`Table Foot should render correctly with L size 1`] = `
         <ul
           class="c2 c3 "
           data-testid="foot-pagination"
+          tablesize="L"
+          variant="horizontal"
         >
           <li>
             <button
-              class="sc-1dmgj8o-1 c4"
+              class="c4 c5"
               disabled=""
               type="button"
             >
               <svg
-                class="c5 c6"
+                class="c6 c7"
                 fill="none"
                 height="1em"
                 title="prev"
@@ -227,12 +194,12 @@ exports[`Table Foot should render correctly with L size 1`] = `
           </li>
           <li>
             <button
-              class="sc-1dmgj8o-1 c4"
+              class="c4 c5"
               disabled=""
               type="button"
             >
               <svg
-                class="c5 c6"
+                class="c6 c7"
                 fill="none"
                 height="1em"
                 title="next"
@@ -252,27 +219,39 @@ exports[`Table Foot should render correctly with L size 1`] = `
       </td>
       <td>
         <span
-          class="c7 c8"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           Viewing
         </span>
         <strong
-          class="c7 c9"
+          class="c8 c10"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
            0 - 0 
         </strong>
         <span
-          class="c7 c8"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           of
         </span>
         <strong
-          class="c7 c9"
+          class="c8 c10"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
            0 
         </strong>
         <span
-          class="c7 c8"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           Results
         </span>
@@ -283,45 +262,37 @@ exports[`Table Foot should render correctly with L size 1`] = `
 `;
 
 exports[`Table Foot should render correctly with M size 1`] = `
-.c8 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-  display: inline-block;
-}
-
 .c9 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
+  font-weight: 400;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c6 {
+.c10 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c7 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c6 * {
+.c7 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -329,13 +300,8 @@ exports[`Table Foot should render correctly with M size 1`] = `
 .c2 {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -351,7 +317,7 @@ exports[`Table Foot should render correctly with M size 1`] = `
   margin-left: 0.8rem;
 }
 
-.c3 > li {
+.c3>li {
   margin: 0;
 }
 
@@ -361,17 +327,12 @@ exports[`Table Foot should render correctly with M size 1`] = `
   width: 3.2rem;
   display: block;
   border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border: none;
   padding: 0;
   text-align: center;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   color: #435465;
-  background: #ffffff;
   background: #ffffff;
 }
 
@@ -387,49 +348,46 @@ exports[`Table Foot should render correctly with M size 1`] = `
   cursor: not-allowed;
 }
 
-.c4 > .c5,
-.c4 .c5 {
-  padding: 0.4rem;
-}
-
-.c4 .c5 * {
-  fill: #435465;
-}
-
-.c4:disabled {
+.c5 {
   background: #ffffff;
 }
 
-.c4:disabled .c5 * {
+.c5>.c6,
+.c5 .c6 {
+  padding: 0.4rem;
+}
+
+.c5 .c6 * {
+  fill: #435465;
+}
+
+.c5:disabled {
+  background: #ffffff;
+}
+
+.c5:disabled .c6 * {
   fill: #C7D0D8;
 }
 
-.c4:not(:disabled):hover {
+.c5:not(:disabled):hover {
   background: #F7F8F9;
 }
 
-.c4:not(:disabled):hover .c5 * {
+.c5:not(:disabled):hover .c6 * {
   fill: #303C48;
 }
 
-.c4:not(:disabled):active {
+.c5:not(:disabled):active {
   background: #eff2f4;
 }
 
-.c4:not(:disabled):active .c5 * {
+.c5:not(:disabled):active .c6 * {
   fill: #13181D;
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   bottom: 0;
@@ -441,20 +399,9 @@ exports[`Table Foot should render correctly with M size 1`] = `
 
 .c1 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   padding: 0 1.6rem 0 0.8rem;
 }
@@ -463,11 +410,8 @@ exports[`Table Foot should render correctly with M size 1`] = `
   padding: 0;
 }
 
-.c1 td > .c7 {
+.c1 td>.c8 {
   font-size: 1.2rem;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
 }
@@ -483,15 +427,17 @@ exports[`Table Foot should render correctly with M size 1`] = `
         <ul
           class="c2 c3 "
           data-testid="foot-pagination"
+          tablesize="M"
+          variant="horizontal"
         >
           <li>
             <button
-              class="sc-1dmgj8o-1 c4"
+              class="c4 c5"
               disabled=""
               type="button"
             >
               <svg
-                class="c5 c6"
+                class="c6 c7"
                 fill="none"
                 height="1em"
                 title="prev"
@@ -509,12 +455,12 @@ exports[`Table Foot should render correctly with M size 1`] = `
           </li>
           <li>
             <button
-              class="sc-1dmgj8o-1 c4"
+              class="c4 c5"
               disabled=""
               type="button"
             >
               <svg
-                class="c5 c6"
+                class="c6 c7"
                 fill="none"
                 height="1em"
                 title="next"
@@ -534,27 +480,39 @@ exports[`Table Foot should render correctly with M size 1`] = `
       </td>
       <td>
         <span
-          class="c7 c8"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           Viewing
         </span>
         <strong
-          class="c7 c9"
+          class="c8 c10"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
            0 - 0 
         </strong>
         <span
-          class="c7 c8"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           of
         </span>
         <strong
-          class="c7 c9"
+          class="c8 c10"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
            0 
         </strong>
         <span
-          class="c7 c8"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           Results
         </span>
@@ -565,45 +523,37 @@ exports[`Table Foot should render correctly with M size 1`] = `
 `;
 
 exports[`Table Foot should render correctly with S size 1`] = `
-.c8 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-  display: inline-block;
-}
-
 .c9 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
+  font-weight: 400;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c6 {
+.c10 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c7 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c6 * {
+.c7 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -611,13 +561,8 @@ exports[`Table Foot should render correctly with S size 1`] = `
 .c2 {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -633,7 +578,7 @@ exports[`Table Foot should render correctly with S size 1`] = `
   margin-left: 0.8rem;
 }
 
-.c3 > li {
+.c3>li {
   margin: 0;
 }
 
@@ -643,17 +588,12 @@ exports[`Table Foot should render correctly with S size 1`] = `
   width: 3.2rem;
   display: block;
   border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border: none;
   padding: 0;
   text-align: center;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   color: #435465;
-  background: #ffffff;
   background: #ffffff;
 }
 
@@ -669,49 +609,46 @@ exports[`Table Foot should render correctly with S size 1`] = `
   cursor: not-allowed;
 }
 
-.c4 > .c5,
-.c4 .c5 {
-  padding: 0.4rem;
-}
-
-.c4 .c5 * {
-  fill: #435465;
-}
-
-.c4:disabled {
+.c5 {
   background: #ffffff;
 }
 
-.c4:disabled .c5 * {
+.c5>.c6,
+.c5 .c6 {
+  padding: 0.4rem;
+}
+
+.c5 .c6 * {
+  fill: #435465;
+}
+
+.c5:disabled {
+  background: #ffffff;
+}
+
+.c5:disabled .c6 * {
   fill: #C7D0D8;
 }
 
-.c4:not(:disabled):hover {
+.c5:not(:disabled):hover {
   background: #F7F8F9;
 }
 
-.c4:not(:disabled):hover .c5 * {
+.c5:not(:disabled):hover .c6 * {
   fill: #303C48;
 }
 
-.c4:not(:disabled):active {
+.c5:not(:disabled):active {
   background: #eff2f4;
 }
 
-.c4:not(:disabled):active .c5 * {
+.c5:not(:disabled):active .c6 * {
   fill: #13181D;
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   bottom: 0;
@@ -723,20 +660,9 @@ exports[`Table Foot should render correctly with S size 1`] = `
 
 .c1 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   padding: 0 1.6rem 0 0.8rem;
 }
@@ -745,11 +671,8 @@ exports[`Table Foot should render correctly with S size 1`] = `
   padding: 0;
 }
 
-.c1 td > .c7 {
+.c1 td>.c8 {
   font-size: 1.2rem;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
 }
@@ -765,15 +688,17 @@ exports[`Table Foot should render correctly with S size 1`] = `
         <ul
           class="c2 c3 "
           data-testid="foot-pagination"
+          tablesize="S"
+          variant="horizontal"
         >
           <li>
             <button
-              class="sc-1dmgj8o-1 c4"
+              class="c4 c5"
               disabled=""
               type="button"
             >
               <svg
-                class="c5 c6"
+                class="c6 c7"
                 fill="none"
                 height="1em"
                 title="prev"
@@ -791,12 +716,12 @@ exports[`Table Foot should render correctly with S size 1`] = `
           </li>
           <li>
             <button
-              class="sc-1dmgj8o-1 c4"
+              class="c4 c5"
               disabled=""
               type="button"
             >
               <svg
-                class="c5 c6"
+                class="c6 c7"
                 fill="none"
                 height="1em"
                 title="next"
@@ -816,27 +741,39 @@ exports[`Table Foot should render correctly with S size 1`] = `
       </td>
       <td>
         <span
-          class="c7 c8"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           Viewing
         </span>
         <strong
-          class="c7 c9"
+          class="c8 c10"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
            0 - 0 
         </strong>
         <span
-          class="c7 c8"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           of
         </span>
         <strong
-          class="c7 c9"
+          class="c8 c10"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
            0 
         </strong>
         <span
-          class="c7 c8"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           Results
         </span>
@@ -847,45 +784,37 @@ exports[`Table Foot should render correctly with S size 1`] = `
 `;
 
 exports[`Table Foot should render correctly with XS size 1`] = `
-.c10 {
+.c9 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c11 {
+.c10 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
   display: inline-block;
 }
 
-.c8 {
+.c7 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
-.c8 * {
+.c7 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
@@ -893,13 +822,8 @@ exports[`Table Foot should render correctly with XS size 1`] = `
 .c2 {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -915,91 +839,77 @@ exports[`Table Foot should render correctly with XS size 1`] = `
   margin-left: 0.8rem;
 }
 
-.c3 > li {
+.c3>li {
   margin: 0;
 }
 
-.c6 {
+.c4 {
   margin: 0.4rem;
   height: 3.2rem;
   width: 3.2rem;
   display: block;
   border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border: none;
   padding: 0;
   text-align: center;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   color: #435465;
   background: #ffffff;
-  background: #ffffff;
 }
 
-.c6:hover {
+.c4:hover {
   cursor: pointer;
 }
 
-.c6:focus {
+.c4:focus {
   outline: none;
 }
 
-.c6:disabled {
+.c4:disabled {
   cursor: not-allowed;
 }
 
-.c6 > .c7,
-.c6 .c7 {
-  padding: 0.4rem;
-}
-
-.c6 .c7 * {
-  fill: #435465;
-}
-
-.c6:disabled {
+.c5 {
   background: #ffffff;
 }
 
-.c6:disabled .c7 * {
+.c5>.c6,
+.c5 .c6 {
+  padding: 0.4rem;
+}
+
+.c5 .c6 * {
+  fill: #435465;
+}
+
+.c5:disabled {
+  background: #ffffff;
+}
+
+.c5:disabled .c6 * {
   fill: #C7D0D8;
 }
 
-.c6:not(:disabled):hover {
+.c5:not(:disabled):hover {
   background: #F7F8F9;
 }
 
-.c6:not(:disabled):hover .c7 * {
+.c5:not(:disabled):hover .c6 * {
   fill: #303C48;
 }
 
-.c6:not(:disabled):active {
+.c5:not(:disabled):active {
   background: #eff2f4;
 }
 
-.c6:not(:disabled):active .c7 * {
+.c5:not(:disabled):active .c6 * {
   fill: #13181D;
 }
 
-.c4 > * .c5,
-.c4 .sc-1dmgj8o-2 {
-  height: 3.1rem;
-  width: 3.1rem;
-}
-
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   bottom: 0;
@@ -1011,20 +921,9 @@ exports[`Table Foot should render correctly with XS size 1`] = `
 
 .c1 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   padding: 0 1.6rem 0 0.8rem;
 }
@@ -1033,11 +932,8 @@ exports[`Table Foot should render correctly with XS size 1`] = `
   padding: 0;
 }
 
-.c1 td > .c9 {
+.c1 td>.c8 {
   font-size: 1.2rem;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
 }
@@ -1051,17 +947,19 @@ exports[`Table Foot should render correctly with XS size 1`] = `
     >
       <td>
         <ul
-          class="c2 c3 c4"
+          class="c2 c3 "
           data-testid="foot-pagination"
+          tablesize="XS"
+          variant="horizontal"
         >
           <li>
             <button
-              class="sc-1dmgj8o-1 c5 c6"
+              class="c4 c5"
               disabled=""
               type="button"
             >
               <svg
-                class="c7 c8"
+                class="c6 c7"
                 fill="none"
                 height="1em"
                 title="prev"
@@ -1079,12 +977,12 @@ exports[`Table Foot should render correctly with XS size 1`] = `
           </li>
           <li>
             <button
-              class="sc-1dmgj8o-1 c5 c6"
+              class="c4 c5"
               disabled=""
               type="button"
             >
               <svg
-                class="c7 c8"
+                class="c6 c7"
                 fill="none"
                 height="1em"
                 title="next"
@@ -1104,27 +1002,39 @@ exports[`Table Foot should render correctly with XS size 1`] = `
       </td>
       <td>
         <span
-          class="c9 c10"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           Viewing
         </span>
         <strong
-          class="c9 c11"
+          class="c8 c10"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
            0 - 0 
         </strong>
         <span
-          class="c9 c10"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           of
         </span>
         <strong
-          class="c9 c11"
+          class="c8 c10"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
            0 
         </strong>
         <span
-          class="c9 c10"
+          class="c8 c9"
+          textalign="initial"
+          textcolor="inherit"
         >
           Results
         </span>

@@ -1,22 +1,23 @@
 import { ArrowRightIcon, CheckIcon } from '@medly-components/icons';
-import { useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import { WithStyle, useKeyPress, useOuterClickNotifier } from '@medly-components/utils';
+import type { FCC } from 'react';
 import { isValidElement, memo, useCallback, useEffect, useRef, useState } from 'react';
-import { withTheme } from 'styled-components';
+import { useTheme } from 'styled-components';
 import Text from '../../../Text';
 import Options from '../Options';
 import { CustomComponentWrapper, OptionStyled } from './Option.styled';
 import { OptionProps } from './types';
 
-const Component: FC<OptionProps> = memo(props => {
+const Component: FCC<OptionProps> = memo(props => {
     const ref = useRef<HTMLLIElement>(null),
         [areOptionsVisible, setOptionsVisibilityState] = useState(false),
-        { value, theme, label, disabled, selected, onClick, hasError, hovered, size, variant, maxWidth, includesNestedOptions } = props,
+        { value, label, disabled, selected, onClick, hasError, hovered, size, variant, maxWidth, includesNestedOptions } = props,
         id = label.replace(/ /g, '-'),
         enterPress = useKeyPress('Enter'),
         leftPress = useKeyPress('ArrowLeft'),
         rightPress = useKeyPress('ArrowRight'),
-        isNested = Array.isArray(value);
+        isNested = Array.isArray(value),
+        theme = useTheme();
 
     const showNestedOptions = useCallback(() => setOptionsVisibilityState(true), []),
         hideNestedOptions = useCallback(() => setOptionsVisibilityState(false), []),
@@ -64,7 +65,7 @@ const Component: FC<OptionProps> = memo(props => {
             ) : (
                 <Text
                     textWeight={selected ? 'Medium' : 'Regular'}
-                    textVariant={variant === 'flat' ? 'body3' : theme.singleSelect.option.textVariant[size]}
+                    textVariant={variant === 'flat' ? 'body3' : theme?.singleSelect.option.textVariant[size]}
                 >
                     {label}
                 </Text>
@@ -87,5 +88,5 @@ const Component: FC<OptionProps> = memo(props => {
     );
 });
 Component.displayName = 'Option';
-const Option: FC<OptionProps> & WithStyle = Object.assign(Component, { Style: OptionStyled });
-export default withTheme(Option);
+const Option: FCC<OptionProps> & WithStyle = Object.assign(Component, { Style: OptionStyled });
+export default Option;

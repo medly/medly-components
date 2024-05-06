@@ -1,5 +1,5 @@
 import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
-import { FC, forwardRef, memo, MouseEvent, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react';
+import { FCC, forwardRef, memo, MouseEvent, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
@@ -14,7 +14,7 @@ import { useScrollState } from './useScrollState';
 
 const manager = new ModalManager();
 
-const Component: FC<ModalProps> = memo(
+const Component: FCC<ModalProps> = memo(
     forwardRef((props, ref) => {
         const {
                 open,
@@ -113,7 +113,7 @@ Component.defaultProps = {
     disableEscapeKeyDown: false
 };
 Component.displayName = 'Modal';
-export const Modal: FC<ModalProps> & WithStyle & ModalStaticProps = Object.assign(Component, {
+export const Modal: FCC<ModalProps> & WithStyle & ModalStaticProps = Object.assign(Component, {
     Style: ModalBackgroundStyled,
     Header,
     Popup,

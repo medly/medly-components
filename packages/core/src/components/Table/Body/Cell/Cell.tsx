@@ -1,12 +1,12 @@
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { memo, useContext, useEffect, useMemo, useRef } from 'react';
 import { ThemeContext } from 'styled-components';
 import Text from '../../../Text';
-import { Cell as StyledCell, CustomComponentWrapper, LoadingDiv } from './Styled';
+import { CustomComponentWrapper, LoadingDiv, Cell as StyledCell } from './Styled';
 import { TableCellProps } from './types';
 
-const Component: FC<TableCellProps> = memo(props => {
+const Component: FCC<TableCellProps> = memo(props => {
     const customComponentWrapperRef = useRef<HTMLDivElement>(null),
         {
             addColumnMaxSize,
@@ -47,7 +47,7 @@ const Component: FC<TableCellProps> = memo(props => {
                     <CustomComponent {...{ data: formattedData, rowId, disabled: isRowClickDisabled, rowData }} />
                 </CustomComponentWrapper>
             ) : (
-                <Text textVariant={theme.table.row.fontVariant} title={formattedData}>
+                <Text textVariant={theme?.table.row.fontVariant} title={formattedData}>
                     {formattedData}
                 </Text>
             )}
@@ -55,6 +55,6 @@ const Component: FC<TableCellProps> = memo(props => {
     );
 });
 Component.displayName = 'Cell';
-const Cell: FC<TableCellProps> & WithStyle = Object.assign(Component, { Style: StyledCell });
+const Cell: FCC<TableCellProps> & WithStyle = Object.assign(Component, { Style: StyledCell });
 
 export default Cell;

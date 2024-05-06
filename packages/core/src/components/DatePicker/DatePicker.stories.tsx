@@ -1,9 +1,9 @@
 import { DatePickerTheme, defaultTheme } from '@medly-components/theme';
+import type { FCC, FormEvent } from 'react';
 import { useState } from 'react';
 import Button from '../Button';
 import { DatePicker } from './DatePicker';
 import { DatePickerProps as Props } from './types';
-import type { FC, FormEvent } from 'react';
 
 export const variants: Required<Props>['variant'][] = ['outlined', 'filled', 'fusion'];
 export const sizes: Required<Props>['size'][] = ['S', 'M'];
@@ -23,12 +23,12 @@ export const displayFormats: Required<Props>['displayFormat'][] = [
     'yyyy-MM-dd'
 ];
 
-export const ThemeInterface: FC<DatePickerTheme> = () => null;
+export const ThemeInterface: FCC<DatePickerTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.datePicker
 };
 
-export const FormWithDatePicker: FC = () => {
+export const FormWithDatePicker: FCC = () => {
     const [date, setDate] = useState<Date | null>(null),
         handleSubmit = (e: FormEvent) => e.preventDefault();
     return (

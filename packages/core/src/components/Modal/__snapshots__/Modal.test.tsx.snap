@@ -2,37 +2,23 @@
 
 exports[`Modal component background at small screen size should render properly when it is closed 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
   align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(67,84,101,0.65);
+  background: rgba(67, 84, 101, 0.65);
   z-index: 1000;
-  -webkit-animation: modalFadeOut 0.4s cubic-bezier(0,0,0.33,1);
-  animation: modalFadeOut 0.4s cubic-bezier(0,0,0.33,1);
+  animation: modalFadeOut 0.4s cubic-bezier(0, 0, 0.33, 1);
 }
 
 @media (min-width:768px) {
   .c0 {
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-animation: modalFadeOut 0.2s cubic-bezier(0,0,0.33,1);
-    animation: modalFadeOut 0.2s cubic-bezier(0,0,0.33,1);
+    animation: modalFadeOut 0.2s cubic-bezier(0, 0, 0.33, 1);
   }
 }
 
@@ -45,37 +31,23 @@ exports[`Modal component background at small screen size should render properly 
 
 exports[`Modal component background at small screen size should render properly when it is open 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
   align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(67,84,101,0.65);
+  background: rgba(67, 84, 101, 0.65);
   z-index: 1000;
-  -webkit-animation: modalFadeIn 0.4s cubic-bezier(0,0,0.33,1);
-  animation: modalFadeIn 0.4s cubic-bezier(0,0,0.33,1);
+  animation: modalFadeIn 0.4s cubic-bezier(0, 0, 0.33, 1);
 }
 
 @media (min-width:768px) {
   .c0 {
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-animation: modalFadeIn 0.2s cubic-bezier(0,0,0.33,1);
-    animation: modalFadeIn 0.2s cubic-bezier(0,0,0.33,1);
+    animation: modalFadeIn 0.2s cubic-bezier(0, 0, 0.33, 1);
   }
 }
 
@@ -89,30 +61,21 @@ exports[`Modal component background at small screen size should render properly 
 
 exports[`Modal component should render properly when it is open 1`] = `
 .c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   z-index: 10;
   padding: 1.6rem 3.2rem 3.2rem;
   box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.c7 > * + * {
+.c7>*+* {
   margin-left: 1.6rem;
 }
 
 .c2 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
   padding: 0.8rem;
@@ -122,20 +85,13 @@ exports[`Modal component should render properly when it is open 1`] = `
 
 .c2 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c3 {
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -ms-perspective: 1000;
   perspective: 1000;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   top: 1.4rem;
   right: 1.4rem;
@@ -169,8 +125,6 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c6 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   box-sizing: border-box;
   padding: 0.8rem 3.2rem 2.4rem;
@@ -189,39 +143,22 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
   align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(67,84,101,0.65);
+  background: rgba(67, 84, 101, 0.65);
   z-index: 1000;
-  -webkit-animation: modalFadeIn 0.4s cubic-bezier(0,0,0.33,1);
-  animation: modalFadeIn 0.4s cubic-bezier(0,0,0.33,1);
+  animation: modalFadeIn 0.4s cubic-bezier(0, 0, 0.33, 1);
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
@@ -243,41 +180,36 @@ exports[`Modal component should render properly when it is open 1`] = `
 
 .c1 {
   background: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
   min-height: 200px;
-  box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
+  box-shadow: 0 0.4rem 3.2 rgba(67, 84, 101, 0.5);
   box-sizing: border-box;
   border-top-left-radius: 1.2rem;
   border-top-right-radius: 1.2rem;
   overflow: hidden;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c7 {
     padding: 1.6rem;
   }
 }
 
-@media (min-width:768px) and (max-height:700px) {
+@media (min-width: 768px) and (max-height: 700px) {
   .c7 {
     padding: 1.6rem 3.2rem;
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .c6 {
     padding: 0.8rem 1.6rem 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-height:700px) {
+@media (min-width: 768px) and (max-height: 700px) {
   .c6 {
     padding-bottom: 0.4rem;
   }
@@ -302,37 +234,28 @@ exports[`Modal component should render properly when it is open 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .c5 {
     position: relative;
     padding: 3.2rem 5.6rem 1.6rem 3.2rem;
   }
 }
 
-@media (min-width:768px) and (max-height:700px) {
+@media (min-width: 768px) and (max-height: 700px) {
   .c5 {
-    -webkit-transition: padding 100ms linear;
     transition: padding 100ms linear;
     padding: 3.2rem 3.2rem 1.6rem 3.2rem;
   }
 }
 
 @media (min-width:768px) {
-
-}
-
-@media (min-width:768px) {
   .c0 {
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-animation: modalFadeIn 0.2s cubic-bezier(0,0,0.33,1);
-    animation: modalFadeIn 0.2s cubic-bezier(0,0,0.33,1);
+    animation: modalFadeIn 0.2s cubic-bezier(0, 0, 0.33, 1);
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .c4 {
     overflow: hidden;
   }
@@ -346,12 +269,11 @@ exports[`Modal component should render properly when it is open 1`] = `
   .c1 {
     width: 100%;
     height: calc(100% - 2.4rem);
-    -webkit-animation: cQwfQi 0.4s cubic-bezier(0,0,0.33,1);
     animation: cQwfQi 0.4s cubic-bezier(0,0,0.33,1);
   }
 }
 
-@media (min-width:768px) and (max-width:1279px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .c1 {
     border-radius: 1.2rem;
     max-width: 72%;
@@ -360,7 +282,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   }
 }
 
-@media (min-width:1280px) {
+@media (min-width: 1280px) {
   .c1 {
     border-radius: 1.2rem;
     min-width: 200px;
@@ -369,9 +291,8 @@ exports[`Modal component should render properly when it is open 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
   .c1 {
-    -webkit-animation: hvOvm 0.2s cubic-bezier(0,0,0.33,1);
     animation: hvOvm 0.2s cubic-bezier(0,0,0.33,1);
   }
 }
@@ -385,6 +306,8 @@ exports[`Modal component should render properly when it is open 1`] = `
     <div
       class="c1"
       id="medly-modal-popup"
+      minheight="200px"
+      minwidth="200px"
       open=""
     >
       <svg
@@ -405,11 +328,13 @@ exports[`Modal component should render properly when it is open 1`] = `
       </svg>
       <div
         class="c4"
+        headerheight="0"
         id="medly-modal-inner-container"
       >
         <div
           class="c5"
           id="medly-modal-header"
+          scrollstate="[object Object]"
         >
           <p>
             Demo Header
@@ -417,13 +342,17 @@ exports[`Modal component should render properly when it is open 1`] = `
         </div>
         <div
           class="c6"
+          headerheight="0"
           id="medly-modal-content"
+          scrollstate="[object Object]"
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
         </div>
         <div
+          alignitems="right"
           class="c7"
           id="medly-modal-actions"
+          scrollstate="[object Object]"
         >
           Demo Actions
         </div>

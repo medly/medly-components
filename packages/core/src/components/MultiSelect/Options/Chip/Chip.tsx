@@ -1,12 +1,12 @@
 import { ClearIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { memo, useCallback } from 'react';
 import Text from '../../../Text';
 import * as Styled from './Chip.styled';
 import { Props } from './types';
 
-const Component: FC<Props> = memo(({ id, value, label, disabled, onClear }) => {
+const Component: FCC<Props> = memo(({ id, value, label, disabled, onClear }) => {
     const chipId = id ? id.replace(' ', '') : 'medly-options-chip',
         onClearHandler = useCallback(() => !disabled && onClear && onClear(value), [disabled, onClear, value]);
 
@@ -19,4 +19,4 @@ const Component: FC<Props> = memo(({ id, value, label, disabled, onClear }) => {
 });
 
 Component.displayName = 'Chip';
-export const Chip: FC<Props> & WithStyle = Object.assign(Component, { Style: Styled.Chip });
+export const Chip: FCC<Props> & WithStyle = Object.assign(Component, { Style: Styled.Chip });

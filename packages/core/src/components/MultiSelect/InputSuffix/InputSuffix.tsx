@@ -1,11 +1,11 @@
 import { ChevronDownIcon } from '@medly-components/icons';
+import type { FCC } from 'react';
 import { memo } from 'react';
 import Chip from './Chip';
 import { InputSuffixStyled } from './InputSuffix.styled';
 import { InputSuffixProps } from './types';
-import type { FC } from 'react';
 
-export const InputSuffix: FC<InputSuffixProps> = memo(props => {
+export const InputSuffix: FCC<InputSuffixProps> = memo(props => {
     const { id, size, disabled, isActive, hasError, optionsCount, ...restProps } = props,
         state = disabled ? 'disabled' : hasError ? 'error' : isActive ? 'active' : 'default';
 

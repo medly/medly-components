@@ -1,11 +1,11 @@
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import { memo, forwardRef, Children } from 'react';
+import type { FCC } from 'react';
+import { Children, forwardRef, memo } from 'react';
 import Text from '../Text';
 import { AvatarStyled } from './Avatar.styled';
 import { AvatarProps } from './types';
-import type { FC } from 'react';
 
-const Component: FC<AvatarProps> = memo(
+const Component: FCC<AvatarProps> = memo(
     forwardRef((props, ref) => {
         const isImage = !!Children.toArray(props.children).find(
             (child: any) => child.type === 'img' || child.props?.originalType === 'img'
@@ -26,6 +26,6 @@ const Component: FC<AvatarProps> = memo(
     })
 );
 Component.displayName = 'Avatar';
-export const Avatar: FC<AvatarProps> & WithStyle = Object.assign(Component, {
+export const Avatar: FCC<AvatarProps> & WithStyle = Object.assign(Component, {
     Style: AvatarStyled
 });

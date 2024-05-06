@@ -1,7 +1,7 @@
 import { CloseIcon, ExpandIcon, SearchIcon } from '@medly-components/icons';
 import { CircleLoader } from '@medly-components/loaders';
 import { WithStyle, useCombinedRefs, useKeyPress, useOuterClickNotifier } from '@medly-components/utils';
-import type { FC } from 'react';
+import type { FCC } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useRef, useState } from 'react';
 import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
@@ -12,7 +12,7 @@ import { CloseIconWrapper, ExpandIconWrapper, SearchIconWrapper } from './styles
 import { SearchInput } from './styles/input';
 import { SearchBoxProps } from './types';
 
-const Component: FC<SearchBoxProps> = memo(
+const Component: FCC<SearchBoxProps> = memo(
     forwardRef((props, ref) => {
         const {
             options: defaultOptions,
@@ -202,4 +202,4 @@ Component.defaultProps = {
     maxWidth: '100%',
     fullWidth: false
 };
-export const SearchBox: FC<SearchBoxProps> & WithStyle = Object.assign(Component, { Style: Styled.SearchBoxWrapper });
+export const SearchBox: FCC<SearchBoxProps> & WithStyle = Object.assign(Component, { Style: Styled.SearchBoxWrapper });

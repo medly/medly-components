@@ -1,4 +1,4 @@
-import { BreakpointsTheme, CardTheme } from '@medly-components/theme';
+import { BreakpointsTheme } from '@medly-components/theme';
 import { WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
 import styled, { css } from 'styled-components';
@@ -21,21 +21,21 @@ const borderTop = (separatorColor: string) => css`
     borderLeft = (separatorColor: string) => css`
         border-left: 1px solid ${separatorColor};
     `,
-    applyBorder = ({ flowDirection, separatorColor }: CardProps & CardTheme & WithThemeProp) => css`
+    applyBorder = ({ flowDirection, theme }: CardProps & WithThemeProp) => css`
         > div + div {
-            ${flowDirection === 'vertical' ? borderTop(separatorColor!) : borderLeft(separatorColor!)}
+            ${flowDirection === 'vertical' ? borderTop(theme.card.separatorColor!) : borderLeft(theme.card.separatorColor!)}
         }
     `;
 
-const solid = ({ backgroundColor, shadowColor, onClick }: CardTheme & CardProps & WithThemeProp) => css`
-        background-color: ${backgroundColor};
-        border-radius: ${({ theme }) => theme.card.borderRadius};
-        box-shadow: 0 0.2rem 0.8rem ${rgba(shadowColor, 0.2)};
+const solid = ({ theme, onClick }: CardProps & WithThemeProp) => css`
+        background-color: ${theme.card.backgroundColor};
+        border-radius: ${theme.card.borderRadius};
+        box-shadow: 0 0.2rem 0.8rem ${rgba(theme.card.shadowColor, 0.2)};
         &:hover {
-            box-shadow: ${onClick && `0 0.4rem 0.8rem ${rgba(shadowColor, 0.6)}`};
+            box-shadow: ${onClick && `0 0.4rem 0.8rem ${rgba(theme.card.shadowColor, 0.6)}`};
         }
     `,
-    flat = () => css`
+    flat = css`
         border-radius: 0;
         margin: 0;
         border: none;
@@ -55,7 +55,7 @@ const media = ({ theme, breakpoint }: CardProps & { breakpoint: keyof Breakpoint
         ${media({ theme, breakpoint: 'XL' })}
     `;
 
-export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<CardProps>`
+export const Card = styled('div')<CardProps>`
     overflow: auto;
     box-sizing: border-box;
     flex: ${({ flex }) => flex};

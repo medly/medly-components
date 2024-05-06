@@ -6,9 +6,6 @@ exports[`Stepper component should change active step when click on any step 1`] 
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -21,9 +18,6 @@ exports[`Stepper component should change active step when click on any step 1`] 
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -42,19 +36,13 @@ exports[`Stepper component should change active step when click on any step 1`] 
 }
 
 .c3 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   color: #ffffff;
   line-height: 30px;
   font-size: 1.4rem;
 }
 
-.c3 + .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.c3+.c4 {
   user-select: none;
   line-height: 2.2rem;
   font-size: 1.4rem;
@@ -73,19 +61,13 @@ exports[`Stepper component should change active step when click on any step 1`] 
 }
 
 .c7 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   color: #ffffff;
   line-height: 30px;
   font-size: 1.4rem;
 }
 
-.c7 + .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.c7+.c4 {
   user-select: none;
   line-height: 2.2rem;
   font-size: 1.4rem;
@@ -93,13 +75,7 @@ exports[`Stepper component should change active step when click on any step 1`] 
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin-right: 20px;
 }
@@ -113,9 +89,6 @@ exports[`Stepper component should change active step when click on any step 1`] 
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -131,12 +104,18 @@ exports[`Stepper component should change active step when click on any step 1`] 
       >
         <strong
           class="c4 c5"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
           1
         </strong>
       </div>
       <strong
         class="c4 c6"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         Customer Information
       </strong>
@@ -149,12 +128,18 @@ exports[`Stepper component should change active step when click on any step 1`] 
       >
         <strong
           class="c4 c5"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
           2
         </strong>
       </div>
       <strong
         class="c4 c6"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         Payment information
       </strong>
@@ -167,12 +152,18 @@ exports[`Stepper component should change active step when click on any step 1`] 
       >
         <strong
           class="c4 c5"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
           3
         </strong>
       </div>
       <strong
         class="c4 c6"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         Booking is confirmed!
       </strong>
@@ -187,9 +178,6 @@ exports[`Stepper component should render correctly with all the default props 1`
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -202,9 +190,6 @@ exports[`Stepper component should render correctly with all the default props 1`
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -223,19 +208,13 @@ exports[`Stepper component should render correctly with all the default props 1`
 }
 
 .c3 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   color: #ffffff;
   line-height: 30px;
   font-size: 1.4rem;
 }
 
-.c3 + .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.c3+.c4 {
   user-select: none;
   line-height: 2.2rem;
   font-size: 1.4rem;
@@ -254,19 +233,13 @@ exports[`Stepper component should render correctly with all the default props 1`
 }
 
 .c7 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   color: #ffffff;
   line-height: 30px;
   font-size: 1.4rem;
 }
 
-.c7 + .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.c7+.c4 {
   user-select: none;
   line-height: 2.2rem;
   font-size: 1.4rem;
@@ -274,13 +247,7 @@ exports[`Stepper component should render correctly with all the default props 1`
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin-right: 20px;
 }
@@ -290,9 +257,6 @@ exports[`Stepper component should render correctly with all the default props 1`
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -308,12 +272,18 @@ exports[`Stepper component should render correctly with all the default props 1`
       >
         <strong
           class="c4 c5"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
           1
         </strong>
       </div>
       <strong
         class="c4 c6"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         Customer Information
       </strong>
@@ -326,12 +296,18 @@ exports[`Stepper component should render correctly with all the default props 1`
       >
         <strong
           class="c4 c5"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
           2
         </strong>
       </div>
       <strong
         class="c4 c6"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         Payment information
       </strong>
@@ -344,12 +320,18 @@ exports[`Stepper component should render correctly with all the default props 1`
       >
         <strong
           class="c4 c5"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
           3
         </strong>
       </div>
       <strong
         class="c4 c6"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         Booking is confirmed!
       </strong>
@@ -364,9 +346,6 @@ exports[`Stepper component should render correctly with all the props given 1`] 
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -379,9 +358,6 @@ exports[`Stepper component should render correctly with all the props given 1`] 
   color: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -400,19 +376,13 @@ exports[`Stepper component should render correctly with all the props given 1`] 
 }
 
 .c3 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   color: #ffffff;
   line-height: 30px;
   font-size: 1.4rem;
 }
 
-.c3 + .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.c3+.c4 {
   user-select: none;
   line-height: 2.2rem;
   font-size: 1.4rem;
@@ -431,19 +401,13 @@ exports[`Stepper component should render correctly with all the props given 1`] 
 }
 
 .c7 .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   color: #ffffff;
   line-height: 30px;
   font-size: 1.4rem;
 }
 
-.c7 + .c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.c7+.c4 {
   user-select: none;
   line-height: 2.2rem;
   font-size: 1.4rem;
@@ -451,13 +415,7 @@ exports[`Stepper component should render correctly with all the props given 1`] 
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin-right: 20px;
 }
@@ -471,9 +429,6 @@ exports[`Stepper component should render correctly with all the props given 1`] 
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -489,12 +444,18 @@ exports[`Stepper component should render correctly with all the props given 1`] 
       >
         <strong
           class="c4 c5"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
           1
         </strong>
       </div>
       <strong
         class="c4 c6"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         Customer Information
       </strong>
@@ -507,12 +468,18 @@ exports[`Stepper component should render correctly with all the props given 1`] 
       >
         <strong
           class="c4 c5"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
           2
         </strong>
       </div>
       <strong
         class="c4 c6"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         Payment information
       </strong>
@@ -525,12 +492,18 @@ exports[`Stepper component should render correctly with all the props given 1`] 
       >
         <strong
           class="c4 c5"
+          textalign="initial"
+          textcolor="inherit"
+          textweight="Strong"
         >
           3
         </strong>
       </div>
       <strong
         class="c4 c6"
+        textalign="initial"
+        textcolor="inherit"
+        textweight="Strong"
       >
         Booking is confirmed!
       </strong>

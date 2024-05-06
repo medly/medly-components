@@ -1,12 +1,12 @@
+import type { FCC } from 'react';
 import { useState } from 'react';
 import Button from '../Button';
 import { RadioGroup } from './RadioGroup';
 import { RadioGroupProps } from './types';
-import type { FC } from 'react';
 
 export const sizes: RadioGroupProps['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
-export const FormWithRadioGroup: FC<RadioGroupProps> = props => {
+export const FormWithRadioGroup: FCC<RadioGroupProps> = props => {
     const [value, setValue] = useState(),
         handleSubmit = (e: React.FormEvent) => e.preventDefault();
 

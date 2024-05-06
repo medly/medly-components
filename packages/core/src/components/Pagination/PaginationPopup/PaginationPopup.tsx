@@ -1,13 +1,13 @@
+import type { FCC } from 'react';
 import { memo, useContext } from 'react';
 import Popover from '../../Popover';
 import Text from '../../Text';
-import { addPageItems } from '../helper';
 import { PageNumberButton } from '../Pagination.styled';
+import { addPageItems } from '../helper';
 import { PageEllipsisOverlay, PaginationBackgroundStyled } from './PaginationPopup.styled';
 import { PaginationPopupProps } from './types';
-import type { FC } from 'react';
 
-export const PaginationPopup: FC<PaginationPopupProps> = memo(({ prevPageNumber, nextPageNumber, onClickHandler }) => {
+export const PaginationPopup: FCC<PaginationPopupProps> = memo(({ prevPageNumber, nextPageNumber, onClickHandler }) => {
     const [isPopoverVisible, setPopoverVisibility] = useContext(Popover.Context),
         onClickHandlerWrapper = (pageNumber: any) => () => {
             setPopoverVisibility(false);

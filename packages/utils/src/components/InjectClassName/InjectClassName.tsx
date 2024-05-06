@@ -1,7 +1,7 @@
-import { Children, cloneElement, FunctionComponent } from 'react';
+import { Children, cloneElement, FCC } from 'react';
 import { Props } from './types';
 
-const InjectClassName: FunctionComponent<Props> = props => {
+const InjectClassName: FCC<Props> = props => {
     const { className, children } = props;
     return (
         <>

@@ -4,42 +4,35 @@ exports[`TimePicker should render properly 1`] = `
 .c10 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
 }
 
 .c10 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c19 {
+.c20 {
   overflow: visible;
   font-size: 2.4rem;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
 }
 
-.c19 * {
+.c20 * {
   fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
 .c0 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c12 {
+.c13 {
   z-index: 4;
   position: absolute;
   background-color: white;
@@ -49,7 +42,6 @@ exports[`TimePicker should render properly 1`] = `
 
 .c11 {
   pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c11 * {
@@ -68,38 +60,29 @@ exports[`TimePicker should render properly 1`] = `
   fill: #546A7F;
 }
 
+.c12 {
+  margin-left: 1.6rem;
+}
+
 .c8 {
   top: 50%;
   left: 0;
   cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
   width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
   max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
@@ -108,21 +91,12 @@ exports[`TimePicker should render properly 1`] = `
 
 .c4 {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
   padding: 0 1.6rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -133,7 +107,7 @@ exports[`TimePicker should render properly 1`] = `
   color: #546A7F;
 }
 
-.c4 ~ .sc-avlt8d-0 {
+.c4~.sc-avlt8d-0 {
   color: #546A7F;
 }
 
@@ -146,7 +120,6 @@ exports[`TimePicker should render properly 1`] = `
   left: 0;
   box-sizing: border-box;
   border-top: 0.1rem solid #546A7F;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
@@ -180,51 +153,23 @@ exports[`TimePicker should render properly 1`] = `
   box-shadow: 0 0 0 100000px #EBF1FA inset;
 }
 
-.c4:focus-within input::-webkit-input-placeholder,
-.c4:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c4:focus-within input::-moz-placeholder,
-.c4:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c4:focus-within input:-ms-input-placeholder,
-.c4:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
 .c4:focus-within input::placeholder,
 .c4:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
+  color: rgba(0, 90, 238, .2);
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
 .c3 {
   position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -237,26 +182,20 @@ exports[`TimePicker should render properly 1`] = `
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 0.7rem;
 }
 
 .c6,
-.c6 ~ .sc-1r5xr2a-0 {
+.c6~.sc-1r5xr2a-0 {
   font-size: 1.6rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -267,18 +206,6 @@ exports[`TimePicker should render properly 1`] = `
   box-shadow: unset;
 }
 
-.c6.c6.c6:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c6.c6.c6:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c6.c6.c6:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
 .c6.c6.c6:focus::placeholder {
   opacity: 1;
 }
@@ -287,59 +214,33 @@ exports[`TimePicker should render properly 1`] = `
   color: #435465;
 }
 
-.c6:disabled ~ .c7,
-.c6:disabled ~ .sc-1r5xr2a-0 {
+.c6:disabled~.c7,
+.c6:disabled~.sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
-.c6::-webkit-input-placeholder {
+.c6 ::placeholder {
   opacity: 0;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c6::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c6:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c6::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c6:not(:placeholder-shown) ~ .c7,
-.c6:focus ~ .c7 {
-  -webkit-transform: translateY(-87%) scale(0.75);
-  -ms-transform: translateY(-87%) scale(0.75);
+.c6:not(:placeholder-shown)~.c7,
+.c6:focus~.c7 {
   transform: translateY(-87%) scale(0.75);
 }
 
-.c6:not(:placeholder-shown) ~ .sc-1r5xr2a-0 {
+.c6:not(:placeholder-shown)~.sc-1r5xr2a-0 {
   opacity: 1;
 }
 
 .c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
   min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c1 > .c2 {
+.c1>.c2 {
   margin: 0;
 }
 
@@ -348,14 +249,22 @@ exports[`TimePicker should render properly 1`] = `
   display: none;
 }
 
-.c16 {
+.c17 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c29 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -363,69 +272,40 @@ exports[`TimePicker should render properly 1`] = `
 }
 
 .c28 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-  display: inline-block;
-}
-
-.c27 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-.c27,
-.c27 .c15,
-.c27 .c9,
-.c27 .c9 * {
-  -webkit-transition: all 100ms ease-out;
+.c28,
+.c28 .c16,
+.c28 .c9,
+.c28 .c9 * {
   transition: all 100ms ease-out;
 }
 
-.c27:hover {
+.c28:hover {
   cursor: pointer;
 }
 
-.c27:focus {
+.c28:focus {
   outline: none;
 }
 
-.c27:disabled {
+.c28:disabled {
   cursor: not-allowed;
 }
 
-.c27::after {
+.c28::after {
   content: '';
   display: block;
   position: absolute;
@@ -433,244 +313,198 @@ exports[`TimePicker should render properly 1`] = `
   bottom: 0.85rem;
   left: 50%;
   height: 0.15rem;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   border-radius: 0.15rem;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
-.c27:disabled {
+.c28:disabled {
   color: #98A7B7;
 }
 
-.c27:disabled::after {
+.c28:disabled::after {
   background-color: #98A7B7;
 }
 
-.c27:disabled .c9 * {
+.c28:disabled .c9 * {
   fill: #98A7B7;
 }
 
-.c27:not(:disabled):not(:hover) {
+.c28:not(:disabled):not(:hover) {
   color: #3872D2;
 }
 
-.c27:not(:disabled):not(:hover)::after {
+.c28:not(:disabled):not(:hover)::after {
   background-color: #3872D2;
 }
 
-.c27:not(:disabled):not(:hover) .c9 * {
+.c28:not(:disabled):not(:hover) .c9 * {
   fill: #3872D2;
 }
 
-.c27:not(:disabled):active {
+.c28:not(:disabled):active {
   color: #275093;
 }
 
-.c27:not(:disabled):active::after {
+.c28:not(:disabled):active::after {
   background-color: #275093;
 }
 
-.c27:not(:disabled):active .c9 * {
+.c28:not(:disabled):active .c9 * {
   fill: #275093;
 }
 
-.c27:not(:disabled):active::after {
+.c28:not(:disabled):active::after {
   width: calc(100% - 4.8rem);
 }
 
-.c27:not(:disabled):not(:active):hover {
+.c28:not(:disabled):not(:active):hover {
   color: #3061B3;
 }
 
-.c27:not(:disabled):not(:active):hover::after {
+.c28:not(:disabled):not(:active):hover::after {
   background-color: #3061B3;
 }
 
-.c27:not(:disabled):not(:active):hover .c9 * {
+.c28:not(:disabled):not(:active):hover .c9 * {
   fill: #3061B3;
 }
 
-.c27:not(:disabled):not(:active):hover::after {
+.c28:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
-.c27 .c9 + .c15 {
+.c28 .c9+.c16 {
   margin-left: 0.8rem;
 }
 
-.c27 .c15 + .c9 {
+.c28 .c16+.c9 {
   margin-left: 0.8rem;
 }
 
-.c29 {
+.c30 {
   border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-family: inherit;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-.c29,
-.c29 .c15,
-.c29 .c9,
-.c29 .c9 * {
-  -webkit-transition: all 100ms ease-out;
+.c30,
+.c30 .c16,
+.c30 .c9,
+.c30 .c9 * {
   transition: all 100ms ease-out;
 }
 
-.c29:hover {
+.c30:hover {
   cursor: pointer;
 }
 
-.c29:focus {
+.c30:focus {
   outline: none;
 }
 
-.c29:disabled {
+.c30:disabled {
   cursor: not-allowed;
 }
 
-.c29:disabled {
+.c30:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c29:disabled .c9 * {
+.c30:disabled .c9 * {
   fill: #98A7B7;
 }
 
-.c29:not(:disabled):not(:hover) {
+.c30:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c29:not(:disabled):not(:hover) .c9 * {
+.c30:not(:disabled):not(:hover) .c9 * {
   fill: #ffffff;
 }
 
-.c29:not(:disabled):active {
+.c30:not(:disabled):active {
   color: #ffffff;
   background: #275093;
 }
 
-.c29:not(:disabled):active .c9 * {
+.c30:not(:disabled):active .c9 * {
   fill: #ffffff;
 }
 
-.c29:not(:disabled):not(:active):hover {
+.c30:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #3061B3;
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c29:not(:disabled):not(:active):hover .c9 * {
+.c30:not(:disabled):not(:active):hover .c9 * {
   fill: #ffffff;
 }
 
-.c29 .c9 + .c15 {
+.c30 .c9+.c16 {
   margin-left: 0.8rem;
 }
 
-.c29 .c15 + .c9 {
+.c30 .c16+.c9 {
   margin-left: 0.8rem;
 }
 
-.c13 {
+.c14 {
   padding: 1.2rem;
   background: #ffffff;
   box-shadow: 0 0.2rem 0.8rem #b0bcc8;
   border-radius: 0.4rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
 }
 
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.c15 {
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.c14 > * {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c15>* {
   flex: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   text-align: center;
   font-size: 1.4rem;
   font-weight: Regular;
   line-height: 2.2rem;
+  letter-spacing: 0rem;
   color: #546A7F;
 }
 
-.c14 > *:nth-child(2) {
-  -webkit-flex: 0.5;
-  -ms-flex: 0.5;
+.c15>*:nth-child(2) {
   flex: 0.5;
 }
 
-.c17 {
+.c18 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 1.8rem 0 2.4rem;
   position: relative;
 }
 
-.c17 > * {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+.c18>* {
   flex: 1;
 }
 
-.c17::before,
-.c17::after {
+.c18::before,
+.c18::after {
   content: '';
   position: absolute;
   left: -1.2rem;
@@ -679,166 +513,98 @@ exports[`TimePicker should render properly 1`] = `
   background-color: #C7D0D8;
 }
 
-.c17::before {
+.c18::before {
   top: 3.2rem;
 }
 
-.c17::after {
+.c18::after {
   bottom: 3.2rem;
 }
 
-.c18 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.c19 {
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   gap: 2.4rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
-.c20 {
+.c21 {
   padding: 0;
   margin: 0;
   height: 2.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   overflow: auto;
-  -webkit-scroll-snap-type: y mandatory;
-  -moz-scroll-snap-type: y mandatory;
-  -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   list-style: none;
 }
 
-.c20::-webkit-scrollbar {
+.c21::-webkit-scrollbar {
   display: none;
 }
 
-.c20 > li {
-  -webkit-scroll-snap-align: center;
-  -moz-scroll-snap-align: center;
-  -ms-scroll-snap-align: center;
+.c21>li {
   scroll-snap-align: center;
   font-size: 1.6rem;
   font-weight: Medium;
   line-height: 2.6rem;
+  letter-spacing: 0rem;
   color: #13181D;
 }
 
-.c22 {
+.c23 {
   position: relative;
   max-height: 2.4rem;
 }
 
-.c23 {
+.c24 {
   padding: 0;
   margin: 0;
   gap: 2.4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   list-style: none;
-  -webkit-transition: -webkit-transform 200ms ease;
-  -webkit-transition: transform 200ms ease;
   transition: transform 200ms ease;
 }
 
-.c24 {
+.c25 {
   font-size: 1.4rem;
   font-weight: Regular;
   line-height: 2.2rem;
+  letter-spacing: 0rem;
   color: #546A7F;
   cursor: pointer;
-  -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-}
-
-.c25 {
-  font-size: 1.6rem;
-  font-weight: Medium;
-  line-height: 2.6rem;
-  color: #13181D;
-  cursor: pointer;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
-}
-
-.c21 {
-  -webkit-flex: 0.5;
-  -ms-flex: 0.5;
-  flex: 0.5;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .c26 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  font-size: 1.6rem;
+  font-weight: Medium;
+  line-height: 2.6rem;
+  letter-spacing: 0rem;
+  color: #13181D;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.c22 {
+  flex: 0.5;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
+  justify-content: flex-end;
+  user-select: none;
+}
+
+.c27 {
+  display: flex;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -846,34 +612,44 @@ exports[`TimePicker should render properly 1`] = `
   <div
     class="c0 c1"
     id="medly-popover-wrapper"
+    minwidth="20rem"
   >
     <div
       class="c2 c3"
       id="time-input-wrapper"
+      minwidth="20rem"
     >
       <div
         class="c4"
+        minrows="1"
+        variant="filled"
       >
         <div
           class="c5"
+          variant="filled"
         >
           <input
             aria-describedby="time-helper-text"
             class="c6"
+            errortext=""
             id="time-input"
+            inputsize="M"
             placeholder=" "
             type="time"
             value="13:11"
+            variant="filled"
           />
           <label
             class="c7 c8"
             for="time-input"
+            inputwidth="0"
+            variant="filled"
           >
             Time
           </label>
         </div>
         <svg
-          class="c9 c10 sc-1668uuz-0 c11"
+          class="c9 c10 c11 c12"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -889,39 +665,45 @@ exports[`TimePicker should render properly 1`] = `
           />
         </svg>
       </div>
-      
     </div>
     <div
-      class="c12"
+      bgcolor="white"
+      class="c13"
+      distance="0px"
       id="medly-popover-popup"
+      placement="bottom-start"
     >
       <div
-        class="c13"
+        class="c14"
       >
         <div
-          class="c14"
+          class="c15"
         >
           <span
-            class="c15 c16"
+            class="c16 c17"
+            textalign="initial"
+            textcolor="inherit"
           >
             Hour
           </span>
           <span />
           <span
-            class="c15 c16"
+            class="c16 c17"
+            textalign="initial"
+            textcolor="inherit"
           >
             Minutes
           </span>
           <span />
         </div>
         <div
-          class="c17"
+          class="c18"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <svg
-              class="c9 c19"
+              class="c9 c20"
               fill="none"
               height="1em"
               title="hour-arrow-up"
@@ -936,7 +718,7 @@ exports[`TimePicker should render properly 1`] = `
               />
             </svg>
             <ul
-              class="c20"
+              class="c21"
             >
               <li>
                 00
@@ -976,7 +758,7 @@ exports[`TimePicker should render properly 1`] = `
               </li>
             </ul>
             <svg
-              class="c9 c19"
+              class="c9 c20"
               fill="none"
               height="1em"
               title="hour-arrow-down"
@@ -992,15 +774,17 @@ exports[`TimePicker should render properly 1`] = `
             </svg>
           </div>
           <span
-            class="c15 c16 c21"
+            class="c16 c17 c22"
+            textalign="initial"
+            textcolor="inherit"
           >
             :
           </span>
           <div
-            class="c18"
+            class="c19"
           >
             <svg
-              class="c9 c19"
+              class="c9 c20"
               fill="none"
               height="1em"
               title="minutes-arrow-up"
@@ -1015,7 +799,7 @@ exports[`TimePicker should render properly 1`] = `
               />
             </svg>
             <ul
-              class="c20"
+              class="c21"
             >
               <li>
                 00
@@ -1199,7 +983,7 @@ exports[`TimePicker should render properly 1`] = `
               </li>
             </ul>
             <svg
-              class="c9 c19"
+              class="c9 c20"
               fill="none"
               height="1em"
               title="minutes-arrow-down"
@@ -1215,19 +999,19 @@ exports[`TimePicker should render properly 1`] = `
             </svg>
           </div>
           <div
-            class="c22"
+            class="c23"
           >
             <ul
-              class="c23"
+              class="c24"
               style="transform: translateY(calc(-2.2rem - 2.4rem));"
             >
               <li
-                class="c24"
+                class="c25"
               >
                 AM
               </li>
               <li
-                class="c25"
+                class="c26"
               >
                 PM
               </li>
@@ -1235,24 +1019,34 @@ exports[`TimePicker should render properly 1`] = `
           </div>
         </div>
         <div
-          class="c26"
+          class="c27"
         >
           <button
-            class="c27"
+            class="c28"
+            edges="square"
             type="button"
+            variant="flat"
           >
             <span
-              class="c15 c28"
+              class="c16 c29"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="button2"
             >
               Cancel
             </span>
           </button>
           <button
-            class="c29"
+            class="c30"
+            edges="square"
             type="button"
+            variant="solid"
           >
             <span
-              class="c15 c28"
+              class="c16 c29"
+              textalign="initial"
+              textcolor="inherit"
+              textvariant="button2"
             >
               Apply
             </span>

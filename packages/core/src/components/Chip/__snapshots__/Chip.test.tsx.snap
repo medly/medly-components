@@ -6,9 +6,6 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -22,30 +19,15 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   border-radius: 20px;
   padding: 3px 10px;
   margin: 2px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
   max-width: max-content;
   cursor: not-allowed;
   border: 1px solid #b0bcc8;
   background-color: #b0bcc8;
   color: #ffffff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -53,11 +35,7 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   outline: none;
 }
 
-.c0 .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   cursor: not-allowed;
   margin-left: 10px;
 }
@@ -66,9 +44,12 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   <button
     class="c0"
     disabled=""
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
     >
       Solid Chip
     </span>
@@ -82,9 +63,6 @@ exports[`Chip component should render properly with flat variant 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -98,28 +76,13 @@ exports[`Chip component should render properly with flat variant 1`] = `
   border-radius: 20px;
   padding: 3px 10px;
   margin: 2px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
   max-width: max-content;
   cursor: default;
   color: yellow;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -127,11 +90,7 @@ exports[`Chip component should render properly with flat variant 1`] = `
   outline: none;
 }
 
-.c0 .sc-1pf3x8a-0 * {
-  fill: yellow;
-}
-
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -140,9 +99,12 @@ exports[`Chip component should render properly with flat variant 1`] = `
   <button
     class="c0"
     color="yellow"
+    variant="flat"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
     >
       Flat Chip
     </span>
@@ -156,9 +118,6 @@ exports[`Chip component should render properly with outlined variant 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -172,29 +131,14 @@ exports[`Chip component should render properly with outlined variant 1`] = `
   border-radius: 20px;
   padding: 3px 10px;
   margin: 2px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
   max-width: max-content;
   cursor: default;
   border: 1px solid secondary;
   color: secondary;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -202,11 +146,7 @@ exports[`Chip component should render properly with outlined variant 1`] = `
   outline: none;
 }
 
-.c0 .sc-1pf3x8a-0 * {
-  fill: secondary;
-}
-
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -215,9 +155,12 @@ exports[`Chip component should render properly with outlined variant 1`] = `
   <button
     class="c0"
     color="secondary"
+    variant="outlined"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
     >
       Outlined Chip
     </span>
@@ -231,9 +174,6 @@ exports[`Chip component should render properly with solid variant 1`] = `
   color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
@@ -247,30 +187,15 @@ exports[`Chip component should render properly with solid variant 1`] = `
   border-radius: 20px;
   padding: 3px 10px;
   margin: 2px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
   max-width: max-content;
   cursor: default;
   border: 1px solid #3872D2;
   background-color: #3872D2;
   color: #ffffff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -278,11 +203,7 @@ exports[`Chip component should render properly with solid variant 1`] = `
   outline: none;
 }
 
-.c0 .sc-1pf3x8a-0 * {
-  fill: #ffffff;
-}
-
-.c0 .c1 + .sc-1pf3x8a-0 {
+.c0 .c1+.sc-1pf3x8a-0 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -290,9 +211,12 @@ exports[`Chip component should render properly with solid variant 1`] = `
 <div>
   <button
     class="c0"
+    variant="solid"
   >
     <span
       class="c1 c2"
+      textalign="initial"
+      textcolor="inherit"
     >
       Solid Chip
     </span>
