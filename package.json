@@ -68,7 +68,12 @@
     },
     "prettier": "@medly/prettier-config",
     "stylelint": {
-        "extends": "@medly/stylelint-config"
+        "extends": "@medly/stylelint-config",
+        "rules": {
+            "media-feature-name-no-unknown": null,
+            "media-feature-range-operator-space-before": null,
+            "media-feature-range-operator-space-after": null
+        }
     },
     "eslintConfig": {
         "parser": "@typescript-eslint/parser",
