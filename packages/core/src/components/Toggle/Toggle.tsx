@@ -32,7 +32,7 @@ const Component: FC<ToggleProps> = memo(
             toggleId = useMemo(() => id || label?.toLocaleLowerCase().replace(/ +/g, '-') || 'medly-toggle-checkbox', [id, label]);
 
         return (
-            <FieldWithLabel id={toggleId} fieldWithMaxContent {...{ fullWidth, labelPosition }}>
+            <FieldWithLabel id={`${toggleId}-wrapper`} fieldWithMaxContent {...{ fullWidth, labelPosition }}>
                 {label && (
                     <FieldWithLabel.Label
                         showPointer={!restProps.disabled}

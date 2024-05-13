@@ -127,7 +127,7 @@ exports[`Toggle component should render correctly with all the default props 1`]
 <div>
   <div
     class="c0"
-    id="medly-toggle-checkbox"
+    id="medly-toggle-checkbox-wrapper"
   >
     
     <div
@@ -300,7 +300,7 @@ exports[`Toggle component should render correctly with all the props given 1`] =
 <div>
   <div
     class="c0"
-    id="gender-toggle"
+    id="gender-toggle-wrapper"
   >
     <label
       class="c1 c2"
