@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.2](https://github.com/medly/medly-components/compare/@medly-components/core@7.1.1...@medly-components/core@7.1.2) (2024-05-13)
+
+
+### Bug Fixes
+
+* make toggle wrapper id different from checkbox ([6458570](https://github.com/medly/medly-components/commit/6458570cb9fc71fa4e879747dbcab9fe62a2773a))
+
+
+
+
+
 ## [7.1.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.1.0...@medly-components/core@7.1.1) (2024-04-28)
 
 
