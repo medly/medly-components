@@ -13,7 +13,8 @@ const timePickerTheme: TimePickerTheme = {
     selectedOption: {
         ...variants.body1,
         fontWeight: 'Medium',
-        color: colors.black
+        color: colors.blue[500],
+        backgroundColor: colors.grey[100]
     },
     nonSelectedOption: {
         ...variants.body2,

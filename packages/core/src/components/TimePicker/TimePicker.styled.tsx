@@ -14,11 +14,6 @@ export const TimePickerWrapper = styled(Popover)<{ fullWidth?: boolean; minWidth
     & > ${OuterWrapper} {
         margin: 0;
     }
-
-    input[type='time']::-webkit-calendar-picker-indicator {
-        background: none;
-        display: none;
-    }
 `;
 
 export const TimeIcon = styled(AccessTimeIcon).attrs({ title: 'time-icon' })`

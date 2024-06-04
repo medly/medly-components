@@ -107,6 +107,7 @@ export const Fields: FC<FieldsProps> = memo(props => {
                                             {...({
                                                 ...commonProps,
                                                 value: value ?? '',
+                                                type: 'text',
                                                 onChange: (value: string) => handlers.handleChange(name, value)
                                             } as TimePickerProps)}
                                         />

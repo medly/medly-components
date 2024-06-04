@@ -7,7 +7,7 @@ const applyMasking = (value: string, mask: string, selectionStart: number): stri
 
     let newValue;
 
-    if (length > mask.length || alphaRegex.test(lastChar)) {
+    if (length > mask.length) {
         // if user types more char then mask length
         newValue = value.slice(0, -1);
     } else if (

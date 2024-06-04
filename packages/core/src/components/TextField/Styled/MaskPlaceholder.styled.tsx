@@ -20,6 +20,7 @@ export const MaskPlaceholder = styled('span')<{
     cursor: text;
     user-select: none;
     pointer-events: none;
+    white-space: pre-wrap;
     color: ${({ theme }) => theme.textField.filled.active.placeholderColor};
     ${({ isLabelPresent, size }) => (isLabelPresent && size !== 'S' ? bottom : center)}
 `;
