@@ -542,6 +542,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
+  white-space: pre-wrap;
   color: rgba(0,90,238,.2);
   bottom: 0.7rem;
 }
@@ -2960,6 +2961,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
+  white-space: pre-wrap;
   color: rgba(0,90,238,.2);
   bottom: 0.7rem;
 }

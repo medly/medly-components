@@ -39,6 +39,7 @@ const Component: FC<DatePickerProps> = memo(
                 () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat!) : null),
                 [value, displayFormat]
             );
+
         const wrapperRef = useRef<HTMLDivElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             [inputKey, setInputKey] = useState(0),
@@ -49,9 +50,7 @@ const Component: FC<DatePickerProps> = memo(
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
         useEffect(() => {
-            if (date === null) {
-                setTextValue('');
-            } else if (date) {
+            if (date) {
                 setTextValue(format(date, displayFormat!).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
             }
         }, [date, displayFormat]);

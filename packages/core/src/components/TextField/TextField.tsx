@@ -91,8 +91,9 @@ const Component: FC<TextFieldProps> = memo(
                     setCharacterCountValue(valueString.length);
 
                     if (mask) {
-                        const maskedValue = getMaskedValue(e, mask);
+                        const { maskedValue, selectionStart } = getMaskedValue(e, mask);
                         e.target.value = maskedValue;
+                        e.target.setSelectionRange(selectionStart, selectionStart);
                         setMaskLabel(`${maskedValue}${mask.substr(maskedValue.length)}`);
                     }
                     props.onChange && props.onChange(e);

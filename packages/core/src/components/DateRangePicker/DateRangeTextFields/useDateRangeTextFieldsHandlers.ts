@@ -48,10 +48,10 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         }, []),
         handleTextChange = useCallback(
             (e: React.ChangeEvent<HTMLInputElement>) => {
-                const maskedValue = getMaskedValue(e, mask),
+                const { maskedValue, selectionStart } = getMaskedValue(e, mask),
                     parsedDate = parseToDate(e.target.value, displayFormat),
                     maskedLabel = `${maskedValue}${mask.substr(maskedValue.length)}`;
-
+                e.target.setSelectionRange(selectionStart, selectionStart);
                 if (e.target.name === 'START_DATE') {
                     setStartDateText(maskedValue);
                     setStartDateMaskLabel(maskedLabel);
@@ -101,8 +101,11 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         validateOnWrapperBlur = useCallback(
             (event: ChangeEvent<HTMLInputElement>) => {
                 const validatorMessage = (validator && validator(selectedDates, event)) || '',
-                    customMessage = (required && !selectedDates.startDate && !selectedDates.endDate && 'Please fill in this field.') || '',
-                    message = validator ? validatorMessage : customMessage;
+                    customRequiredMessage =
+                        required && (!selectedDates.startDate || !selectedDates.endDate) && 'Please fill in this field.',
+                    customInvalidMessage =
+                        (!isValidDate(selectedDates.startDate) || !isValidDate(selectedDates.endDate)) && 'Enter valid date',
+                    message = validator ? validatorMessage : customRequiredMessage || customInvalidMessage || '';
                 setErrorMessage(message);
                 if (validator) {
                     startDateRef.current?.setCustomValidity(validatorMessage);
@@ -115,10 +118,10 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
     useEffect(() => {
         const formattedStartDate = selectedDates.startDate ? getFormattedDate(selectedDates.startDate, displayFormat) : '',
             formattedEndDate = selectedDates.endDate ? getFormattedDate(selectedDates.endDate, displayFormat) : '';
-        setStartDateText(formattedStartDate);
-        setEndDateText(formattedEndDate);
-        setStartDateMaskLabel(formattedStartDate || mask);
-        setEndDateMaskLabel(formattedEndDate || mask);
+        formattedStartDate && setStartDateText(formattedStartDate);
+        formattedEndDate && setEndDateText(formattedEndDate);
+        formattedStartDate && setStartDateMaskLabel(formattedStartDate || mask);
+        formattedEndDate && setEndDateMaskLabel(formattedEndDate || mask);
         isValidDate(selectedDates.startDate) && isValidDate(selectedDates.endDate) && setErrorMessage('');
     }, [isActive, selectedDates, displayFormat]);
 

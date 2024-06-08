@@ -1901,6 +1901,7 @@ exports[`DateRangePicker Custom date range options should render properly with c
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
+  white-space: pre-wrap;
   color: rgba(0,90,238,.2);
   bottom: 0.7rem;
 }
@@ -24175,6 +24176,7 @@ exports[`DateRangePicker should render properly 1`] = `
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
+  white-space: pre-wrap;
   color: rgba(0,90,238,.2);
   bottom: 0.7rem;
 }
@@ -26424,6 +26426,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
+  white-space: pre-wrap;
   color: rgba(0,90,238,.2);
   bottom: 0.7rem;
 }
