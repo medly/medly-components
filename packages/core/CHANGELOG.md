@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.4](https://github.com/medly/medly-components/compare/@medly-components/core@7.1.3...@medly-components/core@7.1.4) (2024-06-08)
+
+
+### Bug Fixes
+
+* fix clearing text on recieving null as value in datepicker ([7c14373](https://github.com/medly/medly-components/commit/7c14373e942a8cfcb0b15a6843720efa17fc38f5))
+
+
+
+
+
 ## [7.1.3](https://github.com/medly/medly-components/compare/@medly-components/core@7.1.2...@medly-components/core@7.1.3) (2024-06-08)
 
 
