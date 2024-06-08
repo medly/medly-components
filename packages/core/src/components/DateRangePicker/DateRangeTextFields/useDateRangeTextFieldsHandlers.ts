@@ -118,10 +118,22 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
     useEffect(() => {
         const formattedStartDate = selectedDates.startDate ? getFormattedDate(selectedDates.startDate, displayFormat) : '',
             formattedEndDate = selectedDates.endDate ? getFormattedDate(selectedDates.endDate, displayFormat) : '';
-        formattedStartDate && setStartDateText(formattedStartDate);
-        formattedEndDate && setEndDateText(formattedEndDate);
-        formattedStartDate && setStartDateMaskLabel(formattedStartDate || mask);
-        formattedEndDate && setEndDateMaskLabel(formattedEndDate || mask);
+
+        if (formattedStartDate) {
+            setStartDateText(formattedStartDate);
+            setStartDateMaskLabel(formattedStartDate);
+        } else if (!isActive && !isErrorPresent) {
+            setStartDateText('');
+            setStartDateMaskLabel(mask);
+        }
+
+        if (formattedEndDate) {
+            setEndDateText(formattedEndDate);
+            setEndDateMaskLabel(formattedEndDate);
+        } else if (!isActive && !isErrorPresent) {
+            setEndDateText('');
+            setEndDateMaskLabel(mask);
+        }
         isValidDate(selectedDates.startDate) && isValidDate(selectedDates.endDate) && setErrorMessage('');
     }, [isActive, selectedDates, displayFormat]);
 

@@ -44,6 +44,7 @@ const Component: FC<DatePickerProps> = memo(
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             [inputKey, setInputKey] = useState(0),
             [textValue, setTextValue] = useState(''),
+            [isFocused, setFocusedState] = useState(false),
             [builtInErrorMessage, setErrorMessage] = useState(''),
             [showCalendar, toggleCalendar] = useState(false),
             [active, setActive] = useState(false),
@@ -52,8 +53,10 @@ const Component: FC<DatePickerProps> = memo(
         useEffect(() => {
             if (date) {
                 setTextValue(format(date, displayFormat!).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
+            } else if (!isErrorPresent && !isFocused) {
+                setTextValue('');
             }
-        }, [date, displayFormat]);
+        }, [date, isFocused, isErrorPresent, displayFormat]);
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const inputValue = event.target.value,
@@ -95,7 +98,10 @@ const Component: FC<DatePickerProps> = memo(
                 [props.required, displayFormat, validator, minSelectableDate, maxSelectableDate]
             ),
             onBlur = useCallback(
-                (event: React.FocusEvent<HTMLInputElement>) => inputRef.current?.value && validate(event, props.onBlur),
+                (event: React.FocusEvent<HTMLInputElement>) => {
+                    setFocusedState(false);
+                    inputRef.current?.value && validate(event, props.onBlur);
+                },
                 [props.onBlur, displayFormat]
             ),
             onInvalid = useCallback(
@@ -105,6 +111,7 @@ const Component: FC<DatePickerProps> = memo(
             onFocus = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>) => {
                     setActive(true);
+                    setFocusedState(true);
                     props.onFocus && props.onFocus(event);
                 },
                 [props.onFocus]
