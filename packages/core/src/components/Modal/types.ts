@@ -23,7 +23,6 @@ export interface ModalProps extends HTMLProps<HTMLDivElement> {
 
 export interface ModalBackgroundProps {
     open?: boolean;
-    isSmallScreen: boolean;
 }
 
 interface ContentProps {

@@ -32,7 +32,7 @@ const getPadding = ({ scrollState, headerHeight }: StyledProps) => {
 export const Content = styled('div')<StyledProps>`
     flex: 1;
     box-sizing: border-box;
-    overflow: ${({ overflowVisible }) => overflowVisible && `visible`};
+    overflow: auto;
     ${getPadding}
 
     @media (min-width: 768px) {
