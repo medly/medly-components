@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.6](https://github.com/medly/medly-components/compare/@medly-components/core@7.1.5...@medly-components/core@7.1.6) (2024-06-13)
+
+
+### Bug Fixes
+
+* show error message user puts incorrect date manually ([a33fd7f](https://github.com/medly/medly-components/commit/a33fd7f200466c725388a370ea95a5cda76bd1b6))
+
+
+
+
+
 ## [7.1.5](https://github.com/medly/medly-components/compare/@medly-components/core@7.1.4...@medly-components/core@7.1.5) (2024-06-10)
 
 **Note:** Version bump only for package @medly-components/core
