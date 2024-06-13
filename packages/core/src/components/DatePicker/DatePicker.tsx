@@ -63,7 +63,7 @@ const Component: FC<DatePickerProps> = memo(
                         parsedDate = parseToDate(inputValue, displayFormat!),
                         isValidDate = parsedDate?.toString() !== 'Invalid Date';
                     setTextValue(inputValue);
-                    onChange(parsedDate.toString() !== 'Invalid Date' ? parsedDate : null);
+                    onChange(isValidDate ? parsedDate : null);
                     isValidDate && validate(event);
                 },
                 [displayFormat, onChange]
@@ -93,6 +93,7 @@ const Component: FC<DatePickerProps> = memo(
                         message = validatorMessage || emptyDateMessage || invalidDateRangeMessage || invalidDateMessage || '';
 
                     setErrorMessage(message);
+                    inputRef.current?.setCustomValidity(message);
                     eventFunc && eventFunc(event);
                 },
                 [props.required, displayFormat, validator, minSelectableDate, maxSelectableDate]

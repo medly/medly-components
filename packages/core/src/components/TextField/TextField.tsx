@@ -59,7 +59,7 @@ const Component: FC<TextFieldProps> = memo(
                     validatorMessage = (validator && validator(element.value, event)) || '',
                     message = validator ? validatorMessage : element.validationMessage;
                 setErrorMessage(message);
-                validator && inputRef.current?.setCustomValidity(validatorMessage);
+                validator && inputRef.current?.setCustomValidity(message);
                 eventFunc && eventFunc(event);
             },
             [validator, builtInErrorMessage]

@@ -80,7 +80,7 @@ export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
 
     &:disabled {
         cursor: not-allowed;
-        color: ${({ theme }) => theme.datePicker.nonActiveMonthDateColor};
+        color: ${({ theme, isSelected }) => !isSelected && theme.datePicker.nonActiveMonthDateColor};
     }
 
     &:hover {

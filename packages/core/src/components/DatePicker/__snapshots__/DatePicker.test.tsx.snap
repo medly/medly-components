@@ -1018,7 +1018,6 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -2059,7 +2058,6 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -3097,7 +3095,6 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -4135,7 +4132,6 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -5175,7 +5171,6 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -6212,7 +6207,6 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -7249,7 +7243,6 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -8289,7 +8282,6 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -9326,7 +9318,6 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -10363,7 +10354,6 @@ exports[`DatePicker component popover placement should render properly with "top
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -11403,7 +11393,6 @@ exports[`DatePicker component popover placement should render properly with "top
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -12440,7 +12429,6 @@ exports[`DatePicker component popover placement should render properly with "top
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {

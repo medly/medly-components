@@ -1,13 +1,13 @@
 import { endOfDay, endOfWeek, startOfWeek } from 'date-fns';
+import type { FC, MouseEvent } from 'react';
 import { memo, useCallback } from 'react';
 import * as CalendarStyled from '../../../Calendar/Calendar.styled';
+import WeekDays from '../../../Calendar/WeekDays';
 import { LONG_CALENDAR_MONTHS } from '../../../Calendar/constants';
 import { getCalendarDates, isSameDay, isSameMonth, isValidDate } from '../../../Calendar/helper';
-import WeekDays from '../../../Calendar/WeekDays';
 import Text from '../../../Text';
 import * as Styled from './Styled';
 import { Props } from './types';
-import type { FC, MouseEvent } from 'react';
 
 export const Month: FC<Props> = memo(
     ({
@@ -93,7 +93,13 @@ export const Month: FC<Props> = memo(
                                 onMouseOut={handleMouseOver(null)}
                             >
                                 {isInActiveMonth && (
-                                    <Styled.Date key={index} title={_date.toDateString()} disabled={disabled} isSelected={isSelected}>
+                                    <Styled.Date
+                                        key={index}
+                                        title={_date.toDateString()}
+                                        disabled={disabled}
+                                        isInDateRange={isInDateRange}
+                                        isSelected={isSelected}
+                                    >
                                         <Text textWeight={isSelected ? 'Strong' : 'Regular'}>{_date.getDate()}</Text>
                                     </Styled.Date>
                                 )}

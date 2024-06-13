@@ -2958,9 +2958,6 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -4761,9 +4758,6 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -6564,9 +6558,6 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -8369,9 +8360,6 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -10171,9 +10159,6 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -11973,9 +11958,6 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -13778,9 +13760,6 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -15580,9 +15559,6 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -17382,9 +17358,6 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -19187,9 +19160,6 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -20989,9 +20959,6 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -22791,9 +22758,6 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 
 .c18:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c18 > .c8 {
@@ -24802,9 +24766,6 @@ exports[`DateRangePicker should render properly 1`] = `
 
 .c32:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c32 > .c22 {
@@ -27234,9 +27195,6 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 
 .c37:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
-  background-color: #ffffff;
-  border-color: transparent;
 }
 
 .c37 > .c22 {
