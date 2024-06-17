@@ -41,9 +41,12 @@ export const Component: FC<TimePickerPopupProps> = ({ value, onChange, onReset, 
             const minutes = Number(time[1]);
             const period = hour < 12 ? 0 : 1;
             const height = (hourRef.current?.scrollHeight || 1) / 16;
-            hourRef.current?.scrollTo({ top: (hour % 12) * height, behavior: 'instant' as ScrollBehavior });
-            minutesRef.current?.scrollTo({ top: minutes * height, behavior: 'instant' as ScrollBehavior });
-            periodRef.current?.scrollTo({ top: period * height, behavior: 'instant' as ScrollBehavior });
+            // @ts-ignore
+            hourRef.current?.scrollTo({ top: (hour % 12) * height, behavior: 'instant' });
+            // @ts-ignore
+            minutesRef.current?.scrollTo({ top: minutes * height, behavior: 'instant' });
+            // @ts-ignore
+            periodRef.current?.scrollTo({ top: period * height, behavior: 'instant' });
         }
     }, [open, value]);
 

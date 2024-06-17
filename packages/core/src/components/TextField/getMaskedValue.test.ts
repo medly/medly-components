@@ -1,7 +1,6 @@
 import getMaskedValue from './getMaskedValue';
 
 describe('getMaskedValue function', () => {
-   
     // @ts-expect-error
     const maskedValue = (value: string, selectionStart?: number, data?: string | null = null) =>
         // @ts-expect-error
