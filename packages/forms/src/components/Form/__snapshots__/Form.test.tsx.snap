@@ -1521,11 +1521,6 @@ exports[`Form should render properly with initial state 1`] = `
   margin: 0;
 }
 
-.c47 input[type='time']::-webkit-calendar-picker-indicator {
-  background: none;
-  display: none;
-}
-
 .c68 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2124,11 +2119,17 @@ exports[`Form should render properly with initial state 1`] = `
                 class="c7"
                 id="birthTime-input"
                 name="birthTime"
-                placeholder=" "
+                pattern="[0-9]{2} : [0-9]{2}  [AaPp][Mm]"
+                placeholder="HH : MM  AM"
                 required=""
-                type="time"
-                value="22:00"
+                type="text"
+                value="10 : 00  PM"
               />
+              <span
+                class="c42 c43"
+              >
+                10 : 00  PM
+              </span>
               <label
                 class="c8 c9"
                 for="birthTime-input"
@@ -3815,11 +3816,6 @@ exports[`Form should render properly without initial state 1`] = `
   margin: 0;
 }
 
-.c47 input[type='time']::-webkit-calendar-picker-indicator {
-  background: none;
-  display: none;
-}
-
 .c67 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4429,11 +4425,17 @@ exports[`Form should render properly without initial state 1`] = `
                 class="c10"
                 id="birthTime-input"
                 name="birthTime"
-                placeholder=" "
+                pattern="[0-9]{2} : [0-9]{2}  [AaPp][Mm]"
+                placeholder="HH : MM  AM"
                 required=""
-                type="time"
+                type="text"
                 value=""
               />
+              <span
+                class="c42 c43"
+              >
+                HH : MM  AM
+              </span>
               <label
                 class="c11 c12"
                 for="birthTime-input"

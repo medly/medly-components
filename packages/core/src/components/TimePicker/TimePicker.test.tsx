@@ -1,17 +1,12 @@
-import { fireEvent, render, screen } from '@test-utils';
+import { fireEvent, render, screen, waitFor } from '@test-utils';
 import { TimePicker } from './TimePicker';
 
 describe('TimePicker', () => {
     beforeAll(() => {
-        Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 24 });
         // @ts-ignore
         Element.prototype.scrollTo = function ({ top }) {
             this.scrollTop = top;
         };
-    });
-
-    afterEach(() => {
-        Object.defineProperty(global?.navigator, 'userAgent', { configurable: true, value: { indexOf: () => -1 } });
     });
 
     it('should render properly', () => {
@@ -23,52 +18,58 @@ describe('TimePicker', () => {
     it('should give time entered in the textfield', () => {
         const mockOnChange = jest.fn();
         render(<TimePicker label="Time" value="13:11" onChange={mockOnChange} />);
-        fireEvent.change(screen.getByLabelText('Time'), { target: { value: '22:00' } });
+        fireEvent.change(screen.getByLabelText('Time'), { target: { value: '10 : 00 PM' } });
+        fireEvent.blur(screen.getByLabelText('Time'));
         expect(mockOnChange).toBeCalledWith('22:00');
     });
 
-    it('should give the expected time on selecting time from dialog', () => {
+    it('should select AM as default', async () => {
+        const mockOnChange = jest.fn();
+        render(<TimePicker label="Time" value="13:11" onChange={mockOnChange} />);
+        fireEvent.change(screen.getByLabelText('Time'), { target: { value: '10 : 00' } });
+        fireEvent.blur(screen.getByLabelText('Time'));
+        expect(mockOnChange).toBeCalledWith('10:00');
+    });
+
+    it('should give the expected time on scrolling through list in the dialog', async () => {
         const mockOnChange = jest.fn();
         render(<TimePicker label="Time" value="" onChange={mockOnChange} />);
         fireEvent.click(screen.getByLabelText('Time'));
-        fireEvent.click(screen.getByTitle('hour-arrow-down'));
-        fireEvent.click(screen.getByTitle('minutes-arrow-down'));
-        fireEvent.click(screen.getByText('PM'));
+        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 640 });
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 11 * 40 });
+        fireEvent.scroll(screen.getByRole('list', { name: 'HOUR list' }));
+        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 2560 });
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 11 * 40 });
+        fireEvent.scroll(screen.getByRole('list', { name: 'MINUTES list' }));
+        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 240 });
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 1 * 40 });
+        fireEvent.scroll(screen.getByRole('list', { name: 'PERIOD list' }));
         fireEvent.click(screen.getByText('Apply'));
-        expect(mockOnChange).toBeCalledWith('13:01');
+        await waitFor(() => expect(mockOnChange).toBeCalledWith('23:11'));
     });
 
-    it('should reset the values on clicking on cancel button', () => {
-        const mockOnChange = jest.fn();
-        render(<TimePicker label="Time" value="" onChange={mockOnChange} />);
-        fireEvent.click(screen.getByLabelText('Time'));
-        fireEvent.click(screen.getByTitle('hour-arrow-down'));
-        fireEvent.click(screen.getByTitle('minutes-arrow-down'));
-        fireEvent.click(screen.getByText('PM'));
-        fireEvent.click(screen.getByText('Cancel'));
-        expect(mockOnChange).not.toBeCalled();
-        expect(screen.queryByText('hour-arrow-down')).not.toBeInTheDocument();
-    });
+    describe('error messages', () => {
+        it('should render error message if required', async () => {
+            Object.defineProperty(HTMLElement.prototype, 'scrollTo', { configurable: true, value: jest.fn() });
+            render(<TimePicker required label="Time" value="" onChange={jest.fn()} />);
+            fireEvent.blur(screen.getByLabelText('Time'));
+            expect(await screen.findByText('Constraints not satisfied')).toBeInTheDocument();
+        });
 
-    it('should not render dialog for mobile devices', () => {
-        Object.defineProperty(global?.navigator, 'userAgent', { configurable: true, value: { indexOf: () => 1 } });
-        render(<TimePicker label="Time" value="" onChange={jest.fn()} />);
-        fireEvent.click(screen.getByLabelText('Time'));
-        expect(screen.queryByText('hour-arrow-down')).not.toBeInTheDocument();
-    });
+        it('should render error message returned from validator', async () => {
+            Object.defineProperty(HTMLElement.prototype, 'scrollTo', { configurable: true, value: jest.fn() });
+            const validator = (val: string) => (!val ? 'Please enter time' : '');
+            render(<TimePicker required label="Time" value="" onChange={jest.fn()} validator={validator} />);
+            fireEvent.blur(screen.getByLabelText('Time'));
+            expect(await screen.findByText('Please enter time')).toBeInTheDocument();
+        });
 
-    it('should render error message if required', async () => {
-        render(<TimePicker required label="Time" value="" onChange={jest.fn()} />);
-        fireEvent.click(screen.getByLabelText('Time'));
-        fireEvent.click(screen.getByText('Cancel'));
-        expect(await screen.findByText('Constraints not satisfied')).toBeInTheDocument();
-    });
-
-    it('should render error message returned from validator', async () => {
-        const validator = (val: string) => (!val ? 'Please enter time' : '');
-        render(<TimePicker required label="Time" value="" onChange={jest.fn()} validator={validator} />);
-        fireEvent.click(screen.getByLabelText('Time'));
-        fireEvent.click(screen.getByText('Cancel'));
-        expect(await screen.findByText('Please enter time')).toBeInTheDocument();
+        it('should render error message if time is out of range', async () => {
+            Object.defineProperty(HTMLElement.prototype, 'scrollTo', { configurable: true, value: jest.fn() });
+            render(<TimePicker label="Time" value="" onChange={jest.fn()} />);
+            fireEvent.change(screen.getByLabelText('Time'), { target: { value: '78 : 78 AM' } });
+            fireEvent.blur(screen.getByLabelText('Time'));
+            expect(await screen.findByText('Time must be within the valid range of 12:00 AM to 11:59 PM')).toBeInTheDocument();
+        });
     });
 });

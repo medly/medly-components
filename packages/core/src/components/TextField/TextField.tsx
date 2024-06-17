@@ -83,7 +83,6 @@ const Component: FC<TextFieldProps> = memo(
             ),
             onInvalid = useCallback(
                 (event: ChangeEvent<HTMLInputElement>) => {
-                    console.log('coming in invalid');
                     validate(event, props.onInvalid);
                 },
                 [validate, props.onInvalid]
