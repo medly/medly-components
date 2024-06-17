@@ -1,6 +1,6 @@
 import { WithStyle, useCombinedRefs } from '@medly-components/utils';
 import type { FC } from 'react';
-import { forwardRef, memo, useRef } from 'react';
+import { forwardRef, memo, useRef, useState } from 'react';
 import { TimePickerWrapper } from './TimePicker.styled';
 import TimePickerPopup from './TimePickerPopup';
 import TimePickerTextField from './TimePickerTextField';
@@ -8,21 +8,43 @@ import { TimePickerProps } from './types';
 
 const Component: FC<TimePickerProps> = memo(
     forwardRef((props, ref) => {
+        const [textFieldKey, setTextfieldKey] = useState(0);
         const isMobile = navigator?.userAgent?.indexOf('Mobi') > -1;
+        const wrapperRef = useRef<HTMLDivElement>(null);
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null));
         const id = props.id || props.label?.toLowerCase().replace(/\s/g, '') || 'medly-timepicker';
         const { value, onChange, disabled, className, fullWidth, minWidth, maxWidth, popoverDistance, popoverPlacement, ...restProps } =
             props;
 
-        const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => onChange(e.target.value);
+        const handleReset = () => {
+            setTextfieldKey(key => key + 1);
+            onChange('');
+        };
 
         return (
-            <TimePickerWrapper className={className} fullWidth={fullWidth} minWidth={minWidth} maxWidth={maxWidth} interactionType="click">
-                <TimePickerTextField id={id} ref={inputRef} disabled={disabled} onChange={handleChange} value={value} {...restProps} />
+            <TimePickerWrapper
+                ref={wrapperRef}
+                className={className}
+                fullWidth={fullWidth}
+                minWidth={minWidth}
+                maxWidth={maxWidth}
+                interactionType="click"
+            >
+                <TimePickerTextField
+                    id={id}
+                    ref={inputRef}
+                    disabled={disabled}
+                    onChange={onChange}
+                    value={value}
+                    key={textFieldKey.toString()}
+                    {...restProps}
+                />
                 {!disabled && !isMobile && (
                     <TimePickerPopup
+                        key={value.toString()}
                         value={value}
                         onChange={onChange}
+                        onReset={handleReset}
                         popoverDistance={popoverDistance}
                         popoverPlacement={popoverPlacement}
                     />

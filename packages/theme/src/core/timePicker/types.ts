@@ -17,6 +17,7 @@ export interface TimePickerTheme {
         fontWeight: FontWeights;
         lineHeight: string;
         letterSpacing: string;
+        backgroundColor: string;
     };
     nonSelectedOption: {
         color: string;

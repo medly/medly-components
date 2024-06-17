@@ -7,7 +7,7 @@ const applyMasking = (value: string, mask: string, selectionStart: number): stri
 
     let newValue;
 
-    if (length > mask.length || alphaRegex.test(lastChar)) {
+    if (length > mask.length) {
         // if user types more char then mask length
         newValue = value.slice(0, -1);
     } else if (
@@ -32,11 +32,12 @@ export const getMaskedValue = (event: React.ChangeEvent<HTMLInputElement>, mask:
 
     const specialCharsRegex = /[^a-zA-Z0-9]/g, //NOSONAR
         { value, selectionStart } = event.target;
-
-    //TODO: Need to remove this if, when we handle masking when user deletes from the middle of the text
-    if (selectionStart && selectionStart < value.length) {
-        maskedValue = `${value.slice(0, selectionStart)} ${value.slice(selectionStart)}`;
-        return { maskedValue, selectionStart };
+        
+        //TODO: Need to remove this if, when we handle masking when user deletes from the middle of the text
+        if (selectionStart !== null && selectionStart < value.length && value.length !== mask.length) {
+        // @ts-expect-error
+        maskedValue = `${value.slice(0, selectionStart)}${event.nativeEvent?.data === null ? ' ' : ''}${value.slice(selectionStart)}`;
+        return { maskedValue, selectionStart:  specialCharsRegex.test(value[selectionStart]) ? selectionStart : selectionStart + 1 };
     } else {
         maskedValue = value
             .replace(specialCharsRegex, '')

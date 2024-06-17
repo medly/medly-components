@@ -205,7 +205,7 @@ describe('Form', () => {
             });
             // TimePicker
             fireEvent.change(screen.getByLabelText('Birth Time'), {
-                target: { value: formData.birthTime }
+                target: { value: '11 : 00 PM' }
             });
             // DateRangePicker
             fireEvent.change(screen.getByRole('textbox', { name: 'From' }), {
