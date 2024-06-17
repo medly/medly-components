@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/medly/medly-components/compare/@medly-components/forms@3.0.14...@medly-components/forms@3.1.0) (2024-06-17)
+
+
+### Features
+
+* update timepicker styles ([#741](https://github.com/medly/medly-components/issues/741)) ([bb23bd5](https://github.com/medly/medly-components/commit/bb23bd5e94ab721450157cee1d4de8fe3f715ead))
+
+
+
+
+
 ## [3.0.14](https://github.com/medly/medly-components/compare/@medly-components/forms@3.0.13...@medly-components/forms@3.0.14) (2024-06-13)
 
 **Note:** Version bump only for package @medly-components/forms

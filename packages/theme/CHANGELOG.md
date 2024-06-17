@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/medly/medly-components/compare/@medly-components/theme@6.0.0...@medly-components/theme@6.1.0) (2024-06-17)
+
+
+### Features
+
+* update timepicker styles ([#741](https://github.com/medly/medly-components/issues/741)) ([bb23bd5](https://github.com/medly/medly-components/commit/bb23bd5e94ab721450157cee1d4de8fe3f715ead))
+
+
+
+
+
 # [6.0.0](https://github.com/medly/medly-components/compare/@medly-components/theme@5.3.0...@medly-components/theme@6.0.0) (2024-01-10)
 
 

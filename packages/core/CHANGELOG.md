@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.1.6...@medly-components/core@7.2.0) (2024-06-17)
+
+
+### Bug Fixes
+
+* lint and typescript errors ([26970ab](https://github.com/medly/medly-components/commit/26970ab7c7befa0237a0c224121843fc9ab21f69))
+
+
+### Features
+
+* update timepicker styles ([#741](https://github.com/medly/medly-components/issues/741)) ([bb23bd5](https://github.com/medly/medly-components/commit/bb23bd5e94ab721450157cee1d4de8fe3f715ead))
+
+
+
+
+
 ## [7.1.6](https://github.com/medly/medly-components/compare/@medly-components/core@7.1.5...@medly-components/core@7.1.6) (2024-06-13)
 
 
