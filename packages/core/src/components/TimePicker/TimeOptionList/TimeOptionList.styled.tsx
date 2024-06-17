@@ -1,5 +1,5 @@
 import { centerAligned } from '@medly-components/utils';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const TimePicker = styled.div`
     height: 100%;
@@ -30,18 +30,21 @@ export const TimeUList = styled.ul`
     }
 `;
 
+const getFontStyle = (style: 'selectedOption' | 'nonSelectedOption') => css`
+    font-size: ${({ theme }) => theme.timePicker[style].fontSize};
+    font-weight: ${({ theme }) => theme.font.weights[theme.timePicker[style].fontWeight]};
+    line-height: ${({ theme }) => theme.timePicker[style].lineHeight};
+    letter-spacing: ${({ theme }) => theme.timePicker[style].LetterSpacing};
+    color: ${({ theme }) => theme.timePicker[style].color};
+`;
+
 export const TimeItem = styled('li')<{ isSelected?: boolean }>`
     ${centerAligned()}
     cursor: pointer;
     min-height: 4rem;
     scroll-snap-align: center;
-    font-size: ${({ theme, isSelected }) => theme.timePicker[isSelected ? 'selectedOption' : 'nonSelectedOption'].fontSize};
-    font-weight: ${({ theme, isSelected }) =>
-        theme.font.weights[theme.timePicker[isSelected ? 'selectedOption' : 'nonSelectedOption'].fontWeight]};
-    line-height: ${({ theme, isSelected }) => theme.timePicker[isSelected ? 'selectedOption' : 'nonSelectedOption'].lineHeight};
-    letter-spacing: ${({ theme, isSelected }) => theme.timePicker[isSelected ? 'selectedOption' : 'nonSelectedOption'].LetterSpacing};
-    color: ${({ theme, isSelected }) => theme.timePicker[isSelected ? 'selectedOption' : 'nonSelectedOption'].color};
     transition: all 200ms ease-in-ease-out;
+    ${({ isSelected }) => getFontStyle(isSelected ? 'selectedOption' : 'nonSelectedOption')};
 
     &:hover {
         text-decoration: ${({ isSelected }) => (isSelected ? 'underline' : 'none')};

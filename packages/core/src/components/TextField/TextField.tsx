@@ -82,9 +82,7 @@ const Component: FC<TextFieldProps> = memo(
                 [props.onFocus]
             ),
             onInvalid = useCallback(
-                (event: ChangeEvent<HTMLInputElement>) => {
-                    validate(event, props.onInvalid);
-                },
+                (event: ChangeEvent<HTMLInputElement>) => validate(event, props.onInvalid),
                 [validate, props.onInvalid]
             ),
             onChange = useCallback(
