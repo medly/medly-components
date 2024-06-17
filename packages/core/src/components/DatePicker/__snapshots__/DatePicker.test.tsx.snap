@@ -175,6 +175,7 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
+  white-space: pre-wrap;
   color: rgba(0,90,238,.2);
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -572,6 +573,7 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
+  white-space: pre-wrap;
   color: rgba(0,90,238,.2);
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1016,7 +1018,6 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -2057,7 +2058,6 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -3095,7 +3095,6 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -4133,7 +4132,6 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -5173,7 +5171,6 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -6210,7 +6207,6 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -7247,7 +7243,6 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -8287,7 +8282,6 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -9324,7 +9318,6 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -10361,7 +10354,6 @@ exports[`DatePicker component popover placement should render properly with "top
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -11401,7 +11393,6 @@ exports[`DatePicker component popover placement should render properly with "top
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -12438,7 +12429,6 @@ exports[`DatePicker component popover placement should render properly with "top
 
 .c17:disabled {
   cursor: not-allowed;
-  color: #b0bcc8;
 }
 
 .c17:hover {
@@ -13428,6 +13418,7 @@ exports[`DatePicker component should render properly when hideInput prop is pass
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
+  white-space: pre-wrap;
   color: rgba(0,90,238,.2);
   bottom: 0.7rem;
 }
@@ -13827,6 +13818,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
+  white-space: pre-wrap;
   color: rgba(0,90,238,.2);
   bottom: 0.7rem;
 }
@@ -14207,6 +14199,7 @@ exports[`DatePicker component should render properly when value is of string typ
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
+  white-space: pre-wrap;
   color: rgba(0,90,238,.2);
   top: 50%;
   -webkit-transform: translateY(-50%);

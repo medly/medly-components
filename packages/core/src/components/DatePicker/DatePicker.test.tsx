@@ -236,6 +236,16 @@ describe('DatePicker component', () => {
             fireEvent.change(screen.getByRole('textbox'), { target: { value: '01 / 02' } });
             expect(mockOnChange).toHaveBeenCalledWith(null);
         });
+
+        it('should call onChange with null if we delete char from the middle', async () => {
+            const mockOnChange = jest.fn(),
+                dateToSelect = new Date(2020, 0, 2);
+            render(<DatePicker id="dob" value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
+            fireEvent.change(screen.getByRole('textbox'), { target: { value: '01 / 02 / 2020' } });
+            expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
+            fireEvent.change(screen.getByRole('textbox'), { target: { value: '01 / 0 / 2020' } });
+            expect(mockOnChange).toHaveBeenCalledWith(null);
+        });
     });
 
     describe('error messages', () => {

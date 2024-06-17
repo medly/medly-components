@@ -1,7 +1,6 @@
 import { cleanup, fireEvent, render, screen } from '@test-utils';
 import { Modal } from './Modal';
-import { ModalBackgroundStyled } from './Modal.styled';
-import { ModalBackgroundProps, ModalProps } from './types';
+import { ModalProps } from './types';
 
 const modalRenderer = ({
     open = false,
@@ -49,7 +48,6 @@ describe('Modal component', () => {
     it('should render properly when it is open', () => {
         const { container } = modalRenderer({ open: true, minWidth: '200px', minHeight: '200px' });
         expect(container).toMatchSnapshot();
-        expect(document.body).toHaveStyle({ overflow: 'hidden' });
     });
 
     it('should not render when open prop is falsy', () => {
@@ -140,22 +138,5 @@ describe('Modal component', () => {
         fireEvent.scroll(container.querySelector('#medly-modal-content') as HTMLDivElement, { target: { scrollY: 100 } });
         expect(container.querySelector('#medly-modal-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
         expect(container.querySelector('#medly-modal-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
-    });
-});
-
-const ModalBackgroundRenderer = ({ open = true, isSmallScreen = true }: ModalBackgroundProps) => {
-    const mockOnClick = jest.fn();
-    return render(<ModalBackgroundStyled onClick={mockOnClick} {...{ open, isSmallScreen }} />);
-};
-
-describe('Modal component background at small screen size', () => {
-    it('should render properly when it is open', () => {
-        const { container } = ModalBackgroundRenderer({ open: true, isSmallScreen: true });
-        expect(container).toMatchSnapshot();
-    });
-
-    it('should render properly when it is closed', () => {
-        const { container } = ModalBackgroundRenderer({ open: false, isSmallScreen: true });
-        expect(container).toMatchSnapshot();
     });
 });

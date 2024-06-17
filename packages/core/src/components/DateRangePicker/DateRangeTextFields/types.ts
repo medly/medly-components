@@ -27,4 +27,6 @@ export type Props = {
     onCustomRangeIconClick: () => void;
     outerClickValidator: RefObject<(e: MouseEvent) => void>;
     autoComplete?: string;
+    minSelectableDate: Date;
+    maxSelectableDate: Date;
 };

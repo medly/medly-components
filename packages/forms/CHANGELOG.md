@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.14](https://github.com/medly/medly-components/compare/@medly-components/forms@3.0.13...@medly-components/forms@3.0.14) (2024-06-13)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [3.0.13](https://github.com/medly/medly-components/compare/@medly-components/forms@3.0.12...@medly-components/forms@3.0.13) (2024-06-10)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [3.0.12](https://github.com/medly/medly-components/compare/@medly-components/forms@3.0.11...@medly-components/forms@3.0.12) (2024-06-08)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [3.0.11](https://github.com/medly/medly-components/compare/@medly-components/forms@3.0.10...@medly-components/forms@3.0.11) (2024-06-08)
+
+
+### Bug Fixes
+
+* datepicker clear issue on deleting one char from the middle ([936577c](https://github.com/medly/medly-components/commit/936577cca74f5364452d92770bafa56df94f6d58))
+
+
+
+
+
 ## [3.0.10](https://github.com/medly/medly-components/compare/@medly-components/forms@3.0.9...@medly-components/forms@3.0.10) (2024-05-13)
 
 **Note:** Version bump only for package @medly-components/forms

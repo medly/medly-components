@@ -80,7 +80,7 @@ const Component: FC<ModalProps> = memo(
         const handleScroll = useScrollState({ ref: innerContainerRef, scrollState, dispatch });
 
         return shouldRender ? (
-            <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
+            <ModalBackgroundStyled {...{ ...restProps, id, open }} onClick={handleBackgroundClick}>
                 <Popup
                     ref={modalRef}
                     id={`${id}-popup`}

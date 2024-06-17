@@ -19,7 +19,9 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         selectedDates,
         onCalendarIconClick,
         onDateChange,
-        setFocusedElement
+        setFocusedElement,
+        minSelectableDate,
+        maxSelectableDate
     } = props;
 
     const [builtInErrorMessage, setErrorMessage] = useState(''),
@@ -48,10 +50,11 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         }, []),
         handleTextChange = useCallback(
             (e: React.ChangeEvent<HTMLInputElement>) => {
-                const maskedValue = getMaskedValue(e, mask),
+                const { maskedValue, selectionStart } = getMaskedValue(e, mask),
                     parsedDate = parseToDate(e.target.value, displayFormat),
                     maskedLabel = `${maskedValue}${mask.substr(maskedValue.length)}`;
-
+                e.target.value = maskedValue;
+                e.target.setSelectionRange(selectionStart, selectionStart);
                 if (e.target.name === 'START_DATE') {
                     setStartDateText(maskedValue);
                     setStartDateMaskLabel(maskedLabel);
@@ -74,7 +77,8 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
             (event: FormEvent<HTMLInputElement>) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
-                    isInvalidDate = element.value && parseToDate(element.value, displayFormat).toString() === 'Invalid Date',
+                    parsedDate = parseToDate(element.value, displayFormat),
+                    isInvalidDate = element.value && parsedDate.toString() === 'Invalid Date',
                     message = isInvalidDate ? 'Enter valid date' : '';
                 if (isInvalidDate) {
                     setErrorMessage(message);
@@ -82,6 +86,23 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                         ...selectedDates,
                         ...(element.name === 'START_DATE' ? { startDate: null } : { endDate: null })
                     });
+                }
+                if (parsedDate && element.name === 'START_DATE' && parsedDate < minSelectableDate) {
+                    const message = `Please select date from allowed range`;
+                    setErrorMessage(message);
+                    startDateRef.current?.setCustomValidity(message);
+                } else if (parsedDate && element.name === 'END_DATE' && parsedDate > maxSelectableDate) {
+                    const message = `Please select date from allowed range`;
+                    setErrorMessage(message);
+                    endDateRef.current?.setCustomValidity(message);
+                } else if (parsedDate && element.name === 'START_DATE' && selectedDates.endDate && parsedDate > selectedDates.endDate) {
+                    const message = 'Start date should be less than end date';
+                    setErrorMessage(message);
+                    startDateRef.current?.setCustomValidity(message);
+                } else if (parsedDate && element.name === 'END_DATE' && selectedDates.startDate && parsedDate < selectedDates.startDate) {
+                    const message = 'End date should be greater than start date';
+                    setErrorMessage(message);
+                    endDateRef.current?.setCustomValidity(message);
                 }
             },
             [selectedDates, onDateChange]
@@ -101,12 +122,15 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         validateOnWrapperBlur = useCallback(
             (event: ChangeEvent<HTMLInputElement>) => {
                 const validatorMessage = (validator && validator(selectedDates, event)) || '',
-                    customMessage = (required && !selectedDates.startDate && !selectedDates.endDate && 'Please fill in this field.') || '',
-                    message = validator ? validatorMessage : customMessage;
-                setErrorMessage(message);
-                if (validator) {
-                    startDateRef.current?.setCustomValidity(validatorMessage);
-                    endDateRef.current?.setCustomValidity(validatorMessage);
+                    customRequiredMessage =
+                        required && (!selectedDates.startDate || !selectedDates.endDate) && 'Please fill in this field.',
+                    customInvalidMessage =
+                        (!isValidDate(selectedDates.startDate) || !isValidDate(selectedDates.endDate)) && 'Enter valid date',
+                    message = validator ? validatorMessage : customRequiredMessage || customInvalidMessage;
+                message && setErrorMessage(message);
+                if (validator && message) {
+                    startDateRef.current?.setCustomValidity(message);
+                    endDateRef.current?.setCustomValidity(message);
                 }
             },
             [validator, selectedDates, required]
@@ -114,12 +138,36 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
 
     useEffect(() => {
         const formattedStartDate = selectedDates.startDate ? getFormattedDate(selectedDates.startDate, displayFormat) : '',
-            formattedEndDate = selectedDates.endDate ? getFormattedDate(selectedDates.endDate, displayFormat) : '';
-        setStartDateText(formattedStartDate);
-        setEndDateText(formattedEndDate);
-        setStartDateMaskLabel(formattedStartDate || mask);
-        setEndDateMaskLabel(formattedEndDate || mask);
-        isValidDate(selectedDates.startDate) && isValidDate(selectedDates.endDate) && setErrorMessage('');
+            formattedEndDate = selectedDates.endDate ? getFormattedDate(selectedDates.endDate, displayFormat) : '',
+            parsedStartDate = parseToDate(startDateText, displayFormat),
+            parsedEndDate = parseToDate(endDateText, displayFormat);
+
+        if (formattedStartDate) {
+            setStartDateText(formattedStartDate);
+            setStartDateMaskLabel(formattedStartDate);
+        } else if (!isActive && !isErrorPresent) {
+            setStartDateText('');
+            setStartDateMaskLabel(mask);
+        }
+
+        if (formattedEndDate) {
+            setEndDateText(formattedEndDate);
+            setEndDateMaskLabel(formattedEndDate);
+        } else if (!isActive && !isErrorPresent) {
+            setEndDateText('');
+            setEndDateMaskLabel(mask);
+        }
+        if (
+            isValidDate(selectedDates.startDate) &&
+            isValidDate(selectedDates.endDate) &&
+            parsedStartDate < parsedEndDate &&
+            !(parsedStartDate < minSelectableDate) &&
+            !(parsedEndDate > maxSelectableDate)
+        ) {
+            setErrorMessage('');
+            startDateRef.current?.setCustomValidity('');
+            endDateRef.current?.setCustomValidity('');
+        }
     }, [isActive, selectedDates, displayFormat]);
 
     return {

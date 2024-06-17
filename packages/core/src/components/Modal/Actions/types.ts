@@ -6,6 +6,5 @@ export type ModalActionUserProps = {
 };
 
 export interface StyledProps extends ModalActionUserProps {
-    isSmallScreen: boolean;
     scrollState: ScrollState;
 }

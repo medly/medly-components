@@ -6,10 +6,10 @@ import * as Styled from './Actions.styled';
 import { ModalActionUserProps } from './types';
 
 const Component: FC<ModalActionUserProps> = memo(({ children, alignItems, ...restProps }) => {
-    const { id, scrollState, isSmallScreen } = useContext(ModalContext);
+    const { id, scrollState } = useContext(ModalContext);
 
     return (
-        <Styled.Actions {...{ scrollState, isSmallScreen, alignItems, id: `${id}-actions` }} {...restProps}>
+        <Styled.Actions {...{ scrollState, alignItems, id: `${id}-actions` }} {...restProps}>
             {children}
         </Styled.Actions>
     );

@@ -59,7 +59,7 @@ const Component: FC<TextFieldProps> = memo(
                     validatorMessage = (validator && validator(element.value, event)) || '',
                     message = validator ? validatorMessage : element.validationMessage;
                 setErrorMessage(message);
-                validator && inputRef.current?.setCustomValidity(validatorMessage);
+                validator && inputRef.current?.setCustomValidity(message);
                 eventFunc && eventFunc(event);
             },
             [validator, builtInErrorMessage]
@@ -94,8 +94,9 @@ const Component: FC<TextFieldProps> = memo(
                     setCharacterCountValue(valueString.length);
 
                     if (mask) {
-                        const maskedValue = getMaskedValue(e, mask);
+                        const { maskedValue, selectionStart } = getMaskedValue(e, mask);
                         e.target.value = maskedValue;
+                        e.target.setSelectionRange(selectionStart, selectionStart);
                         setMaskLabel(`${maskedValue}${mask.substr(maskedValue.length)}`);
                     }
                     props.onChange && props.onChange(e);

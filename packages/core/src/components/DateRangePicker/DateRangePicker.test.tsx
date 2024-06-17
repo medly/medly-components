@@ -287,6 +287,46 @@ describe('DateRangePicker', () => {
             const message = await screen.findByText('Please fill start and end dates');
             expect(message).toBeInTheDocument();
         });
+
+        it('should show error message when From date is before min selectable date', async () => {
+            const { startDateInput } = renderComponent({
+                value: { startDate: new Date(2021, 8, 8), endDate: new Date(2021, 8, 10) },
+                minSelectableDate: new Date('2021-08-07T18:30:00.000Z'),
+                maxSelectableDate: new Date('2021-08-13T18:30:00.000Z')
+            });
+            fireEvent.change(startDateInput, { target: { value: '08 / 01 / 2021' } });
+            fireEvent.blur(startDateInput);
+            expect(await screen.findByText('Please select date from allowed range')).toBeInTheDocument();
+        });
+
+        it('should show error message when To date is after the max selectable date', async () => {
+            const { endDateInput } = renderComponent({
+                value: { startDate: new Date(2021, 8, 8), endDate: new Date(2021, 8, 10) },
+                minSelectableDate: new Date('2021-08-07T18:30:00.000Z'),
+                maxSelectableDate: new Date('2021-08-13T18:30:00.000Z')
+            });
+            fireEvent.change(endDateInput, { target: { value: '08 / 15 / 2021' } });
+            fireEvent.blur(endDateInput);
+            expect(await screen.findByText('Please select date from allowed range')).toBeInTheDocument();
+        });
+
+        it('should show error message when From date is after the To date', async () => {
+            const { startDateInput } = renderComponent({
+                value: { startDate: new Date(2021, 8, 8), endDate: new Date(2021, 8, 10) }
+            });
+            fireEvent.change(startDateInput, { target: { value: '10 / 20 / 2021' } });
+            fireEvent.blur(startDateInput);
+            expect(await screen.findByText('Start date should be less than end date')).toBeInTheDocument();
+        });
+
+        it('should show error message when To date is before the From date', async () => {
+            const { endDateInput } = renderComponent({
+                value: { startDate: new Date(2021, 8, 8), endDate: new Date(2021, 8, 10) }
+            });
+            fireEvent.change(endDateInput, { target: { value: '08 / 01 / 2021' } });
+            fireEvent.blur(endDateInput);
+            expect(await screen.findByText('End date should be greater than start date')).toBeInTheDocument();
+        });
     });
 
     describe('Handlers', () => {

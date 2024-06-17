@@ -39,29 +39,31 @@ const Component: FC<DatePickerProps> = memo(
                 () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat!) : null),
                 [value, displayFormat]
             );
+
         const wrapperRef = useRef<HTMLDivElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             [inputKey, setInputKey] = useState(0),
             [textValue, setTextValue] = useState(''),
+            [isFocused, setFocusedState] = useState(false),
             [builtInErrorMessage, setErrorMessage] = useState(''),
             [showCalendar, toggleCalendar] = useState(false),
             [active, setActive] = useState(false),
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
         useEffect(() => {
-            if (date === null) {
-                setTextValue('');
-            } else if (date) {
+            if (date) {
                 setTextValue(format(date, displayFormat!).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
+            } else if (!isErrorPresent && !isFocused) {
+                setTextValue('');
             }
-        }, [date, displayFormat]);
+        }, [date, isFocused, isErrorPresent, displayFormat]);
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const inputValue = event.target.value,
                         parsedDate = parseToDate(inputValue, displayFormat!),
                         isValidDate = parsedDate?.toString() !== 'Invalid Date';
                     setTextValue(inputValue);
-                    onChange(parsedDate.toString() !== 'Invalid Date' ? parsedDate : null);
+                    onChange(isValidDate ? parsedDate : null);
                     isValidDate && validate(event);
                 },
                 [displayFormat, onChange]
@@ -91,12 +93,16 @@ const Component: FC<DatePickerProps> = memo(
                         message = validatorMessage || emptyDateMessage || invalidDateRangeMessage || invalidDateMessage || '';
 
                     setErrorMessage(message);
+                    inputRef.current?.setCustomValidity(message);
                     eventFunc && eventFunc(event);
                 },
                 [props.required, displayFormat, validator, minSelectableDate, maxSelectableDate]
             ),
             onBlur = useCallback(
-                (event: React.FocusEvent<HTMLInputElement>) => inputRef.current?.value && validate(event, props.onBlur),
+                (event: React.FocusEvent<HTMLInputElement>) => {
+                    setFocusedState(false);
+                    inputRef.current?.value && validate(event, props.onBlur);
+                },
                 [props.onBlur, displayFormat]
             ),
             onInvalid = useCallback(
@@ -106,6 +112,7 @@ const Component: FC<DatePickerProps> = memo(
             onFocus = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>) => {
                     setActive(true);
+                    setFocusedState(true);
                     props.onFocus && props.onFocus(event);
                 },
                 [props.onFocus]

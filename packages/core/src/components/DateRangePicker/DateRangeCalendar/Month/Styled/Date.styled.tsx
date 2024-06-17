@@ -110,9 +110,9 @@ export const Date = styled('button').attrs(({ theme }) => ({ type: 'button', dat
     }
     &:disabled {
         cursor: not-allowed;
-        color: ${({ dateTheme }) => dateTheme.color.disabled};
-        background-color: ${({ dateTheme }) => dateTheme.bgColor.disabled};
-        border-color: ${({ dateTheme }) => dateTheme.borderColor.disabled};
+        color: ${({ dateTheme, isSelected }) => !isSelected && dateTheme.color.disabled};
+        background-color: ${({ dateTheme, isSelected, isInDateRange }) => !isSelected && !isInDateRange && dateTheme.bgColor.disabled};
+        border-color: ${({ dateTheme, isSelected }) => !isSelected && dateTheme.borderColor.disabled};
     }
     > ${Text.Style} {
         color: ${({ isSelected, dateTheme }) => isSelected && dateTheme.color.selected};

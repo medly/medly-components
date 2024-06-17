@@ -35,15 +35,15 @@ export const getMaskedValue = (event: React.ChangeEvent<HTMLInputElement>, mask:
 
     //TODO: Need to remove this if, when we handle masking when user deletes from the middle of the text
     if (selectionStart && selectionStart < value.length) {
-        maskedValue = value.slice(0, selectionStart);
+        maskedValue = `${value.slice(0, selectionStart)} ${value.slice(selectionStart)}`;
+        return { maskedValue, selectionStart };
     } else {
         maskedValue = value
             .replace(specialCharsRegex, '')
             .split('')
             .reduce((acc: string, c: string) => applyMasking(acc + c, mask, selectionStart ?? 0), '');
+        return { maskedValue, selectionStart: maskedValue.length };
     }
-
-    return maskedValue;
 };
 
 export default getMaskedValue;
