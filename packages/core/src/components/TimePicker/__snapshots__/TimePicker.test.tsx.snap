@@ -678,6 +678,10 @@ exports[`TimePicker should render properly 1`] = `
 }
 
 .c19:hover {
+  color: #546A7F;
+}
+
+.c19:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -706,6 +710,10 @@ exports[`TimePicker should render properly 1`] = `
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 2.6rem;
+  color: #3872D2;
+}
+
+.c20:hover {
   color: #3872D2;
 }
 

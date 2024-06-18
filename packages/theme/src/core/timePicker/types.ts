@@ -18,6 +18,7 @@ export interface TimePickerTheme {
         lineHeight: string;
         letterSpacing: string;
         backgroundColor: string;
+        hoverColor: string;
     };
     nonSelectedOption: {
         color: string;
@@ -25,5 +26,6 @@ export interface TimePickerTheme {
         fontWeight: FontWeights;
         lineHeight: string;
         letterSpacing: string;
+        hoverColor: string;
     };
 }

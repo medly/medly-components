@@ -35,7 +35,7 @@ export const Component: FC<TimePickerPopupProps> = ({ value, onChange, onReset, 
     };
 
     useEffect(() => {
-        if (value) {
+        if (!!value) {
             const time = value.split(':');
             const hour = Number(time[0]);
             const minutes = Number(time[1]);

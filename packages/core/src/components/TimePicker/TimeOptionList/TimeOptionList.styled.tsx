@@ -36,6 +36,9 @@ const getFontStyle = (style: 'selectedOption' | 'nonSelectedOption') => css`
     line-height: ${({ theme }) => theme.timePicker[style].lineHeight};
     letter-spacing: ${({ theme }) => theme.timePicker[style].LetterSpacing};
     color: ${({ theme }) => theme.timePicker[style].color};
+    &:hover {
+        color: ${({ theme }) => theme.timePicker[style].hoverColor};
+    }
 `;
 
 export const TimeItem = styled('li')<{ isSelected?: boolean }>`

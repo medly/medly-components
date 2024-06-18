@@ -9,7 +9,6 @@ import { TimePickerProps } from './types';
 const Component: FC<TimePickerProps> = memo(
     forwardRef((props, ref) => {
         const [textFieldKey, setTextfieldKey] = useState(0);
-        const isMobile = navigator?.userAgent?.indexOf('Mobi') > -1;
         const wrapperRef = useRef<HTMLDivElement>(null);
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null));
         const id = props.id || props.label?.toLowerCase().replace(/\s/g, '') || 'medly-timepicker';
@@ -39,7 +38,7 @@ const Component: FC<TimePickerProps> = memo(
                     key={textFieldKey.toString()}
                     {...restProps}
                 />
-                {!disabled && !isMobile && (
+                {!disabled && (
                     <TimePickerPopup
                         key={value.toString()}
                         value={value}
