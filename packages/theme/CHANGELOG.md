@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/medly/medly-components/compare/@medly-components/theme@6.1.0...@medly-components/theme@6.2.0) (2024-06-18)
+
+
+### Features
+
+* add hover color in Timepicker component ([6efbb00](https://github.com/medly/medly-components/commit/6efbb008b78259b672b51e79a55ca312d671914e))
+
+
+
+
+
 # [6.1.0](https://github.com/medly/medly-components/compare/@medly-components/theme@6.0.0...@medly-components/theme@6.1.0) (2024-06-17)
 
 

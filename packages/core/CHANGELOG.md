@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.3.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.2.0...@medly-components/core@7.3.0) (2024-06-18)
+
+
+### Bug Fixes
+
+* lint errors ([6b4ac4c](https://github.com/medly/medly-components/commit/6b4ac4c0499c5367d0d01f6748911e3630b74952))
+
+
+### Features
+
+* add hover color in Timepicker component ([6efbb00](https://github.com/medly/medly-components/commit/6efbb008b78259b672b51e79a55ca312d671914e))
+
+
+
+
+
 # [7.2.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.1.6...@medly-components/core@7.2.0) (2024-06-17)
 
 
