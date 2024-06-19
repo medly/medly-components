@@ -31,12 +31,17 @@ export const getMaskedValue = (event: React.ChangeEvent<HTMLInputElement>, mask:
     let maskedValue;
 
     const specialCharsRegex = /[^a-zA-Z0-9]/g, //NOSONAR
-        { value, selectionStart } = event.target;
-
-    //TODO: Need to remove this if, when we handle masking when user deletes from the middle of the text
-    if (selectionStart !== null && selectionStart < value.length && value.length !== mask.length) {
+        { value, selectionStart } = event.target,
         // @ts-expect-error
-        maskedValue = `${value.slice(0, selectionStart)}${event.nativeEvent?.data === null ? ' ' : ''}${value.slice(selectionStart)}`;
+        { data } = event.nativeEvent;
+
+    if (selectionStart !== null && selectionStart < value.length && value.length !== mask.length) {
+        maskedValue =
+            data === null
+                ? `${value.slice(0, selectionStart)} ${value.slice(selectionStart)}`
+                : value[selectionStart] === ' '
+                ? `${value.slice(0, selectionStart - 1)}${data}${value.slice(selectionStart + 1)}`
+                : `${value.slice(0, selectionStart)}${data}${value.slice(selectionStart)}`;
         return { maskedValue, selectionStart: specialCharsRegex.test(value[selectionStart]) ? selectionStart : selectionStart + 1 };
     } else {
         maskedValue = value

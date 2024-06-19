@@ -49,7 +49,11 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                 // Choose AM as default if user has not entered any value for period
                 if (length >= 7 && match) {
                     const [, hour, minutes] = match;
-                    hour >= '00' && hour <= '12' && minutes >= '00' && minutes <= '59' && props.onChange?.(`${hour}:${minutes}`);
+                    if (hour >= '00' && hour <= '12' && minutes >= '00' && minutes <= '59') {
+                        props.onChange?.(`${hour}:${minutes}`);
+                        setText(`${`0${Number(hour) % 12}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  AM`);
+                        setKey(key => key + 1);
+                    }
                 } else if (length < 7) {
                     props.onChange?.('');
                 }
@@ -69,7 +73,7 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                     (period.toUpperCase() === 'AM' || period.toUpperCase() === 'PM')
                 ) {
                     props.onChange?.(period.toUpperCase() === 'AM' ? `${hour}:${minutes}` : `${Number(hour) + 12}:${minutes}`);
-                    setText(`${`0${hour % 12}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  ${period}`);
+                    setText(`${`0${Number(hour) % 12}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  ${period}`);
                 } else {
                     props.onChange?.('');
                 }
