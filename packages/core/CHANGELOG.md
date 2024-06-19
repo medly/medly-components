@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.3.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.3.0...@medly-components/core@7.3.1) (2024-06-19)
+
+
+### Bug Fixes
+
+* timepicker set default to AM ([2c7ce8f](https://github.com/medly/medly-components/commit/2c7ce8f3a7b6072e75cfd13604717ac99d6719d3))
+
+
+
+
+
 # [7.3.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.2.0...@medly-components/core@7.3.0) (2024-06-18)
 
 
