@@ -40,7 +40,7 @@ const Component: FC<TimePickerProps> = memo(
                 />
                 {!disabled && (
                     <TimePickerPopup
-                        key={value.toString()}
+                        key={value}
                         value={value}
                         onChange={onChange}
                         onReset={handleReset}
