@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.3.1...@medly-components/core@7.4.0) (2024-06-19)
+
+
+### Features
+
+* fix toString issue in timepicker ([e0cc1bd](https://github.com/medly/medly-components/commit/e0cc1bd2fc3821a87c7cf068bda71f987d0cb131))
+
+
+
+
+
 ## [7.3.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.3.0...@medly-components/core@7.3.1) (2024-06-19)
 
 
