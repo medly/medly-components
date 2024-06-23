@@ -1,4 +1,4 @@
-import { isValid, parse } from 'date-fns';
+import { format, isValid, parse } from 'date-fns';
 
 type DisplayFormat =
     | 'dd/MM/yyyy'
@@ -27,4 +27,25 @@ export const parseToDate = (initialState: string, displayFormat: DisplayFormat) 
         parsedDate = parse(truncatedDate, truncatedDisplayFormat, new Date());
 
     return yyyy?.length === 4 && MM?.length === 2 && dd?.length === 2 && isValid(parsedDate) ? parsedDate : new Date('Invalid Date');
+};
+
+export const getFormattedDate = (value: string | Date, displayFormat: DisplayFormat) => {
+    const tokens = displayFormat.replace(/\s/g, '').split(/[-/]/),
+        inputValue = typeof value === 'object' ? format(value, displayFormat) : value,
+        dateValues = inputValue.replace(/\s/g, '').split(/[-/]/),
+        yyyyIndex = getIndex(tokens, 'yyyy'),
+        MMIndex = getIndex(tokens, 'MM'),
+        ddIndex = getIndex(tokens, 'dd'),
+        yyyy = dateValues[yyyyIndex],
+        MM = dateValues[MMIndex],
+        dd = dateValues[ddIndex];
+
+    if (yyyy?.length === 4 && MM?.length === 2 && dd?.length === 2) {
+        const newDate = [];
+        newDate[yyyyIndex] = yyyy;
+        newDate[MMIndex] = MM;
+        newDate[ddIndex] = dd;
+        return newDate.join(displayFormat.includes('/') ? ' / ' : ' - ');
+    }
+    return null;
 };

@@ -45,6 +45,7 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
             builtInErrorMessage,
             stopPropagation,
             onIconClick,
+            onKeyPress,
             onTextFieldFocus,
             handleTextChange,
             validateOnTextFieldBlur,
@@ -125,8 +126,10 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
                     value={startDateText}
                     name="START_DATE"
                     isPrefixPresent
+                    maxLength={mask.length + 1}
                     dateMaskLabel={startDateMaskLabel}
                     label={startDateLabel}
+                    onKeyPress={onKeyPress}
                     {...commonTextProps}
                 />
                 <InputSeparator {...iconProps} />
@@ -136,7 +139,9 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
                     value={endDateText}
                     name="END_DATE"
                     dateMaskLabel={endDateMaskLabel}
+                    maxLength={mask.length + 1}
                     label={endDateLabel}
+                    onKeyPress={onKeyPress}
                     {...commonTextProps}
                 />
                 {showTooltipForHelperAndErrorText && (
