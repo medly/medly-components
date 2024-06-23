@@ -1,8 +1,15 @@
 import { DateRangeIcon } from '@medly-components/icons';
-import { parseToDate, useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import {
+    getFormattedDate,
+    parseToDate,
+    useCombinedRefs,
+    useOuterClickNotifier,
+    useRunAfterUpdate,
+    WithStyle
+} from '@medly-components/utils';
 import { format } from 'date-fns';
 import type { FC } from 'react';
-import { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Calendar from '../Calendar';
 import TextField from '../TextField';
 import { DateIconWrapper, Wrapper } from './DatePicker.styled';
@@ -42,28 +49,44 @@ const Component: FC<DatePickerProps> = memo(
 
         const wrapperRef = useRef<HTMLDivElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
+            runAfterUpdate = useRunAfterUpdate(),
             [inputKey, setInputKey] = useState(0),
             [textValue, setTextValue] = useState(''),
             [isFocused, setFocusedState] = useState(false),
             [builtInErrorMessage, setErrorMessage] = useState(''),
             [showCalendar, toggleCalendar] = useState(false),
             [active, setActive] = useState(false),
-            isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
+            isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
+            mask = displayFormat!.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase();
 
         useEffect(() => {
             if (date) {
+                const cursor = inputRef.current?.selectionStart || 0;
                 setTextValue(format(date, displayFormat!).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
+                runAfterUpdate(() => inputRef.current?.setSelectionRange(cursor, cursor));
             } else if (!isErrorPresent && !isFocused) {
                 setTextValue('');
             }
         }, [date, isFocused, isErrorPresent, displayFormat]);
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
-                    const inputValue = event.target.value,
+                    const inputValue = event.target.value || '',
+                        cursor = event.target.selectionStart || 0,
                         parsedDate = parseToDate(inputValue, displayFormat!),
                         isValidDate = parsedDate?.toString() !== 'Invalid Date';
-                    setTextValue(inputValue);
+
                     onChange(isValidDate ? parsedDate : null);
+
+                    const breakdown = getFormattedDate(inputValue, displayFormat!);
+                    if (breakdown) {
+                        setTextValue(breakdown);
+                        event.target.maxLength = mask!.length;
+                    } else {
+                        setTextValue(inputValue);
+                        event.target.maxLength = mask!.length + 1;
+                    }
+
+                    runAfterUpdate(() => event.target?.setSelectionRange(cursor, cursor));
                     isValidDate && validate(event);
                 },
                 [displayFormat, onChange]
@@ -127,7 +150,16 @@ const Component: FC<DatePickerProps> = memo(
                 },
                 [onChange]
             ),
-            inputValidator = useCallback(() => '', []);
+            inputValidator = useCallback(() => '', []),
+            onKeyPress = useCallback(
+                (event: React.KeyboardEvent) => {
+                    const regex = displayFormat?.includes('/') ? /[0-9/]+/g : /[0-9-]+/g;
+                    if (!regex.test(event.key)) {
+                        event.preventDefault();
+                    }
+                },
+                [displayFormat]
+            );
 
         useOuterClickNotifier((event: any) => {
             setActive(false);
@@ -137,10 +169,6 @@ const Component: FC<DatePickerProps> = memo(
                 props.onBlur && props.onBlur(event);
             }
         }, wrapperRef);
-
-        useEffect(() => {
-            date && !showCalendar && setInputKey(key => key + 1);
-        }, [date, showCalendar]);
 
         const dateIconEl = () => (
             <DateIconWrapper variant={restProps.variant!} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
@@ -168,7 +196,7 @@ const Component: FC<DatePickerProps> = memo(
                     required={required}
                     {...(showCalendarIcon && (calendarIconPosition === 'left' ? { prefix: dateIconEl } : { suffix: dateIconEl }))}
                     fullWidth
-                    mask={displayFormat!.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
+                    mask={mask}
                     pattern={datePickerPattern[displayFormat!]}
                     size={size}
                     disabled={disabled}
@@ -176,6 +204,8 @@ const Component: FC<DatePickerProps> = memo(
                     value={textValue}
                     onChange={onTextChange}
                     validator={inputValidator}
+                    onKeyPress={onKeyPress}
+                    maxLength={mask!.length + 1}
                     {...{ ...restProps, onBlur, onFocus, minWidth, onInvalid }}
                 />
 

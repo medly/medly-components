@@ -1,8 +1,7 @@
-import { parseToDate } from '@medly-components/utils';
-import { ChangeEvent, FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
+import { getFormattedDate, parseToDate } from '@medly-components/utils';
+import { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import { isValidDate } from '../../Calendar/helper';
 import getMaskedValue from '../../TextField/getMaskedValue';
-import { getFormattedDate } from '../helpers';
 import { FOCUS_ELEMENT } from '../types';
 import { Props } from './types';
 
@@ -32,6 +31,25 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         [endDateMaskLabel, setEndDateMaskLabel] = useState(mask),
         isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
+    const getErrorMessage = (event: React.ChangeEvent<HTMLInputElement> | React.FocusEvent<HTMLInputElement>): string => {
+        const element = event.target as HTMLInputElement,
+            parsedDate = parseToDate(element.value, displayFormat),
+            isInvalidDate = element.value && parsedDate.toString() === 'Invalid Date';
+
+        if (isInvalidDate) {
+            return 'Enter valid date';
+        } else if (parsedDate && element.name === 'START_DATE' && parsedDate < minSelectableDate) {
+            return `Please select date from allowed range`;
+        } else if (parsedDate && element.name === 'END_DATE' && parsedDate > maxSelectableDate) {
+            return `Please select date from allowed range`;
+        } else if (parsedDate && element.name === 'START_DATE' && selectedDates.endDate && parsedDate > selectedDates.endDate) {
+            return 'Start date should be less than end date';
+        } else if (parsedDate && element.name === 'END_DATE' && selectedDates.startDate && parsedDate < selectedDates.startDate) {
+            return 'End date should be greater than start date';
+        }
+        return '';
+    };
+
     const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
         onIconClick = useCallback(
             event => {
@@ -49,24 +67,38 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
             event.target.setSelectionRange(event.target.value.length, event.target.value.length);
         }, []),
         handleTextChange = useCallback(
-            (e: React.ChangeEvent<HTMLInputElement>) => {
-                const { maskedValue, selectionStart } = getMaskedValue(e, mask),
-                    parsedDate = parseToDate(e.target.value, displayFormat),
-                    maskedLabel = `${maskedValue}${mask.substr(maskedValue.length)}`;
-                e.target.value = maskedValue;
-                e.target.setSelectionRange(selectionStart, selectionStart);
-                if (e.target.name === 'START_DATE') {
+            (event: React.ChangeEvent<HTMLInputElement>) => {
+                const errorMessage = getErrorMessage(event);
+                const { maskedValue, selectionStart } = getMaskedValue(event, mask),
+                    parsedDate = parseToDate(event.target.value, displayFormat),
+                    maskedLabel = `${maskedValue}${mask.substr(maskedValue.length)}`,
+                    inputValue = event.target.value,
+                    // @ts-expect-error
+                    { data } = event.nativeEvent;
+
+                event.target.value = maskedValue;
+                event.target.setSelectionRange(selectionStart, selectionStart);
+                if (getFormattedDate(inputValue, displayFormat)) {
+                    event.target.maxLength = mask!.length;
+                    errorMessage && setErrorMessage(errorMessage);
+                } else {
+                    event.target.maxLength = mask!.length + 1;
+                }
+
+                if (event.target.name === 'START_DATE') {
                     setStartDateText(maskedValue);
                     setStartDateMaskLabel(maskedLabel);
                     if (parsedDate.toString() !== 'Invalid Date') {
-                        setFocusedElement('END_DATE');
+                        data !== null && !errorMessage && setFocusedElement('END_DATE');
+                        !errorMessage && setErrorMessage('');
                         onDateChange({ ...selectedDates, startDate: parsedDate });
                     }
                 } else {
                     setEndDateText(maskedValue);
                     setEndDateMaskLabel(maskedLabel);
                     if (parsedDate.toString() !== 'Invalid Date') {
-                        setFocusedElement('START_DATE');
+                        data !== null && !errorMessage && setFocusedElement('START_DATE');
+                        !errorMessage && setErrorMessage('');
                         onDateChange({ ...selectedDates, endDate: parsedDate });
                     }
                 }
@@ -74,35 +106,23 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
             [selectedDates, onDateChange]
         ),
         validateOnTextFieldBlur = useCallback(
-            (event: FormEvent<HTMLInputElement>) => {
+            (event: React.FocusEvent<HTMLInputElement>) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
                     parsedDate = parseToDate(element.value, displayFormat),
-                    isInvalidDate = element.value && parsedDate.toString() === 'Invalid Date',
-                    message = isInvalidDate ? 'Enter valid date' : '';
+                    isInvalidDate = element.value && parsedDate.toString() === 'Invalid Date';
                 if (isInvalidDate) {
-                    setErrorMessage(message);
                     onDateChange({
                         ...selectedDates,
                         ...(element.name === 'START_DATE' ? { startDate: null } : { endDate: null })
                     });
                 }
-                if (parsedDate && element.name === 'START_DATE' && parsedDate < minSelectableDate) {
-                    const message = `Please select date from allowed range`;
+                const message = getErrorMessage(event);
+                if (message) {
                     setErrorMessage(message);
-                    startDateRef.current?.setCustomValidity(message);
-                } else if (parsedDate && element.name === 'END_DATE' && parsedDate > maxSelectableDate) {
-                    const message = `Please select date from allowed range`;
-                    setErrorMessage(message);
-                    endDateRef.current?.setCustomValidity(message);
-                } else if (parsedDate && element.name === 'START_DATE' && selectedDates.endDate && parsedDate > selectedDates.endDate) {
-                    const message = 'Start date should be less than end date';
-                    setErrorMessage(message);
-                    startDateRef.current?.setCustomValidity(message);
-                } else if (parsedDate && element.name === 'END_DATE' && selectedDates.startDate && parsedDate < selectedDates.startDate) {
-                    const message = 'End date should be greater than start date';
-                    setErrorMessage(message);
-                    endDateRef.current?.setCustomValidity(message);
+                    element.name === 'START_DATE'
+                        ? startDateRef.current?.setCustomValidity(message)
+                        : endDateRef.current?.setCustomValidity(message);
                 }
             },
             [selectedDates, onDateChange]
@@ -134,7 +154,13 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                 }
             },
             [validator, selectedDates, required]
-        );
+        ),
+        onKeyPress = useCallback((event: React.KeyboardEvent) => {
+            const regex = displayFormat?.includes('/') ? /[0-9/]+/g : /[0-9-]+/g;
+            if (!regex.test(event.key)) {
+                event.preventDefault();
+            }
+        }, []);
 
     useEffect(() => {
         const formattedStartDate = selectedDates.startDate ? getFormattedDate(selectedDates.startDate, displayFormat) : '',
@@ -180,6 +206,7 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         isErrorPresent,
         stopPropagation,
         onIconClick,
+        onKeyPress,
         onTextFieldFocus,
         handleTextChange,
         validateOnTextFieldBlur,

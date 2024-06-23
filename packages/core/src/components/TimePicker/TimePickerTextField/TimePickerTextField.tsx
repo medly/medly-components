@@ -1,9 +1,9 @@
-import { AccessTimeIcon } from '@medly-components/icons';
-import { WithStyle, useCombinedRefs } from '@medly-components/utils';
+import { WithStyle, useCombinedRefs, useRunAfterUpdate } from '@medly-components/utils';
 import type { ChangeEvent, FC, FocusEvent } from 'react';
 import { forwardRef, memo, useCallback, useContext, useEffect, useRef, useState } from 'react';
 import { PopoverContext } from '../../Popover/Popover.context';
 import TextField from '../../TextField';
+import { TimeIcon } from '../TimePicker.styled';
 import { TimePickerTextFieldProps } from './types';
 
 const Component: FC<TimePickerTextFieldProps> = memo(
@@ -11,6 +11,7 @@ const Component: FC<TimePickerTextFieldProps> = memo(
         const [key, setKey] = useState(0);
         const [text, setText] = useState<string>('');
         const [isDialogOpen] = useContext(PopoverContext);
+        const runAfterUpdate = useRunAfterUpdate();
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null));
 
         const validator = useCallback(
@@ -61,22 +62,43 @@ const Component: FC<TimePickerTextFieldProps> = memo(
         };
 
         const onChange = (event: ChangeEvent<HTMLInputElement>) => {
-            setText(event.target.value);
-            if (event.target.value.length >= 11) {
-                // @ts-expect-error
-                const [, hour, minutes, period] = event.target.value.replace(/ /g, '').match(/([0-9]{2}):([0-9]{2})([a-zA-Z]{2})/);
-                if (
-                    hour >= '00' &&
-                    hour <= '12' &&
-                    minutes >= '00' &&
-                    minutes <= '59' &&
-                    (period.toUpperCase() === 'AM' || period.toUpperCase() === 'PM')
-                ) {
-                    props.onChange?.(period.toUpperCase() === 'AM' ? `${hour}:${minutes}` : `${Number(hour) + 12}:${minutes}`);
-                    setText(`${`0${Number(hour) % 12}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  ${period}`);
-                } else {
-                    props.onChange?.('');
+            const inputValue = event.target.value;
+            const cursor = event.target.selectionStart || 0;
+            setText(inputValue);
+            if (inputValue.length >= 7 && inputRef.current) {
+                const match = inputValue.replace(/ /g, '').match(/([0-9]{2}):([0-9]{2})([a-zA-Z]{2})/);
+                if (match) {
+                    const [, hour, minutes, period] = match;
+                    if (
+                        hour >= '00' &&
+                        hour <= '12' &&
+                        minutes >= '00' &&
+                        minutes <= '59' &&
+                        (period.toUpperCase() === 'AM' || period.toUpperCase() === 'PM')
+                    ) {
+                        props.onChange?.(period.toUpperCase() === 'AM' ? `${hour}:${minutes}` : `${Number(hour) + 12}:${minutes}`);
+                    }
+                    const updatedText = `${`0${hour}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  ${period}`;
+                    const updatedCursor =
+                        cursor -
+                        (inputValue.slice(0, cursor) === updatedText.slice(0, cursor) ? 0 : inputValue.length - updatedText.length);
+                    setText(updatedText);
+                    runAfterUpdate(() => inputRef.current?.setSelectionRange(updatedCursor, updatedCursor));
+                    inputRef.current.maxLength = 11;
+                    return;
                 }
+            }
+            if (inputRef.current) {
+                inputRef.current.maxLength = 12;
+            }
+        };
+
+        const onKeyPress = (event: React.KeyboardEvent) => {
+            const target = event.target as HTMLInputElement;
+            const count = target.value.includes(' ') ? 6 : 5;
+            const regex = (target.selectionStart || 0) > count ? /[aApPmM]+/g : /[0-9:]+/g;
+            if (!regex.test(event.key)) {
+                event.preventDefault();
             }
         };
 
@@ -100,8 +122,10 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                 fullWidth
                 mask="HH : MM  AM"
                 ref={inputRef}
-                suffix={AccessTimeIcon}
+                suffix={TimeIcon}
+                onKeyPress={onKeyPress}
                 key={key.toString()}
+                maxLength={12}
                 pattern={'[0-9]{2} : [0-9]{2}  [AaPp][Mm]'}
                 {...{ ...props, value: text, onBlur, validator, onChange }}
             />

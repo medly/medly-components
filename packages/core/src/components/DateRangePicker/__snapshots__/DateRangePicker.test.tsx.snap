@@ -2334,6 +2334,7 @@ exports[`DateRangePicker Custom date range options should render properly with c
         <input
           class="c6"
           id="contract-startDate-input"
+          maxlength="15"
           name="START_DATE"
           pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
           placeholder="MM / DD / YYYY"
@@ -2361,6 +2362,7 @@ exports[`DateRangePicker Custom date range options should render properly with c
         <input
           class="c6"
           id="contract-endDate-input"
+          maxlength="15"
           name="END_DATE"
           pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
           placeholder="MM / DD / YYYY"
@@ -25021,6 +25023,7 @@ exports[`DateRangePicker should render properly 1`] = `
         <input
           class="c6"
           id="contract-startDate-input"
+          maxlength="15"
           name="START_DATE"
           pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
           placeholder="MM / DD / YYYY"
@@ -25048,6 +25051,7 @@ exports[`DateRangePicker should render properly 1`] = `
         <input
           class="c6"
           id="contract-endDate-input"
+          maxlength="15"
           name="END_DATE"
           pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
           placeholder="MM / DD / YYYY"
@@ -27440,6 +27444,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
         <input
           class="c7"
           id="contract-startDate-input"
+          maxlength="15"
           name="START_DATE"
           pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
           placeholder="MM / DD / YYYY"
@@ -27467,6 +27472,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
         <input
           class="c7"
           id="contract-endDate-input"
+          maxlength="15"
           name="END_DATE"
           pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
           placeholder="MM / DD / YYYY"

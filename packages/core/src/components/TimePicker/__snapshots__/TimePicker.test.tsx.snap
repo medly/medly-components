@@ -24,7 +24,7 @@ exports[`TimePicker should render properly 1`] = `
   display: inline-flex;
 }
 
-.c14 {
+.c15 {
   z-index: 4;
   position: absolute;
   background-color: white;
@@ -32,24 +32,24 @@ exports[`TimePicker should render properly 1`] = `
   left: 0%;
 }
 
-.c13 {
+.c14 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
 
-.c13 * {
+.c14 * {
   fill: #546A7F;
 }
 
-.c13:hover * {
+.c14:hover * {
   fill: #546A7F;
 }
 
-.c13 * {
+.c14 * {
   fill: #3872D2;
 }
 
-.c13:hover * {
+.c14:hover * {
   fill: #546A7F;
 }
 
@@ -343,7 +343,11 @@ exports[`TimePicker should render properly 1`] = `
   margin: 0;
 }
 
-.c22 {
+.c13 {
+  cursor: pointer;
+}
+
+.c23 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -357,7 +361,7 @@ exports[`TimePicker should render properly 1`] = `
   display: inline-block;
 }
 
-.c26 {
+.c27 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -371,7 +375,7 @@ exports[`TimePicker should render properly 1`] = `
   display: inline-block;
 }
 
-.c25 {
+.c26 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -400,27 +404,27 @@ exports[`TimePicker should render properly 1`] = `
   align-items: center;
 }
 
-.c25,
-.c25 .c21,
-.c25 .c11,
-.c25 .c11 * {
+.c26,
+.c26 .c22,
+.c26 .c11,
+.c26 .c11 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c25:hover {
+.c26:hover {
   cursor: pointer;
 }
 
-.c25:focus {
+.c26:focus {
   outline: none;
 }
 
-.c25:disabled {
+.c26:disabled {
   cursor: not-allowed;
 }
 
-.c25::after {
+.c26::after {
   content: '';
   display: block;
   position: absolute;
@@ -436,71 +440,71 @@ exports[`TimePicker should render properly 1`] = `
   transform: translate(-50%);
 }
 
-.c25:disabled {
+.c26:disabled {
   color: #98A7B7;
 }
 
-.c25:disabled::after {
+.c26:disabled::after {
   background-color: #98A7B7;
 }
 
-.c25:disabled .c11 * {
+.c26:disabled .c11 * {
   fill: #98A7B7;
 }
 
-.c25:not(:disabled):not(:hover) {
+.c26:not(:disabled):not(:hover) {
   color: #3872D2;
 }
 
-.c25:not(:disabled):not(:hover)::after {
+.c26:not(:disabled):not(:hover)::after {
   background-color: #3872D2;
 }
 
-.c25:not(:disabled):not(:hover) .c11 * {
+.c26:not(:disabled):not(:hover) .c11 * {
   fill: #3872D2;
 }
 
-.c25:not(:disabled):active {
+.c26:not(:disabled):active {
   color: #275093;
 }
 
-.c25:not(:disabled):active::after {
+.c26:not(:disabled):active::after {
   background-color: #275093;
 }
 
-.c25:not(:disabled):active .c11 * {
+.c26:not(:disabled):active .c11 * {
   fill: #275093;
 }
 
-.c25:not(:disabled):active::after {
+.c26:not(:disabled):active::after {
   width: calc(100% - 4.8rem);
 }
 
-.c25:not(:disabled):not(:active):hover {
+.c26:not(:disabled):not(:active):hover {
   color: #3061B3;
 }
 
-.c25:not(:disabled):not(:active):hover::after {
+.c26:not(:disabled):not(:active):hover::after {
   background-color: #3061B3;
 }
 
-.c25:not(:disabled):not(:active):hover .c11 * {
+.c26:not(:disabled):not(:active):hover .c11 * {
   fill: #3061B3;
 }
 
-.c25:not(:disabled):not(:active):hover::after {
+.c26:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
-.c25 .c11 + .c21 {
+.c26 .c11 + .c22 {
   margin-left: 0.8rem;
 }
 
-.c25 .c21 + .c11 {
+.c26 .c22 + .c11 {
   margin-left: 0.8rem;
 }
 
-.c27 {
+.c28 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -528,72 +532,72 @@ exports[`TimePicker should render properly 1`] = `
   align-items: center;
 }
 
-.c27,
-.c27 .c21,
-.c27 .c11,
-.c27 .c11 * {
+.c28,
+.c28 .c22,
+.c28 .c11,
+.c28 .c11 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c27:hover {
+.c28:hover {
   cursor: pointer;
 }
 
-.c27:focus {
+.c28:focus {
   outline: none;
 }
 
-.c27:disabled {
+.c28:disabled {
   cursor: not-allowed;
 }
 
-.c27:disabled {
+.c28:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c27:disabled .c11 * {
+.c28:disabled .c11 * {
   fill: #98A7B7;
 }
 
-.c27:not(:disabled):not(:hover) {
+.c28:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #3872D2;
 }
 
-.c27:not(:disabled):not(:hover) .c11 * {
+.c28:not(:disabled):not(:hover) .c11 * {
   fill: #ffffff;
 }
 
-.c27:not(:disabled):active {
+.c28:not(:disabled):active {
   color: #ffffff;
   background: #275093;
 }
 
-.c27:not(:disabled):active .c11 * {
+.c28:not(:disabled):active .c11 * {
   fill: #ffffff;
 }
 
-.c27:not(:disabled):not(:active):hover {
+.c28:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #3061B3;
   box-shadow: 0 0.2rem 0.8rem rgba(48,97,179,0.35);
 }
 
-.c27:not(:disabled):not(:active):hover .c11 * {
+.c28:not(:disabled):not(:active):hover .c11 * {
   fill: #ffffff;
 }
 
-.c27 .c11 + .c21 {
+.c28 .c11 + .c22 {
   margin-left: 0.8rem;
 }
 
-.c27 .c21 + .c11 {
+.c28 .c22 + .c11 {
   margin-left: 0.8rem;
 }
 
-.c17 {
+.c18 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -615,7 +619,7 @@ exports[`TimePicker should render properly 1`] = `
   z-index: 1;
 }
 
-.c18 {
+.c19 {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -646,11 +650,11 @@ exports[`TimePicker should render properly 1`] = `
   list-style: none;
 }
 
-.c18::-webkit-scrollbar {
+.c19::-webkit-scrollbar {
   display: none;
 }
 
-.c19 {
+.c20 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -677,16 +681,16 @@ exports[`TimePicker should render properly 1`] = `
   color: #546A7F;
 }
 
-.c19:hover {
+.c20:hover {
   color: #546A7F;
 }
 
-.c19:hover {
+.c20:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c20 {
+.c21 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -713,16 +717,16 @@ exports[`TimePicker should render properly 1`] = `
   color: #3872D2;
 }
 
-.c20:hover {
+.c21:hover {
   color: #3872D2;
 }
 
-.c20:hover {
+.c21:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c15 {
+.c16 {
   background: #ffffff;
   box-shadow: 0 0.2rem 0.8rem #b0bcc8;
   border-radius: 0.4rem;
@@ -735,7 +739,7 @@ exports[`TimePicker should render properly 1`] = `
   padding-top: 1.2rem;
 }
 
-.c16 {
+.c17 {
   width: 100%;
   box-sizing: border-box;
   height: 20rem;
@@ -758,13 +762,13 @@ exports[`TimePicker should render properly 1`] = `
   position: relative;
 }
 
-.c16 > * {
+.c17 > * {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c16::before {
+.c17::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -778,7 +782,7 @@ exports[`TimePicker should render properly 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c23 {
+.c24 {
   -webkit-flex: 0.5;
   -ms-flex: 0.5;
   flex: 0.5;
@@ -797,7 +801,7 @@ exports[`TimePicker should render properly 1`] = `
   z-index: 1;
 }
 
-.c24 {
+.c25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -835,6 +839,7 @@ exports[`TimePicker should render properly 1`] = `
             aria-describedby="time-helper-text"
             class="c6"
             id="time-input"
+            maxlength="12"
             pattern="[0-9]{2} : [0-9]{2}  [AaPp][Mm]"
             placeholder="HH : MM  AM"
             type="text"
@@ -853,9 +858,10 @@ exports[`TimePicker should render properly 1`] = `
           </label>
         </div>
         <svg
-          class="c11 c12 sc-1668uuz-0 c13"
+          class="c11 c12 c13 sc-1668uuz-0 c14"
           fill="none"
           height="1em"
+          title="time-icon"
           viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
@@ -872,547 +878,547 @@ exports[`TimePicker should render properly 1`] = `
       
     </div>
     <div
-      class="c14"
+      class="c15"
       id="medly-popover-popup"
     >
       <div
-        class="c15"
+        class="c16"
       >
         <div
-          class="c16"
+          class="c17"
         >
           <div
-            class="c17"
+            class="c18"
           >
             <ul
               aria-label="HOUR list"
-              class="c18"
+              class="c19"
             >
               <li
-                class="c19"
+                class="c20"
               />
               <li
-                class="c19"
+                class="c20"
               />
               <li
                 aria-label="0 HOUR"
-                class="c20"
+                class="c21"
               >
                 00
               </li>
               <li
                 aria-label="1 HOUR"
-                class="c19"
+                class="c20"
               >
                 01
               </li>
               <li
                 aria-label="2 HOUR"
-                class="c19"
+                class="c20"
               >
                 02
               </li>
               <li
                 aria-label="3 HOUR"
-                class="c19"
+                class="c20"
               >
                 03
               </li>
               <li
                 aria-label="4 HOUR"
-                class="c19"
+                class="c20"
               >
                 04
               </li>
               <li
                 aria-label="5 HOUR"
-                class="c19"
+                class="c20"
               >
                 05
               </li>
               <li
                 aria-label="6 HOUR"
-                class="c19"
+                class="c20"
               >
                 06
               </li>
               <li
                 aria-label="7 HOUR"
-                class="c19"
+                class="c20"
               >
                 07
               </li>
               <li
                 aria-label="8 HOUR"
-                class="c19"
+                class="c20"
               >
                 08
               </li>
               <li
                 aria-label="9 HOUR"
-                class="c19"
+                class="c20"
               >
                 09
               </li>
               <li
                 aria-label="10 HOUR"
-                class="c19"
+                class="c20"
               >
                 10
               </li>
               <li
                 aria-label="11 HOUR"
-                class="c19"
+                class="c20"
               >
                 11
               </li>
               <li
-                class="c19"
+                class="c20"
               />
               <li
-                class="c19"
+                class="c20"
               />
             </ul>
           </div>
           <span
-            class="c21 c22 c23"
+            class="c22 c23 c24"
           >
             :
           </span>
           <div
-            class="c17"
+            class="c18"
           >
             <ul
               aria-label="MINUTES list"
-              class="c18"
+              class="c19"
             >
               <li
-                class="c19"
+                class="c20"
               />
               <li
-                class="c19"
+                class="c20"
               />
               <li
                 aria-label="0 MINUTES"
-                class="c20"
+                class="c21"
               >
                 00
               </li>
               <li
                 aria-label="1 MINUTES"
-                class="c19"
+                class="c20"
               >
                 01
               </li>
               <li
                 aria-label="2 MINUTES"
-                class="c19"
+                class="c20"
               >
                 02
               </li>
               <li
                 aria-label="3 MINUTES"
-                class="c19"
+                class="c20"
               >
                 03
               </li>
               <li
                 aria-label="4 MINUTES"
-                class="c19"
+                class="c20"
               >
                 04
               </li>
               <li
                 aria-label="5 MINUTES"
-                class="c19"
+                class="c20"
               >
                 05
               </li>
               <li
                 aria-label="6 MINUTES"
-                class="c19"
+                class="c20"
               >
                 06
               </li>
               <li
                 aria-label="7 MINUTES"
-                class="c19"
+                class="c20"
               >
                 07
               </li>
               <li
                 aria-label="8 MINUTES"
-                class="c19"
+                class="c20"
               >
                 08
               </li>
               <li
                 aria-label="9 MINUTES"
-                class="c19"
+                class="c20"
               >
                 09
               </li>
               <li
                 aria-label="10 MINUTES"
-                class="c19"
+                class="c20"
               >
                 10
               </li>
               <li
                 aria-label="11 MINUTES"
-                class="c19"
+                class="c20"
               >
                 11
               </li>
               <li
                 aria-label="12 MINUTES"
-                class="c19"
+                class="c20"
               >
                 12
               </li>
               <li
                 aria-label="13 MINUTES"
-                class="c19"
+                class="c20"
               >
                 13
               </li>
               <li
                 aria-label="14 MINUTES"
-                class="c19"
+                class="c20"
               >
                 14
               </li>
               <li
                 aria-label="15 MINUTES"
-                class="c19"
+                class="c20"
               >
                 15
               </li>
               <li
                 aria-label="16 MINUTES"
-                class="c19"
+                class="c20"
               >
                 16
               </li>
               <li
                 aria-label="17 MINUTES"
-                class="c19"
+                class="c20"
               >
                 17
               </li>
               <li
                 aria-label="18 MINUTES"
-                class="c19"
+                class="c20"
               >
                 18
               </li>
               <li
                 aria-label="19 MINUTES"
-                class="c19"
+                class="c20"
               >
                 19
               </li>
               <li
                 aria-label="20 MINUTES"
-                class="c19"
+                class="c20"
               >
                 20
               </li>
               <li
                 aria-label="21 MINUTES"
-                class="c19"
+                class="c20"
               >
                 21
               </li>
               <li
                 aria-label="22 MINUTES"
-                class="c19"
+                class="c20"
               >
                 22
               </li>
               <li
                 aria-label="23 MINUTES"
-                class="c19"
+                class="c20"
               >
                 23
               </li>
               <li
                 aria-label="24 MINUTES"
-                class="c19"
+                class="c20"
               >
                 24
               </li>
               <li
                 aria-label="25 MINUTES"
-                class="c19"
+                class="c20"
               >
                 25
               </li>
               <li
                 aria-label="26 MINUTES"
-                class="c19"
+                class="c20"
               >
                 26
               </li>
               <li
                 aria-label="27 MINUTES"
-                class="c19"
+                class="c20"
               >
                 27
               </li>
               <li
                 aria-label="28 MINUTES"
-                class="c19"
+                class="c20"
               >
                 28
               </li>
               <li
                 aria-label="29 MINUTES"
-                class="c19"
+                class="c20"
               >
                 29
               </li>
               <li
                 aria-label="30 MINUTES"
-                class="c19"
+                class="c20"
               >
                 30
               </li>
               <li
                 aria-label="31 MINUTES"
-                class="c19"
+                class="c20"
               >
                 31
               </li>
               <li
                 aria-label="32 MINUTES"
-                class="c19"
+                class="c20"
               >
                 32
               </li>
               <li
                 aria-label="33 MINUTES"
-                class="c19"
+                class="c20"
               >
                 33
               </li>
               <li
                 aria-label="34 MINUTES"
-                class="c19"
+                class="c20"
               >
                 34
               </li>
               <li
                 aria-label="35 MINUTES"
-                class="c19"
+                class="c20"
               >
                 35
               </li>
               <li
                 aria-label="36 MINUTES"
-                class="c19"
+                class="c20"
               >
                 36
               </li>
               <li
                 aria-label="37 MINUTES"
-                class="c19"
+                class="c20"
               >
                 37
               </li>
               <li
                 aria-label="38 MINUTES"
-                class="c19"
+                class="c20"
               >
                 38
               </li>
               <li
                 aria-label="39 MINUTES"
-                class="c19"
+                class="c20"
               >
                 39
               </li>
               <li
                 aria-label="40 MINUTES"
-                class="c19"
+                class="c20"
               >
                 40
               </li>
               <li
                 aria-label="41 MINUTES"
-                class="c19"
+                class="c20"
               >
                 41
               </li>
               <li
                 aria-label="42 MINUTES"
-                class="c19"
+                class="c20"
               >
                 42
               </li>
               <li
                 aria-label="43 MINUTES"
-                class="c19"
+                class="c20"
               >
                 43
               </li>
               <li
                 aria-label="44 MINUTES"
-                class="c19"
+                class="c20"
               >
                 44
               </li>
               <li
                 aria-label="45 MINUTES"
-                class="c19"
+                class="c20"
               >
                 45
               </li>
               <li
                 aria-label="46 MINUTES"
-                class="c19"
+                class="c20"
               >
                 46
               </li>
               <li
                 aria-label="47 MINUTES"
-                class="c19"
+                class="c20"
               >
                 47
               </li>
               <li
                 aria-label="48 MINUTES"
-                class="c19"
+                class="c20"
               >
                 48
               </li>
               <li
                 aria-label="49 MINUTES"
-                class="c19"
+                class="c20"
               >
                 49
               </li>
               <li
                 aria-label="50 MINUTES"
-                class="c19"
+                class="c20"
               >
                 50
               </li>
               <li
                 aria-label="51 MINUTES"
-                class="c19"
+                class="c20"
               >
                 51
               </li>
               <li
                 aria-label="52 MINUTES"
-                class="c19"
+                class="c20"
               >
                 52
               </li>
               <li
                 aria-label="53 MINUTES"
-                class="c19"
+                class="c20"
               >
                 53
               </li>
               <li
                 aria-label="54 MINUTES"
-                class="c19"
+                class="c20"
               >
                 54
               </li>
               <li
                 aria-label="55 MINUTES"
-                class="c19"
+                class="c20"
               >
                 55
               </li>
               <li
                 aria-label="56 MINUTES"
-                class="c19"
+                class="c20"
               >
                 56
               </li>
               <li
                 aria-label="57 MINUTES"
-                class="c19"
+                class="c20"
               >
                 57
               </li>
               <li
                 aria-label="58 MINUTES"
-                class="c19"
+                class="c20"
               >
                 58
               </li>
               <li
                 aria-label="59 MINUTES"
-                class="c19"
+                class="c20"
               >
                 59
               </li>
               <li
-                class="c19"
+                class="c20"
               />
               <li
-                class="c19"
+                class="c20"
               />
             </ul>
           </div>
           <div
-            class="c17"
+            class="c18"
           >
             <ul
               aria-label="PERIOD list"
-              class="c18"
+              class="c19"
             >
               <li
-                class="c19"
+                class="c20"
               />
               <li
-                class="c19"
+                class="c20"
               />
               <li
                 aria-label="AM"
-                class="c20"
+                class="c21"
               >
                 AM
               </li>
               <li
                 aria-label="PM"
-                class="c19"
+                class="c20"
               >
                 PM
               </li>
               <li
-                class="c19"
+                class="c20"
               />
               <li
-                class="c19"
+                class="c20"
               />
             </ul>
           </div>
         </div>
         <div
-          class="c24"
+          class="c25"
         >
           <button
-            class="c25"
+            class="c26"
             type="button"
           >
             <span
-              class="c21 c26"
+              class="c22 c27"
             >
               Cancel
             </span>
           </button>
           <button
-            class="c27"
+            class="c28"
             type="button"
           >
             <span
-              class="c21 c26"
+              class="c22 c27"
             >
               Apply
             </span>
