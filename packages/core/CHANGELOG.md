@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.4.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.4.0...@medly-components/core@7.4.1) (2024-06-23)
+
+
+### Bug Fixes
+
+* date and time picker issues ([#742](https://github.com/medly/medly-components/issues/742)) ([e3abf5c](https://github.com/medly/medly-components/commit/e3abf5c7e4ace62be90e7948c7c20ba8bfe8ffc1))
+
+
+
+
+
 # [7.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.3.1...@medly-components/core@7.4.0) (2024-06-19)
 
 
