@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.4.1...@medly-components/core@7.5.0) (2024-06-24)
+
+
+### Features
+
+* add scrollIntoView in popup component ([c379cf8](https://github.com/medly/medly-components/commit/c379cf8c1c104723c50e6904abea1e9c90614be0))
+
+
+
+
+
 ## [7.4.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.4.0...@medly-components/core@7.4.1) (2024-06-23)
 
 
