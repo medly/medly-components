@@ -1,7 +1,7 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import type { FC } from 'react';
-import { memo, useCallback, useEffect, useMemo, useState } from 'react';
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import * as DatePickerStyled from '../../Calendar/Calendar.styled';
 import MonthAndYearSelection from '../../Calendar/MonthAndYearSelection';
 import { getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear } from '../../Calendar/helper';
@@ -25,7 +25,8 @@ const Component: FC<Props> = memo(props => {
         } = props,
         { startDate, endDate } = selectedDates;
 
-    const [hoveredDate, setHoveredDate] = useState<Date | null>(null),
+    const ref = useRef<HTMLDivElement>(null),
+        [hoveredDate, setHoveredDate] = useState<Date | null>(null),
         [slideDirection, setSlideDirection] = useState<CalendarAnimationTypes>('move-in-left'),
         [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(startDate || new Date())),
         { month: nextMonth, year: nextYear } = useMemo(() => getNextMonthAndYear(month, year), [month, year]),
@@ -96,9 +97,14 @@ const Component: FC<Props> = memo(props => {
             setMonthAndYear(getPreviousMonthAndYear(endDate.getMonth(), endDate.getFullYear()));
     }, [selectedDates.startDate, selectedDates.endDate]);
 
+    useEffect(() => {
+        ref.current?.scrollIntoView(true);
+    }, []);
+
     return (
         <Styled.DateRangeCalendar
             id={id}
+            ref={ref}
             size={size!}
             placement={placement!}
             onClick={handleCalendarClick}

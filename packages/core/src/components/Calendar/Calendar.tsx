@@ -2,7 +2,7 @@ import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components
 import { WithStyle } from '@medly-components/utils';
 import { endOfDay } from 'date-fns';
 import type { FC } from 'react';
-import { memo, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import { memo, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { PopoverContext } from '../Popover/Popover.context';
 import Text from '../Text';
 import * as Styled from './Calendar.styled';
@@ -14,6 +14,7 @@ import { CalendarProps } from './types';
 const Component: FC<CalendarProps> = memo(
     ({ date, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, defaultMonth = 0, defaultYear, ...restProps }) => {
         const today = new Date(),
+            ref = useRef<HTMLDivElement>(null),
             defaultDate = defaultYear ? new Date(defaultYear, defaultMonth, 1) : null,
             [, setCalenderVisibility] = useContext(PopoverContext),
             [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(date || defaultDate || today)),
@@ -46,8 +47,12 @@ const Component: FC<CalendarProps> = memo(
             );
         }, [date, minSelectableDate, maxSelectableDate]);
 
+        useEffect(() => {
+            ref.current?.scrollIntoView(true);
+        }, []);
+
         return (
-            <Styled.Calendar {...restProps}>
+            <Styled.Calendar ref={ref} {...restProps}>
                 <Styled.Header>
                     <MonthAndYearSelection
                         id={restProps.id}
