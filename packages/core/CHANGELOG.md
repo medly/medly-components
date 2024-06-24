@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.6.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.5.0...@medly-components/core@7.6.0) (2024-06-24)
+
+
+### Features
+
+* add scrollIntoView for timepicker, datepicker and daterangepicker popup ([8a93bb4](https://github.com/medly/medly-components/commit/8a93bb4870025019c1f7c9870293ddc394994e38))
+
+
+
+
+
 # [7.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.4.1...@medly-components/core@7.5.0) (2024-06-24)
 
 
