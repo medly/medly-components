@@ -44,6 +44,10 @@ exports[`MultiSelect component should render correctly with all the props given 
   fill: #b0bcc8;
 }
 
+.c6.c6.c6 {
+  cursor: not-allowed;
+}
+
 .c10 {
   top: 50%;
   left: 0;

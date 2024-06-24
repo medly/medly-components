@@ -22,12 +22,19 @@ const getStyleForIcon = ({ theme, variant, disabled }: IconProps & WithThemeProp
     `;
 };
 
+const disableCursor = css`
+    &&& {
+        cursor: not-allowed;
+    }
+`;
+
 export const IconWrapper = styled(InjectClassName)<IconProps>`
     pointer-events: none;
     ${props => getStyleForIcon(props, 'default')};
     ${props => props.isActive && getStyleForIcon(props, 'active')};
     ${props => props.isErrorPresent && getStyleForIcon(props, 'error')};
     ${props => props.disabled && getStyleForIcon(props, 'disabled')};
+    ${props => props.disabled && disableCursor};
 `;
 
 export const Prefix = styled(IconWrapper)<IconProps>`

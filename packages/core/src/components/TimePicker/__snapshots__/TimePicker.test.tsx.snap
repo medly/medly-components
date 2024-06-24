@@ -345,6 +345,7 @@ exports[`TimePicker should render properly 1`] = `
 
 .c13 {
   cursor: pointer;
+  pointer-events: unset;
 }
 
 .c23 {

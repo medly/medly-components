@@ -1536,6 +1536,10 @@ exports[`SingleSelect component with filled variant should render disabled state
   fill: #b0bcc8;
 }
 
+.c10.c10.c10 {
+  cursor: not-allowed;
+}
+
 .c7 {
   top: 50%;
   left: 0;
@@ -4923,6 +4927,10 @@ exports[`SingleSelect component with fusion variant should render disabled state
   fill: #b0bcc8;
 }
 
+.c10.c10.c10 {
+  cursor: not-allowed;
+}
+
 .c7 {
   top: 50%;
   left: 0;
@@ -7045,6 +7053,10 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 
 .c10 * {
   fill: #b0bcc8;
+}
+
+.c10.c10.c10 {
+  cursor: not-allowed;
 }
 
 .c7 {

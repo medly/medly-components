@@ -1523,6 +1523,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c49 {
   cursor: pointer;
+  pointer-events: unset;
 }
 
 .c69 {
@@ -3827,6 +3828,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c49 {
   cursor: pointer;
+  pointer-events: unset;
 }
 
 .c68 {

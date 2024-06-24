@@ -1,16 +1,21 @@
-import { WithStyle } from '@medly-components/utils';
-import { forwardRef, memo, useCallback, useContext } from 'react';
+import { WithStyle, useCombinedRefs } from '@medly-components/utils';
+import type { FC } from 'react';
+import { forwardRef, memo, useCallback, useContext, useEffect, useRef } from 'react';
 import { PopoverContext } from '../Popover.context';
 import { PopupStyled } from './styled/Popup.styled';
 import { PopoverPopupProps } from './types';
-import type { FC } from 'react';
 
 const Component: FC<PopoverPopupProps> = memo(
     forwardRef((props, ref) => {
-        const [isOpen] = useContext(PopoverContext),
+        const popupRef = useCombinedRefs<HTMLDivElement>(ref, useRef(null)),
+            [isOpen] = useContext(PopoverContext),
             stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
 
-        return isOpen ? <PopupStyled ref={ref} onClick={stopPropagation} placement={props.placement!} {...props} /> : null;
+        useEffect(() => {
+            isOpen && setTimeout(() => popupRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+        }, [isOpen]);
+
+        return isOpen ? <PopupStyled ref={popupRef} onClick={stopPropagation} placement={props.placement!} {...props} /> : null;
     })
 );
 Component.displayName = 'Popup';

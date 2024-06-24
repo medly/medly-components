@@ -5795,6 +5795,10 @@ exports[`TextField with filled variant should render properly with custom border
   fill: #b0bcc8;
 }
 
+.c7.c7.c7 {
+  cursor: not-allowed;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -6112,6 +6116,10 @@ exports[`TextField with filled variant should render properly with custom disabl
 
 .c7 * {
   fill: #b0bcc8;
+}
+
+.c7.c7.c7 {
+  cursor: not-allowed;
 }
 
 .c5 {
@@ -10121,6 +10129,10 @@ exports[`TextField with fusion variant should render properly with custom border
   fill: #b0bcc8;
 }
 
+.c7.c7.c7 {
+  cursor: not-allowed;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -10475,6 +10487,10 @@ exports[`TextField with fusion variant should render properly with custom disabl
 
 .c7 * {
   fill: #b0bcc8;
+}
+
+.c7.c7.c7 {
+  cursor: not-allowed;
 }
 
 .c5 {
@@ -14499,6 +14515,10 @@ exports[`TextField with outlined variant should render properly with custom bord
   fill: #b0bcc8;
 }
 
+.c7.c7.c7 {
+  cursor: not-allowed;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -14833,6 +14853,10 @@ exports[`TextField with outlined variant should render properly with custom disa
 
 .c7 * {
   fill: #b0bcc8;
+}
+
+.c7.c7.c7 {
+  cursor: not-allowed;
 }
 
 .c5 {

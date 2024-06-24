@@ -18,4 +18,5 @@ export const TimePickerWrapper = styled(Popover)<{ fullWidth?: boolean; minWidth
 
 export const TimeIcon = styled(AccessTimeIcon).attrs({ title: 'time-icon' })`
     cursor: pointer;
+    pointer-events: unset;
 `;
