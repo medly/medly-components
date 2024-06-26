@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.6.0...@medly-components/core@7.7.0) (2024-06-26)
+
+
+### Features
+
+* use 12 hour format in timepicker ([a7700b2](https://github.com/medly/medly-components/commit/a7700b2ca504be44f19a7e8aa17921dede201d9d))
+
+
+
+
+
 # [7.6.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.5.0...@medly-components/core@7.6.0) (2024-06-24)
 
 
