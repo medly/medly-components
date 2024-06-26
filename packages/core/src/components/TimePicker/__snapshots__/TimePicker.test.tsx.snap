@@ -902,14 +902,8 @@ exports[`TimePicker should render properly 1`] = `
                 class="c20"
               />
               <li
-                aria-label="0 HOUR"
-                class="c21"
-              >
-                00
-              </li>
-              <li
                 aria-label="1 HOUR"
-                class="c20"
+                class="c21"
               >
                 01
               </li>
@@ -972,6 +966,12 @@ exports[`TimePicker should render properly 1`] = `
                 class="c20"
               >
                 11
+              </li>
+              <li
+                aria-label="12 HOUR"
+                class="c20"
+              >
+                12
               </li>
               <li
                 class="c20"

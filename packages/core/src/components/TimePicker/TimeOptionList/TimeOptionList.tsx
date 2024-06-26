@@ -16,7 +16,7 @@ export const TimeOptionList: FC<TimeOptionListProps> = forwardRef<HTMLUListEleme
         const handleScroll = (e: React.UIEvent<HTMLUListElement>) => {
             const height = e.currentTarget.scrollHeight / (TIME_OPTIONS_LENGTH[type] + 4);
             const value = Math.floor((e.currentTarget.scrollTop || 0) / height);
-            onChange(type, value);
+            onChange(type, type === 'HOUR' ? value + 1 : value);
         };
 
         const handleClick = (index: number) => () => (ref as any)?.current?.scrollTo({ top: index * 40, behavior: 'smooth' });
@@ -26,16 +26,20 @@ export const TimeOptionList: FC<TimeOptionListProps> = forwardRef<HTMLUListEleme
                 <TimeUList ref={ref} onScroll={handleScroll} aria-label={`${type} list`}>
                     <TimeItem key="-2" />
                     <TimeItem key="-1" />
-                    {Array.from({ length: TIME_OPTIONS_LENGTH[type] }, (_, index) => (
-                        <TimeItem
-                            key={index}
-                            isSelected={index === value}
-                            onClick={handleClick(index)}
-                            aria-label={isPeriod ? PERIOD[index] : `${index} ${type}`}
-                        >
-                            {isPeriod ? PERIOD[index] : `0${index}`.slice(-2)}
-                        </TimeItem>
-                    ))}
+                    {Array.from({ length: TIME_OPTIONS_LENGTH[type] }, (_, index) => {
+                        const _index = type === 'HOUR' ? index + 1 : index;
+                        const isSelected = type === 'HOUR' && value === 0 ? index === 0 : _index === value;
+                        return (
+                            <TimeItem
+                                key={index}
+                                isSelected={isSelected}
+                                onClick={handleClick(index)}
+                                aria-label={isPeriod ? PERIOD[_index] : `${_index} ${type}`}
+                            >
+                                {isPeriod ? PERIOD[index] : `0${_index}`.slice(-2)}
+                            </TimeItem>
+                        );
+                    })}
                     <TimeItem key="+1" />
                     <TimeItem key="+2" />
                 </TimeUList>

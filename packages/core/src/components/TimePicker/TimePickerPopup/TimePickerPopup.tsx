@@ -13,7 +13,7 @@ export const Component: FC<TimePickerPopupProps> = ({ value, onChange, onReset, 
     const minutesRef = useRef<HTMLUListElement>(null);
     const periodRef = useRef<HTMLUListElement>(null);
     const [open, setPopupState] = useContext(Popover.Context);
-    const [{ hour, minutes, period }, setValues] = useState({ hour: 0, minutes: 0, period: 0 });
+    const [{ hour, minutes, period }, setValues] = useState({ hour: 1, minutes: 0, period: 0 });
 
     const handleCancel = () => {
         hourRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
@@ -24,7 +24,8 @@ export const Component: FC<TimePickerPopupProps> = ({ value, onChange, onReset, 
     };
 
     const handleSubmit = () => {
-        const hourString = `0${period === 0 ? hour : hour + 12}`.slice(-2);
+        const adjustedHour = hour === 12 ? 0 : hour;
+        const hourString = `0${period === 0 ? adjustedHour : adjustedHour + 12}`.slice(-2);
         const minutesString = `0${minutes}`.slice(-2);
         setTimeout(() => onChange(`${hourString}:${minutesString}`), 10);
         setPopupState(false);
@@ -41,8 +42,9 @@ export const Component: FC<TimePickerPopupProps> = ({ value, onChange, onReset, 
             const minutes = Number(time[1]);
             const period = hour < 12 ? 0 : 1;
             const height = (hourRef.current?.scrollHeight || 1) / 16;
+            const hourScroll = hour % 12 === 0 ? 11 : (hour % 12) - 1;
             // @ts-ignore
-            hourRef.current?.scrollTo({ top: (hour % 12) * height, behavior: 'instant' });
+            hourRef.current?.scrollTo({ top: hourScroll * height, behavior: 'instant' });
             // @ts-ignore
             minutesRef.current?.scrollTo({ top: minutes * height, behavior: 'instant' });
             // @ts-ignore

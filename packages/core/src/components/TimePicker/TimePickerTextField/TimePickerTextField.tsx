@@ -30,7 +30,7 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                     }
 
                     const [hour, , minutes] = event.target.value.split(' ');
-                    if ((hour && (hour < '00' || hour > '12')) || (minutes && (minutes < '00' || minutes > '59'))) {
+                    if ((hour && (hour < '01' || hour > '12')) || (minutes && (minutes < '00' || minutes > '59'))) {
                         return 'Time must be within the valid range of 12:00 AM to 11:59 PM';
                     }
                 }
@@ -70,7 +70,7 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                 if (match) {
                     const [, hour, minutes, period] = match;
                     if (
-                        hour >= '00' &&
+                        hour > '00' &&
                         hour <= '12' &&
                         minutes >= '00' &&
                         minutes <= '59' &&
@@ -108,7 +108,7 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                 const hour = Number(time[0]);
                 const minutes = Number(time[1]);
                 const period = hour < 12 ? 'AM' : 'PM';
-                setText(`${`0${hour % 12}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  ${period}`);
+                setText(`${`0${hour % 12 === 0 ? 12 : hour % 12}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  ${period}`);
                 !isDialogOpen && setKey(key => key + 1);
             }
         }, [props.value]);

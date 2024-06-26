@@ -45,7 +45,7 @@ describe('TimePicker', () => {
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 1 * 40 });
         fireEvent.scroll(screen.getByRole('list', { name: 'PERIOD list' }));
         fireEvent.click(screen.getByText('Apply'));
-        await waitFor(() => expect(mockOnChange).toBeCalledWith('23:11'));
+        await waitFor(() => expect(mockOnChange).toBeCalledWith('12:11'));
     });
 
     describe('error messages', () => {
