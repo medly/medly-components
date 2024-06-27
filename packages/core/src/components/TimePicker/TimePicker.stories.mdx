@@ -1,9 +1,9 @@
-import { TimePicker } from './TimePicker';
-import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import { placements } from '../Popover/Popover.stories.tsx';
-import { variants } from './TimePicker.stories';
 import { useState } from 'react';
+import { placements } from '../Popover/Popover.stories.tsx';
+import { TimePicker } from './TimePicker';
+import { variants } from './TimePicker.stories';
 
 <Meta
     title="Core"
@@ -34,6 +34,7 @@ const Component = () => {
     <Story name="TimePicker">
         {() => {
             const [time, setTime] = useState('');
+            console.log(time);
             return (
                 <TimePicker
                     id="dob"

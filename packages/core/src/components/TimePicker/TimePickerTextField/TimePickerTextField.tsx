@@ -49,7 +49,7 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                 if (length >= 7 && match) {
                     const [, hour, minutes] = match;
                     if (hour > '00' && hour <= '12' && minutes >= '00' && minutes <= '59') {
-                        props.onChange?.(`${Number(hour) % 12}:${minutes}`);
+                        props.onChange?.(`${`0${Number(hour) % 12}`.slice(-2)}:${minutes}`);
                         setText(`${`0${hour}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  AM`);
                         setKey(key => key + 1);
                     }
@@ -75,7 +75,9 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                         (period.toUpperCase() === 'AM' || period.toUpperCase() === 'PM')
                     ) {
                         props.onChange?.(
-                            period.toUpperCase() === 'AM' ? `${Number(hour) % 12}:${minutes}` : `${(Number(hour) % 12) + 12}:${minutes}`
+                            period.toUpperCase() === 'AM'
+                                ? `${`0${Number(hour) % 12}`.slice(-2)}:${minutes}`
+                                : `${(Number(hour) % 12) + 12}:${minutes}`
                         );
                     } else {
                         props.onChange?.('');
