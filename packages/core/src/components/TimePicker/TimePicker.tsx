@@ -19,6 +19,10 @@ const Component: FC<TimePickerProps> = memo(
             setTextfieldKey(key => key + 1);
             onChange('');
         };
+        const handleChange = (value: string) => {
+            setTextfieldKey(key => key + 1);
+            onChange(value);
+        };
 
         return (
             <TimePickerWrapper
@@ -42,7 +46,7 @@ const Component: FC<TimePickerProps> = memo(
                     <TimePickerPopup
                         key={value}
                         value={value}
-                        onChange={onChange}
+                        onChange={handleChange}
                         onReset={handleReset}
                         popoverDistance={popoverDistance}
                         popoverPlacement={popoverPlacement}

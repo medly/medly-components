@@ -16,24 +16,22 @@ const Component: FC<TimePickerTextFieldProps> = memo(
 
         const validator = useCallback(
             (value: string, event: ChangeEvent<HTMLInputElement>) => {
-                if (!isDialogOpen) {
-                    if (props.validator && props.validator(value, event)) {
-                        return props.validator(value, event);
-                    }
+                const outOfRangeMessage = 'Time must be within the valid range of 12:00 AM to 11:59 PM';
+                const defaultValidationMessage = event.target.validationMessage;
 
-                    if (inputRef.current?.validationMessage) {
-                        return inputRef.current?.validationMessage;
-                    }
-
-                    if (!value && props.required) {
-                        return 'Please fill in this field';
-                    }
-
-                    const [hour, , minutes] = event.target.value.split(' ');
-                    if ((hour && (hour < '01' || hour > '12')) || (minutes && (minutes < '00' || minutes > '59'))) {
-                        return 'Time must be within the valid range of 12:00 AM to 11:59 PM';
-                    }
+                if (props.validator && props.validator(value, event)) {
+                    return props.validator(value, event);
                 }
+
+                const [hour, , minutes] = event.target.value.split(' ');
+                if ((hour && (hour < '01' || hour > '12')) || (minutes && (minutes < '00' || minutes > '59'))) {
+                    return 'Time must be within the valid range of 12:00 AM to 11:59 PM';
+                }
+
+                if (defaultValidationMessage !== outOfRangeMessage) {
+                    return defaultValidationMessage;
+                }
+
                 return '';
             },
             [props.validator, isDialogOpen]
@@ -50,9 +48,9 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                 // Choose AM as default if user has not entered any value for period
                 if (length >= 7 && match) {
                     const [, hour, minutes] = match;
-                    if (hour >= '00' && hour <= '12' && minutes >= '00' && minutes <= '59') {
-                        props.onChange?.(`${hour}:${minutes}`);
-                        setText(`${`0${Number(hour) % 12}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  AM`);
+                    if (hour > '00' && hour <= '12' && minutes >= '00' && minutes <= '59') {
+                        props.onChange?.(`${Number(hour) % 12}:${minutes}`);
+                        setText(`${`0${hour}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  AM`);
                         setKey(key => key + 1);
                     }
                 } else if (length < 7) {
@@ -76,7 +74,11 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                         minutes <= '59' &&
                         (period.toUpperCase() === 'AM' || period.toUpperCase() === 'PM')
                     ) {
-                        props.onChange?.(period.toUpperCase() === 'AM' ? `${hour}:${minutes}` : `${Number(hour) + 12}:${minutes}`);
+                        props.onChange?.(
+                            period.toUpperCase() === 'AM' ? `${Number(hour) % 12}:${minutes}` : `${(Number(hour) % 12) + 12}:${minutes}`
+                        );
+                    } else {
+                        props.onChange?.('');
                     }
                     const updatedText = `${`0${hour}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  ${period}`;
                     const updatedCursor =
@@ -109,7 +111,8 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                 const minutes = Number(time[1]);
                 const period = hour < 12 ? 'AM' : 'PM';
                 setText(`${`0${hour % 12 === 0 ? 12 : hour % 12}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  ${period}`);
-                !isDialogOpen && setKey(key => key + 1);
+                inputRef.current?.setCustomValidity('');
+                inputRef.current?.blur();
             }
         }, [props.value]);
 
