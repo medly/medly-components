@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.7.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.7.0...@medly-components/core@7.7.1) (2024-06-27)
+
+
+### Bug Fixes
+
+* scroll popup into view only if required ([e5967d8](https://github.com/medly/medly-components/commit/e5967d81403ca0071feb9ccc099889e2080337e7))
+* ts ignore scroll instant behaviour ([aa4d6e5](https://github.com/medly/medly-components/commit/aa4d6e52600a641097194a60a2c4a35230565867))
+
+
+
+
+
 # [7.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.6.0...@medly-components/core@7.7.0) (2024-06-26)
 
 
