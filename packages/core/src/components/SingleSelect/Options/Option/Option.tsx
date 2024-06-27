@@ -1,5 +1,5 @@
 import { ArrowRightIcon, CheckIcon } from '@medly-components/icons';
-import { useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import { WithStyle, useKeyPress, useOuterClickNotifier } from '@medly-components/utils';
 import type { FC } from 'react';
 import { isValidElement, memo, useCallback, useEffect, useRef, useState } from 'react';
 import { withTheme } from 'styled-components';
@@ -32,6 +32,7 @@ const Component: FC<OptionProps> = memo(props => {
     useEffect(() => {
         (selected || hovered) &&
             ref.current?.scrollIntoView({
+                behavior: 'instant',
                 block: 'nearest'
             });
     }, [selected, hovered]);

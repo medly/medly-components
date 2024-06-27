@@ -12,7 +12,7 @@ const Component: FC<PopoverPopupProps> = memo(
             stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
 
         useEffect(() => {
-            isOpen && popupRef.current?.scrollIntoView(true);
+            isOpen && popupRef.current?.scrollIntoView({ behavior: 'instant', block: 'nearest' });
         }, [isOpen]);
 
         return isOpen ? <PopupStyled ref={popupRef} onClick={stopPropagation} placement={props.placement!} {...props} /> : null;
