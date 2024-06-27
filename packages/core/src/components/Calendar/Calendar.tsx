@@ -48,6 +48,7 @@ const Component: FC<CalendarProps> = memo(
         }, [date, minSelectableDate, maxSelectableDate]);
 
         useEffect(() => {
+            // @ts-ignore
             ref.current?.scrollIntoView({ behavior: 'instant', block: 'nearest' });
         }, []);
 

@@ -98,6 +98,7 @@ const Component: FC<Props> = memo(props => {
     }, [selectedDates.startDate, selectedDates.endDate]);
 
     useEffect(() => {
+        // @ts-ignore
         ref.current?.scrollIntoView({ behavior: 'instant', block: 'nearest' });
     }, []);
 

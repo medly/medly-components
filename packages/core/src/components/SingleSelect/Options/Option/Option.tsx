@@ -30,11 +30,10 @@ const Component: FC<OptionProps> = memo(props => {
         );
 
     useEffect(() => {
-        (selected || hovered) &&
-            ref.current?.scrollIntoView({
-                behavior: 'instant',
-                block: 'nearest'
-            });
+        if (selected || hovered) {
+            // @ts-ignore
+            ref.current?.scrollIntoView({ behavior: 'instant', block: 'nearest' });
+        }
     }, [selected, hovered]);
 
     useEffect(() => {
