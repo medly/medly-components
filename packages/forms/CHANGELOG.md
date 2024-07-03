@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/medly/medly-components/compare/@medly-components/forms@3.2.5...@medly-components/forms@3.3.0) (2024-07-03)
+
+
+### Features
+
+* show single month calendar in mobile viewport ([f301547](https://github.com/medly/medly-components/commit/f30154787d1b53e6db4613376f17cbf0fd0a7893))
+
+
+
+
+
 ## [3.2.5](https://github.com/medly/medly-components/compare/@medly-components/forms@3.2.4...@medly-components/forms@3.2.5) (2024-06-27)
 
 **Note:** Version bump only for package @medly-components/forms
