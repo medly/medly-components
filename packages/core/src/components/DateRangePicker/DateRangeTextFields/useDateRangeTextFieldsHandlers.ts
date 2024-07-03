@@ -145,7 +145,9 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                     customRequiredMessage =
                         required && (!selectedDates.startDate || !selectedDates.endDate) && 'Please fill in this field.',
                     customInvalidMessage =
-                        (!isValidDate(selectedDates.startDate) || !isValidDate(selectedDates.endDate)) && 'Enter valid date',
+                        ((selectedDates.startDate && !isValidDate(selectedDates.startDate)) ||
+                            (selectedDates.endDate && !isValidDate(selectedDates.endDate))) &&
+                        'Enter valid date',
                     message = validator ? validatorMessage : customRequiredMessage || customInvalidMessage;
                 message && setErrorMessage(message);
                 if (validator && message) {

@@ -3,6 +3,11 @@ import { FormCustomComponent } from '../Fields/types';
 import { Form } from './Form';
 import { testSchema } from './testSchema';
 
+jest.mock('@medly-components/utils', () => ({
+    ...(jest.requireActual('@medly-components/utils') as any),
+    useMediaQuery: jest.fn()
+}));
+
 const initialState = {
         firstName: 'first name',
         lastName: 'last name',

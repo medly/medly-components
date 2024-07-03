@@ -1,7 +1,8 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
-import { WithStyle } from '@medly-components/utils';
+import { WithStyle, useMediaQuery } from '@medly-components/utils';
 import type { FC } from 'react';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useTheme } from 'styled-components';
 import * as DatePickerStyled from '../../Calendar/Calendar.styled';
 import MonthAndYearSelection from '../../Calendar/MonthAndYearSelection';
 import { getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear } from '../../Calendar/helper';
@@ -26,6 +27,10 @@ const Component: FC<Props> = memo(props => {
         { startDate, endDate } = selectedDates;
 
     const ref = useRef<HTMLDivElement>(null),
+        theme = useTheme(),
+        // @ts-ignore
+        isMobile = useMediaQuery(`@media (max-width: ${theme.breakpoints.S.max}px)`),
+        _withSingleMonth = withSingleMonth || isMobile,
         [hoveredDate, setHoveredDate] = useState<Date | null>(null),
         [slideDirection, setSlideDirection] = useState<CalendarAnimationTypes>('move-in-left'),
         [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(startDate || new Date())),
@@ -109,11 +114,11 @@ const Component: FC<Props> = memo(props => {
             size={size!}
             placement={placement!}
             onClick={handleCalendarClick}
-            withSingleMonth={withSingleMonth}
+            withSingleMonth={_withSingleMonth}
             {...restProps}
         >
             <Styled.Header>
-                {withSingleMonth && (
+                {_withSingleMonth && (
                     <MonthAndYearSelection
                         id={id}
                         month={month}
@@ -136,8 +141,8 @@ const Component: FC<Props> = memo(props => {
                 slideDirection={slideDirection}
                 onAnimationEnd={handleAnimationEnd}
             >
-                <Month id={`${id}-${month}-month`} month={month} year={year} {...commonProps} hideMonthText={withSingleMonth} />
-                {!withSingleMonth && <Month id={`${id}-${nextMonth}-month`} month={nextMonth} year={nextYear} {...commonProps} />}
+                <Month id={`${id}-${month}-month`} month={month} year={year} {...commonProps} hideMonthText={_withSingleMonth} />
+                {!_withSingleMonth && <Month id={`${id}-${nextMonth}-month`} month={nextMonth} year={nextYear} {...commonProps} />}
             </Styled.MonthsWrapper>
         </Styled.DateRangeCalendar>
     );

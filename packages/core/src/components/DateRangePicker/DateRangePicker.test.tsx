@@ -1,9 +1,15 @@
+import { useMediaQuery } from '@medly-components/utils';
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import { useState } from 'react';
 import { placements } from '../Popover/Popover.stories';
 import { DateRangePicker } from './DateRangePicker';
 import { CustomDateRangeOptions } from './DateRangePicker.stories';
 import { DateRangeProps, DateRangeType } from './types';
+
+jest.mock('@medly-components/utils', () => ({
+    ...(jest.requireActual('@medly-components/utils') as any),
+    useMediaQuery: jest.fn()
+}));
 
 const DummyComponent = ({ value, ...restProps }: Omit<DateRangeProps, 'onChange'>) => {
     const [dates, setDates] = useState<DateRangeType>(value);
@@ -41,6 +47,10 @@ const renderComponent = (props?: any) => {
 };
 
 describe('DateRangePicker', () => {
+    beforeEach(() => {
+        (useMediaQuery as jest.Mock).mockReturnValue(false);
+    });
+
     const customDateRangeOptionsPopoverSelector = '#contract-custom-date-range-options';
 
     it('should render properly', () => {
@@ -55,6 +65,16 @@ describe('DateRangePicker', () => {
     it('should render properly with single month', () => {
         const { container } = renderComponent({
             withSingleMonth: true,
+            value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }
+        });
+        fireEvent.click(screen.getByTitle('contract-calendar-icon'));
+        expect(container.querySelector('#contract-calendar')).toBeVisible();
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly with single month for mobile screen', () => {
+        (useMediaQuery as jest.Mock).mockReturnValue(true);
+        const { container } = renderComponent({
             value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }
         });
         fireEvent.click(screen.getByTitle('contract-calendar-icon'));
