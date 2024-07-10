@@ -12,7 +12,7 @@ export type AccordionContextType = [
     Dispatch<SetStateAction<boolean>> /** Function to be called to toggle the active state */
 ];
 
-export type AccordionProps = {
+export type AccordionProps = Omit<HTMLProps<HTMLDivElement>, 'onChange'> & {
     /** Use to render any component as Button */
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     /** Set it true to open the accordion by default */

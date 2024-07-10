@@ -1,5 +1,5 @@
 import { CheckIcon, MinimizeIcon } from '@medly-components/icons';
-import { isValidStringOrNumber, useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
+import { WithStyle, isValidStringOrNumber, useCombinedRefs, useKeyPress } from '@medly-components/utils';
 import { ChangeEvent, FC, FocusEvent, forwardRef, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Checkbox.styled';
@@ -51,7 +51,10 @@ const Component: FC<CheckboxProps> = memo(
                 [validate, props.onInvalid]
             ),
             onChange = useCallback(
-                (event: ChangeEvent<HTMLInputElement>) => validate(event, props.onChange, false),
+                (event: ChangeEvent<HTMLInputElement>) => {
+                    validate(event, props.onChange, false);
+                    !event.target.checked && event.target.blur();
+                },
                 [validate, props.onChange]
             );
 
