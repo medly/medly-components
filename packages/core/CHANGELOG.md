@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.8.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.8.0...@medly-components/core@7.8.1) (2024-07-10)
+
+
+### Bug Fixes
+
+* remove focus on unselecting the checkbox ([a21e9d9](https://github.com/medly/medly-components/commit/a21e9d9473cba3cd63f2f473a29e8863480b072b))
+
+
+
+
+
 # [7.8.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.7.3...@medly-components/core@7.8.0) (2024-07-03)
 
 
