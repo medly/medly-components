@@ -918,12 +918,6 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: pointer;
 }
 
-.c24.c24.c24:hover .c28 {
-  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
-  border-color: #3061B3;
-  background-color: #3061B3;
-}
-
 .c24.c24.c24:active .c28 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #275093;
@@ -954,11 +948,6 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: pointer;
 }
 
-.c32.c32.c32:hover .c28 {
-  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
-  border-color: #3872D2;
-}
-
 .c32.c32.c32:active .c28 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #3061B3;
@@ -986,12 +975,6 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c68 * {
   cursor: pointer;
-}
-
-.c68.c68.c68:hover .c28 {
-  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
-  border-color: #3061B3;
-  background-color: #3061B3;
 }
 
 .c68.c68.c68:active .c28 {
@@ -1630,6 +1613,29 @@ exports[`Form should render properly with initial state 1`] = `
 .c0 > span {
   grid-column: 1/-1;
   margin-bottom: 1rem;
+}
+
+@media (hover:hover) {
+  .c24.c24.c24:hover .c28 {
+    box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+    border-color: #3061B3;
+    background-color: #3061B3;
+  }
+}
+
+@media (hover:hover) {
+  .c32.c32.c32:hover .c28 {
+    box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+    border-color: #3872D2;
+  }
+}
+
+@media (hover:hover) {
+  .c68.c68.c68:hover .c28 {
+    box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+    border-color: #3061B3;
+    background-color: #3061B3;
+  }
 }
 
 <div>
@@ -3348,11 +3354,6 @@ exports[`Form should render properly without initial state 1`] = `
   cursor: pointer;
 }
 
-.c26.c26.c26:hover .c30 {
-  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
-  border-color: #3872D2;
-}
-
 .c26.c26.c26:active .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #3061B3;
@@ -3380,11 +3381,6 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c67 * {
   cursor: pointer;
-}
-
-.c67.c67.c67:hover .c30 {
-  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
-  border-color: #3872D2;
 }
 
 .c67.c67.c67:active .c30 {
@@ -3937,6 +3933,20 @@ exports[`Form should render properly without initial state 1`] = `
 .c0 > span {
   grid-column: 1/-1;
   margin-bottom: 1rem;
+}
+
+@media (hover:hover) {
+  .c26.c26.c26:hover .c30 {
+    box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+    border-color: #3872D2;
+  }
+}
+
+@media (hover:hover) {
+  .c67.c67.c67:hover .c30 {
+    box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+    border-color: #3872D2;
+  }
 }
 
 <div>

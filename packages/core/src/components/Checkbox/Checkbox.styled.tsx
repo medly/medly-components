@@ -127,15 +127,17 @@ export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ 
 
     ${getSelectorLabelPositionStyle}
 
-    &&&:hover {
-        ${StyledCheckbox} {
-            ${({ disabled }) => !disabled && getEventStyle('hovered')};
-        }
-    }
-
     &&&:active {
         ${StyledCheckbox} {
             ${({ disabled }) => !disabled && getEventStyle('pressed')};
+        }
+    }
+
+    @media (hover: hover) {
+        &&&:hover {
+            ${StyledCheckbox} {
+                ${({ disabled }) => !disabled && getEventStyle('hovered')};
+            }
         }
     }
 `;

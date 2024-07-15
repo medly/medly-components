@@ -1621,11 +1621,6 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   cursor: pointer;
 }
 
-.c21.c21.c21:hover .c26 {
-  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
-  border-color: #3872D2;
-}
-
 .c21.c21.c21:active .c26 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #3061B3;
@@ -1653,12 +1648,6 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 
 .c28 * {
   cursor: pointer;
-}
-
-.c28.c28.c28:hover .c26 {
-  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
-  border-color: #3061B3;
-  background-color: #3061B3;
 }
 
 .c28.c28.c28:active .c26 {
@@ -1831,6 +1820,25 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 
 .c19 .c29 > label {
   padding-left: 1.3rem;
+}
+
+@media (hover:hover) {
+  .c21.c21.c21:hover .c26 {
+    box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+    border-color: #3872D2;
+  }
+}
+
+@media (hover:hover) {
+  .c28.c28.c28:hover .c26 {
+    box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+    border-color: #3061B3;
+    background-color: #3061B3;
+  }
+}
+
+@media (hover:hover) {
+
 }
 
 <div>
@@ -2971,11 +2979,6 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   cursor: pointer;
 }
 
-.c20.c20.c20:hover .c25 {
-  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
-  border-color: #3872D2;
-}
-
 .c20.c20.c20:active .c25 {
   box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.5);
   border-color: #3061B3;
@@ -3003,12 +3006,6 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 
 .c28 * {
   cursor: pointer;
-}
-
-.c28.c28.c28:hover .c25 {
-  box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
-  border-color: #3061B3;
-  background-color: #3061B3;
 }
 
 .c28.c28.c28:active .c25 {
@@ -3181,6 +3178,25 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 
 .c18 .c29 > label {
   padding-left: 1.3rem;
+}
+
+@media (hover:hover) {
+  .c20.c20.c20:hover .c25 {
+    box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+    border-color: #3872D2;
+  }
+}
+
+@media (hover:hover) {
+  .c28.c28.c28:hover .c25 {
+    box-shadow: 0 0 0.8rem 0 rgba(56,114,210,0.35);
+    border-color: #3061B3;
+    background-color: #3061B3;
+  }
+}
+
+@media (hover:hover) {
+
 }
 
 <div>
