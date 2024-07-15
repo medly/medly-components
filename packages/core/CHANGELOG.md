@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.8.2](https://github.com/medly/medly-components/compare/@medly-components/core@7.8.1...@medly-components/core@7.8.2) (2024-07-15)
+
+
+### Bug Fixes
+
+* hover issue on checkbox on mobile screen ([daff85e](https://github.com/medly/medly-components/commit/daff85ee32cb65f6d6e4cc359541226bdaa64608))
+
+
+
+
+
 ## [7.8.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.8.0...@medly-components/core@7.8.1) (2024-07-10)
 
 
