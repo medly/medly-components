@@ -39,18 +39,26 @@ const Component: FC<DatePickerProps> = memo(
                 defaultMonth,
                 defaultYear,
                 hideInput,
+                valueFormatter,
+                onChangeFormatter,
                 ...restProps
             } = props,
             id = props.id || props.label?.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
             date: Date | null = useMemo(
-                () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat!) : null),
+                () =>
+                    valueFormatter
+                        ? valueFormatter(value)
+                        : value instanceof Date
+                        ? value
+                        : typeof value === 'string'
+                        ? parseToDate(value, displayFormat!)
+                        : null,
                 [value, displayFormat]
             );
 
         const wrapperRef = useRef<HTMLDivElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             runAfterUpdate = useRunAfterUpdate(),
-            [inputKey, setInputKey] = useState(0),
             [textValue, setTextValue] = useState(''),
             [isFocused, setFocusedState] = useState(false),
             [builtInErrorMessage, setErrorMessage] = useState(''),
@@ -75,7 +83,7 @@ const Component: FC<DatePickerProps> = memo(
                         parsedDate = parseToDate(inputValue, displayFormat!),
                         isValidDate = parsedDate?.toString() !== 'Invalid Date';
 
-                    onChange(isValidDate ? parsedDate : null);
+                    onChange(isValidDate ? (onChangeFormatter ? onChangeFormatter(parsedDate) : parsedDate) : null);
 
                     const breakdown = getFormattedDate(inputValue, displayFormat!);
                     if (breakdown) {
@@ -142,7 +150,7 @@ const Component: FC<DatePickerProps> = memo(
             ),
             onDateChange = useCallback(
                 (dt: Date, e: React.MouseEvent<HTMLButtonElement>) => {
-                    onChange(dt);
+                    onChange(onChangeFormatter ? onChangeFormatter(dt) : dt);
                     toggleCalendar(false);
                     setErrorMessage('');
                     setActive(false);
@@ -191,7 +199,6 @@ const Component: FC<DatePickerProps> = memo(
                 <TextField
                     errorText={errorText || builtInErrorMessage}
                     id={id}
-                    key={inputKey}
                     ref={inputRef}
                     required={required}
                     {...(showCalendarIcon && (calendarIconPosition === 'left' ? { prefix: dateIconEl } : { suffix: dateIconEl }))}

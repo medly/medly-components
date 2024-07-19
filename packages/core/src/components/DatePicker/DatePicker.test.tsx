@@ -1,4 +1,5 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
+import { formatRFC3339 } from 'date-fns';
 import { placements } from '../Popover/Popover.stories';
 import { DatePicker } from './DatePicker';
 import { DatePickerProps } from './types';
@@ -26,6 +27,29 @@ describe('DatePicker component', () => {
             <DatePicker hideInput label="Start Date" value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
         );
         expect(container).toMatchSnapshot();
+    });
+
+    it('should format the date based on the passed formatter', () => {
+        const dateToSelect = new Date(2020, 0, 2);
+        const mockOnChange = jest.fn();
+        const mockFormatter = jest.fn((date: Date | null) => (date ? formatRFC3339(date) : null));
+        const mockValueFormatter = jest.fn((value: string | Date) => (value ? new Date(value) : null));
+
+        render(
+            <DatePicker
+                id="dob"
+                hideInput
+                label="Date of birth"
+                value={new Date(2020, 0, 1)}
+                displayFormat="MM/dd/yyyy"
+                onChange={mockOnChange}
+                valueFormatter={mockValueFormatter}
+                onChangeFormatter={mockFormatter}
+            />
+        );
+        fireEvent.click(screen.getByTitle('dob-calendar-icon'));
+        fireEvent.click(screen.getByTitle(dateToSelect.toDateString()));
+        expect(mockOnChange).toHaveBeenCalledWith(formatRFC3339(dateToSelect));
     });
 
     it('should render properly when value is of string type', () => {

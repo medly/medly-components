@@ -63,6 +63,10 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     defaultYear?: number;
     /** Set it true to hide the input */
     hideInput?: boolean;
+    /** Pass this function to format the on change date*/
+    onChangeFormatter?: (value: Date | null) => any;
+    /** Pass this function to format the passed value*/
+    valueFormatter?: (value: any) => Date | null;
 }
 
 export interface StyleProps extends Pick<DatePickerProps, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size' | 'hideInput'> {
