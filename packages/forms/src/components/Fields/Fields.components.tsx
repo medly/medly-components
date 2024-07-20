@@ -183,7 +183,11 @@ export const Fields: FC<FieldsProps> = memo(props => {
                                             {...({
                                                 ...commonProps,
                                                 value: value || null,
-                                                onChange: handlers.handleDateChange(name, (componentProps as DatePickerProps).displayFormat)
+                                                onChange: handlers.handleDateChange(
+                                                    name,
+                                                    (componentProps as DatePickerProps).displayFormat,
+                                                    (componentProps as DatePickerProps).onChangeFormatter
+                                                )
                                             } as GetComponentProps<typeof DatePicker>)}
                                         />
                                     );

@@ -92,8 +92,8 @@ export const useForm = (initialState: Record<string, unknown>): UseFormResult =>
     );
 
     const handleDateChange: Handlers['handleDateChange'] = useCallback(
-        memoize((name, displayFormat) => value => {
-            setValues(val => ({ ...val, [name]: value ? format(value, displayFormat || 'MM/dd/yyyy') : '' }));
+        memoize((name, displayFormat, onChangeFormatter) => value => {
+            setValues(val => ({ ...val, [name]: value ? (onChangeFormatter ? value : format(value, displayFormat || 'MM/dd/yyyy')) : '' }));
         }),
         []
     );

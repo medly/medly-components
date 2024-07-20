@@ -16,7 +16,7 @@ export interface Handlers {
     // SingleSelect change handler
     handleSingleSelectChange: (name: string) => (value: any) => void;
     // DatePicker Component
-    handleDateChange: (name: string, displayFormat: DisplayFormat) => (value: any) => void;
+    handleDateChange: (name: string, displayFormat: DisplayFormat, onChangeFormatter?: (value: Date | null) => any) => (value: any) => void;
     // DateRangePicker Component
     handleDateRangeChange: (name: string, displayFormat: DisplayFormat) => (value: any) => void;
     // CheckboxGroup change handler

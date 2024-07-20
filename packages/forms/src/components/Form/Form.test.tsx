@@ -1,4 +1,5 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
+import { formatRFC3339 } from 'date-fns';
 import { FormCustomComponent } from '../Fields/types';
 import { Form } from './Form';
 import { testSchema } from './testSchema';
@@ -330,6 +331,39 @@ describe('Form', () => {
                     endDate: ''
                 }
             });
+        });
+
+        it('with onChangeFormatter', async () => {
+            const mockOnSubmit = jest.fn(),
+                formData = {
+                    birthDate: '2024-07-19T00:00:00+05:30'
+                };
+            render(
+                <Form
+                    name="Test form"
+                    fieldSchema={{
+                        birthDate: {
+                            type: 'date',
+                            label: 'Birth Date',
+                            placeholder: 'Birth Date',
+                            displayFormat: 'dd/MM/yyyy',
+                            valueFormatter: value => (value ? new Date(value) : null),
+                            onChangeFormatter: value => (value ? formatRFC3339(value) : null)
+                        }
+                    }}
+                    onSubmit={mockOnSubmit}
+                    initialState={{
+                        birthDate: '2024-07-18T00:00:00+05:30'
+                    }}
+                />
+            );
+            // DatePicker
+            fireEvent.change(screen.getByRole('textbox', { name: 'Birth Date' }), {
+                target: { value: '19/07/2024' }
+            });
+
+            fireEvent.submit(screen.getByRole('form'));
+            expect(mockOnSubmit).toHaveBeenCalledWith(formData);
         });
 
         it('should allow user to clear number input', () => {
