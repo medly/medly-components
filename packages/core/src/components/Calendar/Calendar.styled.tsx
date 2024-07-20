@@ -73,6 +73,7 @@ export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
     margin: 0.4rem;
     box-sizing: border-box;
     height: 3.2rem;
+    color: ${({ theme }) => theme.font.defaults.color};
 
     &:focus {
         outline: none;

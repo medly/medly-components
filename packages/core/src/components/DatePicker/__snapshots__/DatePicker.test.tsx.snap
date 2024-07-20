@@ -957,6 +957,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1000,6 +1001,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1051,6 +1053,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1997,6 +2000,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2040,6 +2044,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2091,6 +2096,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3034,6 +3040,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3077,6 +3084,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3128,6 +3136,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4071,6 +4080,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4114,6 +4124,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4165,6 +4176,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5110,6 +5122,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5153,6 +5166,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5204,6 +5218,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6146,6 +6161,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6189,6 +6205,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6240,6 +6257,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7182,6 +7200,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7225,6 +7244,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7276,6 +7296,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8221,6 +8242,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -8264,6 +8286,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8315,6 +8338,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -9257,6 +9281,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -9300,6 +9325,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -9351,6 +9377,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -10293,6 +10320,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -10336,6 +10364,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -10387,6 +10416,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -11332,6 +11362,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -11375,6 +11406,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -11426,6 +11458,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -12368,6 +12401,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -12411,6 +12445,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -12462,6 +12497,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

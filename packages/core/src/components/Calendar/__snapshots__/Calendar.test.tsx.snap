@@ -159,6 +159,7 @@ exports[`Calendar Component should render given date 1`] = `
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -202,6 +203,7 @@ exports[`Calendar Component should render given date 1`] = `
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -253,6 +255,7 @@ exports[`Calendar Component should render given date 1`] = `
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1190,6 +1193,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1233,6 +1237,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1284,6 +1289,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   margin: 0.4rem;
   box-sizing: border-box;
   height: 3.2rem;
+  color: #13181D;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
