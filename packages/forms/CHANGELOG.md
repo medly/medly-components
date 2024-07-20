@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.4](https://github.com/medly/medly-components/compare/@medly-components/forms@3.3.3...@medly-components/forms@3.3.4) (2024-07-20)
+
+
+### Bug Fixes
+
+* onChangeFormatter in datepicker in form component ([a4e4442](https://github.com/medly/medly-components/commit/a4e444277a266a27205db0677ca076d0409ceef0))
+* time zone issue in unit tests ([05ff7af](https://github.com/medly/medly-components/commit/05ff7af8cdbb532545b2cc806bcd59e8027a01e7))
+
+
+
+
+
 ## [3.3.3](https://github.com/medly/medly-components/compare/@medly-components/forms@3.3.2...@medly-components/forms@3.3.3) (2024-07-19)
 
 **Note:** Version bump only for package @medly-components/forms
