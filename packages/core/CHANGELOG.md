@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.9.2](https://github.com/medly/medly-components/compare/@medly-components/core@7.9.1...@medly-components/core@7.9.2) (2024-07-20)
+
+
+### Bug Fixes
+
+* timepicker scroll issues ([3aef211](https://github.com/medly/medly-components/commit/3aef21191e91ab046245ad1264d8aa88efd6f152))
+
+
+
+
+
 ## [7.9.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.9.0...@medly-components/core@7.9.1) (2024-07-20)
 
 
