@@ -22,6 +22,7 @@ module.exports = {
     projects: ['core', 'layout', 'forms', 'icons', 'utils'].map(name => ({
         displayName: name,
         setupFilesAfterEnv: ['<rootDir>/jest.setupAfterEnv.js'],
+        globalSetup: '<rootDir>/global-setup.js',
         moduleNameMapper: {
             '^@test-utils': '<rootDir>/test-utils',
             '^@medly-components/(.*)$': '<rootDir>/packages/$1/src/index'

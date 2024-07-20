@@ -336,7 +336,7 @@ describe('Form', () => {
         it('with onChangeFormatter', async () => {
             const mockOnSubmit = jest.fn(),
                 formData = {
-                    birthDate: '2024-07-19T00:00:00+05:30'
+                    birthDate: '2024-07-19T00:00:00Z'
                 };
             render(
                 <Form
@@ -353,7 +353,7 @@ describe('Form', () => {
                     }}
                     onSubmit={mockOnSubmit}
                     initialState={{
-                        birthDate: '2024-07-18T00:00:00+05:30'
+                        birthDate: '2024-07-18T00:00:00Z'
                     }}
                 />
             );
