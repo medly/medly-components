@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Text from '../../Text';
 
 export const TimePickerCard = styled('div')`
     background: ${({ theme }) => theme.timePicker.bgColor};
@@ -8,6 +7,7 @@ export const TimePickerCard = styled('div')`
     width: max-content;
     height: max-content;
     padding-top: 1.2rem;
+    min-width: 24rem;
 `;
 
 export const TimeLabels = styled('div')`
@@ -56,14 +56,6 @@ export const TimePickerWrapper = styled.div`
         border-radius: 0.8rem;
         transform: translate(-50%, -50%);
     }
-`;
-
-export const Colon = styled(Text).attrs({ children: ':' })`
-    flex: 0.5;
-    display: flex;
-    justify-content: flex-end;
-    user-select: none;
-    z-index: 1;
 `;
 
 export const TimePickerActions = styled.div`

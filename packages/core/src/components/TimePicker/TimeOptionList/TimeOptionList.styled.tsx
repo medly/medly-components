@@ -13,6 +13,7 @@ export const TimePicker = styled.div`
 `;
 
 export const TimeUList = styled.ul`
+    width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -24,6 +25,8 @@ export const TimeUList = styled.ul`
     scroll-snap-type: y mandatory;
     user-select: none;
     list-style: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
         display: none;
@@ -43,6 +46,7 @@ const getFontStyle = (style: 'selectedOption' | 'nonSelectedOption') => css`
 
 export const TimeItem = styled('li')<{ isSelected?: boolean }>`
     ${centerAligned()}
+    width: 100%;
     cursor: pointer;
     min-height: 4rem;
     scroll-snap-align: center;

@@ -2128,6 +2128,7 @@ exports[`Form should render properly with initial state 1`] = `
             >
               <input
                 aria-describedby="birthTime-helper-text"
+                autocomplete="off"
                 class="c7"
                 id="birthTime-input"
                 maxlength="12"
@@ -4448,6 +4449,7 @@ exports[`Form should render properly without initial state 1`] = `
             >
               <input
                 aria-describedby="birthTime-helper-text"
+                autocomplete="off"
                 class="c10"
                 id="birthTime-input"
                 maxlength="12"

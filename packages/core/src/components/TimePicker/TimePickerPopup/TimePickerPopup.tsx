@@ -5,7 +5,7 @@ import Popover from '../../Popover';
 import Popup from '../../Popover/Popup';
 import { TimeOptionList } from '../TimeOptionList';
 import type { TIME_OPTION_TYPE } from '../TimeOptionList/types';
-import { Colon, TimePickerActions, TimePickerCard, TimePickerWrapper } from './TimePickerPopup.styled';
+import { TimePickerActions, TimePickerCard, TimePickerWrapper } from './TimePickerPopup.styled';
 import type { TimePickerPopupProps } from './types';
 
 export const Component: FC<TimePickerPopupProps> = ({ value, onChange, onReset, popoverDistance, popoverPlacement }) => {
@@ -57,7 +57,6 @@ export const Component: FC<TimePickerPopupProps> = ({ value, onChange, onReset, 
             <TimePickerCard>
                 <TimePickerWrapper>
                     <TimeOptionList type="HOUR" value={hour} onChange={handleChange} ref={hourRef} />
-                    <Colon />
                     <TimeOptionList type="MINUTES" value={minutes} onChange={handleChange} ref={minutesRef} />
                     <TimeOptionList type="PERIOD" value={period} onChange={handleChange} ref={periodRef} />
                 </TimePickerWrapper>

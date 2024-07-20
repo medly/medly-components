@@ -43,7 +43,7 @@ const Component: FC<TimePickerTextFieldProps> = memo(
             } else {
                 inputRef?.current?.blur();
                 props?.onBlur?.(event);
-                const length = event.target.value.length;
+                const { length } = event.target.value;
                 const match = event.target.value.replace(/ /g, '').match(/([0-9]{2}):([0-9]{2})$/);
                 // Choose AM as default if user has not entered any value for period
                 if (length >= 7 && match) {
@@ -131,6 +131,7 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                 onKeyPress={onKeyPress}
                 key={key.toString()}
                 maxLength={12}
+                autoComplete="off"
                 pattern={'[0-9]{2} : [0-9]{2}  [AaPp][Mm]'}
                 {...{ ...props, value: text, onBlur, validator, onChange }}
             />
