@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.9.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.9.0...@medly-components/core@7.9.1) (2024-07-20)
+
+
+### Bug Fixes
+
+* date color issue in datepicker ([b72ce6a](https://github.com/medly/medly-components/commit/b72ce6a1dafb4593db97930ca8e6f4a68cc7da1d))
+
+
+
+
+
 # [7.9.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.8.2...@medly-components/core@7.9.0) (2024-07-19)
 
 
