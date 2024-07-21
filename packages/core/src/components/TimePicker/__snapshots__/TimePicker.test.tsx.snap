@@ -667,8 +667,6 @@ exports[`TimePicker should render properly 1`] = `
   -moz-scroll-snap-align: center;
   -ms-scroll-snap-align: center;
   scroll-snap-align: center;
-  -webkit-transition: all 200ms ease-in-ease-out;
-  transition: all 200ms ease-in-ease-out;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.2rem;
@@ -704,8 +702,6 @@ exports[`TimePicker should render properly 1`] = `
   -moz-scroll-snap-align: center;
   -ms-scroll-snap-align: center;
   scroll-snap-align: center;
-  -webkit-transition: all 200ms ease-in-ease-out;
-  transition: all 200ms ease-in-ease-out;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 2.6rem;

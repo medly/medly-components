@@ -50,7 +50,6 @@ export const TimeItem = styled('li')<{ isSelected?: boolean }>`
     cursor: pointer;
     min-height: 4rem;
     scroll-snap-align: center;
-    transition: all 200ms ease-in-ease-out;
     ${({ isSelected }) => getFontStyle(isSelected ? 'selectedOption' : 'nonSelectedOption')};
 
     &:hover {
