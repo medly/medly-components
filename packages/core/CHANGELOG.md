@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.9.3](https://github.com/medly/medly-components/compare/@medly-components/core@7.9.2...@medly-components/core@7.9.3) (2024-07-21)
+
+
+### Bug Fixes
+
+* timepicker text highlight issue ([48613fc](https://github.com/medly/medly-components/commit/48613fc0a35b6b77680ca95414b17191e9711a00))
+
+
+
+
+
 ## [7.9.2](https://github.com/medly/medly-components/compare/@medly-components/core@7.9.1...@medly-components/core@7.9.2) (2024-07-20)
 
 
