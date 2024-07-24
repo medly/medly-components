@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.10.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.9.3...@medly-components/core@7.10.0) (2024-07-24)
+
+
+### Features
+
+* app prop to disable drawer close on outside click ([d041a13](https://github.com/medly/medly-components/commit/d041a131eea0cc75e76a2e2dd621bfaa0e5d6c0a))
+
+
+
+
+
 ## [7.9.3](https://github.com/medly/medly-components/compare/@medly-components/core@7.9.2...@medly-components/core@7.9.3) (2024-07-21)
 
 
