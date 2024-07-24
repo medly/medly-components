@@ -10,13 +10,14 @@ import Header from './Header';
 import { DrawerProps, DrawerStaticProps } from './types';
 
 const Component: FC<DrawerProps> = memo(
-    forwardRef(({ id, onClose, open, width, children, withOverlay, position, ...props }, ref) => {
+    forwardRef(({ id, onClose, open, width, children, withOverlay, position, shouldCloseOnOutsideClick, ...props }, ref) => {
         const isEscPressed = useKeyPress('Escape'),
             [shouldRender, setRenderState] = useState(open),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 });
 
         const handleBackgroundClick = useCallback(
-                (event: MouseEvent<HTMLDivElement>) => event.currentTarget === event.target && onClose && onClose(),
+                (event: MouseEvent<HTMLDivElement>) =>
+                    event.currentTarget === event.target && shouldCloseOnOutsideClick && onClose && onClose(),
                 [onClose]
             ),
             handleAnimationEnd = useCallback(() => !open && setRenderState(false), [open]);
@@ -52,7 +53,8 @@ Component.defaultProps = {
     open: false,
     position: 'right',
     width: '40rem',
-    withOverlay: true
+    withOverlay: true,
+    shouldCloseOnOutsideClick: true
 };
 export const Drawer: FC<DrawerProps> & WithStyle & DrawerStaticProps = Object.assign(Component, {
     Style: DrawerBackground,

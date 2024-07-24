@@ -9,6 +9,7 @@ export interface DrawerProps extends HTMLProps<HTMLDivElement> {
     onClose: () => void;
     width?: string;
     withOverlay?: boolean;
+    shouldCloseOnOutsideClick?: boolean;
 }
 
 export interface DrawerStaticProps {
