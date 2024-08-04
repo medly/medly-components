@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.9](https://github.com/medly/medly-components/compare/@medly-components/forms@3.3.8...@medly-components/forms@3.3.9) (2024-08-04)
+
+
+### Bug Fixes
+
+* multiselect icon color on expand ([92a14b6](https://github.com/medly/medly-components/commit/92a14b657c837f2dd40c609cede38607f4de2e28))
+
+
+
+
+
 ## [3.3.8](https://github.com/medly/medly-components/compare/@medly-components/forms@3.3.7...@medly-components/forms@3.3.8) (2024-07-24)
 
 **Note:** Version bump only for package @medly-components/forms

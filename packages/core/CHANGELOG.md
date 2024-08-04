@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.10.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.10.0...@medly-components/core@7.10.1) (2024-08-04)
+
+
+### Bug Fixes
+
+* multiselect icon color on expand ([92a14b6](https://github.com/medly/medly-components/commit/92a14b657c837f2dd40c609cede38607f4de2e28))
+
+
+
+
+
 # [7.10.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.9.3...@medly-components/core@7.10.0) (2024-07-24)
 
 
