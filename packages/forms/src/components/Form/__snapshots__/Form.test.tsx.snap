@@ -1351,7 +1351,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c58:not(:focus-within):hover .c59 > .c30 * {
-  fill: #13181D;
+  fill: #546A7F;
 }
 
 .c38 {
@@ -3690,7 +3690,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c58:not(:focus-within):hover .c59 > .c32 * {
-  fill: #13181D;
+  fill: #546A7F;
 }
 
 .c39 {

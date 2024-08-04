@@ -39,10 +39,10 @@ const getDefaultStyle = ({ theme, variant, areOptionsVisible, disabled, isSearch
         transform: ${areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)'};
     }
 
-    ${!disabled && iconStyle(theme.textField[variant].default.labelColor)}
+    ${!disabled && iconStyle(theme.textField[variant].default.iconColor)}
 
     &:not(:focus-within):hover {
-        ${!disabled && iconStyle(theme.textField[variant].default.textColor)}
+        ${!disabled && iconStyle(theme.textField[variant].hover.iconColor)}
     }
 `;
 
@@ -55,7 +55,8 @@ export const Wrapper = styled.div<SelectWrapperProps>`
         fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};
 
     ${getDefaultStyle};
-    ${({ areOptionsVisible, isErrorPresent, theme }) => areOptionsVisible && !isErrorPresent && iconStyle(theme.colors.blue[500])};
-    ${({ isErrorPresent, theme }) => isErrorPresent && iconStyle(theme.colors.red[500])};
-    ${({ disabled, theme }) => disabled && iconStyle(theme.colors.grey[400])};
+    ${({ areOptionsVisible, isErrorPresent, theme, variant }) =>
+        areOptionsVisible && !isErrorPresent && iconStyle(theme.textField[variant].active.iconColor)};
+    ${({ isErrorPresent, theme, variant }) => isErrorPresent && iconStyle(theme.textField[variant].error.iconColor)};
+    ${({ disabled, theme, variant }) => disabled && iconStyle(theme.textField[variant].disabled.iconColor)};
 `;
