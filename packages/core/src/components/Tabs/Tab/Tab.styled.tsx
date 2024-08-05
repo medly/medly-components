@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { breakpoints, centerAligned, getFontStyle, media } from '@medly-components/utils';
+import { breakpoints, centerAligned, getFontStyle, hideScrollbar, media } from '@medly-components/utils';
 import styled, { css } from 'styled-components';
 import Text from '../../Text';
 import { TabSize } from '../types';
@@ -150,6 +150,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     border-color: ${({ borderColor, variant }) => (variant === 'flat' || variant === 'outlined') && borderColor[variant]};
     border-width: ${({ variant }) => (variant === 'outlined' ? `0.1rem 0.1rem 0.1rem 0` : `0 0 0.1rem 0`)};
     transition: all 100ms ease-out;
+    ${hideScrollbar}
     * {
         transition: all 100ms ease-out;
     }

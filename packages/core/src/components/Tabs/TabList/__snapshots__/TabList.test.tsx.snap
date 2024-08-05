@@ -60,9 +60,18 @@ exports[`TabList should render properly 1`] = `
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  -ms-overflow-style: none;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
   background-color: #EBF1FA;
   background-color: #ffffff;
   background-color: transparent;
+}
+
+.c1::-webkit-scrollbar {
+  display: none;
 }
 
 .c1 * {
@@ -197,8 +206,17 @@ exports[`TabList should render properly 1`] = `
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  -ms-overflow-style: none;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
   background-color: #ffffff;
   background-color: transparent;
+}
+
+.c7::-webkit-scrollbar {
+  display: none;
 }
 
 .c7 * {

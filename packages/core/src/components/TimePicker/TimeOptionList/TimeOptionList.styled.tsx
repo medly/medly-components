@@ -1,4 +1,4 @@
-import { centerAligned } from '@medly-components/utils';
+import { centerAligned, hideScrollbar } from '@medly-components/utils';
 import styled, { css } from 'styled-components';
 
 export const TimePicker = styled.div`
@@ -25,12 +25,7 @@ export const TimeUList = styled.ul`
     scroll-snap-type: y mandatory;
     user-select: none;
     list-style: none;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
+    ${hideScrollbar}
 `;
 
 const getFontStyle = (style: 'selectedOption' | 'nonSelectedOption') => css`
