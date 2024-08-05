@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.6](https://github.com/medly/medly-components/compare/@medly-components/utils@3.2.5...@medly-components/utils@3.2.6) (2024-08-05)
+
+
+### Bug Fixes
+
+* scroll issue in tab component ([89064ac](https://github.com/medly/medly-components/commit/89064ac319fb45aa27823d5c005b0ab45af61be9))
+
+
+
+
+
 ## [3.2.5](https://github.com/medly/medly-components/compare/@medly-components/utils@3.2.4...@medly-components/utils@3.2.5) (2024-06-23)
 
 
