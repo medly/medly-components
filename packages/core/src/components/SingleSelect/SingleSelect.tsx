@@ -64,14 +64,15 @@ const Component: FC<SingleSelectProps> = memo(
                 isSearchable && setInputValue('');
                 inputRef.current?.focus();
             }, [isSearchable, inputValue]),
-            hideOptions = useCallback(() => {
+            hideOptions = useCallback((selected?: Option) => {
                 setOptionsVisibilityState(false);
                 inputRef.current?.blur();
+                selected && setInputValue(selected.label);
             }, []),
-            toggleOptions = useCallback(
-                () => !disabled && (areOptionsVisible ? hideOptions() : showOptions()),
-                [disabled, areOptionsVisible]
-            ),
+            toggleOptions = useCallback(() => {
+                const selected = getDefaultSelectedOption(defaultOptions, value);
+                return !disabled && (areOptionsVisible ? hideOptions(selected) : showOptions());
+            }, [disabled, areOptionsVisible, defaultOptions, value]),
             handleInputChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const { value: inputValue } = event.target as HTMLInputElement,
@@ -91,8 +92,7 @@ const Component: FC<SingleSelectProps> = memo(
                     if (!option.disabled && !Array.isArray(option.value)) {
                         setSelectedOption(option);
                         setOptions(getUpdatedOptions(options, option));
-                        setInputValue(option.label);
-                        hideOptions();
+                        hideOptions(option);
                         isUnselectable && value === option.value ? onChange?.('') : onChange?.(option.value);
                         setErrorMessage('');
                     } else {
@@ -104,10 +104,9 @@ const Component: FC<SingleSelectProps> = memo(
             handleOuterClick = useCallback(() => {
                 isFocused.current = false;
                 if (areOptionsVisible) {
-                    hideOptions();
+                    hideOptions(defaultSelectedOption);
                     validate();
                     updateToDefaultOptions();
-                    setInputValue(defaultSelectedOption.label);
                 }
             }, [areOptionsVisible, selectedOption, updateToDefaultOptions, validate]),
             handleFocus = useCallback(

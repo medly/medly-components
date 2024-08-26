@@ -12,7 +12,7 @@ type Props = {
     handleOptionClick: (op: Option) => void;
     showOptions: () => void;
     optionsRef: React.RefObject<HTMLUListElement>;
-    hideOptions?: () => void;
+    hideOptions?: (option?: Option) => void;
 };
 export const useKeyboardNavigation = (props: Props) => {
     const {
@@ -80,9 +80,9 @@ export const useKeyboardNavigation = (props: Props) => {
     useEffect(() => {
         if (isFocused.current && tabPress && optionsRef.current) {
             isFocused.current = false;
-            setTimeout(() => !isFocused.current && hideOptions && hideOptions(), 250);
+            setTimeout(() => !isFocused.current && hideOptions && hideOptions(selectedOption), 250);
         }
-    }, [tabPress]);
+    }, [tabPress, selectedOption]);
 
     useEffect(() => {
         if (isFocused.current && enterPress && optionsRef.current) {
