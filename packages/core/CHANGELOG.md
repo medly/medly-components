@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.11.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.10.3...@medly-components/core@7.11.0) (2024-08-29)
+
+
+### Features
+
+* scroll tab in view on active ([5b4168a](https://github.com/medly/medly-components/commit/5b4168ac5bb790d1c1e02a5711a344a317619819))
+
+
+
+
+
 ## [7.10.3](https://github.com/medly/medly-components/compare/@medly-components/core@7.10.2...@medly-components/core@7.10.3) (2024-08-26)
 
 
