@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.12.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.11.0...@medly-components/core@7.12.0) (2024-08-31)
+
+
+### Features
+
+* add modal padding to theme ([b6bfe0b](https://github.com/medly/medly-components/commit/b6bfe0b3491a3165d10950499308f213799e08cd))
+
+
+
+
+
 # [7.11.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.10.3...@medly-components/core@7.11.0) (2024-08-29)
 
 
