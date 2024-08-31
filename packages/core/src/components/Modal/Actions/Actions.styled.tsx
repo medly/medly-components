@@ -6,7 +6,7 @@ import { StyledProps } from './types';
 export const Actions = styled('div')<StyledProps>`
     display: flex;
     z-index: 10;
-    padding: ${({ theme }) => `${theme.spacing.S4} ${theme.spacing.M2} ${theme.spacing.M2}`};
+    padding: ${({ theme }) => theme.modal.padding.actions.mobile};
     box-shadow: ${({ theme, scrollState }) =>
         !scrollState.scrolledToBottom && `0 -1.8rem 1.6rem -1.6rem ${rgba(theme.colors.grey[400], 0.6)}`};
     flex-direction: row;
@@ -16,14 +16,8 @@ export const Actions = styled('div')<StyledProps>`
         margin-left: 1.6rem;
     }
 
-    ${({ theme }) => media(breakpoints(theme.breakpoints).down('S'))`
-        padding: ${theme.spacing.S4};
-    `}
-
-    ${({ theme }) => `
-        @media (min-width: ${theme.breakpoints.M.min}px) and (max-height: 700px) {
-            padding: ${theme.spacing.S4} ${theme.spacing.M2};
-        }
+    ${({ theme }) => media(breakpoints(theme.breakpoints).up('M'))`
+         padding: ${theme.modal.padding.actions.desktop};
     `}
 `;
 Actions.defaultProps = {

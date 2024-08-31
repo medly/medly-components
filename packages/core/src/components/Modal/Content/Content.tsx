@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import { useContext, useRef, memo } from 'react';
+import type { FC } from 'react';
+import { memo, useContext, useRef } from 'react';
 import { ModalContext } from '../Modal.context';
 import { useScrollState } from '../useScrollState';
 import * as Styled from './Content.styled';
-import type { FC } from 'react';
 
 const Component: FC = memo(props => {
     const { id, dispatch, scrollState, headerHeight, overflowVisible } = useContext(ModalContext),

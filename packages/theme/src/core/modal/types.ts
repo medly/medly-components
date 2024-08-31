@@ -19,4 +19,18 @@ export interface ModalTheme {
             pressed: string;
         };
     };
+    padding: {
+        header: {
+            desktop: string;
+            mobile: string;
+        };
+        content: {
+            desktop: string;
+            mobile: string;
+        };
+        actions: {
+            desktop: string;
+            mobile: string;
+        };
+    };
 }

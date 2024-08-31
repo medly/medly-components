@@ -21,6 +21,20 @@ const modal: ModalTheme = {
             hovered: colors.grey[100],
             pressed: colors.grey[200]
         }
+    },
+    padding: {
+        header: {
+            desktop: '3.2rem 5.6rem 1.6rem 3.2rem',
+            mobile: '1.6rem 5.6rem 1.6rem 1.6rem'
+        },
+        content: {
+            desktop: '0.8rem 3.2rem 2.4rem',
+            mobile: '0.8rem 1.6rem 2.4rem'
+        },
+        actions: {
+            desktop: '1.6rem 3.2rem 3.2rem',
+            mobile: '1.6rem'
+        }
     }
 };
 
