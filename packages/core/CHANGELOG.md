@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.13.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.12.0...@medly-components/core@7.13.0) (2024-09-08)
+
+
+### Features
+
+* add autoSelectEndDateIn prop in DateRangePicker component ([de430c3](https://github.com/medly/medly-components/commit/de430c3981d1e0015af4dc1ce897526cf1771e15))
+
+
+
+
+
 # [7.12.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.11.0...@medly-components/core@7.12.0) (2024-08-31)
 
 
