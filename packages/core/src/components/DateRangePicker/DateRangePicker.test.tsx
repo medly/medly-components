@@ -211,6 +211,21 @@ describe('DateRangePicker', () => {
             expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
         });
 
+        it('should call onChange with expected start date and end date when autoSelectEndDateIn passed in', async () => {
+            const mockOnChange = jest.fn(),
+                dateToSelect: any = { endDate: new Date(2020, 1, 10), startDate: new Date(2020, 1, 3) },
+                { startDateInput } = renderComponent({
+                    value: { startDate: new Date(2020, 1, 13), endDate: new Date(2020, 1, 5) },
+                    onChange: mockOnChange,
+                    autoSelectEndDateIn: 7
+                });
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
+            fireEvent.focus(startDateInput);
+            fireEvent.mouseOver(screen.getByTitle(dateToSelect.startDate.toDateString()));
+            fireEvent.change(startDateInput, { target: { value: '02 / 03 / 2020' } });
+            await waitFor(() => expect(mockOnChange).toHaveBeenCalledWith(dateToSelect));
+        });
+
         it('should change display month on selecting startDate out of displayed months', async () => {
             const { startDateInput } = renderComponent({
                 value: { startDate: new Date(2020, 5, 2), endDate: null }
@@ -365,6 +380,23 @@ describe('DateRangePicker', () => {
             fireEvent.click(screen.getByTitle(datesToSelect.endDate.toDateString()));
             expect(mockOnChange).toHaveBeenLastCalledWith({ startDate: initialDates.startDate, endDate: datesToSelect.endDate });
             await waitFor(() => expect(startDateInput).toHaveFocus());
+        });
+
+        it('should auto select endDate on selecting the start date', async () => {
+            const mockOnChange = jest.fn(),
+                initialDates = { startDate: new Date(2020, 1, 2), endDate: new Date(2020, 1, 9) },
+                datesToSelect: any = { endDate: new Date(2020, 1, 10), startDate: new Date(2020, 1, 3) };
+
+            renderComponent({
+                value: initialDates,
+                onChange: mockOnChange,
+                autoSelectEndDateIn: 7
+            });
+            fireEvent.click(screen.getByTitle('contract-calendar-icon'));
+            fireEvent.click(screen.getByTitle(datesToSelect.startDate.toDateString()));
+            await waitFor(() =>
+                expect(mockOnChange).toHaveBeenCalledWith({ endDate: datesToSelect.endDate, startDate: datesToSelect.startDate })
+            );
         });
 
         it('should call focus and blur handlers if passed', async () => {

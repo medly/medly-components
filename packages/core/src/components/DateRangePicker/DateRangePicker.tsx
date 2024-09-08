@@ -34,6 +34,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
         customDateRangeOptions,
         onPopupClose,
         autoComplete,
+        autoSelectEndDateIn,
         ...restProps
     } = props;
     const startDateRef = useRef<HTMLInputElement>(null),
@@ -136,6 +137,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
                 autoComplete={autoComplete}
                 minSelectableDate={minSelectableDate!}
                 maxSelectableDate={maxSelectableDate!}
+                autoSelectEndDateIn={autoSelectEndDateIn}
             />
             {isActive &&
                 (activePopover === PopoverTypes.CALENDAR ? (
@@ -150,6 +152,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
                         onFocusChange={onFocusChange}
                         minSelectableDate={minSelectableDate!}
                         maxSelectableDate={maxSelectableDate!}
+                        autoSelectEndDateIn={autoSelectEndDateIn}
                     />
                 ) : (
                     <CustomDateRangeOptions

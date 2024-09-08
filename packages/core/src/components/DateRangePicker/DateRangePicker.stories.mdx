@@ -1,16 +1,16 @@
-import { DateRangePicker } from './DateRangePicker';
 import { defaultTheme } from '@medly-components/theme';
-import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import {
-    placement,
-    displayFormats,
-    ThemeInterface,
-    FormWithDateRangePicker,
-    DateRangePickerWithStateForDoc
-} from './DateRangePicker.stories';
 import { useState } from 'react';
-import { DateRangeType, DateRangeSelectionEnum } from './types';
+import { DateRangePicker } from './DateRangePicker';
+import {
+    DateRangePickerWithStateForDoc,
+    displayFormats,
+    FormWithDateRangePicker,
+    placement,
+    ThemeInterface
+} from './DateRangePicker.stories';
+import { DateRangeSelectionEnum, DateRangeType } from './types';
 
 <Meta
     title="Core/DateRangePicker"

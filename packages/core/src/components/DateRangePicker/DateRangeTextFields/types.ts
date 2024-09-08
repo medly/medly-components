@@ -29,4 +29,5 @@ export type Props = {
     autoComplete?: string;
     minSelectableDate: Date;
     maxSelectableDate: Date;
+    autoSelectEndDateIn?: number;
 };

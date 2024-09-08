@@ -33,7 +33,8 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
             activePopover,
             onCustomRangeIconClick,
             outerClickValidator,
-            autoComplete
+            autoComplete,
+            autoSelectEndDateIn
         } = props,
         {
             mask,
@@ -143,6 +144,7 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
                     label={endDateLabel}
                     onKeyPress={onKeyPress}
                     {...commonTextProps}
+                    disabled={!!autoSelectEndDateIn || commonTextProps.disabled}
                 />
                 {showTooltipForHelperAndErrorText && (
                     <HelperAndErrorTextTooltip id={id} errorText={errorText || builtInErrorMessage} helperText={helperText} />

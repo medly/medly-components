@@ -63,4 +63,6 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     showTooltipForHelperAndErrorText?: boolean;
     /** Provide date range selection custom options */
     customDateRangeOptions?: Array<{ label: string; value: DateRangeSelectionEnum }>;
+    /** Provide the number of days to auto select after start date*/
+    autoSelectEndDateIn?: number;
 };

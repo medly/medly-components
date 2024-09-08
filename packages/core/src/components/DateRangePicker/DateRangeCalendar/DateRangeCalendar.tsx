@@ -1,5 +1,6 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { WithStyle, useMediaQuery } from '@medly-components/utils';
+import { add } from 'date-fns';
 import type { FC } from 'react';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useTheme } from 'styled-components';
@@ -22,6 +23,7 @@ const Component: FC<Props> = memo(props => {
             minSelectableDate,
             maxSelectableDate,
             withSingleMonth,
+            autoSelectEndDateIn,
             ...restProps
         } = props,
         { startDate, endDate } = selectedDates;
@@ -40,6 +42,11 @@ const Component: FC<Props> = memo(props => {
         handleDateSelection = useCallback(
             (date: Date) => {
                 if (focusedElement === `START_DATE`) {
+                    if (autoSelectEndDateIn) {
+                        onDateSelection({ startDate: date, endDate: add(date, { days: autoSelectEndDateIn }) });
+                        onFocusChange?.('START_DATE');
+                        return;
+                    }
                     if (selectedDates.endDate && date >= selectedDates.endDate) {
                         onDateSelection({ startDate: selectedDates.endDate, endDate: date });
                     } else {

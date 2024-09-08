@@ -15,4 +15,5 @@ export type Props = Omit<HTMLProps<HTMLDivElement>, 'size'> & {
     withSingleMonth?: boolean;
     focusedElement?: FOCUS_ELEMENT;
     onFocusChange?: (element: FOCUS_ELEMENT) => void;
+    autoSelectEndDateIn?: number;
 };

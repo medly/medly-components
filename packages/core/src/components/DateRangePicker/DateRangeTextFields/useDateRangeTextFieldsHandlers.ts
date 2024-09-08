@@ -1,4 +1,5 @@
 import { getFormattedDate, parseToDate } from '@medly-components/utils';
+import { add } from 'date-fns';
 import { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import { isValidDate } from '../../Calendar/helper';
 import getMaskedValue from '../../TextField/getMaskedValue';
@@ -20,7 +21,8 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
         onDateChange,
         setFocusedElement,
         minSelectableDate,
-        maxSelectableDate
+        maxSelectableDate,
+        autoSelectEndDateIn
     } = props;
 
     const [builtInErrorMessage, setErrorMessage] = useState(''),
@@ -89,8 +91,12 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                     setStartDateText(maskedValue);
                     setStartDateMaskLabel(maskedLabel);
                     if (parsedDate.toString() !== 'Invalid Date') {
-                        data !== null && !errorMessage && setFocusedElement('END_DATE');
                         !errorMessage && setErrorMessage('');
+                        if (autoSelectEndDateIn && data !== null) {
+                            onDateChange({ startDate: parsedDate, endDate: add(parsedDate, { days: autoSelectEndDateIn }) });
+                            return;
+                        }
+                        data !== null && !errorMessage && setFocusedElement('END_DATE');
                         onDateChange({ ...selectedDates, startDate: parsedDate });
                     }
                 } else {
@@ -103,7 +109,7 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                     }
                 }
             },
-            [selectedDates, onDateChange]
+            [selectedDates, onDateChange, autoSelectEndDateIn]
         ),
         validateOnTextFieldBlur = useCallback(
             (event: React.FocusEvent<HTMLInputElement>) => {
