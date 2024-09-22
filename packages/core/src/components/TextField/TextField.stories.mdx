@@ -1,10 +1,10 @@
-import { TextField } from './TextField.tsx';
+import { AddCircleIcon, AddCircleOutlineIcon, CheckCircleIcon } from '@medly-components/icons';
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+import { boolean, color, number, select, text, withKnobs } from '@storybook/addon-knobs';
+import { useCallback, useState } from 'react';
 import Text from '../Text';
-import { AddCircleOutlineIcon, AddCircleIcon, CheckCircleIcon } from '@medly-components/icons';
-import { withKnobs, text, color, select, boolean, number } from '@storybook/addon-knobs';
-import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { ThemeInterface, variants, sizes, Custom } from './TextField.stories.tsx';
-import { useState, useCallback } from 'react';
+import { Custom, sizes, ThemeInterface, variants } from './TextField.stories.tsx';
+import { TextField } from './TextField.tsx';
 
 <Meta title="Core" component={TextField} parameters={{ jest: ['TextField.test.tsx'] }} />
 
@@ -36,7 +36,15 @@ You can use the basic `TextField` component to get user input. It is often used 
                     multiline={boolean('Multiline', false)}
                     minRows={number('Rows', 3)}
                     withCharacterCount={boolean('Character Count', false)}
-                    maxLength={number('Max Length', null)}
+                    mask="(XXX) XXX-XXXX"
+                    maxLength={'(XXX) XXX-XXXX'.length}
+                    validator={value => {
+                        if (value === '') return 'This field is required';
+                        if (value.length < '(XXX) XXX-XXXX'.length) return 'Please enter valid number in format (XXX) XXX-XXXX';
+                        if (value.split('').find((char, index) => isNaN(char) && '(XXX) XXX-XXXX'[index] === 'X'))
+                            return 'Please enter valid number in format (XXX) XXX-XXXX';
+                        return '';
+                    }}
                 />
             );
         }}

@@ -82,18 +82,13 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                     } else {
                         props.onChange?.('');
                     }
-                    const updatedText = `${`0${hour}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  ${period}`;
-                    const updatedCursor =
-                        cursor -
-                        (inputValue.slice(0, cursor) === updatedText.slice(0, cursor) ? 0 : inputValue.length - updatedText.length);
+                    const updatedText = `${`0${hour}`.slice(-2)} : ${`0${minutes}`.slice(-2)} ${period}`;
+                    if (inputValue!.length !== updatedText.length) {
+                        runAfterUpdate(() => inputRef.current?.setSelectionRange(cursor, cursor));
+                    }
                     setText(updatedText);
-                    runAfterUpdate(() => inputRef.current?.setSelectionRange(updatedCursor, updatedCursor));
-                    inputRef.current.maxLength = 11;
                     return;
                 }
-            }
-            if (inputRef.current) {
-                inputRef.current.maxLength = 12;
             }
         };
 
@@ -112,7 +107,7 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                 const hour = Number(time[0]);
                 const minutes = Number(time[1]);
                 const period = hour < 12 ? 'AM' : 'PM';
-                setText(`${`0${hour % 12 === 0 ? 12 : hour % 12}`.slice(-2)} : ${`0${minutes}`.slice(-2)}  ${period}`);
+                setText(`${`0${hour % 12 === 0 ? 12 : hour % 12}`.slice(-2)} : ${`0${minutes}`.slice(-2)} ${period}`);
                 inputRef.current?.setCustomValidity('');
                 inputRef.current?.blur();
             }
@@ -125,14 +120,14 @@ const Component: FC<TimePickerTextFieldProps> = memo(
         return (
             <TextField
                 fullWidth
-                mask="HH : MM  AM"
+                mask="HH : MM AM"
                 ref={inputRef}
                 suffix={TimeIcon}
                 onKeyPress={onKeyPress}
                 key={key.toString()}
-                maxLength={12}
+                maxLength={11}
                 autoComplete="off"
-                pattern={'[0-9]{2} : [0-9]{2}  [AaPp][Mm]'}
+                pattern={'[0-9]{2} : [0-9]{2} [AaPp][Mm]'}
                 {...{ ...props, value: text, onBlur, validator, onChange }}
             />
         );

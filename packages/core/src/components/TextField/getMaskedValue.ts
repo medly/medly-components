@@ -1,7 +1,5 @@
 const applyMasking = (value: string, mask: string, selectionStart: number, data: string | null): string => {
     const { length } = value,
-        lastChar = value.charAt(length - 1),
-        alphaRegex = /[a-zA-Z]/, //NOSONAR
         alphaNumericRegex = /[a-zA-Z0-9]/, //NOSONAR
         specialCharsRegex = /[^a-zA-Z0-9]/; //NOSONAR
 
@@ -19,14 +17,20 @@ const applyMasking = (value: string, mask: string, selectionStart: number, data:
         // if user deletes the last special character
         newValue = value;
     } else {
-        const remainingMask = mask.substr(length),
+        const initialMask = mask.match(alphaNumericRegex)?.index,
+            remainingMask = mask.substr(length),
             numberIndex = remainingMask.match(alphaNumericRegex)?.index;
 
-        newValue = value + remainingMask.substr(0, numberIndex);
+        newValue =
+            initialMask && !specialCharsRegex.test(value[0])
+                ? mask.slice(0, initialMask) + value + remainingMask.substr(0, numberIndex)
+                : value + remainingMask.substr(0, numberIndex);
     }
 
     return newValue;
 };
+
+const fixSpaces = (value: string): string => value.replace(/\s{3}/g, '  ').replace(/(\d)\s(\d)/g, '$1$2');
 
 export const getMaskedValue = (event: React.ChangeEvent<HTMLInputElement>, mask: string) => {
     let maskedValue;
@@ -41,35 +45,46 @@ export const getMaskedValue = (event: React.ChangeEvent<HTMLInputElement>, mask:
 
         if (selectionStart === 2 && data !== null && value[0] === ' ') {
             return {
-                maskedValue: value.trim().replace(/\s{3}/g, '  '),
+                maskedValue: value
+                    .trim()
+                    .replace(/\s{3}/g, '  ')
+                    .replace(/(\d)\s(\d)/g, '$1$2'),
                 selectionStart: selectionStart - 1
             };
         }
         if (selectionStart === 0 && data === null) {
             return {
-                maskedValue: `${value.slice(0, selectionStart)} ${value.slice(selectionStart)}`.replace(/\s{3}/g, '  '),
-                selectionStart: selectionStart + 1
+                maskedValue: fixSpaces(specialCharsRegex.test(mask.charAt(0)) ? `${mask.charAt(0)}${value.slice(selectionStart)}` : value),
+                selectionStart
             };
         } else if (cursorText === ' ' && data === null) {
             const postCursorText = value[selectionStart];
-            const updatedText = `${value.slice(0, selectionStart)} ${value.slice(selectionStart)}`;
+            const updatedText = fixSpaces(
+                specialCharsRegex.test(mask.charAt(selectionStart))
+                    ? `${value.slice(0, selectionStart)}${mask.charAt(selectionStart)}${value.slice(selectionStart)}`
+                    : value
+            );
             return {
-                maskedValue: postCursorText === ' ' ? updatedText.replace(/\s{3}/g, '  ') : updatedText,
-                selectionStart: postCursorText === ' ' ? selectionStart : selectionStart + 1
+                maskedValue: postCursorText === ' ' ? fixSpaces(updatedText) : updatedText.replace(/(\d)\s(\d)/g, '$1$2'),
+                selectionStart
             };
         } else if (cursorText === ' ' && data !== null) {
             return {
-                maskedValue: value.replace(/\s{3}/g, '  '),
+                maskedValue: fixSpaces(value),
                 selectionStart
             };
         } else if (cursorText !== ' ' && data === null) {
             return {
-                maskedValue: `${value.slice(0, selectionStart)} ${value.slice(selectionStart)}`.replace(/\s{3}/g, '  '),
-                selectionStart: selectionStart
+                maskedValue: fixSpaces(
+                    specialCharsRegex.test(mask.charAt(selectionStart))
+                        ? `${value.slice(0, selectionStart)}${mask.charAt(selectionStart)}${value.slice(selectionStart)}`
+                        : value
+                ),
+                selectionStart
             };
         } else {
             return {
-                maskedValue: value.replace(/\s{3}/g, '  '),
+                maskedValue: fixSpaces(value),
                 selectionStart
             };
         }

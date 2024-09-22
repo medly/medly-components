@@ -81,10 +81,7 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                 event.target.value = maskedValue;
                 event.target.setSelectionRange(selectionStart, selectionStart);
                 if (getFormattedDate(inputValue, displayFormat)) {
-                    event.target.maxLength = mask!.length;
                     errorMessage && setErrorMessage(errorMessage);
-                } else {
-                    event.target.maxLength = mask!.length + 1;
                 }
 
                 if (event.target.name === 'START_DATE') {

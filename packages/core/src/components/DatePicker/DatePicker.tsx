@@ -212,7 +212,7 @@ const Component: FC<DatePickerProps> = memo(
                     onChange={onTextChange}
                     validator={inputValidator}
                     onKeyPress={onKeyPress}
-                    maxLength={mask!.length + 1}
+                    maxLength={mask!.length}
                     {...{ ...restProps, onBlur, onFocus, minWidth, onInvalid }}
                 />
 

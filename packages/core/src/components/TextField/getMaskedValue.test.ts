@@ -6,8 +6,8 @@ describe('getMaskedValue function', () => {
         // @ts-expect-error
         getMaskedValue({ target: { value, selectionStart }, nativeEvent: { data } }, 'DD / MM / YYYY');
 
-    it('should add blank space on deleting any non special character and move cursor after the blank space', () => {
-        expect(maskedValue('11 / 1 / 1111', 5, null)).toEqual({ maskedValue: '11 /  1 / 1111', selectionStart: 6 });
+    it('should move cursor one space before on deleting any non special character', () => {
+        expect(maskedValue('11 / 1 / 1111', 5, null)).toEqual({ maskedValue: '11 / 1 / 1111', selectionStart: 5 });
     });
 
     it('should not move cursor on deleting any special character', () => {

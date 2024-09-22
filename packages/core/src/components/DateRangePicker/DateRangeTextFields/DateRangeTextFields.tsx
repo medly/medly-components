@@ -127,7 +127,7 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
                     value={startDateText}
                     name="START_DATE"
                     isPrefixPresent
-                    maxLength={mask.length + 1}
+                    maxLength={mask.length}
                     dateMaskLabel={startDateMaskLabel}
                     label={startDateLabel}
                     onKeyPress={onKeyPress}
@@ -140,7 +140,7 @@ export const DateRangeTextFields: FC<Props> = memo(props => {
                     value={endDateText}
                     name="END_DATE"
                     dateMaskLabel={endDateMaskLabel}
-                    maxLength={mask.length + 1}
+                    maxLength={mask.length}
                     label={endDateLabel}
                     onKeyPress={onKeyPress}
                     {...commonTextProps}
