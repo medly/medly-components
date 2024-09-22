@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.15](https://github.com/medly/medly-components/compare/@medly-components/forms@3.3.14...@medly-components/forms@3.3.15) (2024-09-22)
+
+
+### Bug Fixes
+
+* textfield masked value to show phone number ([759fea7](https://github.com/medly/medly-components/commit/759fea727c71222c35b5969010e33de8940c67ff))
+
+
+
+
+
 ## [3.3.14](https://github.com/medly/medly-components/compare/@medly-components/forms@3.3.13...@medly-components/forms@3.3.14) (2024-09-08)
 
 **Note:** Version bump only for package @medly-components/forms

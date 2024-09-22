@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.13.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.13.0...@medly-components/core@7.13.1) (2024-09-22)
+
+
+### Bug Fixes
+
+* textfield masked value to show phone number ([759fea7](https://github.com/medly/medly-components/commit/759fea727c71222c35b5969010e33de8940c67ff))
+
+
+
+
+
 # [7.13.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.12.0...@medly-components/core@7.13.0) (2024-09-08)
 
 
