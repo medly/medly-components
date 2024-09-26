@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/forms",
-    "version": "3.3.15",
+    "version": "3.3.16",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -29,9 +29,9 @@
         "styled-components": "^5.1.0"
     },
     "dependencies": {
-        "@medly-components/core": "7.13.1",
-        "@medly-components/theme": "6.3.0",
-        "@medly-components/utils": "3.2.7",
+        "@medly-components/core": "7.14.0",
+        "@medly-components/theme": "6.4.0",
+        "@medly-components/utils": "3.2.8",
         "date-fns": "^2.16.1",
         "fast-memoize": "^2.5.2"
     }

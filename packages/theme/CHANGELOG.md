@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0](https://github.com/medly/medly-components/compare/@medly-components/theme@6.3.0...@medly-components/theme@6.4.0) (2024-09-26)
+
+
+### Features
+
+* add more options in toggle theme ([9d8e783](https://github.com/medly/medly-components/commit/9d8e783eedba785ca9c19b97add3fc2b685da619))
+
+
+
+
+
 # [6.3.0](https://github.com/medly/medly-components/compare/@medly-components/theme@6.2.0...@medly-components/theme@6.3.0) (2024-08-31)
 
 
