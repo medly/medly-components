@@ -1,11 +1,14 @@
 import { WithStyle } from '@medly-components/utils';
 import { cloneElement, FC, forwardRef, memo, useCallback, useMemo } from 'react';
+import { useTheme } from 'styled-components';
 import FieldWithLabel from '../FieldWithLabel';
+import Text from '../Text';
 import * as Styled from './Toggle.styled';
 import { ToggleProps } from './types';
 
 const Component: FC<ToggleProps> = memo(
     forwardRef((props, ref) => {
+        const theme = useTheme();
         const {
             id,
             size,
@@ -21,6 +24,8 @@ const Component: FC<ToggleProps> = memo(
             iconRight,
             ...restProps
         } = props;
+        // @ts-ignore
+        const color = labelColor || theme.toggle.textColor[restProps.disabled ? 'disabled' : 'default'];
 
         const changeHandler = useCallback(
                 (e: any) => {
@@ -36,10 +41,10 @@ const Component: FC<ToggleProps> = memo(
                 {label && (
                     <FieldWithLabel.Label
                         showPointer={!restProps.disabled}
-                        {...{ required, labelPosition, labelVariant, labelWeight, labelColor }}
+                        {...{ required, labelPosition, labelVariant, labelWeight, labelColor: color }}
                         htmlFor={toggleId}
                     >
-                        {label}
+                        <Text>{label}</Text>
                     </FieldWithLabel.Label>
                 )}
                 <Styled.Wrapper size={size} disabled={restProps.disabled}>

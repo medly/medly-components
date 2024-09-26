@@ -11,10 +11,17 @@ const toggle: ToggleTheme = {
     },
     defaultSize: 'S',
     outlineColor: colors.professionalNavy,
-    checkedBgColor: colors.professionalNavy,
-    bgColor: colors.grey[200],
-    disabledBgColor: colors.grey[300],
-    iconColor: colors.white
+    iconColor: colors.white,
+    bgColor: {
+        default: colors.grey[200],
+        checked: colors.professionalNavy,
+        disabledDefault: colors.grey[300],
+        disabledChecked: colors.grey[800]
+    },
+    textColor: {
+        default: colors.professionalNavy,
+        disabled: colors.grey[400]
+    }
 };
 
 export default toggle;

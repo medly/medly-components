@@ -49,6 +49,7 @@ export const Switch = styled('div')<ToggleWrapperProps>`
     overflow: hidden;
     display: flex;
     align-items: flex-end;
+    background: ${({ theme }) => theme.toggle.bgColor.default};
 `;
 
 export const OffIcon = styled('div')<ToggleWrapperProps>`
@@ -91,14 +92,21 @@ export const Checkbox = styled('input').attrs({ type: 'checkbox' })<ToggleProps>
 
     &:disabled {
         cursor: not-allowed;
-        & + ${Switch} {
-            background: ${({ theme }) => theme.toggle.disabledBgColor};
+
+        &:not(:checked) + ${Switch} {
+            background: ${({ theme }) => theme.toggle.bgColor.disabledDefault};
+        }
+
+        &:checked + ${Switch} {
+            background: ${({ theme }) => theme.toggle.bgColor.disabledChecked};
         }
     }
 
-    &:checked + ${Switch} {
-        background: ${({ theme }) => theme.toggle.checkedBgColor};
+    &:not(:disabled):checked + ${Switch} {
+        background: ${({ theme }) => theme.toggle.bgColor.checked};
+    }
 
+    &:checked + ${Switch} {
         ${Circle} {
             transform: translateX(${props => `calc(${getHeight(props)} * 0.75) `});
         }
