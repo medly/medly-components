@@ -2,7 +2,6 @@ import { WithStyle } from '@medly-components/utils';
 import { cloneElement, FC, forwardRef, memo, useCallback, useMemo } from 'react';
 import { useTheme } from 'styled-components';
 import FieldWithLabel from '../FieldWithLabel';
-import Text from '../Text';
 import * as Styled from './Toggle.styled';
 import { ToggleProps } from './types';
 
@@ -44,7 +43,7 @@ const Component: FC<ToggleProps> = memo(
                         {...{ required, labelPosition, labelVariant, labelWeight, labelColor: color }}
                         htmlFor={toggleId}
                     >
-                        <Text>{label}</Text>
+                        {label}
                     </FieldWithLabel.Label>
                 )}
                 <Styled.Wrapper size={size} disabled={restProps.disabled}>
