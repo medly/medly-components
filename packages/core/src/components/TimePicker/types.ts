@@ -11,4 +11,10 @@ export interface TimePickerProps extends Omit<TextFieldProps, 'value' | 'onChang
     popoverPlacement?: Placement;
     /** Distance from Textfield */
     popoverDistance?: string;
+    /** Disable future time */
+    disableFutureTime?: boolean;
+    /** Disable past time */
+    disablePastTime?: boolean;
+    /** Should clear on cancel */
+    clearOnCancel?: boolean;
 }

@@ -6,4 +6,6 @@ export type TimePickerPopupProps = {
     onReset: () => void;
     popoverDistance?: string;
     popoverPlacement?: Placement;
+    disableFutureTime?: boolean;
+    disablePastTime?: boolean;
 };

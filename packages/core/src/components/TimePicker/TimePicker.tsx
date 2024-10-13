@@ -12,12 +12,25 @@ const Component: FC<TimePickerProps> = memo(
         const wrapperRef = useRef<HTMLDivElement>(null);
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null));
         const id = props.id || props.label?.toLowerCase().replace(/\s/g, '') || 'medly-timepicker';
-        const { value, onChange, disabled, className, fullWidth, minWidth, maxWidth, popoverDistance, popoverPlacement, ...restProps } =
-            props;
+        const {
+            value,
+            onChange,
+            disabled,
+            className,
+            fullWidth,
+            minWidth,
+            maxWidth,
+            popoverDistance,
+            popoverPlacement,
+            disableFutureTime,
+            disablePastTime,
+            clearOnCancel,
+            ...restProps
+        } = props;
 
         const handleReset = () => {
             setTextfieldKey(key => key + 1);
-            onChange('');
+            clearOnCancel && onChange('');
         };
         const handleChange = (value: string) => {
             setTextfieldKey(key => key + 1);
@@ -40,6 +53,8 @@ const Component: FC<TimePickerProps> = memo(
                     onChange={onChange}
                     value={value}
                     key={textFieldKey.toString()}
+                    minWidth={minWidth}
+                    maxWidth={maxWidth}
                     {...restProps}
                 />
                 {!disabled && (
@@ -50,6 +65,8 @@ const Component: FC<TimePickerProps> = memo(
                         onReset={handleReset}
                         popoverDistance={popoverDistance}
                         popoverPlacement={popoverPlacement}
+                        disableFutureTime={disableFutureTime}
+                        disablePastTime={disablePastTime}
                     />
                 )}
             </TimePickerWrapper>

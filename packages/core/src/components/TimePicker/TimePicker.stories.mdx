@@ -38,12 +38,15 @@ const Component = () => {
             return (
                 <TimePicker
                     id="dob"
+                    size={select('Size', ['S', 'M'], 'M')}
                     value={time}
                     onChange={setTime}
                     disabled={boolean('Disabled', false)}
                     label={text('Label', 'Time')}
                     required={boolean('Required', false)}
                     variant={select('variant', variants, 'outlined')}
+                    disableFutureTime={boolean('Disable future time', false)}
+                    disablePastTime={boolean('Disable past time', false)}
                     popoverPlacement={select('Popover placement', placements, 'bottom-start')}
                 />
             );

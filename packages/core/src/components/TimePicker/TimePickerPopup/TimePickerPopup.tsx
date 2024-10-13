@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import { FC, useContext, useEffect, useRef, useState } from 'react';
+import { FC, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import Button from '../../Button';
 import Popover from '../../Popover';
 import Popup from '../../Popover/Popup';
@@ -8,12 +8,38 @@ import type { TIME_OPTION_TYPE } from '../TimeOptionList/types';
 import { TimePickerActions, TimePickerCard, TimePickerWrapper } from './TimePickerPopup.styled';
 import type { TimePickerPopupProps } from './types';
 
-export const Component: FC<TimePickerPopupProps> = ({ value, onChange, onReset, popoverDistance, popoverPlacement }) => {
+export const Component: FC<TimePickerPopupProps> = ({
+    value,
+    onChange,
+    onReset,
+    popoverDistance,
+    popoverPlacement,
+    disableFutureTime,
+    disablePastTime
+}) => {
     const hourRef = useRef<HTMLUListElement>(null);
     const minutesRef = useRef<HTMLUListElement>(null);
     const periodRef = useRef<HTMLUListElement>(null);
     const [open, setPopupState] = useContext(Popover.Context);
     const [{ hour, minutes, period }, setValues] = useState({ hour: 1, minutes: 0, period: 0 });
+    const isFutureTime = useMemo(() => {
+        const currentTime = new Date();
+        const currentHour = currentTime.getHours();
+        const currentMinutes = currentTime.getMinutes();
+        const selectedHour = period === 0 ? hour : hour + 12;
+        const isFutureHour = currentHour < (period === 0 ? hour : hour + 12);
+        const isFutureMinutes = currentMinutes < minutes;
+        return isFutureHour || (selectedHour === currentHour && isFutureMinutes);
+    }, [hour, minutes, period]);
+    const isPastTime = useMemo(() => {
+        const currentTime = new Date();
+        const currentHour = currentTime.getHours();
+        const currentMinutes = currentTime.getMinutes();
+        const selectedHour = period === 0 ? hour : hour + 12;
+        const isPastHour = currentHour > (period === 0 ? hour : hour + 12);
+        const isPastMinutes = currentMinutes > minutes;
+        return isPastHour || (selectedHour === currentHour && isPastMinutes);
+    }, [hour, minutes, period]);
 
     const handleCancel = () => {
         hourRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
@@ -64,7 +90,11 @@ export const Component: FC<TimePickerPopupProps> = ({ value, onChange, onReset, 
                     <Button size="S" variant="flat" onClick={handleCancel}>
                         Cancel
                     </Button>
-                    <Button size="S" onClick={handleSubmit}>
+                    <Button
+                        size="S"
+                        onClick={handleSubmit}
+                        disabled={(disableFutureTime && isFutureTime) || (disablePastTime && isPastTime)}
+                    >
                         Apply
                     </Button>
                 </TimePickerActions>
