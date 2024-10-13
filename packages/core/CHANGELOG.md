@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.16.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.15.0...@medly-components/core@7.16.0) (2024-10-13)
+
+
+### Features
+
+* add onCancel prop to timepicker component ([03ba529](https://github.com/medly/medly-components/commit/03ba5296f6e2829c228ce066b0494aea9857d4d8))
+
+
+
+
+
 # [7.15.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.14.1...@medly-components/core@7.15.0) (2024-10-13)
 
 
