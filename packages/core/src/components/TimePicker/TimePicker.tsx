@@ -15,6 +15,7 @@ const Component: FC<TimePickerProps> = memo(
         const {
             value,
             onChange,
+            onCancel,
             disabled,
             className,
             fullWidth,
@@ -31,6 +32,7 @@ const Component: FC<TimePickerProps> = memo(
         const handleReset = () => {
             setTextfieldKey(key => key + 1);
             clearOnCancel && onChange('');
+            onCancel?.();
         };
         const handleChange = (value: string) => {
             setTextfieldKey(key => key + 1);
