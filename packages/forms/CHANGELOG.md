@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/medly/medly-components/compare/@medly-components/forms@3.3.17...@medly-components/forms@3.4.0) (2024-10-13)
+
+
+### Features
+
+* add disableFutureTime and disablePastTime in TimePicker Component ([ea74e4b](https://github.com/medly/medly-components/commit/ea74e4b65a1981b8ffbc808e9d5300bfb59eb564))
+
+
+
+
+
 ## [3.3.17](https://github.com/medly/medly-components/compare/@medly-components/forms@3.3.16...@medly-components/forms@3.3.17) (2024-09-26)
 
 **Note:** Version bump only for package @medly-components/forms
