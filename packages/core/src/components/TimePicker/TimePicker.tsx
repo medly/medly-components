@@ -57,6 +57,8 @@ const Component: FC<TimePickerProps> = memo(
                     key={textFieldKey.toString()}
                     minWidth={minWidth}
                     maxWidth={maxWidth}
+                    disableFutureTime={disableFutureTime}
+                    disablePastTime={disablePastTime}
                     {...restProps}
                 />
                 {!disabled && (

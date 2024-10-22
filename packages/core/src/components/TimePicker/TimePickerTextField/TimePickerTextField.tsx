@@ -1,4 +1,5 @@
 import { WithStyle, useCombinedRefs, useRunAfterUpdate } from '@medly-components/utils';
+import { isAfter, isBefore } from 'date-fns';
 import type { ChangeEvent, FC, FocusEvent } from 'react';
 import { forwardRef, memo, useCallback, useContext, useEffect, useRef, useState } from 'react';
 import { PopoverContext } from '../../Popover/Popover.context';
@@ -7,7 +8,7 @@ import { TimeIcon } from '../TimePicker.styled';
 import { TimePickerTextFieldProps } from './types';
 
 const Component: FC<TimePickerTextFieldProps> = memo(
-    forwardRef((props, ref) => {
+    forwardRef(({ disableFutureTime, disablePastTime, ...props }, ref) => {
         const [key, setKey] = useState(0);
         const [text, setText] = useState<string>('');
         const [isDialogOpen] = useContext(PopoverContext);
@@ -23,9 +24,25 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                     return props.validator(value, event);
                 }
 
-                const [hour, , minutes] = event.target.value.split(' ');
-                if ((hour && (hour < '01' || hour > '12')) || (minutes && (minutes < '00' || minutes > '59'))) {
-                    return 'Time must be within the valid range of 12:00 AM to 11:59 PM';
+                const match = event.target.value.replace(/ /g, '').match(/([0-9]{2}):([0-9]{2})([a-zA-Z]{2})/);
+
+                if (match) {
+                    const [, hour, minutes, period] = match;
+                    const newTime = new Date().setHours(
+                        period.toUpperCase() === 'AM' ? Number(hour) % 12 : (Number(hour) % 12) + 12,
+                        Number(minutes)
+                    );
+                    if (disableFutureTime && isAfter(newTime, new Date())) {
+                        return 'Time cannot be in future';
+                    }
+
+                    if (disablePastTime && isBefore(newTime, new Date())) {
+                        return 'Time cannot be in past';
+                    }
+
+                    if ((hour && (hour < '01' || hour > '12')) || (minutes && (minutes < '00' || minutes > '59'))) {
+                        return 'Time must be within the valid range of 12:00 AM to 11:59 PM';
+                    }
                 }
 
                 if (defaultValidationMessage !== outOfRangeMessage) {
