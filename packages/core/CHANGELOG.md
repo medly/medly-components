@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.16.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.16.0...@medly-components/core@7.16.1) (2024-10-22)
+
+
+### Bug Fixes
+
+* disable future and past time issue in TimePicker ([65f90a6](https://github.com/medly/medly-components/commit/65f90a61dc24af009f4d2c6e3488fcd6598f1349))
+
+
+
+
+
 # [7.16.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.15.0...@medly-components/core@7.16.0) (2024-10-13)
 
 
