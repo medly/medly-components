@@ -167,16 +167,18 @@ const Component: FC<TextFieldProps> = memo(
                                 {maskLabel}
                             </Styled.MaskPlaceholder>
                         )}
-                        <Styled.Label
-                            inputWidth={inputWidth}
-                            htmlFor={`${inputId}-input`}
-                            size={size!}
-                            required={!!required}
-                            variant={props.variant!}
-                            multiline={multiline}
-                        >
-                            {label}
-                        </Styled.Label>
+                        {label && (
+                            <Styled.Label
+                                inputWidth={inputWidth}
+                                htmlFor={`${inputId}-input`}
+                                size={size!}
+                                required={!!required}
+                                variant={props.variant!}
+                                multiline={multiline}
+                            >
+                                {label}
+                            </Styled.Label>
+                        )}
                         {displayCharacterCount && props.maxLength && (
                             <Styled.CharacterCount
                                 variant={props.variant!}

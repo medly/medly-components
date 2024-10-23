@@ -22,6 +22,9 @@ export const filledStyle = ({ theme, filled, disabled }: InnerWrapperModifiedPro
         }
         input {
             box-shadow: 0 0 0 100000px ${filled.default.bgColor} inset;
+            &::placeholder {
+                color: ${filled.default.placeholderColor};
+            }
         }
     `;
 };

@@ -474,6 +474,22 @@ exports[`Form should render properly with initial state 1`] = `
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c5 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c5 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c5 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c5 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c5:focus-within,
 .c5:focus-within:hover {
   background-color: #EBF1FA;
@@ -1080,6 +1096,22 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c51 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
+.c51 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c51 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c51 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c51 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c51:focus-within,
@@ -2897,6 +2929,22 @@ exports[`Form should render properly without initial state 1`] = `
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c8 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c8 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c8 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c8 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c8:focus-within,
 .c8:focus-within:hover {
   background-color: #EBF1FA;
@@ -3472,6 +3520,22 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c51 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
+.c51 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c51 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c51 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c51 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c51:focus-within,

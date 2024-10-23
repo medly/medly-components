@@ -8,6 +8,9 @@ export const outlinedStyle = ({ outlined, disabled, isErrorPresent }: InnerWrapp
         background-color: ${outlined.default.bgColor};
         input {
             box-shadow: 0 0 0 100000px ${outlined.default.bgColor} inset;
+            &::placeholder {
+                color: ${outlined.default.placeholderColor};
+            }
         }
         &::after {
             content: '';

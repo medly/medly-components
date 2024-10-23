@@ -42,7 +42,8 @@ const styleWithLabel = ({ variant }: StyledProps) => {
 export const Input = styled('input')<StyledProps>`
     color: ${({ variant, theme }) => theme.textField[variant].default.textColor};
     width: 100%;
-    margin: ${({ multiline, variant, inputSize }) => (multiline && variant !== 'fusion' && inputSize === 'M' ? '1.6rem 0 0 0' : 0)};
+    margin: ${({ multiline, variant, inputSize, isLabelPresent }) =>
+        multiline && variant !== 'fusion' && inputSize === 'M' && isLabelPresent ? '1.6rem 0 0 0' : 0};
     padding: 0;
     height: ${getInputHeight};
     box-sizing: border-box;
@@ -76,7 +77,7 @@ export const Input = styled('input')<StyledProps>`
     }
 
     ::placeholder {
-        opacity: 0;
+        opacity: ${({ isLabelPresent }) => (isLabelPresent ? 0 : 1)};
         transition: all 100ms ease-out;
     }
 

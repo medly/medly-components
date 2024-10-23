@@ -21,6 +21,7 @@ export interface TextFieldTheme {
             iconColor: string;
             labelColor: string;
             textColor: string;
+            placeholderColor: string;
         };
         hover: {
             borderColor: string;
@@ -67,6 +68,7 @@ export interface TextFieldTheme {
             labelColor: string;
             helperTextColor: string;
             iconColor: string;
+            placeholderColor: string;
         };
         hover: {
             borderColor: string;
@@ -109,6 +111,7 @@ export interface TextFieldTheme {
             labelColor: string;
             textColor: string;
             iconColor: string;
+            placeholderColor: string;
         };
         hover: {
             bgColor: string;

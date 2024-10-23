@@ -29,6 +29,7 @@ const textField: TextFieldTheme = {
             borderRadius: defaultOutlined.borderRadius,
             borderWidth: defaultOutlined.borderWidth,
             helperTextColor: colors.grey[700],
+            placeholderColor: colors.grey[300],
             iconColor: colors.grey[600],
             labelColor: colors.grey[600],
             textColor: colors.black
@@ -76,7 +77,8 @@ const textField: TextFieldTheme = {
             iconColor: colors.grey[700],
             textColor: colors.black,
             labelColor: colors.grey[700],
-            helperTextColor: colors.grey[700]
+            helperTextColor: colors.grey[700],
+            placeholderColor: colors.grey[300]
         },
         hover: {
             borderColor: colors.grey[700],
@@ -115,6 +117,7 @@ const textField: TextFieldTheme = {
             borderRadius: defaultFusion.borderRadius,
             borderWidth: defaultFusion.borderWidth,
             helperTextColor: colors.grey[700],
+            placeholderColor: colors.grey[300],
             labelColor: colors.grey[700],
             textColor: colors.black,
             iconColor: colors.grey[400]

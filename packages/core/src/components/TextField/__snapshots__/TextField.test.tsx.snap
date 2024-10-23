@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextField character count should correctly render character count for S size TextField if we pass withCharacterCount and maxlength 1`] = `
-.c7 {
+.c5 {
   font-size: 1rem;
   line-height: 1rem;
   position: absolute;
@@ -16,44 +16,6 @@ exports[`TextField character count should correctly render character count for S
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   margin-top: 1.5rem;
   margin-left: 1.2rem;
-}
-
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c1 {
@@ -79,7 +41,7 @@ exports[`TextField character count should correctly render character count for S
   background-color: #eff2f4;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -109,6 +71,22 @@ exports[`TextField character count should correctly render character count for S
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -120,8 +98,8 @@ exports[`TextField character count should correctly render character count for S
   border-radius: 0;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -235,42 +213,42 @@ exports[`TextField character count should correctly render character count for S
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   opacity: 0;
 }
 
-.c3:not(:placeholder-shown) ~ .c6,
-.c3:focus ~ .c6 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   position: relative;
 }
 
@@ -298,12 +276,9 @@ exports[`TextField character count should correctly render character count for S
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
         <div
-          class="c6 c7"
+          class="c4 c5"
           maxlength="20"
         >
           0/20
@@ -316,7 +291,7 @@ exports[`TextField character count should correctly render character count for S
 `;
 
 exports[`TextField character count should correctly render character count for fusion TextField variant if we pass withCharacterCount and maxlength 1`] = `
-.c7 {
+.c5 {
   font-size: 1rem;
   line-height: 1rem;
   position: absolute;
@@ -330,48 +305,6 @@ exports[`TextField character count should correctly render character count for f
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   margin-top: 1.2rem;
-}
-
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c5::after {
-  content: ' (optional)';
 }
 
 .c1 {
@@ -398,7 +331,7 @@ exports[`TextField character count should correctly render character count for f
   border-width: 0.15rem;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -445,6 +378,22 @@ exports[`TextField character count should correctly render character count for f
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #ffffff;
@@ -456,8 +405,8 @@ exports[`TextField character count should correctly render character count for f
   border-radius: 0.4rem;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -571,37 +520,37 @@ exports[`TextField character count should correctly render character count for f
   color: #546A7F;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   background-color: white;
   padding: 0 0.5rem;
   -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
@@ -609,8 +558,8 @@ exports[`TextField character count should correctly render character count for f
   transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
 }
 
-.c3:not(:placeholder-shown) ~ .c6,
-.c3:focus ~ .c6 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   background-color: white;
   padding: 0 0.5rem;
   -webkit-transform: translateY(-167%);
@@ -618,7 +567,7 @@ exports[`TextField character count should correctly render character count for f
   transform: translateY(-167%);
 }
 
-.c3:focus ~ .c4 {
+.c3:focus ~ .sc-1du51u0-0 {
   font-weight: 600;
 }
 
@@ -646,12 +595,9 @@ exports[`TextField character count should correctly render character count for f
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
         <div
-          class="c6 c7"
+          class="c4 c5"
           maxlength="20"
         >
           0/20
@@ -664,7 +610,7 @@ exports[`TextField character count should correctly render character count for f
 `;
 
 exports[`TextField character count should correctly render character count for multiline TextField if we pass withCharacterCount and maxlength 1`] = `
-.c6 {
+.c4 {
   font-size: 1rem;
   line-height: 1rem;
   position: absolute;
@@ -678,44 +624,6 @@ exports[`TextField character count should correctly render character count for m
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   margin-top: .1rem;
-}
-
-.c5 {
-  top: 1.1rem;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c1 {
@@ -741,7 +649,7 @@ exports[`TextField character count should correctly render character count for m
   background-color: #eff2f4;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -771,6 +679,22 @@ exports[`TextField character count should correctly render character count for m
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -782,8 +706,8 @@ exports[`TextField character count should correctly render character count for m
   border-radius: 0;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -848,7 +772,7 @@ exports[`TextField character count should correctly render character count for m
 .c3 {
   color: #13181D;
   width: 100%;
-  margin: 1.6rem 0 0 0;
+  margin: 0;
   padding: 0;
   height: 90%;
   box-sizing: border-box;
@@ -898,37 +822,37 @@ exports[`TextField character count should correctly render character count for m
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   -webkit-transform: translateY(-50%) scale(0.75);
   -ms-transform: translateY(-50%) scale(0.75);
   transform: translateY(-50%) scale(0.75);
@@ -957,12 +881,9 @@ exports[`TextField character count should correctly render character count for m
           placeholder=" "
           type="text"
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
         <div
-          class="c6"
+          class="c4"
           maxlength="20"
         >
           0/20
@@ -975,7 +896,7 @@ exports[`TextField character count should correctly render character count for m
 `;
 
 exports[`TextField character count should correctly render character count if we pass withCharacterCount and maxlength 1`] = `
-.c6 {
+.c4 {
   font-size: 1rem;
   line-height: 1rem;
   position: absolute;
@@ -989,44 +910,6 @@ exports[`TextField character count should correctly render character count if we
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   margin-top: 1.2rem;
-}
-
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c1 {
@@ -1052,7 +935,7 @@ exports[`TextField character count should correctly render character count if we
   background-color: #eff2f4;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -1082,6 +965,22 @@ exports[`TextField character count should correctly render character count if we
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -1093,8 +992,8 @@ exports[`TextField character count should correctly render character count if we
   border-radius: 0;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -1208,37 +1107,37 @@ exports[`TextField character count should correctly render character count if we
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -1268,12 +1167,9 @@ exports[`TextField character count should correctly render character count if we
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
         <div
-          class="c6"
+          class="c4"
           maxlength="20"
         >
           0/20
@@ -1286,7 +1182,7 @@ exports[`TextField character count should correctly render character count if we
 `;
 
 exports[`TextField character count should correctly render character count when the count value is 80% of the maxLength 1`] = `
-.c6 {
+.c4 {
   font-size: 1rem;
   line-height: 1rem;
   position: absolute;
@@ -1300,44 +1196,6 @@ exports[`TextField character count should correctly render character count when 
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   margin-top: 1.2rem;
-}
-
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c1 {
@@ -1363,7 +1221,7 @@ exports[`TextField character count should correctly render character count when 
   background-color: #eff2f4;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -1393,6 +1251,22 @@ exports[`TextField character count should correctly render character count when 
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -1404,8 +1278,8 @@ exports[`TextField character count should correctly render character count when 
   border-radius: 0;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -1519,37 +1393,37 @@ exports[`TextField character count should correctly render character count when 
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -1579,12 +1453,9 @@ exports[`TextField character count should correctly render character count when 
           type="text"
           value="12345678"
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
         <div
-          class="c6"
+          class="c4"
           maxlength="10"
         >
           8/10
@@ -1597,7 +1468,7 @@ exports[`TextField character count should correctly render character count when 
 `;
 
 exports[`TextField character count should correctly render character count when the count value is 100% of the maxLength 1`] = `
-.c6 {
+.c4 {
   font-size: 1rem;
   line-height: 1rem;
   position: absolute;
@@ -1613,44 +1484,6 @@ exports[`TextField character count should correctly render character count when 
   margin-top: 1.2rem;
   -webkit-animation: 0.2s wiggle ease-in-out;
   animation: 0.2s wiggle ease-in-out;
-}
-
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c1 {
@@ -1676,7 +1509,7 @@ exports[`TextField character count should correctly render character count when 
   background-color: #eff2f4;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -1706,6 +1539,22 @@ exports[`TextField character count should correctly render character count when 
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -1717,8 +1566,8 @@ exports[`TextField character count should correctly render character count when 
   border-radius: 0;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -1832,37 +1681,37 @@ exports[`TextField character count should correctly render character count when 
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -1892,12 +1741,9 @@ exports[`TextField character count should correctly render character count when 
           type="text"
           value="1234567890"
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
         <div
-          class="c6"
+          class="c4"
           maxlength="10"
         >
           10/10
@@ -2003,6 +1849,22 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 
 .c1 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1:focus-within,
@@ -2428,6 +2290,22 @@ exports[`TextField should render properly with M size 1`] = `
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -2805,6 +2683,22 @@ exports[`TextField should render properly with S size 1`] = `
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -3129,6 +3023,22 @@ exports[`TextField should render properly with default props 1`] = `
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -3423,6 +3333,22 @@ exports[`TextField with filled variant and with label should render default stat
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -3714,6 +3640,22 @@ exports[`TextField with filled variant and with label should render disabled sta
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -3995,6 +3937,22 @@ exports[`TextField with filled variant and with label should render focus state 
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -4198,44 +4156,6 @@ exports[`TextField with filled variant and with label should render focus state 
 `;
 
 exports[`TextField with filled variant and without label should render default state properly 1`] = `
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -4259,7 +4179,7 @@ exports[`TextField with filled variant and without label should render default s
   background-color: #eff2f4;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -4289,6 +4209,22 @@ exports[`TextField with filled variant and without label should render default s
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -4300,8 +4236,8 @@ exports[`TextField with filled variant and without label should render default s
   border-radius: 0;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -4415,37 +4351,37 @@ exports[`TextField with filled variant and without label should render default s
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -4474,10 +4410,7 @@ exports[`TextField with filled variant and without label should render default s
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
       </div>
     </div>
     
@@ -4486,44 +4419,6 @@ exports[`TextField with filled variant and without label should render default s
 `;
 
 exports[`TextField with filled variant and without label should render disabled state properly 1`] = `
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -4549,7 +4444,7 @@ exports[`TextField with filled variant and without label should render disabled 
   background-color: #F7F8F9;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -4574,6 +4469,22 @@ exports[`TextField with filled variant and without label should render disabled 
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -4584,7 +4495,7 @@ exports[`TextField with filled variant and without label should render disabled 
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #b0bcc8;
 }
 
@@ -4685,37 +4596,37 @@ exports[`TextField with filled variant and without label should render disabled 
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -4746,10 +4657,7 @@ exports[`TextField with filled variant and without label should render disabled 
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
       </div>
     </div>
     
@@ -4758,44 +4666,6 @@ exports[`TextField with filled variant and without label should render disabled 
 `;
 
 exports[`TextField with filled variant and without label should render focus state properly 1`] = `
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -4819,7 +4689,7 @@ exports[`TextField with filled variant and without label should render focus sta
   background-color: #eff2f4;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -4849,6 +4719,22 @@ exports[`TextField with filled variant and without label should render focus sta
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -4860,8 +4746,8 @@ exports[`TextField with filled variant and without label should render focus sta
   border-radius: 0;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -4975,37 +4861,37 @@ exports[`TextField with filled variant and without label should render focus sta
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -5034,10 +4920,7 @@ exports[`TextField with filled variant and without label should render focus sta
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
       </div>
     </div>
     
@@ -5146,6 +5029,22 @@ exports[`TextField with filled variant should render error state properly 1`] = 
 
 .c1 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1,
@@ -5479,6 +5378,22 @@ exports[`TextField with filled variant should render error state properly with a
 
 .c1 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1,
@@ -5887,6 +5802,22 @@ exports[`TextField with filled variant should render properly with custom border
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -6210,6 +6141,22 @@ exports[`TextField with filled variant should render properly with custom disabl
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -6502,6 +6449,22 @@ exports[`TextField with filled variant should render properly with multiline 1`]
 
 .c1 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1:focus-within,
@@ -6820,6 +6783,22 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 
 .c1 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1:focus-within,
@@ -7157,6 +7136,22 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -7484,6 +7479,22 @@ exports[`TextField with fusion variant and with label should render default stat
 
 .c1 input {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1:focus-within,
@@ -7814,6 +7825,22 @@ exports[`TextField with fusion variant and with label should render disabled sta
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -8132,6 +8159,22 @@ exports[`TextField with fusion variant and with label should render focus state 
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #ffffff;
@@ -8350,48 +8393,6 @@ exports[`TextField with fusion variant and with label should render focus state 
 `;
 
 exports[`TextField with fusion variant and without label should render default state properly 1`] = `
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c5::after {
-  content: ' (optional)';
-}
-
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -8416,7 +8417,7 @@ exports[`TextField with fusion variant and without label should render default s
   border-width: 0.15rem;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -8463,6 +8464,22 @@ exports[`TextField with fusion variant and without label should render default s
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #ffffff;
@@ -8474,8 +8491,8 @@ exports[`TextField with fusion variant and without label should render default s
   border-radius: 0.4rem;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -8589,37 +8606,37 @@ exports[`TextField with fusion variant and without label should render default s
   color: #546A7F;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   background-color: white;
   padding: 0 0.5rem;
   -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
@@ -8636,7 +8653,7 @@ exports[`TextField with fusion variant and without label should render default s
   transform: translateY(-167%);
 }
 
-.c3:focus ~ .c4 {
+.c3:focus ~ .sc-1du51u0-0 {
   font-weight: 600;
 }
 
@@ -8663,10 +8680,7 @@ exports[`TextField with fusion variant and without label should render default s
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
       </div>
     </div>
     
@@ -8675,48 +8689,6 @@ exports[`TextField with fusion variant and without label should render default s
 `;
 
 exports[`TextField with fusion variant and without label should render disabled state properly 1`] = `
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c5::after {
-  content: ' (optional)';
-}
-
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -8743,7 +8715,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   background-color: #ffffff;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -8785,6 +8757,22 @@ exports[`TextField with fusion variant and without label should render disabled 
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -8795,7 +8783,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #b0bcc8;
 }
 
@@ -8896,37 +8884,37 @@ exports[`TextField with fusion variant and without label should render disabled 
   color: #546A7F;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   background-color: white;
   padding: 0 0.5rem;
   -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
@@ -8943,7 +8931,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   transform: translateY(-167%);
 }
 
-.c3:focus ~ .c4 {
+.c3:focus ~ .sc-1du51u0-0 {
   font-weight: 600;
 }
 
@@ -8972,10 +8960,7 @@ exports[`TextField with fusion variant and without label should render disabled 
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
       </div>
     </div>
     
@@ -8984,48 +8969,6 @@ exports[`TextField with fusion variant and without label should render disabled 
 `;
 
 exports[`TextField with fusion variant and without label should render focus state properly 1`] = `
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c5::after {
-  content: ' (optional)';
-}
-
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -9050,7 +8993,7 @@ exports[`TextField with fusion variant and without label should render focus sta
   border-width: 0.15rem;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -9097,6 +9040,22 @@ exports[`TextField with fusion variant and without label should render focus sta
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #ffffff;
@@ -9108,8 +9067,8 @@ exports[`TextField with fusion variant and without label should render focus sta
   border-radius: 0.4rem;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -9223,37 +9182,37 @@ exports[`TextField with fusion variant and without label should render focus sta
   color: #546A7F;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   background-color: white;
   padding: 0 0.5rem;
   -webkit-transform: translateX(-0.4rem) translateY(-140%) scale(0.67);
@@ -9270,7 +9229,7 @@ exports[`TextField with fusion variant and without label should render focus sta
   transform: translateY(-167%);
 }
 
-.c3:focus ~ .c4 {
+.c3:focus ~ .sc-1du51u0-0 {
   font-weight: 600;
 }
 
@@ -9297,10 +9256,7 @@ exports[`TextField with fusion variant and without label should render focus sta
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
       </div>
     </div>
     
@@ -9431,6 +9387,22 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
 
 .c1 input {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1,
@@ -9798,6 +9770,22 @@ exports[`TextField with fusion variant should render error state properly with a
 
 .c1 input {
   box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1,
@@ -10243,6 +10231,22 @@ exports[`TextField with fusion variant should render properly with custom border
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -10603,6 +10607,22 @@ exports[`TextField with fusion variant should render properly with custom disabl
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -10932,6 +10952,22 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 
 .c1 input {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1:focus-within,
@@ -11287,6 +11323,22 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 
 .c1 input {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1:focus-within,
@@ -11661,6 +11713,22 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #ffffff;
@@ -11963,6 +12031,22 @@ exports[`TextField with outlined variant and with label should render default st
 
 .c1 input {
   box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1::after {
@@ -12282,6 +12366,22 @@ exports[`TextField with outlined variant and with label should render disabled s
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -12575,6 +12675,22 @@ exports[`TextField with outlined variant and with label should render focus stat
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -12817,44 +12933,6 @@ exports[`TextField with outlined variant and with label should render focus stat
 `;
 
 exports[`TextField with outlined variant and without label should render default state properly 1`] = `
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -12878,7 +12956,7 @@ exports[`TextField with outlined variant and without label should render default
   background-color: #ffffff;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #607890;
 }
 
@@ -12888,6 +12966,22 @@ exports[`TextField with outlined variant and without label should render default
 
 .c1 input {
   box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1::after {
@@ -12940,8 +13034,8 @@ exports[`TextField with outlined variant and without label should render default
   border-radius: 0.4rem;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -13055,37 +13149,37 @@ exports[`TextField with outlined variant and without label should render default
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -13114,10 +13208,7 @@ exports[`TextField with outlined variant and without label should render default
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
       </div>
     </div>
     
@@ -13126,44 +13217,6 @@ exports[`TextField with outlined variant and without label should render default
 `;
 
 exports[`TextField with outlined variant and without label should render disabled state properly 1`] = `
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -13189,7 +13242,7 @@ exports[`TextField with outlined variant and without label should render disable
   background-color: #ffffff;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #607890;
 }
 
@@ -13199,6 +13252,22 @@ exports[`TextField with outlined variant and without label should render disable
 
 .c1 input {
   box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1::after {
@@ -13241,7 +13310,7 @@ exports[`TextField with outlined variant and without label should render disable
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #b0bcc8;
 }
 
@@ -13342,37 +13411,37 @@ exports[`TextField with outlined variant and without label should render disable
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -13403,10 +13472,7 @@ exports[`TextField with outlined variant and without label should render disable
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
       </div>
     </div>
     
@@ -13415,44 +13481,6 @@ exports[`TextField with outlined variant and without label should render disable
 `;
 
 exports[`TextField with outlined variant and without label should render focus state properly 1`] = `
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -13476,7 +13504,7 @@ exports[`TextField with outlined variant and without label should render focus s
   background-color: #ffffff;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #607890;
 }
 
@@ -13486,6 +13514,22 @@ exports[`TextField with outlined variant and without label should render focus s
 
 .c1 input {
   box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1::after {
@@ -13538,8 +13582,8 @@ exports[`TextField with outlined variant and without label should render focus s
   border-radius: 0.4rem;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -13653,37 +13697,37 @@ exports[`TextField with outlined variant and without label should render focus s
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -13712,10 +13756,7 @@ exports[`TextField with outlined variant and without label should render focus s
           type="text"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
       </div>
     </div>
     
@@ -13806,6 +13847,22 @@ exports[`TextField with outlined variant should render error state properly 1`] 
 
 .c1 input {
   box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1::after {
@@ -14160,6 +14217,22 @@ exports[`TextField with outlined variant should render error state properly with
 
 .c1 input {
   box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1::after {
@@ -14594,6 +14667,22 @@ exports[`TextField with outlined variant should render properly with custom bord
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -14934,6 +15023,22 @@ exports[`TextField with outlined variant should render properly with custom disa
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -15238,6 +15343,22 @@ exports[`TextField with outlined variant should render properly with multiline 1
 
 .c1 input {
   box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1::after {
@@ -15577,6 +15698,22 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 .c1 input {
   box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1::after {
@@ -15935,6 +16072,22 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -16190,44 +16343,6 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 `;
 
 exports[`TextField without label should render default state properly 1`] = `
-.c5 {
-  top: 50%;
-  left: 0;
-  cursor: text;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  z-index: 1;
-  width: 100%;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -16251,7 +16366,7 @@ exports[`TextField without label should render default state properly 1`] = `
   background-color: #eff2f4;
 }
 
-.c1 .c4 {
+.c1 .sc-1du51u0-0 {
   color: #546A7F;
 }
 
@@ -16281,6 +16396,22 @@ exports[`TextField without label should render default state properly 1`] = `
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -16292,8 +16423,8 @@ exports[`TextField without label should render default state properly 1`] = `
   border-radius: 0;
 }
 
-.c1:focus-within .c4,
-.c1:focus-within:hover .c4 {
+.c1:focus-within .sc-1du51u0-0,
+.c1:focus-within:hover .sc-1du51u0-0 {
   color: #3872D2;
 }
 
@@ -16407,37 +16538,37 @@ exports[`TextField without label should render default state properly 1`] = `
   color: #435465;
 }
 
-.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-1du51u0-0,
 .c3:disabled ~ .sc-1r5xr2a-0 {
   cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::-moz-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:-ms-input-placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3::placeholder {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c4,
-.c3:focus ~ .c4 {
+.c3:not(:placeholder-shown) ~ .sc-1du51u0-0,
+.c3:focus ~ .sc-1du51u0-0 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -16466,10 +16597,7 @@ exports[`TextField without label should render default state properly 1`] = `
           type="email"
           value=""
         />
-        <label
-          class="c4 c5"
-          for="medly-textField-input"
-        />
+        
       </div>
     </div>
     
@@ -16567,6 +16695,22 @@ exports[`TextField without label should render focus state properly 1`] = `
 
 .c1 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c1:focus-within,

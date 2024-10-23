@@ -144,6 +144,22 @@ exports[`TimePicker should render properly 1`] = `
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c4 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c4 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c4 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c4 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c4:focus-within,
 .c4:focus-within:hover {
   background-color: #EBF1FA;

@@ -2246,6 +2246,22 @@ exports[`DateRangePicker Custom date range options should render properly with c
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -24938,6 +24954,22 @@ exports[`DateRangePicker should render properly 1`] = `
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c1 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #EBF1FA;
@@ -27359,6 +27391,22 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
+.c2 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c2 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c2 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c2 input::placeholder {
+  color: #C7D0D8;
+}
+
 .c2:focus-within,
 .c2:focus-within:hover {
   background-color: #EBF1FA;
@@ -29289,6 +29337,22 @@ exports[`DateRangePicker should render properly with single month for mobile scr
 
 .c2 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
+.c2 input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c2 input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c2 input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c2 input::placeholder {
+  color: #C7D0D8;
 }
 
 .c2:focus-within,

@@ -44,6 +44,9 @@ export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperMod
         }
         input {
             box-shadow: 0 0 0 100000px ${bgColor} inset;
+            &::placeholder {
+                color: ${fusion.default.placeholderColor};
+            }
         }
     `;
 };
