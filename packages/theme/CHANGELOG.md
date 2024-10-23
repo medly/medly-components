@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.5.0](https://github.com/medly/medly-components/compare/@medly-components/theme@6.4.0...@medly-components/theme@6.5.0) (2024-10-23)
+
+
+### Features
+
+* show placeholder when label is not present in textfield ([dcb4839](https://github.com/medly/medly-components/commit/dcb48398f021dde1177c7a11a822f1584ebcb0e8))
+
+
+
+
+
 # [6.4.0](https://github.com/medly/medly-components/compare/@medly-components/theme@6.3.0...@medly-components/theme@6.4.0) (2024-09-26)
 
 

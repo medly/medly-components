@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/medly/medly-components/compare/@medly-components/forms@3.4.2...@medly-components/forms@3.5.0) (2024-10-23)
+
+
+### Features
+
+* show placeholder when label is not present in textfield ([dcb4839](https://github.com/medly/medly-components/commit/dcb48398f021dde1177c7a11a822f1584ebcb0e8))
+
+
+
+
+
 ## [3.4.2](https://github.com/medly/medly-components/compare/@medly-components/forms@3.4.1...@medly-components/forms@3.4.2) (2024-10-22)
 
 **Note:** Version bump only for package @medly-components/forms
