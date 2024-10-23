@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.17.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.17.0...@medly-components/core@7.17.1) (2024-10-23)
+
+
+### Bug Fixes
+
+* style issues in textfield when used as textarea ([cadb6b3](https://github.com/medly/medly-components/commit/cadb6b3e4c2704bc0ce7f4c24d6dbfe5cb5c3956))
+
+
+
+
+
 # [7.17.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.16.1...@medly-components/core@7.17.0) (2024-10-23)
 
 
