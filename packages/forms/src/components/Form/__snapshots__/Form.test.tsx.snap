@@ -470,23 +470,28 @@ exports[`Form should render properly with initial state 1`] = `
   border-width: 0.2rem;
 }
 
-.c5 input {
+.c5 input,
+.c5 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c5 input::-webkit-input-placeholder {
+.c5 input::-webkit-input-placeholder,
+.c5 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c5 input::-moz-placeholder {
+.c5 input::-moz-placeholder,
+.c5 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c5 input:-ms-input-placeholder {
+.c5 input:-ms-input-placeholder,
+.c5 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c5 input::placeholder {
+.c5 input::placeholder,
+.c5 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -1094,23 +1099,28 @@ exports[`Form should render properly with initial state 1`] = `
   border-width: 0.2rem;
 }
 
-.c51 input {
+.c51 input,
+.c51 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c51 input::-webkit-input-placeholder {
+.c51 input::-webkit-input-placeholder,
+.c51 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c51 input::-moz-placeholder {
+.c51 input::-moz-placeholder,
+.c51 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c51 input:-ms-input-placeholder {
+.c51 input:-ms-input-placeholder,
+.c51 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c51 input::placeholder {
+.c51 input::placeholder,
+.c51 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -2925,23 +2935,28 @@ exports[`Form should render properly without initial state 1`] = `
   border-width: 0.2rem;
 }
 
-.c8 input {
+.c8 input,
+.c8 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c8 input::-webkit-input-placeholder {
+.c8 input::-webkit-input-placeholder,
+.c8 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c8 input::-moz-placeholder {
+.c8 input::-moz-placeholder,
+.c8 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c8 input:-ms-input-placeholder {
+.c8 input:-ms-input-placeholder,
+.c8 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c8 input::placeholder {
+.c8 input::placeholder,
+.c8 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -3518,23 +3533,28 @@ exports[`Form should render properly without initial state 1`] = `
   border-width: 0.2rem;
 }
 
-.c51 input {
+.c51 input,
+.c51 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c51 input::-webkit-input-placeholder {
+.c51 input::-webkit-input-placeholder,
+.c51 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c51 input::-moz-placeholder {
+.c51 input::-moz-placeholder,
+.c51 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c51 input:-ms-input-placeholder {
+.c51 input:-ms-input-placeholder,
+.c51 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c51 input::placeholder {
+.c51 input::placeholder,
+.c51 textarea::placeholder {
   color: #C7D0D8;
 }
 

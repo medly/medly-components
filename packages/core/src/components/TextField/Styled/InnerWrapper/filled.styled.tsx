@@ -20,7 +20,8 @@ export const filledStyle = ({ theme, filled, disabled }: InnerWrapperModifiedPro
         &:focus-within::after {
             border-width: ${!disabled && `0.2rem`};
         }
-        input {
+        input,
+        textarea {
             box-shadow: 0 0 0 100000px ${filled.default.bgColor} inset;
             &::placeholder {
                 color: ${filled.default.placeholderColor};

@@ -67,23 +67,28 @@ exports[`TextField character count should correctly render character count for S
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -374,23 +379,28 @@ exports[`TextField character count should correctly render character count for f
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -675,23 +685,28 @@ exports[`TextField character count should correctly render character count for m
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -961,23 +976,28 @@ exports[`TextField character count should correctly render character count if we
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -1247,23 +1267,28 @@ exports[`TextField character count should correctly render character count when 
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -1535,23 +1560,28 @@ exports[`TextField character count should correctly render character count when 
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -1847,23 +1877,28 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -2286,23 +2321,28 @@ exports[`TextField should render properly with M size 1`] = `
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -2679,23 +2719,28 @@ exports[`TextField should render properly with S size 1`] = `
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -3019,23 +3064,28 @@ exports[`TextField should render properly with default props 1`] = `
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -3329,23 +3379,28 @@ exports[`TextField with filled variant and with label should render default stat
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -3636,23 +3691,28 @@ exports[`TextField with filled variant and with label should render disabled sta
   transition: all 100ms ease-out;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -3933,23 +3993,28 @@ exports[`TextField with filled variant and with label should render focus state 
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -4205,23 +4270,28 @@ exports[`TextField with filled variant and without label should render default s
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -4465,23 +4535,28 @@ exports[`TextField with filled variant and without label should render disabled 
   transition: all 100ms ease-out;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -4715,23 +4790,28 @@ exports[`TextField with filled variant and without label should render focus sta
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -5027,23 +5107,28 @@ exports[`TextField with filled variant should render error state properly 1`] = 
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -5376,23 +5461,28 @@ exports[`TextField with filled variant should render error state properly with a
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -5798,23 +5888,28 @@ exports[`TextField with filled variant should render properly with custom border
   transition: all 100ms ease-out;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -6137,23 +6232,28 @@ exports[`TextField with filled variant should render properly with custom disabl
   transition: all 100ms ease-out;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -6447,23 +6547,28 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -6781,23 +6886,28 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -7132,23 +7242,28 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -7477,23 +7592,28 @@ exports[`TextField with fusion variant and with label should render default stat
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -7821,23 +7941,28 @@ exports[`TextField with fusion variant and with label should render disabled sta
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -8155,23 +8280,28 @@ exports[`TextField with fusion variant and with label should render focus state 
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -8460,23 +8590,28 @@ exports[`TextField with fusion variant and without label should render default s
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -8753,23 +8888,28 @@ exports[`TextField with fusion variant and without label should render disabled 
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -9036,23 +9176,28 @@ exports[`TextField with fusion variant and without label should render focus sta
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -9385,23 +9530,28 @@ exports[`TextField with fusion variant should render error state properly 1`] = 
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -9768,23 +9918,28 @@ exports[`TextField with fusion variant should render error state properly with a
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -10227,23 +10382,28 @@ exports[`TextField with fusion variant should render properly with custom border
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -10603,23 +10763,28 @@ exports[`TextField with fusion variant should render properly with custom disabl
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -10950,23 +11115,28 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -11321,23 +11491,28 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -11709,23 +11884,28 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   border-width: 0.15rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -12029,23 +12209,28 @@ exports[`TextField with outlined variant and with label should render default st
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -12362,23 +12547,28 @@ exports[`TextField with outlined variant and with label should render disabled s
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -12671,23 +12861,28 @@ exports[`TextField with outlined variant and with label should render focus stat
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -12964,23 +13159,28 @@ exports[`TextField with outlined variant and without label should render default
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -13250,23 +13450,28 @@ exports[`TextField with outlined variant and without label should render disable
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -13512,23 +13717,28 @@ exports[`TextField with outlined variant and without label should render focus s
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -13845,23 +14055,28 @@ exports[`TextField with outlined variant should render error state properly 1`] 
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -14215,23 +14430,28 @@ exports[`TextField with outlined variant should render error state properly with
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -14663,23 +14883,28 @@ exports[`TextField with outlined variant should render properly with custom bord
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -15019,23 +15244,28 @@ exports[`TextField with outlined variant should render properly with custom disa
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -15341,23 +15571,28 @@ exports[`TextField with outlined variant should render properly with multiline 1
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -15696,23 +15931,28 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -16068,23 +16308,28 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   color: #546A7F;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -16392,23 +16637,28 @@ exports[`TextField without label should render default state properly 1`] = `
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -16693,23 +16943,28 @@ exports[`TextField without label should render focus state properly 1`] = `
   border-width: 0.2rem;
 }
 
-.c1 input {
+.c1 input,
+.c1 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c1 input::-webkit-input-placeholder {
+.c1 input::-webkit-input-placeholder,
+.c1 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::-moz-placeholder {
+.c1 input::-moz-placeholder,
+.c1 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input:-ms-input-placeholder {
+.c1 input:-ms-input-placeholder,
+.c1 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1 input::placeholder {
+.c1 input::placeholder,
+.c1 textarea::placeholder {
   color: #C7D0D8;
 }
 

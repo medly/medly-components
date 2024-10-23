@@ -132,23 +132,28 @@ exports[`MultiSelect component should render correctly with all the props given 
   transition: all 100ms ease-out;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -595,23 +600,28 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   border-width: 0.2rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -1006,23 +1016,28 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   border-width: 0.2rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -2381,23 +2396,28 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   border-width: 0.2rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 

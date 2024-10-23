@@ -42,7 +42,8 @@ export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperMod
             border-radius: ${fusion.active.borderRadius};
             border-width: ${fusion.active.borderWidth};
         }
-        input {
+        input,
+        textarea {
             box-shadow: 0 0 0 100000px ${bgColor} inset;
             &::placeholder {
                 color: ${fusion.default.placeholderColor};

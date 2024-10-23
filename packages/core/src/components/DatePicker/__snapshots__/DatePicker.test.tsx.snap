@@ -65,23 +65,28 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   border-width: 0.2rem;
 }
 
-.c4 input {
+.c4 input,
+.c4 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c4 input::-webkit-input-placeholder {
+.c4 input::-webkit-input-placeholder,
+.c4 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input::-moz-placeholder {
+.c4 input::-moz-placeholder,
+.c4 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input:-ms-input-placeholder {
+.c4 input:-ms-input-placeholder,
+.c4 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input::placeholder {
+.c4 input::placeholder,
+.c4 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -439,23 +444,28 @@ exports[`DatePicker component calendar icon should show calendar icon displayed 
   border-width: 0.2rem;
 }
 
-.c4 input {
+.c4 input,
+.c4 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c4 input::-webkit-input-placeholder {
+.c4 input::-webkit-input-placeholder,
+.c4 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input::-moz-placeholder {
+.c4 input::-moz-placeholder,
+.c4 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input:-ms-input-placeholder {
+.c4 input:-ms-input-placeholder,
+.c4 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input::placeholder {
+.c4 input::placeholder,
+.c4 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -13334,23 +13344,28 @@ exports[`DatePicker component should render properly when hideInput prop is pass
   border-width: 0.2rem;
 }
 
-.c4 input {
+.c4 input,
+.c4 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c4 input::-webkit-input-placeholder {
+.c4 input::-webkit-input-placeholder,
+.c4 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input::-moz-placeholder {
+.c4 input::-moz-placeholder,
+.c4 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input:-ms-input-placeholder {
+.c4 input:-ms-input-placeholder,
+.c4 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input::placeholder {
+.c4 input::placeholder,
+.c4 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -13766,23 +13781,28 @@ exports[`DatePicker component should render properly when value is of date type 
   transition: all 100ms ease-out;
 }
 
-.c4 input {
+.c4 input,
+.c4 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c4 input::-webkit-input-placeholder {
+.c4 input::-webkit-input-placeholder,
+.c4 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input::-moz-placeholder {
+.c4 input::-moz-placeholder,
+.c4 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input:-ms-input-placeholder {
+.c4 input:-ms-input-placeholder,
+.c4 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input::placeholder {
+.c4 input::placeholder,
+.c4 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -14126,23 +14146,28 @@ exports[`DatePicker component should render properly when value is of string typ
   transition: all 100ms ease-out;
 }
 
-.c4 input {
+.c4 input,
+.c4 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c4 input::-webkit-input-placeholder {
+.c4 input::-webkit-input-placeholder,
+.c4 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input::-moz-placeholder {
+.c4 input::-moz-placeholder,
+.c4 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input:-ms-input-placeholder {
+.c4 input:-ms-input-placeholder,
+.c4 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c4 input::placeholder {
+.c4 input::placeholder,
+.c4 textarea::placeholder {
   color: #C7D0D8;
 }
 

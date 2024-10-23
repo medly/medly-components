@@ -6,7 +6,8 @@ export const outlinedStyle = ({ outlined, disabled, isErrorPresent }: InnerWrapp
     return css`
         border-radius: ${outlined.default.borderRadius};
         background-color: ${outlined.default.bgColor};
-        input {
+        input,
+        textarea {
             box-shadow: 0 0 0 100000px ${outlined.default.bgColor} inset;
             &::placeholder {
                 color: ${outlined.default.placeholderColor};

@@ -78,23 +78,28 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   border-width: 0.2rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -425,23 +430,28 @@ exports[`SingleSelect component should render properly when isSearchable is true
   border-width: 0.2rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -988,23 +998,28 @@ exports[`SingleSelect component should take passed max width 1`] = `
   border-width: 0.2rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -1511,23 +1526,28 @@ exports[`SingleSelect component with filled variant should render disabled state
   transition: all 100ms ease-out;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -2002,23 +2022,28 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   border-width: 0.2rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -2449,23 +2474,28 @@ exports[`SingleSelect component with filled variant should render properly when 
   border-width: 0.2rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -3100,23 +3130,28 @@ exports[`SingleSelect component with filled variant should render with label pro
   border-width: 0.2rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -4902,23 +4937,28 @@ exports[`SingleSelect component with fusion variant should render disabled state
   border-width: 0.15rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -5426,23 +5466,28 @@ exports[`SingleSelect component with fusion variant should render properly 1`] =
   border-width: 0.15rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -5910,23 +5955,28 @@ exports[`SingleSelect component with fusion variant should render properly when 
   border-width: 0.15rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -6598,23 +6648,28 @@ exports[`SingleSelect component with fusion variant should render with label pro
   border-width: 0.15rem;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -6973,23 +7028,28 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   color: #546A7F;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -7476,23 +7536,28 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   color: #546A7F;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -7944,23 +8009,28 @@ exports[`SingleSelect component with outlined variant should render properly whe
   color: #546A7F;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
@@ -8616,23 +8686,28 @@ exports[`SingleSelect component with outlined variant should render with label p
   color: #546A7F;
 }
 
-.c3 input {
+.c3 input,
+.c3 textarea {
   box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
-.c3 input::-webkit-input-placeholder {
+.c3 input::-webkit-input-placeholder,
+.c3 textarea::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::-moz-placeholder {
+.c3 input::-moz-placeholder,
+.c3 textarea::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input:-ms-input-placeholder {
+.c3 input:-ms-input-placeholder,
+.c3 textarea:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3 input::placeholder {
+.c3 input::placeholder,
+.c3 textarea::placeholder {
   color: #C7D0D8;
 }
 
