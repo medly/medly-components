@@ -7053,6 +7053,11 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   color: #C7D0D8;
 }
 
+.c3 input:disabled,
+.c3 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
 .c3::after {
   content: '';
   box-sizing: border-box;
@@ -7561,6 +7566,11 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   color: #C7D0D8;
 }
 
+.c3 input:disabled,
+.c3 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
 .c3::after {
   content: '';
   box-sizing: border-box;
@@ -8032,6 +8042,11 @@ exports[`SingleSelect component with outlined variant should render properly whe
 .c3 input::placeholder,
 .c3 textarea::placeholder {
   color: #C7D0D8;
+}
+
+.c3 input:disabled,
+.c3 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c3::after {
@@ -8709,6 +8724,11 @@ exports[`SingleSelect component with outlined variant should render with label p
 .c3 input::placeholder,
 .c3 textarea::placeholder {
   color: #C7D0D8;
+}
+
+.c3 input:disabled,
+.c3 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c3::after {

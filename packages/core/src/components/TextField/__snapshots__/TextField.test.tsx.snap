@@ -12234,6 +12234,11 @@ exports[`TextField with outlined variant and with label should render default st
   color: #C7D0D8;
 }
 
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -12572,6 +12577,11 @@ exports[`TextField with outlined variant and with label should render disabled s
   color: #C7D0D8;
 }
 
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -12886,6 +12896,11 @@ exports[`TextField with outlined variant and with label should render focus stat
   color: #C7D0D8;
 }
 
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -13184,6 +13199,11 @@ exports[`TextField with outlined variant and without label should render default
   color: #C7D0D8;
 }
 
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -13475,6 +13495,11 @@ exports[`TextField with outlined variant and without label should render disable
   color: #C7D0D8;
 }
 
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -13740,6 +13765,11 @@ exports[`TextField with outlined variant and without label should render focus s
 .c1 input::placeholder,
 .c1 textarea::placeholder {
   color: #C7D0D8;
+}
+
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -14078,6 +14108,11 @@ exports[`TextField with outlined variant should render error state properly 1`] 
 .c1 input::placeholder,
 .c1 textarea::placeholder {
   color: #C7D0D8;
+}
+
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -14453,6 +14488,11 @@ exports[`TextField with outlined variant should render error state properly with
 .c1 input::placeholder,
 .c1 textarea::placeholder {
   color: #C7D0D8;
+}
+
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -14908,6 +14948,11 @@ exports[`TextField with outlined variant should render properly with custom bord
   color: #C7D0D8;
 }
 
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -15269,6 +15314,11 @@ exports[`TextField with outlined variant should render properly with custom disa
   color: #C7D0D8;
 }
 
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
 .c1::after {
   content: '';
   box-sizing: border-box;
@@ -15594,6 +15644,11 @@ exports[`TextField with outlined variant should render properly with multiline 1
 .c1 input::placeholder,
 .c1 textarea::placeholder {
   color: #C7D0D8;
+}
+
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -15954,6 +16009,11 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 .c1 input::placeholder,
 .c1 textarea::placeholder {
   color: #C7D0D8;
+}
+
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -16331,6 +16391,11 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 .c1 input::placeholder,
 .c1 textarea::placeholder {
   color: #C7D0D8;
+}
+
+.c1 input:disabled,
+.c1 textarea:disabled {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
