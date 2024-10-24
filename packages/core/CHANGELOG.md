@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.17.2](https://github.com/medly/medly-components/compare/@medly-components/core@7.17.1...@medly-components/core@7.17.2) (2024-10-24)
+
+
+### Bug Fixes
+
+* disabled background color for textfield ([b8592c0](https://github.com/medly/medly-components/commit/b8592c0854992fdbb2f8f9b8474f62697bcb46e4))
+
+
+
+
+
 ## [7.17.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.17.0...@medly-components/core@7.17.1) (2024-10-23)
 
 
