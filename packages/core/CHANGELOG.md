@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.18.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.17.2...@medly-components/core@7.18.0) (2024-10-30)
+
+
+### Features
+
+* add close icon in date picker and date range picker calendar ([cf18bf5](https://github.com/medly/medly-components/commit/cf18bf54585bce4b033916f1f3881d41e3fb8394))
+
+
+
+
+
 ## [7.17.2](https://github.com/medly/medly-components/compare/@medly-components/core@7.17.1...@medly-components/core@7.17.2) (2024-10-24)
 
 
