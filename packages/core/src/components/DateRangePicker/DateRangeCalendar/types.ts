@@ -16,4 +16,5 @@ export type Props = Omit<HTMLProps<HTMLDivElement>, 'size'> & {
     focusedElement?: FOCUS_ELEMENT;
     onFocusChange?: (element: FOCUS_ELEMENT) => void;
     autoSelectEndDateIn?: number;
+    onClose: () => void;
 };

@@ -82,6 +82,17 @@ describe('DateRangePicker', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should close the popover on click on close icon', () => {
+        const { container } = renderComponent({
+            withSingleMonth: true,
+            value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }
+        });
+        fireEvent.click(screen.getByTitle('contract-calendar-icon'));
+        expect(container.querySelector('#contract-calendar')).toBeVisible();
+        fireEvent.click(screen.getByTitle('contract-calendar-close-icon'));
+        expect(container.querySelector('#contract-calendar')).toBeNull();
+    });
+
     describe('popover placement', () => {
         afterEach(cleanup);
 

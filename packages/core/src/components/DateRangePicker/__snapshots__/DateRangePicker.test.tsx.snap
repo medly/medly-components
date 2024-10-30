@@ -2630,6 +2630,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3018,7 +3020,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -3028,7 +3030,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -4430,6 +4432,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4818,7 +4822,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -4828,7 +4832,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -6230,6 +6234,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6618,7 +6624,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -6628,7 +6634,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -8032,6 +8038,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8420,7 +8428,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -8430,7 +8438,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -9831,6 +9839,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -10219,7 +10229,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -10229,7 +10239,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -11630,6 +11640,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -12018,7 +12030,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -12028,7 +12040,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -13432,6 +13444,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -13820,7 +13834,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -13830,7 +13844,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -15231,6 +15245,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -15619,7 +15635,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -15629,7 +15645,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -17030,6 +17046,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -17418,7 +17436,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -17428,7 +17446,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -18832,6 +18850,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -19220,7 +19240,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -19230,7 +19250,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -20631,6 +20651,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -21019,7 +21041,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -21029,7 +21051,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -22430,6 +22452,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c1 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -22818,7 +22842,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c7 .c11 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c10 {
@@ -22828,7 +22852,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c25 .c4:first-of-type {
@@ -24438,6 +24462,8 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c16 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -24826,7 +24852,7 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c21 .c25 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c24 {
@@ -24836,7 +24862,7 @@ exports[`DateRangePicker should render properly 1`] = `
   user-select: none;
   display: block;
   width: 100%;
-  margin: 2.7rem 0 1.5rem;
+  margin: 1.1rem 0 1.5rem;
 }
 
 .c4 {
@@ -26890,6 +26916,8 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c17 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -27278,7 +27306,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c29 .c30 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c5 {
@@ -27679,6 +27707,21 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             />
           </svg>
         </button>
+        <svg
+          class="c3 c4"
+          fill="none"
+          height="1em"
+          title="contract-calendar-close-icon"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+            fill="#000"
+            fill-opacity=".54"
+          />
+        </svg>
       </div>
       <div
         class="c28"
@@ -28843,6 +28886,8 @@ exports[`DateRangePicker should render properly with single month for mobile scr
 }
 
 .c17 {
+  padding: 1.6rem 1.6rem 0;
+  box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -29231,7 +29276,7 @@ exports[`DateRangePicker should render properly with single month for mobile scr
 }
 
 .c29 .c30 {
-  padding: 0 2rem 2rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .c5 {
@@ -29632,6 +29677,21 @@ exports[`DateRangePicker should render properly with single month for mobile scr
             />
           </svg>
         </button>
+        <svg
+          class="c3 c4"
+          fill="none"
+          height="1em"
+          title="contract-calendar-close-icon"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+            fill="#000"
+            fill-opacity=".54"
+          />
+        </svg>
       </div>
       <div
         class="c28"

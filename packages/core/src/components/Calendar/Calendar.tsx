@@ -1,4 +1,4 @@
-import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
+import { CloseIcon, KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import { endOfDay } from 'date-fns';
 import type { FC } from 'react';
@@ -12,7 +12,7 @@ import { getCalendarDates, getMonthAndYearFromDate, getNextMonthAndYear, getPrev
 import { CalendarProps } from './types';
 
 const Component: FC<CalendarProps> = memo(
-    ({ date, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, defaultMonth = 0, defaultYear, ...restProps }) => {
+    ({ date, onChange, onClose, minSelectableDate, maxSelectableDate, isErrorPresent, defaultMonth = 0, defaultYear, ...restProps }) => {
         const today = new Date(),
             ref = useRef<HTMLDivElement>(null),
             defaultDate = defaultYear ? new Date(defaultYear, defaultMonth, 1) : null,
@@ -78,6 +78,13 @@ const Component: FC<CalendarProps> = memo(
                     >
                         <KeyboardArrowRightIcon title={`${restProps.id}-navigation-forward-icon`} />
                     </Styled.MonthNavigation>
+                    <CloseIcon
+                        title={`${restProps.id}-close-icon`}
+                        onClick={() => {
+                            onClose?.();
+                            setCalenderVisibility(false);
+                        }}
+                    />
                 </Styled.Header>
                 <Styled.CalendarGrid>
                     <WeekDays />

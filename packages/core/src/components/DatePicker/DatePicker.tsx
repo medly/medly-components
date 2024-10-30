@@ -221,6 +221,7 @@ const Component: FC<DatePickerProps> = memo(
                         id={`${id}-calendar`}
                         date={date}
                         isErrorPresent={isErrorPresent}
+                        onClose={() => toggleCalendar(false)}
                         onChange={onDateChange}
                         defaultMonth={defaultMonth}
                         defaultYear={defaultYear}

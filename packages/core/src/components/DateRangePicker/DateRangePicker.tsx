@@ -147,6 +147,7 @@ export const DateRangePicker: FC<DateRangeProps> = memo(props => {
                         placement={popoverPlacement!}
                         selectedDates={value}
                         withSingleMonth={withSingleMonth}
+                        onClose={() => setActive(false)}
                         onDateSelection={onChange}
                         focusedElement={focusedElement}
                         onFocusChange={onFocusChange}

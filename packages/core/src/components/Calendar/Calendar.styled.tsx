@@ -33,6 +33,8 @@ export const MonthNavigation = styled.button.attrs({ type: 'button' })<{ disable
     }
 `;
 export const Header = styled.div`
+    padding: 0 0.8rem;
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     align-items: center;

@@ -203,4 +203,20 @@ describe('Calendar Component', () => {
         expect(month).toEqual('Dec');
         expect(year).toEqual('2021');
     });
+
+    it('should call onClose on click on close icon', () => {
+        const onClose = jest.fn();
+        render(
+            <Calendar
+                id="test-calendar"
+                date={new Date(2020, 11, 15)}
+                onChange={jest.fn()}
+                onClose={onClose}
+                minSelectableDate={new Date(2020, 11, 10)}
+                maxSelectableDate={new Date(2021, 11, 20)}
+            />
+        );
+        fireEvent.click(screen.getByTitle('test-calendar-close-icon'));
+        expect(onClose).toHaveBeenCalled();
+    });
 });

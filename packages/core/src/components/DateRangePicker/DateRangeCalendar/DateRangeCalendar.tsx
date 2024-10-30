@@ -1,4 +1,4 @@
-import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
+import { CloseIcon, KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { WithStyle, useMediaQuery } from '@medly-components/utils';
 import { add } from 'date-fns';
 import type { FC } from 'react';
@@ -24,6 +24,7 @@ const Component: FC<Props> = memo(props => {
             maxSelectableDate,
             withSingleMonth,
             autoSelectEndDateIn,
+            onClose,
             ...restProps
         } = props,
         { startDate, endDate } = selectedDates;
@@ -141,6 +142,15 @@ const Component: FC<Props> = memo(props => {
                 <DatePickerStyled.MonthNavigation id={`${id}-navigation-forward`} onClick={handleNextIconClick}>
                     <KeyboardArrowRightIcon title={`${id}-navigation-forward-icon`} />
                 </DatePickerStyled.MonthNavigation>
+                {_withSingleMonth && (
+                    <CloseIcon
+                        title={`${id}-close-icon`}
+                        onClick={event => {
+                            event.stopPropagation();
+                            onClose();
+                        }}
+                    />
+                )}
             </Styled.Header>
             <Styled.MonthsWrapper
                 key={month}
