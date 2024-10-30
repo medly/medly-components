@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.18.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.18.0...@medly-components/core@7.18.1) (2024-10-30)
+
+
+### Bug Fixes
+
+* active issue while closing calendar ([9368a58](https://github.com/medly/medly-components/commit/9368a583103bb3809ed3708f37badd7068f891b2))
+* remove duplicate code from test file ([f95d892](https://github.com/medly/medly-components/commit/f95d892836bdf72e77668ff3c4a96eca43cb65ee))
+
+
+
+
+
 # [7.18.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.17.2...@medly-components/core@7.18.0) (2024-10-30)
 
 
