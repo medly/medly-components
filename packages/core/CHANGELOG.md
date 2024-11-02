@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.19.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.18.1...@medly-components/core@7.19.0) (2024-11-02)
+
+
+### Features
+
+* add showCurrentTimeAsDefault prop in Timepicker component ([4815144](https://github.com/medly/medly-components/commit/4815144200fc7454112d86e747a9c335e2d1dbd1))
+
+
+
+
+
 ## [7.18.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.18.0...@medly-components/core@7.18.1) (2024-10-30)
 
 
