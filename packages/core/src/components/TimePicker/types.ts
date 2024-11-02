@@ -20,5 +20,5 @@ export interface TimePickerProps extends Omit<TextFieldProps, 'value' | 'onChang
     /** Should clear on cancel */
     clearOnCancel?: boolean;
     /** Set it true to show current time */
-    showCurrentTimeAsDefault?: Date;
+    showCurrentTimeAsDefault?: boolean;
 }
