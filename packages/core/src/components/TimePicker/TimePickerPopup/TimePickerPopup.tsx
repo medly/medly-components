@@ -15,13 +15,18 @@ export const Component: FC<TimePickerPopupProps> = ({
     popoverDistance,
     popoverPlacement,
     disableFutureTime,
-    disablePastTime
+    disablePastTime,
+    showCurrentTimeAsDefault
 }) => {
+    const now = new Date();
     const hourRef = useRef<HTMLUListElement>(null);
     const minutesRef = useRef<HTMLUListElement>(null);
     const periodRef = useRef<HTMLUListElement>(null);
     const [open, setPopupState] = useContext(Popover.Context);
-    const [{ hour, minutes, period }, setValues] = useState({ hour: 1, minutes: 0, period: 0 });
+    const defaultTime = showCurrentTimeAsDefault
+        ? { hour: now.getHours(), minutes: now.getMinutes(), period: now.getHours() < 12 ? 0 : 1 }
+        : { hour: 10, minutes: 0, period: 0 };
+    const [{ hour, minutes, period }, setValues] = useState(defaultTime);
     const isFutureTime = useMemo(() => {
         const currentTime = new Date();
         const currentHour = currentTime.getHours();
@@ -62,20 +67,22 @@ export const Component: FC<TimePickerPopupProps> = ({
     };
 
     useEffect(() => {
+        let { hour, minutes, period } = defaultTime;
         if (value) {
             const time = value.split(':');
-            const hour = Number(time[0]);
-            const minutes = Number(time[1]);
-            const period = hour < 12 ? 0 : 1;
-            const height = (hourRef.current?.scrollHeight || 1) / 16;
-            const hourScroll = hour % 12 === 0 ? 11 : (hour % 12) - 1;
-            // @ts-ignore
-            hourRef.current?.scrollTo({ top: hourScroll * height, behavior: 'instant' });
-            // @ts-ignore
-            minutesRef.current?.scrollTo({ top: minutes * height, behavior: 'instant' });
-            // @ts-ignore
-            periodRef.current?.scrollTo({ top: period * height, behavior: 'instant' });
+            hour = Number(time[0]);
+            minutes = Number(time[1]);
+            period = hour < 12 ? 0 : 1;
         }
+        const height = (hourRef.current?.scrollHeight || 1) / 16;
+        const hourScroll = hour % 12 === 0 ? 11 : (hour % 12) - 1;
+
+        // @ts-ignore
+        hourRef.current?.scrollTo({ top: hourScroll * height, behavior: 'instant' });
+        // @ts-ignore
+        minutesRef.current?.scrollTo({ top: minutes * height, behavior: 'instant' });
+        // @ts-ignore
+        periodRef.current?.scrollTo({ top: period * height, behavior: 'instant' });
     }, [open, value]);
 
     return (

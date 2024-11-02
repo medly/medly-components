@@ -47,6 +47,7 @@ const Component = () => {
                     variant={select('variant', variants, 'outlined')}
                     disableFutureTime={boolean('Disable future time', false)}
                     disablePastTime={boolean('Disable past time', false)}
+                    showCurrentTimeAsDefault={boolean('Show current time as default time', false)}
                     popoverPlacement={select('Popover placement', placements, 'bottom-start')}
                 />
             );

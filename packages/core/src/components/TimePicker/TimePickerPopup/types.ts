@@ -8,4 +8,5 @@ export type TimePickerPopupProps = {
     popoverPlacement?: Placement;
     disableFutureTime?: boolean;
     disablePastTime?: boolean;
+    showCurrentTimeAsDefault?: Date;
 };

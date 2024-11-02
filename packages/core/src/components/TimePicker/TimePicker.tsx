@@ -26,6 +26,7 @@ const Component: FC<TimePickerProps> = memo(
             disableFutureTime,
             disablePastTime,
             clearOnCancel,
+            showCurrentTimeAsDefault,
             ...restProps
         } = props;
 
@@ -71,6 +72,7 @@ const Component: FC<TimePickerProps> = memo(
                         popoverPlacement={popoverPlacement}
                         disableFutureTime={disableFutureTime}
                         disablePastTime={disablePastTime}
+                        showCurrentTimeAsDefault={showCurrentTimeAsDefault}
                     />
                 )}
             </TimePickerWrapper>
