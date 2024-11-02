@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.19.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.19.0...@medly-components/core@7.19.1) (2024-11-02)
+
+
+### Bug Fixes
+
+* fix showCurrentTimeAsDefault prop type ([d690d3b](https://github.com/medly/medly-components/commit/d690d3b6c6c5d1ba974cc744311bea85bcedf458))
+* type issue in showCurrentTimeAsDefault prop ([77fc24d](https://github.com/medly/medly-components/commit/77fc24dfffa9d78c2b0e8e8eef22ef9c964a0520))
+
+
+
+
+
 # [7.19.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.18.1...@medly-components/core@7.19.0) (2024-11-02)
 
 
