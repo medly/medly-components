@@ -73,6 +73,7 @@ export const Component: FC<TimePickerPopupProps> = ({
             hour = Number(time[0]);
             minutes = Number(time[1]);
             period = hour < 12 ? 0 : 1;
+            setValues({ hour, minutes, period });
         }
         const height = (hourRef.current?.scrollHeight || 1) / 16;
         const hourScroll = hour % 12 === 0 ? 11 : (hour % 12) - 1;
