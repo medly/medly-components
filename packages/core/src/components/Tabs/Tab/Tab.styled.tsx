@@ -146,6 +146,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     border-style: solid;
     box-sizing: border-box;
     font-family: inherit;
+    min-width: fit-content;
     flex: ${({ fraction, fullWidth, variant }) => variant !== 'solid' && (fraction || (fullWidth ? '1' : 'initial'))};
     border-color: ${({ borderColor, variant }) => (variant === 'flat' || variant === 'outlined') && borderColor[variant]};
     border-width: ${({ variant }) => (variant === 'outlined' ? `0.1rem 0.1rem 0.1rem 0` : `0 0 0.1rem 0`)};

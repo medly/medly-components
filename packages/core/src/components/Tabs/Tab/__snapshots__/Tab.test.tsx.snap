@@ -77,6 +77,9 @@ exports[`Tab should render active state properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -354,6 +357,9 @@ exports[`Tab should render disabled state properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -654,6 +660,9 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -965,6 +974,9 @@ exports[`Tab should render properly with L tab size 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -1278,6 +1290,9 @@ exports[`Tab should render properly with L tab size 2`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -1586,6 +1601,9 @@ exports[`Tab should render properly with M tab size 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -1888,6 +1906,9 @@ exports[`Tab should render properly with M tab size 2`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -2187,6 +2208,9 @@ exports[`Tab should render properly with S tab size 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -2486,6 +2510,9 @@ exports[`Tab should render properly with S tab size 2`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -2785,6 +2812,9 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -3084,6 +3114,9 @@ exports[`Tab should render properly with flat tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -3383,6 +3416,9 @@ exports[`Tab should render properly with outlined tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -3677,6 +3713,9 @@ exports[`Tab should render properly with solid tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;

@@ -53,6 +53,9 @@ exports[`TabList should render properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -199,6 +202,9 @@ exports[`TabList should render properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;

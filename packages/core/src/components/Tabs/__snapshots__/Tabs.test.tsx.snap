@@ -62,6 +62,9 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -208,6 +211,9 @@ exports[`Tabs should render properly with flat tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -582,6 +588,9 @@ exports[`Tabs should render properly with fullWidth 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -912,6 +921,9 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -1053,6 +1065,9 @@ exports[`Tabs should render properly with outlined tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   -webkit-flex: initial;
   -ms-flex: initial;
   flex: initial;
@@ -1444,6 +1459,9 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1581,6 +1599,9 @@ exports[`Tabs should render properly with solid tab variant 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
