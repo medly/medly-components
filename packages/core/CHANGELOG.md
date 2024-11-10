@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.19.4](https://github.com/medly/medly-components/compare/@medly-components/core@7.19.3...@medly-components/core@7.19.4) (2024-11-10)
+
+
+### Bug Fixes
+
+* tabs width issue in safari ([74e744f](https://github.com/medly/medly-components/commit/74e744f8b59ee79436b34b5668184a74ad81a372))
+
+
+
+
+
 ## [7.19.3](https://github.com/medly/medly-components/compare/@medly-components/core@7.19.2...@medly-components/core@7.19.3) (2024-11-10)
 
 
