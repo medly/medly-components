@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.8](https://github.com/medly/medly-components/compare/@medly-components/forms@3.5.7...@medly-components/forms@3.5.8) (2024-11-10)
+
+
+### Bug Fixes
+
+* datepicker opening issue on safari ([9161dc9](https://github.com/medly/medly-components/commit/9161dc9b278faaecca8edf8fd38c7e091f9eb245))
+
+
+
+
+
 ## [3.5.7](https://github.com/medly/medly-components/compare/@medly-components/forms@3.5.6...@medly-components/forms@3.5.7) (2024-11-04)
 
 **Note:** Version bump only for package @medly-components/forms
