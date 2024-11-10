@@ -72,6 +72,5 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
 export interface StyleProps extends Pick<DatePickerProps, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size' | 'hideInput'> {
     isErrorPresent?: boolean;
     isActive?: boolean;
-    placement: Placement;
     variant: Required<DatePickerProps>['variant'];
 }

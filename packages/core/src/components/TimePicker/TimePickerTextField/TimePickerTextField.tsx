@@ -130,10 +130,6 @@ const Component: FC<TimePickerTextFieldProps> = memo(
             }
         }, [props.value]);
 
-        useEffect(() => {
-            !isDialogOpen && inputRef?.current?.blur();
-        }, [isDialogOpen]);
-
         return (
             <TextField
                 fullWidth
@@ -145,6 +141,7 @@ const Component: FC<TimePickerTextFieldProps> = memo(
                 maxLength={11}
                 autoComplete="off"
                 pattern={'[0-9]{2} : [0-9]{2} [AaPp][Mm]'}
+                onClick={event => isDialogOpen && event.stopPropagation()}
                 {...{ ...props, value: text, onBlur, validator, onChange }}
             />
         );

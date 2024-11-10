@@ -1,14 +1,13 @@
 /* stylelint-disable  property-no-unknown */
-import { InjectClassName, Omit, WithThemeProp } from '@medly-components/utils';
+import { InjectClassName, WithThemeProp } from '@medly-components/utils';
 import styled, { css } from 'styled-components';
-import Calendar from '../Calendar';
-import { getPosition } from '../Popover/Popup/styled/Popup.styled';
+import Popover from '../Popover';
 import { InnerWrapper, InputWrapper, OuterWrapper } from '../TextField/Styled';
 import { StyleProps } from './types';
 
 type State = 'default' | 'active' | 'error' | 'disabled';
 
-const getStyleForIcon = ({ theme, variant, disabled }: Omit<StyleProps, 'placement'> & WithThemeProp, state: State) => {
+const getStyleForIcon = ({ theme, variant, disabled }: StyleProps & WithThemeProp, state: State) => {
     const {
         icon: { [state]: iconStyle }
     } = theme.datePicker[variant];
@@ -25,7 +24,7 @@ const getStyleForIcon = ({ theme, variant, disabled }: Omit<StyleProps, 'placeme
     `;
 };
 
-export const DateIconWrapper = styled(InjectClassName)<Omit<StyleProps, 'placement'>>`
+export const DateIconWrapper = styled(InjectClassName)<StyleProps>`
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     border-radius: ${({ theme }) => theme.datePicker.borderRadius};
     padding: ${({ size }) => (size === 'S' ? '0.6rem' : '0.8rem')};
@@ -51,21 +50,18 @@ const hiddenInputStyle = css<StyleProps>`
     }
 `;
 
-export const Wrapper = styled(OuterWrapper)<StyleProps>`
+export const Wrapper = styled(Popover)<StyleProps>`
+    display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
+    width: ${({ fullWidth }) => (fullWidth ? '100%' : 'min-content')};
+    min-width: ${({ minWidth }) => minWidth};
+    margin: ${({ theme, fullWidth }) =>
+        fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};
+
     & > ${OuterWrapper} {
         margin: 0;
         & > ${InnerWrapper} {
             padding-right: 0.8rem;
         }
-    }
-
-    ${Calendar.Style} {
-        z-index: 4;
-        position: absolute;
-        ${getPosition}
-        top: ${({ size, placement, theme }) =>
-            (placement === 'bottom' || placement === 'bottom-start' || placement === 'bottom-end') &&
-            (size === 'S' ? theme.textField.height.S : theme.textField.height.M)};
     }
 
     ${({ hideInput }) => hideInput && hiddenInputStyle};

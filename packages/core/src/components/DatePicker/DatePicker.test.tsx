@@ -369,7 +369,7 @@ describe('DatePicker component', () => {
         it('should change the size of datepicker based on size prop', () => {
             const { container } = render(<DatePicker id="dob" value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} size={'S'} />);
             fireEvent.click(screen.getByTitle('dob-calendar-icon'));
-            expect(container.querySelector('#dob-calendar')).toHaveStyle(`top: 4rem`);
+            expect(container.querySelector('#dob-input-wrapper>div')).toHaveStyle(`height: 4rem`);
         });
     });
 });
