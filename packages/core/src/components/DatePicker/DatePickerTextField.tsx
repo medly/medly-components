@@ -62,7 +62,7 @@ export const DatePickerTextField: FC<
             } else if (!isErrorPresent && !isCalendarOpen) {
                 setTextValue('');
             }
-        }, [date, isCalendarOpen, isErrorPresent, displayFormat]);
+        }, [date, isErrorPresent, displayFormat]);
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const inputValue = event.target.value || '',
