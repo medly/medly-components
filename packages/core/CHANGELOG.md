@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.19.5](https://github.com/medly/medly-components/compare/@medly-components/core@7.19.4...@medly-components/core@7.19.5) (2024-11-11)
+
+
+### Bug Fixes
+
+* invalid date message issue ([c114218](https://github.com/medly/medly-components/commit/c114218daee07fc3eee17b4330bc580ac0da6ba6))
+
+
+
+
+
 ## [7.19.4](https://github.com/medly/medly-components/compare/@medly-components/core@7.19.3...@medly-components/core@7.19.4) (2024-11-10)
 
 
