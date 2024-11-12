@@ -144,6 +144,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     rowCursor?: number | string;
     /** Function to be called when row is navigated using keyboard */
     onRowNavigated?: (rowData: ObjectType) => void;
+    /** Set it true to hide the row actions cell */
+    hideRowActionsCell?: boolean;
 }
 
 export interface StaticProps {

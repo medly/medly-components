@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { resolveValueByTableSize } from '../../../helpers';
 import { TableProps } from '../../../types';
 
-export const ExtendedRowCellStyled = styled('td')<{ tableSize: TableProps['size']; isRowExpanded?: boolean }>`
-    grid-column: 2/-1;
+export const ExtendedRowCellStyled = styled('td')<{ tableSize: TableProps['size']; isRowExpanded?: boolean; hideRowActionsCell?: boolean }>`
+    grid-column: ${({ hideRowActionsCell }) => (hideRowActionsCell ? '1/-1' : '2/-1')};
     cursor: default;
     position: relative;
     overflow: hidden;

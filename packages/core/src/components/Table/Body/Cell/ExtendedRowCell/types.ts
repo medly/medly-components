@@ -11,4 +11,5 @@ export type ExtendedRowCellProps = HTMLProps<HTMLTableCellElement> & {
     tableSize: Required<TableProps>['size'];
     isGroupedTable?: boolean;
     expandedRowComponent: TableProps['expandedRowComponent'];
+    hideRowActionsCell?: boolean;
 };

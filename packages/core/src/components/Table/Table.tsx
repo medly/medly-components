@@ -39,6 +39,7 @@ export const Component: FC<TableProps> = memo(
                 rowCursor,
                 onRowNavigated,
                 keyBindings,
+                hideRowActionsCell,
                 ...restProps
             } = props,
             isGroupedTable = !!restProps.groupBy,
@@ -56,7 +57,15 @@ export const Component: FC<TableProps> = memo(
             tableRef = useCombinedRefs<HTMLTableElement>(ref, useRef(null)),
             [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
             [columns, setColumns] = useState(
-                getUpdatedColumns({ columnConfigs: props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable, maxColumnSizes })
+                getUpdatedColumns({
+                    columnConfigs: props.columns,
+                    isRowSelectable,
+                    isRowExpandable,
+                    size,
+                    isGroupedTable,
+                    maxColumnSizes,
+                    hideRowActionsCell
+                })
             ),
             addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]);
 
@@ -77,9 +86,17 @@ export const Component: FC<TableProps> = memo(
 
         useEffect(() => {
             setColumns(
-                getUpdatedColumns({ columnConfigs: props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable, maxColumnSizes })
+                getUpdatedColumns({
+                    columnConfigs: props.columns,
+                    isRowSelectable,
+                    isRowExpandable,
+                    size,
+                    isGroupedTable,
+                    maxColumnSizes,
+                    hideRowActionsCell
+                })
             );
-        }, [props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable]);
+        }, [props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable, hideRowActionsCell]);
 
         useEffect(() => {
             setSelectAllDisableState(isGroupedTable ? true : data.every(dt => dt[rowSelectionDisableKey!]));

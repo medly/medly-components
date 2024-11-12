@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
+import type { FC } from 'react';
 import { memo, useCallback } from 'react';
 import { RowActionsCellStyled } from '../RowActionsCell/RowActionsCell.styled';
 import { ExtendedRowCellStyled, Wrapper } from './ExtendedRowCell.styled';
 import { ExtendedRowCellProps } from './types';
-import type { FC } from 'react';
 
 const Component: FC<ExtendedRowCellProps> = memo(props => {
     const {
@@ -15,20 +15,27 @@ const Component: FC<ExtendedRowCellProps> = memo(props => {
         isGroupedTable,
         isRowClickDisabled,
         showShadowAtRight,
+        hideRowActionsCell,
         expandedRowComponent: ExpandedRowComponent
     } = props;
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
 
     return (
         <>
-            <RowActionsCellStyled
+            {!hideRowActionsCell && (
+                <RowActionsCellStyled
+                    onClick={stopPropagation}
+                    isRowSelected={isRowSelected}
+                    isGroupedTable={isGroupedTable}
+                    showShadowAtRight={showShadowAtRight}
+                />
+            )}
+            <ExtendedRowCellStyled
                 onClick={stopPropagation}
-                isRowSelected={isRowSelected}
-                isGroupedTable={isGroupedTable}
-                showShadowAtRight={showShadowAtRight}
-            />
-
-            <ExtendedRowCellStyled onClick={stopPropagation} tableSize={tableSize} isRowExpanded={isRowExpanded}>
+                tableSize={tableSize}
+                isRowExpanded={isRowExpanded}
+                hideRowActionsCell={hideRowActionsCell}
+            >
                 {isRowExpanded && ExpandedRowComponent ? (
                     <Wrapper tableSize={tableSize}>
                         <ExpandedRowComponent rowId={rowId} rowData={rowData} disabled={isRowClickDisabled} />

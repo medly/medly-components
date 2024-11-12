@@ -42,6 +42,7 @@ export const Row: FC<RowProps> = memo(props => {
             size: tableSize,
             expandedRowComponent,
             withRowSeparators,
+            hideRowActionsCell,
             rowHoverActions: RowHoverActions
         } = useContext(TableComponentsCommonPropsContext);
 
@@ -144,7 +145,7 @@ export const Row: FC<RowProps> = memo(props => {
                 isNavigated={isNavigated}
                 onKeyDown={handleRowClickFromKeyboard}
             >
-                {(isRowSelectable || isRowExpandable) && (
+                {(isRowSelectable || isRowExpandable) && !hideRowActionsCell && (
                     <RowActionsCell
                         tableSize={tableSize}
                         isLoading={isLoading}
@@ -172,6 +173,7 @@ export const Row: FC<RowProps> = memo(props => {
                         expandedRowComponent={expandedRowComponent}
                         isRowClickDisabled={isRowClickDisabled}
                         showShadowAtRight={showShadowAfterFrozenElement}
+                        hideRowActionsCell={hideRowActionsCell}
                     />
                 )}
                 {RowHoverActions !== undefined && !isRowClickDisabled && !isLoading && (

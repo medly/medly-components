@@ -21,7 +21,8 @@ export const getUpdatedColumns = ({
     isGroupedTable,
     maxColumnSizes,
     isRowSelectable,
-    isRowExpandable
+    isRowExpandable,
+    hideRowActionsCell
 }: {
     columnConfigs: TableColumnConfig[];
     size: Required<TableProps['size']>;
@@ -29,21 +30,26 @@ export const getUpdatedColumns = ({
     maxColumnSizes: MaxColumnSizes;
     isRowSelectable?: boolean;
     isRowExpandable?: boolean;
+    hideRowActionsCell?: boolean;
 }): TableColumnConfig[] => [
-    ...(isGroupedTable
-        ? [{ ...rowActionsColumnConfig, field: 'group-expansion', size: `minmax(${size === 'L' ? '5.5rem' : '4.8rem'}, 0.1fr)` }]
-        : []),
-    ...(isRowSelectable || isRowExpandable
-        ? [
-              {
-                  ...rowActionsColumnConfig,
-                  size:
-                      isRowSelectable && isRowExpandable
-                          ? `minmax(${size === 'L' ? '11.6rem' : '8.4rem'}, 0.1fr)`
-                          : `minmax(${size === 'L' ? '6.4rem' : '4.8rem'}, 0.1fr)`
-              }
-          ]
-        : []),
+    ...(hideRowActionsCell
+        ? []
+        : [
+              ...(isGroupedTable
+                  ? [{ ...rowActionsColumnConfig, field: 'group-expansion', size: `minmax(${size === 'L' ? '5.5rem' : '4.8rem'}, 0.1fr)` }]
+                  : []),
+              ...(isRowSelectable || isRowExpandable
+                  ? [
+                        {
+                            ...rowActionsColumnConfig,
+                            size:
+                                isRowSelectable && isRowExpandable
+                                    ? `minmax(${size === 'L' ? '11.6rem' : '8.4rem'}, 0.1fr)`
+                                    : `minmax(${size === 'L' ? '6.4rem' : '4.8rem'}, 0.1fr)`
+                        }
+                    ]
+                  : [])
+          ]),
     ...addSizeToColumnConfig(columnConfigs, maxColumnSizes)
 ];
 

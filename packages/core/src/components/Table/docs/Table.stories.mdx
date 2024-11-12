@@ -1,21 +1,21 @@
-import { Table } from '../Table';
-import { useState, useCallback } from 'react';
 import { action } from '@storybook/addon-actions';
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { useCallback, useState } from 'react';
+import { Table } from '../Table';
 import {
-    ThemeInterface,
-    ColumnConfigInterface,
-    ExpandedRowComponent,
-    DarkBackground,
     Actions,
+    ColumnConfigInterface,
+    DarkBackground,
     DummyWrapper,
-    RowHoverActions
+    ExpandedRowComponent,
+    RowHoverActions,
+    ThemeInterface
 } from './Table.stories';
-import { filterData } from './filterData';
 import columns from './columns';
 import data from './data';
-import { groupedData, getGroupedData } from './groupedData';
+import { filterData } from './filterData';
+import { getGroupedData, groupedData } from './groupedData';
 
 <Meta
     title="Core/Table"
@@ -154,6 +154,7 @@ export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowDa
                         onPageChange={action('Page Changed')}
                         onScrolledToBottom={action('Scrolled to bottom')}
                         withRowSeparators={boolean('Enable row separators', true)}
+                        hideRowActionsCell={boolean('Hide Row Actions Cell', false)}
                         defaultRowExpandKey="expanded"
                     />
                 </DummyWrapper>
@@ -337,6 +338,7 @@ export const RowHoverActions: RowHoverActionsType = ({ rowId, rowData }) => {
                         actions={Actions}
                         withMinimap={boolean('Enable minimap', false)}
                         withPagination={boolean('Enable pagination', true)}
+                        hideRowActionsCell={boolean('Hide Row Actions Cell', false)}
                         totalItems={10}
                         itemsPerPage={10}
                         onPageChange={action('Page Changed')}
