@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.20.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.19.5...@medly-components/core@7.20.0) (2024-11-12)
+
+
+### Features
+
+* add hideRowActionsCell prop in table component ([dcd9bbc](https://github.com/medly/medly-components/commit/dcd9bbce8f986eed9e2a6cf5875ddc0e27f33955))
+
+
+
+
+
 ## [7.19.5](https://github.com/medly/medly-components/compare/@medly-components/core@7.19.4...@medly-components/core@7.19.5) (2024-11-11)
 
 
