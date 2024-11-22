@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.13.12...@medly-components/icons@1.14.0) (2024-11-22)
+
+
+### Features
+
+* add medical services icon ([0a6aadd](https://github.com/medly/medly-components/commit/0a6aadd9fb3839a40b572f204fad270360d9f013))
+
+
+
+
+
 ## [1.13.12](https://github.com/medly/medly-components/compare/@medly-components/icons@1.13.11...@medly-components/icons@1.13.12) (2024-10-23)
 
 **Note:** Version bump only for package @medly-components/icons
