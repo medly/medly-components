@@ -7,7 +7,9 @@ import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 const Component: FC<SvgIconProps> = memo(props => {
     const { size, variant, iconColor, bgColor, hoverBgColor, hoverIconColor, withHoverEffect, margin, fillOpacity, ...restProps } = props;
     return (
-        <SvgIcon {...{ size, variant, iconColor, bgColor, hoverBgColor, hoverIconColor, withHoverEffect, margin, fillOpacity, ...restProps }}>
+        <SvgIcon
+            {...{ size, variant, iconColor, bgColor, hoverBgColor, hoverIconColor, withHoverEffect, margin, fillOpacity, ...restProps }}
+        >
             <${iconName}Svg {...restProps} width="1em" height="1em" />
         </SvgIcon>
     );

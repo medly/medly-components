@@ -382,6 +382,7 @@ export { default as ClinicIcon } from './icons/Custom/ClinicIcon';
 export { default as DeliveredIcon } from './icons/Custom/DeliveredIcon';
 export { default as DropdownIcon } from './icons/Custom/DropdownIcon';
 export { default as DrugsIcon } from './icons/Custom/DrugsIcon';
+export { default as MedicalServicesIcon } from './icons/Custom/MedicalServicesIcon';
 export { default as MenuExpandIcon } from './icons/Custom/MenuExpandIcon';
 export { default as MenuHideIcon } from './icons/Custom/MenuHideIcon';
 export { default as PendingIcon } from './icons/Custom/PendingIcon';

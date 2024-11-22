@@ -389,6 +389,7 @@ import ClinicIcon from './icons/Custom/ClinicIcon';
 import DeliveredIcon from './icons/Custom/DeliveredIcon';
 import DropdownIcon from './icons/Custom/DropdownIcon';
 import DrugsIcon from './icons/Custom/DrugsIcon';
+import MedicalServicesIcon from './icons/Custom/MedicalServicesIcon';
 import MenuExpandIcon from './icons/Custom/MenuExpandIcon';
 import MenuHideIcon from './icons/Custom/MenuHideIcon';
 import PendingIcon from './icons/Custom/PendingIcon';
@@ -5395,6 +5396,16 @@ None of the props is required but still you can style all the icons according to
                     hoverBgColor={color('Hover background color', defaultTheme.icon.colors.hovered.bgColor)}
             />
             <DrugsIcon 
+                    size={select('Size', sizes, 'M')}
+                    variant={select('Variant', variants, 'flat')}
+                    disabled={boolean('Disabled', false)}
+                    withHoverEffect={boolean('With hover efect', false)}
+                    iconColor={color('Icon Color', defaultTheme.icon.colors.default.iconColor)}
+                    bgColor={color('Background Color', defaultTheme.icon.colors.default.bgColor)}
+                    hoverIconColor={color('Hover icon color', defaultTheme.icon.colors.hovered.iconColor)}
+                    hoverBgColor={color('Hover background color', defaultTheme.icon.colors.hovered.bgColor)}
+            />
+            <MedicalServicesIcon 
                     size={select('Size', sizes, 'M')}
                     variant={select('Variant', variants, 'flat')}
                     disabled={boolean('Disabled', false)}

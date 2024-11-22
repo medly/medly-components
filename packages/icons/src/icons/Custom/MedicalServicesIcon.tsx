@@ -1,7 +1,7 @@
 import { WithStyle } from '@medly-components/utils';
 import type { FC } from 'react';
 import { memo } from 'react';
-import NoFileIconSvg from '../../assets/File/no_file_24px.svg';
+import MedicalServicesIconSvg from '../../assets/Custom/medical_services_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
 const Component: FC<SvgIconProps> = memo(props => {
@@ -10,12 +10,12 @@ const Component: FC<SvgIconProps> = memo(props => {
         <SvgIcon
             {...{ size, variant, iconColor, bgColor, hoverBgColor, hoverIconColor, withHoverEffect, margin, fillOpacity, ...restProps }}
         >
-            <NoFileIconSvg {...restProps} width="1em" height="1em" />
+            <MedicalServicesIconSvg {...restProps} width="1em" height="1em" />
         </SvgIcon>
     );
 });
-Component.displayName = 'NoFileIcon';
+Component.displayName = 'MedicalServicesIcon';
 
-const NoFileIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
+const MedicalServicesIcon: FC<SvgIconProps> & WithStyle = Object.assign(Component, { Style: SvgIcon });
 
-export default NoFileIcon;
+export default MedicalServicesIcon;
