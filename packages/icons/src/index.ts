@@ -147,6 +147,7 @@ export { default as PictureInPictureIcon } from './icons/Action/PictureInPicture
 export { default as PictureInPictureAltIcon } from './icons/Action/PictureInPictureAltIcon';
 export { default as PlayForWorkIcon } from './icons/Action/PlayForWorkIcon';
 export { default as PolymerIcon } from './icons/Action/PolymerIcon';
+export { default as PostAddIcon } from './icons/Action/PostAddIcon';
 export { default as PowerSettingsNewIcon } from './icons/Action/PowerSettingsNewIcon';
 export { default as PregnantWomanIcon } from './icons/Action/PregnantWomanIcon';
 export { default as QueryBuilderIcon } from './icons/Action/QueryBuilderIcon';
