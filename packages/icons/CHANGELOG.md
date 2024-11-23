@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.15.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.14.0...@medly-components/icons@1.15.0) (2024-11-23)
+
+
+### Features
+
+* add postadd icon ([565bdeb](https://github.com/medly/medly-components/commit/565bdebd82aedf3011f42a1040cf966d63006cee))
+
+
+
+
+
 # [1.14.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.13.12...@medly-components/icons@1.14.0) (2024-11-22)
 
 
