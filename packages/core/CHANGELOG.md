@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.20.4](https://github.com/medly/medly-components/compare/@medly-components/core@7.20.3...@medly-components/core@7.20.4) (2024-12-01)
+
+
+### Bug Fixes
+
+* option click handler update issue ([f7dfd32](https://github.com/medly/medly-components/commit/f7dfd32096236a781c6c71ad3e7a724037f01de7))
+
+
+
+
+
 ## [7.20.3](https://github.com/medly/medly-components/compare/@medly-components/core@7.20.2...@medly-components/core@7.20.3) (2024-11-23)
 
 **Note:** Version bump only for package @medly-components/core
