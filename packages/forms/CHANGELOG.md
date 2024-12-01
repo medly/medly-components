@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.6.0](https://github.com/medly/medly-components/compare/@medly-components/forms@3.5.15...@medly-components/forms@3.6.0) (2024-12-01)
+
+
+### Features
+
+* make gridColumn and gridRow as function also in formm ([c2e3b6e](https://github.com/medly/medly-components/commit/c2e3b6e5a34591af5e02616cb1c75dd4229475c0))
+
+
+
+
+
 ## [3.5.15](https://github.com/medly/medly-components/compare/@medly-components/forms@3.5.14...@medly-components/forms@3.5.15) (2024-12-01)
 
 **Note:** Version bump only for package @medly-components/forms
