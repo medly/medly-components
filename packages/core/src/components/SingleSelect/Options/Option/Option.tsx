@@ -26,7 +26,7 @@ const Component: FC<OptionProps> = memo(props => {
                 isNested && showNestedOptions();
                 onClick({ value, label, disabled, selected });
             },
-            [isNested, disabled, onClick]
+            [value, label, isNested, disabled, selected, onClick]
         );
 
     useEffect(() => {
