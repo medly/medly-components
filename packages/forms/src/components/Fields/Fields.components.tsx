@@ -67,9 +67,11 @@ export const Fields: FC<FieldsProps> = memo(props => {
                         </Fragment>
                     );
                 }
+                const gridColumnValue = typeof gridColumn === 'function' ? gridColumn(values) : gridColumn;
+                const gridRowValue = typeof gridRow === 'function' ? gridRow(values) : gridRow;
 
                 return (
-                    <FieldWrapper {...{ gridColumn, gridRow }} key={key}>
+                    <FieldWrapper {...{ gridColumn: gridColumnValue, gridRow: gridRowValue }} key={key}>
                         {(() => {
                             switch (componentProps.type) {
                                 case 'text':

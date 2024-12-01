@@ -16,9 +16,9 @@ import { Handlers } from '../../hooks/useForm/types';
 
 export type CommonFieldProps = {
     /** Grid column to render the field */
-    gridColumn?: string;
+    gridColumn?: string | ((values: { [key: string]: any }) => string);
     /** Grid row to render the field */
-    gridRow?: string;
+    gridRow?: string | ((values: { [key: string]: any }) => string);
 };
 export type FormCustomComponent<P = unknown> = React.FC<
     P & {
