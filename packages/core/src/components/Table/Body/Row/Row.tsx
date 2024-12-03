@@ -118,6 +118,11 @@ export const Row: FC<RowProps> = memo(props => {
         if (isNavigated) onRowNavigated && onRowNavigated(data);
     }, [isNavigated, onRowNavigated]);
 
+    const defaultRowExpansion = defaultRowExpandKey && data[defaultRowExpandKey];
+    useEffect(() => {
+        setExpansionState(defaultRowExpansion);
+    }, [defaultRowExpansion]);
+
     // TODO: Check why useKeypress is not working in this case
     const handleRowClickFromKeyboard = useCallback(
         (e: KeyboardEvent<HTMLTableRowElement>) => {
