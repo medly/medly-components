@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.20.5](https://github.com/medly/medly-components/compare/@medly-components/core@7.20.4...@medly-components/core@7.20.5) (2024-12-03)
+
+
+### Bug Fixes
+
+* table row expansion issue ([dd62835](https://github.com/medly/medly-components/commit/dd62835aa074b662f514eb60e2d3c0490c364506))
+
+
+
+
+
 ## [7.20.4](https://github.com/medly/medly-components/compare/@medly-components/core@7.20.3...@medly-components/core@7.20.4) (2024-12-01)
 
 
