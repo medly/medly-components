@@ -130,6 +130,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
 
 .c1 {
   grid-column: 1/-1;
+  display: inline-block;
 }
 
 .c1 > * {
@@ -1547,6 +1548,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c1 {
   grid-column: 1/7;
+  display: inline-block;
 }
 
 .c1 > * {
@@ -1557,6 +1559,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c10 {
   grid-column: 7/-1;
+  display: inline-block;
 }
 
 .c10 > * {
@@ -1567,6 +1570,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c11 {
   grid-column: 1/-1;
+  display: inline-block;
 }
 
 .c11 > * {
@@ -1577,6 +1581,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c64 {
   grid-column: 1/5;
+  display: inline-block;
 }
 
 .c64 > * {
@@ -1587,6 +1592,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c65 {
   grid-column: 5/9;
+  display: inline-block;
 }
 
 .c65 > * {
@@ -1597,6 +1603,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c66 {
   grid-column: 9/-1;
+  display: inline-block;
 }
 
 .c66 > * {
@@ -3882,6 +3889,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c4 {
   grid-column: 1/7;
+  display: inline-block;
 }
 
 .c4 > * {
@@ -3892,6 +3900,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c13 {
   grid-column: 7/-1;
+  display: inline-block;
 }
 
 .c13 > * {
@@ -3902,6 +3911,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c14 {
   grid-column: 1/-1;
+  display: inline-block;
 }
 
 .c14 > * {
@@ -3912,6 +3922,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c63 {
   grid-column: 1/5;
+  display: inline-block;
 }
 
 .c63 > * {
@@ -3922,6 +3933,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c64 {
   grid-column: 5/9;
+  display: inline-block;
 }
 
 .c64 > * {
@@ -3932,6 +3944,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c65 {
   grid-column: 9/-1;
+  display: inline-block;
 }
 
 .c65 > * {

@@ -5,6 +5,7 @@ import { CommonFieldProps } from './types';
 export const FieldWrapper = styled('div')<CommonFieldProps>`
     grid-column: ${({ gridColumn }) => gridColumn};
     grid-row: ${({ gridRow }) => gridRow};
+    display: ${({ gridColumn }) => (gridColumn === 'none' ? 'none' : 'inline-block')};
     & > * {
         width: 100%;
         margin: 0;
