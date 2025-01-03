@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.20.6](https://github.com/medly/medly-components/compare/@medly-components/core@7.20.5...@medly-components/core@7.20.6) (2025-01-03)
+
+
+### Bug Fixes
+
+* fix table row id issue ([05a1c0c](https://github.com/medly/medly-components/commit/05a1c0c5887348288ad472277930e3cb71f72306))
+
+
+
+
+
 ## [7.20.5](https://github.com/medly/medly-components/compare/@medly-components/core@7.20.4...@medly-components/core@7.20.5) (2024-12-03)
 
 
