@@ -1007,7 +1007,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="1"
+        tabindex="0"
       >
         <td
           class="c16"
@@ -1078,7 +1078,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="2"
+        tabindex="1"
       >
         <td
           class="c16"
@@ -1149,7 +1149,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="3"
+        tabindex="2"
       >
         <td
           class="c16"
@@ -1220,7 +1220,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="4"
+        tabindex="3"
       >
         <td
           class="c16"
@@ -1291,7 +1291,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="5"
+        tabindex="4"
       >
         <td
           class="c16"
@@ -1362,7 +1362,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="6"
+        tabindex="5"
       >
         <td
           class="c16"
@@ -1433,7 +1433,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="7"
+        tabindex="6"
       >
         <td
           class="c16"
@@ -2346,7 +2346,7 @@ exports[`Table component should render HiddenDiv containing HTML tags as plain t
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="8"
+        tabindex="0"
       >
         <td
           class="c16"
@@ -3107,7 +3107,7 @@ exports[`Table component should render properly 1`] = `
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="1"
+        tabindex="0"
       >
         <td
           class="c16"
@@ -3178,7 +3178,7 @@ exports[`Table component should render properly 1`] = `
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="2"
+        tabindex="1"
       >
         <td
           class="c16"
@@ -3249,7 +3249,7 @@ exports[`Table component should render properly 1`] = `
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="3"
+        tabindex="2"
       >
         <td
           class="c16"
@@ -3320,7 +3320,7 @@ exports[`Table component should render properly 1`] = `
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="4"
+        tabindex="3"
       >
         <td
           class="c16"
@@ -3391,7 +3391,7 @@ exports[`Table component should render properly 1`] = `
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="5"
+        tabindex="4"
       >
         <td
           class="c16"
@@ -3462,7 +3462,7 @@ exports[`Table component should render properly 1`] = `
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="6"
+        tabindex="5"
       >
         <td
           class="c16"
@@ -3533,7 +3533,7 @@ exports[`Table component should render properly 1`] = `
       <tr
         class="c15"
         style="grid-template-columns: minmax(100px, 2fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);"
-        tabindex="7"
+        tabindex="6"
       >
         <td
           class="c16"

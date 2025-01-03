@@ -15,6 +15,7 @@ export const Row: FC<RowProps> = memo(props => {
     const [isRowHovered, setIsRowHovered] = useState(false),
         {
             id,
+            tabIndex,
             data,
             isNavigated = false,
             isRowExpandedFromKeyboard,
@@ -136,7 +137,7 @@ export const Row: FC<RowProps> = memo(props => {
             <Styled.Row
                 {...restProps}
                 ref={ref}
-                tabIndex={Number(id)}
+                tabIndex={tabIndex}
                 disabled={isRowClickDisabled}
                 onClick={handleRowClick}
                 isSelected={isRowSelected}
