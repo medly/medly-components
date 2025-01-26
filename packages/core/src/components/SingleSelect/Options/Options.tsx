@@ -9,7 +9,7 @@ const Component: FC<OptionsProps> = memo(
         const optionsRef = useCombinedRefs<HTMLUListElement>(ref, useRef(null));
 
         useEffect(() => {
-            optionsRef?.current?.scrollIntoView({ behavior: 'smooth' });
+            optionsRef?.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
         }, []);
 
         return (
