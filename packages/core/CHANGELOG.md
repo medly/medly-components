@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.21.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.20.6...@medly-components/core@7.21.0) (2025-01-26)
+
+
+### Features
+
+* autoscroll singleselect options in view ([d413d39](https://github.com/medly/medly-components/commit/d413d39f566ad6f0d412e1d405eb182262322e3b))
+
+
+
+
+
 ## [7.20.6](https://github.com/medly/medly-components/compare/@medly-components/core@7.20.5...@medly-components/core@7.20.6) (2025-01-03)
 
 
