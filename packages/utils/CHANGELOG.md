@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/medly/medly-components/compare/@medly-components/utils@3.2.9...@medly-components/utils@3.3.0) (2025-01-26)
+
+
+### Features
+
+* export ueseScrollState hook from utils package ([b4dadf6](https://github.com/medly/medly-components/commit/b4dadf6af376ff02ac482817fbdcf53b488f448d))
+
+
+
+
+
 ## [3.2.9](https://github.com/medly/medly-components/compare/@medly-components/utils@3.2.8...@medly-components/utils@3.2.9) (2024-10-23)
 
 **Note:** Version bump only for package @medly-components/utils

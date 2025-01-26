@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.22.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.21.0...@medly-components/core@7.22.0) (2025-01-26)
+
+
+### Bug Fixes
+
+* make options scroll to nearest block ([cea7a4f](https://github.com/medly/medly-components/commit/cea7a4f33e0b90c037453268911a500122303304))
+
+
+### Features
+
+* export ueseScrollState hook from utils package ([b4dadf6](https://github.com/medly/medly-components/commit/b4dadf6af376ff02ac482817fbdcf53b488f448d))
+
+
+
+
+
 # [7.21.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.20.6...@medly-components/core@7.21.0) (2025-01-26)
 
 
