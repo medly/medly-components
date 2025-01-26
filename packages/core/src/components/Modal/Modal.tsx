@@ -1,4 +1,4 @@
-import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
+import { scrollStateReducer, useCombinedRefs, useKeyPress, useScrollState, useWindowSize, WithStyle } from '@medly-components/utils';
 import { FC, forwardRef, memo, MouseEvent, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
@@ -8,9 +8,7 @@ import { ModalContext } from './Modal.context';
 import { InnerContainerStyled, ModalBackgroundStyled } from './Modal.styled';
 import ModalManager from './ModalManager';
 import Popup from './Popup';
-import { reducer } from './scrollStateReducer/scrollStateReducer';
 import { ModalProps, ModalStaticProps } from './types';
-import { useScrollState } from './useScrollState';
 
 const manager = new ModalManager();
 
@@ -33,7 +31,7 @@ const Component: FC<ModalProps> = memo(
             innerContainerRef = useRef<HTMLDivElement>(null),
             [headerHeight, setHeaderHeight] = useState(0),
             [activeElement, setActiveElement] = useState<HTMLElement>(),
-            [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }),
+            [scrollState, dispatch] = useReducer(scrollStateReducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }),
             [shouldRender, setShouldRender] = useState(open),
             { width: windowWidth } = useWindowSize(),
             isSmallScreen = windowWidth < 768;

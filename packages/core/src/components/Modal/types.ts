@@ -1,8 +1,8 @@
+import type { ScrollActionTypes } from '@medly-components/utils';
 import { HTMLProps, WithStyle } from '@medly-components/utils';
-import type { Dispatch, FC, RefObject } from 'react';
+import type { Dispatch, FC } from 'react';
 import { ModalActionUserProps } from './Actions/types';
 import { ModalPopupProps } from './Popup/types';
-import { ScrollActionTypes } from './scrollStateReducer/types';
 
 export interface ModalProps extends HTMLProps<HTMLDivElement> {
     /** Shows modal only when this prop is true */
@@ -40,12 +40,6 @@ export interface InnerContainerProps {
     /** height of the header component */
     headerHeight: number;
     overflowVisible?: boolean;
-}
-
-export interface UseScrollStateProps {
-    scrollState: ScrollState;
-    ref: RefObject<HTMLDivElement>;
-    dispatch: Dispatch<ScrollActionTypes>;
 }
 
 export interface ModalContextType {

@@ -1,6 +1,6 @@
 import { ScrollActionTypes } from './types';
 
-export const reducer = (
+export const scrollStateReducer = (
     state: { scrolledToTop: boolean; scrolledToBottom: boolean; scrollPosition: number },
     action: ScrollActionTypes
 ) => {

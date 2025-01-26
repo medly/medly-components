@@ -1,6 +1,6 @@
 import type { UIEvent } from 'react';
 import { useEffect } from 'react';
-import { UseScrollStateProps } from './types';
+import type { UseScrollStateProps } from './types';
 
 export const useScrollState = ({ ref, scrollState, dispatch }: UseScrollStateProps): ((e: React.UIEvent<HTMLDivElement>) => void) => {
     useEffect(() => {

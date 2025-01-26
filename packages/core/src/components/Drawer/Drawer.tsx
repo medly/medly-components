@@ -1,7 +1,6 @@
-import { useKeyPress, WithStyle } from '@medly-components/utils';
+import { scrollStateReducer, useKeyPress, WithStyle } from '@medly-components/utils';
 import type { FC, MouseEvent } from 'react';
 import { forwardRef, memo, useCallback, useEffect, useReducer, useState } from 'react';
-import { reducer } from '../Modal/scrollStateReducer';
 import Content from './Content';
 import { DrawerContext } from './Drawer.context';
 import { DrawerBackground, DrawerStyled } from './Drawer.styled';
@@ -13,7 +12,7 @@ const Component: FC<DrawerProps> = memo(
     forwardRef(({ id, onClose, open, width, children, withOverlay, position, shouldCloseOnOutsideClick, ...props }, ref) => {
         const isEscPressed = useKeyPress('Escape'),
             [shouldRender, setRenderState] = useState(open),
-            [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 });
+            [scrollState, dispatch] = useReducer(scrollStateReducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 });
 
         const handleBackgroundClick = useCallback(
                 (event: MouseEvent<HTMLDivElement>) =>

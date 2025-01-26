@@ -1,3 +1,11 @@
+import type { Dispatch, RefObject } from 'react';
+
+export interface ScrollState {
+    scrolledToTop: boolean;
+    scrolledToBottom: boolean;
+    scrollPosition: number;
+}
+
 interface ScrolledToTopAction {
     type: 'scrolledToTop';
     value: boolean;
@@ -14,3 +22,9 @@ interface ScrollPositionAction {
 }
 
 export type ScrollActionTypes = ScrolledToTopAction | ScrolledToBottomAction | ScrollPositionAction;
+
+export interface UseScrollStateProps {
+    scrollState: ScrollState;
+    ref: RefObject<HTMLDivElement>;
+    dispatch: Dispatch<ScrollActionTypes>;
+}

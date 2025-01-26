@@ -1,6 +1,6 @@
+import type { ScrollActionTypes } from '@medly-components/utils';
 import { HTMLProps, WithStyle } from '@medly-components/utils';
 import type { Dispatch, FC } from 'react';
-import { ScrollActionTypes } from '../Modal/scrollStateReducer/types';
 import { DrawerFooterProps } from './Footer/types';
 
 export interface DrawerProps extends HTMLProps<HTMLDivElement> {

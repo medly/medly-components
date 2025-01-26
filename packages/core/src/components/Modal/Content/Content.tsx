@@ -1,8 +1,7 @@
-import { WithStyle } from '@medly-components/utils';
+import { useScrollState, WithStyle } from '@medly-components/utils';
 import type { FC } from 'react';
 import { memo, useContext, useRef } from 'react';
 import { ModalContext } from '../Modal.context';
-import { useScrollState } from '../useScrollState';
 import * as Styled from './Content.styled';
 
 const Component: FC = memo(props => {
