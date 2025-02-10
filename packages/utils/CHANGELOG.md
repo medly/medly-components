@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.1](https://github.com/medly/medly-components/compare/@medly-components/utils@3.3.0...@medly-components/utils@3.3.1) (2025-02-10)
+
+
+### Bug Fixes
+
+* scrollToBottom difference ([cd1dc78](https://github.com/medly/medly-components/commit/cd1dc78d34860275dd7534a4d5e790297619ce2d))
+
+
+
+
+
 # [3.3.0](https://github.com/medly/medly-components/compare/@medly-components/utils@3.2.9...@medly-components/utils@3.3.0) (2025-01-26)
 
 
