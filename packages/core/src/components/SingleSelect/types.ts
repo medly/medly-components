@@ -65,10 +65,13 @@ export interface SingleSelectProps extends InputProps {
     showTooltipForHelperAndErrorText?: boolean;
     /** Toggle icon */
     suffix?: FC<SvgIconProps>;
+    /** Position of the options */
+    optionsPosition?: 'absolute' | 'relative';
 }
 
 export interface SelectWrapperProps extends Omit<SingleSelectProps, 'ref' | 'options'> {
     variant: Required<SingleSelectProps>['variant'];
     isErrorPresent?: boolean;
     areOptionsVisible?: boolean;
+    minHeight?: string;
 }

@@ -2,7 +2,12 @@ import type { UIEvent } from 'react';
 import { useEffect } from 'react';
 import type { UseScrollStateProps } from './types';
 
-export const useScrollState = ({ ref, scrollState, dispatch }: UseScrollStateProps): ((e: React.UIEvent<HTMLDivElement>) => void) => {
+export const useScrollState = ({
+    ref,
+    scrollState,
+    dispatch,
+    buffer = 1
+}: UseScrollStateProps): ((e: React.UIEvent<HTMLDivElement>) => void) => {
     useEffect(() => {
         const element = ref.current as HTMLElement;
         ref.current &&
@@ -17,7 +22,7 @@ export const useScrollState = ({ ref, scrollState, dispatch }: UseScrollStatePro
         const element = e.target as HTMLElement,
             isScrolledToTop = element.scrollTop === 0,
             isScrolledToBottom =
-                Math.abs(Math.floor(element.scrollTop + element.getBoundingClientRect().height) - element.scrollHeight) <= 5;
+                Math.abs(Math.floor(element.scrollTop + element.getBoundingClientRect().height) - element.scrollHeight) <= buffer;
         scrollState.scrolledToTop !== isScrolledToTop && dispatch({ type: 'scrolledToTop', value: isScrolledToTop });
         scrollState.scrolledToBottom !== isScrolledToBottom && dispatch({ type: 'scrolledToBottom', value: isScrolledToBottom });
         dispatch({ type: 'scrollPosition', value: element.scrollTop });

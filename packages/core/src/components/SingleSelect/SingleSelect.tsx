@@ -1,7 +1,7 @@
 import { ChevronDownIcon } from '@medly-components/icons';
 import { useCombinedRefs, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
 import type { FC } from 'react';
-import { forwardRef, memo, useCallback, useMemo, useRef, useState } from 'react';
+import { forwardRef, memo, useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
 import FlatVariant from './FlatVariant';
 import { filterOptions, getDefaultSelectedOption, getUpdatedOptions } from './helpers';
@@ -31,6 +31,7 @@ const Component: FC<SingleSelectProps> = memo(
                 isSearchable,
                 suffix,
                 isUnselectable,
+                optionsPosition,
                 ...inputProps
             } = props,
             selectId = useMemo(() => id || inputProps.label?.toLocaleLowerCase() || 'medly-singleSelect', [id, inputProps.label]),
@@ -40,6 +41,7 @@ const Component: FC<SingleSelectProps> = memo(
             optionsRef = useRef<HTMLUListElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             isFocused = useRef(false),
+            [minHeight, setMinHeight] = useState(''),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [inputValue, setInputValue] = useState(defaultSelectedOption.label),
             [selectedOption, setSelectedOption] = useState(defaultSelectedOption),
@@ -167,6 +169,17 @@ const Component: FC<SingleSelectProps> = memo(
             validator: inputValidator
         };
 
+        useLayoutEffect(() => {
+            setTimeout(
+                () =>
+                    optionsPosition === 'relative' &&
+                    setMinHeight(
+                        areOptionsVisible ? `${(wrapperRef.current?.clientHeight || 0) + (optionsRef.current?.clientHeight || 0)}px` : ''
+                    ),
+                0
+            );
+        }, [areOptionsVisible, optionsPosition]);
+
         return (
             <Styled.Wrapper
                 id={`${selectId}-wrapper`}
@@ -179,6 +192,7 @@ const Component: FC<SingleSelectProps> = memo(
                 isErrorPresent={!!props.errorText}
                 onClick={toggleOptions}
                 areOptionsVisible={areOptionsVisible}
+                minHeight={minHeight}
             >
                 {variant == 'flat' ? (
                     <FlatVariant {...commonProps} />

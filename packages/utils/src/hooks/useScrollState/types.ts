@@ -27,4 +27,5 @@ export interface UseScrollStateProps {
     scrollState: ScrollState;
     ref: RefObject<HTMLDivElement>;
     dispatch: Dispatch<ScrollActionTypes>;
+    buffer?: number;
 }
