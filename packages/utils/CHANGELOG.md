@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/medly/medly-components/compare/@medly-components/utils@3.3.1...@medly-components/utils@3.4.0) (2025-02-24)
+
+
+### Features
+
+* add optionsPosition to sigle select component ([d126f61](https://github.com/medly/medly-components/commit/d126f61ca063b671344990fefc482fb2184649de))
+
+
+
+
+
 ## [3.3.1](https://github.com/medly/medly-components/compare/@medly-components/utils@3.3.0...@medly-components/utils@3.3.1) (2025-02-10)
 
 

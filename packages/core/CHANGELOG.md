@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.23.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.22.1...@medly-components/core@7.23.0) (2025-02-24)
+
+
+### Features
+
+* add optionsPosition to sigle select component ([d126f61](https://github.com/medly/medly-components/commit/d126f61ca063b671344990fefc482fb2184649de))
+
+
+
+
+
 ## [7.22.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.22.0...@medly-components/core@7.22.1) (2025-02-10)
 
 **Note:** Version bump only for package @medly-components/core
