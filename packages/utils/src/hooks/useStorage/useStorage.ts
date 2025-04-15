@@ -50,7 +50,7 @@ export const useStorage = <T>(key: string, currOptions?: UseStorageOptions<T>): 
         }
 
         try {
-            const newValue = value instanceof Function ? value(storedValue) : value;
+            const newValue = value instanceof Function ? value(readValue()) : value;
             storage.setItem(key, newValue);
             isMounted.current && setStoredValue(newValue);
             window.dispatchEvent(new Event(`local-storage-${key}`));

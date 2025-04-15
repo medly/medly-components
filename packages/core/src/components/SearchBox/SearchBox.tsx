@@ -71,12 +71,15 @@ const Component: FC<SearchBoxProps> = memo(
                 updateIsTyping(false);
                 onClear?.();
             }, []),
-            handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-                const { value } = event.target;
-                updateIsTyping(value.length !== 0);
-                setShowCloseIcon(value.length !== 0);
-                onInputChange?.(value);
-            }, []),
+            handleChange = useCallback(
+                (event: React.ChangeEvent<HTMLInputElement>) => {
+                    const { value } = event.target;
+                    updateIsTyping(value.length !== 0);
+                    setShowCloseIcon(value.length !== 0);
+                    onInputChange?.(value);
+                },
+                [onInputChange]
+            ),
             handleOptionClick = useCallback(
                 (option: Option) => {
                     if (inputRef.current) {
