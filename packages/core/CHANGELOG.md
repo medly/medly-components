@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.23.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.23.0...@medly-components/core@7.23.1) (2025-04-15)
+
+
+### Bug Fixes
+
+* useStorage outdated context value issue ([6fcf452](https://github.com/medly/medly-components/commit/6fcf45252098ec741b7fddc4903331ec2d8dee77))
+
+
+
+
+
 # [7.23.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.22.1...@medly-components/core@7.23.0) (2025-02-24)
 
 
