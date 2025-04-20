@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.23.2](https://github.com/medly/medly-components/compare/@medly-components/core@7.23.1...@medly-components/core@7.23.2) (2025-04-20)
+
+
+### Bug Fixes
+
+* hour highlight issue in TimePicker component ([70ffb41](https://github.com/medly/medly-components/commit/70ffb416f200c59f49d484008e3b30b7e4505f17))
+
+
+
+
+
 ## [7.23.1](https://github.com/medly/medly-components/compare/@medly-components/core@7.23.0...@medly-components/core@7.23.1) (2025-04-15)
 
 
