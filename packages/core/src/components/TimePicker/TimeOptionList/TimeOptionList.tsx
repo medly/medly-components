@@ -27,8 +27,10 @@ export const TimeOptionList: FC<TimeOptionListProps> = forwardRef<HTMLUListEleme
                     <TimeItem key="-2" />
                     <TimeItem key="-1" />
                     {Array.from({ length: TIME_OPTIONS_LENGTH[type] }, (_, index) => {
-                        const _index = type === 'HOUR' ? index + 1 : index;
-                        const isSelected = type === 'HOUR' && value === 0 ? index === 0 : _index === value;
+                        const isHour = type === 'HOUR';
+                        const _index = isHour ? index + 1 : index;
+                        const _value = isHour ? (value % 12 === 0 ? 12 : value % 12) : value;
+                        const isSelected = isHour && _value === 0 ? index === 0 : _index === _value;
                         return (
                             <TimeItem
                                 key={index}

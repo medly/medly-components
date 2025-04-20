@@ -897,7 +897,7 @@ exports[`TimePicker should render properly 1`] = `
               />
               <li
                 aria-label="1 HOUR"
-                class="c20"
+                class="c21"
               >
                 01
               </li>
