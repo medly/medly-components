@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.23.3](https://github.com/medly/medly-components/compare/@medly-components/core@7.23.2...@medly-components/core@7.23.3) (2025-05-04)
+
+
+### Bug Fixes
+
+* accordion icon render issue ([96799cb](https://github.com/medly/medly-components/commit/96799cb2f00133e4c842d3940bbbd1547219a8ba))
+* accordion snapshots ([abb9037](https://github.com/medly/medly-components/commit/abb9037d741727f70f2b8b8ef79e688b430d9cfd))
+
+
+
+
+
 ## [7.23.2](https://github.com/medly/medly-components/compare/@medly-components/core@7.23.1...@medly-components/core@7.23.2) (2025-04-20)
 
 
