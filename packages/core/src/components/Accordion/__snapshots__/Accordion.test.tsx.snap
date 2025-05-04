@@ -59,7 +59,7 @@ exports[`Accordion component should render properly 1`] = `
   transition: all 200ms ease-out;
 }
 
-.c1 .c2 {
+.c1 > .c2:last-child {
   position: absolute;
   right: 2rem;
   top: 50%;
