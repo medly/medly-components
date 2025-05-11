@@ -4,7 +4,7 @@ import { LabelPositions } from '../Label/types';
 
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type' | 'sizes'>;
 
-export interface RadioProps extends InputProps {
+export interface RadioProps extends Omit<InputProps, 'label'> {
     /** Value of the radio group */
     value: any;
     /** Radio size */
@@ -14,7 +14,7 @@ export interface RadioProps extends InputProps {
     /** Error state for checkbox */
     hasError?: boolean;
     /** Radio label */
-    label?: string;
+    label?: string | React.ReactNode;
     /** Label position */
     labelPosition?: LabelPositions;
     /** Label variant */

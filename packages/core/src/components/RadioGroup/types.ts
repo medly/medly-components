@@ -9,7 +9,7 @@ export interface RadioGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'size' 
     /** Function to be called on selecting any radio */
     onChange?: (value: any) => void;
     /** Options */
-    options: { value: any; label: string; disabled?: boolean }[];
+    options: { value: any; label: string | React.ReactNode; disabled?: boolean }[];
     /** Function will be called with the input value on Blur event */
     validator?: (val: any) => string;
     /** Takes full width of the parent component */
