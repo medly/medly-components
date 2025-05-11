@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.24.0](https://github.com/medly/medly-components/compare/@medly-components/core@7.23.3...@medly-components/core@7.24.0) (2025-05-11)
+
+
+### Features
+
+* allow radio label as react node ([27803f9](https://github.com/medly/medly-components/commit/27803f9d90f67ad7302bfc8ad8f7ed1b5aca668c))
+
+
+
+
+
 ## [7.23.3](https://github.com/medly/medly-components/compare/@medly-components/core@7.23.2...@medly-components/core@7.23.3) (2025-05-04)
 
 
