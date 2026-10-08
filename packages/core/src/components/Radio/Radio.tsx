@@ -1,4 +1,4 @@
-import { useCombinedRefs, WithStyle } from '@medly-components/utils';
+import { isValidStringOrNumber, useCombinedRefs, WithStyle } from '@medly-components/utils';
 import { memo, forwardRef, useRef, useMemo } from 'react';
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Radio.styled';
@@ -8,7 +8,7 @@ import type { FC } from 'react';
 const Component: FC<RadioProps> = memo(
     forwardRef((props, ref) => {
         const { id, size, label, labelPosition, fullWidth, hasError, labelVariant, labelWeight, className, ...inputProps } = props,
-            inputId = useMemo(() => id || label, [id, label]),
+            inputId = useMemo(() => id || (isValidStringOrNumber(label) ? label : undefined), [id, label]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             isActive = useMemo(() => inputProps.checked || inputProps.defaultChecked, [inputProps.checked, inputProps.defaultChecked]);
 
