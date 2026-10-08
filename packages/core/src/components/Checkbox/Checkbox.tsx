@@ -27,7 +27,7 @@ const Component: FC<CheckboxProps> = memo(
 
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             isSelectionKeyPressed = useKeyPress(' '),
-            inputId = useMemo(() => id || label, [id, label]),
+            inputId = useMemo(() => id || (isValidStringOrNumber(label) ? label : undefined), [id, label]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, useRef(null)),
             isActive = useMemo(
                 () => inputProps.checked || inputProps.defaultChecked || indeterminate,
